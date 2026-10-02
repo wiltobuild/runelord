@@ -15,4 +15,5 @@ An original deckbuilding roguelike for the browser. Each hero fights with a **Wa
 | [design/heroes.md](design/heroes.md) | The four heroes and how their systems work |
 | [design/warband-system.md](design/warband-system.md) | The shared allied-unit framework |
 | [catalog/](catalog/) | Cards (4 × 70 + neutral), units, potions, runestones, glossary |
+| [assets/](assets/) | Goblin designs, prototype animations, and warg-rider concepts with approval and quality records |
 | [reference/sts2/](reference/sts2/) | Slay the Spire 2 research used as reference (see its data NOTICE; noncommercial) |

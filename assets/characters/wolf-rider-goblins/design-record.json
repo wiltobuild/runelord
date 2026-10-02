@@ -1,0 +1,71 @@
+{
+  "status": "base_pending",
+  "base": {
+    "revision": "B3",
+    "asset": "base-b3-warg.png",
+    "dimensions": [
+      1536,
+      1024
+    ],
+    "alpha": "actual alpha present",
+    "approved": false
+  },
+  "variants_requested": [
+    {
+      "id": "V1",
+      "role": "archer",
+      "equipment": "bow and leather armor"
+    },
+    {
+      "id": "V2",
+      "role": "spearman",
+      "equipment": "spear and metal armor"
+    },
+    {
+      "id": "V3",
+      "role": "shaman",
+      "equipment": "shaman staff and attire"
+    }
+  ],
+  "construction": {
+    "status": "proposed only; flattened concept, no rig",
+    "rig_family": "mounted humanoid plus quadruped",
+    "parts": [
+      "wolf torso/pelvis",
+      "wolf head/jaw/ears",
+      "four upper/lower legs and paws",
+      "tail",
+      "saddle fixed to wolf torso",
+      "goblin pelvis attached to saddle",
+      "rider torso/head",
+      "rider upper/lower arms and hands",
+      "rider legs and boots",
+      "separate spear",
+      "reins"
+    ],
+    "limitations": [
+      "Far rider leg partially occluded; hidden surfaces need preparation.",
+      "Mount/rider animation needs coupled saddle anchor with independent limb articulation.",
+      "Source is concept art, no separated layers.",
+      "Spear tip has narrow top clearance; expand animation canvas before motion."
+    ]
+  },
+  "prompts": [
+    "Use case: stylized-concept. Create ONE original full-body mounted goblin wolf rider as a base design B1 for a cohesive three-variant cavalry family (later archer, spearman, shaman). Supplied image is a STYLE and goblin SPECIES reference only; design a new mounted goblin, not an infantry pose.\nSTYLE: gritty serious RuneSpeak-inspired 2D cel-shaded game illustration, broad simplified shapes, crisp edges, flat base colors with one hard-edged shadow and restrained graphic highlights, limited readable details. Keep cartoon abstraction and stern expression. No realistic painting, realistic fur, individual hairs, intricate texture, gradients, glossy 3D/PBR or cinematic lighting.\nSUBJECT: one compact olive-green goblin spearman securely seated astride one stocky large wolf. Goblin has a new angular face, narrowed amber eyes, short hooked nose, two small tusks, wide pointed ears, stern alert expression. Worn slate metal breastplate, one small shoulder guard, open iron cap, leather gauntlets/boots, faded oxblood waist cloth. One long straight wood spear with a simple chipped leaf-shaped steel point held upright with a slight forward lean in one hand, clearly outside face silhouette; other hand holds short functional reins. NO shield, swords or additional weapons.\nMOUNT: powerful stylized charcoal-gray wolf, pale gray muzzle and chest, angular simplified fur clumps, alert pointed ears, amber eye, slightly bared teeth. Clearly lupine head and long muzzle, four articulated canine legs with distinct paws, thick sweeping tail. Low leather riding saddle with a broad girth around chest behind forelegs, short stirrup straps, goblin legs naturally down each side of the saddle. Weight and contact must be convincing within stylized shapes. Wolf large enough to carry goblin comfortably, rider roughly half wolf body length, no anatomical fusion.\nCOMPOSITION: full rider AND entire wolf in a neutral ready standing pose, side/shallow three-quarter view facing LEFT. Four legs staggered so count and joints are readable, planted paws, near rider leg clearly visible and hint of far leg. Reins connect rider hand to bridle, not dangling randomly. Spear tip, ears, all paws and tail fully in frame with generous transparent padding. Prefer landscape canvas at least 1536x1024 if supported, silhouette fills most of frame. No ground, no shadow oval, no scene, no text, no borders. Genuine transparent background. Clean animation-ready separation of mount limbs, rider arms, spear and tail. Added detail confined to one large armor chip, saddle straps and simple clasps.",
+    "Edit this exact wolf-rider goblin image, preserving its character design, face, wolf anatomy, pose, equipment, palette and crisp cel shading. Remove ALL background haze, glow, gradient, ground and cast shadows; background must be genuinely fully transparent alpha, including between legs and between spear and head. Reframe the complete mounted character slightly smaller with at least 6% clear padding on every edge so the ENTIRE spear tip is visible well below top edge and all paws and tail comfortably inside frame. Keep existing illustration intact; no scenery or checkerboard painted into image. This is base revision B2."
+  ],
+  "tool": "built-in image generation",
+  "prior_bases": [
+    {
+      "revision": "B2",
+      "asset": "base-b2.png",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "alpha": "Actual alpha present; composited on light gray for verification; initial viewer haze was hidden background RGB.",
+      "approved": false
+    }
+  ],
+  "mount_direction": "Fierce warg: heavy broad jaws, large fangs, massive forequarters, hunched bristling mane, predatory eyes, scarred muzzle. Apply to all three planned role variants."
+}

@@ -1,0 +1,136 @@
+{
+  "status": "animation_assets_present_with_known_quality_limitations",
+  "checks": [
+    {
+      "variant": "V1",
+      "state": "idle",
+      "sequence_entries": 3,
+      "duration_ms": 1200,
+      "gif_frames": 3,
+      "loop": true
+    },
+    {
+      "variant": "V1",
+      "state": "attack",
+      "sequence_entries": 5,
+      "duration_ms": 350,
+      "gif_frames": 5,
+      "loop": false
+    },
+    {
+      "variant": "V1",
+      "state": "hit",
+      "sequence_entries": 3,
+      "duration_ms": 280,
+      "gif_frames": 3,
+      "loop": false
+    },
+    {
+      "variant": "V1",
+      "state": "wounded_idle",
+      "sequence_entries": 3,
+      "duration_ms": 1200,
+      "gif_frames": 3,
+      "loop": true
+    },
+    {
+      "variant": "V1",
+      "state": "die",
+      "sequence_entries": 5,
+      "duration_ms": 700,
+      "gif_frames": 5,
+      "loop": false
+    },
+    {
+      "variant": "V2",
+      "state": "idle",
+      "sequence_entries": 3,
+      "duration_ms": 1200,
+      "gif_frames": 3,
+      "loop": true
+    },
+    {
+      "variant": "V2",
+      "state": "attack",
+      "sequence_entries": 5,
+      "duration_ms": 350,
+      "gif_frames": 5,
+      "loop": false
+    },
+    {
+      "variant": "V2",
+      "state": "hit",
+      "sequence_entries": 3,
+      "duration_ms": 280,
+      "gif_frames": 3,
+      "loop": false
+    },
+    {
+      "variant": "V2",
+      "state": "wounded_idle",
+      "sequence_entries": 3,
+      "duration_ms": 1200,
+      "gif_frames": 3,
+      "loop": true
+    },
+    {
+      "variant": "V2",
+      "state": "die",
+      "sequence_entries": 5,
+      "duration_ms": 700,
+      "gif_frames": 5,
+      "loop": false
+    },
+    {
+      "variant": "V3",
+      "state": "idle",
+      "sequence_entries": 3,
+      "duration_ms": 1200,
+      "gif_frames": 3,
+      "loop": true
+    },
+    {
+      "variant": "V3",
+      "state": "attack",
+      "sequence_entries": 5,
+      "duration_ms": 350,
+      "gif_frames": 5,
+      "loop": false
+    },
+    {
+      "variant": "V3",
+      "state": "hit",
+      "sequence_entries": 3,
+      "duration_ms": 280,
+      "gif_frames": 3,
+      "loop": false
+    },
+    {
+      "variant": "V3",
+      "state": "wounded_idle",
+      "sequence_entries": 3,
+      "duration_ms": 1200,
+      "gif_frames": 3,
+      "loop": true
+    },
+    {
+      "variant": "V3",
+      "state": "die",
+      "sequence_entries": 5,
+      "duration_ms": 700,
+      "gif_frames": 5,
+      "loop": false
+    }
+  ],
+  "alpha": "All 36 runtime PNGs have real alpha 0\u2013255 and clear outer padding. Adjacent character fragments removed through component isolation; fully transparent RGB sanitized; visible gray-background composites are clean.",
+  "visual_review": "Source pose sequences and atlases inspected at full and small scale; animation GIFs generated. Browser playback could not be inspected because file URL access was rejected; native GIFs available. Do not treat this as fully verified smooth production animation.",
+  "limitations": [
+    "Sparse generated keyframes; no temporal model or editable articulated rig.",
+    "V1 sword length changes noticeably between idle poses; repair generation did not remove drift sufficiently and was not adopted.",
+    "Faces, ears, equipment shapes and foot spacing vary between generated frames; contact alignment is approximate.",
+    "Transparent RGB was sanitized; composited gray-background checks show no conspicuous fringe. Fine anti-aliasing quality still merits in-engine review.",
+    "512px frame canvas, source sheets 1448x1086; standing characters roughly 275\u2013320px tall, not 1024px per-frame HD.",
+    "Death terminal holds; foot/root anchor is a visual packing anchor, not a collision or skeletal root.",
+    "Browser playback unverified; temporal semantics verified in code and GIF metadata."
+  ]
+}

@@ -1,0 +1,6 @@
+Goblin raider — base B1, pending user approval
+Generated with the built-in image generation tool using the bundled RuneSpeak goblin fighter as a style reference.
+Style: serious cel-shaded 2D goblin, olive green/slate/oxblood, stern face and broad scar, selective chipped armor and torn cloth.
+Proposed animation construction (not existing separated layers): pelvis/root, torso, head with helmet and ears, upper/lower arms, hands, upper/lower legs and boots; cleaver attached to right hand, buckler to left forearm; tabard as secondary motion. Shoulder armor overlaps upper arm. Hidden joint surfaces would need preparation before cutout animation.
+Current asset is a flattened concept PNG, not a rig or finished animation. Complete silhouette and separated feet support pose planning; shield/arm and torso overlaps need care during preparation.
+Suggested required states after approval: idle, attack, hit, wounded_idle, die. No variants or animation have been approved or generated.

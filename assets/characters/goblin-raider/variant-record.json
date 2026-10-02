@@ -1,0 +1,65 @@
+{
+  "status": "ready_for_animation",
+  "base": {
+    "revision": "B1",
+    "asset": "goblin-base-b1.png",
+    "approval_evidence": "User requested: I want three variants of this type. Switch up where he has armor, give one a 2 handed sword, vary their skin tones slightly and make sure they have distint faces. use the skill"
+  },
+  "variants": [
+    {
+      "id": "V1",
+      "revision": "R1",
+      "asset": "v1-greatsword-r1.png",
+      "differences": "Desaturated olive-gray skin, broad square face and blunt nose, bare head, shoulder/forearm armor, two-handed sword",
+      "prompt": "Create exactly ONE full-body goblin variant, transparent PNG, same art family as the supplied approved base B1. Image 1 is the approved identity-family, proportions, scale, palette and rendering reference; image 2 is the RuneSpeak graphic style reference. Preserve the base's compact sturdy goblin body proportions, big ears, serious gritty mood, shallow three-quarter view facing viewer LEFT. Distinct individual face is required, not merely recoloring the base. Crisp 2D cel shading, broad flat colors with hard-edged shadows and minimal graphic highlights, slate iron, brown leather and faded oxblood accents, sparse bold chips. No realism, gradients, painterly textures, PBR, fine scratches, intricate details, cute smiling mascot. Neutral combat-ready stance with separated feet and coherent grips. Full silhouette including ears, feet and weapon fully inside square canvas, ample transparent padding. Consistent character body height across variants; weapon may occupy padding. No text, labels, ground shadow or scenery. VARIANT V1 revision 1: GREATSWORD BRUISER. Slightly desaturated gray-green skin. DISTINCT FACE: broad square jaw, short flattened blunt nose, small close-set amber eyes below a heavy straight brow, thick lower lip with two short wide tusks; no diagonal eye scar. Bare bald head, NO helmet. Armor layout: two compact unequal shoulder plates, heavy iron forearm guards and plain leather vest, NO metal breastplate, NO knee plates, leather boots. One simple horizontal cheek scar. ONE large straight two-handed sword with a broad chipped blade, long leather-wrapped two-hand grip and short crossguard. BOTH HANDS visibly wrap the SAME hilt, one above the other, the blade extends diagonally up toward upper left, clear of his face, all in frame. No shield, no additional weapons. Preserve animation-friendly elbows and wrist structure."
+    },
+    {
+      "id": "V2",
+      "revision": "R1",
+      "asset": "v2-veteran-r1.png",
+      "differences": "Deeper olive-moss skin, hooked nose and uneven tusks, skullcap, chest/shin armor and exposed shoulders, sword and shield",
+      "prompt": "Create exactly ONE full-body goblin variant, transparent PNG, same art family as the supplied approved base B1. Image 1 is the approved identity-family, proportions, scale, palette and rendering reference; image 2 is the RuneSpeak graphic style reference. Preserve the base's compact sturdy goblin body proportions, big ears, serious gritty mood, shallow three-quarter view facing viewer LEFT. Distinct individual face is required, not merely recoloring the base. Crisp 2D cel shading, broad flat colors with hard-edged shadows and minimal graphic highlights, slate iron, brown leather and faded oxblood accents, sparse bold chips. No realism, gradients, painterly textures, PBR, fine scratches, intricate details, cute smiling mascot. Neutral combat-ready stance with separated feet and coherent grips. Full silhouette including ears, feet and weapon fully inside square canvas, ample transparent padding. Consistent character body height across variants; weapon may occupy padding. No text, labels, ground shadow or scenery. VARIANT V2 revision 1: SHIELD VETERAN. Slightly darker cool moss-green skin. DISTINCT FACE: longer narrow angular face, long hooked downward-pointing nose rather than base's button nose, asymmetric narrowed eyes, protruding lower jaw, one long tusk and one broken short tusk, deep scowling mouth, no diagonal eye scar. Close-fitting low iron skullcap WITHOUT cheek guards so the long face is fully visible. Armor layout: broad central breastplate and TWO full shin greaves, shoulders and upper arms completely UNARMORED, simple leather wrist wraps, no shoulder plates. One short chipped broad sword in right hand held down/outward, rectangular small battered shield visibly strapped to left forearm held off to side. Same main skeletal proportions as base, distinct face and armor distribution."
+    },
+    {
+      "id": "V3",
+      "revision": "R1",
+      "asset": "v3-skirmisher-r1.png",
+      "differences": "Warmer yellow-olive skin, triangular face and pointed chin, swept hair, one shoulder and opposite knee armored, two short blades",
+      "prompt": "Create exactly ONE full-body goblin variant, transparent PNG, same art family as the supplied approved base B1. Image 1 is the approved identity-family, proportions, scale, palette and rendering reference; image 2 is the RuneSpeak graphic style reference. Preserve the base's compact sturdy goblin body proportions, big ears, serious gritty mood, shallow three-quarter view facing viewer LEFT. Distinct individual face is required, not merely recoloring the base. Crisp 2D cel shading, broad flat colors with hard-edged shadows and minimal graphic highlights, slate iron, brown leather and faded oxblood accents, sparse bold chips. No realism, gradients, painterly textures, PBR, fine scratches, intricate details, cute smiling mascot. Neutral combat-ready stance with separated feet and coherent grips. Full silhouette including ears, feet and weapon fully inside square canvas, ample transparent padding. Consistent character body height across variants; weapon may occupy padding. No text, labels, ground shadow or scenery. VARIANT V3 revision 1: LIGHT SKIRMISHER. Slightly warmer yellow-olive green skin. DISTINCT FACE: narrow triangular face with pointed chin, high sharp cheekbones, short pointed upturned nose (NOT long hooked and NOT wide button nose), thin slanted eyes, asymmetrically raised skeptical brow, tight crooked scowl with just one visible small tusk; NO diagonal eye scar. Bare head with a short single swept-back dark hair tuft, no helmet. Same main body proportions and compact size as approved base. Armor layout: ONE small iron shoulder plate on sword arm, ONE iron knee cap on opposite leg, NO breastplate, NO other shoulder plate, NO shin greaves, NO iron forearm guards. Simple leather vest, belt and wrist wraps, faded red short waist cloth, brown boots. Right hand grips one short narrow chipped sword, left hand grips one broad short dagger, held down and out to opposite sides visibly separated from body. No shield, no extra weapons. Face and armor layout must be distinctly different individuals from the base while keeping exact cel-shaded art family."
+    }
+  ],
+  "variant_approvals": [
+    {
+      "stage": "variants",
+      "asset_ids": [
+        "V1",
+        "V2",
+        "V3"
+      ],
+      "revisions": [
+        "R1",
+        "R1",
+        "R1"
+      ],
+      "user_text": "use the hd animate skill to animate them",
+      "interpretation": "Direct instruction to animate the three displayed variants authorizes these exact revisions."
+    }
+  ],
+  "construction": {
+    "status": "proposed; flattened PNGs only",
+    "parts": "Root/pelvis, torso, head/ears/headgear, paired upper/lower arms/hands and legs/boots; armor follows corresponding limb; tabard secondary motion.",
+    "v1": "Two-hand grip constrains both wrists to common sword hilt; shoulder plates and forearm armor need clearance. Different attack motion from one-hand variants.",
+    "v2": "Shield attached to left forearm; preserve hooked nose silhouette, tusk asymmetry, shin armor.",
+    "v3": "Separate blade attachments in both hands; maintain one-sided shoulder/knee armor."
+  },
+  "limitations": [
+    "No separated layers, rig, animation or runtime export yet.",
+    "Display comparison uses approximate body-height alignment; animation canvas and anchors remain to be measured."
+  ],
+  "dimensions": {
+    "width": 1254,
+    "height": 1254,
+    "format": "32-bit ARGB PNG; transparent corner verified"
+  },
+  "tool": "Built-in image generation"
+}
