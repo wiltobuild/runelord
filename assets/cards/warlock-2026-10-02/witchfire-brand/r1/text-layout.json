@@ -1,0 +1,36 @@
+[
+  {
+    "region": "title",
+    "text": "Witchfire Brand",
+    "lines": [
+      "Witchfire Brand"
+    ],
+    "font_size": 70
+  },
+  {
+    "region": "cost",
+    "text": "1",
+    "lines": [
+      "1"
+    ],
+    "font_size": 110
+  },
+  {
+    "region": "type",
+    "text": "ATTACK · WARLOCK",
+    "lines": [
+      "ATTACK · WARLOCK"
+    ],
+    "font_size": 35
+  },
+  {
+    "region": "rules",
+    "text": "Deal 8 damage. Scorch on this enemy no longer halves this combat.",
+    "lines": [
+      "Deal 8 damage.",
+      "Scorch on this enemy no",
+      "longer halves this combat."
+    ],
+    "font_size": 54
+  }
+]

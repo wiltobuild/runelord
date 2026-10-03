@@ -1,0 +1,8 @@
+{
+  "name": "Witchfire Brand",
+  "cost": "1",
+  "type": "Attack",
+  "rarity": "Rare",
+  "rules": "Deal 8 damage. Scorch on this enemy no longer halves this combat.",
+  "upgrade": "12 dmg"
+}
