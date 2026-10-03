@@ -1,0 +1,8 @@
+{
+  "name": "Blood Price",
+  "cost": "1",
+  "type": "Attack",
+  "rarity": "Uncommon",
+  "rules": "Pact 2. Deal 6 damage twice. If this kills, gain 4 Corruption.",
+  "upgrade": "8 ×2"
+}
