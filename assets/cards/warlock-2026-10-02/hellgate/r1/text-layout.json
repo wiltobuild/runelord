@@ -1,0 +1,37 @@
+[
+  {
+    "region": "title",
+    "text": "Hellgate",
+    "lines": [
+      "Hellgate"
+    ],
+    "font_size": 94
+  },
+  {
+    "region": "cost",
+    "text": "2",
+    "lines": [
+      "2"
+    ],
+    "font_size": 110
+  },
+  {
+    "region": "type",
+    "text": "SKILL · WARLOCK",
+    "lines": [
+      "SKILL · WARLOCK"
+    ],
+    "font_size": 35
+  },
+  {
+    "region": "rules",
+    "text": "Summon a random lesser demon (Imp, Hellhound or Gloomstalker). It's Unbound this combat.",
+    "lines": [
+      "Summon a random lesser",
+      "demon (Imp, Hellhound or",
+      "Gloomstalker).",
+      "It's Unbound this combat."
+    ],
+    "font_size": 54
+  }
+]
