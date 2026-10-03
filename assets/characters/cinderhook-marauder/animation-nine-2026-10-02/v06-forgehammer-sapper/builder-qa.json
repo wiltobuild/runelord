@@ -1,0 +1,308 @@
+{
+  "variantId": "v06-forgehammer-sapper",
+  "revision": "r2",
+  "manifestSha256": "09e93a04b63e51e35119a0b0a3bc55ee1a0cdedcbd947b639c359044167f9444",
+  "reviewSha256": "574f36ae14c07188d209ab1a87ebca2bd85f50e4c5fc8db1731ae3f4a5d85b5f",
+  "technicalPass": true,
+  "errors": [],
+  "frames": [
+    {
+      "file": "frames/00.png",
+      "sha256": "d5399efcbef6da3ef95fa2ad14127bab5d07ac65f0ed1119ea0156452dd5b080",
+      "bbox": [
+        43,
+        48,
+        313,
+        334
+      ],
+      "dimensions": [
+        354,
+        354
+      ],
+      "alpha": [
+        0,
+        255
+      ]
+    },
+    {
+      "file": "frames/01.png",
+      "sha256": "0a763d7472d04291c9eff63863190f080bf1acadcb63d94dce82e158d764de12",
+      "bbox": [
+        41,
+        47,
+        313,
+        334
+      ],
+      "dimensions": [
+        354,
+        354
+      ],
+      "alpha": [
+        0,
+        255
+      ]
+    },
+    {
+      "file": "frames/02.png",
+      "sha256": "3a043eae9c05d8ab3a831869b2e280933bcb20e31257665645d8a1932d3f83f7",
+      "bbox": [
+        37,
+        44,
+        312,
+        334
+      ],
+      "dimensions": [
+        354,
+        354
+      ],
+      "alpha": [
+        0,
+        255
+      ]
+    },
+    {
+      "file": "frames/03.png",
+      "sha256": "0b4177c5e566b328283227db35775847bdad4c22917774cbd0f55422446d1f66",
+      "bbox": [
+        42,
+        45,
+        312,
+        334
+      ],
+      "dimensions": [
+        354,
+        354
+      ],
+      "alpha": [
+        0,
+        255
+      ]
+    },
+    {
+      "file": "frames/04.png",
+      "sha256": "1f0034329f6a9d77e706e435fdf09f889aa9a2cd661b61999b170c2c618758a5",
+      "bbox": [
+        99,
+        27,
+        324,
+        334
+      ],
+      "dimensions": [
+        354,
+        354
+      ],
+      "alpha": [
+        0,
+        255
+      ]
+    },
+    {
+      "file": "frames/05.png",
+      "sha256": "1fed0a5ea43319289739fab0c2f49acdf0af386ea01e35a15974922911ef417a",
+      "bbox": [
+        96,
+        17,
+        331,
+        334
+      ],
+      "dimensions": [
+        354,
+        354
+      ],
+      "alpha": [
+        0,
+        255
+      ]
+    },
+    {
+      "file": "frames/06.png",
+      "sha256": "ef108e30900bc24e0615d2a5649dcc0905cc57a859370cfc3820d19701a23909",
+      "bbox": [
+        42,
+        101,
+        328,
+        334
+      ],
+      "dimensions": [
+        354,
+        354
+      ],
+      "alpha": [
+        0,
+        255
+      ]
+    },
+    {
+      "file": "frames/07.png",
+      "sha256": "90397fe0e58c133db6d8ee0d66d302f3b402d67fc31542921650b2c5f2994f2a",
+      "bbox": [
+        42,
+        123,
+        319,
+        334
+      ],
+      "dimensions": [
+        354,
+        354
+      ],
+      "alpha": [
+        0,
+        255
+      ]
+    },
+    {
+      "file": "frames/08.png",
+      "sha256": "900b1384a0592cb04bb117bbd8bebe797d9a24dc7b3ef068a00fa1eb0ac197c3",
+      "bbox": [
+        43,
+        45,
+        310,
+        334
+      ],
+      "dimensions": [
+        354,
+        354
+      ],
+      "alpha": [
+        0,
+        255
+      ]
+    },
+    {
+      "file": "frames/09.png",
+      "sha256": "4537dc5ad71478e755224a3d9ffe5f61f3a425db00d126a4df233ab440e0c7ee",
+      "bbox": [
+        42,
+        58,
+        325,
+        334
+      ],
+      "dimensions": [
+        354,
+        354
+      ],
+      "alpha": [
+        0,
+        255
+      ]
+    },
+    {
+      "file": "frames/10.png",
+      "sha256": "cbc955b50a251ff9255b3fecfd7e134983133108917e48e14b9a98f7b8c9956f",
+      "bbox": [
+        46,
+        81,
+        327,
+        334
+      ],
+      "dimensions": [
+        354,
+        354
+      ],
+      "alpha": [
+        0,
+        255
+      ]
+    },
+    {
+      "file": "frames/11.png",
+      "sha256": "ba0530db7cefa966fca7c8d611a33f940755d4e2be6f9d18dcb8fcbc16abae76",
+      "bbox": [
+        42,
+        94,
+        328,
+        334
+      ],
+      "dimensions": [
+        354,
+        354
+      ],
+      "alpha": [
+        0,
+        255
+      ]
+    },
+    {
+      "file": "frames/12.png",
+      "sha256": "6d0725ad2e5434de080ff8e601b9c19eebe074bc57c51f1b4539e0bae04bb693",
+      "bbox": [
+        49,
+        82,
+        343,
+        334
+      ],
+      "dimensions": [
+        354,
+        354
+      ],
+      "alpha": [
+        0,
+        255
+      ]
+    },
+    {
+      "file": "frames/13.png",
+      "sha256": "c1222c355333fb5720bc3291e8ee7d443678c56b4cadba5a9fd56ee0644b798e",
+      "bbox": [
+        47,
+        107,
+        345,
+        334
+      ],
+      "dimensions": [
+        354,
+        354
+      ],
+      "alpha": [
+        0,
+        255
+      ]
+    },
+    {
+      "file": "frames/14.png",
+      "sha256": "9927f63369fcf79690ccefcc36c5f694ab01581e1061f408a361379a2a5d7476",
+      "bbox": [
+        29,
+        145,
+        330,
+        334
+      ],
+      "dimensions": [
+        354,
+        354
+      ],
+      "alpha": [
+        0,
+        255
+      ]
+    },
+    {
+      "file": "frames/15.png",
+      "sha256": "1fb73d6388c6f8118d88041d5dcb86b63a5f78871d8a78c0ee21b75cb99dbd0e",
+      "bbox": [
+        23,
+        168,
+        324,
+        334
+      ],
+      "dimensions": [
+        354,
+        354
+      ],
+      "alpha": [
+        0,
+        255
+      ]
+    }
+  ],
+  "browser": {
+    "url": "http://127.0.0.1:4381/v06-forgehammer-sapper/preview.html",
+    "observed": "All required states actually played in Chromium; no JS errors, death reached terminal hold; full and small-size on dark, full on light."
+  },
+  "visualStatus": "See independent reviewer report; this is builder evidence, not user approval.",
+  "limits": [
+    "Sparse generated poses, about300px native body height; not HD per-frame assets.",
+    "Not integrated into game.",
+    "Preview approval pending."
+  ]
+}

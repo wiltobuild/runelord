@@ -1,0 +1,802 @@
+{
+  "variantId": "v06-forgehammer-sapper",
+  "revision": "r2",
+  "method": "whole-character-frames",
+  "source": {
+    "path": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\characters\\cinderhook-marauder\\variants-nine-2026-10-02\\v06-forgehammer-sapper-r1.png",
+    "sha256": "4b276d1e55e995d54b0d0ba5f3c4ff280c4de944a030bfaeccb52585426312e3"
+  },
+  "generatedSource": {
+    "file": "source-sheet-r1.png",
+    "sha256": "186edb61c21fe79bb2cba391cb65e48f44048ae6c9ff3814666fa0cef53f79f1",
+    "dimensions": [
+      1254,
+      1254
+    ]
+  },
+  "canvas": {
+    "width": 354,
+    "height": 354
+  },
+  "anchor": {
+    "x": 177,
+    "y": 334
+  },
+  "coordinateSystem": "top-left pixels, x right y down",
+  "states": {
+    "idle": {
+      "frames": [
+        {
+          "file": "frames/00.png",
+          "durationMs": 230
+        },
+        {
+          "file": "frames/01.png",
+          "durationMs": 230
+        },
+        {
+          "file": "frames/02.png",
+          "durationMs": 230
+        },
+        {
+          "file": "frames/03.png",
+          "durationMs": 230
+        },
+        {
+          "file": "frames/02.png",
+          "durationMs": 230
+        },
+        {
+          "file": "frames/01.png",
+          "durationMs": 230
+        }
+      ],
+      "loop": true,
+      "events": [],
+      "nextState": "idle",
+      "terminal": null,
+      "durationMs": 1380
+    },
+    "attack": {
+      "frames": [
+        {
+          "file": "frames/00.png",
+          "durationMs": 70
+        },
+        {
+          "file": "frames/04.png",
+          "durationMs": 160
+        },
+        {
+          "file": "frames/05.png",
+          "durationMs": 100
+        },
+        {
+          "file": "frames/06.png",
+          "durationMs": 90
+        },
+        {
+          "file": "frames/07.png",
+          "durationMs": 100
+        },
+        {
+          "file": "frames/09.png",
+          "durationMs": 100
+        },
+        {
+          "file": "frames/00.png",
+          "durationMs": 80
+        }
+      ],
+      "loop": false,
+      "events": [
+        {
+          "name": "impact",
+          "timeMs": 330
+        }
+      ],
+      "nextState": "idle",
+      "terminal": null,
+      "durationMs": 700
+    },
+    "hit": {
+      "frames": [
+        {
+          "file": "frames/00.png",
+          "durationMs": 40
+        },
+        {
+          "file": "frames/08.png",
+          "durationMs": 100
+        },
+        {
+          "file": "frames/09.png",
+          "durationMs": 100
+        },
+        {
+          "file": "frames/00.png",
+          "durationMs": 80
+        }
+      ],
+      "loop": false,
+      "events": [],
+      "nextState": "idle",
+      "terminal": null,
+      "durationMs": 320
+    },
+    "wounded_idle": {
+      "frames": [
+        {
+          "file": "frames/10.png",
+          "durationMs": 300
+        },
+        {
+          "file": "frames/11.png",
+          "durationMs": 400
+        },
+        {
+          "file": "frames/10.png",
+          "durationMs": 300
+        }
+      ],
+      "loop": true,
+      "events": [],
+      "nextState": "wounded_idle",
+      "terminal": null,
+      "durationMs": 1000
+    },
+    "die": {
+      "frames": [
+        {
+          "file": "frames/00.png",
+          "durationMs": 80
+        },
+        {
+          "file": "frames/12.png",
+          "durationMs": 130
+        },
+        {
+          "file": "frames/13.png",
+          "durationMs": 150
+        },
+        {
+          "file": "frames/14.png",
+          "durationMs": 160
+        },
+        {
+          "file": "frames/15.png",
+          "durationMs": 1200
+        }
+      ],
+      "loop": false,
+      "events": [
+        {
+          "name": "death",
+          "timeMs": 520
+        }
+      ],
+      "nextState": null,
+      "terminal": "hold final frame",
+      "durationMs": 1720
+    }
+  },
+  "atlas": {
+    "file": "atlas.png",
+    "width": 1416,
+    "height": 1416,
+    "frames": [
+      {
+        "file": "frames/00.png",
+        "rect": [
+          0,
+          0,
+          354,
+          354
+        ],
+        "sourceSize": [
+          354,
+          354
+        ],
+        "trimOffset": [
+          0,
+          0
+        ],
+        "sha256": "d5399efcbef6da3ef95fa2ad14127bab5d07ac65f0ed1119ea0156452dd5b080"
+      },
+      {
+        "file": "frames/01.png",
+        "rect": [
+          354,
+          0,
+          354,
+          354
+        ],
+        "sourceSize": [
+          354,
+          354
+        ],
+        "trimOffset": [
+          0,
+          0
+        ],
+        "sha256": "0a763d7472d04291c9eff63863190f080bf1acadcb63d94dce82e158d764de12"
+      },
+      {
+        "file": "frames/02.png",
+        "rect": [
+          708,
+          0,
+          354,
+          354
+        ],
+        "sourceSize": [
+          354,
+          354
+        ],
+        "trimOffset": [
+          0,
+          0
+        ],
+        "sha256": "3a043eae9c05d8ab3a831869b2e280933bcb20e31257665645d8a1932d3f83f7"
+      },
+      {
+        "file": "frames/03.png",
+        "rect": [
+          1062,
+          0,
+          354,
+          354
+        ],
+        "sourceSize": [
+          354,
+          354
+        ],
+        "trimOffset": [
+          0,
+          0
+        ],
+        "sha256": "0b4177c5e566b328283227db35775847bdad4c22917774cbd0f55422446d1f66"
+      },
+      {
+        "file": "frames/04.png",
+        "rect": [
+          0,
+          354,
+          354,
+          354
+        ],
+        "sourceSize": [
+          354,
+          354
+        ],
+        "trimOffset": [
+          0,
+          0
+        ],
+        "sha256": "1f0034329f6a9d77e706e435fdf09f889aa9a2cd661b61999b170c2c618758a5"
+      },
+      {
+        "file": "frames/05.png",
+        "rect": [
+          354,
+          354,
+          354,
+          354
+        ],
+        "sourceSize": [
+          354,
+          354
+        ],
+        "trimOffset": [
+          0,
+          0
+        ],
+        "sha256": "1fed0a5ea43319289739fab0c2f49acdf0af386ea01e35a15974922911ef417a"
+      },
+      {
+        "file": "frames/06.png",
+        "rect": [
+          708,
+          354,
+          354,
+          354
+        ],
+        "sourceSize": [
+          354,
+          354
+        ],
+        "trimOffset": [
+          0,
+          0
+        ],
+        "sha256": "ef108e30900bc24e0615d2a5649dcc0905cc57a859370cfc3820d19701a23909"
+      },
+      {
+        "file": "frames/07.png",
+        "rect": [
+          1062,
+          354,
+          354,
+          354
+        ],
+        "sourceSize": [
+          354,
+          354
+        ],
+        "trimOffset": [
+          0,
+          0
+        ],
+        "sha256": "90397fe0e58c133db6d8ee0d66d302f3b402d67fc31542921650b2c5f2994f2a"
+      },
+      {
+        "file": "frames/08.png",
+        "rect": [
+          0,
+          708,
+          354,
+          354
+        ],
+        "sourceSize": [
+          354,
+          354
+        ],
+        "trimOffset": [
+          0,
+          0
+        ],
+        "sha256": "900b1384a0592cb04bb117bbd8bebe797d9a24dc7b3ef068a00fa1eb0ac197c3"
+      },
+      {
+        "file": "frames/09.png",
+        "rect": [
+          354,
+          708,
+          354,
+          354
+        ],
+        "sourceSize": [
+          354,
+          354
+        ],
+        "trimOffset": [
+          0,
+          0
+        ],
+        "sha256": "4537dc5ad71478e755224a3d9ffe5f61f3a425db00d126a4df233ab440e0c7ee"
+      },
+      {
+        "file": "frames/10.png",
+        "rect": [
+          708,
+          708,
+          354,
+          354
+        ],
+        "sourceSize": [
+          354,
+          354
+        ],
+        "trimOffset": [
+          0,
+          0
+        ],
+        "sha256": "cbc955b50a251ff9255b3fecfd7e134983133108917e48e14b9a98f7b8c9956f"
+      },
+      {
+        "file": "frames/11.png",
+        "rect": [
+          1062,
+          708,
+          354,
+          354
+        ],
+        "sourceSize": [
+          354,
+          354
+        ],
+        "trimOffset": [
+          0,
+          0
+        ],
+        "sha256": "ba0530db7cefa966fca7c8d611a33f940755d4e2be6f9d18dcb8fcbc16abae76"
+      },
+      {
+        "file": "frames/12.png",
+        "rect": [
+          0,
+          1062,
+          354,
+          354
+        ],
+        "sourceSize": [
+          354,
+          354
+        ],
+        "trimOffset": [
+          0,
+          0
+        ],
+        "sha256": "6d0725ad2e5434de080ff8e601b9c19eebe074bc57c51f1b4539e0bae04bb693"
+      },
+      {
+        "file": "frames/13.png",
+        "rect": [
+          354,
+          1062,
+          354,
+          354
+        ],
+        "sourceSize": [
+          354,
+          354
+        ],
+        "trimOffset": [
+          0,
+          0
+        ],
+        "sha256": "c1222c355333fb5720bc3291e8ee7d443678c56b4cadba5a9fd56ee0644b798e"
+      },
+      {
+        "file": "frames/14.png",
+        "rect": [
+          708,
+          1062,
+          354,
+          354
+        ],
+        "sourceSize": [
+          354,
+          354
+        ],
+        "trimOffset": [
+          0,
+          0
+        ],
+        "sha256": "9927f63369fcf79690ccefcc36c5f694ab01581e1061f408a361379a2a5d7476"
+      },
+      {
+        "file": "frames/15.png",
+        "rect": [
+          1062,
+          1062,
+          354,
+          354
+        ],
+        "sourceSize": [
+          354,
+          354
+        ],
+        "trimOffset": [
+          0,
+          0
+        ],
+        "sha256": "1fb73d6388c6f8118d88041d5dcb86b63a5f78871d8a78c0ee21b75cb99dbd0e"
+      }
+    ]
+  },
+  "registration": [
+    {
+      "file": "frames/00.png",
+      "sourceRect": [
+        23,
+        22,
+        293,
+        308
+      ],
+      "registrationOffset": [
+        43,
+        48
+      ],
+      "bbox": [
+        43,
+        48,
+        313,
+        334
+      ]
+    },
+    {
+      "file": "frames/01.png",
+      "sourceRect": [
+        335,
+        23,
+        607,
+        310
+      ],
+      "registrationOffset": [
+        41,
+        47
+      ],
+      "bbox": [
+        41,
+        47,
+        313,
+        334
+      ]
+    },
+    {
+      "file": "frames/02.png",
+      "sourceRect": [
+        644,
+        20,
+        919,
+        310
+      ],
+      "registrationOffset": [
+        37,
+        44
+      ],
+      "bbox": [
+        37,
+        44,
+        312,
+        334
+      ]
+    },
+    {
+      "file": "frames/03.png",
+      "sourceRect": [
+        962,
+        21,
+        1232,
+        310
+      ],
+      "registrationOffset": [
+        42,
+        45
+      ],
+      "bbox": [
+        42,
+        45,
+        312,
+        334
+      ]
+    },
+    {
+      "file": "frames/04.png",
+      "sourceRect": [
+        79,
+        320,
+        304,
+        627
+      ],
+      "registrationOffset": [
+        99,
+        27
+      ],
+      "bbox": [
+        99,
+        27,
+        324,
+        334
+      ]
+    },
+    {
+      "file": "frames/05.png",
+      "sourceRect": [
+        390,
+        312,
+        625,
+        629
+      ],
+      "registrationOffset": [
+        96,
+        17
+      ],
+      "bbox": [
+        96,
+        17,
+        331,
+        334
+      ]
+    },
+    {
+      "file": "frames/06.png",
+      "sourceRect": [
+        649,
+        396,
+        935,
+        629
+      ],
+      "registrationOffset": [
+        42,
+        101
+      ],
+      "bbox": [
+        42,
+        101,
+        328,
+        334
+      ]
+    },
+    {
+      "file": "frames/07.png",
+      "sourceRect": [
+        962,
+        418,
+        1239,
+        629
+      ],
+      "registrationOffset": [
+        42,
+        123
+      ],
+      "bbox": [
+        42,
+        123,
+        319,
+        334
+      ]
+    },
+    {
+      "file": "frames/08.png",
+      "sourceRect": [
+        23,
+        642,
+        290,
+        931
+      ],
+      "registrationOffset": [
+        43,
+        45
+      ],
+      "bbox": [
+        43,
+        45,
+        310,
+        334
+      ]
+    },
+    {
+      "file": "frames/09.png",
+      "sourceRect": [
+        336,
+        653,
+        619,
+        929
+      ],
+      "registrationOffset": [
+        42,
+        58
+      ],
+      "bbox": [
+        42,
+        58,
+        325,
+        334
+      ]
+    },
+    {
+      "file": "frames/10.png",
+      "sourceRect": [
+        653,
+        676,
+        934,
+        929
+      ],
+      "registrationOffset": [
+        46,
+        81
+      ],
+      "bbox": [
+        46,
+        81,
+        327,
+        334
+      ]
+    },
+    {
+      "file": "frames/11.png",
+      "sourceRect": [
+        962,
+        689,
+        1248,
+        929
+      ],
+      "registrationOffset": [
+        42,
+        94
+      ],
+      "bbox": [
+        42,
+        94,
+        328,
+        334
+      ]
+    },
+    {
+      "file": "frames/12.png",
+      "sourceRect": [
+        29,
+        971,
+        323,
+        1223
+      ],
+      "registrationOffset": [
+        49,
+        82
+      ],
+      "bbox": [
+        49,
+        82,
+        343,
+        334
+      ]
+    },
+    {
+      "file": "frames/13.png",
+      "sourceRect": [
+        341,
+        996,
+        639,
+        1223
+      ],
+      "registrationOffset": [
+        47,
+        107
+      ],
+      "bbox": [
+        47,
+        107,
+        345,
+        334
+      ]
+    },
+    {
+      "file": "frames/14.png",
+      "sourceRect": [
+        636,
+        1039,
+        937,
+        1228
+      ],
+      "registrationOffset": [
+        29,
+        145
+      ],
+      "bbox": [
+        29,
+        145,
+        330,
+        334
+      ]
+    },
+    {
+      "file": "frames/15.png",
+      "sourceRect": [
+        943,
+        1080,
+        1245,
+        1247
+      ],
+      "registrationOffset": [
+        23,
+        168
+      ],
+      "bbox": [
+        23,
+        168,
+        324,
+        334
+      ]
+    }
+  ],
+  "previews": [
+    "preview.html",
+    "review.gif"
+  ],
+  "limitations": [
+    "Sparse authored pose proof; not interpolated high-frame-rate animation.",
+    "Frame identity and contact stability require independent review.",
+    "Native cropped frame resolution is about 314px; not an HD 1024px per-frame master.",
+    "Heavy hammer attack deliberately 700ms including anticipation and recovery."
+  ],
+  "repairedSource": {
+    "file": "source-sheet-r2.png",
+    "sha256": "a2bf9012bdb823b16b9c71e07023d76c8ce67e7c7174fb7428253555bb3bd110",
+    "usedFrames": [
+      8,
+      15
+    ]
+  }
+}
