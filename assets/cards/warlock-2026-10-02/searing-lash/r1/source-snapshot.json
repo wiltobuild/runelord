@@ -1,0 +1,8 @@
+{
+  "name": "Searing Lash",
+  "cost": "1",
+  "type": "Attack",
+  "rarity": "Common",
+  "rules": "Deal 9 damage. If the enemy has Scorch, gain 1 Cinder.",
+  "upgrade": "12 dmg"
+}

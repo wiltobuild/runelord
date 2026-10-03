@@ -1,0 +1,36 @@
+[
+  {
+    "region": "title",
+    "text": "Searing Lash",
+    "lines": [
+      "Searing Lash"
+    ],
+    "font_size": 89
+  },
+  {
+    "region": "cost",
+    "text": "1",
+    "lines": [
+      "1"
+    ],
+    "font_size": 110
+  },
+  {
+    "region": "type",
+    "text": "ATTACK · WARLOCK",
+    "lines": [
+      "ATTACK · WARLOCK"
+    ],
+    "font_size": 35
+  },
+  {
+    "region": "rules",
+    "text": "Deal 9 damage. If the enemy has Scorch, gain 1 Cinder.",
+    "lines": [
+      "Deal 9 damage.",
+      "If the enemy has Scorch,",
+      "gain 1 Cinder."
+    ],
+    "font_size": 54
+  }
+]
