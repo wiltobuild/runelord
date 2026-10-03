@@ -1,0 +1,42 @@
+{
+  "name": "Cinderforge Caldera",
+  "biome_status": "Proposed, not canonical",
+  "revision": "r1",
+  "prompt": "Use case: stylized-concept. Asset type: Runelord 2D battle encounter background concept. Generate one polished empty landscape, 16:9, target 1920x1080. The attached approved Runelord hero image is a STYLE reference only: translate its crisp angular shapes, broad quiet flat colors and hard-edged 2-3 tone cel shadows into environmental art; DO NOT depict the character. Serious detailed fantasy game illustration, graphic shapes, strong silhouettes, no realistic textures or painterly brushwork. Low shallow SIDE VIEW for a side-on card battler, not overhead, not isometric. A wide uninterrupted level standing lane runs horizontally across x=7-93% at y=65-75%, spacious enough for hero plus five allied units on left through center and enemies at right. Keep mid-frame behind characters fairly quiet and low contrast, with tall-enemy and intent-icon headroom. Bottom 20% quiet dark ground suitable behind a card hand. Strong landmark scenery behind the lane; edge framing must not obscure combatants. Three coherent visual depth planes in a single flattened illustration. Restrained magical accents. No characters, creatures, corpses, weapons on ground, text, labels, numbers, UI, grids, slot markers, frames, watermark, bloom, grain, photo realism or dense surface scratches.\nScene/backdrop: Volcanic forge biome, boss arena. A very broad continuous unbroken charcoal basalt combat platform stretches horizontally across the entire screen. Monumental ruined forge gate in back-right, massive angular basalt buttresses on distant sides, distant black volcanic caldera silhouette. Restrained orange lava channels run BEHIND and BELOW the platform, never through its usable surface. Oxblood and charcoal architecture, sparse ember-orange crevices, muted ash-red sky in large flat color bands. Spacious quiet center and right-side boss position, no central throne or props blocking combat. Hard graphic lighting rather than glow or bloom; dramatic serious infernal industrial ruin.",
+  "tool": "Built-in image_gen",
+  "reference": {
+    "path": "C:/Users/wilsh/Projects/runelord/assets/heroes/references/warlock/warlock-base-r1.png",
+    "sha256": "3585512c985b250f1da8a159f436e82dc673059269bd1e54cfad625b01e28f02",
+    "evidence": {
+      "status": "Approved",
+      "at": "2026-10-02T03:44:25.533Z",
+      "evidenceId": "user-chat-2026-10-01-approve-existing-runelord",
+      "paths": [
+        "C:\\Users\\wilsh\\Projects\\runelord\\assets\\heroes\\references\\warlock\\warlock-base-r1.png"
+      ]
+    }
+  },
+  "output": {
+    "path": "C:/Users/wilsh/Projects/runelord/assets/environments/cinderforge-caldera/r1/cinderforge-caldera-r1.png",
+    "chat_path": "C:/Users/wilsh/Documents/Codex/2026-10-02/cr/outputs/cinderforge-caldera-r1.png",
+    "sha256": "9f1085ce9885721325f6528cd4e8cbea3219a66fecfc5e467d1bbdc3c0833ff9",
+    "width": 1672,
+    "height": 941
+  },
+  "gallery": {
+    "path": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\approvals\\inbox\\battle-map-cinderforge-caldera\\r1\\cinderforge-caldera-r1.png",
+    "sha256": "9f1085ce9885721325f6528cd4e8cbea3219a66fecfc5e467d1bbdc3c0833ff9",
+    "status": "Pending approval",
+    "gallery": "http://localhost:4317"
+  },
+  "format": "Flattened opaque concept; no separated parallax layers",
+  "qa": {
+    "visual": "Inspected generated image: coherent cel-shaded geometry, distinct palette, clear side-view standing lane, no units/UI/text; peripheral foreground stays outside central lane.",
+    "limitations": [
+      "Native dimensions differ from the 1920x1080 production target.",
+      "No renderer exists in the inspected project for runtime placement or 96px unit-overlay testing.",
+      "No parallax layers or camera-motion validation."
+    ],
+    "notes": "Small ember cracks remain at near platform margins; central standing lane is continuous."
+  }
+}
