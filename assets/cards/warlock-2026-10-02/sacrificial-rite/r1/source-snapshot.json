@@ -1,0 +1,8 @@
+{
+  "name": "Sacrificial Rite",
+  "cost": "0",
+  "type": "Skill",
+  "rarity": "Uncommon",
+  "rules": "**Sacrifice** a demon. Gain 2 Mana. Draw 2 cards.",
+  "upgrade": "Draw 3"
+}

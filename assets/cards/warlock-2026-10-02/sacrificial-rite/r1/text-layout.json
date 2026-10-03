@@ -1,0 +1,36 @@
+[
+  {
+    "region": "title",
+    "text": "Sacrificial Rite",
+    "lines": [
+      "Sacrificial Rite"
+    ],
+    "font_size": 78
+  },
+  {
+    "region": "cost",
+    "text": "0",
+    "lines": [
+      "0"
+    ],
+    "font_size": 110
+  },
+  {
+    "region": "type",
+    "text": "SKILL · WARLOCK",
+    "lines": [
+      "SKILL · WARLOCK"
+    ],
+    "font_size": 35
+  },
+  {
+    "region": "rules",
+    "text": "Sacrifice a demon. Gain 2 Mana. Draw 2 cards.",
+    "lines": [
+      "Sacrifice a demon.",
+      "Gain 2 Mana.",
+      "Draw 2 cards."
+    ],
+    "font_size": 54
+  }
+]
