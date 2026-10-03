@@ -1,0 +1,8 @@
+{
+  "name": "Summon Gloomstalker",
+  "cost": "1 +2🔥",
+  "type": "Skill",
+  "rarity": "Uncommon",
+  "rules": "Summon a Gloomstalker.",
+  "upgrade": "Costs 1 +1🔥"
+}

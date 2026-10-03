@@ -1,0 +1,38 @@
+[
+  {
+    "region": "title",
+    "text": "Summon Gloomstalker",
+    "lines": [
+      "Summon Gloomstalker"
+    ],
+    "font_size": 49
+  },
+  {
+    "region": "cost",
+    "text": "1\n+2 Cinders",
+    "lines": [
+      "1",
+      "+2 Cinders"
+    ],
+    "font_sizes": [
+      76,
+      17
+    ]
+  },
+  {
+    "region": "type",
+    "text": "SKILL · WARLOCK",
+    "lines": [
+      "SKILL · WARLOCK"
+    ],
+    "font_size": 35
+  },
+  {
+    "region": "rules",
+    "text": "Summon a Gloomstalker.",
+    "lines": [
+      "Summon a Gloomstalker."
+    ],
+    "font_size": 54
+  }
+]
