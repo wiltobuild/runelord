@@ -1,0 +1,8 @@
+{
+  "name": "Infernal Whip",
+  "cost": "1",
+  "type": "Attack",
+  "rarity": "Common",
+  "rules": "Deal 7 damage. Each of your demons deals 3 damage to this enemy.",
+  "upgrade": "10 / 4"
+}

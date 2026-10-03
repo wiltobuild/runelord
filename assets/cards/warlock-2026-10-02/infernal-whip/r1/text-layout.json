@@ -1,0 +1,36 @@
+[
+  {
+    "region": "title",
+    "text": "Infernal Whip",
+    "lines": [
+      "Infernal Whip"
+    ],
+    "font_size": 81
+  },
+  {
+    "region": "cost",
+    "text": "1",
+    "lines": [
+      "1"
+    ],
+    "font_size": 110
+  },
+  {
+    "region": "type",
+    "text": "ATTACK · WARLOCK",
+    "lines": [
+      "ATTACK · WARLOCK"
+    ],
+    "font_size": 35
+  },
+  {
+    "region": "rules",
+    "text": "Deal 7 damage. Each of your demons deals 3 damage to this enemy.",
+    "lines": [
+      "Deal 7 damage.",
+      "Each of your demons deals",
+      "3 damage to this enemy."
+    ],
+    "font_size": 54
+  }
+]
