@@ -1,3 +1,4 @@
+import { OpeningScreen } from "./OpeningScreen";
 import { GuardAura } from "./GuardAura";
 import { useEffect, useState, useRef, type CSSProperties } from "react";
 import { createRoot } from "react-dom/client";
@@ -29,7 +30,7 @@ import { ResourceMeters } from "./ResourceMeters";
 import { EnemyName } from "./EnemyName";
 import { SpellEffects } from "./SpellEffects";
 import { useBattleDirector } from "./useBattleDirector";
-import { score } from "./music";
+import { score, OPENING_SCORE_ID, OPENING_SCORE_TITLE } from "./music";
 import { sfx } from "./sound";
 import "./style.css";
 import { HUD, HudTemplate, HudStatIcon, InventorySlot, useHudScale } from "./HudTemplate";
@@ -148,7 +149,7 @@ function App({ assets }: { assets: Assets }) {
     phase = state?.phase,
     encounter = encounters[room],
     track =
-      !state || phase === "camp" || phase === "won"
+      !state ? OPENING_SCORE_ID : phase === "camp" || phase === "won"
         ? "explore"
         : room === encounters.length - 1
           ? "demon-boss"
@@ -262,14 +263,15 @@ function App({ assets }: { assets: Assets }) {
   };
   return (
     <main
-      className={state ? "battle-ui" : ""}
+      className={state ? "battle-ui" : "title"}
       style={
         {
-          "--scene": `url(${assets.images[!state ? "forge" : encounter.background]})`,
+          "--scene": `url(${assets.images[!state ? "demon-throne" : encounter.background]})`,
           "--hud-scale": hudScale,
         } as React.CSSProperties
       }
     >
+      {!state && <AnimatedBackground scene="demon-throne" />}
       {state && <><AnimatedBackground scene={encounter.background} /><HudTemplate /></>}
       <header className="topbar">
         <button
@@ -300,14 +302,14 @@ function App({ assets }: { assets: Assets }) {
           <button
             className="music-button"
             onClick={() => {
-              const v = volume ? 0 : 0.35;
+              const v = !musicActive ? 0.35 : volume ? 0 : 0.35;
               setVolume(v);
               score.setVolume(v);
               void music();
             }}
-            aria-label={volume ? "Mute music" : "Enable music"}
+            aria-label={musicActive && volume ? "Mute music" : "Enable music"}
           >
-            {state ? (volume ? "♫" : "♪") : (volume ? "♫ Music on" : "♫ Music off")}
+            {state ? (volume ? "♫" : "♪") : (!musicActive ? "♫ Enable music" : volume ? "♫ Music on" : "♫ Music off")}
           </button>
           <input
             aria-label="Music volume"
@@ -326,59 +328,7 @@ function App({ assets }: { assets: Assets }) {
         </nav>
       </header>
       {!state ? (
-        <section className="title-screen">
-          <div className="title-copy">
-            <div className="eyebrow">THE NINTH PIT CALLS</div>
-            <h1>
-              Every flame
-              <br />
-              has a <em>price.</em>
-            </h1>
-            <p>
-              Bind a demon. Burn a path.
-              <br />
-              Decide how much of yourself to leave behind.
-            </p>
-            <fieldset className="starter-pacts">
-              <legend>CHOOSE YOUR STARTING PACT</legend>
-              <div className="starter-options">{starterDecks.map(deck => <label key={deck.id} className="starter-choice">
-                <strong><input type="radio" name="starter-pact" value={deck.id} checked={starterDeck === deck.id} onChange={() => setStarterDeck(deck.id)} />{deck.name}</strong>
-                <small>{deck.description}</small><span className="starter-count">{deck.cards.length} starting cards</span>
-              </label>)}</div>
-            </fieldset>
-            <div className="title-buttons">
-              <button className="primary" onClick={() => start()}>
-                Begin the pact <span>→</span>
-              </button>
-              {saved && (
-                <button onClick={() => start(true)}>Resume journey</button>
-              )}
-            </div>
-            <details className="seed-settings"><summary>Advanced: replay a seed</summary><p>A fresh random journey starts each time. Enter a seed only to repeat a run.</p><label className="seed">
-              Run seed{" "}
-              <input
-                value={seed}
-                onChange={(e) => setSeed(e.target.value.replace(/[^0-9]/g, ""))}
-                maxLength={10}
-                placeholder="Random each run"
-              />
-            </label></details>
-            <div className="demo-note">
-              THE WARLOCK · {encounters.length} ENCOUNTERS · ONE OATH
-            </div>
-          </div>
-          <div className="title-hero">
-            <Hero
-              assets={assets}
-              animation={animation}
-              sequence={sequence}
-              empowered={false}
-            />
-            <div className="hero-title">
-              THE WARLOCK<small>Scholar of the Ninth Pit</small>
-            </div>
-          </div>
-        </section>
+        <OpeningScreen assets={assets} selected={starterDeck} onSelect={setStarterDeck} onBegin={() => start()} onResume={saved ? () => start(true) : undefined} seed={seed} onSeed={setSeed} awaken={() => { if (!musicActive) void music(); }} />
       ) : (
         <>
           <div className="runbar">
@@ -731,7 +681,7 @@ function App({ assets }: { assets: Assets }) {
         <span>
           {musicError
             ? "Music unavailable — toggle to retry"
-            : `♫ ${assets.music[track]?.title ?? "Cinderforge score"}`}
+            : `♫ ${track === OPENING_SCORE_ID ? OPENING_SCORE_TITLE : assets.music[track]?.title ?? "Cinderforge score"}`}
         </span>
         <span>
           {state ? "AUTOSAVED LOCALLY" : "WARLOCK PLAYABLE DEMO · 0.1"}
@@ -878,3 +828,4 @@ loadAssets()
       </div>,
     ),
   );
+
