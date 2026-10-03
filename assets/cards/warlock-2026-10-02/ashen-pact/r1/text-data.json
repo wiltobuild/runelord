@@ -1,0 +1,8 @@
+{
+  "name": "Ashen Pact",
+  "cost": "1",
+  "type": "Skill",
+  "rarity": "Uncommon",
+  "rules": "Consume 1 card from your Hand. Draw 2 cards. Gain 1 Cinder.",
+  "upgrade": "Draw 3"
+}

@@ -1,0 +1,37 @@
+[
+  {
+    "region": "title",
+    "text": "Ashen Pact",
+    "lines": [
+      "Ashen Pact"
+    ],
+    "font_size": 94
+  },
+  {
+    "region": "cost",
+    "text": "1",
+    "lines": [
+      "1"
+    ],
+    "font_size": 110
+  },
+  {
+    "region": "type",
+    "text": "SKILL · WARLOCK",
+    "lines": [
+      "SKILL · WARLOCK"
+    ],
+    "font_size": 35
+  },
+  {
+    "region": "rules",
+    "text": "Consume 1 card from your Hand. Draw 2 cards. Gain 1 Cinder.",
+    "lines": [
+      "Consume 1 card from your",
+      "Hand.",
+      "Draw 2 cards.",
+      "Gain 1 Cinder."
+    ],
+    "font_size": 54
+  }
+]
