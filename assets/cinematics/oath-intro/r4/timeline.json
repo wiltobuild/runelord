@@ -1,0 +1,40 @@
+{
+  "duration": 24,
+  "fps": 24,
+  "size": [
+    1920,
+    1080
+  ],
+  "loop": true,
+  "method": "Layered still-art animation; six-second Seraph hover and companion bob; eight-second staggered portal emergence, perspective forward advance with stride bob/tilt, full offscreen exit and replacement. Combat drawSummon floor and foreground effects reused.",
+  "beats": [
+    {
+      "time": 0,
+      "visual": "Fortress and Warlock reveal; first fire pulse"
+    },
+    {
+      "time": 6,
+      "visual": "Ember ascent and second fire pulse"
+    },
+    {
+      "time": 12,
+      "visual": "Staggered portal emergence and forward advance; apex fire pulse"
+    },
+    {
+      "time": 18,
+      "visual": "Return phrase; smoke recedes into loop"
+    }
+  ],
+  "sourceArt": [
+    "assets/environments/menu-infernal-court/r1/source.png",
+    "assets/cinematics/oath-intro/r2/demon-warlock.png",
+    "assets/cinematics/oath-intro/r4/imp-flight.png",
+    "assets/cinematics/oath-intro/r3/imp-ground.png",
+    "assets/cinematics/oath-intro/r3/hellhound.png",
+    "assets/cinematics/oath-intro/r3/pit-brute.png"
+  ],
+  "runtime": "apps/web/public/opening-assets/oath-intro-r4.mp4",
+  "silentSource": "assets/cinematics/oath-intro/r4/oath-intro-silent.mp4",
+  "score": "apps/web/public/opening-assets/oath-intro-score.wav",
+  "sha256": "5c79e32dae4c744af8db0f1dc6f5a23eb2ac14c14238e5831d296e869192bf9a"
+}
