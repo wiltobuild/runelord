@@ -1,0 +1,37 @@
+[
+  {
+    "region": "title",
+    "text": "Shadowflame Barrier",
+    "lines": [
+      "Shadowflame Barrier"
+    ],
+    "font_size": 53
+  },
+  {
+    "region": "cost",
+    "text": "2",
+    "lines": [
+      "2"
+    ],
+    "font_size": 110
+  },
+  {
+    "region": "type",
+    "text": "SKILL · WARLOCK",
+    "lines": [
+      "SKILL · WARLOCK"
+    ],
+    "font_size": 35
+  },
+  {
+    "region": "rules",
+    "text": "Gain 12 Guard. Whenever you're attacked this turn, apply 3 Scorch to the attacker.",
+    "lines": [
+      "Gain 12 Guard.",
+      "Whenever you're attacked",
+      "this turn, apply 3 Scorch to",
+      "the attacker."
+    ],
+    "font_size": 54
+  }
+]

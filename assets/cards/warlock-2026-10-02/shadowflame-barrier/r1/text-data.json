@@ -1,0 +1,8 @@
+{
+  "name": "Shadowflame Barrier",
+  "cost": "2",
+  "type": "Skill",
+  "rarity": "Uncommon",
+  "rules": "Gain 12 Guard. Whenever you're attacked this turn, apply 3 Scorch to the attacker.",
+  "upgrade": "16 Guard"
+}
