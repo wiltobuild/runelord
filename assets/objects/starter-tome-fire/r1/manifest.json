@@ -1,0 +1,50 @@
+{
+  "schemaVersion": 1,
+  "slug": "starter-tome-fire",
+  "revision": "r1",
+  "engineStarterDeckId": "fire",
+  "catalogSource": "User requested opening-screen deck spellbooks; visual prop, not gameplay item",
+  "category": "opening-screen spell tome",
+  "state": "closed levitating base",
+  "source": {
+    "path": "assets\\objects\\starter-tome-fire\\r1\\source.png",
+    "sha256": "f4e0957d3bb7664d53dfb8fc58b016c59d1243d57afcbbb193e8b7d777a46c2a",
+    "width": 1254,
+    "height": 1254
+  },
+  "export": {
+    "path": "apps/web/public/opening-assets/tome-fire.webp",
+    "sha256": "429a023452c2bbae254b497ac481051ca05138224b0c7f027ede41a0aeed44b1",
+    "width": 640,
+    "height": 640
+  },
+  "generation": {
+    "tool": "built-in image_gen",
+    "prompt": "Use case: stylized-concept. Create one isolated magical spellbook game asset for Runelord's Hellfire opening-screen starter deck. Genuine transparent background. Serious clean 2D cel-shaded art matching the viewed approved Warlock reference's chunky angular shapes, broad flat colors, hard graphic shadows, crisp dark outlines and quiet surfaces. Closed thick floating tome at three-quarter angle, front cover facing viewer, spine at left, top slightly tilted away; complete unclipped silhouette with 14% clear padding on all sides, centered square canvas. Blackened iron corners, deep oxblood leather cover, antique muted bronze binding, thick parchment page edges. Large central bold ember-orange flame rune inside a diamond iron medallion; restrained luminous orange cracks at its base; a couple of large angular ember accents. High-quality heroic prop, recognizable at 180px. No character, no hands, no text, no writing, no scenery, no floor shadow, no floating surrounding particles, no bloom halo, no realistic texture, no tiny filigree. New original object, reference only rendering language from approved Warlock, not character identity.",
+    "repairPrompt": null
+  },
+  "reference": {
+    "path": "assets/heroes/references/warlock/warlock-base-r1.png",
+    "sha256": "3585512c985b250f1da8a159f436e82dc673059269bd1e54cfad625b01e28f02",
+    "status": "Approved",
+    "evidenceId": "user-chat-2026-10-01-approve-existing-runelord",
+    "role": "Inspected rendering-language reference; character identity not copied"
+  },
+  "qa": {
+    "alphaMin": 0,
+    "alphaMax": 255,
+    "visibleBounds": [
+      188,
+      85,
+      1123,
+      1197
+    ],
+    "nontransparentEdgePixels": 0,
+    "technicalPass": true,
+    "visual": "Full-size and 220px light/dark composites inspected: intact clean alpha silhouettes, no visible light halo, central emblems and distinct deck palettes legible. Warband repaired once for flat cel shading and complete horns. Fire/pact have slightly more restrained surface variation than warband; no blocking defect."
+  },
+  "approval": {
+    "status": "Pending approval",
+    "integrationAuthorization": "User requested opening overhaul and new deck art; integration authorization is separate from gallery design approval"
+  }
+}

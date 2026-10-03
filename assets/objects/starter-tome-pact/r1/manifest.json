@@ -1,0 +1,50 @@
+{
+  "schemaVersion": 1,
+  "slug": "starter-tome-pact",
+  "revision": "r1",
+  "engineStarterDeckId": "pact",
+  "catalogSource": "User requested opening-screen deck spellbooks; visual prop, not gameplay item",
+  "category": "opening-screen spell tome",
+  "state": "closed levitating base",
+  "source": {
+    "path": "assets\\objects\\starter-tome-pact\\r1\\source.png",
+    "sha256": "4546eb1155c1bd0a66197e11eab5665ce4bb776a6458a85513c951441508d73b",
+    "width": 1254,
+    "height": 1254
+  },
+  "export": {
+    "path": "apps/web/public/opening-assets/tome-pact.webp",
+    "sha256": "12863585621751cee4bed9f3429e294216154efae0af8f46e798888361693be7",
+    "width": 640,
+    "height": 640
+  },
+  "generation": {
+    "tool": "built-in image_gen",
+    "prompt": "Use case: stylized-concept. Create ONE new original isolated magical spellbook asset for Runelord's Blood Pact starter deck on a genuinely transparent background. Companion to viewed fire and demon tomes, same closed thick floating book perspective: left spine visible, lower parchment page edge visible, front cover faces viewer. Whole unclipped object centered in square with clear margin. Serious clean 2D CEL SHADED style of the approved Warlock image: broad flat color regions and two-three hard edged shadow tones, crisp dark outlines, chunky geometric shapes, quiet untextured surfaces. Deep oxblood and near-black leather, restrained antique bronze corner guards, two broad leather straps. Central emblem is a large faceted ruby blood-drop gem held in a six-point angular ritual seal of tarnished bronze, a thin intense crimson rune ring inset beneath it, one diagonal dagger-shaped metal clasp. Cream aged parchment page edges and a long dark crimson bookmark tail. Distinct blood sacrifice ritual magic; no demon face and no flame emblem, no horns. Bold refined silhouette, easy readability at 180px. No words or readable writing, no character, hands, scenery, particles, ground shadow, bloom halo, photorealism, texture grain, dense filigree or gore. Runtime supplies glow and levitation. Reference role: viewed approved Warlock for rendering style, generated companion tomes for consistent viewpoint only.",
+    "repairPrompt": null
+  },
+  "reference": {
+    "path": "assets/heroes/references/warlock/warlock-base-r1.png",
+    "sha256": "3585512c985b250f1da8a159f436e82dc673059269bd1e54cfad625b01e28f02",
+    "status": "Approved",
+    "evidenceId": "user-chat-2026-10-01-approve-existing-runelord",
+    "role": "Inspected rendering-language reference; character identity not copied"
+  },
+  "qa": {
+    "alphaMin": 0,
+    "alphaMax": 255,
+    "visibleBounds": [
+      211,
+      47,
+      1065,
+      1230
+    ],
+    "nontransparentEdgePixels": 0,
+    "technicalPass": true,
+    "visual": "Full-size and 220px light/dark composites inspected: intact clean alpha silhouettes, no visible light halo, central emblems and distinct deck palettes legible. Warband repaired once for flat cel shading and complete horns. Fire/pact have slightly more restrained surface variation than warband; no blocking defect."
+  },
+  "approval": {
+    "status": "Pending approval",
+    "integrationAuthorization": "User requested opening overhaul and new deck art; integration authorization is separate from gallery design approval"
+  }
+}

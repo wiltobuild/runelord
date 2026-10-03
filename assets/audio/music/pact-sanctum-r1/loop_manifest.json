@@ -1,0 +1,24 @@
+[
+  {
+    "slug": "pact-sanctum",
+    "title": "The Pact Sanctum",
+    "bpm": 60,
+    "meter": "4/4",
+    "bars": 16,
+    "duration_seconds": 64,
+    "sample_rate": 48000,
+    "channels": 2,
+    "loop_start_sample": 0,
+    "loop_end_sample_exclusive": 3072000,
+    "sha256": "e07be343401b81caab5924d340337995d1cd0b97c255e3d5d6e17078b05cc370",
+    "runtime_sha256": "7e1bab68ca55f088b39d342320b09489479c7c110d072911d677bb1aa1faedf0",
+    "verification": {
+      "peak_dbfs": -2.8533500713746314,
+      "rms_dbfs": -17.978223067242254,
+      "clipped_samples": 0,
+      "seam_delta": 0,
+      "finite": true
+    },
+    "description": "Dedicated opening-screen score: dark vowel choir, bowed harmonic layers, descending bronze tolls, low ritual drums, circular stereo cathedral reverb. Subjective listening approval pending."
+  }
+]

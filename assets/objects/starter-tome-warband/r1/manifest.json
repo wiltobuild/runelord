@@ -1,0 +1,50 @@
+{
+  "schemaVersion": 1,
+  "slug": "starter-tome-warband",
+  "revision": "r1",
+  "engineStarterDeckId": "warband",
+  "catalogSource": "User requested opening-screen deck spellbooks; visual prop, not gameplay item",
+  "category": "opening-screen spell tome",
+  "state": "closed levitating base",
+  "source": {
+    "path": "assets\\objects\\starter-tome-warband\\r1\\source.png",
+    "sha256": "afba73c98729d6e3555a58c4f26915dce633493a4b45be37b79c7521835c3c52",
+    "width": 1254,
+    "height": 1254
+  },
+  "export": {
+    "path": "apps/web/public/opening-assets/tome-warband.webp",
+    "sha256": "60ef095a03cd25c97e0c314ec1c60ae1dd3b432d1e31c9fe4ce3428243e35a62",
+    "width": 640,
+    "height": 640
+  },
+  "generation": {
+    "tool": "built-in image_gen",
+    "prompt": "Use case: stylized-concept. Create ONE original isolated magical spellbook game asset for Runelord's Master of Demons opening-screen starter deck. Match the previously viewed fire tome's viewpoint and scale: closed thick floating book, front cover facing viewer, left spine visible, lower parchment page block visible, three-quarter perspective slightly turned. Complete silhouette centered square with clear padding. Genuinely transparent background. Serious 2D cel-shaded illustration matching approved Runelord Warlock angular chunky shapes, dark contours, two-three hard shading tones, quiet surfaces. Cover deep aubergine leather, oxblood edges, muted bronze bindings, blackened iron corner guards. Dominant center ornament is one angular horned demon face forged from dark iron with luminous crimson eyes and violet summoning rune below; two chunky upward curling bone-dark horns organically integrated into top corners. Bold distinctive readable demon-summoning identity. Restrained magenta-violet accents; aged parchment. No lettering, no scenery, no hands, no character body, no particles, no bloom halo, no ground, no tiny filigree, no photoreal texture or PBR. Runtime will add animated glow and levitation. Style reference is the approved Warlock viewed earlier; previous generated fire tome is companion asset for layout consistency only.",
+    "repairPrompt": "Repair this demon spellbook asset. Preserve identity, viewpoint, palette, demon mask and horned silhouette. Add generous transparent padding on ALL sides so both horn tips are fully intact and comfortably inside canvas, neither touching an edge. Simplify all materials to clean Runelord 2D CEL SHADING: quiet broad flat color planes, 2-3 hard edged shadow tones, chunky dark outlines, only a few large wear marks. Remove stippled/painterly surface texture and dense fine scratches. Keep crimson eyes and violet rune as small luminous graphic accents. Genuine transparent background; isolated whole object, no text, no ground, no other object."
+  },
+  "reference": {
+    "path": "assets/heroes/references/warlock/warlock-base-r1.png",
+    "sha256": "3585512c985b250f1da8a159f436e82dc673059269bd1e54cfad625b01e28f02",
+    "status": "Approved",
+    "evidenceId": "user-chat-2026-10-01-approve-existing-runelord",
+    "role": "Inspected rendering-language reference; character identity not copied"
+  },
+  "qa": {
+    "alphaMin": 0,
+    "alphaMax": 255,
+    "visibleBounds": [
+      149,
+      31,
+      1148,
+      1235
+    ],
+    "nontransparentEdgePixels": 0,
+    "technicalPass": true,
+    "visual": "Full-size and 220px light/dark composites inspected: intact clean alpha silhouettes, no visible light halo, central emblems and distinct deck palettes legible. Warband repaired once for flat cel shading and complete horns. Fire/pact have slightly more restrained surface variation than warband; no blocking defect."
+  },
+  "approval": {
+    "status": "Pending approval",
+    "integrationAuthorization": "User requested opening overhaul and new deck art; integration authorization is separate from gallery design approval"
+  }
+}

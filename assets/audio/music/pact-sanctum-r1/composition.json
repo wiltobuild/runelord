@@ -1,0 +1,810 @@
+{
+  "title": "The Pact Sanctum",
+  "bpm": 60,
+  "meter": "4/4",
+  "bars": 16,
+  "seed": 23063,
+  "notes": [
+    {
+      "part": "choir",
+      "beat": 0,
+      "duration": 9.5,
+      "pitch": 38,
+      "level": 0.14,
+      "pan": -0.36
+    },
+    {
+      "part": "choir",
+      "beat": 0,
+      "duration": 9.5,
+      "pitch": 45,
+      "level": 0.1,
+      "pan": -0.12
+    },
+    {
+      "part": "choir",
+      "beat": 0,
+      "duration": 9.5,
+      "pitch": 50,
+      "level": 0.1,
+      "pan": 0.12
+    },
+    {
+      "part": "choir",
+      "beat": 0,
+      "duration": 9.5,
+      "pitch": 53,
+      "level": 0.1,
+      "pan": 0.36
+    },
+    {
+      "part": "strings",
+      "beat": 0.2,
+      "duration": 9.2,
+      "pitch": 62,
+      "level": 0.041,
+      "pan": -0.55
+    },
+    {
+      "part": "strings",
+      "beat": 0.4,
+      "duration": 9,
+      "pitch": 65,
+      "level": 0.035,
+      "pan": 0.55
+    },
+    {
+      "part": "drum",
+      "beat": 0,
+      "duration": 2,
+      "pitch": 31,
+      "level": 0.24,
+      "pan": 0
+    },
+    {
+      "part": "drum",
+      "beat": 3,
+      "duration": 1.5,
+      "pitch": 38,
+      "level": 0.095,
+      "pan": -0.25
+    },
+    {
+      "part": "drum",
+      "beat": 6,
+      "duration": 1.5,
+      "pitch": 33,
+      "level": 0.13,
+      "pan": 0.25
+    },
+    {
+      "part": "air",
+      "beat": 5,
+      "duration": 4.5,
+      "pitch": 0,
+      "level": 0.13,
+      "pan": 0.4
+    },
+    {
+      "part": "choir",
+      "beat": 8,
+      "duration": 9.5,
+      "pitch": 34,
+      "level": 0.14,
+      "pan": -0.36
+    },
+    {
+      "part": "choir",
+      "beat": 8,
+      "duration": 9.5,
+      "pitch": 41,
+      "level": 0.1,
+      "pan": -0.12
+    },
+    {
+      "part": "choir",
+      "beat": 8,
+      "duration": 9.5,
+      "pitch": 50,
+      "level": 0.1,
+      "pan": 0.12
+    },
+    {
+      "part": "choir",
+      "beat": 8,
+      "duration": 9.5,
+      "pitch": 53,
+      "level": 0.1,
+      "pan": 0.36
+    },
+    {
+      "part": "strings",
+      "beat": 8.2,
+      "duration": 9.2,
+      "pitch": 62,
+      "level": 0.041,
+      "pan": -0.55
+    },
+    {
+      "part": "strings",
+      "beat": 8.4,
+      "duration": 9,
+      "pitch": 65,
+      "level": 0.035,
+      "pan": 0.55
+    },
+    {
+      "part": "drum",
+      "beat": 8,
+      "duration": 2,
+      "pitch": 31,
+      "level": 0.24,
+      "pan": 0
+    },
+    {
+      "part": "drum",
+      "beat": 11,
+      "duration": 1.5,
+      "pitch": 38,
+      "level": 0.095,
+      "pan": -0.25
+    },
+    {
+      "part": "drum",
+      "beat": 14,
+      "duration": 1.5,
+      "pitch": 33,
+      "level": 0.13,
+      "pan": 0.25
+    },
+    {
+      "part": "air",
+      "beat": 13,
+      "duration": 4.5,
+      "pitch": 0,
+      "level": 0.13,
+      "pan": -0.4
+    },
+    {
+      "part": "choir",
+      "beat": 16,
+      "duration": 9.5,
+      "pitch": 36,
+      "level": 0.14,
+      "pan": -0.36
+    },
+    {
+      "part": "choir",
+      "beat": 16,
+      "duration": 9.5,
+      "pitch": 43,
+      "level": 0.1,
+      "pan": -0.12
+    },
+    {
+      "part": "choir",
+      "beat": 16,
+      "duration": 9.5,
+      "pitch": 50,
+      "level": 0.1,
+      "pan": 0.12
+    },
+    {
+      "part": "choir",
+      "beat": 16,
+      "duration": 9.5,
+      "pitch": 55,
+      "level": 0.1,
+      "pan": 0.36
+    },
+    {
+      "part": "strings",
+      "beat": 16.2,
+      "duration": 9.2,
+      "pitch": 62,
+      "level": 0.041,
+      "pan": -0.55
+    },
+    {
+      "part": "strings",
+      "beat": 16.4,
+      "duration": 9,
+      "pitch": 67,
+      "level": 0.035,
+      "pan": 0.55
+    },
+    {
+      "part": "drum",
+      "beat": 16,
+      "duration": 2,
+      "pitch": 31,
+      "level": 0.24,
+      "pan": 0
+    },
+    {
+      "part": "drum",
+      "beat": 19,
+      "duration": 1.5,
+      "pitch": 38,
+      "level": 0.095,
+      "pan": -0.25
+    },
+    {
+      "part": "drum",
+      "beat": 22,
+      "duration": 1.5,
+      "pitch": 33,
+      "level": 0.13,
+      "pan": 0.25
+    },
+    {
+      "part": "air",
+      "beat": 21,
+      "duration": 4.5,
+      "pitch": 0,
+      "level": 0.13,
+      "pan": 0.4
+    },
+    {
+      "part": "choir",
+      "beat": 24,
+      "duration": 9.5,
+      "pitch": 39,
+      "level": 0.14,
+      "pan": -0.36
+    },
+    {
+      "part": "choir",
+      "beat": 24,
+      "duration": 9.5,
+      "pitch": 46,
+      "level": 0.1,
+      "pan": -0.12
+    },
+    {
+      "part": "choir",
+      "beat": 24,
+      "duration": 9.5,
+      "pitch": 50,
+      "level": 0.1,
+      "pan": 0.12
+    },
+    {
+      "part": "choir",
+      "beat": 24,
+      "duration": 9.5,
+      "pitch": 57,
+      "level": 0.1,
+      "pan": 0.36
+    },
+    {
+      "part": "strings",
+      "beat": 24.2,
+      "duration": 9.2,
+      "pitch": 62,
+      "level": 0.041,
+      "pan": -0.55
+    },
+    {
+      "part": "strings",
+      "beat": 24.4,
+      "duration": 9,
+      "pitch": 69,
+      "level": 0.035,
+      "pan": 0.55
+    },
+    {
+      "part": "drum",
+      "beat": 24,
+      "duration": 2,
+      "pitch": 31,
+      "level": 0.24,
+      "pan": 0
+    },
+    {
+      "part": "drum",
+      "beat": 27,
+      "duration": 1.5,
+      "pitch": 38,
+      "level": 0.095,
+      "pan": -0.25
+    },
+    {
+      "part": "drum",
+      "beat": 30,
+      "duration": 1.5,
+      "pitch": 33,
+      "level": 0.13,
+      "pan": 0.25
+    },
+    {
+      "part": "air",
+      "beat": 29,
+      "duration": 4.5,
+      "pitch": 0,
+      "level": 0.13,
+      "pan": -0.4
+    },
+    {
+      "part": "choir",
+      "beat": 32,
+      "duration": 9.5,
+      "pitch": 38,
+      "level": 0.14,
+      "pan": -0.36
+    },
+    {
+      "part": "choir",
+      "beat": 32,
+      "duration": 9.5,
+      "pitch": 45,
+      "level": 0.1,
+      "pan": -0.12
+    },
+    {
+      "part": "choir",
+      "beat": 32,
+      "duration": 9.5,
+      "pitch": 50,
+      "level": 0.1,
+      "pan": 0.12
+    },
+    {
+      "part": "choir",
+      "beat": 32,
+      "duration": 9.5,
+      "pitch": 53,
+      "level": 0.1,
+      "pan": 0.36
+    },
+    {
+      "part": "strings",
+      "beat": 32.2,
+      "duration": 9.2,
+      "pitch": 62,
+      "level": 0.041,
+      "pan": -0.55
+    },
+    {
+      "part": "strings",
+      "beat": 32.4,
+      "duration": 9,
+      "pitch": 65,
+      "level": 0.035,
+      "pan": 0.55
+    },
+    {
+      "part": "drum",
+      "beat": 32,
+      "duration": 2,
+      "pitch": 31,
+      "level": 0.24,
+      "pan": 0
+    },
+    {
+      "part": "drum",
+      "beat": 35,
+      "duration": 1.5,
+      "pitch": 38,
+      "level": 0.095,
+      "pan": -0.25
+    },
+    {
+      "part": "drum",
+      "beat": 38,
+      "duration": 1.5,
+      "pitch": 33,
+      "level": 0.13,
+      "pan": 0.25
+    },
+    {
+      "part": "drum",
+      "beat": 39.5,
+      "duration": 1,
+      "pitch": 41,
+      "level": 0.055,
+      "pan": -0.3
+    },
+    {
+      "part": "air",
+      "beat": 37,
+      "duration": 4.5,
+      "pitch": 0,
+      "level": 0.13,
+      "pan": 0.4
+    },
+    {
+      "part": "choir",
+      "beat": 40,
+      "duration": 9.5,
+      "pitch": 34,
+      "level": 0.14,
+      "pan": -0.36
+    },
+    {
+      "part": "choir",
+      "beat": 40,
+      "duration": 9.5,
+      "pitch": 41,
+      "level": 0.1,
+      "pan": -0.12
+    },
+    {
+      "part": "choir",
+      "beat": 40,
+      "duration": 9.5,
+      "pitch": 50,
+      "level": 0.1,
+      "pan": 0.12
+    },
+    {
+      "part": "choir",
+      "beat": 40,
+      "duration": 9.5,
+      "pitch": 53,
+      "level": 0.1,
+      "pan": 0.36
+    },
+    {
+      "part": "strings",
+      "beat": 40.2,
+      "duration": 9.2,
+      "pitch": 62,
+      "level": 0.041,
+      "pan": -0.55
+    },
+    {
+      "part": "strings",
+      "beat": 40.4,
+      "duration": 9,
+      "pitch": 65,
+      "level": 0.035,
+      "pan": 0.55
+    },
+    {
+      "part": "drum",
+      "beat": 40,
+      "duration": 2,
+      "pitch": 31,
+      "level": 0.24,
+      "pan": 0
+    },
+    {
+      "part": "drum",
+      "beat": 43,
+      "duration": 1.5,
+      "pitch": 38,
+      "level": 0.095,
+      "pan": -0.25
+    },
+    {
+      "part": "drum",
+      "beat": 46,
+      "duration": 1.5,
+      "pitch": 33,
+      "level": 0.13,
+      "pan": 0.25
+    },
+    {
+      "part": "drum",
+      "beat": 47.5,
+      "duration": 1,
+      "pitch": 41,
+      "level": 0.055,
+      "pan": -0.3
+    },
+    {
+      "part": "air",
+      "beat": 45,
+      "duration": 4.5,
+      "pitch": 0,
+      "level": 0.13,
+      "pan": -0.4
+    },
+    {
+      "part": "choir",
+      "beat": 48,
+      "duration": 9.5,
+      "pitch": 36,
+      "level": 0.14,
+      "pan": -0.36
+    },
+    {
+      "part": "choir",
+      "beat": 48,
+      "duration": 9.5,
+      "pitch": 43,
+      "level": 0.1,
+      "pan": -0.12
+    },
+    {
+      "part": "choir",
+      "beat": 48,
+      "duration": 9.5,
+      "pitch": 50,
+      "level": 0.1,
+      "pan": 0.12
+    },
+    {
+      "part": "choir",
+      "beat": 48,
+      "duration": 9.5,
+      "pitch": 55,
+      "level": 0.1,
+      "pan": 0.36
+    },
+    {
+      "part": "strings",
+      "beat": 48.2,
+      "duration": 9.2,
+      "pitch": 62,
+      "level": 0.041,
+      "pan": -0.55
+    },
+    {
+      "part": "strings",
+      "beat": 48.4,
+      "duration": 9,
+      "pitch": 67,
+      "level": 0.035,
+      "pan": 0.55
+    },
+    {
+      "part": "drum",
+      "beat": 48,
+      "duration": 2,
+      "pitch": 31,
+      "level": 0.24,
+      "pan": 0
+    },
+    {
+      "part": "drum",
+      "beat": 51,
+      "duration": 1.5,
+      "pitch": 38,
+      "level": 0.095,
+      "pan": -0.25
+    },
+    {
+      "part": "drum",
+      "beat": 54,
+      "duration": 1.5,
+      "pitch": 33,
+      "level": 0.13,
+      "pan": 0.25
+    },
+    {
+      "part": "drum",
+      "beat": 55.5,
+      "duration": 1,
+      "pitch": 41,
+      "level": 0.055,
+      "pan": -0.3
+    },
+    {
+      "part": "air",
+      "beat": 53,
+      "duration": 4.5,
+      "pitch": 0,
+      "level": 0.13,
+      "pan": 0.4
+    },
+    {
+      "part": "choir",
+      "beat": 56,
+      "duration": 9.5,
+      "pitch": 39,
+      "level": 0.14,
+      "pan": -0.36
+    },
+    {
+      "part": "choir",
+      "beat": 56,
+      "duration": 9.5,
+      "pitch": 46,
+      "level": 0.1,
+      "pan": -0.12
+    },
+    {
+      "part": "choir",
+      "beat": 56,
+      "duration": 9.5,
+      "pitch": 50,
+      "level": 0.1,
+      "pan": 0.12
+    },
+    {
+      "part": "choir",
+      "beat": 56,
+      "duration": 9.5,
+      "pitch": 57,
+      "level": 0.1,
+      "pan": 0.36
+    },
+    {
+      "part": "strings",
+      "beat": 56.2,
+      "duration": 9.2,
+      "pitch": 62,
+      "level": 0.041,
+      "pan": -0.55
+    },
+    {
+      "part": "strings",
+      "beat": 56.4,
+      "duration": 9,
+      "pitch": 69,
+      "level": 0.035,
+      "pan": 0.55
+    },
+    {
+      "part": "drum",
+      "beat": 56,
+      "duration": 2,
+      "pitch": 31,
+      "level": 0.24,
+      "pan": 0
+    },
+    {
+      "part": "drum",
+      "beat": 59,
+      "duration": 1.5,
+      "pitch": 38,
+      "level": 0.095,
+      "pan": -0.25
+    },
+    {
+      "part": "drum",
+      "beat": 62,
+      "duration": 1.5,
+      "pitch": 33,
+      "level": 0.13,
+      "pan": 0.25
+    },
+    {
+      "part": "drum",
+      "beat": 63.5,
+      "duration": 1,
+      "pitch": 41,
+      "level": 0.055,
+      "pan": -0.3
+    },
+    {
+      "part": "air",
+      "beat": 61,
+      "duration": 4.5,
+      "pitch": 0,
+      "level": 0.13,
+      "pan": -0.4
+    },
+    {
+      "part": "bell",
+      "beat": 2,
+      "duration": 6,
+      "pitch": 62,
+      "level": 0.095,
+      "pan": -0.35
+    },
+    {
+      "part": "bell",
+      "beat": 6,
+      "duration": 6,
+      "pitch": 57,
+      "level": 0.095,
+      "pan": 0.35
+    },
+    {
+      "part": "bell",
+      "beat": 11,
+      "duration": 6,
+      "pitch": 65,
+      "level": 0.095,
+      "pan": -0.35
+    },
+    {
+      "part": "bell",
+      "beat": 15,
+      "duration": 6,
+      "pitch": 62,
+      "level": 0.095,
+      "pan": 0.35
+    },
+    {
+      "part": "bell",
+      "beat": 19,
+      "duration": 6,
+      "pitch": 62,
+      "level": 0.095,
+      "pan": -0.35
+    },
+    {
+      "part": "bell",
+      "beat": 22,
+      "duration": 6,
+      "pitch": 60,
+      "level": 0.095,
+      "pan": 0.35
+    },
+    {
+      "part": "bell",
+      "beat": 27,
+      "duration": 6,
+      "pitch": 63,
+      "level": 0.095,
+      "pan": -0.35
+    },
+    {
+      "part": "bell",
+      "beat": 30,
+      "duration": 6,
+      "pitch": 57,
+      "level": 0.095,
+      "pan": 0.35
+    },
+    {
+      "part": "bell",
+      "beat": 34,
+      "duration": 6,
+      "pitch": 69,
+      "level": 0.12,
+      "pan": -0.35
+    },
+    {
+      "part": "bell",
+      "beat": 38,
+      "duration": 6,
+      "pitch": 65,
+      "level": 0.12,
+      "pan": 0.35
+    },
+    {
+      "part": "bell",
+      "beat": 42,
+      "duration": 6,
+      "pitch": 62,
+      "level": 0.12,
+      "pan": -0.35
+    },
+    {
+      "part": "bell",
+      "beat": 46,
+      "duration": 6,
+      "pitch": 57,
+      "level": 0.12,
+      "pan": 0.35
+    },
+    {
+      "part": "bell",
+      "beat": 50,
+      "duration": 6,
+      "pitch": 67,
+      "level": 0.12,
+      "pan": -0.35
+    },
+    {
+      "part": "bell",
+      "beat": 54,
+      "duration": 6,
+      "pitch": 62,
+      "level": 0.12,
+      "pan": 0.35
+    },
+    {
+      "part": "bell",
+      "beat": 58,
+      "duration": 6,
+      "pitch": 63,
+      "level": 0.12,
+      "pan": -0.35
+    },
+    {
+      "part": "bell",
+      "beat": 62,
+      "duration": 6,
+      "pitch": 57,
+      "level": 0.12,
+      "pan": 0.35
+    }
+  ],
+  "license": "Original project composition and sample-free procedural synthesis. No third-party recordings or SoundFonts."
+}
