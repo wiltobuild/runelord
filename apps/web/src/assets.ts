@@ -1,4 +1,5 @@
 import type { DemonGlowSockets } from "./DemonLordGlow";
+import { normalizeAssetUrls } from "./baseUrl";
 export type Clip = {
   duration: number;
   loop: boolean;
@@ -22,5 +23,5 @@ export async function loadAssets(): Promise<Assets> {
   const response = await fetch(`${import.meta.env.BASE_URL}game-assets/manifest.json`);
   if (!response.ok)
     throw Error("Asset manifest is missing. Run npm run import:assets.");
-  return response.json();
+  return normalizeAssetUrls(await response.json());
 }

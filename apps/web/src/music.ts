@@ -1,4 +1,5 @@
 import type { Assets } from "./assets";
+import { assetUrl } from "./baseUrl";
 export class ScorePlayer {
   private ctx: AudioContext | null = null;
   private gain: GainNode | null = null;
@@ -21,7 +22,7 @@ export class ScorePlayer {
       track = assets.music[id];
     let buffer = this.cache.get(id);
     if (!buffer) {
-      const response = await fetch(track.url);
+      const response = await fetch(assetUrl(track.url));
       if (!response.ok) throw Error("Score unavailable");
       buffer = await this.ctx.decodeAudioData(await response.arrayBuffer());
       this.cache.set(id, buffer);

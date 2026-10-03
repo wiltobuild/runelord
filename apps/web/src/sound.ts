@@ -1,3 +1,5 @@
+import { assetUrl } from "./baseUrl";
+
 type Bank = { cues: Record<string,{url:string}> };
 class EffectsPlayer {
   private ctx?:AudioContext;
@@ -14,7 +16,7 @@ class EffectsPlayer {
         this.ctx=new AudioContext();this.master=this.ctx.createGain();this.master.gain.value=this.volume*.65;
         const limiter=this.ctx.createDynamicsCompressor();limiter.threshold.value=-14;limiter.knee.value=12;limiter.ratio.value=8;limiter.attack.value=.003;limiter.release.value=.16;
         this.master.connect(limiter);limiter.connect(this.ctx.destination);
-        this.bank=fetch('/audio/sfx/r1/manifest.json').then(r=>{if(!r.ok)throw Error('SFX manifest unavailable');return r.json();});
+        this.bank=fetch(assetUrl('/audio/sfx/r1/manifest.json')).then(r=>{if(!r.ok)throw Error('SFX manifest unavailable');return r.json();});
         void this.bank.then(bank=>Promise.allSettled(Object.keys(bank.cues).map(id=>this.buffer(id)))).catch(()=>{});
       }
       if(this.ctx.state==='suspended')await this.ctx.resume();
@@ -23,7 +25,7 @@ class EffectsPlayer {
   private async buffer(id:string) {
     if(!this.cache.has(id))this.cache.set(id,(async()=>{
       const bank=await this.bank, cue=bank?.cues[id];if(!cue||!this.ctx)throw Error(`Missing sound ${id}`);
-      const r=await fetch(cue.url);if(!r.ok)throw Error(`Missing sound ${id}`);
+      const r=await fetch(assetUrl(cue.url));if(!r.ok)throw Error(`Missing sound ${id}`);
       return this.ctx.decodeAudioData(await r.arrayBuffer());
     })().catch(e=>{this.cache.delete(id);throw e;}));
     return this.cache.get(id)!;
