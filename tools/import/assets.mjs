@@ -188,24 +188,25 @@ for (const [id, variant] of [["goblin", "v01-cleaver-bruiser"], ["skirmisher", "
   if (ranged) manifest.actors[id].ranged = ranged;
   manifest.images[id] = states.idle.frames[0].src;
 }
-// Current user-authorized whole-character assets. Approval status remains unchanged.
-const root = "assets/heroes/animations/warlock/frames32-r1";
-const original = JSON.parse(fs.readFileSync(`${root}/manifest.json`, "utf8"));
-const frameIndex = JSON.parse(fs.readFileSync(`${root}/frames/index.json`, "utf8"));
+// Current user-authorized whole-character asset. The Seraph replaces the old
+// Warlock presentation only; gameplay keeps its Warlock class/content ID.
+const root = "assets/heroes/animations/abyssal-seraph/frames32-r2";
+const original = JSON.parse(fs.readFileSync(`${root}/animation.json`, "utf8"));
+const frameIndex = original.frames;
 const sourceEvidence = (file) => {
   const sha256 = hash(file), decision = ledger.decisions[sha256];
   if (decision?.status === "Needs revision") throw Error(`Asset needs revision: ${file}`);
   return { source: path.resolve(file), sha256, status: decision?.status ?? "Pending approval", evidenceId: decision?.evidenceId ?? null };
 };
 manifest.integration = {
-  authorization: "User requested the lightweight 32-frame Warlock and animated existing summons; pending art authorized for integration, not relabeled approved.",
-  hero: { revision: original.revision, manifest: sourceEvidence(`${root}/manifest.json`), index: sourceEvidence(`${root}/frames/index.json`), master: sourceEvidence(original.approved_source), frameCount: frameIndex.length, stateCount: Object.keys(original.states).length },
+  authorization: "User explicitly authorized the approved-for-integration Abyssal Seraph 32-frame package to replace the Warlock visual model. Ledger status is preserved and not relabeled approved.",
+  hero: { revision: original.revision, manifest: sourceEvidence(`${root}/manifest.json`), animation: sourceEvidence(`${root}/animation.json`), master: sourceEvidence(`${root}/source/master.png`), frameCount: frameIndex.length, stateCount: Object.keys(original.states).length, facing: "right" },
   summons: {},
 };
 const heroFiles = [];
 for (const f of frameIndex) {
   if (hash(`${root}/${f.file}`) !== f.sha256) throw Error(`Hero frame hash mismatch: ${f.file}`);
-  heroFiles.push(await pack(`${root}/${f.file}`, `warlock/frames32-r1/${f.frame}.webp`, 512));
+  heroFiles.push(await pack(`${root}/${f.file}`, `warlock/abyssal-seraph-r2/${heroFiles.length}.webp`, original.frame_canvas[0], true));
 }
 function normalizeClip(clip, files, hero = false) {
   let time = 0;
@@ -216,8 +217,8 @@ function normalizeClip(clip, files, hero = false) {
     time += durations[i];
     return frame;
   });
-  const events = (clip.events || []).map((e) => ({ name: e.name, time_ms: e.time_ms ?? e.at_ms }));
-  return { frames, duration: time, loop: clip.loop, events, impact: events.find((e) => ["impact", "release", "impact_or_release"].includes(e.name))?.time_ms ?? null, ...(hero ? { size: original.geometry.canvas, anchor: original.geometry.root_anchor } : {}) };
+  const events = (clip.events || []).map((e) => ({ name: e.name, time_ms: e.time_ms ?? e.timeMs ?? e.at_ms, ...(e.attachment ? { attachment: e.attachment } : {}) }));
+  return { frames, duration: time, loop: clip.loop, terminalHold: clip.terminalHold, events, impact: events.find((e) => ["impact", "release", "impact_or_release", "cast-release"].includes(e.name))?.time_ms ?? null, ...(hero ? { size: original.frame_canvas, anchor: original.anchor } : {}) };
 }
 for (const [state, clip] of Object.entries(original.states)) {
   const runtimeClip = normalizeClip(clip, heroFiles, true);
@@ -226,18 +227,18 @@ for (const [state, clip] of Object.entries(original.states)) {
     runtimeClip.frames = runtimeClip.frames.map((frame) => ({ ...frame, time: frame.time * 1.2 }));
     runtimeClip.events = runtimeClip.events.map((event) => ({ ...event, time_ms: event.time_ms * 1.2 }));
   }
-  if (state === "attack") runtimeClip.releaseOrigin = [430, 184];
-  if (state === "cast") runtimeClip.releaseOrigin = [368, 188];
+  const attachment = runtimeClip.events.find((event) => event.attachment)?.attachment;
+  if (attachment) runtimeClip.releaseOrigin = [attachment.x, attachment.y];
   manifest.animations[state] = runtimeClip;
 }
 manifest.integration.hero.idleDurationMultiplier = 1.2;
-manifest.integration.hero.releaseOrigins = { coordinateSystem: "Source 512px frame coordinates; hand-measured palm/finger centers by integration owner", attack: { frame: "frames/12.png", timeMs: 270, xy: [430, 184] }, cast: { frame: "frames/22.png", timeMs: 260, xy: [368, 188] } };
+manifest.integration.hero.releaseOrigins = { coordinateSystem: "Native 768x896 Seraph frame coordinates; authored event attachment", cast: { frame: "frames/cast-03.png", timeMs: 450, xy: [471, 333] } };
 manifest.integration.summonPresentation = { hudPixelsPerWorldUnit: 200, overrides: { hellhound: { hudPixelsPerWorldUnit: 225.8064515, visibleHeightPx: 140 } }, visibleHeightPx: { imp: 90, hellhound: 140, "pit-brute": 230 }, reason: "User requested Imp one third larger and other summons at enemy scale, then reduced Hellhound by 30% from 200px to 140px. Hellhound presentation overrides relative source proportions; every actor retains one uniform scale across its complete animation.", root: "Source root anchored to model container bottom; same transform across all frames." };
 // Existing director cues map explicitly onto the six authored states; no invented poses.
 const aliases = { idle_breathe: "idle", firebolt: "attack", summon_demon: "cast", blood_pact: "cast", guard_enter: "cast", guard_impact: "hit", hit_light: "hit", victory: "idle", empowered_idle: "idle", empowered_attack: "attack" };
 for (const [alias, state] of Object.entries(aliases)) manifest.animations[alias] = { ...manifest.animations[state], sourceState: state };
 manifest.integration.hero.aliases = aliases;
-manifest.integration.hero.sheets = [...new Set(frameIndex.map((f) => f.source_sheet))].map((file) => sourceEvidence(`${root}/${file}`));
+manifest.integration.hero.sheets = [...new Set(frameIndex.map((f) => f.file))].map((file) => sourceEvidence(`${root}/${file}`));
 manifest.images.warlock = heroFiles[0];
 for (const [kind, revision, dir] of [
   ["imp", "base-r1", "assets/characters/warlock-summons/animations/base-r1/warlock-imp"],

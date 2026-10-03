@@ -1,0 +1,749 @@
+{
+  "reviewer": "opening_qa independent reviewer",
+  "reviewDate": "2026-10-03",
+  "package": "assets/heroes/animations/abyssal-seraph/frames32-r2",
+  "hashes": {
+    "manifest.json": "982b72e54ead3b52828c59465252d7ae21ca4242a95cf697500183ba96cd2dbf",
+    "animation.json": "1a24dc80729ec3718cefe4eae9eab4ee8e14a4a2505b55e6391aeec22f62f467",
+    "motion-proof.mp4": "e7e76c8960868b404205ff5ddfc0c4cd1df9e795a24364ce3e5ed2d112395762"
+  },
+  "method": "All 32 frames visually inspected on light/dark large sheets and 96px sheets. Independent decoded pixel bounds/hash checks. Static pose transitions; browser playback not run.",
+  "frames": [
+    {
+      "state": "idle",
+      "file": "frames/idle-00.png",
+      "sha256": "1db9d6f36b8847679223c2f61539fde281a43f36d153ef8d547953b3e29a7e29",
+      "hashMatchesManifest": true,
+      "canvas": [
+        768,
+        896
+      ],
+      "alphaBounds": [
+        53,
+        176,
+        511,
+        817
+      ],
+      "outerTwoPixelAlphaCount": 0,
+      "identity": "pass: red hood/horns, black-red wings, gold brooch and layered robes retained",
+      "orientation": "pass: head/body roughly screen right",
+      "clipping": "pass: complete wings, robe and hands; no visible crop seam",
+      "light96": "pass: silhouette readable; fine facial detail necessarily reduced",
+      "dark96": "pass: red and gold maintain separation",
+      "visualEvidence": "evidence/idle-large.png and idle-96px.png"
+    },
+    {
+      "state": "idle",
+      "file": "frames/idle-01.png",
+      "sha256": "46f9698ba06273b5a66b04f2fd54eadc73130b4fa53795986ebb6f2615f784f4",
+      "hashMatchesManifest": true,
+      "canvas": [
+        768,
+        896
+      ],
+      "alphaBounds": [
+        50,
+        176,
+        508,
+        817
+      ],
+      "outerTwoPixelAlphaCount": 0,
+      "identity": "pass: red hood/horns, black-red wings, gold brooch and layered robes retained",
+      "orientation": "pass: head/body roughly screen right",
+      "clipping": "pass: complete wings, robe and hands; no visible crop seam",
+      "light96": "pass: silhouette readable; fine facial detail necessarily reduced",
+      "dark96": "pass: red and gold maintain separation",
+      "visualEvidence": "evidence/idle-large.png and idle-96px.png"
+    },
+    {
+      "state": "idle",
+      "file": "frames/idle-02.png",
+      "sha256": "fe24fc7c3b393e0d5f7326d178f60b524d8d5e6062cba4d670ac2c003481f9d9",
+      "hashMatchesManifest": true,
+      "canvas": [
+        768,
+        896
+      ],
+      "alphaBounds": [
+        50,
+        185,
+        518,
+        817
+      ],
+      "outerTwoPixelAlphaCount": 0,
+      "identity": "pass: red hood/horns, black-red wings, gold brooch and layered robes retained",
+      "orientation": "pass: head/body roughly screen right",
+      "clipping": "pass: complete wings, robe and hands; no visible crop seam",
+      "light96": "pass: silhouette readable; fine facial detail necessarily reduced",
+      "dark96": "pass: red and gold maintain separation",
+      "visualEvidence": "evidence/idle-large.png and idle-96px.png"
+    },
+    {
+      "state": "idle",
+      "file": "frames/idle-03.png",
+      "sha256": "6d89662bd9a2581124c444b73397d5e1e31923c3a4b79cdcabf6c06fcb48702f",
+      "hashMatchesManifest": true,
+      "canvas": [
+        768,
+        896
+      ],
+      "alphaBounds": [
+        49,
+        187,
+        512,
+        816
+      ],
+      "outerTwoPixelAlphaCount": 0,
+      "identity": "pass: red hood/horns, black-red wings, gold brooch and layered robes retained",
+      "orientation": "pass: head/body roughly screen right",
+      "clipping": "pass: complete wings, robe and hands; no visible crop seam",
+      "light96": "pass: silhouette readable; fine facial detail necessarily reduced",
+      "dark96": "pass: red and gold maintain separation",
+      "visualEvidence": "evidence/idle-large.png and idle-96px.png"
+    },
+    {
+      "state": "hit",
+      "file": "frames/hit-00.png",
+      "sha256": "2430f476eba502dbac75f6c1910cf7f689cae84ddc7419c0d6d57dd2ab165f5d",
+      "hashMatchesManifest": true,
+      "canvas": [
+        768,
+        896
+      ],
+      "alphaBounds": [
+        66,
+        179,
+        510,
+        817
+      ],
+      "outerTwoPixelAlphaCount": 0,
+      "identity": "pass: red hood/horns, black-red wings, gold brooch and layered robes retained",
+      "orientation": "pass: head/body roughly screen right",
+      "clipping": "pass: complete wings, robe and hands; no visible crop seam",
+      "light96": "pass: silhouette readable; fine facial detail necessarily reduced",
+      "dark96": "pass: red and gold maintain separation",
+      "visualEvidence": "evidence/hit-large.png and hit-96px.png"
+    },
+    {
+      "state": "hit",
+      "file": "frames/hit-01.png",
+      "sha256": "d282acb304d51484cfae03bb48b55557f58c5cf92cd34d064077551a876fa806",
+      "hashMatchesManifest": true,
+      "canvas": [
+        768,
+        896
+      ],
+      "alphaBounds": [
+        67,
+        180,
+        513,
+        817
+      ],
+      "outerTwoPixelAlphaCount": 0,
+      "identity": "pass: red hood/horns, black-red wings, gold brooch and layered robes retained",
+      "orientation": "pass: head/body roughly screen right",
+      "clipping": "pass: complete wings, robe and hands; no visible crop seam",
+      "light96": "pass: silhouette readable; fine facial detail necessarily reduced",
+      "dark96": "pass: red and gold maintain separation",
+      "visualEvidence": "evidence/hit-large.png and hit-96px.png"
+    },
+    {
+      "state": "hit",
+      "file": "frames/hit-02.png",
+      "sha256": "57a7888e03d2da1c076e63ad66e8c8b8aec2e329c003fc8d1a683659313189f1",
+      "hashMatchesManifest": true,
+      "canvas": [
+        768,
+        896
+      ],
+      "alphaBounds": [
+        67,
+        185,
+        519,
+        817
+      ],
+      "outerTwoPixelAlphaCount": 0,
+      "identity": "pass: red hood/horns, black-red wings, gold brooch and layered robes retained",
+      "orientation": "pass: head/body roughly screen right",
+      "clipping": "pass: complete wings, robe and hands; no visible crop seam",
+      "light96": "pass: silhouette readable; fine facial detail necessarily reduced",
+      "dark96": "pass: red and gold maintain separation",
+      "visualEvidence": "evidence/hit-large.png and hit-96px.png"
+    },
+    {
+      "state": "hit",
+      "file": "frames/hit-03.png",
+      "sha256": "eafcbe3ac293524dce9d6d1dd026e57608a83ef511feffe1b471aaa2e9ea3b63",
+      "hashMatchesManifest": true,
+      "canvas": [
+        768,
+        896
+      ],
+      "alphaBounds": [
+        64,
+        184,
+        514,
+        817
+      ],
+      "outerTwoPixelAlphaCount": 0,
+      "identity": "pass: red hood/horns, black-red wings, gold brooch and layered robes retained",
+      "orientation": "pass: head/body roughly screen right",
+      "clipping": "pass: complete wings, robe and hands; no visible crop seam",
+      "light96": "pass: silhouette readable; fine facial detail necessarily reduced",
+      "dark96": "pass: red and gold maintain separation",
+      "visualEvidence": "evidence/hit-large.png and hit-96px.png"
+    },
+    {
+      "state": "attack",
+      "file": "frames/attack-00.png",
+      "sha256": "3b7aa56bb4062a6048fa46daf83c56266d86b61183576e9c9352c5a26197682a",
+      "hashMatchesManifest": true,
+      "canvas": [
+        768,
+        896
+      ],
+      "alphaBounds": [
+        72,
+        170,
+        496,
+        817
+      ],
+      "outerTwoPixelAlphaCount": 0,
+      "identity": "pass: red hood/horns, black-red wings, gold brooch and layered robes retained",
+      "orientation": "pass: head/body roughly screen right",
+      "clipping": "pass: complete wings, robe and hands; no visible crop seam",
+      "light96": "pass: silhouette readable; fine facial detail necessarily reduced",
+      "dark96": "pass: red and gold maintain separation",
+      "visualEvidence": "evidence/attack-large.png and attack-96px.png"
+    },
+    {
+      "state": "attack",
+      "file": "frames/attack-01.png",
+      "sha256": "93114fb7ffc62d5ea2191420300f080d84151d806fe990c4019dce9c2ba3512f",
+      "hashMatchesManifest": true,
+      "canvas": [
+        768,
+        896
+      ],
+      "alphaBounds": [
+        73,
+        173,
+        505,
+        817
+      ],
+      "outerTwoPixelAlphaCount": 0,
+      "identity": "pass: red hood/horns, black-red wings, gold brooch and layered robes retained",
+      "orientation": "pass: head/body roughly screen right",
+      "clipping": "pass: complete wings, robe and hands; no visible crop seam",
+      "light96": "pass: silhouette readable; fine facial detail necessarily reduced",
+      "dark96": "pass: red and gold maintain separation",
+      "visualEvidence": "evidence/attack-large.png and attack-96px.png"
+    },
+    {
+      "state": "attack",
+      "file": "frames/attack-02.png",
+      "sha256": "928384873e5ffd7f324cbe93507e10a0008530b6c83e2167e55426fdc883d403",
+      "hashMatchesManifest": true,
+      "canvas": [
+        768,
+        896
+      ],
+      "alphaBounds": [
+        82,
+        195,
+        560,
+        817
+      ],
+      "outerTwoPixelAlphaCount": 0,
+      "identity": "pass: red hood/horns, black-red wings, gold brooch and layered robes retained",
+      "orientation": "pass: head/body roughly screen right",
+      "clipping": "pass: complete wings, robe and hands; no visible crop seam",
+      "light96": "pass: silhouette readable; fine facial detail necessarily reduced",
+      "dark96": "pass: red and gold maintain separation",
+      "visualEvidence": "evidence/attack-large.png and attack-96px.png"
+    },
+    {
+      "state": "attack",
+      "file": "frames/attack-03.png",
+      "sha256": "3e700bfdd2648b997fa4fec9141bfc65fb302be5b1d694acdba2654b149e3de9",
+      "hashMatchesManifest": true,
+      "canvas": [
+        768,
+        896
+      ],
+      "alphaBounds": [
+        20,
+        200,
+        494,
+        817
+      ],
+      "outerTwoPixelAlphaCount": 0,
+      "identity": "pass: red hood/horns, black-red wings, gold brooch and layered robes retained",
+      "orientation": "pass: head/body roughly screen right",
+      "clipping": "pass: complete wings, robe and hands; no visible crop seam",
+      "light96": "pass: silhouette readable; fine facial detail necessarily reduced",
+      "dark96": "pass: red and gold maintain separation",
+      "visualEvidence": "evidence/attack-large.png and attack-96px.png"
+    },
+    {
+      "state": "attack",
+      "file": "frames/attack-04.png",
+      "sha256": "63d5c12f42b4730c8655b5f17613cb00f97fab83d24d55807dd36af564986276",
+      "hashMatchesManifest": true,
+      "canvas": [
+        768,
+        896
+      ],
+      "alphaBounds": [
+        62,
+        176,
+        551,
+        817
+      ],
+      "outerTwoPixelAlphaCount": 0,
+      "identity": "pass: red hood/horns, black-red wings, gold brooch and layered robes retained",
+      "orientation": "pass: head/body roughly screen right",
+      "clipping": "pass: complete wings, robe and hands; no visible crop seam",
+      "light96": "pass: silhouette readable; fine facial detail necessarily reduced",
+      "dark96": "pass: red and gold maintain separation",
+      "visualEvidence": "evidence/attack-large.png and attack-96px.png"
+    },
+    {
+      "state": "attack",
+      "file": "frames/attack-05.png",
+      "sha256": "541ab96936a18b5ef21b415d715ea599dae558ce15a9bd2e8a245374a7d2e78b",
+      "hashMatchesManifest": true,
+      "canvas": [
+        768,
+        896
+      ],
+      "alphaBounds": [
+        65,
+        175,
+        507,
+        817
+      ],
+      "outerTwoPixelAlphaCount": 0,
+      "identity": "pass: red hood/horns, black-red wings, gold brooch and layered robes retained",
+      "orientation": "pass: head/body roughly screen right",
+      "clipping": "pass: complete wings, robe and hands; no visible crop seam",
+      "light96": "pass: silhouette readable; fine facial detail necessarily reduced",
+      "dark96": "pass: red and gold maintain separation",
+      "visualEvidence": "evidence/attack-large.png and attack-96px.png"
+    },
+    {
+      "state": "attack",
+      "file": "frames/attack-06.png",
+      "sha256": "2f63684bfe6637ef39de260fd49ad8b4f2e91b77cdcc6dd28381ed87b1fa8239",
+      "hashMatchesManifest": true,
+      "canvas": [
+        768,
+        896
+      ],
+      "alphaBounds": [
+        61,
+        183,
+        497,
+        817
+      ],
+      "outerTwoPixelAlphaCount": 0,
+      "identity": "pass: red hood/horns, black-red wings, gold brooch and layered robes retained",
+      "orientation": "pass: head/body roughly screen right",
+      "clipping": "pass: complete wings, robe and hands; no visible crop seam",
+      "light96": "pass: silhouette readable; fine facial detail necessarily reduced",
+      "dark96": "pass: red and gold maintain separation",
+      "visualEvidence": "evidence/attack-large.png and attack-96px.png"
+    },
+    {
+      "state": "attack",
+      "file": "frames/attack-07.png",
+      "sha256": "a9499145a86bd00f92a99f37ac31b72d1cc287d22d3b1b21ba9133f625585edf",
+      "hashMatchesManifest": true,
+      "canvas": [
+        768,
+        896
+      ],
+      "alphaBounds": [
+        42,
+        184,
+        481,
+        817
+      ],
+      "outerTwoPixelAlphaCount": 0,
+      "identity": "pass: red hood/horns, black-red wings, gold brooch and layered robes retained",
+      "orientation": "pass: head/body roughly screen right",
+      "clipping": "pass: complete wings, robe and hands; no visible crop seam",
+      "light96": "pass: silhouette readable; fine facial detail necessarily reduced",
+      "dark96": "pass: red and gold maintain separation",
+      "visualEvidence": "evidence/attack-large.png and attack-96px.png"
+    },
+    {
+      "state": "wounded",
+      "file": "frames/wounded-00.png",
+      "sha256": "53f31dc665429890da42c7044845c973107af348bffc0111f466ca9a81234036",
+      "hashMatchesManifest": true,
+      "canvas": [
+        768,
+        896
+      ],
+      "alphaBounds": [
+        103,
+        175,
+        504,
+        816
+      ],
+      "outerTwoPixelAlphaCount": 0,
+      "identity": "pass: red hood/horns, black-red wings, gold brooch and layered robes retained",
+      "orientation": "pass: head/body roughly screen right",
+      "clipping": "pass: complete wings, robe and hands; no visible crop seam",
+      "light96": "pass: silhouette readable; fine facial detail necessarily reduced",
+      "dark96": "pass: red and gold maintain separation",
+      "visualEvidence": "evidence/wounded-large.png and wounded-96px.png"
+    },
+    {
+      "state": "wounded",
+      "file": "frames/wounded-01.png",
+      "sha256": "510e25a9e6afa73519a942f74117cfc6068a667d60269ab8089dc1d21f3fde51",
+      "hashMatchesManifest": true,
+      "canvas": [
+        768,
+        896
+      ],
+      "alphaBounds": [
+        99,
+        175,
+        502,
+        816
+      ],
+      "outerTwoPixelAlphaCount": 0,
+      "identity": "pass: red hood/horns, black-red wings, gold brooch and layered robes retained",
+      "orientation": "pass: head/body roughly screen right",
+      "clipping": "pass: complete wings, robe and hands; no visible crop seam",
+      "light96": "pass: silhouette readable; fine facial detail necessarily reduced",
+      "dark96": "pass: red and gold maintain separation",
+      "visualEvidence": "evidence/wounded-large.png and wounded-96px.png"
+    },
+    {
+      "state": "wounded",
+      "file": "frames/wounded-02.png",
+      "sha256": "1002dfc6e12b26bf54242606d6c94d4d54473ff40ccc62919fd20382a49dc74d",
+      "hashMatchesManifest": true,
+      "canvas": [
+        768,
+        896
+      ],
+      "alphaBounds": [
+        101,
+        181,
+        505,
+        816
+      ],
+      "outerTwoPixelAlphaCount": 0,
+      "identity": "pass: red hood/horns, black-red wings, gold brooch and layered robes retained",
+      "orientation": "pass: head/body roughly screen right",
+      "clipping": "pass: complete wings, robe and hands; no visible crop seam",
+      "light96": "pass: silhouette readable; fine facial detail necessarily reduced",
+      "dark96": "pass: red and gold maintain separation",
+      "visualEvidence": "evidence/wounded-large.png and wounded-96px.png"
+    },
+    {
+      "state": "wounded",
+      "file": "frames/wounded-03.png",
+      "sha256": "5c461f9ee3cef8e0e5b45846f8800adc26fc5a2b2248ce494b9ee5bfb9ce9cc9",
+      "hashMatchesManifest": true,
+      "canvas": [
+        768,
+        896
+      ],
+      "alphaBounds": [
+        98,
+        181,
+        502,
+        817
+      ],
+      "outerTwoPixelAlphaCount": 0,
+      "identity": "pass: red hood/horns, black-red wings, gold brooch and layered robes retained",
+      "orientation": "pass: head/body roughly screen right",
+      "clipping": "pass: complete wings, robe and hands; no visible crop seam",
+      "light96": "pass: silhouette readable; fine facial detail necessarily reduced",
+      "dark96": "pass: red and gold maintain separation",
+      "visualEvidence": "evidence/wounded-large.png and wounded-96px.png"
+    },
+    {
+      "state": "cast",
+      "file": "frames/cast-00.png",
+      "sha256": "3cd48257a2e610bfd59fbdbfd30f365ccc54731ba6cd2478ea4c5958e6dbcb30",
+      "hashMatchesManifest": true,
+      "canvas": [
+        768,
+        896
+      ],
+      "alphaBounds": [
+        53,
+        178,
+        502,
+        817
+      ],
+      "outerTwoPixelAlphaCount": 0,
+      "identity": "pass: red hood/horns, black-red wings, gold brooch and layered robes retained",
+      "orientation": "pass: head/body roughly screen right",
+      "clipping": "pass: complete wings, robe and hands; no visible crop seam",
+      "light96": "pass: silhouette readable; fine facial detail necessarily reduced",
+      "dark96": "pass: red and gold maintain separation",
+      "visualEvidence": "evidence/cast-large.png and cast-96px.png"
+    },
+    {
+      "state": "cast",
+      "file": "frames/cast-01.png",
+      "sha256": "7214f2d680ab22a331382b89a06a4ebee89927c1fb202249449cd8d833965f3d",
+      "hashMatchesManifest": true,
+      "canvas": [
+        768,
+        896
+      ],
+      "alphaBounds": [
+        48,
+        180,
+        497,
+        817
+      ],
+      "outerTwoPixelAlphaCount": 0,
+      "identity": "pass: red hood/horns, black-red wings, gold brooch and layered robes retained",
+      "orientation": "pass: head/body roughly screen right",
+      "clipping": "pass: complete wings, robe and hands; no visible crop seam",
+      "light96": "pass: silhouette readable; fine facial detail necessarily reduced",
+      "dark96": "pass: red and gold maintain separation",
+      "visualEvidence": "evidence/cast-large.png and cast-96px.png"
+    },
+    {
+      "state": "cast",
+      "file": "frames/cast-02.png",
+      "sha256": "6bb91cec1bb5de3f0dd548e9da4f00b4ff9086a25062b42ccab2574d13ef6095",
+      "hashMatchesManifest": true,
+      "canvas": [
+        768,
+        896
+      ],
+      "alphaBounds": [
+        48,
+        176,
+        521,
+        817
+      ],
+      "outerTwoPixelAlphaCount": 0,
+      "identity": "pass: red hood/horns, black-red wings, gold brooch and layered robes retained",
+      "orientation": "pass: head/body roughly screen right",
+      "clipping": "pass: complete wings, robe and hands; no visible crop seam",
+      "light96": "pass: silhouette readable; fine facial detail necessarily reduced",
+      "dark96": "pass: red and gold maintain separation",
+      "visualEvidence": "evidence/cast-large.png and cast-96px.png"
+    },
+    {
+      "state": "cast",
+      "file": "frames/cast-03.png",
+      "sha256": "e5903eb235194f23f31919362342baab7e47cd53dafe40ac20e618387e814b18",
+      "hashMatchesManifest": true,
+      "canvas": [
+        768,
+        896
+      ],
+      "alphaBounds": [
+        48,
+        178,
+        520,
+        818
+      ],
+      "outerTwoPixelAlphaCount": 0,
+      "identity": "pass: red hood/horns, black-red wings, gold brooch and layered robes retained",
+      "orientation": "pass: head/body roughly screen right",
+      "clipping": "pass: complete wings, robe and hands; no visible crop seam",
+      "light96": "pass: silhouette readable; fine facial detail necessarily reduced",
+      "dark96": "pass: red and gold maintain separation",
+      "visualEvidence": "evidence/cast-large.png and cast-96px.png"
+    },
+    {
+      "state": "cast",
+      "file": "frames/cast-04.png",
+      "sha256": "5c913693b97c7b0650b64bc95424e32b320c0e1f7591bad97d4b41bda7896712",
+      "hashMatchesManifest": true,
+      "canvas": [
+        768,
+        896
+      ],
+      "alphaBounds": [
+        103,
+        175,
+        559,
+        817
+      ],
+      "outerTwoPixelAlphaCount": 0,
+      "identity": "pass: red hood/horns, black-red wings, gold brooch and layered robes retained",
+      "orientation": "pass: head/body roughly screen right",
+      "clipping": "pass: complete wings, robe and hands; no visible crop seam",
+      "light96": "pass: silhouette readable; fine facial detail necessarily reduced",
+      "dark96": "pass: red and gold maintain separation",
+      "visualEvidence": "evidence/cast-large.png and cast-96px.png"
+    },
+    {
+      "state": "cast",
+      "file": "frames/cast-05.png",
+      "sha256": "bc360a7c8b66eedb07a2c043ed879cf8c5a88e7f000943d725b999ffb4c77bdb",
+      "hashMatchesManifest": true,
+      "canvas": [
+        768,
+        896
+      ],
+      "alphaBounds": [
+        105,
+        175,
+        531,
+        817
+      ],
+      "outerTwoPixelAlphaCount": 0,
+      "identity": "pass: red hood/horns, black-red wings, gold brooch and layered robes retained",
+      "orientation": "pass: head/body roughly screen right",
+      "clipping": "pass: complete wings, robe and hands; no visible crop seam",
+      "light96": "pass: silhouette readable; fine facial detail necessarily reduced",
+      "dark96": "pass: red and gold maintain separation",
+      "visualEvidence": "evidence/cast-large.png and cast-96px.png"
+    },
+    {
+      "state": "cast",
+      "file": "frames/cast-06.png",
+      "sha256": "cfcc462eb6ad0e33006305b660e559e76102fb25c1a5572ef840eb4802811c39",
+      "hashMatchesManifest": true,
+      "canvas": [
+        768,
+        896
+      ],
+      "alphaBounds": [
+        98,
+        178,
+        515,
+        818
+      ],
+      "outerTwoPixelAlphaCount": 0,
+      "identity": "pass: red hood/horns, black-red wings, gold brooch and layered robes retained",
+      "orientation": "pass: head/body roughly screen right",
+      "clipping": "pass: complete wings, robe and hands; no visible crop seam",
+      "light96": "pass: silhouette readable; fine facial detail necessarily reduced",
+      "dark96": "pass: red and gold maintain separation",
+      "visualEvidence": "evidence/cast-large.png and cast-96px.png"
+    },
+    {
+      "state": "cast",
+      "file": "frames/cast-07.png",
+      "sha256": "73d383cc278bb3717359d0a53b18079ff3b32d1e003199d548d6b7b8c60fb286",
+      "hashMatchesManifest": true,
+      "canvas": [
+        768,
+        896
+      ],
+      "alphaBounds": [
+        92,
+        175,
+        516,
+        817
+      ],
+      "outerTwoPixelAlphaCount": 0,
+      "identity": "pass: red hood/horns, black-red wings, gold brooch and layered robes retained",
+      "orientation": "pass: head/body roughly screen right",
+      "clipping": "pass: complete wings, robe and hands; no visible crop seam",
+      "light96": "pass: silhouette readable; fine facial detail necessarily reduced",
+      "dark96": "pass: red and gold maintain separation",
+      "visualEvidence": "evidence/cast-large.png and cast-96px.png"
+    },
+    {
+      "state": "die",
+      "file": "frames/die-00.png",
+      "sha256": "cf7275e0d2701d820eb2aceb80c94164237796121c6c908c8c8c915db0e0759f",
+      "hashMatchesManifest": true,
+      "canvas": [
+        768,
+        896
+      ],
+      "alphaBounds": [
+        120,
+        161,
+        529,
+        816
+      ],
+      "outerTwoPixelAlphaCount": 0,
+      "identity": "pass: red hood/horns, black-red wings, gold brooch and layered robes retained",
+      "orientation": "pass: rightward head during collapse; final downturned head",
+      "clipping": "pass: complete wings, robe and hands; no visible crop seam",
+      "light96": "pass: silhouette readable; fine facial detail necessarily reduced",
+      "dark96": "pass: red and gold maintain separation",
+      "visualEvidence": "evidence/die-large.png and die-96px.png"
+    },
+    {
+      "state": "die",
+      "file": "frames/die-01.png",
+      "sha256": "8ee52cc22ce95a0d358376cd2932477da2e63271e29dbb6e534f6bc82833b027",
+      "hashMatchesManifest": true,
+      "canvas": [
+        768,
+        896
+      ],
+      "alphaBounds": [
+        90,
+        281,
+        549,
+        816
+      ],
+      "outerTwoPixelAlphaCount": 0,
+      "identity": "pass: red hood/horns, black-red wings, gold brooch and layered robes retained",
+      "orientation": "pass: rightward head during collapse; final downturned head",
+      "clipping": "pass: complete wings, robe and hands; no visible crop seam",
+      "light96": "pass: silhouette readable; fine facial detail necessarily reduced",
+      "dark96": "pass: red and gold maintain separation",
+      "visualEvidence": "evidence/die-large.png and die-96px.png"
+    },
+    {
+      "state": "die",
+      "file": "frames/die-02.png",
+      "sha256": "7476eb0bbcadba80ba343ae8e82f12ad3f520224b7d786cc95ba2ec0f340b798",
+      "hashMatchesManifest": true,
+      "canvas": [
+        768,
+        896
+      ],
+      "alphaBounds": [
+        107,
+        351,
+        568,
+        816
+      ],
+      "outerTwoPixelAlphaCount": 0,
+      "identity": "pass: red hood/horns, black-red wings, gold brooch and layered robes retained",
+      "orientation": "pass: rightward head during collapse; final downturned head",
+      "clipping": "pass: complete wings, robe and hands; no visible crop seam",
+      "light96": "pass: silhouette readable; fine facial detail necessarily reduced",
+      "dark96": "pass: red and gold maintain separation",
+      "visualEvidence": "evidence/die-large.png and die-96px.png"
+    },
+    {
+      "state": "die",
+      "file": "frames/die-03.png",
+      "sha256": "33ebd7bc5a4b8c173c786162f4e025ed1e89d0cb82a1a43cb35ba7b557d2cd53",
+      "hashMatchesManifest": true,
+      "canvas": [
+        768,
+        896
+      ],
+      "alphaBounds": [
+        91,
+        455,
+        570,
+        816
+      ],
+      "outerTwoPixelAlphaCount": 0,
+      "identity": "pass: red hood/horns, black-red wings, gold brooch and layered robes retained",
+      "orientation": "pass: rightward head during collapse; final downturned head",
+      "clipping": "pass: complete wings, robe and hands; no visible crop seam",
+      "light96": "pass: silhouette readable; fine facial detail necessarily reduced",
+      "dark96": "pass: red and gold maintain separation",
+      "visualEvidence": "evidence/die-large.png and die-96px.png"
+    }
+  ]
+}

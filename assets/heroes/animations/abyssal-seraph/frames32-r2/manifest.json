@@ -1,0 +1,1343 @@
+{
+  "schema": 1,
+  "id": "abyssal-seraph-hero",
+  "revision": "frames32-r2",
+  "method": "32 authored whole-character frames; technical translation only",
+  "facing": "right",
+  "canvas": {
+    "width": 768,
+    "height": 896
+  },
+  "root": {
+    "x": 384,
+    "y": 816
+  },
+  "scale": 1,
+  "states": {
+    "idle": {
+      "loop": true,
+      "terminalHold": false,
+      "frameDurationMs": 350,
+      "durationMs": 1400,
+      "frames": [
+        {
+          "index": 0,
+          "file": "frames/idle-00.png",
+          "source": "idle.png",
+          "cell": 0,
+          "sourceRect": {
+            "left": 0,
+            "top": 0,
+            "width": 512,
+            "height": 768
+          },
+          "alphaBounds": {
+            "left": 36,
+            "top": 116,
+            "right": 494,
+            "bottom": 757
+          },
+          "edgePixels": {
+            "left": 0,
+            "right": 0,
+            "top": 0,
+            "bottom": 0
+          },
+          "sourceRoot": [
+            367,
+            756
+          ],
+          "translation": [
+            17,
+            60
+          ],
+          "scale": 1,
+          "sha256": "1db9d6f36b8847679223c2f61539fde281a43f36d153ef8d547953b3e29a7e29"
+        },
+        {
+          "index": 1,
+          "file": "frames/idle-01.png",
+          "source": "idle.png",
+          "cell": 1,
+          "sourceRect": {
+            "left": 512,
+            "top": 0,
+            "width": 512,
+            "height": 768
+          },
+          "alphaBounds": {
+            "left": 27,
+            "top": 116,
+            "right": 485,
+            "bottom": 757
+          },
+          "edgePixels": {
+            "left": 0,
+            "right": 0,
+            "top": 0,
+            "bottom": 0
+          },
+          "sourceRoot": [
+            361,
+            756
+          ],
+          "translation": [
+            23,
+            60
+          ],
+          "scale": 1,
+          "sha256": "46f9698ba06273b5a66b04f2fd54eadc73130b4fa53795986ebb6f2615f784f4"
+        },
+        {
+          "index": 2,
+          "file": "frames/idle-02.png",
+          "source": "idle.png",
+          "cell": 2,
+          "sourceRect": {
+            "left": 0,
+            "top": 768,
+            "width": 512,
+            "height": 768
+          },
+          "alphaBounds": {
+            "left": 33,
+            "top": 75,
+            "right": 501,
+            "bottom": 707
+          },
+          "edgePixels": {
+            "left": 0,
+            "right": 0,
+            "top": 0,
+            "bottom": 0
+          },
+          "sourceRoot": [
+            367,
+            706
+          ],
+          "translation": [
+            17,
+            110
+          ],
+          "scale": 1,
+          "sha256": "fe24fc7c3b393e0d5f7326d178f60b524d8d5e6062cba4d670ac2c003481f9d9"
+        },
+        {
+          "index": 3,
+          "file": "frames/idle-03.png",
+          "source": "idle.png",
+          "cell": 3,
+          "sourceRect": {
+            "left": 512,
+            "top": 768,
+            "width": 512,
+            "height": 768
+          },
+          "alphaBounds": {
+            "left": 30,
+            "top": 76,
+            "right": 493,
+            "bottom": 705
+          },
+          "edgePixels": {
+            "left": 0,
+            "right": 0,
+            "top": 0,
+            "bottom": 0
+          },
+          "sourceRoot": [
+            365,
+            705
+          ],
+          "translation": [
+            19,
+            111
+          ],
+          "scale": 1,
+          "sha256": "6d89662bd9a2581124c444b73397d5e1e31923c3a4b79cdcabf6c06fcb48702f"
+        }
+      ],
+      "atlas": {
+        "file": "idle-atlas.png",
+        "width": 3072,
+        "height": 896,
+        "columns": 4,
+        "padding": "Transparent canvas margins; frames rendered with exact cell rectangles, no UV interpolation across cells.",
+        "sha256": "b87d9c6b9d7848923adbc73134b283f788a9256648defc79144255c1da0e01b3"
+      },
+      "events": []
+    },
+    "hit": {
+      "loop": false,
+      "terminalHold": false,
+      "frameDurationMs": 130,
+      "durationMs": 520,
+      "frames": [
+        {
+          "index": 0,
+          "file": "frames/hit-00.png",
+          "source": "hit.png",
+          "cell": 0,
+          "sourceRect": {
+            "left": 0,
+            "top": 0,
+            "width": 512,
+            "height": 768
+          },
+          "alphaBounds": {
+            "left": 51,
+            "top": 101,
+            "right": 478,
+            "bottom": 714
+          },
+          "edgePixels": {
+            "left": 0,
+            "right": 0,
+            "top": 0,
+            "bottom": 0
+          },
+          "sourceRoot": [
+            357,
+            713
+          ],
+          "translation": [
+            13,
+            74
+          ],
+          "scale": 1.04,
+          "sha256": "2430f476eba502dbac75f6c1910cf7f689cae84ddc7419c0d6d57dd2ab165f5d"
+        },
+        {
+          "index": 1,
+          "file": "frames/hit-01.png",
+          "source": "hit.png",
+          "cell": 1,
+          "sourceRect": {
+            "left": 512,
+            "top": 0,
+            "width": 512,
+            "height": 768
+          },
+          "alphaBounds": {
+            "left": 38,
+            "top": 102,
+            "right": 467,
+            "bottom": 714
+          },
+          "edgePixels": {
+            "left": 0,
+            "right": 0,
+            "top": 0,
+            "bottom": 0
+          },
+          "sourceRoot": [
+            343,
+            713
+          ],
+          "translation": [
+            27,
+            74
+          ],
+          "scale": 1.04,
+          "sha256": "d282acb304d51484cfae03bb48b55557f58c5cf92cd34d064077551a876fa806"
+        },
+        {
+          "index": 2,
+          "file": "frames/hit-02.png",
+          "source": "hit.png",
+          "cell": 2,
+          "sourceRect": {
+            "left": 0,
+            "top": 768,
+            "width": 512,
+            "height": 768
+          },
+          "alphaBounds": {
+            "left": 47,
+            "top": 68,
+            "right": 482,
+            "bottom": 676
+          },
+          "edgePixels": {
+            "left": 0,
+            "right": 0,
+            "top": 0,
+            "bottom": 0
+          },
+          "sourceRoot": [
+            352,
+            675
+          ],
+          "translation": [
+            18,
+            114
+          ],
+          "scale": 1.04,
+          "sha256": "57a7888e03d2da1c076e63ad66e8c8b8aec2e329c003fc8d1a683659313189f1"
+        },
+        {
+          "index": 3,
+          "file": "frames/hit-03.png",
+          "source": "hit.png",
+          "cell": 3,
+          "sourceRect": {
+            "left": 512,
+            "top": 768,
+            "width": 512,
+            "height": 768
+          },
+          "alphaBounds": {
+            "left": 35,
+            "top": 69,
+            "right": 468,
+            "bottom": 678
+          },
+          "edgePixels": {
+            "left": 0,
+            "right": 0,
+            "top": 0,
+            "bottom": 0
+          },
+          "sourceRoot": [
+            343,
+            677
+          ],
+          "translation": [
+            27,
+            112
+          ],
+          "scale": 1.04,
+          "sha256": "eafcbe3ac293524dce9d6d1dd026e57608a83ef511feffe1b471aaa2e9ea3b63"
+        }
+      ],
+      "atlas": {
+        "file": "hit-atlas.png",
+        "width": 3072,
+        "height": 896,
+        "columns": 4,
+        "padding": "Transparent canvas margins; frames rendered with exact cell rectangles, no UV interpolation across cells.",
+        "sha256": "e860af775a233343538ec1de06c4214dfbbf72db8a93ddacd2e0c83fe95b56f0"
+      },
+      "events": []
+    },
+    "attack": {
+      "loop": false,
+      "terminalHold": false,
+      "frameDurationMs": 145,
+      "durationMs": 1160,
+      "frames": [
+        {
+          "index": 0,
+          "file": "frames/attack-00.png",
+          "source": "attack-a.png",
+          "cell": 0,
+          "sourceRect": {
+            "left": 0,
+            "top": 0,
+            "width": 512,
+            "height": 768
+          },
+          "alphaBounds": {
+            "left": 52,
+            "top": 72,
+            "right": 485,
+            "bottom": 732
+          },
+          "edgePixels": {
+            "left": 0,
+            "right": 0,
+            "top": 0,
+            "bottom": 0
+          },
+          "sourceRoot": [
+            370,
+            731
+          ],
+          "translation": [
+            21,
+            100
+          ],
+          "scale": 0.98,
+          "sha256": "3b7aa56bb4062a6048fa46daf83c56266d86b61183576e9c9352c5a26197682a"
+        },
+        {
+          "index": 1,
+          "file": "frames/attack-01.png",
+          "source": "attack-a.png",
+          "cell": 1,
+          "sourceRect": {
+            "left": 512,
+            "top": 0,
+            "width": 512,
+            "height": 768
+          },
+          "alphaBounds": {
+            "left": 25,
+            "top": 76,
+            "right": 465,
+            "bottom": 732
+          },
+          "edgePixels": {
+            "left": 0,
+            "right": 0,
+            "top": 0,
+            "bottom": 0
+          },
+          "sourceRoot": [
+            342,
+            732
+          ],
+          "translation": [
+            49,
+            99
+          ],
+          "scale": 0.98,
+          "sha256": "93114fb7ffc62d5ea2191420300f080d84151d806fe990c4019dce9c2ba3512f"
+        },
+        {
+          "index": 2,
+          "file": "frames/attack-02.png",
+          "source": "attack-a.png",
+          "cell": 2,
+          "sourceRect": {
+            "left": 0,
+            "top": 768,
+            "width": 522,
+            "height": 768
+          },
+          "alphaBounds": {
+            "left": 30,
+            "top": 50,
+            "right": 517,
+            "bottom": 684
+          },
+          "edgePixels": {
+            "left": 0,
+            "right": 0,
+            "top": 0,
+            "bottom": 0
+          },
+          "sourceRoot": [
+            338,
+            684
+          ],
+          "translation": [
+            53,
+            146
+          ],
+          "scale": 0.98,
+          "sha256": "928384873e5ffd7f324cbe93507e10a0008530b6c83e2167e55426fdc883d403"
+        },
+        {
+          "index": 3,
+          "file": "frames/attack-03.png",
+          "source": "attack-a.png",
+          "cell": 3,
+          "sourceRect": {
+            "left": 522,
+            "top": 768,
+            "width": 502,
+            "height": 768
+          },
+          "alphaBounds": {
+            "left": 7,
+            "top": 54,
+            "right": 490,
+            "bottom": 684
+          },
+          "edgePixels": {
+            "left": 0,
+            "right": 0,
+            "top": 0,
+            "bottom": 0
+          },
+          "sourceRoot": [
+            379,
+            683
+          ],
+          "translation": [
+            13,
+            147
+          ],
+          "scale": 0.98,
+          "sha256": "3e700bfdd2648b997fa4fec9141bfc65fb302be5b1d694acdba2654b149e3de9"
+        },
+        {
+          "index": 4,
+          "file": "frames/attack-04.png",
+          "source": "attack-b.png",
+          "cell": 0,
+          "sourceRect": {
+            "left": 0,
+            "top": 0,
+            "width": 542,
+            "height": 768
+          },
+          "alphaBounds": {
+            "left": 31,
+            "top": 82,
+            "right": 530,
+            "bottom": 735
+          },
+          "edgePixels": {
+            "left": 0,
+            "right": 0,
+            "top": 0,
+            "bottom": 0
+          },
+          "sourceRoot": [
+            359,
+            735
+          ],
+          "translation": [
+            32,
+            96
+          ],
+          "scale": 0.98,
+          "sha256": "63d5c12f42b4730c8655b5f17613cb00f97fab83d24d55807dd36af564986276"
+        },
+        {
+          "index": 5,
+          "file": "frames/attack-05.png",
+          "source": "attack-b.png",
+          "cell": 1,
+          "sourceRect": {
+            "left": 542,
+            "top": 0,
+            "width": 482,
+            "height": 768
+          },
+          "alphaBounds": {
+            "left": 7,
+            "top": 81,
+            "right": 458,
+            "bottom": 737
+          },
+          "edgePixels": {
+            "left": 0,
+            "right": 0,
+            "top": 0,
+            "bottom": 0
+          },
+          "sourceRoot": [
+            333,
+            736
+          ],
+          "translation": [
+            58,
+            95
+          ],
+          "scale": 0.98,
+          "sha256": "541ab96936a18b5ef21b415d715ea599dae558ce15a9bd2e8a245374a7d2e78b"
+        },
+        {
+          "index": 6,
+          "file": "frames/attack-06.png",
+          "source": "attack-b.png",
+          "cell": 2,
+          "sourceRect": {
+            "left": 0,
+            "top": 768,
+            "width": 512,
+            "height": 768
+          },
+          "alphaBounds": {
+            "left": 31,
+            "top": 48,
+            "right": 475,
+            "bottom": 695
+          },
+          "edgePixels": {
+            "left": 0,
+            "right": 0,
+            "top": 0,
+            "bottom": 0
+          },
+          "sourceRoot": [
+            360,
+            694
+          ],
+          "translation": [
+            31,
+            136
+          ],
+          "scale": 0.98,
+          "sha256": "2f63684bfe6637ef39de260fd49ad8b4f2e91b77cdcc6dd28381ed87b1fa8239"
+        },
+        {
+          "index": 7,
+          "file": "frames/attack-07.png",
+          "source": "attack-b.png",
+          "cell": 3,
+          "sourceRect": {
+            "left": 512,
+            "top": 768,
+            "width": 512,
+            "height": 768
+          },
+          "alphaBounds": {
+            "left": 31,
+            "top": 48,
+            "right": 478,
+            "bottom": 694
+          },
+          "edgePixels": {
+            "left": 0,
+            "right": 0,
+            "top": 0,
+            "bottom": 0
+          },
+          "sourceRoot": [
+            380,
+            693
+          ],
+          "translation": [
+            12,
+            137
+          ],
+          "scale": 0.98,
+          "sha256": "a9499145a86bd00f92a99f37ac31b72d1cc287d22d3b1b21ba9133f625585edf"
+        }
+      ],
+      "atlas": {
+        "file": "attack-atlas.png",
+        "width": 3072,
+        "height": 1792,
+        "columns": 4,
+        "padding": "Transparent canvas margins; frames rendered with exact cell rectangles, no UV interpolation across cells.",
+        "sha256": "aef5bbf087cb54a3009142942071ff399e5e755bdb2e26d775de9a4ffeb3bda1"
+      },
+      "events": [
+        {
+          "name": "impact",
+          "frame": 3,
+          "timeMs": 435
+        }
+      ]
+    },
+    "wounded": {
+      "loop": true,
+      "terminalHold": false,
+      "frameDurationMs": 400,
+      "durationMs": 1600,
+      "frames": [
+        {
+          "index": 0,
+          "file": "frames/wounded-00.png",
+          "source": "wounded.png",
+          "cell": 0,
+          "sourceRect": {
+            "left": 0,
+            "top": 0,
+            "width": 512,
+            "height": 768
+          },
+          "alphaBounds": {
+            "left": 46,
+            "top": 60,
+            "right": 472,
+            "bottom": 742
+          },
+          "edgePixels": {
+            "left": 0,
+            "right": 0,
+            "top": 0,
+            "bottom": 0
+          },
+          "sourceRoot": [
+            345,
+            741
+          ],
+          "translation": [
+            60,
+            119
+          ],
+          "scale": 0.94,
+          "sha256": "53f31dc665429890da42c7044845c973107af348bffc0111f466ca9a81234036"
+        },
+        {
+          "index": 1,
+          "file": "frames/wounded-01.png",
+          "source": "wounded.png",
+          "cell": 1,
+          "sourceRect": {
+            "left": 512,
+            "top": 0,
+            "width": 512,
+            "height": 768
+          },
+          "alphaBounds": {
+            "left": 39,
+            "top": 60,
+            "right": 468,
+            "bottom": 742
+          },
+          "edgePixels": {
+            "left": 0,
+            "right": 0,
+            "top": 0,
+            "bottom": 0
+          },
+          "sourceRoot": [
+            343,
+            741
+          ],
+          "translation": [
+            62,
+            119
+          ],
+          "scale": 0.94,
+          "sha256": "510e25a9e6afa73519a942f74117cfc6068a667d60269ab8089dc1d21f3fde51"
+        },
+        {
+          "index": 2,
+          "file": "frames/wounded-02.png",
+          "source": "wounded.png",
+          "cell": 2,
+          "sourceRect": {
+            "left": 0,
+            "top": 768,
+            "width": 512,
+            "height": 768
+          },
+          "alphaBounds": {
+            "left": 47,
+            "top": 47,
+            "right": 476,
+            "bottom": 723
+          },
+          "edgePixels": {
+            "left": 0,
+            "right": 0,
+            "top": 0,
+            "bottom": 0
+          },
+          "sourceRoot": [
+            348,
+            722
+          ],
+          "translation": [
+            57,
+            137
+          ],
+          "scale": 0.94,
+          "sha256": "1002dfc6e12b26bf54242606d6c94d4d54473ff40ccc62919fd20382a49dc74d"
+        },
+        {
+          "index": 3,
+          "file": "frames/wounded-03.png",
+          "source": "wounded.png",
+          "cell": 3,
+          "sourceRect": {
+            "left": 512,
+            "top": 768,
+            "width": 512,
+            "height": 768
+          },
+          "alphaBounds": {
+            "left": 37,
+            "top": 47,
+            "right": 467,
+            "bottom": 723
+          },
+          "edgePixels": {
+            "left": 0,
+            "right": 0,
+            "top": 0,
+            "bottom": 0
+          },
+          "sourceRoot": [
+            342,
+            722
+          ],
+          "translation": [
+            63,
+            137
+          ],
+          "scale": 0.94,
+          "sha256": "5c461f9ee3cef8e0e5b45846f8800adc26fc5a2b2248ce494b9ee5bfb9ce9cc9"
+        }
+      ],
+      "atlas": {
+        "file": "wounded-atlas.png",
+        "width": 3072,
+        "height": 896,
+        "columns": 4,
+        "padding": "Transparent canvas margins; frames rendered with exact cell rectangles, no UV interpolation across cells.",
+        "sha256": "1be7e031cab79b1eda9b4bc3a7cdb0281611d78ed0127caa0e71dce02807d592"
+      },
+      "events": []
+    },
+    "cast": {
+      "loop": false,
+      "terminalHold": false,
+      "frameDurationMs": 150,
+      "durationMs": 1200,
+      "frames": [
+        {
+          "index": 0,
+          "file": "frames/cast-00.png",
+          "source": "cast.png",
+          "cell": 0,
+          "sourceRect": {
+            "left": 0,
+            "top": 0,
+            "width": 512,
+            "height": 768
+          },
+          "alphaBounds": {
+            "left": 52,
+            "top": 99,
+            "right": 475,
+            "bottom": 701
+          },
+          "edgePixels": {
+            "left": 0,
+            "right": 0,
+            "top": 0,
+            "bottom": 0
+          },
+          "sourceRoot": [
+            364,
+            701
+          ],
+          "translation": [
+            -2,
+            73
+          ],
+          "scale": 1.06,
+          "sha256": "3cd48257a2e610bfd59fbdbfd30f365ccc54731ba6cd2478ea4c5958e6dbcb30"
+        },
+        {
+          "index": 1,
+          "file": "frames/cast-01.png",
+          "source": "cast.png",
+          "cell": 1,
+          "sourceRect": {
+            "left": 512,
+            "top": 0,
+            "width": 512,
+            "height": 768
+          },
+          "alphaBounds": {
+            "left": 40,
+            "top": 99,
+            "right": 463,
+            "bottom": 700
+          },
+          "edgePixels": {
+            "left": 0,
+            "right": 0,
+            "top": 0,
+            "bottom": 0
+          },
+          "sourceRoot": [
+            357,
+            699
+          ],
+          "translation": [
+            6,
+            75
+          ],
+          "scale": 1.06,
+          "sha256": "7214f2d680ab22a331382b89a06a4ebee89927c1fb202249449cd8d833965f3d"
+        },
+        {
+          "index": 2,
+          "file": "frames/cast-02.png",
+          "source": "cast.png",
+          "cell": 2,
+          "sourceRect": {
+            "left": 0,
+            "top": 768,
+            "width": 512,
+            "height": 768
+          },
+          "alphaBounds": {
+            "left": 48,
+            "top": 51,
+            "right": 494,
+            "bottom": 655
+          },
+          "edgePixels": {
+            "left": 0,
+            "right": 0,
+            "top": 0,
+            "bottom": 0
+          },
+          "sourceRoot": [
+            365,
+            655
+          ],
+          "translation": [
+            -3,
+            122
+          ],
+          "scale": 1.06,
+          "sha256": "6bb91cec1bb5de3f0dd548e9da4f00b4ff9086a25062b42ccab2574d13ef6095"
+        },
+        {
+          "index": 3,
+          "file": "frames/cast-03.png",
+          "source": "cast.png",
+          "cell": 3,
+          "sourceRect": {
+            "left": 512,
+            "top": 768,
+            "width": 512,
+            "height": 768
+          },
+          "alphaBounds": {
+            "left": 36,
+            "top": 52,
+            "right": 481,
+            "bottom": 655
+          },
+          "edgePixels": {
+            "left": 0,
+            "right": 0,
+            "top": 0,
+            "bottom": 0
+          },
+          "sourceRoot": [
+            353,
+            654
+          ],
+          "translation": [
+            10,
+            123
+          ],
+          "scale": 1.06,
+          "sha256": "e5903eb235194f23f31919362342baab7e47cd53dafe40ac20e618387e814b18"
+        },
+        {
+          "index": 4,
+          "file": "frames/cast-04.png",
+          "source": "cast-recovery.png",
+          "cell": 0,
+          "sourceRect": {
+            "left": 0,
+            "top": 0,
+            "width": 512,
+            "height": 768
+          },
+          "alphaBounds": {
+            "left": 54,
+            "top": 78,
+            "right": 501,
+            "bottom": 707
+          },
+          "edgePixels": {
+            "left": 0,
+            "right": 0,
+            "top": 0,
+            "bottom": 0
+          },
+          "sourceRoot": [
+            329,
+            706
+          ],
+          "translation": [
+            48,
+            96
+          ],
+          "scale": 1.02,
+          "sha256": "5c913693b97c7b0650b64bc95424e32b320c0e1f7591bad97d4b41bda7896712"
+        },
+        {
+          "index": 5,
+          "file": "frames/cast-05.png",
+          "source": "cast-recovery.png",
+          "cell": 1,
+          "sourceRect": {
+            "left": 512,
+            "top": 0,
+            "width": 512,
+            "height": 768
+          },
+          "alphaBounds": {
+            "left": 56,
+            "top": 78,
+            "right": 473,
+            "bottom": 707
+          },
+          "edgePixels": {
+            "left": 0,
+            "right": 0,
+            "top": 0,
+            "bottom": 0
+          },
+          "sourceRoot": [
+            329,
+            706
+          ],
+          "translation": [
+            48,
+            96
+          ],
+          "scale": 1.02,
+          "sha256": "bc360a7c8b66eedb07a2c043ed879cf8c5a88e7f000943d725b999ffb4c77bdb"
+        },
+        {
+          "index": 6,
+          "file": "frames/cast-06.png",
+          "source": "cast-recovery.png",
+          "cell": 2,
+          "sourceRect": {
+            "left": 0,
+            "top": 768,
+            "width": 512,
+            "height": 768
+          },
+          "alphaBounds": {
+            "left": 51,
+            "top": 45,
+            "right": 460,
+            "bottom": 672
+          },
+          "edgePixels": {
+            "left": 0,
+            "right": 0,
+            "top": 0,
+            "bottom": 0
+          },
+          "sourceRoot": [
+            331,
+            671
+          ],
+          "translation": [
+            46,
+            132
+          ],
+          "scale": 1.02,
+          "sha256": "cfcc462eb6ad0e33006305b660e559e76102fb25c1a5572ef840eb4802811c39"
+        },
+        {
+          "index": 7,
+          "file": "frames/cast-07.png",
+          "source": "cast-recovery.png",
+          "cell": 3,
+          "sourceRect": {
+            "left": 512,
+            "top": 768,
+            "width": 512,
+            "height": 768
+          },
+          "alphaBounds": {
+            "left": 46,
+            "top": 42,
+            "right": 462,
+            "bottom": 672
+          },
+          "edgePixels": {
+            "left": 0,
+            "right": 0,
+            "top": 0,
+            "bottom": 0
+          },
+          "sourceRoot": [
+            332,
+            671
+          ],
+          "translation": [
+            45,
+            132
+          ],
+          "scale": 1.02,
+          "sha256": "73d383cc278bb3717359d0a53b18079ff3b32d1e003199d548d6b7b8c60fb286"
+        }
+      ],
+      "atlas": {
+        "file": "cast-atlas.png",
+        "width": 3072,
+        "height": 1792,
+        "columns": 4,
+        "padding": "Transparent canvas margins; frames rendered with exact cell rectangles, no UV interpolation across cells.",
+        "sha256": "736caa5735d6b438eefd8f325f5c64bbf8046f871aa0ef24e74a3334397b52a5"
+      },
+      "events": [
+        {
+          "name": "cast-release",
+          "frame": 3,
+          "timeMs": 450,
+          "attachment": {
+            "x": 471,
+            "y": 333
+          },
+          "note": "Palm center on extended arm, frame 3; visual marker only, does not apply gameplay damage."
+        }
+      ]
+    },
+    "die": {
+      "loop": false,
+      "terminalHold": true,
+      "frameDurationMs": 300,
+      "durationMs": 1200,
+      "frames": [
+        {
+          "index": 0,
+          "file": "frames/die-00.png",
+          "source": "die.png",
+          "cell": 0,
+          "sourceRect": {
+            "left": 0,
+            "top": 0,
+            "width": 512,
+            "height": 768
+          },
+          "alphaBounds": {
+            "left": 46,
+            "top": 93,
+            "right": 455,
+            "bottom": 748
+          },
+          "edgePixels": {
+            "left": 0,
+            "right": 0,
+            "top": 0,
+            "bottom": 0
+          },
+          "sourceRoot": [
+            310,
+            748
+          ],
+          "translation": [
+            74,
+            68
+          ],
+          "scale": 1,
+          "sha256": "cf7275e0d2701d820eb2aceb80c94164237796121c6c908c8c8c915db0e0759f"
+        },
+        {
+          "index": 1,
+          "file": "frames/die-01.png",
+          "source": "die.png",
+          "cell": 1,
+          "sourceRect": {
+            "left": 512,
+            "top": 0,
+            "width": 512,
+            "height": 768
+          },
+          "alphaBounds": {
+            "left": 6,
+            "top": 195,
+            "right": 465,
+            "bottom": 730
+          },
+          "edgePixels": {
+            "left": 0,
+            "right": 0,
+            "top": 0,
+            "bottom": 0
+          },
+          "sourceRoot": [
+            300,
+            730
+          ],
+          "translation": [
+            84,
+            86
+          ],
+          "scale": 1,
+          "sha256": "8ee52cc22ce95a0d358376cd2932477da2e63271e29dbb6e534f6bc82833b027"
+        },
+        {
+          "index": 2,
+          "file": "frames/die-02.png",
+          "source": "die.png",
+          "cell": 2,
+          "sourceRect": {
+            "left": 0,
+            "top": 768,
+            "width": 512,
+            "height": 768
+          },
+          "alphaBounds": {
+            "left": 23,
+            "top": 139,
+            "right": 484,
+            "bottom": 604
+          },
+          "edgePixels": {
+            "left": 0,
+            "right": 0,
+            "top": 0,
+            "bottom": 0
+          },
+          "sourceRoot": [
+            300,
+            604
+          ],
+          "translation": [
+            84,
+            212
+          ],
+          "scale": 1,
+          "sha256": "7476eb0bbcadba80ba343ae8e82f12ad3f520224b7d786cc95ba2ec0f340b798"
+        },
+        {
+          "index": 3,
+          "file": "frames/die-03.png",
+          "source": "die.png",
+          "cell": 3,
+          "sourceRect": {
+            "left": 512,
+            "top": 768,
+            "width": 512,
+            "height": 768
+          },
+          "alphaBounds": {
+            "left": 7,
+            "top": 248,
+            "right": 486,
+            "bottom": 609
+          },
+          "edgePixels": {
+            "left": 0,
+            "right": 0,
+            "top": 0,
+            "bottom": 0
+          },
+          "sourceRoot": [
+            300,
+            609
+          ],
+          "translation": [
+            84,
+            207
+          ],
+          "scale": 1,
+          "sha256": "33ebd7bc5a4b8c173c786162f4e025ed1e89d0cb82a1a43cb35ba7b557d2cd53"
+        }
+      ],
+      "atlas": {
+        "file": "die-atlas.png",
+        "width": 3072,
+        "height": 896,
+        "columns": 4,
+        "padding": "Transparent canvas margins; frames rendered with exact cell rectangles, no UV interpolation across cells.",
+        "sha256": "9f4669b79c5549c95b672bdfc2ddabe2695cceb57732a6ac3e311706fc5c596d"
+      },
+      "events": []
+    }
+  },
+  "sources": [
+    {
+      "path": "assets/heroes/animations/abyssal-seraph/frames32-r2/source/idle.png",
+      "sha256": "99e33b3fbee7ca4f080fdf7b7746783f8298cca3e253f774a5c734dce9780a67",
+      "size": [
+        1024,
+        1536
+      ],
+      "cells": [
+        2,
+        2
+      ]
+    },
+    {
+      "path": "assets/heroes/animations/abyssal-seraph/frames32-r2/source/hit.png",
+      "sha256": "8ebb09f08b4274b86dc2d318fa13c5f94f9b3a93aa3fcf7bd9133182b8a0f331",
+      "size": [
+        1024,
+        1536
+      ],
+      "cells": [
+        2,
+        2
+      ]
+    },
+    {
+      "path": "assets/heroes/animations/abyssal-seraph/frames32-r2/source/attack-a.png",
+      "sha256": "ac46ba3ed117cfb707b745fe8818aadda9bc1fd1b03451f6bf040ed3572df3fa",
+      "size": [
+        1024,
+        1536
+      ],
+      "cells": [
+        2,
+        2
+      ]
+    },
+    {
+      "path": "assets/heroes/animations/abyssal-seraph/frames32-r2/source/attack-b.png",
+      "sha256": "c2c9c00921022fa85ee9cf6c61afd5eba528f1b4926d8906e9c0026e2b168e19",
+      "size": [
+        1024,
+        1536
+      ],
+      "cells": [
+        2,
+        2
+      ]
+    },
+    {
+      "path": "assets/heroes/animations/abyssal-seraph/frames32-r2/source/wounded.png",
+      "sha256": "1ffdbe7ea67764a7708c637f203c20c91eddc82b66d64213368ff9fa42e68662",
+      "size": [
+        1024,
+        1536
+      ],
+      "cells": [
+        2,
+        2
+      ]
+    },
+    {
+      "path": "assets/heroes/animations/abyssal-seraph/frames32-r2/source/cast.png",
+      "sha256": "b0d92d02809df14a81a710e8864fddf9b69ba3c2de92df7cfb8d2604b6e40393",
+      "size": [
+        1024,
+        1536
+      ],
+      "cells": [
+        2,
+        2
+      ]
+    },
+    {
+      "path": "assets/heroes/animations/abyssal-seraph/frames32-r2/source/cast-recovery.png",
+      "sha256": "99321d991560b898ae72c95c45410e8252a1df9b9c57ebdf3e3fc19f66d5e751",
+      "size": [
+        1024,
+        1536
+      ],
+      "cells": [
+        2,
+        2
+      ]
+    },
+    {
+      "path": "assets/heroes/animations/abyssal-seraph/frames32-r2/source/die.png",
+      "sha256": "c7327138174af7356fa363174a0452bae98299497c79198ecc208ed48f01e88c",
+      "size": [
+        1024,
+        1536
+      ],
+      "cells": [
+        2,
+        2
+      ]
+    }
+  ],
+  "issues": [],
+  "approval": "Pending independent QA and user art approval",
+  "frameCount": 32,
+  "scalePolicy": "One uniform scale per source sheet; no per-frame rescaling",
+  "sheetScale": {
+    "idle": 1,
+    "hit": 1.04,
+    "cast": 1.06,
+    "die": 1,
+    "attack-a": 0.98,
+    "attack-b": 0.98,
+    "cast-recovery": 1.02,
+    "wounded": 0.94
+  },
+  "memory": {
+    "individualDecodedBytes": 88080384,
+    "atlasDecodedBytes": 88080384,
+    "frameEncodedBytes": 11325303,
+    "atlasEncodedBytes": 11273426
+  }
+}

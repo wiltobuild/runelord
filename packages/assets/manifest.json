@@ -10,7 +10,7 @@
     "skirmisher": "/game-assets/actors/skirmisher/fire-v07-ashknife-cutthroat/frames/00.webp",
     "briarjaw": "/game-assets/images/briarjaw.webp",
     "tollbell": "/game-assets/images/tollbell.webp",
-    "warlock": "/game-assets/warlock/frames32-r1/0.webp",
+    "warlock": "/game-assets/warlock/abyssal-seraph-r2/0.webp",
     "demon-throne": "/game-assets/images/demon-throne.webp",
     "item-demon-crown": "/game-assets/images/item-demon-crown.webp",
     "item-healing-draught": "/game-assets/items/healing-draught.webp",
@@ -116,303 +116,281 @@
       "frames": [
         {
           "time": 0,
-          "body": "/game-assets/warlock/frames32-r1/0.webp"
+          "body": "/game-assets/warlock/abyssal-seraph-r2/0.webp"
         },
         {
-          "time": 216,
-          "body": "/game-assets/warlock/frames32-r1/1.webp"
+          "time": 420,
+          "body": "/game-assets/warlock/abyssal-seraph-r2/1.webp"
         },
         {
-          "time": 432,
-          "body": "/game-assets/warlock/frames32-r1/2.webp"
+          "time": 840,
+          "body": "/game-assets/warlock/abyssal-seraph-r2/2.webp"
         },
         {
-          "time": 648,
-          "body": "/game-assets/warlock/frames32-r1/3.webp"
-        },
-        {
-          "time": 864,
-          "body": "/game-assets/warlock/frames32-r1/2.webp"
-        },
-        {
-          "time": 1080,
-          "body": "/game-assets/warlock/frames32-r1/1.webp"
+          "time": 1260,
+          "body": "/game-assets/warlock/abyssal-seraph-r2/3.webp"
         }
       ],
-      "duration": 1296,
+      "duration": 1680,
       "loop": true,
+      "terminalHold": false,
       "events": [],
       "impact": null,
       "size": [
-        512,
-        512
+        768,
+        896
       ],
       "anchor": [
-        256,
-        480
-      ]
-    },
-    "attack": {
-      "frames": [
-        {
-          "time": 0,
-          "body": "/game-assets/warlock/frames32-r1/8.webp"
-        },
-        {
-          "time": 90,
-          "body": "/game-assets/warlock/frames32-r1/9.webp"
-        },
-        {
-          "time": 160,
-          "body": "/game-assets/warlock/frames32-r1/10.webp"
-        },
-        {
-          "time": 220,
-          "body": "/game-assets/warlock/frames32-r1/11.webp"
-        },
-        {
-          "time": 270,
-          "body": "/game-assets/warlock/frames32-r1/12.webp"
-        },
-        {
-          "time": 340,
-          "body": "/game-assets/warlock/frames32-r1/13.webp"
-        },
-        {
-          "time": 430,
-          "body": "/game-assets/warlock/frames32-r1/14.webp"
-        },
-        {
-          "time": 530,
-          "body": "/game-assets/warlock/frames32-r1/15.webp"
-        }
-      ],
-      "duration": 630,
-      "loop": false,
-      "events": [
-        {
-          "name": "impact_or_release",
-          "time_ms": 270
-        }
-      ],
-      "impact": 270,
-      "size": [
-        512,
-        512
-      ],
-      "anchor": [
-        256,
-        480
-      ],
-      "releaseOrigin": [
-        430,
-        184
+        384,
+        816
       ]
     },
     "hit": {
       "frames": [
         {
           "time": 0,
-          "body": "/game-assets/warlock/frames32-r1/4.webp"
+          "body": "/game-assets/warlock/abyssal-seraph-r2/4.webp"
         },
         {
-          "time": 60,
-          "body": "/game-assets/warlock/frames32-r1/5.webp"
+          "time": 130,
+          "body": "/game-assets/warlock/abyssal-seraph-r2/5.webp"
         },
         {
-          "time": 150,
-          "body": "/game-assets/warlock/frames32-r1/6.webp"
+          "time": 260,
+          "body": "/game-assets/warlock/abyssal-seraph-r2/6.webp"
         },
         {
-          "time": 250,
-          "body": "/game-assets/warlock/frames32-r1/7.webp"
+          "time": 390,
+          "body": "/game-assets/warlock/abyssal-seraph-r2/7.webp"
         }
       ],
-      "duration": 370,
+      "duration": 520,
       "loop": false,
+      "terminalHold": false,
       "events": [],
       "impact": null,
       "size": [
-        512,
-        512
+        768,
+        896
       ],
       "anchor": [
-        256,
-        480
+        384,
+        816
       ]
     },
-    "wounded_idle": {
+    "attack": {
       "frames": [
         {
           "time": 0,
-          "body": "/game-assets/warlock/frames32-r1/16.webp"
+          "body": "/game-assets/warlock/abyssal-seraph-r2/8.webp"
         },
         {
-          "time": 264,
-          "body": "/game-assets/warlock/frames32-r1/17.webp"
+          "time": 145,
+          "body": "/game-assets/warlock/abyssal-seraph-r2/9.webp"
         },
         {
-          "time": 528,
-          "body": "/game-assets/warlock/frames32-r1/18.webp"
+          "time": 290,
+          "body": "/game-assets/warlock/abyssal-seraph-r2/10.webp"
         },
         {
-          "time": 792,
-          "body": "/game-assets/warlock/frames32-r1/19.webp"
+          "time": 435,
+          "body": "/game-assets/warlock/abyssal-seraph-r2/11.webp"
         },
         {
-          "time": 1056,
-          "body": "/game-assets/warlock/frames32-r1/18.webp"
+          "time": 580,
+          "body": "/game-assets/warlock/abyssal-seraph-r2/12.webp"
         },
         {
-          "time": 1320,
-          "body": "/game-assets/warlock/frames32-r1/17.webp"
+          "time": 725,
+          "body": "/game-assets/warlock/abyssal-seraph-r2/13.webp"
+        },
+        {
+          "time": 870,
+          "body": "/game-assets/warlock/abyssal-seraph-r2/14.webp"
+        },
+        {
+          "time": 1015,
+          "body": "/game-assets/warlock/abyssal-seraph-r2/15.webp"
         }
       ],
-      "duration": 1584,
+      "duration": 1160,
+      "loop": false,
+      "terminalHold": false,
+      "events": [
+        {
+          "name": "impact",
+          "time_ms": 435
+        }
+      ],
+      "impact": 435,
+      "size": [
+        768,
+        896
+      ],
+      "anchor": [
+        384,
+        816
+      ]
+    },
+    "wounded": {
+      "frames": [
+        {
+          "time": 0,
+          "body": "/game-assets/warlock/abyssal-seraph-r2/16.webp"
+        },
+        {
+          "time": 400,
+          "body": "/game-assets/warlock/abyssal-seraph-r2/17.webp"
+        },
+        {
+          "time": 800,
+          "body": "/game-assets/warlock/abyssal-seraph-r2/18.webp"
+        },
+        {
+          "time": 1200,
+          "body": "/game-assets/warlock/abyssal-seraph-r2/19.webp"
+        }
+      ],
+      "duration": 1600,
       "loop": true,
+      "terminalHold": false,
       "events": [],
       "impact": null,
       "size": [
-        512,
-        512
+        768,
+        896
       ],
       "anchor": [
-        256,
-        480
+        384,
+        816
       ]
     },
     "cast": {
       "frames": [
         {
           "time": 0,
-          "body": "/game-assets/warlock/frames32-r1/20.webp"
+          "body": "/game-assets/warlock/abyssal-seraph-r2/20.webp"
         },
         {
-          "time": 140,
-          "body": "/game-assets/warlock/frames32-r1/21.webp"
+          "time": 150,
+          "body": "/game-assets/warlock/abyssal-seraph-r2/21.webp"
         },
         {
-          "time": 260,
-          "body": "/game-assets/warlock/frames32-r1/22.webp"
+          "time": 300,
+          "body": "/game-assets/warlock/abyssal-seraph-r2/22.webp"
         },
         {
-          "time": 360,
-          "body": "/game-assets/warlock/frames32-r1/23.webp"
+          "time": 450,
+          "body": "/game-assets/warlock/abyssal-seraph-r2/23.webp"
+        },
+        {
+          "time": 600,
+          "body": "/game-assets/warlock/abyssal-seraph-r2/24.webp"
+        },
+        {
+          "time": 750,
+          "body": "/game-assets/warlock/abyssal-seraph-r2/25.webp"
+        },
+        {
+          "time": 900,
+          "body": "/game-assets/warlock/abyssal-seraph-r2/26.webp"
+        },
+        {
+          "time": 1050,
+          "body": "/game-assets/warlock/abyssal-seraph-r2/27.webp"
         }
       ],
-      "duration": 540,
+      "duration": 1200,
       "loop": false,
+      "terminalHold": false,
       "events": [
         {
-          "name": "release",
-          "time_ms": 260
+          "name": "cast-release",
+          "time_ms": 450,
+          "attachment": {
+            "x": 471,
+            "y": 333
+          }
         }
       ],
-      "impact": 260,
+      "impact": 450,
       "size": [
-        512,
-        512
+        768,
+        896
       ],
       "anchor": [
-        256,
-        480
+        384,
+        816
       ],
       "releaseOrigin": [
-        368,
-        188
+        471,
+        333
       ]
     },
     "die": {
       "frames": [
         {
           "time": 0,
-          "body": "/game-assets/warlock/frames32-r1/24.webp"
+          "body": "/game-assets/warlock/abyssal-seraph-r2/28.webp"
         },
         {
-          "time": 100,
-          "body": "/game-assets/warlock/frames32-r1/25.webp"
-        },
-        {
-          "time": 200,
-          "body": "/game-assets/warlock/frames32-r1/26.webp"
-        },
-        {
-          "time": 320,
-          "body": "/game-assets/warlock/frames32-r1/27.webp"
-        },
-        {
-          "time": 460,
-          "body": "/game-assets/warlock/frames32-r1/28.webp"
+          "time": 300,
+          "body": "/game-assets/warlock/abyssal-seraph-r2/29.webp"
         },
         {
           "time": 600,
-          "body": "/game-assets/warlock/frames32-r1/29.webp"
+          "body": "/game-assets/warlock/abyssal-seraph-r2/30.webp"
         },
         {
-          "time": 780,
-          "body": "/game-assets/warlock/frames32-r1/30.webp"
-        },
-        {
-          "time": 980,
-          "body": "/game-assets/warlock/frames32-r1/31.webp"
+          "time": 900,
+          "body": "/game-assets/warlock/abyssal-seraph-r2/31.webp"
         }
       ],
-      "duration": 1580,
+      "duration": 1200,
       "loop": false,
-      "events": [
-        {
-          "name": "terminal",
-          "time_ms": 980
-        }
-      ],
+      "terminalHold": true,
+      "events": [],
       "impact": null,
       "size": [
-        512,
-        512
+        768,
+        896
       ],
       "anchor": [
-        256,
-        480
+        384,
+        816
       ]
     },
     "idle_breathe": {
       "frames": [
         {
           "time": 0,
-          "body": "/game-assets/warlock/frames32-r1/0.webp"
+          "body": "/game-assets/warlock/abyssal-seraph-r2/0.webp"
         },
         {
-          "time": 216,
-          "body": "/game-assets/warlock/frames32-r1/1.webp"
+          "time": 420,
+          "body": "/game-assets/warlock/abyssal-seraph-r2/1.webp"
         },
         {
-          "time": 432,
-          "body": "/game-assets/warlock/frames32-r1/2.webp"
+          "time": 840,
+          "body": "/game-assets/warlock/abyssal-seraph-r2/2.webp"
         },
         {
-          "time": 648,
-          "body": "/game-assets/warlock/frames32-r1/3.webp"
-        },
-        {
-          "time": 864,
-          "body": "/game-assets/warlock/frames32-r1/2.webp"
-        },
-        {
-          "time": 1080,
-          "body": "/game-assets/warlock/frames32-r1/1.webp"
+          "time": 1260,
+          "body": "/game-assets/warlock/abyssal-seraph-r2/3.webp"
         }
       ],
-      "duration": 1296,
+      "duration": 1680,
       "loop": true,
+      "terminalHold": false,
       "events": [],
       "impact": null,
       "size": [
-        512,
-        512
+        768,
+        896
       ],
       "anchor": [
-        256,
-        480
+        384,
+        816
       ],
       "sourceState": "idle"
     },
@@ -420,57 +398,54 @@
       "frames": [
         {
           "time": 0,
-          "body": "/game-assets/warlock/frames32-r1/8.webp"
+          "body": "/game-assets/warlock/abyssal-seraph-r2/8.webp"
         },
         {
-          "time": 90,
-          "body": "/game-assets/warlock/frames32-r1/9.webp"
+          "time": 145,
+          "body": "/game-assets/warlock/abyssal-seraph-r2/9.webp"
         },
         {
-          "time": 160,
-          "body": "/game-assets/warlock/frames32-r1/10.webp"
+          "time": 290,
+          "body": "/game-assets/warlock/abyssal-seraph-r2/10.webp"
         },
         {
-          "time": 220,
-          "body": "/game-assets/warlock/frames32-r1/11.webp"
+          "time": 435,
+          "body": "/game-assets/warlock/abyssal-seraph-r2/11.webp"
         },
         {
-          "time": 270,
-          "body": "/game-assets/warlock/frames32-r1/12.webp"
+          "time": 580,
+          "body": "/game-assets/warlock/abyssal-seraph-r2/12.webp"
         },
         {
-          "time": 340,
-          "body": "/game-assets/warlock/frames32-r1/13.webp"
+          "time": 725,
+          "body": "/game-assets/warlock/abyssal-seraph-r2/13.webp"
         },
         {
-          "time": 430,
-          "body": "/game-assets/warlock/frames32-r1/14.webp"
+          "time": 870,
+          "body": "/game-assets/warlock/abyssal-seraph-r2/14.webp"
         },
         {
-          "time": 530,
-          "body": "/game-assets/warlock/frames32-r1/15.webp"
+          "time": 1015,
+          "body": "/game-assets/warlock/abyssal-seraph-r2/15.webp"
         }
       ],
-      "duration": 630,
+      "duration": 1160,
       "loop": false,
+      "terminalHold": false,
       "events": [
         {
-          "name": "impact_or_release",
-          "time_ms": 270
+          "name": "impact",
+          "time_ms": 435
         }
       ],
-      "impact": 270,
+      "impact": 435,
       "size": [
-        512,
-        512
+        768,
+        896
       ],
       "anchor": [
-        256,
-        480
-      ],
-      "releaseOrigin": [
-        430,
-        184
+        384,
+        816
       ],
       "sourceState": "attack"
     },
@@ -478,41 +453,62 @@
       "frames": [
         {
           "time": 0,
-          "body": "/game-assets/warlock/frames32-r1/20.webp"
+          "body": "/game-assets/warlock/abyssal-seraph-r2/20.webp"
         },
         {
-          "time": 140,
-          "body": "/game-assets/warlock/frames32-r1/21.webp"
+          "time": 150,
+          "body": "/game-assets/warlock/abyssal-seraph-r2/21.webp"
         },
         {
-          "time": 260,
-          "body": "/game-assets/warlock/frames32-r1/22.webp"
+          "time": 300,
+          "body": "/game-assets/warlock/abyssal-seraph-r2/22.webp"
         },
         {
-          "time": 360,
-          "body": "/game-assets/warlock/frames32-r1/23.webp"
+          "time": 450,
+          "body": "/game-assets/warlock/abyssal-seraph-r2/23.webp"
+        },
+        {
+          "time": 600,
+          "body": "/game-assets/warlock/abyssal-seraph-r2/24.webp"
+        },
+        {
+          "time": 750,
+          "body": "/game-assets/warlock/abyssal-seraph-r2/25.webp"
+        },
+        {
+          "time": 900,
+          "body": "/game-assets/warlock/abyssal-seraph-r2/26.webp"
+        },
+        {
+          "time": 1050,
+          "body": "/game-assets/warlock/abyssal-seraph-r2/27.webp"
         }
       ],
-      "duration": 540,
+      "duration": 1200,
       "loop": false,
+      "terminalHold": false,
       "events": [
         {
-          "name": "release",
-          "time_ms": 260
+          "name": "cast-release",
+          "time_ms": 450,
+          "attachment": {
+            "x": 471,
+            "y": 333
+          }
         }
       ],
-      "impact": 260,
+      "impact": 450,
       "size": [
-        512,
-        512
+        768,
+        896
       ],
       "anchor": [
-        256,
-        480
+        384,
+        816
       ],
       "releaseOrigin": [
-        368,
-        188
+        471,
+        333
       ],
       "sourceState": "cast"
     },
@@ -520,41 +516,62 @@
       "frames": [
         {
           "time": 0,
-          "body": "/game-assets/warlock/frames32-r1/20.webp"
+          "body": "/game-assets/warlock/abyssal-seraph-r2/20.webp"
         },
         {
-          "time": 140,
-          "body": "/game-assets/warlock/frames32-r1/21.webp"
+          "time": 150,
+          "body": "/game-assets/warlock/abyssal-seraph-r2/21.webp"
         },
         {
-          "time": 260,
-          "body": "/game-assets/warlock/frames32-r1/22.webp"
+          "time": 300,
+          "body": "/game-assets/warlock/abyssal-seraph-r2/22.webp"
         },
         {
-          "time": 360,
-          "body": "/game-assets/warlock/frames32-r1/23.webp"
+          "time": 450,
+          "body": "/game-assets/warlock/abyssal-seraph-r2/23.webp"
+        },
+        {
+          "time": 600,
+          "body": "/game-assets/warlock/abyssal-seraph-r2/24.webp"
+        },
+        {
+          "time": 750,
+          "body": "/game-assets/warlock/abyssal-seraph-r2/25.webp"
+        },
+        {
+          "time": 900,
+          "body": "/game-assets/warlock/abyssal-seraph-r2/26.webp"
+        },
+        {
+          "time": 1050,
+          "body": "/game-assets/warlock/abyssal-seraph-r2/27.webp"
         }
       ],
-      "duration": 540,
+      "duration": 1200,
       "loop": false,
+      "terminalHold": false,
       "events": [
         {
-          "name": "release",
-          "time_ms": 260
+          "name": "cast-release",
+          "time_ms": 450,
+          "attachment": {
+            "x": 471,
+            "y": 333
+          }
         }
       ],
-      "impact": 260,
+      "impact": 450,
       "size": [
-        512,
-        512
+        768,
+        896
       ],
       "anchor": [
-        256,
-        480
+        384,
+        816
       ],
       "releaseOrigin": [
-        368,
-        188
+        471,
+        333
       ],
       "sourceState": "cast"
     },
@@ -562,41 +579,62 @@
       "frames": [
         {
           "time": 0,
-          "body": "/game-assets/warlock/frames32-r1/20.webp"
+          "body": "/game-assets/warlock/abyssal-seraph-r2/20.webp"
         },
         {
-          "time": 140,
-          "body": "/game-assets/warlock/frames32-r1/21.webp"
+          "time": 150,
+          "body": "/game-assets/warlock/abyssal-seraph-r2/21.webp"
         },
         {
-          "time": 260,
-          "body": "/game-assets/warlock/frames32-r1/22.webp"
+          "time": 300,
+          "body": "/game-assets/warlock/abyssal-seraph-r2/22.webp"
         },
         {
-          "time": 360,
-          "body": "/game-assets/warlock/frames32-r1/23.webp"
+          "time": 450,
+          "body": "/game-assets/warlock/abyssal-seraph-r2/23.webp"
+        },
+        {
+          "time": 600,
+          "body": "/game-assets/warlock/abyssal-seraph-r2/24.webp"
+        },
+        {
+          "time": 750,
+          "body": "/game-assets/warlock/abyssal-seraph-r2/25.webp"
+        },
+        {
+          "time": 900,
+          "body": "/game-assets/warlock/abyssal-seraph-r2/26.webp"
+        },
+        {
+          "time": 1050,
+          "body": "/game-assets/warlock/abyssal-seraph-r2/27.webp"
         }
       ],
-      "duration": 540,
+      "duration": 1200,
       "loop": false,
+      "terminalHold": false,
       "events": [
         {
-          "name": "release",
-          "time_ms": 260
+          "name": "cast-release",
+          "time_ms": 450,
+          "attachment": {
+            "x": 471,
+            "y": 333
+          }
         }
       ],
-      "impact": 260,
+      "impact": 450,
       "size": [
-        512,
-        512
+        768,
+        896
       ],
       "anchor": [
-        256,
-        480
+        384,
+        816
       ],
       "releaseOrigin": [
-        368,
-        188
+        471,
+        333
       ],
       "sourceState": "cast"
     },
@@ -604,32 +642,33 @@
       "frames": [
         {
           "time": 0,
-          "body": "/game-assets/warlock/frames32-r1/4.webp"
+          "body": "/game-assets/warlock/abyssal-seraph-r2/4.webp"
         },
         {
-          "time": 60,
-          "body": "/game-assets/warlock/frames32-r1/5.webp"
+          "time": 130,
+          "body": "/game-assets/warlock/abyssal-seraph-r2/5.webp"
         },
         {
-          "time": 150,
-          "body": "/game-assets/warlock/frames32-r1/6.webp"
+          "time": 260,
+          "body": "/game-assets/warlock/abyssal-seraph-r2/6.webp"
         },
         {
-          "time": 250,
-          "body": "/game-assets/warlock/frames32-r1/7.webp"
+          "time": 390,
+          "body": "/game-assets/warlock/abyssal-seraph-r2/7.webp"
         }
       ],
-      "duration": 370,
+      "duration": 520,
       "loop": false,
+      "terminalHold": false,
       "events": [],
       "impact": null,
       "size": [
-        512,
-        512
+        768,
+        896
       ],
       "anchor": [
-        256,
-        480
+        384,
+        816
       ],
       "sourceState": "hit"
     },
@@ -637,32 +676,33 @@
       "frames": [
         {
           "time": 0,
-          "body": "/game-assets/warlock/frames32-r1/4.webp"
+          "body": "/game-assets/warlock/abyssal-seraph-r2/4.webp"
         },
         {
-          "time": 60,
-          "body": "/game-assets/warlock/frames32-r1/5.webp"
+          "time": 130,
+          "body": "/game-assets/warlock/abyssal-seraph-r2/5.webp"
         },
         {
-          "time": 150,
-          "body": "/game-assets/warlock/frames32-r1/6.webp"
+          "time": 260,
+          "body": "/game-assets/warlock/abyssal-seraph-r2/6.webp"
         },
         {
-          "time": 250,
-          "body": "/game-assets/warlock/frames32-r1/7.webp"
+          "time": 390,
+          "body": "/game-assets/warlock/abyssal-seraph-r2/7.webp"
         }
       ],
-      "duration": 370,
+      "duration": 520,
       "loop": false,
+      "terminalHold": false,
       "events": [],
       "impact": null,
       "size": [
-        512,
-        512
+        768,
+        896
       ],
       "anchor": [
-        256,
-        480
+        384,
+        816
       ],
       "sourceState": "hit"
     },
@@ -670,40 +710,33 @@
       "frames": [
         {
           "time": 0,
-          "body": "/game-assets/warlock/frames32-r1/0.webp"
+          "body": "/game-assets/warlock/abyssal-seraph-r2/0.webp"
         },
         {
-          "time": 216,
-          "body": "/game-assets/warlock/frames32-r1/1.webp"
+          "time": 420,
+          "body": "/game-assets/warlock/abyssal-seraph-r2/1.webp"
         },
         {
-          "time": 432,
-          "body": "/game-assets/warlock/frames32-r1/2.webp"
+          "time": 840,
+          "body": "/game-assets/warlock/abyssal-seraph-r2/2.webp"
         },
         {
-          "time": 648,
-          "body": "/game-assets/warlock/frames32-r1/3.webp"
-        },
-        {
-          "time": 864,
-          "body": "/game-assets/warlock/frames32-r1/2.webp"
-        },
-        {
-          "time": 1080,
-          "body": "/game-assets/warlock/frames32-r1/1.webp"
+          "time": 1260,
+          "body": "/game-assets/warlock/abyssal-seraph-r2/3.webp"
         }
       ],
-      "duration": 1296,
+      "duration": 1680,
       "loop": true,
+      "terminalHold": false,
       "events": [],
       "impact": null,
       "size": [
-        512,
-        512
+        768,
+        896
       ],
       "anchor": [
-        256,
-        480
+        384,
+        816
       ],
       "sourceState": "idle"
     },
@@ -711,40 +744,33 @@
       "frames": [
         {
           "time": 0,
-          "body": "/game-assets/warlock/frames32-r1/0.webp"
+          "body": "/game-assets/warlock/abyssal-seraph-r2/0.webp"
         },
         {
-          "time": 216,
-          "body": "/game-assets/warlock/frames32-r1/1.webp"
+          "time": 420,
+          "body": "/game-assets/warlock/abyssal-seraph-r2/1.webp"
         },
         {
-          "time": 432,
-          "body": "/game-assets/warlock/frames32-r1/2.webp"
+          "time": 840,
+          "body": "/game-assets/warlock/abyssal-seraph-r2/2.webp"
         },
         {
-          "time": 648,
-          "body": "/game-assets/warlock/frames32-r1/3.webp"
-        },
-        {
-          "time": 864,
-          "body": "/game-assets/warlock/frames32-r1/2.webp"
-        },
-        {
-          "time": 1080,
-          "body": "/game-assets/warlock/frames32-r1/1.webp"
+          "time": 1260,
+          "body": "/game-assets/warlock/abyssal-seraph-r2/3.webp"
         }
       ],
-      "duration": 1296,
+      "duration": 1680,
       "loop": true,
+      "terminalHold": false,
       "events": [],
       "impact": null,
       "size": [
-        512,
-        512
+        768,
+        896
       ],
       "anchor": [
-        256,
-        480
+        384,
+        816
       ],
       "sourceState": "idle"
     },
@@ -752,57 +778,54 @@
       "frames": [
         {
           "time": 0,
-          "body": "/game-assets/warlock/frames32-r1/8.webp"
+          "body": "/game-assets/warlock/abyssal-seraph-r2/8.webp"
         },
         {
-          "time": 90,
-          "body": "/game-assets/warlock/frames32-r1/9.webp"
+          "time": 145,
+          "body": "/game-assets/warlock/abyssal-seraph-r2/9.webp"
         },
         {
-          "time": 160,
-          "body": "/game-assets/warlock/frames32-r1/10.webp"
+          "time": 290,
+          "body": "/game-assets/warlock/abyssal-seraph-r2/10.webp"
         },
         {
-          "time": 220,
-          "body": "/game-assets/warlock/frames32-r1/11.webp"
+          "time": 435,
+          "body": "/game-assets/warlock/abyssal-seraph-r2/11.webp"
         },
         {
-          "time": 270,
-          "body": "/game-assets/warlock/frames32-r1/12.webp"
+          "time": 580,
+          "body": "/game-assets/warlock/abyssal-seraph-r2/12.webp"
         },
         {
-          "time": 340,
-          "body": "/game-assets/warlock/frames32-r1/13.webp"
+          "time": 725,
+          "body": "/game-assets/warlock/abyssal-seraph-r2/13.webp"
         },
         {
-          "time": 430,
-          "body": "/game-assets/warlock/frames32-r1/14.webp"
+          "time": 870,
+          "body": "/game-assets/warlock/abyssal-seraph-r2/14.webp"
         },
         {
-          "time": 530,
-          "body": "/game-assets/warlock/frames32-r1/15.webp"
+          "time": 1015,
+          "body": "/game-assets/warlock/abyssal-seraph-r2/15.webp"
         }
       ],
-      "duration": 630,
+      "duration": 1160,
       "loop": false,
+      "terminalHold": false,
       "events": [
         {
-          "name": "impact_or_release",
-          "time_ms": 270
+          "name": "impact",
+          "time_ms": 435
         }
       ],
-      "impact": 270,
+      "impact": 435,
       "size": [
-        512,
-        512
+        768,
+        896
       ],
       "anchor": [
-        256,
-        480
-      ],
-      "releaseOrigin": [
-        430,
-        184
+        384,
+        816
       ],
       "sourceState": "attack"
     }
@@ -10681,516 +10704,516 @@
       "outputSha256": "aec1d7e5f0c75973eacca884b61f88934e3f87d5d6767265767716f25b671b9e"
     },
     {
-      "source": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\heroes\\animations\\warlock\\frames32-r1\\frames\\00.png",
-      "sha256": "7f6558a5b21d6a40548bcaaa7622f19f61a4f455174269037f3ffb0ec6438aad",
+      "source": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\heroes\\animations\\abyssal-seraph\\frames32-r2\\frames\\idle-00.png",
+      "sha256": "1db9d6f36b8847679223c2f61539fde281a43f36d153ef8d547953b3e29a7e29",
       "status": "Unreviewed",
       "evidenceId": null,
-      "output": "warlock/frames32-r1/0.webp",
+      "output": "warlock/abyssal-seraph-r2/0.webp",
       "transform": {
-        "width": 512,
+        "width": 768,
         "withoutEnlargement": true,
         "format": "webp",
         "quality": 88,
         "alphaQuality": 100,
-        "lossless": false
+        "lossless": true
       },
-      "outputSha256": "de831db206da92aa7951a3ce0ed84f6f9062e45603dfafdf7da17b33fb9e55b3"
+      "outputSha256": "4f5cee5596349bb58f7410bf5cc7d0b4995cefd650e7fcc1b47deec78a6b101e"
     },
     {
-      "source": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\heroes\\animations\\warlock\\frames32-r1\\frames\\01.png",
-      "sha256": "7b5a7d2c17154dda330b90104d91fb3c1889c92530b4b1949ef03e85c1c5ff2e",
+      "source": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\heroes\\animations\\abyssal-seraph\\frames32-r2\\frames\\idle-01.png",
+      "sha256": "46f9698ba06273b5a66b04f2fd54eadc73130b4fa53795986ebb6f2615f784f4",
       "status": "Unreviewed",
       "evidenceId": null,
-      "output": "warlock/frames32-r1/1.webp",
+      "output": "warlock/abyssal-seraph-r2/1.webp",
       "transform": {
-        "width": 512,
+        "width": 768,
         "withoutEnlargement": true,
         "format": "webp",
         "quality": 88,
         "alphaQuality": 100,
-        "lossless": false
+        "lossless": true
       },
-      "outputSha256": "dc894fe806d10c4237f7655bc6b7a0d3394f978d33e389d218886dee13c5fa2b"
+      "outputSha256": "56ea4634dd4d89078e50f7910a262ef6a8501cedb663498bf99d07279f221274"
     },
     {
-      "source": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\heroes\\animations\\warlock\\frames32-r1\\frames\\02.png",
-      "sha256": "385850c317a773ed95518e82f8d8e8b2555a297668021058825eecf62e128b07",
+      "source": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\heroes\\animations\\abyssal-seraph\\frames32-r2\\frames\\idle-02.png",
+      "sha256": "fe24fc7c3b393e0d5f7326d178f60b524d8d5e6062cba4d670ac2c003481f9d9",
       "status": "Unreviewed",
       "evidenceId": null,
-      "output": "warlock/frames32-r1/2.webp",
+      "output": "warlock/abyssal-seraph-r2/2.webp",
       "transform": {
-        "width": 512,
+        "width": 768,
         "withoutEnlargement": true,
         "format": "webp",
         "quality": 88,
         "alphaQuality": 100,
-        "lossless": false
+        "lossless": true
       },
-      "outputSha256": "4beb3e090646ab45add99f5f908f30b0bc775e9e0f5421316ea7c110cdc117f4"
+      "outputSha256": "edcd506a2dc77068ae45e2ad6b213076dc62cc0ddd23bd6f48731712b065407a"
     },
     {
-      "source": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\heroes\\animations\\warlock\\frames32-r1\\frames\\03.png",
-      "sha256": "fd825cd4675961ca4a91d6e1ee3e2110167ff19555cb6df7f90c286cdb9483f6",
+      "source": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\heroes\\animations\\abyssal-seraph\\frames32-r2\\frames\\idle-03.png",
+      "sha256": "6d89662bd9a2581124c444b73397d5e1e31923c3a4b79cdcabf6c06fcb48702f",
       "status": "Unreviewed",
       "evidenceId": null,
-      "output": "warlock/frames32-r1/3.webp",
+      "output": "warlock/abyssal-seraph-r2/3.webp",
       "transform": {
-        "width": 512,
+        "width": 768,
         "withoutEnlargement": true,
         "format": "webp",
         "quality": 88,
         "alphaQuality": 100,
-        "lossless": false
+        "lossless": true
       },
-      "outputSha256": "66190aacd48d647b73ee810d45466474d0433f6dbbf8729700b14cd3ece17525"
+      "outputSha256": "d102292f905dc6b72c79537a6bd3f207063d140815300fd040ab28d1ab0ea46c"
     },
     {
-      "source": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\heroes\\animations\\warlock\\frames32-r1\\frames\\04.png",
-      "sha256": "d6317b3ca4fb7422d53ed53033ea5e642e805d7b193f1f6042455a7686162c2c",
+      "source": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\heroes\\animations\\abyssal-seraph\\frames32-r2\\frames\\hit-00.png",
+      "sha256": "2430f476eba502dbac75f6c1910cf7f689cae84ddc7419c0d6d57dd2ab165f5d",
       "status": "Unreviewed",
       "evidenceId": null,
-      "output": "warlock/frames32-r1/4.webp",
+      "output": "warlock/abyssal-seraph-r2/4.webp",
       "transform": {
-        "width": 512,
+        "width": 768,
         "withoutEnlargement": true,
         "format": "webp",
         "quality": 88,
         "alphaQuality": 100,
-        "lossless": false
+        "lossless": true
       },
-      "outputSha256": "65162a55db90d1d7c97e1a73dfd996325795d06e2e2fd27931ada5dde2d453b6"
+      "outputSha256": "7f8555e9899b2293c278618b682ad18a4f525a403f510684b9d486450513bc31"
     },
     {
-      "source": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\heroes\\animations\\warlock\\frames32-r1\\frames\\05.png",
-      "sha256": "6fdaa4109f15cae58e3f75d7ea5979a36771e2b7391923b614ab45ea6442b7fc",
+      "source": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\heroes\\animations\\abyssal-seraph\\frames32-r2\\frames\\hit-01.png",
+      "sha256": "d282acb304d51484cfae03bb48b55557f58c5cf92cd34d064077551a876fa806",
       "status": "Unreviewed",
       "evidenceId": null,
-      "output": "warlock/frames32-r1/5.webp",
+      "output": "warlock/abyssal-seraph-r2/5.webp",
       "transform": {
-        "width": 512,
+        "width": 768,
         "withoutEnlargement": true,
         "format": "webp",
         "quality": 88,
         "alphaQuality": 100,
-        "lossless": false
+        "lossless": true
       },
-      "outputSha256": "e0abe285b25dbebbc623277565b373b746c985eb2bfc0d6dfd94b46eb3d98a0c"
+      "outputSha256": "09d8a810c19d0d35f9b3c32f65bdc3c7a6bdaa5e5092c1d032e1834a0ee9176b"
     },
     {
-      "source": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\heroes\\animations\\warlock\\frames32-r1\\frames\\06.png",
-      "sha256": "77c547d87bdb9a90cb4653c1c57b429441795d791e26b133d9aa16fa4cc10a97",
+      "source": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\heroes\\animations\\abyssal-seraph\\frames32-r2\\frames\\hit-02.png",
+      "sha256": "57a7888e03d2da1c076e63ad66e8c8b8aec2e329c003fc8d1a683659313189f1",
       "status": "Unreviewed",
       "evidenceId": null,
-      "output": "warlock/frames32-r1/6.webp",
+      "output": "warlock/abyssal-seraph-r2/6.webp",
       "transform": {
-        "width": 512,
+        "width": 768,
         "withoutEnlargement": true,
         "format": "webp",
         "quality": 88,
         "alphaQuality": 100,
-        "lossless": false
+        "lossless": true
       },
-      "outputSha256": "822f45f2fb628ba07a611c408e383dc7876de70e6b7bc7d239ca424375b3c3ce"
+      "outputSha256": "d87b6b6a7c2ccd614ad2b23a2af2cdec4cc56196dd4bbd08d6a1879bd030d73f"
     },
     {
-      "source": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\heroes\\animations\\warlock\\frames32-r1\\frames\\07.png",
-      "sha256": "06dcb8f17cce18491e52b6fc5d2f1fc201031be51b9eef81911d76eba77c5d84",
+      "source": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\heroes\\animations\\abyssal-seraph\\frames32-r2\\frames\\hit-03.png",
+      "sha256": "eafcbe3ac293524dce9d6d1dd026e57608a83ef511feffe1b471aaa2e9ea3b63",
       "status": "Unreviewed",
       "evidenceId": null,
-      "output": "warlock/frames32-r1/7.webp",
+      "output": "warlock/abyssal-seraph-r2/7.webp",
       "transform": {
-        "width": 512,
+        "width": 768,
         "withoutEnlargement": true,
         "format": "webp",
         "quality": 88,
         "alphaQuality": 100,
-        "lossless": false
+        "lossless": true
       },
-      "outputSha256": "77915b53ba3bd78eda642f952c3f1252dc4fdd4499b8ac4d4c9e0caa9f0ef101"
+      "outputSha256": "1e268fd4d94dfcdd96b6508e85b4d2b7c5a7278175b3e8d3c2ff4ea5b647497e"
     },
     {
-      "source": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\heroes\\animations\\warlock\\frames32-r1\\frames\\08.png",
-      "sha256": "398c7ae4378c270f38c53960e70ba4185f9c01930ffce5f03af9081c0aaea559",
+      "source": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\heroes\\animations\\abyssal-seraph\\frames32-r2\\frames\\attack-00.png",
+      "sha256": "3b7aa56bb4062a6048fa46daf83c56266d86b61183576e9c9352c5a26197682a",
       "status": "Unreviewed",
       "evidenceId": null,
-      "output": "warlock/frames32-r1/8.webp",
+      "output": "warlock/abyssal-seraph-r2/8.webp",
       "transform": {
-        "width": 512,
+        "width": 768,
         "withoutEnlargement": true,
         "format": "webp",
         "quality": 88,
         "alphaQuality": 100,
-        "lossless": false
+        "lossless": true
       },
-      "outputSha256": "4eef5f8c8cb8c094399507daaf4bfff050a2d34fcb70461225ad5d909bdc8431"
+      "outputSha256": "974a48ba668ab6bbad6018322f3c33826171e0e5f18693638a36c0953f17d83e"
     },
     {
-      "source": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\heroes\\animations\\warlock\\frames32-r1\\frames\\09.png",
-      "sha256": "7758e2ae06795f0e21f15e3d8848c62ecb662031252dc389b9d44ed3da75f27c",
+      "source": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\heroes\\animations\\abyssal-seraph\\frames32-r2\\frames\\attack-01.png",
+      "sha256": "93114fb7ffc62d5ea2191420300f080d84151d806fe990c4019dce9c2ba3512f",
       "status": "Unreviewed",
       "evidenceId": null,
-      "output": "warlock/frames32-r1/9.webp",
+      "output": "warlock/abyssal-seraph-r2/9.webp",
       "transform": {
-        "width": 512,
+        "width": 768,
         "withoutEnlargement": true,
         "format": "webp",
         "quality": 88,
         "alphaQuality": 100,
-        "lossless": false
+        "lossless": true
       },
-      "outputSha256": "458a14f364d1c3dbfcfb7c9768f80896f9f144b5584c96b73b1f995a39f946fa"
+      "outputSha256": "ce7cbcaf32b9c01d37e7fed409cbd4775824253150db196032691e8fcbfca4d4"
     },
     {
-      "source": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\heroes\\animations\\warlock\\frames32-r1\\frames\\10.png",
-      "sha256": "bab6b3ec707bbfe26c24f91913ecf8d39ac63ddb5af284402c6b420ebb1d80f2",
+      "source": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\heroes\\animations\\abyssal-seraph\\frames32-r2\\frames\\attack-02.png",
+      "sha256": "928384873e5ffd7f324cbe93507e10a0008530b6c83e2167e55426fdc883d403",
       "status": "Unreviewed",
       "evidenceId": null,
-      "output": "warlock/frames32-r1/10.webp",
+      "output": "warlock/abyssal-seraph-r2/10.webp",
       "transform": {
-        "width": 512,
+        "width": 768,
         "withoutEnlargement": true,
         "format": "webp",
         "quality": 88,
         "alphaQuality": 100,
-        "lossless": false
+        "lossless": true
       },
-      "outputSha256": "52e1ef16499446469f46cc6d175f112de6745b288fe853c704f7ebd7e1dc7703"
+      "outputSha256": "1130942624e6abc41b4c0cd37d41e4c58e64d5a231d1d28e329fbd705d0a7210"
     },
     {
-      "source": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\heroes\\animations\\warlock\\frames32-r1\\frames\\11.png",
-      "sha256": "61a3237401aada0c21e6a009ba1a4136d658e48ba943e311a120ffcdc1775748",
+      "source": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\heroes\\animations\\abyssal-seraph\\frames32-r2\\frames\\attack-03.png",
+      "sha256": "3e700bfdd2648b997fa4fec9141bfc65fb302be5b1d694acdba2654b149e3de9",
       "status": "Unreviewed",
       "evidenceId": null,
-      "output": "warlock/frames32-r1/11.webp",
+      "output": "warlock/abyssal-seraph-r2/11.webp",
       "transform": {
-        "width": 512,
+        "width": 768,
         "withoutEnlargement": true,
         "format": "webp",
         "quality": 88,
         "alphaQuality": 100,
-        "lossless": false
+        "lossless": true
       },
-      "outputSha256": "8ccb7efb9c0876aa5f21f8e65cebf4a5562e1c49060aff5f9370848e67df2d97"
+      "outputSha256": "4c654cfb94eb503aa6b1a53b57d363aa8f967b7c9b5f879a343fc1be7aa7f651"
     },
     {
-      "source": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\heroes\\animations\\warlock\\frames32-r1\\frames\\12.png",
-      "sha256": "20efe3e0e894b19f7b390fd1efff01fb64c47d67d44834cd355bd0c2919bce65",
+      "source": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\heroes\\animations\\abyssal-seraph\\frames32-r2\\frames\\attack-04.png",
+      "sha256": "63d5c12f42b4730c8655b5f17613cb00f97fab83d24d55807dd36af564986276",
       "status": "Unreviewed",
       "evidenceId": null,
-      "output": "warlock/frames32-r1/12.webp",
+      "output": "warlock/abyssal-seraph-r2/12.webp",
       "transform": {
-        "width": 512,
+        "width": 768,
         "withoutEnlargement": true,
         "format": "webp",
         "quality": 88,
         "alphaQuality": 100,
-        "lossless": false
+        "lossless": true
       },
-      "outputSha256": "e20fde246d58bd74ae7bde4c2e15e5bb28c01cf8b0b71a3f71f0c8e998f3a1f2"
+      "outputSha256": "1c567db486851d22cba364fa07eac0991871cdfbaf10352587c52713c9f48dbd"
     },
     {
-      "source": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\heroes\\animations\\warlock\\frames32-r1\\frames\\13.png",
-      "sha256": "daaab6ea81dec27ed5190ce09974627b9d733be366881ff517f7216f8938d70b",
+      "source": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\heroes\\animations\\abyssal-seraph\\frames32-r2\\frames\\attack-05.png",
+      "sha256": "541ab96936a18b5ef21b415d715ea599dae558ce15a9bd2e8a245374a7d2e78b",
       "status": "Unreviewed",
       "evidenceId": null,
-      "output": "warlock/frames32-r1/13.webp",
+      "output": "warlock/abyssal-seraph-r2/13.webp",
       "transform": {
-        "width": 512,
+        "width": 768,
         "withoutEnlargement": true,
         "format": "webp",
         "quality": 88,
         "alphaQuality": 100,
-        "lossless": false
+        "lossless": true
       },
-      "outputSha256": "af363ca2f2277d2f5258799985a3030729c824cb9974f642c46aba4ffc0c9708"
+      "outputSha256": "19d0bf2ab44adfb361cc01faad69598cd5d75d11ec95c15c10850f4d734c2555"
     },
     {
-      "source": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\heroes\\animations\\warlock\\frames32-r1\\frames\\14.png",
-      "sha256": "2b44d52ba784a1d8c91e793fdef9fbbad2ed52a0135cbe0eef23488138a58226",
+      "source": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\heroes\\animations\\abyssal-seraph\\frames32-r2\\frames\\attack-06.png",
+      "sha256": "2f63684bfe6637ef39de260fd49ad8b4f2e91b77cdcc6dd28381ed87b1fa8239",
       "status": "Unreviewed",
       "evidenceId": null,
-      "output": "warlock/frames32-r1/14.webp",
+      "output": "warlock/abyssal-seraph-r2/14.webp",
       "transform": {
-        "width": 512,
+        "width": 768,
         "withoutEnlargement": true,
         "format": "webp",
         "quality": 88,
         "alphaQuality": 100,
-        "lossless": false
+        "lossless": true
       },
-      "outputSha256": "ca0fe28fd82f00acf51e63893b8b8822eb5adbef9b81621150e5890954b852f1"
+      "outputSha256": "1581eebedbf13ce1c084131366ed70a241238689b44179d1d8c5cb4b6420d93b"
     },
     {
-      "source": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\heroes\\animations\\warlock\\frames32-r1\\frames\\15.png",
-      "sha256": "21e493b9f57ae5f615655b42719159c17c9d629aaa56c71ffd88f680dc2699df",
+      "source": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\heroes\\animations\\abyssal-seraph\\frames32-r2\\frames\\attack-07.png",
+      "sha256": "a9499145a86bd00f92a99f37ac31b72d1cc287d22d3b1b21ba9133f625585edf",
       "status": "Unreviewed",
       "evidenceId": null,
-      "output": "warlock/frames32-r1/15.webp",
+      "output": "warlock/abyssal-seraph-r2/15.webp",
       "transform": {
-        "width": 512,
+        "width": 768,
         "withoutEnlargement": true,
         "format": "webp",
         "quality": 88,
         "alphaQuality": 100,
-        "lossless": false
+        "lossless": true
       },
-      "outputSha256": "ef42ebc3c3beb5af9671aa264fa5a9742617552da346fac598f3bda278321bc7"
+      "outputSha256": "94f40ecc51b6b5a0a6fcd84ca1c0cf6251b715169feef6564db0f3d99cd8d489"
     },
     {
-      "source": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\heroes\\animations\\warlock\\frames32-r1\\frames\\16.png",
-      "sha256": "8b1ddba64834f9651e0f674b85a0541415b2c568db31d7b568c40142c707b740",
+      "source": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\heroes\\animations\\abyssal-seraph\\frames32-r2\\frames\\wounded-00.png",
+      "sha256": "53f31dc665429890da42c7044845c973107af348bffc0111f466ca9a81234036",
       "status": "Unreviewed",
       "evidenceId": null,
-      "output": "warlock/frames32-r1/16.webp",
+      "output": "warlock/abyssal-seraph-r2/16.webp",
       "transform": {
-        "width": 512,
+        "width": 768,
         "withoutEnlargement": true,
         "format": "webp",
         "quality": 88,
         "alphaQuality": 100,
-        "lossless": false
+        "lossless": true
       },
-      "outputSha256": "681b3ace8c01993d4da6fa17d7e605dfa6fbe69e11ef9706dbae7eb729e7ac49"
+      "outputSha256": "b95eae5199d66d91841c5190583d4e3ab4d9b1e1fe5d51bd18a5655f38573aa0"
     },
     {
-      "source": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\heroes\\animations\\warlock\\frames32-r1\\frames\\17.png",
-      "sha256": "dbda67bac997e101caca7714f5f49f5a13e743dbbbb6dd98ef06335ff045d217",
+      "source": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\heroes\\animations\\abyssal-seraph\\frames32-r2\\frames\\wounded-01.png",
+      "sha256": "510e25a9e6afa73519a942f74117cfc6068a667d60269ab8089dc1d21f3fde51",
       "status": "Unreviewed",
       "evidenceId": null,
-      "output": "warlock/frames32-r1/17.webp",
+      "output": "warlock/abyssal-seraph-r2/17.webp",
       "transform": {
-        "width": 512,
+        "width": 768,
         "withoutEnlargement": true,
         "format": "webp",
         "quality": 88,
         "alphaQuality": 100,
-        "lossless": false
+        "lossless": true
       },
-      "outputSha256": "320f2af3d5c068a155d95e82c08085717dd0458891952eb477b5f7aa668768b8"
+      "outputSha256": "2e4268f6a024cce9efeb23d044a88499e2ab6b6bf4594e3d21d4df0246a54c16"
     },
     {
-      "source": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\heroes\\animations\\warlock\\frames32-r1\\frames\\18.png",
-      "sha256": "55e54413bbd2cb31d2a6488f65642f01e9cafc1c89ff81969cf28a803811c957",
+      "source": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\heroes\\animations\\abyssal-seraph\\frames32-r2\\frames\\wounded-02.png",
+      "sha256": "1002dfc6e12b26bf54242606d6c94d4d54473ff40ccc62919fd20382a49dc74d",
       "status": "Unreviewed",
       "evidenceId": null,
-      "output": "warlock/frames32-r1/18.webp",
+      "output": "warlock/abyssal-seraph-r2/18.webp",
       "transform": {
-        "width": 512,
+        "width": 768,
         "withoutEnlargement": true,
         "format": "webp",
         "quality": 88,
         "alphaQuality": 100,
-        "lossless": false
+        "lossless": true
       },
-      "outputSha256": "944b15323cf1812f1a253a3214fe79df4c0da382377f7402f2dae84f542b8e2a"
+      "outputSha256": "de4298f0ee7b627b231ea8fa10a8cc6c87e8ffd8ad9657cbd08d69884cb30f11"
     },
     {
-      "source": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\heroes\\animations\\warlock\\frames32-r1\\frames\\19.png",
-      "sha256": "ee2d26fdd0b8247f6ed70e84a0b9b71d4e9ebe44c4de5c0a34508ef3e22e521c",
+      "source": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\heroes\\animations\\abyssal-seraph\\frames32-r2\\frames\\wounded-03.png",
+      "sha256": "5c461f9ee3cef8e0e5b45846f8800adc26fc5a2b2248ce494b9ee5bfb9ce9cc9",
       "status": "Unreviewed",
       "evidenceId": null,
-      "output": "warlock/frames32-r1/19.webp",
+      "output": "warlock/abyssal-seraph-r2/19.webp",
       "transform": {
-        "width": 512,
+        "width": 768,
         "withoutEnlargement": true,
         "format": "webp",
         "quality": 88,
         "alphaQuality": 100,
-        "lossless": false
+        "lossless": true
       },
-      "outputSha256": "959a9e8c73276e541e52dea757ddfdb580b32a811faf4cc922fa1413de94761c"
+      "outputSha256": "9d185743590c1904f09858d6489af2a82e465a75e18655622b444b44c0922505"
     },
     {
-      "source": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\heroes\\animations\\warlock\\frames32-r1\\frames\\20.png",
-      "sha256": "62e214075194273d86d7465d8c07af807288bd43e07505140a0697838d09b85d",
+      "source": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\heroes\\animations\\abyssal-seraph\\frames32-r2\\frames\\cast-00.png",
+      "sha256": "3cd48257a2e610bfd59fbdbfd30f365ccc54731ba6cd2478ea4c5958e6dbcb30",
       "status": "Unreviewed",
       "evidenceId": null,
-      "output": "warlock/frames32-r1/20.webp",
+      "output": "warlock/abyssal-seraph-r2/20.webp",
       "transform": {
-        "width": 512,
+        "width": 768,
         "withoutEnlargement": true,
         "format": "webp",
         "quality": 88,
         "alphaQuality": 100,
-        "lossless": false
+        "lossless": true
       },
-      "outputSha256": "a025be0ae64be67fccf54d4e65777f8ef031bba4251044426bb37dcb44cd818a"
+      "outputSha256": "5716cd2aa2c2b87f710a27e66cb126d7556ccec72ee48c0a2a73c0b4b405d013"
     },
     {
-      "source": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\heroes\\animations\\warlock\\frames32-r1\\frames\\21.png",
-      "sha256": "f10454ab30a66766dd14a78f1f1395bdd7ea28c6c4db50228e38732c42380a22",
+      "source": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\heroes\\animations\\abyssal-seraph\\frames32-r2\\frames\\cast-01.png",
+      "sha256": "7214f2d680ab22a331382b89a06a4ebee89927c1fb202249449cd8d833965f3d",
       "status": "Unreviewed",
       "evidenceId": null,
-      "output": "warlock/frames32-r1/21.webp",
+      "output": "warlock/abyssal-seraph-r2/21.webp",
       "transform": {
-        "width": 512,
+        "width": 768,
         "withoutEnlargement": true,
         "format": "webp",
         "quality": 88,
         "alphaQuality": 100,
-        "lossless": false
+        "lossless": true
       },
-      "outputSha256": "6f6d483f6f5590d34422027e56683991958107f8107cfe8aca6a7cc06bd1b5f3"
+      "outputSha256": "a47e7b6ef29aae622bfcdbfcdea7a2edaf57362917e1a59677a6497da5b6ad3d"
     },
     {
-      "source": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\heroes\\animations\\warlock\\frames32-r1\\frames\\22.png",
-      "sha256": "cc2f37c237ca5415671343eaee91165e444108af5b03e9ae55c0d24fe5ec293f",
+      "source": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\heroes\\animations\\abyssal-seraph\\frames32-r2\\frames\\cast-02.png",
+      "sha256": "6bb91cec1bb5de3f0dd548e9da4f00b4ff9086a25062b42ccab2574d13ef6095",
       "status": "Unreviewed",
       "evidenceId": null,
-      "output": "warlock/frames32-r1/22.webp",
+      "output": "warlock/abyssal-seraph-r2/22.webp",
       "transform": {
-        "width": 512,
+        "width": 768,
         "withoutEnlargement": true,
         "format": "webp",
         "quality": 88,
         "alphaQuality": 100,
-        "lossless": false
+        "lossless": true
       },
-      "outputSha256": "cffbd210cee758213b27a306d85c8e3acc63d29dbb30aaa49a4eedf223197448"
+      "outputSha256": "ae05af5bbc1d5f8dc5b60d89b23f49be0cd591abe6e68b6069fe7f90e11f610d"
     },
     {
-      "source": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\heroes\\animations\\warlock\\frames32-r1\\frames\\23.png",
-      "sha256": "6ece1a51b154a303bbcb2a722fbd96dda6bf8b908010ac983b9bf2a724e8cf3a",
+      "source": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\heroes\\animations\\abyssal-seraph\\frames32-r2\\frames\\cast-03.png",
+      "sha256": "e5903eb235194f23f31919362342baab7e47cd53dafe40ac20e618387e814b18",
       "status": "Unreviewed",
       "evidenceId": null,
-      "output": "warlock/frames32-r1/23.webp",
+      "output": "warlock/abyssal-seraph-r2/23.webp",
       "transform": {
-        "width": 512,
+        "width": 768,
         "withoutEnlargement": true,
         "format": "webp",
         "quality": 88,
         "alphaQuality": 100,
-        "lossless": false
+        "lossless": true
       },
-      "outputSha256": "88ac2c28588763763b4702b9ffe17a201beae80cb79ffcf77199051654a9bd66"
+      "outputSha256": "f4bb2bb93932ee80ebbf3fa901cce01c671b89aa844911020a43a96158888418"
     },
     {
-      "source": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\heroes\\animations\\warlock\\frames32-r1\\frames\\24.png",
-      "sha256": "fc76a0782f66b39a7ec1eb249ae9b7121ad6938ffd2abc5c79790beafa77cff7",
+      "source": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\heroes\\animations\\abyssal-seraph\\frames32-r2\\frames\\cast-04.png",
+      "sha256": "5c913693b97c7b0650b64bc95424e32b320c0e1f7591bad97d4b41bda7896712",
       "status": "Unreviewed",
       "evidenceId": null,
-      "output": "warlock/frames32-r1/24.webp",
+      "output": "warlock/abyssal-seraph-r2/24.webp",
       "transform": {
-        "width": 512,
+        "width": 768,
         "withoutEnlargement": true,
         "format": "webp",
         "quality": 88,
         "alphaQuality": 100,
-        "lossless": false
+        "lossless": true
       },
-      "outputSha256": "736992eed3f879ea848e515da33f118ca87b0366bbb798d567eed5009dd656a0"
+      "outputSha256": "96340fa2991ea9d14ef2dbc24d615e3f5ca9ff1b1004546e00a32238cfcddf7c"
     },
     {
-      "source": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\heroes\\animations\\warlock\\frames32-r1\\frames\\25.png",
-      "sha256": "fe8e64c71ad2fa6a58eef5a88e3df1d725158bd7dcfe53ad5352b1c01bd1d8ec",
+      "source": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\heroes\\animations\\abyssal-seraph\\frames32-r2\\frames\\cast-05.png",
+      "sha256": "bc360a7c8b66eedb07a2c043ed879cf8c5a88e7f000943d725b999ffb4c77bdb",
       "status": "Unreviewed",
       "evidenceId": null,
-      "output": "warlock/frames32-r1/25.webp",
+      "output": "warlock/abyssal-seraph-r2/25.webp",
       "transform": {
-        "width": 512,
+        "width": 768,
         "withoutEnlargement": true,
         "format": "webp",
         "quality": 88,
         "alphaQuality": 100,
-        "lossless": false
+        "lossless": true
       },
-      "outputSha256": "b0be6ccb56fb7da6739624ea0cdc3d50b69e4a20ceda11fe1456b5be20e35b7c"
+      "outputSha256": "19cbde79bad34fd18444481acf284d37aba05a84b735a830a777692a3bcf63e5"
     },
     {
-      "source": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\heroes\\animations\\warlock\\frames32-r1\\frames\\26.png",
-      "sha256": "6f085cd9795868809d3129ad2a60e61403dc16c273a337a42364883fdedefaec",
+      "source": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\heroes\\animations\\abyssal-seraph\\frames32-r2\\frames\\cast-06.png",
+      "sha256": "cfcc462eb6ad0e33006305b660e559e76102fb25c1a5572ef840eb4802811c39",
       "status": "Unreviewed",
       "evidenceId": null,
-      "output": "warlock/frames32-r1/26.webp",
+      "output": "warlock/abyssal-seraph-r2/26.webp",
       "transform": {
-        "width": 512,
+        "width": 768,
         "withoutEnlargement": true,
         "format": "webp",
         "quality": 88,
         "alphaQuality": 100,
-        "lossless": false
+        "lossless": true
       },
-      "outputSha256": "076b1187f47571d44b414e74142b98e3b2ef2fc17ced8dfb0ef78f7bba37208d"
+      "outputSha256": "b317deca045fd0f9205d8a029d3273d5d22d2bacdeaeea76d371336a474f7e43"
     },
     {
-      "source": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\heroes\\animations\\warlock\\frames32-r1\\frames\\27.png",
-      "sha256": "a694150e234c2ac9e6d76bafe327d83c74f3cee4672d4a1759a2c53775ab7807",
+      "source": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\heroes\\animations\\abyssal-seraph\\frames32-r2\\frames\\cast-07.png",
+      "sha256": "73d383cc278bb3717359d0a53b18079ff3b32d1e003199d548d6b7b8c60fb286",
       "status": "Unreviewed",
       "evidenceId": null,
-      "output": "warlock/frames32-r1/27.webp",
+      "output": "warlock/abyssal-seraph-r2/27.webp",
       "transform": {
-        "width": 512,
+        "width": 768,
         "withoutEnlargement": true,
         "format": "webp",
         "quality": 88,
         "alphaQuality": 100,
-        "lossless": false
+        "lossless": true
       },
-      "outputSha256": "ed52f2fb4826eecacd019a3cf2d0c63670c2fa1fc8ee5d0d570733358a3725ab"
+      "outputSha256": "17123863c69c18d8c528b67fd3f7b5083386913dda33dfcf5187d975d402ecca"
     },
     {
-      "source": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\heroes\\animations\\warlock\\frames32-r1\\frames\\28.png",
-      "sha256": "9a14d7c0b0c9aeedf2affce59eac9585b28ca0c39df821fcfd5f949c42ca37e5",
+      "source": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\heroes\\animations\\abyssal-seraph\\frames32-r2\\frames\\die-00.png",
+      "sha256": "cf7275e0d2701d820eb2aceb80c94164237796121c6c908c8c8c915db0e0759f",
       "status": "Unreviewed",
       "evidenceId": null,
-      "output": "warlock/frames32-r1/28.webp",
+      "output": "warlock/abyssal-seraph-r2/28.webp",
       "transform": {
-        "width": 512,
+        "width": 768,
         "withoutEnlargement": true,
         "format": "webp",
         "quality": 88,
         "alphaQuality": 100,
-        "lossless": false
+        "lossless": true
       },
-      "outputSha256": "9b34c6c0272fbf479f963de8bf1efcfd3e957e547643ed948fd2570ea88dd9e4"
+      "outputSha256": "d73e01e730d594112fd5dc259e6e16a828df934215b704fb460489c9ab6dd948"
     },
     {
-      "source": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\heroes\\animations\\warlock\\frames32-r1\\frames\\29.png",
-      "sha256": "f0e61ad4e7b789b091f447afa7a3e5607b51385e08dcd5287af3c5bb37682ad0",
+      "source": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\heroes\\animations\\abyssal-seraph\\frames32-r2\\frames\\die-01.png",
+      "sha256": "8ee52cc22ce95a0d358376cd2932477da2e63271e29dbb6e534f6bc82833b027",
       "status": "Unreviewed",
       "evidenceId": null,
-      "output": "warlock/frames32-r1/29.webp",
+      "output": "warlock/abyssal-seraph-r2/29.webp",
       "transform": {
-        "width": 512,
+        "width": 768,
         "withoutEnlargement": true,
         "format": "webp",
         "quality": 88,
         "alphaQuality": 100,
-        "lossless": false
+        "lossless": true
       },
-      "outputSha256": "da49a882ac6bd3363def2374f133c457ddbfb2dfb913394226194842e3968146"
+      "outputSha256": "d074904c43567e36bc4475222b131782de95ffaeb2b12185e6591cd652425d72"
     },
     {
-      "source": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\heroes\\animations\\warlock\\frames32-r1\\frames\\30.png",
-      "sha256": "6753e007b2ddd121c1471eb188f95d094f34a32a1dc4991dd0c9d2716ce716c5",
+      "source": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\heroes\\animations\\abyssal-seraph\\frames32-r2\\frames\\die-02.png",
+      "sha256": "7476eb0bbcadba80ba343ae8e82f12ad3f520224b7d786cc95ba2ec0f340b798",
       "status": "Unreviewed",
       "evidenceId": null,
-      "output": "warlock/frames32-r1/30.webp",
+      "output": "warlock/abyssal-seraph-r2/30.webp",
       "transform": {
-        "width": 512,
+        "width": 768,
         "withoutEnlargement": true,
         "format": "webp",
         "quality": 88,
         "alphaQuality": 100,
-        "lossless": false
+        "lossless": true
       },
-      "outputSha256": "9aee8e4dd1ba2685247f1c420556b2918a6945c6d2e7e3333f6992346a20d279"
+      "outputSha256": "90206e410a898193bb716e0f62d9fba37d26cf48350ece6ecab999fdbb769113"
     },
     {
-      "source": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\heroes\\animations\\warlock\\frames32-r1\\frames\\31.png",
-      "sha256": "379fef1eb1a3a4411e49a5870febf00c40bb227724523caa2ca4f4f8edb47ee2",
+      "source": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\heroes\\animations\\abyssal-seraph\\frames32-r2\\frames\\die-03.png",
+      "sha256": "33ebd7bc5a4b8c173c786162f4e025ed1e89d0cb82a1a43cb35ba7b557d2cd53",
       "status": "Unreviewed",
       "evidenceId": null,
-      "output": "warlock/frames32-r1/31.webp",
+      "output": "warlock/abyssal-seraph-r2/31.webp",
       "transform": {
-        "width": 512,
+        "width": 768,
         "withoutEnlargement": true,
         "format": "webp",
         "quality": 88,
         "alphaQuality": 100,
-        "lossless": false
+        "lossless": true
       },
-      "outputSha256": "d8df7ec068a88334c9e0caa0b573817ec34aef1b324dc258c58a5a106dbd94d0"
+      "outputSha256": "ca1e7bae397461f1463cd699161e82b5a02430ed175fb57c60cb6f2ca5ee6144"
     },
     {
       "source": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\characters\\warlock-summons\\animations\\base-r1\\warlock-imp\\frame-00.png",
@@ -12258,46 +12281,39 @@
     }
   ],
   "integration": {
-    "authorization": "User requested the lightweight 32-frame Warlock and animated existing summons; pending art authorized for integration, not relabeled approved.",
+    "authorization": "User explicitly authorized the approved-for-integration Abyssal Seraph 32-frame package to replace the Warlock visual model. Ledger status is preserved and not relabeled approved.",
     "hero": {
-      "revision": "frames32-r1",
+      "revision": "frames32-r2",
       "manifest": {
-        "source": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\heroes\\animations\\warlock\\frames32-r1\\manifest.json",
-        "sha256": "a9d7bbb41f15a558b01f35c10b121907e9ddafe3f187fe3babd5ebdc161a6ee9",
+        "source": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\heroes\\animations\\abyssal-seraph\\frames32-r2\\manifest.json",
+        "sha256": "982b72e54ead3b52828c59465252d7ae21ca4242a95cf697500183ba96cd2dbf",
         "status": "Pending approval",
         "evidenceId": null
       },
-      "index": {
-        "source": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\heroes\\animations\\warlock\\frames32-r1\\frames\\index.json",
-        "sha256": "1c246c562a87a8de644c0b7527650dbd7038ba8e06267b46d29ab9dad0e962b5",
+      "animation": {
+        "source": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\heroes\\animations\\abyssal-seraph\\frames32-r2\\animation.json",
+        "sha256": "1a24dc80729ec3718cefe4eae9eab4ee8e14a4a2505b55e6391aeec22f62f467",
         "status": "Pending approval",
         "evidenceId": null
       },
       "master": {
-        "source": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\heroes\\references\\warlock\\warlock-base-r1.png",
-        "sha256": "3585512c985b250f1da8a159f436e82dc673059269bd1e54cfad625b01e28f02",
-        "status": "Approved",
-        "evidenceId": "user-chat-2026-10-01-approve-existing-runelord"
+        "source": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\heroes\\animations\\abyssal-seraph\\frames32-r2\\source\\master.png",
+        "sha256": "8cbd77e13301c7b34f72a1560e8e537bcbc5eb593b46b66340c3896ee0856aec",
+        "status": "Pending approval",
+        "evidenceId": null
       },
       "frameCount": 32,
       "stateCount": 6,
+      "facing": "right",
       "idleDurationMultiplier": 1.2,
       "releaseOrigins": {
-        "coordinateSystem": "Source 512px frame coordinates; hand-measured palm/finger centers by integration owner",
-        "attack": {
-          "frame": "frames/12.png",
-          "timeMs": 270,
-          "xy": [
-            430,
-            184
-          ]
-        },
+        "coordinateSystem": "Native 768x896 Seraph frame coordinates; authored event attachment",
         "cast": {
-          "frame": "frames/22.png",
-          "timeMs": 260,
+          "frame": "frames/cast-03.png",
+          "timeMs": 450,
           "xy": [
-            368,
-            188
+            471,
+            333
           ]
         }
       },
@@ -12315,26 +12331,194 @@
       },
       "sheets": [
         {
-          "source": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\heroes\\animations\\warlock\\frames32-r1\\source\\sheet-a.png",
-          "sha256": "af67b83024a78e6d87effb3fc388bd06d0b85c4f920644c053f79cdf79dfe0f5",
+          "source": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\heroes\\animations\\abyssal-seraph\\frames32-r2\\frames\\idle-00.png",
+          "sha256": "1db9d6f36b8847679223c2f61539fde281a43f36d153ef8d547953b3e29a7e29",
           "status": "Pending approval",
           "evidenceId": null
         },
         {
-          "source": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\heroes\\animations\\warlock\\frames32-r1\\source\\sheet-b.png",
-          "sha256": "c43ffb217a70bf20b0bf1b40d83e7a2f802e4ec0b537a851944606b4a150a0a4",
+          "source": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\heroes\\animations\\abyssal-seraph\\frames32-r2\\frames\\idle-01.png",
+          "sha256": "46f9698ba06273b5a66b04f2fd54eadc73130b4fa53795986ebb6f2615f784f4",
           "status": "Pending approval",
           "evidenceId": null
         },
         {
-          "source": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\heroes\\animations\\warlock\\frames32-r1\\source\\sheet-c.png",
-          "sha256": "7978a0601f7c9d970023b8eb7ce378f3d2410bd450bc94a2f34c37d03e52b3b0",
+          "source": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\heroes\\animations\\abyssal-seraph\\frames32-r2\\frames\\idle-02.png",
+          "sha256": "fe24fc7c3b393e0d5f7326d178f60b524d8d5e6062cba4d670ac2c003481f9d9",
           "status": "Pending approval",
           "evidenceId": null
         },
         {
-          "source": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\heroes\\animations\\warlock\\frames32-r1\\source\\sheet-d.png",
-          "sha256": "68a3d0d2abc53ec842522b8787cc2ba2430f3420c6e47e28006fef178236b3c6",
+          "source": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\heroes\\animations\\abyssal-seraph\\frames32-r2\\frames\\idle-03.png",
+          "sha256": "6d89662bd9a2581124c444b73397d5e1e31923c3a4b79cdcabf6c06fcb48702f",
+          "status": "Pending approval",
+          "evidenceId": null
+        },
+        {
+          "source": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\heroes\\animations\\abyssal-seraph\\frames32-r2\\frames\\hit-00.png",
+          "sha256": "2430f476eba502dbac75f6c1910cf7f689cae84ddc7419c0d6d57dd2ab165f5d",
+          "status": "Pending approval",
+          "evidenceId": null
+        },
+        {
+          "source": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\heroes\\animations\\abyssal-seraph\\frames32-r2\\frames\\hit-01.png",
+          "sha256": "d282acb304d51484cfae03bb48b55557f58c5cf92cd34d064077551a876fa806",
+          "status": "Pending approval",
+          "evidenceId": null
+        },
+        {
+          "source": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\heroes\\animations\\abyssal-seraph\\frames32-r2\\frames\\hit-02.png",
+          "sha256": "57a7888e03d2da1c076e63ad66e8c8b8aec2e329c003fc8d1a683659313189f1",
+          "status": "Pending approval",
+          "evidenceId": null
+        },
+        {
+          "source": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\heroes\\animations\\abyssal-seraph\\frames32-r2\\frames\\hit-03.png",
+          "sha256": "eafcbe3ac293524dce9d6d1dd026e57608a83ef511feffe1b471aaa2e9ea3b63",
+          "status": "Pending approval",
+          "evidenceId": null
+        },
+        {
+          "source": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\heroes\\animations\\abyssal-seraph\\frames32-r2\\frames\\attack-00.png",
+          "sha256": "3b7aa56bb4062a6048fa46daf83c56266d86b61183576e9c9352c5a26197682a",
+          "status": "Pending approval",
+          "evidenceId": null
+        },
+        {
+          "source": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\heroes\\animations\\abyssal-seraph\\frames32-r2\\frames\\attack-01.png",
+          "sha256": "93114fb7ffc62d5ea2191420300f080d84151d806fe990c4019dce9c2ba3512f",
+          "status": "Pending approval",
+          "evidenceId": null
+        },
+        {
+          "source": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\heroes\\animations\\abyssal-seraph\\frames32-r2\\frames\\attack-02.png",
+          "sha256": "928384873e5ffd7f324cbe93507e10a0008530b6c83e2167e55426fdc883d403",
+          "status": "Pending approval",
+          "evidenceId": null
+        },
+        {
+          "source": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\heroes\\animations\\abyssal-seraph\\frames32-r2\\frames\\attack-03.png",
+          "sha256": "3e700bfdd2648b997fa4fec9141bfc65fb302be5b1d694acdba2654b149e3de9",
+          "status": "Pending approval",
+          "evidenceId": null
+        },
+        {
+          "source": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\heroes\\animations\\abyssal-seraph\\frames32-r2\\frames\\attack-04.png",
+          "sha256": "63d5c12f42b4730c8655b5f17613cb00f97fab83d24d55807dd36af564986276",
+          "status": "Pending approval",
+          "evidenceId": null
+        },
+        {
+          "source": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\heroes\\animations\\abyssal-seraph\\frames32-r2\\frames\\attack-05.png",
+          "sha256": "541ab96936a18b5ef21b415d715ea599dae558ce15a9bd2e8a245374a7d2e78b",
+          "status": "Pending approval",
+          "evidenceId": null
+        },
+        {
+          "source": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\heroes\\animations\\abyssal-seraph\\frames32-r2\\frames\\attack-06.png",
+          "sha256": "2f63684bfe6637ef39de260fd49ad8b4f2e91b77cdcc6dd28381ed87b1fa8239",
+          "status": "Pending approval",
+          "evidenceId": null
+        },
+        {
+          "source": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\heroes\\animations\\abyssal-seraph\\frames32-r2\\frames\\attack-07.png",
+          "sha256": "a9499145a86bd00f92a99f37ac31b72d1cc287d22d3b1b21ba9133f625585edf",
+          "status": "Pending approval",
+          "evidenceId": null
+        },
+        {
+          "source": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\heroes\\animations\\abyssal-seraph\\frames32-r2\\frames\\wounded-00.png",
+          "sha256": "53f31dc665429890da42c7044845c973107af348bffc0111f466ca9a81234036",
+          "status": "Pending approval",
+          "evidenceId": null
+        },
+        {
+          "source": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\heroes\\animations\\abyssal-seraph\\frames32-r2\\frames\\wounded-01.png",
+          "sha256": "510e25a9e6afa73519a942f74117cfc6068a667d60269ab8089dc1d21f3fde51",
+          "status": "Pending approval",
+          "evidenceId": null
+        },
+        {
+          "source": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\heroes\\animations\\abyssal-seraph\\frames32-r2\\frames\\wounded-02.png",
+          "sha256": "1002dfc6e12b26bf54242606d6c94d4d54473ff40ccc62919fd20382a49dc74d",
+          "status": "Pending approval",
+          "evidenceId": null
+        },
+        {
+          "source": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\heroes\\animations\\abyssal-seraph\\frames32-r2\\frames\\wounded-03.png",
+          "sha256": "5c461f9ee3cef8e0e5b45846f8800adc26fc5a2b2248ce494b9ee5bfb9ce9cc9",
+          "status": "Pending approval",
+          "evidenceId": null
+        },
+        {
+          "source": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\heroes\\animations\\abyssal-seraph\\frames32-r2\\frames\\cast-00.png",
+          "sha256": "3cd48257a2e610bfd59fbdbfd30f365ccc54731ba6cd2478ea4c5958e6dbcb30",
+          "status": "Pending approval",
+          "evidenceId": null
+        },
+        {
+          "source": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\heroes\\animations\\abyssal-seraph\\frames32-r2\\frames\\cast-01.png",
+          "sha256": "7214f2d680ab22a331382b89a06a4ebee89927c1fb202249449cd8d833965f3d",
+          "status": "Pending approval",
+          "evidenceId": null
+        },
+        {
+          "source": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\heroes\\animations\\abyssal-seraph\\frames32-r2\\frames\\cast-02.png",
+          "sha256": "6bb91cec1bb5de3f0dd548e9da4f00b4ff9086a25062b42ccab2574d13ef6095",
+          "status": "Pending approval",
+          "evidenceId": null
+        },
+        {
+          "source": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\heroes\\animations\\abyssal-seraph\\frames32-r2\\frames\\cast-03.png",
+          "sha256": "e5903eb235194f23f31919362342baab7e47cd53dafe40ac20e618387e814b18",
+          "status": "Pending approval",
+          "evidenceId": null
+        },
+        {
+          "source": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\heroes\\animations\\abyssal-seraph\\frames32-r2\\frames\\cast-04.png",
+          "sha256": "5c913693b97c7b0650b64bc95424e32b320c0e1f7591bad97d4b41bda7896712",
+          "status": "Pending approval",
+          "evidenceId": null
+        },
+        {
+          "source": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\heroes\\animations\\abyssal-seraph\\frames32-r2\\frames\\cast-05.png",
+          "sha256": "bc360a7c8b66eedb07a2c043ed879cf8c5a88e7f000943d725b999ffb4c77bdb",
+          "status": "Pending approval",
+          "evidenceId": null
+        },
+        {
+          "source": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\heroes\\animations\\abyssal-seraph\\frames32-r2\\frames\\cast-06.png",
+          "sha256": "cfcc462eb6ad0e33006305b660e559e76102fb25c1a5572ef840eb4802811c39",
+          "status": "Pending approval",
+          "evidenceId": null
+        },
+        {
+          "source": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\heroes\\animations\\abyssal-seraph\\frames32-r2\\frames\\cast-07.png",
+          "sha256": "73d383cc278bb3717359d0a53b18079ff3b32d1e003199d548d6b7b8c60fb286",
+          "status": "Pending approval",
+          "evidenceId": null
+        },
+        {
+          "source": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\heroes\\animations\\abyssal-seraph\\frames32-r2\\frames\\die-00.png",
+          "sha256": "cf7275e0d2701d820eb2aceb80c94164237796121c6c908c8c8c915db0e0759f",
+          "status": "Pending approval",
+          "evidenceId": null
+        },
+        {
+          "source": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\heroes\\animations\\abyssal-seraph\\frames32-r2\\frames\\die-01.png",
+          "sha256": "8ee52cc22ce95a0d358376cd2932477da2e63271e29dbb6e534f6bc82833b027",
+          "status": "Pending approval",
+          "evidenceId": null
+        },
+        {
+          "source": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\heroes\\animations\\abyssal-seraph\\frames32-r2\\frames\\die-02.png",
+          "sha256": "7476eb0bbcadba80ba343ae8e82f12ad3f520224b7d786cc95ba2ec0f340b798",
+          "status": "Pending approval",
+          "evidenceId": null
+        },
+        {
+          "source": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\heroes\\animations\\abyssal-seraph\\frames32-r2\\frames\\die-03.png",
+          "sha256": "33ebd7bc5a4b8c173c786162f4e025ed1e89d0cb82a1a43cb35ba7b557d2cd53",
           "status": "Pending approval",
           "evidenceId": null
         }

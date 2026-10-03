@@ -1,0 +1,281 @@
+{
+  "id": "abyssal-seraph-hero",
+  "revision": "frames32-r2",
+  "frame_canvas": [
+    768,
+    896
+  ],
+  "anchor": [
+    384,
+    816
+  ],
+  "frames": [
+    {
+      "file": "frames/idle-00.png",
+      "sha256": "1db9d6f36b8847679223c2f61539fde281a43f36d153ef8d547953b3e29a7e29"
+    },
+    {
+      "file": "frames/idle-01.png",
+      "sha256": "46f9698ba06273b5a66b04f2fd54eadc73130b4fa53795986ebb6f2615f784f4"
+    },
+    {
+      "file": "frames/idle-02.png",
+      "sha256": "fe24fc7c3b393e0d5f7326d178f60b524d8d5e6062cba4d670ac2c003481f9d9"
+    },
+    {
+      "file": "frames/idle-03.png",
+      "sha256": "6d89662bd9a2581124c444b73397d5e1e31923c3a4b79cdcabf6c06fcb48702f"
+    },
+    {
+      "file": "frames/hit-00.png",
+      "sha256": "2430f476eba502dbac75f6c1910cf7f689cae84ddc7419c0d6d57dd2ab165f5d"
+    },
+    {
+      "file": "frames/hit-01.png",
+      "sha256": "d282acb304d51484cfae03bb48b55557f58c5cf92cd34d064077551a876fa806"
+    },
+    {
+      "file": "frames/hit-02.png",
+      "sha256": "57a7888e03d2da1c076e63ad66e8c8b8aec2e329c003fc8d1a683659313189f1"
+    },
+    {
+      "file": "frames/hit-03.png",
+      "sha256": "eafcbe3ac293524dce9d6d1dd026e57608a83ef511feffe1b471aaa2e9ea3b63"
+    },
+    {
+      "file": "frames/attack-00.png",
+      "sha256": "3b7aa56bb4062a6048fa46daf83c56266d86b61183576e9c9352c5a26197682a"
+    },
+    {
+      "file": "frames/attack-01.png",
+      "sha256": "93114fb7ffc62d5ea2191420300f080d84151d806fe990c4019dce9c2ba3512f"
+    },
+    {
+      "file": "frames/attack-02.png",
+      "sha256": "928384873e5ffd7f324cbe93507e10a0008530b6c83e2167e55426fdc883d403"
+    },
+    {
+      "file": "frames/attack-03.png",
+      "sha256": "3e700bfdd2648b997fa4fec9141bfc65fb302be5b1d694acdba2654b149e3de9"
+    },
+    {
+      "file": "frames/attack-04.png",
+      "sha256": "63d5c12f42b4730c8655b5f17613cb00f97fab83d24d55807dd36af564986276"
+    },
+    {
+      "file": "frames/attack-05.png",
+      "sha256": "541ab96936a18b5ef21b415d715ea599dae558ce15a9bd2e8a245374a7d2e78b"
+    },
+    {
+      "file": "frames/attack-06.png",
+      "sha256": "2f63684bfe6637ef39de260fd49ad8b4f2e91b77cdcc6dd28381ed87b1fa8239"
+    },
+    {
+      "file": "frames/attack-07.png",
+      "sha256": "a9499145a86bd00f92a99f37ac31b72d1cc287d22d3b1b21ba9133f625585edf"
+    },
+    {
+      "file": "frames/wounded-00.png",
+      "sha256": "53f31dc665429890da42c7044845c973107af348bffc0111f466ca9a81234036"
+    },
+    {
+      "file": "frames/wounded-01.png",
+      "sha256": "510e25a9e6afa73519a942f74117cfc6068a667d60269ab8089dc1d21f3fde51"
+    },
+    {
+      "file": "frames/wounded-02.png",
+      "sha256": "1002dfc6e12b26bf54242606d6c94d4d54473ff40ccc62919fd20382a49dc74d"
+    },
+    {
+      "file": "frames/wounded-03.png",
+      "sha256": "5c461f9ee3cef8e0e5b45846f8800adc26fc5a2b2248ce494b9ee5bfb9ce9cc9"
+    },
+    {
+      "file": "frames/cast-00.png",
+      "sha256": "3cd48257a2e610bfd59fbdbfd30f365ccc54731ba6cd2478ea4c5958e6dbcb30"
+    },
+    {
+      "file": "frames/cast-01.png",
+      "sha256": "7214f2d680ab22a331382b89a06a4ebee89927c1fb202249449cd8d833965f3d"
+    },
+    {
+      "file": "frames/cast-02.png",
+      "sha256": "6bb91cec1bb5de3f0dd548e9da4f00b4ff9086a25062b42ccab2574d13ef6095"
+    },
+    {
+      "file": "frames/cast-03.png",
+      "sha256": "e5903eb235194f23f31919362342baab7e47cd53dafe40ac20e618387e814b18"
+    },
+    {
+      "file": "frames/cast-04.png",
+      "sha256": "5c913693b97c7b0650b64bc95424e32b320c0e1f7591bad97d4b41bda7896712"
+    },
+    {
+      "file": "frames/cast-05.png",
+      "sha256": "bc360a7c8b66eedb07a2c043ed879cf8c5a88e7f000943d725b999ffb4c77bdb"
+    },
+    {
+      "file": "frames/cast-06.png",
+      "sha256": "cfcc462eb6ad0e33006305b660e559e76102fb25c1a5572ef840eb4802811c39"
+    },
+    {
+      "file": "frames/cast-07.png",
+      "sha256": "73d383cc278bb3717359d0a53b18079ff3b32d1e003199d548d6b7b8c60fb286"
+    },
+    {
+      "file": "frames/die-00.png",
+      "sha256": "cf7275e0d2701d820eb2aceb80c94164237796121c6c908c8c8c915db0e0759f"
+    },
+    {
+      "file": "frames/die-01.png",
+      "sha256": "8ee52cc22ce95a0d358376cd2932477da2e63271e29dbb6e534f6bc82833b027"
+    },
+    {
+      "file": "frames/die-02.png",
+      "sha256": "7476eb0bbcadba80ba343ae8e82f12ad3f520224b7d786cc95ba2ec0f340b798"
+    },
+    {
+      "file": "frames/die-03.png",
+      "sha256": "33ebd7bc5a4b8c173c786162f4e025ed1e89d0cb82a1a43cb35ba7b557d2cd53"
+    }
+  ],
+  "states": {
+    "idle": {
+      "frames": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "durations_ms": [
+        350,
+        350,
+        350,
+        350
+      ],
+      "loop": true,
+      "terminalHold": false,
+      "events": []
+    },
+    "hit": {
+      "frames": [
+        4,
+        5,
+        6,
+        7
+      ],
+      "durations_ms": [
+        130,
+        130,
+        130,
+        130
+      ],
+      "loop": false,
+      "terminalHold": false,
+      "events": []
+    },
+    "attack": {
+      "frames": [
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15
+      ],
+      "durations_ms": [
+        145,
+        145,
+        145,
+        145,
+        145,
+        145,
+        145,
+        145
+      ],
+      "loop": false,
+      "terminalHold": false,
+      "events": [
+        {
+          "name": "impact",
+          "frame": 3,
+          "timeMs": 435,
+          "time_ms": 435
+        }
+      ]
+    },
+    "wounded": {
+      "frames": [
+        16,
+        17,
+        18,
+        19
+      ],
+      "durations_ms": [
+        400,
+        400,
+        400,
+        400
+      ],
+      "loop": true,
+      "terminalHold": false,
+      "events": []
+    },
+    "cast": {
+      "frames": [
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27
+      ],
+      "durations_ms": [
+        150,
+        150,
+        150,
+        150,
+        150,
+        150,
+        150,
+        150
+      ],
+      "loop": false,
+      "terminalHold": false,
+      "events": [
+        {
+          "name": "cast-release",
+          "frame": 3,
+          "timeMs": 450,
+          "attachment": {
+            "x": 471,
+            "y": 333
+          },
+          "note": "Palm center on extended arm, frame 3; visual marker only, does not apply gameplay damage.",
+          "time_ms": 450
+        }
+      ]
+    },
+    "die": {
+      "frames": [
+        28,
+        29,
+        30,
+        31
+      ],
+      "durations_ms": [
+        300,
+        300,
+        300,
+        300
+      ],
+      "loop": false,
+      "terminalHold": true,
+      "events": []
+    }
+  }
+}
