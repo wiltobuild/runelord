@@ -20,7 +20,7 @@ export function OpeningScreen({ assets, selected, onSelect, onBegin, onResume, a
   assets: Assets; selected: StarterDeckId; onSelect: (id: StarterDeckId) => void;
   onBegin: () => void; onResume?: () => void; awaken: () => void;
 }) {
-  const [characterChosen, setCharacterChosen] = useState(false);
+  const [characterChosen, setCharacterChosen] = useState(true);
   const [preview, setPreview] = useState<typeof starterDecks[number] | null>(null);
   const dialog = useRef<HTMLDialogElement>(null);
   const returnFocus = useRef<HTMLElement | null>(null);

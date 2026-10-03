@@ -98,7 +98,7 @@ function App({ assets }: { assets: Assets }) {
   const hudScale = useHudScale();
   const [inspection, setInspection] = useState<"brand" | "draw" | "discard" | "items" | "powers" | null>(null);
   const [introStarted, setIntroStarted] = useState(false);
-  const [starterDeck, setStarterDeck] = useState<StarterDeckId>("fire");
+  const [starterDeck, setStarterDeck] = useState<StarterDeckId>("warband");
   const [saved, setSaved] = useState<State | null>(readSave),
     [game, setState] = useState<State | null>(null),
     [visual, setVisual] = useState<State | null>(null),
