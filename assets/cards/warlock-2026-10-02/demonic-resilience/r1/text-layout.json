@@ -1,0 +1,35 @@
+[
+  {
+    "region": "title",
+    "text": "Demonic Resilience",
+    "lines": [
+      "Demonic Resilience"
+    ],
+    "font_size": 58
+  },
+  {
+    "region": "cost",
+    "text": "1",
+    "lines": [
+      "1"
+    ],
+    "font_size": 110
+  },
+  {
+    "region": "type",
+    "text": "POWER · WARLOCK",
+    "lines": [
+      "POWER · WARLOCK"
+    ],
+    "font_size": 35
+  },
+  {
+    "region": "rules",
+    "text": "Whenever a demon dies, gain 6 Guard and 2 Cinders.",
+    "lines": [
+      "Whenever a demon dies,",
+      "gain 6 Guard and 2 Cinders."
+    ],
+    "font_size": 54
+  }
+]

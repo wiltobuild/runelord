@@ -1,0 +1,8 @@
+{
+  "name": "Demonic Resilience",
+  "cost": "1",
+  "type": "Power",
+  "rarity": "Uncommon",
+  "rules": "Whenever a demon dies, gain 6 Guard and 2 Cinders.",
+  "upgrade": "8 Guard"
+}
