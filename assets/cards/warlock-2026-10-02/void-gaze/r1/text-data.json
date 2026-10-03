@@ -1,0 +1,8 @@
+{
+  "name": "Void Gaze",
+  "cost": "1",
+  "type": "Skill",
+  "rarity": "Uncommon",
+  "rules": "Apply 2 Sapped. Gain 2 Corruption. Draw 1 card.",
+  "upgrade": "3 Sapped"
+}

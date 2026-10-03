@@ -1,0 +1,36 @@
+[
+  {
+    "region": "title",
+    "text": "Void Gaze",
+    "lines": [
+      "Void Gaze"
+    ],
+    "font_size": 94
+  },
+  {
+    "region": "cost",
+    "text": "1",
+    "lines": [
+      "1"
+    ],
+    "font_size": 110
+  },
+  {
+    "region": "type",
+    "text": "SKILL · WARLOCK",
+    "lines": [
+      "SKILL · WARLOCK"
+    ],
+    "font_size": 35
+  },
+  {
+    "region": "rules",
+    "text": "Apply 2 Sapped. Gain 2 Corruption. Draw 1 card.",
+    "lines": [
+      "Apply 2 Sapped.",
+      "Gain 2 Corruption.",
+      "Draw 1 card."
+    ],
+    "font_size": 54
+  }
+]
