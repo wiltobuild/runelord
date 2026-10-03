@@ -1,0 +1,8 @@
+{
+  "name": "Eternal Servitude",
+  "cost": "2",
+  "type": "Power",
+  "rarity": "Rare",
+  "rules": "Your demons have no Upkeep.",
+  "upgrade": "Costs 1"
+}

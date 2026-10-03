@@ -1,0 +1,35 @@
+[
+  {
+    "region": "title",
+    "text": "Eternal Servitude",
+    "lines": [
+      "Eternal Servitude"
+    ],
+    "font_size": 65
+  },
+  {
+    "region": "cost",
+    "text": "2",
+    "lines": [
+      "2"
+    ],
+    "font_size": 110
+  },
+  {
+    "region": "type",
+    "text": "POWER · WARLOCK",
+    "lines": [
+      "POWER · WARLOCK"
+    ],
+    "font_size": 35
+  },
+  {
+    "region": "rules",
+    "text": "Your demons have no Upkeep.",
+    "lines": [
+      "Your demons have no",
+      "Upkeep."
+    ],
+    "font_size": 54
+  }
+]
