@@ -1,0 +1,210 @@
+{
+  "id": "slagheart-juggernaut",
+  "method": "whole-character generated keyframes",
+  "canvas": {
+    "width": 448,
+    "height": 448
+  },
+  "anchor": {
+    "x": 224,
+    "y": 414
+  },
+  "facing": "left",
+  "master": {
+    "path": "assets\\concepts\\fire-monsters-20-2026-10-02\\slagheart-juggernaut\\base-r1.png",
+    "sha256": "e40dcb88cc4348dc5570a5b862500827592a80acf47b32350a1cda91159e37b1",
+    "approval": {
+      "status": "Approved",
+      "at": "2026-10-02T22:20:49.176Z",
+      "evidenceId": "fdbba66a-8d92-4a7f-bd76-65bbee6b2e9e",
+      "paths": [
+        "C:\\Users\\wilsh\\Projects\\runelord\\assets\\approvals\\inbox\\slagheart-juggernaut\\base-r1\\base-r1.png"
+      ]
+    }
+  },
+  "source": {
+    "path": "assets\\animations\\fire-demo-r1\\slagheart-juggernaut\\poses.png",
+    "sha256": "2ebaf94e225f1807d16392f6757e06fb7ce6f7ec3d0771d2465042ba7aa8790d"
+  },
+  "authorization": "User requested existing fire monster art animated and integrated into demo, 2026-10-03. New animation pending gallery review; not self-approved.",
+  "states": {
+    "idle": {
+      "frames": [
+        {
+          "file": "frames/00.png",
+          "durationMs": 380
+        },
+        {
+          "file": "frames/01.png",
+          "durationMs": 380
+        },
+        {
+          "file": "frames/00.png",
+          "durationMs": 380
+        }
+      ],
+      "loop": true,
+      "events": []
+    },
+    "attack": {
+      "frames": [
+        {
+          "file": "frames/02.png",
+          "durationMs": 150
+        },
+        {
+          "file": "frames/03.png",
+          "durationMs": 170
+        },
+        {
+          "file": "frames/04.png",
+          "durationMs": 140
+        },
+        {
+          "file": "frames/05.png",
+          "durationMs": 140
+        }
+      ],
+      "loop": false,
+      "events": [
+        {
+          "name": "impact",
+          "timeMs": 150
+        }
+      ]
+    },
+    "hit": {
+      "frames": [
+        {
+          "file": "frames/06.png",
+          "durationMs": 140
+        },
+        {
+          "file": "frames/07.png",
+          "durationMs": 140
+        },
+        {
+          "file": "frames/00.png",
+          "durationMs": 100
+        }
+      ],
+      "loop": false,
+      "events": []
+    },
+    "wounded_idle": {
+      "frames": [
+        {
+          "file": "frames/08.png",
+          "durationMs": 400
+        },
+        {
+          "file": "frames/09.png",
+          "durationMs": 400
+        },
+        {
+          "file": "frames/08.png",
+          "durationMs": 400
+        }
+      ],
+      "loop": true,
+      "events": []
+    },
+    "die": {
+      "frames": [
+        {
+          "file": "frames/08.png",
+          "durationMs": 180
+        },
+        {
+          "file": "frames/10.png",
+          "durationMs": 280
+        },
+        {
+          "file": "frames/11.png",
+          "durationMs": 550
+        }
+      ],
+      "loop": false,
+      "events": []
+    }
+  },
+  "frameBounds": [
+    [
+      74,
+      74,
+      394,
+      414
+    ],
+    [
+      62,
+      74,
+      404,
+      414
+    ],
+    [
+      73,
+      88,
+      405,
+      414
+    ],
+    [
+      43,
+      99,
+      400,
+      414
+    ],
+    [
+      60,
+      83,
+      397,
+      414
+    ],
+    [
+      62,
+      74,
+      405,
+      414
+    ],
+    [
+      79,
+      83,
+      378,
+      414
+    ],
+    [
+      74,
+      129,
+      374,
+      414
+    ],
+    [
+      67,
+      143,
+      396,
+      414
+    ],
+    [
+      53,
+      126,
+      405,
+      414
+    ],
+    [
+      43,
+      172,
+      405,
+      414
+    ],
+    [
+      43,
+      251,
+      398,
+      414
+    ]
+  ],
+  "limitations": [
+    "12 authored key poses; intentionally stepped sprite animation, no interpolated in-between drawings.",
+    "Fire breath is baked into attack pose.",
+    "Self-review completed; independent playback review requested."
+  ]
+}
