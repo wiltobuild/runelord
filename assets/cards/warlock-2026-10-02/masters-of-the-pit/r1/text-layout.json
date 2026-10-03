@@ -1,0 +1,35 @@
+[
+  {
+    "region": "title",
+    "text": "Masters of the Pit",
+    "lines": [
+      "Masters of the Pit"
+    ],
+    "font_size": 65
+  },
+  {
+    "region": "cost",
+    "text": "1",
+    "lines": [
+      "1"
+    ],
+    "font_size": 110
+  },
+  {
+    "region": "type",
+    "text": "POWER · WARLOCK",
+    "lines": [
+      "POWER · WARLOCK"
+    ],
+    "font_size": 35
+  },
+  {
+    "region": "rules",
+    "text": "Your demons have +2 Power.",
+    "lines": [
+      "Your demons have +2",
+      "Power."
+    ],
+    "font_size": 54
+  }
+]

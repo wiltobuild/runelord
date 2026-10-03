@@ -1,0 +1,8 @@
+{
+  "name": "Masters of the Pit",
+  "cost": "1",
+  "type": "Power",
+  "rarity": "Uncommon",
+  "rules": "Your demons have +2 Power.",
+  "upgrade": "+3"
+}
