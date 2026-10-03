@@ -1,0 +1,38 @@
+[
+  {
+    "region": "title",
+    "text": "Summon Pit Brute",
+    "lines": [
+      "Summon Pit Brute"
+    ],
+    "font_size": 62
+  },
+  {
+    "region": "cost",
+    "text": "2\n+2 Cinders",
+    "lines": [
+      "2",
+      "+2 Cinders"
+    ],
+    "font_sizes": [
+      76,
+      17
+    ]
+  },
+  {
+    "region": "type",
+    "text": "SKILL · WARLOCK",
+    "lines": [
+      "SKILL · WARLOCK"
+    ],
+    "font_size": 35
+  },
+  {
+    "region": "rules",
+    "text": "Summon a Pit Brute.",
+    "lines": [
+      "Summon a Pit Brute."
+    ],
+    "font_size": 54
+  }
+]

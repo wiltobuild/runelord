@@ -1,0 +1,8 @@
+{
+  "name": "Summon Pit Brute",
+  "cost": "2 +2🔥",
+  "type": "Skill",
+  "rarity": "Uncommon",
+  "rules": "Summon a Pit Brute.",
+  "upgrade": "It has +10 Max HP"
+}
