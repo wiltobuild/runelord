@@ -1,0 +1,8 @@
+{
+  "name": "Smoldering Brand",
+  "cost": "0",
+  "type": "Attack",
+  "rarity": "Common",
+  "rules": "Deal 3 damage. Apply 3 Scorch.",
+  "upgrade": "4 dmg, 5 Scorch"
+}
