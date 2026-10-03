@@ -1,0 +1,8 @@
+{
+  "name": "Corrupting Touch",
+  "cost": "1",
+  "type": "Skill",
+  "rarity": "Uncommon",
+  "rules": "Gain 3 Corruption. Apply 2 Exposed.",
+  "upgrade": "3 Exposed"
+}
