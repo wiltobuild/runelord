@@ -1,0 +1,36 @@
+[
+  {
+    "region": "title",
+    "text": "Unholy Frenzy",
+    "lines": [
+      "Unholy Frenzy"
+    ],
+    "font_size": 78
+  },
+  {
+    "region": "cost",
+    "text": "1",
+    "lines": [
+      "1"
+    ],
+    "font_size": 110
+  },
+  {
+    "region": "type",
+    "text": "SKILL · WARLOCK",
+    "lines": [
+      "SKILL · WARLOCK"
+    ],
+    "font_size": 35
+  },
+  {
+    "region": "rules",
+    "text": "Pact 3. Command: all demons act now.",
+    "lines": [
+      "Pact 3.",
+      "Command: all demons act",
+      "now."
+    ],
+    "font_size": 54
+  }
+]

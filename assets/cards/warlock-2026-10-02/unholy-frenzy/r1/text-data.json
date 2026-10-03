@@ -1,0 +1,8 @@
+{
+  "name": "Unholy Frenzy",
+  "cost": "1",
+  "type": "Skill",
+  "rarity": "Uncommon",
+  "rules": "Pact 3. **Command:** all demons act now.",
+  "upgrade": "Pact 2"
+}
