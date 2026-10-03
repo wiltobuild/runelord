@@ -1,0 +1,52 @@
+{
+  "inputs": [
+    {
+      "path": "apps/web/src/IntroCinematic.tsx",
+      "sha256": "0bd4da204c272f6b2f8ed723d1fca1b8787ce2c454a16d692de2f264b062d58c"
+    },
+    {
+      "path": "apps/web/src/intro.css",
+      "sha256": "d0f4bf09de08d3173af72dd39992fac271f711a92459cb92957247c43ef465d8"
+    },
+    {
+      "path": "apps/web/src/summonEffect.ts",
+      "sha256": "4b668b830ae21fba1c199a5d42a33c9e71898da8ba7a5c2975c986de67c3a424"
+    },
+    {
+      "path": "tools/cinematic/render-oath-intro-r3.mjs",
+      "sha256": "603cb763dc2b13506d93fbbb8f6219a94deacb3813394b8964efef09ef32a91b"
+    },
+    {
+      "path": "tools/cinematic/mux-oath-intro-r3.mjs",
+      "sha256": "ddbd0f2ce9a251adf5aa1d76f0b2e91b9f20c4503eda825801f77df0e5d98346"
+    },
+    {
+      "path": "apps/web/public/opening-assets/oath-intro-r3.mp4",
+      "sha256": "43c75e5980c13718a445ac0628bec59da3df8f1e5daaec5ca5b3c274f42b145d"
+    },
+    {
+      "path": "assets/cinematics/oath-intro/r3/imp-flight.png",
+      "sha256": "3ef49f1a037589c142183fed49c654ffe0f2b0d6f195677b506e6d66bfe6bb15"
+    },
+    {
+      "path": "assets/cinematics/oath-intro/r3/imp-ground.png",
+      "sha256": "efe19f1c40237f08346ccd80f4cb80334c5b63f83885e97e71eee7ef7ebf2dcf"
+    },
+    {
+      "path": "assets/cinematics/oath-intro/r3/hellhound.png",
+      "sha256": "f42e103c244b550e770f3a2d5bff02cc12d10f9532d545fe13ac5ea287c572f4"
+    },
+    {
+      "path": "assets/cinematics/oath-intro/r3/pit-brute.png",
+      "sha256": "0f8dc36570fd588701342dd9a89359bf1af59bf139fb2441ddf14f960b5a50b9"
+    }
+  ],
+  "observations": [
+    "npm run build passed with existing chunk warning",
+    "All four transparent source assets have alpha minima0",
+    "Browser r3 video readyState4 and active playback at24 seconds",
+    "Final screenshot confirms title on right, Seraph and five summons, no previous right-hand lord",
+    "Original r1 and r2 movies preserved"
+  ],
+  "scope": "Local intro only; no deployment, commit or combat actor replacement"
+}
