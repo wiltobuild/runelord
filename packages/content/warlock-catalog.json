@@ -1,0 +1,702 @@
+[
+  {
+    "id": "firebolt",
+    "number": 1,
+    "name": "Firebolt",
+    "cost": "1",
+    "type": "Attack",
+    "rarity": "Basic",
+    "text": "Deal 6 damage.",
+    "upgrade": "9 dmg"
+  },
+  {
+    "id": "ward-of-ash",
+    "number": 2,
+    "name": "Ward of Ash",
+    "cost": "1",
+    "type": "Skill",
+    "rarity": "Basic",
+    "text": "Gain 5 Guard.",
+    "upgrade": "8 Guard"
+  },
+  {
+    "id": "summon-imp",
+    "number": 3,
+    "name": "Summon Imp",
+    "cost": "1",
+    "type": "Skill",
+    "rarity": "Basic",
+    "text": "Summon an Imp.",
+    "upgrade": "Summon an Imp with +2 Power"
+  },
+  {
+    "id": "blood-pact",
+    "number": 4,
+    "name": "Blood Pact",
+    "cost": "0",
+    "type": "Skill",
+    "rarity": "Basic",
+    "text": "Pact 3. Gain 1 Mana and 2 Cinders.",
+    "upgrade": "Gain 3 Cinders"
+  },
+  {
+    "id": "immolate",
+    "number": 5,
+    "name": "Immolate",
+    "cost": "1",
+    "type": "Attack",
+    "rarity": "Common",
+    "text": "Deal 4 damage. Apply 4 Scorch.",
+    "upgrade": "5 dmg, 6 Scorch"
+  },
+  {
+    "id": "searing-lash",
+    "number": 6,
+    "name": "Searing Lash",
+    "cost": "1",
+    "type": "Attack",
+    "rarity": "Common",
+    "text": "Deal 9 damage. If the enemy has Scorch, gain 1 Cinder.",
+    "upgrade": "12 dmg"
+  },
+  {
+    "id": "conflagrate",
+    "number": 7,
+    "name": "Conflagrate",
+    "cost": "2",
+    "type": "Attack",
+    "rarity": "Common",
+    "text": "Deal 8 damage to ALL enemies. Apply 2 Scorch to ALL enemies.",
+    "upgrade": "10 dmg, 3 Scorch"
+  },
+  {
+    "id": "summon-hellhound",
+    "number": 8,
+    "name": "Summon Hellhound",
+    "cost": "1 +2🔥",
+    "type": "Skill",
+    "rarity": "Common",
+    "text": "Summon a Hellhound.",
+    "upgrade": "It enters with 6 Guard"
+  },
+  {
+    "id": "feed-the-pit",
+    "number": 9,
+    "name": "Feed the Pit",
+    "cost": "0",
+    "type": "Skill",
+    "rarity": "Common",
+    "text": "Pact 2. Gain 3 Cinders.",
+    "upgrade": "5 Cinders"
+  },
+  {
+    "id": "sinister-veil",
+    "number": 10,
+    "name": "Sinister Veil",
+    "cost": "1",
+    "type": "Skill",
+    "rarity": "Common",
+    "text": "Gain 8 Guard. Your demons gain 3 Guard.",
+    "upgrade": "11 / 4"
+  },
+  {
+    "id": "hellish-command",
+    "number": 11,
+    "name": "Hellish Command",
+    "cost": "0",
+    "type": "Skill",
+    "rarity": "Common",
+    "text": "Command: a demon acts now.",
+    "upgrade": "It also gains +2 Power this turn"
+  },
+  {
+    "id": "ritual-cut",
+    "number": 12,
+    "name": "Ritual Cut",
+    "cost": "1",
+    "type": "Attack",
+    "rarity": "Common",
+    "text": "Pact 2. Deal 13 damage.",
+    "upgrade": "17 dmg"
+  },
+  {
+    "id": "ashen-ward",
+    "number": 13,
+    "name": "Ashen Ward",
+    "cost": "1",
+    "type": "Skill",
+    "rarity": "Common",
+    "text": "Gain 7 Guard. Apply 2 Scorch to ALL enemies.",
+    "upgrade": "9 Guard, 3 Scorch"
+  },
+  {
+    "id": "kindle",
+    "number": 14,
+    "name": "Kindle",
+    "cost": "1",
+    "type": "Skill",
+    "rarity": "Common",
+    "text": "Gain 4 Cinders. Draw 1 card.",
+    "upgrade": "6 Cinders"
+  },
+  {
+    "id": "chain-of-flame",
+    "number": 15,
+    "name": "Chain of Flame",
+    "cost": "1",
+    "type": "Attack",
+    "rarity": "Common",
+    "text": "Deal 5 damage. Copy the enemy's Scorch onto a random other enemy.",
+    "upgrade": "8 dmg"
+  },
+  {
+    "id": "dark-bargain",
+    "number": 16,
+    "name": "Dark Bargain",
+    "cost": "1",
+    "type": "Skill",
+    "rarity": "Common",
+    "text": "Pact 4. Draw 3 cards.",
+    "upgrade": "Pact 3"
+  },
+  {
+    "id": "fiendish-feast",
+    "number": 17,
+    "name": "Fiendish Feast",
+    "cost": "1",
+    "type": "Skill",
+    "rarity": "Common",
+    "text": "Sacrifice a demon. Heal HP equal to half its current HP. Gain 3 Cinders.",
+    "upgrade": "5 Cinders"
+  },
+  {
+    "id": "infernal-whip",
+    "number": 18,
+    "name": "Infernal Whip",
+    "cost": "1",
+    "type": "Attack",
+    "rarity": "Common",
+    "text": "Deal 7 damage. Each of your demons deals 3 damage to this enemy.",
+    "upgrade": "10 / 4"
+  },
+  {
+    "id": "smoldering-brand",
+    "number": 19,
+    "name": "Smoldering Brand",
+    "cost": "0",
+    "type": "Attack",
+    "rarity": "Common",
+    "text": "Deal 3 damage. Apply 3 Scorch.",
+    "upgrade": "4 dmg, 5 Scorch"
+  },
+  {
+    "id": "burning-hatred",
+    "number": 20,
+    "name": "Burning Hatred",
+    "cost": "2",
+    "type": "Attack",
+    "rarity": "Common",
+    "text": "Deal 15 damage. Gain 2 Corruption.",
+    "upgrade": "20 dmg"
+  },
+  {
+    "id": "cinder-shield",
+    "number": 21,
+    "name": "Cinder Shield",
+    "cost": "1",
+    "type": "Skill",
+    "rarity": "Common",
+    "text": "Gain 7 Guard. If you have 5+ Cinders, gain 7 more.",
+    "upgrade": "9 + 9"
+  },
+  {
+    "id": "smoke-and-mirrors",
+    "number": 22,
+    "name": "Smoke and Mirrors",
+    "cost": "1",
+    "type": "Skill",
+    "rarity": "Common",
+    "text": "Apply 1 Sapped to ALL enemies. Your demons gain 3 Guard.",
+    "upgrade": "2 Sapped"
+  },
+  {
+    "id": "summon-pit-brute",
+    "number": 23,
+    "name": "Summon Pit Brute",
+    "cost": "2 +2🔥",
+    "type": "Skill",
+    "rarity": "Uncommon",
+    "text": "Summon a Pit Brute.",
+    "upgrade": "It has +10 Max HP"
+  },
+  {
+    "id": "summon-gloomstalker",
+    "number": 24,
+    "name": "Summon Gloomstalker",
+    "cost": "1 +2🔥",
+    "type": "Skill",
+    "rarity": "Uncommon",
+    "text": "Summon a Gloomstalker.",
+    "upgrade": "Costs 1 +1🔥"
+  },
+  {
+    "id": "summon-soul-leech",
+    "number": 25,
+    "name": "Summon Soul Leech",
+    "cost": "1 +1🔥",
+    "type": "Skill",
+    "rarity": "Uncommon",
+    "text": "Summon a Soul Leech.",
+    "upgrade": "+2 Power"
+  },
+  {
+    "id": "summon-pyre-warden",
+    "number": 26,
+    "name": "Summon Pyre Warden",
+    "cost": "2 +1🔥",
+    "type": "Skill",
+    "rarity": "Uncommon",
+    "text": "Summon a Pyre Warden.",
+    "upgrade": "Costs 1 +1🔥"
+  },
+  {
+    "id": "hellfire",
+    "number": 27,
+    "name": "Hellfire",
+    "cost": "2",
+    "type": "Attack",
+    "rarity": "Uncommon",
+    "text": "Deal 6 damage to ALL enemies twice. Each hit applies 1 Scorch.",
+    "upgrade": "8 per hit"
+  },
+  {
+    "id": "infernal-pact",
+    "number": 28,
+    "name": "Infernal Pact",
+    "cost": "1",
+    "type": "Power",
+    "rarity": "Uncommon",
+    "text": "Whenever you lose HP on your turn, deal 5 damage to ALL enemies.",
+    "upgrade": "7 dmg"
+  },
+  {
+    "id": "masters-of-the-pit",
+    "number": 29,
+    "name": "Masters of the Pit",
+    "cost": "1",
+    "type": "Power",
+    "rarity": "Uncommon",
+    "text": "Your demons have +2 Power.",
+    "upgrade": "+3"
+  },
+  {
+    "id": "burning-soul",
+    "number": 30,
+    "name": "Burning Soul",
+    "cost": "1",
+    "type": "Power",
+    "rarity": "Uncommon",
+    "text": "Demon Upkeep costs 1 less (min 0).",
+    "upgrade": "Also gain 3 Cinders"
+  },
+  {
+    "id": "demonic-resilience",
+    "number": 31,
+    "name": "Demonic Resilience",
+    "cost": "1",
+    "type": "Power",
+    "rarity": "Uncommon",
+    "text": "Whenever a demon dies, gain 6 Guard and 2 Cinders.",
+    "upgrade": "8 Guard"
+  },
+  {
+    "id": "sacrificial-rite",
+    "number": 32,
+    "name": "Sacrificial Rite",
+    "cost": "0",
+    "type": "Skill",
+    "rarity": "Uncommon",
+    "text": "Sacrifice a demon. Gain 2 Mana. Draw 2 cards.",
+    "upgrade": "Draw 3"
+  },
+  {
+    "id": "corrupting-touch",
+    "number": 33,
+    "name": "Corrupting Touch",
+    "cost": "1",
+    "type": "Skill",
+    "rarity": "Uncommon",
+    "text": "Gain 3 Corruption. Apply 2 Exposed.",
+    "upgrade": "3 Exposed"
+  },
+  {
+    "id": "fire-and-brimstone",
+    "number": 34,
+    "name": "Fire and Brimstone",
+    "cost": "2",
+    "type": "Attack",
+    "rarity": "Uncommon",
+    "text": "Deal 10 damage. Double the enemy's Scorch.",
+    "upgrade": "14 dmg"
+  },
+  {
+    "id": "ember-storm",
+    "number": 35,
+    "name": "Ember Storm",
+    "cost": "X",
+    "type": "Skill",
+    "rarity": "Uncommon",
+    "text": "Apply 3 Scorch to ALL enemies X times.",
+    "upgrade": "4 per stack"
+  },
+  {
+    "id": "unholy-frenzy",
+    "number": 36,
+    "name": "Unholy Frenzy",
+    "cost": "1",
+    "type": "Skill",
+    "rarity": "Uncommon",
+    "text": "Pact 3. Command: all demons act now.",
+    "upgrade": "Pact 2"
+  },
+  {
+    "id": "pyroclasm",
+    "number": 37,
+    "name": "Pyroclasm",
+    "cost": "2",
+    "type": "Power",
+    "rarity": "Uncommon",
+    "text": "At the start of your turn, apply 3 Scorch to ALL enemies.",
+    "upgrade": "4 Scorch"
+  },
+  {
+    "id": "soul-siphon",
+    "number": 38,
+    "name": "Soul Siphon",
+    "cost": "1",
+    "type": "Attack",
+    "rarity": "Uncommon",
+    "text": "Deal 8 damage. Add a Soul Shard into your Hand.",
+    "upgrade": "11 dmg"
+  },
+  {
+    "id": "shadowflame-barrier",
+    "number": 39,
+    "name": "Shadowflame Barrier",
+    "cost": "2",
+    "type": "Skill",
+    "rarity": "Uncommon",
+    "text": "Gain 12 Guard. Whenever you're attacked this turn, apply 3 Scorch to the attacker.",
+    "upgrade": "16 Guard"
+  },
+  {
+    "id": "void-gaze",
+    "number": 40,
+    "name": "Void Gaze",
+    "cost": "1",
+    "type": "Skill",
+    "rarity": "Uncommon",
+    "text": "Apply 2 Sapped. Gain 2 Corruption. Draw 1 card.",
+    "upgrade": "3 Sapped"
+  },
+  {
+    "id": "rend-flesh",
+    "number": 41,
+    "name": "Rend Flesh",
+    "cost": "1",
+    "type": "Attack",
+    "rarity": "Uncommon",
+    "text": "Deal 10 damage. In Demon Form: costs 0 and hits twice.",
+    "upgrade": "13 dmg"
+  },
+  {
+    "id": "combust",
+    "number": 42,
+    "name": "Combust",
+    "cost": "1",
+    "type": "Attack",
+    "rarity": "Uncommon",
+    "text": "Deal damage equal to twice the enemy's Scorch. Remove its Scorch.",
+    "upgrade": "3× Scorch"
+  },
+  {
+    "id": "hellgate",
+    "number": 43,
+    "name": "Hellgate",
+    "cost": "2",
+    "type": "Skill",
+    "rarity": "Uncommon",
+    "text": "Summon a random lesser demon (Imp, Hellhound or Gloomstalker). It's Unbound this combat.",
+    "upgrade": "Costs 1"
+  },
+  {
+    "id": "lingering-hunger",
+    "number": 44,
+    "name": "Lingering Hunger",
+    "cost": "1",
+    "type": "Power",
+    "rarity": "Uncommon",
+    "text": "At the end of your turn, if you have no demons, Summon an Imp.",
+    "upgrade": "Imp gains +2 Power"
+  },
+  {
+    "id": "blood-price",
+    "number": 45,
+    "name": "Blood Price",
+    "cost": "1",
+    "type": "Attack",
+    "rarity": "Uncommon",
+    "text": "Pact 2. Deal 6 damage twice. If this kills, gain 4 Corruption.",
+    "upgrade": "8 ×2"
+  },
+  {
+    "id": "wreathed-in-flame",
+    "number": 46,
+    "name": "Wreathed in Flame",
+    "cost": "1",
+    "type": "Skill",
+    "rarity": "Uncommon",
+    "text": "Gain 5 Guard, plus Guard equal to half the total Scorch on all enemies.",
+    "upgrade": "8 + half"
+  },
+  {
+    "id": "dread-aura",
+    "number": 47,
+    "name": "Dread Aura",
+    "cost": "2",
+    "type": "Power",
+    "rarity": "Uncommon",
+    "text": "Your demons' attacks apply 1 Scorch.",
+    "upgrade": "2 Scorch"
+  },
+  {
+    "id": "feast-of-embers",
+    "number": 48,
+    "name": "Feast of Embers",
+    "cost": "1",
+    "type": "Skill",
+    "rarity": "Uncommon",
+    "text": "A demon heals 8 HP and gains +3 Power this combat.",
+    "upgrade": "12 / +4"
+  },
+  {
+    "id": "ashen-pact",
+    "number": 49,
+    "name": "Ashen Pact",
+    "cost": "1",
+    "type": "Skill",
+    "rarity": "Uncommon",
+    "text": "Consume 1 card from your Hand. Draw 2 cards. Gain 1 Cinder.",
+    "upgrade": "Draw 3"
+  },
+  {
+    "id": "abyssal-gaze",
+    "number": 50,
+    "name": "Abyssal Gaze",
+    "cost": "0",
+    "type": "Skill",
+    "rarity": "Uncommon",
+    "text": "Gain 2 Corruption. Draw 1 card.",
+    "upgrade": "Draw 2"
+  },
+  {
+    "id": "infernal-transformation",
+    "number": 51,
+    "name": "Infernal Transformation",
+    "cost": "2",
+    "type": "Skill",
+    "rarity": "Rare",
+    "text": "Enter Demon Form now. Consume.",
+    "upgrade": "Costs 1"
+  },
+  {
+    "id": "hellborn",
+    "number": 52,
+    "name": "Hellborn",
+    "cost": "3",
+    "type": "Power",
+    "rarity": "Rare",
+    "text": "At the start of your turn, gain 2 Corruption and 1 Might.",
+    "upgrade": "Costs 2"
+  },
+  {
+    "id": "pact-of-power",
+    "number": 53,
+    "name": "Pact of Power",
+    "cost": "0",
+    "type": "Skill",
+    "rarity": "Rare",
+    "text": "Pact 6. Gain 2 Mana. Draw 3 cards. Consume.",
+    "upgrade": "Pact 4"
+  },
+  {
+    "id": "bloodbound-covenant",
+    "number": 54,
+    "name": "Bloodbound Covenant",
+    "cost": "2",
+    "type": "Power",
+    "rarity": "Rare",
+    "text": "Whenever you Summon a demon, it gains +4 Power and 6 Guard.",
+    "upgrade": "Costs 1"
+  },
+  {
+    "id": "rain-of-fire",
+    "number": 55,
+    "name": "Rain of Fire",
+    "cost": "2",
+    "type": "Attack",
+    "rarity": "Rare",
+    "text": "Deal 3 damage to ALL enemies 5 times. Each hit applies 1 Scorch.",
+    "upgrade": "4 per hit"
+  },
+  {
+    "id": "soulburn",
+    "number": 56,
+    "name": "Soulburn",
+    "cost": "1",
+    "type": "Power",
+    "rarity": "Rare",
+    "text": "Whenever an enemy with Scorch dies, gain all its Scorch as Cinders and Summon an Imp.",
+    "upgrade": "Costs 0"
+  },
+  {
+    "id": "hellfire-cataclysm",
+    "number": 57,
+    "name": "Hellfire Cataclysm",
+    "cost": "3",
+    "type": "Attack",
+    "rarity": "Rare",
+    "text": "Pact 8. Deal 30 damage to ALL enemies.",
+    "upgrade": "40 dmg"
+  },
+  {
+    "id": "feast-of-souls",
+    "number": 58,
+    "name": "Feast of Souls",
+    "cost": "2",
+    "type": "Attack",
+    "rarity": "Rare",
+    "text": "Sacrifice ALL demons. Deal damage equal to their combined current HP to ALL enemies. Consume.",
+    "upgrade": "+10 damage"
+  },
+  {
+    "id": "eternal-servitude",
+    "number": 59,
+    "name": "Eternal Servitude",
+    "cost": "2",
+    "type": "Power",
+    "rarity": "Rare",
+    "text": "Your demons have no Upkeep.",
+    "upgrade": "Costs 1"
+  },
+  {
+    "id": "black-covenant",
+    "number": 60,
+    "name": "Black Covenant",
+    "cost": "1",
+    "type": "Power",
+    "rarity": "Rare",
+    "text": "Whenever you lose HP on your turn, gain 1 Might.",
+    "upgrade": "Costs 0"
+  },
+  {
+    "id": "unchained-fury",
+    "number": 61,
+    "name": "Unchained Fury",
+    "cost": "1",
+    "type": "Skill",
+    "rarity": "Rare",
+    "text": "Double a demon's Power this combat. Consume.",
+    "upgrade": "Not Consume"
+  },
+  {
+    "id": "hellspawn-tide",
+    "number": 62,
+    "name": "Hellspawn Tide",
+    "cost": "3",
+    "type": "Skill",
+    "rarity": "Rare",
+    "text": "Summon an Imp, a Hellhound and a Gloomstalker. Consume.",
+    "upgrade": "Costs 2"
+  },
+  {
+    "id": "ascendant-will",
+    "number": 63,
+    "name": "Ascendant Will",
+    "cost": "1",
+    "type": "Power",
+    "rarity": "Rare",
+    "text": "Demon Form triggers at 7 Corruption instead of 10.",
+    "upgrade": "Also gain 3 Corruption"
+  },
+  {
+    "id": "embrace-the-flame",
+    "number": 64,
+    "name": "Embrace the Flame",
+    "cost": "1",
+    "type": "Skill",
+    "rarity": "Rare",
+    "text": "Spend all Cinders. For every 4 spent, gain 1 Mana and draw 1 card.",
+    "upgrade": "For every 3"
+  },
+  {
+    "id": "witchfire-brand",
+    "number": 65,
+    "name": "Witchfire Brand",
+    "cost": "1",
+    "type": "Attack",
+    "rarity": "Rare",
+    "text": "Deal 8 damage. Scorch on this enemy no longer halves this combat.",
+    "upgrade": "12 dmg"
+  },
+  {
+    "id": "mark-of-damnation",
+    "number": 66,
+    "name": "Mark of Damnation",
+    "cost": "1",
+    "type": "Skill",
+    "rarity": "Rare",
+    "text": "In 3 turns, the enemy takes 40 damage.",
+    "upgrade": "55 damage"
+  },
+  {
+    "id": "last-rites",
+    "number": 67,
+    "name": "Last Rites",
+    "cost": "2",
+    "type": "Skill",
+    "rarity": "Rare",
+    "text": "Heal 12 HP. Gain 3 Corruption. Consume.",
+    "upgrade": "Heal 16"
+  },
+  {
+    "id": "infernal-bulwark",
+    "number": 68,
+    "name": "Infernal Bulwark",
+    "cost": "2",
+    "type": "Skill",
+    "rarity": "Rare",
+    "text": "Gain Guard equal to the total current HP of your demons.",
+    "upgrade": "+6 Guard"
+  },
+  {
+    "id": "greater-summoning",
+    "number": 69,
+    "name": "Greater Summoning",
+    "cost": "4 +10🔥",
+    "type": "Skill",
+    "rarity": "Ultimate",
+    "text": "Unique. Choose a demon type and Summon its Arch-form (Ignivar, Cerberax, Nightmaw, The Hollow Saint, Pyre Colossus or Gorthak). Arch-forms are Unbound. Consume.",
+    "upgrade": "Costs 3 +10🔥"
+  },
+  {
+    "id": "crown-of-the-abyss",
+    "number": 70,
+    "name": "Crown of the Abyss",
+    "cost": "3 +5🔥",
+    "type": "Skill",
+    "rarity": "Ultimate",
+    "text": "Unique. Enter Demon Form; it lasts until the end of combat. While in it, lose 4 HP per turn instead of 3. Consume.",
+    "upgrade": "Lose 3 per turn"
+  }
+]
