@@ -1,0 +1,1122 @@
+{
+  "variantId": "v02-ash-spear-guard",
+  "source": {
+    "path": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\characters\\cinderhook-marauder\\animation-nine-2026-10-02\\v02-ash-spear-guard\\source\\poses-r2.png",
+    "sha256": "81994d1e48a661e38acc54829c301a620c6094ed57081c3d4ce6886840a02c7e"
+  },
+  "approvedIdentity": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\characters\\cinderhook-marauder\\variants-nine-2026-10-02\\v02-ash-spear-guard-r1.png",
+  "canvas": {
+    "width": 448,
+    "height": 384
+  },
+  "anchor": {
+    "x": 245,
+    "y": 320
+  },
+  "coordinateSystem": "top-left pixels; x right, y down",
+  "facing": "left",
+  "states": {
+    "idle": {
+      "frames": [
+        {
+          "file": "frames/idle/00.png",
+          "durationMs": 200,
+          "atlasRect": [
+            0,
+            0,
+            448,
+            384
+          ],
+          "sourceSize": [
+            448,
+            384
+          ],
+          "trimOffset": [
+            0,
+            0
+          ]
+        },
+        {
+          "file": "frames/idle/01.png",
+          "durationMs": 200,
+          "atlasRect": [
+            448,
+            0,
+            448,
+            384
+          ],
+          "sourceSize": [
+            448,
+            384
+          ],
+          "trimOffset": [
+            0,
+            0
+          ]
+        },
+        {
+          "file": "frames/idle/02.png",
+          "durationMs": 200,
+          "atlasRect": [
+            896,
+            0,
+            448,
+            384
+          ],
+          "sourceSize": [
+            448,
+            384
+          ],
+          "trimOffset": [
+            0,
+            0
+          ]
+        },
+        {
+          "file": "frames/idle/03.png",
+          "durationMs": 200,
+          "atlasRect": [
+            1344,
+            0,
+            448,
+            384
+          ],
+          "sourceSize": [
+            448,
+            384
+          ],
+          "trimOffset": [
+            0,
+            0
+          ]
+        },
+        {
+          "file": "frames/idle/02.png",
+          "durationMs": 200,
+          "atlasRect": [
+            896,
+            0,
+            448,
+            384
+          ],
+          "sourceSize": [
+            448,
+            384
+          ],
+          "trimOffset": [
+            0,
+            0
+          ]
+        },
+        {
+          "file": "frames/idle/01.png",
+          "durationMs": 200,
+          "atlasRect": [
+            448,
+            0,
+            448,
+            384
+          ],
+          "sourceSize": [
+            448,
+            384
+          ],
+          "trimOffset": [
+            0,
+            0
+          ]
+        }
+      ],
+      "loop": true,
+      "events": [],
+      "nextState": "idle",
+      "terminal": false,
+      "holdLastFrame": false,
+      "durationMs": 1200
+    },
+    "attack": {
+      "frames": [
+        {
+          "file": "frames/attack/00.png",
+          "durationMs": 90,
+          "atlasRect": [
+            0,
+            384,
+            448,
+            384
+          ],
+          "sourceSize": [
+            448,
+            384
+          ],
+          "trimOffset": [
+            0,
+            0
+          ]
+        },
+        {
+          "file": "frames/attack/01.png",
+          "durationMs": 110,
+          "atlasRect": [
+            448,
+            384,
+            448,
+            384
+          ],
+          "sourceSize": [
+            448,
+            384
+          ],
+          "trimOffset": [
+            0,
+            0
+          ]
+        },
+        {
+          "file": "frames/attack/02.png",
+          "durationMs": 60,
+          "atlasRect": [
+            896,
+            384,
+            448,
+            384
+          ],
+          "sourceSize": [
+            448,
+            384
+          ],
+          "trimOffset": [
+            0,
+            0
+          ]
+        },
+        {
+          "file": "frames/attack/03.png",
+          "durationMs": 80,
+          "atlasRect": [
+            1344,
+            384,
+            448,
+            384
+          ],
+          "sourceSize": [
+            448,
+            384
+          ],
+          "trimOffset": [
+            0,
+            0
+          ]
+        },
+        {
+          "file": "frames/attack/00.png",
+          "durationMs": 90,
+          "atlasRect": [
+            0,
+            384,
+            448,
+            384
+          ],
+          "sourceSize": [
+            448,
+            384
+          ],
+          "trimOffset": [
+            0,
+            0
+          ]
+        }
+      ],
+      "loop": false,
+      "events": [
+        {
+          "name": "impact",
+          "timeMs": 200
+        }
+      ],
+      "nextState": "idle",
+      "terminal": false,
+      "holdLastFrame": false,
+      "durationMs": 430
+    },
+    "hit": {
+      "frames": [
+        {
+          "file": "frames/hit/00.png",
+          "durationMs": 40,
+          "atlasRect": [
+            0,
+            768,
+            448,
+            384
+          ],
+          "sourceSize": [
+            448,
+            384
+          ],
+          "trimOffset": [
+            0,
+            0
+          ]
+        },
+        {
+          "file": "frames/hit/01.png",
+          "durationMs": 80,
+          "atlasRect": [
+            448,
+            768,
+            448,
+            384
+          ],
+          "sourceSize": [
+            448,
+            384
+          ],
+          "trimOffset": [
+            0,
+            0
+          ]
+        },
+        {
+          "file": "frames/hit/02.png",
+          "durationMs": 100,
+          "atlasRect": [
+            896,
+            768,
+            448,
+            384
+          ],
+          "sourceSize": [
+            448,
+            384
+          ],
+          "trimOffset": [
+            0,
+            0
+          ]
+        },
+        {
+          "file": "frames/hit/03.png",
+          "durationMs": 90,
+          "atlasRect": [
+            1344,
+            768,
+            448,
+            384
+          ],
+          "sourceSize": [
+            448,
+            384
+          ],
+          "trimOffset": [
+            0,
+            0
+          ]
+        },
+        {
+          "file": "frames/hit/00.png",
+          "durationMs": 70,
+          "atlasRect": [
+            0,
+            768,
+            448,
+            384
+          ],
+          "sourceSize": [
+            448,
+            384
+          ],
+          "trimOffset": [
+            0,
+            0
+          ]
+        }
+      ],
+      "loop": false,
+      "events": [],
+      "nextState": "idle",
+      "terminal": false,
+      "holdLastFrame": false,
+      "durationMs": 380
+    },
+    "wounded_idle": {
+      "frames": [
+        {
+          "file": "frames/wounded_idle/00.png",
+          "durationMs": 230,
+          "atlasRect": [
+            0,
+            1152,
+            448,
+            384
+          ],
+          "sourceSize": [
+            448,
+            384
+          ],
+          "trimOffset": [
+            0,
+            0
+          ]
+        },
+        {
+          "file": "frames/wounded_idle/01.png",
+          "durationMs": 230,
+          "atlasRect": [
+            448,
+            1152,
+            448,
+            384
+          ],
+          "sourceSize": [
+            448,
+            384
+          ],
+          "trimOffset": [
+            0,
+            0
+          ]
+        },
+        {
+          "file": "frames/wounded_idle/02.png",
+          "durationMs": 230,
+          "atlasRect": [
+            896,
+            1152,
+            448,
+            384
+          ],
+          "sourceSize": [
+            448,
+            384
+          ],
+          "trimOffset": [
+            0,
+            0
+          ]
+        },
+        {
+          "file": "frames/wounded_idle/03.png",
+          "durationMs": 230,
+          "atlasRect": [
+            1344,
+            1152,
+            448,
+            384
+          ],
+          "sourceSize": [
+            448,
+            384
+          ],
+          "trimOffset": [
+            0,
+            0
+          ]
+        },
+        {
+          "file": "frames/wounded_idle/02.png",
+          "durationMs": 230,
+          "atlasRect": [
+            896,
+            1152,
+            448,
+            384
+          ],
+          "sourceSize": [
+            448,
+            384
+          ],
+          "trimOffset": [
+            0,
+            0
+          ]
+        },
+        {
+          "file": "frames/wounded_idle/01.png",
+          "durationMs": 230,
+          "atlasRect": [
+            448,
+            1152,
+            448,
+            384
+          ],
+          "sourceSize": [
+            448,
+            384
+          ],
+          "trimOffset": [
+            0,
+            0
+          ]
+        }
+      ],
+      "loop": true,
+      "events": [],
+      "nextState": "wounded_idle",
+      "terminal": false,
+      "holdLastFrame": false,
+      "durationMs": 1380
+    },
+    "die": {
+      "frames": [
+        {
+          "file": "frames/die/00.png",
+          "durationMs": 130,
+          "atlasRect": [
+            0,
+            1536,
+            448,
+            384
+          ],
+          "sourceSize": [
+            448,
+            384
+          ],
+          "trimOffset": [
+            0,
+            0
+          ]
+        },
+        {
+          "file": "frames/die/01.png",
+          "durationMs": 160,
+          "atlasRect": [
+            448,
+            1536,
+            448,
+            384
+          ],
+          "sourceSize": [
+            448,
+            384
+          ],
+          "trimOffset": [
+            0,
+            0
+          ]
+        },
+        {
+          "file": "frames/die/02.png",
+          "durationMs": 150,
+          "atlasRect": [
+            896,
+            1536,
+            448,
+            384
+          ],
+          "sourceSize": [
+            448,
+            384
+          ],
+          "trimOffset": [
+            0,
+            0
+          ]
+        },
+        {
+          "file": "frames/die/03.png",
+          "durationMs": 600,
+          "atlasRect": [
+            1344,
+            1536,
+            448,
+            384
+          ],
+          "sourceSize": [
+            448,
+            384
+          ],
+          "trimOffset": [
+            0,
+            0
+          ]
+        }
+      ],
+      "loop": false,
+      "events": [],
+      "nextState": "terminal",
+      "terminal": true,
+      "holdLastFrame": true,
+      "durationMs": 1040
+    },
+    "guard": {
+      "frames": [
+        {
+          "file": "frames/guard/00.png",
+          "durationMs": 100,
+          "atlasRect": [
+            0,
+            1920,
+            448,
+            384
+          ],
+          "sourceSize": [
+            448,
+            384
+          ],
+          "trimOffset": [
+            0,
+            0
+          ]
+        },
+        {
+          "file": "frames/guard/01.png",
+          "durationMs": 130,
+          "atlasRect": [
+            448,
+            1920,
+            448,
+            384
+          ],
+          "sourceSize": [
+            448,
+            384
+          ],
+          "trimOffset": [
+            0,
+            0
+          ]
+        },
+        {
+          "file": "frames/guard/02.png",
+          "durationMs": 200,
+          "atlasRect": [
+            896,
+            1920,
+            448,
+            384
+          ],
+          "sourceSize": [
+            448,
+            384
+          ],
+          "trimOffset": [
+            0,
+            0
+          ]
+        },
+        {
+          "file": "frames/guard/03.png",
+          "durationMs": 110,
+          "atlasRect": [
+            1344,
+            1920,
+            448,
+            384
+          ],
+          "sourceSize": [
+            448,
+            384
+          ],
+          "trimOffset": [
+            0,
+            0
+          ]
+        }
+      ],
+      "loop": false,
+      "events": [
+        {
+          "name": "brace",
+          "timeMs": 100
+        },
+        {
+          "name": "exit",
+          "timeMs": 430
+        }
+      ],
+      "nextState": "idle",
+      "terminal": false,
+      "holdLastFrame": false,
+      "durationMs": 540
+    }
+  },
+  "sourceRects": {
+    "idle": [
+      {
+        "source": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\characters\\cinderhook-marauder\\animation-nine-2026-10-02\\v02-ash-spear-guard\\source\\poses-r2.png",
+        "box": [
+          47,
+          8,
+          230,
+          270
+        ],
+        "offset": [
+          119,
+          62
+        ],
+        "scale": 1,
+        "sliceComponent": 2,
+        "alphaSlicingThreshold": 30,
+        "antialiasPadding": 4
+      },
+      {
+        "source": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\characters\\cinderhook-marauder\\animation-nine-2026-10-02\\v02-ash-spear-guard\\source\\poses-r2.png",
+        "box": [
+          267,
+          9,
+          468,
+          270
+        ],
+        "offset": [
+          83,
+          63
+        ],
+        "scale": 1,
+        "sliceComponent": 4,
+        "alphaSlicingThreshold": 30,
+        "antialiasPadding": 4
+      },
+      {
+        "source": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\characters\\cinderhook-marauder\\animation-nine-2026-10-02\\v02-ash-spear-guard\\source\\poses-r2.png",
+        "box": [
+          535,
+          7,
+          727,
+          270
+        ],
+        "offset": [
+          95,
+          61
+        ],
+        "scale": 1,
+        "sliceComponent": 1,
+        "alphaSlicingThreshold": 30,
+        "antialiasPadding": 4
+      },
+      {
+        "source": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\characters\\cinderhook-marauder\\animation-nine-2026-10-02\\v02-ash-spear-guard\\source\\poses-r2.png",
+        "box": [
+          783,
+          8,
+          979,
+          270
+        ],
+        "offset": [
+          87,
+          62
+        ],
+        "scale": 1,
+        "sliceComponent": 3,
+        "alphaSlicingThreshold": 30,
+        "antialiasPadding": 4
+      }
+    ],
+    "attack": [
+      {
+        "source": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\characters\\cinderhook-marauder\\animation-nine-2026-10-02\\v02-ash-spear-guard\\source\\poses-r2.png",
+        "box": [
+          27,
+          277,
+          223,
+          517
+        ],
+        "offset": [
+          99,
+          84
+        ],
+        "scale": 1,
+        "sliceComponent": 8,
+        "alphaSlicingThreshold": 30,
+        "antialiasPadding": 4
+      },
+      {
+        "source": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\characters\\cinderhook-marauder\\animation-nine-2026-10-02\\v02-ash-spear-guard\\source\\poses-r2.png",
+        "box": [
+          187,
+          301,
+          474,
+          517
+        ],
+        "offset": [
+          3,
+          108
+        ],
+        "scale": 1,
+        "sliceComponent": 9,
+        "alphaSlicingThreshold": 30,
+        "antialiasPadding": 4
+      },
+      {
+        "source": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\characters\\cinderhook-marauder\\animation-nine-2026-10-02\\v02-ash-spear-guard\\source\\poses-r2.png",
+        "box": [
+          461,
+          321,
+          807,
+          517
+        ],
+        "offset": [
+          21,
+          128
+        ],
+        "scale": 1,
+        "sliceComponent": 10,
+        "alphaSlicingThreshold": 30,
+        "antialiasPadding": 4
+      },
+      {
+        "source": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\characters\\cinderhook-marauder\\animation-nine-2026-10-02\\v02-ash-spear-guard\\source\\poses-r2.png",
+        "box": [
+          807,
+          270,
+          1006,
+          517
+        ],
+        "offset": [
+          111,
+          77
+        ],
+        "scale": 1,
+        "sliceComponent": 7,
+        "alphaSlicingThreshold": 30,
+        "antialiasPadding": 4
+      }
+    ],
+    "hit": [
+      {
+        "source": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\characters\\cinderhook-marauder\\animation-nine-2026-10-02\\v02-ash-spear-guard\\source\\poses-r2.png",
+        "box": [
+          48,
+          515,
+          232,
+          773
+        ],
+        "offset": [
+          120,
+          66
+        ],
+        "scale": 1,
+        "sliceComponent": 13,
+        "alphaSlicingThreshold": 30,
+        "antialiasPadding": 4
+      },
+      {
+        "source": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\characters\\cinderhook-marauder\\animation-nine-2026-10-02\\v02-ash-spear-guard\\source\\poses-r2.png",
+        "box": [
+          288,
+          517,
+          494,
+          773
+        ],
+        "offset": [
+          104,
+          68
+        ],
+        "scale": 1,
+        "sliceComponent": 14,
+        "alphaSlicingThreshold": 30,
+        "antialiasPadding": 4
+      },
+      {
+        "source": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\characters\\cinderhook-marauder\\animation-nine-2026-10-02\\v02-ash-spear-guard\\source\\poses-r2.png",
+        "box": [
+          547,
+          560,
+          760,
+          773
+        ],
+        "offset": [
+          107,
+          111
+        ],
+        "scale": 1,
+        "sliceComponent": 15,
+        "alphaSlicingThreshold": 30,
+        "antialiasPadding": 4
+      },
+      {
+        "source": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\characters\\cinderhook-marauder\\animation-nine-2026-10-02\\v02-ash-spear-guard\\source\\poses-r2.png",
+        "box": [
+          822,
+          514,
+          1001,
+          773
+        ],
+        "offset": [
+          126,
+          65
+        ],
+        "scale": 1,
+        "sliceComponent": 12,
+        "alphaSlicingThreshold": 30,
+        "antialiasPadding": 4
+      }
+    ],
+    "wounded_idle": [
+      {
+        "source": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\characters\\cinderhook-marauder\\animation-nine-2026-10-02\\v02-ash-spear-guard\\source\\poses-r2.png",
+        "box": [
+          17,
+          785,
+          225,
+          1016
+        ],
+        "offset": [
+          89,
+          93
+        ],
+        "scale": 1,
+        "sliceComponent": 17,
+        "alphaSlicingThreshold": 30,
+        "antialiasPadding": 4
+      },
+      {
+        "source": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\characters\\cinderhook-marauder\\animation-nine-2026-10-02\\v02-ash-spear-guard\\source\\poses-r2.png",
+        "box": [
+          272,
+          778,
+          473,
+          1015
+        ],
+        "offset": [
+          88,
+          87
+        ],
+        "scale": 1,
+        "sliceComponent": 16,
+        "alphaSlicingThreshold": 30,
+        "antialiasPadding": 4
+      },
+      {
+        "source": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\characters\\cinderhook-marauder\\animation-nine-2026-10-02\\v02-ash-spear-guard\\source\\poses-r2.png",
+        "box": [
+          527,
+          786,
+          728,
+          1016
+        ],
+        "offset": [
+          87,
+          94
+        ],
+        "scale": 1,
+        "sliceComponent": 18,
+        "alphaSlicingThreshold": 30,
+        "antialiasPadding": 4
+      },
+      {
+        "source": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\characters\\cinderhook-marauder\\animation-nine-2026-10-02\\v02-ash-spear-guard\\source\\poses-r2.png",
+        "box": [
+          792,
+          791,
+          985,
+          1016
+        ],
+        "offset": [
+          96,
+          99
+        ],
+        "scale": 1,
+        "sliceComponent": 19,
+        "alphaSlicingThreshold": 30,
+        "antialiasPadding": 4
+      }
+    ],
+    "die": [
+      {
+        "source": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\characters\\cinderhook-marauder\\animation-nine-2026-10-02\\v02-ash-spear-guard\\source\\poses-r2.png",
+        "box": [
+          30,
+          1012,
+          222,
+          1247
+        ],
+        "offset": [
+          102,
+          89
+        ],
+        "scale": 1,
+        "sliceComponent": 22,
+        "alphaSlicingThreshold": 30,
+        "antialiasPadding": 4
+      },
+      {
+        "source": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\characters\\cinderhook-marauder\\animation-nine-2026-10-02\\v02-ash-spear-guard\\source\\poses-r2.png",
+        "box": [
+          257,
+          1023,
+          505,
+          1232
+        ],
+        "offset": [
+          73,
+          115
+        ],
+        "scale": 1,
+        "sliceComponent": 23,
+        "alphaSlicingThreshold": 30,
+        "antialiasPadding": 4
+      },
+      {
+        "source": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\characters\\cinderhook-marauder\\animation-nine-2026-10-02\\v02-ash-spear-guard\\source\\poses-r2.png",
+        "box": [
+          501,
+          1123,
+          763,
+          1226
+        ],
+        "offset": [
+          61,
+          221
+        ],
+        "scale": 1,
+        "sliceComponent": 25,
+        "alphaSlicingThreshold": 30,
+        "antialiasPadding": 4
+      },
+      {
+        "source": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\characters\\cinderhook-marauder\\animation-nine-2026-10-02\\v02-ash-spear-guard\\source\\poses-r2.png",
+        "box": [
+          764,
+          1156,
+          1018,
+          1224
+        ],
+        "offset": [
+          68,
+          256
+        ],
+        "scale": 1,
+        "sliceComponent": 26,
+        "alphaSlicingThreshold": 30,
+        "antialiasPadding": 4
+      }
+    ],
+    "guard": [
+      {
+        "source": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\characters\\cinderhook-marauder\\animation-nine-2026-10-02\\v02-ash-spear-guard\\source\\poses-r2.png",
+        "box": [
+          55,
+          1251,
+          225,
+          1504
+        ],
+        "offset": [
+          127,
+          71
+        ],
+        "scale": 1,
+        "sliceComponent": 27,
+        "alphaSlicingThreshold": 30,
+        "antialiasPadding": 4
+      },
+      {
+        "source": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\characters\\cinderhook-marauder\\animation-nine-2026-10-02\\v02-ash-spear-guard\\source\\poses-r2.png",
+        "box": [
+          307,
+          1251,
+          493,
+          1504
+        ],
+        "offset": [
+          123,
+          71
+        ],
+        "scale": 1,
+        "sliceComponent": 28,
+        "alphaSlicingThreshold": 30,
+        "antialiasPadding": 4
+      },
+      {
+        "source": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\characters\\cinderhook-marauder\\animation-nine-2026-10-02\\v02-ash-spear-guard\\source\\poses-r2.png",
+        "box": [
+          535,
+          1255,
+          764,
+          1502
+        ],
+        "offset": [
+          95,
+          77
+        ],
+        "scale": 1,
+        "sliceComponent": 30,
+        "alphaSlicingThreshold": 30,
+        "antialiasPadding": 4
+      },
+      {
+        "source": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\characters\\cinderhook-marauder\\animation-nine-2026-10-02\\v02-ash-spear-guard\\source\\poses-r2.png",
+        "box": [
+          810,
+          1252,
+          990,
+          1504
+        ],
+        "offset": [
+          114,
+          72
+        ],
+        "scale": 1,
+        "sliceComponent": 29,
+        "alphaSlicingThreshold": 30,
+        "antialiasPadding": 4
+      }
+    ]
+  },
+  "previews": {
+    "idle": "idle.gif",
+    "attack": "attack.gif",
+    "hit": "hit.gif",
+    "wounded_idle": "wounded_idle.gif",
+    "die": "die.gif",
+    "guard": "guard.gif"
+  },
+  "limitations": [
+    "Coarse hand-drawn whole-frame animation; 4 authored poses per state.",
+    "Native pose resolution ~250-280px; not upscaled to claim HD.",
+    "Mild generated stance jitter and color-edge fringe remain; coarse four-pose loops are review studies, not polished high-frame-count HD animation."
+  ],
+  "method": "reference-conditioned whole-character frames",
+  "atlas": "atlas.png",
+  "atlasSha256": "4d510c2979e99e8e45e606e767b00211600eef9def30e11fcc6173736cd584f1",
+  "technicalQA": {
+    "status": "pass",
+    "report": "technical-qa.json",
+    "authoredFrames": 24,
+    "testedAtlasSha256": "4d510c2979e99e8e45e606e767b00211600eef9def30e11fcc6173736cd584f1"
+  },
+  "visualQA": {
+    "status": "independent_review_pending",
+    "reviewer": "/root/review_goblin_animation"
+  },
+  "generation": {
+    "tool": "built-in image_gen",
+    "sourceHashes": [
+      {
+        "file": "source/poses-r1.png",
+        "sha256": "dd13a1b72d329e4e02cc061853ff490dba930683ae9ddac941ea13c3e45df210"
+      },
+      {
+        "file": "source/poses-r2.png",
+        "sha256": "81994d1e48a661e38acc54829c301a620c6094ed57081c3d4ce6886840a02c7e"
+      }
+    ],
+    "promptFiles": [
+      "source/prompt-r1.txt",
+      "source/prompt-r2.txt"
+    ]
+  },
+  "previewPackageAssociation": {
+    "preview": "preview.gif",
+    "sha256": "a6b463dcfb4977c708b8a9afc5f07f30aefac0d1af682b4273c1124e0ff14877",
+    "atlasSha256": "4d510c2979e99e8e45e606e767b00211600eef9def30e11fcc6173736cd584f1"
+  },
+  "identitySource": {
+    "path": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\characters\\cinderhook-marauder\\variants-nine-2026-10-02\\v02-ash-spear-guard-r1.png",
+    "sha256": "2b39f9bb0e54195bebeffe08bbcba3dc002d6acfbaab088c672eebf0dd895013",
+    "approval": {
+      "status": "Approved",
+      "at": "2026-10-02T22:20:49.176Z",
+      "evidenceId": "1317f234-e2c1-48df-b2e5-52143a6e5243",
+      "paths": [
+        "C:\\Users\\wilsh\\Projects\\runelord\\assets\\approvals\\inbox\\cinderhook-marauder\\v02-ash-spear-guard-r1\\v02-ash-spear-guard-r1.png"
+      ]
+    }
+  },
+  "gallery": {
+    "url": "http://localhost:4317/asset/f442a901c2794b5ef4bae8f2",
+    "status": "Pending approval",
+    "previewSha256": "a6b463dcfb4977c708b8a9afc5f07f30aefac0d1af682b4273c1124e0ff14877",
+    "apiVerified": true
+  }
+}
