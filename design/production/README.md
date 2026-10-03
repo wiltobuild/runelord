@@ -1,5 +1,7 @@
 # Runelord agents and skills
 
+**Current product brief:** Read [campaign direction](../campaign-direction.md) and [the v3 roadmap](../../PLAN.md) before planning gameplay work. The project now targets a 6–9 hour campaign with strongholds and conquest. Archived three-act requirements are historical. This direction update alone does not authorize implementation.
+
 Six project-scoped Codex agents and eight project-scoped skills are stored in this repository. Start a Codex chat in this checkout to discover them. If the host has cached configuration, reload the project/session. This installation does not create sidebar chats, start autonomous jobs, or change global model settings.
 
 ## Use

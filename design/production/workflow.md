@@ -4,7 +4,7 @@ This is the shared contract for the project agents and skills. Read only the sec
 
 ## Start and route
 
-Use the user's requested outcome and current checkout. Inspect `git status --short`; preserve unrelated work. Read `AGENTS.md`, the relevant catalog/design sections, and the consuming code. `PLAN.md` is the design roadmap, not proof of implementation. Newer explicit user choices override older defaults. Record a meaningful conflict in the work packet rather than silently choosing incompatible requirements.
+Use the user's requested outcome and current checkout. Inspect `git status --short`; preserve unrelated work. Read `AGENTS.md`, the relevant catalog/design sections, and the consuming code. `PLAN.md` is the design roadmap, not proof of implementation. Read `design/campaign-direction.md` for the current campaign, progression, and territory requirements; older act-based plans and catalog acquisition rules yield to it. Newer explicit user choices override older defaults. Record a meaningful conflict in the work packet rather than silently choosing incompatible requirements.
 
 The default development unit is a playable slice: one observable capability from acquisition through combat, presentation, and save/replay. An explicitly requested art batch, investigation, or small fix retains its own scope. Do not force every task through every role.
 

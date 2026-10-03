@@ -1,5 +1,7 @@
 # Runelord Heroes
 
+**Campaign update — 2026-10-03:** The [campaign direction](campaign-direction.md) supersedes the short-run progression in this document. Hero identities and combat mechanics below remain a design baseline, not a complete implementation claim. Act-based unlocks, starting values, single-step upgrades, Ultimate acquisition, and run-length balance targets need campaign review. Repeated card levels, spell combination, Warband fusion, slotted gear, and territory bonuses must support each class. Campaign defeat and companion-loss rules must be specified before interpreting older “rest of the run” wording. Current approved hero artwork overrides older appearance descriptions; see the [demo scope](warlock-demo.md).
+
 Four original heroes. Each takes a familiar deckbuilder archetype and centres it on a distinct **Warband** unit family (see [warband-system.md](warband-system.md)). Universal terms used below: **Mana** (energy, 3 per turn), **Guard** (block), **Might** (+attack damage), **Finesse** (+Guard from cards), **Exposed** (+50% damage taken), **Sapped** (−25% damage dealt), **Brittle** (−25% Guard gained), **Consume** (removed for the rest of combat), **Fleeting** (consumed if still in hand at end of turn), **Hold** (stays in hand), **Opening** (starts in hand), **Bound** (can't be removed from the deck). Full glossary: [../catalog/glossary.md](../catalog/glossary.md).
 
 | | Runeblade | Warlock | Runesmith | Ranger |

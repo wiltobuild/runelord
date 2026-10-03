@@ -1,5 +1,7 @@
 # Runelord glossary
 
+**Campaign scope — 2026-10-03:** The [campaign direction](../design/campaign-direction.md) governs progression and supersedes inherited act/run assumptions here. Combat vocabulary remains the baseline. Card upgrades now span multiple levels; exact levels and recipes are pending. Spell combination and Warband fusion are distinct systems. Equipment means slotted gear with stats/passives; relics are a separate reward category. A Sovereign is a biome ruler; the Throne City is the final defense and hero-intervention site. These campaign concepts are planned, not claims about current engine support.
+
 The single source of truth for rules text. Card text, tooltips and the engine must use these exact terms. The "Reference term" column maps each one back to the inspiration (StS2) research in `../reference/sts2/`.
 
 ## Core

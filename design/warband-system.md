@@ -1,5 +1,7 @@
 # The Warband: Runelord's Allied-Unit System
 
+**Campaign update — 2026-10-03:** Read the [campaign direction](campaign-direction.md) for elite-unit fusion, tower forces, Throne City support, and invasion attrition. The rules below describe the existing hero-combat design baseline; they do not yet specify fusion or autonomous defenses. Do not infer permanent ownership of every summon from campaign progression. Card/unit fusion inputs, defender lifetimes, and defense-specific caps remain open. Attackers killed in an invasion stay dead across its defensive encounters; this does not automatically impose the same persistence rules on defending summons.
+
 Runelord's main difference from its inspiration: **the hero never fights alone.** Every hero adds allied units to a **Warband** that stands between them and the enemies. All four heroes share one Warband framework. They differ in **how they get units**, **how those units stay alive**, and **what happens when units fall**.
 
 | Hero | Unit family | How units are obtained | How long they last | When one dies |
