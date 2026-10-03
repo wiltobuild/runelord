@@ -230,6 +230,10 @@
       "anchor": [
         384,
         816
+      ],
+      "releaseOrigin": [
+        450,
+        348
       ]
     },
     "wounded": {
@@ -447,7 +451,11 @@
         384,
         816
       ],
-      "sourceState": "attack"
+      "sourceState": "attack",
+      "releaseOrigin": [
+        450,
+        348
+      ]
     },
     "summon_demon": {
       "frames": [
@@ -827,7 +835,11 @@
         384,
         816
       ],
-      "sourceState": "attack"
+      "sourceState": "attack",
+      "releaseOrigin": [
+        450,
+        348
+      ]
     }
   },
   "actors": {

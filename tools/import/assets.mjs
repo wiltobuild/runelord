@@ -229,6 +229,8 @@ for (const [state, clip] of Object.entries(original.states)) {
   }
   const attachment = runtimeClip.events.find((event) => event.attachment)?.attachment;
   if (attachment) runtimeClip.releaseOrigin = [attachment.x, attachment.y];
+  // Extended palm in attack-03, at the authored 435ms release.
+  if (state === "attack") runtimeClip.releaseOrigin = [450, 348];
   manifest.animations[state] = runtimeClip;
 }
 manifest.integration.hero.idleDurationMultiplier = 1.2;

@@ -187,16 +187,17 @@ export function useBattleDirector(
     if (action.type === "item") {
       sfx.play(`item-${action.item}`, 0, -.2);
       const hand=point("hero", "guard_enter");
+      const itemRelease = assets.animations.guard_enter.events?.find(e => e.name === "cast-release")?.time_ms ?? 450;
       animate("guard_enter");
       if (action.item === "shrapnel-jar") {
         source="card";
-        effect("conflagrate", hand, before.enemies.filter(e=>e.hp>0).map(e=>point(`enemy-${e.id}`)), 160, 300);
-        await pause(460);
+        effect("conflagrate", hand, before.enemies.filter(e=>e.hp>0).map(e=>point(`enemy-${e.id}`)), itemRelease, 300);
+        await pause(itemRelease + 300);
       } else if (["barkskin-tonic", "banner-draught"].includes(action.item)) {
-        effect("ward", hand, [{x:hand.x+55,y:hand.y+60}], 160, 0);
-        await pause(200);
+        effect("ward", hand, [{x:hand.x+55,y:hand.y+60}], itemRelease, 0);
+        await pause(itemRelease);
       } else {
-        effect("kindle", hand, [point("hero")], 160, 0);
+        effect("kindle", hand, [point("hero")], itemRelease, 0);
         await pause(200);
       }
     }
@@ -225,7 +226,7 @@ export function useBattleDirector(
         animate(clip);
         const release = Math.max(
             0,
-            assets.animations[clip].events?.[0]?.time_ms ?? 300,
+            assets.animations[clip].events?.find(e => ["impact", "release", "cast-release"].includes(e.name))?.time_ms ?? 300,
           ),
           all = ["conflagrate", "ashen-ward", "hellfire", "ember-storm", "smoke-and-mirrors"].includes(card);
         sfx.play(card, release / 1000, -.15);
@@ -256,11 +257,11 @@ export function useBattleDirector(
           await pause(release + 340);
           recovery = 350;
         } else if (["blood-pact", "feed-the-pit", "dark-bargain", "sacrificial-rite", "unholy-frenzy", "fiendish-feast"].includes(card ?? "")) {
-          effect("pact", point("hero"), [point("hero")], release, 0);
+          effect("pact", hand, [point("hero")], release, 0);
           await pause(release);
           recovery = 450;
         } else if (card === "kindle") {
-          effect("kindle", point("hero"), [], release, 0);
+          effect("kindle", hand, [], release, 0);
           await pause(release);
           recovery = 400;
         } else if (cards[card].type === "Power" || ["infernal-transformation", "abyssal-gaze", "hellish-command", "feast-of-embers"].includes(card)) {

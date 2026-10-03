@@ -47,6 +47,7 @@ export function ActorSprite({
   const [deathFinished, setDeathFinished] = useState(false);
   const wasAlive = useRef(hp > 0);
   if (hp > 0) wasAlive.current = true;
+  const fire = useRef<HTMLCanvasElement>(null);
   const image = useRef<HTMLImageElement>(null),
     actor = assets.actors[art],
     states = actor?.states;
@@ -94,7 +95,35 @@ export function ActorSprite({
       if (image.current.getAttribute("src") !== frame.src)
         image.current.src = frame.src;
       if (frame.effects || actor.effects) image.current.dataset.glow = JSON.stringify(frame.effects ?? actor.effects);
-      image.current.style.opacity = String(frame.opacity ?? 1);
+      const spawning = requested === "spawn" && elapsed < 1200;
+      const reveal = Math.max(0, Math.min(1, (elapsed - 790) / 330));
+      image.current.style.opacity = String((frame.opacity ?? 1) * (spawning ? reveal : 1));
+      image.current.style.clipPath = spawning ? `inset(${Math.max(0, 100 - elapsed / 8)}% 0 0)` : "";
+      const canvas = fire.current;
+      if (canvas) {
+        canvas.style.display = spawning ? "block" : "none";
+        const c = canvas.getContext("2d");
+        if (spawning && c && image.current.complete && image.current.naturalWidth) {
+          const w = canvas.width, h = canvas.height;
+          c.clearRect(0, 0, w, h);
+          c.save();
+          c.beginPath(); c.rect(0, h * Math.max(0, 1 - elapsed / 800), w, h); c.clip();
+          c.drawImage(image.current, 0, 0, w, h);
+          c.globalCompositeOperation = "source-in";
+          const g = c.createLinearGradient(0, h, w * .25, 0);
+          g.addColorStop(0, "#ffdd79"); g.addColorStop(.4, "#ff731b"); g.addColorStop(1, "#cf2217");
+          c.fillStyle = g; c.fillRect(0, 0, w, h);
+          c.globalCompositeOperation = "source-atop";
+          for (let i = 0; i < 26; i++) {
+            const x = (i * 83.7) % w, y = h - ((elapsed * (.3 + i % 4 * .08) + i * 53) % h);
+            const flame = c.createRadialGradient(x, y, 0, x, y, 24);
+            flame.addColorStop(0, "#fff3b9"); flame.addColorStop(1, "#ffad2600");
+            c.fillStyle = flame; c.fillRect(x - 24, y - 24, 48, 48);
+          }
+          c.restore();
+          canvas.style.opacity = String(1 - reveal);
+        }
+      }
       // Source-pixel registration is separate from the pose's existing CSS transform.
       // Reset on attacks/hits/death so their authored movement stays untouched.
       if (frame.offsetX) {
@@ -129,12 +158,13 @@ export function ActorSprite({
     >
       <img
         ref={image}
-        style={summonStyle}
+        style={{...summonStyle, ...(cue?.state === "spawn" ? {opacity: 0} : {})}}
         src={failed ? assets.images[art] : states?.idle.frames[0].src || assets.images[art]}
         onError={() => { setFailed(true); if (image.current) image.current.style.opacity = "1"; }}
         alt={name}
         draggable={false}
       />
+      {cue?.state === "spawn" && hp > 0 && <canvas ref={fire} width={actor?.size[0] ?? 512} height={actor?.size[1] ?? 512} className="summon-fire-silhouette" style={{...summonStyle, pointerEvents: "none", filter: "drop-shadow(0 0 7px #ff671d) drop-shadow(0 0 16px #ff300a)"}} aria-hidden="true" />}
       {art === "demon-lord" && <DemonLordGlow image={image} active={hp > 0} enraged={hp / maxHp <= .5} sockets={actor?.effects} />}
       {deathFinished && hp <= 0 && actor.deathEffect === "fire" && image.current && <FireDeathEffect image={image.current} audible={wasAlive.current} />}
     </div>

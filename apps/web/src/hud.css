@@ -4,7 +4,7 @@
 body:has(.battle-ui) { min-height:100vh; display:grid; place-items:center; overflow:hidden; }
 main.battle-ui { width:1672px; height:941px; min-height:0; zoom:var(--hud-scale); background:#151112 var(--scene) 0 -85px / 1672px 941px no-repeat; overflow:hidden; }
 .battle-ui:before { display:none; }
-.hud-template { position:absolute; inset:0; width:1672px; height:941px; pointer-events:none; z-index:10; clip-path:polygon(0 0,1672px 0,1672px 226px,1555px 226px,1555px 400px,1672px 400px,1672px 941px,0 941px,0 264px,64px 194px,320px 194px,320px 130px,0 130px); }
+.hud-template { position:absolute; inset:0; width:1672px; height:941px; pointer-events:none; z-index:10; clip-path:polygon(0 0,1672px 0,1672px 226px,1555px 226px,1555px 400px,1672px 400px,1672px 941px,0 941px,0 530px,330px 530px,330px 130px,0 130px); }
 .battle-ui .topbar, .battle-ui .runbar, .battle-ui .hand-zone { display:contents; }
 .battle-ui .wordmark { position:absolute; left:72px; top:12px; width:247px; height:52px; font:bold 35px Georgia,serif; letter-spacing:4px; z-index:12; }
 .battle-ui .wordmark span { color:inherit; }
@@ -44,7 +44,7 @@ main.battle-ui { width:1672px; height:941px; min-height:0; zoom:var(--hud-scale)
 .battle-ui .turn-tag { position:absolute; left:1498px; right:auto; top:164px; width:143px; height:48px; text-align:center; z-index:12; }
 .battle-ui .turn-tag span { font:bold 19px Georgia,serif; letter-spacing:2px; }
 .battle-ui .turn-tag strong { display:block; font:bold 14px Georgia,serif; margin-top:7px; text-transform:uppercase; color:#f1c184; }
-.battle-ui .hero-position { left:-130px; top:179px; bottom:auto; width:500px; height:400px; z-index:7; pointer-events:none; }
+.battle-ui .hero-position { left:-58px; top:151px; bottom:auto; width:500px; height:400px; z-index:7; pointer-events:none; }
 .battle-ui .hero-position .hero-canvas { transform:scale(1.25); transform-origin:50% 50%; }
 .battle-ui .hero-label { display:none; }
 .battle-ui .warband { position:absolute; left:365px; bottom:36px; width:620px; background:none; border:0; padding:0; }
@@ -307,7 +307,8 @@ main.battle-ui { width:1672px; height:941px; min-height:0; zoom:var(--hud-scale)
 
 /* The sigil sits beneath actors; the front canvas veils their arrival in embers. */
 .battle-ui .summon-floor-effects { z-index:3; }
-.battle-ui .summon-model.arriving { animation:demonic-arrival 1000ms ease-out both; }
+.battle-ui .summon-model.arriving { animation:none; }
+.summon-fire-silhouette { position:absolute; left:0; bottom:0; width:100%; height:100%; }
 @keyframes demonic-arrival {
   0%,16% { opacity:0; filter:brightness(3) saturate(.5) blur(5px); clip-path:inset(100% -100% -100%); }
   35% { opacity:.45; filter:brightness(2.5) saturate(.7) blur(2px); }
