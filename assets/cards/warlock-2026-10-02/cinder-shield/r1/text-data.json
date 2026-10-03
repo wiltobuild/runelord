@@ -1,0 +1,8 @@
+{
+  "name": "Cinder Shield",
+  "cost": "1",
+  "type": "Skill",
+  "rarity": "Common",
+  "rules": "Gain 7 Guard. If you have 5+ Cinders, gain 7 more.",
+  "upgrade": "9 + 9"
+}

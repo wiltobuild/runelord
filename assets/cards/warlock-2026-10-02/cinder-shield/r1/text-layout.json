@@ -1,0 +1,36 @@
+[
+  {
+    "region": "title",
+    "text": "Cinder Shield",
+    "lines": [
+      "Cinder Shield"
+    ],
+    "font_size": 84
+  },
+  {
+    "region": "cost",
+    "text": "1",
+    "lines": [
+      "1"
+    ],
+    "font_size": 110
+  },
+  {
+    "region": "type",
+    "text": "SKILL · WARLOCK",
+    "lines": [
+      "SKILL · WARLOCK"
+    ],
+    "font_size": 35
+  },
+  {
+    "region": "rules",
+    "text": "Gain 7 Guard. If you have 5+ Cinders, gain 7 more.",
+    "lines": [
+      "Gain 7 Guard.",
+      "If you have 5+ Cinders, gain",
+      "7 more."
+    ],
+    "font_size": 54
+  }
+]
