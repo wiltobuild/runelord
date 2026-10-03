@@ -1,0 +1,8 @@
+{
+  "name": "Firebolt",
+  "cost": "1",
+  "type": "Attack",
+  "rarity": "Basic",
+  "rules": "Deal 6 damage.",
+  "upgrade": "9 dmg"
+}
