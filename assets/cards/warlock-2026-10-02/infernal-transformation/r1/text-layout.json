@@ -1,0 +1,35 @@
+[
+  {
+    "region": "title",
+    "text": "Infernal Transformation",
+    "lines": [
+      "Infernal Transformation"
+    ],
+    "font_size": 46
+  },
+  {
+    "region": "cost",
+    "text": "2",
+    "lines": [
+      "2"
+    ],
+    "font_size": 110
+  },
+  {
+    "region": "type",
+    "text": "SKILL · WARLOCK",
+    "lines": [
+      "SKILL · WARLOCK"
+    ],
+    "font_size": 35
+  },
+  {
+    "region": "rules",
+    "text": "Enter Demon Form now. Consume.",
+    "lines": [
+      "Enter Demon Form now.",
+      "Consume."
+    ],
+    "font_size": 54
+  }
+]

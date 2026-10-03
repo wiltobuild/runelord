@@ -1,0 +1,8 @@
+{
+  "name": "Infernal Transformation",
+  "cost": "2",
+  "type": "Skill",
+  "rarity": "Rare",
+  "rules": "Enter Demon Form now. Consume.",
+  "upgrade": "Costs 1"
+}
