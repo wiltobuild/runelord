@@ -1,0 +1,8 @@
+{
+  "name": "Summon Imp",
+  "cost": "1",
+  "type": "Skill",
+  "rarity": "Basic",
+  "rules": "Summon an Imp.",
+  "upgrade": "Summon an Imp with +2 Power"
+}
