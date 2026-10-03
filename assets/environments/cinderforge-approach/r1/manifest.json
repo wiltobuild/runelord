@@ -1,0 +1,47 @@
+{
+  "name": "Cinderforge Approach",
+  "biome": "volcanic",
+  "role": "combat",
+  "biome_status": "Proposed; no canonical act assignment",
+  "revision": "r1",
+  "prompt": "Use case: stylized-concept. Asset type: Runelord 2D battle encounter background. Generate one polished empty landscape, 16:9, target 1920x1080. The attached approved Runelord hero image is a STYLE reference only: translate its crisp angular shapes, broad quiet flat colors and hard-edged 2-3 tone cel shadows into environmental art; DO NOT depict the character. Serious detailed fantasy game illustration, graphic shapes, strong silhouettes, no realistic textures or painterly brushwork. Low shallow SIDE VIEW for a side-on card battler, not overhead, not isometric. A wide uninterrupted level standing lane runs horizontally across x=7-93% at y=65-75%, spacious enough for hero plus five allied units on left through center and enemies at right. Keep mid-frame behind characters fairly quiet and low contrast, with tall-enemy and intent-icon headroom. Bottom 20% quiet dark ground suitable behind a card hand. Strong landmark scenery behind the lane; edge framing must not obscure combatants. Three coherent visual depth planes in a single flattened illustration. Restrained magical accents. No characters, creatures, corpses, weapons on ground, text, labels, numbers, UI, grids, slot markers, frames, watermark, bloom, grain, photo realism or dense surface scratches.\nScene/backdrop: Volcanic forge ordinary battle environment. A broad abandoned basalt foundry road across the lower middle, continuous level ground for full opposing armies. Rear left broken angular forge smokestacks and massive copper-bound pipes; rear right low basalt arches and ruined retaining walls; distant dark mountain with a thin red lava seam. Muted oxblood and ash grey sky, charcoal stone, restrained orange lava visible only in channels BEHIND the standing lane. Less monumental than a boss gate, no gigantic throne, no people. A few angular dark foreground rocks confined below the floor. Flat cel-shaded quiet materials, warm accents controlled to preserve spell readability. No prepainted flying sparks or ash.",
+  "tool": "Built-in image_gen",
+  "source_specifications": [
+    "PLAN.md sections 8.1,8.4",
+    "design/warband-system.md section 1"
+  ],
+  "reference": {
+    "path": "C:/Users/wilsh/Projects/runelord/assets/heroes/references/warlock/warlock-base-r1.png",
+    "sha256": "3585512c985b250f1da8a159f436e82dc673059269bd1e54cfad625b01e28f02",
+    "evidence": {
+      "status": "Approved",
+      "at": "2026-10-02T03:44:25.533Z",
+      "evidenceId": "user-chat-2026-10-01-approve-existing-runelord",
+      "paths": [
+        "C:\\Users\\wilsh\\Projects\\runelord\\assets\\heroes\\references\\warlock\\warlock-base-r1.png"
+      ]
+    }
+  },
+  "output": {
+    "path": "C:/Users/wilsh/Projects/runelord/assets/environments/cinderforge-approach/r1/cinderforge-approach-r1.png",
+    "chat_path": "C:/Users/wilsh/Documents/Codex/2026-10-02/cr/outputs/battle-scenes/cinderforge-approach-r1.png",
+    "sha256": "73e78383a4b1a5f4559e67fcb661f573c976362f9cdac54d6c063b8c33a79a4b",
+    "width": 1672,
+    "height": 941
+  },
+  "gallery": {
+    "path": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\approvals\\inbox\\battle-map-cinderforge-approach\\r1\\cinderforge-approach-r1.png",
+    "sha256": "73e78383a4b1a5f4559e67fcb661f573c976362f9cdac54d6c063b8c33a79a4b",
+    "status": "Pending approval",
+    "gallery": "http://localhost:4317"
+  },
+  "format": "Flattened environment base for separate non-destructive motion and weather",
+  "qa": {
+    "visual": "Inspected generated artwork: clear continuous standing lane, graphic cel-shading, distinct biome landmarks, no combatants or HUD baked in.",
+    "limitations": [
+      "Native 1672x941 image is below planned 1920x1080 production resolution.",
+      "Flattened artwork has no independently separated scenery parallax layers.",
+      "Final in-game unit and UI placement remains untested."
+    ]
+  }
+}
