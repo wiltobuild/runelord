@@ -1,0 +1,8 @@
+{
+  "name": "Ritual Cut",
+  "cost": "1",
+  "type": "Attack",
+  "rarity": "Common",
+  "rules": "Pact 2. Deal 13 damage.",
+  "upgrade": "17 dmg"
+}
