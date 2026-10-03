@@ -1,0 +1,737 @@
+{
+  "contract_version": 2,
+  "character_id": "warlock-pit-brute",
+  "display_name": "Pit Brute",
+  "role": "Slam",
+  "form": "regular summon",
+  "rig_family": "humanoid",
+  "format": "frame-based RGBA PNG",
+  "status": "repair_complete_pending_user_review",
+  "authorization": {
+    "source": "User request: Pit Brute looks low resolution; fix it",
+    "scope": "Higher detail repair of existing16poses, integration authorized; approval unchanged"
+  },
+  "base": {
+    "revision": "r2",
+    "asset": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\characters\\warlock-pit-brute\\base\\r2\\warlock-pit-brute-base-r2.png",
+    "sha256": "8e882b2b1c26359fd19cef9874c924b6fbf6c22386a475875abcf724f64ff0f5",
+    "dimensions": [
+      1372,
+      1146
+    ],
+    "alpha_extrema": [
+      0,
+      255
+    ],
+    "visible_bbox_alpha_gt_127": [
+      208,
+      89,
+      1223,
+      1044
+    ],
+    "approval": {
+      "status": "Pending approval"
+    }
+  },
+  "style_lock": {
+    "direction": "Serious Runelord hard-edged cel shading, broad oxblood/charcoal shapes, restrained ember accents",
+    "references": [
+      {
+        "path": "C:/Users/wilsh/Projects/runelord/assets/cards/warlock-2026-10-02/summon-pit-brute/r1/illustration.png",
+        "sha256": "2b6a438ac5f61c32dabe2af3ca6c56c9f0e9d33318fad984549e6a96dbe7ac33",
+        "role": "exact card identity",
+        "approval": {
+          "status": "Pending approval",
+          "note": "User requested card identity reference; not claimed as approved style."
+        }
+      },
+      {
+        "path": "C:/Users/wilsh/Projects/runelord/assets/cards/reference-samples/warlock-summon-imp.png",
+        "sha256": "070283f1fb65b07531cec7b32c653ffc96a7adacde1c2ce4daca1f3b4ed78c9e",
+        "role": "approved rendering style",
+        "approval": {
+          "status": "Approved",
+          "at": "2026-10-02T03:44:25.533Z",
+          "evidenceId": "user-chat-2026-10-01-approve-existing-runelord",
+          "paths": [
+            "C:\\Users\\wilsh\\Projects\\runelord\\assets\\cards\\reference-samples\\warlock-summon-imp.png"
+          ]
+        }
+      }
+    ],
+    "camera": "shallow three-quarter facing right"
+  },
+  "source_sheet": {
+    "file": "source/detail-0.png",
+    "sha256": "1e6b36675544d60d6b74fe6fd4f165dd33d8f08d3efd9fe019d4023bbcbbc52b",
+    "dimensions": [
+      1448,
+      1086
+    ],
+    "uniform_scale": 0.8448979591836735
+  },
+  "geometry": {
+    "coordinate_system": "pixels; top-left; x right, y down",
+    "facing": "right",
+    "canvas_px": [
+      1024,
+      768
+    ],
+    "root_px": [
+      512,
+      680
+    ],
+    "anchor_normalized": [
+      0.5,
+      0.8854166666666666
+    ],
+    "source_pixels_per_world_unit": 360,
+    "standing_height_world": 1.15,
+    "hover_gap_world": 0,
+    "reference_visible_height_px": 414,
+    "root_motion": "In-place, one uniform scale per generated sheet, translation-only per pose to preserve original horizontal pose offset and common ground; no per-frame resizing",
+    "mirror_safe": false,
+    "layout_bounds_px": [
+      194,
+      197,
+      829,
+      680
+    ]
+  },
+  "atlas": {
+    "file": "atlas.png",
+    "dimensions": [
+      4096,
+      3072
+    ],
+    "sha256": "20475febe70a5d7d9bfe43fc424506c06ca4de6cec7c7a5a08b7cace4264c5dd"
+  },
+  "frames": [
+    {
+      "id": 0,
+      "file": "frame-00.png",
+      "sha256": "afb1284291984e2a0a8b0e707c3ee5e8b16a34b8027ecdeaf443eb6fb32a5599",
+      "visible_bbox": [
+        285,
+        267,
+        751,
+        680
+      ],
+      "source_sheet": "source/detail-0.png",
+      "source_crop": [
+        113,
+        29,
+        673,
+        527
+      ],
+      "uniform_sheet_scale": 0.8448979591836735,
+      "packing_translation": [
+        282,
+        263
+      ]
+    },
+    {
+      "id": 1,
+      "file": "frame-01.png",
+      "sha256": "1accb63c7378a9fe14b35c84fbb2556261f41db0e0ca8de5a44bb5085988c25b",
+      "visible_bbox": [
+        282,
+        266,
+        749,
+        680
+      ],
+      "source_sheet": "source/detail-0.png",
+      "source_crop": [
+        837,
+        29,
+        1398,
+        527
+      ],
+      "uniform_sheet_scale": 0.8448979591836735,
+      "packing_translation": [
+        278,
+        262
+      ]
+    },
+    {
+      "id": 2,
+      "file": "frame-02.png",
+      "sha256": "a6537f1a2b85a5c4b0d9e6b2abf923968f62d25cf76e000fc05504a20cc7492c",
+      "visible_bbox": [
+        286,
+        263,
+        748,
+        680
+      ],
+      "source_sheet": "source/detail-0.png",
+      "source_crop": [
+        119,
+        568,
+        673,
+        1071
+      ],
+      "uniform_sheet_scale": 0.8448979591836735,
+      "packing_translation": [
+        283,
+        259
+      ]
+    },
+    {
+      "id": 3,
+      "file": "frame-03.png",
+      "sha256": "a99c1d5d40c3e77ce691480975b41f7dd7dcd612671d43cc4dd428637e00e262",
+      "visible_bbox": [
+        283,
+        273,
+        752,
+        680
+      ],
+      "source_sheet": "source/detail-0.png",
+      "source_crop": [
+        836,
+        580,
+        1398,
+        1071
+      ],
+      "uniform_sheet_scale": 0.8448979591836735,
+      "packing_translation": [
+        280,
+        269
+      ]
+    },
+    {
+      "id": 4,
+      "file": "frame-04.png",
+      "sha256": "003c08eed4c1980d4ebdebd9e2e6520fd32155fd82b4f9e7bb6c83b565ad24e0",
+      "visible_bbox": [
+        308,
+        197,
+        777,
+        680
+      ],
+      "source_sheet": "source/detail-1.png",
+      "source_crop": [
+        131,
+        42,
+        619,
+        544
+      ],
+      "uniform_sheet_scale": 0.9778761061946902,
+      "packing_translation": [
+        304,
+        193
+      ]
+    },
+    {
+      "id": 5,
+      "file": "frame-05.png",
+      "sha256": "7a51a9fc45a429ff5aeaa95e7dd6dba07f84578a13a2af6d1b41c9473f43fb2f",
+      "visible_bbox": [
+        218,
+        329,
+        807,
+        680
+      ],
+      "source_sheet": "source/detail-1.png",
+      "source_crop": [
+        774,
+        178,
+        1384,
+        545
+      ],
+      "uniform_sheet_scale": 0.9778761061946902,
+      "packing_translation": [
+        214,
+        325
+      ]
+    },
+    {
+      "id": 6,
+      "file": "frame-06.png",
+      "sha256": "4bf5a2abd955730d9fcae98fbd46ed8c3fd1ee5fdcb219964e5c6a1ef7d7c0f1",
+      "visible_bbox": [
+        222,
+        333,
+        803,
+        680
+      ],
+      "source_sheet": "source/detail-1.png",
+      "source_crop": [
+        86,
+        652,
+        688,
+        1015
+      ],
+      "uniform_sheet_scale": 0.9778761061946902,
+      "packing_translation": [
+        218,
+        329
+      ]
+    },
+    {
+      "id": 7,
+      "file": "frame-07.png",
+      "sha256": "a0dbbafb242ba67b4774530bd32ae205a7943214bb848f637a91a3de4c810e24",
+      "visible_bbox": [
+        283,
+        238,
+        757,
+        680
+      ],
+      "source_sheet": "source/detail-1.png",
+      "source_crop": [
+        902,
+        555,
+        1395,
+        1015
+      ],
+      "uniform_sheet_scale": 0.9778761061946902,
+      "packing_translation": [
+        279,
+        234
+      ]
+    },
+    {
+      "id": 8,
+      "file": "frame-08.png",
+      "sha256": "e6af3a5a67df36c0732bdef67e2bc1f163c28cc71f2f15f5636061428ab28d35",
+      "visible_bbox": [
+        253,
+        212,
+        701,
+        680
+      ],
+      "source_sheet": "source/detail-2.png",
+      "source_crop": [
+        106,
+        39,
+        617,
+        573
+      ],
+      "uniform_sheet_scale": 0.8888888888888888,
+      "packing_translation": [
+        250,
+        208
+      ]
+    },
+    {
+      "id": 9,
+      "file": "frame-09.png",
+      "sha256": "6da1dcab7dbb3a4e1cb24257dff857240acadc1c1b5251c96e2968aa4003afcc",
+      "visible_bbox": [
+        302,
+        257,
+        747,
+        680
+      ],
+      "source_sheet": "source/detail-2.png",
+      "source_crop": [
+        910,
+        90,
+        1420,
+        575
+      ],
+      "uniform_sheet_scale": 0.8888888888888888,
+      "packing_translation": [
+        298,
+        253
+      ]
+    },
+    {
+      "id": 10,
+      "file": "frame-10.png",
+      "sha256": "bf3b08ad2340239407507c093262131576d6912dcdcebdee69994b3a41b8cb17",
+      "visible_bbox": [
+        317,
+        325,
+        721,
+        680
+      ],
+      "source_sheet": "source/detail-2.png",
+      "source_crop": [
+        161,
+        636,
+        623,
+        1043
+      ],
+      "uniform_sheet_scale": 0.8888888888888888,
+      "packing_translation": [
+        314,
+        321
+      ]
+    },
+    {
+      "id": 11,
+      "file": "frame-11.png",
+      "sha256": "a854e4dc2f7916371f70de88506a0d38ada774bf00e29dfbd591047895f577d8",
+      "visible_bbox": [
+        357,
+        323,
+        738,
+        680
+      ],
+      "source_sheet": "source/detail-2.png",
+      "source_crop": [
+        893,
+        636,
+        1328,
+        1044
+      ],
+      "uniform_sheet_scale": 0.8888888888888888,
+      "packing_translation": [
+        354,
+        320
+      ]
+    },
+    {
+      "id": 12,
+      "file": "frame-12.png",
+      "sha256": "8727bc1784686197d7183660e095491369b78f54f960c2a3891ca44ee2b35e23",
+      "visible_bbox": [
+        280,
+        276,
+        741,
+        680
+      ],
+      "source_sheet": "source/detail-3.png",
+      "source_crop": [
+        121,
+        103,
+        635,
+        554
+      ],
+      "uniform_sheet_scale": 0.9119638826185101,
+      "packing_translation": [
+        276,
+        273
+      ]
+    },
+    {
+      "id": 13,
+      "file": "frame-13.png",
+      "sha256": "e748096d274097dc4533a3c06d7cb6aafdffd2273e5d67c57d3195f9856fe385",
+      "visible_bbox": [
+        237,
+        337,
+        787,
+        680
+      ],
+      "source_sheet": "source/detail-3.png",
+      "source_crop": [
+        767,
+        174,
+        1378,
+        559
+      ],
+      "uniform_sheet_scale": 0.9119638826185101,
+      "packing_translation": [
+        233,
+        333
+      ]
+    },
+    {
+      "id": 14,
+      "file": "frame-14.png",
+      "sha256": "4b70dcc6f8b5ccdedf482e550af3a7c7f87517c7b9bf8057f4a14e53db9e58dc",
+      "visible_bbox": [
+        238,
+        413,
+        789,
+        680
+      ],
+      "source_sheet": "source/detail-3.png",
+      "source_crop": [
+        44,
+        722,
+        657,
+        1022
+      ],
+      "uniform_sheet_scale": 0.9119638826185101,
+      "packing_translation": [
+        234,
+        410
+      ]
+    },
+    {
+      "id": 15,
+      "file": "frame-15.png",
+      "sha256": "21b8b0f74ac99a5ca80422fef73736ba4d5c42cab6e408e1402b895dceefcf23",
+      "visible_bbox": [
+        194,
+        461,
+        829,
+        680
+      ],
+      "source_sheet": "source/detail-3.png",
+      "source_crop": [
+        737,
+        772,
+        1442,
+        1021
+      ],
+      "uniform_sheet_scale": 0.9119638826185101,
+      "packing_translation": [
+        190,
+        457
+      ]
+    }
+  ],
+  "animations": {
+    "idle": {
+      "frames": [
+        0,
+        1,
+        2,
+        3,
+        2,
+        1
+      ],
+      "durations_ms": [
+        300,
+        280,
+        360,
+        300,
+        280,
+        320
+      ],
+      "loop": true,
+      "events": [],
+      "transition": "self"
+    },
+    "act": {
+      "frames": [
+        4,
+        5,
+        6,
+        7
+      ],
+      "durations_ms": [
+        100,
+        90,
+        90,
+        70
+      ],
+      "loop": false,
+      "events": [
+        {
+          "name": "impact",
+          "at_ms": 100
+        }
+      ],
+      "transition": "idle"
+    },
+    "hit": {
+      "frames": [
+        8,
+        9,
+        0
+      ],
+      "durations_ms": [
+        80,
+        100,
+        80
+      ],
+      "loop": false,
+      "events": [],
+      "transition": "idle"
+    },
+    "wounded_idle": {
+      "frames": [
+        10,
+        11,
+        10
+      ],
+      "durations_ms": [
+        550,
+        650,
+        550
+      ],
+      "loop": true,
+      "events": [],
+      "transition": "self"
+    },
+    "die": {
+      "frames": [
+        12,
+        13,
+        14,
+        15
+      ],
+      "durations_ms": [
+        150,
+        160,
+        180,
+        250
+      ],
+      "loop": false,
+      "events": [
+        {
+          "name": "terminal",
+          "at_ms": 490
+        }
+      ],
+      "transition": "hold-last",
+      "terminal": true
+    },
+    "spawn": {
+      "frames": [
+        0,
+        0,
+        1,
+        0
+      ],
+      "durations_ms": [
+        70,
+        80,
+        100,
+        100
+      ],
+      "loop": false,
+      "events": [
+        {
+          "name": "arrival",
+          "at_ms": 250
+        }
+      ],
+      "transition": "idle",
+      "opacity": [
+        0,
+        0.35,
+        0.75,
+        1
+      ]
+    }
+  },
+  "aliases": {
+    "attack": "act"
+  },
+  "not_applicable": {
+    "guard": "No guard equipment/action.",
+    "cast": "Physical bite or slam.",
+    "victory": "Not required by summon catalog.",
+    "transform": "Arch-forms are separate summons."
+  },
+  "construction": {
+    "type": "16 generated articulated raster key poses, packed without per-frame rescaling",
+    "layers": "flattened RGBA frames; no rig or separated joint parts"
+  },
+  "limitations": [
+    "Limited-animation pose timing, not interpolated skeletal animation.",
+    "Small generated detail variations remain between frames.",
+    "Spawn is a four-step materialization opacity sequence using idle poses; VFX are external.",
+    "Source pose resolution is measured, not upscaled to claim HD."
+  ],
+  "generation": {
+    "id": "warlock-pit-brute",
+    "prompt": "Create a PRODUCTION 2D SPRITE ANIMATION SHEET for the EXACT supplied Runelord creature. Image 1 is immutable character identity; image 2 is cel shading style only. Preserve its face, limb counts, armor, palette, proportions and asymmetry in EVERY frame. TRUE TRANSPARENT background. EXACTLY 4 COLUMNS x 4 ROWS, 16 equally sized square cells, orderly grid WITHOUT drawn dividers or labels. Aim for 2048x2048 pixels. Each cell uses the SAME camera, pixel scale and ground plane at 85% of cell height. Character fits within middle 80% of each cell, no overlap or cutoff. Facing right, shallow three-quarter side game view. Keep both feet planted in idle and hit, same foot positions; no bouncing whole sprite or sliding. Clear articulated limb poses, flat hard-edged cel shadows, no gradients, no added detail. No scenery, baked shadow, text, numbers or border. Cell content row-major:\nROW 1 = FOUR subtle IDLE breathing poses for a seamless loop: resting, mid inhale, full inhale, mid exhale. Feet identical, gentle chest expansion, small head and secondary appendage follow-through. NOT four identical copies. Keep same body size, anatomical landmarks.\nROW 2 = FOUR ACTION poses: anticipation, release/contact, follow-through, recover to original idle stance. Pose must use shoulders/elbows/spine and creature-specific action. Keep anatomy consistent.\nROW 3 = frame 1 HIT recoil, frame 2 HIT recovery, frame 3 WOUNDED IDLE lowered tired posture A, frame 4 WOUNDED IDLE breathing posture B. No gore. Feet planted, tired posture clearly different from brief hit.\nROW 4 = FOUR DEATH poses: knees buckle/body weakens; sink and fold; collapse onto ground; terminal lifeless prone body resting on same ground baseline. Distinctly articulated collapse, not whole-sprite spinning. Last frame fully in cell, keep silhouette recognizable. No flames or VFX obscuring anatomy.\n\nIMPORTANT: no projectiles or detached VFX; emission handled by game. Keep at least 12% empty gutter around each pose, especially extended limbs. All poses SAME pixels per body length, do not scale collapse poses up.\nPit Brute: two arms/two legs, spiked charcoal shoulder armor and enormous fists. Action slam: lift both elbows and fists with bent knees, slam fists to ground ahead, hold low impact pose, recover. Idle deep slow breath, weight over stationary feet.\nLAYOUT PRIORITY: use wide LANDSCAPE 1536x1024 canvas. Exactly 4 columns x4rows. Each creature tiny enough that ALL 16 poses have at least 40px empty transparent space on ALL sides of its cell. Same scale throughout; huge empty gutters. Never fill the cell.",
+    "source": "C:\\Users\\wilsh\\.codex\\generated_images\\01a0fd05-4128-7311-a4cf-038e1591fcc4\\exec-7619df09-f9a3-4355-8b84-130dad284ace.png",
+    "rows": [
+      0,
+      255,
+      514,
+      768,
+      1024
+    ],
+    "columns_by_row": [
+      [
+        0,
+        383,
+        768,
+        1152,
+        1536
+      ],
+      [
+        0,
+        383,
+        768,
+        1152,
+        1536
+      ],
+      [
+        0,
+        384,
+        770,
+        1156,
+        1536
+      ],
+      [
+        0,
+        386,
+        768,
+        1152,
+        1536
+      ]
+    ],
+    "boundary_contact_frames": []
+  },
+  "qa": {
+    "id": "warlock-pit-brute",
+    "frames": 16,
+    "alpha_extrema": [
+      0,
+      254
+    ],
+    "clipping": [],
+    "idle_height_px": 207,
+    "dimensions": [
+      512,
+      384
+    ],
+    "states": [
+      "idle",
+      "act",
+      "hit",
+      "wounded_idle",
+      "die",
+      "spawn"
+    ],
+    "runtime_tests": "Passed: state timing, event bounds, aliases, death terminal hold, scale at 80/160/240 screen px per unit.",
+    "visual_review": "Live Canvas playback reviewed in browser; full-source and 96 px individual idle, full roster action/hit/wounded/death comparisons; light and dark backgrounds.",
+    "limitations": "Limited pose count; small generated contour/shading variation. No skeletal interpolation or separated VFX."
+  },
+  "revision": "hd-r1",
+  "source_sheets": [
+    {
+      "file": "source/detail-0.png",
+      "sha256": "1e6b36675544d60d6b74fe6fd4f165dd33d8f08d3efd9fe019d4023bbcbbc52b",
+      "dimensions": [
+        1448,
+        1086
+      ],
+      "uniform_scale": 0.8448979591836735
+    },
+    {
+      "file": "source/detail-1.png",
+      "sha256": "c4e22595f8a22be1bad28daf85043bf5d8cd8876d1524e514cf7f7a3fd1992dd",
+      "dimensions": [
+        1448,
+        1086
+      ],
+      "uniform_scale": 0.9778761061946902
+    },
+    {
+      "file": "source/detail-2.png",
+      "sha256": "ded4120c095244e911a55cd2ac5ae0dea95473b605729124c4b12abc2f6024b7",
+      "dimensions": [
+        1448,
+        1086
+      ],
+      "uniform_scale": 0.8888888888888888
+    },
+    {
+      "file": "source/detail-3.png",
+      "sha256": "30b6d0e9085184e1b9ec5c19f676c3e59b460cf7a191343051c606d77ebe0b9c",
+      "dimensions": [
+        1448,
+        1086
+      ],
+      "uniform_scale": 0.9119638826185101
+    }
+  ],
+  "repair": {
+    "method": "Built-in imagegen identity-preserving reconstruction from exact16pose guide and1372x1146 master, then technical packing",
+    "prior_visible_height_px": 207,
+    "new_visible_height_px": 414,
+    "limitation": "Generated linework may vary between poses; pending independent visual QA and user design review"
+  }
+}

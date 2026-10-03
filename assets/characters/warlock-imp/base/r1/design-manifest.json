@@ -1,0 +1,151 @@
+{
+  "contract_version": 2,
+  "character_id": "warlock-imp",
+  "display_name": "Imp",
+  "project": "C:\\Users\\wilsh\\Projects\\runelord",
+  "status": "base_pending",
+  "role": "Firebolt and Scorch",
+  "form": "regular summon",
+  "rig_family": "winged biped",
+  "base": {
+    "revision": "r1",
+    "asset": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\characters\\warlock-imp\\base\\r1\\warlock-imp-base-r1.png",
+    "sha256": "72f0117479ddd46b1468868b90fe3d78800836364bac730db5a8861c7f6fff3e",
+    "dimensions": [
+      1206,
+      1305
+    ],
+    "alpha_extrema": [
+      0,
+      255
+    ],
+    "visible_bbox_alpha_gt_127": [
+      33,
+      36,
+      1179,
+      1276
+    ],
+    "approval": {
+      "status": "Pending approval"
+    }
+  },
+  "style_lock": {
+    "direction": "Serious Runelord hard-edged cel shading, broad oxblood/charcoal shapes, restrained ember accents",
+    "references": [
+      {
+        "path": "C:/Users/wilsh/Projects/runelord/assets/cards/reference-samples/warlock-summon-imp.png",
+        "sha256": "070283f1fb65b07531cec7b32c653ffc96a7adacde1c2ce4daca1f3b4ed78c9e",
+        "role": "exact card identity",
+        "approval": {
+          "status": "Approved",
+          "at": "2026-10-02T03:44:25.533Z",
+          "evidenceId": "user-chat-2026-10-01-approve-existing-runelord",
+          "paths": [
+            "C:\\Users\\wilsh\\Projects\\runelord\\assets\\cards\\reference-samples\\warlock-summon-imp.png"
+          ]
+        }
+      },
+      {
+        "path": "C:/Users/wilsh/Projects/runelord/assets/cards/reference-samples/warlock-summon-imp.png",
+        "sha256": "070283f1fb65b07531cec7b32c653ffc96a7adacde1c2ce4daca1f3b4ed78c9e",
+        "role": "approved rendering style",
+        "approval": {
+          "status": "Approved",
+          "at": "2026-10-02T03:44:25.533Z",
+          "evidenceId": "user-chat-2026-10-01-approve-existing-runelord",
+          "paths": [
+            "C:\\Users\\wilsh\\Projects\\runelord\\assets\\cards\\reference-samples\\warlock-summon-imp.png"
+          ]
+        }
+      }
+    ],
+    "camera": "shallow three-quarter facing right"
+  },
+  "variants": [],
+  "approvals": [],
+  "construction": {
+    "status": "proposed only; flattened master is not a rig",
+    "parts": [
+      "pelvis",
+      "chest",
+      "neck/head",
+      "paired upper/lower arms and claws",
+      "paired thighs/shins/feet",
+      "paired wing roots and membrane sections"
+    ],
+    "pivots": "root, neck, shoulders/elbows, hips/knees, jaw and appendage roots as anatomically applicable; exact coordinates deferred to rigging",
+    "overlaps": "reconstruct hidden joint margins before separating layers",
+    "layer_order": "far limbs/wings, body, head, near limbs, foreground equipment; follow source occlusion",
+    "attachments": "shield screen-left in reference-facing view; horns and plates parented to body; ribbons and fins attached",
+    "articulation_limits": "no rigid whole-image substitutes for limb motion"
+  },
+  "geometry": {
+    "coordinate_system": "pixels; top-left origin; x right; y down",
+    "facing": "right",
+    "motion_canvas": "not established; expand margins before animation",
+    "root_anchor": "not established; derive from planted feet or hover root"
+  },
+  "animations": {
+    "required": [
+      "spawn",
+      "idle",
+      "attack",
+      "act",
+      "hit",
+      "wounded_idle",
+      "die"
+    ],
+    "action": "Firebolt and Scorch",
+    "cast": "required for fire/drain/curse/ward actions; not applicable to bite/slam",
+    "guard": "required for defender and shield-bearing units; not applicable otherwise",
+    "victory": "not required by unit catalog",
+    "transform": "not applicable; greater forms are separately summoned units",
+    "raised_tamed_forms": "not applicable to allied Warlock summons",
+    "timing": "ordinary Muster target approximately 350 ms; separate multi-hit timing for Arch-forms",
+    "events": [
+      "arrival",
+      "impact or release",
+      "recovery",
+      "terminal death"
+    ],
+    "loops": [
+      "idle",
+      "wounded_idle"
+    ],
+    "one_shots": [
+      "spawn",
+      "attack",
+      "act",
+      "hit",
+      "die"
+    ],
+    "transitions": "spawn to idle; action/hit to idle or wounded_idle; die terminal"
+  },
+  "generation": {
+    "tool": "built-in image_gen",
+    "prompt": "Use case: stylized-concept. Create ONE standalone full-body Runelord allied summon character master, neutral combat-ready stance facing RIGHT in shallow three-quarter side game view. Genuine transparent background. Entire silhouette in frame with generous clear padding, no ground scenery, no summoning circle, no card frame, no text, no other characters. Minimum 1024 long edge. Match the supplied card creature identity so it is immediately recognizable. Use the supplied approved Runelord artwork as a reference for simplified 2D shapes and cel-shaded rendering. Serious threatening expression, tough stylized silhouette, broad clean color shapes, crisp hard-edged cel shadows, quiet surfaces, oxblood charcoal and controlled ember accents. Avoid cute expressions, realistic anatomy, painterly textures, dense grunge, 3D lighting, heavy outlines. Distinct limb separation and feasible joints, stable feet for grounded subjects; bounded complete tail for hovering subjects. This is a flattened concept master, not a rig. Preserve the SMALL WINGED IMP in the lower right of the card, not the hooded summoner: red angular head, two dark upward horns, pointed ears, yellow slit eyes, jagged black mouth, red bat wings, lean clawed arms and digitigrade legs. Two arms, two legs, two wings. No staff or clothes. Wings partly open; feet planted.",
+    "repair_prompt": null,
+    "source_path": "C:\\Users\\wilsh\\.codex\\generated_images\\01a0fd05-4128-7311-a4cf-038e1591fcc4\\exec-6b84fb67-fb67-4585-8006-1b9fbbcaf88f.png"
+  },
+  "limitations": [
+    "Base design only: variants, separated layers, rigs and animations not produced.",
+    "Tight source margins: establish larger shared motion canvas before animation.",
+    "Minor subpixel alpha fringe: verify exports on target backgrounds."
+  ],
+  "qa": {
+    "full_size": "Reviewed identity, limbs and cel shading; repaired Warden equipment side and Brute horn margin.",
+    "small_scale": "Reviewed near 96px height on light and dark backgrounds.",
+    "animation": "Not produced or tested."
+  },
+  "output": {
+    "destination": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\characters\\warlock-imp\\base\\r1",
+    "preview": "PNG",
+    "runtime_target": "PixiJS; animation format not established"
+  },
+  "gallery_submission": {
+    "path": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\approvals\\inbox\\warlock-imp\\base-r1\\warlock-imp-base-r1.png",
+    "sha256": "72f0117479ddd46b1468868b90fe3d78800836364bac730db5a8861c7f6fff3e",
+    "status": "Pending approval",
+    "gallery": "http://localhost:4317"
+  }
+}
