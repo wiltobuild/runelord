@@ -1,0 +1,8 @@
+{
+  "name": "Black Covenant",
+  "cost": "1",
+  "type": "Power",
+  "rarity": "Rare",
+  "rules": "Whenever you lose HP on your turn, gain 1 Might.",
+  "upgrade": "Costs 0"
+}

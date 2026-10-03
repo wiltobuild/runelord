@@ -1,0 +1,35 @@
+[
+  {
+    "region": "title",
+    "text": "Black Covenant",
+    "lines": [
+      "Black Covenant"
+    ],
+    "font_size": 74
+  },
+  {
+    "region": "cost",
+    "text": "1",
+    "lines": [
+      "1"
+    ],
+    "font_size": 110
+  },
+  {
+    "region": "type",
+    "text": "POWER · WARLOCK",
+    "lines": [
+      "POWER · WARLOCK"
+    ],
+    "font_size": 35
+  },
+  {
+    "region": "rules",
+    "text": "Whenever you lose HP on your turn, gain 1 Might.",
+    "lines": [
+      "Whenever you lose HP on",
+      "your turn, gain 1 Might."
+    ],
+    "font_size": 54
+  }
+]
