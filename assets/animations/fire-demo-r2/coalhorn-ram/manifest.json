@@ -1,0 +1,218 @@
+{
+  "id": "coalhorn-ram",
+  "method": "whole-character generated keyframes",
+  "canvas": {
+    "width": 448,
+    "height": 448
+  },
+  "anchor": {
+    "x": 224,
+    "y": 414
+  },
+  "facing": "left",
+  "master": {
+    "path": "assets\\concepts\\fire-monsters-20-2026-10-02\\coalhorn-ram\\base-r1.png",
+    "sha256": "bc00a28393f03d6246e01d4ec8eab6b98423547178f35bb608ee3e85d3e28ea1",
+    "approval": {
+      "status": "Approved",
+      "at": "2026-10-02T22:20:49.176Z",
+      "evidenceId": "1792a1c5-7e35-4391-9227-65c459f5d36d",
+      "paths": [
+        "C:\\Users\\wilsh\\Projects\\runelord\\assets\\approvals\\inbox\\coalhorn-ram\\base-r1\\base-r1.png"
+      ]
+    }
+  },
+  "source": {
+    "path": "assets\\animations\\fire-demo-r1\\coalhorn-ram\\poses.png",
+    "sha256": "d66f60d31c3091d7ca59cd8cd8e003b6946eed8949efe0ce99eb51c79d1ff92a"
+  },
+  "authorization": "User requested existing fire monster art animated and integrated into demo, 2026-10-03. New animation pending gallery review; not self-approved.",
+  "states": {
+    "idle": {
+      "frames": [
+        {
+          "file": "frames/00.png",
+          "durationMs": 380
+        },
+        {
+          "file": "frames/01.png",
+          "durationMs": 380
+        },
+        {
+          "file": "frames/00.png",
+          "durationMs": 380
+        }
+      ],
+      "loop": true,
+      "events": []
+    },
+    "attack": {
+      "frames": [
+        {
+          "file": "frames/02.png",
+          "durationMs": 150
+        },
+        {
+          "file": "frames/03.png",
+          "durationMs": 170
+        },
+        {
+          "file": "frames/04.png",
+          "durationMs": 140
+        },
+        {
+          "file": "frames/05.png",
+          "durationMs": 140
+        }
+      ],
+      "loop": false,
+      "events": [
+        {
+          "name": "impact",
+          "timeMs": 150
+        }
+      ]
+    },
+    "hit": {
+      "frames": [
+        {
+          "file": "frames/06.png",
+          "durationMs": 140
+        },
+        {
+          "file": "frames/07.png",
+          "durationMs": 140
+        },
+        {
+          "file": "frames/00.png",
+          "durationMs": 100
+        }
+      ],
+      "loop": false,
+      "events": []
+    },
+    "wounded_idle": {
+      "frames": [
+        {
+          "file": "frames/08.png",
+          "durationMs": 400
+        },
+        {
+          "file": "frames/09.png",
+          "durationMs": 400
+        },
+        {
+          "file": "frames/08.png",
+          "durationMs": 400
+        }
+      ],
+      "loop": true,
+      "events": []
+    },
+    "die": {
+      "frames": [
+        {
+          "file": "frames/08.png",
+          "durationMs": 180
+        },
+        {
+          "file": "frames/10.png",
+          "durationMs": 280
+        },
+        {
+          "file": "frames/11.png",
+          "durationMs": 550
+        }
+      ],
+      "loop": false,
+      "events": []
+    }
+  },
+  "frameBounds": [
+    [
+      38,
+      95,
+      410,
+      414
+    ],
+    [
+      39,
+      78,
+      409,
+      414
+    ],
+    [
+      52,
+      143,
+      395,
+      414
+    ],
+    [
+      25,
+      142,
+      422,
+      414
+    ],
+    [
+      40,
+      88,
+      408,
+      414
+    ],
+    [
+      40,
+      100,
+      407,
+      414
+    ],
+    [
+      51,
+      71,
+      397,
+      414
+    ],
+    [
+      33,
+      125,
+      415,
+      414
+    ],
+    [
+      48,
+      145,
+      399,
+      414
+    ],
+    [
+      57,
+      157,
+      391,
+      414
+    ],
+    [
+      49,
+      215,
+      399,
+      414
+    ],
+    [
+      38,
+      245,
+      409,
+      414
+    ]
+  ],
+  "limitations": [
+    "12 authored stepped poses; no interpolated inbetweens."
+  ],
+  "repair": {
+    "method": "Connected-island sprite extraction with preserved alpha; wounded frame09 image_gen repair",
+    "authorization": "User requested detached tail/hoof and missing collar gems fixed. 2026-10-03",
+    "approval": "Pending approval; user authorized integration",
+    "sourceRevision": "fire-demo-r1",
+    "woundedSource": {
+      "path": "assets\\animations\\fire-demo-r2\\coalhorn-ram\\wounded-repair.png",
+      "sha256": "c6f351409107feebfac87655c21cc5bb56b52505fa6cf5f51fb904da2cb44556"
+    }
+  }
+}
