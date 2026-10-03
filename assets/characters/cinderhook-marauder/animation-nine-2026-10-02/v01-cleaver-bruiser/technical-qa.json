@@ -1,0 +1,553 @@
+{
+  "variant": "v01-cleaver-bruiser",
+  "checks": [
+    {
+      "state": "idle",
+      "file": "frames/idle/00.png",
+      "dimensions": [
+        384,
+        384
+      ],
+      "sha256": "de33656b7cda3e6fdee3b102ce8c4b3d92beb08df1d1af97bc980a1c4355fc76",
+      "alpha": [
+        0,
+        255
+      ],
+      "bounds": [
+        52,
+        72,
+        311,
+        325
+      ],
+      "hasMargin": true,
+      "durationMs": 200
+    },
+    {
+      "state": "idle",
+      "file": "frames/idle/01.png",
+      "dimensions": [
+        384,
+        384
+      ],
+      "sha256": "cf30654e420dabc05f6a68db81ce993d40409546b5635ae2c2b8fcfb74d3bdce",
+      "alpha": [
+        0,
+        255
+      ],
+      "bounds": [
+        54,
+        72,
+        316,
+        325
+      ],
+      "hasMargin": true,
+      "durationMs": 200
+    },
+    {
+      "state": "idle",
+      "file": "frames/idle/02.png",
+      "dimensions": [
+        384,
+        384
+      ],
+      "sha256": "23a7925f48c823f5476eac079a934571442dcc6e9534007fb043128904fdb6b4",
+      "alpha": [
+        0,
+        255
+      ],
+      "bounds": [
+        53,
+        70,
+        310,
+        325
+      ],
+      "hasMargin": true,
+      "durationMs": 200
+    },
+    {
+      "state": "idle",
+      "file": "frames/idle/03.png",
+      "dimensions": [
+        384,
+        384
+      ],
+      "sha256": "9aebd83ff7b49b8dece2917939a5c532d58c4a69ba048ff05b4249fbf58b1226",
+      "alpha": [
+        0,
+        255
+      ],
+      "bounds": [
+        59,
+        72,
+        309,
+        325
+      ],
+      "hasMargin": true,
+      "durationMs": 200
+    },
+    {
+      "state": "idle",
+      "file": "frames/idle/02.png",
+      "dimensions": [
+        384,
+        384
+      ],
+      "sha256": "23a7925f48c823f5476eac079a934571442dcc6e9534007fb043128904fdb6b4",
+      "alpha": [
+        0,
+        255
+      ],
+      "bounds": [
+        53,
+        70,
+        310,
+        325
+      ],
+      "hasMargin": true,
+      "durationMs": 200
+    },
+    {
+      "state": "idle",
+      "file": "frames/idle/01.png",
+      "dimensions": [
+        384,
+        384
+      ],
+      "sha256": "cf30654e420dabc05f6a68db81ce993d40409546b5635ae2c2b8fcfb74d3bdce",
+      "alpha": [
+        0,
+        255
+      ],
+      "bounds": [
+        54,
+        72,
+        316,
+        325
+      ],
+      "hasMargin": true,
+      "durationMs": 200
+    },
+    {
+      "state": "attack",
+      "file": "frames/attack/00.png",
+      "dimensions": [
+        384,
+        384
+      ],
+      "sha256": "05b135ac092be9bcb261a439dfd6f554f4bc8383d0a135cd06d0c41abfb1a36e",
+      "alpha": [
+        0,
+        255
+      ],
+      "bounds": [
+        69,
+        50,
+        328,
+        328
+      ],
+      "hasMargin": true,
+      "durationMs": 90
+    },
+    {
+      "state": "attack",
+      "file": "frames/attack/01.png",
+      "dimensions": [
+        384,
+        384
+      ],
+      "sha256": "03d3c881aef0650db508f7500c46c0d0f8c67c9fe0cda1acbc58ab9dc755f3c8",
+      "alpha": [
+        0,
+        255
+      ],
+      "bounds": [
+        110,
+        50,
+        317,
+        328
+      ],
+      "hasMargin": true,
+      "durationMs": 110
+    },
+    {
+      "state": "attack",
+      "file": "frames/attack/02.png",
+      "dimensions": [
+        384,
+        384
+      ],
+      "sha256": "98f83562166610467809c7a99d728adcf7cb761a9556af2f9a2e20412c8390c0",
+      "alpha": [
+        0,
+        255
+      ],
+      "bounds": [
+        63,
+        50,
+        319,
+        330
+      ],
+      "hasMargin": true,
+      "durationMs": 60
+    },
+    {
+      "state": "attack",
+      "file": "frames/attack/03.png",
+      "dimensions": [
+        384,
+        384
+      ],
+      "sha256": "ef59b7d9faa7b4289a233ed504766c6a2b2f503ec08459435760bb6c777425b2",
+      "alpha": [
+        0,
+        255
+      ],
+      "bounds": [
+        40,
+        50,
+        315,
+        328
+      ],
+      "hasMargin": true,
+      "durationMs": 80
+    },
+    {
+      "state": "attack",
+      "file": "frames/attack/00.png",
+      "dimensions": [
+        384,
+        384
+      ],
+      "sha256": "05b135ac092be9bcb261a439dfd6f554f4bc8383d0a135cd06d0c41abfb1a36e",
+      "alpha": [
+        0,
+        255
+      ],
+      "bounds": [
+        69,
+        50,
+        328,
+        328
+      ],
+      "hasMargin": true,
+      "durationMs": 90
+    },
+    {
+      "state": "hit",
+      "file": "frames/hit/00.png",
+      "dimensions": [
+        384,
+        384
+      ],
+      "sha256": "8489d76144962f8144d7f67c13ced324ccaea757571d22fb43e84ff1b2282d3f",
+      "alpha": [
+        0,
+        255
+      ],
+      "bounds": [
+        65,
+        62,
+        315,
+        323
+      ],
+      "hasMargin": true,
+      "durationMs": 40
+    },
+    {
+      "state": "hit",
+      "file": "frames/hit/01.png",
+      "dimensions": [
+        384,
+        384
+      ],
+      "sha256": "de6ada986dad1297a99dbf47ad3baeb2bdf4de9d4ae1111636c099111db54676",
+      "alpha": [
+        0,
+        255
+      ],
+      "bounds": [
+        34,
+        55,
+        296,
+        325
+      ],
+      "hasMargin": true,
+      "durationMs": 80
+    },
+    {
+      "state": "hit",
+      "file": "frames/hit/02.png",
+      "dimensions": [
+        384,
+        384
+      ],
+      "sha256": "bcc972f3a15c639687cea348178962513220aa8afe4f16871c2ee22ad4ec0620",
+      "alpha": [
+        0,
+        255
+      ],
+      "bounds": [
+        67,
+        53,
+        316,
+        325
+      ],
+      "hasMargin": true,
+      "durationMs": 100
+    },
+    {
+      "state": "hit",
+      "file": "frames/hit/03.png",
+      "dimensions": [
+        384,
+        384
+      ],
+      "sha256": "2002b9d93e1799f5bd01fcdb0918000326ac1e8438b70d5c98f80c0854029fd7",
+      "alpha": [
+        0,
+        255
+      ],
+      "bounds": [
+        58,
+        67,
+        316,
+        325
+      ],
+      "hasMargin": true,
+      "durationMs": 90
+    },
+    {
+      "state": "hit",
+      "file": "frames/hit/00.png",
+      "dimensions": [
+        384,
+        384
+      ],
+      "sha256": "8489d76144962f8144d7f67c13ced324ccaea757571d22fb43e84ff1b2282d3f",
+      "alpha": [
+        0,
+        255
+      ],
+      "bounds": [
+        65,
+        62,
+        315,
+        323
+      ],
+      "hasMargin": true,
+      "durationMs": 70
+    },
+    {
+      "state": "wounded_idle",
+      "file": "frames/wounded_idle/00.png",
+      "dimensions": [
+        384,
+        384
+      ],
+      "sha256": "87b8adad3555b4659f2b21afefcecdafe5162a68381dff61fb6e0154af3b43e4",
+      "alpha": [
+        0,
+        255
+      ],
+      "bounds": [
+        79,
+        77,
+        325,
+        327
+      ],
+      "hasMargin": true,
+      "durationMs": 230
+    },
+    {
+      "state": "wounded_idle",
+      "file": "frames/wounded_idle/01.png",
+      "dimensions": [
+        384,
+        384
+      ],
+      "sha256": "e69a45c892c00513a1a2d968d26a725517ca9680a5bbfb6cf93bba4dd942df88",
+      "alpha": [
+        0,
+        255
+      ],
+      "bounds": [
+        60,
+        63,
+        316,
+        335
+      ],
+      "hasMargin": true,
+      "durationMs": 230
+    },
+    {
+      "state": "wounded_idle",
+      "file": "frames/wounded_idle/02.png",
+      "dimensions": [
+        384,
+        384
+      ],
+      "sha256": "cab6294d179ede2d66a15e52b0d8b1db4b8eeb9c7be6d4c05dff07f630758bfc",
+      "alpha": [
+        0,
+        255
+      ],
+      "bounds": [
+        45,
+        84,
+        315,
+        327
+      ],
+      "hasMargin": true,
+      "durationMs": 230
+    },
+    {
+      "state": "wounded_idle",
+      "file": "frames/wounded_idle/03.png",
+      "dimensions": [
+        384,
+        384
+      ],
+      "sha256": "fa8de6e639896eed4c0b24c264b462fd71f9613e3c3e15d91da2e8474cf200ac",
+      "alpha": [
+        0,
+        255
+      ],
+      "bounds": [
+        61,
+        68,
+        315,
+        326
+      ],
+      "hasMargin": true,
+      "durationMs": 230
+    },
+    {
+      "state": "wounded_idle",
+      "file": "frames/wounded_idle/02.png",
+      "dimensions": [
+        384,
+        384
+      ],
+      "sha256": "cab6294d179ede2d66a15e52b0d8b1db4b8eeb9c7be6d4c05dff07f630758bfc",
+      "alpha": [
+        0,
+        255
+      ],
+      "bounds": [
+        45,
+        84,
+        315,
+        327
+      ],
+      "hasMargin": true,
+      "durationMs": 230
+    },
+    {
+      "state": "wounded_idle",
+      "file": "frames/wounded_idle/01.png",
+      "dimensions": [
+        384,
+        384
+      ],
+      "sha256": "e69a45c892c00513a1a2d968d26a725517ca9680a5bbfb6cf93bba4dd942df88",
+      "alpha": [
+        0,
+        255
+      ],
+      "bounds": [
+        60,
+        63,
+        316,
+        335
+      ],
+      "hasMargin": true,
+      "durationMs": 230
+    },
+    {
+      "state": "die",
+      "file": "frames/die/00.png",
+      "dimensions": [
+        384,
+        384
+      ],
+      "sha256": "04922994d058a676823c2a8b89c5c27f056d08e166dc83b9465616dd3c609047",
+      "alpha": [
+        0,
+        255
+      ],
+      "bounds": [
+        52,
+        81,
+        287,
+        317
+      ],
+      "hasMargin": true,
+      "durationMs": 130
+    },
+    {
+      "state": "die",
+      "file": "frames/die/01.png",
+      "dimensions": [
+        384,
+        384
+      ],
+      "sha256": "8c3e2afca91f31b65a892a9dadf49d26f825466136ce7c37ec8facbda023579d",
+      "alpha": [
+        0,
+        255
+      ],
+      "bounds": [
+        56,
+        35,
+        311,
+        323
+      ],
+      "hasMargin": true,
+      "durationMs": 160
+    },
+    {
+      "state": "die",
+      "file": "frames/die/02.png",
+      "dimensions": [
+        384,
+        384
+      ],
+      "sha256": "dd011d7fd10e06abc07a5b187a3b8bf4f5cc003d719a59a0bd52849c0b31b9f4",
+      "alpha": [
+        0,
+        255
+      ],
+      "bounds": [
+        46,
+        108,
+        327,
+        354
+      ],
+      "hasMargin": true,
+      "durationMs": 150
+    },
+    {
+      "state": "die",
+      "file": "frames/die/03.png",
+      "dimensions": [
+        384,
+        384
+      ],
+      "sha256": "b69d5b3d9f02747d642835686aa5dee9322ce6e921cbad91dc0b119e7d2eb64c",
+      "alpha": [
+        0,
+        255
+      ],
+      "bounds": [
+        39,
+        219,
+        319,
+        321
+      ],
+      "hasMargin": true,
+      "durationMs": 600
+    }
+  ],
+  "pass": true,
+  "visualReview": "separate independent reviewer, not implied by technical pass"
+}

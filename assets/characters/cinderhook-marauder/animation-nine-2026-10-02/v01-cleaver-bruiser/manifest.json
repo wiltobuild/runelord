@@ -1,0 +1,905 @@
+{
+  "variantId": "v01-cleaver-bruiser",
+  "source": {
+    "path": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\characters\\cinderhook-marauder\\animation-nine-2026-10-02\\v01-cleaver-bruiser\\source\\poses-r2.png",
+    "sha256": "fffb3f1b5bef650dfa10bbbf82c172a112522c5a4351be073209c1c875f14f77"
+  },
+  "approvedIdentity": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\characters\\cinderhook-marauder\\variants-nine-2026-10-02\\v01-cleaver-bruiser-r1.png",
+  "canvas": {
+    "width": 384,
+    "height": 384
+  },
+  "anchor": {
+    "x": 225,
+    "y": 320
+  },
+  "coordinateSystem": "top-left pixels; x right, y down",
+  "facing": "left",
+  "states": {
+    "idle": {
+      "frames": [
+        {
+          "file": "frames/idle/00.png",
+          "durationMs": 200,
+          "atlasRect": [
+            0,
+            0,
+            384,
+            384
+          ],
+          "sourceSize": [
+            384,
+            384
+          ],
+          "trimOffset": [
+            0,
+            0
+          ]
+        },
+        {
+          "file": "frames/idle/01.png",
+          "durationMs": 200,
+          "atlasRect": [
+            384,
+            0,
+            384,
+            384
+          ],
+          "sourceSize": [
+            384,
+            384
+          ],
+          "trimOffset": [
+            0,
+            0
+          ]
+        },
+        {
+          "file": "frames/idle/02.png",
+          "durationMs": 200,
+          "atlasRect": [
+            768,
+            0,
+            384,
+            384
+          ],
+          "sourceSize": [
+            384,
+            384
+          ],
+          "trimOffset": [
+            0,
+            0
+          ]
+        },
+        {
+          "file": "frames/idle/03.png",
+          "durationMs": 200,
+          "atlasRect": [
+            1152,
+            0,
+            384,
+            384
+          ],
+          "sourceSize": [
+            384,
+            384
+          ],
+          "trimOffset": [
+            0,
+            0
+          ]
+        },
+        {
+          "file": "frames/idle/02.png",
+          "durationMs": 200,
+          "atlasRect": [
+            768,
+            0,
+            384,
+            384
+          ],
+          "sourceSize": [
+            384,
+            384
+          ],
+          "trimOffset": [
+            0,
+            0
+          ]
+        },
+        {
+          "file": "frames/idle/01.png",
+          "durationMs": 200,
+          "atlasRect": [
+            384,
+            0,
+            384,
+            384
+          ],
+          "sourceSize": [
+            384,
+            384
+          ],
+          "trimOffset": [
+            0,
+            0
+          ]
+        }
+      ],
+      "loop": true,
+      "events": [],
+      "nextState": "idle",
+      "terminal": false,
+      "holdLastFrame": false,
+      "durationMs": 1200
+    },
+    "attack": {
+      "frames": [
+        {
+          "file": "frames/attack/00.png",
+          "durationMs": 90,
+          "atlasRect": [
+            0,
+            384,
+            384,
+            384
+          ],
+          "sourceSize": [
+            384,
+            384
+          ],
+          "trimOffset": [
+            0,
+            0
+          ]
+        },
+        {
+          "file": "frames/attack/01.png",
+          "durationMs": 110,
+          "atlasRect": [
+            384,
+            384,
+            384,
+            384
+          ],
+          "sourceSize": [
+            384,
+            384
+          ],
+          "trimOffset": [
+            0,
+            0
+          ]
+        },
+        {
+          "file": "frames/attack/02.png",
+          "durationMs": 60,
+          "atlasRect": [
+            768,
+            384,
+            384,
+            384
+          ],
+          "sourceSize": [
+            384,
+            384
+          ],
+          "trimOffset": [
+            0,
+            0
+          ]
+        },
+        {
+          "file": "frames/attack/03.png",
+          "durationMs": 80,
+          "atlasRect": [
+            1152,
+            384,
+            384,
+            384
+          ],
+          "sourceSize": [
+            384,
+            384
+          ],
+          "trimOffset": [
+            0,
+            0
+          ]
+        },
+        {
+          "file": "frames/attack/00.png",
+          "durationMs": 90,
+          "atlasRect": [
+            0,
+            384,
+            384,
+            384
+          ],
+          "sourceSize": [
+            384,
+            384
+          ],
+          "trimOffset": [
+            0,
+            0
+          ]
+        }
+      ],
+      "loop": false,
+      "events": [
+        {
+          "name": "impact",
+          "timeMs": 200
+        }
+      ],
+      "nextState": "idle",
+      "terminal": false,
+      "holdLastFrame": false,
+      "durationMs": 430
+    },
+    "hit": {
+      "frames": [
+        {
+          "file": "frames/hit/00.png",
+          "durationMs": 40,
+          "atlasRect": [
+            0,
+            768,
+            384,
+            384
+          ],
+          "sourceSize": [
+            384,
+            384
+          ],
+          "trimOffset": [
+            0,
+            0
+          ]
+        },
+        {
+          "file": "frames/hit/01.png",
+          "durationMs": 80,
+          "atlasRect": [
+            384,
+            768,
+            384,
+            384
+          ],
+          "sourceSize": [
+            384,
+            384
+          ],
+          "trimOffset": [
+            0,
+            0
+          ]
+        },
+        {
+          "file": "frames/hit/02.png",
+          "durationMs": 100,
+          "atlasRect": [
+            768,
+            768,
+            384,
+            384
+          ],
+          "sourceSize": [
+            384,
+            384
+          ],
+          "trimOffset": [
+            0,
+            0
+          ]
+        },
+        {
+          "file": "frames/hit/03.png",
+          "durationMs": 90,
+          "atlasRect": [
+            1152,
+            768,
+            384,
+            384
+          ],
+          "sourceSize": [
+            384,
+            384
+          ],
+          "trimOffset": [
+            0,
+            0
+          ]
+        },
+        {
+          "file": "frames/hit/00.png",
+          "durationMs": 70,
+          "atlasRect": [
+            0,
+            768,
+            384,
+            384
+          ],
+          "sourceSize": [
+            384,
+            384
+          ],
+          "trimOffset": [
+            0,
+            0
+          ]
+        }
+      ],
+      "loop": false,
+      "events": [],
+      "nextState": "idle",
+      "terminal": false,
+      "holdLastFrame": false,
+      "durationMs": 380
+    },
+    "wounded_idle": {
+      "frames": [
+        {
+          "file": "frames/wounded_idle/00.png",
+          "durationMs": 230,
+          "atlasRect": [
+            0,
+            1152,
+            384,
+            384
+          ],
+          "sourceSize": [
+            384,
+            384
+          ],
+          "trimOffset": [
+            0,
+            0
+          ]
+        },
+        {
+          "file": "frames/wounded_idle/01.png",
+          "durationMs": 230,
+          "atlasRect": [
+            384,
+            1152,
+            384,
+            384
+          ],
+          "sourceSize": [
+            384,
+            384
+          ],
+          "trimOffset": [
+            0,
+            0
+          ]
+        },
+        {
+          "file": "frames/wounded_idle/02.png",
+          "durationMs": 230,
+          "atlasRect": [
+            768,
+            1152,
+            384,
+            384
+          ],
+          "sourceSize": [
+            384,
+            384
+          ],
+          "trimOffset": [
+            0,
+            0
+          ]
+        },
+        {
+          "file": "frames/wounded_idle/03.png",
+          "durationMs": 230,
+          "atlasRect": [
+            1152,
+            1152,
+            384,
+            384
+          ],
+          "sourceSize": [
+            384,
+            384
+          ],
+          "trimOffset": [
+            0,
+            0
+          ]
+        },
+        {
+          "file": "frames/wounded_idle/02.png",
+          "durationMs": 230,
+          "atlasRect": [
+            768,
+            1152,
+            384,
+            384
+          ],
+          "sourceSize": [
+            384,
+            384
+          ],
+          "trimOffset": [
+            0,
+            0
+          ]
+        },
+        {
+          "file": "frames/wounded_idle/01.png",
+          "durationMs": 230,
+          "atlasRect": [
+            384,
+            1152,
+            384,
+            384
+          ],
+          "sourceSize": [
+            384,
+            384
+          ],
+          "trimOffset": [
+            0,
+            0
+          ]
+        }
+      ],
+      "loop": true,
+      "events": [],
+      "nextState": "wounded_idle",
+      "terminal": false,
+      "holdLastFrame": false,
+      "durationMs": 1380
+    },
+    "die": {
+      "frames": [
+        {
+          "file": "frames/die/00.png",
+          "durationMs": 130,
+          "atlasRect": [
+            0,
+            1536,
+            384,
+            384
+          ],
+          "sourceSize": [
+            384,
+            384
+          ],
+          "trimOffset": [
+            0,
+            0
+          ]
+        },
+        {
+          "file": "frames/die/01.png",
+          "durationMs": 160,
+          "atlasRect": [
+            384,
+            1536,
+            384,
+            384
+          ],
+          "sourceSize": [
+            384,
+            384
+          ],
+          "trimOffset": [
+            0,
+            0
+          ]
+        },
+        {
+          "file": "frames/die/02.png",
+          "durationMs": 150,
+          "atlasRect": [
+            768,
+            1536,
+            384,
+            384
+          ],
+          "sourceSize": [
+            384,
+            384
+          ],
+          "trimOffset": [
+            0,
+            0
+          ]
+        },
+        {
+          "file": "frames/die/03.png",
+          "durationMs": 600,
+          "atlasRect": [
+            1152,
+            1536,
+            384,
+            384
+          ],
+          "sourceSize": [
+            384,
+            384
+          ],
+          "trimOffset": [
+            0,
+            0
+          ]
+        }
+      ],
+      "loop": false,
+      "events": [],
+      "nextState": "terminal",
+      "terminal": true,
+      "holdLastFrame": true,
+      "durationMs": 1040
+    }
+  },
+  "sourceRects": {
+    "idle": [
+      {
+        "source": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\characters\\cinderhook-marauder\\animation-nine-2026-10-02\\v01-cleaver-bruiser\\source\\poses-r2.png",
+        "box": [
+          0,
+          0,
+          263,
+          270
+        ],
+        "offset": [
+          52,
+          55
+        ],
+        "scale": 1
+      },
+      {
+        "source": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\characters\\cinderhook-marauder\\animation-nine-2026-10-02\\v01-cleaver-bruiser\\source\\poses-r2.png",
+        "box": [
+          263,
+          0,
+          546,
+          270
+        ],
+        "offset": [
+          34,
+          55
+        ],
+        "scale": 1
+      },
+      {
+        "source": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\characters\\cinderhook-marauder\\animation-nine-2026-10-02\\v01-cleaver-bruiser\\source\\poses-r2.png",
+        "box": [
+          546,
+          0,
+          831,
+          270
+        ],
+        "offset": [
+          37,
+          55
+        ],
+        "scale": 1
+      },
+      {
+        "source": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\characters\\cinderhook-marauder\\animation-nine-2026-10-02\\v01-cleaver-bruiser\\source\\poses-r2.png",
+        "box": [
+          831,
+          0,
+          1122,
+          270
+        ],
+        "offset": [
+          42,
+          55
+        ],
+        "scale": 1
+      }
+    ],
+    "attack": [
+      {
+        "source": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\characters\\cinderhook-marauder\\animation-nine-2026-10-02\\v01-cleaver-bruiser\\source\\poses-r2.png",
+        "box": [
+          0,
+          270,
+          284,
+          550
+        ],
+        "offset": [
+          52,
+          50
+        ],
+        "scale": 1
+      },
+      {
+        "source": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\characters\\cinderhook-marauder\\animation-nine-2026-10-02\\v01-cleaver-bruiser\\source\\poses-r2.png",
+        "box": [
+          284,
+          270,
+          552,
+          550
+        ],
+        "offset": [
+          56,
+          50
+        ],
+        "scale": 1
+      },
+      {
+        "source": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\characters\\cinderhook-marauder\\animation-nine-2026-10-02\\v01-cleaver-bruiser\\source\\poses-r2.png",
+        "box": [
+          552,
+          270,
+          828,
+          550
+        ],
+        "offset": [
+          43,
+          50
+        ],
+        "scale": 1
+      },
+      {
+        "source": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\characters\\cinderhook-marauder\\animation-nine-2026-10-02\\v01-cleaver-bruiser\\source\\poses-r2.png",
+        "box": [
+          828,
+          270,
+          1122,
+          550
+        ],
+        "offset": [
+          38,
+          50
+        ],
+        "scale": 1
+      }
+    ],
+    "hit": [
+      {
+        "source": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\characters\\cinderhook-marauder\\animation-nine-2026-10-02\\v01-cleaver-bruiser\\source\\poses-r2.png",
+        "box": [
+          0,
+          550,
+          263,
+          830
+        ],
+        "offset": [
+          52,
+          53
+        ],
+        "scale": 1
+      },
+      {
+        "source": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\characters\\cinderhook-marauder\\animation-nine-2026-10-02\\v01-cleaver-bruiser\\source\\poses-r2.png",
+        "box": [
+          263,
+          550,
+          546,
+          830
+        ],
+        "offset": [
+          34,
+          53
+        ],
+        "scale": 1
+      },
+      {
+        "source": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\characters\\cinderhook-marauder\\animation-nine-2026-10-02\\v01-cleaver-bruiser\\source\\poses-r2.png",
+        "box": [
+          546,
+          550,
+          832,
+          830
+        ],
+        "offset": [
+          37,
+          53
+        ],
+        "scale": 1
+      },
+      {
+        "source": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\characters\\cinderhook-marauder\\animation-nine-2026-10-02\\v01-cleaver-bruiser\\source\\poses-r2.png",
+        "box": [
+          832,
+          550,
+          1122,
+          830
+        ],
+        "offset": [
+          42,
+          53
+        ],
+        "scale": 1
+      }
+    ],
+    "wounded_idle": [
+      {
+        "source": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\characters\\cinderhook-marauder\\animation-nine-2026-10-02\\v01-cleaver-bruiser\\source\\poses-r2.png",
+        "box": [
+          0,
+          830,
+          277,
+          1110
+        ],
+        "offset": [
+          52,
+          55
+        ],
+        "scale": 1
+      },
+      {
+        "source": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\characters\\cinderhook-marauder\\animation-nine-2026-10-02\\v01-cleaver-bruiser\\source\\poses-r2.png",
+        "box": [
+          277,
+          830,
+          552,
+          1110
+        ],
+        "offset": [
+          48,
+          55
+        ],
+        "scale": 1
+      },
+      {
+        "source": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\characters\\cinderhook-marauder\\animation-nine-2026-10-02\\v01-cleaver-bruiser\\source\\poses-r2.png",
+        "box": [
+          552,
+          830,
+          831,
+          1110
+        ],
+        "offset": [
+          43,
+          55
+        ],
+        "scale": 1
+      },
+      {
+        "source": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\characters\\cinderhook-marauder\\animation-nine-2026-10-02\\v01-cleaver-bruiser\\source\\poses-r2.png",
+        "box": [
+          831,
+          830,
+          1122,
+          1110
+        ],
+        "offset": [
+          42,
+          55
+        ],
+        "scale": 1
+      }
+    ],
+    "die": [
+      {
+        "source": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\characters\\cinderhook-marauder\\animation-nine-2026-10-02\\v01-cleaver-bruiser\\source\\death-r3.png",
+        "box": [
+          0,
+          0,
+          543,
+          724
+        ],
+        "offset": [
+          35,
+          -18
+        ],
+        "scale": 0.55
+      },
+      {
+        "source": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\characters\\cinderhook-marauder\\animation-nine-2026-10-02\\v01-cleaver-bruiser\\source\\death-r3.png",
+        "box": [
+          543,
+          0,
+          1086,
+          724
+        ],
+        "offset": [
+          35,
+          -18
+        ],
+        "scale": 0.55
+      },
+      {
+        "source": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\characters\\cinderhook-marauder\\animation-nine-2026-10-02\\v01-cleaver-bruiser\\source\\death-r3.png",
+        "box": [
+          1086,
+          0,
+          1629,
+          724
+        ],
+        "offset": [
+          35,
+          -18
+        ],
+        "scale": 0.55
+      },
+      {
+        "source": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\characters\\cinderhook-marauder\\animation-nine-2026-10-02\\v01-cleaver-bruiser\\source\\death-r3.png",
+        "box": [
+          1629,
+          0,
+          2172,
+          724
+        ],
+        "offset": [
+          35,
+          -18
+        ],
+        "scale": 0.55
+      }
+    ]
+  },
+  "previews": {
+    "idle": "idle.gif",
+    "attack": "attack.gif",
+    "hit": "hit.gif",
+    "wounded_idle": "wounded_idle.gif",
+    "die": "die.gif"
+  },
+  "limitations": [
+    "Coarse hand-drawn whole-frame animation; 4 authored poses per state.",
+    "Generated native pose resolution approx 280px; not upscaled to claim HD.",
+    "Mild generated stance jitter and color-edge fringe remain; coarse four-pose loops are review studies, not polished high-frame-count HD animation."
+  ],
+  "method": "reference-conditioned whole-character frames",
+  "atlas": "atlas.png",
+  "atlasSha256": "eed2f0c4c28c8b8d1603231d43c9b63be85070a5647f666066f32b21acb4fa09",
+  "technicalQA": {
+    "status": "pass",
+    "report": "technical-qa.json",
+    "authoredFrames": 20,
+    "testedAtlasSha256": "eed2f0c4c28c8b8d1603231d43c9b63be85070a5647f666066f32b21acb4fa09"
+  },
+  "visualQA": {
+    "status": "independent_review_pending",
+    "reviewer": "/root/review_goblin_animation"
+  },
+  "generation": {
+    "tool": "built-in image_gen",
+    "sourceHashes": [
+      {
+        "file": "source/death-r3.png",
+        "sha256": "1178a4db76c6ac8a7ec85901fe2737dd867f1aa7f77549ef655425ffdcac562a"
+      },
+      {
+        "file": "source/poses-r1.png",
+        "sha256": "99a765391853d05b56bfdae4ac97b2576c29c35857d1854bdcdfb51f9c04ea7c"
+      },
+      {
+        "file": "source/poses-r2.png",
+        "sha256": "fffb3f1b5bef650dfa10bbbf82c172a112522c5a4351be073209c1c875f14f77"
+      }
+    ],
+    "promptFiles": [
+      "source/prompt-death-r3.txt",
+      "source/prompt-r1.txt",
+      "source/prompt-r2.txt"
+    ]
+  },
+  "previewPackageAssociation": {
+    "preview": "preview.gif",
+    "sha256": "1c8742a5248d8d8b4829c8fec1f8ac6f5ade026d8847030e8dccd43fb3d419b6",
+    "atlasSha256": "eed2f0c4c28c8b8d1603231d43c9b63be85070a5647f666066f32b21acb4fa09"
+  },
+  "identitySource": {
+    "path": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\characters\\cinderhook-marauder\\variants-nine-2026-10-02\\v01-cleaver-bruiser-r1.png",
+    "sha256": "da834c1b149010a32fb5d21697d8110ff5737ac0d2ae427499ac665d84910e7f",
+    "approval": {
+      "status": "Approved",
+      "at": "2026-10-02T22:20:49.176Z",
+      "evidenceId": "5d19f38e-717c-47c4-a421-882d163c7579",
+      "paths": [
+        "C:\\Users\\wilsh\\Projects\\runelord\\assets\\approvals\\inbox\\cinderhook-marauder\\v01-cleaver-bruiser-r1\\v01-cleaver-bruiser-r1.png"
+      ]
+    }
+  },
+  "gallery": {
+    "url": "http://localhost:4317/asset/441257ad5e0fe3529f8c733b",
+    "status": "Pending approval",
+    "previewSha256": "1c8742a5248d8d8b4829c8fec1f8ac6f5ade026d8847030e8dccd43fb3d419b6",
+    "apiVerified": true
+  }
+}
