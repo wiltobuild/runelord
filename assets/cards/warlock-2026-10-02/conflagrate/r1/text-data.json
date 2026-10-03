@@ -1,0 +1,8 @@
+{
+  "name": "Conflagrate",
+  "cost": "2",
+  "type": "Attack",
+  "rarity": "Common",
+  "rules": "Deal 8 damage to ALL enemies. Apply 2 Scorch to ALL enemies.",
+  "upgrade": "10 dmg, 3 Scorch"
+}

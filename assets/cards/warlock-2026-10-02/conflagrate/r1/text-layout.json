@@ -1,0 +1,37 @@
+[
+  {
+    "region": "title",
+    "text": "Conflagrate",
+    "lines": [
+      "Conflagrate"
+    ],
+    "font_size": 94
+  },
+  {
+    "region": "cost",
+    "text": "2",
+    "lines": [
+      "2"
+    ],
+    "font_size": 110
+  },
+  {
+    "region": "type",
+    "text": "ATTACK · WARLOCK",
+    "lines": [
+      "ATTACK · WARLOCK"
+    ],
+    "font_size": 35
+  },
+  {
+    "region": "rules",
+    "text": "Deal 8 damage to ALL enemies. Apply 2 Scorch to ALL enemies.",
+    "lines": [
+      "Deal 8 damage to ALL",
+      "enemies.",
+      "Apply 2 Scorch to ALL",
+      "enemies."
+    ],
+    "font_size": 54
+  }
+]
