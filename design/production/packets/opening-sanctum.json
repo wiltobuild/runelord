@@ -33,11 +33,11 @@
   "inputs": [
     {
       "path": "apps/web/src/OpeningScreen.tsx",
-      "sha256": "aa8b872120be31479cd684da76aebcf5e41717ffc34e0561b394b5c6f60e06cf"
+      "sha256": "14da77b21a3f5c855bb989757e7dbb86716288d1b6e443b5c847e6c393da14bd"
     },
     {
       "path": "apps/web/src/opening.css",
-      "sha256": "8c5fa997adc87f88de032755f4fe8d5d64b0e782ed5be2158c1611861ab55b11"
+      "sha256": "dbe6f08cc4a48860c0516c428804932a3a7c667659897f7093ee98e717ddf2e2"
     },
     {
       "path": "apps/web/src/main.tsx",
