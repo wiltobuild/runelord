@@ -1,0 +1,36 @@
+[
+  {
+    "region": "title",
+    "text": "Infernal Bulwark",
+    "lines": [
+      "Infernal Bulwark"
+    ],
+    "font_size": 66
+  },
+  {
+    "region": "cost",
+    "text": "2",
+    "lines": [
+      "2"
+    ],
+    "font_size": 110
+  },
+  {
+    "region": "type",
+    "text": "SKILL · WARLOCK",
+    "lines": [
+      "SKILL · WARLOCK"
+    ],
+    "font_size": 35
+  },
+  {
+    "region": "rules",
+    "text": "Gain Guard equal to the total current HP of your demons.",
+    "lines": [
+      "Gain Guard equal to the",
+      "total current HP of your",
+      "demons."
+    ],
+    "font_size": 54
+  }
+]

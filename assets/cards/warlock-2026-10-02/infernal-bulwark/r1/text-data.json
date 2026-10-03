@@ -1,0 +1,8 @@
+{
+  "name": "Infernal Bulwark",
+  "cost": "2",
+  "type": "Skill",
+  "rarity": "Rare",
+  "rules": "Gain Guard equal to the total current HP of your demons.",
+  "upgrade": "+6 Guard"
+}
