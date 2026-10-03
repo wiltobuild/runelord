@@ -1,0 +1,35 @@
+[
+  {
+    "region": "title",
+    "text": "Burning Hatred",
+    "lines": [
+      "Burning Hatred"
+    ],
+    "font_size": 72
+  },
+  {
+    "region": "cost",
+    "text": "2",
+    "lines": [
+      "2"
+    ],
+    "font_size": 110
+  },
+  {
+    "region": "type",
+    "text": "ATTACK · WARLOCK",
+    "lines": [
+      "ATTACK · WARLOCK"
+    ],
+    "font_size": 35
+  },
+  {
+    "region": "rules",
+    "text": "Deal 15 damage. Gain 2 Corruption.",
+    "lines": [
+      "Deal 15 damage.",
+      "Gain 2 Corruption."
+    ],
+    "font_size": 54
+  }
+]

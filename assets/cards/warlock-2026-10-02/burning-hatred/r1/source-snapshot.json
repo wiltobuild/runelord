@@ -1,0 +1,8 @@
+{
+  "name": "Burning Hatred",
+  "cost": "2",
+  "type": "Attack",
+  "rarity": "Common",
+  "rules": "Deal 15 damage. Gain 2 Corruption.",
+  "upgrade": "20 dmg"
+}
