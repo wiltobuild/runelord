@@ -1,0 +1,35 @@
+[
+  {
+    "region": "title",
+    "text": "Blood Pact",
+    "lines": [
+      "Blood Pact"
+    ],
+    "font_size": 94
+  },
+  {
+    "region": "cost",
+    "text": "0",
+    "lines": [
+      "0"
+    ],
+    "font_size": 110
+  },
+  {
+    "region": "type",
+    "text": "SKILL · WARLOCK",
+    "lines": [
+      "SKILL · WARLOCK"
+    ],
+    "font_size": 35
+  },
+  {
+    "region": "rules",
+    "text": "Pact 3. Gain 1 Mana and 2 Cinders.",
+    "lines": [
+      "Pact 3.",
+      "Gain 1 Mana and 2 Cinders."
+    ],
+    "font_size": 54
+  }
+]

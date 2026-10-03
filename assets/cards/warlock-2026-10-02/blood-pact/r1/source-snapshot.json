@@ -1,0 +1,8 @@
+{
+  "name": "Blood Pact",
+  "cost": "0",
+  "type": "Skill",
+  "rarity": "Basic",
+  "rules": "Pact 3. Gain 1 Mana and 2 Cinders.",
+  "upgrade": "Gain 3 Cinders"
+}
