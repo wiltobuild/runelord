@@ -1,0 +1,32 @@
+{
+  "character_id": "tollbell-penitent",
+  "frame_count": 24,
+  "canvas": [
+    376,
+    268
+  ],
+  "states": [
+    "idle",
+    "attack",
+    "hit",
+    "wounded_idle",
+    "die",
+    "spawn"
+  ],
+  "transparent_frames_verified": true,
+  "death_loop": false,
+  "base_approval": "bcd1b5df-3ef1-41eb-a1a7-04fb3a725467",
+  "preview_sha256": "91ed27f3fa53c864b51d7a0f0149b69d273064782f704033d2c3ff26ee5c412c",
+  "preview_gallery_id": "16adeea4b620e71a9ac82318",
+  "preview_approval": "Pending approval",
+  "playback": {
+    "status": "agent playback evidence; see package QA"
+  },
+  "limitations": [
+    "Generated four-pose animation cycles, review pending; no separated rig.",
+    "Small source sprites around 200px tall; HD master retained separately.",
+    "Temporal consistency and foot sliding require actual playback review.",
+    "Clapper/chain articulation and sideways death are readable. Minor chain link and engraving variation remains."
+  ],
+  "delivery_level": "Articulated frame animation review pack; not certified production-ready"
+}

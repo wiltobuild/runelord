@@ -1,0 +1,9 @@
+Make a production animation sprite sheet of the EXACT approved Tollbell Penitent supplied in image 1, image 2 style only. Transparent PNG, exact regular GRID FOUR COLUMNS BY SIX ROWS, 24 separate fully contained sprites, no labels or grid lines. Every cell same camera, scale, ground baseline and center anchor, 15% padding, never overlap cells. Preserve cracked bronze bell body, teal slit face, THREE chain legs/iron feet, broken loop, clapper and colors. Serious simplified 2D Runelord hard cel shading, no realism or texture increase.
+Each row is one sequence left-to-right with actual limb articulation, not moving a static picture:
+ROW1 IDLE: neutral -> slight chain-knee bend and clapper left -> neutral -> slight clapper right. Feet fixed.
+ROW2 ATTACK: chain knees crouch and clapper pulls back -> bell tips forward as clapper swings hard toward left lip -> clapper hits left bell lip and legs brace wide -> recover neutral. Strong clearly different articulated poses.
+ROW3 HIT: neutral -> bell recoils backward, front chains flex -> low stagger -> neutral recovery.
+ROW4 WOUNDED IDLE: low sagged bell with bent chains -> slight trembling clapper -> low sagged bell -> slight top chain sway. All visibly lower than idle.
+ROW5 DIE: chains buckle -> bell tipping onto left rim -> bell fallen on side with chain legs folded on ground -> settled broken bell on side, teal eye extinguished, keep remains.
+ROW6 SPAWN: collapsed chain legs tucked beneath upright bell -> chains extend halfway -> bell rises on feet -> neutral stance.
+All 24 complete silhouettes with identical design; death decreases height naturally, no auto-rescaling each pose. No effects, text, background or ground shadow.

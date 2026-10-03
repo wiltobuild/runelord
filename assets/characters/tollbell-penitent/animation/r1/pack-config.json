@@ -1,0 +1,134 @@
+{
+  "slug": "tollbell-penitent",
+  "source": "C:/Users/wilsh/Projects/runelord/assets/characters/tollbell-penitent/animation/r1/generated-sheet.png",
+  "output": "C:/Users/wilsh/Projects/runelord/assets/characters/tollbell-penitent/animation/r1",
+  "cols": 4,
+  "rows": 6,
+  "states": {
+    "idle": {
+      "frames": [
+        0,
+        1,
+        2,
+        3,
+        2,
+        1
+      ],
+      "durations": [
+        180,
+        180,
+        180,
+        180,
+        180,
+        180
+      ],
+      "loop": true
+    },
+    "attack": {
+      "frames": [
+        4,
+        5,
+        6,
+        7
+      ],
+      "durations": [
+        100,
+        80,
+        70,
+        100
+      ],
+      "loop": false,
+      "events": [
+        {
+          "name": "impact",
+          "time_ms": 180
+        }
+      ]
+    },
+    "hit": {
+      "frames": [
+        8,
+        9,
+        10,
+        11
+      ],
+      "durations": [
+        70,
+        100,
+        100,
+        100
+      ],
+      "loop": false
+    },
+    "wounded_idle": {
+      "frames": [
+        12,
+        13,
+        14,
+        15,
+        14,
+        13
+      ],
+      "durations": [
+        200,
+        200,
+        200,
+        200,
+        200,
+        200
+      ],
+      "loop": true
+    },
+    "die": {
+      "frames": [
+        16,
+        17,
+        18,
+        19
+      ],
+      "durations": [
+        150,
+        150,
+        160,
+        700
+      ],
+      "loop": false,
+      "transition": "hold_terminal"
+    },
+    "spawn": {
+      "frames": [
+        20,
+        21,
+        22,
+        23
+      ],
+      "durations": [
+        120,
+        120,
+        120,
+        150
+      ],
+      "loop": false,
+      "events": [
+        {
+          "name": "arrival",
+          "time_ms": 360
+        }
+      ]
+    }
+  },
+  "limitations": [
+    "Generated four-pose animation cycles, review pending; no separated rig.",
+    "Small source sprites around 200px tall; HD master retained separately.",
+    "Temporal consistency and foot sliding require actual playback review."
+  ],
+  "ybounds": [
+    0,
+    204,
+    408,
+    625,
+    805,
+    979,
+    1199
+  ]
+}

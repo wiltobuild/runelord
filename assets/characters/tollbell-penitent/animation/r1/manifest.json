@@ -1,0 +1,436 @@
+{
+  "character_id": "tollbell-penitent",
+  "format": "generated-frame-sprites",
+  "source": "source-sheet.png",
+  "atlas": "atlas.png",
+  "source_dimensions": [
+    1312,
+    1199
+  ],
+  "frame_canvas": [
+    376,
+    268
+  ],
+  "coordinate_system": "pixels, top-left, x right y down",
+  "anchor": [
+    188,
+    244
+  ],
+  "scale": "one source pixel per frame pixel; no per-frame scaling",
+  "states": {
+    "idle": {
+      "frames": [
+        0,
+        1,
+        2,
+        3,
+        2,
+        1
+      ],
+      "durations": [
+        180,
+        180,
+        180,
+        180,
+        180,
+        180
+      ],
+      "loop": true,
+      "durations_ms": [
+        180,
+        180,
+        180,
+        180,
+        180,
+        180
+      ],
+      "duration_ms": 1080,
+      "transition": "idle"
+    },
+    "attack": {
+      "frames": [
+        4,
+        5,
+        6,
+        7
+      ],
+      "durations": [
+        100,
+        80,
+        70,
+        100
+      ],
+      "loop": false,
+      "events": [
+        {
+          "name": "impact",
+          "time_ms": 180
+        }
+      ],
+      "durations_ms": [
+        100,
+        80,
+        70,
+        100
+      ],
+      "duration_ms": 350,
+      "transition": "idle"
+    },
+    "hit": {
+      "frames": [
+        8,
+        9,
+        10,
+        11
+      ],
+      "durations": [
+        70,
+        100,
+        100,
+        100
+      ],
+      "loop": false,
+      "durations_ms": [
+        70,
+        100,
+        100,
+        100
+      ],
+      "duration_ms": 370,
+      "transition": "idle"
+    },
+    "wounded_idle": {
+      "frames": [
+        12,
+        13,
+        14,
+        15,
+        14,
+        13
+      ],
+      "durations": [
+        200,
+        200,
+        200,
+        200,
+        200,
+        200
+      ],
+      "loop": true,
+      "durations_ms": [
+        200,
+        200,
+        200,
+        200,
+        200,
+        200
+      ],
+      "duration_ms": 1200,
+      "transition": "wounded_idle"
+    },
+    "die": {
+      "frames": [
+        16,
+        17,
+        18,
+        19
+      ],
+      "durations": [
+        150,
+        150,
+        160,
+        700
+      ],
+      "loop": false,
+      "transition": "hold_terminal",
+      "durations_ms": [
+        150,
+        150,
+        160,
+        700
+      ],
+      "duration_ms": 1160
+    },
+    "spawn": {
+      "frames": [
+        20,
+        21,
+        22,
+        23
+      ],
+      "durations": [
+        120,
+        120,
+        120,
+        150
+      ],
+      "loop": false,
+      "events": [
+        {
+          "name": "arrival",
+          "time_ms": 360
+        }
+      ],
+      "durations_ms": [
+        120,
+        120,
+        120,
+        150
+      ],
+      "duration_ms": 510,
+      "transition": "idle"
+    }
+  },
+  "frames": [
+    {
+      "index": 0,
+      "file": "frames/00.png",
+      "rect": [
+        0,
+        0,
+        376,
+        268
+      ]
+    },
+    {
+      "index": 1,
+      "file": "frames/01.png",
+      "rect": [
+        376,
+        0,
+        376,
+        268
+      ]
+    },
+    {
+      "index": 2,
+      "file": "frames/02.png",
+      "rect": [
+        752,
+        0,
+        376,
+        268
+      ]
+    },
+    {
+      "index": 3,
+      "file": "frames/03.png",
+      "rect": [
+        1128,
+        0,
+        376,
+        268
+      ]
+    },
+    {
+      "index": 4,
+      "file": "frames/04.png",
+      "rect": [
+        0,
+        268,
+        376,
+        268
+      ]
+    },
+    {
+      "index": 5,
+      "file": "frames/05.png",
+      "rect": [
+        376,
+        268,
+        376,
+        268
+      ]
+    },
+    {
+      "index": 6,
+      "file": "frames/06.png",
+      "rect": [
+        752,
+        268,
+        376,
+        268
+      ]
+    },
+    {
+      "index": 7,
+      "file": "frames/07.png",
+      "rect": [
+        1128,
+        268,
+        376,
+        268
+      ]
+    },
+    {
+      "index": 8,
+      "file": "frames/08.png",
+      "rect": [
+        0,
+        536,
+        376,
+        268
+      ]
+    },
+    {
+      "index": 9,
+      "file": "frames/09.png",
+      "rect": [
+        376,
+        536,
+        376,
+        268
+      ]
+    },
+    {
+      "index": 10,
+      "file": "frames/10.png",
+      "rect": [
+        752,
+        536,
+        376,
+        268
+      ]
+    },
+    {
+      "index": 11,
+      "file": "frames/11.png",
+      "rect": [
+        1128,
+        536,
+        376,
+        268
+      ]
+    },
+    {
+      "index": 12,
+      "file": "frames/12.png",
+      "rect": [
+        0,
+        804,
+        376,
+        268
+      ]
+    },
+    {
+      "index": 13,
+      "file": "frames/13.png",
+      "rect": [
+        376,
+        804,
+        376,
+        268
+      ]
+    },
+    {
+      "index": 14,
+      "file": "frames/14.png",
+      "rect": [
+        752,
+        804,
+        376,
+        268
+      ]
+    },
+    {
+      "index": 15,
+      "file": "frames/15.png",
+      "rect": [
+        1128,
+        804,
+        376,
+        268
+      ]
+    },
+    {
+      "index": 16,
+      "file": "frames/16.png",
+      "rect": [
+        0,
+        1072,
+        376,
+        268
+      ]
+    },
+    {
+      "index": 17,
+      "file": "frames/17.png",
+      "rect": [
+        376,
+        1072,
+        376,
+        268
+      ]
+    },
+    {
+      "index": 18,
+      "file": "frames/18.png",
+      "rect": [
+        752,
+        1072,
+        376,
+        268
+      ]
+    },
+    {
+      "index": 19,
+      "file": "frames/19.png",
+      "rect": [
+        1128,
+        1072,
+        376,
+        268
+      ]
+    },
+    {
+      "index": 20,
+      "file": "frames/20.png",
+      "rect": [
+        0,
+        1340,
+        376,
+        268
+      ]
+    },
+    {
+      "index": 21,
+      "file": "frames/21.png",
+      "rect": [
+        376,
+        1340,
+        376,
+        268
+      ]
+    },
+    {
+      "index": 22,
+      "file": "frames/22.png",
+      "rect": [
+        752,
+        1340,
+        376,
+        268
+      ]
+    },
+    {
+      "index": 23,
+      "file": "frames/23.png",
+      "rect": [
+        1128,
+        1340,
+        376,
+        268
+      ]
+    }
+  ],
+  "limitations": [
+    "Generated four-pose animation cycles, review pending; no separated rig.",
+    "Small source sprites around 200px tall; HD master retained separately.",
+    "Temporal consistency and foot sliding require actual playback review.",
+    "Clapper/chain articulation and sideways death are readable. Minor chain link and engraving variation remains."
+  ],
+  "status": "animation_review_pending",
+  "reference_character_height": 189,
+  "registration": "Fixed horizontal cell origin; measured opaque bottom aligned to shared floor. No pose scaling.",
+  "source_sha256": "8b708750d7a097fac259a0b8fdec17c291e616f602f2e4be8b31fa9c6b344a98"
+}
