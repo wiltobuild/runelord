@@ -1,0 +1,8 @@
+{
+  "name": "Combust",
+  "cost": "1",
+  "type": "Attack",
+  "rarity": "Uncommon",
+  "rules": "Deal damage equal to twice the enemy's Scorch. Remove its Scorch.",
+  "upgrade": "3× Scorch"
+}
