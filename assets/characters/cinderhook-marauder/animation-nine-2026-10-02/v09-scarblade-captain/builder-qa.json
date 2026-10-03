@@ -1,0 +1,308 @@
+{
+  "variantId": "v09-scarblade-captain",
+  "revision": "r2",
+  "manifestSha256": "1c3a80d95a69e0c9600275ba94ec53d4dcf7a296c3c0f584a7c9eba02751eb76",
+  "reviewSha256": "10906d743fb5d7c2c0572e766cbfd362c8eaa63513811b97aae34a592d0605aa",
+  "technicalPass": true,
+  "errors": [],
+  "frames": [
+    {
+      "file": "frames/00.png",
+      "sha256": "e00f06a41b5d00b4c6cf7c4da1a96a1704da9045c711054484af3ace06c598d1",
+      "bbox": [
+        109,
+        183,
+        376,
+        474
+      ],
+      "dimensions": [
+        494,
+        494
+      ],
+      "alpha": [
+        0,
+        255
+      ]
+    },
+    {
+      "file": "frames/01.png",
+      "sha256": "f06da2c3883f9591f749182ce6a0170f16dc8d532919eb9c5d7f31dbdb55fd8f",
+      "bbox": [
+        112,
+        183,
+        376,
+        474
+      ],
+      "dimensions": [
+        494,
+        494
+      ],
+      "alpha": [
+        0,
+        255
+      ]
+    },
+    {
+      "file": "frames/02.png",
+      "sha256": "48171a1c02a73003abd3b3b267465bc63076348c653e98025d5974c0a129f081",
+      "bbox": [
+        103,
+        194,
+        375,
+        474
+      ],
+      "dimensions": [
+        494,
+        494
+      ],
+      "alpha": [
+        0,
+        255
+      ]
+    },
+    {
+      "file": "frames/03.png",
+      "sha256": "022c18ea405b080d357312525269c4c282d24078abdc1596f0dc3f42a97704e6",
+      "bbox": [
+        86,
+        218,
+        391,
+        474
+      ],
+      "dimensions": [
+        494,
+        494
+      ],
+      "alpha": [
+        0,
+        255
+      ]
+    },
+    {
+      "file": "frames/04.png",
+      "sha256": "4e84b7203669f1483f4c0e8930444acd0f3d07d8b80f4a8742663f0c45074987",
+      "bbox": [
+        134,
+        173,
+        391,
+        474
+      ],
+      "dimensions": [
+        494,
+        494
+      ],
+      "alpha": [
+        0,
+        255
+      ]
+    },
+    {
+      "file": "frames/05.png",
+      "sha256": "a67b358f4b58bf97a5ae6fb2f644ee36733b6320a927203a1f54cdbde5eb9fe2",
+      "bbox": [
+        156,
+        160,
+        379,
+        474
+      ],
+      "dimensions": [
+        494,
+        494
+      ],
+      "alpha": [
+        0,
+        255
+      ]
+    },
+    {
+      "file": "frames/06.png",
+      "sha256": "327dbddabd9db7a6260a871a8bcae9646b81598faeb3317e6289d5bef1c04b78",
+      "bbox": [
+        78,
+        215,
+        434,
+        474
+      ],
+      "dimensions": [
+        494,
+        494
+      ],
+      "alpha": [
+        0,
+        255
+      ]
+    },
+    {
+      "file": "frames/07.png",
+      "sha256": "854c7172f4379bc7815a666dfdf4052f164f02612f9ff0d6a49272975e700201",
+      "bbox": [
+        136,
+        247,
+        392,
+        474
+      ],
+      "dimensions": [
+        494,
+        494
+      ],
+      "alpha": [
+        0,
+        255
+      ]
+    },
+    {
+      "file": "frames/08.png",
+      "sha256": "6c28c26c787fad738d644fd9081019eb2f237b018aa144e6fd1b5d5f3477d2c7",
+      "bbox": [
+        101,
+        210,
+        389,
+        474
+      ],
+      "dimensions": [
+        494,
+        494
+      ],
+      "alpha": [
+        0,
+        255
+      ]
+    },
+    {
+      "file": "frames/09.png",
+      "sha256": "c7c68eee661ece22e7a5a8d40311d5cad3b12b94386e0b65cceb653c93c13cfa",
+      "bbox": [
+        110,
+        186,
+        376,
+        474
+      ],
+      "dimensions": [
+        494,
+        494
+      ],
+      "alpha": [
+        0,
+        255
+      ]
+    },
+    {
+      "file": "frames/10.png",
+      "sha256": "8ee95abebbeff564888f20306fbba3c30fdc93ccca4962ffd7ddaa91d9ddc9c1",
+      "bbox": [
+        119,
+        210,
+        374,
+        474
+      ],
+      "dimensions": [
+        494,
+        494
+      ],
+      "alpha": [
+        0,
+        255
+      ]
+    },
+    {
+      "file": "frames/11.png",
+      "sha256": "00187a04a9d2c9c8b6733db68077f3737d8695839da3d5f89a21a98bdd61a7bd",
+      "bbox": [
+        136,
+        225,
+        383,
+        474
+      ],
+      "dimensions": [
+        494,
+        494
+      ],
+      "alpha": [
+        0,
+        255
+      ]
+    },
+    {
+      "file": "frames/12.png",
+      "sha256": "00c1e34aba034a07a2bbbada82576979a8e23f53fdca8462dab60bda53aee6f3",
+      "bbox": [
+        103,
+        258,
+        397,
+        474
+      ],
+      "dimensions": [
+        494,
+        494
+      ],
+      "alpha": [
+        0,
+        255
+      ]
+    },
+    {
+      "file": "frames/13.png",
+      "sha256": "39f5acbae856f7b7dd05c6a1c0484ab8b24ef215ac9875e039f4bfcfae96d03d",
+      "bbox": [
+        105,
+        282,
+        396,
+        474
+      ],
+      "dimensions": [
+        494,
+        494
+      ],
+      "alpha": [
+        0,
+        255
+      ]
+    },
+    {
+      "file": "frames/14.png",
+      "sha256": "0c5307675ab9f5daab1164831a245e805e1745cdc9119bbed4f159ebb59e4074",
+      "bbox": [
+        96,
+        332,
+        401,
+        474
+      ],
+      "dimensions": [
+        494,
+        494
+      ],
+      "alpha": [
+        0,
+        255
+      ]
+    },
+    {
+      "file": "frames/15.png",
+      "sha256": "08192eff52687813f7b97e03443bb931aaff4981da8cd623c713ff541633b998",
+      "bbox": [
+        93,
+        358,
+        396,
+        474
+      ],
+      "dimensions": [
+        494,
+        494
+      ],
+      "alpha": [
+        0,
+        255
+      ]
+    }
+  ],
+  "browser": {
+    "url": "http://127.0.0.1:4381/v09-scarblade-captain/preview.html",
+    "observed": "All required states actually played in Chromium; no JS errors, death reached terminal hold; full and small-size on dark, full on light."
+  },
+  "visualStatus": "See independent reviewer report; this is builder evidence, not user approval.",
+  "limits": [
+    "Sparse generated poses, about300px native body height; not HD per-frame assets.",
+    "Not integrated into game.",
+    "Preview approval pending."
+  ]
+}
