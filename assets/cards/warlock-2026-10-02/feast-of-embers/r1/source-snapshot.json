@@ -1,0 +1,8 @@
+{
+  "name": "Feast of Embers",
+  "cost": "1",
+  "type": "Skill",
+  "rarity": "Uncommon",
+  "rules": "A demon heals 8 HP and gains +3 Power this combat.",
+  "upgrade": "12 / +4"
+}

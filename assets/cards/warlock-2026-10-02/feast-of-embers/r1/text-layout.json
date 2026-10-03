@@ -1,0 +1,36 @@
+[
+  {
+    "region": "title",
+    "text": "Feast of Embers",
+    "lines": [
+      "Feast of Embers"
+    ],
+    "font_size": 72
+  },
+  {
+    "region": "cost",
+    "text": "1",
+    "lines": [
+      "1"
+    ],
+    "font_size": 110
+  },
+  {
+    "region": "type",
+    "text": "SKILL · WARLOCK",
+    "lines": [
+      "SKILL · WARLOCK"
+    ],
+    "font_size": 35
+  },
+  {
+    "region": "rules",
+    "text": "A demon heals 8 HP and gains +3 Power this combat.",
+    "lines": [
+      "A demon heals 8 HP and",
+      "gains +3 Power this",
+      "combat."
+    ],
+    "font_size": 54
+  }
+]
