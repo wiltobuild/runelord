@@ -1,0 +1,36 @@
+[
+  {
+    "region": "title",
+    "text": "Hellborn",
+    "lines": [
+      "Hellborn"
+    ],
+    "font_size": 94
+  },
+  {
+    "region": "cost",
+    "text": "3",
+    "lines": [
+      "3"
+    ],
+    "font_size": 110
+  },
+  {
+    "region": "type",
+    "text": "POWER · WARLOCK",
+    "lines": [
+      "POWER · WARLOCK"
+    ],
+    "font_size": 35
+  },
+  {
+    "region": "rules",
+    "text": "At the start of your turn, gain 2 Corruption and 1 Might.",
+    "lines": [
+      "At the start of your turn,",
+      "gain 2 Corruption and",
+      "1 Might."
+    ],
+    "font_size": 54
+  }
+]

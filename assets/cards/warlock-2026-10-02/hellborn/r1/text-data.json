@@ -1,0 +1,8 @@
+{
+  "name": "Hellborn",
+  "cost": "3",
+  "type": "Power",
+  "rarity": "Rare",
+  "rules": "At the start of your turn, gain 2 Corruption and 1 Might.",
+  "upgrade": "Costs 2"
+}
