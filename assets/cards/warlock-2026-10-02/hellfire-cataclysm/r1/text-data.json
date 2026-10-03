@@ -1,0 +1,8 @@
+{
+  "name": "Hellfire Cataclysm",
+  "cost": "3",
+  "type": "Attack",
+  "rarity": "Rare",
+  "rules": "Pact 8. Deal 30 damage to ALL enemies.",
+  "upgrade": "40 dmg"
+}

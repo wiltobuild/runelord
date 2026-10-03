@@ -1,0 +1,36 @@
+[
+  {
+    "region": "title",
+    "text": "Hellfire Cataclysm",
+    "lines": [
+      "Hellfire Cataclysm"
+    ],
+    "font_size": 62
+  },
+  {
+    "region": "cost",
+    "text": "3",
+    "lines": [
+      "3"
+    ],
+    "font_size": 110
+  },
+  {
+    "region": "type",
+    "text": "ATTACK · WARLOCK",
+    "lines": [
+      "ATTACK · WARLOCK"
+    ],
+    "font_size": 35
+  },
+  {
+    "region": "rules",
+    "text": "Pact 8. Deal 30 damage to ALL enemies.",
+    "lines": [
+      "Pact 8.",
+      "Deal 30 damage to ALL",
+      "enemies."
+    ],
+    "font_size": 54
+  }
+]
