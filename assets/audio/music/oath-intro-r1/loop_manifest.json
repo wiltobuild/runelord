@@ -1,0 +1,25 @@
+[
+  {
+    "slug": "oath-intro",
+    "title": "Oath at the Infernal Gate",
+    "bpm": 80,
+    "meter": "4/4",
+    "bars": 8,
+    "duration_seconds": 24,
+    "sample_rate": 48000,
+    "loop_start_sample": 0,
+    "loop_end_sample_exclusive": 1152000,
+    "sha256": "611f8c68362f1517ffa12126269f0e8826807f4fffe418d21556f68e15da2cc0",
+    "verification": {
+      "peak_dbfs": -2.615365605380476,
+      "rms_dbfs": -19.660771484297243,
+      "clipped_samples": 0,
+      "seam_delta": 0,
+      "finite": true,
+      "frame_count": 1152000,
+      "channels": 2,
+      "sample_rate": 48000,
+      "duration_seconds": 24
+    }
+  }
+]

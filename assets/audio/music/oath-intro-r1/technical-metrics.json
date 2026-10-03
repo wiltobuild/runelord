@@ -1,0 +1,11 @@
+{
+  "peak_dbfs": -2.615365605380476,
+  "rms_dbfs": -19.660771484297243,
+  "clipped_samples": 0,
+  "seam_delta": 0,
+  "finite": true,
+  "frame_count": 1152000,
+  "channels": 2,
+  "sample_rate": 48000,
+  "duration_seconds": 24
+}
