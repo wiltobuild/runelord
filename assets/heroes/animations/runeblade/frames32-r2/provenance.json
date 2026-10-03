@@ -1,0 +1,116 @@
+{
+  "approvedMaster": {
+    "file": "source/master.png",
+    "sha256": "9a4a666b1ed74621fab2b9117805af763c2100ecf228cbadc8f2e44c9be5aef1",
+    "authorization": "User attachment selected explicitly for 32-frame animation and selection replacement"
+  },
+  "manifestSha256": "e1d440631cf582bfbb60bd049b4ee65f1f4a8985e5acdfcc1e4f9f35a4d1068e",
+  "animationSha256": "66990bf13018213899d102caca4a889121f32b873ad462c08387d8c3398a3453",
+  "motionProofSha256": "ba8a425c478a638d8bfeb779b67c167c680fd76366c7c40abad860a69e94d1b0",
+  "sourceHashes": [
+    {
+      "path": "assets/heroes/animations/runeblade/frames32-r2/source/idle.png",
+      "sha256": "d73adb7c6594f7fcbe61726d363a051be1961c7e5b68dd52faaf51c8e5568eb8",
+      "size": [
+        1145,
+        1374
+      ],
+      "cells": [
+        2,
+        2
+      ]
+    },
+    {
+      "path": "assets/heroes/animations/runeblade/frames32-r2/source/hit.png",
+      "sha256": "81aefa7df188251e31817c9403e5a19e025afdd39ea93f1fe97d364d0f1b9318",
+      "size": [
+        1233,
+        1276
+      ],
+      "cells": [
+        2,
+        2
+      ]
+    },
+    {
+      "path": "assets/heroes/animations/runeblade/frames32-r2/source/attack-a.png",
+      "sha256": "7db01836fe0d53ee764745bdb06182c6fe6c89a3d13a773cf2ac545a6a086abb",
+      "size": [
+        1230,
+        1278
+      ],
+      "cells": [
+        2,
+        2
+      ]
+    },
+    {
+      "path": "assets/heroes/animations/runeblade/frames32-r2/source/attack-b.png",
+      "sha256": "016b242f1cd21fa2a14fc790e5bdf02f1c33a49acb3a9fbb698e93e5881d1ca2",
+      "size": [
+        1254,
+        1254
+      ],
+      "cells": [
+        2,
+        2
+      ]
+    },
+    {
+      "path": "assets/heroes/animations/runeblade/frames32-r2/source/wounded.png",
+      "sha256": "eb8336f835300910779a69f3ee9678390786e00b89e5c3467a4fa7dcfb5dc1dd",
+      "size": [
+        1254,
+        1254
+      ],
+      "cells": [
+        2,
+        2
+      ]
+    },
+    {
+      "path": "assets/heroes/animations/runeblade/frames32-r2/source/cast-a.png",
+      "sha256": "bc9be69475e663a28003ef99d50e1c7bc9e3d99241e85bc73d2a82c0efe17f66",
+      "size": [
+        1254,
+        1254
+      ],
+      "cells": [
+        2,
+        2
+      ]
+    },
+    {
+      "path": "assets/heroes/animations/runeblade/frames32-r2/source/cast-b.png",
+      "sha256": "8a634a0e5f5eb91caaee4c4a7d4370f2cf00fa9531d6b0db8d2420d00007faf9",
+      "size": [
+        1254,
+        1254
+      ],
+      "cells": [
+        2,
+        2
+      ]
+    },
+    {
+      "path": "assets/heroes/animations/runeblade/frames32-r2/source/die.png",
+      "sha256": "1b0b207112305e894cb0c021d02c3f628058ae6e122cd6842ece34392804ca08",
+      "size": [
+        1254,
+        1254
+      ],
+      "cells": [
+        2,
+        2
+      ]
+    }
+  ],
+  "method": "32 authored whole-character frames; technical translation only",
+  "technicalGeometry": "32/32 frames RGBA; no opaque pixels touching runtime border; zero source crop edge findings",
+  "independentReview": "Pending separate reviewer",
+  "gallery": {
+    "motion": "runeblade-hero/frames32-r2-motion",
+    "poses": "runeblade-hero/frames32-r2-poses",
+    "status": "Pending approval"
+  }
+}

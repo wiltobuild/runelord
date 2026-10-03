@@ -1,0 +1,229 @@
+{
+  "frameCount": 32,
+  "results": [
+    {
+      "file": "frames/idle-00.png",
+      "width": 1024,
+      "height": 896,
+      "edgePixels": 0,
+      "alpha": true
+    },
+    {
+      "file": "frames/idle-01.png",
+      "width": 1024,
+      "height": 896,
+      "edgePixels": 0,
+      "alpha": true
+    },
+    {
+      "file": "frames/idle-02.png",
+      "width": 1024,
+      "height": 896,
+      "edgePixels": 0,
+      "alpha": true
+    },
+    {
+      "file": "frames/idle-03.png",
+      "width": 1024,
+      "height": 896,
+      "edgePixels": 0,
+      "alpha": true
+    },
+    {
+      "file": "frames/hit-00.png",
+      "width": 1024,
+      "height": 896,
+      "edgePixels": 0,
+      "alpha": true
+    },
+    {
+      "file": "frames/hit-01.png",
+      "width": 1024,
+      "height": 896,
+      "edgePixels": 0,
+      "alpha": true
+    },
+    {
+      "file": "frames/hit-02.png",
+      "width": 1024,
+      "height": 896,
+      "edgePixels": 0,
+      "alpha": true
+    },
+    {
+      "file": "frames/hit-03.png",
+      "width": 1024,
+      "height": 896,
+      "edgePixels": 0,
+      "alpha": true
+    },
+    {
+      "file": "frames/attack-00.png",
+      "width": 1024,
+      "height": 896,
+      "edgePixels": 0,
+      "alpha": true
+    },
+    {
+      "file": "frames/attack-01.png",
+      "width": 1024,
+      "height": 896,
+      "edgePixels": 0,
+      "alpha": true
+    },
+    {
+      "file": "frames/attack-02.png",
+      "width": 1024,
+      "height": 896,
+      "edgePixels": 0,
+      "alpha": true
+    },
+    {
+      "file": "frames/attack-03.png",
+      "width": 1024,
+      "height": 896,
+      "edgePixels": 0,
+      "alpha": true
+    },
+    {
+      "file": "frames/attack-04.png",
+      "width": 1024,
+      "height": 896,
+      "edgePixels": 0,
+      "alpha": true
+    },
+    {
+      "file": "frames/attack-05.png",
+      "width": 1024,
+      "height": 896,
+      "edgePixels": 0,
+      "alpha": true
+    },
+    {
+      "file": "frames/attack-06.png",
+      "width": 1024,
+      "height": 896,
+      "edgePixels": 0,
+      "alpha": true
+    },
+    {
+      "file": "frames/attack-07.png",
+      "width": 1024,
+      "height": 896,
+      "edgePixels": 0,
+      "alpha": true
+    },
+    {
+      "file": "frames/wounded_idle-00.png",
+      "width": 1024,
+      "height": 896,
+      "edgePixels": 0,
+      "alpha": true
+    },
+    {
+      "file": "frames/wounded_idle-01.png",
+      "width": 1024,
+      "height": 896,
+      "edgePixels": 0,
+      "alpha": true
+    },
+    {
+      "file": "frames/wounded_idle-02.png",
+      "width": 1024,
+      "height": 896,
+      "edgePixels": 0,
+      "alpha": true
+    },
+    {
+      "file": "frames/wounded_idle-03.png",
+      "width": 1024,
+      "height": 896,
+      "edgePixels": 0,
+      "alpha": true
+    },
+    {
+      "file": "frames/cast-00.png",
+      "width": 1024,
+      "height": 896,
+      "edgePixels": 0,
+      "alpha": true
+    },
+    {
+      "file": "frames/cast-01.png",
+      "width": 1024,
+      "height": 896,
+      "edgePixels": 0,
+      "alpha": true
+    },
+    {
+      "file": "frames/cast-02.png",
+      "width": 1024,
+      "height": 896,
+      "edgePixels": 0,
+      "alpha": true
+    },
+    {
+      "file": "frames/cast-03.png",
+      "width": 1024,
+      "height": 896,
+      "edgePixels": 0,
+      "alpha": true
+    },
+    {
+      "file": "frames/cast-04.png",
+      "width": 1024,
+      "height": 896,
+      "edgePixels": 0,
+      "alpha": true
+    },
+    {
+      "file": "frames/cast-05.png",
+      "width": 1024,
+      "height": 896,
+      "edgePixels": 0,
+      "alpha": true
+    },
+    {
+      "file": "frames/cast-06.png",
+      "width": 1024,
+      "height": 896,
+      "edgePixels": 0,
+      "alpha": true
+    },
+    {
+      "file": "frames/cast-07.png",
+      "width": 1024,
+      "height": 896,
+      "edgePixels": 0,
+      "alpha": true
+    },
+    {
+      "file": "frames/die-00.png",
+      "width": 1024,
+      "height": 896,
+      "edgePixels": 0,
+      "alpha": true
+    },
+    {
+      "file": "frames/die-01.png",
+      "width": 1024,
+      "height": 896,
+      "edgePixels": 0,
+      "alpha": true
+    },
+    {
+      "file": "frames/die-02.png",
+      "width": 1024,
+      "height": 896,
+      "edgePixels": 0,
+      "alpha": true
+    },
+    {
+      "file": "frames/die-03.png",
+      "width": 1024,
+      "height": 896,
+      "edgePixels": 0,
+      "alpha": true
+    }
+  ]
+}

@@ -1,0 +1,42 @@
+{
+  "reviewer": "/root/runeblade_review",
+  "date": "2026-10-03",
+  "revision": "frames32-r2",
+  "masterSha256": "9a4a666b1ed74621fab2b9117805af763c2100ecf228cbadc8f2e44c9be5aef1",
+  "manifestSha256": "e1d440631cf582bfbb60bd049b4ee65f1f4a8985e5acdfcc1e4f9f35a4d1068e",
+  "contactSha256": "1632655da69c12c173913cad577cdad3bd50ffdf25058d47c3e75399b8aaf38c",
+  "selectionAtlasSha256": "84a35d87219f0f14e5ed3ee1755098118519836a91207fe96fdf508dcaa5123a",
+  "verdict": "Pass for selection-idle asset integration; generated art remains pending user design review.",
+  "checks": {
+    "frameCount": 32,
+    "states": {
+      "idle": 4,
+      "hit": 4,
+      "attack": 8,
+      "wounded_idle": 4,
+      "cast": 8,
+      "die": 4
+    },
+    "frameHashes": "All 32 independently rehashed and match manifest.",
+    "outputGeometry": "All 32 frames are 1024x896 transparent PNG; independent alpha scan found no opaque pixels within 2px of output edges.",
+    "sourceCells": "Manifest contains zero source-cell edge findings; visual contact and state strips show complete sword silhouettes.",
+    "identity": "Rune shoulders, teal cape, round helmet ear disk, swept crest, vented silver helmet, low cyan greatsword and right-facing hero orientation preserved.",
+    "idle": "Four distinct authored poses. Adjacent and last-to-first pose inspection shows restrained breathing and cape/weapon differences. Common source roots map within 0.5px of 448,816; no large lateral travel.",
+    "statesSemantics": "Attack anticipates overhead and slashes with recovery. Cast extends offhand then lowers it. Hit recoils and recovers. Wounded idle stoops; death collapses to a terminal prone pose.",
+    "readability": "Reviewed contact plus all six large state strips on light/dark backgrounds and idle96px strip. Identity and blade remain legible at selection scale.",
+    "selectionExport": "Four320px cells with single shared scale/translation; no frame-by-frame size fitting."
+  },
+  "findings": [
+    {
+      "severity": "minor",
+      "file": "TECHNICAL-NOTES.md",
+      "description": "Canvas documented as896x896 but output and manifest are1024x896. Requested builder correction."
+    }
+  ],
+  "limitations": [
+    "Review used actual exported frame imagery and packer/preview code, not browser playback. Parent owns browser sizing and centering verification.",
+    "Simple keyframe animation intentionally has stepped transitions. This is not an assertion of interpolated skeletal motion.",
+    "Non-idle states are preview/package assets; no combat integration validated.",
+    "Technical review does not approve new artwork in the gallery ledger."
+  ]
+}

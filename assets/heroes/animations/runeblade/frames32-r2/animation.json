@@ -1,0 +1,281 @@
+{
+  "id": "runeblade-hero",
+  "revision": "frames32-r2",
+  "frame_canvas": [
+    1024,
+    896
+  ],
+  "anchor": [
+    448,
+    816
+  ],
+  "frames": [
+    {
+      "file": "frames/idle-00.png",
+      "sha256": "ea8f55325a73070ac07b6d42d674ce60063b97d7487dca582e09937e213442a1"
+    },
+    {
+      "file": "frames/idle-01.png",
+      "sha256": "6d63b24cbfb1424455232b673df797fb5bbdc51b4b9510ccaad00f97ec358936"
+    },
+    {
+      "file": "frames/idle-02.png",
+      "sha256": "a388be964ba272e208feca7d4242c06fffec49317d6f037c8dd20ed32cb4c29a"
+    },
+    {
+      "file": "frames/idle-03.png",
+      "sha256": "605db1fb2de292218a4bec816a389e170f6f4fd5a8b55bb980a519ec6bac1133"
+    },
+    {
+      "file": "frames/hit-00.png",
+      "sha256": "21a79d973f2ac15e0d7ffe41daadc677568dad24ed66ec0cdd2ad7f38bfef29c"
+    },
+    {
+      "file": "frames/hit-01.png",
+      "sha256": "01592e1bfd7632117615c28902a7e6bdffffae85ee7aa062c65d700479867b9d"
+    },
+    {
+      "file": "frames/hit-02.png",
+      "sha256": "dbec2f0abe6fa0d8386822b03500b84e207f4b417234dae46d7049daed4ffdb0"
+    },
+    {
+      "file": "frames/hit-03.png",
+      "sha256": "a50771482f78a206190afda1052e0ad8a31481f168a5c0cfc48ad580fd12da4f"
+    },
+    {
+      "file": "frames/attack-00.png",
+      "sha256": "6c2c3c5f45a03bbab83e2319073252906cdb4de5d39146dbf7f76194f26124ca"
+    },
+    {
+      "file": "frames/attack-01.png",
+      "sha256": "6294f298f29569b4d3ce9620dc3ed93fdf613e3a82ff5a53c4373f61687eb8e9"
+    },
+    {
+      "file": "frames/attack-02.png",
+      "sha256": "ad187b5faa6d013db4b0d54e1e83fcd1de372af3a888f49aa882c2eabfd98091"
+    },
+    {
+      "file": "frames/attack-03.png",
+      "sha256": "117d2e6dc5a4218b49b2812fbf54b5ee39f85136ab8658dcd709a9cb860d7e52"
+    },
+    {
+      "file": "frames/attack-04.png",
+      "sha256": "4968668a4685f3e7755b2f999e78afb65f69fc28e19cef7dd4e995b7457e3701"
+    },
+    {
+      "file": "frames/attack-05.png",
+      "sha256": "b4b2a14bba3ad0393241eec597ee2906e4a8b5d1edcbb02229138e79fdfe766e"
+    },
+    {
+      "file": "frames/attack-06.png",
+      "sha256": "53233dc8afc3251e891b48025cd1507b479462763a5bc3e1eae4c79b8b8c57b0"
+    },
+    {
+      "file": "frames/attack-07.png",
+      "sha256": "84b8626ea95b27c548a4f8919a8c27e622a5ae2e69d159609f11c2b711680889"
+    },
+    {
+      "file": "frames/wounded_idle-00.png",
+      "sha256": "acc2a1e1cb1a1201a2cf5c01caf4979b14589c5797930816927ba577e78402e6"
+    },
+    {
+      "file": "frames/wounded_idle-01.png",
+      "sha256": "7d87eaeba9dc1668e6fcea6fe3c45423c27d9eb244898677987ec34bf897d7fb"
+    },
+    {
+      "file": "frames/wounded_idle-02.png",
+      "sha256": "e994079df06f469faa0b6f262c2a866a5c816d755d3c51b46ca9e42f55b9f7c3"
+    },
+    {
+      "file": "frames/wounded_idle-03.png",
+      "sha256": "d6cfcbc4fd98085ec9b57b82ba0af94b572d15497037bca6ab97d52648c42e1e"
+    },
+    {
+      "file": "frames/cast-00.png",
+      "sha256": "6215139912d1ab839950688c76fb054f741effa4bc5bf649ef3d6fa8469efdd3"
+    },
+    {
+      "file": "frames/cast-01.png",
+      "sha256": "55a20b48d5e1b8bac783579415ee8a4a511f24b453ecc0a4fb0a4ec9268985eb"
+    },
+    {
+      "file": "frames/cast-02.png",
+      "sha256": "f85156b1c74c758ea0edf264e37e202d49fe99ccac50f03c328169fb6c9f77f9"
+    },
+    {
+      "file": "frames/cast-03.png",
+      "sha256": "1ab32be1cc99f6c4ca3a8c12e5a7f1a3c17bad8c6e887e733fcc3d14c9bbf813"
+    },
+    {
+      "file": "frames/cast-04.png",
+      "sha256": "8e218680156f981048c1070d89189f3f9d5a76c9c479ed37fb6a27970fb0c83b"
+    },
+    {
+      "file": "frames/cast-05.png",
+      "sha256": "2ebf19471722add74b615224fe60a288892714650790d180c4d282fd383ae441"
+    },
+    {
+      "file": "frames/cast-06.png",
+      "sha256": "2be9525f5f753996c259e4dddfd20fe6ed7e6c46dfe58a714bdb3e9d018ddad5"
+    },
+    {
+      "file": "frames/cast-07.png",
+      "sha256": "69f7b9168510103724b1d4ad7c56de5c6caafc1dbd4e8e5ac5dbbceb783592a1"
+    },
+    {
+      "file": "frames/die-00.png",
+      "sha256": "7c449d102f830662352f591ef63090b9e5273aed56df6d9b8f1618bab73c150a"
+    },
+    {
+      "file": "frames/die-01.png",
+      "sha256": "f582ff2924da85edca3113ec9ca7c833331cdf6fc6435db01da54b97352c3b36"
+    },
+    {
+      "file": "frames/die-02.png",
+      "sha256": "b96c6638493e52904706e1d6ef3d95e145fca6e3505cf4f717ab523ea78bf8b1"
+    },
+    {
+      "file": "frames/die-03.png",
+      "sha256": "98ced3250fde9b5da352b4f889bc4f25e7d1c12310b3fa487bbe8d882923f318"
+    }
+  ],
+  "states": {
+    "idle": {
+      "frames": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "durations_ms": [
+        350,
+        350,
+        350,
+        350
+      ],
+      "loop": true,
+      "terminalHold": false,
+      "events": []
+    },
+    "hit": {
+      "frames": [
+        4,
+        5,
+        6,
+        7
+      ],
+      "durations_ms": [
+        130,
+        130,
+        130,
+        130
+      ],
+      "loop": false,
+      "terminalHold": false,
+      "events": []
+    },
+    "attack": {
+      "frames": [
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15
+      ],
+      "durations_ms": [
+        145,
+        145,
+        145,
+        145,
+        145,
+        145,
+        145,
+        145
+      ],
+      "loop": false,
+      "terminalHold": false,
+      "events": [
+        {
+          "name": "impact",
+          "frame": 3,
+          "timeMs": 435,
+          "time_ms": 435
+        }
+      ]
+    },
+    "wounded_idle": {
+      "frames": [
+        16,
+        17,
+        18,
+        19
+      ],
+      "durations_ms": [
+        400,
+        400,
+        400,
+        400
+      ],
+      "loop": true,
+      "terminalHold": false,
+      "events": []
+    },
+    "cast": {
+      "frames": [
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27
+      ],
+      "durations_ms": [
+        150,
+        150,
+        150,
+        150,
+        150,
+        150,
+        150,
+        150
+      ],
+      "loop": false,
+      "terminalHold": false,
+      "events": [
+        {
+          "name": "cast-release",
+          "frame": 3,
+          "timeMs": 450,
+          "attachment": {
+            "x": 710,
+            "y": 329
+          },
+          "note": "Palm center on extended arm, frame 3; visual marker only, does not apply gameplay damage.",
+          "time_ms": 450
+        }
+      ]
+    },
+    "die": {
+      "frames": [
+        28,
+        29,
+        30,
+        31
+      ],
+      "durations_ms": [
+        300,
+        300,
+        300,
+        300
+      ],
+      "loop": false,
+      "terminalHold": true,
+      "events": []
+    }
+  }
+}
