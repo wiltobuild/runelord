@@ -1,0 +1,35 @@
+[
+  {
+    "region": "title",
+    "text": "Mark of Damnation",
+    "lines": [
+      "Mark of Damnation"
+    ],
+    "font_size": 58
+  },
+  {
+    "region": "cost",
+    "text": "1",
+    "lines": [
+      "1"
+    ],
+    "font_size": 110
+  },
+  {
+    "region": "type",
+    "text": "SKILL · WARLOCK",
+    "lines": [
+      "SKILL · WARLOCK"
+    ],
+    "font_size": 35
+  },
+  {
+    "region": "rules",
+    "text": "In 3 turns, the enemy takes 40 damage.",
+    "lines": [
+      "In 3 turns, the enemy takes",
+      "40 damage."
+    ],
+    "font_size": 54
+  }
+]
