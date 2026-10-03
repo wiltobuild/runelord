@@ -1,0 +1,209 @@
+{
+  "id": "furnace-beetle",
+  "method": "whole-character generated keyframes",
+  "canvas": {
+    "width": 448,
+    "height": 448
+  },
+  "anchor": {
+    "x": 224,
+    "y": 414
+  },
+  "facing": "left",
+  "master": {
+    "path": "assets\\concepts\\fire-monsters-20-2026-10-02\\furnace-beetle\\base-r1.png",
+    "sha256": "302fe8ec3b33f824a6f66ccfa4a629c3c7d422487c7cc9d0931bc5a43f4cf8b9",
+    "approval": {
+      "status": "Approved",
+      "at": "2026-10-02T22:20:49.176Z",
+      "evidenceId": "21155c0e-a540-4a56-8707-c3ca43cdf735",
+      "paths": [
+        "C:\\Users\\wilsh\\Projects\\runelord\\assets\\approvals\\inbox\\furnace-beetle\\base-r1\\base-r1.png"
+      ]
+    }
+  },
+  "source": {
+    "path": "assets\\animations\\fire-demo-r1\\furnace-beetle\\poses.png",
+    "sha256": "04c254568c5560f03c63793d6a4de7b1336125c7ac28e973157063487f8498c1"
+  },
+  "authorization": "User requested existing fire monster art animated and integrated into demo, 2026-10-03. New animation pending gallery review; not self-approved.",
+  "states": {
+    "idle": {
+      "frames": [
+        {
+          "file": "frames/00.png",
+          "durationMs": 380
+        },
+        {
+          "file": "frames/01.png",
+          "durationMs": 380
+        },
+        {
+          "file": "frames/00.png",
+          "durationMs": 380
+        }
+      ],
+      "loop": true,
+      "events": []
+    },
+    "attack": {
+      "frames": [
+        {
+          "file": "frames/02.png",
+          "durationMs": 150
+        },
+        {
+          "file": "frames/03.png",
+          "durationMs": 170
+        },
+        {
+          "file": "frames/04.png",
+          "durationMs": 140
+        },
+        {
+          "file": "frames/05.png",
+          "durationMs": 140
+        }
+      ],
+      "loop": false,
+      "events": [
+        {
+          "name": "impact",
+          "timeMs": 150
+        }
+      ]
+    },
+    "hit": {
+      "frames": [
+        {
+          "file": "frames/06.png",
+          "durationMs": 140
+        },
+        {
+          "file": "frames/07.png",
+          "durationMs": 140
+        },
+        {
+          "file": "frames/00.png",
+          "durationMs": 100
+        }
+      ],
+      "loop": false,
+      "events": []
+    },
+    "wounded_idle": {
+      "frames": [
+        {
+          "file": "frames/08.png",
+          "durationMs": 400
+        },
+        {
+          "file": "frames/09.png",
+          "durationMs": 400
+        },
+        {
+          "file": "frames/08.png",
+          "durationMs": 400
+        }
+      ],
+      "loop": true,
+      "events": []
+    },
+    "die": {
+      "frames": [
+        {
+          "file": "frames/08.png",
+          "durationMs": 180
+        },
+        {
+          "file": "frames/10.png",
+          "durationMs": 280
+        },
+        {
+          "file": "frames/11.png",
+          "durationMs": 550
+        }
+      ],
+      "loop": false,
+      "events": []
+    }
+  },
+  "frameBounds": [
+    [
+      59,
+      177,
+      405,
+      414
+    ],
+    [
+      43,
+      177,
+      405,
+      414
+    ],
+    [
+      43,
+      97,
+      398,
+      414
+    ],
+    [
+      45,
+      200,
+      405,
+      414
+    ],
+    [
+      55,
+      177,
+      405,
+      414
+    ],
+    [
+      43,
+      177,
+      405,
+      414
+    ],
+    [
+      43,
+      77,
+      382,
+      414
+    ],
+    [
+      55,
+      177,
+      405,
+      414
+    ],
+    [
+      61,
+      208,
+      405,
+      414
+    ],
+    [
+      43,
+      206,
+      405,
+      414
+    ],
+    [
+      43,
+      90,
+      401,
+      414
+    ],
+    [
+      53,
+      259,
+      392,
+      414
+    ]
+  ],
+  "limitations": [
+    "12 authored key poses; intentionally stepped sprite animation, no interpolated in-between drawings.",
+    "Self-review completed; independent playback review requested."
+  ]
+}
