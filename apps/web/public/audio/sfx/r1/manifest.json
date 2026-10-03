@@ -1,0 +1,1267 @@
+{
+  "schema": 1,
+  "license": "Original project-authored synthesis; no external samples",
+  "sampleRate": 48000,
+  "cues": {
+    "card-play": {
+      "url": "/audio/sfx/r1/card-play.wav",
+      "duration": 0.44,
+      "peak": 0.72,
+      "rms": 0.11443751330554887,
+      "recipe": [
+        0.24,
+        440,
+        100,
+        0.65,
+        0.1,
+        0
+      ],
+      "sha256": "2b3c33c0abd008846e4f3cdba7b31bbd9b1a460b09d958a6ba77cd871f5df1a5"
+    },
+    "firebolt": {
+      "url": "/audio/sfx/r1/firebolt.wav",
+      "duration": 0.8500208333333333,
+      "peak": 0.72,
+      "rms": 0.13121744982811703,
+      "recipe": [
+        0.65,
+        230,
+        65,
+        0.85,
+        0.35,
+        1
+      ],
+      "sha256": "b1c46fe1c5cbb7986bc44aad3665b6fe2adb8641db2d1303d2ce5e2916c55128"
+    },
+    "immolate": {
+      "url": "/audio/sfx/r1/immolate.wav",
+      "duration": 1.3,
+      "peak": 0.72,
+      "rms": 0.14145376313444175,
+      "recipe": [
+        1.1,
+        155,
+        48,
+        0.95,
+        0.3,
+        2
+      ],
+      "sha256": "42ae3d9bb28d4336e217c7edaae0e809219aed6a32b3a566583874e48029465f"
+    },
+    "smoldering-brand": {
+      "url": "/audio/sfx/r1/smoldering-brand.wav",
+      "duration": 1.05,
+      "peak": 0.72,
+      "rms": 0.13345427242951255,
+      "recipe": [
+        0.85,
+        420,
+        95,
+        0.55,
+        0.45,
+        3
+      ],
+      "sha256": "93d2a9ce7596e58b3b8e05f9ef473198cb1e3a090706be6e5c50fed5a9a9754d"
+    },
+    "conflagrate": {
+      "url": "/audio/sfx/r1/conflagrate.wav",
+      "duration": 1.55,
+      "peak": 0.72,
+      "rms": 0.15510156772688624,
+      "recipe": [
+        1.35,
+        110,
+        32,
+        1,
+        0.65,
+        4
+      ],
+      "sha256": "fc480ceaf4feb69dd3888838cf42cf871710a565e7bf079bcc2c2ac86370635a"
+    },
+    "searing-lash": {
+      "url": "/audio/sfx/r1/searing-lash.wav",
+      "duration": 0.7,
+      "peak": 0.72,
+      "rms": 0.14032033332069702,
+      "recipe": [
+        0.5,
+        1150,
+        80,
+        0.85,
+        0.18,
+        5
+      ],
+      "sha256": "c5dbd3a9a40f8d7d00a4eaf6ef3ee65b3502e088ed48e08ae40f83946e5cd45b"
+    },
+    "ward-of-ash": {
+      "url": "/audio/sfx/r1/ward-of-ash.wav",
+      "duration": 1.55,
+      "peak": 0.72,
+      "rms": 0.1168885396064921,
+      "recipe": [
+        1.35,
+        115,
+        38,
+        0.65,
+        0.7,
+        6
+      ],
+      "sha256": "c53b412c5198ba92cc7e67f2f807ab69c0314e566d98142140f3dbf26b9e2762"
+    },
+    "sinister-veil": {
+      "url": "/audio/sfx/r1/sinister-veil.wav",
+      "duration": 1.85,
+      "peak": 0.72,
+      "rms": 0.10761947628916092,
+      "recipe": [
+        1.65,
+        95,
+        31,
+        0.55,
+        0.75,
+        7
+      ],
+      "sha256": "42514826bc4f43215648a41c79fd9c104f61791e714c9b3aad18c2be64f1b0d8"
+    },
+    "ashen-ward": {
+      "url": "/audio/sfx/r1/ashen-ward.wav",
+      "duration": 1.7,
+      "peak": 0.72,
+      "rms": 0.12466483708381364,
+      "recipe": [
+        1.5,
+        135,
+        42,
+        0.8,
+        0.7,
+        8
+      ],
+      "sha256": "95981642a6d448bd9d3bf34383dd31d8cef9bd6d1b022c138d9cf34a41900381"
+    },
+    "blood-pact": {
+      "url": "/audio/sfx/r1/blood-pact.wav",
+      "duration": 1.1000208333333332,
+      "peak": 0.72,
+      "rms": 0.13347764558247963,
+      "recipe": [
+        0.9,
+        90,
+        46,
+        0.35,
+        0.65,
+        9
+      ],
+      "sha256": "66ae9214ee9dea7c7241cdf97f7e03bafb578b2777e65e58a171f43939e17048"
+    },
+    "feed-the-pit": {
+      "url": "/audio/sfx/r1/feed-the-pit.wav",
+      "duration": 1.3,
+      "peak": 0.72,
+      "rms": 0.14486354938798393,
+      "recipe": [
+        1.1,
+        160,
+        36,
+        0.6,
+        0.65,
+        10
+      ],
+      "sha256": "d3f06401bcaa732ae3e8f16af4197ec94709180aec69cea60fa121ea187bac72"
+    },
+    "kindle": {
+      "url": "/audio/sfx/r1/kindle.wav",
+      "duration": 0.9,
+      "peak": 0.72,
+      "rms": 0.13713404430649392,
+      "recipe": [
+        0.7,
+        380,
+        1050,
+        0.5,
+        0.3,
+        11
+      ],
+      "sha256": "b5570d8df42c3b9ceb850ad967edc4d8ca540edcb9b7cba84f4dcb507d67a37d"
+    },
+    "summon-imp": {
+      "url": "/audio/sfx/r1/summon-imp.wav",
+      "duration": 1.1000208333333332,
+      "peak": 0.72,
+      "rms": 0.11724183632116927,
+      "recipe": [
+        0.9,
+        540,
+        220,
+        0.5,
+        0.35,
+        12
+      ],
+      "sha256": "b84b32ad8067b7b1aa7e8c619913f6b1f3f9e68a48176a0842364b1f7fc0c58a"
+    },
+    "summon-hellhound": {
+      "url": "/audio/sfx/r1/summon-hellhound.wav",
+      "duration": 1.35,
+      "peak": 0.72,
+      "rms": 0.1358402808586237,
+      "recipe": [
+        1.15,
+        125,
+        54,
+        0.65,
+        0.65,
+        13
+      ],
+      "sha256": "07efa5bfe12ccb229936cfdbc7e518b8875013e42c72ad09515ea80e2eb44045"
+    },
+    "summon-pit-brute": {
+      "url": "/audio/sfx/r1/summon-pit-brute.wav",
+      "duration": 1.6,
+      "peak": 0.72,
+      "rms": 0.15114657703448942,
+      "recipe": [
+        1.4,
+        72,
+        28,
+        0.75,
+        0.8,
+        14
+      ],
+      "sha256": "9c52ce75c22e7c5d921c1a8245c4a40fc3f6e006ca10ebc17671893956ed3e24"
+    },
+    "attack-imp": {
+      "url": "/audio/sfx/r1/attack-imp.wav",
+      "duration": 0.5800208333333333,
+      "peak": 0.72,
+      "rms": 0.12256852471148111,
+      "recipe": [
+        0.38,
+        680,
+        120,
+        0.75,
+        0.3,
+        15
+      ],
+      "sha256": "a40d95e584de82063bc99d12bf2c89f9bff0d23a2e634ac833f3132067460dd9"
+    },
+    "attack-hellhound": {
+      "url": "/audio/sfx/r1/attack-hellhound.wav",
+      "duration": 0.68,
+      "peak": 0.72,
+      "rms": 0.12148650325326142,
+      "recipe": [
+        0.48,
+        190,
+        62,
+        0.65,
+        0.5,
+        16
+      ],
+      "sha256": "398a4b5b16cf4f33d3098c2f6d5409ab0439bd3c21040eaf81277644ffe75dda"
+    },
+    "attack-pit-brute": {
+      "url": "/audio/sfx/r1/attack-pit-brute.wav",
+      "duration": 0.8,
+      "peak": 0.72,
+      "rms": 0.14424719060229818,
+      "recipe": [
+        0.6,
+        90,
+        30,
+        0.75,
+        0.8,
+        17
+      ],
+      "sha256": "c5834b13275063b06ffc54f7c3a9399eae7c17b8faa26f9e3ce00db061d1f1c1"
+    },
+    "enemy-goblin": {
+      "url": "/audio/sfx/r1/enemy-goblin.wav",
+      "duration": 0.6000208333333333,
+      "peak": 0.72,
+      "rms": 0.11539067563651838,
+      "recipe": [
+        0.4,
+        740,
+        140,
+        0.8,
+        0.25,
+        18
+      ],
+      "sha256": "9d876d7318867e12b99e4429b0dd1822a1b278ee71a5aa9c775217c4e0e5fb40"
+    },
+    "enemy-skirmisher": {
+      "url": "/audio/sfx/r1/enemy-skirmisher.wav",
+      "duration": 0.5,
+      "peak": 0.72,
+      "rms": 0.1254078246673966,
+      "recipe": [
+        0.3,
+        1450,
+        260,
+        0.8,
+        0.2,
+        19
+      ],
+      "sha256": "d75f42218f5aad446bbfa9e8a5b26c549fc27fb5da23540398715136fe2d1c64"
+    },
+    "enemy-briarjaw": {
+      "url": "/audio/sfx/r1/enemy-briarjaw.wav",
+      "duration": 0.8,
+      "peak": 0.72,
+      "rms": 0.13778411809458865,
+      "recipe": [
+        0.6,
+        130,
+        45,
+        0.65,
+        0.6,
+        20
+      ],
+      "sha256": "7a5c1d6d627a2136d86a222271475b06d8f5e87ca0ddf083fe0fc64ff44c0c2c"
+    },
+    "enemy-tollbell": {
+      "url": "/audio/sfx/r1/enemy-tollbell.wav",
+      "duration": 1,
+      "peak": 0.72,
+      "rms": 0.14917073633946296,
+      "recipe": [
+        0.8,
+        195,
+        92,
+        0.3,
+        0.7,
+        21
+      ],
+      "sha256": "ddf1d5be6629a103c5e7fd28b73560206080d1dc9ef2fbf88455a0c57c18af4b"
+    },
+    "hit-flesh": {
+      "url": "/audio/sfx/r1/hit-flesh.wav",
+      "duration": 0.48,
+      "peak": 0.72,
+      "rms": 0.10210608833787622,
+      "recipe": [
+        0.28,
+        170,
+        48,
+        0.9,
+        0.55,
+        22
+      ],
+      "sha256": "ea84a2c116afa145694216ffa96847b059cf6f0b5cb762b38906b38b344de7f0"
+    },
+    "hit-armor": {
+      "url": "/audio/sfx/r1/hit-armor.wav",
+      "duration": 0.62,
+      "peak": 0.72,
+      "rms": 0.09543335774923402,
+      "recipe": [
+        0.42,
+        950,
+        180,
+        0.65,
+        0.45,
+        23
+      ],
+      "sha256": "7be3688d211d09cb4f9919d0c10dce954f7ccb2611cf1ad34d75ccee448e4000"
+    },
+    "hit-block": {
+      "url": "/audio/sfx/r1/hit-block.wav",
+      "duration": 0.68,
+      "peak": 0.72,
+      "rms": 0.09538238561142297,
+      "recipe": [
+        0.48,
+        1500,
+        410,
+        0.4,
+        0.4,
+        24
+      ],
+      "sha256": "519dcdb169c400b44d4e088a43365ed795e35193b4dd10e69fd31efe1c7be08b"
+    },
+    "hit-fire": {
+      "url": "/audio/sfx/r1/hit-fire.wav",
+      "duration": 0.65,
+      "peak": 0.72,
+      "rms": 0.0961495467514847,
+      "recipe": [
+        0.45,
+        300,
+        72,
+        1,
+        0.4,
+        25
+      ],
+      "sha256": "bd13ac5657bc3fd1779934f099ce2353e6e353bfed20a683838257a89640b1f4"
+    },
+    "item-potion": {
+      "url": "/audio/sfx/r1/item-potion.wav",
+      "duration": 1.35,
+      "peak": 0.72,
+      "rms": 0.1265876739546048,
+      "recipe": [
+        1.15,
+        520,
+        1400,
+        0.25,
+        0.5,
+        26
+      ],
+      "sha256": "11e028ee6b0728aaa6d1719d8f9cc03c933e69cfcccb477707af228a056b4458"
+    },
+    "item-brand": {
+      "url": "/audio/sfx/r1/item-brand.wav",
+      "duration": 0.75,
+      "peak": 0.72,
+      "rms": 0.1363392322906595,
+      "recipe": [
+        0.55,
+        290,
+        580,
+        0.2,
+        0.45,
+        27
+      ],
+      "sha256": "73335a9417bcd79bbfbc61c72c6c9c0be11e7083ea8e19ee4840dd22a360076d"
+    },
+    "fire-death": {
+      "url": "/audio/sfx/r1/fire-death.wav",
+      "duration": 2,
+      "peak": 0.72,
+      "rms": 0.16361391845466777,
+      "recipe": [
+        1.8,
+        100,
+        32,
+        1,
+        0.65,
+        28
+      ],
+      "sha256": "0b9bb8d150234ab39193d97ac09c6ae09aeb81e990ea43fa972e16d611f3bdfd"
+    },
+    "ascend": {
+      "url": "/audio/sfx/r1/ascend.wav",
+      "duration": 1.6,
+      "peak": 0.72,
+      "rms": 0.1378068544642154,
+      "recipe": [
+        1.4,
+        75,
+        360,
+        0.55,
+        0.7,
+        29
+      ],
+      "sha256": "47ea9bb74adb470e75544f4cf2daedda7484144a400135b6d08f71657aec8c3f"
+    },
+    "hellish-command": {
+      "url": "/audio/sfx/r1/hellish-command.wav",
+      "duration": 0.9,
+      "peak": 0.72,
+      "rms": 0.11253817572076251,
+      "recipe": [
+        0.7,
+        90,
+        30,
+        0.45,
+        0.45,
+        40
+      ],
+      "sha256": "c9a438ef608407214b3d7945edcb8abe4907655e2e9dfca6f25498d7f2e16b8d"
+    },
+    "ritual-cut": {
+      "url": "/audio/sfx/r1/ritual-cut.wav",
+      "duration": 1.02,
+      "peak": 0.72,
+      "rms": 0.12653520910099592,
+      "recipe": [
+        0.82,
+        127,
+        39,
+        0.55,
+        0.55,
+        41
+      ],
+      "sha256": "3b62d2de6d3b301d6d63a421c7356a71b5e49b90d1d74765f4ecebc98e655bb7"
+    },
+    "chain-of-flame": {
+      "url": "/audio/sfx/r1/chain-of-flame.wav",
+      "duration": 1.14,
+      "peak": 0.72,
+      "rms": 0.1426586901709807,
+      "recipe": [
+        0.94,
+        164,
+        48,
+        0.65,
+        0.65,
+        42
+      ],
+      "sha256": "d2d382599a9911003e88d221d1241d12cf9b3bfd063531c5c10fe74fadba24e0"
+    },
+    "dark-bargain": {
+      "url": "/audio/sfx/r1/dark-bargain.wav",
+      "duration": 1.26,
+      "peak": 0.72,
+      "rms": 0.13502535862466394,
+      "recipe": [
+        1.06,
+        201,
+        57,
+        0.75,
+        0.45,
+        43
+      ],
+      "sha256": "e71a1bf9d6cd24fdc3108a2e42d53fb613fe651ce645cde79ed528e47c00b818"
+    },
+    "fiendish-feast": {
+      "url": "/audio/sfx/r1/fiendish-feast.wav",
+      "duration": 1.38,
+      "peak": 0.72,
+      "rms": 0.13524030840936196,
+      "recipe": [
+        1.18,
+        238,
+        66,
+        0.45,
+        0.55,
+        44
+      ],
+      "sha256": "f16c77e9dd65fcc23ffdc78709da00a7a06836816716b504c56f3ff3befd89d4"
+    },
+    "infernal-whip": {
+      "url": "/audio/sfx/r1/infernal-whip.wav",
+      "duration": 1.5,
+      "peak": 0.72,
+      "rms": 0.13657899615155386,
+      "recipe": [
+        1.2999999999999998,
+        275,
+        75,
+        0.55,
+        0.65,
+        45
+      ],
+      "sha256": "cd9dee4f0a33221f20cb45890085ff8306677c32c44aea0a723fe462e147b248"
+    },
+    "burning-hatred": {
+      "url": "/audio/sfx/r1/burning-hatred.wav",
+      "duration": 0.9,
+      "peak": 0.72,
+      "rms": 0.13271913005034278,
+      "recipe": [
+        0.7,
+        312,
+        84,
+        0.65,
+        0.45,
+        46
+      ],
+      "sha256": "7a39cc83d2351c93fd9198da3623b9f892bd9e3807915644c8968e22a3cd14bb"
+    },
+    "cinder-shield": {
+      "url": "/audio/sfx/r1/cinder-shield.wav",
+      "duration": 1.02,
+      "peak": 0.72,
+      "rms": 0.1291664448012046,
+      "recipe": [
+        0.82,
+        349,
+        30,
+        0.75,
+        0.55,
+        47
+      ],
+      "sha256": "31982db304996d06f3b1bb5c65ac5aaaff6f200e0ba618a34f97b23b80b73874"
+    },
+    "smoke-and-mirrors": {
+      "url": "/audio/sfx/r1/smoke-and-mirrors.wav",
+      "duration": 1.14,
+      "peak": 0.72,
+      "rms": 0.12648480078715665,
+      "recipe": [
+        0.94,
+        386,
+        39,
+        0.45,
+        0.65,
+        48
+      ],
+      "sha256": "f2a15aa5836d9dd16846fc3d3c4aff841106f377afedc1426d7847f9d1daf273"
+    },
+    "hellfire": {
+      "url": "/audio/sfx/r1/hellfire.wav",
+      "duration": 1.26,
+      "peak": 0.72,
+      "rms": 0.13120862076620313,
+      "recipe": [
+        1.06,
+        90,
+        48,
+        0.55,
+        0.45,
+        49
+      ],
+      "sha256": "1955246d50ab10393fe00f4eea74558ad4cf41af66bcf759d3869dbec1bcc842"
+    },
+    "infernal-pact": {
+      "url": "/audio/sfx/r1/infernal-pact.wav",
+      "duration": 1.38,
+      "peak": 0.72,
+      "rms": 0.13468353054942986,
+      "recipe": [
+        1.18,
+        127,
+        57,
+        0.65,
+        0.55,
+        50
+      ],
+      "sha256": "93578464cfd971cebd052380fddfe15714637fd6de57e50d54ee549f9855a4a9"
+    },
+    "masters-of-the-pit": {
+      "url": "/audio/sfx/r1/masters-of-the-pit.wav",
+      "duration": 1.5,
+      "peak": 0.72,
+      "rms": 0.13945050055215572,
+      "recipe": [
+        1.2999999999999998,
+        164,
+        66,
+        0.75,
+        0.65,
+        51
+      ],
+      "sha256": "efd20ddd844150a734b59e64baa35d3cbd2422dfbb13269a9ab2181aee01d974"
+    },
+    "burning-soul": {
+      "url": "/audio/sfx/r1/burning-soul.wav",
+      "duration": 0.9,
+      "peak": 0.72,
+      "rms": 0.12381242339619376,
+      "recipe": [
+        0.7,
+        201,
+        75,
+        0.45,
+        0.45,
+        52
+      ],
+      "sha256": "45a34517f7d64cc41212205445badcf113f03b4bcbe523cb72227f7ad8da1316"
+    },
+    "demonic-resilience": {
+      "url": "/audio/sfx/r1/demonic-resilience.wav",
+      "duration": 1.02,
+      "peak": 0.72,
+      "rms": 0.12919307587753862,
+      "recipe": [
+        0.82,
+        238,
+        84,
+        0.55,
+        0.55,
+        53
+      ],
+      "sha256": "9dd253b2ff69bd8af7a2ae7eac3043f0e21605d023ed5a3ec17806e118d8c696"
+    },
+    "sacrificial-rite": {
+      "url": "/audio/sfx/r1/sacrificial-rite.wav",
+      "duration": 1.14,
+      "peak": 0.72,
+      "rms": 0.1410208356776564,
+      "recipe": [
+        0.94,
+        275,
+        30,
+        0.65,
+        0.65,
+        54
+      ],
+      "sha256": "cb2901e280cd1a185e833c664ca9389e2162c437cd057fe33897195a1ca7cc18"
+    },
+    "corrupting-touch": {
+      "url": "/audio/sfx/r1/corrupting-touch.wav",
+      "duration": 1.26,
+      "peak": 0.72,
+      "rms": 0.13962344088707168,
+      "recipe": [
+        1.06,
+        312,
+        39,
+        0.75,
+        0.45,
+        55
+      ],
+      "sha256": "8cf23acefa03fd3adc5e538380508c8153d997b38496073b998f9713b1725656"
+    },
+    "fire-and-brimstone": {
+      "url": "/audio/sfx/r1/fire-and-brimstone.wav",
+      "duration": 1.38,
+      "peak": 0.72,
+      "rms": 0.12808558657027694,
+      "recipe": [
+        1.18,
+        349,
+        48,
+        0.45,
+        0.55,
+        56
+      ],
+      "sha256": "5b9cc9a9420d85f8bf7023694ed8128c42a21fa262fd69777a50b002f049667f"
+    },
+    "ember-storm": {
+      "url": "/audio/sfx/r1/ember-storm.wav",
+      "duration": 1.5,
+      "peak": 0.72,
+      "rms": 0.13940199992648408,
+      "recipe": [
+        1.2999999999999998,
+        386,
+        57,
+        0.55,
+        0.65,
+        57
+      ],
+      "sha256": "8becb72786276812e8c159d96d73cbdd44d39d8946d6cdec5c259ba80b478d79"
+    },
+    "unholy-frenzy": {
+      "url": "/audio/sfx/r1/unholy-frenzy.wav",
+      "duration": 0.9,
+      "peak": 0.72,
+      "rms": 0.13874110690122074,
+      "recipe": [
+        0.7,
+        90,
+        66,
+        0.65,
+        0.45,
+        58
+      ],
+      "sha256": "0a7f0455cfe230ede43f27251f4301f1cc0bb138def6afcaddc87fbe66b39972"
+    },
+    "pyroclasm": {
+      "url": "/audio/sfx/r1/pyroclasm.wav",
+      "duration": 1.02,
+      "peak": 0.72,
+      "rms": 0.13195872792906135,
+      "recipe": [
+        0.82,
+        127,
+        75,
+        0.75,
+        0.55,
+        59
+      ],
+      "sha256": "77d7de8300026553e63847104755428cbb76a5c9f08247a4313f44d71d65bd4d"
+    },
+    "shadowflame-barrier": {
+      "url": "/audio/sfx/r1/shadowflame-barrier.wav",
+      "duration": 1.14,
+      "peak": 0.72,
+      "rms": 0.13588977212606618,
+      "recipe": [
+        0.94,
+        164,
+        84,
+        0.45,
+        0.65,
+        60
+      ],
+      "sha256": "88b60c0b6ee11f0ddc9e3367927d16921ab549c5c72d6d40443b8fe1f57a00c2"
+    },
+    "void-gaze": {
+      "url": "/audio/sfx/r1/void-gaze.wav",
+      "duration": 1.26,
+      "peak": 0.72,
+      "rms": 0.12646040569466283,
+      "recipe": [
+        1.06,
+        201,
+        30,
+        0.55,
+        0.45,
+        61
+      ],
+      "sha256": "013a3672283edac6c5c8205f6ebc844129edc401a8e169b960f030404e32af1b"
+    },
+    "rend-flesh": {
+      "url": "/audio/sfx/r1/rend-flesh.wav",
+      "duration": 1.38,
+      "peak": 0.72,
+      "rms": 0.13996337308547346,
+      "recipe": [
+        1.18,
+        238,
+        39,
+        0.65,
+        0.55,
+        62
+      ],
+      "sha256": "5ea974bbed686aed3b50c37baa448ced2d22e13fdb6fb0955660911a79bc1935"
+    },
+    "combust": {
+      "url": "/audio/sfx/r1/combust.wav",
+      "duration": 1.5,
+      "peak": 0.72,
+      "rms": 0.14127765263522107,
+      "recipe": [
+        1.2999999999999998,
+        275,
+        48,
+        0.75,
+        0.65,
+        63
+      ],
+      "sha256": "30862afc68a78083c57a67f64cf475e5d7a1aa8d4622e3a92282482a3c40f8dd"
+    },
+    "blood-price": {
+      "url": "/audio/sfx/r1/blood-price.wav",
+      "duration": 0.9,
+      "peak": 0.72,
+      "rms": 0.13084564333801738,
+      "recipe": [
+        0.7,
+        312,
+        57,
+        0.45,
+        0.45,
+        64
+      ],
+      "sha256": "1d24fab1911580c2b988e985130db978ce0e3ae1c3b5212209032a7526bb1107"
+    },
+    "wreathed-in-flame": {
+      "url": "/audio/sfx/r1/wreathed-in-flame.wav",
+      "duration": 1.02,
+      "peak": 0.72,
+      "rms": 0.12812760329690373,
+      "recipe": [
+        0.82,
+        349,
+        66,
+        0.55,
+        0.55,
+        65
+      ],
+      "sha256": "59e91f6ad7c07dba8637d66ea51ff636063378bc4b9d99a21af4f7d44cecff8b"
+    },
+    "dread-aura": {
+      "url": "/audio/sfx/r1/dread-aura.wav",
+      "duration": 1.14,
+      "peak": 0.72,
+      "rms": 0.1334058176510754,
+      "recipe": [
+        0.94,
+        386,
+        75,
+        0.65,
+        0.65,
+        66
+      ],
+      "sha256": "c31aa4dd187cec3b9060d6c174f18c4b4bc47696f2a29ae110f4d7179a4e2f5d"
+    },
+    "feast-of-embers": {
+      "url": "/audio/sfx/r1/feast-of-embers.wav",
+      "duration": 1.26,
+      "peak": 0.72,
+      "rms": 0.13637571436888796,
+      "recipe": [
+        1.06,
+        90,
+        84,
+        0.75,
+        0.45,
+        67
+      ],
+      "sha256": "2a1a1f92c435d00b56f19b0502482e3b5c7ac0dd690af3bba07f177bcfd5cbda"
+    },
+    "abyssal-gaze": {
+      "url": "/audio/sfx/r1/abyssal-gaze.wav",
+      "duration": 1.38,
+      "peak": 0.72,
+      "rms": 0.1296296577861944,
+      "recipe": [
+        1.18,
+        127,
+        30,
+        0.45,
+        0.55,
+        68
+      ],
+      "sha256": "5aef265d97575778478136e43d8084e6e0b9bfa1620ad72e153bcc59e54da4fe"
+    },
+    "infernal-transformation": {
+      "url": "/audio/sfx/r1/infernal-transformation.wav",
+      "duration": 1.5,
+      "peak": 0.72,
+      "rms": 0.13694800265300974,
+      "recipe": [
+        1.2999999999999998,
+        164,
+        39,
+        0.55,
+        0.65,
+        69
+      ],
+      "sha256": "b91ad40cc9d1223e9fd0b53d1ce2357123ae270d18e78b7112f00e230f0b49ad"
+    },
+    "enemy-spear-guard": {
+      "url": "/audio/sfx/r1/enemy-spear-guard.wav",
+      "duration": 0.65,
+      "peak": 0.72,
+      "rms": 0.13541826186108216,
+      "recipe": [
+        0.45,
+        230,
+        65,
+        0.65,
+        0.5,
+        80
+      ],
+      "sha256": "1c555af254018f15c1e92a3bfc82837027c4a8a7ef43f5024aee6368e60f6d97"
+    },
+    "enemy-twinaxe-reaver": {
+      "url": "/audio/sfx/r1/enemy-twinaxe-reaver.wav",
+      "duration": 0.7150208333333333,
+      "peak": 0.72,
+      "rms": 0.12901809796846822,
+      "recipe": [
+        0.515,
+        293,
+        76,
+        0.65,
+        0.525,
+        81
+      ],
+      "sha256": "23aa3473c5fa755b2308c0fd03e26a9f1e1e7e8a8ae67f80ac64f72b8c7d5855"
+    },
+    "enemy-crossbow-scout": {
+      "url": "/audio/sfx/r1/enemy-crossbow-scout.wav",
+      "duration": 0.78,
+      "peak": 0.72,
+      "rms": 0.12625569403352976,
+      "recipe": [
+        0.5800000000000001,
+        356,
+        87,
+        0.65,
+        0.55,
+        82
+      ],
+      "sha256": "58ee4cab22566d15762e82c8f3b325647253c39594ec305f1931888e4d27e37d"
+    },
+    "enemy-emberbow-hunter": {
+      "url": "/audio/sfx/r1/enemy-emberbow-hunter.wav",
+      "duration": 0.845,
+      "peak": 0.72,
+      "rms": 0.14103129619298074,
+      "recipe": [
+        0.645,
+        419,
+        98,
+        0.65,
+        0.575,
+        83
+      ],
+      "sha256": "6bce5e0a87f7aaeb2c45cc7697b86e37a2d9609b7da794f41ccc2f096ad5027f"
+    },
+    "enemy-forgehammer-sapper": {
+      "url": "/audio/sfx/r1/enemy-forgehammer-sapper.wav",
+      "duration": 0.91,
+      "peak": 0.72,
+      "rms": 0.1247241354897954,
+      "recipe": [
+        0.71,
+        482,
+        109,
+        0.65,
+        0.6,
+        84
+      ],
+      "sha256": "10709028f452ca0f78717b64b7893b196e7c55168d5cb8e887fa25b2e042080d"
+    },
+    "enemy-coalhex-shaman": {
+      "url": "/audio/sfx/r1/enemy-coalhex-shaman.wav",
+      "duration": 0.9750208333333333,
+      "peak": 0.72,
+      "rms": 0.13655821287130998,
+      "recipe": [
+        0.775,
+        545,
+        120,
+        0.65,
+        0.625,
+        85
+      ],
+      "sha256": "37d4b35ec6d97c51af2796102468ce4abc5f4ca2bac47c37fdad1a85263991db"
+    },
+    "enemy-scarblade-captain": {
+      "url": "/audio/sfx/r1/enemy-scarblade-captain.wav",
+      "duration": 1.04,
+      "peak": 0.72,
+      "rms": 0.13481585555889836,
+      "recipe": [
+        0.8400000000000001,
+        608,
+        131,
+        0.65,
+        0.65,
+        86
+      ],
+      "sha256": "5a1b3503018d2f6215be99db321841029ccb3386eac81b1364993878c03ad66c"
+    },
+    "enemy-cindermaw-salamander": {
+      "url": "/audio/sfx/r1/enemy-cindermaw-salamander.wav",
+      "duration": 1.105,
+      "peak": 0.72,
+      "rms": 0.14195082837072698,
+      "recipe": [
+        0.905,
+        95,
+        32,
+        0.65,
+        0.675,
+        87
+      ],
+      "sha256": "1299640881625a683e6cf80eb41ad0ba7487adb4ee2ab49a1cf6c5b5adcb29b4"
+    },
+    "enemy-slagheart-juggernaut": {
+      "url": "/audio/sfx/r1/enemy-slagheart-juggernaut.wav",
+      "duration": 1.17,
+      "peak": 0.72,
+      "rms": 0.13461366893490365,
+      "recipe": [
+        0.97,
+        95,
+        32,
+        0.65,
+        0.7,
+        88
+      ],
+      "sha256": "eae00e936354aff34a389f75b4119725c28d3c24bb8fabc3e8d6813ab2f3783f"
+    },
+    "item-healing-draught": {
+      "url": "/audio/sfx/r1/item-healing-draught.wav",
+      "duration": 0.7,
+      "peak": 0.72,
+      "rms": 0.12640636898906443,
+      "recipe": [
+        0.5,
+        180,
+        65,
+        0.6,
+        0.5,
+        100
+      ],
+      "sha256": "adfb3dc1a1da642b372eb54981fa860dce2869895b15406b5e6f6ab3b976af21"
+    },
+    "item-mana-potion": {
+      "url": "/audio/sfx/r1/item-mana-potion.wav",
+      "duration": 0.775,
+      "peak": 0.72,
+      "rms": 0.13515668526319494,
+      "recipe": [
+        0.575,
+        240,
+        85,
+        0.6,
+        0.5,
+        101
+      ],
+      "sha256": "0f96d3c153b8ee337c6058458dfe3a564dc719c0aa90aa2a3fd41bc466ac421b"
+    },
+    "item-barkskin-tonic": {
+      "url": "/audio/sfx/r1/item-barkskin-tonic.wav",
+      "duration": 0.8500208333333333,
+      "peak": 0.72,
+      "rms": 0.1321696776349922,
+      "recipe": [
+        0.65,
+        300,
+        105,
+        0.6,
+        0.5,
+        102
+      ],
+      "sha256": "9d0388e7660abeb251a6668831a6ba835c8ea7cc2f252e58af8a6b093f5e810f"
+    },
+    "item-shrapnel-jar": {
+      "url": "/audio/sfx/r1/item-shrapnel-jar.wav",
+      "duration": 0.925,
+      "peak": 0.72,
+      "rms": 0.11998762006172964,
+      "recipe": [
+        0.725,
+        360,
+        125,
+        0.6,
+        0.5,
+        103
+      ],
+      "sha256": "00ab646b9ba8918566e8176316d884f452191b9136cd7aeea4cbfa17bd642d17"
+    },
+    "item-banner-draught": {
+      "url": "/audio/sfx/r1/item-banner-draught.wav",
+      "duration": 1,
+      "peak": 0.72,
+      "rms": 0.12269630455185104,
+      "recipe": [
+        0.8,
+        420,
+        145,
+        0.6,
+        0.5,
+        104
+      ],
+      "sha256": "27850914940e2d3ae64e4c9917ee5e1bf85278aeb4fe25ed4ecbe91a3a4a0532"
+    },
+    "item-bonesetters-salve": {
+      "url": "/audio/sfx/r1/item-bonesetters-salve.wav",
+      "duration": 1.075,
+      "peak": 0.72,
+      "rms": 0.13187393490549074,
+      "recipe": [
+        0.875,
+        480,
+        165,
+        0.6,
+        0.5,
+        105
+      ],
+      "sha256": "a8adcb3b9960cbe3a8d82e94314d1169cc0ceb88fd3c63bfecfcf9a8a790166b"
+    },
+    "item-warhorn-oil": {
+      "url": "/audio/sfx/r1/item-warhorn-oil.wav",
+      "duration": 1.15,
+      "peak": 0.72,
+      "rms": 0.14121690422869307,
+      "recipe": [
+        0.95,
+        540,
+        185,
+        0.6,
+        0.5,
+        106
+      ],
+      "sha256": "b207329b06834a9799fc5e8425e4bd79beadc3612875a453a3f1257dbaa7c8b3"
+    },
+    "enemy-coalhorn-ram": {
+      "url": "/audio/sfx/r1/enemy-coalhorn-ram.wav",
+      "duration": 0.8400208333333333,
+      "peak": 0.72,
+      "rms": 0.1469194483334482,
+      "recipe": [
+        0.64,
+        115,
+        34,
+        0.8,
+        0.8,
+        121
+      ],
+      "sha256": "afd42facde485370fc66e579a289b6ce8e27454629c4290ae860621b1a5df5b3"
+    },
+    "enemy-furnace-beetle": {
+      "url": "/audio/sfx/r1/enemy-furnace-beetle.wav",
+      "duration": 1,
+      "peak": 0.72,
+      "rms": 0.14243687385177667,
+      "recipe": [
+        0.8,
+        180,
+        44,
+        0.9,
+        0.65,
+        122
+      ],
+      "sha256": "a93987c607f157e33b89bfcf71fdbdfbc138dfaa22cf9b1a9635bfce2fe8fbd4"
+    },
+    "enemy-demon-lord": {
+      "url": "/audio/sfx/r1/enemy-demon-lord.wav",
+      "duration": 1.5,
+      "peak": 0.72,
+      "rms": 0.15282830852890814,
+      "recipe": [
+        1.3,
+        170,
+        25,
+        0.95,
+        0.95,
+        130
+      ],
+      "sha256": "20ace6da4bbb264a7d103482cb17354ba482a5fd51a0dc8b473c26c04ffc7371"
+    },
+    "enemy-boss-imp": {
+      "url": "/audio/sfx/r1/enemy-boss-imp.wav",
+      "duration": 0.8,
+      "peak": 0.72,
+      "rms": 0.13146702147370518,
+      "recipe": [
+        0.6,
+        630,
+        110,
+        0.7,
+        0.55,
+        131
+      ],
+      "sha256": "8b5fe5dde2ef72b2ac5a279bf0663ec585a3be052550265344927614962d3852"
+    },
+    "enemy-boss-hellhound": {
+      "url": "/audio/sfx/r1/enemy-boss-hellhound.wav",
+      "duration": 1.05,
+      "peak": 0.72,
+      "rms": 0.14248851098830323,
+      "recipe": [
+        0.85,
+        130,
+        32,
+        0.85,
+        0.8,
+        132
+      ],
+      "sha256": "740a9f3509e180b3566c3a6fbe50e5209405afd08f8979336bd8b8a7a693c875"
+    },
+    "boss-summon": {
+      "url": "/audio/sfx/r1/boss-summon.wav",
+      "duration": 1.7,
+      "peak": 0.72,
+      "rms": 0.15053135251328287,
+      "recipe": [
+        1.5,
+        140,
+        24,
+        0.9,
+        0.85,
+        133
+      ],
+      "sha256": "aab02ea6d3e7cd8172b7b9c3eab4ed2b2f104dd13ae72680941abce03e39c774"
+    },
+    "boss-phase": {
+      "url": "/audio/sfx/r1/boss-phase.wav",
+      "duration": 2.1,
+      "peak": 0.72,
+      "rms": 0.16065058343531055,
+      "recipe": [
+        1.9,
+        220,
+        22,
+        1,
+        0.95,
+        134
+      ],
+      "sha256": "ce33bdab4637ba89c2de59e3d27ff255d16456b85b0b495e60e5b8c42570dd60"
+    },
+    "boss-shield": {
+      "url": "/audio/sfx/r1/boss-shield.wav",
+      "duration": 1.6,
+      "peak": 0.72,
+      "rms": 0.12259286669381901,
+      "recipe": [
+        1.4,
+        125,
+        28,
+        0.85,
+        0.9,
+        135
+      ],
+      "sha256": "93e186d5773706568bb46ff4f68b23d2791fdf844dd8397eccccdb645dd87c86"
+    }
+  }
+}
