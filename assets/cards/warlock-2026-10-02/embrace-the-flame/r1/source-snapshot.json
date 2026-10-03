@@ -1,0 +1,8 @@
+{
+  "name": "Embrace the Flame",
+  "cost": "1",
+  "type": "Skill",
+  "rarity": "Rare",
+  "rules": "Spend all Cinders. For every 4 spent, gain 1 Mana and draw 1 card.",
+  "upgrade": "For every 3"
+}

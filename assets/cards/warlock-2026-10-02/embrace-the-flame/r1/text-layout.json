@@ -1,0 +1,36 @@
+[
+  {
+    "region": "title",
+    "text": "Embrace the Flame",
+    "lines": [
+      "Embrace the Flame"
+    ],
+    "font_size": 59
+  },
+  {
+    "region": "cost",
+    "text": "1",
+    "lines": [
+      "1"
+    ],
+    "font_size": 110
+  },
+  {
+    "region": "type",
+    "text": "SKILL · WARLOCK",
+    "lines": [
+      "SKILL · WARLOCK"
+    ],
+    "font_size": 35
+  },
+  {
+    "region": "rules",
+    "text": "Spend all Cinders. For every 4 spent, gain 1 Mana and draw 1 card.",
+    "lines": [
+      "Spend all Cinders.",
+      "For every 4 spent, gain",
+      "1 Mana and draw 1 card."
+    ],
+    "font_size": 54
+  }
+]
