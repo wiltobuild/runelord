@@ -1,0 +1,43 @@
+[
+  {
+    "region": "title",
+    "text": "Crown of the Abyss",
+    "lines": [
+      "Crown of the Abyss"
+    ],
+    "font_size": 60
+  },
+  {
+    "region": "cost",
+    "text": "3\n+5 Cinders",
+    "lines": [
+      "3",
+      "+5 Cinders"
+    ],
+    "font_sizes": [
+      76,
+      17
+    ]
+  },
+  {
+    "region": "type",
+    "text": "SKILL · WARLOCK",
+    "lines": [
+      "SKILL · WARLOCK"
+    ],
+    "font_size": 35
+  },
+  {
+    "region": "rules",
+    "text": "Unique. Enter Demon Form; it lasts until the end of combat. While in it, lose 4 HP per turn instead of 3. Consume.",
+    "lines": [
+      "Unique.",
+      "Enter Demon Form; it lasts until the",
+      "end of combat.",
+      "While in it, lose 4 HP per turn instead",
+      "of 3.",
+      "Consume."
+    ],
+    "font_size": 40
+  }
+]

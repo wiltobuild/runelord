@@ -1,0 +1,8 @@
+{
+  "name": "Crown of the Abyss",
+  "cost": "3 +5🔥",
+  "type": "Skill",
+  "rarity": "Ultimate",
+  "rules": "**Unique.** Enter Demon Form; it lasts until the end of combat. While in it, lose 4 HP per turn instead of 3. Consume.",
+  "upgrade": "Lose 3 per turn"
+}
