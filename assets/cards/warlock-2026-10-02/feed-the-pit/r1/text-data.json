@@ -1,0 +1,8 @@
+{
+  "name": "Feed the Pit",
+  "cost": "0",
+  "type": "Skill",
+  "rarity": "Common",
+  "rules": "Pact 2. Gain 3 Cinders.",
+  "upgrade": "5 Cinders"
+}
