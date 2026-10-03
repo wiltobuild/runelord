@@ -1,0 +1,8 @@
+{
+  "name": "Bloodbound Covenant",
+  "cost": "2",
+  "type": "Power",
+  "rarity": "Rare",
+  "rules": "Whenever you Summon a demon, it gains +4 Power and 6 Guard.",
+  "upgrade": "Costs 1"
+}

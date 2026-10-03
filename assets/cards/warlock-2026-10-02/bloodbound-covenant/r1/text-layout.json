@@ -1,0 +1,36 @@
+[
+  {
+    "region": "title",
+    "text": "Bloodbound Covenant",
+    "lines": [
+      "Bloodbound Covenant"
+    ],
+    "font_size": 52
+  },
+  {
+    "region": "cost",
+    "text": "2",
+    "lines": [
+      "2"
+    ],
+    "font_size": 110
+  },
+  {
+    "region": "type",
+    "text": "POWER · WARLOCK",
+    "lines": [
+      "POWER · WARLOCK"
+    ],
+    "font_size": 35
+  },
+  {
+    "region": "rules",
+    "text": "Whenever you Summon a demon, it gains +4 Power and 6 Guard.",
+    "lines": [
+      "Whenever you Summon a",
+      "demon, it gains +4 Power",
+      "and 6 Guard."
+    ],
+    "font_size": 54
+  }
+]
