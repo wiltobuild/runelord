@@ -1,0 +1,308 @@
+{
+  "variantId": "v07-ashknife-cutthroat",
+  "revision": "r4",
+  "manifestSha256": "d35aa1864e807c7ff6ef8269d3bb7de81295ff6890169abf0139a1f194a46dd2",
+  "reviewSha256": "a9ee80de31e7895e0cb46860004b199bb7a4768268769389d1a65d9f481e28dd",
+  "technicalPass": true,
+  "errors": [],
+  "frames": [
+    {
+      "file": "frames/00.png",
+      "sha256": "4a3ccaf06609162f74359845541f52533b28b694e6b91ea08653c8f16a2e554a",
+      "bbox": [
+        118,
+        159,
+        398,
+        474
+      ],
+      "dimensions": [
+        494,
+        494
+      ],
+      "alpha": [
+        0,
+        255
+      ]
+    },
+    {
+      "file": "frames/01.png",
+      "sha256": "40587a1271376e54ea57cdeb9ce97ae5aaf11158c4d3bac4af472b8624baaec5",
+      "bbox": [
+        121,
+        159,
+        396,
+        474
+      ],
+      "dimensions": [
+        494,
+        494
+      ],
+      "alpha": [
+        0,
+        255
+      ]
+    },
+    {
+      "file": "frames/02.png",
+      "sha256": "9f743dc2737deb2f4dcc36dbf0f15c750e8b43aee74d9e3e9678f2395daca7b8",
+      "bbox": [
+        119,
+        158,
+        398,
+        474
+      ],
+      "dimensions": [
+        494,
+        494
+      ],
+      "alpha": [
+        0,
+        255
+      ]
+    },
+    {
+      "file": "frames/03.png",
+      "sha256": "14e7a765c0316f64b1848812dcd049fbe658c9c8f2da7e31d0f0284fe3634350",
+      "bbox": [
+        129,
+        161,
+        390,
+        474
+      ],
+      "dimensions": [
+        494,
+        494
+      ],
+      "alpha": [
+        0,
+        255
+      ]
+    },
+    {
+      "file": "frames/04.png",
+      "sha256": "9c8cdd83d92553d0482021759921bcdf0bfddfa2a7735fc6e25f97359252f4ff",
+      "bbox": [
+        174,
+        179,
+        398,
+        474
+      ],
+      "dimensions": [
+        494,
+        494
+      ],
+      "alpha": [
+        0,
+        255
+      ]
+    },
+    {
+      "file": "frames/05.png",
+      "sha256": "923547800d517808c0e98bd5cb7715c059dd1df83c2b270184eff8a804dba77e",
+      "bbox": [
+        154,
+        186,
+        400,
+        474
+      ],
+      "dimensions": [
+        494,
+        494
+      ],
+      "alpha": [
+        0,
+        255
+      ]
+    },
+    {
+      "file": "frames/06.png",
+      "sha256": "f78e0fcfae391102a24062f15f5ce303f2db2c6ff1ed68d902567341f08c7420",
+      "bbox": [
+        21,
+        201,
+        438,
+        474
+      ],
+      "dimensions": [
+        494,
+        494
+      ],
+      "alpha": [
+        0,
+        255
+      ]
+    },
+    {
+      "file": "frames/07.png",
+      "sha256": "877851a32c483274aa5d96f64648921828f2a5f9f879d9d788e3222ef08d40ad",
+      "bbox": [
+        81,
+        183,
+        401,
+        474
+      ],
+      "dimensions": [
+        494,
+        494
+      ],
+      "alpha": [
+        0,
+        255
+      ]
+    },
+    {
+      "file": "frames/08.png",
+      "sha256": "cbfb48142cae14941d4c9d213916e089f4ef3f3ab93c28856faba837ee9d7930",
+      "bbox": [
+        117,
+        183,
+        401,
+        474
+      ],
+      "dimensions": [
+        494,
+        494
+      ],
+      "alpha": [
+        0,
+        255
+      ]
+    },
+    {
+      "file": "frames/09.png",
+      "sha256": "0aa63b4127d64af371626ef03b705c0ae0bc481a8db88ae9df70ef1b41f93b14",
+      "bbox": [
+        142,
+        183,
+        407,
+        474
+      ],
+      "dimensions": [
+        494,
+        494
+      ],
+      "alpha": [
+        0,
+        255
+      ]
+    },
+    {
+      "file": "frames/10.png",
+      "sha256": "62520858c1a2c47d52659e34dae2d3b17f56d4a4c4c43fefabdb83f0639cc41e",
+      "bbox": [
+        144,
+        183,
+        399,
+        474
+      ],
+      "dimensions": [
+        494,
+        494
+      ],
+      "alpha": [
+        0,
+        255
+      ]
+    },
+    {
+      "file": "frames/11.png",
+      "sha256": "524bdcf1420c294ce9f8f62e3cd2a03560e52918c7efd6b42cb838cae0bcc694",
+      "bbox": [
+        137,
+        211,
+        386,
+        474
+      ],
+      "dimensions": [
+        494,
+        494
+      ],
+      "alpha": [
+        0,
+        255
+      ]
+    },
+    {
+      "file": "frames/12.png",
+      "sha256": "859f605b8dbded780028cb6058da4710915f42b772c80439e8e4451c47b659fe",
+      "bbox": [
+        111,
+        207,
+        382,
+        474
+      ],
+      "dimensions": [
+        494,
+        494
+      ],
+      "alpha": [
+        0,
+        255
+      ]
+    },
+    {
+      "file": "frames/13.png",
+      "sha256": "71674cc1d0e32af90a55db255f5559d807db2f14f5c8f96c79ae5731d9045ccf",
+      "bbox": [
+        84,
+        254,
+        371,
+        474
+      ],
+      "dimensions": [
+        494,
+        494
+      ],
+      "alpha": [
+        0,
+        255
+      ]
+    },
+    {
+      "file": "frames/14.png",
+      "sha256": "ba612052b1b18afbbbe47a133e6b474cc7d1f8c36fb2ab15ecea1b684ab8dc9a",
+      "bbox": [
+        61,
+        325,
+        372,
+        474
+      ],
+      "dimensions": [
+        494,
+        494
+      ],
+      "alpha": [
+        0,
+        255
+      ]
+    },
+    {
+      "file": "frames/15.png",
+      "sha256": "4e92e7e15427e94f0b4049fdb746987f1ba0a79f700502a4cf79150aab7a37a8",
+      "bbox": [
+        69,
+        353,
+        396,
+        474
+      ],
+      "dimensions": [
+        494,
+        494
+      ],
+      "alpha": [
+        0,
+        255
+      ]
+    }
+  ],
+  "browser": {
+    "url": "http://127.0.0.1:4381/v07-ashknife-cutthroat/preview.html",
+    "observed": "All required states actually played in Chromium; no JS errors, death reached terminal hold; full and small-size on dark, full on light."
+  },
+  "visualStatus": "See independent reviewer report; this is builder evidence, not user approval.",
+  "limits": [
+    "Sparse generated poses, about300px native body height; not HD per-frame assets.",
+    "Not integrated into game.",
+    "Preview approval pending."
+  ]
+}
