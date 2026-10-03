@@ -1,0 +1,10 @@
+# v01 proof review
+Reviewed manifest 89d0c962155312420a15f39b56f4be4886269e42f05d791880095da0818bbf93; atlas eed2f0c4c28c8b8d1603231d43c9b63be85070a5647f666066f32b21acb4fa09. See metadata-audit.json for every frame hash. All 20 unique authored frames visually inspected on light contact panels at native 384 canvas (no enlargement), on dark atlas and selected separate frames. All keep recognisable cleaver, rounded pauldron, belly plates, notched ear and broad face; no dropped limbs/equipment. Prior lost cleaver hit frame01 repaired; regenerated death row avoids source overlap/cropping.
+
+Browser URL http://127.0.0.1:4381/v01-cleaver-bruiser/preview.html via Codex IAB at 1280x720. Clicked attack, hit, wounded_idle and die; live labels and screenshot samples showed state advancement and attack returning to idle. Full-size light/dark and ~96px silhouette viewed. Die reached frame3 and still held after several seconds; no console errors. This is browser playback sampled through tool screenshots, not continuous video perceptual assessment; temporal smoothness cannot be rated as polished.
+
+Pass: delivered 5 required states; alpha; no canvas-edge clipping; atlas rectangles exactly match each exported PNG; timing sums/events in range; attacked pose/impact200ms coherent; temporary hit differs from persistent wounded posture; death collapse and terminal hold. Attack recovery uses original preparation pose and then idle coherently. Guard/cast/spawn/victory not required for this variant.
+
+Limitation/P2: small stance/foot/head changes of several pixels between idle poses create jitter at full scale; sparse 4 authored poses/state creates coarse pose-to-pose motion. Native character height ~250px, not HD per-frame production master. Broad design identity retained, with simplified fine detail. Proof approach can extend, but do not report polished HD animation or exact fine-detail preservation.
+
+Technical status: pass with stated limitations. User animation design approval: pending; no self approval. Runtime game integration: not applicable/requested.

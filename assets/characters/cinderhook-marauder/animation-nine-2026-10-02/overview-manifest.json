@@ -1,0 +1,23 @@
+{
+  "file": "all-nine-review.gif",
+  "sha256": "668f11fa7489aefdf7890cdb9b49bd4bed0d75e4e3477eba541734e3f01a6175",
+  "dimensions": [
+    960,
+    1140
+  ],
+  "frames": 87,
+  "durationMs": 8700,
+  "loop": "review sequence loops; individual runtime death states remain one-shot",
+  "sourceManifestHashes": {
+    "v01-cleaver-bruiser": "f304ebc96cf8874805f4cef53de037eca0ef2f6a1d93ac0291f8ce9f8541878a",
+    "v02-ash-spear-guard": "06b79aee871c8d38a20e4b4c66098fb38962ec4bb0317c86dbdae19a0762e317",
+    "v03-twinaxe-reaver": "495e40aa821324163611929f7760a855bf94a60485273c877f59e085859f33b0",
+    "v04-cinder-crossbow-scout": "3bf137cdf3c6d906fad453ea77ab6db02cc544dd2430ef6b4b32e051c5c1b126",
+    "v05-emberbow-hunter": "d5f171b848479e9aca758009eaecb6d2a6ce69274eccc77d206cd9aa20b254ba",
+    "v06-forgehammer-sapper": "09e93a04b63e51e35119a0b0a3bc55ee1a0cdedcbd947b639c359044167f9444",
+    "v07-ashknife-cutthroat": "d35aa1864e807c7ff6ef8269d3bb7de81295ff6890169abf0139a1f194a46dd2",
+    "v08-coalhex-shaman": "d73eff62b7e91d2b143ad12374e60524faf9bca24dae8c4f9ad2430f548f968c",
+    "v09-scarblade-captain": "1c3a80d95a69e0c9600275ba94ec53d4dcf7a296c3c0f584a7c9eba02751eb76"
+  },
+  "assembly": "Original transparent frame pixels composited at review size; no new pose art or interpolation."
+}

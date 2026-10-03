@@ -1,0 +1,582 @@
+{
+  "variant": "v06-forgehammer-sapper",
+  "manifest_sha256": "09e93a04b63e51e35119a0b0a3bc55ee1a0cdedcbd947b639c359044167f9444",
+  "atlas_sha256": "f2f22b4ffa9887b39f79420aa087d696cc53d0168fd46ca6330c3136fe7fa99a",
+  "states": {
+    "idle": {
+      "frames": [
+        {
+          "file": "frames/00.png",
+          "sha256": "d5399efcbef6da3ef95fa2ad14127bab5d07ac65f0ed1119ea0156452dd5b080",
+          "size": [
+            354,
+            354
+          ],
+          "alpha_extrema": [
+            0,
+            255
+          ],
+          "bbox": [
+            43,
+            48,
+            313,
+            334
+          ],
+          "atlas_equal": true,
+          "edge_opaque": false,
+          "bottom_band_bbox": [
+            116,
+            0,
+            313,
+            30
+          ]
+        },
+        {
+          "file": "frames/01.png",
+          "sha256": "0a763d7472d04291c9eff63863190f080bf1acadcb63d94dce82e158d764de12",
+          "size": [
+            354,
+            354
+          ],
+          "alpha_extrema": [
+            0,
+            255
+          ],
+          "bbox": [
+            41,
+            47,
+            313,
+            334
+          ],
+          "atlas_equal": true,
+          "edge_opaque": false,
+          "bottom_band_bbox": [
+            109,
+            0,
+            313,
+            30
+          ]
+        },
+        {
+          "file": "frames/02.png",
+          "sha256": "3a043eae9c05d8ab3a831869b2e280933bcb20e31257665645d8a1932d3f83f7",
+          "size": [
+            354,
+            354
+          ],
+          "alpha_extrema": [
+            0,
+            255
+          ],
+          "bbox": [
+            37,
+            44,
+            312,
+            334
+          ],
+          "atlas_equal": true,
+          "edge_opaque": false,
+          "bottom_band_bbox": [
+            112,
+            0,
+            312,
+            30
+          ]
+        },
+        {
+          "file": "frames/03.png",
+          "sha256": "0b4177c5e566b328283227db35775847bdad4c22917774cbd0f55422446d1f66",
+          "size": [
+            354,
+            354
+          ],
+          "alpha_extrema": [
+            0,
+            255
+          ],
+          "bbox": [
+            42,
+            45,
+            312,
+            334
+          ],
+          "atlas_equal": true,
+          "edge_opaque": false,
+          "bottom_band_bbox": [
+            48,
+            0,
+            312,
+            30
+          ]
+        }
+      ],
+      "duration_sum": 1380,
+      "duration_agrees": true,
+      "events_in_bounds": true,
+      "loop": true,
+      "terminal": null,
+      "holdLastFrame": false,
+      "nextState": "idle"
+    },
+    "attack": {
+      "frames": [
+        {
+          "file": "frames/00.png",
+          "sha256": "d5399efcbef6da3ef95fa2ad14127bab5d07ac65f0ed1119ea0156452dd5b080",
+          "size": [
+            354,
+            354
+          ],
+          "alpha_extrema": [
+            0,
+            255
+          ],
+          "bbox": [
+            43,
+            48,
+            313,
+            334
+          ],
+          "atlas_equal": true,
+          "edge_opaque": false,
+          "bottom_band_bbox": [
+            116,
+            0,
+            313,
+            30
+          ]
+        },
+        {
+          "file": "frames/04.png",
+          "sha256": "1f0034329f6a9d77e706e435fdf09f889aa9a2cd661b61999b170c2c618758a5",
+          "size": [
+            354,
+            354
+          ],
+          "alpha_extrema": [
+            0,
+            255
+          ],
+          "bbox": [
+            99,
+            27,
+            324,
+            334
+          ],
+          "atlas_equal": true,
+          "edge_opaque": false,
+          "bottom_band_bbox": [
+            110,
+            0,
+            324,
+            30
+          ]
+        },
+        {
+          "file": "frames/05.png",
+          "sha256": "1fed0a5ea43319289739fab0c2f49acdf0af386ea01e35a15974922911ef417a",
+          "size": [
+            354,
+            354
+          ],
+          "alpha_extrema": [
+            0,
+            255
+          ],
+          "bbox": [
+            96,
+            17,
+            331,
+            334
+          ],
+          "atlas_equal": true,
+          "edge_opaque": false,
+          "bottom_band_bbox": [
+            96,
+            0,
+            331,
+            30
+          ]
+        },
+        {
+          "file": "frames/06.png",
+          "sha256": "ef108e30900bc24e0615d2a5649dcc0905cc57a859370cfc3820d19701a23909",
+          "size": [
+            354,
+            354
+          ],
+          "alpha_extrema": [
+            0,
+            255
+          ],
+          "bbox": [
+            42,
+            101,
+            328,
+            334
+          ],
+          "atlas_equal": true,
+          "edge_opaque": false,
+          "bottom_band_bbox": [
+            47,
+            0,
+            328,
+            30
+          ]
+        },
+        {
+          "file": "frames/07.png",
+          "sha256": "90397fe0e58c133db6d8ee0d66d302f3b402d67fc31542921650b2c5f2994f2a",
+          "size": [
+            354,
+            354
+          ],
+          "alpha_extrema": [
+            0,
+            255
+          ],
+          "bbox": [
+            42,
+            123,
+            319,
+            334
+          ],
+          "atlas_equal": true,
+          "edge_opaque": false,
+          "bottom_band_bbox": [
+            48,
+            0,
+            319,
+            30
+          ]
+        },
+        {
+          "file": "frames/09.png",
+          "sha256": "4537dc5ad71478e755224a3d9ffe5f61f3a425db00d126a4df233ab440e0c7ee",
+          "size": [
+            354,
+            354
+          ],
+          "alpha_extrema": [
+            0,
+            255
+          ],
+          "bbox": [
+            42,
+            58,
+            325,
+            334
+          ],
+          "atlas_equal": true,
+          "edge_opaque": false,
+          "bottom_band_bbox": [
+            109,
+            0,
+            325,
+            30
+          ]
+        }
+      ],
+      "duration_sum": 700,
+      "duration_agrees": true,
+      "events_in_bounds": true,
+      "loop": false,
+      "terminal": null,
+      "holdLastFrame": false,
+      "nextState": "idle"
+    },
+    "hit": {
+      "frames": [
+        {
+          "file": "frames/00.png",
+          "sha256": "d5399efcbef6da3ef95fa2ad14127bab5d07ac65f0ed1119ea0156452dd5b080",
+          "size": [
+            354,
+            354
+          ],
+          "alpha_extrema": [
+            0,
+            255
+          ],
+          "bbox": [
+            43,
+            48,
+            313,
+            334
+          ],
+          "atlas_equal": true,
+          "edge_opaque": false,
+          "bottom_band_bbox": [
+            116,
+            0,
+            313,
+            30
+          ]
+        },
+        {
+          "file": "frames/08.png",
+          "sha256": "900b1384a0592cb04bb117bbd8bebe797d9a24dc7b3ef068a00fa1eb0ac197c3",
+          "size": [
+            354,
+            354
+          ],
+          "alpha_extrema": [
+            0,
+            255
+          ],
+          "bbox": [
+            43,
+            45,
+            310,
+            334
+          ],
+          "atlas_equal": true,
+          "edge_opaque": false,
+          "bottom_band_bbox": [
+            88,
+            0,
+            310,
+            30
+          ]
+        },
+        {
+          "file": "frames/09.png",
+          "sha256": "4537dc5ad71478e755224a3d9ffe5f61f3a425db00d126a4df233ab440e0c7ee",
+          "size": [
+            354,
+            354
+          ],
+          "alpha_extrema": [
+            0,
+            255
+          ],
+          "bbox": [
+            42,
+            58,
+            325,
+            334
+          ],
+          "atlas_equal": true,
+          "edge_opaque": false,
+          "bottom_band_bbox": [
+            109,
+            0,
+            325,
+            30
+          ]
+        }
+      ],
+      "duration_sum": 320,
+      "duration_agrees": true,
+      "events_in_bounds": true,
+      "loop": false,
+      "terminal": null,
+      "holdLastFrame": false,
+      "nextState": "idle"
+    },
+    "wounded_idle": {
+      "frames": [
+        {
+          "file": "frames/10.png",
+          "sha256": "cbc955b50a251ff9255b3fecfd7e134983133108917e48e14b9a98f7b8c9956f",
+          "size": [
+            354,
+            354
+          ],
+          "alpha_extrema": [
+            0,
+            255
+          ],
+          "bbox": [
+            46,
+            81,
+            327,
+            334
+          ],
+          "atlas_equal": true,
+          "edge_opaque": false,
+          "bottom_band_bbox": [
+            55,
+            0,
+            327,
+            30
+          ]
+        },
+        {
+          "file": "frames/11.png",
+          "sha256": "ba0530db7cefa966fca7c8d611a33f940755d4e2be6f9d18dcb8fcbc16abae76",
+          "size": [
+            354,
+            354
+          ],
+          "alpha_extrema": [
+            0,
+            255
+          ],
+          "bbox": [
+            42,
+            94,
+            328,
+            334
+          ],
+          "atlas_equal": true,
+          "edge_opaque": false,
+          "bottom_band_bbox": [
+            49,
+            0,
+            328,
+            30
+          ]
+        }
+      ],
+      "duration_sum": 1000,
+      "duration_agrees": true,
+      "events_in_bounds": true,
+      "loop": true,
+      "terminal": null,
+      "holdLastFrame": false,
+      "nextState": "wounded_idle"
+    },
+    "die": {
+      "frames": [
+        {
+          "file": "frames/00.png",
+          "sha256": "d5399efcbef6da3ef95fa2ad14127bab5d07ac65f0ed1119ea0156452dd5b080",
+          "size": [
+            354,
+            354
+          ],
+          "alpha_extrema": [
+            0,
+            255
+          ],
+          "bbox": [
+            43,
+            48,
+            313,
+            334
+          ],
+          "atlas_equal": true,
+          "edge_opaque": false,
+          "bottom_band_bbox": [
+            116,
+            0,
+            313,
+            30
+          ]
+        },
+        {
+          "file": "frames/12.png",
+          "sha256": "6d0725ad2e5434de080ff8e601b9c19eebe074bc57c51f1b4539e0bae04bb693",
+          "size": [
+            354,
+            354
+          ],
+          "alpha_extrema": [
+            0,
+            255
+          ],
+          "bbox": [
+            49,
+            82,
+            343,
+            334
+          ],
+          "atlas_equal": true,
+          "edge_opaque": false,
+          "bottom_band_bbox": [
+            56,
+            0,
+            343,
+            30
+          ]
+        },
+        {
+          "file": "frames/13.png",
+          "sha256": "c1222c355333fb5720bc3291e8ee7d443678c56b4cadba5a9fd56ee0644b798e",
+          "size": [
+            354,
+            354
+          ],
+          "alpha_extrema": [
+            0,
+            255
+          ],
+          "bbox": [
+            47,
+            107,
+            345,
+            334
+          ],
+          "atlas_equal": true,
+          "edge_opaque": false,
+          "bottom_band_bbox": [
+            58,
+            0,
+            345,
+            30
+          ]
+        },
+        {
+          "file": "frames/14.png",
+          "sha256": "9927f63369fcf79690ccefcc36c5f694ab01581e1061f408a361379a2a5d7476",
+          "size": [
+            354,
+            354
+          ],
+          "alpha_extrema": [
+            0,
+            255
+          ],
+          "bbox": [
+            29,
+            145,
+            330,
+            334
+          ],
+          "atlas_equal": true,
+          "edge_opaque": false,
+          "bottom_band_bbox": [
+            29,
+            0,
+            147,
+            30
+          ]
+        },
+        {
+          "file": "frames/15.png",
+          "sha256": "1fb73d6388c6f8118d88041d5dcb86b63a5f78871d8a78c0ee21b75cb99dbd0e",
+          "size": [
+            354,
+            354
+          ],
+          "alpha_extrema": [
+            0,
+            255
+          ],
+          "bbox": [
+            23,
+            168,
+            324,
+            334
+          ],
+          "atlas_equal": true,
+          "edge_opaque": false,
+          "bottom_band_bbox": [
+            29,
+            0,
+            141,
+            30
+          ]
+        }
+      ],
+      "duration_sum": 1720,
+      "duration_agrees": true,
+      "events_in_bounds": true,
+      "loop": false,
+      "terminal": "hold final frame",
+      "holdLastFrame": true,
+      "nextState": null
+    }
+  }
+}

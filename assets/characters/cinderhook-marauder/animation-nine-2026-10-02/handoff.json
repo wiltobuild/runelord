@@ -1,0 +1,1092 @@
+{
+  "contract_version": 2,
+  "character_id": "cinderhook-marauder-nine",
+  "display_name": "Nine Red Fire Goblins",
+  "project": "C:\\Users\\wilsh\\Projects\\runelord",
+  "role": "enemy goblin clan variants",
+  "rig_family": "humanoid",
+  "size_class": "medium",
+  "scope_override": "User explicitly requested nine variants and now requests their animation. Nine approved variants replace three-variant default.",
+  "authorization": "get these animated with hd-animate-fantasy-character start with the red goblins",
+  "base": {
+    "asset_path": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\concepts\\fire-monsters-20-2026-10-02\\cinderhook-marauder\\base-r1.png",
+    "sha256": "02772b9baa1e44618e8bdcbedc6faf8bee009f82a208c512a1fab8f99532e11d",
+    "approval": {
+      "status": "Approved",
+      "at": "2026-10-02T22:20:49.176Z",
+      "evidenceId": "81f7d341-1ff0-4086-a03c-13c509290822",
+      "paths": [
+        "C:\\Users\\wilsh\\Projects\\runelord\\assets\\approvals\\inbox\\cinderhook-marauder\\base-r1\\base-r1.png"
+      ]
+    },
+    "status": "reference; nine approved variant masters are animation identities"
+  },
+  "variants": [
+    {
+      "id": "v01-cleaver-bruiser",
+      "name": "Cleaver Bruiser",
+      "revision": "r1",
+      "asset": "v01-cleaver-bruiser-r1.png",
+      "sha256": "da834c1b149010a32fb5d21697d8110ff5737ac0d2ae427499ac665d84910e7f",
+      "dimensions": [
+        1122,
+        1402
+      ],
+      "alpha_range": [
+        0,
+        255
+      ],
+      "transparent_pixel_count": 952777,
+      "solid_bbox": [
+        15,
+        135,
+        1118,
+        1322
+      ],
+      "differences": "Weapon: ONE oversized broad chipped cleaver, carried low in forward hand; other hand clenched. FACE: broad square jaw, SHORT blunt wedge nose (much shorter than original), heavy uneven brow, one small lower tusk; closed scowl. EARS: short broad triangular ears, a large V-notch in the visible ear. ARMOR: layered iron belly plates, single rounded riveted pauldron rather than original square shoulder block. CLOTHING: sleeveless charcoal padded vest, short split oxblood leather skirt, wide knee wraps, squat reinforced boots. Chunky strong build, recognizable goblin proportions.",
+      "approval": {
+        "status": "Approved",
+        "at": "2026-10-02T22:20:49.176Z",
+        "evidenceId": "5d19f38e-717c-47c4-a421-882d163c7579",
+        "paths": [
+          "C:\\Users\\wilsh\\Projects\\runelord\\assets\\approvals\\inbox\\cinderhook-marauder\\v01-cleaver-bruiser-r1\\v01-cleaver-bruiser-r1.png"
+        ]
+      },
+      "construction": {
+        "status": "proposed, flattened art only",
+        "parts": [
+          "pelvis",
+          "torso",
+          "neck/head",
+          "ears",
+          "upper/lower arms and hands",
+          "thighs/shins/feet",
+          "weapon(s)",
+          "shield where present",
+          "cloth/cape panels"
+        ],
+        "pivots": "unresolved; joint centers in top-left pixel coordinates",
+        "attachments": "weapon grips to hands, shield to forearm, cloth to shoulder/waist",
+        "layers": "rear limbs, body, front limbs, held kit, cloth overlays",
+        "limitations": "hidden surfaces and overlap margins need generation before rigging; weapon mechanics differ per variant"
+      },
+      "facing": "left",
+      "animations_delivered": [],
+      "planned_states": [
+        "idle",
+        "attack",
+        "hit",
+        "wounded_idle",
+        "die"
+      ],
+      "conditional_states": {
+        "cast": "required for shaman",
+        "guard": "required for spear guard and captain",
+        "spawn": "not assigned to this enemy variant request",
+        "victory": "not assigned"
+      },
+      "prompt_file": "v01-cleaver-bruiser-prompt.txt",
+      "gallery_submission": {
+        "path": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\approvals\\inbox\\cinderhook-marauder\\v01-cleaver-bruiser-r1\\v01-cleaver-bruiser-r1.png",
+        "sha256": "da834c1b149010a32fb5d21697d8110ff5737ac0d2ae427499ac665d84910e7f",
+        "status": "Pending approval",
+        "gallery": "http://localhost:4317"
+      },
+      "gallery_verified": {
+        "id": "4105a81b778c461c188bdee0",
+        "url": "http://localhost:4317/asset/4105a81b778c461c188bdee0",
+        "status": "Pending approval"
+      },
+      "asset_path": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\characters\\cinderhook-marauder\\variants-nine-2026-10-02\\v01-cleaver-bruiser-r1.png",
+      "required_states": [
+        "idle",
+        "attack",
+        "hit",
+        "wounded_idle",
+        "die"
+      ]
+    },
+    {
+      "id": "v02-ash-spear-guard",
+      "name": "Ash Spear Guard",
+      "revision": "r1",
+      "asset": "v02-ash-spear-guard-r1.png",
+      "sha256": "2b39f9bb0e54195bebeffe08bbcba3dc002d6acfbaab088c672eebf0dd895013",
+      "dimensions": [
+        1122,
+        1402
+      ],
+      "alpha_range": [
+        0,
+        255
+      ],
+      "transparent_pixel_count": 1045366,
+      "solid_bbox": [
+        96,
+        24,
+        1090,
+        1361
+      ],
+      "differences": "Weapon: ONE long ashwood spear with leaf-shaped ember-edged iron head held upright diagonally clear of face, and a SMALL round battered iron buckler on opposite arm. FACE: elongated narrow jaw, straight thin nose, high cheekbones, small underbite, stern squint. EARS: one long upright pointed ear, opposite ear bent outward at its midsection, both clearly visible. ARMOR: narrow layered shoulder lames and iron shin guards, no huge original pauldron. CLOTHING: knee-length sleeveless ochre-grey quilted gambeson over oxblood trousers, simple red neck wrap, plain strapped boots. Same species and scale.",
+      "approval": {
+        "status": "Approved",
+        "at": "2026-10-02T22:20:49.176Z",
+        "evidenceId": "1317f234-e2c1-48df-b2e5-52143a6e5243",
+        "paths": [
+          "C:\\Users\\wilsh\\Projects\\runelord\\assets\\approvals\\inbox\\cinderhook-marauder\\v02-ash-spear-guard-r1\\v02-ash-spear-guard-r1.png"
+        ]
+      },
+      "construction": {
+        "status": "proposed, flattened art only",
+        "parts": [
+          "pelvis",
+          "torso",
+          "neck/head",
+          "ears",
+          "upper/lower arms and hands",
+          "thighs/shins/feet",
+          "weapon(s)",
+          "shield where present",
+          "cloth/cape panels"
+        ],
+        "pivots": "unresolved; joint centers in top-left pixel coordinates",
+        "attachments": "weapon grips to hands, shield to forearm, cloth to shoulder/waist",
+        "layers": "rear limbs, body, front limbs, held kit, cloth overlays",
+        "limitations": "hidden surfaces and overlap margins need generation before rigging; weapon mechanics differ per variant"
+      },
+      "facing": "left",
+      "animations_delivered": [],
+      "planned_states": [
+        "idle",
+        "attack",
+        "hit",
+        "wounded_idle",
+        "die"
+      ],
+      "conditional_states": {
+        "cast": "required for shaman",
+        "guard": "required for spear guard and captain",
+        "spawn": "not assigned to this enemy variant request",
+        "victory": "not assigned"
+      },
+      "prompt_file": "v02-ash-spear-guard-prompt.txt",
+      "gallery_submission": {
+        "path": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\approvals\\inbox\\cinderhook-marauder\\v02-ash-spear-guard-r1\\v02-ash-spear-guard-r1.png",
+        "sha256": "2b39f9bb0e54195bebeffe08bbcba3dc002d6acfbaab088c672eebf0dd895013",
+        "status": "Pending approval",
+        "gallery": "http://localhost:4317"
+      },
+      "gallery_verified": {
+        "id": "d6e39cbbbc1c37a520f6b4a8",
+        "url": "http://localhost:4317/asset/d6e39cbbbc1c37a520f6b4a8",
+        "status": "Pending approval"
+      },
+      "asset_path": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\characters\\cinderhook-marauder\\variants-nine-2026-10-02\\v02-ash-spear-guard-r1.png",
+      "required_states": [
+        "idle",
+        "attack",
+        "hit",
+        "wounded_idle",
+        "die",
+        "guard"
+      ]
+    },
+    {
+      "id": "v03-twinaxe-reaver",
+      "name": "Twinaxe Reaver",
+      "revision": "r1",
+      "asset": "v03-twinaxe-reaver-r1.png",
+      "sha256": "fd71c5d825bad8f1035481a2d3b2ffa6b443e89c2497451cfba9a46ba99efa9b",
+      "dimensions": [
+        1122,
+        1402
+      ],
+      "alpha_range": [
+        0,
+        255
+      ],
+      "transparent_pixel_count": 997642,
+      "solid_bbox": [
+        29,
+        88,
+        1108,
+        1332
+      ],
+      "differences": "Weapons: TWO compact single-bladed axes, one per hand, both heads fully visible and different from hook weapon. FACE: broad triangular face, crooked flattened nose, jagged lower tooth visible in a hostile half-snarl, shaved scalp with short black central bristle crest. EARS: long swept-out triangular ears with deeply ragged tips, no jewelry. ARMOR: crossed leather chest straps, heavy iron bracers and one rib plate; bare shoulders and red chest. CLOTHING: ragged ash-grey waist wrap over dark oxblood cropped trousers, bandaged calves and open-toed leather foot wraps. Preserve tough stylized body scale.",
+      "approval": {
+        "status": "Approved",
+        "at": "2026-10-02T22:20:49.176Z",
+        "evidenceId": "eee44240-fdf0-4c1b-8181-19797f97f9cf",
+        "paths": [
+          "C:\\Users\\wilsh\\Projects\\runelord\\assets\\approvals\\inbox\\cinderhook-marauder\\v03-twinaxe-reaver-r1\\v03-twinaxe-reaver-r1.png"
+        ]
+      },
+      "construction": {
+        "status": "proposed, flattened art only",
+        "parts": [
+          "pelvis",
+          "torso",
+          "neck/head",
+          "ears",
+          "upper/lower arms and hands",
+          "thighs/shins/feet",
+          "weapon(s)",
+          "shield where present",
+          "cloth/cape panels"
+        ],
+        "pivots": "unresolved; joint centers in top-left pixel coordinates",
+        "attachments": "weapon grips to hands, shield to forearm, cloth to shoulder/waist",
+        "layers": "rear limbs, body, front limbs, held kit, cloth overlays",
+        "limitations": "hidden surfaces and overlap margins need generation before rigging; weapon mechanics differ per variant"
+      },
+      "facing": "left",
+      "animations_delivered": [],
+      "planned_states": [
+        "idle",
+        "attack",
+        "hit",
+        "wounded_idle",
+        "die"
+      ],
+      "conditional_states": {
+        "cast": "required for shaman",
+        "guard": "required for spear guard and captain",
+        "spawn": "not assigned to this enemy variant request",
+        "victory": "not assigned"
+      },
+      "prompt_file": "v03-twinaxe-reaver-prompt.txt",
+      "gallery_submission": {
+        "path": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\approvals\\inbox\\cinderhook-marauder\\v03-twinaxe-reaver-r1\\v03-twinaxe-reaver-r1.png",
+        "sha256": "fd71c5d825bad8f1035481a2d3b2ffa6b443e89c2497451cfba9a46ba99efa9b",
+        "status": "Pending approval",
+        "gallery": "http://localhost:4317"
+      },
+      "gallery_verified": {
+        "id": "56ce1f713c68886dc251e265",
+        "url": "http://localhost:4317/asset/56ce1f713c68886dc251e265",
+        "status": "Pending approval"
+      },
+      "asset_path": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\characters\\cinderhook-marauder\\variants-nine-2026-10-02\\v03-twinaxe-reaver-r1.png",
+      "required_states": [
+        "idle",
+        "attack",
+        "hit",
+        "wounded_idle",
+        "die"
+      ]
+    },
+    {
+      "id": "v04-cinder-crossbow-scout",
+      "name": "Cinder Crossbow Scout",
+      "revision": "r1",
+      "asset": "v04-cinder-crossbow-scout-r1.png",
+      "sha256": "c1762ca4c6db2da68f9bb2c6f582ddc5031b9c0e39b12bc634e78bba23329edf",
+      "dimensions": [
+        1122,
+        1402
+      ],
+      "alpha_range": [
+        0,
+        255
+      ],
+      "transparent_pixel_count": 1068734,
+      "solid_bbox": [
+        43,
+        88,
+        1101,
+        1356
+      ],
+      "differences": "Weapon: ONE compact chunky wooden-and-iron CROSSBOW held with two hands below chest aiming generally left and slightly down, clear of face; closed bolt case at hip. FACE: long sharp face, slightly bent long nose, tight thin mouth and one broad healed cheek scar; alert narrowed eyes. EARS: two long narrow ears swept backward close to skull, ONE missing a triangular tip. ARMOR: small asymmetrical leather shoulder pads and a rectangular chest plate, no huge iron shoulder. CLOTHING: short charcoal hood pushed DOWN behind head so entire face and ears visible, fitted oxblood leather jacket, belted brown trousers and knee-high narrow boots. No quiver of arrows, no firearm.",
+      "approval": {
+        "status": "Approved",
+        "at": "2026-10-02T22:20:49.176Z",
+        "evidenceId": "25408795-28bc-4a78-bb62-d9bfea65859d",
+        "paths": [
+          "C:\\Users\\wilsh\\Projects\\runelord\\assets\\approvals\\inbox\\cinderhook-marauder\\v04-cinder-crossbow-scout-r1\\v04-cinder-crossbow-scout-r1.png"
+        ]
+      },
+      "construction": {
+        "status": "proposed, flattened art only",
+        "parts": [
+          "pelvis",
+          "torso",
+          "neck/head",
+          "ears",
+          "upper/lower arms and hands",
+          "thighs/shins/feet",
+          "weapon(s)",
+          "shield where present",
+          "cloth/cape panels"
+        ],
+        "pivots": "unresolved; joint centers in top-left pixel coordinates",
+        "attachments": "weapon grips to hands, shield to forearm, cloth to shoulder/waist",
+        "layers": "rear limbs, body, front limbs, held kit, cloth overlays",
+        "limitations": "hidden surfaces and overlap margins need generation before rigging; weapon mechanics differ per variant"
+      },
+      "facing": "left",
+      "animations_delivered": [],
+      "planned_states": [
+        "idle",
+        "attack",
+        "hit",
+        "wounded_idle",
+        "die"
+      ],
+      "conditional_states": {
+        "cast": "required for shaman",
+        "guard": "required for spear guard and captain",
+        "spawn": "not assigned to this enemy variant request",
+        "victory": "not assigned"
+      },
+      "prompt_file": "v04-cinder-crossbow-scout-prompt.txt",
+      "gallery_submission": {
+        "path": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\approvals\\inbox\\cinderhook-marauder\\v04-cinder-crossbow-scout-r1\\v04-cinder-crossbow-scout-r1.png",
+        "sha256": "c1762ca4c6db2da68f9bb2c6f582ddc5031b9c0e39b12bc634e78bba23329edf",
+        "status": "Pending approval",
+        "gallery": "http://localhost:4317"
+      },
+      "gallery_verified": {
+        "id": "97a46067a0ff5db9d2903d01",
+        "url": "http://localhost:4317/asset/97a46067a0ff5db9d2903d01",
+        "status": "Pending approval"
+      },
+      "asset_path": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\characters\\cinderhook-marauder\\variants-nine-2026-10-02\\v04-cinder-crossbow-scout-r1.png",
+      "required_states": [
+        "idle",
+        "attack",
+        "hit",
+        "wounded_idle",
+        "die"
+      ]
+    },
+    {
+      "id": "v05-emberbow-hunter",
+      "name": "Emberbow Hunter",
+      "revision": "r1",
+      "asset": "v05-emberbow-hunter-r1.png",
+      "sha256": "3513778d465cfda10e5221cf8ef7fd603934ba7c84ba2d96013aee0382e0df24",
+      "dimensions": [
+        1122,
+        1402
+      ],
+      "alpha_range": [
+        0,
+        255
+      ],
+      "transparent_pixel_count": 999328,
+      "solid_bbox": [
+        33,
+        23,
+        1104,
+        1375
+      ],
+      "differences": "Weapon: ONE angular wooden SHORTBOW held low at left side and ONE arrow in opposite hand, visible arrow quiver on back. FACE: wide high cheekbones, short pointed upturned nose, small pointed chin and one raised brow; serious focused mouth. EARS: extremely long fine blade-shaped ears angled upward symmetrically, one small round piercing near lower ear edge. ARMOR: overlapped leather scales across chest with a single bronze forearm guard, no metal shoulder plate. CLOTHING: sleeveless rust-brown tunic, split charcoal cloak reaching mid-thigh, grey cloth belt and soft tall boots with red wraps. Distinct woodland-hunter kit within volcanic goblin palette.",
+      "approval": {
+        "status": "Approved",
+        "at": "2026-10-02T22:20:49.176Z",
+        "evidenceId": "bf104a58-4e6f-4038-975e-9c1c62c4f270",
+        "paths": [
+          "C:\\Users\\wilsh\\Projects\\runelord\\assets\\approvals\\inbox\\cinderhook-marauder\\v05-emberbow-hunter-r1\\v05-emberbow-hunter-r1.png"
+        ]
+      },
+      "construction": {
+        "status": "proposed, flattened art only",
+        "parts": [
+          "pelvis",
+          "torso",
+          "neck/head",
+          "ears",
+          "upper/lower arms and hands",
+          "thighs/shins/feet",
+          "weapon(s)",
+          "shield where present",
+          "cloth/cape panels"
+        ],
+        "pivots": "unresolved; joint centers in top-left pixel coordinates",
+        "attachments": "weapon grips to hands, shield to forearm, cloth to shoulder/waist",
+        "layers": "rear limbs, body, front limbs, held kit, cloth overlays",
+        "limitations": "hidden surfaces and overlap margins need generation before rigging; weapon mechanics differ per variant"
+      },
+      "facing": "left",
+      "animations_delivered": [],
+      "planned_states": [
+        "idle",
+        "attack",
+        "hit",
+        "wounded_idle",
+        "die"
+      ],
+      "conditional_states": {
+        "cast": "required for shaman",
+        "guard": "required for spear guard and captain",
+        "spawn": "not assigned to this enemy variant request",
+        "victory": "not assigned"
+      },
+      "prompt_file": "v05-emberbow-hunter-prompt.txt",
+      "gallery_submission": {
+        "path": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\approvals\\inbox\\cinderhook-marauder\\v05-emberbow-hunter-r1\\v05-emberbow-hunter-r1.png",
+        "sha256": "3513778d465cfda10e5221cf8ef7fd603934ba7c84ba2d96013aee0382e0df24",
+        "status": "Pending approval",
+        "gallery": "http://localhost:4317"
+      },
+      "gallery_verified": {
+        "id": "ed4847763f82eeb499f1f580",
+        "url": "http://localhost:4317/asset/ed4847763f82eeb499f1f580",
+        "status": "Pending approval"
+      },
+      "asset_path": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\characters\\cinderhook-marauder\\variants-nine-2026-10-02\\v05-emberbow-hunter-r1.png",
+      "required_states": [
+        "idle",
+        "attack",
+        "hit",
+        "wounded_idle",
+        "die"
+      ]
+    },
+    {
+      "id": "v06-forgehammer-sapper",
+      "name": "Forgehammer Sapper",
+      "revision": "r1",
+      "asset": "v06-forgehammer-sapper-r1.png",
+      "sha256": "4b276d1e55e995d54b0d0ba5f3c4ff280c4de944a030bfaeccb52585426312e3",
+      "dimensions": [
+        1122,
+        1402
+      ],
+      "alpha_range": [
+        0,
+        255
+      ],
+      "transparent_pixel_count": 896813,
+      "solid_bbox": [
+        25,
+        114,
+        1100,
+        1358
+      ],
+      "differences": "Weapon: ONE chunky squared smithing WARHAMMER on medium haft, held with both hands low across body; two closed spherical iron bomb canisters secured to belt (no burning fuses). FACE: broad short face, flattened wide nose, heavy low brows, protruding chin, one small ear-to-jaw scar. EARS: short broad outward-flaring ears, one rounded torn tip and one angular intact tip. ARMOR: rectangular leather-and-iron knee pads and heavy work gloves, plain iron chest bib. CLOTHING: thick ochre leather smith apron over charcoal short-sleeved shirt and oxblood trousers, squat work boots; brass goggles resting on FOREHEAD without covering eyes or ears. Stocky but same fundamental goblin body and red skin.",
+      "approval": {
+        "status": "Approved",
+        "at": "2026-10-02T22:20:49.176Z",
+        "evidenceId": "041efecf-e970-4552-95a0-852bca8ef3fc",
+        "paths": [
+          "C:\\Users\\wilsh\\Projects\\runelord\\assets\\approvals\\inbox\\cinderhook-marauder\\v06-forgehammer-sapper-r1\\v06-forgehammer-sapper-r1.png"
+        ]
+      },
+      "construction": {
+        "status": "proposed, flattened art only",
+        "parts": [
+          "pelvis",
+          "torso",
+          "neck/head",
+          "ears",
+          "upper/lower arms and hands",
+          "thighs/shins/feet",
+          "weapon(s)",
+          "shield where present",
+          "cloth/cape panels"
+        ],
+        "pivots": "unresolved; joint centers in top-left pixel coordinates",
+        "attachments": "weapon grips to hands, shield to forearm, cloth to shoulder/waist",
+        "layers": "rear limbs, body, front limbs, held kit, cloth overlays",
+        "limitations": "hidden surfaces and overlap margins need generation before rigging; weapon mechanics differ per variant"
+      },
+      "facing": "left",
+      "animations_delivered": [],
+      "planned_states": [
+        "idle",
+        "attack",
+        "hit",
+        "wounded_idle",
+        "die"
+      ],
+      "conditional_states": {
+        "cast": "required for shaman",
+        "guard": "required for spear guard and captain",
+        "spawn": "not assigned to this enemy variant request",
+        "victory": "not assigned"
+      },
+      "prompt_file": "v06-forgehammer-sapper-prompt.txt",
+      "gallery_submission": {
+        "path": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\approvals\\inbox\\cinderhook-marauder\\v06-forgehammer-sapper-r1\\v06-forgehammer-sapper-r1.png",
+        "sha256": "4b276d1e55e995d54b0d0ba5f3c4ff280c4de944a030bfaeccb52585426312e3",
+        "status": "Pending approval",
+        "gallery": "http://localhost:4317"
+      },
+      "gallery_verified": {
+        "id": "5a1a0ddae5ddbd18dcfc17f8",
+        "url": "http://localhost:4317/asset/5a1a0ddae5ddbd18dcfc17f8",
+        "status": "Pending approval"
+      },
+      "asset_path": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\characters\\cinderhook-marauder\\variants-nine-2026-10-02\\v06-forgehammer-sapper-r1.png",
+      "required_states": [
+        "idle",
+        "attack",
+        "hit",
+        "wounded_idle",
+        "die"
+      ]
+    },
+    {
+      "id": "v07-ashknife-cutthroat",
+      "name": "Ashknife Cutthroat",
+      "revision": "r1",
+      "asset": "v07-ashknife-cutthroat-r1.png",
+      "sha256": "cbffcc231d3d90fd9e58297d7c1f01cfcf0847ff29af8945d69f792821ef323f",
+      "dimensions": [
+        1122,
+        1402
+      ],
+      "alpha_range": [
+        0,
+        255
+      ],
+      "transparent_pixel_count": 1065983,
+      "solid_bbox": [
+        37,
+        107,
+        1099,
+        1340
+      ],
+      "differences": "Weapons: TWO unequal daggers, one long straight stabbing blade forward and one short recurved knife held low in reverse grip. FACE: sharply tapered face, prominent hooked chin, medium hooked nose, thin compressed lips, asymmetric skeptical brow, no face covering. EARS: long low-set pointed ears angled DOWN and outward, two simple edge notches on visible ear. ARMOR: fitted dark leather brigandine with only four large iron studs, small elbow guards, no shoulder armor. CLOTHING: short one-sided ash-grey shoulder cape, deep burgundy split tunic and loose charcoal trousers tucked into soft ankle boots. Narrow but anatomically coherent stance, both feet grounded, not a lunging action pose.",
+      "approval": {
+        "status": "Approved",
+        "at": "2026-10-02T22:20:49.176Z",
+        "evidenceId": "e5e57466-adb2-46d7-bc18-2d79d0d6b0fc",
+        "paths": [
+          "C:\\Users\\wilsh\\Projects\\runelord\\assets\\approvals\\inbox\\cinderhook-marauder\\v07-ashknife-cutthroat-r1\\v07-ashknife-cutthroat-r1.png"
+        ]
+      },
+      "construction": {
+        "status": "proposed, flattened art only",
+        "parts": [
+          "pelvis",
+          "torso",
+          "neck/head",
+          "ears",
+          "upper/lower arms and hands",
+          "thighs/shins/feet",
+          "weapon(s)",
+          "shield where present",
+          "cloth/cape panels"
+        ],
+        "pivots": "unresolved; joint centers in top-left pixel coordinates",
+        "attachments": "weapon grips to hands, shield to forearm, cloth to shoulder/waist",
+        "layers": "rear limbs, body, front limbs, held kit, cloth overlays",
+        "limitations": "hidden surfaces and overlap margins need generation before rigging; weapon mechanics differ per variant"
+      },
+      "facing": "left",
+      "animations_delivered": [],
+      "planned_states": [
+        "idle",
+        "attack",
+        "hit",
+        "wounded_idle",
+        "die"
+      ],
+      "conditional_states": {
+        "cast": "required for shaman",
+        "guard": "required for spear guard and captain",
+        "spawn": "not assigned to this enemy variant request",
+        "victory": "not assigned"
+      },
+      "prompt_file": "v07-ashknife-cutthroat-prompt.txt",
+      "gallery_submission": {
+        "path": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\approvals\\inbox\\cinderhook-marauder\\v07-ashknife-cutthroat-r1\\v07-ashknife-cutthroat-r1.png",
+        "sha256": "cbffcc231d3d90fd9e58297d7c1f01cfcf0847ff29af8945d69f792821ef323f",
+        "status": "Pending approval",
+        "gallery": "http://localhost:4317"
+      },
+      "gallery_verified": {
+        "id": "5308275d7b32e2590a0f0532",
+        "url": "http://localhost:4317/asset/5308275d7b32e2590a0f0532",
+        "status": "Pending approval"
+      },
+      "asset_path": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\characters\\cinderhook-marauder\\variants-nine-2026-10-02\\v07-ashknife-cutthroat-r1.png",
+      "required_states": [
+        "idle",
+        "attack",
+        "hit",
+        "wounded_idle",
+        "die"
+      ]
+    },
+    {
+      "id": "v08-coalhex-shaman",
+      "name": "Coalhex Shaman",
+      "revision": "r1",
+      "asset": "v08-coalhex-shaman-r1.png",
+      "sha256": "86c64514a248dccb5b4e21bc337fc14cc2454f57e9dc75e0051989d01d2b61f3",
+      "dimensions": [
+        1122,
+        1402
+      ],
+      "alpha_range": [
+        0,
+        255
+      ],
+      "transparent_pixel_count": 960495,
+      "solid_bbox": [
+        28,
+        13,
+        1094,
+        1364
+      ],
+      "differences": "Weapon: ONE knotted blackwood staff with three thick prongs enclosing a single solid ember stone, other hand open at waist in restrained casting pose. FACE: elderly long face, deep stylized brow crease, broad hooked nose, two small lower teeth and elongated chin; bald scalp, stern scowl. EARS: two VERY LONG drooping spear-shaped ears extending sideways then bending downward, one small brass ring on one ear only; fully exposed. ARMOR: one small bronze chest clasp and broad leather forearm wraps, NO shoulder plates. CLOTHING: layered knee-length ash-grey robes with oxblood geometric hems, wide rope sash with two large clay charms, leather sandals; no hood over head. No cloud or effects, crisp solid ember only.",
+      "approval": {
+        "status": "Approved",
+        "at": "2026-10-02T22:20:49.176Z",
+        "evidenceId": "ba0ac405-598c-40f4-ad03-678ee21c9914",
+        "paths": [
+          "C:\\Users\\wilsh\\Projects\\runelord\\assets\\approvals\\inbox\\cinderhook-marauder\\v08-coalhex-shaman-r1\\v08-coalhex-shaman-r1.png"
+        ]
+      },
+      "construction": {
+        "status": "proposed, flattened art only",
+        "parts": [
+          "pelvis",
+          "torso",
+          "neck/head",
+          "ears",
+          "upper/lower arms and hands",
+          "thighs/shins/feet",
+          "weapon(s)",
+          "shield where present",
+          "cloth/cape panels"
+        ],
+        "pivots": "unresolved; joint centers in top-left pixel coordinates",
+        "attachments": "weapon grips to hands, shield to forearm, cloth to shoulder/waist",
+        "layers": "rear limbs, body, front limbs, held kit, cloth overlays",
+        "limitations": "hidden surfaces and overlap margins need generation before rigging; weapon mechanics differ per variant"
+      },
+      "facing": "left",
+      "animations_delivered": [],
+      "planned_states": [
+        "idle",
+        "attack",
+        "hit",
+        "wounded_idle",
+        "die"
+      ],
+      "conditional_states": {
+        "cast": "required for shaman",
+        "guard": "required for spear guard and captain",
+        "spawn": "not assigned to this enemy variant request",
+        "victory": "not assigned"
+      },
+      "prompt_file": "v08-coalhex-shaman-prompt.txt",
+      "gallery_submission": {
+        "path": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\approvals\\inbox\\cinderhook-marauder\\v08-coalhex-shaman-r1\\v08-coalhex-shaman-r1.png",
+        "sha256": "86c64514a248dccb5b4e21bc337fc14cc2454f57e9dc75e0051989d01d2b61f3",
+        "status": "Pending approval",
+        "gallery": "http://localhost:4317"
+      },
+      "gallery_verified": {
+        "id": "ccacb8512c0b88d782b34a7f",
+        "url": "http://localhost:4317/asset/ccacb8512c0b88d782b34a7f",
+        "status": "Pending approval"
+      },
+      "asset_path": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\characters\\cinderhook-marauder\\variants-nine-2026-10-02\\v08-coalhex-shaman-r1.png",
+      "required_states": [
+        "idle",
+        "attack",
+        "hit",
+        "wounded_idle",
+        "die",
+        "cast"
+      ]
+    },
+    {
+      "id": "v09-scarblade-captain",
+      "name": "Scarblade Captain",
+      "revision": "r1",
+      "asset": "v09-scarblade-captain-r1.png",
+      "sha256": "73db8f595b7d73322ad8d26f35b20ead7496b45f1ea5ce849388be2e8894d5ae",
+      "dimensions": [
+        1122,
+        1402
+      ],
+      "alpha_range": [
+        0,
+        255
+      ],
+      "transparent_pixel_count": 982261,
+      "solid_bbox": [
+        25,
+        62,
+        1098,
+        1334
+      ],
+      "differences": "Weapon: ONE broad curved SABER with ember-orange fuller held down forward and a medium angular KITE SHIELD in opposite hand, shield clear of face and legs. FACE: angular rectangular jaw, medium straight wedge nose, prominent cheek ridge, one thick vertical scar through brow but both eyes visible; stern closed mouth. EARS: two medium-length sturdy upright ears, visible ear forked at tip with two broad bronze rings. ARMOR: overlapping charcoal steel cuirass and paired small pointed pauldrons, open iron brow circlet with a SHORT central red crest leaving face, scalp sides and ears exposed. CLOTHING: long split oxblood officer tabard with ONE large ember rune, ash-grey belt sash, plated boots. Authority through kit, not oversized new anatomy.",
+      "approval": {
+        "status": "Approved",
+        "at": "2026-10-02T22:20:49.176Z",
+        "evidenceId": "f14e074a-6a36-4f40-b19c-23da914254ea",
+        "paths": [
+          "C:\\Users\\wilsh\\Projects\\runelord\\assets\\approvals\\inbox\\cinderhook-marauder\\v09-scarblade-captain-r1\\v09-scarblade-captain-r1.png"
+        ]
+      },
+      "construction": {
+        "status": "proposed, flattened art only",
+        "parts": [
+          "pelvis",
+          "torso",
+          "neck/head",
+          "ears",
+          "upper/lower arms and hands",
+          "thighs/shins/feet",
+          "weapon(s)",
+          "shield where present",
+          "cloth/cape panels"
+        ],
+        "pivots": "unresolved; joint centers in top-left pixel coordinates",
+        "attachments": "weapon grips to hands, shield to forearm, cloth to shoulder/waist",
+        "layers": "rear limbs, body, front limbs, held kit, cloth overlays",
+        "limitations": "hidden surfaces and overlap margins need generation before rigging; weapon mechanics differ per variant"
+      },
+      "facing": "left",
+      "animations_delivered": [],
+      "planned_states": [
+        "idle",
+        "attack",
+        "hit",
+        "wounded_idle",
+        "die"
+      ],
+      "conditional_states": {
+        "cast": "required for shaman",
+        "guard": "required for spear guard and captain",
+        "spawn": "not assigned to this enemy variant request",
+        "victory": "not assigned"
+      },
+      "prompt_file": "v09-scarblade-captain-prompt.txt",
+      "gallery_submission": {
+        "path": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\approvals\\inbox\\cinderhook-marauder\\v09-scarblade-captain-r1\\v09-scarblade-captain-r1.png",
+        "sha256": "73db8f595b7d73322ad8d26f35b20ead7496b45f1ea5ce849388be2e8894d5ae",
+        "status": "Pending approval",
+        "gallery": "http://localhost:4317"
+      },
+      "gallery_verified": {
+        "id": "7f81e3da964e565e4c5dadaf",
+        "url": "http://localhost:4317/asset/7f81e3da964e565e4c5dadaf",
+        "status": "Pending approval"
+      },
+      "asset_path": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\characters\\cinderhook-marauder\\variants-nine-2026-10-02\\v09-scarblade-captain-r1.png",
+      "required_states": [
+        "idle",
+        "attack",
+        "hit",
+        "wounded_idle",
+        "die",
+        "guard"
+      ]
+    }
+  ],
+  "approvals": [
+    {
+      "stage": "variant",
+      "id": "v01-cleaver-bruiser",
+      "sha256": "da834c1b149010a32fb5d21697d8110ff5737ac0d2ae427499ac665d84910e7f",
+      "decision": {
+        "status": "Approved",
+        "at": "2026-10-02T22:20:49.176Z",
+        "evidenceId": "5d19f38e-717c-47c4-a421-882d163c7579",
+        "paths": [
+          "C:\\Users\\wilsh\\Projects\\runelord\\assets\\approvals\\inbox\\cinderhook-marauder\\v01-cleaver-bruiser-r1\\v01-cleaver-bruiser-r1.png"
+        ]
+      }
+    },
+    {
+      "stage": "variant",
+      "id": "v02-ash-spear-guard",
+      "sha256": "2b39f9bb0e54195bebeffe08bbcba3dc002d6acfbaab088c672eebf0dd895013",
+      "decision": {
+        "status": "Approved",
+        "at": "2026-10-02T22:20:49.176Z",
+        "evidenceId": "1317f234-e2c1-48df-b2e5-52143a6e5243",
+        "paths": [
+          "C:\\Users\\wilsh\\Projects\\runelord\\assets\\approvals\\inbox\\cinderhook-marauder\\v02-ash-spear-guard-r1\\v02-ash-spear-guard-r1.png"
+        ]
+      }
+    },
+    {
+      "stage": "variant",
+      "id": "v03-twinaxe-reaver",
+      "sha256": "fd71c5d825bad8f1035481a2d3b2ffa6b443e89c2497451cfba9a46ba99efa9b",
+      "decision": {
+        "status": "Approved",
+        "at": "2026-10-02T22:20:49.176Z",
+        "evidenceId": "eee44240-fdf0-4c1b-8181-19797f97f9cf",
+        "paths": [
+          "C:\\Users\\wilsh\\Projects\\runelord\\assets\\approvals\\inbox\\cinderhook-marauder\\v03-twinaxe-reaver-r1\\v03-twinaxe-reaver-r1.png"
+        ]
+      }
+    },
+    {
+      "stage": "variant",
+      "id": "v04-cinder-crossbow-scout",
+      "sha256": "c1762ca4c6db2da68f9bb2c6f582ddc5031b9c0e39b12bc634e78bba23329edf",
+      "decision": {
+        "status": "Approved",
+        "at": "2026-10-02T22:20:49.176Z",
+        "evidenceId": "25408795-28bc-4a78-bb62-d9bfea65859d",
+        "paths": [
+          "C:\\Users\\wilsh\\Projects\\runelord\\assets\\approvals\\inbox\\cinderhook-marauder\\v04-cinder-crossbow-scout-r1\\v04-cinder-crossbow-scout-r1.png"
+        ]
+      }
+    },
+    {
+      "stage": "variant",
+      "id": "v05-emberbow-hunter",
+      "sha256": "3513778d465cfda10e5221cf8ef7fd603934ba7c84ba2d96013aee0382e0df24",
+      "decision": {
+        "status": "Approved",
+        "at": "2026-10-02T22:20:49.176Z",
+        "evidenceId": "bf104a58-4e6f-4038-975e-9c1c62c4f270",
+        "paths": [
+          "C:\\Users\\wilsh\\Projects\\runelord\\assets\\approvals\\inbox\\cinderhook-marauder\\v05-emberbow-hunter-r1\\v05-emberbow-hunter-r1.png"
+        ]
+      }
+    },
+    {
+      "stage": "variant",
+      "id": "v06-forgehammer-sapper",
+      "sha256": "4b276d1e55e995d54b0d0ba5f3c4ff280c4de944a030bfaeccb52585426312e3",
+      "decision": {
+        "status": "Approved",
+        "at": "2026-10-02T22:20:49.176Z",
+        "evidenceId": "041efecf-e970-4552-95a0-852bca8ef3fc",
+        "paths": [
+          "C:\\Users\\wilsh\\Projects\\runelord\\assets\\approvals\\inbox\\cinderhook-marauder\\v06-forgehammer-sapper-r1\\v06-forgehammer-sapper-r1.png"
+        ]
+      }
+    },
+    {
+      "stage": "variant",
+      "id": "v07-ashknife-cutthroat",
+      "sha256": "cbffcc231d3d90fd9e58297d7c1f01cfcf0847ff29af8945d69f792821ef323f",
+      "decision": {
+        "status": "Approved",
+        "at": "2026-10-02T22:20:49.176Z",
+        "evidenceId": "e5e57466-adb2-46d7-bc18-2d79d0d6b0fc",
+        "paths": [
+          "C:\\Users\\wilsh\\Projects\\runelord\\assets\\approvals\\inbox\\cinderhook-marauder\\v07-ashknife-cutthroat-r1\\v07-ashknife-cutthroat-r1.png"
+        ]
+      }
+    },
+    {
+      "stage": "variant",
+      "id": "v08-coalhex-shaman",
+      "sha256": "86c64514a248dccb5b4e21bc337fc14cc2454f57e9dc75e0051989d01d2b61f3",
+      "decision": {
+        "status": "Approved",
+        "at": "2026-10-02T22:20:49.176Z",
+        "evidenceId": "ba0ac405-598c-40f4-ad03-678ee21c9914",
+        "paths": [
+          "C:\\Users\\wilsh\\Projects\\runelord\\assets\\approvals\\inbox\\cinderhook-marauder\\v08-coalhex-shaman-r1\\v08-coalhex-shaman-r1.png"
+        ]
+      }
+    },
+    {
+      "stage": "variant",
+      "id": "v09-scarblade-captain",
+      "sha256": "73db8f595b7d73322ad8d26f35b20ead7496b45f1ea5ce849388be2e8894d5ae",
+      "decision": {
+        "status": "Approved",
+        "at": "2026-10-02T22:20:49.176Z",
+        "evidenceId": "f14e074a-6a36-4f40-b19c-23da914254ea",
+        "paths": [
+          "C:\\Users\\wilsh\\Projects\\runelord\\assets\\approvals\\inbox\\cinderhook-marauder\\v09-scarblade-captain-r1\\v09-scarblade-captain-r1.png"
+        ]
+      }
+    }
+  ],
+  "style_lock": {
+    "direction": "serious Runelord 2D angular cel shading, red goblin skin, ember accents, preserve each face, ears, armor, clothes and weapons exactly",
+    "approved_character_references": [
+      "C:\\Users\\wilsh\\Projects\\runelord\\assets\\characters\\cinderhook-marauder\\variants-nine-2026-10-02\\v01-cleaver-bruiser-r1.png",
+      "C:\\Users\\wilsh\\Projects\\runelord\\assets\\characters\\cinderhook-marauder\\variants-nine-2026-10-02\\v02-ash-spear-guard-r1.png",
+      "C:\\Users\\wilsh\\Projects\\runelord\\assets\\characters\\cinderhook-marauder\\variants-nine-2026-10-02\\v03-twinaxe-reaver-r1.png",
+      "C:\\Users\\wilsh\\Projects\\runelord\\assets\\characters\\cinderhook-marauder\\variants-nine-2026-10-02\\v04-cinder-crossbow-scout-r1.png",
+      "C:\\Users\\wilsh\\Projects\\runelord\\assets\\characters\\cinderhook-marauder\\variants-nine-2026-10-02\\v05-emberbow-hunter-r1.png",
+      "C:\\Users\\wilsh\\Projects\\runelord\\assets\\characters\\cinderhook-marauder\\variants-nine-2026-10-02\\v06-forgehammer-sapper-r1.png",
+      "C:\\Users\\wilsh\\Projects\\runelord\\assets\\characters\\cinderhook-marauder\\variants-nine-2026-10-02\\v07-ashknife-cutthroat-r1.png",
+      "C:\\Users\\wilsh\\Projects\\runelord\\assets\\characters\\cinderhook-marauder\\variants-nine-2026-10-02\\v08-coalhex-shaman-r1.png",
+      "C:\\Users\\wilsh\\Projects\\runelord\\assets\\characters\\cinderhook-marauder\\variants-nine-2026-10-02\\v09-scarblade-captain-r1.png"
+    ],
+    "approved_exemplar": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\concepts\\fire-monsters-20-2026-10-02\\cinderhook-marauder\\base-r1.png",
+    "permitted_extra_details": "none; pose and bounded secondary motion only",
+    "camera": "shallow three-quarter, facing left",
+    "lighting": "broad hard cel shadows; no realism or added textures"
+  },
+  "construction": {
+    "source": "flattened PNGs, no separated layers",
+    "method": "reference-conditioned whole-character frames; no whole-image transform substitute",
+    "proposed_parts": [
+      "head/ears",
+      "torso",
+      "pelvis",
+      "arms/hands",
+      "legs/feet",
+      "held weapons/shields",
+      "cloth"
+    ],
+    "pivots": "not applicable to frame sprites; anatomical landmarks must remain consistent"
+  },
+  "geometry": {
+    "coordinate_system": "top-left pixels, x right/y down",
+    "facing": "left",
+    "canvas": "resolve from motion bounds; uniform per variant",
+    "ground_root_anchor": "establish before packing",
+    "pixels_per_unit": "not set"
+  },
+  "animations": {
+    "common": [
+      "idle",
+      "attack",
+      "hit",
+      "wounded_idle",
+      "die"
+    ],
+    "cast": [
+      "v08-coalhex-shaman"
+    ],
+    "guard": [
+      "v02-ash-spear-guard",
+      "v09-scarblade-captain"
+    ],
+    "spawn": "not applicable to requested enemy combat set",
+    "victory": "not applicable",
+    "forms": "hostile only; raised/tamed not authorized for these humanoid variant animations",
+    "timing": "ordinary action roughly 350ms if readable; slower heavy moves documented; idle/wounded loop; death one-shot holds terminal",
+    "proof": "v01 idle attack hit die, quality checkpoint before extending"
+  },
+  "output": {
+    "destination": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\characters\\cinderhook-marauder\\animation-nine-2026-10-02",
+    "format": "numbered transparent frames plus atlas and timing metadata",
+    "preview": "playable GIF or video and browser playback",
+    "runtime_target": "generic sprites compatible with PixiJS; no game integration requested"
+  },
+  "source_assets": [
+    {
+      "path": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\characters\\cinderhook-marauder\\variants-nine-2026-10-02\\v01-cleaver-bruiser-r1.png",
+      "sha256": "da834c1b149010a32fb5d21697d8110ff5737ac0d2ae427499ac665d84910e7f",
+      "approval": {
+        "status": "Approved",
+        "at": "2026-10-02T22:20:49.176Z",
+        "evidenceId": "5d19f38e-717c-47c4-a421-882d163c7579",
+        "paths": [
+          "C:\\Users\\wilsh\\Projects\\runelord\\assets\\approvals\\inbox\\cinderhook-marauder\\v01-cleaver-bruiser-r1\\v01-cleaver-bruiser-r1.png"
+        ]
+      }
+    },
+    {
+      "path": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\characters\\cinderhook-marauder\\variants-nine-2026-10-02\\v02-ash-spear-guard-r1.png",
+      "sha256": "2b39f9bb0e54195bebeffe08bbcba3dc002d6acfbaab088c672eebf0dd895013",
+      "approval": {
+        "status": "Approved",
+        "at": "2026-10-02T22:20:49.176Z",
+        "evidenceId": "1317f234-e2c1-48df-b2e5-52143a6e5243",
+        "paths": [
+          "C:\\Users\\wilsh\\Projects\\runelord\\assets\\approvals\\inbox\\cinderhook-marauder\\v02-ash-spear-guard-r1\\v02-ash-spear-guard-r1.png"
+        ]
+      }
+    },
+    {
+      "path": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\characters\\cinderhook-marauder\\variants-nine-2026-10-02\\v03-twinaxe-reaver-r1.png",
+      "sha256": "fd71c5d825bad8f1035481a2d3b2ffa6b443e89c2497451cfba9a46ba99efa9b",
+      "approval": {
+        "status": "Approved",
+        "at": "2026-10-02T22:20:49.176Z",
+        "evidenceId": "eee44240-fdf0-4c1b-8181-19797f97f9cf",
+        "paths": [
+          "C:\\Users\\wilsh\\Projects\\runelord\\assets\\approvals\\inbox\\cinderhook-marauder\\v03-twinaxe-reaver-r1\\v03-twinaxe-reaver-r1.png"
+        ]
+      }
+    },
+    {
+      "path": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\characters\\cinderhook-marauder\\variants-nine-2026-10-02\\v04-cinder-crossbow-scout-r1.png",
+      "sha256": "c1762ca4c6db2da68f9bb2c6f582ddc5031b9c0e39b12bc634e78bba23329edf",
+      "approval": {
+        "status": "Approved",
+        "at": "2026-10-02T22:20:49.176Z",
+        "evidenceId": "25408795-28bc-4a78-bb62-d9bfea65859d",
+        "paths": [
+          "C:\\Users\\wilsh\\Projects\\runelord\\assets\\approvals\\inbox\\cinderhook-marauder\\v04-cinder-crossbow-scout-r1\\v04-cinder-crossbow-scout-r1.png"
+        ]
+      }
+    },
+    {
+      "path": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\characters\\cinderhook-marauder\\variants-nine-2026-10-02\\v05-emberbow-hunter-r1.png",
+      "sha256": "3513778d465cfda10e5221cf8ef7fd603934ba7c84ba2d96013aee0382e0df24",
+      "approval": {
+        "status": "Approved",
+        "at": "2026-10-02T22:20:49.176Z",
+        "evidenceId": "bf104a58-4e6f-4038-975e-9c1c62c4f270",
+        "paths": [
+          "C:\\Users\\wilsh\\Projects\\runelord\\assets\\approvals\\inbox\\cinderhook-marauder\\v05-emberbow-hunter-r1\\v05-emberbow-hunter-r1.png"
+        ]
+      }
+    },
+    {
+      "path": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\characters\\cinderhook-marauder\\variants-nine-2026-10-02\\v06-forgehammer-sapper-r1.png",
+      "sha256": "4b276d1e55e995d54b0d0ba5f3c4ff280c4de944a030bfaeccb52585426312e3",
+      "approval": {
+        "status": "Approved",
+        "at": "2026-10-02T22:20:49.176Z",
+        "evidenceId": "041efecf-e970-4552-95a0-852bca8ef3fc",
+        "paths": [
+          "C:\\Users\\wilsh\\Projects\\runelord\\assets\\approvals\\inbox\\cinderhook-marauder\\v06-forgehammer-sapper-r1\\v06-forgehammer-sapper-r1.png"
+        ]
+      }
+    },
+    {
+      "path": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\characters\\cinderhook-marauder\\variants-nine-2026-10-02\\v07-ashknife-cutthroat-r1.png",
+      "sha256": "cbffcc231d3d90fd9e58297d7c1f01cfcf0847ff29af8945d69f792821ef323f",
+      "approval": {
+        "status": "Approved",
+        "at": "2026-10-02T22:20:49.176Z",
+        "evidenceId": "e5e57466-adb2-46d7-bc18-2d79d0d6b0fc",
+        "paths": [
+          "C:\\Users\\wilsh\\Projects\\runelord\\assets\\approvals\\inbox\\cinderhook-marauder\\v07-ashknife-cutthroat-r1\\v07-ashknife-cutthroat-r1.png"
+        ]
+      }
+    },
+    {
+      "path": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\characters\\cinderhook-marauder\\variants-nine-2026-10-02\\v08-coalhex-shaman-r1.png",
+      "sha256": "86c64514a248dccb5b4e21bc337fc14cc2454f57e9dc75e0051989d01d2b61f3",
+      "approval": {
+        "status": "Approved",
+        "at": "2026-10-02T22:20:49.176Z",
+        "evidenceId": "ba0ac405-598c-40f4-ad03-678ee21c9914",
+        "paths": [
+          "C:\\Users\\wilsh\\Projects\\runelord\\assets\\approvals\\inbox\\cinderhook-marauder\\v08-coalhex-shaman-r1\\v08-coalhex-shaman-r1.png"
+        ]
+      }
+    },
+    {
+      "path": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\characters\\cinderhook-marauder\\variants-nine-2026-10-02\\v09-scarblade-captain-r1.png",
+      "sha256": "73db8f595b7d73322ad8d26f35b20ead7496b45f1ea5ce849388be2e8894d5ae",
+      "approval": {
+        "status": "Approved",
+        "at": "2026-10-02T22:20:49.176Z",
+        "evidenceId": "f14e074a-6a36-4f40-b19c-23da914254ea",
+        "paths": [
+          "C:\\Users\\wilsh\\Projects\\runelord\\assets\\approvals\\inbox\\cinderhook-marauder\\v09-scarblade-captain-r1\\v09-scarblade-captain-r1.png"
+        ]
+      }
+    }
+  ],
+  "generation_prompts": "per-variant *-prompt.txt alongside source manifest",
+  "limitations": [
+    "Sparse coarse native sprite motion (~250\u2013300px body), mild stance jitter, abbreviated ranged reloads.",
+    "Independent QA passed with documented limitations; generated animation design approval remains separate."
+  ],
+  "status": "animation_complete",
+  "technicalQA": {
+    "status": "pass_with_limitations",
+    "report": "qa/final-review.json",
+    "states": 48,
+    "runtimeFrames": 165
+  }
+}

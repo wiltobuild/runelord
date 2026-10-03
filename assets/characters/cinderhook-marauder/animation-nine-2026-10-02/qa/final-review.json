@@ -1,0 +1,5632 @@
+{
+  "schemaVersion": 1,
+  "reviewer": "independent /root/review_goblin_animation",
+  "completedAt": "2026-10-03T03:36:55.608549+00:00",
+  "status": "pass_with_limitations",
+  "sourceRevision": "c7a20871a08e6b089fd6b86dfc5c48fec28e92b1",
+  "blockingRuntimeDefects": [],
+  "scope": "Nine animation previews; not game integration or design approval.",
+  "limitations": [
+    "Sparse whole-character raster poses have coarse motion, minor stance/foot/head jitter and simplified fine details. Source character poses are roughly280-320px, not HD-per-frame animation. Canvas padding does not increase authored detail.",
+    "Browser playback was activated and sampled through screenshots and DOM state/frame advancement. Continuous perceptual smoothness/flicker at every instant was not directly observable through this tool.",
+    "Small-view sprites are visible but actual character height varies with padded canvas; do not interpret the96px control as every character exactly96px tall.",
+    "Ranged reloads are abbreviated; v04 bolt is baked into release image, not a separately exported projectile effect."
+  ],
+  "designApproval": {
+    "status": "pending_separate_user_review",
+    "note": "Approved exact source masters do not approve generated animation previews. Reviewer did not approve gallery items."
+  },
+  "browser": {
+    "url": "http://127.0.0.1:4381/",
+    "status": "pass_with_limitations",
+    "observed": [
+      "9/9 manifests loaded",
+      "attack/hit run then return idle",
+      "wounded_idle visibly distinct from brief hit",
+      "all9 death states reach and hold final corpse",
+      "Pause/Resume control and frame advance",
+      "0.5x speed selection",
+      "large/small and light/dark backgrounds",
+      "cast applies shaman; guard applies spear guard and captain; unsupported variants remain idle",
+      "console error query empty"
+    ],
+    "continuous_temporal_certification": "not_run",
+    "overview": {
+      "file": "all-nine-review.gif",
+      "sha256": "668f11fa7489aefdf7890cdb9b49bd4bed0d75e4e3477eba541734e3f01a6175",
+      "sample": "qa/overview-sample.png",
+      "observation": "Attack sample readable, nine complete silhouettes and labels without overlaps; overview loops for review only."
+    }
+  },
+  "gameIntegration": {
+    "status": "not_run",
+    "reason": "No actual game integration in task scope."
+  },
+  "variants": [
+    {
+      "id": "v01-cleaver-bruiser",
+      "status": "pass_with_limitations",
+      "approvedMaster": {
+        "path": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\characters\\cinderhook-marauder\\variants-nine-2026-10-02\\v01-cleaver-bruiser-r1.png",
+        "sha256": "da834c1b149010a32fb5d21697d8110ff5737ac0d2ae427499ac665d84910e7f",
+        "matchesHandoff": true,
+        "decision": "Approved",
+        "evidenceId": "5d19f38e-717c-47c4-a421-882d163c7579"
+      },
+      "manifestSha256": "f304ebc96cf8874805f4cef53de037eca0ef2f6a1d93ac0291f8ce9f8541878a",
+      "atlasSha256": "eed2f0c4c28c8b8d1603231d43c9b63be85070a5647f666066f32b21acb4fa09",
+      "canvas": {
+        "width": 384,
+        "height": 384
+      },
+      "exportedFrameCount": 20,
+      "runtimeUsedUniqueFrameCount": 20,
+      "excludedFrames": [],
+      "observations": [
+        "Cleaver retained after hit repair; separate death generation resolves crowded source extraction. All20 used authored poses inspected. Small idle stance jitter remains."
+      ],
+      "states": {
+        "idle": {
+          "status": "pass_with_limitations",
+          "metadata": "pass",
+          "all_used_frames_identity_and_adjacent_pose_review": "pass_with_limitations",
+          "playback": "observed_samples",
+          "durationMs": 1200,
+          "loop": true,
+          "terminal": false,
+          "holdLastFrame": false,
+          "nextState": "idle",
+          "events": [],
+          "frameFiles": [
+            "frames/idle/00.png",
+            "frames/idle/01.png",
+            "frames/idle/02.png",
+            "frames/idle/03.png"
+          ]
+        },
+        "attack": {
+          "status": "pass_with_limitations",
+          "metadata": "pass",
+          "all_used_frames_identity_and_adjacent_pose_review": "pass_with_limitations",
+          "playback": "observed_samples",
+          "durationMs": 430,
+          "loop": false,
+          "terminal": false,
+          "holdLastFrame": false,
+          "nextState": "idle",
+          "events": [
+            {
+              "name": "impact",
+              "timeMs": 200
+            }
+          ],
+          "frameFiles": [
+            "frames/attack/00.png",
+            "frames/attack/01.png",
+            "frames/attack/02.png",
+            "frames/attack/03.png"
+          ]
+        },
+        "hit": {
+          "status": "pass_with_limitations",
+          "metadata": "pass",
+          "all_used_frames_identity_and_adjacent_pose_review": "pass_with_limitations",
+          "playback": "observed_samples",
+          "durationMs": 380,
+          "loop": false,
+          "terminal": false,
+          "holdLastFrame": false,
+          "nextState": "idle",
+          "events": [],
+          "frameFiles": [
+            "frames/hit/00.png",
+            "frames/hit/01.png",
+            "frames/hit/02.png",
+            "frames/hit/03.png"
+          ]
+        },
+        "wounded_idle": {
+          "status": "pass_with_limitations",
+          "metadata": "pass",
+          "all_used_frames_identity_and_adjacent_pose_review": "pass_with_limitations",
+          "playback": "observed_samples",
+          "durationMs": 1380,
+          "loop": true,
+          "terminal": false,
+          "holdLastFrame": false,
+          "nextState": "wounded_idle",
+          "events": [],
+          "frameFiles": [
+            "frames/wounded_idle/00.png",
+            "frames/wounded_idle/01.png",
+            "frames/wounded_idle/02.png",
+            "frames/wounded_idle/03.png"
+          ]
+        },
+        "die": {
+          "status": "pass_with_limitations",
+          "metadata": "pass",
+          "all_used_frames_identity_and_adjacent_pose_review": "pass_with_limitations",
+          "playback": "observed_samples",
+          "durationMs": 1040,
+          "loop": false,
+          "terminal": true,
+          "holdLastFrame": true,
+          "nextState": "terminal",
+          "events": [],
+          "frameFiles": [
+            "frames/die/00.png",
+            "frames/die/01.png",
+            "frames/die/02.png",
+            "frames/die/03.png"
+          ]
+        }
+      },
+      "usedFrames": [
+        {
+          "file": "frames/idle/00.png",
+          "sha256": "de33656b7cda3e6fdee3b102ce8c4b3d92beb08df1d1af97bc980a1c4355fc76",
+          "size": [
+            384,
+            384
+          ],
+          "alpha_extrema": [
+            0,
+            255
+          ],
+          "bbox": [
+            52,
+            72,
+            311,
+            325
+          ],
+          "atlas_equal": true,
+          "edge_opaque": false,
+          "bottom_band_bbox": [
+            95,
+            0,
+            309,
+            25
+          ]
+        },
+        {
+          "file": "frames/idle/01.png",
+          "sha256": "cf30654e420dabc05f6a68db81ce993d40409546b5635ae2c2b8fcfb74d3bdce",
+          "size": [
+            384,
+            384
+          ],
+          "alpha_extrema": [
+            0,
+            255
+          ],
+          "bbox": [
+            54,
+            72,
+            316,
+            325
+          ],
+          "atlas_equal": true,
+          "edge_opaque": false,
+          "bottom_band_bbox": [
+            144,
+            0,
+            308,
+            25
+          ]
+        },
+        {
+          "file": "frames/idle/02.png",
+          "sha256": "23a7925f48c823f5476eac079a934571442dcc6e9534007fb043128904fdb6b4",
+          "size": [
+            384,
+            384
+          ],
+          "alpha_extrema": [
+            0,
+            255
+          ],
+          "bbox": [
+            53,
+            70,
+            310,
+            325
+          ],
+          "atlas_equal": true,
+          "edge_opaque": false,
+          "bottom_band_bbox": [
+            133,
+            0,
+            309,
+            25
+          ]
+        },
+        {
+          "file": "frames/idle/03.png",
+          "sha256": "9aebd83ff7b49b8dece2917939a5c532d58c4a69ba048ff05b4249fbf58b1226",
+          "size": [
+            384,
+            384
+          ],
+          "alpha_extrema": [
+            0,
+            255
+          ],
+          "bbox": [
+            59,
+            72,
+            309,
+            325
+          ],
+          "atlas_equal": true,
+          "edge_opaque": false,
+          "bottom_band_bbox": [
+            140,
+            0,
+            307,
+            25
+          ]
+        },
+        {
+          "file": "frames/attack/00.png",
+          "sha256": "05b135ac092be9bcb261a439dfd6f554f4bc8383d0a135cd06d0c41abfb1a36e",
+          "size": [
+            384,
+            384
+          ],
+          "alpha_extrema": [
+            0,
+            255
+          ],
+          "bbox": [
+            69,
+            50,
+            328,
+            328
+          ],
+          "atlas_equal": true,
+          "edge_opaque": false,
+          "bottom_band_bbox": [
+            146,
+            0,
+            325,
+            28
+          ]
+        },
+        {
+          "file": "frames/attack/01.png",
+          "sha256": "03d3c881aef0650db508f7500c46c0d0f8c67c9fe0cda1acbc58ab9dc755f3c8",
+          "size": [
+            384,
+            384
+          ],
+          "alpha_extrema": [
+            0,
+            255
+          ],
+          "bbox": [
+            110,
+            50,
+            317,
+            328
+          ],
+          "atlas_equal": true,
+          "edge_opaque": false,
+          "bottom_band_bbox": [
+            118,
+            0,
+            302,
+            28
+          ]
+        },
+        {
+          "file": "frames/attack/02.png",
+          "sha256": "98f83562166610467809c7a99d728adcf7cb761a9556af2f9a2e20412c8390c0",
+          "size": [
+            384,
+            384
+          ],
+          "alpha_extrema": [
+            0,
+            255
+          ],
+          "bbox": [
+            63,
+            50,
+            319,
+            330
+          ],
+          "atlas_equal": true,
+          "edge_opaque": false,
+          "bottom_band_bbox": [
+            83,
+            0,
+            313,
+            30
+          ]
+        },
+        {
+          "file": "frames/attack/03.png",
+          "sha256": "ef59b7d9faa7b4289a233ed504766c6a2b2f503ec08459435760bb6c777425b2",
+          "size": [
+            384,
+            384
+          ],
+          "alpha_extrema": [
+            0,
+            255
+          ],
+          "bbox": [
+            40,
+            50,
+            315,
+            328
+          ],
+          "atlas_equal": true,
+          "edge_opaque": false,
+          "bottom_band_bbox": [
+            75,
+            0,
+            315,
+            28
+          ]
+        },
+        {
+          "file": "frames/hit/00.png",
+          "sha256": "8489d76144962f8144d7f67c13ced324ccaea757571d22fb43e84ff1b2282d3f",
+          "size": [
+            384,
+            384
+          ],
+          "alpha_extrema": [
+            0,
+            255
+          ],
+          "bbox": [
+            65,
+            62,
+            315,
+            323
+          ],
+          "atlas_equal": true,
+          "edge_opaque": false,
+          "bottom_band_bbox": [
+            145,
+            0,
+            312,
+            23
+          ]
+        },
+        {
+          "file": "frames/hit/01.png",
+          "sha256": "de6ada986dad1297a99dbf47ad3baeb2bdf4de9d4ae1111636c099111db54676",
+          "size": [
+            384,
+            384
+          ],
+          "alpha_extrema": [
+            0,
+            255
+          ],
+          "bbox": [
+            34,
+            55,
+            296,
+            325
+          ],
+          "atlas_equal": true,
+          "edge_opaque": false,
+          "bottom_band_bbox": [
+            127,
+            0,
+            287,
+            25
+          ]
+        },
+        {
+          "file": "frames/hit/02.png",
+          "sha256": "bcc972f3a15c639687cea348178962513220aa8afe4f16871c2ee22ad4ec0620",
+          "size": [
+            384,
+            384
+          ],
+          "alpha_extrema": [
+            0,
+            255
+          ],
+          "bbox": [
+            67,
+            53,
+            316,
+            325
+          ],
+          "atlas_equal": true,
+          "edge_opaque": false,
+          "bottom_band_bbox": [
+            139,
+            0,
+            316,
+            25
+          ]
+        },
+        {
+          "file": "frames/hit/03.png",
+          "sha256": "2002b9d93e1799f5bd01fcdb0918000326ac1e8438b70d5c98f80c0854029fd7",
+          "size": [
+            384,
+            384
+          ],
+          "alpha_extrema": [
+            0,
+            255
+          ],
+          "bbox": [
+            58,
+            67,
+            316,
+            325
+          ],
+          "atlas_equal": true,
+          "edge_opaque": false,
+          "bottom_band_bbox": [
+            87,
+            0,
+            315,
+            25
+          ]
+        },
+        {
+          "file": "frames/wounded_idle/00.png",
+          "sha256": "87b8adad3555b4659f2b21afefcecdafe5162a68381dff61fb6e0154af3b43e4",
+          "size": [
+            384,
+            384
+          ],
+          "alpha_extrema": [
+            0,
+            255
+          ],
+          "bbox": [
+            79,
+            77,
+            325,
+            327
+          ],
+          "atlas_equal": true,
+          "edge_opaque": false,
+          "bottom_band_bbox": [
+            149,
+            0,
+            325,
+            27
+          ]
+        },
+        {
+          "file": "frames/wounded_idle/01.png",
+          "sha256": "e69a45c892c00513a1a2d968d26a725517ca9680a5bbfb6cf93bba4dd942df88",
+          "size": [
+            384,
+            384
+          ],
+          "alpha_extrema": [
+            0,
+            255
+          ],
+          "bbox": [
+            60,
+            63,
+            316,
+            335
+          ],
+          "atlas_equal": true,
+          "edge_opaque": false,
+          "bottom_band_bbox": [
+            66,
+            0,
+            316,
+            30
+          ]
+        },
+        {
+          "file": "frames/wounded_idle/02.png",
+          "sha256": "cab6294d179ede2d66a15e52b0d8b1db4b8eeb9c7be6d4c05dff07f630758bfc",
+          "size": [
+            384,
+            384
+          ],
+          "alpha_extrema": [
+            0,
+            255
+          ],
+          "bbox": [
+            45,
+            84,
+            315,
+            327
+          ],
+          "atlas_equal": true,
+          "edge_opaque": false,
+          "bottom_band_bbox": [
+            148,
+            0,
+            315,
+            27
+          ]
+        },
+        {
+          "file": "frames/wounded_idle/03.png",
+          "sha256": "fa8de6e639896eed4c0b24c264b462fd71f9613e3c3e15d91da2e8474cf200ac",
+          "size": [
+            384,
+            384
+          ],
+          "alpha_extrema": [
+            0,
+            255
+          ],
+          "bbox": [
+            61,
+            68,
+            315,
+            326
+          ],
+          "atlas_equal": true,
+          "edge_opaque": false,
+          "bottom_band_bbox": [
+            148,
+            0,
+            315,
+            26
+          ]
+        },
+        {
+          "file": "frames/die/00.png",
+          "sha256": "04922994d058a676823c2a8b89c5c27f056d08e166dc83b9465616dd3c609047",
+          "size": [
+            384,
+            384
+          ],
+          "alpha_extrema": [
+            0,
+            255
+          ],
+          "bbox": [
+            52,
+            81,
+            287,
+            317
+          ],
+          "atlas_equal": true,
+          "edge_opaque": false,
+          "bottom_band_bbox": [
+            120,
+            0,
+            287,
+            17
+          ]
+        },
+        {
+          "file": "frames/die/01.png",
+          "sha256": "8c3e2afca91f31b65a892a9dadf49d26f825466136ce7c37ec8facbda023579d",
+          "size": [
+            384,
+            384
+          ],
+          "alpha_extrema": [
+            0,
+            255
+          ],
+          "bbox": [
+            56,
+            35,
+            311,
+            323
+          ],
+          "atlas_equal": true,
+          "edge_opaque": false,
+          "bottom_band_bbox": [
+            57,
+            0,
+            305,
+            23
+          ]
+        },
+        {
+          "file": "frames/die/02.png",
+          "sha256": "dd011d7fd10e06abc07a5b187a3b8bf4f5cc003d719a59a0bd52849c0b31b9f4",
+          "size": [
+            384,
+            384
+          ],
+          "alpha_extrema": [
+            0,
+            255
+          ],
+          "bbox": [
+            46,
+            108,
+            327,
+            354
+          ],
+          "atlas_equal": true,
+          "edge_opaque": false,
+          "bottom_band_bbox": [
+            46,
+            0,
+            315,
+            21
+          ]
+        },
+        {
+          "file": "frames/die/03.png",
+          "sha256": "b69d5b3d9f02747d642835686aa5dee9322ce6e921cbad91dc0b119e7d2eb64c",
+          "size": [
+            384,
+            384
+          ],
+          "alpha_extrema": [
+            0,
+            255
+          ],
+          "bbox": [
+            39,
+            219,
+            319,
+            321
+          ],
+          "atlas_equal": true,
+          "edge_opaque": false,
+          "bottom_band_bbox": [
+            39,
+            0,
+            318,
+            21
+          ]
+        }
+      ],
+      "generatedSources": [
+        {
+          "path": "source/death-r3.png",
+          "sha256": "1178a4db76c6ac8a7ec85901fe2737dd867f1aa7f77549ef655425ffdcac562a"
+        },
+        {
+          "path": "source/poses-r1.png",
+          "sha256": "99a765391853d05b56bfdae4ac97b2576c29c35857d1854bdcdfb51f9c04ea7c"
+        },
+        {
+          "path": "source/poses-r2.png",
+          "sha256": "fffb3f1b5bef650dfa10bbbf82c172a112522c5a4351be073209c1c875f14f77"
+        }
+      ]
+    },
+    {
+      "id": "v02-ash-spear-guard",
+      "status": "pass_with_limitations",
+      "approvedMaster": {
+        "path": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\characters\\cinderhook-marauder\\variants-nine-2026-10-02\\v02-ash-spear-guard-r1.png",
+        "sha256": "2b39f9bb0e54195bebeffe08bbcba3dc002d6acfbaab088c672eebf0dd895013",
+        "matchesHandoff": true,
+        "decision": "Approved",
+        "evidenceId": "1317f234-e2c1-48df-b2e5-52143a6e5243"
+      },
+      "manifestSha256": "06b79aee871c8d38a20e4b4c66098fb38962ec4bb0317c86dbdae19a0762e317",
+      "atlasSha256": "4d510c2979e99e8e45e606e767b00211600eef9def30e11fcc6173736cd584f1",
+      "canvas": {
+        "width": 448,
+        "height": 384
+      },
+      "exportedFrameCount": 24,
+      "runtimeUsedUniqueFrameCount": 24,
+      "excludedFrames": [],
+      "observations": [
+        "Long spear and round shield remain whole; true transparency confirmed despite hidden brown RGB. All24 poses inspected. Spear silhouette makes character appear smaller in common canvas scaling."
+      ],
+      "states": {
+        "idle": {
+          "status": "pass_with_limitations",
+          "metadata": "pass",
+          "all_used_frames_identity_and_adjacent_pose_review": "pass_with_limitations",
+          "playback": "observed_samples",
+          "durationMs": 1200,
+          "loop": true,
+          "terminal": false,
+          "holdLastFrame": false,
+          "nextState": "idle",
+          "events": [],
+          "frameFiles": [
+            "frames/idle/00.png",
+            "frames/idle/01.png",
+            "frames/idle/02.png",
+            "frames/idle/03.png"
+          ]
+        },
+        "attack": {
+          "status": "pass_with_limitations",
+          "metadata": "pass",
+          "all_used_frames_identity_and_adjacent_pose_review": "pass_with_limitations",
+          "playback": "observed_samples",
+          "durationMs": 430,
+          "loop": false,
+          "terminal": false,
+          "holdLastFrame": false,
+          "nextState": "idle",
+          "events": [
+            {
+              "name": "impact",
+              "timeMs": 200
+            }
+          ],
+          "frameFiles": [
+            "frames/attack/00.png",
+            "frames/attack/01.png",
+            "frames/attack/02.png",
+            "frames/attack/03.png"
+          ]
+        },
+        "hit": {
+          "status": "pass_with_limitations",
+          "metadata": "pass",
+          "all_used_frames_identity_and_adjacent_pose_review": "pass_with_limitations",
+          "playback": "observed_samples",
+          "durationMs": 380,
+          "loop": false,
+          "terminal": false,
+          "holdLastFrame": false,
+          "nextState": "idle",
+          "events": [],
+          "frameFiles": [
+            "frames/hit/00.png",
+            "frames/hit/01.png",
+            "frames/hit/02.png",
+            "frames/hit/03.png"
+          ]
+        },
+        "wounded_idle": {
+          "status": "pass_with_limitations",
+          "metadata": "pass",
+          "all_used_frames_identity_and_adjacent_pose_review": "pass_with_limitations",
+          "playback": "observed_samples",
+          "durationMs": 1380,
+          "loop": true,
+          "terminal": false,
+          "holdLastFrame": false,
+          "nextState": "wounded_idle",
+          "events": [],
+          "frameFiles": [
+            "frames/wounded_idle/00.png",
+            "frames/wounded_idle/01.png",
+            "frames/wounded_idle/02.png",
+            "frames/wounded_idle/03.png"
+          ]
+        },
+        "die": {
+          "status": "pass_with_limitations",
+          "metadata": "pass",
+          "all_used_frames_identity_and_adjacent_pose_review": "pass_with_limitations",
+          "playback": "observed_samples",
+          "durationMs": 1040,
+          "loop": false,
+          "terminal": true,
+          "holdLastFrame": true,
+          "nextState": "terminal",
+          "events": [],
+          "frameFiles": [
+            "frames/die/00.png",
+            "frames/die/01.png",
+            "frames/die/02.png",
+            "frames/die/03.png"
+          ]
+        },
+        "guard": {
+          "status": "pass_with_limitations",
+          "metadata": "pass",
+          "all_used_frames_identity_and_adjacent_pose_review": "pass_with_limitations",
+          "playback": "observed_samples",
+          "durationMs": 540,
+          "loop": false,
+          "terminal": false,
+          "holdLastFrame": false,
+          "nextState": "idle",
+          "events": [
+            {
+              "name": "brace",
+              "timeMs": 100
+            },
+            {
+              "name": "exit",
+              "timeMs": 430
+            }
+          ],
+          "frameFiles": [
+            "frames/guard/00.png",
+            "frames/guard/01.png",
+            "frames/guard/02.png",
+            "frames/guard/03.png"
+          ]
+        }
+      },
+      "usedFrames": [
+        {
+          "file": "frames/idle/00.png",
+          "sha256": "a6f45ddfafcefd69ae332c3873239bf51bc7ce6c6e1acbcb52791e31f0c10bcb",
+          "size": [
+            448,
+            384
+          ],
+          "alpha_extrema": [
+            0,
+            254
+          ],
+          "bbox": [
+            120,
+            64,
+            300,
+            324
+          ],
+          "atlas_equal": true,
+          "edge_opaque": false,
+          "bottom_band_bbox": [
+            171,
+            0,
+            294,
+            24
+          ]
+        },
+        {
+          "file": "frames/idle/01.png",
+          "sha256": "c250d643c73cd4bd36b983f5a5772de68754dce1f54d6aca95a9cefa6632e5ff",
+          "size": [
+            448,
+            384
+          ],
+          "alpha_extrema": [
+            0,
+            254
+          ],
+          "bbox": [
+            85,
+            64,
+            282,
+            324
+          ],
+          "atlas_equal": true,
+          "edge_opaque": false,
+          "bottom_band_bbox": [
+            145,
+            0,
+            269,
+            24
+          ]
+        },
+        {
+          "file": "frames/idle/02.png",
+          "sha256": "c3c72c6a9f6e5fab546f640f8f803671b405bc7be812adb9cb258e080e89f07b",
+          "size": [
+            448,
+            384
+          ],
+          "alpha_extrema": [
+            0,
+            254
+          ],
+          "bbox": [
+            95,
+            62,
+            286,
+            324
+          ],
+          "atlas_equal": true,
+          "edge_opaque": false,
+          "bottom_band_bbox": [
+            151,
+            0,
+            274,
+            24
+          ]
+        },
+        {
+          "file": "frames/idle/03.png",
+          "sha256": "e9f99118c03c1f3517862f72f1a34c405000779fbc4df01f4a063182ec61e100",
+          "size": [
+            448,
+            384
+          ],
+          "alpha_extrema": [
+            0,
+            254
+          ],
+          "bbox": [
+            89,
+            63,
+            281,
+            324
+          ],
+          "atlas_equal": true,
+          "edge_opaque": false,
+          "bottom_band_bbox": [
+            142,
+            0,
+            268,
+            24
+          ]
+        },
+        {
+          "file": "frames/attack/00.png",
+          "sha256": "534d8a93c628742884f3dda91c886140b6a722889f7bb75d8573a55fc9d9b17f",
+          "size": [
+            448,
+            384
+          ],
+          "alpha_extrema": [
+            0,
+            254
+          ],
+          "bbox": [
+            101,
+            85,
+            295,
+            322
+          ],
+          "atlas_equal": true,
+          "edge_opaque": false,
+          "bottom_band_bbox": [
+            152,
+            0,
+            295,
+            22
+          ]
+        },
+        {
+          "file": "frames/attack/01.png",
+          "sha256": "be278be22c8148a8366f49fdae432724d8c2279c88439c7beb7aef7336cdda89",
+          "size": [
+            448,
+            384
+          ],
+          "alpha_extrema": [
+            0,
+            254
+          ],
+          "bbox": [
+            3,
+            110,
+            290,
+            323
+          ],
+          "atlas_equal": true,
+          "edge_opaque": false,
+          "bottom_band_bbox": [
+            130,
+            0,
+            290,
+            23
+          ]
+        },
+        {
+          "file": "frames/attack/02.png",
+          "sha256": "32b611ac28f4e44fbb837085cbca149ebcc1895f2a1ea63394695312aaaca9ec",
+          "size": [
+            448,
+            384
+          ],
+          "alpha_extrema": [
+            0,
+            254
+          ],
+          "bbox": [
+            23,
+            128,
+            366,
+            324
+          ],
+          "atlas_equal": true,
+          "edge_opaque": false,
+          "bottom_band_bbox": [
+            204,
+            0,
+            366,
+            24
+          ]
+        },
+        {
+          "file": "frames/attack/03.png",
+          "sha256": "95ad410cd1c152a85df6eebc126fcaad0d9807f4cc218dd077453f444a87457b",
+          "size": [
+            448,
+            384
+          ],
+          "alpha_extrema": [
+            0,
+            254
+          ],
+          "bbox": [
+            111,
+            79,
+            309,
+            322
+          ],
+          "atlas_equal": true,
+          "edge_opaque": false,
+          "bottom_band_bbox": [
+            172,
+            0,
+            302,
+            22
+          ]
+        },
+        {
+          "file": "frames/hit/00.png",
+          "sha256": "8e0cfbeff68aafd4eae63b01c64377948c804c9672b371378d199b8465d32112",
+          "size": [
+            448,
+            384
+          ],
+          "alpha_extrema": [
+            0,
+            254
+          ],
+          "bbox": [
+            120,
+            66,
+            302,
+            323
+          ],
+          "atlas_equal": true,
+          "edge_opaque": false,
+          "bottom_band_bbox": [
+            170,
+            0,
+            299,
+            23
+          ]
+        },
+        {
+          "file": "frames/hit/01.png",
+          "sha256": "1be9c25df51c10f9f2070b2420bc5548d6132489dad42ca0869e6611d0ecfd68",
+          "size": [
+            448,
+            384
+          ],
+          "alpha_extrema": [
+            0,
+            254
+          ],
+          "bbox": [
+            104,
+            68,
+            310,
+            323
+          ],
+          "atlas_equal": true,
+          "edge_opaque": false,
+          "bottom_band_bbox": [
+            153,
+            0,
+            286,
+            23
+          ]
+        },
+        {
+          "file": "frames/hit/02.png",
+          "sha256": "f797fa0fafecd6dab55270c28511199614531ac6314b267ae851e3f8a0a60307",
+          "size": [
+            448,
+            384
+          ],
+          "alpha_extrema": [
+            0,
+            254
+          ],
+          "bbox": [
+            107,
+            113,
+            320,
+            322
+          ],
+          "atlas_equal": true,
+          "edge_opaque": false,
+          "bottom_band_bbox": [
+            190,
+            0,
+            319,
+            22
+          ]
+        },
+        {
+          "file": "frames/hit/03.png",
+          "sha256": "c087a16ce7e74fa659377db07e63b6d588b38007719c53182e7d6079949ed580",
+          "size": [
+            448,
+            384
+          ],
+          "alpha_extrema": [
+            0,
+            254
+          ],
+          "bbox": [
+            126,
+            66,
+            304,
+            323
+          ],
+          "atlas_equal": true,
+          "edge_opaque": false,
+          "bottom_band_bbox": [
+            170,
+            0,
+            296,
+            23
+          ]
+        },
+        {
+          "file": "frames/wounded_idle/00.png",
+          "sha256": "02c184489aa6d9167d73807c65cc0913db42f9818dc9219b97892d79975294ec",
+          "size": [
+            448,
+            384
+          ],
+          "alpha_extrema": [
+            0,
+            254
+          ],
+          "bbox": [
+            89,
+            94,
+            297,
+            324
+          ],
+          "atlas_equal": true,
+          "edge_opaque": false,
+          "bottom_band_bbox": [
+            167,
+            0,
+            297,
+            24
+          ]
+        },
+        {
+          "file": "frames/wounded_idle/01.png",
+          "sha256": "8ee2b832bf240ae55d3ab1ebfe974798d902491838635787ef7d9bfa62b4ff05",
+          "size": [
+            448,
+            384
+          ],
+          "alpha_extrema": [
+            0,
+            254
+          ],
+          "bbox": [
+            89,
+            88,
+            288,
+            324
+          ],
+          "atlas_equal": true,
+          "edge_opaque": false,
+          "bottom_band_bbox": [
+            158,
+            0,
+            285,
+            24
+          ]
+        },
+        {
+          "file": "frames/wounded_idle/02.png",
+          "sha256": "0077c5170c2f12d531ec70b2c317122ad2f0219c3314ab66a3f223453ef5f77b",
+          "size": [
+            448,
+            384
+          ],
+          "alpha_extrema": [
+            0,
+            254
+          ],
+          "bbox": [
+            87,
+            94,
+            288,
+            324
+          ],
+          "atlas_equal": true,
+          "edge_opaque": false,
+          "bottom_band_bbox": [
+            160,
+            0,
+            286,
+            24
+          ]
+        },
+        {
+          "file": "frames/wounded_idle/03.png",
+          "sha256": "0effabf241d8c0f4334914e0cfb0f53834477d88659d1e98b06f21379b069617",
+          "size": [
+            448,
+            384
+          ],
+          "alpha_extrema": [
+            0,
+            254
+          ],
+          "bbox": [
+            96,
+            100,
+            289,
+            324
+          ],
+          "atlas_equal": true,
+          "edge_opaque": false,
+          "bottom_band_bbox": [
+            162,
+            0,
+            286,
+            24
+          ]
+        },
+        {
+          "file": "frames/die/00.png",
+          "sha256": "e7b6c072fc1d10728ed612b80f8c71e7aa2f5b51ce2425e0abbba77f8f672758",
+          "size": [
+            448,
+            384
+          ],
+          "alpha_extrema": [
+            0,
+            254
+          ],
+          "bbox": [
+            103,
+            89,
+            294,
+            324
+          ],
+          "atlas_equal": true,
+          "edge_opaque": false,
+          "bottom_band_bbox": [
+            174,
+            0,
+            294,
+            24
+          ]
+        },
+        {
+          "file": "frames/die/01.png",
+          "sha256": "df231a274e403960c63e64c7ddfa6fa91742f197f5303149bb6c9ba091d5b4e1",
+          "size": [
+            448,
+            384
+          ],
+          "alpha_extrema": [
+            0,
+            254
+          ],
+          "bbox": [
+            73,
+            117,
+            321,
+            324
+          ],
+          "atlas_equal": true,
+          "edge_opaque": false,
+          "bottom_band_bbox": [
+            164,
+            0,
+            321,
+            24
+          ]
+        },
+        {
+          "file": "frames/die/02.png",
+          "sha256": "d6251f9ed134351f6ca7e09ce46bef7ac3b812dc3abc6940e15355a5607c849b",
+          "size": [
+            448,
+            384
+          ],
+          "alpha_extrema": [
+            0,
+            254
+          ],
+          "bbox": [
+            61,
+            221,
+            323,
+            324
+          ],
+          "atlas_equal": true,
+          "edge_opaque": false,
+          "bottom_band_bbox": [
+            61,
+            0,
+            323,
+            24
+          ]
+        },
+        {
+          "file": "frames/die/03.png",
+          "sha256": "b983e4d3a149b186bc8d02c4a6330486dffca09cde1d301d2d3d9e17495ad508",
+          "size": [
+            448,
+            384
+          ],
+          "alpha_extrema": [
+            0,
+            254
+          ],
+          "bbox": [
+            68,
+            256,
+            322,
+            324
+          ],
+          "atlas_equal": true,
+          "edge_opaque": false,
+          "bottom_band_bbox": [
+            68,
+            0,
+            313,
+            24
+          ]
+        },
+        {
+          "file": "frames/guard/00.png",
+          "sha256": "06a84eb36f00605968c8d7fe642f99377728be6b72c0fcfe3dabb6256be07f52",
+          "size": [
+            448,
+            384
+          ],
+          "alpha_extrema": [
+            0,
+            254
+          ],
+          "bbox": [
+            127,
+            71,
+            296,
+            324
+          ],
+          "atlas_equal": true,
+          "edge_opaque": false,
+          "bottom_band_bbox": [
+            166,
+            0,
+            296,
+            24
+          ]
+        },
+        {
+          "file": "frames/guard/01.png",
+          "sha256": "f7e4924d5a1b94037bc027b177c0ae5b6e22d324ce0059df238d2e074de22d78",
+          "size": [
+            448,
+            384
+          ],
+          "alpha_extrema": [
+            0,
+            254
+          ],
+          "bbox": [
+            123,
+            71,
+            309,
+            324
+          ],
+          "atlas_equal": true,
+          "edge_opaque": false,
+          "bottom_band_bbox": [
+            164,
+            0,
+            309,
+            24
+          ]
+        },
+        {
+          "file": "frames/guard/02.png",
+          "sha256": "87f8c32e8c81f381ba61332ce11a01cd8a5199b8b9e812b7b77f251e09bdd03f",
+          "size": [
+            448,
+            384
+          ],
+          "alpha_extrema": [
+            0,
+            254
+          ],
+          "bbox": [
+            95,
+            78,
+            324,
+            324
+          ],
+          "atlas_equal": true,
+          "edge_opaque": false,
+          "bottom_band_bbox": [
+            157,
+            0,
+            324,
+            24
+          ]
+        },
+        {
+          "file": "frames/guard/03.png",
+          "sha256": "59b1c2f114fc07af54c665913711ca5e96fbd63fcb7c4f2c9bdf8d0761b8d857",
+          "size": [
+            448,
+            384
+          ],
+          "alpha_extrema": [
+            0,
+            254
+          ],
+          "bbox": [
+            114,
+            74,
+            294,
+            324
+          ],
+          "atlas_equal": true,
+          "edge_opaque": false,
+          "bottom_band_bbox": [
+            155,
+            0,
+            287,
+            24
+          ]
+        }
+      ],
+      "generatedSources": [
+        {
+          "path": "source/poses-r1.png",
+          "sha256": "dd13a1b72d329e4e02cc061853ff490dba930683ae9ddac941ea13c3e45df210"
+        },
+        {
+          "path": "source/poses-r2.png",
+          "sha256": "81994d1e48a661e38acc54829c301a620c6094ed57081c3d4ce6886840a02c7e"
+        }
+      ]
+    },
+    {
+      "id": "v03-twinaxe-reaver",
+      "status": "pass_with_limitations",
+      "approvedMaster": {
+        "path": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\characters\\cinderhook-marauder\\variants-nine-2026-10-02\\v03-twinaxe-reaver-r1.png",
+        "sha256": "fd71c5d825bad8f1035481a2d3b2ffa6b443e89c2497451cfba9a46ba99efa9b",
+        "matchesHandoff": true,
+        "decision": "Approved",
+        "evidenceId": "eee44240-fdf0-4c1b-8181-19797f97f9cf"
+      },
+      "manifestSha256": "495e40aa821324163611929f7760a855bf94a60485273c877f59e085859f33b0",
+      "atlasSha256": "123b095398b620305ad0464fbbd5911235ca49364046ec3fa153bad9ee2a0f2e",
+      "canvas": {
+        "width": 448,
+        "height": 384
+      },
+      "exportedFrameCount": 20,
+      "runtimeUsedUniqueFrameCount": 20,
+      "excludedFrames": [],
+      "observations": [
+        "Final attack01 rear axe again has crescent blade/orange gem. Component extraction removed neighboring red fragment. Final repaired frame and adjacent attack poses rechecked."
+      ],
+      "states": {
+        "idle": {
+          "status": "pass_with_limitations",
+          "metadata": "pass",
+          "all_used_frames_identity_and_adjacent_pose_review": "pass_with_limitations",
+          "playback": "observed_samples",
+          "durationMs": 1200,
+          "loop": true,
+          "terminal": false,
+          "holdLastFrame": false,
+          "nextState": "idle",
+          "events": [],
+          "frameFiles": [
+            "frames/idle/00.png",
+            "frames/idle/01.png",
+            "frames/idle/02.png",
+            "frames/idle/03.png"
+          ]
+        },
+        "attack": {
+          "status": "pass_with_limitations",
+          "metadata": "pass",
+          "all_used_frames_identity_and_adjacent_pose_review": "pass_with_limitations",
+          "playback": "observed_samples",
+          "durationMs": 430,
+          "loop": false,
+          "terminal": false,
+          "holdLastFrame": false,
+          "nextState": "idle",
+          "events": [
+            {
+              "name": "impact",
+              "timeMs": 200
+            }
+          ],
+          "frameFiles": [
+            "frames/attack/00.png",
+            "frames/attack/01.png",
+            "frames/attack/02.png",
+            "frames/attack/03.png"
+          ]
+        },
+        "hit": {
+          "status": "pass_with_limitations",
+          "metadata": "pass",
+          "all_used_frames_identity_and_adjacent_pose_review": "pass_with_limitations",
+          "playback": "observed_samples",
+          "durationMs": 380,
+          "loop": false,
+          "terminal": false,
+          "holdLastFrame": false,
+          "nextState": "idle",
+          "events": [],
+          "frameFiles": [
+            "frames/hit/00.png",
+            "frames/hit/01.png",
+            "frames/hit/02.png",
+            "frames/hit/03.png"
+          ]
+        },
+        "wounded_idle": {
+          "status": "pass_with_limitations",
+          "metadata": "pass",
+          "all_used_frames_identity_and_adjacent_pose_review": "pass_with_limitations",
+          "playback": "observed_samples",
+          "durationMs": 1380,
+          "loop": true,
+          "terminal": false,
+          "holdLastFrame": false,
+          "nextState": "wounded_idle",
+          "events": [],
+          "frameFiles": [
+            "frames/wounded_idle/00.png",
+            "frames/wounded_idle/01.png",
+            "frames/wounded_idle/02.png",
+            "frames/wounded_idle/03.png"
+          ]
+        },
+        "die": {
+          "status": "pass_with_limitations",
+          "metadata": "pass",
+          "all_used_frames_identity_and_adjacent_pose_review": "pass_with_limitations",
+          "playback": "observed_samples",
+          "durationMs": 1040,
+          "loop": false,
+          "terminal": true,
+          "holdLastFrame": true,
+          "nextState": "terminal",
+          "events": [],
+          "frameFiles": [
+            "frames/die/00.png",
+            "frames/die/01.png",
+            "frames/die/02.png",
+            "frames/die/03.png"
+          ]
+        }
+      },
+      "usedFrames": [
+        {
+          "file": "frames/idle/00.png",
+          "sha256": "448bcac4b3198870b503b7fb62395eb60e0aa8d4df78ba45210e0ac37e291c82",
+          "size": [
+            448,
+            384
+          ],
+          "alpha_extrema": [
+            0,
+            255
+          ],
+          "bbox": [
+            103,
+            56,
+            330,
+            324
+          ],
+          "atlas_equal": true,
+          "edge_opaque": false,
+          "bottom_band_bbox": [
+            155,
+            0,
+            323,
+            24
+          ]
+        },
+        {
+          "file": "frames/idle/01.png",
+          "sha256": "736d39fdfd0e636d959ec8fff6e6bcb6734a583d0c51fc639eb7ccaca7eed58c",
+          "size": [
+            448,
+            384
+          ],
+          "alpha_extrema": [
+            0,
+            255
+          ],
+          "bbox": [
+            102,
+            54,
+            330,
+            324
+          ],
+          "atlas_equal": true,
+          "edge_opaque": false,
+          "bottom_band_bbox": [
+            151,
+            0,
+            318,
+            24
+          ]
+        },
+        {
+          "file": "frames/idle/02.png",
+          "sha256": "23b5299a1622527baa91ebfbd2f9a1adbf4652208293c83561c7f3899b331ddd",
+          "size": [
+            448,
+            384
+          ],
+          "alpha_extrema": [
+            0,
+            255
+          ],
+          "bbox": [
+            82,
+            52,
+            306,
+            324
+          ],
+          "atlas_equal": true,
+          "edge_opaque": false,
+          "bottom_band_bbox": [
+            129,
+            0,
+            297,
+            24
+          ]
+        },
+        {
+          "file": "frames/idle/03.png",
+          "sha256": "0879c249ff492d8bb527919a1576f851896f074c4fa4d291a14067f7e4ea8bc9",
+          "size": [
+            448,
+            384
+          ],
+          "alpha_extrema": [
+            0,
+            255
+          ],
+          "bbox": [
+            80,
+            57,
+            306,
+            324
+          ],
+          "atlas_equal": true,
+          "edge_opaque": false,
+          "bottom_band_bbox": [
+            125,
+            0,
+            293,
+            24
+          ]
+        },
+        {
+          "file": "frames/attack/00.png",
+          "sha256": "99b71935879c406eb0310c25c6a956aa3239ce270c8a65a2dc99709f3b9cdf5e",
+          "size": [
+            448,
+            384
+          ],
+          "alpha_extrema": [
+            0,
+            255
+          ],
+          "bbox": [
+            95,
+            53,
+            344,
+            324
+          ],
+          "atlas_equal": true,
+          "edge_opaque": false,
+          "bottom_band_bbox": [
+            134,
+            0,
+            326,
+            24
+          ]
+        },
+        {
+          "file": "frames/attack/01.png",
+          "sha256": "50346c41bf788e0d3c1bf5766a9401590fd86f7a7b0790ff33aa56a500e9cb39",
+          "size": [
+            448,
+            384
+          ],
+          "alpha_extrema": [
+            0,
+            255
+          ],
+          "bbox": [
+            117,
+            40,
+            321,
+            324
+          ],
+          "atlas_equal": true,
+          "edge_opaque": false,
+          "bottom_band_bbox": [
+            132,
+            0,
+            321,
+            24
+          ]
+        },
+        {
+          "file": "frames/attack/02.png",
+          "sha256": "a140cee04e829fcb921fd1ec9166532c85f21e9df5adad63af2bd961cb71e1b5",
+          "size": [
+            448,
+            384
+          ],
+          "alpha_extrema": [
+            0,
+            255
+          ],
+          "bbox": [
+            80,
+            100,
+            345,
+            324
+          ],
+          "atlas_equal": true,
+          "edge_opaque": false,
+          "bottom_band_bbox": [
+            153,
+            0,
+            339,
+            24
+          ]
+        },
+        {
+          "file": "frames/attack/03.png",
+          "sha256": "ea6c2c9556a239d39206158022f07869dec0354f33ec1d07a6966b6a95ff723e",
+          "size": [
+            448,
+            384
+          ],
+          "alpha_extrema": [
+            0,
+            255
+          ],
+          "bbox": [
+            88,
+            102,
+            334,
+            323
+          ],
+          "atlas_equal": true,
+          "edge_opaque": false,
+          "bottom_band_bbox": [
+            95,
+            0,
+            333,
+            23
+          ]
+        },
+        {
+          "file": "frames/hit/00.png",
+          "sha256": "66c42a75694bd811bb79dd0b81e491f32446414484dd5d6cd1432a0269879ab8",
+          "size": [
+            448,
+            384
+          ],
+          "alpha_extrema": [
+            0,
+            255
+          ],
+          "bbox": [
+            98,
+            56,
+            332,
+            324
+          ],
+          "atlas_equal": true,
+          "edge_opaque": false,
+          "bottom_band_bbox": [
+            147,
+            0,
+            322,
+            24
+          ]
+        },
+        {
+          "file": "frames/hit/01.png",
+          "sha256": "be952ac3b2de74b3160573a2867b2e0e0c6f93ed392dd7d12600fce62dd05500",
+          "size": [
+            448,
+            384
+          ],
+          "alpha_extrema": [
+            0,
+            255
+          ],
+          "bbox": [
+            98,
+            52,
+            318,
+            324
+          ],
+          "atlas_equal": true,
+          "edge_opaque": false,
+          "bottom_band_bbox": [
+            143,
+            0,
+            294,
+            24
+          ]
+        },
+        {
+          "file": "frames/hit/02.png",
+          "sha256": "87649e0c946e1bb4da36aabf3dac3eff53519182065323543f5a73fd361a0b3a",
+          "size": [
+            448,
+            384
+          ],
+          "alpha_extrema": [
+            0,
+            255
+          ],
+          "bbox": [
+            94,
+            85,
+            329,
+            324
+          ],
+          "atlas_equal": true,
+          "edge_opaque": false,
+          "bottom_band_bbox": [
+            147,
+            0,
+            316,
+            24
+          ]
+        },
+        {
+          "file": "frames/hit/03.png",
+          "sha256": "662d2e6238797dec9968788e57f71fa686cf4ef1db125dca85a5fd24af19111c",
+          "size": [
+            448,
+            384
+          ],
+          "alpha_extrema": [
+            0,
+            255
+          ],
+          "bbox": [
+            94,
+            62,
+            329,
+            324
+          ],
+          "atlas_equal": true,
+          "edge_opaque": false,
+          "bottom_band_bbox": [
+            145,
+            0,
+            316,
+            24
+          ]
+        },
+        {
+          "file": "frames/wounded_idle/00.png",
+          "sha256": "2b34515089ba835146b858e0a29ffae147732c06802240a11c64dbd8b87f7c99",
+          "size": [
+            448,
+            384
+          ],
+          "alpha_extrema": [
+            0,
+            255
+          ],
+          "bbox": [
+            111,
+            94,
+            322,
+            324
+          ],
+          "atlas_equal": true,
+          "edge_opaque": false,
+          "bottom_band_bbox": [
+            154,
+            0,
+            315,
+            24
+          ]
+        },
+        {
+          "file": "frames/wounded_idle/01.png",
+          "sha256": "77f98d1c6e6696651e14b12991a9852b02841cffd8618a994052f6cfbb397e27",
+          "size": [
+            448,
+            384
+          ],
+          "alpha_extrema": [
+            0,
+            255
+          ],
+          "bbox": [
+            108,
+            92,
+            322,
+            324
+          ],
+          "atlas_equal": true,
+          "edge_opaque": false,
+          "bottom_band_bbox": [
+            154,
+            0,
+            317,
+            24
+          ]
+        },
+        {
+          "file": "frames/wounded_idle/02.png",
+          "sha256": "b390e6013b04095ff7612fb11c141777d0e1948193e95a22494fdc6b02a13277",
+          "size": [
+            448,
+            384
+          ],
+          "alpha_extrema": [
+            0,
+            255
+          ],
+          "bbox": [
+            108,
+            97,
+            320,
+            324
+          ],
+          "atlas_equal": true,
+          "edge_opaque": false,
+          "bottom_band_bbox": [
+            154,
+            0,
+            313,
+            24
+          ]
+        },
+        {
+          "file": "frames/wounded_idle/03.png",
+          "sha256": "f7d0aa3ee8a77ebe7c389d8b26f926c2bc0f27d6c3fb9deb6b846965d24b08cb",
+          "size": [
+            448,
+            384
+          ],
+          "alpha_extrema": [
+            0,
+            255
+          ],
+          "bbox": [
+            110,
+            95,
+            326,
+            324
+          ],
+          "atlas_equal": true,
+          "edge_opaque": false,
+          "bottom_band_bbox": [
+            154,
+            0,
+            315,
+            24
+          ]
+        },
+        {
+          "file": "frames/die/00.png",
+          "sha256": "c89e5de8eee475ed68f022aae8935de25898ccd71ef2c53a1debd0ee744a4e97",
+          "size": [
+            448,
+            384
+          ],
+          "alpha_extrema": [
+            0,
+            255
+          ],
+          "bbox": [
+            99,
+            114,
+            326,
+            322
+          ],
+          "atlas_equal": true,
+          "edge_opaque": false,
+          "bottom_band_bbox": [
+            165,
+            0,
+            323,
+            22
+          ]
+        },
+        {
+          "file": "frames/die/01.png",
+          "sha256": "0d6ca23a61dc9360f950384c59e8d6325c66340d8f730750d4172b14d10d9ddb",
+          "size": [
+            448,
+            384
+          ],
+          "alpha_extrema": [
+            0,
+            255
+          ],
+          "bbox": [
+            88,
+            132,
+            308,
+            324
+          ],
+          "atlas_equal": true,
+          "edge_opaque": false,
+          "bottom_band_bbox": [
+            99,
+            0,
+            291,
+            24
+          ]
+        },
+        {
+          "file": "frames/die/02.png",
+          "sha256": "8a7eaccb05c26550bed2187446d24426fa0c568ea568dc018a2b8b78b9d9c361",
+          "size": [
+            448,
+            384
+          ],
+          "alpha_extrema": [
+            0,
+            255
+          ],
+          "bbox": [
+            36,
+            203,
+            340,
+            324
+          ],
+          "atlas_equal": true,
+          "edge_opaque": false,
+          "bottom_band_bbox": [
+            36,
+            0,
+            216,
+            24
+          ]
+        },
+        {
+          "file": "frames/die/03.png",
+          "sha256": "4f0de8655a95f5532072a970bf9b00adca3a84cf346807843756698c2eeefd2b",
+          "size": [
+            448,
+            384
+          ],
+          "alpha_extrema": [
+            0,
+            255
+          ],
+          "bbox": [
+            45,
+            226,
+            334,
+            324
+          ],
+          "atlas_equal": true,
+          "edge_opaque": false,
+          "bottom_band_bbox": [
+            45,
+            0,
+            204,
+            24
+          ]
+        }
+      ],
+      "generatedSources": [
+        {
+          "path": "source/poses-r1.png",
+          "sha256": "afbca8f4ee93a81897c01e3dbb319fada6403fe52a9a62cca913ea112ccc76aa"
+        },
+        {
+          "path": "source/poses-r2.png",
+          "sha256": "4df1644ebee66218bfec1c8ae870234ac4824e3db32a8c4b2f02a95a895d630f"
+        }
+      ]
+    },
+    {
+      "id": "v04-cinder-crossbow-scout",
+      "status": "pass_with_limitations",
+      "approvedMaster": {
+        "path": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\characters\\cinderhook-marauder\\variants-nine-2026-10-02\\v04-cinder-crossbow-scout-r1.png",
+        "sha256": "c1762ca4c6db2da68f9bb2c6f582ddc5031b9c0e39b12bc634e78bba23329edf",
+        "matchesHandoff": true,
+        "decision": "Approved",
+        "evidenceId": "25408795-28bc-4a78-bb62-d9bfea65859d"
+      },
+      "manifestSha256": "3bf137cdf3c6d906fad453ea77ab6db02cc544dd2430ef6b4b32e051c5c1b126",
+      "atlasSha256": "3af4d119dd228d0b25426f9a5e1bdad01213085ddb0f0ecd0be9e682c636fb7f",
+      "canvas": {
+        "width": 448,
+        "height": 384
+      },
+      "exportedFrameCount": 20,
+      "runtimeUsedUniqueFrameCount": 20,
+      "excludedFrames": [],
+      "observations": [
+        "Final attack02 has empty crossbow rail and flying bolt; release reads correctly. Reload is abbreviated into loaded recovery. Cheek scar reads native but is faint small.",
+        "Audit initially found157 RGBA differences between attack02 PNG and atlas, all beneath alpha0; zero visible or alpha differences. Visible equivalence accepted; exact byte comparison remains explicitly recorded."
+      ],
+      "states": {
+        "idle": {
+          "status": "pass_with_limitations",
+          "metadata": "pass",
+          "all_used_frames_identity_and_adjacent_pose_review": "pass_with_limitations",
+          "playback": "observed_samples",
+          "durationMs": 1200,
+          "loop": true,
+          "terminal": false,
+          "holdLastFrame": false,
+          "nextState": "idle",
+          "events": [],
+          "frameFiles": [
+            "frames/idle/00.png",
+            "frames/idle/01.png",
+            "frames/idle/02.png",
+            "frames/idle/03.png"
+          ]
+        },
+        "attack": {
+          "status": "pass_with_limitations",
+          "metadata": "pass",
+          "all_used_frames_identity_and_adjacent_pose_review": "pass_with_limitations",
+          "playback": "observed_samples",
+          "durationMs": 430,
+          "loop": false,
+          "terminal": false,
+          "holdLastFrame": false,
+          "nextState": "idle",
+          "events": [
+            {
+              "name": "release",
+              "timeMs": 200
+            }
+          ],
+          "frameFiles": [
+            "frames/attack/00.png",
+            "frames/attack/01.png",
+            "frames/attack/02.png",
+            "frames/attack/03.png"
+          ]
+        },
+        "hit": {
+          "status": "pass_with_limitations",
+          "metadata": "pass",
+          "all_used_frames_identity_and_adjacent_pose_review": "pass_with_limitations",
+          "playback": "observed_samples",
+          "durationMs": 380,
+          "loop": false,
+          "terminal": false,
+          "holdLastFrame": false,
+          "nextState": "idle",
+          "events": [],
+          "frameFiles": [
+            "frames/hit/00.png",
+            "frames/hit/01.png",
+            "frames/hit/02.png",
+            "frames/hit/03.png"
+          ]
+        },
+        "wounded_idle": {
+          "status": "pass_with_limitations",
+          "metadata": "pass",
+          "all_used_frames_identity_and_adjacent_pose_review": "pass_with_limitations",
+          "playback": "observed_samples",
+          "durationMs": 1380,
+          "loop": true,
+          "terminal": false,
+          "holdLastFrame": false,
+          "nextState": "wounded_idle",
+          "events": [],
+          "frameFiles": [
+            "frames/wounded_idle/00.png",
+            "frames/wounded_idle/01.png",
+            "frames/wounded_idle/02.png",
+            "frames/wounded_idle/03.png"
+          ]
+        },
+        "die": {
+          "status": "pass_with_limitations",
+          "metadata": "pass",
+          "all_used_frames_identity_and_adjacent_pose_review": "pass_with_limitations",
+          "playback": "observed_samples",
+          "durationMs": 1040,
+          "loop": false,
+          "terminal": true,
+          "holdLastFrame": true,
+          "nextState": "terminal",
+          "events": [],
+          "frameFiles": [
+            "frames/die/00.png",
+            "frames/die/01.png",
+            "frames/die/02.png",
+            "frames/die/03.png"
+          ]
+        }
+      },
+      "usedFrames": [
+        {
+          "file": "frames/idle/00.png",
+          "sha256": "3e0ba78b14970371a14181b85c615613af4d584ce1eb7ef2c43954ae52781256",
+          "size": [
+            448,
+            384
+          ],
+          "alpha_extrema": [
+            0,
+            255
+          ],
+          "bbox": [
+            93,
+            43,
+            323,
+            323
+          ],
+          "atlas_equal": true,
+          "edge_opaque": false,
+          "bottom_band_bbox": [
+            147,
+            0,
+            323,
+            23
+          ],
+          "atlas_visible_equal": true
+        },
+        {
+          "file": "frames/idle/01.png",
+          "sha256": "75a908c329e18deaca934e1b66fca25552377dfaedd065c56fb2f1c346a00be1",
+          "size": [
+            448,
+            384
+          ],
+          "alpha_extrema": [
+            0,
+            255
+          ],
+          "bbox": [
+            75,
+            42,
+            306,
+            324
+          ],
+          "atlas_equal": true,
+          "edge_opaque": false,
+          "bottom_band_bbox": [
+            124,
+            0,
+            306,
+            24
+          ],
+          "atlas_visible_equal": true
+        },
+        {
+          "file": "frames/idle/02.png",
+          "sha256": "c76afadea12cf46ce03bc08a7c7eab5dbd886d1d1af5e6ef80aaf12f42d7573a",
+          "size": [
+            448,
+            384
+          ],
+          "alpha_extrema": [
+            0,
+            255
+          ],
+          "bbox": [
+            81,
+            42,
+            312,
+            323
+          ],
+          "atlas_equal": true,
+          "edge_opaque": false,
+          "bottom_band_bbox": [
+            128,
+            0,
+            312,
+            23
+          ],
+          "atlas_visible_equal": true
+        },
+        {
+          "file": "frames/idle/03.png",
+          "sha256": "c9710743731bdfebaa0691228307f87e66bcf1e8ce65033f0bb77b0618b2c06e",
+          "size": [
+            448,
+            384
+          ],
+          "alpha_extrema": [
+            0,
+            255
+          ],
+          "bbox": [
+            77,
+            44,
+            307,
+            323
+          ],
+          "atlas_equal": true,
+          "edge_opaque": false,
+          "bottom_band_bbox": [
+            128,
+            0,
+            307,
+            23
+          ],
+          "atlas_visible_equal": true
+        },
+        {
+          "file": "frames/attack/00.png",
+          "sha256": "296b98232c3cb0fae9d1cd800be72a4720e30db64bc9e0a37cf5924dd7bd7c6c",
+          "size": [
+            448,
+            384
+          ],
+          "alpha_extrema": [
+            0,
+            255
+          ],
+          "bbox": [
+            92,
+            48,
+            327,
+            323
+          ],
+          "atlas_equal": true,
+          "edge_opaque": false,
+          "bottom_band_bbox": [
+            141,
+            0,
+            327,
+            23
+          ],
+          "atlas_visible_equal": true
+        },
+        {
+          "file": "frames/attack/01.png",
+          "sha256": "ee7f1c4be6f61ab7c7538256e70e969db9f00b24802ce8dfcbf88ced99627024",
+          "size": [
+            448,
+            384
+          ],
+          "alpha_extrema": [
+            0,
+            255
+          ],
+          "bbox": [
+            61,
+            50,
+            326,
+            323
+          ],
+          "atlas_equal": true,
+          "edge_opaque": false,
+          "bottom_band_bbox": [
+            126,
+            0,
+            326,
+            23
+          ],
+          "atlas_visible_equal": true
+        },
+        {
+          "file": "frames/attack/02.png",
+          "sha256": "6cbe5db9857064e26475b523d14b7d5a81fbbf64713a21b1b8ad8ac3cd532cf2",
+          "size": [
+            448,
+            384
+          ],
+          "alpha_extrema": [
+            0,
+            255
+          ],
+          "bbox": [
+            7,
+            54,
+            387,
+            366
+          ],
+          "atlas_equal": false,
+          "edge_opaque": false,
+          "bottom_band_bbox": [
+            165,
+            0,
+            378,
+            26
+          ],
+          "atlas_visible_equal": true
+        },
+        {
+          "file": "frames/attack/03.png",
+          "sha256": "beff93c753384e64a86b43ab681e4610a5b303e32759aaaea6d35d62e78669ee",
+          "size": [
+            448,
+            384
+          ],
+          "alpha_extrema": [
+            0,
+            255
+          ],
+          "bbox": [
+            107,
+            51,
+            337,
+            322
+          ],
+          "atlas_equal": true,
+          "edge_opaque": false,
+          "bottom_band_bbox": [
+            155,
+            0,
+            337,
+            22
+          ],
+          "atlas_visible_equal": true
+        },
+        {
+          "file": "frames/hit/00.png",
+          "sha256": "efd0afa93077b1e6b51c8ba21fd45d29a71d8256a52fdb0ddfca09304e52d7cf",
+          "size": [
+            448,
+            384
+          ],
+          "alpha_extrema": [
+            0,
+            255
+          ],
+          "bbox": [
+            95,
+            36,
+            326,
+            324
+          ],
+          "atlas_equal": true,
+          "edge_opaque": false,
+          "bottom_band_bbox": [
+            140,
+            0,
+            326,
+            24
+          ],
+          "atlas_visible_equal": true
+        },
+        {
+          "file": "frames/hit/01.png",
+          "sha256": "1fda653e1ef664131e491e975f5a0ffb54e5b8e2ab35b731d7841fb6bc1f0996",
+          "size": [
+            448,
+            384
+          ],
+          "alpha_extrema": [
+            0,
+            255
+          ],
+          "bbox": [
+            93,
+            40,
+            320,
+            324
+          ],
+          "atlas_equal": true,
+          "edge_opaque": false,
+          "bottom_band_bbox": [
+            126,
+            0,
+            320,
+            24
+          ],
+          "atlas_visible_equal": true
+        },
+        {
+          "file": "frames/hit/02.png",
+          "sha256": "8b53e615c94efec3f650ffd78f5a091e7a9adad46901d62d9ed64cf2ba3d3f32",
+          "size": [
+            448,
+            384
+          ],
+          "alpha_extrema": [
+            0,
+            255
+          ],
+          "bbox": [
+            105,
+            67,
+            340,
+            324
+          ],
+          "atlas_equal": true,
+          "edge_opaque": false,
+          "bottom_band_bbox": [
+            154,
+            0,
+            340,
+            24
+          ],
+          "atlas_visible_equal": true
+        },
+        {
+          "file": "frames/hit/03.png",
+          "sha256": "f602ccc9f0cd6e66cf500c9a5fd4ec41cc7b2d99597af118e33a70d7f97541c8",
+          "size": [
+            448,
+            384
+          ],
+          "alpha_extrema": [
+            0,
+            255
+          ],
+          "bbox": [
+            98,
+            41,
+            331,
+            324
+          ],
+          "atlas_equal": true,
+          "edge_opaque": false,
+          "bottom_band_bbox": [
+            146,
+            0,
+            331,
+            24
+          ],
+          "atlas_visible_equal": true
+        },
+        {
+          "file": "frames/wounded_idle/00.png",
+          "sha256": "30abf9efee889d25ce16c9cf0071388deb6ddd604f5e9039c71f029b12809eef",
+          "size": [
+            448,
+            384
+          ],
+          "alpha_extrema": [
+            0,
+            255
+          ],
+          "bbox": [
+            103,
+            51,
+            326,
+            324
+          ],
+          "atlas_equal": true,
+          "edge_opaque": false,
+          "bottom_band_bbox": [
+            151,
+            0,
+            326,
+            24
+          ],
+          "atlas_visible_equal": true
+        },
+        {
+          "file": "frames/wounded_idle/01.png",
+          "sha256": "501d46fd319c3bb49c213ead13c099c17ae393e2a6d935d4a7d4f6d0153d1449",
+          "size": [
+            448,
+            384
+          ],
+          "alpha_extrema": [
+            0,
+            255
+          ],
+          "bbox": [
+            102,
+            57,
+            323,
+            324
+          ],
+          "atlas_equal": true,
+          "edge_opaque": false,
+          "bottom_band_bbox": [
+            150,
+            0,
+            323,
+            24
+          ],
+          "atlas_visible_equal": true
+        },
+        {
+          "file": "frames/wounded_idle/02.png",
+          "sha256": "b9b03f6e38ca7868300a375d7e22d8e2be1cf1f577c14db86f8cfcada5da896d",
+          "size": [
+            448,
+            384
+          ],
+          "alpha_extrema": [
+            0,
+            255
+          ],
+          "bbox": [
+            104,
+            67,
+            328,
+            324
+          ],
+          "atlas_equal": true,
+          "edge_opaque": false,
+          "bottom_band_bbox": [
+            160,
+            0,
+            328,
+            24
+          ],
+          "atlas_visible_equal": true
+        },
+        {
+          "file": "frames/wounded_idle/03.png",
+          "sha256": "aee8a660df9e63df5c7666bcc57cae8e1fc5ff9f9fce7d05a87887fca16db944",
+          "size": [
+            448,
+            384
+          ],
+          "alpha_extrema": [
+            0,
+            255
+          ],
+          "bbox": [
+            104,
+            56,
+            323,
+            324
+          ],
+          "atlas_equal": true,
+          "edge_opaque": false,
+          "bottom_band_bbox": [
+            146,
+            0,
+            323,
+            24
+          ],
+          "atlas_visible_equal": true
+        },
+        {
+          "file": "frames/die/00.png",
+          "sha256": "7a62dc4b4def00c6c27f62fd4aebabfa178359d99c54019766d5660e79d4161a",
+          "size": [
+            448,
+            384
+          ],
+          "alpha_extrema": [
+            0,
+            255
+          ],
+          "bbox": [
+            93,
+            95,
+            339,
+            323
+          ],
+          "atlas_equal": true,
+          "edge_opaque": false,
+          "bottom_band_bbox": [
+            154,
+            0,
+            339,
+            23
+          ],
+          "atlas_visible_equal": true
+        },
+        {
+          "file": "frames/die/01.png",
+          "sha256": "432f787e20e37d0c4e46144f7092d85bad877866723645785b0ea4b2bae5de4f",
+          "size": [
+            448,
+            384
+          ],
+          "alpha_extrema": [
+            0,
+            255
+          ],
+          "bbox": [
+            79,
+            120,
+            300,
+            322
+          ],
+          "atlas_equal": true,
+          "edge_opaque": false,
+          "bottom_band_bbox": [
+            79,
+            0,
+            300,
+            22
+          ],
+          "atlas_visible_equal": true
+        },
+        {
+          "file": "frames/die/02.png",
+          "sha256": "b6d663a45e04d5490ad48bd39d178b7721c75928c7d67eb0c00c267866561594",
+          "size": [
+            448,
+            384
+          ],
+          "alpha_extrema": [
+            0,
+            255
+          ],
+          "bbox": [
+            51,
+            187,
+            327,
+            324
+          ],
+          "atlas_equal": true,
+          "edge_opaque": false,
+          "bottom_band_bbox": [
+            52,
+            0,
+            318,
+            24
+          ],
+          "atlas_visible_equal": true
+        },
+        {
+          "file": "frames/die/03.png",
+          "sha256": "486fffbc04bb76db46364edd6601d5ed8b2409d226b15f95f09b7d12fa4ae0f1",
+          "size": [
+            448,
+            384
+          ],
+          "alpha_extrema": [
+            0,
+            255
+          ],
+          "bbox": [
+            46,
+            235,
+            338,
+            323
+          ],
+          "atlas_equal": true,
+          "edge_opaque": false,
+          "bottom_band_bbox": [
+            46,
+            0,
+            336,
+            23
+          ],
+          "atlas_visible_equal": true
+        }
+      ],
+      "generatedSources": [
+        {
+          "path": "source/poses-r1.png",
+          "sha256": "e976753240267db29af3901cf97d201d13b83bbeaf9b0b4c40532c730698529f"
+        },
+        {
+          "path": "source/poses-r2.png",
+          "sha256": "28910de74e2cd4bd59a020bb3f2ba7181a4b04f6c69862184df23c112ca5b800"
+        },
+        {
+          "path": "source/release-r3.png",
+          "sha256": "70f32d94d9e821a5adc92d068a4678d3d4431751f1059daf0b4203ef4841fb44"
+        }
+      ]
+    },
+    {
+      "id": "v05-emberbow-hunter",
+      "status": "pass_with_limitations",
+      "approvedMaster": {
+        "path": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\characters\\cinderhook-marauder\\variants-nine-2026-10-02\\v05-emberbow-hunter-r1.png",
+        "sha256": "3513778d465cfda10e5221cf8ef7fd603934ba7c84ba2d96013aee0382e0df24",
+        "matchesHandoff": true,
+        "decision": "Approved",
+        "evidenceId": "bf104a58-4e6f-4038-975e-9c1c62c4f270"
+      },
+      "manifestSha256": "d5f171b848479e9aca758009eaecb6d2a6ce69274eccc77d206cd9aa20b254ba",
+      "atlasSha256": "6c11e2f38976dfc62b6d09f6de2424cc81a63becaeffb05b45aa07bbcd28ae38",
+      "canvas": {
+        "width": 448,
+        "height": 384
+      },
+      "exportedFrameCount": 20,
+      "runtimeUsedUniqueFrameCount": 20,
+      "excludedFrames": [],
+      "observations": [
+        "Final attack01/02 keep bronze armor on bow arm and dark wrapping on drawing arm; extra elbow plate removed. Reload is abbreviated."
+      ],
+      "states": {
+        "idle": {
+          "status": "pass_with_limitations",
+          "metadata": "pass",
+          "all_used_frames_identity_and_adjacent_pose_review": "pass_with_limitations",
+          "playback": "observed_samples",
+          "durationMs": 1200,
+          "loop": true,
+          "terminal": false,
+          "holdLastFrame": false,
+          "nextState": "idle",
+          "events": [],
+          "frameFiles": [
+            "frames/idle/00.png",
+            "frames/idle/01.png",
+            "frames/idle/02.png",
+            "frames/idle/03.png"
+          ]
+        },
+        "attack": {
+          "status": "pass_with_limitations",
+          "metadata": "pass",
+          "all_used_frames_identity_and_adjacent_pose_review": "pass_with_limitations",
+          "playback": "observed_samples",
+          "durationMs": 430,
+          "loop": false,
+          "terminal": false,
+          "holdLastFrame": false,
+          "nextState": "idle",
+          "events": [
+            {
+              "name": "release",
+              "timeMs": 200
+            }
+          ],
+          "frameFiles": [
+            "frames/attack/00.png",
+            "frames/attack/01.png",
+            "frames/attack/02.png",
+            "frames/attack/03.png"
+          ]
+        },
+        "hit": {
+          "status": "pass_with_limitations",
+          "metadata": "pass",
+          "all_used_frames_identity_and_adjacent_pose_review": "pass_with_limitations",
+          "playback": "observed_samples",
+          "durationMs": 380,
+          "loop": false,
+          "terminal": false,
+          "holdLastFrame": false,
+          "nextState": "idle",
+          "events": [],
+          "frameFiles": [
+            "frames/hit/00.png",
+            "frames/hit/01.png",
+            "frames/hit/02.png",
+            "frames/hit/03.png"
+          ]
+        },
+        "wounded_idle": {
+          "status": "pass_with_limitations",
+          "metadata": "pass",
+          "all_used_frames_identity_and_adjacent_pose_review": "pass_with_limitations",
+          "playback": "observed_samples",
+          "durationMs": 1380,
+          "loop": true,
+          "terminal": false,
+          "holdLastFrame": false,
+          "nextState": "wounded_idle",
+          "events": [],
+          "frameFiles": [
+            "frames/wounded_idle/00.png",
+            "frames/wounded_idle/01.png",
+            "frames/wounded_idle/02.png",
+            "frames/wounded_idle/03.png"
+          ]
+        },
+        "die": {
+          "status": "pass_with_limitations",
+          "metadata": "pass",
+          "all_used_frames_identity_and_adjacent_pose_review": "pass_with_limitations",
+          "playback": "observed_samples",
+          "durationMs": 1040,
+          "loop": false,
+          "terminal": true,
+          "holdLastFrame": true,
+          "nextState": "terminal",
+          "events": [],
+          "frameFiles": [
+            "frames/die/00.png",
+            "frames/die/01.png",
+            "frames/die/02.png",
+            "frames/die/03.png"
+          ]
+        }
+      },
+      "usedFrames": [
+        {
+          "file": "frames/idle/00.png",
+          "sha256": "e38271d76fabc045fd23ba60e3bcdd2b8c17abed9572093be7e57b0623a98f48",
+          "size": [
+            448,
+            384
+          ],
+          "alpha_extrema": [
+            0,
+            255
+          ],
+          "bbox": [
+            104,
+            41,
+            333,
+            324
+          ],
+          "atlas_equal": true,
+          "edge_opaque": false,
+          "bottom_band_bbox": [
+            139,
+            0,
+            312,
+            24
+          ]
+        },
+        {
+          "file": "frames/idle/01.png",
+          "sha256": "3b019acca4e4955b1a7d9b52b74d3ad4f7c0e9b6dfd7424f197dd805945ce314",
+          "size": [
+            448,
+            384
+          ],
+          "alpha_extrema": [
+            0,
+            255
+          ],
+          "bbox": [
+            85,
+            38,
+            313,
+            323
+          ],
+          "atlas_equal": true,
+          "edge_opaque": false,
+          "bottom_band_bbox": [
+            117,
+            0,
+            293,
+            23
+          ]
+        },
+        {
+          "file": "frames/idle/02.png",
+          "sha256": "2f54d737aad749dbd5ae7b20cb548d1712dc79d3a5cb8ee137c9394b94a577e3",
+          "size": [
+            448,
+            384
+          ],
+          "alpha_extrema": [
+            0,
+            255
+          ],
+          "bbox": [
+            83,
+            36,
+            311,
+            324
+          ],
+          "atlas_equal": true,
+          "edge_opaque": false,
+          "bottom_band_bbox": [
+            115,
+            0,
+            295,
+            24
+          ]
+        },
+        {
+          "file": "frames/idle/03.png",
+          "sha256": "69a6144bbbc16dbf15f28453a2cbb45784d98eb79bd3b7cc5fdfb6b10a012f36",
+          "size": [
+            448,
+            384
+          ],
+          "alpha_extrema": [
+            0,
+            255
+          ],
+          "bbox": [
+            88,
+            39,
+            317,
+            323
+          ],
+          "atlas_equal": true,
+          "edge_opaque": false,
+          "bottom_band_bbox": [
+            122,
+            0,
+            298,
+            23
+          ]
+        },
+        {
+          "file": "frames/attack/00.png",
+          "sha256": "dfbc7d78b505b15265297766a2a0b4e88b8b083344dcce38c4c0b3dabf5ac905",
+          "size": [
+            448,
+            384
+          ],
+          "alpha_extrema": [
+            0,
+            255
+          ],
+          "bbox": [
+            86,
+            49,
+            329,
+            324
+          ],
+          "atlas_equal": true,
+          "edge_opaque": false,
+          "bottom_band_bbox": [
+            137,
+            0,
+            323,
+            24
+          ]
+        },
+        {
+          "file": "frames/attack/01.png",
+          "sha256": "575ce6450908b61b1c8da59c1952136d8f8206c28650709399202eabbe6662b2",
+          "size": [
+            448,
+            384
+          ],
+          "alpha_extrema": [
+            0,
+            255
+          ],
+          "bbox": [
+            48,
+            46,
+            324,
+            323
+          ],
+          "atlas_equal": true,
+          "edge_opaque": false,
+          "bottom_band_bbox": [
+            48,
+            0,
+            324,
+            23
+          ]
+        },
+        {
+          "file": "frames/attack/02.png",
+          "sha256": "fb8d065e835a4e274001ac9a1c32e180f6d246b6dd7bd993195917a7d0eaa7ae",
+          "size": [
+            448,
+            384
+          ],
+          "alpha_extrema": [
+            0,
+            255
+          ],
+          "bbox": [
+            89,
+            48,
+            345,
+            322
+          ],
+          "atlas_equal": true,
+          "edge_opaque": false,
+          "bottom_band_bbox": [
+            135,
+            0,
+            345,
+            22
+          ]
+        },
+        {
+          "file": "frames/attack/03.png",
+          "sha256": "59661917b974fa962a4ce9975726df1a420b8f74efb310e9fca553da1600eaaa",
+          "size": [
+            448,
+            384
+          ],
+          "alpha_extrema": [
+            0,
+            255
+          ],
+          "bbox": [
+            88,
+            49,
+            330,
+            322
+          ],
+          "atlas_equal": true,
+          "edge_opaque": false,
+          "bottom_band_bbox": [
+            130,
+            0,
+            315,
+            22
+          ]
+        },
+        {
+          "file": "frames/hit/00.png",
+          "sha256": "77d28984115125ab4017aca5a3d16672dd52762b5db267da6aa4b8eaa4c35b31",
+          "size": [
+            448,
+            384
+          ],
+          "alpha_extrema": [
+            0,
+            255
+          ],
+          "bbox": [
+            104,
+            42,
+            336,
+            323
+          ],
+          "atlas_equal": true,
+          "edge_opaque": false,
+          "bottom_band_bbox": [
+            139,
+            0,
+            321,
+            23
+          ]
+        },
+        {
+          "file": "frames/hit/01.png",
+          "sha256": "15d243d4ba6d1a45cb87776f44cabfa3ce35cc3356029e7cbc2e3caf280bd00e",
+          "size": [
+            448,
+            384
+          ],
+          "alpha_extrema": [
+            0,
+            255
+          ],
+          "bbox": [
+            84,
+            64,
+            345,
+            322
+          ],
+          "atlas_equal": true,
+          "edge_opaque": false,
+          "bottom_band_bbox": [
+            113,
+            0,
+            317,
+            22
+          ]
+        },
+        {
+          "file": "frames/hit/02.png",
+          "sha256": "adc6b9e048c18022c4cb06fd815f5cad628163430ce06100a863df445e0c2bd2",
+          "size": [
+            448,
+            384
+          ],
+          "alpha_extrema": [
+            0,
+            255
+          ],
+          "bbox": [
+            85,
+            73,
+            332,
+            322
+          ],
+          "atlas_equal": true,
+          "edge_opaque": false,
+          "bottom_band_bbox": [
+            116,
+            0,
+            328,
+            22
+          ]
+        },
+        {
+          "file": "frames/hit/03.png",
+          "sha256": "0367d025f3f332f31c8afeca8936044500340ffd38383754237083f41a2e4cd0",
+          "size": [
+            448,
+            384
+          ],
+          "alpha_extrema": [
+            0,
+            255
+          ],
+          "bbox": [
+            97,
+            44,
+            332,
+            323
+          ],
+          "atlas_equal": true,
+          "edge_opaque": false,
+          "bottom_band_bbox": [
+            131,
+            0,
+            310,
+            23
+          ]
+        },
+        {
+          "file": "frames/wounded_idle/00.png",
+          "sha256": "13ac6f5cc8ed5c5deb9dc6fdd2f17c0946a03aaf250d83b1c72d1bd1e0b0ca21",
+          "size": [
+            448,
+            384
+          ],
+          "alpha_extrema": [
+            0,
+            255
+          ],
+          "bbox": [
+            113,
+            51,
+            338,
+            324
+          ],
+          "atlas_equal": true,
+          "edge_opaque": false,
+          "bottom_band_bbox": [
+            139,
+            0,
+            325,
+            24
+          ]
+        },
+        {
+          "file": "frames/wounded_idle/01.png",
+          "sha256": "69e4141583644a2ef3f5419aa2153f6a06f4a0249870c175eb62e2615ceabdc8",
+          "size": [
+            448,
+            384
+          ],
+          "alpha_extrema": [
+            0,
+            255
+          ],
+          "bbox": [
+            111,
+            63,
+            332,
+            323
+          ],
+          "atlas_equal": true,
+          "edge_opaque": false,
+          "bottom_band_bbox": [
+            139,
+            0,
+            320,
+            23
+          ]
+        },
+        {
+          "file": "frames/wounded_idle/02.png",
+          "sha256": "90db6544ee858836a03aff4a9a7c1e150703685876c418897a684a0b86c72338",
+          "size": [
+            448,
+            384
+          ],
+          "alpha_extrema": [
+            0,
+            255
+          ],
+          "bbox": [
+            110,
+            66,
+            329,
+            323
+          ],
+          "atlas_equal": true,
+          "edge_opaque": false,
+          "bottom_band_bbox": [
+            137,
+            0,
+            319,
+            23
+          ]
+        },
+        {
+          "file": "frames/wounded_idle/03.png",
+          "sha256": "8f024ad37d2a72b6f5293df412d9590ed036a2169913774a170b4cf3fdb3c07d",
+          "size": [
+            448,
+            384
+          ],
+          "alpha_extrema": [
+            0,
+            255
+          ],
+          "bbox": [
+            96,
+            66,
+            324,
+            323
+          ],
+          "atlas_equal": true,
+          "edge_opaque": false,
+          "bottom_band_bbox": [
+            139,
+            0,
+            313,
+            23
+          ]
+        },
+        {
+          "file": "frames/die/00.png",
+          "sha256": "a247651af0d32462f813035418c8458f7af47701dfefc057f3cf6695615553df",
+          "size": [
+            448,
+            384
+          ],
+          "alpha_extrema": [
+            0,
+            255
+          ],
+          "bbox": [
+            94,
+            88,
+            315,
+            323
+          ],
+          "atlas_equal": true,
+          "edge_opaque": false,
+          "bottom_band_bbox": [
+            149,
+            0,
+            308,
+            23
+          ]
+        },
+        {
+          "file": "frames/die/01.png",
+          "sha256": "581d38902ba917a4fec243a9dfab8afedf5a1976e3ab72dad8144b6d3101006a",
+          "size": [
+            448,
+            384
+          ],
+          "alpha_extrema": [
+            0,
+            255
+          ],
+          "bbox": [
+            51,
+            137,
+            302,
+            323
+          ],
+          "atlas_equal": true,
+          "edge_opaque": false,
+          "bottom_band_bbox": [
+            51,
+            0,
+            302,
+            23
+          ]
+        },
+        {
+          "file": "frames/die/02.png",
+          "sha256": "5d239a0041d2d2d1332807cef8b61d621082f9bf877d32f0cd6d7d6178d9af82",
+          "size": [
+            448,
+            384
+          ],
+          "alpha_extrema": [
+            0,
+            255
+          ],
+          "bbox": [
+            25,
+            177,
+            338,
+            323
+          ],
+          "atlas_equal": true,
+          "edge_opaque": false,
+          "bottom_band_bbox": [
+            73,
+            0,
+            247,
+            23
+          ]
+        },
+        {
+          "file": "frames/die/03.png",
+          "sha256": "ca76dc687d3df9ef82393a6803a9f75c40650fab795ebc8ea4c4a0e845030f00",
+          "size": [
+            448,
+            384
+          ],
+          "alpha_extrema": [
+            0,
+            255
+          ],
+          "bbox": [
+            73,
+            206,
+            340,
+            323
+          ],
+          "atlas_equal": true,
+          "edge_opaque": false,
+          "bottom_band_bbox": [
+            80,
+            0,
+            308,
+            23
+          ]
+        }
+      ],
+      "generatedSources": [
+        {
+          "path": "source/poses-r1.png",
+          "sha256": "97604f30ddd99f5d18e0c5bdb0a177458aa224330df1feaeec216227e05db40d"
+        },
+        {
+          "path": "source/poses-r2.png",
+          "sha256": "1551152b56b8ba44b0a00919d1ebaa5e02fa259ea5c5003400ced1fad1566d61"
+        },
+        {
+          "path": "source/poses-r3.png",
+          "sha256": "242dabcfa54a40980b2b5b21fb6dc157c46865bc4e3c4533fd001b244fb4a9e1"
+        }
+      ]
+    },
+    {
+      "id": "v06-forgehammer-sapper",
+      "status": "pass_with_limitations",
+      "approvedMaster": {
+        "path": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\characters\\cinderhook-marauder\\variants-nine-2026-10-02\\v06-forgehammer-sapper-r1.png",
+        "sha256": "4b276d1e55e995d54b0d0ba5f3c4ff280c4de944a030bfaeccb52585426312e3",
+        "matchesHandoff": true,
+        "decision": "Approved",
+        "evidenceId": "041efecf-e970-4552-95a0-852bca8ef3fc"
+      },
+      "manifestSha256": "09e93a04b63e51e35119a0b0a3bc55ee1a0cdedcbd947b639c359044167f9444",
+      "atlasSha256": "f2f22b4ffa9887b39f79420aa087d696cc53d0168fd46ca6330c3136fe7fa99a",
+      "canvas": {
+        "width": 354,
+        "height": 354
+      },
+      "exportedFrameCount": 16,
+      "runtimeUsedUniqueFrameCount": 16,
+      "excludedFrames": [],
+      "observations": [
+        "R2 hit08 removes invented tusk; terminal15 boot complete. All16 poses inspected; individual five-state light/dark playback sampled, terminal hold verified."
+      ],
+      "states": {
+        "idle": {
+          "status": "pass_with_limitations",
+          "metadata": "pass",
+          "all_used_frames_identity_and_adjacent_pose_review": "pass_with_limitations",
+          "playback": "observed_samples",
+          "durationMs": 1380,
+          "loop": true,
+          "terminal": null,
+          "holdLastFrame": false,
+          "nextState": "idle",
+          "events": [],
+          "frameFiles": [
+            "frames/00.png",
+            "frames/01.png",
+            "frames/02.png",
+            "frames/03.png"
+          ]
+        },
+        "attack": {
+          "status": "pass_with_limitations",
+          "metadata": "pass",
+          "all_used_frames_identity_and_adjacent_pose_review": "pass_with_limitations",
+          "playback": "observed_samples",
+          "durationMs": 700,
+          "loop": false,
+          "terminal": null,
+          "holdLastFrame": false,
+          "nextState": "idle",
+          "events": [
+            {
+              "name": "impact",
+              "timeMs": 330
+            }
+          ],
+          "frameFiles": [
+            "frames/00.png",
+            "frames/04.png",
+            "frames/05.png",
+            "frames/06.png",
+            "frames/07.png",
+            "frames/09.png"
+          ]
+        },
+        "hit": {
+          "status": "pass_with_limitations",
+          "metadata": "pass",
+          "all_used_frames_identity_and_adjacent_pose_review": "pass_with_limitations",
+          "playback": "observed_samples",
+          "durationMs": 320,
+          "loop": false,
+          "terminal": null,
+          "holdLastFrame": false,
+          "nextState": "idle",
+          "events": [],
+          "frameFiles": [
+            "frames/00.png",
+            "frames/08.png",
+            "frames/09.png"
+          ]
+        },
+        "wounded_idle": {
+          "status": "pass_with_limitations",
+          "metadata": "pass",
+          "all_used_frames_identity_and_adjacent_pose_review": "pass_with_limitations",
+          "playback": "observed_samples",
+          "durationMs": 1000,
+          "loop": true,
+          "terminal": null,
+          "holdLastFrame": false,
+          "nextState": "wounded_idle",
+          "events": [],
+          "frameFiles": [
+            "frames/10.png",
+            "frames/11.png"
+          ]
+        },
+        "die": {
+          "status": "pass_with_limitations",
+          "metadata": "pass",
+          "all_used_frames_identity_and_adjacent_pose_review": "pass_with_limitations",
+          "playback": "observed_samples",
+          "durationMs": 1720,
+          "loop": false,
+          "terminal": "hold final frame",
+          "holdLastFrame": true,
+          "nextState": null,
+          "events": [
+            {
+              "name": "death",
+              "timeMs": 520
+            }
+          ],
+          "frameFiles": [
+            "frames/00.png",
+            "frames/12.png",
+            "frames/13.png",
+            "frames/14.png",
+            "frames/15.png"
+          ]
+        }
+      },
+      "usedFrames": [
+        {
+          "file": "frames/00.png",
+          "sha256": "d5399efcbef6da3ef95fa2ad14127bab5d07ac65f0ed1119ea0156452dd5b080",
+          "size": [
+            354,
+            354
+          ],
+          "alpha_extrema": [
+            0,
+            255
+          ],
+          "bbox": [
+            43,
+            48,
+            313,
+            334
+          ],
+          "atlas_equal": true,
+          "edge_opaque": false,
+          "bottom_band_bbox": [
+            116,
+            0,
+            313,
+            30
+          ]
+        },
+        {
+          "file": "frames/01.png",
+          "sha256": "0a763d7472d04291c9eff63863190f080bf1acadcb63d94dce82e158d764de12",
+          "size": [
+            354,
+            354
+          ],
+          "alpha_extrema": [
+            0,
+            255
+          ],
+          "bbox": [
+            41,
+            47,
+            313,
+            334
+          ],
+          "atlas_equal": true,
+          "edge_opaque": false,
+          "bottom_band_bbox": [
+            109,
+            0,
+            313,
+            30
+          ]
+        },
+        {
+          "file": "frames/02.png",
+          "sha256": "3a043eae9c05d8ab3a831869b2e280933bcb20e31257665645d8a1932d3f83f7",
+          "size": [
+            354,
+            354
+          ],
+          "alpha_extrema": [
+            0,
+            255
+          ],
+          "bbox": [
+            37,
+            44,
+            312,
+            334
+          ],
+          "atlas_equal": true,
+          "edge_opaque": false,
+          "bottom_band_bbox": [
+            112,
+            0,
+            312,
+            30
+          ]
+        },
+        {
+          "file": "frames/03.png",
+          "sha256": "0b4177c5e566b328283227db35775847bdad4c22917774cbd0f55422446d1f66",
+          "size": [
+            354,
+            354
+          ],
+          "alpha_extrema": [
+            0,
+            255
+          ],
+          "bbox": [
+            42,
+            45,
+            312,
+            334
+          ],
+          "atlas_equal": true,
+          "edge_opaque": false,
+          "bottom_band_bbox": [
+            48,
+            0,
+            312,
+            30
+          ]
+        },
+        {
+          "file": "frames/04.png",
+          "sha256": "1f0034329f6a9d77e706e435fdf09f889aa9a2cd661b61999b170c2c618758a5",
+          "size": [
+            354,
+            354
+          ],
+          "alpha_extrema": [
+            0,
+            255
+          ],
+          "bbox": [
+            99,
+            27,
+            324,
+            334
+          ],
+          "atlas_equal": true,
+          "edge_opaque": false,
+          "bottom_band_bbox": [
+            110,
+            0,
+            324,
+            30
+          ]
+        },
+        {
+          "file": "frames/05.png",
+          "sha256": "1fed0a5ea43319289739fab0c2f49acdf0af386ea01e35a15974922911ef417a",
+          "size": [
+            354,
+            354
+          ],
+          "alpha_extrema": [
+            0,
+            255
+          ],
+          "bbox": [
+            96,
+            17,
+            331,
+            334
+          ],
+          "atlas_equal": true,
+          "edge_opaque": false,
+          "bottom_band_bbox": [
+            96,
+            0,
+            331,
+            30
+          ]
+        },
+        {
+          "file": "frames/06.png",
+          "sha256": "ef108e30900bc24e0615d2a5649dcc0905cc57a859370cfc3820d19701a23909",
+          "size": [
+            354,
+            354
+          ],
+          "alpha_extrema": [
+            0,
+            255
+          ],
+          "bbox": [
+            42,
+            101,
+            328,
+            334
+          ],
+          "atlas_equal": true,
+          "edge_opaque": false,
+          "bottom_band_bbox": [
+            47,
+            0,
+            328,
+            30
+          ]
+        },
+        {
+          "file": "frames/07.png",
+          "sha256": "90397fe0e58c133db6d8ee0d66d302f3b402d67fc31542921650b2c5f2994f2a",
+          "size": [
+            354,
+            354
+          ],
+          "alpha_extrema": [
+            0,
+            255
+          ],
+          "bbox": [
+            42,
+            123,
+            319,
+            334
+          ],
+          "atlas_equal": true,
+          "edge_opaque": false,
+          "bottom_band_bbox": [
+            48,
+            0,
+            319,
+            30
+          ]
+        },
+        {
+          "file": "frames/09.png",
+          "sha256": "4537dc5ad71478e755224a3d9ffe5f61f3a425db00d126a4df233ab440e0c7ee",
+          "size": [
+            354,
+            354
+          ],
+          "alpha_extrema": [
+            0,
+            255
+          ],
+          "bbox": [
+            42,
+            58,
+            325,
+            334
+          ],
+          "atlas_equal": true,
+          "edge_opaque": false,
+          "bottom_band_bbox": [
+            109,
+            0,
+            325,
+            30
+          ]
+        },
+        {
+          "file": "frames/08.png",
+          "sha256": "900b1384a0592cb04bb117bbd8bebe797d9a24dc7b3ef068a00fa1eb0ac197c3",
+          "size": [
+            354,
+            354
+          ],
+          "alpha_extrema": [
+            0,
+            255
+          ],
+          "bbox": [
+            43,
+            45,
+            310,
+            334
+          ],
+          "atlas_equal": true,
+          "edge_opaque": false,
+          "bottom_band_bbox": [
+            88,
+            0,
+            310,
+            30
+          ]
+        },
+        {
+          "file": "frames/10.png",
+          "sha256": "cbc955b50a251ff9255b3fecfd7e134983133108917e48e14b9a98f7b8c9956f",
+          "size": [
+            354,
+            354
+          ],
+          "alpha_extrema": [
+            0,
+            255
+          ],
+          "bbox": [
+            46,
+            81,
+            327,
+            334
+          ],
+          "atlas_equal": true,
+          "edge_opaque": false,
+          "bottom_band_bbox": [
+            55,
+            0,
+            327,
+            30
+          ]
+        },
+        {
+          "file": "frames/11.png",
+          "sha256": "ba0530db7cefa966fca7c8d611a33f940755d4e2be6f9d18dcb8fcbc16abae76",
+          "size": [
+            354,
+            354
+          ],
+          "alpha_extrema": [
+            0,
+            255
+          ],
+          "bbox": [
+            42,
+            94,
+            328,
+            334
+          ],
+          "atlas_equal": true,
+          "edge_opaque": false,
+          "bottom_band_bbox": [
+            49,
+            0,
+            328,
+            30
+          ]
+        },
+        {
+          "file": "frames/12.png",
+          "sha256": "6d0725ad2e5434de080ff8e601b9c19eebe074bc57c51f1b4539e0bae04bb693",
+          "size": [
+            354,
+            354
+          ],
+          "alpha_extrema": [
+            0,
+            255
+          ],
+          "bbox": [
+            49,
+            82,
+            343,
+            334
+          ],
+          "atlas_equal": true,
+          "edge_opaque": false,
+          "bottom_band_bbox": [
+            56,
+            0,
+            343,
+            30
+          ]
+        },
+        {
+          "file": "frames/13.png",
+          "sha256": "c1222c355333fb5720bc3291e8ee7d443678c56b4cadba5a9fd56ee0644b798e",
+          "size": [
+            354,
+            354
+          ],
+          "alpha_extrema": [
+            0,
+            255
+          ],
+          "bbox": [
+            47,
+            107,
+            345,
+            334
+          ],
+          "atlas_equal": true,
+          "edge_opaque": false,
+          "bottom_band_bbox": [
+            58,
+            0,
+            345,
+            30
+          ]
+        },
+        {
+          "file": "frames/14.png",
+          "sha256": "9927f63369fcf79690ccefcc36c5f694ab01581e1061f408a361379a2a5d7476",
+          "size": [
+            354,
+            354
+          ],
+          "alpha_extrema": [
+            0,
+            255
+          ],
+          "bbox": [
+            29,
+            145,
+            330,
+            334
+          ],
+          "atlas_equal": true,
+          "edge_opaque": false,
+          "bottom_band_bbox": [
+            29,
+            0,
+            147,
+            30
+          ]
+        },
+        {
+          "file": "frames/15.png",
+          "sha256": "1fb73d6388c6f8118d88041d5dcb86b63a5f78871d8a78c0ee21b75cb99dbd0e",
+          "size": [
+            354,
+            354
+          ],
+          "alpha_extrema": [
+            0,
+            255
+          ],
+          "bbox": [
+            23,
+            168,
+            324,
+            334
+          ],
+          "atlas_equal": true,
+          "edge_opaque": false,
+          "bottom_band_bbox": [
+            29,
+            0,
+            141,
+            30
+          ]
+        }
+      ],
+      "generatedSources": [
+        {
+          "path": "source-sheet-r1.png",
+          "sha256": "186edb61c21fe79bb2cba391cb65e48f44048ae6c9ff3814666fa0cef53f79f1"
+        },
+        {
+          "path": "source-sheet-r2.png",
+          "sha256": "a2bf9012bdb823b16b9c71e07023d76c8ce67e7c7174fb7428253555bb3bd110"
+        }
+      ]
+    },
+    {
+      "id": "v07-ashknife-cutthroat",
+      "status": "pass_with_limitations",
+      "approvedMaster": {
+        "path": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\characters\\cinderhook-marauder\\variants-nine-2026-10-02\\v07-ashknife-cutthroat-r1.png",
+        "sha256": "cbffcc231d3d90fd9e58297d7c1f01cfcf0847ff29af8945d69f792821ef323f",
+        "matchesHandoff": true,
+        "decision": "Approved",
+        "evidenceId": "e5e57466-adb2-46d7-bc18-2d79d0d6b0fc"
+      },
+      "manifestSha256": "d35aa1864e807c7ff6ef8269d3bb7de81295ff6890169abf0139a1f194a46dd2",
+      "atlasSha256": "2dcb6b33175fb3aa7c2ef761f4677c728db049b152e34fb8a1ba8e066737e894",
+      "canvas": {
+        "width": 494,
+        "height": 494
+      },
+      "exportedFrameCount": 16,
+      "runtimeUsedUniqueFrameCount": 15,
+      "excludedFrames": [
+        {
+          "file": "frames/04.png",
+          "reason": "Generated raised windup swaps dagger hands; runtime uses clean crossed-arm windup05 instead."
+        }
+      ],
+      "observations": [
+        "Neighbor fragments removed by component extraction. R3 wounded10/11 have two hands visibly gripping two daggers. R4 runtime excludes04 because blade ownership swapped. Used attack0,5,6,7,0 rechecked."
+      ],
+      "states": {
+        "idle": {
+          "status": "pass_with_limitations",
+          "metadata": "pass",
+          "all_used_frames_identity_and_adjacent_pose_review": "pass_with_limitations",
+          "playback": "observed_samples",
+          "durationMs": 1380,
+          "loop": true,
+          "terminal": null,
+          "holdLastFrame": false,
+          "nextState": "idle",
+          "events": [],
+          "frameFiles": [
+            "frames/00.png",
+            "frames/01.png",
+            "frames/02.png",
+            "frames/03.png"
+          ]
+        },
+        "attack": {
+          "status": "pass_with_limitations",
+          "metadata": "pass",
+          "all_used_frames_identity_and_adjacent_pose_review": "pass_with_limitations",
+          "playback": "observed_samples",
+          "durationMs": 350,
+          "loop": false,
+          "terminal": null,
+          "holdLastFrame": false,
+          "nextState": "idle",
+          "events": [
+            {
+              "name": "impact",
+              "timeMs": 170
+            }
+          ],
+          "frameFiles": [
+            "frames/00.png",
+            "frames/05.png",
+            "frames/06.png",
+            "frames/07.png"
+          ]
+        },
+        "hit": {
+          "status": "pass_with_limitations",
+          "metadata": "pass",
+          "all_used_frames_identity_and_adjacent_pose_review": "pass_with_limitations",
+          "playback": "observed_samples",
+          "durationMs": 320,
+          "loop": false,
+          "terminal": null,
+          "holdLastFrame": false,
+          "nextState": "idle",
+          "events": [],
+          "frameFiles": [
+            "frames/00.png",
+            "frames/08.png",
+            "frames/09.png"
+          ]
+        },
+        "wounded_idle": {
+          "status": "pass_with_limitations",
+          "metadata": "pass",
+          "all_used_frames_identity_and_adjacent_pose_review": "pass_with_limitations",
+          "playback": "observed_samples",
+          "durationMs": 1000,
+          "loop": true,
+          "terminal": null,
+          "holdLastFrame": false,
+          "nextState": "wounded_idle",
+          "events": [],
+          "frameFiles": [
+            "frames/10.png",
+            "frames/11.png"
+          ]
+        },
+        "die": {
+          "status": "pass_with_limitations",
+          "metadata": "pass",
+          "all_used_frames_identity_and_adjacent_pose_review": "pass_with_limitations",
+          "playback": "observed_samples",
+          "durationMs": 1720,
+          "loop": false,
+          "terminal": "hold final frame",
+          "holdLastFrame": true,
+          "nextState": null,
+          "events": [
+            {
+              "name": "death",
+              "timeMs": 520
+            }
+          ],
+          "frameFiles": [
+            "frames/00.png",
+            "frames/12.png",
+            "frames/13.png",
+            "frames/14.png",
+            "frames/15.png"
+          ]
+        }
+      },
+      "usedFrames": [
+        {
+          "file": "frames/00.png",
+          "sha256": "4a3ccaf06609162f74359845541f52533b28b694e6b91ea08653c8f16a2e554a",
+          "size": [
+            494,
+            494
+          ],
+          "alpha_extrema": [
+            0,
+            255
+          ],
+          "bbox": [
+            118,
+            159,
+            398,
+            474
+          ],
+          "atlas_equal": true,
+          "edge_opaque": false,
+          "bottom_band_bbox": [
+            143,
+            0,
+            384,
+            30
+          ]
+        },
+        {
+          "file": "frames/01.png",
+          "sha256": "40587a1271376e54ea57cdeb9ce97ae5aaf11158c4d3bac4af472b8624baaec5",
+          "size": [
+            494,
+            494
+          ],
+          "alpha_extrema": [
+            0,
+            255
+          ],
+          "bbox": [
+            121,
+            159,
+            396,
+            474
+          ],
+          "atlas_equal": true,
+          "edge_opaque": false,
+          "bottom_band_bbox": [
+            147,
+            0,
+            384,
+            30
+          ]
+        },
+        {
+          "file": "frames/02.png",
+          "sha256": "9f743dc2737deb2f4dcc36dbf0f15c750e8b43aee74d9e3e9678f2395daca7b8",
+          "size": [
+            494,
+            494
+          ],
+          "alpha_extrema": [
+            0,
+            255
+          ],
+          "bbox": [
+            119,
+            158,
+            398,
+            474
+          ],
+          "atlas_equal": true,
+          "edge_opaque": false,
+          "bottom_band_bbox": [
+            145,
+            0,
+            384,
+            30
+          ]
+        },
+        {
+          "file": "frames/03.png",
+          "sha256": "14e7a765c0316f64b1848812dcd049fbe658c9c8f2da7e31d0f0284fe3634350",
+          "size": [
+            494,
+            494
+          ],
+          "alpha_extrema": [
+            0,
+            255
+          ],
+          "bbox": [
+            129,
+            161,
+            390,
+            474
+          ],
+          "atlas_equal": true,
+          "edge_opaque": false,
+          "bottom_band_bbox": [
+            151,
+            0,
+            381,
+            30
+          ]
+        },
+        {
+          "file": "frames/05.png",
+          "sha256": "923547800d517808c0e98bd5cb7715c059dd1df83c2b270184eff8a804dba77e",
+          "size": [
+            494,
+            494
+          ],
+          "alpha_extrema": [
+            0,
+            255
+          ],
+          "bbox": [
+            154,
+            186,
+            400,
+            474
+          ],
+          "atlas_equal": true,
+          "edge_opaque": false,
+          "bottom_band_bbox": [
+            182,
+            0,
+            381,
+            30
+          ]
+        },
+        {
+          "file": "frames/06.png",
+          "sha256": "f78e0fcfae391102a24062f15f5ce303f2db2c6ff1ed68d902567341f08c7420",
+          "size": [
+            494,
+            494
+          ],
+          "alpha_extrema": [
+            0,
+            255
+          ],
+          "bbox": [
+            21,
+            201,
+            438,
+            474
+          ],
+          "atlas_equal": true,
+          "edge_opaque": false,
+          "bottom_band_bbox": [
+            238,
+            0,
+            384,
+            30
+          ]
+        },
+        {
+          "file": "frames/07.png",
+          "sha256": "877851a32c483274aa5d96f64648921828f2a5f9f879d9d788e3222ef08d40ad",
+          "size": [
+            494,
+            494
+          ],
+          "alpha_extrema": [
+            0,
+            255
+          ],
+          "bbox": [
+            81,
+            183,
+            401,
+            474
+          ],
+          "atlas_equal": true,
+          "edge_opaque": false,
+          "bottom_band_bbox": [
+            254,
+            0,
+            384,
+            30
+          ]
+        },
+        {
+          "file": "frames/08.png",
+          "sha256": "cbfb48142cae14941d4c9d213916e089f4ef3f3ab93c28856faba837ee9d7930",
+          "size": [
+            494,
+            494
+          ],
+          "alpha_extrema": [
+            0,
+            255
+          ],
+          "bbox": [
+            117,
+            183,
+            401,
+            474
+          ],
+          "atlas_equal": true,
+          "edge_opaque": false,
+          "bottom_band_bbox": [
+            182,
+            0,
+            372,
+            30
+          ]
+        },
+        {
+          "file": "frames/09.png",
+          "sha256": "0aa63b4127d64af371626ef03b705c0ae0bc481a8db88ae9df70ef1b41f93b14",
+          "size": [
+            494,
+            494
+          ],
+          "alpha_extrema": [
+            0,
+            255
+          ],
+          "bbox": [
+            142,
+            183,
+            407,
+            474
+          ],
+          "atlas_equal": true,
+          "edge_opaque": false,
+          "bottom_band_bbox": [
+            148,
+            0,
+            384,
+            30
+          ]
+        },
+        {
+          "file": "frames/10.png",
+          "sha256": "62520858c1a2c47d52659e34dae2d3b17f56d4a4c4c43fefabdb83f0639cc41e",
+          "size": [
+            494,
+            494
+          ],
+          "alpha_extrema": [
+            0,
+            255
+          ],
+          "bbox": [
+            144,
+            183,
+            399,
+            474
+          ],
+          "atlas_equal": true,
+          "edge_opaque": false,
+          "bottom_band_bbox": [
+            184,
+            0,
+            363,
+            30
+          ]
+        },
+        {
+          "file": "frames/11.png",
+          "sha256": "524bdcf1420c294ce9f8f62e3cd2a03560e52918c7efd6b42cb838cae0bcc694",
+          "size": [
+            494,
+            494
+          ],
+          "alpha_extrema": [
+            0,
+            255
+          ],
+          "bbox": [
+            137,
+            211,
+            386,
+            474
+          ],
+          "atlas_equal": true,
+          "edge_opaque": false,
+          "bottom_band_bbox": [
+            153,
+            0,
+            356,
+            30
+          ]
+        },
+        {
+          "file": "frames/12.png",
+          "sha256": "859f605b8dbded780028cb6058da4710915f42b772c80439e8e4451c47b659fe",
+          "size": [
+            494,
+            494
+          ],
+          "alpha_extrema": [
+            0,
+            255
+          ],
+          "bbox": [
+            111,
+            207,
+            382,
+            474
+          ],
+          "atlas_equal": true,
+          "edge_opaque": false,
+          "bottom_band_bbox": [
+            113,
+            0,
+            338,
+            30
+          ]
+        },
+        {
+          "file": "frames/13.png",
+          "sha256": "71674cc1d0e32af90a55db255f5559d807db2f14f5c8f96c79ae5731d9045ccf",
+          "size": [
+            494,
+            494
+          ],
+          "alpha_extrema": [
+            0,
+            255
+          ],
+          "bbox": [
+            84,
+            254,
+            371,
+            474
+          ],
+          "atlas_equal": true,
+          "edge_opaque": false,
+          "bottom_band_bbox": [
+            125,
+            0,
+            278,
+            30
+          ]
+        },
+        {
+          "file": "frames/14.png",
+          "sha256": "ba612052b1b18afbbbe47a133e6b474cc7d1f8c36fb2ab15ecea1b684ab8dc9a",
+          "size": [
+            494,
+            494
+          ],
+          "alpha_extrema": [
+            0,
+            255
+          ],
+          "bbox": [
+            61,
+            325,
+            372,
+            474
+          ],
+          "atlas_equal": true,
+          "edge_opaque": false,
+          "bottom_band_bbox": [
+            152,
+            25,
+            167,
+            30
+          ]
+        },
+        {
+          "file": "frames/15.png",
+          "sha256": "4e92e7e15427e94f0b4049fdb746987f1ba0a79f700502a4cf79150aab7a37a8",
+          "size": [
+            494,
+            494
+          ],
+          "alpha_extrema": [
+            0,
+            255
+          ],
+          "bbox": [
+            69,
+            353,
+            396,
+            474
+          ],
+          "atlas_equal": true,
+          "edge_opaque": false,
+          "bottom_band_bbox": null
+        }
+      ],
+      "generatedSources": [
+        {
+          "path": "source-sheet-r1.png",
+          "sha256": "88c504c4c7dfb8077453c89c62bc9455fe2c20deba1f464eae36d06d5ca12dec"
+        },
+        {
+          "path": "source-sheet-r2.png",
+          "sha256": "732c2cdd56e19cbd517196ffeb210a50fc6d36b5b55489414ac3e801bbe0605b"
+        },
+        {
+          "path": "source-sheet-r3.png",
+          "sha256": "64338ad2284a3f5b2e79165a129e0b5a2e576cf805f7afbe8606db667c99d3ed"
+        }
+      ]
+    },
+    {
+      "id": "v08-coalhex-shaman",
+      "status": "pass_with_limitations",
+      "approvedMaster": {
+        "path": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\characters\\cinderhook-marauder\\variants-nine-2026-10-02\\v08-coalhex-shaman-r1.png",
+        "sha256": "86c64514a248dccb5b4e21bc337fc14cc2454f57e9dc75e0051989d01d2b61f3",
+        "matchesHandoff": true,
+        "decision": "Approved",
+        "evidenceId": "ba0ac405-598c-40f4-ad03-678ee21c9914"
+      },
+      "manifestSha256": "d73eff62b7e91d2b143ad12374e60524faf9bca24dae8c4f9ad2430f548f968c",
+      "atlasSha256": "dff01b360be5ee35b77f165b45c2eecf2d0705d8e527bdfad65c392cfa346399",
+      "canvas": {
+        "width": 494,
+        "height": 494
+      },
+      "exportedFrameCount": 16,
+      "runtimeUsedUniqueFrameCount": 15,
+      "excludedFrames": [
+        {
+          "file": "frames/09.png",
+          "reason": "Generated recovery pose loses staff; not referenced by runtime."
+        }
+      ],
+      "observations": [
+        "All15 runtime-used poses inspected, staff retained and lying intentionally beside terminal corpse. Defective09 without staff excluded. Cast present and activated in combined player."
+      ],
+      "states": {
+        "idle": {
+          "status": "pass_with_limitations",
+          "metadata": "pass",
+          "all_used_frames_identity_and_adjacent_pose_review": "pass_with_limitations",
+          "playback": "observed_samples",
+          "durationMs": 1000,
+          "loop": true,
+          "terminal": null,
+          "holdLastFrame": false,
+          "nextState": "idle",
+          "events": [],
+          "frameFiles": [
+            "frames/00.png",
+            "frames/01.png"
+          ]
+        },
+        "attack": {
+          "status": "pass_with_limitations",
+          "metadata": "pass",
+          "all_used_frames_identity_and_adjacent_pose_review": "pass_with_limitations",
+          "playback": "observed_samples",
+          "durationMs": 350,
+          "loop": false,
+          "terminal": null,
+          "holdLastFrame": false,
+          "nextState": "idle",
+          "events": [
+            {
+              "name": "impact",
+              "timeMs": 170
+            }
+          ],
+          "frameFiles": [
+            "frames/00.png",
+            "frames/04.png",
+            "frames/05.png",
+            "frames/06.png",
+            "frames/07.png"
+          ]
+        },
+        "hit": {
+          "status": "pass_with_limitations",
+          "metadata": "pass",
+          "all_used_frames_identity_and_adjacent_pose_review": "pass_with_limitations",
+          "playback": "observed_samples",
+          "durationMs": 320,
+          "loop": false,
+          "terminal": null,
+          "holdLastFrame": false,
+          "nextState": "idle",
+          "events": [],
+          "frameFiles": [
+            "frames/00.png",
+            "frames/08.png"
+          ]
+        },
+        "wounded_idle": {
+          "status": "pass_with_limitations",
+          "metadata": "pass",
+          "all_used_frames_identity_and_adjacent_pose_review": "pass_with_limitations",
+          "playback": "observed_samples",
+          "durationMs": 1000,
+          "loop": true,
+          "terminal": null,
+          "holdLastFrame": false,
+          "nextState": "wounded_idle",
+          "events": [],
+          "frameFiles": [
+            "frames/10.png",
+            "frames/11.png"
+          ]
+        },
+        "die": {
+          "status": "pass_with_limitations",
+          "metadata": "pass",
+          "all_used_frames_identity_and_adjacent_pose_review": "pass_with_limitations",
+          "playback": "observed_samples",
+          "durationMs": 1720,
+          "loop": false,
+          "terminal": "hold final frame",
+          "holdLastFrame": true,
+          "nextState": null,
+          "events": [
+            {
+              "name": "death",
+              "timeMs": 520
+            }
+          ],
+          "frameFiles": [
+            "frames/00.png",
+            "frames/12.png",
+            "frames/13.png",
+            "frames/14.png",
+            "frames/15.png"
+          ]
+        },
+        "cast": {
+          "status": "pass_with_limitations",
+          "metadata": "pass",
+          "all_used_frames_identity_and_adjacent_pose_review": "pass_with_limitations",
+          "playback": "observed_samples",
+          "durationMs": 520,
+          "loop": false,
+          "terminal": null,
+          "holdLastFrame": false,
+          "nextState": "idle",
+          "events": [
+            {
+              "name": "release",
+              "timeMs": 190
+            }
+          ],
+          "frameFiles": [
+            "frames/00.png",
+            "frames/02.png",
+            "frames/03.png"
+          ]
+        }
+      },
+      "usedFrames": [
+        {
+          "file": "frames/00.png",
+          "sha256": "056cced942203b5d365d1d65ce9379652deca4ffc6886400a739225e560645e3",
+          "size": [
+            494,
+            494
+          ],
+          "alpha_extrema": [
+            0,
+            255
+          ],
+          "bbox": [
+            130,
+            165,
+            394,
+            474
+          ],
+          "atlas_equal": true,
+          "edge_opaque": false,
+          "bottom_band_bbox": [
+            177,
+            0,
+            376,
+            30
+          ]
+        },
+        {
+          "file": "frames/01.png",
+          "sha256": "f263bc9f02b5e705a821194178c4fa683e61d3b36c7e5118648040923ac9da3c",
+          "size": [
+            494,
+            494
+          ],
+          "alpha_extrema": [
+            0,
+            255
+          ],
+          "bbox": [
+            107,
+            172,
+            375,
+            474
+          ],
+          "atlas_equal": true,
+          "edge_opaque": false,
+          "bottom_band_bbox": [
+            155,
+            0,
+            347,
+            30
+          ]
+        },
+        {
+          "file": "frames/04.png",
+          "sha256": "5648e7cc9b554a944afcd7cf2d0245c679ca923b26658f755ab4d065c803961a",
+          "size": [
+            494,
+            494
+          ],
+          "alpha_extrema": [
+            0,
+            255
+          ],
+          "bbox": [
+            123,
+            178,
+            418,
+            474
+          ],
+          "atlas_equal": true,
+          "edge_opaque": false,
+          "bottom_band_bbox": [
+            182,
+            0,
+            324,
+            30
+          ]
+        },
+        {
+          "file": "frames/05.png",
+          "sha256": "a59f9b9b93a394035a71f04ccb7e5989aed8e04b36375fdc246fef3db77fd365",
+          "size": [
+            494,
+            494
+          ],
+          "alpha_extrema": [
+            0,
+            255
+          ],
+          "bbox": [
+            133,
+            148,
+            375,
+            474
+          ],
+          "atlas_equal": true,
+          "edge_opaque": false,
+          "bottom_band_bbox": [
+            175,
+            0,
+            336,
+            30
+          ]
+        },
+        {
+          "file": "frames/06.png",
+          "sha256": "756b38700127050036ae43cb7fe857310c44bea500f8191d07e161a4d20e3345",
+          "size": [
+            494,
+            494
+          ],
+          "alpha_extrema": [
+            0,
+            255
+          ],
+          "bbox": [
+            50,
+            253,
+            438,
+            474
+          ],
+          "atlas_equal": true,
+          "edge_opaque": false,
+          "bottom_band_bbox": [
+            55,
+            0,
+            345,
+            30
+          ]
+        },
+        {
+          "file": "frames/07.png",
+          "sha256": "485b0e6ab5677dbf882c1e3411b50e4e6a66f8af3a684c1853c151ae5ae8285f",
+          "size": [
+            494,
+            494
+          ],
+          "alpha_extrema": [
+            0,
+            255
+          ],
+          "bbox": [
+            122,
+            179,
+            382,
+            474
+          ],
+          "atlas_equal": true,
+          "edge_opaque": false,
+          "bottom_band_bbox": [
+            187,
+            0,
+            307,
+            30
+          ]
+        },
+        {
+          "file": "frames/08.png",
+          "sha256": "7069457dce6e76e87cb962df253ce29725f5699bb0b48fbe8b58bce051139078",
+          "size": [
+            494,
+            494
+          ],
+          "alpha_extrema": [
+            0,
+            255
+          ],
+          "bbox": [
+            157,
+            167,
+            410,
+            474
+          ],
+          "atlas_equal": true,
+          "edge_opaque": false,
+          "bottom_band_bbox": [
+            207,
+            0,
+            384,
+            30
+          ]
+        },
+        {
+          "file": "frames/10.png",
+          "sha256": "6ade019a2cc01f5f7403b590ff98cb58471a520d2216caa3fd1e3d517664ec02",
+          "size": [
+            494,
+            494
+          ],
+          "alpha_extrema": [
+            0,
+            255
+          ],
+          "bbox": [
+            130,
+            196,
+            387,
+            474
+          ],
+          "atlas_equal": true,
+          "edge_opaque": false,
+          "bottom_band_bbox": [
+            163,
+            0,
+            326,
+            30
+          ]
+        },
+        {
+          "file": "frames/11.png",
+          "sha256": "4f0ef1305d8fcfe4e6d9bf80eadf5707439178fd8357b95432d119dab297cd09",
+          "size": [
+            494,
+            494
+          ],
+          "alpha_extrema": [
+            0,
+            255
+          ],
+          "bbox": [
+            149,
+            206,
+            390,
+            474
+          ],
+          "atlas_equal": true,
+          "edge_opaque": false,
+          "bottom_band_bbox": [
+            181,
+            0,
+            340,
+            30
+          ]
+        },
+        {
+          "file": "frames/12.png",
+          "sha256": "574ffa62890756f61f76b9cbe8b13c47a0d4b8bf14bd75f76269f2ac874f7f3b",
+          "size": [
+            494,
+            494
+          ],
+          "alpha_extrema": [
+            0,
+            255
+          ],
+          "bbox": [
+            116,
+            223,
+            377,
+            474
+          ],
+          "atlas_equal": true,
+          "edge_opaque": false,
+          "bottom_band_bbox": [
+            142,
+            0,
+            289,
+            30
+          ]
+        },
+        {
+          "file": "frames/13.png",
+          "sha256": "5c6825bf08b294f15e76f1ca238816d422580d0bf3922e77b99d8ef012d95ebc",
+          "size": [
+            494,
+            494
+          ],
+          "alpha_extrema": [
+            0,
+            255
+          ],
+          "bbox": [
+            83,
+            272,
+            387,
+            474
+          ],
+          "atlas_equal": true,
+          "edge_opaque": false,
+          "bottom_band_bbox": [
+            83,
+            0,
+            238,
+            30
+          ]
+        },
+        {
+          "file": "frames/14.png",
+          "sha256": "b466340afa051b2892f2a5c83e9df7d0908d6d1ed26635aefcb9003c1c619c2b",
+          "size": [
+            494,
+            494
+          ],
+          "alpha_extrema": [
+            0,
+            255
+          ],
+          "bbox": [
+            83,
+            364,
+            382,
+            474
+          ],
+          "atlas_equal": true,
+          "edge_opaque": false,
+          "bottom_band_bbox": null
+        },
+        {
+          "file": "frames/15.png",
+          "sha256": "80837c2b411619310e6ca413fe16edcfc713b7a659fa456f0571ba788019a9d0",
+          "size": [
+            494,
+            494
+          ],
+          "alpha_extrema": [
+            0,
+            255
+          ],
+          "bbox": [
+            74,
+            383,
+            384,
+            474
+          ],
+          "atlas_equal": true,
+          "edge_opaque": false,
+          "bottom_band_bbox": null
+        },
+        {
+          "file": "frames/02.png",
+          "sha256": "62ab2c22af1d82604d6b6f64968497184445f8809676196945aca5853569f775",
+          "size": [
+            494,
+            494
+          ],
+          "alpha_extrema": [
+            0,
+            255
+          ],
+          "bbox": [
+            98,
+            181,
+            379,
+            474
+          ],
+          "atlas_equal": true,
+          "edge_opaque": false,
+          "bottom_band_bbox": [
+            147,
+            0,
+            318,
+            30
+          ]
+        },
+        {
+          "file": "frames/03.png",
+          "sha256": "9b180a92eac95a77dc44691d235e1592bf3c5c03c63e0f2cd5857947d3d83c31",
+          "size": [
+            494,
+            494
+          ],
+          "alpha_extrema": [
+            0,
+            255
+          ],
+          "bbox": [
+            90,
+            182,
+            385,
+            474
+          ],
+          "atlas_equal": true,
+          "edge_opaque": false,
+          "bottom_band_bbox": [
+            137,
+            0,
+            336,
+            30
+          ]
+        }
+      ],
+      "generatedSources": [
+        {
+          "path": "source-sheet-r1.png",
+          "sha256": "50b22afec36b61e836839194ebcd948c6a750fa6c7cd672927c12ae1d2341851"
+        }
+      ]
+    },
+    {
+      "id": "v09-scarblade-captain",
+      "status": "pass_with_limitations",
+      "approvedMaster": {
+        "path": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\characters\\cinderhook-marauder\\variants-nine-2026-10-02\\v09-scarblade-captain-r1.png",
+        "sha256": "73db8f595b7d73322ad8d26f35b20ead7496b45f1ea5ce849388be2e8894d5ae",
+        "matchesHandoff": true,
+        "decision": "Approved",
+        "evidenceId": "f14e074a-6a36-4f40-b19c-23da914254ea"
+      },
+      "manifestSha256": "1c3a80d95a69e0c9600275ba94ec53d4dcf7a296c3c0f584a7c9eba02751eb76",
+      "atlasSha256": "f87c5b6721c1122ffaf8681926f87c47ac870a01442f60ec861f9db2b63c5e7e",
+      "canvas": {
+        "width": 494,
+        "height": 494
+      },
+      "exportedFrameCount": 16,
+      "runtimeUsedUniqueFrameCount": 15,
+      "excludedFrames": [
+        {
+          "file": "frames/04.png",
+          "reason": "Generated windup swaps sword/shield hands; runtime uses raised sword windup05 instead."
+        }
+      ],
+      "observations": [
+        "All16 exports inspected. Wrong-handed04 excluded in r2. Runtime attack0,5,6,7,0 preserves shield/sword hands;15 used poses accepted. Guard present and activated."
+      ],
+      "states": {
+        "idle": {
+          "status": "pass_with_limitations",
+          "metadata": "pass",
+          "all_used_frames_identity_and_adjacent_pose_review": "pass_with_limitations",
+          "playback": "observed_samples",
+          "durationMs": 1000,
+          "loop": true,
+          "terminal": null,
+          "holdLastFrame": false,
+          "nextState": "idle",
+          "events": [],
+          "frameFiles": [
+            "frames/00.png",
+            "frames/01.png"
+          ]
+        },
+        "attack": {
+          "status": "pass_with_limitations",
+          "metadata": "pass",
+          "all_used_frames_identity_and_adjacent_pose_review": "pass_with_limitations",
+          "playback": "observed_samples",
+          "durationMs": 350,
+          "loop": false,
+          "terminal": null,
+          "holdLastFrame": false,
+          "nextState": "idle",
+          "events": [
+            {
+              "name": "impact",
+              "timeMs": 170
+            }
+          ],
+          "frameFiles": [
+            "frames/00.png",
+            "frames/05.png",
+            "frames/06.png",
+            "frames/07.png"
+          ]
+        },
+        "hit": {
+          "status": "pass_with_limitations",
+          "metadata": "pass",
+          "all_used_frames_identity_and_adjacent_pose_review": "pass_with_limitations",
+          "playback": "observed_samples",
+          "durationMs": 320,
+          "loop": false,
+          "terminal": null,
+          "holdLastFrame": false,
+          "nextState": "idle",
+          "events": [],
+          "frameFiles": [
+            "frames/00.png",
+            "frames/08.png",
+            "frames/09.png"
+          ]
+        },
+        "wounded_idle": {
+          "status": "pass_with_limitations",
+          "metadata": "pass",
+          "all_used_frames_identity_and_adjacent_pose_review": "pass_with_limitations",
+          "playback": "observed_samples",
+          "durationMs": 1000,
+          "loop": true,
+          "terminal": null,
+          "holdLastFrame": false,
+          "nextState": "wounded_idle",
+          "events": [],
+          "frameFiles": [
+            "frames/10.png",
+            "frames/11.png"
+          ]
+        },
+        "die": {
+          "status": "pass_with_limitations",
+          "metadata": "pass",
+          "all_used_frames_identity_and_adjacent_pose_review": "pass_with_limitations",
+          "playback": "observed_samples",
+          "durationMs": 1720,
+          "loop": false,
+          "terminal": "hold final frame",
+          "holdLastFrame": true,
+          "nextState": null,
+          "events": [
+            {
+              "name": "death",
+              "timeMs": 520
+            }
+          ],
+          "frameFiles": [
+            "frames/00.png",
+            "frames/12.png",
+            "frames/13.png",
+            "frames/14.png",
+            "frames/15.png"
+          ]
+        },
+        "guard": {
+          "status": "pass_with_limitations",
+          "metadata": "pass",
+          "all_used_frames_identity_and_adjacent_pose_review": "pass_with_limitations",
+          "playback": "observed_samples",
+          "durationMs": 800,
+          "loop": false,
+          "terminal": null,
+          "holdLastFrame": false,
+          "nextState": "idle",
+          "events": [
+            {
+              "name": "guard_on",
+              "timeMs": 200
+            },
+            {
+              "name": "guard_off",
+              "timeMs": 600
+            }
+          ],
+          "frameFiles": [
+            "frames/00.png",
+            "frames/02.png",
+            "frames/03.png"
+          ]
+        }
+      },
+      "usedFrames": [
+        {
+          "file": "frames/00.png",
+          "sha256": "e00f06a41b5d00b4c6cf7c4da1a96a1704da9045c711054484af3ace06c598d1",
+          "size": [
+            494,
+            494
+          ],
+          "alpha_extrema": [
+            0,
+            255
+          ],
+          "bbox": [
+            109,
+            183,
+            376,
+            474
+          ],
+          "atlas_equal": true,
+          "edge_opaque": false,
+          "bottom_band_bbox": [
+            109,
+            0,
+            376,
+            30
+          ]
+        },
+        {
+          "file": "frames/01.png",
+          "sha256": "f06da2c3883f9591f749182ce6a0170f16dc8d532919eb9c5d7f31dbdb55fd8f",
+          "size": [
+            494,
+            494
+          ],
+          "alpha_extrema": [
+            0,
+            255
+          ],
+          "bbox": [
+            112,
+            183,
+            376,
+            474
+          ],
+          "atlas_equal": true,
+          "edge_opaque": false,
+          "bottom_band_bbox": [
+            112,
+            0,
+            376,
+            30
+          ]
+        },
+        {
+          "file": "frames/05.png",
+          "sha256": "a67b358f4b58bf97a5ae6fb2f644ee36733b6320a927203a1f54cdbde5eb9fe2",
+          "size": [
+            494,
+            494
+          ],
+          "alpha_extrema": [
+            0,
+            255
+          ],
+          "bbox": [
+            156,
+            160,
+            379,
+            474
+          ],
+          "atlas_equal": true,
+          "edge_opaque": false,
+          "bottom_band_bbox": [
+            223,
+            0,
+            372,
+            30
+          ]
+        },
+        {
+          "file": "frames/06.png",
+          "sha256": "327dbddabd9db7a6260a871a8bcae9646b81598faeb3317e6289d5bef1c04b78",
+          "size": [
+            494,
+            494
+          ],
+          "alpha_extrema": [
+            0,
+            255
+          ],
+          "bbox": [
+            78,
+            215,
+            434,
+            474
+          ],
+          "atlas_equal": true,
+          "edge_opaque": false,
+          "bottom_band_bbox": [
+            162,
+            0,
+            384,
+            30
+          ]
+        },
+        {
+          "file": "frames/07.png",
+          "sha256": "854c7172f4379bc7815a666dfdf4052f164f02612f9ff0d6a49272975e700201",
+          "size": [
+            494,
+            494
+          ],
+          "alpha_extrema": [
+            0,
+            255
+          ],
+          "bbox": [
+            136,
+            247,
+            392,
+            474
+          ],
+          "atlas_equal": true,
+          "edge_opaque": false,
+          "bottom_band_bbox": [
+            193,
+            0,
+            369,
+            30
+          ]
+        },
+        {
+          "file": "frames/08.png",
+          "sha256": "6c28c26c787fad738d644fd9081019eb2f237b018aa144e6fd1b5d5f3477d2c7",
+          "size": [
+            494,
+            494
+          ],
+          "alpha_extrema": [
+            0,
+            255
+          ],
+          "bbox": [
+            101,
+            210,
+            389,
+            474
+          ],
+          "atlas_equal": true,
+          "edge_opaque": false,
+          "bottom_band_bbox": [
+            102,
+            0,
+            382,
+            30
+          ]
+        },
+        {
+          "file": "frames/09.png",
+          "sha256": "c7c68eee661ece22e7a5a8d40311d5cad3b12b94386e0b65cceb653c93c13cfa",
+          "size": [
+            494,
+            494
+          ],
+          "alpha_extrema": [
+            0,
+            255
+          ],
+          "bbox": [
+            110,
+            186,
+            376,
+            474
+          ],
+          "atlas_equal": true,
+          "edge_opaque": false,
+          "bottom_band_bbox": [
+            110,
+            0,
+            376,
+            30
+          ]
+        },
+        {
+          "file": "frames/10.png",
+          "sha256": "8ee95abebbeff564888f20306fbba3c30fdc93ccca4962ffd7ddaa91d9ddc9c1",
+          "size": [
+            494,
+            494
+          ],
+          "alpha_extrema": [
+            0,
+            255
+          ],
+          "bbox": [
+            119,
+            210,
+            374,
+            474
+          ],
+          "atlas_equal": true,
+          "edge_opaque": false,
+          "bottom_band_bbox": [
+            212,
+            0,
+            371,
+            30
+          ]
+        },
+        {
+          "file": "frames/11.png",
+          "sha256": "00187a04a9d2c9c8b6733db68077f3737d8695839da3d5f89a21a98bdd61a7bd",
+          "size": [
+            494,
+            494
+          ],
+          "alpha_extrema": [
+            0,
+            255
+          ],
+          "bbox": [
+            136,
+            225,
+            383,
+            474
+          ],
+          "atlas_equal": true,
+          "edge_opaque": false,
+          "bottom_band_bbox": [
+            206,
+            0,
+            340,
+            30
+          ]
+        },
+        {
+          "file": "frames/12.png",
+          "sha256": "00c1e34aba034a07a2bbbada82576979a8e23f53fdca8462dab60bda53aee6f3",
+          "size": [
+            494,
+            494
+          ],
+          "alpha_extrema": [
+            0,
+            255
+          ],
+          "bbox": [
+            103,
+            258,
+            397,
+            474
+          ],
+          "atlas_equal": true,
+          "edge_opaque": false,
+          "bottom_band_bbox": [
+            187,
+            0,
+            372,
+            30
+          ]
+        },
+        {
+          "file": "frames/13.png",
+          "sha256": "39f5acbae856f7b7dd05c6a1c0484ab8b24ef215ac9875e039f4bfcfae96d03d",
+          "size": [
+            494,
+            494
+          ],
+          "alpha_extrema": [
+            0,
+            255
+          ],
+          "bbox": [
+            105,
+            282,
+            396,
+            474
+          ],
+          "atlas_equal": true,
+          "edge_opaque": false,
+          "bottom_band_bbox": [
+            172,
+            0,
+            346,
+            30
+          ]
+        },
+        {
+          "file": "frames/14.png",
+          "sha256": "0c5307675ab9f5daab1164831a245e805e1745cdc9119bbed4f159ebb59e4074",
+          "size": [
+            494,
+            494
+          ],
+          "alpha_extrema": [
+            0,
+            255
+          ],
+          "bbox": [
+            96,
+            332,
+            401,
+            474
+          ],
+          "atlas_equal": true,
+          "edge_opaque": false,
+          "bottom_band_bbox": null
+        },
+        {
+          "file": "frames/15.png",
+          "sha256": "08192eff52687813f7b97e03443bb931aaff4981da8cd623c713ff541633b998",
+          "size": [
+            494,
+            494
+          ],
+          "alpha_extrema": [
+            0,
+            255
+          ],
+          "bbox": [
+            93,
+            358,
+            396,
+            474
+          ],
+          "atlas_equal": true,
+          "edge_opaque": false,
+          "bottom_band_bbox": null
+        },
+        {
+          "file": "frames/02.png",
+          "sha256": "48171a1c02a73003abd3b3b267465bc63076348c653e98025d5974c0a129f081",
+          "size": [
+            494,
+            494
+          ],
+          "alpha_extrema": [
+            0,
+            255
+          ],
+          "bbox": [
+            103,
+            194,
+            375,
+            474
+          ],
+          "atlas_equal": true,
+          "edge_opaque": false,
+          "bottom_band_bbox": [
+            205,
+            0,
+            331,
+            30
+          ]
+        },
+        {
+          "file": "frames/03.png",
+          "sha256": "022c18ea405b080d357312525269c4c282d24078abdc1596f0dc3f42a97704e6",
+          "size": [
+            494,
+            494
+          ],
+          "alpha_extrema": [
+            0,
+            255
+          ],
+          "bbox": [
+            86,
+            218,
+            391,
+            474
+          ],
+          "atlas_equal": true,
+          "edge_opaque": false,
+          "bottom_band_bbox": [
+            197,
+            0,
+            324,
+            30
+          ]
+        }
+      ],
+      "generatedSources": [
+        {
+          "path": "source-sheet-r1.png",
+          "sha256": "3b937a88577e2424df6ddc7e5ae33ba30022b3c5e6ed63dc99e6d6816b28a757"
+        }
+      ]
+    }
+  ],
+  "stateCount": 48,
+  "runtimeUsedUniqueFrameCount": 165,
+  "exportedFrameCount": 168
+}

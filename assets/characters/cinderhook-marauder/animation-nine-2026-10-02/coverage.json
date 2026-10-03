@@ -1,0 +1,666 @@
+{
+  "count": 9,
+  "requiredCount": 9,
+  "stateCount": 48,
+  "uniqueFrameFiles": 165,
+  "exportErrors": [],
+  "variants": [
+    {
+      "variantId": "v01-cleaver-bruiser",
+      "name": "Cleaver Bruiser",
+      "requiredStates": [
+        "idle",
+        "attack",
+        "hit",
+        "wounded_idle",
+        "die"
+      ],
+      "deliveredStates": [
+        "idle",
+        "attack",
+        "hit",
+        "wounded_idle",
+        "die"
+      ],
+      "uniqueFrameFiles": 20,
+      "canvas": {
+        "width": 384,
+        "height": 384
+      },
+      "anchor": {
+        "x": 225,
+        "y": 320
+      },
+      "manifestSha256": "f304ebc96cf8874805f4cef53de037eca0ef2f6a1d93ac0291f8ce9f8541878a",
+      "frameHashes": {
+        "frames/idle/00.png": "de33656b7cda3e6fdee3b102ce8c4b3d92beb08df1d1af97bc980a1c4355fc76",
+        "frames/idle/01.png": "cf30654e420dabc05f6a68db81ce993d40409546b5635ae2c2b8fcfb74d3bdce",
+        "frames/idle/02.png": "23a7925f48c823f5476eac079a934571442dcc6e9534007fb043128904fdb6b4",
+        "frames/idle/03.png": "9aebd83ff7b49b8dece2917939a5c532d58c4a69ba048ff05b4249fbf58b1226",
+        "frames/attack/00.png": "05b135ac092be9bcb261a439dfd6f554f4bc8383d0a135cd06d0c41abfb1a36e",
+        "frames/attack/01.png": "03d3c881aef0650db508f7500c46c0d0f8c67c9fe0cda1acbc58ab9dc755f3c8",
+        "frames/attack/02.png": "98f83562166610467809c7a99d728adcf7cb761a9556af2f9a2e20412c8390c0",
+        "frames/attack/03.png": "ef59b7d9faa7b4289a233ed504766c6a2b2f503ec08459435760bb6c777425b2",
+        "frames/hit/00.png": "8489d76144962f8144d7f67c13ced324ccaea757571d22fb43e84ff1b2282d3f",
+        "frames/hit/01.png": "de6ada986dad1297a99dbf47ad3baeb2bdf4de9d4ae1111636c099111db54676",
+        "frames/hit/02.png": "bcc972f3a15c639687cea348178962513220aa8afe4f16871c2ee22ad4ec0620",
+        "frames/hit/03.png": "2002b9d93e1799f5bd01fcdb0918000326ac1e8438b70d5c98f80c0854029fd7",
+        "frames/wounded_idle/00.png": "87b8adad3555b4659f2b21afefcecdafe5162a68381dff61fb6e0154af3b43e4",
+        "frames/wounded_idle/01.png": "e69a45c892c00513a1a2d968d26a725517ca9680a5bbfb6cf93bba4dd942df88",
+        "frames/wounded_idle/02.png": "cab6294d179ede2d66a15e52b0d8b1db4b8eeb9c7be6d4c05dff07f630758bfc",
+        "frames/wounded_idle/03.png": "fa8de6e639896eed4c0b24c264b462fd71f9613e3c3e15d91da2e8474cf200ac",
+        "frames/die/00.png": "04922994d058a676823c2a8b89c5c27f056d08e166dc83b9465616dd3c609047",
+        "frames/die/01.png": "8c3e2afca91f31b65a892a9dadf49d26f825466136ce7c37ec8facbda023579d",
+        "frames/die/02.png": "dd011d7fd10e06abc07a5b187a3b8bf4f5cc003d719a59a0bd52849c0b31b9f4",
+        "frames/die/03.png": "b69d5b3d9f02747d642835686aa5dee9322ce6e921cbad91dc0b119e7d2eb64c"
+      },
+      "sourceApproval": {
+        "status": "Approved",
+        "at": "2026-10-02T22:20:49.176Z",
+        "evidenceId": "5d19f38e-717c-47c4-a421-882d163c7579",
+        "paths": [
+          "C:\\Users\\wilsh\\Projects\\runelord\\assets\\approvals\\inbox\\cinderhook-marauder\\v01-cleaver-bruiser-r1\\v01-cleaver-bruiser-r1.png"
+        ]
+      },
+      "stateDurationsMs": {
+        "idle": 1200,
+        "attack": 430,
+        "hit": 380,
+        "wounded_idle": 1380,
+        "die": 1040
+      },
+      "limitations": [
+        "Coarse hand-drawn whole-frame animation; 4 authored poses per state.",
+        "Generated native pose resolution approx 280px; not upscaled to claim HD.",
+        "Mild generated stance jitter and color-edge fringe remain; coarse four-pose loops are review studies, not polished high-frame-count HD animation."
+      ],
+      "technicalReview": "see independent QA reports",
+      "preview": "preview.html"
+    },
+    {
+      "variantId": "v02-ash-spear-guard",
+      "name": "Ash Spear Guard",
+      "requiredStates": [
+        "idle",
+        "attack",
+        "hit",
+        "wounded_idle",
+        "die",
+        "guard"
+      ],
+      "deliveredStates": [
+        "idle",
+        "attack",
+        "hit",
+        "wounded_idle",
+        "die",
+        "guard"
+      ],
+      "uniqueFrameFiles": 24,
+      "canvas": {
+        "width": 448,
+        "height": 384
+      },
+      "anchor": {
+        "x": 245,
+        "y": 320
+      },
+      "manifestSha256": "06b79aee871c8d38a20e4b4c66098fb38962ec4bb0317c86dbdae19a0762e317",
+      "frameHashes": {
+        "frames/idle/00.png": "a6f45ddfafcefd69ae332c3873239bf51bc7ce6c6e1acbcb52791e31f0c10bcb",
+        "frames/idle/01.png": "c250d643c73cd4bd36b983f5a5772de68754dce1f54d6aca95a9cefa6632e5ff",
+        "frames/idle/02.png": "c3c72c6a9f6e5fab546f640f8f803671b405bc7be812adb9cb258e080e89f07b",
+        "frames/idle/03.png": "e9f99118c03c1f3517862f72f1a34c405000779fbc4df01f4a063182ec61e100",
+        "frames/attack/00.png": "534d8a93c628742884f3dda91c886140b6a722889f7bb75d8573a55fc9d9b17f",
+        "frames/attack/01.png": "be278be22c8148a8366f49fdae432724d8c2279c88439c7beb7aef7336cdda89",
+        "frames/attack/02.png": "32b611ac28f4e44fbb837085cbca149ebcc1895f2a1ea63394695312aaaca9ec",
+        "frames/attack/03.png": "95ad410cd1c152a85df6eebc126fcaad0d9807f4cc218dd077453f444a87457b",
+        "frames/hit/00.png": "8e0cfbeff68aafd4eae63b01c64377948c804c9672b371378d199b8465d32112",
+        "frames/hit/01.png": "1be9c25df51c10f9f2070b2420bc5548d6132489dad42ca0869e6611d0ecfd68",
+        "frames/hit/02.png": "f797fa0fafecd6dab55270c28511199614531ac6314b267ae851e3f8a0a60307",
+        "frames/hit/03.png": "c087a16ce7e74fa659377db07e63b6d588b38007719c53182e7d6079949ed580",
+        "frames/wounded_idle/00.png": "02c184489aa6d9167d73807c65cc0913db42f9818dc9219b97892d79975294ec",
+        "frames/wounded_idle/01.png": "8ee2b832bf240ae55d3ab1ebfe974798d902491838635787ef7d9bfa62b4ff05",
+        "frames/wounded_idle/02.png": "0077c5170c2f12d531ec70b2c317122ad2f0219c3314ab66a3f223453ef5f77b",
+        "frames/wounded_idle/03.png": "0effabf241d8c0f4334914e0cfb0f53834477d88659d1e98b06f21379b069617",
+        "frames/die/00.png": "e7b6c072fc1d10728ed612b80f8c71e7aa2f5b51ce2425e0abbba77f8f672758",
+        "frames/die/01.png": "df231a274e403960c63e64c7ddfa6fa91742f197f5303149bb6c9ba091d5b4e1",
+        "frames/die/02.png": "d6251f9ed134351f6ca7e09ce46bef7ac3b812dc3abc6940e15355a5607c849b",
+        "frames/die/03.png": "b983e4d3a149b186bc8d02c4a6330486dffca09cde1d301d2d3d9e17495ad508",
+        "frames/guard/00.png": "06a84eb36f00605968c8d7fe642f99377728be6b72c0fcfe3dabb6256be07f52",
+        "frames/guard/01.png": "f7e4924d5a1b94037bc027b177c0ae5b6e22d324ce0059df238d2e074de22d78",
+        "frames/guard/02.png": "87f8c32e8c81f381ba61332ce11a01cd8a5199b8b9e812b7b77f251e09bdd03f",
+        "frames/guard/03.png": "59b1c2f114fc07af54c665913711ca5e96fbd63fcb7c4f2c9bdf8d0761b8d857"
+      },
+      "sourceApproval": {
+        "status": "Approved",
+        "at": "2026-10-02T22:20:49.176Z",
+        "evidenceId": "1317f234-e2c1-48df-b2e5-52143a6e5243",
+        "paths": [
+          "C:\\Users\\wilsh\\Projects\\runelord\\assets\\approvals\\inbox\\cinderhook-marauder\\v02-ash-spear-guard-r1\\v02-ash-spear-guard-r1.png"
+        ]
+      },
+      "stateDurationsMs": {
+        "idle": 1200,
+        "attack": 430,
+        "hit": 380,
+        "wounded_idle": 1380,
+        "die": 1040,
+        "guard": 540
+      },
+      "limitations": [
+        "Coarse hand-drawn whole-frame animation; 4 authored poses per state.",
+        "Native pose resolution ~250-280px; not upscaled to claim HD.",
+        "Mild generated stance jitter and color-edge fringe remain; coarse four-pose loops are review studies, not polished high-frame-count HD animation."
+      ],
+      "technicalReview": "see independent QA reports",
+      "preview": "preview.html"
+    },
+    {
+      "variantId": "v03-twinaxe-reaver",
+      "name": "Twinaxe Reaver",
+      "requiredStates": [
+        "idle",
+        "attack",
+        "hit",
+        "wounded_idle",
+        "die"
+      ],
+      "deliveredStates": [
+        "idle",
+        "attack",
+        "hit",
+        "wounded_idle",
+        "die"
+      ],
+      "uniqueFrameFiles": 20,
+      "canvas": {
+        "width": 448,
+        "height": 384
+      },
+      "anchor": {
+        "x": 245,
+        "y": 320
+      },
+      "manifestSha256": "495e40aa821324163611929f7760a855bf94a60485273c877f59e085859f33b0",
+      "frameHashes": {
+        "frames/idle/00.png": "448bcac4b3198870b503b7fb62395eb60e0aa8d4df78ba45210e0ac37e291c82",
+        "frames/idle/01.png": "736d39fdfd0e636d959ec8fff6e6bcb6734a583d0c51fc639eb7ccaca7eed58c",
+        "frames/idle/02.png": "23b5299a1622527baa91ebfbd2f9a1adbf4652208293c83561c7f3899b331ddd",
+        "frames/idle/03.png": "0879c249ff492d8bb527919a1576f851896f074c4fa4d291a14067f7e4ea8bc9",
+        "frames/attack/00.png": "99b71935879c406eb0310c25c6a956aa3239ce270c8a65a2dc99709f3b9cdf5e",
+        "frames/attack/01.png": "50346c41bf788e0d3c1bf5766a9401590fd86f7a7b0790ff33aa56a500e9cb39",
+        "frames/attack/02.png": "a140cee04e829fcb921fd1ec9166532c85f21e9df5adad63af2bd961cb71e1b5",
+        "frames/attack/03.png": "ea6c2c9556a239d39206158022f07869dec0354f33ec1d07a6966b6a95ff723e",
+        "frames/hit/00.png": "66c42a75694bd811bb79dd0b81e491f32446414484dd5d6cd1432a0269879ab8",
+        "frames/hit/01.png": "be952ac3b2de74b3160573a2867b2e0e0c6f93ed392dd7d12600fce62dd05500",
+        "frames/hit/02.png": "87649e0c946e1bb4da36aabf3dac3eff53519182065323543f5a73fd361a0b3a",
+        "frames/hit/03.png": "662d2e6238797dec9968788e57f71fa686cf4ef1db125dca85a5fd24af19111c",
+        "frames/wounded_idle/00.png": "2b34515089ba835146b858e0a29ffae147732c06802240a11c64dbd8b87f7c99",
+        "frames/wounded_idle/01.png": "77f98d1c6e6696651e14b12991a9852b02841cffd8618a994052f6cfbb397e27",
+        "frames/wounded_idle/02.png": "b390e6013b04095ff7612fb11c141777d0e1948193e95a22494fdc6b02a13277",
+        "frames/wounded_idle/03.png": "f7d0aa3ee8a77ebe7c389d8b26f926c2bc0f27d6c3fb9deb6b846965d24b08cb",
+        "frames/die/00.png": "c89e5de8eee475ed68f022aae8935de25898ccd71ef2c53a1debd0ee744a4e97",
+        "frames/die/01.png": "0d6ca23a61dc9360f950384c59e8d6325c66340d8f730750d4172b14d10d9ddb",
+        "frames/die/02.png": "8a7eaccb05c26550bed2187446d24426fa0c568ea568dc018a2b8b78b9d9c361",
+        "frames/die/03.png": "4f0de8655a95f5532072a970bf9b00adca3a84cf346807843756698c2eeefd2b"
+      },
+      "sourceApproval": {
+        "status": "Approved",
+        "at": "2026-10-02T22:20:49.176Z",
+        "evidenceId": "eee44240-fdf0-4c1b-8181-19797f97f9cf",
+        "paths": [
+          "C:\\Users\\wilsh\\Projects\\runelord\\assets\\approvals\\inbox\\cinderhook-marauder\\v03-twinaxe-reaver-r1\\v03-twinaxe-reaver-r1.png"
+        ]
+      },
+      "stateDurationsMs": {
+        "idle": 1200,
+        "attack": 430,
+        "hit": 380,
+        "wounded_idle": 1380,
+        "die": 1040
+      },
+      "limitations": [
+        "Coarse hand-drawn whole-frame animation; 4 authored poses per state.",
+        "Native pose resolution ~250-280px; not upscaled to claim HD.",
+        "Mild generated stance jitter and color-edge fringe remain; coarse four-pose loops are review studies, not polished high-frame-count HD animation."
+      ],
+      "technicalReview": "see independent QA reports",
+      "preview": "preview.html"
+    },
+    {
+      "variantId": "v04-cinder-crossbow-scout",
+      "name": "Cinder Crossbow Scout",
+      "requiredStates": [
+        "idle",
+        "attack",
+        "hit",
+        "wounded_idle",
+        "die"
+      ],
+      "deliveredStates": [
+        "idle",
+        "attack",
+        "hit",
+        "wounded_idle",
+        "die"
+      ],
+      "uniqueFrameFiles": 20,
+      "canvas": {
+        "width": 448,
+        "height": 384
+      },
+      "anchor": {
+        "x": 245,
+        "y": 320
+      },
+      "manifestSha256": "3bf137cdf3c6d906fad453ea77ab6db02cc544dd2430ef6b4b32e051c5c1b126",
+      "frameHashes": {
+        "frames/idle/00.png": "3e0ba78b14970371a14181b85c615613af4d584ce1eb7ef2c43954ae52781256",
+        "frames/idle/01.png": "75a908c329e18deaca934e1b66fca25552377dfaedd065c56fb2f1c346a00be1",
+        "frames/idle/02.png": "c76afadea12cf46ce03bc08a7c7eab5dbd886d1d1af5e6ef80aaf12f42d7573a",
+        "frames/idle/03.png": "c9710743731bdfebaa0691228307f87e66bcf1e8ce65033f0bb77b0618b2c06e",
+        "frames/attack/00.png": "296b98232c3cb0fae9d1cd800be72a4720e30db64bc9e0a37cf5924dd7bd7c6c",
+        "frames/attack/01.png": "ee7f1c4be6f61ab7c7538256e70e969db9f00b24802ce8dfcbf88ced99627024",
+        "frames/attack/02.png": "6cbe5db9857064e26475b523d14b7d5a81fbbf64713a21b1b8ad8ac3cd532cf2",
+        "frames/attack/03.png": "beff93c753384e64a86b43ab681e4610a5b303e32759aaaea6d35d62e78669ee",
+        "frames/hit/00.png": "efd0afa93077b1e6b51c8ba21fd45d29a71d8256a52fdb0ddfca09304e52d7cf",
+        "frames/hit/01.png": "1fda653e1ef664131e491e975f5a0ffb54e5b8e2ab35b731d7841fb6bc1f0996",
+        "frames/hit/02.png": "8b53e615c94efec3f650ffd78f5a091e7a9adad46901d62d9ed64cf2ba3d3f32",
+        "frames/hit/03.png": "f602ccc9f0cd6e66cf500c9a5fd4ec41cc7b2d99597af118e33a70d7f97541c8",
+        "frames/wounded_idle/00.png": "30abf9efee889d25ce16c9cf0071388deb6ddd604f5e9039c71f029b12809eef",
+        "frames/wounded_idle/01.png": "501d46fd319c3bb49c213ead13c099c17ae393e2a6d935d4a7d4f6d0153d1449",
+        "frames/wounded_idle/02.png": "b9b03f6e38ca7868300a375d7e22d8e2be1cf1f577c14db86f8cfcada5da896d",
+        "frames/wounded_idle/03.png": "aee8a660df9e63df5c7666bcc57cae8e1fc5ff9f9fce7d05a87887fca16db944",
+        "frames/die/00.png": "7a62dc4b4def00c6c27f62fd4aebabfa178359d99c54019766d5660e79d4161a",
+        "frames/die/01.png": "432f787e20e37d0c4e46144f7092d85bad877866723645785b0ea4b2bae5de4f",
+        "frames/die/02.png": "b6d663a45e04d5490ad48bd39d178b7721c75928c7d67eb0c00c267866561594",
+        "frames/die/03.png": "486fffbc04bb76db46364edd6601d5ed8b2409d226b15f95f09b7d12fa4ae0f1"
+      },
+      "sourceApproval": {
+        "status": "Approved",
+        "at": "2026-10-02T22:20:49.176Z",
+        "evidenceId": "25408795-28bc-4a78-bb62-d9bfea65859d",
+        "paths": [
+          "C:\\Users\\wilsh\\Projects\\runelord\\assets\\approvals\\inbox\\cinderhook-marauder\\v04-cinder-crossbow-scout-r1\\v04-cinder-crossbow-scout-r1.png"
+        ]
+      },
+      "stateDurationsMs": {
+        "idle": 1200,
+        "attack": 430,
+        "hit": 380,
+        "wounded_idle": 1380,
+        "die": 1040
+      },
+      "limitations": [
+        "Coarse hand-drawn whole-frame animation; 4 authored poses per state.",
+        "Native pose resolution ~250-280px; not upscaled to claim HD.",
+        "Mild generated stance jitter and color-edge fringe remain; coarse four-pose loops are review studies, not polished high-frame-count HD animation.",
+        "Attack recovery abbreviates reload/nock: returns to loaded ready pose without an authored reload cycle. Projectile behavior is represented by release event; crossbow release frame includes visible projectile."
+      ],
+      "technicalReview": "see independent QA reports",
+      "preview": "preview.html"
+    },
+    {
+      "variantId": "v05-emberbow-hunter",
+      "name": "Emberbow Hunter",
+      "requiredStates": [
+        "idle",
+        "attack",
+        "hit",
+        "wounded_idle",
+        "die"
+      ],
+      "deliveredStates": [
+        "idle",
+        "attack",
+        "hit",
+        "wounded_idle",
+        "die"
+      ],
+      "uniqueFrameFiles": 20,
+      "canvas": {
+        "width": 448,
+        "height": 384
+      },
+      "anchor": {
+        "x": 245,
+        "y": 320
+      },
+      "manifestSha256": "d5f171b848479e9aca758009eaecb6d2a6ce69274eccc77d206cd9aa20b254ba",
+      "frameHashes": {
+        "frames/idle/00.png": "e38271d76fabc045fd23ba60e3bcdd2b8c17abed9572093be7e57b0623a98f48",
+        "frames/idle/01.png": "3b019acca4e4955b1a7d9b52b74d3ad4f7c0e9b6dfd7424f197dd805945ce314",
+        "frames/idle/02.png": "2f54d737aad749dbd5ae7b20cb548d1712dc79d3a5cb8ee137c9394b94a577e3",
+        "frames/idle/03.png": "69a6144bbbc16dbf15f28453a2cbb45784d98eb79bd3b7cc5fdfb6b10a012f36",
+        "frames/attack/00.png": "dfbc7d78b505b15265297766a2a0b4e88b8b083344dcce38c4c0b3dabf5ac905",
+        "frames/attack/01.png": "575ce6450908b61b1c8da59c1952136d8f8206c28650709399202eabbe6662b2",
+        "frames/attack/02.png": "fb8d065e835a4e274001ac9a1c32e180f6d246b6dd7bd993195917a7d0eaa7ae",
+        "frames/attack/03.png": "59661917b974fa962a4ce9975726df1a420b8f74efb310e9fca553da1600eaaa",
+        "frames/hit/00.png": "77d28984115125ab4017aca5a3d16672dd52762b5db267da6aa4b8eaa4c35b31",
+        "frames/hit/01.png": "15d243d4ba6d1a45cb87776f44cabfa3ce35cc3356029e7cbc2e3caf280bd00e",
+        "frames/hit/02.png": "adc6b9e048c18022c4cb06fd815f5cad628163430ce06100a863df445e0c2bd2",
+        "frames/hit/03.png": "0367d025f3f332f31c8afeca8936044500340ffd38383754237083f41a2e4cd0",
+        "frames/wounded_idle/00.png": "13ac6f5cc8ed5c5deb9dc6fdd2f17c0946a03aaf250d83b1c72d1bd1e0b0ca21",
+        "frames/wounded_idle/01.png": "69e4141583644a2ef3f5419aa2153f6a06f4a0249870c175eb62e2615ceabdc8",
+        "frames/wounded_idle/02.png": "90db6544ee858836a03aff4a9a7c1e150703685876c418897a684a0b86c72338",
+        "frames/wounded_idle/03.png": "8f024ad37d2a72b6f5293df412d9590ed036a2169913774a170b4cf3fdb3c07d",
+        "frames/die/00.png": "a247651af0d32462f813035418c8458f7af47701dfefc057f3cf6695615553df",
+        "frames/die/01.png": "581d38902ba917a4fec243a9dfab8afedf5a1976e3ab72dad8144b6d3101006a",
+        "frames/die/02.png": "5d239a0041d2d2d1332807cef8b61d621082f9bf877d32f0cd6d7d6178d9af82",
+        "frames/die/03.png": "ca76dc687d3df9ef82393a6803a9f75c40650fab795ebc8ea4c4a0e845030f00"
+      },
+      "sourceApproval": {
+        "status": "Approved",
+        "at": "2026-10-02T22:20:49.176Z",
+        "evidenceId": "bf104a58-4e6f-4038-975e-9c1c62c4f270",
+        "paths": [
+          "C:\\Users\\wilsh\\Projects\\runelord\\assets\\approvals\\inbox\\cinderhook-marauder\\v05-emberbow-hunter-r1\\v05-emberbow-hunter-r1.png"
+        ]
+      },
+      "stateDurationsMs": {
+        "idle": 1200,
+        "attack": 430,
+        "hit": 380,
+        "wounded_idle": 1380,
+        "die": 1040
+      },
+      "limitations": [
+        "Coarse hand-drawn whole-frame animation; 4 authored poses per state.",
+        "Native pose resolution ~250-280px; not upscaled to claim HD.",
+        "Mild generated stance jitter and color-edge fringe remain; coarse four-pose loops are review studies, not polished high-frame-count HD animation.",
+        "Attack recovery abbreviates reload/nock: returns to loaded ready pose without an authored reload cycle. Projectile behavior is represented by release event; crossbow release frame includes visible projectile."
+      ],
+      "technicalReview": "see independent QA reports",
+      "preview": "preview.html"
+    },
+    {
+      "variantId": "v06-forgehammer-sapper",
+      "name": "Forgehammer Sapper",
+      "requiredStates": [
+        "idle",
+        "attack",
+        "hit",
+        "wounded_idle",
+        "die"
+      ],
+      "deliveredStates": [
+        "idle",
+        "attack",
+        "hit",
+        "wounded_idle",
+        "die"
+      ],
+      "uniqueFrameFiles": 16,
+      "canvas": {
+        "width": 354,
+        "height": 354
+      },
+      "anchor": {
+        "x": 177,
+        "y": 334
+      },
+      "manifestSha256": "09e93a04b63e51e35119a0b0a3bc55ee1a0cdedcbd947b639c359044167f9444",
+      "frameHashes": {
+        "frames/00.png": "d5399efcbef6da3ef95fa2ad14127bab5d07ac65f0ed1119ea0156452dd5b080",
+        "frames/01.png": "0a763d7472d04291c9eff63863190f080bf1acadcb63d94dce82e158d764de12",
+        "frames/02.png": "3a043eae9c05d8ab3a831869b2e280933bcb20e31257665645d8a1932d3f83f7",
+        "frames/03.png": "0b4177c5e566b328283227db35775847bdad4c22917774cbd0f55422446d1f66",
+        "frames/04.png": "1f0034329f6a9d77e706e435fdf09f889aa9a2cd661b61999b170c2c618758a5",
+        "frames/05.png": "1fed0a5ea43319289739fab0c2f49acdf0af386ea01e35a15974922911ef417a",
+        "frames/06.png": "ef108e30900bc24e0615d2a5649dcc0905cc57a859370cfc3820d19701a23909",
+        "frames/07.png": "90397fe0e58c133db6d8ee0d66d302f3b402d67fc31542921650b2c5f2994f2a",
+        "frames/09.png": "4537dc5ad71478e755224a3d9ffe5f61f3a425db00d126a4df233ab440e0c7ee",
+        "frames/08.png": "900b1384a0592cb04bb117bbd8bebe797d9a24dc7b3ef068a00fa1eb0ac197c3",
+        "frames/10.png": "cbc955b50a251ff9255b3fecfd7e134983133108917e48e14b9a98f7b8c9956f",
+        "frames/11.png": "ba0530db7cefa966fca7c8d611a33f940755d4e2be6f9d18dcb8fcbc16abae76",
+        "frames/12.png": "6d0725ad2e5434de080ff8e601b9c19eebe074bc57c51f1b4539e0bae04bb693",
+        "frames/13.png": "c1222c355333fb5720bc3291e8ee7d443678c56b4cadba5a9fd56ee0644b798e",
+        "frames/14.png": "9927f63369fcf79690ccefcc36c5f694ab01581e1061f408a361379a2a5d7476",
+        "frames/15.png": "1fb73d6388c6f8118d88041d5dcb86b63a5f78871d8a78c0ee21b75cb99dbd0e"
+      },
+      "sourceApproval": {
+        "status": "Approved",
+        "at": "2026-10-02T22:20:49.176Z",
+        "evidenceId": "041efecf-e970-4552-95a0-852bca8ef3fc",
+        "paths": [
+          "C:\\Users\\wilsh\\Projects\\runelord\\assets\\approvals\\inbox\\cinderhook-marauder\\v06-forgehammer-sapper-r1\\v06-forgehammer-sapper-r1.png"
+        ]
+      },
+      "stateDurationsMs": {
+        "idle": 1380,
+        "attack": 700,
+        "hit": 320,
+        "wounded_idle": 1000,
+        "die": 1720
+      },
+      "limitations": [
+        "Sparse authored pose proof; not interpolated high-frame-rate animation.",
+        "Frame identity and contact stability require independent review.",
+        "Native cropped frame resolution is about 314px; not an HD 1024px per-frame master.",
+        "Heavy hammer attack deliberately 700ms including anticipation and recovery."
+      ],
+      "technicalReview": "see independent QA reports",
+      "preview": "preview.html"
+    },
+    {
+      "variantId": "v07-ashknife-cutthroat",
+      "name": "Ashknife Cutthroat",
+      "requiredStates": [
+        "idle",
+        "attack",
+        "hit",
+        "wounded_idle",
+        "die"
+      ],
+      "deliveredStates": [
+        "idle",
+        "attack",
+        "hit",
+        "wounded_idle",
+        "die"
+      ],
+      "uniqueFrameFiles": 15,
+      "canvas": {
+        "width": 494,
+        "height": 494
+      },
+      "anchor": {
+        "x": 247,
+        "y": 474
+      },
+      "manifestSha256": "d35aa1864e807c7ff6ef8269d3bb7de81295ff6890169abf0139a1f194a46dd2",
+      "frameHashes": {
+        "frames/00.png": "4a3ccaf06609162f74359845541f52533b28b694e6b91ea08653c8f16a2e554a",
+        "frames/01.png": "40587a1271376e54ea57cdeb9ce97ae5aaf11158c4d3bac4af472b8624baaec5",
+        "frames/02.png": "9f743dc2737deb2f4dcc36dbf0f15c750e8b43aee74d9e3e9678f2395daca7b8",
+        "frames/03.png": "14e7a765c0316f64b1848812dcd049fbe658c9c8f2da7e31d0f0284fe3634350",
+        "frames/05.png": "923547800d517808c0e98bd5cb7715c059dd1df83c2b270184eff8a804dba77e",
+        "frames/06.png": "f78e0fcfae391102a24062f15f5ce303f2db2c6ff1ed68d902567341f08c7420",
+        "frames/07.png": "877851a32c483274aa5d96f64648921828f2a5f9f879d9d788e3222ef08d40ad",
+        "frames/08.png": "cbfb48142cae14941d4c9d213916e089f4ef3f3ab93c28856faba837ee9d7930",
+        "frames/09.png": "0aa63b4127d64af371626ef03b705c0ae0bc481a8db88ae9df70ef1b41f93b14",
+        "frames/10.png": "62520858c1a2c47d52659e34dae2d3b17f56d4a4c4c43fefabdb83f0639cc41e",
+        "frames/11.png": "524bdcf1420c294ce9f8f62e3cd2a03560e52918c7efd6b42cb838cae0bcc694",
+        "frames/12.png": "859f605b8dbded780028cb6058da4710915f42b772c80439e8e4451c47b659fe",
+        "frames/13.png": "71674cc1d0e32af90a55db255f5559d807db2f14f5c8f96c79ae5731d9045ccf",
+        "frames/14.png": "ba612052b1b18afbbbe47a133e6b474cc7d1f8c36fb2ab15ecea1b684ab8dc9a",
+        "frames/15.png": "4e92e7e15427e94f0b4049fdb746987f1ba0a79f700502a4cf79150aab7a37a8"
+      },
+      "sourceApproval": {
+        "status": "Approved",
+        "at": "2026-10-02T22:20:49.176Z",
+        "evidenceId": "e5e57466-adb2-46d7-bc18-2d79d0d6b0fc",
+        "paths": [
+          "C:\\Users\\wilsh\\Projects\\runelord\\assets\\approvals\\inbox\\cinderhook-marauder\\v07-ashknife-cutthroat-r1\\v07-ashknife-cutthroat-r1.png"
+        ]
+      },
+      "stateDurationsMs": {
+        "idle": 1380,
+        "attack": 350,
+        "hit": 320,
+        "wounded_idle": 1000,
+        "die": 1720
+      },
+      "limitations": [
+        "Sparse authored pose proof; not interpolated high-frame-rate animation.",
+        "Frame identity and contact stability require independent review.",
+        "Native cropped frame resolution is about 314px; not an HD 1024px per-frame master.",
+        "Action timing is role-specific; heavy hammer700ms; light attacks350ms."
+      ],
+      "technicalReview": "see independent QA reports",
+      "preview": "preview.html"
+    },
+    {
+      "variantId": "v08-coalhex-shaman",
+      "name": "Coalhex Shaman",
+      "requiredStates": [
+        "idle",
+        "attack",
+        "hit",
+        "wounded_idle",
+        "die",
+        "cast"
+      ],
+      "deliveredStates": [
+        "idle",
+        "attack",
+        "hit",
+        "wounded_idle",
+        "die",
+        "cast"
+      ],
+      "uniqueFrameFiles": 15,
+      "canvas": {
+        "width": 494,
+        "height": 494
+      },
+      "anchor": {
+        "x": 247,
+        "y": 474
+      },
+      "manifestSha256": "d73eff62b7e91d2b143ad12374e60524faf9bca24dae8c4f9ad2430f548f968c",
+      "frameHashes": {
+        "frames/00.png": "056cced942203b5d365d1d65ce9379652deca4ffc6886400a739225e560645e3",
+        "frames/01.png": "f263bc9f02b5e705a821194178c4fa683e61d3b36c7e5118648040923ac9da3c",
+        "frames/04.png": "5648e7cc9b554a944afcd7cf2d0245c679ca923b26658f755ab4d065c803961a",
+        "frames/05.png": "a59f9b9b93a394035a71f04ccb7e5989aed8e04b36375fdc246fef3db77fd365",
+        "frames/06.png": "756b38700127050036ae43cb7fe857310c44bea500f8191d07e161a4d20e3345",
+        "frames/07.png": "485b0e6ab5677dbf882c1e3411b50e4e6a66f8af3a684c1853c151ae5ae8285f",
+        "frames/08.png": "7069457dce6e76e87cb962df253ce29725f5699bb0b48fbe8b58bce051139078",
+        "frames/10.png": "6ade019a2cc01f5f7403b590ff98cb58471a520d2216caa3fd1e3d517664ec02",
+        "frames/11.png": "4f0ef1305d8fcfe4e6d9bf80eadf5707439178fd8357b95432d119dab297cd09",
+        "frames/12.png": "574ffa62890756f61f76b9cbe8b13c47a0d4b8bf14bd75f76269f2ac874f7f3b",
+        "frames/13.png": "5c6825bf08b294f15e76f1ca238816d422580d0bf3922e77b99d8ef012d95ebc",
+        "frames/14.png": "b466340afa051b2892f2a5c83e9df7d0908d6d1ed26635aefcb9003c1c619c2b",
+        "frames/15.png": "80837c2b411619310e6ca413fe16edcfc713b7a659fa456f0571ba788019a9d0",
+        "frames/02.png": "62ab2c22af1d82604d6b6f64968497184445f8809676196945aca5853569f775",
+        "frames/03.png": "9b180a92eac95a77dc44691d235e1592bf3c5c03c63e0f2cd5857947d3d83c31"
+      },
+      "sourceApproval": {
+        "status": "Approved",
+        "at": "2026-10-02T22:20:49.176Z",
+        "evidenceId": "ba0ac405-598c-40f4-ad03-678ee21c9914",
+        "paths": [
+          "C:\\Users\\wilsh\\Projects\\runelord\\assets\\approvals\\inbox\\cinderhook-marauder\\v08-coalhex-shaman-r1\\v08-coalhex-shaman-r1.png"
+        ]
+      },
+      "stateDurationsMs": {
+        "idle": 1000,
+        "attack": 350,
+        "hit": 320,
+        "wounded_idle": 1000,
+        "die": 1720,
+        "cast": 520
+      },
+      "limitations": [
+        "Sparse authored pose proof; not interpolated high-frame-rate animation.",
+        "Frame identity and contact stability require independent review.",
+        "Native cropped frame resolution is about 314px; not an HD 1024px per-frame master.",
+        "Action timing is role-specific; heavy hammer700ms; light attacks350ms."
+      ],
+      "technicalReview": "see independent QA reports",
+      "preview": "preview.html"
+    },
+    {
+      "variantId": "v09-scarblade-captain",
+      "name": "Scarblade Captain",
+      "requiredStates": [
+        "idle",
+        "attack",
+        "hit",
+        "wounded_idle",
+        "die",
+        "guard"
+      ],
+      "deliveredStates": [
+        "idle",
+        "attack",
+        "hit",
+        "wounded_idle",
+        "die",
+        "guard"
+      ],
+      "uniqueFrameFiles": 15,
+      "canvas": {
+        "width": 494,
+        "height": 494
+      },
+      "anchor": {
+        "x": 247,
+        "y": 474
+      },
+      "manifestSha256": "1c3a80d95a69e0c9600275ba94ec53d4dcf7a296c3c0f584a7c9eba02751eb76",
+      "frameHashes": {
+        "frames/00.png": "e00f06a41b5d00b4c6cf7c4da1a96a1704da9045c711054484af3ace06c598d1",
+        "frames/01.png": "f06da2c3883f9591f749182ce6a0170f16dc8d532919eb9c5d7f31dbdb55fd8f",
+        "frames/05.png": "a67b358f4b58bf97a5ae6fb2f644ee36733b6320a927203a1f54cdbde5eb9fe2",
+        "frames/06.png": "327dbddabd9db7a6260a871a8bcae9646b81598faeb3317e6289d5bef1c04b78",
+        "frames/07.png": "854c7172f4379bc7815a666dfdf4052f164f02612f9ff0d6a49272975e700201",
+        "frames/08.png": "6c28c26c787fad738d644fd9081019eb2f237b018aa144e6fd1b5d5f3477d2c7",
+        "frames/09.png": "c7c68eee661ece22e7a5a8d40311d5cad3b12b94386e0b65cceb653c93c13cfa",
+        "frames/10.png": "8ee95abebbeff564888f20306fbba3c30fdc93ccca4962ffd7ddaa91d9ddc9c1",
+        "frames/11.png": "00187a04a9d2c9c8b6733db68077f3737d8695839da3d5f89a21a98bdd61a7bd",
+        "frames/12.png": "00c1e34aba034a07a2bbbada82576979a8e23f53fdca8462dab60bda53aee6f3",
+        "frames/13.png": "39f5acbae856f7b7dd05c6a1c0484ab8b24ef215ac9875e039f4bfcfae96d03d",
+        "frames/14.png": "0c5307675ab9f5daab1164831a245e805e1745cdc9119bbed4f159ebb59e4074",
+        "frames/15.png": "08192eff52687813f7b97e03443bb931aaff4981da8cd623c713ff541633b998",
+        "frames/02.png": "48171a1c02a73003abd3b3b267465bc63076348c653e98025d5974c0a129f081",
+        "frames/03.png": "022c18ea405b080d357312525269c4c282d24078abdc1596f0dc3f42a97704e6"
+      },
+      "sourceApproval": {
+        "status": "Approved",
+        "at": "2026-10-02T22:20:49.176Z",
+        "evidenceId": "f14e074a-6a36-4f40-b19c-23da914254ea",
+        "paths": [
+          "C:\\Users\\wilsh\\Projects\\runelord\\assets\\approvals\\inbox\\cinderhook-marauder\\v09-scarblade-captain-r1\\v09-scarblade-captain-r1.png"
+        ]
+      },
+      "stateDurationsMs": {
+        "idle": 1000,
+        "attack": 350,
+        "hit": 320,
+        "wounded_idle": 1000,
+        "die": 1720,
+        "guard": 800
+      },
+      "limitations": [
+        "Sparse authored pose proof; not interpolated high-frame-rate animation.",
+        "Frame identity and contact stability require independent review.",
+        "Native cropped frame resolution is about 314px; not an HD 1024px per-frame master.",
+        "Action timing is role-specific; heavy hammer700ms; light attacks350ms."
+      ],
+      "technicalReview": "see independent QA reports",
+      "preview": "preview.html"
+    }
+  ],
+  "qaReportDirectory": "qa/",
+  "artApproval": "original designs approved; newly generated motion previews need separate user review",
+  "method": "whole-character frame sprites",
+  "scope": "hostile combat set for nine red goblins; no game code integration",
+  "limitations": [
+    "Sparse/coarse authored frame motion; slight stance jitter and simplified fine details documented by QA.",
+    "Runtime frames are native low-resolution sprites, not HD per-frame masters.",
+    "Original approved HD designs are preserved unchanged."
+  ]
+}

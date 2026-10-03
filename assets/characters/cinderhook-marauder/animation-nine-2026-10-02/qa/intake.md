@@ -1,0 +1,8 @@
+# Independent animation QA intake
+Reviewer: /root/review_goblin_animation. Scope: nine red goblin variants, no game integration. Source revision c7a20871a08e6b089fd6b86dfc5c48fec28e92b1; working asset hashes captured separately.
+
+All nine master hashes were independently computed and matched the handoff and current Approved decisions (source-approval-check.json). All nine masters visually inspected at original supplied resolution.
+
+Identity reminders: v01 blunt nose, broad jaw/tusk, notched ear, three belly plates and one rounded shoulder, cleaver. v02 long needle nose, upright long ear and bent rear ear, tan quilt coat, round shield/spear. v03 black mohawk, torn ears, tusk, crossed straps/bare torso, two dissimilar axes, bare toes. v04 long nose/cheek scar, clipped ear, hood down, leather shoulder and chest plate, crossbow/bolt case. v05 short nose, long fine ears and gold stud, scale vest, cape/quiver/bow/arrow. v06 goggles, cheek scar, notched broad ear, ochre apron, two bombs, hammer held with both hands. v07 hooked nose, drooping ears, gray ragged shoulder cape, four chest studs, long knife and reverse-held short knife. v08 drooping pierced ear, teeth, gray robe/red glyphs, two charms, forked ember staff, bare toes. v09 two ear rings, headband/crest, cheek scar, plated armor, long curved sword and kite shield.
+
+Initial v01 poses-r1.png review: observed all 20 cells at sheet native size; this is not playback QA. Hit row3 col2 loses cleaver (P1, builder already found and repairing). Death row5 col3/4 crowded across cell boundary; extraction needs inspection for clipping/contamination. All playback, final exported-frame, timing, alpha and atlas checks pending.
