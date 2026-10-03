@@ -1,0 +1,98 @@
+{
+  "schema": 1,
+  "id": "oath-intro-procession",
+  "status": "complete",
+  "outcome": "Restored Seraph with one frontal companion imp and ground summons emerging, advancing offscreen and replacing on a loop",
+  "authorization": "User requested restored Seraph, removal of left imp, front-facing right imp and looping portal-to-offscreen ground summon animation with condensed text.",
+  "contentIds": [
+    "oath-intro-warband"
+  ],
+  "owner": "root",
+  "integrationOwner": "root",
+  "reviewer": "opening_qa",
+  "ownedPaths": [
+    "apps/web/src/IntroCinematic.tsx",
+    "apps/web/src/intro.css",
+    "tools/cinematic/render-oath-intro-r4.mjs",
+    "tools/cinematic/mux-oath-intro-r4.mjs",
+    "assets/cinematics/oath-intro/r4/imp-flight.png",
+    "apps/web/public/opening-assets/oath-intro-r4.mp4"
+  ],
+  "dependencies": [],
+  "exclusions": [
+    "No combat changes",
+    "No push/deploy"
+  ],
+  "inputs": [
+    {
+      "path": "apps/web/src/IntroCinematic.tsx",
+      "sha256": "d765faa920f3601fcfc4801a76f4b5d47239be9cff3a05eb6cb72a727ad5b59c"
+    },
+    {
+      "path": "apps/web/src/intro.css",
+      "sha256": "cb79c72d61baf40e6599c18ecfc47f029c4fc9ccbb9a81bcf3c40cd180c988de"
+    },
+    {
+      "path": "tools/cinematic/render-oath-intro-r4.mjs",
+      "sha256": "c9699fab6362806546d82665ca625c6c5f88bd580165ea76c8515d81373490e1"
+    },
+    {
+      "path": "tools/cinematic/mux-oath-intro-r4.mjs",
+      "sha256": "3f84d29f63e0e85d8721e390c6e314c7285547596b89bd8913d7f2e1deb69041"
+    },
+    {
+      "path": "assets/cinematics/oath-intro/r4/imp-flight.png",
+      "sha256": "d1797d08ed25d84289328d2dd349a0631af9df40fa98cf358949f45448b5c4d8"
+    },
+    {
+      "path": "apps/web/public/opening-assets/oath-intro-r4.mp4",
+      "sha256": "5c79e32dae4c744af8db0f1dc6f5a23eb2ac14c14238e5831d296e869192bf9a"
+    }
+  ],
+  "animation": null,
+  "acceptance": [
+    {
+      "check": "Source and media QA, build and browser playback",
+      "status": "pass",
+      "evidence": [
+        {
+          "path": "assets/cinematics/oath-intro/r4/qa.md",
+          "sha256": "b8069001b832f7c578d82ae0bad221a8b7738af9715a01f6e68308296a667e4a"
+        },
+        {
+          "path": "assets/cinematics/oath-intro/r4/README.md",
+          "sha256": "b9a0e1f5891f2432a9d2c945653ad0375ea79e12c58c81af0b6e35faba7c37e2"
+        },
+        {
+          "path": "assets/cinematics/oath-intro/r4/title-screen.png",
+          "sha256": "e5d9f0beae19a4192911af85021ded8291574fe52b3e144eef4f46624949609b"
+        }
+      ]
+    },
+    {
+      "check": "Start button art-bound pulse and focus, Enter to selection",
+      "status": "pass",
+      "evidence": [
+        {
+          "path": "assets/cinematics/oath-intro/r4/start-button-check.txt",
+          "sha256": "fd403fecf753e631d7a8a840e38843d1c8d1c92b30ce95fdb65c989d7f97b053"
+        },
+        {
+          "path": "assets/cinematics/oath-intro/r4/start-button-fixed.png",
+          "sha256": "7491b0aa8d1269d66a247de98d951487e4c6d487a217959b90ba8429cf620d76"
+        }
+      ]
+    }
+  ],
+  "checkpoint": {
+    "completed": [
+      "Rendered frontal imp",
+      "Implemented staggered portal emergence and advance",
+      "Built and browser-verified",
+      "Independent media and cycle review"
+    ],
+    "remaining": [],
+    "blockers": [],
+    "nextAction": "User can view local intro."
+  }
+}

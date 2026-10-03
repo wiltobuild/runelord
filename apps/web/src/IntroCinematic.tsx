@@ -45,8 +45,8 @@ export function IntroCinematic({ onStart, volume, onVolume }: {
     if (!paused) void el.play().catch(() => setPaused(true));
   };
   return <main className={`intro-cinematic ${leaving ? "intro-leaving" : ""}`} aria-label="Runelord cinematic title screen">
-    <video ref={video} className="intro-film" autoPlay={!paused} loop muted={!sound} playsInline preload="auto" poster={assetUrl("/opening-assets/oath-intro-poster.jpg")} onError={() => setFailed(true)} aria-hidden="true">
-      <source src={assetUrl("/opening-assets/oath-intro.mp4")} type="video/mp4" />
+    <video ref={video} className="intro-film" autoPlay={!paused} loop muted={!sound} playsInline preload="auto" poster={assetUrl("/opening-assets/oath-intro-r4-poster.jpg")} onError={() => setFailed(true)} aria-hidden="true">
+      <source src={assetUrl("/opening-assets/oath-intro-r4.mp4")} type="video/mp4" />
     </video>
     <div className="intro-title">
       <div className="intro-runes" aria-hidden="true">ᚱ ᚢ ᚾ ᛖ ◇ ᛟ ᚨ ᛏ ᚺ</div>
