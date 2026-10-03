@@ -1,0 +1,35 @@
+[
+  {
+    "region": "title",
+    "text": "Sinister Veil",
+    "lines": [
+      "Sinister Veil"
+    ],
+    "font_size": 94
+  },
+  {
+    "region": "cost",
+    "text": "1",
+    "lines": [
+      "1"
+    ],
+    "font_size": 110
+  },
+  {
+    "region": "type",
+    "text": "SKILL · WARLOCK",
+    "lines": [
+      "SKILL · WARLOCK"
+    ],
+    "font_size": 35
+  },
+  {
+    "region": "rules",
+    "text": "Gain 8 Guard. Your demons gain 3 Guard.",
+    "lines": [
+      "Gain 8 Guard.",
+      "Your demons gain 3 Guard."
+    ],
+    "font_size": 54
+  }
+]

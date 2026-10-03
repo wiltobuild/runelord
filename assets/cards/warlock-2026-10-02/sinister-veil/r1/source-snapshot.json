@@ -1,0 +1,8 @@
+{
+  "name": "Sinister Veil",
+  "cost": "1",
+  "type": "Skill",
+  "rarity": "Common",
+  "rules": "Gain 8 Guard. Your demons gain 3 Guard.",
+  "upgrade": "11 / 4"
+}
