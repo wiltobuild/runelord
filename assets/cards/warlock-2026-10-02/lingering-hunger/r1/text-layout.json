@@ -1,0 +1,36 @@
+[
+  {
+    "region": "title",
+    "text": "Lingering Hunger",
+    "lines": [
+      "Lingering Hunger"
+    ],
+    "font_size": 64
+  },
+  {
+    "region": "cost",
+    "text": "1",
+    "lines": [
+      "1"
+    ],
+    "font_size": 110
+  },
+  {
+    "region": "type",
+    "text": "POWER · WARLOCK",
+    "lines": [
+      "POWER · WARLOCK"
+    ],
+    "font_size": 35
+  },
+  {
+    "region": "rules",
+    "text": "At the end of your turn, if you have no demons, Summon an Imp.",
+    "lines": [
+      "At the end of your turn, if",
+      "you have no demons,",
+      "Summon an Imp."
+    ],
+    "font_size": 54
+  }
+]

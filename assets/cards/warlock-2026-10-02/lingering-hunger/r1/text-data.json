@@ -1,0 +1,8 @@
+{
+  "name": "Lingering Hunger",
+  "cost": "1",
+  "type": "Power",
+  "rarity": "Uncommon",
+  "rules": "At the end of your turn, if you have no demons, Summon an Imp.",
+  "upgrade": "Imp gains +2 Power"
+}
