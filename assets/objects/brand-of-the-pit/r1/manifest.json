@@ -1,0 +1,43 @@
+{
+  "slug": "brand-of-the-pit",
+  "name": "Brand of the Pit",
+  "catalog": "catalog/runestones.md",
+  "category": "runestones",
+  "engineContentId": null,
+  "engineMapping": "Unresolved: catalog defines names, no engine IDs",
+  "state": "static",
+  "revision": "r1",
+  "intendedUse": "Inventory/shop/reward icon",
+  "viewpoint": "three-quarter",
+  "brief": "Warlock starter runestone, guaranteed starting item. A thick triangular blackened stone charm with blunt horn-like upper corners, oxblood iron rim, and ONE small ember-orange angular flame rune engraved in the broad central face. Simple robust attachment loop. Dominant oxblood and charcoal, orange accent. Not a face, no eyes. Readable at 128px.",
+  "prompt": "Create ONE isolated Runelord inventory object, actual transparent background, square canvas with 10% clear padding, no text or frame or scenery or character or shadow underneath. Match approved Warlock and Ranger artwork shown in conversation as STYLE references only: serious angular chunky 2D fantasy, crisp dark contours, broad flat color shapes, exactly 2–3 hard cel shading tones per material, minimal large details. No surface noise, gradients, PBR/3D realism, bloom, ornate filigree or cute faces. Full object, centered slight three-quarter view. Warlock starter runestone, guaranteed starting item. A thick triangular blackened stone charm with blunt horn-like upper corners, oxblood iron rim, and ONE small ember-orange angular flame rune engraved in the broad central face. Simple robust attachment loop. Dominant oxblood and charcoal, orange accent. Not a face, no eyes. Readable at 128px.",
+  "tool": "built-in image_gen",
+  "reference": {
+    "path": "C:/Users/wilsh/Projects/runelord/assets/heroes/references/warlock/warlock-base-r1.png",
+    "sha256": "3585512c985b250f1da8a159f436e82dc673059269bd1e54cfad625b01e28f02",
+    "evidenceId": "user-chat-2026-10-01-approve-existing-runelord",
+    "role": "inspected style context, not identity"
+  },
+  "source": {
+    "path": "C:/Users/wilsh/Projects/runelord/assets/objects/brand-of-the-pit/r1/source.png",
+    "sha256": "fcfff725b4e481223379ad84fda0a9a106191a667a0ec1642fc3a0c4aa409347",
+    "width": 1254,
+    "height": 1254
+  },
+  "export": {
+    "path": "C:/Users/wilsh/Projects/runelord/assets/objects/brand-of-the-pit/r1/icon-128.png",
+    "sha256": "ba287bfc87555db34359a78d2c86253c7b2f64e12f749ea6d126aeb9db4f8fe6",
+    "width": 128,
+    "height": 128
+  },
+  "qa": {
+    "alphaMin": 0,
+    "alphaMax": 255,
+    "fullSize": "Inspected; complete object, clear category silhouette, no text or scenery",
+    "nativeSize": "Inspected at actual 128px/96px on dark and light backgrounds: distinct silhouette and visible rune/symbol, no clipping or obvious halo.",
+    "limitations": "Some tonal variation/texture remains beyond the strict flat-color ideal; unframed art, not runtime-integrated"
+  },
+  "approval": {
+    "status": "Pending approval"
+  }
+}

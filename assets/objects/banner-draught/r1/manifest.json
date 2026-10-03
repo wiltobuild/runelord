@@ -1,0 +1,65 @@
+{
+  "slug": "banner-draught",
+  "name": "Banner Draught",
+  "category": "potions",
+  "size": 96,
+  "tier": "Shared: Common (14)",
+  "hero": null,
+  "effect": "You and all your units gain 8 Guard.",
+  "catalog": "catalog/potions.md",
+  "section": "Shared: Common (14)",
+  "sourceLine": 20,
+  "prompt": "Use case: stylized-concept. Create ONE standalone transparent Runelord inventory asset: Banner Draught. Category: potions; tier: Shared: Common (14); hero: shared. Gameplay context (do not print text): You and all your units gain 8 Guard.. Vessel silhouette must match function: round flask for healing/support, tall vial for buffs, wide jar for thrown damage/debuffs, unusual vessel for rare/unique effects. One bold liquid color and one small clear functional symbol inside. Named non-bottle consumables such as Oil Can, Scrap Crate, Beast Treat, powders, salts, sand, dice, stones and embers must retain their actual object identity rather than being forced into a potion flask. Palette: a restrained functional palette with one dominant color, distinct from neighboring items. Match the approved Runelord hero artwork inspected in this conversation as STYLE context only: serious chunky angular 2D fantasy illustration, dark crisp contours, broad solid flat fills, just 2 or 3 hard-edged cel shadow tones per material. Quiet surfaces, only a few large details, no scratch noise, painterly texture, gradients, glossy 3D rendering, bloom, realism or cute faces. Centered complete object, slight three-quarter view, square transparent canvas and at least 10% clear margins. Readable silhouette at 96px. No text, numbers, labels, border, card, backdrop, ground, drop shadow, extra objects, variants or watermark. Design an original iconic silhouette fitting its name and effect.",
+  "revision": "r1",
+  "engineContentId": null,
+  "engineMapping": "Catalog has names only; unresolved engine ID",
+  "state": "static",
+  "source": {
+    "path": "C:/Users/wilsh/Projects/runelord/assets/objects/banner-draught/r1/source.png",
+    "sha256": "a2077b94429897058e9de5125a3224d3095b7674112edb715e49c042e4e86325",
+    "width": 1254,
+    "height": 1254
+  },
+  "export": {
+    "path": "C:/Users/wilsh/Projects/runelord/assets/objects/banner-draught/r1/icon-96.png",
+    "sha256": "a93d36718afd60218b2c9f79f17d2d59423a06f9b86bf1d0adfd08b51f0164c1",
+    "width": 96,
+    "height": 96
+  },
+  "tool": "built-in image_gen",
+  "references": [
+    {
+      "hero": "runeblade",
+      "path": "C:/Users/wilsh/Projects/runelord/assets/heroes/references/runeblade/runeblade-base-r1.png",
+      "sha256": "adbd33fb14e91b761f355ffeb9966cb262aacca78429099ec09b0fab9faf84ef",
+      "evidenceId": "user-chat-2026-10-01-approve-existing-runelord"
+    },
+    {
+      "hero": "warlock",
+      "path": "C:/Users/wilsh/Projects/runelord/assets/heroes/references/warlock/warlock-base-r1.png",
+      "sha256": "3585512c985b250f1da8a159f436e82dc673059269bd1e54cfad625b01e28f02",
+      "evidenceId": "user-chat-2026-10-01-approve-existing-runelord"
+    },
+    {
+      "hero": "runesmith",
+      "path": "C:/Users/wilsh/Projects/runelord/assets/heroes/references/runesmith/runesmith-base-r1.png",
+      "sha256": "769d160f774c58e54b619db419c88e693a9bcd0f9501aeceaece05f5325e5f48",
+      "evidenceId": "user-chat-2026-10-01-approve-existing-runelord"
+    },
+    {
+      "hero": "ranger",
+      "path": "C:/Users/wilsh/Projects/runelord/assets/heroes/references/ranger/ranger-base-r1.png",
+      "sha256": "9cd6ae4be65920528b211c20d2a1c12f68183b6bb6bb9ca6095b2ea23eb76912",
+      "evidenceId": "user-chat-2026-10-01-approve-existing-runelord"
+    }
+  ],
+  "qa": {
+    "alpha": true,
+    "fullSize": "pending",
+    "nativeSize": "pending",
+    "limitations": "Unframed inventory asset; not runtime-integrated"
+  },
+  "approval": {
+    "status": "Pending approval"
+  }
+}

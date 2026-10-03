@@ -1,0 +1,65 @@
+{
+  "slug": "warhorn-oil",
+  "name": "Warhorn Oil",
+  "category": "potions",
+  "size": 96,
+  "tier": "Shared: Common (14)",
+  "hero": null,
+  "effect": "All your units gain +3 Power this combat.",
+  "catalog": "catalog/potions.md",
+  "section": "Shared: Common (14)",
+  "sourceLine": 22,
+  "prompt": "Use case: stylized-concept. Create ONE standalone transparent Runelord inventory asset: Warhorn Oil. Category: potions; tier: Shared: Common (14); hero: shared. Gameplay context (do not print text): All your units gain +3 Power this combat.. Vessel silhouette must match function: round flask for healing/support, tall vial for buffs, wide jar for thrown damage/debuffs, unusual vessel for rare/unique effects. One bold liquid color and one small clear functional symbol inside. Named non-bottle consumables such as Oil Can, Scrap Crate, Beast Treat, powders, salts, sand, dice, stones and embers must retain their actual object identity rather than being forced into a potion flask. Palette: a restrained functional palette with one dominant color, distinct from neighboring items. Match the approved Runelord hero artwork inspected in this conversation as STYLE context only: serious chunky angular 2D fantasy illustration, dark crisp contours, broad solid flat fills, just 2 or 3 hard-edged cel shadow tones per material. Quiet surfaces, only a few large details, no scratch noise, painterly texture, gradients, glossy 3D rendering, bloom, realism or cute faces. Centered complete object, slight three-quarter view, square transparent canvas and at least 10% clear margins. Readable silhouette at 96px. No text, numbers, labels, border, card, backdrop, ground, drop shadow, extra objects, variants or watermark. Design an original iconic silhouette fitting its name and effect.",
+  "revision": "r1",
+  "engineContentId": null,
+  "engineMapping": "Catalog has names only; unresolved engine ID",
+  "state": "static",
+  "source": {
+    "path": "C:/Users/wilsh/Projects/runelord/assets/objects/warhorn-oil/r1/source.png",
+    "sha256": "8de43b0c7b5b25a50baccf4ace8ba16870be4f52528c5382043651bad13a6d68",
+    "width": 1254,
+    "height": 1254
+  },
+  "export": {
+    "path": "C:/Users/wilsh/Projects/runelord/assets/objects/warhorn-oil/r1/icon-96.png",
+    "sha256": "d3d1aa49d4185f35826e8b70f908bfd25357acec4999ed434f6ca507a24adc15",
+    "width": 96,
+    "height": 96
+  },
+  "tool": "built-in image_gen",
+  "references": [
+    {
+      "hero": "runeblade",
+      "path": "C:/Users/wilsh/Projects/runelord/assets/heroes/references/runeblade/runeblade-base-r1.png",
+      "sha256": "adbd33fb14e91b761f355ffeb9966cb262aacca78429099ec09b0fab9faf84ef",
+      "evidenceId": "user-chat-2026-10-01-approve-existing-runelord"
+    },
+    {
+      "hero": "warlock",
+      "path": "C:/Users/wilsh/Projects/runelord/assets/heroes/references/warlock/warlock-base-r1.png",
+      "sha256": "3585512c985b250f1da8a159f436e82dc673059269bd1e54cfad625b01e28f02",
+      "evidenceId": "user-chat-2026-10-01-approve-existing-runelord"
+    },
+    {
+      "hero": "runesmith",
+      "path": "C:/Users/wilsh/Projects/runelord/assets/heroes/references/runesmith/runesmith-base-r1.png",
+      "sha256": "769d160f774c58e54b619db419c88e693a9bcd0f9501aeceaece05f5325e5f48",
+      "evidenceId": "user-chat-2026-10-01-approve-existing-runelord"
+    },
+    {
+      "hero": "ranger",
+      "path": "C:/Users/wilsh/Projects/runelord/assets/heroes/references/ranger/ranger-base-r1.png",
+      "sha256": "9cd6ae4be65920528b211c20d2a1c12f68183b6bb6bb9ca6095b2ea23eb76912",
+      "evidenceId": "user-chat-2026-10-01-approve-existing-runelord"
+    }
+  ],
+  "qa": {
+    "alpha": true,
+    "fullSize": "pending",
+    "nativeSize": "pending",
+    "limitations": "Unframed inventory asset; not runtime-integrated"
+  },
+  "approval": {
+    "status": "Pending approval"
+  }
+}

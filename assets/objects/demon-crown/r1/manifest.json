@@ -1,0 +1,27 @@
+{
+  "id": "demon-crown",
+  "revision": "r1",
+  "source": "source.png",
+  "sha256": "204c0f7c06c9c9aa4ecf5eef841c6dbd11694011c4a086db5ab695a6f1498da7",
+  "dimensions": [
+    1254,
+    1254
+  ],
+  "status": "Pending approval",
+  "authorization": "User requested new Demon Lord arena and crown loot integrated.",
+  "references": [
+    {
+      "path": "assets\\concepts\\fire-monsters-20-2026-10-02\\crown-of-cinders\\base-r1.png",
+      "sha256": "564d5ae5d042a860603bfbdcb76177e7817b4c225f340f4a6fb8ca467a8dda67",
+      "approval": {
+        "status": "Approved",
+        "at": "2026-10-02T22:20:49.176Z",
+        "evidenceId": "360114f3-930d-4db6-94e7-5e3caac8711b",
+        "paths": [
+          "C:\\Users\\wilsh\\Projects\\runelord\\assets\\approvals\\inbox\\crown-of-cinders\\base-r1\\base-r1.png"
+        ]
+      }
+    }
+  ],
+  "format": "transparent icon source"
+}

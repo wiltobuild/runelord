@@ -1,0 +1,43 @@
+{
+  "slug": "barkskin-tonic",
+  "name": "Barkskin Tonic",
+  "catalog": "catalog/potions.md",
+  "category": "potions",
+  "engineContentId": null,
+  "engineMapping": "Unresolved: catalog defines names, no engine IDs",
+  "state": "static",
+  "revision": "r1",
+  "intendedUse": "Inventory/shop/reward icon",
+  "viewpoint": "three-quarter",
+  "brief": "Shared common Barkskin Tonic grants 12 Guard. TALL stout rectangular buff vial with rounded shoulders and a short cork, bold moss-green liquid, ONE small pale shield symbol suspended inside. Two broad bark-brown protective braces at bottom corners, simple construction. Grey glass edge and just two hard graphic highlights. No woodgrain noise. Distinctly taller silhouette than a round healing flask. Readable at 96px.",
+  "prompt": "Create ONE isolated Runelord inventory object, actual transparent background, square canvas with 10% clear padding, no text or frame or scenery or character or shadow underneath. Match approved Warlock and Ranger artwork shown in conversation as STYLE references only: serious angular chunky 2D fantasy, crisp dark contours, broad flat color shapes, exactly 2–3 hard cel shading tones per material, minimal large details. No surface noise, gradients, PBR/3D realism, bloom, ornate filigree or cute faces. Full object, centered slight three-quarter view. Shared common Barkskin Tonic grants 12 Guard. TALL stout rectangular buff vial with rounded shoulders and a short cork, bold moss-green liquid, ONE small pale shield symbol suspended inside. Two broad bark-brown protective braces at bottom corners, simple construction. Grey glass edge and just two hard graphic highlights. No woodgrain noise. Distinctly taller silhouette than a round healing flask. Readable at 96px.",
+  "tool": "built-in image_gen",
+  "reference": {
+    "path": "C:/Users/wilsh/Projects/runelord/assets/heroes/references/ranger/ranger-base-r1.png",
+    "sha256": "9cd6ae4be65920528b211c20d2a1c12f68183b6bb6bb9ca6095b2ea23eb76912",
+    "evidenceId": "user-chat-2026-10-01-approve-existing-runelord",
+    "role": "inspected style context, not identity"
+  },
+  "source": {
+    "path": "C:/Users/wilsh/Projects/runelord/assets/objects/barkskin-tonic/r1/source.png",
+    "sha256": "28b78360dc0ee06cdea04ad273d4eb5ae17d79ce40b679212d6f56e9bd67430e",
+    "width": 1254,
+    "height": 1254
+  },
+  "export": {
+    "path": "C:/Users/wilsh/Projects/runelord/assets/objects/barkskin-tonic/r1/icon-96.png",
+    "sha256": "b91811786bf24e0923f623a69c6423fd333e222b378752c73f1ed4fcd90912e3",
+    "width": 96,
+    "height": 96
+  },
+  "qa": {
+    "alphaMin": 0,
+    "alphaMax": 255,
+    "fullSize": "Inspected; complete object, clear category silhouette, no text or scenery",
+    "nativeSize": "Inspected at actual 128px/96px on dark and light backgrounds: distinct silhouette and visible rune/symbol, no clipping or obvious halo.",
+    "limitations": "Some tonal variation/texture remains beyond the strict flat-color ideal; unframed art, not runtime-integrated"
+  },
+  "approval": {
+    "status": "Pending approval"
+  }
+}

@@ -1,0 +1,43 @@
+{
+  "slug": "mana-potion",
+  "name": "Mana Potion",
+  "catalog": "catalog/potions.md",
+  "category": "potions",
+  "engineContentId": null,
+  "engineMapping": "Unresolved: catalog defines names, no engine IDs",
+  "state": "static",
+  "revision": "r1",
+  "intendedUse": "Inventory/shop/reward icon",
+  "viewpoint": "three-quarter",
+  "brief": "Shared common Mana Potion, restores 2 Mana. Squat round support flask with faceted broad shoulders, short neck and dark cork, filled with bold saturated sapphire-blue liquid and ONE small pale cyan four-point magical star suspended inside. Minimal grey glass rim, two hard graphic glass highlights, no real refraction. Generic shared item without hero emblems. Readable at 96px.",
+  "prompt": "Create ONE isolated Runelord inventory object, actual transparent background, square canvas with 10% clear padding, no text or frame or scenery or character or shadow underneath. Match approved Warlock and Ranger artwork shown in conversation as STYLE references only: serious angular chunky 2D fantasy, crisp dark contours, broad flat color shapes, exactly 2–3 hard cel shading tones per material, minimal large details. No surface noise, gradients, PBR/3D realism, bloom, ornate filigree or cute faces. Full object, centered slight three-quarter view. Shared common Mana Potion, restores 2 Mana. Squat round support flask with faceted broad shoulders, short neck and dark cork, filled with bold saturated sapphire-blue liquid and ONE small pale cyan four-point magical star suspended inside. Minimal grey glass rim, two hard graphic glass highlights, no real refraction. Generic shared item without hero emblems. Readable at 96px.",
+  "tool": "built-in image_gen",
+  "reference": {
+    "path": "C:/Users/wilsh/Projects/runelord/assets/heroes/references/ranger/ranger-base-r1.png",
+    "sha256": "9cd6ae4be65920528b211c20d2a1c12f68183b6bb6bb9ca6095b2ea23eb76912",
+    "evidenceId": "user-chat-2026-10-01-approve-existing-runelord",
+    "role": "inspected style context, not identity"
+  },
+  "source": {
+    "path": "C:/Users/wilsh/Projects/runelord/assets/objects/mana-potion/r1/source.png",
+    "sha256": "6e1a98d7b01c3ffdf68303f66e764cce52d5b8864895137f1a4bb98765409158",
+    "width": 1254,
+    "height": 1254
+  },
+  "export": {
+    "path": "C:/Users/wilsh/Projects/runelord/assets/objects/mana-potion/r1/icon-96.png",
+    "sha256": "cfc0d9d48fb6f08f059d9d342f52d4df13fc404c90d76751c25699281da00129",
+    "width": 96,
+    "height": 96
+  },
+  "qa": {
+    "alphaMin": 0,
+    "alphaMax": 255,
+    "fullSize": "Inspected; complete object, clear category silhouette, no text or scenery",
+    "nativeSize": "Inspected at actual 128px/96px on dark and light backgrounds: distinct silhouette and visible rune/symbol, no clipping or obvious halo.",
+    "limitations": "Some tonal variation/texture remains beyond the strict flat-color ideal; unframed art, not runtime-integrated"
+  },
+  "approval": {
+    "status": "Pending approval"
+  }
+}

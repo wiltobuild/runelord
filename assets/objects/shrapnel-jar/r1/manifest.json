@@ -1,0 +1,43 @@
+{
+  "slug": "shrapnel-jar",
+  "name": "Shrapnel Jar",
+  "catalog": "catalog/potions.md",
+  "category": "potions",
+  "engineContentId": null,
+  "engineMapping": "Unresolved: catalog defines names, no engine IDs",
+  "state": "static",
+  "revision": "r1",
+  "intendedUse": "Inventory/shop/reward icon",
+  "viewpoint": "three-quarter",
+  "brief": "Shared common Shrapnel Jar, thrown damage consumable. Broad squat cylindrical glass JAR with wide iron screw lid, stout dark iron rim and base, bold muted ochre liquid inside and three large dark angular metal shards visibly suspended in it, one small pale impact-star symbol. Only a few big shapes. No fuse, no explosion, no loose flying pieces, no labels. Wide jar silhouette readable at 96px.",
+  "prompt": "Create ONE isolated Runelord inventory object, actual transparent background, square canvas with 10% clear padding, no text or frame or scenery or character or shadow underneath. Match approved Warlock and Ranger artwork shown in conversation as STYLE references only: serious angular chunky 2D fantasy, crisp dark contours, broad flat color shapes, exactly 2–3 hard cel shading tones per material, minimal large details. No surface noise, gradients, PBR/3D realism, bloom, ornate filigree or cute faces. Full object, centered slight three-quarter view. Shared common Shrapnel Jar, thrown damage consumable. Broad squat cylindrical glass JAR with wide iron screw lid, stout dark iron rim and base, bold muted ochre liquid inside and three large dark angular metal shards visibly suspended in it, one small pale impact-star symbol. Only a few big shapes. No fuse, no explosion, no loose flying pieces, no labels. Wide jar silhouette readable at 96px.",
+  "tool": "built-in image_gen",
+  "reference": {
+    "path": "C:/Users/wilsh/Projects/runelord/assets/heroes/references/warlock/warlock-base-r1.png",
+    "sha256": "3585512c985b250f1da8a159f436e82dc673059269bd1e54cfad625b01e28f02",
+    "evidenceId": "user-chat-2026-10-01-approve-existing-runelord",
+    "role": "inspected style context, not identity"
+  },
+  "source": {
+    "path": "C:/Users/wilsh/Projects/runelord/assets/objects/shrapnel-jar/r1/source.png",
+    "sha256": "2735a39a1c1124317f6381ff102bd10aee32cc93978d1776d2cb3fc95a21f9f0",
+    "width": 1254,
+    "height": 1254
+  },
+  "export": {
+    "path": "C:/Users/wilsh/Projects/runelord/assets/objects/shrapnel-jar/r1/icon-96.png",
+    "sha256": "d51279501aeb679cf750df69b2f5ee1b15d9a3da8915dee9da61133d671f30e3",
+    "width": 96,
+    "height": 96
+  },
+  "qa": {
+    "alphaMin": 0,
+    "alphaMax": 255,
+    "fullSize": "Inspected; complete object, clear category silhouette, no text or scenery",
+    "nativeSize": "Inspected at actual 128px/96px on dark and light backgrounds: distinct silhouette and visible rune/symbol, no clipping or obvious halo.",
+    "limitations": "Some tonal variation/texture remains beyond the strict flat-color ideal; unframed art, not runtime-integrated"
+  },
+  "approval": {
+    "status": "Pending approval"
+  }
+}

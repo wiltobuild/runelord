@@ -1,0 +1,41 @@
+{
+  "slug": "healing-draught",
+  "name": "Healing Draught",
+  "catalog": "catalog/potions.md",
+  "engineContentId": null,
+  "engineMapping": "unresolved; catalog provides names, not engine IDs",
+  "category": "potions",
+  "state": "static",
+  "revision": "r1",
+  "source": {
+    "path": "C:/Users/wilsh/Projects/runelord/assets/objects/healing-draught/r1/source.png",
+    "sha256": "6e3b6862f7f3a66b81f959483bf2a858cc456a201325ef2a7f3ceadb3407ef8c",
+    "width": 1254,
+    "height": 1254
+  },
+  "export": {
+    "path": "C:/Users/wilsh/Projects/runelord/assets/objects/healing-draught/r1/icon-96.png",
+    "sha256": "8632b4fa040a1c5aa1191269d68561a8c32997a2ac4f50f5741e5317ef58615b",
+    "width": 96,
+    "height": 96
+  },
+  "prompt": "Use case: stylized-concept. Create one isolated Runelord game inventory object on a genuine transparent background, square canvas, generous 10% clear margin, no text, frame, character, floor, scenery, cast shadow or watermark. Use the approved Runelord hero images visible in this conversation as STYLE references only, not subjects: broad flat color planes, angular chunky shapes, 2–3 hard-edged cel-shading tones, dark crisp contours, restrained graphic highlights, quiet surfaces. No gradients, texture noise, photorealism, 3D rendering, bloom or cute mascot style. Single object centered, slight three-quarter view, readable at 128px. Subject: Healing Draught, shared common potion. A squat round, broad-shouldered glass flask with short neck and chunky bark-brown cork, a simple dark leather neck band, bold deep crimson healing liquid and ONE small pale stylized leaf symbol suspended visibly inside. Round healing/support bottle silhouette is crucial. Glass is illustrated with only two sharp graphic highlight shapes, not realistic reflections. Original practical medieval fantasy object, no ornate jewelry, no written label. Render even simpler for readability at 96px. Match the broad cel-shaded planes of the approved Runelord references visible above.",
+  "tool": "built-in image_gen",
+  "reference": {
+    "path": "C:/Users/wilsh/Projects/runelord/assets/heroes/references/ranger/ranger-base-r1.png",
+    "sha256": "9cd6ae4be65920528b211c20d2a1c12f68183b6bb6bb9ca6095b2ea23eb76912",
+    "evidenceId": "user-chat-2026-10-01-approve-existing-runelord",
+    "role": "style context; not object identity"
+  },
+  "qa": {
+    "hasAlpha": true,
+    "alphaMin": 0,
+    "alphaMax": 255,
+    "visual": "Inspected full source and native-size export on dark and light backgrounds: recognizable silhouette and central symbol, no clipping or obvious edge halo.",
+    "limitations": "Liquid has some tonal gradients beyond the flat-color ideal.",
+    "runtime": "Not integrated into game; unframed object export only"
+  },
+  "approval": {
+    "status": "Pending approval"
+  }
+}
