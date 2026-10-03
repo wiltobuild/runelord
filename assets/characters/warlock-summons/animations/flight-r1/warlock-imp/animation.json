@@ -1,0 +1,786 @@
+{
+  "contract_version": 2,
+  "character_id": "warlock-imp",
+  "display_name": "Imp — flight",
+  "role": "Firebolt and Scorch",
+  "form": "airborne summon",
+  "rig_family": "winged biped",
+  "format": "frame-based RGBA PNG",
+  "status": "animation_complete_pending_review",
+  "authorization": {
+    "source": "User explicitly requested flying variation for existing Imp and in-demo use; delegated by parent agent",
+    "scope": "One flight variant; design approval remains pending"
+  },
+  "base": {
+    "revision": "r1",
+    "asset": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\characters\\warlock-imp\\base\\r1\\warlock-imp-base-r1.png",
+    "sha256": "72f0117479ddd46b1468868b90fe3d78800836364bac730db5a8861c7f6fff3e",
+    "dimensions": [
+      1206,
+      1305
+    ],
+    "alpha_extrema": [
+      0,
+      255
+    ],
+    "visible_bbox_alpha_gt_127": [
+      33,
+      36,
+      1179,
+      1276
+    ],
+    "approval": {
+      "status": "Approved",
+      "at": "2026-10-02T22:20:56.989Z",
+      "evidenceId": "f30ab70f-4e20-4ddb-8429-28f2831feb45",
+      "paths": [
+        "C:\\Users\\wilsh\\Projects\\runelord\\assets\\approvals\\inbox\\warlock-imp\\base-r1\\warlock-imp-base-r1.png"
+      ]
+    }
+  },
+  "style_lock": {
+    "direction": "Serious Runelord hard-edged cel shading, broad oxblood/charcoal shapes, restrained ember accents",
+    "references": [
+      {
+        "path": "C:/Users/wilsh/Projects/runelord/assets/cards/reference-samples/warlock-summon-imp.png",
+        "sha256": "070283f1fb65b07531cec7b32c653ffc96a7adacde1c2ce4daca1f3b4ed78c9e",
+        "role": "exact card identity",
+        "approval": {
+          "status": "Approved",
+          "at": "2026-10-02T03:44:25.533Z",
+          "evidenceId": "user-chat-2026-10-01-approve-existing-runelord",
+          "paths": [
+            "C:\\Users\\wilsh\\Projects\\runelord\\assets\\cards\\reference-samples\\warlock-summon-imp.png"
+          ]
+        }
+      },
+      {
+        "path": "C:/Users/wilsh/Projects/runelord/assets/cards/reference-samples/warlock-summon-imp.png",
+        "sha256": "070283f1fb65b07531cec7b32c653ffc96a7adacde1c2ce4daca1f3b4ed78c9e",
+        "role": "approved rendering style",
+        "approval": {
+          "status": "Approved",
+          "at": "2026-10-02T03:44:25.533Z",
+          "evidenceId": "user-chat-2026-10-01-approve-existing-runelord",
+          "paths": [
+            "C:\\Users\\wilsh\\Projects\\runelord\\assets\\cards\\reference-samples\\warlock-summon-imp.png"
+          ]
+        }
+      }
+    ],
+    "camera": "shallow three-quarter facing right"
+  },
+  "source_sheet": {
+    "file": "source-sheet.png",
+    "dimensions": [
+      1448,
+      1086
+    ],
+    "sha256": "510d3f843ee4d198d2fbbde6d0cdc26ae1b7852968691fc60aa48326ec4f6a14"
+  },
+  "geometry": {
+    "coordinate_system": "pixels; top-left; x right, y down",
+    "facing": "right",
+    "canvas_px": [
+      512,
+      384
+    ],
+    "root_px": [
+      256,
+      340
+    ],
+    "anchor_normalized": [
+      0.5,
+      0.8854166666666666
+    ],
+    "source_pixels_per_world_unit": 515.5555555555555,
+    "standing_height_world": 0.45,
+    "hover_gap_world": 0.075,
+    "reference_visible_height_px": 266,
+    "root_motion": "In-place eye-registered flight; six authored wing phases; grounded death frames retain original anchor. Runtime may add airborne lane elevation, removed on death.",
+    "mirror_safe": false
+  },
+  "frame_canvas": [
+    512,
+    384
+  ],
+  "anchor": [
+    256,
+    340
+  ],
+  "atlas": {
+    "file": "atlas.png",
+    "dimensions": [
+      2048,
+      1920
+    ],
+    "sha256": "61ee5aa0ca8b151314fb43ab70320cd948d1a98ccdfd3a0389eef6a6228f504a"
+  },
+  "frames": [
+    {
+      "id": 0,
+      "file": "frame-00.png",
+      "sha256": "1226dc65e942fdc0a8b7544427249f5e17cbb1907c014ab76af4d37b936754e7",
+      "source_rect": [
+        56,
+        32,
+        346,
+        365
+      ],
+      "component_label": 1,
+      "packing_translation": [
+        154,
+        47
+      ],
+      "uniform_scale": 0.8,
+      "eye_registration_px": [
+        304,
+        166
+      ],
+      "visible_bbox": [
+        154,
+        47,
+        386,
+        313
+      ],
+      "atlas_rect": [
+        0,
+        0,
+        512,
+        384
+      ]
+    },
+    {
+      "id": 1,
+      "file": "frame-01.png",
+      "sha256": "ca436cf49323d709582e4888af868e9793b7a6e8054deb5ad596fe5edbb30c9a",
+      "source_rect": [
+        375,
+        76,
+        715,
+        360
+      ],
+      "component_label": 28,
+      "packing_translation": [
+        116,
+        92
+      ],
+      "uniform_scale": 0.8,
+      "eye_registration_px": [
+        304,
+        166
+      ],
+      "visible_bbox": [
+        116,
+        92,
+        388,
+        319
+      ],
+      "atlas_rect": [
+        512,
+        0,
+        512,
+        384
+      ]
+    },
+    {
+      "id": 2,
+      "file": "frame-02.png",
+      "sha256": "ffc79aa0cce3332d79bd3b0258be1b3fd77842e1d2c14627715093b263794e11",
+      "source_rect": [
+        743,
+        83,
+        1179,
+        361
+      ],
+      "component_label": 31,
+      "packing_translation": [
+        97,
+        93
+      ],
+      "uniform_scale": 0.8,
+      "eye_registration_px": [
+        304,
+        166
+      ],
+      "visible_bbox": [
+        97,
+        93,
+        446,
+        315
+      ],
+      "atlas_rect": [
+        1024,
+        0,
+        512,
+        384
+      ]
+    },
+    {
+      "id": 3,
+      "file": "frame-03.png",
+      "sha256": "9eb99ecf6a6aebc7dc80be0ec9a181c570aa9df2a16ffe95b0f57acbaa65e55f",
+      "source_rect": [
+        1173,
+        102,
+        1417,
+        365
+      ],
+      "component_label": 73,
+      "packing_translation": [
+        169,
+        96
+      ],
+      "uniform_scale": 0.8,
+      "eye_registration_px": [
+        304,
+        166
+      ],
+      "visible_bbox": [
+        169,
+        96,
+        364,
+        306
+      ],
+      "atlas_rect": [
+        1536,
+        0,
+        512,
+        384
+      ]
+    },
+    {
+      "id": 4,
+      "file": "frame-04.png",
+      "sha256": "b61542396f3ef14db9eee98524f0754a4f7f9214c84dd0323ce7e5415bc52600",
+      "source_rect": [
+        45,
+        440,
+        365,
+        711
+      ],
+      "component_label": 493,
+      "packing_translation": [
+        135,
+        94
+      ],
+      "uniform_scale": 0.8,
+      "eye_registration_px": [
+        304,
+        166
+      ],
+      "visible_bbox": [
+        135,
+        94,
+        391,
+        311
+      ],
+      "atlas_rect": [
+        0,
+        384,
+        512,
+        384
+      ]
+    },
+    {
+      "id": 5,
+      "file": "frame-05.png",
+      "sha256": "8fd8895f22ca8ec448f732ef3e94035d8a2f9c24e7bb8424c3c542dd928071a4",
+      "source_rect": [
+        410,
+        390,
+        713,
+        713
+      ],
+      "component_label": 442,
+      "packing_translation": [
+        143,
+        46
+      ],
+      "uniform_scale": 0.8,
+      "eye_registration_px": [
+        304,
+        166
+      ],
+      "visible_bbox": [
+        143,
+        46,
+        385,
+        304
+      ],
+      "atlas_rect": [
+        512,
+        384,
+        512,
+        384
+      ]
+    },
+    {
+      "id": 6,
+      "file": "frame-06.png",
+      "sha256": "3a8145c885cd3d568e259a138d66231d50ad29a65276ea8199b9ff851a852e5a",
+      "source_rect": [
+        757,
+        421,
+        1111,
+        712
+      ],
+      "component_label": 471,
+      "packing_translation": [
+        111,
+        76
+      ],
+      "uniform_scale": 0.8,
+      "eye_registration_px": [
+        304,
+        166
+      ],
+      "visible_bbox": [
+        111,
+        76,
+        394,
+        309
+      ],
+      "atlas_rect": [
+        1024,
+        384,
+        512,
+        384
+      ]
+    },
+    {
+      "id": 7,
+      "file": "frame-07.png",
+      "sha256": "6143c1367dc8d6fe0fd6ecec013e25b8230dc74b731b0bb86567340c2767c002",
+      "source_rect": [
+        1124,
+        458,
+        1436,
+        705
+      ],
+      "component_label": 540,
+      "packing_translation": [
+        166,
+        101
+      ],
+      "uniform_scale": 0.8,
+      "eye_registration_px": [
+        325,
+        169
+      ],
+      "visible_bbox": [
+        166,
+        101,
+        416,
+        299
+      ],
+      "atlas_rect": [
+        1536,
+        384,
+        512,
+        384
+      ]
+    },
+    {
+      "id": 8,
+      "file": "frame-08.png",
+      "sha256": "b7847eba73dc713ef1a6c4da15347ad2884a472325e11816a919a524e1bb67a8",
+      "source_rect": [
+        40,
+        755,
+        340,
+        1056
+      ],
+      "component_label": 1046,
+      "packing_translation": [
+        153,
+        92
+      ],
+      "uniform_scale": 0.8,
+      "eye_registration_px": [
+        288,
+        152
+      ],
+      "visible_bbox": [
+        153,
+        92,
+        393,
+        333
+      ],
+      "atlas_rect": [
+        0,
+        768,
+        512,
+        384
+      ]
+    },
+    {
+      "id": 9,
+      "file": "frame-09.png",
+      "sha256": "b958956eeb9c77575a5e242809807a060445e0afd4bd574e5288e15b4ce6b94f",
+      "source_rect": [
+        369,
+        792,
+        776,
+        1060
+      ],
+      "component_label": 1091,
+      "packing_translation": [
+        118,
+        95
+      ],
+      "uniform_scale": 0.8,
+      "eye_registration_px": [
+        304,
+        166
+      ],
+      "visible_bbox": [
+        118,
+        95,
+        444,
+        309
+      ],
+      "atlas_rect": [
+        512,
+        768,
+        512,
+        384
+      ]
+    },
+    {
+      "id": 10,
+      "file": "frame-10.png",
+      "sha256": "4b589623eb0af43b0b4e76ae23685abf7a1c5fa58131eb799ca38cfcc6e0c7dd",
+      "source_rect": [
+        779,
+        764,
+        1099,
+        1058
+      ],
+      "component_label": 1058,
+      "packing_translation": [
+        139,
+        89
+      ],
+      "uniform_scale": 0.8,
+      "eye_registration_px": [
+        306,
+        185
+      ],
+      "visible_bbox": [
+        139,
+        89,
+        395,
+        324
+      ],
+      "atlas_rect": [
+        1024,
+        768,
+        512,
+        384
+      ]
+    },
+    {
+      "id": 11,
+      "file": "frame-11.png",
+      "sha256": "8a29711fbabfe05bbe98d7967abc2e9fe3c9aeb32c65f85a68bba02785db0f9b",
+      "source_rect": [
+        1135,
+        807,
+        1425,
+        1061
+      ],
+      "component_label": 1129,
+      "packing_translation": [
+        147,
+        120
+      ],
+      "uniform_scale": 0.8,
+      "eye_registration_px": [
+        306,
+        185
+      ],
+      "visible_bbox": [
+        147,
+        120,
+        379,
+        323
+      ],
+      "atlas_rect": [
+        1536,
+        768,
+        512,
+        384
+      ]
+    },
+    {
+      "id": 12,
+      "file": "frame-12.png",
+      "sha256": "07ab3e0fd45c542133b29a33b192d2c2aaf1782850f59683ecde00ee39e023e7",
+      "derived_from": 8,
+      "packing_translation": [
+        0,
+        32
+      ],
+      "visible_bbox": [
+        153,
+        124,
+        393,
+        365
+      ],
+      "atlas_rect": [
+        0,
+        1152,
+        512,
+        384
+      ]
+    },
+    {
+      "id": 13,
+      "file": "frame-13.png",
+      "sha256": "fdf806a82f90b05071c07da64b7b7848627c29be6c95ab90a3e948b246378b05",
+      "source_asset": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\characters\\warlock-summons\\animations\\base-r1\\warlock-imp\\frame-12.png",
+      "source_sha256": "fdf806a82f90b05071c07da64b7b7848627c29be6c95ab90a3e948b246378b05",
+      "visible_bbox": [
+        127,
+        146,
+        444,
+        347
+      ],
+      "atlas_rect": [
+        512,
+        1152,
+        512,
+        384
+      ]
+    },
+    {
+      "id": 14,
+      "file": "frame-14.png",
+      "sha256": "836ab0f72a7ea19d71f9615ba6ce5bf64f5d44ef485d4592c4044696e5ee7cd8",
+      "source_asset": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\characters\\warlock-summons\\animations\\base-r1\\warlock-imp\\frame-13.png",
+      "source_sha256": "836ab0f72a7ea19d71f9615ba6ce5bf64f5d44ef485d4592c4044696e5ee7cd8",
+      "visible_bbox": [
+        109,
+        159,
+        432,
+        346
+      ],
+      "atlas_rect": [
+        1024,
+        1152,
+        512,
+        384
+      ]
+    },
+    {
+      "id": 15,
+      "file": "frame-15.png",
+      "sha256": "b66dac09063cedd9038a6c067748b800d8b054c4dc0e3651f68b37013653ef5e",
+      "source_asset": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\characters\\warlock-summons\\animations\\base-r1\\warlock-imp\\frame-14.png",
+      "source_sha256": "b66dac09063cedd9038a6c067748b800d8b054c4dc0e3651f68b37013653ef5e",
+      "visible_bbox": [
+        104,
+        173,
+        408,
+        348
+      ],
+      "atlas_rect": [
+        1536,
+        1152,
+        512,
+        384
+      ]
+    },
+    {
+      "id": 16,
+      "file": "frame-16.png",
+      "sha256": "ee91b90284da5ad5698551f9d10246bca5f8ea011433b44da786150de9d200b0",
+      "source_asset": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\characters\\warlock-summons\\animations\\base-r1\\warlock-imp\\frame-15.png",
+      "source_sha256": "ee91b90284da5ad5698551f9d10246bca5f8ea011433b44da786150de9d200b0",
+      "visible_bbox": [
+        105,
+        177,
+        405,
+        348
+      ],
+      "atlas_rect": [
+        0,
+        1536,
+        512,
+        384
+      ]
+    }
+  ],
+  "animations": {
+    "idle": {
+      "frames": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "durations_ms": [
+        90,
+        70,
+        70,
+        90,
+        70,
+        70
+      ],
+      "loop": true,
+      "events": [],
+      "transition": "self"
+    },
+    "act": {
+      "frames": [
+        6,
+        7,
+        7,
+        1
+      ],
+      "durations_ms": [
+        90,
+        80,
+        80,
+        100
+      ],
+      "loop": false,
+      "events": [
+        {
+          "name": "release",
+          "at_ms": 90,
+          "time_ms": 90
+        }
+      ],
+      "transition": "idle"
+    },
+    "hit": {
+      "frames": [
+        8,
+        9,
+        1
+      ],
+      "durations_ms": [
+        80,
+        100,
+        100
+      ],
+      "loop": false,
+      "events": [],
+      "transition": "idle"
+    },
+    "wounded_idle": {
+      "frames": [
+        10,
+        11
+      ],
+      "durations_ms": [
+        200,
+        200
+      ],
+      "loop": true,
+      "events": [],
+      "transition": "self"
+    },
+    "die": {
+      "frames": [
+        8,
+        12,
+        13,
+        14,
+        15,
+        16
+      ],
+      "durations_ms": [
+        80,
+        90,
+        110,
+        130,
+        170,
+        300
+      ],
+      "loop": false,
+      "events": [
+        {
+          "name": "terminal",
+          "at_ms": 580,
+          "time_ms": 580
+        }
+      ],
+      "transition": "hold-last",
+      "terminal": true
+    },
+    "spawn": {
+      "frames": [
+        3,
+        2,
+        1,
+        0
+      ],
+      "durations_ms": [
+        90,
+        90,
+        90,
+        90
+      ],
+      "loop": false,
+      "events": [
+        {
+          "name": "arrival",
+          "at_ms": 270,
+          "time_ms": 270
+        }
+      ],
+      "transition": "idle"
+    }
+  },
+  "death_mapping": {
+    "flight_recoil": [
+      8,
+      12
+    ],
+    "original_ground_death": [
+      {
+        "new": 13,
+        "base_r1": 12
+      },
+      {
+        "new": 14,
+        "base_r1": 13
+      },
+      {
+        "new": 15,
+        "base_r1": 14
+      },
+      {
+        "new": 16,
+        "base_r1": 15
+      }
+    ],
+    "terminal_frame": 16,
+    "runtime_requirement": "Remove airborne lane elevation over death transition; final frame is original grounded terminal pose."
+  },
+  "generation": {
+    "tool": "built-in image_gen",
+    "source": "C:\\Users\\wilsh\\.codex\\generated_images\\01a0fe64-6817-7750-8d68-dca5dacd3613\\exec-22a380e0-b885-4e52-ba89-45012858871b.png",
+    "prompt_file": "generation-prompts.json"
+  },
+  "qa": {
+    "alpha_extrema": [
+      0,
+      255
+    ],
+    "frame_count": 17,
+    "unique_flight_frames": 6,
+    "clipping": [],
+    "visual_review": "Full source and registered contact sheet inspected against approved master. Browser playback unavailable: cua reports no browsers. See verification.json; independent runtime review remains.",
+    "limitations": [
+      "Two authored wounded poses; no skeletal interpolation.",
+      "Minor generated contour variation remains.",
+      "Death transitions to original grounded sequence; renderer must remove extra airborne lane offset."
+    ]
+  }
+}

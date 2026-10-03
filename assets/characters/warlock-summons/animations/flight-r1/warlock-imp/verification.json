@@ -1,0 +1,18 @@
+{
+  "source_revision": "c7a20871a08e6b089fd6b86dfc5c48fec28e92b1 plus existing working tree",
+  "checks": {
+    "production_animation_validator": "pass",
+    "transparent_frames": "17 RGBA PNGs, consistent 512x384 canvas; all visible bounds inside canvas",
+    "authored_motion": "six distinct generated wing silhouettes, two attack poses, two recoil/recovery poses, two wounded poses",
+    "visual_source_and_registered_frames": "inspected against approved master; horns, yellow eyes, red/black body, two wings, tucked legs retained",
+    "death_terminal": "frame-16.png exact byte copy of base-r1 frame-15.png; non-looping runtime state holds last",
+    "gallery": "flight-review.gif and flight-contact.png submitted and present in /api/art; pending approval",
+    "live_playback": "not verified in browser: cua reports no available browsers; GIFs assembled with actual frame durations and light/dark, full and ~96px-height panels"
+  },
+  "limitations": [
+    "Minor generated contour differences remain between poses.",
+    "Wounded hover has only two authored poses.",
+    "Independent runtime visual QA remains with integration owner.",
+    "Extra airborne lane elevation must be removed through death so unchanged grounded terminal frame lands."
+  ]
+}
