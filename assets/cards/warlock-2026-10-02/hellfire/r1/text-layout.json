@@ -1,0 +1,36 @@
+[
+  {
+    "region": "title",
+    "text": "Hellfire",
+    "lines": [
+      "Hellfire"
+    ],
+    "font_size": 94
+  },
+  {
+    "region": "cost",
+    "text": "2",
+    "lines": [
+      "2"
+    ],
+    "font_size": 110
+  },
+  {
+    "region": "type",
+    "text": "ATTACK · WARLOCK",
+    "lines": [
+      "ATTACK · WARLOCK"
+    ],
+    "font_size": 35
+  },
+  {
+    "region": "rules",
+    "text": "Deal 6 damage to ALL enemies twice. Each hit applies 1 Scorch.",
+    "lines": [
+      "Deal 6 damage to ALL",
+      "enemies twice.",
+      "Each hit applies 1 Scorch."
+    ],
+    "font_size": 54
+  }
+]

@@ -1,0 +1,8 @@
+{
+  "name": "Hellfire",
+  "cost": "2",
+  "type": "Attack",
+  "rarity": "Uncommon",
+  "rules": "Deal 6 damage to ALL enemies twice. Each hit applies 1 Scorch.",
+  "upgrade": "8 per hit"
+}
