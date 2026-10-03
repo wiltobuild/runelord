@@ -1,0 +1,36 @@
+[
+  {
+    "region": "title",
+    "text": "Last Rites",
+    "lines": [
+      "Last Rites"
+    ],
+    "font_size": 94
+  },
+  {
+    "region": "cost",
+    "text": "2",
+    "lines": [
+      "2"
+    ],
+    "font_size": 110
+  },
+  {
+    "region": "type",
+    "text": "SKILL · WARLOCK",
+    "lines": [
+      "SKILL · WARLOCK"
+    ],
+    "font_size": 35
+  },
+  {
+    "region": "rules",
+    "text": "Heal 12 HP. Gain 3 Corruption. Consume.",
+    "lines": [
+      "Heal 12 HP.",
+      "Gain 3 Corruption.",
+      "Consume."
+    ],
+    "font_size": 54
+  }
+]

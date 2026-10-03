@@ -1,0 +1,8 @@
+{
+  "name": "Last Rites",
+  "cost": "2",
+  "type": "Skill",
+  "rarity": "Rare",
+  "rules": "Heal 12 HP. Gain 3 Corruption. Consume.",
+  "upgrade": "Heal 16"
+}
