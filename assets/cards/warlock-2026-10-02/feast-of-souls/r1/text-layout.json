@@ -1,0 +1,38 @@
+[
+  {
+    "region": "title",
+    "text": "Feast of Souls",
+    "lines": [
+      "Feast of Souls"
+    ],
+    "font_size": 84
+  },
+  {
+    "region": "cost",
+    "text": "2",
+    "lines": [
+      "2"
+    ],
+    "font_size": 110
+  },
+  {
+    "region": "type",
+    "text": "ATTACK · WARLOCK",
+    "lines": [
+      "ATTACK · WARLOCK"
+    ],
+    "font_size": 35
+  },
+  {
+    "region": "rules",
+    "text": "Sacrifice ALL demons. Deal damage equal to their combined current HP to ALL enemies. Consume.",
+    "lines": [
+      "Sacrifice ALL demons.",
+      "Deal damage equal to their",
+      "combined current HP to",
+      "ALL enemies.",
+      "Consume."
+    ],
+    "font_size": 53
+  }
+]

@@ -1,0 +1,8 @@
+{
+  "name": "Feast of Souls",
+  "cost": "2",
+  "type": "Attack",
+  "rarity": "Rare",
+  "rules": "**Sacrifice** ALL demons. Deal damage equal to their combined current HP to ALL enemies. Consume.",
+  "upgrade": "+10 damage"
+}
