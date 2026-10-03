@@ -1,0 +1,8 @@
+{
+  "name": "Hellspawn Tide",
+  "cost": "3",
+  "type": "Skill",
+  "rarity": "Rare",
+  "rules": "Summon an Imp, a Hellhound and a Gloomstalker. Consume.",
+  "upgrade": "Costs 2"
+}
