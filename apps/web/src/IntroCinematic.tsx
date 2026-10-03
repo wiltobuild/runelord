@@ -45,13 +45,13 @@ export function IntroCinematic({ onStart, volume, onVolume }: {
     if (!paused) void el.play().catch(() => setPaused(true));
   };
   return <main className={`intro-cinematic ${leaving ? "intro-leaving" : ""}`} aria-label="Runelord cinematic title screen">
-    <video ref={video} className="intro-film" autoPlay={!paused} loop muted={!sound} playsInline preload="auto" poster={assetUrl("/opening-assets/oath-intro-r4-poster.jpg")} onError={() => setFailed(true)} aria-hidden="true">
-      <source src={assetUrl("/opening-assets/oath-intro-r4.mp4")} type="video/mp4" />
+    <video ref={video} className="intro-film" autoPlay={!paused} loop muted={!sound} playsInline preload="auto" poster={assetUrl("/opening-assets/oath-intro-r7-poster.jpg")} onError={() => setFailed(true)} aria-hidden="true">
+      <source src={assetUrl("/opening-assets/oath-intro-r7.mp4")} type="video/mp4" />
     </video>
     <div className="intro-title">
       <div className="intro-runes" aria-hidden="true">ᚱ ᚢ ᚾ ᛖ ◇ ᛟ ᚨ ᛏ ᚺ</div>
       <p className="intro-eyebrow">AN OATH FORGED IN FIRE</p>
-      <h1>RUNE<span>LORD</span></h1>
+      <h1 className="intro-stone-title"><img src={assetUrl("/opening-assets/runelord-runestone-title.webp")} alt="Runelord" /></h1>
       <p className="intro-subtitle">CINDER <i>&amp;</i> OATH</p>
       <div className="intro-divider" aria-hidden="true">◆</div>
       <p className="intro-vow">Bind the fallen. Command the inferno.</p>
@@ -66,3 +66,4 @@ export function IntroCinematic({ onStart, volume, onVolume }: {
     {failed && <p className="intro-fallback-note" role="status">The cinematic could not load. Press Start to continue.</p>}
   </main>;
 }
+

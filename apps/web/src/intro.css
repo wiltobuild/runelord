@@ -12,3 +12,9 @@
 @media(prefers-reduced-motion:reduce){.intro-cinematic,.intro-start,.intro-start::before{animation:none;transition:none}}
 
 @media(max-height:600px) and (min-width:601px){.intro-cinematic{min-height:0}.intro-title{top:45%}.intro-runes{font-size:14px;margin-bottom:8px}.intro-eyebrow{font-size:8px;margin-bottom:7px}.intro-title h1{font-size:8vw}.intro-subtitle{font-size:14px;margin:9px 0}.intro-divider{margin:0}.intro-vow{font-size:16px;margin:8px 0 10px}.intro-cinematic .intro-start{width:220px;height:63px;font-size:21px}.intro-start-hint{margin:4px 0}.intro-controls{bottom:12px}}
+
+/* Custom carved runestone lettering retains an accessible heading. */
+.intro-title .intro-stone-title{width:112%;max-width:760px;line-height:0;margin:0 -6%;text-shadow:none}
+.intro-stone-title img{display:block;width:100%;height:auto;filter:drop-shadow(0 0 7px #e78b2638);animation:runestone-glow 5s ease-in-out infinite}
+@keyframes runestone-glow{50%{filter:drop-shadow(0 0 12px #f7a23466) brightness(1.08)}}
+@media(prefers-reduced-motion:reduce){.intro-stone-title img{animation:none}}
