@@ -1,0 +1,422 @@
+@font-face { font-family:"Runelord Text"; src:url("/fonts/cormorant-garamond-600.ttf") format("truetype"); font-weight:600; font-style:normal; font-display:swap; }
+@font-face { font-family:"Runelord Text"; src:url("/fonts/cormorant-garamond-700.ttf") format("truetype"); font-weight:700; font-style:normal; font-display:swap; }
+/* Obsidian HUD r1: all positions are in the template's 1672 × 941 space. */
+body:has(.battle-ui) { min-height:100vh; display:grid; place-items:center; overflow:hidden; }
+main.battle-ui { width:1672px; height:941px; min-height:0; zoom:var(--hud-scale); background:#151112 var(--scene) 0 -85px / 1672px 941px no-repeat; overflow:hidden; }
+.battle-ui:before { display:none; }
+.hud-template { position:absolute; inset:0; width:1672px; height:941px; pointer-events:none; z-index:10; clip-path:polygon(0 0,1672px 0,1672px 226px,1555px 226px,1555px 400px,1672px 400px,1672px 941px,0 941px,0 264px,64px 194px,320px 194px,320px 130px,0 130px); }
+.battle-ui .topbar, .battle-ui .runbar, .battle-ui .hand-zone { display:contents; }
+.battle-ui .wordmark { position:absolute; left:72px; top:12px; width:247px; height:52px; font:bold 35px Georgia,serif; letter-spacing:4px; z-index:12; }
+.battle-ui .wordmark span { color:inherit; }
+.battle-ui .wordmark small { padding-top:5px; font:11px Georgia,serif; letter-spacing:5px; color:#e5ac60; }
+.battle-ui .chapter { display:block; position:absolute; left:710px; top:9px; width:265px; text-align:center; z-index:12; font:bold 19px Georgia,serif; color:#fff1d3; letter-spacing:1px; }
+.battle-ui .topbar nav { display:contents; }
+.battle-ui .topbar nav button { position:absolute; top:14px; height:39px; padding:0; background:transparent; border:0; z-index:12; font:bold 18px Georgia,serif; }
+.battle-ui .topbar nav .help-button { left:1360px; width:45px; font-size:31px; }
+.battle-ui .topbar nav .music-button { left:1433px; width:45px; font-size:26px; }
+.battle-ui .topbar nav .deck-button { left:1510px; width:145px; }
+.battle-ui .topbar input { display:none; }
+.battle-ui .stat { position:absolute; top:62px; height:57px; z-index:12; grid-template-columns:48px auto; column-gap:9px; width:170px; }
+.battle-ui .stat:nth-child(1) { left:365px; }
+.battle-ui .stat:nth-child(2) { left:575px; width:118px; }
+.battle-ui .stat:nth-child(3) { left:728px; width:151px; }
+.battle-ui .stat:nth-child(4) { left:916px; width:184px; }
+.battle-ui .stat > span { font-size:45px; text-shadow:0 2px 3px #000; text-align:center; line-height:1; }
+.battle-ui .stat.health > span { color:#f34642; }
+.battle-ui .stat:nth-child(2) > span { color:#6bcff4; }
+.battle-ui .stat.ember > span { color:#ff9b32; }
+.battle-ui .stat.corruption > span { color:#cb8cf0; }
+.battle-ui .stat strong { font:bold 31px Georgia,serif; line-height:1; white-space:nowrap; }
+.battle-ui .stat strong small { font-size:20px; color:#e3bc8b; }
+.battle-ui .stat label { font:bold 15px Georgia,serif; letter-spacing:1px; color:#eac38c; margin:0; }
+.inventory { display:contents; }
+.inventory-slot { position:absolute; z-index:15; border:0; padding:1px; background:transparent; display:grid; place-items:center; border-radius:5px; }
+.inventory-slot img { width:100%; height:100%; object-fit:contain; filter:drop-shadow(0 1px 3px #000); transition:filter .2s,transform .2s; }
+.inventory-slot.empty > span:first-child { color:#bb916e66; font-size:22px; }
+.inventory-slot.occupied:hover img { filter:drop-shadow(0 0 7px #ffb253); transform:scale(1.13); }
+.inventory-slot .slot-tooltip { display:none; position:absolute; right:0; top:52px; width:210px; padding:12px; background:#151114f5; border:1px solid #cf9657; font-size:14px; line-height:1.5; pointer-events:none; }
+.inventory-slot:hover .slot-tooltip, .inventory-slot:focus-visible .slot-tooltip { display:block; }
+.battle-ui .battlefield { position:absolute; inset:0 0 auto; width:1672px; height:610px; min-height:0; background:none; border:0; overflow:visible; }
+.battle-ui .battlefield:before, .battle-ui .battlefield:after { display:none; }
+.battle-ui .location { position:absolute; left:39px; top:142px; width:245px; height:38px; display:flex; align-items:center; z-index:12; }
+.battle-ui .location .eyebrow { display:none; }
+.battle-ui .location h1 { font:bold 26px Georgia,serif; margin:0; line-height:1.05; text-shadow:0 2px 3px #000; }
+.battle-ui .turn-tag { position:absolute; left:1498px; right:auto; top:164px; width:143px; height:48px; text-align:center; z-index:12; }
+.battle-ui .turn-tag span { font:bold 19px Georgia,serif; letter-spacing:2px; }
+.battle-ui .turn-tag strong { display:block; font:bold 14px Georgia,serif; margin-top:7px; text-transform:uppercase; color:#f1c184; }
+.battle-ui .hero-position { left:-130px; top:179px; bottom:auto; width:500px; height:400px; z-index:7; pointer-events:none; }
+.battle-ui .hero-position .hero-canvas { transform:scale(1.25); transform-origin:50% 50%; }
+.battle-ui .hero-label { display:none; }
+.battle-ui .warband { position:absolute; left:365px; bottom:36px; width:620px; background:none; border:0; padding:0; }
+.battle-ui .units { min-height:0; gap:10px; justify-content:flex-end; }
+.battle-ui .unit { flex:0 1 110px; min-width:55px; max-width:110px; }
+.battle-ui .unit .actor-sprite { height:155px; }
+.battle-ui .unit.summon-imp .actor-sprite { height:130px; }
+.battle-ui .unit.summon-pit-brute .actor-sprite { height:185px; }
+.battle-ui .unit strong { font-size:13px; }
+.battle-ui .unit small { font-size:11px; }
+.battle-ui .unit .ally-intent, .battle-ui .unit .upkeep { font-size:11px; }
+.battle-ui .enemies { left:1030px; right:auto; bottom:18px; width:560px; height:355px; gap:55px; }
+.battle-ui .enemy { width:250px; height:355px; }
+.battle-ui .count-1 .enemy { width:365px; }
+.battle-ui .enemy .actor-sprite { width:245px; height:240px; max-height:240px; }
+.battle-ui .enemy .actor-sprite img { transform:translateY(24px) scale(1.18); }
+.battle-ui .count-1 .enemy .actor-sprite { width:340px; height:290px; max-height:290px; }
+.battle-ui .intent { flex-shrink:0; position:absolute; bottom:290px; width:175px; min-height:66px; padding:9px; font:16px Georgia,serif; background:linear-gradient(135deg,#281a13,#100e10); border:2px solid #a5723d; border-radius:2px 2px 15px 15px; box-shadow:0 3px 0 #20150d,0 0 0 3px #110d0c99; }
+.battle-ui .intent b { font-size:23px; color:#ffe1b4; }
+.battle-ui .intent small { font-size:12px; margin-top:5px; color:#e4caa5; }
+.battle-ui .enemy-status { max-width:250px; width:100%; margin-top:3px; }
+.battle-ui .enemy-status strong { font:bold 17px Georgia,serif; }
+.battle-ui .hp-track { height:25px; margin-top:4px; border:2px solid #b3824b; clip-path:polygon(4% 0,96% 0,100% 50%,96% 100%,4% 100%,0 50%); background:#351311; }
+.battle-ui .hp-track i { background:linear-gradient(#df4942,#931e25); }
+.battle-ui .hp-track span { font:bold 16px Georgia,serif; line-height:20px; }
+.battle-ui .enemy-status > small { font-size:11px; height:14px; min-height:14px; margin-top:4px; }
+.battle-ui .enemy.targetable .actor-sprite { filter:drop-shadow(0 0 10px #ffc968); animation:target-breathe 1.3s ease-in-out infinite; }
+.battle-ui .enemy.focused .hp-track { filter:brightness(1.2); }
+.battle-ui .combat-message { position:absolute; left:350px; top:587px; width:970px; height:29px; background:transparent; z-index:14; font-size:14px; color:#fff1d1; text-shadow:0 2px 4px #000,0 0 6px #000; }
+.battle-ui .combat-message button { font-size:12px; padding:3px 9px; }
+.battle-ui .hand { position:absolute; left:345px; top:627px; width:977px; height:271px; min-height:0; gap:8px; z-index:14; align-items:center; }
+.battle-ui .hand .card { flex:0 1 188px; width:188px; min-width:0; max-width:188px; }
+.battle-ui .hand .card img { width:100%; height:272px; object-fit:contain; }
+.battle-ui .hand .card-info { font-size:14px; width:270px; }
+.battle-ui .mana { position:absolute; left:55px; top:609px; width:175px; height:193px; z-index:13; }
+.battle-ui .mana strong { position:absolute; inset:45px 0 auto; width:100%; height:70px; margin:0; line-height:70px; background:none; font:bold 65px Georgia,serif; color:#effbff; text-shadow:0 0 14px #29cfff,0 2px 3px #001e3e; animation:mana-change .4s ease-out; }
+.battle-ui .mana > span { position:absolute; top:140px; width:100%; margin:0; font:bold 17px Georgia,serif; letter-spacing:1px; color:#c3f4ff; text-shadow:0 2px 3px #001426; }
+.battle-ui .mana > span small { display:block; margin-top:3px; font:bold 21px Georgia,serif; color:#eafaff; }
+.mana-aura { position:absolute; left:23px; top:0; width:124px; height:151px; background:radial-gradient(ellipse,#43d9ff55,#27bfff22 45%,transparent 70%); filter:drop-shadow(0 0 13px #21c7ff); mix-blend-mode:screen; animation:mana-breathe 2.6s ease-in-out infinite; pointer-events:none; }
+.depleted .mana-aura { animation:none; opacity:.12; }
+.battle-ui .mana.depleted strong { color:#91b1c2; text-shadow:none; }
+.battle-ui .pile { position:absolute; top:835px; height:67px; padding:0; border:0; background:transparent; z-index:13; text-align:center; width:65px; font-family:Georgia,serif; }
+.battle-ui .draw-pile { left:51px; }
+.battle-ui .discard-pile { left:165px; }
+.pile b { display:block; font-size:29px; line-height:33px; }
+.pile span { font-size:14px; line-height:15px; display:block; }
+.battle-ui .turn-controls { display:contents; }
+.battle-ui .turn-controls .primary { position:absolute; left:1410px; top:716px; width:230px; height:115px; z-index:13; border:0; box-shadow:none; background:transparent; padding:0; font:bold 32px Georgia,serif; color:#251309; text-shadow:0 1px 1px #ffc679; clip-path:polygon(10% 0,90% 0,100% 50%,90% 100%,10% 100%,0 50%); }
+.battle-ui .turn-controls .primary:disabled { color:#4e3428; font-size:25px; background:#17101344; opacity:.8; }
+.battle-ui .turn-controls details { position:absolute; left:1410px; top:873px; width:230px; z-index:16; font-size:13px; color:#e9bd85; }
+.battle-ui .turn-controls summary { padding:5px; font-size:13px; }
+.battle-ui .turn-controls ol { bottom:30px; font-size:14px; width:370px; }
+.battle-ui > footer { display:none; }
+.battle-ui .overlay { position:absolute; width:1672px; height:941px; padding:45px; }
+.battle-ui .help-panel, .battle-ui .deck-panel { width:1000px; max-height:820px; }
+.battle-ui .overlay p { font-size:18px; }
+.battle-ui .deck-grid { padding-top:30px; }
+.battle-ui .deck-grid .card { width:165px; flex-basis:165px; }
+.battle-ui .deck-grid .card img { height:240px; }
+.inspected-item { width:130px; height:130px; object-fit:contain; margin:25px 0; }
+.battle-ui button:hover:not(:disabled) { filter:brightness(1.18); }
+.battle-ui button:active:not(:disabled) { translate:0 2px; }
+.battle-ui button:focus-visible { outline:3px solid #fff2b6; outline-offset:3px; }
+@keyframes mana-breathe { 0%,100% { opacity:.45; scale:.97; } 50% { opacity:1; scale:1.06; } }
+@keyframes mana-change { 0% { scale:1.2; filter:brightness(1.8); } 100% { scale:1; filter:brightness(1); } }
+@keyframes target-breathe { 50% { filter:drop-shadow(0 0 16px #ffad44); } }
+
+/* Typography and optical alignment. Keep the original tracked Roman wordmark. */
+.battle-ui { font-family:"Runelord Text",Georgia,serif; font-weight:600; }
+.battle-ui .stat strong, .battle-ui .mana, .battle-ui .pile, .battle-ui .hp-track { font-variant-numeric:lining-nums tabular-nums; }
+.wordmark .logo-type { color:#f6ecd5; }
+.wordmark .logo-type em { font-style:normal; color:#d69050; }
+.battle-ui .wordmark { left:68px; top:6px; width:257px; height:65px; display:flex; flex-direction:column; align-items:center; justify-content:center; gap:7px; font-weight:400; }
+.battle-ui .wordmark .logo-type { display:block; font:400 34px/1 Georgia,serif; letter-spacing:4px; text-indent:4px; white-space:nowrap; }
+.battle-ui .wordmark small { padding:0; font:600 11px/1 "Runelord Text",Georgia,serif; letter-spacing:5px; text-indent:5px; }
+.battle-ui .chapter { left:700px; top:0; width:272px; height:40px; margin:0; padding:2px 0 0; display:grid; place-items:center; font:700 21px/1 "Runelord Text",Georgia,serif; letter-spacing:1px; text-indent:1px; }
+.battle-ui .topbar nav button { display:grid; place-items:center; line-height:1; font-family:"Runelord Text",Georgia,serif; }
+.battle-ui .topbar nav .help-button { font-size:33px; padding-bottom:3px; }
+.battle-ui .topbar nav .deck-button { font-size:21px; }
+.battle-ui .stat { top:59px; height:61px; grid-template-columns:50px minmax(0,1fr); grid-template-rows:35px 23px; gap:0 7px; padding:0 8px; align-content:center; }
+.battle-ui .stat:nth-child(1) { left:351px; width:196px; }
+.battle-ui .stat:nth-child(2) { left:557px; width:141px; }
+.battle-ui .stat:nth-child(3) { left:712px; width:174px; }
+.battle-ui .stat:nth-child(4) { left:902px; width:202px; }
+.battle-ui .stat > span { display:grid; place-items:center; height:58px; }
+.battle-ui .stat svg { display:block; width:43px; height:50px; }
+.battle-ui .stat strong { align-self:end; font:700 33px/35px "Runelord Text",Georgia,serif; text-align:center; }
+.battle-ui .stat strong small { font:600 21px/1 "Runelord Text",Georgia,serif; }
+.battle-ui .stat label { font:700 17px/23px "Runelord Text",Georgia,serif; letter-spacing:.65px; text-indent:.65px; text-align:center; }
+.battle-ui .location { left:35px; top:136px; width:252px; height:45px; justify-content:center; text-align:center; }
+.battle-ui .location h1 { font:700 28px/1.05 "Runelord Text",Georgia,serif; max-width:100%; }
+.battle-ui .turn-tag { left:1498px; top:160px; height:52px; display:flex; flex-direction:column; justify-content:center; align-items:center; gap:5px; }
+.battle-ui .turn-tag span { font:700 22px/1 "Runelord Text",Georgia,serif; text-indent:2px; }
+.battle-ui .turn-tag strong { margin:0; font:700 17px/1 "Runelord Text",Georgia,serif; }
+.battle-ui .intent { padding:10px 6px; display:flex; flex-wrap:wrap; justify-content:center; align-content:center; gap:4px 7px; font:600 20px/1 "Runelord Text",Georgia,serif; }
+.battle-ui .intent b { margin:0; font:700 24px/1 "Runelord Text",Georgia,serif; }
+.battle-ui .intent small { flex-basis:100%; margin:3px 0 0; font:600 16px/1.05 "Runelord Text",Georgia,serif; }
+.battle-ui .enemy-status strong { font:700 21px/1 "Runelord Text",Georgia,serif; }
+.battle-ui .enemy-status > small { font:600 14px/1 "Runelord Text",Georgia,serif; }
+.battle-ui .hp-track span { display:grid; place-items:center; font:700 19px/1 "Runelord Text",Georgia,serif; }
+.battle-ui .mana strong { display:grid; place-items:center; font:700 69px/1 "Runelord Text",Georgia,serif; }
+.battle-ui .mana > span { top:149px; display:flex; flex-direction:column; align-items:center; gap:1px; font:700 16px/17px "Runelord Text",Georgia,serif; letter-spacing:2px; text-indent:2px; }
+.battle-ui .mana > span small { margin:0; font:700 23px/22px "Runelord Text",Georgia,serif; letter-spacing:1px; text-indent:1px; }
+.battle-ui .pile { top:837px; height:62px; display:flex; flex-direction:column; align-items:center; justify-content:center; }
+.battle-ui .pile b { font:700 32px/30px "Runelord Text",Georgia,serif; }
+.battle-ui .pile span { font:600 17px/15px "Runelord Text",Georgia,serif; }
+.battle-ui .combat-message { left:405px; width:860px; top:587px; border:1px solid #b77a384d; background:linear-gradient(90deg,transparent,#141011eb 12%,#141011eb 88%,transparent); font:600 18px/1 "Runelord Text",Georgia,serif; }
+.ambient-background { position:absolute; width:1672px; height:941px; left:0; top:-85px; z-index:0; pointer-events:none; }
+
+/* The gem is painted into the HUD. Feedback belongs to its live lettering:
+   never illuminate or scale an unrelated polygon over the immutable artwork. */
+.battle-ui .turn-controls .end-turn-button,
+.battle-ui .turn-controls .end-turn-button:hover,
+.battle-ui .turn-controls .end-turn-button:active,
+.battle-ui .turn-controls .end-turn-button:disabled {
+  left:1410px; top:716px; width:230px; height:115px;
+  display:grid; place-items:center; background:transparent; box-shadow:none;
+  transform:none; translate:none; filter:none; animation:none; opacity:1;
+  transition:none;
+}
+.battle-ui .turn-controls .end-turn-button > span { display:block; margin:0; pointer-events:none; }
+.battle-ui .turn-controls .end-turn-button .end-turn-label {
+  position:relative; top:-5px; font:700 36px/1 "Runelord Text",Georgia,serif;
+  letter-spacing:.5px; text-indent:.5px; color:#251309;
+  transition:color .15s,text-shadow .15s;
+}
+.battle-ui .turn-controls .end-turn-button .end-turn-runes {
+  position:absolute; bottom:12px; left:0; width:100%; text-align:center;
+  font:600 17px/1 Georgia,serif; letter-spacing:6px; text-indent:6px; color:#76390b;
+}
+.battle-ui .turn-controls .end-turn-button:hover:not(:disabled) .end-turn-label,
+.battle-ui .turn-controls .end-turn-button:focus-visible .end-turn-label {
+  color:#fff8df; text-shadow:0 1px 2px #592205,0 0 8px #fff0a6;
+}
+.battle-ui .turn-controls .end-turn-button:focus-visible { outline:none; }
+.battle-ui .turn-controls .end-turn-button:focus-visible .end-turn-label {
+  text-decoration:underline; text-underline-offset:6px;
+}
+.battle-ui .turn-controls .end-turn-button:active:not(:disabled) .end-turn-label {
+  color:#743309; text-shadow:0 1px 1px #ffe9ad;
+}
+.battle-ui .turn-controls .end-turn-button:disabled .end-turn-label {
+  font-size:25px; color:#5c3420; text-shadow:none;
+}
+.battle-ui .turn-controls .end-turn-button.is-resolving .end-turn-runes { color:#fff4cf; }
+.turn-embers { position:absolute; left:1525px; top:773px; width:0; height:0; z-index:14; pointer-events:none; }
+.turn-embers i { position:absolute; width:4px; height:8px; border-radius:1px; background:#ffe9a1; box-shadow:0 0 8px #ff9e26; opacity:0; }
+.turn-embers.released i { animation:turn-sparks .95s cubic-bezier(.12,.65,.23,1) both; animation-delay:calc(var(--i) * 14ms); }
+.turn-announcement { position:absolute; left:635px; top:230px; width:402px; height:114px; display:flex; flex-direction:column; align-items:center; justify-content:center; gap:7px; z-index:16; pointer-events:none; background:linear-gradient(90deg,transparent,#151013e8 20%,#151013e8 80%,transparent); border-block:1px solid #c6985799; animation:turn-reveal 1.7s ease both; }
+.turn-announcement span { color:#d5a365; font:700 17px/1 "Runelord Text",Georgia,serif; letter-spacing:5px; text-indent:5px; }
+.turn-announcement strong { font:600 46px/1 "Runelord Text",Georgia,serif; color:#fff0d1; }
+.battle-ui .hand .card { animation:card-deal .46s cubic-bezier(.16,.8,.2,1) both; }
+.battle-ui .hand .card:nth-child(2) { animation-delay:60ms; }
+.battle-ui .hand .card:nth-child(3) { animation-delay:120ms; }
+.battle-ui .hand .card:nth-child(4) { animation-delay:180ms; }
+.battle-ui .hand .card:nth-child(5) { animation-delay:240ms; }
+.battle-ui .hand-ending { transition:opacity .3s,translate .35s; opacity:.2; translate:0 22px; pointer-events:none; }
+
+/* Dark, bevelled panels keep inspection and logs in the same stone/copper language. */
+.battle-ui .turn-controls .combat-log { left:1410px; top:871px; width:230px; color:#f1d7ad; }
+.battle-ui .combat-log summary { display:flex; align-items:center; justify-content:center; gap:10px; min-height:37px; padding:5px 12px; background:linear-gradient(#2b201b,#100e0e); border:1px solid #b17c42; box-shadow:inset 0 0 0 3px #0c0a0b,0 3px 9px #0009; font:700 19px/1 "Runelord Text",Georgia,serif; list-style:none; }
+.combat-log summary::-webkit-details-marker { display:none; }
+.combat-log summary span { color:#d69050; font-size:12px; }
+.battle-ui .combat-log[open] summary { border-color:#f0c384; background:#3a281c; }
+.battle-ui .turn-controls .combat-log ol { bottom:44px; right:0; width:455px; max-height:450px; margin:0; padding:22px 25px 22px 46px; color:#eee0c5; background:#151114; border:2px solid #b3834e; box-shadow:inset 0 0 0 5px #080708,0 12px 35px #000c; font:600 20px/1.45 "Runelord Text",Georgia,serif; }
+.combat-log li { padding:6px 2px; border-bottom:1px solid #96724b33; }
+.combat-log li::marker { color:#c18e58; }
+.battle-ui .overlay { background:#09090ddb; backdrop-filter:blur(5px); }
+.battle-ui .help-panel, .battle-ui .deck-panel, .battle-ui .result-panel { background:linear-gradient(135deg,#2a2424 0,#161215 30%,#100e10 75%,#30231c); border:3px solid #b67a3d; box-shadow:inset 0 0 0 5px #0c0b0d,inset 0 0 0 6px #765136,0 20px 80px #000; color:#f2e3c9; }
+.battle-ui .help-panel h2, .battle-ui .deck-panel h2, .battle-ui .result-panel h2 { font:600 49px/1.1 "Runelord Text",Georgia,serif; text-align:center; }
+.battle-ui .overlay p { font:600 23px/1.45 "Runelord Text",Georgia,serif; }
+.battle-ui .close { right:22px; top:20px; min-width:82px; padding:7px 13px; background:#151012; border:1px solid #b5854d; font:700 18px/1 "Runelord Text",Georgia,serif; }
+.battle-ui .inspection-panel { position:relative; text-align:center; padding:62px 52px 42px; animation:inspection-open .28s ease-out both; }
+.battle-ui .item-inspection { width:730px; max-height:820px; clip-path:polygon(24px 0,calc(100% - 24px) 0,100% 24px,100% calc(100% - 24px),calc(100% - 24px) 100%,24px 100%,0 calc(100% - 24px),0 24px); }
+.inspection-panel:before, .inspection-panel:after { content:"◆"; position:absolute; color:#dd9d54; font-size:20px; left:calc(50% - 10px); text-shadow:0 0 9px #e0862433; }
+.inspection-panel:before { top:13px; }
+.inspection-panel:after { bottom:11px; }
+.inspection-kicker { color:#d7a66e; font:700 15px/1 "Runelord Text",Georgia,serif; letter-spacing:3px; text-indent:3px; margin-bottom:15px; }
+.relic-display { position:relative; width:185px; height:185px; margin:30px auto 27px; display:grid; place-items:center; background:radial-gradient(ellipse,#a84d1c35,#100d0d 65%); border:2px solid #aa7847; box-shadow:inset 0 0 0 5px #100c0c,inset 0 0 0 6px #604125,0 0 30px #cb72271a; clip-path:polygon(18px 0,calc(100% - 18px) 0,100% 18px,100% calc(100% - 18px),calc(100% - 18px) 100%,18px 100%,0 calc(100% - 18px),0 18px); }
+.relic-display .inspected-item { width:145px; height:145px; margin:0; filter:drop-shadow(0 5px 7px #000) drop-shadow(0 0 10px #ef761b44); animation:relic-breathe 3s ease-in-out infinite alternate; }
+.relic-description { padding:21px 15px; border-block:1px solid #99703f88; background:#110e10a6; }
+.relic-description p + p { margin-top:8px; }
+.relic-description strong { color:#f4b469; }
+.relic-status { display:flex; justify-content:center; align-items:center; gap:12px; margin-top:25px; color:#d6b689; font:700 15px/1 "Runelord Text",Georgia,serif; letter-spacing:2px; }
+.relic-status span { color:#f7a351; }
+.battle-ui .inventory-slot .slot-tooltip { font:600 19px/1.2 "Runelord Text",Georgia,serif; background:#151114; border:2px solid #b3834e; }
+@keyframes turn-sparks { 0% { opacity:0; transform:rotate(var(--angle)) translateY(35px) scale(.5); } 15% { opacity:1; } 100% { opacity:0; transform:rotate(var(--angle)) translateY(145px) scale(.1); } }
+@keyframes turn-reveal { 0% { opacity:0; transform:translateY(14px) scale(.96); } 20%,65% { opacity:1; transform:none; } 100% { opacity:0; transform:translateY(-12px); visibility:hidden; } }
+@keyframes card-deal { from { opacity:0; translate:30px 48px; rotate:3deg; } to { opacity:1; translate:0 0; rotate:0deg; } }
+@keyframes inspection-open { from { opacity:0; transform:translateY(12px) scale(.98); } to { opacity:1; transform:none; } }
+@keyframes relic-breathe { from { filter:drop-shadow(0 5px 7px #000) drop-shadow(0 0 8px #ef761b33); } to { filter:drop-shadow(0 5px 7px #000) drop-shadow(0 0 15px #ef761b66); } }
+@media (prefers-reduced-motion:reduce) { .battle-ui *, .battle-ui *:before, .battle-ui *:after { animation:none!important; transition:none!important; } }
+@media (prefers-reduced-motion:reduce) { .turn-announcement, .turn-embers { display:none; } }
+
+/* Whole-character summons share a world scale; source roots sit on the model floor. */
+.battle-ui .warband { --summon-world-unit:200px; }
+.battle-ui .unit .source-scaled-summon { overflow:visible; transform-origin:50% 100%; }
+.battle-ui .unit.summon-pit-brute:has(.source-scaled-summon) { flex-basis:210px; max-width:210px; }
+
+.battle-ui .unit.summon-hellhound:has(.source-scaled-summon) { --summon-world-unit:225.8064515px; flex-basis:147px; max-width:147px; }
+
+/* Formation slots reserve complete animation silhouettes, with a separate flight lane. */
+.battle-ui .warband { bottom:auto; height:426px; }
+.battle-ui .warband .units { display:block; position:relative; width:100%; height:100%; min-height:0; }
+.battle-ui .warband .formation-unit { position:absolute; max-width:none; min-width:0; margin:0; padding:0; }
+.battle-ui .warband .formation-unit .ally-intent { display:block; box-sizing:border-box; height:24px; line-height:16px; padding:3px; margin:0; }
+.battle-ui .warband .formation-unit strong { height:18px; line-height:18px; margin:calc(4px + var(--summon-lower-padding, 0px)) 0 0; }
+.battle-ui .warband .formation-unit small { height:14px; line-height:14px; }
+.battle-ui .warband .formation-unit .upkeep { display:block; height:14px; line-height:14px; }
+.battle-ui .warband .formation-unit.summon-hellhound,
+.battle-ui .warband .formation-unit.summon-pit-brute { max-width:none; }
+
+.battle-ui .formation-unit.unit-dying { animation-duration:var(--death-duration); }
+.battle-ui .formation-unit.airborne.unit-dying { animation:airborne-dissolve var(--death-duration) forwards; }
+.battle-ui .formation-unit.airborne.unit-dying .actor-sprite { animation:imp-fall var(--death-duration) ease-in forwards; }
+@keyframes airborne-dissolve { 0%,55% { opacity:1; } 100% { opacity:0; } }
+@keyframes imp-fall { 0% { transform:translateY(0); } 66%,100% { transform:translateY(var(--flight-drop)); } }
+
+/* Two live rows sit inside the formation's existing reserved footer. */
+.battle-ui .minion-details { margin:calc(4px + var(--summon-lower-padding, 0px)) auto 0; width:100%; max-width:180px; height:46px; padding:3px 6px; box-sizing:border-box; background:linear-gradient(#241c1a,#100f13); border:1px solid #9c713e; box-shadow:0 2px 5px #0009,inset 0 0 0 1px #33271f; }
+.battle-ui .minion-name { display:flex; align-items:center; justify-content:center; gap:5px; height:18px; line-height:18px; color:#f5dfb6; font:bold 14px "Runelord Text",Georgia,serif; white-space:nowrap; }
+.battle-ui .minion-name > span:first-child { overflow:hidden; text-overflow:ellipsis; }
+.battle-ui .minion-guard { flex-shrink:0; color:#a9d9ec; font-size:12px; }
+.battle-ui .minion-health { position:relative; height:17px; background:#341719; border:1px solid #c69552; box-sizing:border-box; overflow:hidden; }
+.battle-ui .minion-health-fill { position:absolute; inset:0 auto 0 0; background:linear-gradient(#ef614a,#a3222e); transition:width .2s ease; box-shadow:inset 0 1px #ffb58688; }
+.battle-ui .minion-health-value { position:absolute; inset:0; text-align:center; font:bold 12px/15px Georgia,serif; color:#fff5df; text-shadow:0 1px 2px #000,0 0 3px #000; }
+.battle-ui .cinder-reserve { position:absolute; left:55px; right:0; bottom:-6px; height:6px; border:1px solid #947044; background:#201519; box-shadow:0 1px 3px #000; }
+.battle-ui .cinder-reserve > span { position:absolute; top:0; bottom:0; transition:width .2s ease,left .2s ease; }
+.battle-ui .cinder-available { left:0; background:#ffad43; }
+.battle-ui .cinder-reserved { background:repeating-linear-gradient(135deg,#d73837 0 3px,#ff7460 3px 5px); box-shadow:0 0 4px #ef493a88; }
+.battle-ui .cinder-reserve.shortfall { border-color:#ff6c59; box-shadow:0 0 5px #c82828; }
+.battle-ui .minion-headroom { display:block; height:24px; }
+.battle-ui .minion-details { padding:0; border:0; background:none; box-shadow:none; }
+.battle-ui .minion-name { gap:4px; height:20px; line-height:20px; font-size:13px; text-shadow:0 2px 3px #000,0 0 5px #000; }
+.battle-ui .minion-power, .battle-ui .minion-scorch { flex-shrink:0; font-size:12px; color:#f5dfb6; }
+.battle-ui .minion-scorch { color:#ffa653; }
+.battle-ui .minion-details .hp-track { height:22px; margin-top:2px; border:2px solid #b3824b; background:#351311; }
+.battle-ui .minion-details .hp-track span { font:700 15px/18px "Runelord Text",Georgia,serif; }
+.battle-ui .formation-unit.airborne .minion-headroom { height:50px; }
+.battle-ui .formation-unit.airborne .minion-details { position:absolute; top:0; left:50%; transform:translateX(-50%); margin:0; }
+.battle-ui .enemy-status .enemy-name { display:block; width:100%; height:23px; line-height:23px; white-space:nowrap; }
+.battle-ui .combat-message { top:598px; }
+.battle-ui .enemy .actor-sprite[data-art="skirmisher"] img { transform:translateY(-8px) scale(1.18); }
+/* Fire remains live through its full death clip, then becomes non-interactive scenery. */
+.battle-ui .enemy.fallen:has([data-death-effect="fire"]) .actor-sprite { animation:none; opacity:1; }
+.battle-ui .enemy[data-fire-death] .enemy-status { visibility:hidden; }
+.battle-ui .enemy[data-fire-death="covered"] .actor-sprite > img,
+.battle-ui .enemy[data-fire-death="husk"] .actor-sprite > img { visibility:hidden; }
+.battle-ui .enemy[data-fire-death] { pointer-events:none; }
+.battle-ui .fire-death-husk { position:absolute; z-index:1; pointer-events:none; object-fit:contain; filter:grayscale(1) brightness(.2) sepia(.3); opacity:.85; }
+.battle-ui .fire-death-burst { position:absolute; z-index:8; pointer-events:none; }
+.battle-ui .packed-status { position:absolute; z-index:20; text-align:center; color:#f5dfb6; font:700 18px/20px "Runelord Text",Georgia,serif; text-shadow:0 2px 4px #000; }
+.battle-ui .packed-status b { color:#ffc86a; }
+.battle-ui .packed-status > button { display:block; width:100%; padding:0; margin:2px 0 0; border:0; background:none; }
+.battle-ui .packed-status .hp-track { margin:0; min-height:9px; }
+.battle-ui .packed-status .hp-track span { font:700 12px/1 "Runelord Text",Georgia,serif; }
+.battle-ui .packed-status > button:hover, .battle-ui .packed-status > button:focus-visible, .battle-ui .packed-status > button.selected { filter:brightness(1.4); outline:1px solid #ffcf7b; }
+.effects-volume { display:flex; align-items:center; gap:16px; margin:18px 0; color:#f5dfb6; }
+.effects-volume input { accent-color:#ed9844; width:180px; }
+
+/* The sigil sits beneath actors; the front canvas veils their arrival in embers. */
+.battle-ui .summon-floor-effects { z-index:3; }
+.battle-ui .summon-model.arriving { animation:demonic-arrival 1000ms ease-out both; }
+@keyframes demonic-arrival {
+  0%,16% { opacity:0; filter:brightness(3) saturate(.5) blur(5px); clip-path:inset(100% -100% -100%); }
+  35% { opacity:.45; filter:brightness(2.5) saturate(.7) blur(2px); }
+  70% { opacity:1; filter:brightness(1.35) saturate(1.2) blur(0); clip-path:inset(-100%); }
+  100% { opacity:1; filter:none; clip-path:inset(-100%); }
+}
+
+.battle-ui .hero-position .guard-aura { position:absolute; inset:0; width:500px; height:400px; transform:scale(1.25); transform-origin:50% 50%; z-index:0; pointer-events:none; }
+.battle-ui .hero-position .hero-canvas { position:relative; z-index:1; }
+/* Expansion: live currency, paired casting resources, and selectable starter pacts. */
+.battle-ui .stat.gold strong { color:#ffe29b; }
+.battle-ui .cinder-crystal { position:absolute; left:225px; top:642px; width:105px; height:150px; z-index:13; text-align:center; }
+.cinder-crystal .hud-stat-icon { display:block; position:absolute; left:13px; top:0; width:80px; height:100px; filter:drop-shadow(0 0 12px #e95124); }
+.cinder-crystal .hud-stat-icon svg { width:80px; height:100px; }
+.cinder-crystal:after { content:""; position:absolute; left:30px; top:29px; width:45px; height:63px; background:linear-gradient(125deg,#ffe19aaa 0 48%,#b51f2388 49%); clip-path:polygon(50% 0,100% 40%,76% 80%,50% 100%,22% 80%,0 40%); pointer-events:none; }
+.cinder-crystal > strong { position:absolute; inset:36px 0 auto; z-index:1; font:bold 37px Georgia,serif; color:#fff4dd; text-shadow:0 2px 4px #3f0a04,0 0 8px #3f0a04; }
+.cinder-crystal > span:not(.hud-stat-icon) { position:absolute; top:106px; left:0; width:100%; font:bold 14px Georgia,serif; letter-spacing:1px; color:#ffd2a0; }
+.cinder-crystal small { display:block; margin-top:3px; font-size:16px; }
+.battle-ui .cinder-crystal .cinder-reserve { left:8px; right:8px; bottom:7px; height:7px; }
+.cinder-crystal.depleted .hud-stat-icon { filter:saturate(.3); opacity:.7; }
+.starter-pacts { border:0; padding:0; margin:18px 0; max-width:650px; }
+.starter-pacts legend { color:#e9bc81; font-size:12px; letter-spacing:2px; margin-bottom:10px; }
+.starter-options { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:8px; }
+.starter-choice { cursor:pointer; padding:12px 10px; border:1px solid #735338; background:#151116dc; display:flex; flex-direction:column; gap:6px; }
+.starter-choice:has(input:checked) { border-color:#ffd093; box-shadow:inset 0 0 0 1px #cf9b67; background:#4b2b23cc; }
+.starter-choice:focus-within { outline:2px solid #fff1cb; outline-offset:3px; }
+.starter-choice input { accent-color:#e2a659; margin:0 4px 0 0; }
+.starter-choice strong { font:600 16px Georgia,serif; }
+.starter-choice small { color:#d5c1af; font-size:11px; line-height:1.4; }
+.starter-choice .starter-count { color:#dca96b; font-size:10px; text-transform:uppercase; letter-spacing:.5px; }
+.card-text { min-height:260px; padding:20px 12px; display:flex; flex-direction:column; justify-content:space-between; gap:10px; color:#f5e4c5; border:2px solid #99724e; border-radius:9px; background:radial-gradient(ellipse at 50% 35%,#6c3227,#21161c 75%); }
+.card-text .card-type { font-size:11px; color:#d7b38c; text-transform:uppercase; letter-spacing:.5px; }
+.card-text h3 { margin:0; font:600 20px Georgia,serif; }
+.card-text p { margin:0; font-size:14px; line-height:1.4; }
+.card-text .card-cost { font-size:13px; color:#ffcd8c; }
+.loot-summary { display:flex; gap:14px; align-items:center; justify-content:center; margin:12px auto 18px; padding:12px 20px; border:1px solid #846340; background:#1c1518; width:fit-content; }
+.loot-summary svg { width:30px; height:35px; }
+.loot-summary p { margin:0; }
+.inventory-slot .loot-icon { width:34px; height:34px; }
+.inventory-overflow { position:absolute; left:1276px; top:125px; z-index:16; color:#efcb92; font-size:12px; background:#24191d; border:1px solid #785333; padding:3px 8px; }
+.item-list { display:grid; gap:10px; margin:20px 0; }
+.item-list button { display:flex; gap:15px; align-items:center; padding:12px; text-align:left; }
+.item-list svg { width:40px; height:40px; flex:none; }
+.item-list strong,.item-list small { display:block; }
+.item-list small { font-size:14px; color:#d3b897; margin-top:5px; }
+@media (max-width:960px) { .starter-pacts { margin:12px 0; } .starter-choice { padding:8px; } .starter-choice strong { font-size:13px; } .starter-choice small { font-size:10px; } }
+.active-powers { position:absolute; left:1120px; top:76px; z-index:15; max-width:140px; padding:6px 12px; border:1px solid #805f70; background:#251a2c; color:#dcb5ee; font:14px Georgia,serif; }
+.active-powers strong { display:inline-block; margin-left:5px; }
+.power-list { display:grid; gap:12px; }
+.power-list article { padding:10px 15px; border:1px solid #725573; background:#271d2d; }
+.power-list h3,.power-list p { margin:5px 0; }
+.item-list img.loot-icon { width:40px; height:40px; object-fit:contain; }
+/* New fire roster keeps its lowest pose clear of enemy nameplates. */
+.battle-ui .enemy .actor-sprite:is([data-art="scarblade-captain"],[data-art="cindermaw-salamander"],[data-art="slagheart-juggernaut"],[data-art="coalhorn-ram"],[data-art="furnace-beetle"]) img { transform:translateY(4px) scale(1.18); }
+.battle-ui .enemy:has(.actor-sprite[data-art="coalhorn-ram"]) .intent { transform:translateY(-26px); }
+.battle-ui .enemy .actor-sprite[data-art="forgehammer-sapper"] img { transform-origin:50% 94%; transform:translateY(4px) scale(.94); }
+.battle-ui .enemy .actor-sprite[data-art="scarblade-captain"] img { transform-origin:50% 96%; transform:translateY(4px) scale(1.42); }
+/* Resource feedback keeps numbers mounted and caps the extra Mana bloom. */
+.battle-ui .mana.overcharged .mana-aura { opacity:1; background:radial-gradient(ellipse,#b9f5ff99,#46d9ff66 38%,#27bfff22 58%,transparent 73%); filter:brightness(calc(1 + var(--mana-charge) * .12)) drop-shadow(0 0 calc(13px + var(--mana-charge) * 3px) #42d8ff); }
+.battle-ui .mana.overcharged strong { color:#fff; text-shadow:0 0 calc(14px + var(--mana-charge) * 3px) #7cecff,0 2px 3px #001e3e; }
+.seed-settings { margin:15px 0; max-width:500px; color:#c8ac90; font-size:12px; }
+.seed-settings summary { cursor:pointer; width:fit-content; }
+.title-copy .seed-settings p { margin:9px 0; font-size:12px; line-height:1.5; }
+.seed-settings .seed input { width:160px; }
+.inventory-category { position:absolute; top:63px; z-index:16; width:150px; text-align:center; font:10px Georgia,serif; letter-spacing:1.7px; color:#e8c994; }
+.item-category { left:1284px; }
+.potion-category { left:1462px; color:#abdae3; }
+.loot-panel { max-height:850px; overflow:auto; width:760px; }
+.loot-gold { display:flex; justify-content:center; align-items:center; gap:12px; margin:20px 0; color:#f7d47d; font-size:24px; }
+.loot-gold .hud-stat-icon svg { width:34px; height:40px; }
+.loot-reveal-items { display:grid; gap:16px; margin:20px 0 28px; text-align:left; }
+.loot-reveal-items article { display:flex; gap:22px; padding:22px; border:1px solid #775943; background:#241a1b; align-items:center; }
+.loot-reveal-items img,.loot-reveal-items svg { width:105px; height:105px; object-fit:contain; flex:none; }
+.loot-reveal-items h3 { margin:7px 0; font-size:25px; }
+.loot-reveal-items p { margin:8px 0; }
+.loot-reveal-items small { color:#ccb89b; font-size:14px; }
+.loot-category { color:#f1c88a; font-size:12px; text-transform:uppercase; letter-spacing:2px; }
+.loot-reveal-items .crown-reveal { border-color:#b9934b; background:radial-gradient(ellipse at left,#72522b55,#21181c 80%); }
+.loot-reveal-items .crown-reveal img { width:160px; height:160px; filter:drop-shadow(0 0 18px #efb64a55); }
+.victory-crown { margin:16px auto; max-width:470px; }
+.victory-crown img { width:150px; height:130px; object-fit:contain; filter:drop-shadow(0 0 16px #d9963766); }
+.victory-crown h3 { margin:3px 0; color:#f0cd89; }
+.victory-crown p { font-size:15px; margin:8px 0; }
+.boss-phase { display:block; font:13px Georgia,serif; color:#ffd48a; margin:2px 0 5px; }
+@media (prefers-reduced-motion:reduce) { .battle-ui .mana .mana-aura { animation:none; } .battle-ui .mana strong { animation:none; } }
+/* Sovereign formation: fixed slots prevent reinforcements from resizing the boss. */
+.battle-ui .enemies:has(.demon-lord) { left:970px; top:148px; bottom:auto; width:660px; height:440px; display:block; }
+.battle-ui .enemies .demon-lord { position:absolute; left:175px; top:0; width:320px; height:440px; }
+.battle-ui .enemies .demon-lord .actor-sprite { position:absolute; left:-5px; top:75px; width:330px; height:305px; max-height:305px; overflow:visible; }
+.battle-ui .enemies .demon-lord .actor-sprite img { transform:scale(1.6); transform-origin:50% 92.4%; object-fit:contain; object-position:50% 50%; }
+.battle-ui .enemies .demon-lord .intent { position:absolute; top:-8px; bottom:auto; left:-150px; width:190px; min-height:66px; }
+.battle-ui .enemies .demon-lord .enemy-status { position:absolute; top:385px; left:5px; width:310px; max-width:310px; margin:0; }
+.battle-ui .enemies .demon-lord .enemy-status .enemy-name { height:25px; line-height:25px; }
+.battle-ui .enemies .demon-lord .boss-phase { font-size:11px; margin:0 0 3px; }
+.battle-ui .enemies .demon-lord .hp-track { margin:2px 0; height:24px; }
+.battle-ui .enemies .demon-lord .enemy-status > small { font-size:12px; }
+.battle-ui .enemies .boss-summon { position:absolute; left:0; top:90px; width:160px; height:340px; }
+.battle-ui .enemies .boss-summon ~ .boss-summon { left:500px; }
+.battle-ui .enemies .boss-summon .actor-sprite { position:absolute; left:0; top:121px; width:160px; height:143px; max-height:143px; }
+.battle-ui .enemies .boss-summon .actor-sprite img { transform:scaleX(-1); object-fit:contain; }
+.battle-ui .enemies .boss-summon .intent { top:18px; left:0; bottom:auto; width:160px; min-height:70px; padding:7px; font-size:14px; }
+.battle-ui .enemies .boss-summon .intent b { font-size:19px; }
+.battle-ui .enemies .boss-summon .intent small { font-size:11px; }
+.battle-ui .enemies .boss-summon .enemy-status { position:absolute; left:0; top:274px; width:160px; max-width:160px; margin:0; }
+.battle-ui .enemies .boss-summon .enemy-status .enemy-name { height:22px; line-height:22px; }
+.battle-ui .enemies .boss-summon .boss-phase { font-size:10px; margin:0 0 2px; }
+.battle-ui .enemies .boss-summon .hp-track { height:21px; margin:2px 0; }
+.battle-ui .enemies .boss-summon .hp-track span { font-size:14px; line-height:17px; }
+.battle-ui .enemies .boss-summon .enemy-status > small { font-size:11px; }
+.battle-ui:has(.demon-lord) .combat-message { left:350px; width:600px; }
+/* Keep the right reinforcement's intent below the fixed turn ribbon. */
+.battle-ui .enemies .boss-summon ~ .boss-summon .intent { top:103px; }
