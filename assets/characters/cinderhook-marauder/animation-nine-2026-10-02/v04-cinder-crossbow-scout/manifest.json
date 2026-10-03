@@ -1,0 +1,965 @@
+{
+  "variantId": "v04-cinder-crossbow-scout",
+  "source": {
+    "path": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\characters\\cinderhook-marauder\\animation-nine-2026-10-02\\v04-cinder-crossbow-scout\\source\\poses-r2.png",
+    "sha256": "28910de74e2cd4bd59a020bb3f2ba7181a4b04f6c69862184df23c112ca5b800"
+  },
+  "approvedIdentity": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\characters\\cinderhook-marauder\\variants-nine-2026-10-02\\v04-cinder-crossbow-scout-r1.png",
+  "canvas": {
+    "width": 448,
+    "height": 384
+  },
+  "anchor": {
+    "x": 245,
+    "y": 320
+  },
+  "coordinateSystem": "top-left pixels; x right, y down",
+  "facing": "left",
+  "states": {
+    "idle": {
+      "frames": [
+        {
+          "file": "frames/idle/00.png",
+          "durationMs": 200,
+          "atlasRect": [
+            0,
+            0,
+            448,
+            384
+          ],
+          "sourceSize": [
+            448,
+            384
+          ],
+          "trimOffset": [
+            0,
+            0
+          ]
+        },
+        {
+          "file": "frames/idle/01.png",
+          "durationMs": 200,
+          "atlasRect": [
+            448,
+            0,
+            448,
+            384
+          ],
+          "sourceSize": [
+            448,
+            384
+          ],
+          "trimOffset": [
+            0,
+            0
+          ]
+        },
+        {
+          "file": "frames/idle/02.png",
+          "durationMs": 200,
+          "atlasRect": [
+            896,
+            0,
+            448,
+            384
+          ],
+          "sourceSize": [
+            448,
+            384
+          ],
+          "trimOffset": [
+            0,
+            0
+          ]
+        },
+        {
+          "file": "frames/idle/03.png",
+          "durationMs": 200,
+          "atlasRect": [
+            1344,
+            0,
+            448,
+            384
+          ],
+          "sourceSize": [
+            448,
+            384
+          ],
+          "trimOffset": [
+            0,
+            0
+          ]
+        },
+        {
+          "file": "frames/idle/02.png",
+          "durationMs": 200,
+          "atlasRect": [
+            896,
+            0,
+            448,
+            384
+          ],
+          "sourceSize": [
+            448,
+            384
+          ],
+          "trimOffset": [
+            0,
+            0
+          ]
+        },
+        {
+          "file": "frames/idle/01.png",
+          "durationMs": 200,
+          "atlasRect": [
+            448,
+            0,
+            448,
+            384
+          ],
+          "sourceSize": [
+            448,
+            384
+          ],
+          "trimOffset": [
+            0,
+            0
+          ]
+        }
+      ],
+      "loop": true,
+      "events": [],
+      "nextState": "idle",
+      "terminal": false,
+      "holdLastFrame": false,
+      "durationMs": 1200
+    },
+    "attack": {
+      "frames": [
+        {
+          "file": "frames/attack/00.png",
+          "durationMs": 90,
+          "atlasRect": [
+            0,
+            384,
+            448,
+            384
+          ],
+          "sourceSize": [
+            448,
+            384
+          ],
+          "trimOffset": [
+            0,
+            0
+          ]
+        },
+        {
+          "file": "frames/attack/01.png",
+          "durationMs": 110,
+          "atlasRect": [
+            448,
+            384,
+            448,
+            384
+          ],
+          "sourceSize": [
+            448,
+            384
+          ],
+          "trimOffset": [
+            0,
+            0
+          ]
+        },
+        {
+          "file": "frames/attack/02.png",
+          "durationMs": 60,
+          "atlasRect": [
+            896,
+            384,
+            448,
+            384
+          ],
+          "sourceSize": [
+            448,
+            384
+          ],
+          "trimOffset": [
+            0,
+            0
+          ]
+        },
+        {
+          "file": "frames/attack/03.png",
+          "durationMs": 80,
+          "atlasRect": [
+            1344,
+            384,
+            448,
+            384
+          ],
+          "sourceSize": [
+            448,
+            384
+          ],
+          "trimOffset": [
+            0,
+            0
+          ]
+        },
+        {
+          "file": "frames/attack/00.png",
+          "durationMs": 90,
+          "atlasRect": [
+            0,
+            384,
+            448,
+            384
+          ],
+          "sourceSize": [
+            448,
+            384
+          ],
+          "trimOffset": [
+            0,
+            0
+          ]
+        }
+      ],
+      "loop": false,
+      "events": [
+        {
+          "name": "release",
+          "timeMs": 200
+        }
+      ],
+      "nextState": "idle",
+      "terminal": false,
+      "holdLastFrame": false,
+      "durationMs": 430
+    },
+    "hit": {
+      "frames": [
+        {
+          "file": "frames/hit/00.png",
+          "durationMs": 40,
+          "atlasRect": [
+            0,
+            768,
+            448,
+            384
+          ],
+          "sourceSize": [
+            448,
+            384
+          ],
+          "trimOffset": [
+            0,
+            0
+          ]
+        },
+        {
+          "file": "frames/hit/01.png",
+          "durationMs": 80,
+          "atlasRect": [
+            448,
+            768,
+            448,
+            384
+          ],
+          "sourceSize": [
+            448,
+            384
+          ],
+          "trimOffset": [
+            0,
+            0
+          ]
+        },
+        {
+          "file": "frames/hit/02.png",
+          "durationMs": 100,
+          "atlasRect": [
+            896,
+            768,
+            448,
+            384
+          ],
+          "sourceSize": [
+            448,
+            384
+          ],
+          "trimOffset": [
+            0,
+            0
+          ]
+        },
+        {
+          "file": "frames/hit/03.png",
+          "durationMs": 90,
+          "atlasRect": [
+            1344,
+            768,
+            448,
+            384
+          ],
+          "sourceSize": [
+            448,
+            384
+          ],
+          "trimOffset": [
+            0,
+            0
+          ]
+        },
+        {
+          "file": "frames/hit/00.png",
+          "durationMs": 70,
+          "atlasRect": [
+            0,
+            768,
+            448,
+            384
+          ],
+          "sourceSize": [
+            448,
+            384
+          ],
+          "trimOffset": [
+            0,
+            0
+          ]
+        }
+      ],
+      "loop": false,
+      "events": [],
+      "nextState": "idle",
+      "terminal": false,
+      "holdLastFrame": false,
+      "durationMs": 380
+    },
+    "wounded_idle": {
+      "frames": [
+        {
+          "file": "frames/wounded_idle/00.png",
+          "durationMs": 230,
+          "atlasRect": [
+            0,
+            1152,
+            448,
+            384
+          ],
+          "sourceSize": [
+            448,
+            384
+          ],
+          "trimOffset": [
+            0,
+            0
+          ]
+        },
+        {
+          "file": "frames/wounded_idle/01.png",
+          "durationMs": 230,
+          "atlasRect": [
+            448,
+            1152,
+            448,
+            384
+          ],
+          "sourceSize": [
+            448,
+            384
+          ],
+          "trimOffset": [
+            0,
+            0
+          ]
+        },
+        {
+          "file": "frames/wounded_idle/02.png",
+          "durationMs": 230,
+          "atlasRect": [
+            896,
+            1152,
+            448,
+            384
+          ],
+          "sourceSize": [
+            448,
+            384
+          ],
+          "trimOffset": [
+            0,
+            0
+          ]
+        },
+        {
+          "file": "frames/wounded_idle/03.png",
+          "durationMs": 230,
+          "atlasRect": [
+            1344,
+            1152,
+            448,
+            384
+          ],
+          "sourceSize": [
+            448,
+            384
+          ],
+          "trimOffset": [
+            0,
+            0
+          ]
+        },
+        {
+          "file": "frames/wounded_idle/02.png",
+          "durationMs": 230,
+          "atlasRect": [
+            896,
+            1152,
+            448,
+            384
+          ],
+          "sourceSize": [
+            448,
+            384
+          ],
+          "trimOffset": [
+            0,
+            0
+          ]
+        },
+        {
+          "file": "frames/wounded_idle/01.png",
+          "durationMs": 230,
+          "atlasRect": [
+            448,
+            1152,
+            448,
+            384
+          ],
+          "sourceSize": [
+            448,
+            384
+          ],
+          "trimOffset": [
+            0,
+            0
+          ]
+        }
+      ],
+      "loop": true,
+      "events": [],
+      "nextState": "wounded_idle",
+      "terminal": false,
+      "holdLastFrame": false,
+      "durationMs": 1380
+    },
+    "die": {
+      "frames": [
+        {
+          "file": "frames/die/00.png",
+          "durationMs": 130,
+          "atlasRect": [
+            0,
+            1536,
+            448,
+            384
+          ],
+          "sourceSize": [
+            448,
+            384
+          ],
+          "trimOffset": [
+            0,
+            0
+          ]
+        },
+        {
+          "file": "frames/die/01.png",
+          "durationMs": 160,
+          "atlasRect": [
+            448,
+            1536,
+            448,
+            384
+          ],
+          "sourceSize": [
+            448,
+            384
+          ],
+          "trimOffset": [
+            0,
+            0
+          ]
+        },
+        {
+          "file": "frames/die/02.png",
+          "durationMs": 150,
+          "atlasRect": [
+            896,
+            1536,
+            448,
+            384
+          ],
+          "sourceSize": [
+            448,
+            384
+          ],
+          "trimOffset": [
+            0,
+            0
+          ]
+        },
+        {
+          "file": "frames/die/03.png",
+          "durationMs": 600,
+          "atlasRect": [
+            1344,
+            1536,
+            448,
+            384
+          ],
+          "sourceSize": [
+            448,
+            384
+          ],
+          "trimOffset": [
+            0,
+            0
+          ]
+        }
+      ],
+      "loop": false,
+      "events": [],
+      "nextState": "terminal",
+      "terminal": true,
+      "holdLastFrame": true,
+      "durationMs": 1040
+    }
+  },
+  "sourceRects": {
+    "idle": [
+      {
+        "source": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\characters\\cinderhook-marauder\\animation-nine-2026-10-02\\v04-cinder-crossbow-scout\\source\\poses-r2.png",
+        "box": [
+          21,
+          12,
+          251,
+          295
+        ],
+        "offset": [
+          93,
+          41
+        ],
+        "scale": 1,
+        "sliceComponent": 2,
+        "alphaSlicingThreshold": 30,
+        "antialiasPadding": 4
+      },
+      {
+        "source": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\characters\\cinderhook-marauder\\animation-nine-2026-10-02\\v04-cinder-crossbow-scout\\source\\poses-r2.png",
+        "box": [
+          283,
+          11,
+          515,
+          295
+        ],
+        "offset": [
+          74,
+          40
+        ],
+        "scale": 1,
+        "sliceComponent": 1,
+        "alphaSlicingThreshold": 30,
+        "antialiasPadding": 4
+      },
+      {
+        "source": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\characters\\cinderhook-marauder\\animation-nine-2026-10-02\\v04-cinder-crossbow-scout\\source\\poses-r2.png",
+        "box": [
+          568,
+          12,
+          801,
+          296
+        ],
+        "offset": [
+          79,
+          40
+        ],
+        "scale": 1,
+        "sliceComponent": 3,
+        "alphaSlicingThreshold": 30,
+        "antialiasPadding": 4
+      },
+      {
+        "source": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\characters\\cinderhook-marauder\\animation-nine-2026-10-02\\v04-cinder-crossbow-scout\\source\\poses-r2.png",
+        "box": [
+          845,
+          14,
+          1078,
+          295
+        ],
+        "offset": [
+          76,
+          43
+        ],
+        "scale": 1,
+        "sliceComponent": 4,
+        "alphaSlicingThreshold": 30,
+        "antialiasPadding": 4
+      }
+    ],
+    "attack": [
+      {
+        "source": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\characters\\cinderhook-marauder\\animation-nine-2026-10-02\\v04-cinder-crossbow-scout\\source\\poses-r2.png",
+        "box": [
+          20,
+          292,
+          255,
+          568
+        ],
+        "offset": [
+          92,
+          48
+        ],
+        "scale": 1,
+        "sliceComponent": 5,
+        "alphaSlicingThreshold": 30,
+        "antialiasPadding": 4
+      },
+      {
+        "source": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\characters\\cinderhook-marauder\\animation-nine-2026-10-02\\v04-cinder-crossbow-scout\\source\\poses-r2.png",
+        "box": [
+          269,
+          294,
+          536,
+          568
+        ],
+        "offset": [
+          60,
+          50
+        ],
+        "scale": 1,
+        "sliceComponent": 6,
+        "alphaSlicingThreshold": 30,
+        "antialiasPadding": 4
+      },
+      {
+        "source": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\characters\\cinderhook-marauder\\animation-nine-2026-10-02\\v04-cinder-crossbow-scout\\source\\release-r3.png",
+        "box": [
+          0,
+          0,
+          1355,
+          1161
+        ],
+        "offset": [
+          0,
+          0
+        ],
+        "scale": 0.33062730627306275,
+        "sha256": "70f32d94d9e821a5adc92d068a4678d3d4431751f1059daf0b4203ef4841fb44",
+        "note": "Uniform full-canvas downsampling of generated release correction; projectile baked in."
+      },
+      {
+        "source": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\characters\\cinderhook-marauder\\animation-nine-2026-10-02\\v04-cinder-crossbow-scout\\source\\poses-r2.png",
+        "box": [
+          875,
+          296,
+          1106,
+          569
+        ],
+        "offset": [
+          106,
+          51
+        ],
+        "scale": 1,
+        "sliceComponent": 8,
+        "alphaSlicingThreshold": 30,
+        "antialiasPadding": 4
+      }
+    ],
+    "hit": [
+      {
+        "source": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\characters\\cinderhook-marauder\\animation-nine-2026-10-02\\v04-cinder-crossbow-scout\\source\\poses-r2.png",
+        "box": [
+          21,
+          560,
+          254,
+          850
+        ],
+        "offset": [
+          93,
+          34
+        ],
+        "scale": 1,
+        "sliceComponent": 10,
+        "alphaSlicingThreshold": 30,
+        "antialiasPadding": 4
+      },
+      {
+        "source": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\characters\\cinderhook-marauder\\animation-nine-2026-10-02\\v04-cinder-crossbow-scout\\source\\poses-r2.png",
+        "box": [
+          301,
+          564,
+          530,
+          848
+        ],
+        "offset": [
+          92,
+          40
+        ],
+        "scale": 1,
+        "sliceComponent": 11,
+        "alphaSlicingThreshold": 30,
+        "antialiasPadding": 4
+      },
+      {
+        "source": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\characters\\cinderhook-marauder\\animation-nine-2026-10-02\\v04-cinder-crossbow-scout\\source\\poses-r2.png",
+        "box": [
+          592,
+          591,
+          829,
+          850
+        ],
+        "offset": [
+          103,
+          65
+        ],
+        "scale": 1,
+        "sliceComponent": 13,
+        "alphaSlicingThreshold": 30,
+        "antialiasPadding": 4
+      },
+      {
+        "source": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\characters\\cinderhook-marauder\\animation-nine-2026-10-02\\v04-cinder-crossbow-scout\\source\\poses-r2.png",
+        "box": [
+          868,
+          566,
+          1101,
+          850
+        ],
+        "offset": [
+          98,
+          40
+        ],
+        "scale": 1,
+        "sliceComponent": 12,
+        "alphaSlicingThreshold": 30,
+        "antialiasPadding": 4
+      }
+    ],
+    "wounded_idle": [
+      {
+        "source": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\characters\\cinderhook-marauder\\animation-nine-2026-10-02\\v04-cinder-crossbow-scout\\source\\poses-r2.png",
+        "box": [
+          31,
+          853,
+          254,
+          1128
+        ],
+        "offset": [
+          103,
+          49
+        ],
+        "scale": 1,
+        "sliceComponent": 14,
+        "alphaSlicingThreshold": 30,
+        "antialiasPadding": 4
+      },
+      {
+        "source": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\characters\\cinderhook-marauder\\animation-nine-2026-10-02\\v04-cinder-crossbow-scout\\source\\poses-r2.png",
+        "box": [
+          310,
+          859,
+          532,
+          1128
+        ],
+        "offset": [
+          102,
+          55
+        ],
+        "scale": 1,
+        "sliceComponent": 16,
+        "alphaSlicingThreshold": 30,
+        "antialiasPadding": 4
+      },
+      {
+        "source": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\characters\\cinderhook-marauder\\animation-nine-2026-10-02\\v04-cinder-crossbow-scout\\source\\poses-r2.png",
+        "box": [
+          593,
+          871,
+          818,
+          1128
+        ],
+        "offset": [
+          104,
+          67
+        ],
+        "scale": 1,
+        "sliceComponent": 17,
+        "alphaSlicingThreshold": 30,
+        "antialiasPadding": 4
+      },
+      {
+        "source": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\characters\\cinderhook-marauder\\animation-nine-2026-10-02\\v04-cinder-crossbow-scout\\source\\poses-r2.png",
+        "box": [
+          874,
+          858,
+          1094,
+          1128
+        ],
+        "offset": [
+          104,
+          54
+        ],
+        "scale": 1,
+        "sliceComponent": 15,
+        "alphaSlicingThreshold": 30,
+        "antialiasPadding": 4
+      }
+    ],
+    "die": [
+      {
+        "source": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\characters\\cinderhook-marauder\\animation-nine-2026-10-02\\v04-cinder-crossbow-scout\\source\\poses-r2.png",
+        "box": [
+          21,
+          1130,
+          267,
+          1359
+        ],
+        "offset": [
+          93,
+          95
+        ],
+        "scale": 1,
+        "sliceComponent": 18,
+        "alphaSlicingThreshold": 30,
+        "antialiasPadding": 4
+      },
+      {
+        "source": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\characters\\cinderhook-marauder\\animation-nine-2026-10-02\\v04-cinder-crossbow-scout\\source\\poses-r2.png",
+        "box": [
+          286,
+          1153,
+          508,
+          1358
+        ],
+        "offset": [
+          78,
+          119
+        ],
+        "scale": 1,
+        "sliceComponent": 19,
+        "alphaSlicingThreshold": 30,
+        "antialiasPadding": 4
+      },
+      {
+        "source": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\characters\\cinderhook-marauder\\animation-nine-2026-10-02\\v04-cinder-crossbow-scout\\source\\poses-r2.png",
+        "box": [
+          538,
+          1223,
+          816,
+          1361
+        ],
+        "offset": [
+          49,
+          186
+        ],
+        "scale": 1,
+        "sliceComponent": 20,
+        "alphaSlicingThreshold": 30,
+        "antialiasPadding": 4
+      },
+      {
+        "source": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\characters\\cinderhook-marauder\\animation-nine-2026-10-02\\v04-cinder-crossbow-scout\\source\\poses-r2.png",
+        "box": [
+          816,
+          1268,
+          1110,
+          1358
+        ],
+        "offset": [
+          46,
+          234
+        ],
+        "scale": 1,
+        "sliceComponent": 21,
+        "alphaSlicingThreshold": 30,
+        "antialiasPadding": 4
+      }
+    ]
+  },
+  "previews": {
+    "idle": "idle.gif",
+    "attack": "attack.gif",
+    "hit": "hit.gif",
+    "wounded_idle": "wounded_idle.gif",
+    "die": "die.gif"
+  },
+  "limitations": [
+    "Coarse hand-drawn whole-frame animation; 4 authored poses per state.",
+    "Native pose resolution ~250-280px; not upscaled to claim HD.",
+    "Mild generated stance jitter and color-edge fringe remain; coarse four-pose loops are review studies, not polished high-frame-count HD animation.",
+    "Attack recovery abbreviates reload/nock: returns to loaded ready pose without an authored reload cycle. Projectile behavior is represented by release event; crossbow release frame includes visible projectile."
+  ],
+  "method": "reference-conditioned whole-character frames",
+  "atlas": "atlas.png",
+  "atlasSha256": "3af4d119dd228d0b25426f9a5e1bdad01213085ddb0f0ecd0be9e682c636fb7f",
+  "technicalQA": {
+    "status": "pass",
+    "report": "technical-qa.json",
+    "authoredFrames": 20,
+    "testedAtlasSha256": "3af4d119dd228d0b25426f9a5e1bdad01213085ddb0f0ecd0be9e682c636fb7f"
+  },
+  "visualQA": {
+    "status": "independent_review_pending",
+    "reviewer": "/root/review_goblin_animation"
+  },
+  "generation": {
+    "tool": "built-in image_gen",
+    "sourceHashes": [
+      {
+        "file": "source/poses-r1.png",
+        "sha256": "e976753240267db29af3901cf97d201d13b83bbeaf9b0b4c40532c730698529f"
+      },
+      {
+        "file": "source/poses-r2.png",
+        "sha256": "28910de74e2cd4bd59a020bb3f2ba7181a4b04f6c69862184df23c112ca5b800"
+      },
+      {
+        "file": "source/release-r3.png",
+        "sha256": "70f32d94d9e821a5adc92d068a4678d3d4431751f1059daf0b4203ef4841fb44"
+      }
+    ],
+    "promptFiles": [
+      "source/prompt-r1.txt",
+      "source/prompt-r2.txt",
+      "source/prompt-release-r3.txt"
+    ]
+  },
+  "previewPackageAssociation": {
+    "preview": "preview.gif",
+    "sha256": "0ae7a2dc9011a1594c07724612344c11af3383af81fbd1234b5066f8f85e22a5",
+    "atlasSha256": "3af4d119dd228d0b25426f9a5e1bdad01213085ddb0f0ecd0be9e682c636fb7f"
+  },
+  "identitySource": {
+    "path": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\characters\\cinderhook-marauder\\variants-nine-2026-10-02\\v04-cinder-crossbow-scout-r1.png",
+    "sha256": "c1762ca4c6db2da68f9bb2c6f582ddc5031b9c0e39b12bc634e78bba23329edf",
+    "approval": {
+      "status": "Approved",
+      "at": "2026-10-02T22:20:49.176Z",
+      "evidenceId": "25408795-28bc-4a78-bb62-d9bfea65859d",
+      "paths": [
+        "C:\\Users\\wilsh\\Projects\\runelord\\assets\\approvals\\inbox\\cinderhook-marauder\\v04-cinder-crossbow-scout-r1\\v04-cinder-crossbow-scout-r1.png"
+      ]
+    }
+  },
+  "gallery": {
+    "url": "http://localhost:4317/asset/e30cdb1a507cb94cb465aee7",
+    "status": "Pending approval",
+    "previewSha256": "0ae7a2dc9011a1594c07724612344c11af3383af81fbd1234b5066f8f85e22a5",
+    "apiVerified": true
+  }
+}
