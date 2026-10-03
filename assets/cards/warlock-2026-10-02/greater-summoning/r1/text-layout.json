@@ -1,0 +1,44 @@
+[
+  {
+    "region": "title",
+    "text": "Greater Summoning",
+    "lines": [
+      "Greater Summoning"
+    ],
+    "font_size": 56
+  },
+  {
+    "region": "cost",
+    "text": "4\n+10 Cinders",
+    "lines": [
+      "4",
+      "+10 Cinders"
+    ],
+    "font_sizes": [
+      76,
+      15
+    ]
+  },
+  {
+    "region": "type",
+    "text": "SKILL · WARLOCK",
+    "lines": [
+      "SKILL · WARLOCK"
+    ],
+    "font_size": 35
+  },
+  {
+    "region": "rules",
+    "text": "Unique. Choose a demon type and Summon its Arch-form (Ignivar, Cerberax, Nightmaw, The Hollow Saint, Pyre Colossus or Gorthak). Arch-forms are Unbound. Consume.",
+    "lines": [
+      "Unique.",
+      "Choose a demon type and Summon its",
+      "Arch-form (Ignivar, Cerberax, Nightmaw,",
+      "The Hollow Saint, Pyre Colossus or",
+      "Gorthak).",
+      "Arch-forms are Unbound.",
+      "Consume."
+    ],
+    "font_size": 34
+  }
+]

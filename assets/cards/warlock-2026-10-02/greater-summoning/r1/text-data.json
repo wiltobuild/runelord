@@ -1,0 +1,8 @@
+{
+  "name": "Greater Summoning",
+  "cost": "4 +10🔥",
+  "type": "Skill",
+  "rarity": "Ultimate",
+  "rules": "**Unique.** Choose a demon type and Summon its Arch-form (Ignivar, Cerberax, Nightmaw, The Hollow Saint, Pyre Colossus or Gorthak). Arch-forms are Unbound. Consume.",
+  "upgrade": "Costs 3 +10🔥"
+}
