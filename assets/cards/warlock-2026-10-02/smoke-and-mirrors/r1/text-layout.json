@@ -1,0 +1,36 @@
+[
+  {
+    "region": "title",
+    "text": "Smoke and Mirrors",
+    "lines": [
+      "Smoke and Mirrors"
+    ],
+    "font_size": 59
+  },
+  {
+    "region": "cost",
+    "text": "1",
+    "lines": [
+      "1"
+    ],
+    "font_size": 110
+  },
+  {
+    "region": "type",
+    "text": "SKILL · WARLOCK",
+    "lines": [
+      "SKILL · WARLOCK"
+    ],
+    "font_size": 35
+  },
+  {
+    "region": "rules",
+    "text": "Apply 1 Sapped to ALL enemies. Your demons gain 3 Guard.",
+    "lines": [
+      "Apply 1 Sapped to ALL",
+      "enemies.",
+      "Your demons gain 3 Guard."
+    ],
+    "font_size": 54
+  }
+]

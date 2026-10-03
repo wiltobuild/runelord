@@ -1,0 +1,8 @@
+{
+  "name": "Smoke and Mirrors",
+  "cost": "1",
+  "type": "Skill",
+  "rarity": "Common",
+  "rules": "Apply 1 Sapped to ALL enemies. Your demons gain 3 Guard.",
+  "upgrade": "2 Sapped"
+}

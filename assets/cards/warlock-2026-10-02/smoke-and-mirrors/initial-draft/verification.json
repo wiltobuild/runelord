@@ -1,0 +1,13 @@
+{
+  "dimensions": [
+    1024,
+    1536
+  ],
+  "protected_pixels": 602082,
+  "changed_protected_pixels": 0,
+  "template_sha256": "070283f1fb65b07531cec7b32c653ffc96a7adacde1c2ce4daca1f3b4ed78c9e",
+  "mask_sha256": "13e010f0e4f661af03596d83a5ec22823b700c6d352085acd7df8029ceba23f5",
+  "mask_version": "warlock-v1",
+  "text_matches_catalog": true,
+  "visual_inspection": "pending"
+}
