@@ -1,0 +1,8 @@
+{
+  "name": "Ward of Ash",
+  "cost": "1",
+  "type": "Skill",
+  "rarity": "Basic",
+  "rules": "Gain 5 Guard.",
+  "upgrade": "8 Guard"
+}
