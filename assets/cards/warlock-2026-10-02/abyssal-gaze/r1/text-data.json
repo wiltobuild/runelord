@@ -1,0 +1,8 @@
+{
+  "name": "Abyssal Gaze",
+  "cost": "0",
+  "type": "Skill",
+  "rarity": "Uncommon",
+  "rules": "Gain 2 Corruption. Draw 1 card.",
+  "upgrade": "Draw 2"
+}

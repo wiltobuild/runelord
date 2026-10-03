@@ -1,0 +1,35 @@
+[
+  {
+    "region": "title",
+    "text": "Abyssal Gaze",
+    "lines": [
+      "Abyssal Gaze"
+    ],
+    "font_size": 88
+  },
+  {
+    "region": "cost",
+    "text": "0",
+    "lines": [
+      "0"
+    ],
+    "font_size": 110
+  },
+  {
+    "region": "type",
+    "text": "SKILL · WARLOCK",
+    "lines": [
+      "SKILL · WARLOCK"
+    ],
+    "font_size": 35
+  },
+  {
+    "region": "rules",
+    "text": "Gain 2 Corruption. Draw 1 card.",
+    "lines": [
+      "Gain 2 Corruption.",
+      "Draw 1 card."
+    ],
+    "font_size": 54
+  }
+]
