@@ -1,0 +1,8 @@
+{
+  "name": "Hellish Command",
+  "cost": "0",
+  "type": "Skill",
+  "rarity": "Common",
+  "rules": "**Command:** a demon acts now.",
+  "upgrade": "It also gains +2 Power this turn"
+}
