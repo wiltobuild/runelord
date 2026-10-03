@@ -1,0 +1,436 @@
+{
+  "id": "demon-lord",
+  "method": "16 authored whole-character imagegen key poses",
+  "canvas": {
+    "width": 448,
+    "height": 448
+  },
+  "anchor": {
+    "x": 224,
+    "y": 414
+  },
+  "facing": "left",
+  "master": {
+    "path": "assets\\concepts\\fire-monsters-20-2026-10-02\\crown-of-cinders\\base-r1.png",
+    "sha256": "564d5ae5d042a860603bfbdcb76177e7817b4c225f340f4a6fb8ca467a8dda67",
+    "approval": {
+      "status": "Approved",
+      "at": "2026-10-02T22:20:49.176Z",
+      "evidenceId": "360114f3-930d-4db6-94e7-5e3caac8711b",
+      "paths": [
+        "C:\\Users\\wilsh\\Projects\\runelord\\assets\\approvals\\inbox\\crown-of-cinders\\base-r1\\base-r1.png"
+      ]
+    }
+  },
+  "source": {
+    "path": "assets\\animations\\fire-demo-r1\\demon-lord\\poses.png",
+    "sha256": "e53c98eeb44da995873b40d11448c4dfefb5cf65ce8d1746b0181c1b653a9f16"
+  },
+  "states": {
+    "idle": {
+      "frames": [
+        {
+          "file": "frames/00.png",
+          "durationMs": 450,
+          "effects": {
+            "eyes": [
+              [
+                0.486,
+                0.3653
+              ]
+            ],
+            "crown": [
+              0.486,
+              0.2805
+            ]
+          }
+        },
+        {
+          "file": "frames/01.png",
+          "durationMs": 450,
+          "effects": {
+            "eyes": [
+              [
+                0.4849,
+                0.3628
+              ]
+            ],
+            "crown": [
+              0.4849,
+              0.2779
+            ]
+          }
+        },
+        {
+          "file": "frames/00.png",
+          "durationMs": 450,
+          "effects": {
+            "eyes": [
+              [
+                0.486,
+                0.3653
+              ]
+            ],
+            "crown": [
+              0.486,
+              0.2805
+            ]
+          }
+        }
+      ],
+      "loop": true,
+      "events": []
+    },
+    "attack": {
+      "frames": [
+        {
+          "file": "frames/02.png",
+          "durationMs": 200,
+          "effects": {
+            "eyes": [
+              [
+                0.5338,
+                0.3914
+              ]
+            ],
+            "crown": [
+              0.5338,
+              0.3066
+            ]
+          }
+        },
+        {
+          "file": "frames/03.png",
+          "durationMs": 200,
+          "effects": {
+            "eyes": [
+              [
+                0.6332,
+                0.393
+              ]
+            ],
+            "crown": [
+              0.6332,
+              0.3082
+            ]
+          }
+        },
+        {
+          "file": "frames/04.png",
+          "durationMs": 170,
+          "effects": {
+            "eyes": [
+              [
+                0.5,
+                0.3861
+              ]
+            ],
+            "crown": [
+              0.5,
+              0.3013
+            ]
+          }
+        },
+        {
+          "file": "frames/05.png",
+          "durationMs": 130,
+          "effects": {
+            "eyes": [
+              [
+                0.4779,
+                0.3861
+              ]
+            ],
+            "crown": [
+              0.4779,
+              0.3013
+            ]
+          }
+        }
+      ],
+      "loop": false,
+      "events": [
+        {
+          "name": "impact",
+          "timeMs": 200
+        }
+      ]
+    },
+    "cast": {
+      "frames": [
+        {
+          "file": "frames/06.png",
+          "durationMs": 280,
+          "effects": {
+            "eyes": [
+              [
+                0.5198,
+                0.3998
+              ]
+            ],
+            "crown": [
+              0.5198,
+              0.315
+            ]
+          }
+        },
+        {
+          "file": "frames/07.png",
+          "durationMs": 400,
+          "effects": {
+            "eyes": [
+              [
+                0.5911,
+                0.3792
+              ]
+            ],
+            "crown": [
+              0.5911,
+              0.2943
+            ]
+          }
+        },
+        {
+          "file": "frames/05.png",
+          "durationMs": 180,
+          "effects": {
+            "eyes": [
+              [
+                0.4779,
+                0.3861
+              ]
+            ],
+            "crown": [
+              0.4779,
+              0.3013
+            ]
+          }
+        }
+      ],
+      "loop": false,
+      "events": [
+        {
+          "name": "impact",
+          "timeMs": 280
+        }
+      ]
+    },
+    "summon": {
+      "frames": [
+        {
+          "file": "frames/08.png",
+          "durationMs": 350,
+          "effects": {
+            "eyes": [
+              [
+                0.5,
+                0.3998
+              ]
+            ],
+            "crown": [
+              0.5,
+              0.315
+            ]
+          }
+        },
+        {
+          "file": "frames/09.png",
+          "durationMs": 500,
+          "effects": {
+            "eyes": [
+              [
+                0.4849,
+                0.3861
+              ]
+            ],
+            "crown": [
+              0.4849,
+              0.3013
+            ]
+          }
+        },
+        {
+          "file": "frames/05.png",
+          "durationMs": 200,
+          "effects": {
+            "eyes": [
+              [
+                0.4779,
+                0.3861
+              ]
+            ],
+            "crown": [
+              0.4779,
+              0.3013
+            ]
+          }
+        }
+      ],
+      "loop": false,
+      "events": [
+        {
+          "name": "impact",
+          "timeMs": 350
+        }
+      ]
+    },
+    "hit": {
+      "frames": [
+        {
+          "file": "frames/10.png",
+          "durationMs": 170,
+          "effects": {
+            "eyes": [
+              [
+                0.5618,
+                0.3992
+              ]
+            ],
+            "crown": [
+              0.5618,
+              0.3144
+            ]
+          }
+        },
+        {
+          "file": "frames/11.png",
+          "durationMs": 170,
+          "effects": {
+            "eyes": [
+              [
+                0.465,
+                0.4132
+              ]
+            ],
+            "crown": [
+              0.465,
+              0.3284
+            ]
+          }
+        },
+        {
+          "file": "frames/00.png",
+          "durationMs": 120,
+          "effects": {
+            "eyes": [
+              [
+                0.486,
+                0.3653
+              ]
+            ],
+            "crown": [
+              0.486,
+              0.2805
+            ]
+          }
+        }
+      ],
+      "loop": false,
+      "events": []
+    },
+    "wounded_idle": {
+      "frames": [
+        {
+          "file": "frames/12.png",
+          "durationMs": 500,
+          "effects": {
+            "eyes": [
+              [
+                0.4159,
+                0.4284
+              ]
+            ],
+            "crown": [
+              0.4159,
+              0.3436
+            ]
+          }
+        },
+        {
+          "file": "frames/13.png",
+          "durationMs": 500,
+          "effects": {
+            "eyes": [
+              [
+                0.422,
+                0.4354
+              ]
+            ],
+            "crown": [
+              0.422,
+              0.3506
+            ]
+          }
+        },
+        {
+          "file": "frames/12.png",
+          "durationMs": 500,
+          "effects": {
+            "eyes": [
+              [
+                0.4159,
+                0.4284
+              ]
+            ],
+            "crown": [
+              0.4159,
+              0.3436
+            ]
+          }
+        }
+      ],
+      "loop": true,
+      "events": []
+    },
+    "die": {
+      "frames": [
+        {
+          "file": "frames/12.png",
+          "durationMs": 250,
+          "effects": {
+            "eyes": [
+              [
+                0.4159,
+                0.4284
+              ]
+            ],
+            "crown": [
+              0.4159,
+              0.3436
+            ]
+          }
+        },
+        {
+          "file": "frames/14.png",
+          "durationMs": 400,
+          "effects": {
+            "eyes": [],
+            "crown": [
+              0,
+              0
+            ]
+          }
+        },
+        {
+          "file": "frames/15.png",
+          "durationMs": 800,
+          "effects": {
+            "eyes": [],
+            "crown": [
+              0,
+              0
+            ]
+          }
+        }
+      ],
+      "loop": false,
+      "events": []
+    }
+  },
+  "authorization": "User requested crowned Demon Lord animated and integrated, 2026-10-03; new art pending gallery approval.",
+  "limitations": [
+    "Stepped authored keyframes, no generated in-between frames.",
+    "One visible eye socket in three-quarter view; manually measured effect sockets.",
+    "Builder contact-sheet review complete; independent playback pending."
+  ]
+}
