@@ -1,3 +1,4 @@
+import { isMobileGame } from "./MobileShell";
 import { useEffect, useState, type CSSProperties, type ReactNode } from "react";
 
 // Native artwork coordinates. Scale the entire stage, never individual HUD parts.
@@ -8,12 +9,21 @@ export const HUD = {
 } as const;
 
 export function useHudScale() {
-  const measure = () => Math.min(window.innerWidth / HUD.width, window.innerHeight / HUD.height);
+  const measure = () => {
+    const mobile = isMobileGame();
+    const style = mobile ? getComputedStyle(document.getElementById("root")!) : null;
+    const horizontal = style ? parseFloat(style.paddingLeft) + parseFloat(style.paddingRight) : 0;
+    const vertical = style ? parseFloat(style.paddingTop) + parseFloat(style.paddingBottom) : 0;
+    return Math.min(((mobile ? window.visualViewport?.width : undefined) ?? window.innerWidth) / HUD.width - horizontal / HUD.width,
+      (((mobile ? window.visualViewport?.height : undefined) ?? window.innerHeight) - vertical) / HUD.height);
+  };
   const [scale, setScale] = useState(measure);
   useEffect(() => {
     const resize = () => setScale(measure());
     window.addEventListener("resize", resize);
-    return () => window.removeEventListener("resize", resize);
+    window.visualViewport?.addEventListener("resize", resize);
+    const frame = requestAnimationFrame(resize);
+    return () => { window.removeEventListener("resize", resize); window.visualViewport?.removeEventListener("resize", resize); cancelAnimationFrame(frame); };
   }, []);
   return scale;
 }

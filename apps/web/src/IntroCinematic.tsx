@@ -1,6 +1,7 @@
 import { useEffect, useRef, useState } from "react";
 import { assetUrl } from "./baseUrl";
 import "./intro.css";
+import { enterMobileFullscreen } from "./MobileShell";
 
 /** Audio is muxed into the video: enabling sound never changes its visual timing. */
 export function IntroCinematic({ onStart, volume, onVolume }: {
@@ -30,7 +31,7 @@ export function IntroCinematic({ onStart, volume, onVolume }: {
   useEffect(() => {
     const key = (e: KeyboardEvent) => {
       if ((e.key === "Enter" || e.key === " ") && (e.target === document.body || e.target === document.documentElement)) {
-        e.preventDefault(); setLeaving(true);
+        e.preventDefault(); void enterMobileFullscreen(); setLeaving(true);
       }
     };
     window.addEventListener("keydown", key);
@@ -55,7 +56,7 @@ export function IntroCinematic({ onStart, volume, onVolume }: {
       <p className="intro-subtitle">CINDER <i>&amp;</i> OATH</p>
       <div className="intro-divider" aria-hidden="true">◆</div>
       <p className="intro-vow">Bind the fallen. Command the inferno.</p>
-      <button className="intro-start" disabled={leaving} onClick={() => setLeaving(true)}>Press Start</button>
+      <button className="intro-start" disabled={leaving} onClick={() => { void enterMobileFullscreen(); setLeaving(true); }}>Press Start</button>
       <p className="intro-start-hint">CLICK · ENTER · SPACE</p>
     </div>
     <div className="intro-controls" aria-label="Cinematic controls">

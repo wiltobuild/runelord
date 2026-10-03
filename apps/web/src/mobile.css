@@ -1,0 +1,58 @@
+/* These rules only apply to touch-first mobile devices; desktop retains its HUD. */
+.mobile-fullscreen{position:fixed;right:max(8px,env(safe-area-inset-right));bottom:max(8px,env(safe-area-inset-bottom));z-index:10000;width:44px;height:44px;background:#181018d9;border:1px solid #bd8951;color:#ffdda1;font-size:27px;padding:0;touch-action:manipulation}
+.rotate-game{display:none}
+html.mobile-game{background:#08060b;overscroll-behavior:none}
+.mobile-game body{margin:0;min-height:100dvh;overscroll-behavior:none}
+.mobile-game button,.mobile-game label{touch-action:manipulation;-webkit-tap-highlight-color:transparent}
+.mobile-game #root{padding:env(safe-area-inset-top) env(safe-area-inset-right) env(safe-area-inset-bottom) env(safe-area-inset-left)}
+.mobile-game body:has(.battle-ui){height:100dvh;min-height:0;overflow:hidden}
+.mobile-game .intro-cinematic{height:calc(100dvh - env(safe-area-inset-top) - env(safe-area-inset-bottom));min-height:0}
+@media(orientation:portrait){
+ .mobile-game .rotate-game{display:flex;position:fixed;inset:0;z-index:20000;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:32px;background:radial-gradient(ellipse at center,#422021,#100c14 70%);color:#f5dab0}
+ .mobile-game .rotate-game>span{font-size:90px;color:#e6a35e}.mobile-game .rotate-game h1{font:32px Georgia,serif}.mobile-game .rotate-game p{max-width:290px;line-height:1.6}.mobile-game .rotate-game button{min-height:48px;padding:10px 22px}
+ .mobile-game #root>main{visibility:hidden;pointer-events:none}
+}
+@media(orientation:landscape){
+ .mobile-game .intro-title{left:65%;right:3%;top:45%;gap:0}
+ .mobile-game .intro-runes,.mobile-game .intro-divider,.mobile-game .intro-start-hint{display:none}
+ .mobile-game .intro-eyebrow{font-size:8px;letter-spacing:.16em;margin:0}
+ .mobile-game .intro-subtitle{font-size:14px;margin:4px 0;letter-spacing:.24em}
+ .mobile-game .intro-vow{font-size:14px;margin:6px 0}
+ .mobile-game .intro-cinematic .intro-start{width:100%;max-width:260px;height:60px;font-size:20px}
+ .mobile-game .intro-controls{bottom:4px;right:55px;gap:5px}
+ .mobile-game .intro-controls button{min-height:38px;padding:6px;font-size:10px}
+ .mobile-game .title .topbar{display:flex;flex-direction:row;justify-content:space-between;min-height:0;padding:0 16px}
+ .mobile-game .title .topbar:after{display:none}
+ .mobile-game .title .topbar .wordmark{width:245px;height:68px;padding:15px 40px}
+ .mobile-game .title .topbar .logo-type{font-size:23px}
+ .mobile-game .title .topbar nav{flex-wrap:nowrap;max-width:none}
+ .mobile-game .title .pact-sanctum{padding:8px 20px 16px}
+ .mobile-game .sanctum-heading h1{font-size:28px;margin:4px}
+ .mobile-game .character-court{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:10px;margin-bottom:8px}
+ .mobile-game .title .character-plaque{padding:8px 4px}
+ .mobile-game .character-model{height:100px}
+ .mobile-game .character-model .hero-canvas{transform:translate(-50%,-50%) scale(.3)}
+ .mobile-game .coming-hero-idle{width:110px;height:110px}
+ .mobile-game .character-title{font-size:20px}.mobile-game .character-specialty{display:none}.mobile-game .character-availability{margin-top:5px;font-size:8px}
+ .mobile-game .pact-command-row{grid-template-columns:1fr 1.2fr 1fr;gap:8px;padding:0;margin:0}
+ .mobile-game .pact-command-row .pact-heading{grid-column:auto;grid-row:auto}
+ .mobile-game .pact-command-row .pact-heading h2{font-size:25px}
+ .mobile-game .pact-command-row .pact-heading p{display:none}
+ .mobile-game .title .runic-action{min-height:65px;padding:15px 20px}.mobile-game .title .runic-action>span{font-size:19px}
+ .mobile-game .tome-choices{grid-template-columns:repeat(3,minmax(0,1fr));gap:10px}
+ .mobile-game .title .tome-altar{padding:8px}.mobile-game .tome-art{height:110px}
+ .mobile-game .tome-select h2{font-size:23px}.mobile-game .tome-flavor,.mobile-game .tome-tags,.mobile-game .tome-rune{display:none}
+ .mobile-game .tome-description{font-size:12px;min-height:0}.mobile-game .tome-selection{margin:6px 0}
+ .mobile-game .tome-preview{min-height:44px}.mobile-game .pact-deck-dialog{max-height:90dvh;width:94vw}.mobile-game .pact-deck-content{padding:12px}.mobile-game .pact-card-grid{grid-template-columns:repeat(3,minmax(0,1fr))}
+ .mobile-game .pact-deck-content button{min-height:44px}
+ .mobile-game .battle-ui .hand .card:hover{transform:none}
+ .mobile-game .battle-ui .hand .card.selected{transform:translateY(-14px);outline:3px solid #ffcc79}
+ .mobile-game .battle-ui .card:focus .card-info{display:block;font-size:26px;width:330px;pointer-events:none}
+ .mobile-game .battle-ui .overlay{padding:24px}.mobile-game .battle-ui .overlay section{max-height:870px;overflow:auto;overscroll-behavior:contain}
+ .mobile-game .battle-ui .overlay button{min-height:70px;font-size:26px}
+ .mobile-game .battle-ui .combat-message{font-size:23px}
+ .mobile-game .battle-ui .topbar nav button:after,.mobile-game .battle-ui .inventory-slot:after{content:"";position:absolute;inset:-14px}
+}
+/* Native modal dialogs occupy the top layer, so hide those too while rotated. */
+@media(orientation:portrait){.mobile-game dialog{visibility:hidden}.mobile-game .mobile-fullscreen{display:none}}
+@media(orientation:landscape){.mobile-game .pact-resume-space{display:block}}

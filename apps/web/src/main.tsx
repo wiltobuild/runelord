@@ -41,6 +41,8 @@ import { intentLabel } from "./intentLabel";
 import { layoutWarband, retreatGroundFormation, WARBAND_SPACE } from "./warbandLayout";
 import { packCrowdedWarband } from "./packedWarband";
 import "./hud.css";
+import "./mobile.css";
+import { MobileShell } from "./MobileShell";
 const SAVE_KEY = "runelord-warlock-demo-v1";
 function readSave() {
   try {
@@ -823,7 +825,7 @@ root.render(
   </div>,
 );
 loadAssets()
-  .then((assets) => root.render(<App assets={assets} />))
+  .then((assets) => root.render(<MobileShell><App assets={assets} /></MobileShell>))
   .catch((e) =>
     root.render(
       <div className="loading">
