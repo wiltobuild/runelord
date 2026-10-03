@@ -1,0 +1,36 @@
+[
+  {
+    "region": "title",
+    "text": "Unchained Fury",
+    "lines": [
+      "Unchained Fury"
+    ],
+    "font_size": 71
+  },
+  {
+    "region": "cost",
+    "text": "1",
+    "lines": [
+      "1"
+    ],
+    "font_size": 110
+  },
+  {
+    "region": "type",
+    "text": "SKILL · WARLOCK",
+    "lines": [
+      "SKILL · WARLOCK"
+    ],
+    "font_size": 35
+  },
+  {
+    "region": "rules",
+    "text": "Double a demon's Power this combat. Consume.",
+    "lines": [
+      "Double a demon's Power",
+      "this combat.",
+      "Consume."
+    ],
+    "font_size": 54
+  }
+]
