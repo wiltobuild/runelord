@@ -1,0 +1,35 @@
+[
+  {
+    "region": "title",
+    "text": "Ascendant Will",
+    "lines": [
+      "Ascendant Will"
+    ],
+    "font_size": 75
+  },
+  {
+    "region": "cost",
+    "text": "1",
+    "lines": [
+      "1"
+    ],
+    "font_size": 110
+  },
+  {
+    "region": "type",
+    "text": "POWER · WARLOCK",
+    "lines": [
+      "POWER · WARLOCK"
+    ],
+    "font_size": 35
+  },
+  {
+    "region": "rules",
+    "text": "Demon Form triggers at 7 Corruption instead of 10.",
+    "lines": [
+      "Demon Form triggers at",
+      "7 Corruption instead of 10."
+    ],
+    "font_size": 54
+  }
+]

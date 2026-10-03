@@ -1,0 +1,8 @@
+{
+  "name": "Ascendant Will",
+  "cost": "1",
+  "type": "Power",
+  "rarity": "Rare",
+  "rules": "Demon Form triggers at 7 Corruption instead of 10.",
+  "upgrade": "Also gain 3 Corruption"
+}
