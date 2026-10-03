@@ -1,0 +1,8 @@
+{
+  "name": "Rain of Fire",
+  "cost": "2",
+  "type": "Attack",
+  "rarity": "Rare",
+  "rules": "Deal 3 damage to ALL enemies 5 times. Each hit applies 1 Scorch.",
+  "upgrade": "4 per hit"
+}
