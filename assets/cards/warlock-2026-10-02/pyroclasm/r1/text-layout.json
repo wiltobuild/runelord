@@ -1,0 +1,36 @@
+[
+  {
+    "region": "title",
+    "text": "Pyroclasm",
+    "lines": [
+      "Pyroclasm"
+    ],
+    "font_size": 94
+  },
+  {
+    "region": "cost",
+    "text": "2",
+    "lines": [
+      "2"
+    ],
+    "font_size": 110
+  },
+  {
+    "region": "type",
+    "text": "POWER · WARLOCK",
+    "lines": [
+      "POWER · WARLOCK"
+    ],
+    "font_size": 35
+  },
+  {
+    "region": "rules",
+    "text": "At the start of your turn, apply 3 Scorch to ALL enemies.",
+    "lines": [
+      "At the start of your turn,",
+      "apply 3 Scorch to ALL",
+      "enemies."
+    ],
+    "font_size": 54
+  }
+]

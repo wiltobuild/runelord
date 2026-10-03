@@ -1,0 +1,8 @@
+{
+  "name": "Pyroclasm",
+  "cost": "2",
+  "type": "Power",
+  "rarity": "Uncommon",
+  "rules": "At the start of your turn, apply 3 Scorch to ALL enemies.",
+  "upgrade": "4 Scorch"
+}
