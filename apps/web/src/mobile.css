@@ -8,7 +8,7 @@ html.mobile-game{background:#08060b;overscroll-behavior:none}
 .mobile-game body:has(.battle-ui){height:100dvh;min-height:0;overflow:hidden}
 .mobile-game .intro-cinematic{height:calc(100dvh - env(safe-area-inset-top) - env(safe-area-inset-bottom));min-height:0}
 @media(orientation:portrait){
- .mobile-game .rotate-game{display:flex;position:fixed;inset:0;z-index:20000;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:32px;background:radial-gradient(ellipse at center,#422021,#100c14 70%);color:#f5dab0}
+ .mobile-game .rotate-game{display:flex;position:fixed;inset:0;z-index:20000;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:32px;background:radial-gradient(ellipse at center,#211d20,#0c0b0e 70%);color:#f5dab0}
  .mobile-game .rotate-game>span{font-size:90px;color:#e6a35e}.mobile-game .rotate-game h1{font:32px Georgia,serif}.mobile-game .rotate-game p{max-width:290px;line-height:1.6}.mobile-game .rotate-game button{min-height:48px;padding:10px 22px}
  .mobile-game #root>main{visibility:hidden;pointer-events:none}
 }
