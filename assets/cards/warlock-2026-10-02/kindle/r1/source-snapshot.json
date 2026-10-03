@@ -1,0 +1,8 @@
+{
+  "name": "Kindle",
+  "cost": "1",
+  "type": "Skill",
+  "rarity": "Common",
+  "rules": "Gain 4 Cinders. Draw 1 card.",
+  "upgrade": "6 Cinders"
+}

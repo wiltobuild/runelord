@@ -1,0 +1,35 @@
+[
+  {
+    "region": "title",
+    "text": "Kindle",
+    "lines": [
+      "Kindle"
+    ],
+    "font_size": 94
+  },
+  {
+    "region": "cost",
+    "text": "1",
+    "lines": [
+      "1"
+    ],
+    "font_size": 110
+  },
+  {
+    "region": "type",
+    "text": "SKILL · WARLOCK",
+    "lines": [
+      "SKILL · WARLOCK"
+    ],
+    "font_size": 35
+  },
+  {
+    "region": "rules",
+    "text": "Gain 4 Cinders. Draw 1 card.",
+    "lines": [
+      "Gain 4 Cinders.",
+      "Draw 1 card."
+    ],
+    "font_size": 54
+  }
+]
