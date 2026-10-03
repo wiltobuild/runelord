@@ -1,0 +1,8 @@
+{
+  "name": "Chain of Flame",
+  "cost": "1",
+  "type": "Attack",
+  "rarity": "Common",
+  "rules": "Deal 5 damage. Copy the enemy's Scorch onto a random other enemy.",
+  "upgrade": "8 dmg"
+}

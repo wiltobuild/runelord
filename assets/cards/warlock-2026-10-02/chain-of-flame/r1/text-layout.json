@@ -1,0 +1,37 @@
+[
+  {
+    "region": "title",
+    "text": "Chain of Flame",
+    "lines": [
+      "Chain of Flame"
+    ],
+    "font_size": 76
+  },
+  {
+    "region": "cost",
+    "text": "1",
+    "lines": [
+      "1"
+    ],
+    "font_size": 110
+  },
+  {
+    "region": "type",
+    "text": "ATTACK · WARLOCK",
+    "lines": [
+      "ATTACK · WARLOCK"
+    ],
+    "font_size": 35
+  },
+  {
+    "region": "rules",
+    "text": "Deal 5 damage. Copy the enemy's Scorch onto a random other enemy.",
+    "lines": [
+      "Deal 5 damage.",
+      "Copy the enemy's Scorch",
+      "onto a random other",
+      "enemy."
+    ],
+    "font_size": 54
+  }
+]
