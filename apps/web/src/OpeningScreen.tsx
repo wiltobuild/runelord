@@ -1,5 +1,5 @@
 import { useEffect, useRef, useState, type CSSProperties } from "react";
-import { cards, starterDecks, encounters, type StarterDeckId, type CardId } from "../../../packages/content/index";
+import { cards, starterDecks, type StarterDeckId, type CardId } from "../../../packages/content/index";
 import type { Assets } from "./assets";
 import { assetUrl } from "./baseUrl";
 import { Hero } from "./Hero";
@@ -16,9 +16,9 @@ const comingHeroes = [
   { id: "ranger", name: "Ranger", theme: "WILDS · BOW · COMPANIONS" },
 ];
 
-export function OpeningScreen({ assets, selected, onSelect, onBegin, onResume, seed, onSeed, awaken }: {
+export function OpeningScreen({ assets, selected, onSelect, onBegin, onResume, awaken }: {
   assets: Assets; selected: StarterDeckId; onSelect: (id: StarterDeckId) => void;
-  onBegin: () => void; onResume?: () => void; seed: string; onSeed: (value: string) => void; awaken: () => void;
+  onBegin: () => void; onResume?: () => void; awaken: () => void;
 }) {
   const [characterChosen, setCharacterChosen] = useState(false);
   const [preview, setPreview] = useState<typeof starterDecks[number] | null>(null);
@@ -42,9 +42,13 @@ export function OpeningScreen({ assets, selected, onSelect, onBegin, onResume, s
         <span className="character-model"><Hero assets={assets} animation="idle_breathe" sequence={0} empowered={false} /></span>
         <span className="character-title">Warlock</span><span className="character-specialty">DEMONS · HELLFIRE · BLOOD</span><span className="character-availability">{characterChosen ? "◆ CHARACTER CHOSEN" : "CHOOSE THE WARLOCK"}</span>
       </button>
-      {comingHeroes.map(hero => <button key={hero.id} className="character-plaque unavailable" disabled aria-label={`${hero.name} — Coming soon`}><span className="character-model"><img src={assetUrl(`/opening-assets/hero-${hero.id}.webp`)} alt="" /></span><span className="character-title">{hero.name}</span><span className="character-specialty">{hero.theme}</span><span className="character-availability">COMING SOON</span></button>)}
+      {comingHeroes.map(hero => <button key={hero.id} className="character-plaque unavailable" data-hero={hero.id} disabled aria-label={`${hero.name} — Coming soon`}><span className="character-model"><span className="coming-hero-idle" aria-hidden="true"><img src={assetUrl(`/opening-assets/hero-${hero.id}-idle.webp`)} alt="" draggable={false} /></span></span><span className="character-title">{hero.name}</span><span className="character-specialty">{hero.theme}</span><span className="character-availability">COMING SOON</span></button>)}
     </div>
-    <div className="sanctum-heading pact-heading"><div className="sanctum-kicker">II · THE POWER YOU WILL WIELD</div><h2>Choose your <em>pact.</em></h2><p aria-live="polite">{characterChosen ? "Three forbidden tomes. One path through the fire." : "Choose the Warlock above to unlock his pacts."}</p></div>
+    <div className="pact-command-row">
+      <button className="pact-begin runic-action" disabled={!characterChosen} onClick={onBegin}><span>Begin the pact</span><small>{characterChosen ? deck.name : "Choose your character first"}</small></button>
+      <div className="sanctum-heading pact-heading"><div className="sanctum-kicker">II · THE POWER YOU WILL WIELD</div><h2>Choose your <em>pact.</em></h2><p aria-live="polite">{characterChosen ? "Three forbidden tomes. One path through the fire." : "Choose the Warlock above to unlock his pacts."}</p></div>
+      {onResume ? <button className="pact-resume runic-action" onClick={onResume}><span>Resume journey</span><small>RETURN TO YOUR OATH</small></button> : <div className="pact-resume-space" />}
+    </div>
     <fieldset className="tome-choices" disabled={!characterChosen}><legend className="sr-only">Choose your starting deck</legend>
       {starterDecks.map((d, i) => <article key={d.id} className={`tome-altar ${selected === d.id ? "is-chosen" : ""}`} style={{ "--magic": lore[d.id].color, "--delay": `${-i * 1.7}s` } as CSSProperties}>
         <label className="tome-select">
@@ -56,8 +60,6 @@ export function OpeningScreen({ assets, selected, onSelect, onBegin, onResume, s
         <button className="tome-preview" onClick={e => { returnFocus.current = e.currentTarget; setPreview(d); }}>Preview {d.cards.length} cards <span aria-hidden="true">↗</span><span className="sr-only"> — {d.name}</span></button>
       </article>)}
     </fieldset>
-    <div className="sanctum-actions"><button className="pact-begin" disabled={!characterChosen} onClick={onBegin}>Begin the pact <span aria-hidden="true">→</span><small>{characterChosen ? deck.name : "Choose your character first"}</small></button>{onResume && <button className="pact-resume" onClick={onResume}>Resume journey <span aria-hidden="true">↗</span></button>}</div>
-    <div className="sanctum-footer"><span>THE WARLOCK <b>◆</b> {encounters.length} ENCOUNTERS <b>◆</b> ONE OATH</span><details className="sanctum-seed"><summary>Replay a seed</summary><label>Run seed <input inputMode="numeric" value={seed} maxLength={10} placeholder="Random each run" onChange={e => onSeed(e.target.value.replace(/[^0-9]/g, ""))} /></label><small>Leave blank for a new journey.</small></details></div>
     <dialog ref={dialog} className="pact-deck-dialog" onCancel={close} onClick={e => { if (e.target === e.currentTarget) close(); }} aria-labelledby="pact-preview-title">
       {preview && <div className="pact-deck-content"><header><div><div className="sanctum-kicker">INSIDE THE GRIMOIRE · {preview.cards.length} STARTING CARDS</div><h2 id="pact-preview-title">{preview.name}</h2><p>{preview.description}</p></div><button className="close" autoFocus onClick={close} aria-label="Close deck preview">Close ×</button></header>
         <div className="pact-card-grid">{[...counts].map(([id, count]) => <figure key={id}><div className="preview-card-face">{assets.cards[id] ? <img src={assets.cards[id]} alt={cards[id].name} /> : <strong>{cards[id].name}</strong>}<span className="card-copies">×{count}</span></div><figcaption><strong>{cards[id].name}</strong><span>{cards[id].cost} Mana{cards[id].cinders ? ` · ${cards[id].cinders} Cinders` : ""}</span><p>{cards[id].text}</p></figcaption></figure>)}</div>

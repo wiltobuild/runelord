@@ -1,0 +1,170 @@
+[
+  {
+    "hero": "runeblade",
+    "sourceRevision": "frames32-r1",
+    "sequence": [
+      0,
+      1,
+      2,
+      3,
+      2,
+      1
+    ],
+    "durationMs": 1080,
+    "cellSize": 320,
+    "uniformCrop": [
+      73,
+      137,
+      425,
+      492
+    ],
+    "rootRegistrationX": [
+      0,
+      -4,
+      1,
+      10,
+      1,
+      -4
+    ],
+    "inputs": [
+      {
+        "path": "assets/heroes/animations/runeblade/frames32-r1/frames/00.png",
+        "sha256": "5b490b7cbf78743f215f7b1f54e84b61b57f3d72d38ac163a9732aae290a7075"
+      },
+      {
+        "path": "assets/heroes/animations/runeblade/frames32-r1/frames/01.png",
+        "sha256": "9ee7b638abc57a7dd2778610dcb7eee28424dae71f6a3baf0084fd800bba8434"
+      },
+      {
+        "path": "assets/heroes/animations/runeblade/frames32-r1/frames/02.png",
+        "sha256": "31105795e3c19dffb602eecd6c80223d2d2124631546e5d84fcf8c13bbfccd4e"
+      },
+      {
+        "path": "assets/heroes/animations/runeblade/frames32-r1/frames/03.png",
+        "sha256": "3be08327ad89ab50bc2a06839d2f46adb6f0c9a50641526692a9c8ad07e2f1a6"
+      },
+      {
+        "path": "assets/heroes/animations/runeblade/frames32-r1/frames/02.png",
+        "sha256": "31105795e3c19dffb602eecd6c80223d2d2124631546e5d84fcf8c13bbfccd4e"
+      },
+      {
+        "path": "assets/heroes/animations/runeblade/frames32-r1/frames/01.png",
+        "sha256": "9ee7b638abc57a7dd2778610dcb7eee28424dae71f6a3baf0084fd800bba8434"
+      }
+    ],
+    "output": "apps/web/public/opening-assets/hero-runeblade-idle.webp",
+    "sha256": "b50352df1313c49f60a09549286c27c3f2751b134ad729a7198dd1273a575d8d"
+  },
+  {
+    "hero": "runesmith",
+    "sourceRevision": "frames32-r1",
+    "sequence": [
+      0,
+      1,
+      2,
+      3,
+      2,
+      1
+    ],
+    "durationMs": 1080,
+    "cellSize": 320,
+    "uniformCrop": [
+      121,
+      150,
+      395,
+      419
+    ],
+    "rootRegistrationX": [
+      0,
+      -1,
+      20,
+      19,
+      20,
+      -1
+    ],
+    "inputs": [
+      {
+        "path": "assets/heroes/animations/runesmith/frames32-r1/frames/00.png",
+        "sha256": "358cd515a430840eb796d7781cf6cefe062ced7f9db478a60b17031da44a5cc2"
+      },
+      {
+        "path": "assets/heroes/animations/runesmith/frames32-r1/frames/01.png",
+        "sha256": "8e94a139541570a34a962fb45236c683339c2c9d36a5f631a3959d3e82a9e1ce"
+      },
+      {
+        "path": "assets/heroes/animations/runesmith/frames32-r1/frames/02.png",
+        "sha256": "fafe1820e61936e648f79de6cde7e3b8a56896cc0c6ec76177a5282c74cfefc0"
+      },
+      {
+        "path": "assets/heroes/animations/runesmith/frames32-r1/frames/03.png",
+        "sha256": "de8eb713a531fb1350c0f195ccd6e3788c1b811c5a83a4a4a6581776db5efd7c"
+      },
+      {
+        "path": "assets/heroes/animations/runesmith/frames32-r1/frames/02.png",
+        "sha256": "fafe1820e61936e648f79de6cde7e3b8a56896cc0c6ec76177a5282c74cfefc0"
+      },
+      {
+        "path": "assets/heroes/animations/runesmith/frames32-r1/frames/01.png",
+        "sha256": "8e94a139541570a34a962fb45236c683339c2c9d36a5f631a3959d3e82a9e1ce"
+      }
+    ],
+    "output": "apps/web/public/opening-assets/hero-runesmith-idle.webp",
+    "sha256": "aa10ce3b0d13371228f24367d68fdaefe3c7ea92d39882926148f08363214616"
+  },
+  {
+    "hero": "ranger",
+    "sourceRevision": "frames32-r1",
+    "sequence": [
+      0,
+      1,
+      2,
+      3,
+      2,
+      1
+    ],
+    "durationMs": 1080,
+    "cellSize": 320,
+    "uniformCrop": [
+      152,
+      124,
+      436,
+      497
+    ],
+    "rootRegistrationX": [
+      0,
+      9,
+      28,
+      37,
+      28,
+      9
+    ],
+    "inputs": [
+      {
+        "path": "assets/heroes/animations/ranger/frames32-r1/frames/00.png",
+        "sha256": "65e2025bf5ad29afcc6063ce22147ae4a620eca745c76d3dbd53cfe30bc1c45c"
+      },
+      {
+        "path": "assets/heroes/animations/ranger/frames32-r1/frames/01.png",
+        "sha256": "cc8e588cbeb924cd0362972ff16de3c807f44c2e377ffd8d167b0d757d91698e"
+      },
+      {
+        "path": "assets/heroes/animations/ranger/frames32-r1/frames/02.png",
+        "sha256": "64c33272e42abbdd14daade85220cd9d4210b8e037d3aefb0a03f04da64ee12d"
+      },
+      {
+        "path": "assets/heroes/animations/ranger/frames32-r1/frames/03.png",
+        "sha256": "00301674d5b5b686c3802d54ff85306140b6b910fc507cd9f5f83b3da8155f3b"
+      },
+      {
+        "path": "assets/heroes/animations/ranger/frames32-r1/frames/02.png",
+        "sha256": "64c33272e42abbdd14daade85220cd9d4210b8e037d3aefb0a03f04da64ee12d"
+      },
+      {
+        "path": "assets/heroes/animations/ranger/frames32-r1/frames/01.png",
+        "sha256": "cc8e588cbeb924cd0362972ff16de3c807f44c2e377ffd8d167b0d757d91698e"
+      }
+    ],
+    "output": "apps/web/public/opening-assets/hero-ranger-idle.webp",
+    "sha256": "a41a2a9dd4af28aaeaf1f9f4b05345be6dd277f6986c5f4e08d1714c1e3eebd9"
+  }
+]
