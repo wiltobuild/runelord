@@ -1,0 +1,142 @@
+{
+  "schema": 1,
+  "id": "opening-character-court",
+  "status": "complete",
+  "outcome": "Choose animated Warlock before choosing pact; three upcoming heroes above framed tome stands with matching ornate controls and consistent magic colors.",
+  "authorization": "User requested new top bar, buttons and tome holders, corrected hover lights, and Warlock plus three coming-soon heroes above books, choosing character before pact.",
+  "contentIds": [
+    "warlock",
+    "runeblade",
+    "runesmith",
+    "ranger",
+    "fire",
+    "warband",
+    "pact"
+  ],
+  "owner": "runelord-technical-artist",
+  "integrationOwner": "runelord-producer",
+  "reviewer": "opening_qa",
+  "ownedPaths": [
+    "apps/web/src/OpeningScreen.tsx",
+    "apps/web/src/opening.css",
+    "apps/web/public/opening-assets/sanctum-frame.svg",
+    "apps/web/public/opening-assets/hero-runeblade.webp",
+    "apps/web/public/opening-assets/hero-runesmith.webp",
+    "apps/web/public/opening-assets/hero-ranger.webp"
+  ],
+  "dependencies": [],
+  "exclusions": [
+    "Combat rules",
+    "New hero gameplay",
+    "Hero source repainting",
+    "Deployment"
+  ],
+  "inputs": [
+    {
+      "path": "apps/web/src/OpeningScreen.tsx",
+      "sha256": "14da77b21a3f5c855bb989757e7dbb86716288d1b6e443b5c847e6c393da14bd"
+    },
+    {
+      "path": "apps/web/src/opening.css",
+      "sha256": "dbe6f08cc4a48860c0516c428804932a3a7c667659897f7093ee98e717ddf2e2"
+    },
+    {
+      "path": "apps/web/public/opening-assets/sanctum-frame.svg",
+      "sha256": "6948b10a015127f00470341da65c4e6b751e915e2240fdc36ef235bee90f229e"
+    },
+    {
+      "path": "apps/web/public/opening-assets/hero-runeblade.webp",
+      "sha256": "5e0ec59a75210732f2fafda7ca6f8c7d2c736f7d9f2ee1fe8eeb260239fcf512"
+    },
+    {
+      "path": "apps/web/public/opening-assets/hero-runesmith.webp",
+      "sha256": "8acde8cf1806d84d834706ca71b1e3bcecade85ac9bd7672ae4def87ada93745"
+    },
+    {
+      "path": "apps/web/public/opening-assets/hero-ranger.webp",
+      "sha256": "6fca396f0e0f5a2ccbbdf4578789f70f8be7e920af1d8583f1dbd29699b92975"
+    },
+    {
+      "path": "assets/heroes/references/runeblade/runeblade-base-r1.png",
+      "sha256": "adbd33fb14e91b761f355ffeb9966cb262aacca78429099ec09b0fab9faf84ef"
+    },
+    {
+      "path": "assets/heroes/references/runesmith/runesmith-base-r1.png",
+      "sha256": "769d160f774c58e54b619db419c88e693a9bcd0f9501aeceaece05f5325e5f48"
+    },
+    {
+      "path": "assets/heroes/references/ranger/ranger-base-r1.png",
+      "sha256": "9cd6ae4be65920528b211c20d2a1c12f68183b6bb6bb9ca6095b2ea23eb76912"
+    }
+  ],
+  "animation": null,
+  "acceptance": [
+    {
+      "check": "Character first then pact gating",
+      "status": "pass",
+      "evidence": [
+        {
+          "path": "design/production/evidence/opening-character-court/integration.md",
+          "sha256": "d2f09e11007ebab65cc26397a1ed523df36dc7d14c7a886809ab800b2a5ea011"
+        },
+        {
+          "path": "design/production/evidence/opening-character-court/qa.md",
+          "sha256": "aad2ca0472534b063634e45aaa97c8e64b8b22e21ee134d768475aff8dca9d1f"
+        }
+      ]
+    },
+    {
+      "check": "Upcoming heroes disabled and named",
+      "status": "pass",
+      "evidence": [
+        {
+          "path": "design/production/evidence/opening-character-court/integration.md",
+          "sha256": "d2f09e11007ebab65cc26397a1ed523df36dc7d14c7a886809ab800b2a5ea011"
+        },
+        {
+          "path": "design/production/evidence/opening-character-court/qa.md",
+          "sha256": "aad2ca0472534b063634e45aaa97c8e64b8b22e21ee134d768475aff8dca9d1f"
+        }
+      ]
+    },
+    {
+      "check": "Ornate UI and consistent hover light colors",
+      "status": "pass",
+      "evidence": [
+        {
+          "path": "design/production/evidence/opening-character-court/integration.md",
+          "sha256": "d2f09e11007ebab65cc26397a1ed523df36dc7d14c7a886809ab800b2a5ea011"
+        },
+        {
+          "path": "design/production/evidence/opening-character-court/qa.md",
+          "sha256": "aad2ca0472534b063634e45aaa97c8e64b8b22e21ee134d768475aff8dca9d1f"
+        }
+      ]
+    },
+    {
+      "check": "Preview interaction, responsive layout, browser errors and build",
+      "status": "pass",
+      "evidence": [
+        {
+          "path": "design/production/evidence/opening-character-court/integration.md",
+          "sha256": "d2f09e11007ebab65cc26397a1ed523df36dc7d14c7a886809ab800b2a5ea011"
+        },
+        {
+          "path": "design/production/evidence/opening-character-court/qa.md",
+          "sha256": "aad2ca0472534b063634e45aaa97c8e64b8b22e21ee134d768475aff8dca9d1f"
+        }
+      ]
+    }
+  ],
+  "checkpoint": {
+    "completed": [
+      "UI integration",
+      "Approved hero exports",
+      "Independent source QA",
+      "Parent browser verification and production build"
+    ],
+    "remaining": [],
+    "blockers": [],
+    "nextAction": "Review the local opening page."
+  }
+}

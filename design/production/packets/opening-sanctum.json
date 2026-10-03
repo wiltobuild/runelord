@@ -1,0 +1,131 @@
+{
+  "schema": 1,
+  "id": "opening-sanctum",
+  "status": "complete",
+  "outcome": "Animated fiery opening with three floating deck tomes, accurate card previews and a dedicated ritual score.",
+  "authorization": "User requested opening screen overhaul, previewing starter cards, distinct floating glowing spell tomes, stronger animated background and its own music.",
+  "contentIds": [
+    "fire",
+    "warband",
+    "pact"
+  ],
+  "owner": "runelord-technical-artist",
+  "integrationOwner": "runelord-producer",
+  "reviewer": "opening_qa",
+  "ownedPaths": [
+    "apps/web/src/OpeningScreen.tsx",
+    "apps/web/src/opening.css",
+    "apps/web/src/main.tsx",
+    "apps/web/src/music.ts",
+    "apps/web/public/opening-assets",
+    "assets/objects/starter-tome-fire",
+    "assets/objects/starter-tome-warband",
+    "assets/objects/starter-tome-pact",
+    "assets/audio/music/pact-sanctum-r1",
+    "tools/audio/render-pact-sanctum.mjs"
+  ],
+  "dependencies": [],
+  "exclusions": [
+    "Combat rules and save format",
+    "Deployment and commits",
+    "Warlock recolor revisions"
+  ],
+  "inputs": [
+    {
+      "path": "apps/web/src/OpeningScreen.tsx",
+      "sha256": "aa8b872120be31479cd684da76aebcf5e41717ffc34e0561b394b5c6f60e06cf"
+    },
+    {
+      "path": "apps/web/src/opening.css",
+      "sha256": "8c5fa997adc87f88de032755f4fe8d5d64b0e782ed5be2158c1611861ab55b11"
+    },
+    {
+      "path": "apps/web/src/main.tsx",
+      "sha256": "6a26d84601791effc5f7a0657cac59c4265c1aba6f0616b03e39e8b9bf89a8ec"
+    },
+    {
+      "path": "apps/web/src/music.ts",
+      "sha256": "aa70ba5268eab5069715b8d200802217f286bdcbc9c7bc737ad84d78334e682f"
+    },
+    {
+      "path": "apps/web/public/opening-assets/pact-sanctum.ogg",
+      "sha256": "7e1bab68ca55f088b39d342320b09489479c7c110d072911d677bb1aa1faedf0"
+    },
+    {
+      "path": "apps/web/public/opening-assets/tome-fire.webp",
+      "sha256": "429a023452c2bbae254b497ac481051ca05138224b0c7f027ede41a0aeed44b1"
+    },
+    {
+      "path": "apps/web/public/opening-assets/tome-pact.webp",
+      "sha256": "12863585621751cee4bed9f3429e294216154efae0af8f46e798888361693be7"
+    },
+    {
+      "path": "apps/web/public/opening-assets/tome-warband.webp",
+      "sha256": "60ef095a03cd25c97e0c314ec1c60ae1dd3b432d1e31c9fe4ce3428243e35a62"
+    }
+  ],
+  "animation": null,
+  "acceptance": [
+    {
+      "check": "Production TypeScript and Vite build",
+      "status": "pass",
+      "evidence": [
+        {
+          "path": "design/production/evidence/opening-sanctum/build.log",
+          "sha256": "21c13e671fc0b9cb58f176031e08b0eef2a91224bd23e5edf9f8d2f741e0c6fa"
+        }
+      ]
+    },
+    {
+      "check": "Three distinct animated tomes and hover glow",
+      "status": "pass",
+      "evidence": [
+        {
+          "path": "design/production/evidence/opening-sanctum/qa.md",
+          "sha256": "57053e71a93d9d42fe6b43025d16229e553f5e4f213b14ceda7e4ecb6dcc792d"
+        }
+      ]
+    },
+    {
+      "check": "Accurate deck previews and selection with keyboard support",
+      "status": "pass",
+      "evidence": [
+        {
+          "path": "design/production/evidence/opening-sanctum/qa.md",
+          "sha256": "57053e71a93d9d42fe6b43025d16229e553f5e4f213b14ceda7e4ecb6dcc792d"
+        }
+      ]
+    },
+    {
+      "check": "Responsive opening and preserved existing save",
+      "status": "pass",
+      "evidence": [
+        {
+          "path": "design/production/evidence/opening-sanctum/qa.md",
+          "sha256": "57053e71a93d9d42fe6b43025d16229e553f5e4f213b14ceda7e4ecb6dcc792d"
+        }
+      ]
+    },
+    {
+      "check": "Dedicated looping title score and music controls",
+      "status": "pass",
+      "evidence": [
+        {
+          "path": "design/production/evidence/opening-sanctum/qa.md",
+          "sha256": "57053e71a93d9d42fe6b43025d16229e553f5e4f213b14ceda7e4ecb6dcc792d"
+        }
+      ]
+    }
+  ],
+  "checkpoint": {
+    "completed": [
+      "Three tome source/export sets with provenance; gallery pending user art approval",
+      "Opening selection and accurate card previews",
+      "Dedicated 64-second score and crossfades",
+      "Independent browser QA and production build"
+    ],
+    "remaining": [],
+    "blockers": [],
+    "nextAction": "User can review the integrated opening locally; no deployment or commit requested."
+  }
+}
