@@ -56,3 +56,4 @@ html.mobile-game{background:#08060b;overscroll-behavior:none}
 /* Native modal dialogs occupy the top layer, so hide those too while rotated. */
 @media(orientation:portrait){.mobile-game dialog{visibility:hidden}.mobile-game .mobile-fullscreen{display:none}}
 @media(orientation:landscape){.mobile-game .pact-resume-space{display:block}}
+@media(orientation:landscape){.mobile-game .title .warlock-plaque .character-model .hero-canvas{transform:translate(-50%,-50%) scale(.36) translate(43px,-3px)}}

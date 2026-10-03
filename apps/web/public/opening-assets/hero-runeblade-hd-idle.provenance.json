@@ -1,0 +1,19 @@
+{
+  "source": "assets/heroes/animations/runeblade/frames32-r2/manifest.json",
+  "sourceHash": "e1d440631cf582bfbb60bd049b4ee65f1f4a8985e5acdfcc1e4f9f35a4d1068e",
+  "frameCount": 4,
+  "cellSize": 320,
+  "frameDurationMs": 350,
+  "bounds": {
+    "left": 173,
+    "top": 185,
+    "right": 742,
+    "bottom": 817
+  },
+  "uniformScale": 0.4423380726698262,
+  "translation": [
+    -42.369668246445485,
+    -61.390205371248044
+  ],
+  "approval": "User explicitly authorized the attached master and selection integration; generated animation pending art review."
+}

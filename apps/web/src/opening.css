@@ -64,3 +64,14 @@
 @media(max-width:760px){.title .topbar{display:flex;flex-direction:column;gap:0;padding:8px 12px;min-height:0}.title .topbar:after{display:none}.title .topbar:before{top:52px}.title .topbar .wordmark{width:min(400px,100%);height:100px}.title .topbar nav{max-width:none;justify-content:center;flex-wrap:nowrap;align-self:center}.pact-command-row{grid-template-columns:1fr 1fr;gap:10px;width:100%;padding-top:0}.pact-command-row .pact-heading{grid-column:1/-1;grid-row:1}.title .runic-action{min-height:85px;padding:20px 23px}.title .runic-action>span{font-size:20px}.title .runic-action small{font-size:7px}.pact-resume-space{display:none}}
 @media(max-width:390px){.title .runic-action>span{font-size:18px}.title .runic-action{padding:20px 19px}.title .topbar nav button{width:104px}.title .topbar nav input{width:65px}}
 .title .topbar{height:auto}.title .topbar .wordmark{background:url('/opening-assets/runic-button.webp') center/100% 100% no-repeat!important}
+/* Center the visible Seraph, not the transparent combat canvas. Its idle art
+   sits left of the combat root; preserve that root everywhere outside the menu. */
+.title .warlock-plaque .character-model .hero-canvas{transform:translate(-50%,-50%) scale(.65) translate(43px,-3px)}
+.title .warlock-plaque .hero-fallback{left:92.82px;top:0;width:314.35px;height:366.75px;object-fit:fill}
+@media(max-width:900px){.title .warlock-plaque .character-model .hero-canvas{transform:translate(-50%,-50%) scale(.54) translate(43px,-3px)}}
+@media(max-width:600px){.title .warlock-plaque .character-model .hero-canvas{transform:translate(-50%,-50%) scale(.58) translate(43px,-3px)}}
+@media(prefers-reduced-motion:reduce){.title .warlock-plaque .character-model .hero-canvas{background-size:314.35px 366.75px;background-position:92.82px 0}}
+
+/* The HD Runeblade uses four registered full-body frames. */
+.character-plaque[data-hero="runeblade"] .coming-hero-idle{filter:saturate(.92) brightness(.96)}
+.character-plaque[data-hero="runeblade"] .coming-hero-idle img{width:400%;animation:coming-hero-idle 1.4s steps(4,end) infinite}
