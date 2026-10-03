@@ -1,0 +1,8 @@
+{
+  "name": "Infernal Pact",
+  "cost": "1",
+  "type": "Power",
+  "rarity": "Uncommon",
+  "rules": "Whenever you lose HP on your turn, deal 5 damage to ALL enemies.",
+  "upgrade": "7 dmg"
+}

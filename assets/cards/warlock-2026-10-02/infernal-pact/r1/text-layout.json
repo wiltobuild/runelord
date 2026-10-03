@@ -1,0 +1,36 @@
+[
+  {
+    "region": "title",
+    "text": "Infernal Pact",
+    "lines": [
+      "Infernal Pact"
+    ],
+    "font_size": 88
+  },
+  {
+    "region": "cost",
+    "text": "1",
+    "lines": [
+      "1"
+    ],
+    "font_size": 110
+  },
+  {
+    "region": "type",
+    "text": "POWER · WARLOCK",
+    "lines": [
+      "POWER · WARLOCK"
+    ],
+    "font_size": 35
+  },
+  {
+    "region": "rules",
+    "text": "Whenever you lose HP on your turn, deal 5 damage to ALL enemies.",
+    "lines": [
+      "Whenever you lose HP on",
+      "your turn, deal 5 damage to",
+      "ALL enemies."
+    ],
+    "font_size": 54
+  }
+]
