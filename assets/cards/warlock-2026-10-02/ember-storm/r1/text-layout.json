@@ -1,0 +1,35 @@
+[
+  {
+    "region": "title",
+    "text": "Ember Storm",
+    "lines": [
+      "Ember Storm"
+    ],
+    "font_size": 85
+  },
+  {
+    "region": "cost",
+    "text": "X",
+    "lines": [
+      "X"
+    ],
+    "font_size": 110
+  },
+  {
+    "region": "type",
+    "text": "SKILL · WARLOCK",
+    "lines": [
+      "SKILL · WARLOCK"
+    ],
+    "font_size": 35
+  },
+  {
+    "region": "rules",
+    "text": "Apply 3 Scorch to ALL enemies X times.",
+    "lines": [
+      "Apply 3 Scorch to ALL",
+      "enemies X times."
+    ],
+    "font_size": 54
+  }
+]

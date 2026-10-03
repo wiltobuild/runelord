@@ -1,0 +1,8 @@
+{
+  "name": "Ember Storm",
+  "cost": "X",
+  "type": "Skill",
+  "rarity": "Uncommon",
+  "rules": "Apply 3 Scorch to ALL enemies X times.",
+  "upgrade": "4 per stack"
+}
