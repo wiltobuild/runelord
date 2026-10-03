@@ -1,0 +1,38 @@
+{
+  "idle": {
+    "unique_frames": 4,
+    "frame_audit": "pass",
+    "playback": "pass",
+    "user_approval": "pending"
+  },
+  "attack": {
+    "unique_frames": 8,
+    "frame_audit": "pass",
+    "playback": "pass",
+    "user_approval": "pending"
+  },
+  "hit": {
+    "unique_frames": 4,
+    "frame_audit": "pass",
+    "playback": "pass",
+    "user_approval": "pending"
+  },
+  "wounded_idle": {
+    "unique_frames": 4,
+    "frame_audit": "pass",
+    "playback": "pass",
+    "user_approval": "pending"
+  },
+  "cast": {
+    "unique_frames": 4,
+    "frame_audit": "pass",
+    "playback": "pass",
+    "user_approval": "pending"
+  },
+  "die": {
+    "unique_frames": 8,
+    "frame_audit": "pass",
+    "playback": "pass",
+    "user_approval": "pending"
+  }
+}

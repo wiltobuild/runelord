@@ -1,0 +1,7 @@
+{
+  "issues": [],
+  "verification_blockers": [],
+  "resolved": [
+    "Coordinator completed browser playback checks; child reviewer browser availability no longer blocks package."
+  ]
+}

@@ -1,0 +1,231 @@
+{
+  "contract_version": 2,
+  "character_id": "warlock",
+  "display_name": "Cinder-Sworn of the Ninth Pit",
+  "project": "Runelord",
+  "role": "Infernal summoner and fire caster",
+  "rig_family": "humanoid; separate winged humanoid Demon Form required",
+  "size_class": "hero tall lean",
+  "style_lock": {
+    "direction": "Gritty serious simplified cel-shaded 2D; existing Summon Imp card identity",
+    "runespeak_exemplar": "C:/Users/wilsh/.codex/skills/hd-fantasy-character/references/runespeak/knight.png",
+    "source_commit": "95416745414f87a1bdc6194b6fe177ad49de4a8c",
+    "approved_character_reference": null,
+    "identity_reference": "C:/Users/wilsh/Documents/Codex/2026-10-01/f/outputs/approved-template-card-samples/warlock-summon-imp.png",
+    "proportions": "Lean stylized humanoid with large cowl, hands and boots",
+    "permitted_extra_details": [
+      "two broad ember sigils",
+      "split robe for articulation",
+      "chunky boot cuffs"
+    ],
+    "palette": [
+      "oxblood",
+      "charcoal",
+      "muted bronze",
+      "ember orange",
+      "pale tan hands"
+    ],
+    "shading": "Broad angular material regions; hard cel shadows; no ink outline or texture noise",
+    "lighting": "Fixed upper-left graphic highlights",
+    "camera": "Shallow three-quarter facing right",
+    "unresolved_choices": [
+      "Base r1 needs user approval",
+      "Final Demon Form identity not designed",
+      "Arm sleeves and central robe need actual layered reconstruction"
+    ]
+  },
+  "base": {
+    "revision": "r1",
+    "asset_path": "warlock-base-r1.png",
+    "dimensions": [
+      1123,
+      1401
+    ],
+    "alpha_status": "True alpha verified: 1034267 zero-alpha pixels, 537001 partial-alpha pixels; sampled body interiors alpha 252–254, near-opaque. No checkerboard painted into asset."
+  },
+  "variants": [],
+  "approvals": [],
+  "construction": {
+    "status": "proposed only; flattened raster concept, no separated parts or usable rig exists",
+    "parts": [
+      "pelvis/root",
+      "abdomen",
+      "chest",
+      "head+cowl",
+      "separate near/far shoulder mantle panels",
+      "near/far upper arm",
+      "near/far elbow sleeve overlap",
+      "near/far forearm+cuff",
+      "near/far hands with alternate cast/guard poses",
+      "near/far thigh",
+      "near/far shin",
+      "near/far boot",
+      "rear robe panel",
+      "left/right front robe panels",
+      "central tabard",
+      "clasp",
+      "belt jewel",
+      "separate sigil glow overlay"
+    ],
+    "pivots": "Proposed pelvis, lower chest, neck base, shoulder sockets, elbows, wrists, hips, knees and ankles. Coordinates to be measured after approval and separation.",
+    "overlaps": "Generate hidden full limbs and torso under cloth. At least 12–18% segment-length overdraw at elbows/knees; do not stretch visible robe into hidden anatomy.",
+    "layer_order": "rear robe > far leg > far arm > pelvis/torso > near leg > front robe panels > near arm > mantle > head > hands > separate VFX",
+    "attachments": "Clasp to chest; belt jewel to pelvis; mantle panels to shoulders; robe panels at waist; cuffs to forearms; sigils mesh-attached to each robe panel.",
+    "articulation_limits": "Keep cowl/horns rigid to head. Use modest torso twist and two-angle hand swaps; add drawn corrective poses at high bend angles. Three robe panels get 2–3 bones each with bounded drag, no long chains."
+  },
+  "geometry": {
+    "coordinate_system": "pixels, top-left origin, x right/y down",
+    "facing": "right",
+    "pixels_per_unit": null,
+    "base_visible_bounds": [
+      33,
+      10,
+      1078,
+      1380
+    ],
+    "root_ground_anchor": {
+      "status": "proposed",
+      "x": 600,
+      "y": 1380
+    },
+    "frame_canvas": "Unresolved until motion bounds are verified; base has only 10px top margin, so animation source canvas must be expanded without scaling individual poses."
+  },
+  "animations": [
+    {
+      "state": "idle",
+      "applicability": "human and Demon Form",
+      "loop_mode": "loop",
+      "timing_target_ms": 1600,
+      "intended_action": "breath and planted weight transfer; wing settle on Demon Form",
+      "status": "planned, not generated"
+    },
+    {
+      "state": "attack",
+      "applicability": "human and Demon Form",
+      "loop_mode": "one-shot",
+      "timing_target_ms": 350,
+      "intended_action": "Firebolt release at ~140ms; demon claw contact ~150ms; return idle",
+      "status": "planned, not generated"
+    },
+    {
+      "state": "hit",
+      "applicability": "human and Demon Form",
+      "loop_mode": "one-shot",
+      "timing_target_ms": 250,
+      "intended_action": "directional recoil; route back to idle/wounded_idle",
+      "status": "planned, not generated"
+    },
+    {
+      "state": "wounded_idle",
+      "applicability": "human and Demon Form",
+      "loop_mode": "loop",
+      "timing_target_ms": 1900,
+      "intended_action": "persistent bent low-health posture and shallow breath",
+      "status": "planned, not generated"
+    },
+    {
+      "state": "die",
+      "applicability": "human and Demon Form",
+      "loop_mode": "one-shot",
+      "timing_target_ms": 850,
+      "intended_action": "collapse or demon ember dissolution; terminal pose never loops",
+      "status": "planned, not generated"
+    },
+    {
+      "state": "cast",
+      "applicability": "human and Demon Form",
+      "loop_mode": "one-shot",
+      "timing_target_ms": 450,
+      "intended_action": "prepare and release at ~200ms; standard summons/hexes; VFX independent",
+      "status": "planned, not generated"
+    },
+    {
+      "state": "guard",
+      "applicability": "human and Demon Form",
+      "loop_mode": "entry/hold/exit",
+      "timing_target_ms": 350,
+      "intended_action": "Ward of Ash brace; stable palms, independent shield VFX",
+      "status": "planned, not generated"
+    },
+    {
+      "state": "spawn",
+      "applicability": "human and Demon Form",
+      "loop_mode": "one-shot",
+      "timing_target_ms": 600,
+      "intended_action": "arrival to idle; hero arrival not minion summon",
+      "status": "planned, not generated"
+    },
+    {
+      "state": "victory",
+      "applicability": "human and Demon Form",
+      "loop_mode": "one-shot",
+      "timing_target_ms": 900,
+      "intended_action": "restrained hand-close and resolved pose",
+      "status": "planned, not generated"
+    },
+    {
+      "state": "command",
+      "applicability": "human and Demon Form",
+      "loop_mode": "one-shot",
+      "timing_target_ms": 350,
+      "intended_action": "short pointed summon command; command marker ~140ms",
+      "status": "planned, not generated"
+    },
+    {
+      "state": "pact",
+      "applicability": "human and Demon Form",
+      "loop_mode": "one-shot",
+      "timing_target_ms": 450,
+      "intended_action": "clench and stern recoil; HP-cost event ~170ms",
+      "status": "planned, not generated"
+    },
+    {
+      "state": "greater_summoning",
+      "applicability": "human and Demon Form",
+      "loop_mode": "one-shot",
+      "timing_target_ms": 800,
+      "intended_action": "two-arm ritual telegraph, release ~350ms; archdemon separate asset",
+      "status": "planned, not generated"
+    },
+    {
+      "state": "transform_in",
+      "applicability": "human to Demon Form",
+      "loop_mode": "one-shot",
+      "timing_target_ms": 900,
+      "intended_action": "horn/cowl read maintained, robe burn VFX separates, wing silhouette unfolds; form_swap marker at ~450ms",
+      "status": "planned, not generated"
+    },
+    {
+      "state": "transform_out",
+      "applicability": "Demon Form to human",
+      "loop_mode": "one-shot",
+      "timing_target_ms": 750,
+      "intended_action": "wing retract, ember shed, human returns in Spent posture; form_swap ~400ms",
+      "status": "planned, not generated"
+    }
+  ],
+  "output": {
+    "destination": "C:/Users/wilsh/Documents/Codex/2026-10-01/new-chat-2/outputs/heroes/warlock",
+    "chosen_format": "Proposed articulated cutout with deformable cloth and corrective frame swaps, for smoother hero motion",
+    "preview_format": "PNG base and 96px light/dark check; future animated WebP/HTML preview",
+    "runtime_target": "PixiJS per project plan; not integrated"
+  },
+  "source_assets": [
+    "warlock-base-r1.png",
+    "C:/Users/wilsh/Documents/Codex/2026-10-01/f/outputs/approved-template-card-samples/warlock-summon-imp.png",
+    "C:/Users/wilsh/Documents/Codex/2026-10-01/f/outputs/card-templates/warlock.png",
+    "C:/Users/wilsh/.codex/skills/hd-fantasy-character/references/runespeak/knight.png"
+  ],
+  "generation_prompts": [
+    "prompt-r1.txt"
+  ],
+  "limitations": [
+    "Base approval pending. No variants or animations created.",
+    "No existing approval evidence was inferred from card sample directory names.",
+    "Demon Form is a separate required model and state set, not one of the three cosmetic variants.",
+    "Smooth animation is a construction plan only; no performance or motion-quality claims are proven.",
+    "Base margin near horns is insufficient for motion; expanded common motion canvas is mandatory.",
+    "96px visual inspection: horned cowl, ember clasp, pale hand and split boot silhouette readable; fine sigil and face detail naturally diminish. Some charcoal planes merge on dark background, but oxblood outer planes retain silhouette."
+  ],
+  "status": "base_pending"
+}

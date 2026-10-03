@@ -1,0 +1,48 @@
+{
+  "frames": 32,
+  "distinct_frame_files": 32,
+  "canvas": [
+    512,
+    512
+  ],
+  "edge_candidates": [
+    24,
+    25
+  ],
+  "source_cell_sizes": [
+    [
+      443,
+      367
+    ],
+    [
+      443,
+      443
+    ],
+    [
+      443,
+      444
+    ],
+    [
+      443,
+      520
+    ],
+    [
+      444,
+      367
+    ],
+    [
+      444,
+      443
+    ],
+    [
+      444,
+      444
+    ],
+    [
+      444,
+      520
+    ]
+  ],
+  "all_have_alpha": true,
+  "artwork_edits": "none; extraction and padding only"
+}

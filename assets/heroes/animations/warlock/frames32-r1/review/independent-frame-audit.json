@@ -1,0 +1,435 @@
+{
+  "hero": "warlock",
+  "revision": "frames32-r1",
+  "reviewer": "runeblade_frames independent builder agent (did not generate Warlock)",
+  "date": "2026-10-02",
+  "approved_source_sha256": "3585512c985b250f1da8a159f436e82dc673059269bd1e54cfad625b01e28f02",
+  "approval_verified": "Approved in current ledger",
+  "method": "Viewed all16 paired native-size frame boards,32frames, each on light and dark beside approved master. Read technical bounds. Static frame audit only; playback and96px audit remain with coordinator.",
+  "verdict": "pass_static_frame_review",
+  "blocking_repairs": [],
+  "observations": [
+    "Small costume contour variations are consistent with independent whole-character drawings.",
+    "Attack is restrained hand gesture, without large effects; satisfies simple modest pose scope.",
+    "Frames24/25 alpha bounds touch bottom due nearly transparent residue; opaque content remains within y480."
+  ],
+  "frames": [
+    {
+      "frame": 0,
+      "board": "boards/00-01.png",
+      "identity": "pass",
+      "anatomy": "pass",
+      "whole_figure": "pass",
+      "opaque_clipping": "none",
+      "backgrounds_reviewed": [
+        "light",
+        "dark"
+      ],
+      "note": "Neutral guard; horns, mask and brooch preserved."
+    },
+    {
+      "frame": 1,
+      "board": "boards/00-01.png",
+      "identity": "pass",
+      "anatomy": "pass",
+      "whole_figure": "pass",
+      "opaque_clipping": "none",
+      "backgrounds_reviewed": [
+        "light",
+        "dark"
+      ],
+      "note": "Subtle breathing variation; intact silhouette."
+    },
+    {
+      "frame": 2,
+      "board": "boards/02-03.png",
+      "identity": "pass",
+      "anatomy": "pass",
+      "whole_figure": "pass",
+      "opaque_clipping": "none",
+      "backgrounds_reviewed": [
+        "light",
+        "dark"
+      ],
+      "note": "Head/shoulder breathing shift; identity preserved."
+    },
+    {
+      "frame": 3,
+      "board": "boards/02-03.png",
+      "identity": "pass",
+      "anatomy": "pass",
+      "whole_figure": "pass",
+      "opaque_clipping": "none",
+      "backgrounds_reviewed": [
+        "light",
+        "dark"
+      ],
+      "note": "Returns toward guard; intact silhouette."
+    },
+    {
+      "frame": 4,
+      "board": "boards/04-05.png",
+      "identity": "pass",
+      "anatomy": "pass",
+      "whole_figure": "pass",
+      "opaque_clipping": "none",
+      "backgrounds_reviewed": [
+        "light",
+        "dark"
+      ],
+      "note": "Backward recoil reads clearly."
+    },
+    {
+      "frame": 5,
+      "board": "boards/04-05.png",
+      "identity": "pass",
+      "anatomy": "pass",
+      "whole_figure": "pass",
+      "opaque_clipping": "none",
+      "backgrounds_reviewed": [
+        "light",
+        "dark"
+      ],
+      "note": "Forward brace reads clearly."
+    },
+    {
+      "frame": 6,
+      "board": "boards/06-07.png",
+      "identity": "pass",
+      "anatomy": "pass",
+      "whole_figure": "pass",
+      "opaque_clipping": "none",
+      "backgrounds_reviewed": [
+        "light",
+        "dark"
+      ],
+      "note": "Arms lower during recovery."
+    },
+    {
+      "frame": 7,
+      "board": "boards/06-07.png",
+      "identity": "pass",
+      "anatomy": "pass",
+      "whole_figure": "pass",
+      "opaque_clipping": "none",
+      "backgrounds_reviewed": [
+        "light",
+        "dark"
+      ],
+      "note": "Guard restored."
+    },
+    {
+      "frame": 8,
+      "board": "boards/08-09.png",
+      "identity": "pass",
+      "anatomy": "pass",
+      "whole_figure": "pass",
+      "opaque_clipping": "none",
+      "backgrounds_reviewed": [
+        "light",
+        "dark"
+      ],
+      "note": "Attack anticipation guard."
+    },
+    {
+      "frame": 9,
+      "board": "boards/08-09.png",
+      "identity": "pass",
+      "anatomy": "pass",
+      "whole_figure": "pass",
+      "opaque_clipping": "none",
+      "backgrounds_reviewed": [
+        "light",
+        "dark"
+      ],
+      "note": "Hand draws toward chest."
+    },
+    {
+      "frame": 10,
+      "board": "boards/10-11.png",
+      "identity": "pass",
+      "anatomy": "pass",
+      "whole_figure": "pass",
+      "opaque_clipping": "none",
+      "backgrounds_reviewed": [
+        "light",
+        "dark"
+      ],
+      "note": "Compressed preparation pose."
+    },
+    {
+      "frame": 11,
+      "board": "boards/10-11.png",
+      "identity": "pass",
+      "anatomy": "pass",
+      "whole_figure": "pass",
+      "opaque_clipping": "none",
+      "backgrounds_reviewed": [
+        "light",
+        "dark"
+      ],
+      "note": "Forward hand extension reads as release."
+    },
+    {
+      "frame": 12,
+      "board": "boards/12-13.png",
+      "identity": "pass",
+      "anatomy": "pass",
+      "whole_figure": "pass",
+      "opaque_clipping": "none",
+      "backgrounds_reviewed": [
+        "light",
+        "dark"
+      ],
+      "note": "Extended attack follow-through."
+    },
+    {
+      "frame": 13,
+      "board": "boards/12-13.png",
+      "identity": "pass",
+      "anatomy": "pass",
+      "whole_figure": "pass",
+      "opaque_clipping": "none",
+      "backgrounds_reviewed": [
+        "light",
+        "dark"
+      ],
+      "note": "Retracts hand toward chest."
+    },
+    {
+      "frame": 14,
+      "board": "boards/14-15.png",
+      "identity": "pass",
+      "anatomy": "pass",
+      "whole_figure": "pass",
+      "opaque_clipping": "none",
+      "backgrounds_reviewed": [
+        "light",
+        "dark"
+      ],
+      "note": "Recovery to neutral."
+    },
+    {
+      "frame": 15,
+      "board": "boards/14-15.png",
+      "identity": "pass",
+      "anatomy": "pass",
+      "whole_figure": "pass",
+      "opaque_clipping": "none",
+      "backgrounds_reviewed": [
+        "light",
+        "dark"
+      ],
+      "note": "Guard restored."
+    },
+    {
+      "frame": 16,
+      "board": "boards/16-17.png",
+      "identity": "pass",
+      "anatomy": "pass",
+      "whole_figure": "pass",
+      "opaque_clipping": "none",
+      "backgrounds_reviewed": [
+        "light",
+        "dark"
+      ],
+      "note": "Hand holds abdomen; wounded stance clear."
+    },
+    {
+      "frame": 17,
+      "board": "boards/16-17.png",
+      "identity": "pass",
+      "anatomy": "pass",
+      "whole_figure": "pass",
+      "opaque_clipping": "none",
+      "backgrounds_reviewed": [
+        "light",
+        "dark"
+      ],
+      "note": "Wounded breathing variation."
+    },
+    {
+      "frame": 18,
+      "board": "boards/18-19.png",
+      "identity": "pass",
+      "anatomy": "pass",
+      "whole_figure": "pass",
+      "opaque_clipping": "none",
+      "backgrounds_reviewed": [
+        "light",
+        "dark"
+      ],
+      "note": "Hunched wounded variation."
+    },
+    {
+      "frame": 19,
+      "board": "boards/18-19.png",
+      "identity": "pass",
+      "anatomy": "pass",
+      "whole_figure": "pass",
+      "opaque_clipping": "none",
+      "backgrounds_reviewed": [
+        "light",
+        "dark"
+      ],
+      "note": "Wounded pose recovers slightly."
+    },
+    {
+      "frame": 20,
+      "board": "boards/20-21.png",
+      "identity": "pass",
+      "anatomy": "pass",
+      "whole_figure": "pass",
+      "opaque_clipping": "none",
+      "backgrounds_reviewed": [
+        "light",
+        "dark"
+      ],
+      "note": "Casting anticipation."
+    },
+    {
+      "frame": 21,
+      "board": "boards/20-21.png",
+      "identity": "pass",
+      "anatomy": "pass",
+      "whole_figure": "pass",
+      "opaque_clipping": "none",
+      "backgrounds_reviewed": [
+        "light",
+        "dark"
+      ],
+      "note": "Both hands draw inward."
+    },
+    {
+      "frame": 22,
+      "board": "boards/22-23.png",
+      "identity": "pass",
+      "anatomy": "pass",
+      "whole_figure": "pass",
+      "opaque_clipping": "none",
+      "backgrounds_reviewed": [
+        "light",
+        "dark"
+      ],
+      "note": "Both palms open; angular fingers remain readable but stylization strongest here."
+    },
+    {
+      "frame": 23,
+      "board": "boards/22-23.png",
+      "identity": "pass",
+      "anatomy": "pass",
+      "whole_figure": "pass",
+      "opaque_clipping": "none",
+      "backgrounds_reviewed": [
+        "light",
+        "dark"
+      ],
+      "note": "Recovery to guard."
+    },
+    {
+      "frame": 24,
+      "board": "boards/24-25.png",
+      "identity": "pass",
+      "anatomy": "pass",
+      "whole_figure": "pass",
+      "opaque_clipping": "none",
+      "backgrounds_reviewed": [
+        "light",
+        "dark"
+      ],
+      "note": "Unsteady standing collapse start; no opaque clipping."
+    },
+    {
+      "frame": 25,
+      "board": "boards/24-25.png",
+      "identity": "pass",
+      "anatomy": "pass",
+      "whole_figure": "pass",
+      "opaque_clipping": "none",
+      "backgrounds_reviewed": [
+        "light",
+        "dark"
+      ],
+      "note": "Head/torso drop; no opaque clipping."
+    },
+    {
+      "frame": 26,
+      "board": "boards/26-27.png",
+      "identity": "pass",
+      "anatomy": "pass",
+      "whole_figure": "pass",
+      "opaque_clipping": "none",
+      "backgrounds_reviewed": [
+        "light",
+        "dark"
+      ],
+      "note": "Kneeling collapse; legs plausibly occluded by robe."
+    },
+    {
+      "frame": 27,
+      "board": "boards/26-27.png",
+      "identity": "pass",
+      "anatomy": "pass",
+      "whole_figure": "pass",
+      "opaque_clipping": "none",
+      "backgrounds_reviewed": [
+        "light",
+        "dark"
+      ],
+      "note": "Hands contact ground."
+    },
+    {
+      "frame": 28,
+      "board": "boards/28-29.png",
+      "identity": "pass",
+      "anatomy": "pass",
+      "whole_figure": "pass",
+      "opaque_clipping": "none",
+      "backgrounds_reviewed": [
+        "light",
+        "dark"
+      ],
+      "note": "Sideward supported fall."
+    },
+    {
+      "frame": 29,
+      "board": "boards/28-29.png",
+      "identity": "pass",
+      "anatomy": "pass",
+      "whole_figure": "pass",
+      "opaque_clipping": "none",
+      "backgrounds_reviewed": [
+        "light",
+        "dark"
+      ],
+      "note": "Torso lowered further."
+    },
+    {
+      "frame": 30,
+      "board": "boards/30-31.png",
+      "identity": "pass",
+      "anatomy": "pass",
+      "whole_figure": "pass",
+      "opaque_clipping": "none",
+      "backgrounds_reviewed": [
+        "light",
+        "dark"
+      ],
+      "note": "Side-lying terminal rest; complete horn, hands and boots."
+    },
+    {
+      "frame": 31,
+      "board": "boards/30-31.png",
+      "identity": "pass",
+      "anatomy": "pass",
+      "whole_figure": "pass",
+      "opaque_clipping": "none",
+      "backgrounds_reviewed": [
+        "light",
+        "dark"
+      ],
+      "note": "Settled side rest; terminal silhouette intact."
+    }
+  ],
+  "approval": "New content remains pending user approval; this review is not user design approval."
+}

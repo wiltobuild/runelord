@@ -1,0 +1,11 @@
+{
+  "approved": true,
+  "character_id": "warlock",
+  "asset": "warlock-base-r1.png",
+  "sha256": "3585512C985B250F1DA8A159F436E82DC673059269BD1E54CFAD625B01E28F02",
+  "approval_text": "these are all good save them as refrences in runelord. Then create a custom skill for them that will animate them far more extensively",
+  "revision": "r1",
+  "authorization": "Animate these four approved bases directly with the new custom hero skill; no cosmetic variants required by this request.",
+  "stage": "base",
+  "approval_date": "2026-10-01"
+}
