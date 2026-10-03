@@ -1,0 +1,37 @@
+{
+  "duration": 24,
+  "fps": 24,
+  "size": [
+    1920,
+    1080
+  ],
+  "loop": true,
+  "method": "Layered still artwork, source character idle poses, cyclic camera/parallax, procedural fog, embers, perspective seal and light pulses; no generated full-motion footage.",
+  "beats": [
+    {
+      "time": 0,
+      "visual": "Fortress and Warlock reveal; first fire pulse"
+    },
+    {
+      "time": 6,
+      "visual": "Ember ascent and second fire pulse"
+    },
+    {
+      "time": 12,
+      "visual": "Distant demon reaches maximum visibility; apex fire pulse"
+    },
+    {
+      "time": 18,
+      "visual": "Return phrase; smoke recedes into loop"
+    }
+  ],
+  "sourceArt": [
+    "assets/environments/menu-infernal-court/r1/source.png",
+    "apps/web/public/game-assets/warlock/frames32-r1/0.webp",
+    "apps/web/public/game-assets/actors/demon-lord/fire-null/frames/00.webp"
+  ],
+  "runtime": "apps/web/public/opening-assets/oath-intro.mp4",
+  "silentSource": "assets/cinematics/oath-intro/r1/oath-intro-silent.mp4",
+  "score": "apps/web/public/opening-assets/oath-intro-score.wav",
+  "sha256": "4053d9c5021fbfe2fe82286f2ed6ffeee3fa6b1c0b6558ea5439e65b7bfddc14"
+}

@@ -1,0 +1,109 @@
+{
+  "schema": 1,
+  "id": "oath-intro",
+  "status": "complete",
+  "outcome": "Looping cinematic title screen with synchronized original score; Press Start opens character/pact selection.",
+  "authorization": "User requested epic intro looping until Start, then character/pact selection, animated still-image elements and a matching score.",
+  "contentIds": [
+    "oath-intro"
+  ],
+  "owner": "root",
+  "integrationOwner": "root",
+  "reviewer": "opening_qa",
+  "ownedPaths": [
+    "apps/web/src/IntroCinematic.tsx",
+    "apps/web/src/intro.css",
+    "apps/web/src/main.tsx",
+    "tools/cinematic/render-oath-intro.mjs",
+    "tools/cinematic/mux-oath-intro.mjs",
+    "tools/audio/render-oath-intro.mjs",
+    "apps/web/public/opening-assets/oath-intro.mp4"
+  ],
+  "dependencies": [],
+  "exclusions": [
+    "No combat/save changes",
+    "No commit/push/deploy"
+  ],
+  "inputs": [
+    {
+      "path": "apps/web/src/IntroCinematic.tsx",
+      "sha256": "242a56be4a4a698412144734eabfa8215c857a8e5e6cbef66a4a9b8d2dc7a0f6"
+    },
+    {
+      "path": "apps/web/src/intro.css",
+      "sha256": "af389abfca2e72eda65a2a1a7ff8749996237e6cb10812a01e9901598547db80"
+    },
+    {
+      "path": "apps/web/src/main.tsx",
+      "sha256": "7c6b18bb603c31731b6b2e5ce651fc13e32552580aba630cf2b85b22b76b36ea"
+    },
+    {
+      "path": "tools/cinematic/render-oath-intro.mjs",
+      "sha256": "801a455bb63dc273c68c27a5e5db2c8745f7a56b6be27953c45eccc08c613de4"
+    },
+    {
+      "path": "tools/cinematic/mux-oath-intro.mjs",
+      "sha256": "b308ffb6099b768d1088136d96a21781a3c83064aaff3d678cf6d9da7d6d1eaf"
+    },
+    {
+      "path": "tools/audio/render-oath-intro.mjs",
+      "sha256": "8ed7ec9e6ea5c2837956ed5288122fe1ab3cfd0733b501df62495274be8c0fce"
+    },
+    {
+      "path": "apps/web/public/opening-assets/oath-intro.mp4",
+      "sha256": "4053d9c5021fbfe2fe82286f2ed6ffeee3fa6b1c0b6558ea5439e65b7bfddc14"
+    }
+  ],
+  "animation": null,
+  "animationMethod": "Layered still-image motion, existing character idle frames, particles, fog, seals and cyclic camera;24s24fps1080p MP4.",
+  "acceptance": [
+    {
+      "check": "Cinematic playback, controls and selection transition",
+      "status": "pass",
+      "evidence": [
+        {
+          "path": "design/production/evidence/oath-intro/runtime.json",
+          "sha256": "7bb368d0576d2e8c94e55636822cf41023b37a6a9ce004f96b67eb6b1aae62ab"
+        },
+        {
+          "path": "design/production/evidence/oath-intro/independent-qa.md",
+          "sha256": "940fb1bb1e89e9e2d94f2ffa8f83b6d02ebcc14d515e292f9556e329b280d206"
+        },
+        {
+          "path": "design/production/evidence/oath-intro/title-screen.png",
+          "sha256": "eca4cfba01192781beeea78f666197106fd0c9d39ba3077f4c675deaab77892d"
+        }
+      ]
+    },
+    {
+      "check": "Build and independent source/media decode verification",
+      "status": "pass",
+      "evidence": [
+        {
+          "path": "design/production/evidence/oath-intro/runtime.json",
+          "sha256": "7bb368d0576d2e8c94e55636822cf41023b37a6a9ce004f96b67eb6b1aae62ab"
+        },
+        {
+          "path": "design/production/evidence/oath-intro/independent-qa.md",
+          "sha256": "940fb1bb1e89e9e2d94f2ffa8f83b6d02ebcc14d515e292f9556e329b280d206"
+        },
+        {
+          "path": "design/production/evidence/oath-intro/title-screen.png",
+          "sha256": "eca4cfba01192781beeea78f666197106fd0c9d39ba3077f4c675deaab77892d"
+        }
+      ]
+    }
+  ],
+  "checkpoint": {
+    "completed": [
+      "Rendered cinematic",
+      "Composed synchronized score",
+      "Integrated title screen",
+      "Independent review and browser verification",
+      "Submitted gallery previews pending approval"
+    ],
+    "remaining": [],
+    "blockers": [],
+    "nextAction": "Play local intro; enable cinematic sound."
+  }
+}

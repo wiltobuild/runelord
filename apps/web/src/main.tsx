@@ -1,3 +1,4 @@
+import { IntroCinematic } from "./IntroCinematic";
 import { OpeningScreen } from "./OpeningScreen";
 import { GuardAura } from "./GuardAura";
 import { useEffect, useState, useRef, type CSSProperties } from "react";
@@ -94,6 +95,7 @@ function CardView({
 function App({ assets }: { assets: Assets }) {
   const hudScale = useHudScale();
   const [inspection, setInspection] = useState<"brand" | "draw" | "discard" | "items" | "powers" | null>(null);
+  const [introStarted, setIntroStarted] = useState(false);
   const [starterDeck, setStarterDeck] = useState<StarterDeckId>("fire");
   const [saved, setSaved] = useState<State | null>(readSave),
     [game, setState] = useState<State | null>(null),
@@ -261,6 +263,7 @@ function App({ assets }: { assets: Assets }) {
       );
     } else act({ type: "play", uid: c.uid, dismiss });
   };
+  if (!state && !introStarted) return <IntroCinematic volume={volume} onVolume={v => { setVolume(v); score.setVolume(v); }} onStart={() => { setIntroStarted(true); void music(); }} />;
   return (
     <main
       className={state ? "battle-ui" : "title"}
@@ -328,7 +331,7 @@ function App({ assets }: { assets: Assets }) {
         </nav>
       </header>
       {!state ? (
-        <OpeningScreen assets={assets} selected={starterDeck} onSelect={setStarterDeck} onBegin={() => start()} onResume={saved ? () => start(true) : undefined} seed={seed} onSeed={setSeed} awaken={() => { if (!musicActive) void music(); }} />
+        <OpeningScreen assets={assets} selected={starterDeck} onSelect={setStarterDeck} onBegin={() => start()} onResume={saved ? () => start(true) : undefined} awaken={() => { if (!musicActive) void music(); }} />
       ) : (
         <>
           <div className="runbar">
@@ -674,7 +677,7 @@ function App({ assets }: { assets: Assets }) {
           )}
         </>
       )}
-      <footer>
+      {state && <footer>
         <span>
           RUNELORD <i>◆</i> CINDER & OATH
         </span>
@@ -686,7 +689,7 @@ function App({ assets }: { assets: Assets }) {
         <span>
           {state ? "AUTOSAVED LOCALLY" : "WARLOCK PLAYABLE DEMO · 0.1"}
         </span>
-      </footer>
+      </footer>}
       {inspection && inspection !== "items" && inspection !== "powers" && state && <div className="overlay" onClick={() => setInspection(null)}>
         <section className={`help-panel inspection-panel ${inspection === "brand" ? "item-inspection" : "pile-inspection"}`} role="dialog" aria-modal="true" aria-label={inspection === "brand" ? "Brand of the Pit" : `${inspection} pile`} onClick={e => e.stopPropagation()}>
           <button className="close" autoFocus onClick={() => setInspection(null)}>Close ×</button>
