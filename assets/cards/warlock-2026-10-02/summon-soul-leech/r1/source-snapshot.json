@@ -1,0 +1,8 @@
+{
+  "name": "Summon Soul Leech",
+  "cost": "1 +1🔥",
+  "type": "Skill",
+  "rarity": "Uncommon",
+  "rules": "Summon a Soul Leech.",
+  "upgrade": "+2 Power"
+}
