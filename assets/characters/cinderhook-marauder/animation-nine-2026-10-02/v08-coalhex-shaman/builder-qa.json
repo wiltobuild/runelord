@@ -1,0 +1,308 @@
+{
+  "variantId": "v08-coalhex-shaman",
+  "revision": "r1",
+  "manifestSha256": "d73eff62b7e91d2b143ad12374e60524faf9bca24dae8c4f9ad2430f548f968c",
+  "reviewSha256": "308956e171ac2a8e3502e1ce55d1a60289e5afeea81ce06ccf336484b0281dfa",
+  "technicalPass": true,
+  "errors": [],
+  "frames": [
+    {
+      "file": "frames/00.png",
+      "sha256": "056cced942203b5d365d1d65ce9379652deca4ffc6886400a739225e560645e3",
+      "bbox": [
+        130,
+        165,
+        394,
+        474
+      ],
+      "dimensions": [
+        494,
+        494
+      ],
+      "alpha": [
+        0,
+        255
+      ]
+    },
+    {
+      "file": "frames/01.png",
+      "sha256": "f263bc9f02b5e705a821194178c4fa683e61d3b36c7e5118648040923ac9da3c",
+      "bbox": [
+        107,
+        172,
+        375,
+        474
+      ],
+      "dimensions": [
+        494,
+        494
+      ],
+      "alpha": [
+        0,
+        255
+      ]
+    },
+    {
+      "file": "frames/02.png",
+      "sha256": "62ab2c22af1d82604d6b6f64968497184445f8809676196945aca5853569f775",
+      "bbox": [
+        98,
+        181,
+        379,
+        474
+      ],
+      "dimensions": [
+        494,
+        494
+      ],
+      "alpha": [
+        0,
+        255
+      ]
+    },
+    {
+      "file": "frames/03.png",
+      "sha256": "9b180a92eac95a77dc44691d235e1592bf3c5c03c63e0f2cd5857947d3d83c31",
+      "bbox": [
+        90,
+        182,
+        385,
+        474
+      ],
+      "dimensions": [
+        494,
+        494
+      ],
+      "alpha": [
+        0,
+        255
+      ]
+    },
+    {
+      "file": "frames/04.png",
+      "sha256": "5648e7cc9b554a944afcd7cf2d0245c679ca923b26658f755ab4d065c803961a",
+      "bbox": [
+        123,
+        178,
+        418,
+        474
+      ],
+      "dimensions": [
+        494,
+        494
+      ],
+      "alpha": [
+        0,
+        255
+      ]
+    },
+    {
+      "file": "frames/05.png",
+      "sha256": "a59f9b9b93a394035a71f04ccb7e5989aed8e04b36375fdc246fef3db77fd365",
+      "bbox": [
+        133,
+        148,
+        375,
+        474
+      ],
+      "dimensions": [
+        494,
+        494
+      ],
+      "alpha": [
+        0,
+        255
+      ]
+    },
+    {
+      "file": "frames/06.png",
+      "sha256": "756b38700127050036ae43cb7fe857310c44bea500f8191d07e161a4d20e3345",
+      "bbox": [
+        50,
+        253,
+        438,
+        474
+      ],
+      "dimensions": [
+        494,
+        494
+      ],
+      "alpha": [
+        0,
+        255
+      ]
+    },
+    {
+      "file": "frames/07.png",
+      "sha256": "485b0e6ab5677dbf882c1e3411b50e4e6a66f8af3a684c1853c151ae5ae8285f",
+      "bbox": [
+        122,
+        179,
+        382,
+        474
+      ],
+      "dimensions": [
+        494,
+        494
+      ],
+      "alpha": [
+        0,
+        255
+      ]
+    },
+    {
+      "file": "frames/08.png",
+      "sha256": "7069457dce6e76e87cb962df253ce29725f5699bb0b48fbe8b58bce051139078",
+      "bbox": [
+        157,
+        167,
+        410,
+        474
+      ],
+      "dimensions": [
+        494,
+        494
+      ],
+      "alpha": [
+        0,
+        255
+      ]
+    },
+    {
+      "file": "frames/09.png",
+      "sha256": "b0209f28b8eb6aea938afba9b4c0c0a823cbe8b9de63e94867f53617a442bb28",
+      "bbox": [
+        174,
+        208,
+        375,
+        474
+      ],
+      "dimensions": [
+        494,
+        494
+      ],
+      "alpha": [
+        0,
+        255
+      ]
+    },
+    {
+      "file": "frames/10.png",
+      "sha256": "6ade019a2cc01f5f7403b590ff98cb58471a520d2216caa3fd1e3d517664ec02",
+      "bbox": [
+        130,
+        196,
+        387,
+        474
+      ],
+      "dimensions": [
+        494,
+        494
+      ],
+      "alpha": [
+        0,
+        255
+      ]
+    },
+    {
+      "file": "frames/11.png",
+      "sha256": "4f0ef1305d8fcfe4e6d9bf80eadf5707439178fd8357b95432d119dab297cd09",
+      "bbox": [
+        149,
+        206,
+        390,
+        474
+      ],
+      "dimensions": [
+        494,
+        494
+      ],
+      "alpha": [
+        0,
+        255
+      ]
+    },
+    {
+      "file": "frames/12.png",
+      "sha256": "574ffa62890756f61f76b9cbe8b13c47a0d4b8bf14bd75f76269f2ac874f7f3b",
+      "bbox": [
+        116,
+        223,
+        377,
+        474
+      ],
+      "dimensions": [
+        494,
+        494
+      ],
+      "alpha": [
+        0,
+        255
+      ]
+    },
+    {
+      "file": "frames/13.png",
+      "sha256": "5c6825bf08b294f15e76f1ca238816d422580d0bf3922e77b99d8ef012d95ebc",
+      "bbox": [
+        83,
+        272,
+        387,
+        474
+      ],
+      "dimensions": [
+        494,
+        494
+      ],
+      "alpha": [
+        0,
+        255
+      ]
+    },
+    {
+      "file": "frames/14.png",
+      "sha256": "b466340afa051b2892f2a5c83e9df7d0908d6d1ed26635aefcb9003c1c619c2b",
+      "bbox": [
+        83,
+        364,
+        382,
+        474
+      ],
+      "dimensions": [
+        494,
+        494
+      ],
+      "alpha": [
+        0,
+        255
+      ]
+    },
+    {
+      "file": "frames/15.png",
+      "sha256": "80837c2b411619310e6ca413fe16edcfc713b7a659fa456f0571ba788019a9d0",
+      "bbox": [
+        74,
+        383,
+        384,
+        474
+      ],
+      "dimensions": [
+        494,
+        494
+      ],
+      "alpha": [
+        0,
+        255
+      ]
+    }
+  ],
+  "browser": {
+    "url": "http://127.0.0.1:4381/v08-coalhex-shaman/preview.html",
+    "observed": "All required states actually played in Chromium; no JS errors, death reached terminal hold; full and small-size on dark, full on light."
+  },
+  "visualStatus": "See independent reviewer report; this is builder evidence, not user approval.",
+  "limits": [
+    "Sparse generated poses, about300px native body height; not HD per-frame assets.",
+    "Not integrated into game.",
+    "Preview approval pending."
+  ]
+}
