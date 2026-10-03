@@ -1,0 +1,8 @@
+{
+  "name": "Fiendish Feast",
+  "cost": "1",
+  "type": "Skill",
+  "rarity": "Common",
+  "rules": "**Sacrifice** a demon. Heal HP equal to half its current HP. Gain 3 Cinders.",
+  "upgrade": "5 Cinders"
+}

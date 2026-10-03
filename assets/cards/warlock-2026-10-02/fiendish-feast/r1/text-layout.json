@@ -1,0 +1,37 @@
+[
+  {
+    "region": "title",
+    "text": "Fiendish Feast",
+    "lines": [
+      "Fiendish Feast"
+    ],
+    "font_size": 79
+  },
+  {
+    "region": "cost",
+    "text": "1",
+    "lines": [
+      "1"
+    ],
+    "font_size": 110
+  },
+  {
+    "region": "type",
+    "text": "SKILL · WARLOCK",
+    "lines": [
+      "SKILL · WARLOCK"
+    ],
+    "font_size": 35
+  },
+  {
+    "region": "rules",
+    "text": "Sacrifice a demon. Heal HP equal to half its current HP. Gain 3 Cinders.",
+    "lines": [
+      "Sacrifice a demon.",
+      "Heal HP equal to half its",
+      "current HP.",
+      "Gain 3 Cinders."
+    ],
+    "font_size": 54
+  }
+]
