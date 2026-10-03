@@ -1,0 +1,8 @@
+{
+  "name": "Summon Hellhound",
+  "cost": "1 +2🔥",
+  "type": "Skill",
+  "rarity": "Common",
+  "rules": "Summon a Hellhound.",
+  "upgrade": "It enters with 6 Guard"
+}
