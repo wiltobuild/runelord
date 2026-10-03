@@ -1,0 +1,13 @@
+import fs from 'node:fs';
+import {spawnSync} from 'node:child_process';
+import {createHash} from 'node:crypto';
+const source='assets/cinematics/oath-intro/r2/oath-intro-silent.mp4';
+const score='apps/web/public/opening-assets/oath-intro-score.wav';
+const output='apps/web/public/opening-assets/oath-intro-r2.mp4';
+const result=spawnSync('work/promo-tools/node_modules/ffmpeg-static/ffmpeg.exe',['-y','-i',source,'-i',score,'-map','0:v:0','-map','1:a:0','-c:v','copy','-c:a','aac','-b:a','192k','-t','24','-movflags','+faststart',output],{encoding:'utf8'});
+if(result.status!==0)throw Error(result.stderr);
+const manifest=JSON.parse(fs.readFileSync('assets/cinematics/oath-intro/r2/timeline.json','utf8'));
+manifest.silentSource=source;manifest.runtime=output;manifest.score=score;
+manifest.sha256=createHash('sha256').update(fs.readFileSync(output)).digest('hex');
+fs.writeFileSync('assets/cinematics/oath-intro/r2/timeline.json',JSON.stringify(manifest,null,2)+'\n');
+console.log(output,manifest.sha256);

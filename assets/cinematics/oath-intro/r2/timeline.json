@@ -1,0 +1,37 @@
+{
+  "duration": 24,
+  "fps": 24,
+  "size": [
+    1920,
+    1080
+  ],
+  "loop": true,
+  "method": "Layered still artwork, selected Abyssal Seraph still with a 6-second gentle vertical hover, cyclic camera/parallax, procedural fog, embers, perspective seal and light pulses; no generated full-motion footage.",
+  "beats": [
+    {
+      "time": 0,
+      "visual": "Fortress and Warlock reveal; first fire pulse"
+    },
+    {
+      "time": 6,
+      "visual": "Ember ascent and second fire pulse"
+    },
+    {
+      "time": 12,
+      "visual": "Distant demon reaches maximum visibility; apex fire pulse"
+    },
+    {
+      "time": 18,
+      "visual": "Return phrase; smoke recedes into loop"
+    }
+  ],
+  "sourceArt": [
+    "assets/environments/menu-infernal-court/r1/source.png",
+    "assets/cinematics/oath-intro/r2/demon-warlock.png",
+    "apps/web/public/game-assets/actors/demon-lord/fire-null/frames/00.webp"
+  ],
+  "runtime": "apps/web/public/opening-assets/oath-intro-r2.mp4",
+  "silentSource": "assets/cinematics/oath-intro/r2/oath-intro-silent.mp4",
+  "score": "apps/web/public/opening-assets/oath-intro-score.wav",
+  "sha256": "72c02022608029c17835000945cf0e6a8895609076bab0dcb3d5f818045e883c"
+}
