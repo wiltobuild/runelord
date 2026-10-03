@@ -1,0 +1,8 @@
+{
+  "name": "Soul Siphon",
+  "cost": "1",
+  "type": "Attack",
+  "rarity": "Uncommon",
+  "rules": "Deal 8 damage. Add a Soul Shard into your Hand.",
+  "upgrade": "11 dmg"
+}
