@@ -1,0 +1,24 @@
+{
+  "total": 71,
+  "newly_finished": [
+    "Summon Imp",
+    "Ascendant Will",
+    "Embrace the Flame",
+    "Witchfire Brand",
+    "Mark of Damnation",
+    "Last Rites",
+    "Infernal Bulwark",
+    "Greater Summoning",
+    "Crown of the Abyss",
+    "Soul Shard"
+  ],
+  "statuses": {
+    "approved": 1,
+    "pending_approval": 70
+  },
+  "protected_pixels_per_card": 602082,
+  "changed_protected_pixels_all_cards": 0,
+  "catalog_snapshots_current": true,
+  "gallery_verification": "All 71 exact card hashes present in live /api/art Cards group",
+  "missing_or_blocked": 0
+}
