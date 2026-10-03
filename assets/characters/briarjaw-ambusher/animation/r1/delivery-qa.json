@@ -1,0 +1,31 @@
+{
+  "character_id": "briarjaw-ambusher",
+  "frame_count": 16,
+  "canvas": [
+    370,
+    362
+  ],
+  "states": [
+    "idle",
+    "attack",
+    "hit",
+    "wounded_idle",
+    "die"
+  ],
+  "transparent_frames_verified": true,
+  "death_loop": false,
+  "base_approval": "86c99d53-5b9e-40d7-a913-3af894860b06",
+  "preview_sha256": "ba3e5b47db9e1d5f806985c95531e08e54a8863ad26acbaa3142a3fcfb993bf7",
+  "preview_gallery_id": "e78f214ec65e8dd7726cbe42",
+  "preview_approval": "Pending approval",
+  "playback": {
+    "method": "Headless Chrome timed playback captures at native canvas and small size; inspected captures",
+    "status": "verified at review level; low-frame cadence and identity-detail variation remain",
+    "evidence": "C:\\Users\\wilsh\\Documents\\Codex\\2026-10-02\\use\\work\\playback\\briarjaw-ambusher\\playback-audit.json"
+  },
+  "limitations": [
+    "Generated frame animation with sparse key poses; no rig or in-between interpolation.",
+    "Minor changing contour/texture details remain; review prior to integration."
+  ],
+  "delivery_level": "Articulated frame animation review pack; not certified production-ready"
+}
