@@ -1,0 +1,36 @@
+[
+  {
+    "region": "title",
+    "text": "Soul Shard",
+    "lines": [
+      "Soul Shard"
+    ],
+    "font_size": 94
+  },
+  {
+    "region": "cost",
+    "text": "0",
+    "lines": [
+      "0"
+    ],
+    "font_size": 110
+  },
+  {
+    "region": "type",
+    "text": "SKILL (TOKEN) · WARLOCK",
+    "lines": [
+      "SKILL (TOKEN) · WARLOCK"
+    ],
+    "font_size": 27
+  },
+  {
+    "region": "rules",
+    "text": "Gain 2 Cinders. Draw 1 card. Consume.",
+    "lines": [
+      "Gain 2 Cinders.",
+      "Draw 1 card.",
+      "Consume."
+    ],
+    "font_size": 54
+  }
+]

@@ -1,0 +1,8 @@
+{
+  "name": "Soul Shard",
+  "cost": "0",
+  "type": "Skill (Token)",
+  "rarity": "Token",
+  "rules": "Gain 2 Cinders. Draw 1 card. Consume.",
+  "upgrade": "3 Cinders"
+}
