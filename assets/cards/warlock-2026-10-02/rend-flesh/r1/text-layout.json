@@ -1,0 +1,36 @@
+[
+  {
+    "region": "title",
+    "text": "Rend Flesh",
+    "lines": [
+      "Rend Flesh"
+    ],
+    "font_size": 94
+  },
+  {
+    "region": "cost",
+    "text": "1",
+    "lines": [
+      "1"
+    ],
+    "font_size": 110
+  },
+  {
+    "region": "type",
+    "text": "ATTACK · WARLOCK",
+    "lines": [
+      "ATTACK · WARLOCK"
+    ],
+    "font_size": 35
+  },
+  {
+    "region": "rules",
+    "text": "Deal 10 damage. In Demon Form: costs 0 and hits twice.",
+    "lines": [
+      "Deal 10 damage.",
+      "In Demon Form: costs",
+      "0 and hits twice."
+    ],
+    "font_size": 54
+  }
+]
