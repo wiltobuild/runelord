@@ -19,7 +19,7 @@ export type Assets = {
   >;
 };
 export async function loadAssets(): Promise<Assets> {
-  const response = await fetch("/game-assets/manifest.json");
+  const response = await fetch(`${import.meta.env.BASE_URL}game-assets/manifest.json`);
   if (!response.ok)
     throw Error("Asset manifest is missing. Run npm run import:assets.");
   return response.json();

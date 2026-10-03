@@ -19,7 +19,7 @@ export function useHudScale() {
 }
 
 export function HudTemplate() {
-  return <img className="hud-template" src="/ui/obsidian-template.png" alt="" draggable={false} aria-hidden="true" />;
+  return <img className="hud-template" src={`${import.meta.env.BASE_URL}ui/obsidian-template.png`} alt="" draggable={false} aria-hidden="true" />;
 }
 
 export function HudStatIcon({ kind }: { kind: "health" | "guard" | "cinders" | "corruption" | "gold" }) {
