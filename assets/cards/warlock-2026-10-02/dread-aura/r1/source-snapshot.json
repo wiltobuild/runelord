@@ -1,0 +1,8 @@
+{
+  "name": "Dread Aura",
+  "cost": "2",
+  "type": "Power",
+  "rarity": "Uncommon",
+  "rules": "Your demons' attacks apply 1 Scorch.",
+  "upgrade": "2 Scorch"
+}

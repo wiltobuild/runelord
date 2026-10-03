@@ -1,0 +1,35 @@
+[
+  {
+    "region": "title",
+    "text": "Dread Aura",
+    "lines": [
+      "Dread Aura"
+    ],
+    "font_size": 94
+  },
+  {
+    "region": "cost",
+    "text": "2",
+    "lines": [
+      "2"
+    ],
+    "font_size": 110
+  },
+  {
+    "region": "type",
+    "text": "POWER · WARLOCK",
+    "lines": [
+      "POWER · WARLOCK"
+    ],
+    "font_size": 35
+  },
+  {
+    "region": "rules",
+    "text": "Your demons' attacks apply 1 Scorch.",
+    "lines": [
+      "Your demons' attacks apply",
+      "1 Scorch."
+    ],
+    "font_size": 54
+  }
+]
