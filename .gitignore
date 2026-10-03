@@ -3,3 +3,17 @@ dist/
 .DS_Store
 Thumbs.db
 .env*
+apps/web/public/game-assets/
+/work/production/
+assets/cards/warlock-2026-10-02/__pycache__/
+assets/heroes/animations/base-set-2026-10-02-r1/
+assets/heroes/animations/ranger/
+assets/heroes/animations/runeblade/
+assets/heroes/animations/runesmith/
+assets/heroes/animations/warlock/r1/
+assets/heroes/animations/warlock/r2/
+assets/heroes/animations/warlock/r3/
+assets/heroes/animations/warlock/r4/
+assets/heroes/references/ranger/
+assets/heroes/references/runeblade/
+assets/heroes/references/runesmith/

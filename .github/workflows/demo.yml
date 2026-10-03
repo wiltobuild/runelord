@@ -1,0 +1,19 @@
+name: Warlock demo
+on: [push, pull_request]
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 24
+          cache: npm
+      - run: npm ci
+      - run: npm run import:content
+      - run: npm test
+      - run: npm run test:production
+      - run: npm run sim
+      - run: npm run build
+      # Art source archives are local and not fetched by CI. Asset packaging is a
+      # separate local import step; this job validates code, catalog, and rules.

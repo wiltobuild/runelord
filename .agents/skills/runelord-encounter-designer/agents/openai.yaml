@@ -1,0 +1,4 @@
+interface:
+  display_name: "Runelord Encounter Designer"
+  short_description: "Build enemy kits, counterplay and Warband encounters"
+  default_prompt: "Use $runelord-encounter-designer for the assigned Runelord work and report verified results."

@@ -1,0 +1,4 @@
+interface:
+  display_name: "Runelord UI System"
+  short_description: "Build live HUD components from selected designs"
+  default_prompt: "Use $runelord-ui-system for the assigned Runelord work and report verified results."

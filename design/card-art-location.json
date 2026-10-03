@@ -1,0 +1,5 @@
+{
+  "asset_root": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\cards",
+  "inventory": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\cards\\card-art-index.json",
+  "storage_policy": "All completed and future card art belongs in assets/cards in this repository. Preserve revision and approval tracking."
+}

@@ -1,0 +1,4 @@
+interface:
+  display_name: "Runelord Content to Game"
+  short_description: "Turn catalog content into tested gameplay"
+  default_prompt: "Use $runelord-content-to-game for the assigned Runelord work and report verified results."

@@ -1,0 +1,4 @@
+interface:
+  display_name: "Runelord Playtest"
+  short_description: "Verify a Runelord playable slice in the browser and engine"
+  default_prompt: "Use $runelord-playtest for the assigned Runelord work and report verified results."

@@ -1,0 +1,4 @@
+interface:
+  display_name: "Runelord Asset Integration"
+  short_description: "Package existing Runelord artwork and animation for the game"
+  default_prompt: "Use $runelord-asset-integration for the assigned Runelord work and report verified results."

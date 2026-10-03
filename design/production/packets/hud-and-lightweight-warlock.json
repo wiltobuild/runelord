@@ -1,0 +1,345 @@
+{
+  "schema": 1,
+  "id": "hud-and-lightweight-warlock",
+  "status": "review",
+  "outcome": "Align End Turn gem interaction and encounter label; use lightweight Warlock authored frames with slower idle, launch spells from the extended hand, and animate summons at the user-requested presentation sizes.",
+  "authorization": "Current user request, relayed by root: fix misbound End Turn hover (odd bright box and text scaling), center encounter 1 of 3, animate summons and use lighter Warlock 32 authored frames. This explicitly authorizes runtime integration of the requested existing pending assets; it does not change gallery approval decisions. Latest user steering: spells originate from the extended Warlock hand; idle should be slightly slower; Imp was about 25 percent below its intended size and the other summons should be much bigger like enemies. User presentation sizing overrides the original relative-scale convention where explicitly specified. Latest superseding user request: Hellhound is too big; reduce its presentation by30 percent, from200px to140px native silhouette. Other actors stay unchanged.",
+  "sourceRevision": "c7a20871a08e6b089fd6b86dfc5c48fec28e92b1",
+  "workingTree": "Existing modified and untracked work is present and must be preserved; HEAD alone is not the full input identity.",
+  "contentIds": [
+    "warlock",
+    "warlock-imp",
+    "warlock-hellhound",
+    "warlock-pit-brute",
+    "obsidian-hud"
+  ],
+  "owner": "runelord-producer",
+  "integrationOwner": "runelord-technical-artist",
+  "reviewer": "runelord-game-qa",
+  "ownedPaths": [
+    "design/production/packets/hud-and-lightweight-warlock.json",
+    "apps/web/src/hud.css",
+    "apps/web/src/EndTurnButton.tsx",
+    "apps/web/src/Hero.tsx",
+    "apps/web/src/ActorSprite.tsx",
+    "apps/web/src/assets.ts",
+    "apps/web/src/main.tsx",
+    "apps/web/src/useBattleDirector.ts",
+    "tools/import/assets.mjs",
+    "packages/assets/manifest.json",
+    "apps/web/public/game-assets",
+    "design/obsidian-hud.md",
+    "apps/web/src/heroGeometry.ts"
+  ],
+  "ownership": {
+    "runelord-producer": [
+      "packet and supporting production evidence metadata"
+    ],
+    "runelord-game-qa": [
+      "independent verification evidence only"
+    ],
+    "runelord-technical-artist": [
+      "Hero/adapters/import/runtime manifests",
+      "main.tsx summon rendering block",
+      "useBattleDirector.ts animation timing"
+    ],
+    "root": [
+      "apps/web/src/hud.css",
+      "apps/web/src/EndTurnButton.tsx",
+      "design/obsidian-hud.md",
+      "apps/web/src/heroGeometry.ts",
+      "Hero.tsx shared placement refactor and director point helper, coordinated with Technical Artist"
+    ]
+  },
+  "dependencies": [
+    "Retain immutable source inputs and current asset approval status.",
+    "Root and Technical Artist finish disjoint owned edits before independent integrated QA.",
+    "Runtime asset import and authored state adapters must agree before playback acceptance."
+  ],
+  "exclusions": [
+    "New raster generation or animation authoring",
+    "Gameplay rebalance or additional summons",
+    "Approval-ledger changes",
+    "Commits, deployment, new chats or schedules",
+    "Unrelated pre-existing work"
+  ],
+  "inputs": [
+    {
+      "path": "assets/ui/obsidian-hud/r1/template.png",
+      "sha256": "83578b3d6ce5d943e45cbc789ef57c348b115728155c7b55fff35a6b7468d36a"
+    },
+    {
+      "path": "assets/ui/obsidian-hud/r1/manifest.json",
+      "sha256": "7e77d415e4b07c34b1be433ae6397e52741ee29c05b9ff04a1f5bfa94bae4730"
+    },
+    {
+      "path": "assets/heroes/animations/warlock/frames32-r1/manifest.json",
+      "sha256": "a9d7bbb41f15a558b01f35c10b121907e9ddafe3f187fe3babd5ebdc161a6ee9"
+    },
+    {
+      "path": "assets/heroes/animations/warlock/frames32-r1/frames/index.json",
+      "sha256": "1c246c562a87a8de644c0b7527650dbd7038ba8e06267b46d29ab9dad0e962b5"
+    },
+    {
+      "path": "assets/characters/warlock-summons/animations/base-r1/manifest.json",
+      "sha256": "5bca3a109907b9600f4dd8c65420325d9af80d6e0a7973f82a83f7b77d7197be"
+    },
+    {
+      "path": "assets/characters/warlock-summons/animations/base-r1/README.md",
+      "sha256": "6d5da6b760c10964a0db89a87293ddb6b48ef061eab1c095748e2ba70653a64c"
+    },
+    {
+      "path": "assets/characters/warlock-summons/animations/base-r1/scale-reference.json",
+      "sha256": "3a430b66acbc4775acec3fb7c19bb03c6bb2a5a13eb798cbbda9d1cb3b38cbbf"
+    },
+    {
+      "path": "assets/characters/warlock-summons/animations/base-r1/warlock-imp/animation.json",
+      "sha256": "1555b88fe91482d2acf81342310c6979cb3db228123b81eb4779f801f6662496"
+    },
+    {
+      "path": "assets/characters/warlock-summons/animations/base-r1/warlock-hellhound/animation.json",
+      "sha256": "939539de239bc7e81fd8cd7b1dc6bd29d9e7e0fcfd928312146af9a17026400a"
+    },
+    {
+      "path": "assets/characters/warlock-summons/animations/base-r1/warlock-pit-brute/animation.json",
+      "sha256": "173f94dfdb488802210ceb0dd12e9d2e8567ffb62e37a0e8992fbe0d09f12793"
+    }
+  ],
+  "animation": {
+    "authoredHeroFrames": 32,
+    "summonRequiredStates": [
+      "idle",
+      "act",
+      "hit",
+      "wounded_idle",
+      "die",
+      "spawn"
+    ],
+    "approval": "Existing pending/reviewable status preserved; integration authorized by current user instruction.",
+    "heroSource": "assets/heroes/animations/warlock/frames32-r1",
+    "summonSource": "assets/characters/warlock-summons/animations/base-r1",
+    "requiredStates": [
+      "idle",
+      "attack",
+      "hit",
+      "wounded_idle",
+      "cast",
+      "die"
+    ],
+    "method": "whole-character-frames",
+    "presentationOverrides": {
+      "heroIdleDurationMultiplier": 1.2,
+      "heroWoundedIdleDurationMultiplier": 1.2,
+      "releaseOrigin": {
+        "attack": [
+          430,
+          184
+        ],
+        "cast": [
+          368,
+          188
+        ]
+      },
+      "nativeSummonSilhouetteHeights": {
+        "pit-brute": 230,
+        "imp": 90,
+        "hellhound": 140
+      },
+      "scaleNote": "Fixed source roots and uniform per-unit scaling retained. Latest user presentation instruction authorizes larger Hellhound presentation than the original relative-scale convention; original source contract remains unchanged.",
+      "hellhoundWorldScale": 225.8064515,
+      "hellhoundSlotWidth": 147
+    }
+  },
+  "acceptance": [
+    {
+      "check": "Root browser: End Turn hover/focus has stable 36px text, no transform or bright background overlay; keyboard focus underline works.",
+      "status": "pass",
+      "evidence": [
+        {
+          "path": "work/production/hud-and-lightweight-warlock/browser-check.json",
+          "sha256": "afaab00706223aeda2a751ffb4a90a35b1dfe248aacbbd8511cc3b75e1c5ab00"
+        },
+        {
+          "path": "work/production/hud-and-lightweight-warlock/qa/report.md",
+          "sha256": "a5e331b45cb7409ceded630223a9cdf7163755a7d63582d176a4eab917768a8c"
+        }
+      ]
+    },
+    {
+      "check": "Root browser: encounter centered within 0.011px at 1280x720 and 740x420; changed controls visible.",
+      "status": "pass",
+      "evidence": [
+        {
+          "path": "work/production/hud-and-lightweight-warlock/browser-check.json",
+          "sha256": "afaab00706223aeda2a751ffb4a90a35b1dfe248aacbbd8511cc3b75e1c5ab00"
+        },
+        {
+          "path": "work/production/hud-and-lightweight-warlock/qa/report.md",
+          "sha256": "a5e331b45cb7409ceded630223a9cdf7163755a7d63582d176a4eab917768a8c"
+        }
+      ]
+    },
+    {
+      "check": "Independent source/assets: six hero and eighteen summon state mappings, authored timings/loops, 32 hero plus48 summon frames, image alpha/dimensions and exact hashes pass.",
+      "status": "pass",
+      "evidence": [
+        {
+          "path": "work/production/hud-and-lightweight-warlock/qa/asset-checks.json",
+          "sha256": "419561d4992f860e052ef0246046072d4b331b2fa8238ed658cbebc5cb0b25cb"
+        },
+        {
+          "path": "work/production/hud-and-lightweight-warlock/qa/report.md",
+          "sha256": "a5e331b45cb7409ceded630223a9cdf7163755a7d63582d176a4eab917768a8c"
+        }
+      ]
+    },
+    {
+      "check": "Measured referenced hero assets decrease from3,785,072 to1,108,816 bytes,370 to32 textures,296,000,000 to33,554,432 decoded bytes; this is asset measurement, not a browser network capture.",
+      "status": "pass",
+      "evidence": [
+        {
+          "path": "work/production/warlock-lightweight/verification.json",
+          "sha256": "2d2a63459aad5999dc88f79cebb2e78aa6e36b05a46b2824a7ab8f1e3ede63af"
+        },
+        {
+          "path": "work/production/hud-and-lightweight-warlock/qa/asset-checks.json",
+          "sha256": "419561d4992f860e052ef0246046072d4b331b2fa8238ed658cbebc5cb0b25cb"
+        }
+      ]
+    },
+    {
+      "check": "Final root read-only browser inspection shows all three summons together: computed native silhouettes Imp89.9912px, Hellhound139.992px, Pit Brute229.993px; roots grounded, labels separate, some natural silhouette overlap. Independent earlier source check verifies fixed-anchor uniform scaling; final30 percent Hellhound reduction verified by root.",
+      "status": "pass",
+      "evidence": [
+        {
+          "path": "work/production/hud-and-lightweight-warlock/hellhound-size-followup.json",
+          "sha256": "5a5e765f800723d2d02c429388a9d1775271acc32d153a858d1b4f72a5527be9"
+        },
+        {
+          "path": "work/production/hud-and-lightweight-warlock/qa/geometry-checks.json",
+          "sha256": "16e12540504994aded57f0eafc8ac0945c16435f1fca1f07ce3c2bdc2ef9589a"
+        }
+      ]
+    },
+    {
+      "check": "Independent source review: finite clips recover and death holds; authored events/aliases validated. This does not certify visual terminal death playback.",
+      "status": "pass",
+      "evidence": [
+        {
+          "path": "work/production/hud-and-lightweight-warlock/qa/asset-checks.json",
+          "sha256": "419561d4992f860e052ef0246046072d4b331b2fa8238ed658cbebc5cb0b25cb"
+        },
+        {
+          "path": "work/production/hud-and-lightweight-warlock/qa/report.md",
+          "sha256": "a5e331b45cb7409ceded630223a9cdf7163755a7d63582d176a4eab917768a8c"
+        }
+      ]
+    },
+    {
+      "check": "Build passes and28 tests pass; root observed no browser warnings/errors or broken DOM images in checked views.",
+      "status": "pass",
+      "evidence": [
+        {
+          "path": "work/production/hud-and-lightweight-warlock/browser-check.json",
+          "sha256": "afaab00706223aeda2a751ffb4a90a35b1dfe248aacbbd8511cc3b75e1c5ab00"
+        },
+        {
+          "path": "work/production/hud-and-lightweight-warlock/qa/report.md",
+          "sha256": "a5e331b45cb7409ceded630223a9cdf7163755a7d63582d176a4eab917768a8c"
+        }
+      ]
+    },
+    {
+      "check": "Independent source/automated reviewer rechecked repaired P2 summon sizing and found no remaining concrete scoped defect; browser review was separately performed by implementation author.",
+      "status": "pass",
+      "evidence": [
+        {
+          "path": "work/production/hud-and-lightweight-warlock/qa/report.md",
+          "sha256": "a5e331b45cb7409ceded630223a9cdf7163755a7d63582d176a4eab917768a8c"
+        },
+        {
+          "path": "work/production/hud-and-lightweight-warlock/qa/geometry-checks.json",
+          "sha256": "16e12540504994aded57f0eafc8ac0945c16435f1fca1f07ce3c2bdc2ef9589a"
+        }
+      ]
+    },
+    {
+      "check": "Hand-origin geometry helper passes arithmetic at scale factors0.44/0.765/1; root warmed Firebolt observation shows charge centered on extended hand, damage12 to6 and controls unlocked.",
+      "status": "pass",
+      "evidence": [
+        {
+          "path": "work/production/hud-and-lightweight-warlock/browser-check.json",
+          "sha256": "afaab00706223aeda2a751ffb4a90a35b1dfe248aacbbd8511cc3b75e1c5ab00"
+        },
+        {
+          "path": "work/production/hud-and-lightweight-warlock/qa/report.md",
+          "sha256": "a5e331b45cb7409ceded630223a9cdf7163755a7d63582d176a4eab917768a8c"
+        }
+      ]
+    },
+    {
+      "check": "Independent check confirms idle1296ms and wounded1584ms at1.2x authored durations; attack630ms and cast540ms unchanged. Visual loop speed not stopwatch-tested.",
+      "status": "pass",
+      "evidence": [
+        {
+          "path": "work/production/hud-and-lightweight-warlock/qa/report.md",
+          "sha256": "a5e331b45cb7409ceded630223a9cdf7163755a7d63582d176a4eab917768a8c"
+        },
+        {
+          "path": "work/production/hud-and-lightweight-warlock/qa/asset-checks.json",
+          "sha256": "419561d4992f860e052ef0246046072d4b331b2fa8238ed658cbebc5cb0b25cb"
+        }
+      ]
+    },
+    {
+      "check": "Root seeded browser: Imp summon/swift/idle, turn progression, removal and reload/resume observed without duplicate damage; hero idle/attack/cast observed.",
+      "status": "pass",
+      "evidence": [
+        {
+          "path": "work/production/hud-and-lightweight-warlock/browser-check.json",
+          "sha256": "afaab00706223aeda2a751ffb4a90a35b1dfe248aacbbd8511cc3b75e1c5ab00"
+        },
+        {
+          "path": "work/production/hud-and-lightweight-warlock/qa/report.md",
+          "sha256": "a5e331b45cb7409ceded630223a9cdf7163755a7d63582d176a4eab917768a8c"
+        }
+      ]
+    },
+    {
+      "check": "Comprehensive all-frame/action/contact audit remains pending: Hellhound/Pit Brute combat actions and terminal hero/summon death were not fully observed; independent browser review unavailable. All three summons were observed together in idle/wounded presentation after final sizing.",
+      "status": "pending",
+      "evidence": []
+    }
+  ],
+  "checkpoint": {
+    "completed": [
+      "Read production contract and source manifests.",
+      "Captured source SHA-256 identities and assigned disjoint implementation ownership.",
+      "Root reports HUD edits ready: facet/glint/rotating overlays removed; stable label hover glow and keyboard-focus underline; encounter rectangle 700,0,272,40 centered at native 836,20. Browser verification remains pending.",
+      "Current engine DemonKind and importer confirm playable summons are imp, hellhound and pit-brute.",
+      "Technical Artist reports hero and summon integration ready; build passed. Reported hero referenced payload 3,785,072 to 1,108,816 bytes; textures 370 to 32; decoded bytes 296,000,000 to 33,554,432. Summons: 48 frames totaling 1,034,898 bytes. Supporting report reported under work/production/warlock-lightweight; evidence not yet reconciled.",
+      "Root reports initial browser checks passed: hover has no transform/translate/filter/animation, transparent background and 36px font; encounter center delta below 0.011px at 1280/740 widths; Firebolt enemy HP 23 to17; Imp swift HP17 to13 plus Scorch; turn2 restores controls; no errors or broken images. These precede final sizing/spell verification.",
+      "Latest steering implemented per root: shared hand release origin, 1.2x idle/wounded timing, summon silhouette heights90/200/230. QA P2 sizing finding repaired; independent recheck and final build/browser verification in progress.",
+      "Final evidence inspected: tested source hashes match current files; independent QA repair recheck passes; root browser confirms hand charge, Imp presentation, hover/focus/layout and resume. Eleven scoped acceptance passes retained with SHA-256 evidence; broad visual audit explicitly pending.",
+      "Final user-requested Hellhound reduction verified by root in read-only encounter3/turn3: all three actors together; Imp89.9912px, Hellhound139.992px, Pit Brute229.993px. Follow-up implementation hashes independently matched current files. No combat actions performed during this inspection."
+    ],
+    "remaining": [
+      "Comprehensive all-frame/action/contact audit for unobserved combat and terminal states, with independent browser review when available.",
+      "Retain or promote evidence before final packet completion."
+    ],
+    "nextAction": "Implementation complete with scoped verification; preserve review checkpoint and stated comprehensive visual-audit limitation.",
+    "blockers": [
+      "Independent QA browser surface unavailable for independent visual acceptance."
+    ]
+  },
+  "implementationStatus": "complete; final140px Hellhound browser-verified; comprehensive all-frame/action audit remains pending",
+  "verificationLimitations": [
+    "Independent QA browser unavailable; source/assets/geometry review independent, browser observations by root.",
+    "All three summons observed together after final sizing, but Hellhound/Pit Brute combat actions and terminal hero/summon death not comprehensively observed.",
+    "No complete80-frame identity audit, full three-encounter victory, or audio audition.",
+    "Existing Vite chunk warning above500kB remains.",
+    "Art approvals unchanged; technical verification and integration authorization do not confer art approval.",
+    "Earlier geometry/report/browser evidence contains superseded200px Hellhound observations; hellhound-size-followup.json is final authority for140px sizing. Prior build/tests apply to unchanged runtime logic; final narrow CSS and metadata change browser-checked without rerunning them.",
+    "Referenced work evidence is ephemeral and must be retained or promoted before eventual completion."
+  ]
+}

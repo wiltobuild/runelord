@@ -1,0 +1,171 @@
+{
+  "schema": 1,
+  "id": "warband-flight-hd",
+  "status": "review",
+  "outcome": "Non-overlapping demon formation, left-shifted Warlock, actual flying Imp animation and higher-detail Pit Brute.",
+  "authorization": "User explicitly requested all four changes in this chat; prior Hellhound140px choice remains.",
+  "contentIds": [
+    "warlock",
+    "summon-imp",
+    "summon-hellhound",
+    "summon-pit-brute"
+  ],
+  "owner": "root",
+  "integrationOwner": "runelord-technical-artist",
+  "reviewer": "runelord-game-qa",
+  "ownedPaths": [
+    "apps/web/src",
+    "tools/import/assets.mjs",
+    "assets/characters/warlock-summons/animations/flight-r1",
+    "packages/assets/manifest.json",
+    "apps/web/public/game-assets",
+    "assets/characters/warlock-pit-brute/animations/hd-r1",
+    "design/production/packets/warband-flight-hd.json"
+  ],
+  "dependencies": [
+    "Generated Imp flight poses",
+    "Higher detail Brute poses"
+  ],
+  "exclusions": [
+    "Rules/balance changes",
+    "Commits/deploy",
+    "Self-approval of generated art"
+  ],
+  "inputs": [
+    {
+      "path": "assets/heroes/animations/warlock/frames32-r1/manifest.json",
+      "sha256": "a9d7bbb41f15a558b01f35c10b121907e9ddafe3f187fe3babd5ebdc161a6ee9"
+    },
+    {
+      "path": "assets/characters/warlock-summons/animations/base-r1/warlock-imp/animation.json",
+      "sha256": "1555b88fe91482d2acf81342310c6979cb3db228123b81eb4779f801f6662496"
+    },
+    {
+      "path": "assets/characters/warlock-summons/animations/base-r1/warlock-pit-brute/animation.json",
+      "sha256": "173f94dfdb488802210ceb0dd12e9d2e8567ffb62e37a0e8992fbe0d09f12793"
+    },
+    {
+      "path": "assets/characters/warlock-summons/animations/flight-r1/warlock-imp/animation.json",
+      "sha256": "da38329a3932331f617ad3f95675eb129f7e05abc8247846b9a05812e47adff9"
+    },
+    {
+      "path": "assets/characters/warlock-pit-brute/animations/hd-r1/animation.json",
+      "sha256": "f450ec8cce944c4f09c86a9bcda87ff65f6bd584165b2f4bf09c1519ad0c61b9"
+    }
+  ],
+  "animation": {
+    "method": "whole-character-frames",
+    "requiredStates": [
+      "idle",
+      "attack",
+      "hit",
+      "wounded_idle",
+      "spawn",
+      "die"
+    ]
+  },
+  "acceptance": [
+    {
+      "check": "Independent final runtime geometry:1092 ordered combinations including729 six-actor ghost cases pass static all-pose silhouette/label envelope and arena checks; no animated lunge/death nonoverlap claim.",
+      "status": "pass",
+      "evidence": [
+        {
+          "path": "work/production/warband-flight-hd/qa/formation-checks.json",
+          "sha256": "84a9a22afc8e30dcd1d1fc5d698a45ab911a9fcae24b72f407c873e9092f265c"
+        }
+      ]
+    },
+    {
+      "check": "Imp flight and HD Brute runtime mappings, timings, alpha and frame hashes pass scoped asset checks; flight has17 frames, Brute16.",
+      "status": "pass",
+      "evidence": [
+        {
+          "path": "work/production/warband-flight-hd/qa/asset-checks.json",
+          "sha256": "8d612d31a2fd501c258a8e1aa8955d00542f2d4725a93361aa67bfa689d16004"
+        },
+        {
+          "path": "work/production/warlock-lightweight/repair-verification.json",
+          "sha256": "2555e1ef7b92a71d3e2823bec2a8d527ddc10f8d253e4f8dd2ce143b5a34c079"
+        }
+      ]
+    },
+    {
+      "check": "Build passes; existing greater-than500kB chunk warning retained.",
+      "status": "pass",
+      "evidence": [
+        {
+          "path": "work/production/warband-flight-hd/qa/build.log",
+          "sha256": "f8ad159344bad62b7f4cfb247fa372608ec942e02f7dcd34642c214f87a3d70c"
+        }
+      ]
+    },
+    {
+      "check": "Root browser observed left-shifted Warlock unclipped in live user game; independent source review confirms100px left offset and shared relative socket geometry.",
+      "status": "pass",
+      "evidence": [
+        {
+          "path": "work/production/warband-flight-hd/qa/browser-review.txt",
+          "sha256": "a4449063a979bc25bc4984cc6bd0967266aeb9f9d6f18a152d125a2d9e225e69"
+        },
+        {
+          "path": "work/production/warband-flight-hd/qa/report.md",
+          "sha256": "8d5d8fcd1dee68084a2426fbff0d9c3685c8abf0948096ee4af2a8ca0da60924"
+        }
+      ]
+    },
+    {
+      "check": "Root isolated five-unit preview uses actual production components: two flying Imps, two HD Brutes and Hellhound have separated resting silhouettes/labels; attack screenshot separated, wings changed between screenshots, no console errors. This is scoped observation, not comprehensive temporal collision certification.",
+      "status": "pass",
+      "evidence": [
+        {
+          "path": "work/production/warband-flight-hd/qa/browser-review.txt",
+          "sha256": "a4449063a979bc25bc4984cc6bd0967266aeb9f9d6f18a152d125a2d9e225e69"
+        }
+      ]
+    },
+    {
+      "check": "Final independent QA reconciles earlier defects as resolved in static formation/asset scope;12 state maps and33 runtime images checked, flight/HD contact sheets visually inspected, death metadata verified. Full-frame/smoothness audit not claimed.",
+      "status": "pass",
+      "evidence": [
+        {
+          "path": "work/production/warband-flight-hd/qa/report.md",
+          "sha256": "8d5d8fcd1dee68084a2426fbff0d9c3685c8abf0948096ee4af2a8ca0da60924"
+        },
+        {
+          "path": "work/production/warband-flight-hd/qa/asset-checks.json",
+          "sha256": "8d612d31a2fd501c258a8e1aa8955d00542f2d4725a93361aa67bfa689d16004"
+        }
+      ]
+    },
+    {
+      "check": "Comprehensive temporal collision audit of all action lunges and falling deaths, plus full-resolution every-frame animation audit, remains unperformed.",
+      "status": "pending",
+      "evidence": []
+    }
+  ],
+  "checkpoint": {
+    "completed": [
+      "Inspected source resolution and existing frame metadata",
+      "Implemented bound-aware ground/air formation and left-shifted Warlock",
+      "Flight-r1 Imp and HD-r1 Pit Brute authored and runtime-integrated; exact final animation input hashes captured.",
+      "Final formation1092 cases and scoped asset checks pass; build passes.",
+      "Root reports left-shifted Warlock unclipped; browser evidence not yet retained in this packet.",
+      "Final QA report confirms static formation defects resolved,12 state maps/33 runtime files checked and build passed.",
+      "Root browser five-unit fixture confirms separated resting silhouettes/labels, sampled attack separation, actual wing changes, no console errors and unclipped live hero; user save not manipulated."
+    ],
+    "remaining": [
+      "Comprehensive temporal collision and every-frame audit remains unperformed; review status explicitly preserves this limitation."
+    ],
+    "blockers": [],
+    "nextAction": "Implementation and scoped verification complete; retain review checkpoint without claiming comprehensive temporal/all-frame acceptance."
+  },
+  "approvalStatus": "New flight/HD gallery art pending approval; user-requested integration does not relabel approval decisions.",
+  "evidenceLimitations": [
+    "Independent review covers source/assets/geometry and contact sheets; browser observation by root.",
+    "Final formation-checks.json and final QA report supersede provisional failed flight-formation-checks.json.",
+    "Five-unit resting and sampled attack screenshots do not establish all temporal lunge/falling-death collision states or full-frame animation quality.",
+    "Temporary harness HTML removed after checks; TSX evidence retained.",
+    "New art remains pending user approval; no ledger relabel.",
+    "Evidence in work is ephemeral; retain before final closure."
+  ]
+}

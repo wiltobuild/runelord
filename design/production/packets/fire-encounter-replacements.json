@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "fire-encounter-replacements",
+  "status": "complete",
+  "outcome": "Encounter2CoalhornRam and encounter3FurnaceBeetle replace nonfire foes with newlyauthored combat animations.",
+  "authorization": "User requested second and third encounters be new animated fireenemies, not more firegoblins.",
+  "contentIds": [
+    "coalhorn-ram",
+    "furnace-beetle"
+  ],
+  "owner": "runelord-producer",
+  "integrationOwner": "root",
+  "reviewer": "runelord-game-qa",
+  "ownedPaths": [
+    "packages/content/index.ts",
+    "tools/import/assets.mjs",
+    "assets/animations/fire-demo-r1",
+    "apps/web/src/hud.css",
+    "tools/audio/render-sfx.mjs"
+  ],
+  "dependencies": [],
+  "exclusions": [],
+  "inputs": [
+    {
+      "path": "packages/content/index.ts",
+      "sha256": "16fb333a4f762b408c25aa88dc93a0c873c14dbdb1fc05050d84255196fbc384"
+    },
+    {
+      "path": "tools/import/assets.mjs",
+      "sha256": "b156112b619bdb1aaec093c63f784c25942b48fb8918c47b7e2d9f2c1d9a6b57"
+    },
+    {
+      "path": "apps/web/src/hud.css",
+      "sha256": "4bddcd2b75c188275e685baadcee5ba83ed0cb5a961c245ac925c3dcefe99e21"
+    }
+  ],
+  "animation": null,
+  "acceptance": [
+    {
+      "check": "Integratednewfireenemies and driftcorrection",
+      "status": "pass",
+      "evidence": [
+        {
+          "path": "work/production/fire-encounter-replacements/verification.md",
+          "sha256": "72504a13dc08893f18e2a4d7bb0bc003bf468e73bf24a8cb30661348b0bf2bac"
+        }
+      ]
+    }
+  ],
+  "checkpoint": {
+    "completed": [
+      "Twoanimatedfireenemies integrated",
+      "IndependentartQA",
+      "101tests/buildpassed",
+      "Browserencounter/attack/idlechecks",
+      "All13firerosteridleaudit and13loopscorrected"
+    ],
+    "remaining": [],
+    "blockers": [],
+    "nextAction": "Userplaytest"
+  }
+}

@@ -1,0 +1,4 @@
+interface:
+  display_name: "Runelord Production Status"
+  short_description: "Track content, approvals and integration evidence"
+  default_prompt: "Use $runelord-production-status for the assigned Runelord work and report verified results."

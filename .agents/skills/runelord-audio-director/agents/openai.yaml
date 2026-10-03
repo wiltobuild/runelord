@@ -1,0 +1,4 @@
+interface:
+  display_name: "Runelord Audio Director"
+  short_description: "Integrate music, stems, loops and combat sound"
+  default_prompt: "Use $runelord-audio-director for the assigned Runelord work and report verified results."

@@ -1,0 +1,16 @@
+{
+  "schema": 1,
+  "contentId": "example-content",
+  "catalogKey": null,
+  "inputs": [],
+  "stages": {
+    "design": { "status": "unknown", "evidence": [] },
+    "art": { "status": "unknown", "evidence": [] },
+    "approval": { "status": "unknown", "evidence": [] },
+    "animation": { "status": "unknown", "evidence": [] },
+    "gameplay": { "status": "unknown", "evidence": [] },
+    "integration": { "status": "unknown", "evidence": [] },
+    "qa": { "status": "unknown", "evidence": [] }
+  },
+  "notes": []
+}

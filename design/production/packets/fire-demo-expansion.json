@@ -1,0 +1,145 @@
+{
+  "schema": 1,
+  "id": "fire-demo-expansion",
+  "status": "complete",
+  "outcome": "Eight fire-region encounters, reserve goblins,44 implemented Warlock cards,three starter decks,functional loot and revised resource HUD.",
+  "authorization": "User requested five new encounters,30 additional Warlock cards,three starter decks,loot,new monster animations,and resource HUD revision; all encounters fire regions.",
+  "contentIds": [
+    "firebolt",
+    "ward-of-ash",
+    "summon-imp",
+    "blood-pact",
+    "immolate",
+    "summon-hellhound",
+    "sinister-veil",
+    "kindle",
+    "smoldering-brand",
+    "summon-pit-brute",
+    "conflagrate",
+    "feed-the-pit",
+    "ashen-ward",
+    "searing-lash",
+    "hellish-command",
+    "ritual-cut",
+    "chain-of-flame",
+    "dark-bargain",
+    "fiendish-feast",
+    "infernal-whip",
+    "burning-hatred",
+    "cinder-shield",
+    "smoke-and-mirrors",
+    "hellfire",
+    "infernal-pact",
+    "masters-of-the-pit",
+    "burning-soul",
+    "demonic-resilience",
+    "sacrificial-rite",
+    "corrupting-touch",
+    "fire-and-brimstone",
+    "ember-storm",
+    "unholy-frenzy",
+    "pyroclasm",
+    "shadowflame-barrier",
+    "void-gaze",
+    "rend-flesh",
+    "combust",
+    "blood-price",
+    "wreathed-in-flame",
+    "dread-aura",
+    "feast-of-embers",
+    "abyssal-gaze",
+    "infernal-transformation"
+  ],
+  "owner": "runelord-producer",
+  "integrationOwner": "root",
+  "reviewer": "runelord-game-qa",
+  "ownedPaths": [
+    "packages/content",
+    "packages/engine",
+    "apps/web/src",
+    "tools/import/assets.mjs",
+    "tools/audio/render-sfx.mjs"
+  ],
+  "dependencies": [],
+  "exclusions": [
+    "commits",
+    "deployment",
+    "save deletion"
+  ],
+  "inputs": [
+    {
+      "path": "packages/content/index.ts",
+      "sha256": "f84134b3b1cd90195c03517fffd3088ab03c42ae5b723b23f3bfde0ab8f5fcf7"
+    },
+    {
+      "path": "packages/engine/index.ts",
+      "sha256": "38d4f5dcca3aabd2eadc41a61e395d059b8e74d856b250e7df84f7fc91eeac01"
+    },
+    {
+      "path": "apps/web/src/main.tsx",
+      "sha256": "112db4dc0f2e6cd764af8d519e67ae0bd8cb95b8314804ee6f10530176eff63b"
+    },
+    {
+      "path": "apps/web/src/useBattleDirector.ts",
+      "sha256": "dfb49fe00c03cddfd0f6767cb999d104c362df30bdad9363fd0115af6af17920"
+    },
+    {
+      "path": "apps/web/src/hud.css",
+      "sha256": "f309bf07d93c3a35a171d95eed092a8c7c945675e9a540a0d385ba3e37c4e4dd"
+    },
+    {
+      "path": "apps/web/src/wardEffect.ts",
+      "sha256": "acf2b247b67f546d609a06f6d0a585681c76cdc9c99ce6a3c744be2cedffe204"
+    },
+    {
+      "path": "tools/audio/render-sfx.mjs",
+      "sha256": "68d306e3210a62031a67811add14a9ac887c79dfafae88c96c7a099714c2f670"
+    }
+  ],
+  "animation": null,
+  "acceptance": [
+    {
+      "status": "pass",
+      "evidence": [
+        {
+          "path": "work/production/fire-demo-expansion/qa/report.md",
+          "sha256": "3a7deec4f56a88967dda324813ee8d2f82050006e6640784174ebe958708b865"
+        }
+      ],
+      "check": "rules"
+    },
+    {
+      "status": "pass",
+      "evidence": [
+        {
+          "path": "work/production/demo-expansion/asset-checks.json",
+          "sha256": "a41c216140d5f4a6e21046d4774e914d70a52194e5eebf415abaebbb1e532451"
+        }
+      ],
+      "check": "assets"
+    },
+    {
+      "status": "pass",
+      "evidence": [
+        {
+          "path": "work/production/fire-demo-expansion/browser-verification.md",
+          "sha256": "59c92060a42ad0db788babaaf80b6f8f4edb3641df40fd4c93574dede75cbdaf"
+        }
+      ],
+      "check": "browser"
+    }
+  ],
+  "checkpoint": {
+    "completed": [
+      "44 catalogcards including30 additions",
+      "8 fireencounters and tworeservefights",
+      "3 starters,gold,7consumables,savemigration",
+      "9goblinvariants,2newmonsteranimations",
+      "HUD,spell/item/monster presentation and76SFX",
+      "101tests,18simulations,independentQA,browserchecks"
+    ],
+    "remaining": [],
+    "blockers": [],
+    "nextAction": "User playtest; tune balance from feedback. New monster previews available in gallery."
+  }
+}

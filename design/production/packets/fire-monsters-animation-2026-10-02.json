@@ -1,0 +1,301 @@
+{
+  "schema": 1,
+  "id": "fire-monsters-animation-2026-10-02",
+  "status": "ready",
+  "outcome": "Remaining approved fire monsters perform species-specific combat animation states.",
+  "authorization": "do the rest of the approved fire monsters",
+  "contentIds": [
+    "cindermaw-salamander",
+    "coalhorn-ram",
+    "emberback-tortoise",
+    "furnace-beetle",
+    "slagjaw-toad",
+    "blistertail-scorpion",
+    "bellows-ogre",
+    "sootvein-stalker",
+    "emberroot-strangler",
+    "crucible-sentinel",
+    "candlewisp",
+    "glassfang-basilisk",
+    "pyrewing-harrier",
+    "slagheart-juggernaut",
+    "caldera-broodmother",
+    "crown-of-cinders",
+    "ashfall-wyrm"
+  ],
+  "owner": "runelord-producer",
+  "integrationOwner": "runelord-technical-artist",
+  "reviewer": "runelord-game-qa",
+  "ownedPaths": [
+    "assets/animations/fire-monsters-2026-10-02"
+  ],
+  "dependencies": [
+    "approved variant masters",
+    "built-in image_gen"
+  ],
+  "exclusions": [
+    "game code integration",
+    "commits",
+    "deployments",
+    "redesign",
+    "unapproved replacement art"
+  ],
+  "inputs": [
+    {
+      "path": "assets/concepts/fire-monsters-20-2026-10-02/cindermaw-salamander/base-r2.png",
+      "sha256": "879025332a65098808a76043c7d8880de92bb61d475360348fb49b2410bdce20",
+      "approval": {
+        "status": "Approved",
+        "at": "2026-10-02T22:20:49.176Z",
+        "evidenceId": "b476e1d1-8707-42cb-9c86-70407414f5e8",
+        "paths": [
+          "C:\\Users\\wilsh\\Projects\\runelord\\assets\\approvals\\inbox\\cindermaw-salamander\\base-r2\\base-r2.png"
+        ]
+      }
+    },
+    {
+      "path": "assets/concepts/fire-monsters-20-2026-10-02/coalhorn-ram/base-r1.png",
+      "sha256": "bc00a28393f03d6246e01d4ec8eab6b98423547178f35bb608ee3e85d3e28ea1",
+      "approval": {
+        "status": "Approved",
+        "at": "2026-10-02T22:20:49.176Z",
+        "evidenceId": "1792a1c5-7e35-4391-9227-65c459f5d36d",
+        "paths": [
+          "C:\\Users\\wilsh\\Projects\\runelord\\assets\\approvals\\inbox\\coalhorn-ram\\base-r1\\base-r1.png"
+        ]
+      }
+    },
+    {
+      "path": "assets/concepts/fire-monsters-20-2026-10-02/emberback-tortoise/base-r1.png",
+      "sha256": "57cf5e95adc5918cc8ff47577822060fa1f5c4127282c0d1ad8684351a58a549",
+      "approval": {
+        "status": "Approved",
+        "at": "2026-10-02T22:20:49.176Z",
+        "evidenceId": "393743f5-0c5e-4b13-91c4-36513ac081f4",
+        "paths": [
+          "C:\\Users\\wilsh\\Projects\\runelord\\assets\\approvals\\inbox\\emberback-tortoise\\base-r1\\base-r1.png"
+        ]
+      }
+    },
+    {
+      "path": "assets/concepts/fire-monsters-20-2026-10-02/furnace-beetle/base-r1.png",
+      "sha256": "302fe8ec3b33f824a6f66ccfa4a629c3c7d422487c7cc9d0931bc5a43f4cf8b9",
+      "approval": {
+        "status": "Approved",
+        "at": "2026-10-02T22:20:49.176Z",
+        "evidenceId": "21155c0e-a540-4a56-8707-c3ca43cdf735",
+        "paths": [
+          "C:\\Users\\wilsh\\Projects\\runelord\\assets\\approvals\\inbox\\furnace-beetle\\base-r1\\base-r1.png"
+        ]
+      }
+    },
+    {
+      "path": "assets/concepts/fire-monsters-20-2026-10-02/slagjaw-toad/base-r1.png",
+      "sha256": "71f3f5e6faa4b4569a10d827a92b3167ac90d29a7fef108519f886c7dd1ed900",
+      "approval": {
+        "status": "Approved",
+        "at": "2026-10-02T22:20:49.176Z",
+        "evidenceId": "9daabbd5-c783-4ea3-a8bd-010442c281aa",
+        "paths": [
+          "C:\\Users\\wilsh\\Projects\\runelord\\assets\\approvals\\inbox\\slagjaw-toad\\base-r1\\base-r1.png"
+        ]
+      }
+    },
+    {
+      "path": "assets/concepts/fire-monsters-20-2026-10-02/blistertail-scorpion/base-r1.png",
+      "sha256": "d94659021cb81e0eabd8d3cc7ecaeaf6ba52f523c96c8ca992397b11a14035ae",
+      "approval": {
+        "status": "Approved",
+        "at": "2026-10-02T22:20:49.176Z",
+        "evidenceId": "986b1daa-ddd1-4626-bef4-cb85d0565b2e",
+        "paths": [
+          "C:\\Users\\wilsh\\Projects\\runelord\\assets\\approvals\\inbox\\blistertail-scorpion\\base-r1\\base-r1.png"
+        ]
+      }
+    },
+    {
+      "path": "assets/concepts/fire-monsters-20-2026-10-02/bellows-ogre/base-r1.png",
+      "sha256": "5e9dceb37ad78b10da1931f3cefab27c9a0170bdf6334f5f20753cb82f6f97dc",
+      "approval": {
+        "status": "Approved",
+        "at": "2026-10-02T22:20:49.176Z",
+        "evidenceId": "cf08fb4b-524e-49fa-aea2-ed49b11d4fce",
+        "paths": [
+          "C:\\Users\\wilsh\\Projects\\runelord\\assets\\approvals\\inbox\\bellows-ogre\\base-r1\\base-r1.png"
+        ]
+      }
+    },
+    {
+      "path": "assets/concepts/fire-monsters-20-2026-10-02/sootvein-stalker/base-r1.png",
+      "sha256": "bb7fe5f25cf3658d2fa123a9fd4f49c54042f26878b3a2135f6b9f2b337c1067",
+      "approval": {
+        "status": "Approved",
+        "at": "2026-10-02T22:20:49.176Z",
+        "evidenceId": "d548c36c-f980-49e5-8719-f50201b28eea",
+        "paths": [
+          "C:\\Users\\wilsh\\Projects\\runelord\\assets\\approvals\\inbox\\sootvein-stalker\\base-r1\\base-r1.png"
+        ]
+      }
+    },
+    {
+      "path": "assets/concepts/fire-monsters-20-2026-10-02/emberroot-strangler/base-r1.png",
+      "sha256": "de46176c22c3c61d7406b0e1aeecdcc03c7ecd7157eb5c4a21701f0120ea00da",
+      "approval": {
+        "status": "Approved",
+        "at": "2026-10-02T22:20:49.176Z",
+        "evidenceId": "ab6d3941-20dd-4eda-abb9-b81882e5569a",
+        "paths": [
+          "C:\\Users\\wilsh\\Projects\\runelord\\assets\\approvals\\inbox\\emberroot-strangler\\base-r1\\base-r1.png"
+        ]
+      }
+    },
+    {
+      "path": "assets/concepts/fire-monsters-20-2026-10-02/crucible-sentinel/base-r1.png",
+      "sha256": "c23e408eb947b8021a78d98909e6b0b8e1e780cda17bedd05efa27db59e68636",
+      "approval": {
+        "status": "Approved",
+        "at": "2026-10-02T22:20:49.176Z",
+        "evidenceId": "895c8c17-9aea-4ee2-bba3-4f43c88c97b5",
+        "paths": [
+          "C:\\Users\\wilsh\\Projects\\runelord\\assets\\approvals\\inbox\\crucible-sentinel\\base-r1\\base-r1.png"
+        ]
+      }
+    },
+    {
+      "path": "assets/concepts/fire-monsters-20-2026-10-02/candlewisp/base-r1.png",
+      "sha256": "c4702aa19d2c5a939bdb1a024394ba08709fe996f72f5cc5b0fd3884e36e47a7",
+      "approval": {
+        "status": "Approved",
+        "at": "2026-10-02T22:20:49.176Z",
+        "evidenceId": "b37ba6db-4e85-4107-8b5b-94b69de59d5e",
+        "paths": [
+          "C:\\Users\\wilsh\\Projects\\runelord\\assets\\approvals\\inbox\\candlewisp\\base-r1\\base-r1.png"
+        ]
+      }
+    },
+    {
+      "path": "assets/concepts/fire-monsters-20-2026-10-02/glassfang-basilisk/base-r1.png",
+      "sha256": "de904da7614ca3dbf911c5c6031b316667bf19b8a8054b940da537f96f252da1",
+      "approval": {
+        "status": "Approved",
+        "at": "2026-10-02T22:20:49.176Z",
+        "evidenceId": "c63b1bb8-59aa-470f-9c92-58a13cfb13ee",
+        "paths": [
+          "C:\\Users\\wilsh\\Projects\\runelord\\assets\\approvals\\inbox\\glassfang-basilisk\\base-r1\\base-r1.png"
+        ]
+      }
+    },
+    {
+      "path": "assets/concepts/fire-monsters-20-2026-10-02/pyrewing-harrier/base-r1.png",
+      "sha256": "4368eb53df9f367894860bfaf3e73605adf918c943f555b3ef729e6485bbdcfd",
+      "approval": {
+        "status": "Approved",
+        "at": "2026-10-02T22:20:49.176Z",
+        "evidenceId": "663e06c2-8a77-4562-83a7-c7a458e4d780",
+        "paths": [
+          "C:\\Users\\wilsh\\Projects\\runelord\\assets\\approvals\\inbox\\pyrewing-harrier\\base-r1\\base-r1.png"
+        ]
+      }
+    },
+    {
+      "path": "assets/concepts/fire-monsters-20-2026-10-02/slagheart-juggernaut/base-r1.png",
+      "sha256": "e40dcb88cc4348dc5570a5b862500827592a80acf47b32350a1cda91159e37b1",
+      "approval": {
+        "status": "Approved",
+        "at": "2026-10-02T22:20:49.176Z",
+        "evidenceId": "fdbba66a-8d92-4a7f-bd76-65bbee6b2e9e",
+        "paths": [
+          "C:\\Users\\wilsh\\Projects\\runelord\\assets\\approvals\\inbox\\slagheart-juggernaut\\base-r1\\base-r1.png"
+        ]
+      }
+    },
+    {
+      "path": "assets/concepts/fire-monsters-20-2026-10-02/caldera-broodmother/base-r1.png",
+      "sha256": "e506cd8a8628365a1b18f81fff925815b3dd6be70fa9e4bab96026de2069d507",
+      "approval": {
+        "status": "Approved",
+        "at": "2026-10-02T22:20:49.176Z",
+        "evidenceId": "1db10c6d-de02-4041-8d60-2210d2b0ffba",
+        "paths": [
+          "C:\\Users\\wilsh\\Projects\\runelord\\assets\\approvals\\inbox\\caldera-broodmother\\base-r1\\base-r1.png"
+        ]
+      }
+    },
+    {
+      "path": "assets/concepts/fire-monsters-20-2026-10-02/crown-of-cinders/base-r1.png",
+      "sha256": "564d5ae5d042a860603bfbdcb76177e7817b4c225f340f4a6fb8ca467a8dda67",
+      "approval": {
+        "status": "Approved",
+        "at": "2026-10-02T22:20:49.176Z",
+        "evidenceId": "360114f3-930d-4db6-94e7-5e3caac8711b",
+        "paths": [
+          "C:\\Users\\wilsh\\Projects\\runelord\\assets\\approvals\\inbox\\crown-of-cinders\\base-r1\\base-r1.png"
+        ]
+      }
+    },
+    {
+      "path": "assets/concepts/fire-monsters-20-2026-10-02/ashfall-wyrm/base-r1.png",
+      "sha256": "e95ad233d110039df5a89809b682a833e503086d73ded3aef6d1321ee34051f8",
+      "approval": {
+        "status": "Approved",
+        "at": "2026-10-02T22:20:49.176Z",
+        "evidenceId": "03618946-ec1b-45e7-a6cc-06fdc22d6eaf",
+        "paths": [
+          "C:\\Users\\wilsh\\Projects\\runelord\\assets\\approvals\\inbox\\ashfall-wyrm\\base-r1\\base-r1.png"
+        ]
+      }
+    }
+  ],
+  "animation": {
+    "method": "whole-character-frames",
+    "requiredStates": [
+      "attack",
+      "breath",
+      "broodfire_sweep",
+      "cast",
+      "charge",
+      "die",
+      "guard",
+      "hit",
+      "idle",
+      "spawn",
+      "wounded_idle"
+    ],
+    "applicability": "See handoff.json for per-species states; raised/tamed forms and variants excluded from this base-identity request."
+  },
+  "acceptance": [
+    {
+      "check": "Approved identities preserved across frames",
+      "status": "pending",
+      "evidence": []
+    },
+    {
+      "check": "Species states and transparent runtime exports complete",
+      "status": "pending",
+      "evidence": []
+    },
+    {
+      "check": "Independent playback and frame QA completed",
+      "status": "pending",
+      "evidence": []
+    }
+  ],
+  "checkpoint": {
+    "at": "2026-10-03T04:46:23.639231+00:00",
+    "completed": [
+      "Exact approvals checked,18 approved masters copied to character library",
+      "Goblin48-state pack finalized separately",
+      "First salamander and ogre motion methods verified",
+      "Interactive combined player with native focused and measured96px views",
+      "Current independent state verdict counts: {\"pass_with_limitations\": 21, \"fail\": 5, \"not_run\": 70}"
+    ],
+    "remaining": [
+      "Complete remaining species generation",
+      "Repair tree source-a extra root and salamander wounded posture",
+      "Independent per-frame QA and attributed playback checks across96states",
+      "Submit final gallery previews and package"
+    ],
+    "blockers": [],
+    "nextAction": "Continue parallel production and incremental repairs/review"
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "name": "runelord",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "scripts": {
+    "dev": "vite --config apps/web/vite.config.ts --host 127.0.0.1",
+    "build": "tsc --noEmit && vite build --config apps/web/vite.config.ts",
+    "test": "tsx --test packages/engine/*.test.ts",
+    "import:content": "node tools/import/catalog.mjs",
+    "import:assets": "node tools/import/assets.mjs",
+    "render:sfx": "node tools/audio/render-sfx.mjs",
+    "sim": "tsx tools/sim/warlock.ts",
+    "production:status": "node tools/production/cli.mjs status --repo .",
+    "test:production": "node --test tools/production/*.test.mjs"
+  },
+  "dependencies": {
+    "pixi.js": "^8.14.0",
+    "react": "^19.2.0",
+    "react-dom": "^19.2.0"
+  },
+  "devDependencies": {
+    "@types/node": "^24.0.0",
+    "@types/react": "^19.2.0",
+    "@types/react-dom": "^19.2.0",
+    "sharp": "^0.35.5",
+    "tsx": "^4.20.0",
+    "typescript": "^5.9.0",
+    "vite": "^7.1.0"
+  }
+}

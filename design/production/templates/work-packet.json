@@ -1,0 +1,18 @@
+{
+  "schema": 1,
+  "id": "example-slice",
+  "status": "draft",
+  "outcome": "Replace with the observable player outcome",
+  "authorization": "Record the actual user request before changing status to ready",
+  "contentIds": [],
+  "owner": "runelord-rules-engineer",
+  "integrationOwner": "runelord-technical-artist",
+  "reviewer": "runelord-game-qa",
+  "ownedPaths": [],
+  "dependencies": [],
+  "exclusions": [],
+  "inputs": [],
+  "animation": null,
+  "acceptance": [],
+  "checkpoint": { "completed": [], "remaining": [], "blockers": [], "nextAction": "Fill this packet for an authorized assignment" }
+}

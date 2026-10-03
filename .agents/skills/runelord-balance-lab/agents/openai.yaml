@@ -1,0 +1,4 @@
+interface:
+  display_name: "Runelord Balance Lab"
+  short_description: "Compare balance across matched seeds and strategies"
+  default_prompt: "Use $runelord-balance-lab for the assigned Runelord work and report verified results."

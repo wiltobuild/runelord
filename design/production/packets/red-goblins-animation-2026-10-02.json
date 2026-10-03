@@ -1,0 +1,228 @@
+{
+  "schema": 1,
+  "id": "red-goblins-animation-2026-10-02",
+  "status": "complete",
+  "outcome": "Nine approved red goblins perform readable combat animations, beginning with a verified Cleaver Bruiser motion proof.",
+  "authorization": "get these animated with hd-animate-fantasy-character start with the red goblins",
+  "contentIds": [
+    "v01-cleaver-bruiser",
+    "v02-ash-spear-guard",
+    "v03-twinaxe-reaver",
+    "v04-cinder-crossbow-scout",
+    "v05-emberbow-hunter",
+    "v06-forgehammer-sapper",
+    "v07-ashknife-cutthroat",
+    "v08-coalhex-shaman",
+    "v09-scarblade-captain"
+  ],
+  "owner": "runelord-producer",
+  "integrationOwner": "runelord-technical-artist",
+  "reviewer": "runelord-game-qa",
+  "ownedPaths": [
+    "assets/characters/cinderhook-marauder/animation-nine-2026-10-02"
+  ],
+  "dependencies": [
+    "approved variant masters",
+    "built-in image_gen"
+  ],
+  "exclusions": [
+    "game code integration",
+    "commits",
+    "deployments",
+    "redesign",
+    "unapproved replacement art"
+  ],
+  "inputs": [
+    {
+      "path": "assets/characters/cinderhook-marauder/variants-nine-2026-10-02/v01-cleaver-bruiser-r1.png",
+      "sha256": "da834c1b149010a32fb5d21697d8110ff5737ac0d2ae427499ac665d84910e7f",
+      "approval": {
+        "status": "Approved",
+        "at": "2026-10-02T22:20:49.176Z",
+        "evidenceId": "5d19f38e-717c-47c4-a421-882d163c7579",
+        "paths": [
+          "C:\\Users\\wilsh\\Projects\\runelord\\assets\\approvals\\inbox\\cinderhook-marauder\\v01-cleaver-bruiser-r1\\v01-cleaver-bruiser-r1.png"
+        ]
+      }
+    },
+    {
+      "path": "assets/characters/cinderhook-marauder/variants-nine-2026-10-02/v02-ash-spear-guard-r1.png",
+      "sha256": "2b39f9bb0e54195bebeffe08bbcba3dc002d6acfbaab088c672eebf0dd895013",
+      "approval": {
+        "status": "Approved",
+        "at": "2026-10-02T22:20:49.176Z",
+        "evidenceId": "1317f234-e2c1-48df-b2e5-52143a6e5243",
+        "paths": [
+          "C:\\Users\\wilsh\\Projects\\runelord\\assets\\approvals\\inbox\\cinderhook-marauder\\v02-ash-spear-guard-r1\\v02-ash-spear-guard-r1.png"
+        ]
+      }
+    },
+    {
+      "path": "assets/characters/cinderhook-marauder/variants-nine-2026-10-02/v03-twinaxe-reaver-r1.png",
+      "sha256": "fd71c5d825bad8f1035481a2d3b2ffa6b443e89c2497451cfba9a46ba99efa9b",
+      "approval": {
+        "status": "Approved",
+        "at": "2026-10-02T22:20:49.176Z",
+        "evidenceId": "eee44240-fdf0-4c1b-8181-19797f97f9cf",
+        "paths": [
+          "C:\\Users\\wilsh\\Projects\\runelord\\assets\\approvals\\inbox\\cinderhook-marauder\\v03-twinaxe-reaver-r1\\v03-twinaxe-reaver-r1.png"
+        ]
+      }
+    },
+    {
+      "path": "assets/characters/cinderhook-marauder/variants-nine-2026-10-02/v04-cinder-crossbow-scout-r1.png",
+      "sha256": "c1762ca4c6db2da68f9bb2c6f582ddc5031b9c0e39b12bc634e78bba23329edf",
+      "approval": {
+        "status": "Approved",
+        "at": "2026-10-02T22:20:49.176Z",
+        "evidenceId": "25408795-28bc-4a78-bb62-d9bfea65859d",
+        "paths": [
+          "C:\\Users\\wilsh\\Projects\\runelord\\assets\\approvals\\inbox\\cinderhook-marauder\\v04-cinder-crossbow-scout-r1\\v04-cinder-crossbow-scout-r1.png"
+        ]
+      }
+    },
+    {
+      "path": "assets/characters/cinderhook-marauder/variants-nine-2026-10-02/v05-emberbow-hunter-r1.png",
+      "sha256": "3513778d465cfda10e5221cf8ef7fd603934ba7c84ba2d96013aee0382e0df24",
+      "approval": {
+        "status": "Approved",
+        "at": "2026-10-02T22:20:49.176Z",
+        "evidenceId": "bf104a58-4e6f-4038-975e-9c1c62c4f270",
+        "paths": [
+          "C:\\Users\\wilsh\\Projects\\runelord\\assets\\approvals\\inbox\\cinderhook-marauder\\v05-emberbow-hunter-r1\\v05-emberbow-hunter-r1.png"
+        ]
+      }
+    },
+    {
+      "path": "assets/characters/cinderhook-marauder/variants-nine-2026-10-02/v06-forgehammer-sapper-r1.png",
+      "sha256": "4b276d1e55e995d54b0d0ba5f3c4ff280c4de944a030bfaeccb52585426312e3",
+      "approval": {
+        "status": "Approved",
+        "at": "2026-10-02T22:20:49.176Z",
+        "evidenceId": "041efecf-e970-4552-95a0-852bca8ef3fc",
+        "paths": [
+          "C:\\Users\\wilsh\\Projects\\runelord\\assets\\approvals\\inbox\\cinderhook-marauder\\v06-forgehammer-sapper-r1\\v06-forgehammer-sapper-r1.png"
+        ]
+      }
+    },
+    {
+      "path": "assets/characters/cinderhook-marauder/variants-nine-2026-10-02/v07-ashknife-cutthroat-r1.png",
+      "sha256": "cbffcc231d3d90fd9e58297d7c1f01cfcf0847ff29af8945d69f792821ef323f",
+      "approval": {
+        "status": "Approved",
+        "at": "2026-10-02T22:20:49.176Z",
+        "evidenceId": "e5e57466-adb2-46d7-bc18-2d79d0d6b0fc",
+        "paths": [
+          "C:\\Users\\wilsh\\Projects\\runelord\\assets\\approvals\\inbox\\cinderhook-marauder\\v07-ashknife-cutthroat-r1\\v07-ashknife-cutthroat-r1.png"
+        ]
+      }
+    },
+    {
+      "path": "assets/characters/cinderhook-marauder/variants-nine-2026-10-02/v08-coalhex-shaman-r1.png",
+      "sha256": "86c64514a248dccb5b4e21bc337fc14cc2454f57e9dc75e0051989d01d2b61f3",
+      "approval": {
+        "status": "Approved",
+        "at": "2026-10-02T22:20:49.176Z",
+        "evidenceId": "ba0ac405-598c-40f4-ad03-678ee21c9914",
+        "paths": [
+          "C:\\Users\\wilsh\\Projects\\runelord\\assets\\approvals\\inbox\\cinderhook-marauder\\v08-coalhex-shaman-r1\\v08-coalhex-shaman-r1.png"
+        ]
+      }
+    },
+    {
+      "path": "assets/characters/cinderhook-marauder/variants-nine-2026-10-02/v09-scarblade-captain-r1.png",
+      "sha256": "73db8f595b7d73322ad8d26f35b20ead7496b45f1ea5ce849388be2e8894d5ae",
+      "approval": {
+        "status": "Approved",
+        "at": "2026-10-02T22:20:49.176Z",
+        "evidenceId": "f14e074a-6a36-4f40-b19c-23da914254ea",
+        "paths": [
+          "C:\\Users\\wilsh\\Projects\\runelord\\assets\\approvals\\inbox\\cinderhook-marauder\\v09-scarblade-captain-r1\\v09-scarblade-captain-r1.png"
+        ]
+      }
+    }
+  ],
+  "animation": {
+    "common": [
+      "idle",
+      "attack",
+      "hit",
+      "wounded_idle",
+      "die"
+    ],
+    "cast": [
+      "v08-coalhex-shaman"
+    ],
+    "guard": [
+      "v02-ash-spear-guard",
+      "v09-scarblade-captain"
+    ],
+    "spawn": "not applicable to requested enemy combat set",
+    "victory": "not applicable",
+    "forms": "hostile only; raised/tamed not authorized for these humanoid variant animations",
+    "timing": "ordinary action roughly 350ms if readable; slower heavy moves documented; idle/wounded loop; death one-shot holds terminal",
+    "proof": "v01 idle attack hit die, quality checkpoint before extending",
+    "method": "whole-character-frames",
+    "requiredStates": [
+      "idle",
+      "attack",
+      "hit",
+      "wounded_idle",
+      "die",
+      "cast for v08",
+      "guard for v02 and v09"
+    ]
+  },
+  "acceptance": [
+    {
+      "id": "identity",
+      "description": "Every authored frame preserves approved variant identity and cel shading",
+      "status": "pass",
+      "evidence": [
+        {
+          "path": "assets/characters/cinderhook-marauder/animation-nine-2026-10-02/qa/final-review.json",
+          "sha256": "1638af73f5010cf7626fdab8cc047aa93d1089127b23e10937ded81c39c81793"
+        }
+      ],
+      "check": "Every authored frame preserves approved variant identity and cel shading",
+      "notes": "Pass with limitations documented by independent reviewer; sparse native sprite study. Full and small playback sampled; no polished HD certification."
+    },
+    {
+      "id": "playback",
+      "description": "Real playback inspected at full size and 96px; loops/recovery/death semantics checked",
+      "status": "pass",
+      "evidence": [
+        {
+          "path": "assets/characters/cinderhook-marauder/animation-nine-2026-10-02/qa/final-review.json",
+          "sha256": "1638af73f5010cf7626fdab8cc047aa93d1089127b23e10937ded81c39c81793"
+        }
+      ],
+      "check": "Real playback inspected at full size and 96px; loops/recovery/death semantics checked",
+      "notes": "Pass with limitations documented by independent reviewer; sparse native sprite study. Full and small playback sampled; no polished HD certification."
+    },
+    {
+      "id": "coverage",
+      "description": "All nine required state sets have transparent runtime frames and metadata",
+      "status": "pass",
+      "evidence": [
+        {
+          "path": "assets/characters/cinderhook-marauder/animation-nine-2026-10-02/qa/final-review.json",
+          "sha256": "1638af73f5010cf7626fdab8cc047aa93d1089127b23e10937ded81c39c81793"
+        }
+      ],
+      "check": "All nine required state sets have transparent runtime frames and metadata",
+      "notes": "Pass with limitations documented by independent reviewer; sparse native sprite study. Full and small playback sampled; no polished HD certification."
+    }
+  ],
+  "checkpoint": {
+    "completed": [
+      "Nine approved source identities verified",
+      "48 playable states exported with165 runtime-used frames",
+      "Independent frame and playback QA passed with limitations",
+      "Individual previews submitted and verified in gallery"
+    ],
+    "remaining": [],
+    "blockers": [],
+    "nextAction": "User animation design review; separate from completed technical production"
+  }
+}

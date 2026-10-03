@@ -1,0 +1,128 @@
+{
+  "schema": 1,
+  "id": "demon-lord-ninth-encounter",
+  "status": "complete",
+  "outcome": "Ninth crowned Demon Lord boss, weighted randomized rewards, loot reveals and resource feedback",
+  "authorization": "User requested ninth demon lord encounter with crown loot, new arena/music/animation, summoned demons, weighted random rewards and HUD improvements.",
+  "contentIds": [
+    "demon-lord",
+    "demon-lord-crown",
+    "demon-throne"
+  ],
+  "owner": "runelord-producer",
+  "integrationOwner": "runelord-technical-artist",
+  "reviewer": "runelord-game-qa",
+  "ownedPaths": [
+    "apps/web/src",
+    "packages/content",
+    "packages/engine",
+    "tools/audio",
+    "tools/import",
+    "assets"
+  ],
+  "dependencies": [],
+  "exclusions": [
+    "No deployment or commit",
+    "No user save mutations"
+  ],
+  "inputs": [
+    {
+      "path": "apps/web/src/main.tsx",
+      "sha256": "6b16202194fb34ba5c42d1b612ad0cf72e4a9f9d09084c33261458d9254570ee"
+    },
+    {
+      "path": "apps/web/src/useBattleDirector.ts",
+      "sha256": "fbd0ca2d3665da2099e431d65c234a802941c236b1b1e887ceb2d7df9e0cf2ec"
+    },
+    {
+      "path": "apps/web/src/DemonLordGlow.tsx",
+      "sha256": "5dfd344e1058c363dfff4cdfcef6404dbb14808af9e7f066f58df597d3323d1d"
+    },
+    {
+      "path": "apps/web/src/ActorSprite.tsx",
+      "sha256": "d1193086ab8fac6aa8df6a6f1fc96bf7b182c53b4d027184c9b2ef7b1c405f3c"
+    },
+    {
+      "path": "apps/web/src/SpellEffects.tsx",
+      "sha256": "24875398f69304005817c2d0ac644cd09d075bed6c05295d142ca7cb1ef0fb4e"
+    },
+    {
+      "path": "apps/web/src/hud.css",
+      "sha256": "e10f529ce95e95d50b8d049472e931fa13331ccc46ed0995f3168f7c1b67db71"
+    },
+    {
+      "path": "apps/web/src/ResourceMeters.tsx",
+      "sha256": "fd7333e11dd27fc07c6bcdb20ba75babbef9b594281fba18238f21066555bf34"
+    },
+    {
+      "path": "apps/web/src/LootReveal.tsx",
+      "sha256": "6e0bd709bfd06a4ee39386a7b2eb157d944d7296a91cbfc5d7115d547f63936b"
+    },
+    {
+      "path": "packages/content/index.ts",
+      "sha256": "3f18ec6b3f67f9c4732315f4896b6ee7a2595c54eed729e1bd21980f0ecaa1ae"
+    },
+    {
+      "path": "packages/engine/index.ts",
+      "sha256": "3d4ed0c88d8036bb3f7c45dd95ffcff2963cb6818aa23b71f8b6688974e3be56"
+    },
+    {
+      "path": "assets/audio/music/demon-lord-r1/demon-lord.wav",
+      "sha256": "eae6b4994d7963527ca895e07c09328c7e522a4ac330ea1d246476b59195816f"
+    }
+  ],
+  "animation": {
+    "method": "whole-character-frames",
+    "requiredStates": [
+      "idle",
+      "attack",
+      "hit",
+      "wounded_idle",
+      "die",
+      "cast",
+      "summon"
+    ]
+  },
+  "acceptance": [
+    {
+      "check": "Boss mechanics, weighted rewards, migration/replay pass independent rules review",
+      "status": "pass",
+      "evidence": [
+        {
+          "path": "work/production/demon-lord/qa-rules.json",
+          "sha256": "bb5920ee58251d2fc32dfa155830658e4b0a04b5b2c51e3aeedd32b17768f07d"
+        }
+      ]
+    },
+    {
+      "check": "Controlled browser verifies boss combat, crown victory and card-to-item loot transition",
+      "status": "pass",
+      "evidence": [
+        {
+          "path": "work/production/demon-lord/integration.json",
+          "sha256": "d9842b396adb7d289eee015de7d942efa43ef7fa5bd8cee11da339556d259df9"
+        }
+      ]
+    },
+    {
+      "check": "Sixteen unique boss frames, seven states, scene/crown/music and ranged summon assets pass technical checks",
+      "status": "pass",
+      "evidence": [
+        {
+          "path": "work/production/demon-lord/asset-checks.json",
+          "sha256": "12a5938ab14d75badb0a599112451c352c84fb476aaea95c77c6ad63141cc599"
+        }
+      ]
+    }
+  ],
+  "checkpoint": {
+    "completed": [
+      "Integrated ninth boss, arena, frames/glows, score and SFX",
+      "Weighted seeded rewards; loot and resource UI",
+      "Independent rules and controlled browser checks"
+    ],
+    "remaining": [],
+    "blockers": [],
+    "nextAction": "User playtest and subjective art/music feedback"
+  }
+}
