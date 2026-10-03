@@ -1,0 +1,8 @@
+{
+  "name": "Wreathed in Flame",
+  "cost": "1",
+  "type": "Skill",
+  "rarity": "Uncommon",
+  "rules": "Gain 5 Guard, plus Guard equal to half the total Scorch on all enemies.",
+  "upgrade": "8 + half"
+}
