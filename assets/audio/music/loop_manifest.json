@@ -1,0 +1,59 @@
+[
+  {
+    "slug": "01_ashes_of_the_first_rune",
+    "title": "Ashes of the First Rune",
+    "description": "Exploration / ruined sanctuaries. A wistful piano waltz with answering cello, harp and rising strings.",
+    "bpm": 80,
+    "meter": "3/4",
+    "bars": 32,
+    "duration_seconds": 72.0,
+    "sample_rate": 48000,
+    "loop_start_sample": 0,
+    "loop_end_sample_exclusive": 3456000,
+    "master_gain": 7.750468868236451,
+    "verification": {
+      "peak_dbfs": -1.5,
+      "rms_dbfs": -16.89,
+      "seam_delta": 0.0,
+      "finite": true
+    }
+  },
+  {
+    "slug": "02_oathfire",
+    "title": "Oathfire",
+    "description": "Battle / defiant momentum. Interlocking string pulses, brass calls, piano and a lyrical violin theme.",
+    "bpm": 120,
+    "meter": "4/4",
+    "bars": 48,
+    "duration_seconds": 96.0,
+    "sample_rate": 48000,
+    "loop_start_sample": 0,
+    "loop_end_sample_exclusive": 4608000,
+    "master_gain": 4.160338583337309,
+    "verification": {
+      "peak_dbfs": -1.5,
+      "rms_dbfs": -17.32,
+      "seam_delta": 0.0,
+      "finite": true
+    }
+  },
+  {
+    "slug": "03_the_crown_beneath",
+    "title": "The Crown Beneath",
+    "description": "Boss / ancient sovereign. A dark triple-meter procession, choir, low organ, heavy drums and a soaring final statement.",
+    "bpm": 96,
+    "meter": "3/4",
+    "bars": 48,
+    "duration_seconds": 90.0,
+    "sample_rate": 48000,
+    "loop_start_sample": 0,
+    "loop_end_sample_exclusive": 4320000,
+    "master_gain": 3.237848443479569,
+    "verification": {
+      "peak_dbfs": -1.5,
+      "rms_dbfs": -16.62,
+      "seam_delta": 0.0,
+      "finite": true
+    }
+  }
+]
