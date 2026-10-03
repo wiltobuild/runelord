@@ -1,0 +1,8 @@
+{
+  "name": "Ashen Ward",
+  "cost": "1",
+  "type": "Skill",
+  "rarity": "Common",
+  "rules": "Gain 7 Guard. Apply 2 Scorch to ALL enemies.",
+  "upgrade": "9 Guard, 3 Scorch"
+}

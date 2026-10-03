@@ -1,0 +1,36 @@
+[
+  {
+    "region": "title",
+    "text": "Ashen Ward",
+    "lines": [
+      "Ashen Ward"
+    ],
+    "font_size": 92
+  },
+  {
+    "region": "cost",
+    "text": "1",
+    "lines": [
+      "1"
+    ],
+    "font_size": 110
+  },
+  {
+    "region": "type",
+    "text": "SKILL · WARLOCK",
+    "lines": [
+      "SKILL · WARLOCK"
+    ],
+    "font_size": 35
+  },
+  {
+    "region": "rules",
+    "text": "Gain 7 Guard. Apply 2 Scorch to ALL enemies.",
+    "lines": [
+      "Gain 7 Guard.",
+      "Apply 2 Scorch to ALL",
+      "enemies."
+    ],
+    "font_size": 54
+  }
+]
