@@ -1,0 +1,38 @@
+[
+  {
+    "region": "title",
+    "text": "Summon Pyre Warden",
+    "lines": [
+      "Summon Pyre Warden"
+    ],
+    "font_size": 50
+  },
+  {
+    "region": "cost",
+    "text": "2\n+1 Cinders",
+    "lines": [
+      "2",
+      "+1 Cinders"
+    ],
+    "font_sizes": [
+      76,
+      17
+    ]
+  },
+  {
+    "region": "type",
+    "text": "SKILL · WARLOCK",
+    "lines": [
+      "SKILL · WARLOCK"
+    ],
+    "font_size": 35
+  },
+  {
+    "region": "rules",
+    "text": "Summon a Pyre Warden.",
+    "lines": [
+      "Summon a Pyre Warden."
+    ],
+    "font_size": 54
+  }
+]

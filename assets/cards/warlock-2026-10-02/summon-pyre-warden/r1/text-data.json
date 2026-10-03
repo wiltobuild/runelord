@@ -1,0 +1,8 @@
+{
+  "name": "Summon Pyre Warden",
+  "cost": "2 +1🔥",
+  "type": "Skill",
+  "rarity": "Uncommon",
+  "rules": "Summon a Pyre Warden.",
+  "upgrade": "Costs 1 +1🔥"
+}
