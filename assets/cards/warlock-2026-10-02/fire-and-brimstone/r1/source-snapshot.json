@@ -1,0 +1,8 @@
+{
+  "name": "Fire and Brimstone",
+  "cost": "2",
+  "type": "Attack",
+  "rarity": "Uncommon",
+  "rules": "Deal 10 damage. Double the enemy's Scorch.",
+  "upgrade": "14 dmg"
+}

@@ -1,0 +1,35 @@
+[
+  {
+    "region": "title",
+    "text": "Fire and Brimstone",
+    "lines": [
+      "Fire and Brimstone"
+    ],
+    "font_size": 59
+  },
+  {
+    "region": "cost",
+    "text": "2",
+    "lines": [
+      "2"
+    ],
+    "font_size": 110
+  },
+  {
+    "region": "type",
+    "text": "ATTACK · WARLOCK",
+    "lines": [
+      "ATTACK · WARLOCK"
+    ],
+    "font_size": 35
+  },
+  {
+    "region": "rules",
+    "text": "Deal 10 damage. Double the enemy's Scorch.",
+    "lines": [
+      "Deal 10 damage.",
+      "Double the enemy's Scorch."
+    ],
+    "font_size": 54
+  }
+]
