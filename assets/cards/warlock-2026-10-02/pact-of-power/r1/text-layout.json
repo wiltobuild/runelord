@@ -1,0 +1,37 @@
+[
+  {
+    "region": "title",
+    "text": "Pact of Power",
+    "lines": [
+      "Pact of Power"
+    ],
+    "font_size": 84
+  },
+  {
+    "region": "cost",
+    "text": "0",
+    "lines": [
+      "0"
+    ],
+    "font_size": 110
+  },
+  {
+    "region": "type",
+    "text": "SKILL · WARLOCK",
+    "lines": [
+      "SKILL · WARLOCK"
+    ],
+    "font_size": 35
+  },
+  {
+    "region": "rules",
+    "text": "Pact 6. Gain 2 Mana. Draw 3 cards. Consume.",
+    "lines": [
+      "Pact 6.",
+      "Gain 2 Mana.",
+      "Draw 3 cards.",
+      "Consume."
+    ],
+    "font_size": 54
+  }
+]

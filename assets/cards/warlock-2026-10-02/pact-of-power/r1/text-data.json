@@ -1,0 +1,8 @@
+{
+  "name": "Pact of Power",
+  "cost": "0",
+  "type": "Skill",
+  "rarity": "Rare",
+  "rules": "Pact 6. Gain 2 Mana. Draw 3 cards. Consume.",
+  "upgrade": "Pact 4"
+}
