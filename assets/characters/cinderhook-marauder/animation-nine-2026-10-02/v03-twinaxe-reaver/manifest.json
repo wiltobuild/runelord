@@ -1,0 +1,959 @@
+{
+  "variantId": "v03-twinaxe-reaver",
+  "source": {
+    "path": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\characters\\cinderhook-marauder\\animation-nine-2026-10-02\\v03-twinaxe-reaver\\source\\poses-r1.png",
+    "sha256": "afbca8f4ee93a81897c01e3dbb319fada6403fe52a9a62cca913ea112ccc76aa"
+  },
+  "approvedIdentity": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\characters\\cinderhook-marauder\\variants-nine-2026-10-02\\v03-twinaxe-reaver-r1.png",
+  "canvas": {
+    "width": 448,
+    "height": 384
+  },
+  "anchor": {
+    "x": 245,
+    "y": 320
+  },
+  "coordinateSystem": "top-left pixels; x right, y down",
+  "facing": "left",
+  "states": {
+    "idle": {
+      "frames": [
+        {
+          "file": "frames/idle/00.png",
+          "durationMs": 200,
+          "atlasRect": [
+            0,
+            0,
+            448,
+            384
+          ],
+          "sourceSize": [
+            448,
+            384
+          ],
+          "trimOffset": [
+            0,
+            0
+          ]
+        },
+        {
+          "file": "frames/idle/01.png",
+          "durationMs": 200,
+          "atlasRect": [
+            448,
+            0,
+            448,
+            384
+          ],
+          "sourceSize": [
+            448,
+            384
+          ],
+          "trimOffset": [
+            0,
+            0
+          ]
+        },
+        {
+          "file": "frames/idle/02.png",
+          "durationMs": 200,
+          "atlasRect": [
+            896,
+            0,
+            448,
+            384
+          ],
+          "sourceSize": [
+            448,
+            384
+          ],
+          "trimOffset": [
+            0,
+            0
+          ]
+        },
+        {
+          "file": "frames/idle/03.png",
+          "durationMs": 200,
+          "atlasRect": [
+            1344,
+            0,
+            448,
+            384
+          ],
+          "sourceSize": [
+            448,
+            384
+          ],
+          "trimOffset": [
+            0,
+            0
+          ]
+        },
+        {
+          "file": "frames/idle/02.png",
+          "durationMs": 200,
+          "atlasRect": [
+            896,
+            0,
+            448,
+            384
+          ],
+          "sourceSize": [
+            448,
+            384
+          ],
+          "trimOffset": [
+            0,
+            0
+          ]
+        },
+        {
+          "file": "frames/idle/01.png",
+          "durationMs": 200,
+          "atlasRect": [
+            448,
+            0,
+            448,
+            384
+          ],
+          "sourceSize": [
+            448,
+            384
+          ],
+          "trimOffset": [
+            0,
+            0
+          ]
+        }
+      ],
+      "loop": true,
+      "events": [],
+      "nextState": "idle",
+      "terminal": false,
+      "holdLastFrame": false,
+      "durationMs": 1200
+    },
+    "attack": {
+      "frames": [
+        {
+          "file": "frames/attack/00.png",
+          "durationMs": 90,
+          "atlasRect": [
+            0,
+            384,
+            448,
+            384
+          ],
+          "sourceSize": [
+            448,
+            384
+          ],
+          "trimOffset": [
+            0,
+            0
+          ]
+        },
+        {
+          "file": "frames/attack/01.png",
+          "durationMs": 110,
+          "atlasRect": [
+            448,
+            384,
+            448,
+            384
+          ],
+          "sourceSize": [
+            448,
+            384
+          ],
+          "trimOffset": [
+            0,
+            0
+          ]
+        },
+        {
+          "file": "frames/attack/02.png",
+          "durationMs": 60,
+          "atlasRect": [
+            896,
+            384,
+            448,
+            384
+          ],
+          "sourceSize": [
+            448,
+            384
+          ],
+          "trimOffset": [
+            0,
+            0
+          ]
+        },
+        {
+          "file": "frames/attack/03.png",
+          "durationMs": 80,
+          "atlasRect": [
+            1344,
+            384,
+            448,
+            384
+          ],
+          "sourceSize": [
+            448,
+            384
+          ],
+          "trimOffset": [
+            0,
+            0
+          ]
+        },
+        {
+          "file": "frames/attack/00.png",
+          "durationMs": 90,
+          "atlasRect": [
+            0,
+            384,
+            448,
+            384
+          ],
+          "sourceSize": [
+            448,
+            384
+          ],
+          "trimOffset": [
+            0,
+            0
+          ]
+        }
+      ],
+      "loop": false,
+      "events": [
+        {
+          "name": "impact",
+          "timeMs": 200
+        }
+      ],
+      "nextState": "idle",
+      "terminal": false,
+      "holdLastFrame": false,
+      "durationMs": 430
+    },
+    "hit": {
+      "frames": [
+        {
+          "file": "frames/hit/00.png",
+          "durationMs": 40,
+          "atlasRect": [
+            0,
+            768,
+            448,
+            384
+          ],
+          "sourceSize": [
+            448,
+            384
+          ],
+          "trimOffset": [
+            0,
+            0
+          ]
+        },
+        {
+          "file": "frames/hit/01.png",
+          "durationMs": 80,
+          "atlasRect": [
+            448,
+            768,
+            448,
+            384
+          ],
+          "sourceSize": [
+            448,
+            384
+          ],
+          "trimOffset": [
+            0,
+            0
+          ]
+        },
+        {
+          "file": "frames/hit/02.png",
+          "durationMs": 100,
+          "atlasRect": [
+            896,
+            768,
+            448,
+            384
+          ],
+          "sourceSize": [
+            448,
+            384
+          ],
+          "trimOffset": [
+            0,
+            0
+          ]
+        },
+        {
+          "file": "frames/hit/03.png",
+          "durationMs": 90,
+          "atlasRect": [
+            1344,
+            768,
+            448,
+            384
+          ],
+          "sourceSize": [
+            448,
+            384
+          ],
+          "trimOffset": [
+            0,
+            0
+          ]
+        },
+        {
+          "file": "frames/hit/00.png",
+          "durationMs": 70,
+          "atlasRect": [
+            0,
+            768,
+            448,
+            384
+          ],
+          "sourceSize": [
+            448,
+            384
+          ],
+          "trimOffset": [
+            0,
+            0
+          ]
+        }
+      ],
+      "loop": false,
+      "events": [],
+      "nextState": "idle",
+      "terminal": false,
+      "holdLastFrame": false,
+      "durationMs": 380
+    },
+    "wounded_idle": {
+      "frames": [
+        {
+          "file": "frames/wounded_idle/00.png",
+          "durationMs": 230,
+          "atlasRect": [
+            0,
+            1152,
+            448,
+            384
+          ],
+          "sourceSize": [
+            448,
+            384
+          ],
+          "trimOffset": [
+            0,
+            0
+          ]
+        },
+        {
+          "file": "frames/wounded_idle/01.png",
+          "durationMs": 230,
+          "atlasRect": [
+            448,
+            1152,
+            448,
+            384
+          ],
+          "sourceSize": [
+            448,
+            384
+          ],
+          "trimOffset": [
+            0,
+            0
+          ]
+        },
+        {
+          "file": "frames/wounded_idle/02.png",
+          "durationMs": 230,
+          "atlasRect": [
+            896,
+            1152,
+            448,
+            384
+          ],
+          "sourceSize": [
+            448,
+            384
+          ],
+          "trimOffset": [
+            0,
+            0
+          ]
+        },
+        {
+          "file": "frames/wounded_idle/03.png",
+          "durationMs": 230,
+          "atlasRect": [
+            1344,
+            1152,
+            448,
+            384
+          ],
+          "sourceSize": [
+            448,
+            384
+          ],
+          "trimOffset": [
+            0,
+            0
+          ]
+        },
+        {
+          "file": "frames/wounded_idle/02.png",
+          "durationMs": 230,
+          "atlasRect": [
+            896,
+            1152,
+            448,
+            384
+          ],
+          "sourceSize": [
+            448,
+            384
+          ],
+          "trimOffset": [
+            0,
+            0
+          ]
+        },
+        {
+          "file": "frames/wounded_idle/01.png",
+          "durationMs": 230,
+          "atlasRect": [
+            448,
+            1152,
+            448,
+            384
+          ],
+          "sourceSize": [
+            448,
+            384
+          ],
+          "trimOffset": [
+            0,
+            0
+          ]
+        }
+      ],
+      "loop": true,
+      "events": [],
+      "nextState": "wounded_idle",
+      "terminal": false,
+      "holdLastFrame": false,
+      "durationMs": 1380
+    },
+    "die": {
+      "frames": [
+        {
+          "file": "frames/die/00.png",
+          "durationMs": 130,
+          "atlasRect": [
+            0,
+            1536,
+            448,
+            384
+          ],
+          "sourceSize": [
+            448,
+            384
+          ],
+          "trimOffset": [
+            0,
+            0
+          ]
+        },
+        {
+          "file": "frames/die/01.png",
+          "durationMs": 160,
+          "atlasRect": [
+            448,
+            1536,
+            448,
+            384
+          ],
+          "sourceSize": [
+            448,
+            384
+          ],
+          "trimOffset": [
+            0,
+            0
+          ]
+        },
+        {
+          "file": "frames/die/02.png",
+          "durationMs": 150,
+          "atlasRect": [
+            896,
+            1536,
+            448,
+            384
+          ],
+          "sourceSize": [
+            448,
+            384
+          ],
+          "trimOffset": [
+            0,
+            0
+          ]
+        },
+        {
+          "file": "frames/die/03.png",
+          "durationMs": 600,
+          "atlasRect": [
+            1344,
+            1536,
+            448,
+            384
+          ],
+          "sourceSize": [
+            448,
+            384
+          ],
+          "trimOffset": [
+            0,
+            0
+          ]
+        }
+      ],
+      "loop": false,
+      "events": [],
+      "nextState": "terminal",
+      "terminal": true,
+      "holdLastFrame": true,
+      "durationMs": 1040
+    }
+  },
+  "sourceRects": {
+    "idle": [
+      {
+        "source": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\characters\\cinderhook-marauder\\animation-nine-2026-10-02\\v03-twinaxe-reaver\\source\\poses-r1.png",
+        "box": [
+          31,
+          18,
+          260,
+          286
+        ],
+        "offset": [
+          103,
+          56
+        ],
+        "scale": 1,
+        "sliceComponent": 3,
+        "alphaSlicingThreshold": 30,
+        "antialiasPadding": 4
+      },
+      {
+        "source": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\characters\\cinderhook-marauder\\animation-nine-2026-10-02\\v03-twinaxe-reaver\\source\\poses-r1.png",
+        "box": [
+          311,
+          16,
+          539,
+          286
+        ],
+        "offset": [
+          102,
+          54
+        ],
+        "scale": 1,
+        "sliceComponent": 2,
+        "alphaSlicingThreshold": 30,
+        "antialiasPadding": 4
+      },
+      {
+        "source": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\characters\\cinderhook-marauder\\animation-nine-2026-10-02\\v03-twinaxe-reaver\\source\\poses-r1.png",
+        "box": [
+          571,
+          13,
+          795,
+          286
+        ],
+        "offset": [
+          82,
+          51
+        ],
+        "scale": 1,
+        "sliceComponent": 1,
+        "alphaSlicingThreshold": 30,
+        "antialiasPadding": 4
+      },
+      {
+        "source": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\characters\\cinderhook-marauder\\animation-nine-2026-10-02\\v03-twinaxe-reaver\\source\\poses-r1.png",
+        "box": [
+          850,
+          19,
+          1078,
+          286
+        ],
+        "offset": [
+          80,
+          57
+        ],
+        "scale": 1,
+        "sliceComponent": 4,
+        "alphaSlicingThreshold": 30,
+        "antialiasPadding": 4
+      }
+    ],
+    "attack": [
+      {
+        "source": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\characters\\cinderhook-marauder\\animation-nine-2026-10-02\\v03-twinaxe-reaver\\source\\poses-r1.png",
+        "box": [
+          23,
+          297,
+          272,
+          568
+        ],
+        "offset": [
+          95,
+          53
+        ],
+        "scale": 1,
+        "sliceComponent": 16,
+        "alphaSlicingThreshold": 30,
+        "antialiasPadding": 4
+      },
+      {
+        "source": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\characters\\cinderhook-marauder\\animation-nine-2026-10-02\\v03-twinaxe-reaver\\source\\poses-r2.png",
+        "box": [
+          325,
+          287,
+          530,
+          571
+        ],
+        "offset": [
+          117,
+          40
+        ],
+        "scale": 1,
+        "sha256": "4df1644ebee66218bfec1c8ae870234ac4824e3db32a8c4b2f02a95a895d630f",
+        "slicing": "largest connected character component plus4px antialias margin"
+      },
+      {
+        "source": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\characters\\cinderhook-marauder\\animation-nine-2026-10-02\\v03-twinaxe-reaver\\source\\poses-r1.png",
+        "box": [
+          569,
+          345,
+          834,
+          569
+        ],
+        "offset": [
+          80,
+          100
+        ],
+        "scale": 1,
+        "sliceComponent": 18,
+        "alphaSlicingThreshold": 30,
+        "antialiasPadding": 4
+      },
+      {
+        "source": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\characters\\cinderhook-marauder\\animation-nine-2026-10-02\\v03-twinaxe-reaver\\source\\poses-r1.png",
+        "box": [
+          857,
+          347,
+          1103,
+          569
+        ],
+        "offset": [
+          88,
+          102
+        ],
+        "scale": 1,
+        "sliceComponent": 19,
+        "alphaSlicingThreshold": 30,
+        "antialiasPadding": 4
+      }
+    ],
+    "hit": [
+      {
+        "source": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\characters\\cinderhook-marauder\\animation-nine-2026-10-02\\v03-twinaxe-reaver\\source\\poses-r1.png",
+        "box": [
+          26,
+          580,
+          260,
+          848
+        ],
+        "offset": [
+          98,
+          56
+        ],
+        "scale": 1,
+        "sliceComponent": 21,
+        "alphaSlicingThreshold": 30,
+        "antialiasPadding": 4
+      },
+      {
+        "source": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\characters\\cinderhook-marauder\\animation-nine-2026-10-02\\v03-twinaxe-reaver\\source\\poses-r1.png",
+        "box": [
+          307,
+          575,
+          527,
+          847
+        ],
+        "offset": [
+          98,
+          52
+        ],
+        "scale": 1,
+        "sliceComponent": 20,
+        "alphaSlicingThreshold": 30,
+        "antialiasPadding": 4
+      },
+      {
+        "source": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\characters\\cinderhook-marauder\\animation-nine-2026-10-02\\v03-twinaxe-reaver\\source\\poses-r1.png",
+        "box": [
+          583,
+          608,
+          819,
+          848
+        ],
+        "offset": [
+          94,
+          84
+        ],
+        "scale": 1,
+        "sliceComponent": 25,
+        "alphaSlicingThreshold": 30,
+        "antialiasPadding": 4
+      },
+      {
+        "source": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\characters\\cinderhook-marauder\\animation-nine-2026-10-02\\v03-twinaxe-reaver\\source\\poses-r1.png",
+        "box": [
+          863,
+          586,
+          1098,
+          848
+        ],
+        "offset": [
+          94,
+          62
+        ],
+        "scale": 1,
+        "sliceComponent": 22,
+        "alphaSlicingThreshold": 30,
+        "antialiasPadding": 4
+      }
+    ],
+    "wounded_idle": [
+      {
+        "source": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\characters\\cinderhook-marauder\\animation-nine-2026-10-02\\v03-twinaxe-reaver\\source\\poses-r1.png",
+        "box": [
+          39,
+          881,
+          250,
+          1111
+        ],
+        "offset": [
+          111,
+          94
+        ],
+        "scale": 1,
+        "sliceComponent": 33,
+        "alphaSlicingThreshold": 30,
+        "antialiasPadding": 4
+      },
+      {
+        "source": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\characters\\cinderhook-marauder\\animation-nine-2026-10-02\\v03-twinaxe-reaver\\source\\poses-r1.png",
+        "box": [
+          317,
+          880,
+          532,
+          1112
+        ],
+        "offset": [
+          108,
+          92
+        ],
+        "scale": 1,
+        "sliceComponent": 32,
+        "alphaSlicingThreshold": 30,
+        "antialiasPadding": 4
+      },
+      {
+        "source": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\characters\\cinderhook-marauder\\animation-nine-2026-10-02\\v03-twinaxe-reaver\\source\\poses-r1.png",
+        "box": [
+          597,
+          885,
+          810,
+          1112
+        ],
+        "offset": [
+          108,
+          97
+        ],
+        "scale": 1,
+        "sliceComponent": 35,
+        "alphaSlicingThreshold": 30,
+        "antialiasPadding": 4
+      },
+      {
+        "source": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\characters\\cinderhook-marauder\\animation-nine-2026-10-02\\v03-twinaxe-reaver\\source\\poses-r1.png",
+        "box": [
+          880,
+          884,
+          1096,
+          1114
+        ],
+        "offset": [
+          110,
+          94
+        ],
+        "scale": 1,
+        "sliceComponent": 34,
+        "alphaSlicingThreshold": 30,
+        "antialiasPadding": 4
+      }
+    ],
+    "die": [
+      {
+        "source": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\characters\\cinderhook-marauder\\animation-nine-2026-10-02\\v03-twinaxe-reaver\\source\\poses-r1.png",
+        "box": [
+          27,
+          1145,
+          254,
+          1356
+        ],
+        "offset": [
+          99,
+          113
+        ],
+        "scale": 1,
+        "sliceComponent": 40,
+        "alphaSlicingThreshold": 30,
+        "antialiasPadding": 4
+      },
+      {
+        "source": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\characters\\cinderhook-marauder\\animation-nine-2026-10-02\\v03-twinaxe-reaver\\source\\poses-r1.png",
+        "box": [
+          296,
+          1176,
+          516,
+          1369
+        ],
+        "offset": [
+          88,
+          131
+        ],
+        "scale": 1,
+        "sliceComponent": 41,
+        "alphaSlicingThreshold": 30,
+        "antialiasPadding": 4
+      },
+      {
+        "source": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\characters\\cinderhook-marauder\\animation-nine-2026-10-02\\v03-twinaxe-reaver\\source\\poses-r1.png",
+        "box": [
+          525,
+          1238,
+          829,
+          1362
+        ],
+        "offset": [
+          36,
+          200
+        ],
+        "scale": 1,
+        "sliceComponent": 43,
+        "alphaSlicingThreshold": 30,
+        "antialiasPadding": 4
+      },
+      {
+        "source": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\characters\\cinderhook-marauder\\animation-nine-2026-10-02\\v03-twinaxe-reaver\\source\\poses-r1.png",
+        "box": [
+          814,
+          1267,
+          1104,
+          1365
+        ],
+        "offset": [
+          44,
+          226
+        ],
+        "scale": 1,
+        "sliceComponent": 47,
+        "alphaSlicingThreshold": 30,
+        "antialiasPadding": 4
+      }
+    ]
+  },
+  "previews": {
+    "idle": "idle.gif",
+    "attack": "attack.gif",
+    "hit": "hit.gif",
+    "wounded_idle": "wounded_idle.gif",
+    "die": "die.gif"
+  },
+  "limitations": [
+    "Coarse hand-drawn whole-frame animation; 4 authored poses per state.",
+    "Native pose resolution ~250-280px; not upscaled to claim HD.",
+    "Mild generated stance jitter and color-edge fringe remain; coarse four-pose loops are review studies, not polished high-frame-count HD animation."
+  ],
+  "method": "reference-conditioned whole-character frames",
+  "atlas": "atlas.png",
+  "atlasSha256": "123b095398b620305ad0464fbbd5911235ca49364046ec3fa153bad9ee2a0f2e",
+  "technicalQA": {
+    "status": "pass",
+    "report": "technical-qa.json",
+    "authoredFrames": 20,
+    "testedAtlasSha256": "123b095398b620305ad0464fbbd5911235ca49364046ec3fa153bad9ee2a0f2e"
+  },
+  "visualQA": {
+    "status": "independent_review_pending",
+    "reviewer": "/root/review_goblin_animation"
+  },
+  "generation": {
+    "tool": "built-in image_gen",
+    "sourceHashes": [
+      {
+        "file": "source/poses-r1.png",
+        "sha256": "afbca8f4ee93a81897c01e3dbb319fada6403fe52a9a62cca913ea112ccc76aa"
+      },
+      {
+        "file": "source/poses-r2.png",
+        "sha256": "4df1644ebee66218bfec1c8ae870234ac4824e3db32a8c4b2f02a95a895d630f"
+      }
+    ],
+    "promptFiles": [
+      "source/prompt-r1.txt",
+      "source/prompt-r2.txt"
+    ]
+  },
+  "previewPackageAssociation": {
+    "preview": "preview.gif",
+    "sha256": "33c4365fe6fce1414c5b853a6f32c017c7ecce9e783e17eb599f20697dac98ae",
+    "atlasSha256": "123b095398b620305ad0464fbbd5911235ca49364046ec3fa153bad9ee2a0f2e"
+  },
+  "identitySource": {
+    "path": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\characters\\cinderhook-marauder\\variants-nine-2026-10-02\\v03-twinaxe-reaver-r1.png",
+    "sha256": "fd71c5d825bad8f1035481a2d3b2ffa6b443e89c2497451cfba9a46ba99efa9b",
+    "approval": {
+      "status": "Approved",
+      "at": "2026-10-02T22:20:49.176Z",
+      "evidenceId": "eee44240-fdf0-4c1b-8181-19797f97f9cf",
+      "paths": [
+        "C:\\Users\\wilsh\\Projects\\runelord\\assets\\approvals\\inbox\\cinderhook-marauder\\v03-twinaxe-reaver-r1\\v03-twinaxe-reaver-r1.png"
+      ]
+    }
+  },
+  "gallery": {
+    "url": "http://localhost:4317/asset/2cfca3d438d8fccfe8af8373",
+    "status": "Pending approval",
+    "previewSha256": "33c4365fe6fce1414c5b853a6f32c017c7ecce9e783e17eb599f20697dac98ae",
+    "apiVerified": true
+  }
+}
