@@ -1,0 +1,35 @@
+[
+  {
+    "region": "title",
+    "text": "Burning Soul",
+    "lines": [
+      "Burning Soul"
+    ],
+    "font_size": 87
+  },
+  {
+    "region": "cost",
+    "text": "1",
+    "lines": [
+      "1"
+    ],
+    "font_size": 110
+  },
+  {
+    "region": "type",
+    "text": "POWER · WARLOCK",
+    "lines": [
+      "POWER · WARLOCK"
+    ],
+    "font_size": 35
+  },
+  {
+    "region": "rules",
+    "text": "Demon Upkeep costs 1 less (min 0).",
+    "lines": [
+      "Demon Upkeep costs 1 less",
+      "(min 0)."
+    ],
+    "font_size": 54
+  }
+]

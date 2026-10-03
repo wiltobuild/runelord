@@ -1,0 +1,8 @@
+{
+  "name": "Burning Soul",
+  "cost": "1",
+  "type": "Power",
+  "rarity": "Uncommon",
+  "rules": "Demon Upkeep costs 1 less (min 0).",
+  "upgrade": "Also gain 3 Cinders"
+}
