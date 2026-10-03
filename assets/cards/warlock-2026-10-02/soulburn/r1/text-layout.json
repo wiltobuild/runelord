@@ -1,0 +1,37 @@
+[
+  {
+    "region": "title",
+    "text": "Soulburn",
+    "lines": [
+      "Soulburn"
+    ],
+    "font_size": 94
+  },
+  {
+    "region": "cost",
+    "text": "1",
+    "lines": [
+      "1"
+    ],
+    "font_size": 110
+  },
+  {
+    "region": "type",
+    "text": "POWER · WARLOCK",
+    "lines": [
+      "POWER · WARLOCK"
+    ],
+    "font_size": 35
+  },
+  {
+    "region": "rules",
+    "text": "Whenever an enemy with Scorch dies, gain all its Scorch as Cinders and Summon an Imp.",
+    "lines": [
+      "Whenever an enemy with",
+      "Scorch dies, gain all its",
+      "Scorch as Cinders and",
+      "Summon an Imp."
+    ],
+    "font_size": 54
+  }
+]

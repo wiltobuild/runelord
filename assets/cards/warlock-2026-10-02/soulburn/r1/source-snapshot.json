@@ -1,0 +1,8 @@
+{
+  "name": "Soulburn",
+  "cost": "1",
+  "type": "Power",
+  "rarity": "Rare",
+  "rules": "Whenever an enemy with Scorch dies, gain all its Scorch as Cinders and Summon an Imp.",
+  "upgrade": "Costs 0"
+}
