@@ -2,7 +2,7 @@
 
 ## Scope and relationship to the campaign
 
-The current demo is a playable Warlock combat and presentation prototype. The [campaign direction](campaign-direction.md), adopted 2026-10-03, expands the product into a 6–9 hour campaign with territory and lasting progression. Those systems are **planned**, not delivered by this demo.
+The current roguelike demo is a playable Warlock combat and presentation prototype, maintained separately from Conquer mode. The [campaign direction](campaign-direction.md), adopted 2026-10-03, expands the product into a 6–9 hour campaign with territory and lasting progression. Those systems are **planned**, not delivered by this demo.
 
 The original first-slice notes are [archived](archive/warlock-demo-2026-10-02.md). Their three-fight route, fourteen-card implementation count, older hero renderer, and next-work list are historical and no longer describe the current demo.
 
@@ -29,13 +29,16 @@ Attack cards select a target; applicable skills cast on selection. Allied units 
 - Warlock Mana, Cinders, Guard, Corruption, Scorch, summoning, upkeep, and allied-unit actions.
 - Implemented card handlers and reward pools defined in [content](../packages/content/index.ts); imported catalog entries are not all automatically playable.
 - Gold and item rewards, separate potion/item presentation, and loot explanation after card selection.
+- Soulforge shops after combat encounters three and six, following card and item rewards. Each visit independently selects one of three existing backgrounds and shopkeepers from the run seed.
+- Shops offer Warlock and neutral cards, five relics, per-copy card upgrades (50 Gold, doubling each level), and removal (10 Gold; minimum ten cards). Buy, upgrade, and removal offers have independent rerolls starting at 10 Gold and doubling. Copy limits are three, or two for rare cards.
+- Upgrades scale applicable numerical effects by roughly 20% per level, with integer rounding and periodic mana reductions. Shop stock, spending and card levels persist through save/replay. New runs enable shops; older saves retain their original route rules.
 - Animated hero/enemies/summons, spell and summon effects, sound effects, and music.
 
 The actual available content and rules live in [packages/content/index.ts](../packages/content/index.ts) and [packages/engine/index.ts](../packages/engine/index.ts). This summary is not a claim that the full catalogs or all four heroes are implemented.
 
 ## Not yet implemented as campaign systems
 
-The current fixed route must evolve into branching choices toward the first Sovereign. The demo does not yet provide the new campaign's limited-stock shops, repeated card leveling, spell combination, unit fusion, slotted equipment progression, stronghold construction, autonomous invasion chain, open-world conquest, or neutral reputation and quests.
+The current fixed route must evolve into branching choices toward the first Sovereign. The demo does not yet provide the new campaign's spell combination, unit fusion, slotted equipment progression, stronghold construction, autonomous invasion chain, open-world conquest, or neutral reputation and quests.
 
 Existing demo loot does not establish the complete campaign gear/relic rules. The demon lord finale does not currently imply territory ownership or a functioning stronghold. See [the build roadmap](../PLAN.md) for the planned sequence.
 

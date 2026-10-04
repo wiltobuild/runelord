@@ -8,6 +8,11 @@ const openingScore = {
   start: 0,
   end: 64,
 };
+export const INFERNAL_SCORES: Record<string, {url:string;title:string;start:number;end:number}> = {
+  "cinder-vault": {url:"/audio/music/infernal-scenes-r1/cinder-vault.ogg",title:"Gold Beneath the Cinders",start:0,end:48},
+  "chain-bazaar": {url:"/audio/music/infernal-scenes-r1/chain-bazaar.ogg",title:"The Price of Chains",start:0,end:42},
+  "infernal-scriptorium": {url:"/audio/music/infernal-scenes-r1/infernal-scriptorium.ogg",title:"Ink of the Unspoken",start:0,end:54},
+};
 export class ScorePlayer {
   private ctx: AudioContext | null = null;
   private gain: GainNode | null = null;
@@ -31,7 +36,7 @@ export class ScorePlayer {
       return;
     }
     const serial = ++this.serial,
-      track = id === OPENING_SCORE_ID ? openingScore : assets.music[id];
+      track = id === OPENING_SCORE_ID ? openingScore : INFERNAL_SCORES[id] ?? assets.music[id];
     if (!track) throw Error("Unknown score");
     let buffer = this.cache.get(id);
     if (!buffer) {

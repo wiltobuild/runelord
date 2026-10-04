@@ -1,3 +1,5 @@
+import { currentShop, cardPower, cardLevel, upgradeCost, canAddCard, prepareShop, rerollShop, remapShopCopies, refreshRemovalOffers, enterRoguelikeShop, type ShopRerollKind, type RoguelikeShops } from "./shop";
+export * from "./shop";
 import {
   cards,
   implemented, starterDecks, cardTargetsUnit, items, rewardWeight,
@@ -38,7 +40,7 @@ export type Enemy = {
   sapped?: number;
   exposed?: number;
 };
-export type CardInstance = { uid: number; id: CardId; upgraded?: boolean };
+export type CardInstance = { uid: number; id: CardId; upgraded?: boolean; level?: number };
 export type GameEvent = {
   type: string;
   message: string;
@@ -66,6 +68,8 @@ export type CombatView = Pick<
 >;
 export type PendingLoot = { gold: number; items: ItemId[]; final: boolean };
 export type State = {
+  shops?: RoguelikeShops;
+  deckLevels?: number[];
   version: 1;
   rulesVersion: 2 | 3;
   legacyActions: number | null;
@@ -80,7 +84,7 @@ export type State = {
   seed: number;
   rng: number;
   room: number;
-  phase: "combat" | "reward" | "loot" | "camp" | "won" | "lost";
+  phase: "shop" | "combat" | "reward" | "loot" | "camp" | "won" | "lost";
   turn: number;
   hp: number;
   maxHp: number;
@@ -104,6 +108,11 @@ export type State = {
   potion: boolean;
 };
 export type Action =
+  | {type:"shop-buy";kind:"card"|"relic";index:number}
+  | {type:"shop-upgrade";index:number}
+  | {type:"shop-remove";index:number}
+  | {type:"shop-reroll";kind:ShopRerollKind}
+  | {type:"leave-shop"}
   | { type: "play"; uid: number; target?: number; dismiss?: number; unit?: number }
   | { type: "item"; item: ItemId }
   | { type: "end" }
@@ -204,7 +213,7 @@ function scorch(s: State, e: Enemy, n: number) {
 }
 /** Seeded weighted draw without replacement; no card is guaranteed or excluded by affinity. */
 export function rollRewards(s: State): CardId[] {
-  const pool = [...implemented].filter(id => cards[id].rarity !== "Basic");
+  const pool = [...implemented].filter(id => cards[id].rarity !== "Basic" && (!s.shops || canAddCard(s,id)));
   const result: CardId[] = [];
   while (result.length < 3 && pool.length) {
     let ticket = random(s) * pool.reduce((total, id) => total + rewardWeight(s.starterDeck, id), 0);
@@ -235,10 +244,10 @@ function checkWin(s: State) {
     s.gold += gold;
     const drops: ItemId[] = ["mana-potion", "barkskin-tonic", "shrapnel-jar", "banner-draught", "bonesetters-salve", "warhorn-oil", "healing-draught", "healing-draught", "demon-lord-crown"];
     const item = drops[s.room];
-    if (items[item].passive) { if (!s.relics.includes(item)) s.relics.push(item); }
-    else s.inventory.push(item);
-    s.pendingLoot = s.rulesVersion === 3 ? { gold, items: [item], final } : null;
-    emit(s, "loot", `Found ${gold} Gold and ${items[item].name}.`);
+    if (item && items[item].passive) { if (!s.relics.includes(item)) s.relics.push(item); }
+    else if(item) s.inventory.push(item);
+    s.pendingLoot = s.rulesVersion === 3 ? { gold, items: item ? [item] : [], final } : null;
+    emit(s, "loot", `Found ${gold} Gold${item ? ` and ${items[item].name}` : ""}.`);
     s.rewards = final ? [] : s.rulesVersion === 3 ? rollRewards(s) : s.starterDeck === "classic" && s.room < 2 ? [...rewardSets[s.room]] : shuffle(s, [...implemented].filter(id => cards[id].rarity !== "Basic")).slice(0, 3);
     emit(s, "victory", final ? "The Infernal Sovereign falls. Claim his crown." : "The path is yours. Choose a card.");
   }
@@ -270,7 +279,7 @@ function unitAct(s: State, u: Unit) {
   if (s.powers["dread-aura"]) scorch(s, e, s.powers["dread-aura"]!);
   if (u.kind === "imp") scorch(s, e, 1);
 }
-function summon(s: State, kind: DemonKind, dismiss?: number, upgraded = false) {
+function summon(s: State, kind: DemonKind, dismiss?: number, upgraded = false, level=0) {
   if (s.units.length >= 5) {
     const unit = s.units.find((u) => u.id === dismiss);
     if (!unit) throw Error("Choose a demon to dismiss: your Warband is full.");
@@ -294,8 +303,9 @@ function summon(s: State, kind: DemonKind, dismiss?: number, upgraded = false) {
     },
   }[kind];
   const u: Unit = { ...stats, maxHp: stats.hp, kind, id: s.nextId++, guard: 0 };
+  if(level) {u.power=Math.round(u.power*cardPower(level));u.hp=Math.round(u.hp*cardPower(level));u.maxHp=u.hp;}
   if (upgraded && kind === "imp") u.power += 2;
-  u.power += s.powers["masters-of-the-pit"] || 0;
+  u.power += (s.powers["masters-of-the-pit"] || 0) + (s.relics.includes("warband-fang") ? 2 : 0);
   u.upkeep = Math.max(0, u.upkeep - (s.powers["burning-soul"] || 0));
   s.units.push(u);
   emit(s, "summon", `${u.name} joins the Warband.`, { actor: u.id });
@@ -341,6 +351,8 @@ function startTurn(s: State) {
   s.guard = 0;
   s.barrier = 0;
   s.mana = 3;
+  if(s.relics.includes("iron-sigil")) s.guard += 3;
+  if(s.relics.includes("cinder-charm")) cinders(s,1);
   s.focus = alive(s)[0]?.id ?? 0;
   for (const u of s.units) { u.guard = 0; u.power -= u.temporaryPower || 0; u.temporaryPower = 0; }
   if (s.corruption >= 10 && s.demonTurns === 0) {
@@ -389,9 +401,11 @@ function beginCombat(s: State) {
   s.reserves = (encounters[s.room].reserves || []).map(e => ({ ...structuredClone(e), id: s.nextId++, maxHp: e.hp, guard: 0, scorch: 0 }));
   s.draw = shuffle(
     s,
-    s.deck.map((id) => ({ id, uid: s.nextId++ })),
+    s.deck.map((id,index) => ({ id, uid: s.nextId++, ...(s.shops ? {level:cardLevel(s,index)} : {}) })),
   );
   startTurn(s);
+  if(s.relics.includes("ember-heart")) s.hp=Math.min(s.maxHp,s.hp+5);
+  if(s.relics.includes("scholar-seal")) draw(s,1);
   if (s.relics.includes("demon-lord-crown")) { s.guard += 5; s.mana += 1; }
 }
 export function newRun(seed = 7319, starterDeck: StarterDeckId = "classic", rulesVersion: 2 | 3 = 3): State {
@@ -429,11 +443,64 @@ export function newRun(seed = 7319, starterDeck: StarterDeckId = "classic", rule
   beginCombat(s);
   return s;
 }
+/** New roguelike saves opt into shops; schemas 1–3 replay the historical demo unchanged. */
+export function newRoguelikeRun(seed=7319,starterDeck:StarterDeckId='warband'):State {
+ const s=newRun(seed,starterDeck);s.shops={current:null,stock:{}};s.deckLevels=s.deck.map(()=>0);
+ if(starterDeck==='classic'){s.deck[3]='neutral-strike';s.deck[7]='neutral-bulwark';}
+ // Recreate the opening battle from the original RNG position, with leveled card instances.
+ s.rng=s.seed;s.nextId=1;s.events=[];beginCombat(s);return s;
+}
+function advanceAfterLoot(s:State){
+ if([1,3,5,7].includes(s.room))s.phase='camp';
+ else{s.room++;beginCombat(s);}
+}
+function shopAction(s:State,action:Action):boolean {
+ if(action.type==='leave-shop'){
+  if(s.phase!=='shop'||!s.shops)throw Error('No shop here.');
+  s.shops.current=null;advanceAfterLoot(s);
+ } else if(action.type==="shop-reroll") {rerollShop(s,action.kind);
+ } else if(action.type==="shop-buy"||action.type==="shop-upgrade"||action.type==="shop-remove") {
+  if(s.phase!=="shop"||!s.shops)throw Error("Visit a shop first.");
+  if(!Number.isInteger(action.index)||action.index<0)throw Error("Invalid selection.");
+  prepareShop(s);
+  if(action.type==="shop-buy") {
+   const stock=currentShop(s)!;
+   if(action.kind!=="card"&&action.kind!=="relic")throw Error("Invalid stock type.");
+   if(action.kind==="card") {
+    const item=stock.cards[action.index];if(!item||item.sold)throw Error("Sold out.");
+    if(!canAddCard(s,item.id))throw Error("Card copy limit reached.");
+    if(s.gold<item.price)throw Error("Not enough Gold.");
+    s.gold-=item.price;item.sold=true;s.deck.push(item.id);s.deckLevels!.push(0);refreshRemovalOffers(s);
+   }else{
+    const item=stock.relics[action.index];if(!item||item.sold)throw Error("Sold out.");
+    if(s.relics.includes(item.id))throw Error("You already own this relic.");
+    if(s.gold<item.price)throw Error("Not enough Gold.");
+    s.gold-=item.price;item.sold=true;s.relics.push(item.id);
+   }
+  }else{
+   if(!s.deck[action.index])throw Error("Choose a card in your deck.");
+   if(action.type==="shop-remove") {
+    if(s.deck.length<=10)throw Error("Your deck must contain at least 10 cards.");
+    const offered=s.shops.stock[s.shops.current!].removals.find(o=>o.index===action.index&&!o.sold&&o.id===s.deck[action.index]);
+    if(!offered)throw Error('That copy is not offered for removal.');
+    if(s.gold<10)throw Error("Not enough Gold.");
+    s.gold-=10;s.deck.splice(action.index,1);s.deckLevels!.splice(action.index,1);remapShopCopies(s,action.index);
+   }else{
+    const offered=s.shops.stock[s.shops.current!].upgrades.find(o=>o.index===action.index&&!o.sold&&o.id===s.deck[action.index]);
+    if(!offered)throw Error('That copy is not offered for upgrade.');
+    const price=upgradeCost(cardLevel(s,action.index));
+    if(!Number.isSafeInteger(price)||s.gold<price)throw Error("Not enough Gold.");
+    s.gold-=price;s.deckLevels![action.index]++;if(offered)offered.sold=true;
+   }
+  }
+ }else return false;
+ return true;
+}
 export function manaCost(s: State, c: CardInstance) {
   if (cards[c.id].xCost) return s.mana;
   if (c.id === "rend-flesh" && s.demonTurns > 0) return 0;
   if (c.id === "infernal-transformation" && c.upgraded) return 1;
-  return cards[c.id].cost;
+  return Math.max(cards[c.id].cost > 0 ? 1 : 0, cards[c.id].cost - Math.floor((c.level || 0)/3));
 }
 export function playable(s: State, c: CardInstance) {
   return (
@@ -446,6 +513,7 @@ export function playable(s: State, c: CardInstance) {
 export function dispatch(previous: State, action: Action): State {
   const s = structuredClone(previous);
   s.events = [];
+  if(shopAction(s,action)) { s.history.push(action); return s; }
   if (action.type === "focus") {
     if (s.phase !== "combat" || !alive(s).some((e) => e.id === action.target))
       throw Error("Choose a living enemy.");
@@ -478,7 +546,7 @@ export function dispatch(previous: State, action: Action): State {
       (action.card !== null && !s.rewards.includes(action.card))
     )
       throw Error("Invalid reward.");
-    if (action.card) s.deck.push(action.card);
+    if (action.card) { if(s.shops && !canAddCard(s,action.card)) throw Error("Card copy limit reached."); s.deck.push(action.card); s.deckLevels?.push(0); }
     s.rewards = [];
     if (s.rulesVersion === 3) s.phase = "loot";
     else if (s.room === 1 || s.room === 3 || s.room === 5) s.phase = "camp";
@@ -491,6 +559,7 @@ export function dispatch(previous: State, action: Action): State {
     const final = s.pendingLoot.final;
     s.pendingLoot = null;
     if (final) s.phase = "won";
+    else if (s.shops && (s.room+1)%3===0) enterRoguelikeShop(s);
     else if ([1, 3, 5, 7].includes(s.room)) s.phase = "camp";
     else { s.room++; beginCombat(s); }
   } else if (action.type === "camp") {
@@ -518,7 +587,7 @@ export function dispatch(previous: State, action: Action): State {
     if (cardTargetsUnit(c.id) && !unit) throw Error("Choose a living demon.");
     const x = s.mana;
     const upgraded = !!c.upgraded;
-    const value = (base: number, improved: number) => upgraded ? improved : base;
+    const value = (base: number, improved: number) => c.level ? Math.max(base+c.level, Math.round(base*cardPower(c.level))) : upgraded ? improved : base;
     const corruption = (n: number) => { s.corruption = Math.min(10, s.corruption + n); };
     const pact = (n: number) => { loseHp(s, n, true); if(s.phase !== "lost") corruption(n); return s.phase !== "lost"; };
     s.mana -= manaCost(s, c);
@@ -528,10 +597,14 @@ export function dispatch(previous: State, action: Action): State {
     s.focus = e.id;
     emit(s, "card", cards[c.id].name, { target: e.id });
     const damage = (amount: number, target = e) => {
-      hitEnemy(s, target, amount + (s.demonTurns > 0 ? 3 : 0), true);
+      hitEnemy(s, target, amount + (s.demonTurns > 0 ? 3 : 0) + (s.relics.includes("blood-ruby") ? 1 : 0), true);
       if (s.demonTurns > 0) scorch(s, target, 2);
     };
     switch (c.id) {
+      case "neutral-strike": damage(value(8,10)); break;
+      case "neutral-bulwark": s.guard+=value(13,16); break;
+      case "neutral-insight": draw(s,value(2,3)); s.guard+=value(3,4); break;
+      case "neutral-renewal": s.hp=Math.min(s.maxHp,s.hp+value(6,8));s.guard+=value(6,8); break;
       case "firebolt":
         damage(value(6, 9));
         break;
@@ -539,7 +612,7 @@ export function dispatch(previous: State, action: Action): State {
         s.guard += value(5, 8);
         break;
       case "summon-imp":
-        summon(s, "imp", action.dismiss, upgraded);
+        summon(s, "imp", action.dismiss, upgraded, c.level);
         break;
       case "blood-pact":
         loseHp(s, 3, true);
@@ -571,11 +644,11 @@ export function dispatch(previous: State, action: Action): State {
         break;
       }
       case "summon-hellhound":
-        summon(s, "hellhound", action.dismiss);
+        summon(s, "hellhound", action.dismiss, false, c.level);
         if(upgraded) s.units.at(-1)!.guard += 6;
         break;
       case "summon-pit-brute":
-        summon(s, "pit-brute", action.dismiss);
+        summon(s, "pit-brute", action.dismiss, false, c.level);
         if(upgraded) { s.units.at(-1)!.hp += 10; s.units.at(-1)!.maxHp += 10; }
         break;
       case "kindle":
@@ -597,7 +670,7 @@ export function dispatch(previous: State, action: Action): State {
         }
         break;
       case "hellish-command":
-        if(upgraded) { unit!.power += 2; unit!.temporaryPower = (unit!.temporaryPower || 0) + 2; }
+        if(upgraded || c.level) { const boost=c.level ? Math.max(1,Math.round(unit!.power*(cardPower(c.level)-1))) : 2; unit!.power += boost; unit!.temporaryPower = (unit!.temporaryPower || 0) + boost; }
         unitAct(s, unit!); break;
       case "ritual-cut": if(pact(2)) damage(value(13, 17)); break;
       case "chain-of-flame": {
@@ -607,7 +680,7 @@ export function dispatch(previous: State, action: Action): State {
         if(others.length) scorch(s, others[Math.floor(random(s) * others.length)], copied);
         break;
       }
-      case "dark-bargain": if(pact(value(4, 3))) draw(s, 3); break;
+      case "dark-bargain": if(pact(upgraded ? 3 : 4)) draw(s, c.level ? value(3,3) : 3); break;
       case "fiendish-feast": {
         const healing = Math.floor(unit!.hp / 2);
         killUnit(s, unit!); s.hp = Math.min(s.maxHp, s.hp + healing); cinders(s, value(3, 5)); break;
@@ -620,7 +693,7 @@ export function dispatch(previous: State, action: Action): State {
       case "cinder-shield": s.guard += value(7, 9) * (s.cinders >= 5 ? 2 : 1); break;
       case "smoke-and-mirrors":
         for(const enemy of alive(s)) enemy.sapped = (enemy.sapped || 0) + value(1, 2);
-        for(const demon of s.units) demon.guard += 3; break;
+        for(const demon of s.units) demon.guard += value(3,3); break;
       case "hellfire":
         for(let hit=0; hit<2; hit++) for(const enemy of alive(s)) { damage(value(6, 8), enemy); scorch(s, enemy, 1); } break;
       case "infernal-pact": s.powers[c.id] = (s.powers[c.id] || 0) + value(5, 7); break;
@@ -628,26 +701,26 @@ export function dispatch(previous: State, action: Action): State {
         s.powers[c.id] = (s.powers[c.id] || 0) + value(2, 3);
         for(const demon of s.units) demon.power += value(2, 3); break;
       case "burning-soul":
-        s.powers[c.id] = (s.powers[c.id] || 0) + 1;
-        for(const demon of s.units) demon.upkeep = Math.max(0, demon.upkeep - 1);
+        s.powers[c.id] = (s.powers[c.id] || 0) + value(1,1);
+        for(const demon of s.units) demon.upkeep = Math.max(0, demon.upkeep - value(1,1));
         if(upgraded) cinders(s, 3); break;
       case "demonic-resilience": s.powers[c.id] = (s.powers[c.id] || 0) + value(6, 8); break;
       case "sacrificial-rite": killUnit(s, unit!); s.mana += 2; draw(s, value(2, 3)); break;
       case "corrupting-touch": corruption(3); e.exposed = (e.exposed || 0) + value(2, 3); break;
       case "fire-and-brimstone": damage(value(10, 14)); scorch(s, e, e.scorch); break;
       case "ember-storm": for(const enemy of alive(s)) scorch(s, enemy, value(3, 4) * x); break;
-      case "unholy-frenzy": if(pact(value(3, 2))) for(const demon of [...s.units].reverse()) unitAct(s, demon); break;
+      case "unholy-frenzy": if(pact(upgraded ? 2 : 3)) for(const demon of [...s.units].reverse()) { const power=demon.power; if(c.level)demon.power=Math.round(power*cardPower(c.level));unitAct(s,demon);demon.power=power; } break;
       case "pyroclasm": s.powers[c.id] = (s.powers[c.id] || 0) + value(3, 4); break;
-      case "shadowflame-barrier": s.guard += value(12, 16); s.barrier += 3; break;
+      case "shadowflame-barrier": s.guard += value(12, 16); s.barrier += value(3,3); break;
       case "void-gaze": e.sapped = (e.sapped || 0) + value(2, 3); corruption(2); draw(s, 1); break;
       case "rend-flesh": damage(value(10, 13)); if(s.demonTurns) damage(value(10, 13)); break;
-      case "combust": { const burn = e.scorch; e.scorch = 0; damage(burn * value(2, 3)); break; }
+      case "combust": { const burn = e.scorch; e.scorch = 0; damage(c.level ? Math.max(burn * 2 + c.level, Math.round(burn * 2 * cardPower(c.level))) * (burn > 0 ? 1 : 0) : burn * value(2, 3)); break; }
       case "blood-price": if(pact(2)) { damage(value(6, 8)); damage(value(6, 8)); if(e.hp <= 0) corruption(4); } break;
       case "wreathed-in-flame": s.guard += value(5, 8) + Math.floor(alive(s).reduce((sum, enemy) => sum + enemy.scorch, 0) / 2); break;
       case "dread-aura": s.powers[c.id] = (s.powers[c.id] || 0) + value(1, 2); break;
       case "feast-of-embers": unit!.hp = Math.min(unit!.maxHp, unit!.hp + value(8, 12)); unit!.power += value(3, 4); break;
       case "abyssal-gaze": corruption(2); draw(s, value(1, 2)); break;
-      case "infernal-transformation": s.demonTurns = 3; emit(s, "ascend", "The pact is sealed: Demon Form."); break;
+      case "infernal-transformation": s.demonTurns = value(3,3); emit(s, "ascend", "The pact is sealed: Demon Form."); break;
     }
     emit(s,'card-resolved',`${cards[c.id].name} resolves.`);
     checkWin(s);
@@ -750,10 +823,11 @@ export function replay(seed: number, actions: Action[], starterDeck: StarterDeck
   if (legacyActions === actions.length) s = migrateLegacy(s, legacyActions);
   return s;
 }
-export const save = (s: State) => JSON.stringify({ schema: 3, seed: s.seed, starterDeck: s.starterDeck, legacyActions: s.legacyActions, actions: s.history });
+export const save = (s: State) => JSON.stringify({ schema: s.shops ? 6 : 3, seed: s.seed, starterDeck: s.starterDeck, legacyActions: s.legacyActions, actions: s.history });
 export function restore(raw: string): State {
   const data = JSON.parse(raw);
-  if (![1, 2, 3].includes(data.schema) || !Number.isInteger(data.seed) || !Array.isArray(data.actions) || data.actions.length > 10000) throw Error("Unsupported save.");
+  if (![1, 2, 3, 6].includes(data.schema) || !Number.isInteger(data.seed) || !Array.isArray(data.actions) || data.actions.length > 10000) throw Error("Unsupported save.");
+  if(data.schema===6) { let s=newRoguelikeRun(data.seed,data.starterDeck); for(const action of data.actions)s=dispatch(s,action);return s; }
   const legacyActions = data.schema < 3 ? data.actions.length : data.legacyActions ?? null;
   if (legacyActions !== null && (!Number.isInteger(legacyActions) || legacyActions < 0 || legacyActions > data.actions.length)) throw Error("Unsupported save history.");
   return replay(data.seed, data.actions, data.schema === 1 ? "classic" : data.starterDeck, legacyActions);

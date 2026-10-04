@@ -1,0 +1,136 @@
+{
+  "sourceBranch": "conquer-mode",
+  "integrationAuthorization": "User requested all three existing shops and shopkeepers, working exactly the same. Existing files reused unchanged; no new art approval claimed.",
+  "files": [
+    {
+      "path": "apps/web/public/infernal-assets/neutral-neutral-bulwark.webp",
+      "sha256": "3e89ef63711af9e0d6d7e68b45d4d56b691caf5a1fe19b6a09e5a62753042613",
+      "bytes": 108234
+    },
+    {
+      "path": "apps/web/public/infernal-assets/neutral-neutral-insight.webp",
+      "sha256": "177a1ff27405e5d2e15b372fc2bbbef42201c5c86ebb431245fd7cb207957bbb",
+      "bytes": 107300
+    },
+    {
+      "path": "apps/web/public/infernal-assets/neutral-neutral-renewal.webp",
+      "sha256": "882dd9cab127837a7b5264b02b22fd9a994fce8ea8fefb0e19fdd45227988a8d",
+      "bytes": 118474
+    },
+    {
+      "path": "apps/web/public/infernal-assets/neutral-neutral-strike.webp",
+      "sha256": "b865bb9c8b6a8b254af64cec5088b08546007ae297a1320eeff88e1558498507",
+      "bytes": 112204
+    },
+    {
+      "path": "apps/web/public/infernal-assets/relic-blood-ruby.webp",
+      "sha256": "58a23d2f00fc0fd8f9495248354a6a47295c0f91e04c3f7b785c1c89c5d87ef6",
+      "bytes": 14144
+    },
+    {
+      "path": "apps/web/public/infernal-assets/relic-cinder-charm.webp",
+      "sha256": "87dd59611448cf6d66dbba451bbbbe9d8414f64ddb1f61866dcc4f79a6070fb3",
+      "bytes": 14386
+    },
+    {
+      "path": "apps/web/public/infernal-assets/relic-ember-heart.webp",
+      "sha256": "5321857595a98a10bbd195e2bd11543962a54a0075984e8612319432e3340c0a",
+      "bytes": 19590
+    },
+    {
+      "path": "apps/web/public/infernal-assets/relic-iron-sigil.webp",
+      "sha256": "3d752ccd7caf76ee565514050316c60db8682f830e0ea349f51434935a899f00",
+      "bytes": 13436
+    },
+    {
+      "path": "apps/web/public/infernal-assets/relic-scholar-seal.webp",
+      "sha256": "83183be4baa91df0fd172db57df208324dae9f20dd1f8d24b544417d7f7886a1",
+      "bytes": 19532
+    },
+    {
+      "path": "apps/web/public/infernal-assets/relic-warband-fang.webp",
+      "sha256": "6ab798fa7092ef613d774d9f8f010c5234f0cc72f2c82938a09f6213af233bdb",
+      "bytes": 10522
+    },
+    {
+      "path": "apps/web/public/infernal-assets/shop-1.webp",
+      "sha256": "a36faa51cf6cc47cf8bd8f0a188ffb67dd4de9720c3e0a63ebd4488b7ae5e756",
+      "bytes": 206062
+    },
+    {
+      "path": "apps/web/public/infernal-assets/shop-2.webp",
+      "sha256": "4b7e3a3ee8afcc7e788932fc6b849a552e60255ca84eeac28289b331028b7c00",
+      "bytes": 194110
+    },
+    {
+      "path": "apps/web/public/infernal-assets/shop-3.webp",
+      "sha256": "4a8665693f4df1626a5ad63c83a222b3595a6d1484496b9226b42abf6bca23b9",
+      "bytes": 182580
+    },
+    {
+      "path": "apps/web/public/infernal-assets/shopkeeper-1-expressions.webp",
+      "sha256": "9f4cec13b05255d741c6bddd886964725bfa7630d049b14d61e93a264376ff48",
+      "bytes": 252202
+    },
+    {
+      "path": "apps/web/public/infernal-assets/shopkeeper-1.webp",
+      "sha256": "b6571a1ca0a02dc241c266ae3d058cb3342d6686ce4e40be6b21e628e1a9fead",
+      "bytes": 66568
+    },
+    {
+      "path": "apps/web/public/infernal-assets/shopkeeper-2-expressions.webp",
+      "sha256": "6e0b72b083cd87855ecce3fb8cbf293de38553ae1d3be2db5878978275c15d52",
+      "bytes": 265958
+    },
+    {
+      "path": "apps/web/public/infernal-assets/shopkeeper-2.webp",
+      "sha256": "07add7409bcad766a9aaca88681d1458760e53d2703b97ffa9bdfda5f15610fd",
+      "bytes": 71962
+    },
+    {
+      "path": "apps/web/public/infernal-assets/shopkeeper-3-expressions.webp",
+      "sha256": "c0c323c8e777520c1df359d01eeb03c00bb33a7ef11c4965005ce3d6c9b3d524",
+      "bytes": 184506
+    },
+    {
+      "path": "apps/web/public/infernal-assets/shopkeeper-3.webp",
+      "sha256": "bf5a8bc84e29ca7c0cd88882618de05e14acbbd6e550908ce5efcd54e9a3140f",
+      "bytes": 60512
+    },
+    {
+      "path": "apps/web/public/infernal-assets/soul-brazier.webp",
+      "sha256": "432ee1a03a6cf4c77314a5d6e6911742c9b66d2c263f2b08aa9146adab94dcfc",
+      "bytes": 17944
+    },
+    {
+      "path": "apps/web/public/infernal-assets/soul-template-v3.webp",
+      "sha256": "541bcd9f5d6aec7927525f1cd971901cf9c18d9d880cd8e604b6b63ac3666404",
+      "bytes": 200924
+    },
+    {
+      "path": "apps/web/public/audio/music/infernal-scenes-r1/chain-bazaar.ogg",
+      "sha256": "980863a59d06558c51bb695a6533836a2fc6d09f1b2d661d774f95005686f5e6",
+      "bytes": 713102
+    },
+    {
+      "path": "apps/web/public/audio/music/infernal-scenes-r1/cinder-vault.ogg",
+      "sha256": "058d04ac028acf2344ab34090f084de2956fd36d5243d495d605d40bc7ef3fac",
+      "bytes": 705479
+    },
+    {
+      "path": "apps/web/public/audio/music/infernal-scenes-r1/infernal-scriptorium.ogg",
+      "sha256": "25e6905778e1d66bf0c1a8d6519c9164e6bdb83c13241376c8e1bceee83d6d3f",
+      "bytes": 791326
+    },
+    {
+      "path": "apps/web/public/fonts/metal-mania-OFL.txt",
+      "sha256": "4e66943af352059c059dd658774f25fbc831f1ad478f9f0890c06ecc2dd324c7",
+      "bytes": 4494
+    },
+    {
+      "path": "apps/web/public/fonts/metal-mania-regular.ttf",
+      "sha256": "4b95f0e55b291990c26a7b68818b20c1b728a8be05a34982b7bb4736c46c19ea",
+      "bytes": 254568
+    }
+  ]
+}

@@ -1,0 +1,54 @@
+{
+  "inputs": [
+    {
+      "path": "design/production/evidence/roguelike-shops/reused-runtime-assets.json",
+      "sha256": "e3782198cd99e88aeb9768777263fcb4a92a486ac44209f5bbc65642d79ab1a5"
+    }
+  ],
+  "ownedPaths": [
+    "packages/engine",
+    "packages/content/index.ts",
+    "apps/web",
+    "design/warlock-demo.md"
+  ],
+  "contentIds": [],
+  "dependencies": [],
+  "reviewer": "runelord-game-qa",
+  "acceptance": [
+    {
+      "check": "Shop services, seeded variants, cadence, replay, upgrades and production build verified",
+      "status": "pass",
+      "evidence": [
+        {
+          "sha256": "45f32dc287fdde7f205ae275ad33a9c0aebbffea3be5f4b9168be79ec0ffea68",
+          "path": "design/production/evidence/roguelike-shops/verification.md"
+        }
+      ]
+    }
+  ],
+  "id": "roguelike-shops",
+  "animation": null,
+  "integrationOwner": "runelord-technical-artist",
+  "exclusions": [
+    "Conquer map progression",
+    "new artwork",
+    "deployment"
+  ],
+  "status": "complete",
+  "authorization": "User requested shops in roguelike using all three existing shops and shopkeepers with identical behavior.",
+  "outcome": "Visit the existing Soulforge shops after roguelike combats three and six, with persistent services and seeded appearance.",
+  "schema": 1,
+  "owner": "runelord-rules-engineer",
+  "checkpoint": {
+    "remaining": [],
+    "blockers": [],
+    "completed": [
+      "Rules",
+      "Runtime UI and reused assets",
+      "Browser checks",
+      "122 tests and production build",
+      "Independent review: no blockers"
+    ],
+    "nextAction": "User playtest; no deployment requested"
+  }
+}

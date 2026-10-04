@@ -45,7 +45,8 @@ export const implemented = [
   "abyssal-gaze",
   "infernal-transformation",
 ] as const;
-export type CardId = (typeof implemented)[number];
+export const neutralCards = ["neutral-strike", "neutral-bulwark", "neutral-insight", "neutral-renewal"] as const;
+export type CardId = (typeof implemented)[number] | (typeof neutralCards)[number];
 export type Card = {
   id: CardId;
   name: string;
@@ -70,6 +71,13 @@ export const cards = implemented.reduce(
   },
   {} as Record<CardId, Card>,
 );
+Object.assign(cards, {
+ "neutral-strike": {id:"neutral-strike",name:"Tempered Strike",cost:1,xCost:false,cinders:0,type:"Attack",rarity:"Common",text:"Deal 8 damage."},
+ "neutral-bulwark": {id:"neutral-bulwark",name:"Iron Bulwark",cost:2,xCost:false,cinders:0,type:"Skill",rarity:"Common",text:"Gain 13 Guard."},
+ "neutral-insight": {id:"neutral-insight",name:"Battle Insight",cost:1,xCost:false,cinders:0,type:"Skill",rarity:"Uncommon",text:"Draw 2 cards. Gain 3 Guard."},
+ "neutral-renewal": {id:"neutral-renewal",name:"Second Wind",cost:2,xCost:false,cinders:0,type:"Skill",rarity:"Rare",text:"Restore 6 HP. Gain 6 Guard."},
+});
+export const relicPool = ["ember-heart", "iron-sigil", "warband-fang", "cinder-charm", "blood-ruby", "scholar-seal"] as const;
 export const starter: CardId[] = [
   "firebolt",
   "firebolt",
@@ -93,8 +101,14 @@ export const rewardSets: CardId[][] = [
   ["summon-pit-brute", "conflagrate", "ashen-ward"],
 ];
 export const cardTargetsUnit = (id: CardId) => ["hellish-command", "fiendish-feast", "sacrificial-rite", "feast-of-embers"].includes(id);
-export type ItemId = "healing-draught" | "mana-potion" | "barkskin-tonic" | "shrapnel-jar" | "banner-draught" | "bonesetters-salve" | "warhorn-oil" | "demon-lord-crown";
+export type ItemId = (typeof relicPool)[number] | "healing-draught" | "mana-potion" | "barkskin-tonic" | "shrapnel-jar" | "banner-draught" | "bonesetters-salve" | "warhorn-oil" | "demon-lord-crown";
 export const items: Record<ItemId, { name: string; text: string; category: "potion" | "item" | "relic"; passive?: boolean }> = {
+  "ember-heart": {category:"relic",passive:true,name:"Ember Heart",text:"At combat start, restore 5 HP."},
+  "iron-sigil": {category:"relic",passive:true,name:"Iron Sigil",text:"Begin every turn with 3 Guard."},
+  "warband-fang": {category:"relic",passive:true,name:"Warband Fang",text:"Summoned demons gain 2 Power."},
+  "cinder-charm": {category:"relic",passive:true,name:"Cinder Charm",text:"Gain 1 Cinder at the start of every turn."},
+  "blood-ruby": {category:"relic",passive:true,name:"Blood Ruby",text:"Attacks deal 1 additional damage."},
+  "scholar-seal": {category:"relic",passive:true,name:"Scholar's Seal",text:"Draw 1 additional card at combat start."},
   "healing-draught": { category: "potion", name: "Healing Draught", text: "Restore 20% of maximum HP." },
   "mana-potion": { category: "potion", name: "Mana Potion", text: "Gain 2 Mana." },
   "barkskin-tonic": { category: "potion", name: "Barkskin Tonic", text: "Gain 12 Guard." },

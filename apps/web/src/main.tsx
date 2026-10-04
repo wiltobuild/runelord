@@ -1,3 +1,5 @@
+import { NeutralCard } from "./SoulforgeShop";
+import { RoguelikeShop } from "./RoguelikeShop";
 import { IntroCinematic } from "./IntroCinematic";
 import { OpeningScreen } from "./OpeningScreen";
 import { GuardAura } from "./GuardAura";
@@ -10,7 +12,7 @@ import {
   type CardId,
 } from "../../../packages/content/index";
 import {
-  newRun,
+  newRoguelikeRun, infernalShopAppearance, cardEffectText, cardLevel, canAddCard, enterRoguelikeShop,
   dispatch,
   playable,
   manaCost,
@@ -31,7 +33,7 @@ import { ResourceMeters } from "./ResourceMeters";
 import { EnemyName } from "./EnemyName";
 import { SpellEffects } from "./SpellEffects";
 import { useBattleDirector } from "./useBattleDirector";
-import { score, OPENING_SCORE_ID, OPENING_SCORE_TITLE } from "./music";
+import { score, OPENING_SCORE_ID, OPENING_SCORE_TITLE, INFERNAL_SCORES } from "./music";
 import { sfx } from "./sound";
 import "./style.css";
 import { HUD, HudTemplate, HudStatIcon, InventorySlot, useHudScale } from "./HudTemplate";
@@ -43,7 +45,14 @@ import { packCrowdedWarband } from "./packedWarband";
 import "./hud.css";
 import "./mobile.css";
 import { MobileShell } from "./MobileShell";
+const SHOP_REVIEW = import.meta.env.DEV && new URLSearchParams(location.search).has("shopReview");
 const SAVE_KEY = "runelord-warlock-demo-v1";
+function reviewShop() {
+  const state = newRoguelikeRun(20261003,"warband");
+  state.room = 2; state.gold = 500;
+  enterRoguelikeShop(state);
+  return state;
+}
 function readSave() {
   try {
     const raw = localStorage.getItem(SAVE_KEY);
@@ -59,6 +68,7 @@ function CardView({
   disabled = false,
   selected = false,
   cost,
+  level = 0,
 }: {
   id: CardId;
   assets: Assets;
@@ -66,30 +76,32 @@ function CardView({
   disabled?: boolean;
   selected?: boolean;
   cost?: number;
+  level?: number;
 }) {
   const c = cards[id];
-  const displayedCost = cost ?? (c.xCost ? "X" : c.cost);
+  const displayedCost = cost ?? (c.xCost ? "X" : Math.max(c.cost > 0 ? 1 : 0,c.cost-Math.floor(level/3)));
+  const effectText = cardEffectText(id,level);
   return (
     <button
       className={`card ${selected ? "selected" : ""}`}
       disabled={disabled}
       onClick={onClick}
-      aria-label={`${c.name}, ${displayedCost} Mana${c.cinders ? `, ${c.cinders} Cinders` : ""}. ${c.text}`}
+      aria-label={`${c.name}, ${displayedCost} Mana${c.cinders ? `, ${c.cinders} Cinders` : ""}. ${effectText}`}
     >
       {assets.cards[id] ? (
         <img src={assets.cards[id]} alt="" draggable={false} />
-      ) : (
+      ) : id.startsWith("neutral-") ? <NeutralCard id={id} level={level}/> : (
         <div className="card-text">
           <span className="card-type">{c.rarity} · {c.type}</span><h3>{c.name}</h3>
-          <p>{c.text}</p><strong className="card-cost">{displayedCost} Mana{c.cinders ? ` + ${c.cinders} Cinders` : ""}</strong>
+          <p>{effectText}</p><strong className="card-cost">{displayedCost} Mana{c.cinders ? ` + ${c.cinders} Cinders` : ""}</strong>
         </div>
       )}
       <span className="card-info">
-        <strong>{c.name}</strong>
+        <strong>{c.name}{level > 0 ? ` · +${level}` : ""}</strong>
         <span>
           {displayedCost} Mana{c.cinders ? ` + ${c.cinders} Cinders` : ""}
         </span>
-        <span>{c.text}</span>
+        <span>{effectText}</span>
       </span>
     </button>
   );
@@ -100,7 +112,7 @@ function App({ assets }: { assets: Assets }) {
   const [introStarted, setIntroStarted] = useState(false);
   const [starterDeck, setStarterDeck] = useState<StarterDeckId>("warband");
   const [saved, setSaved] = useState<State | null>(readSave),
-    [game, setState] = useState<State | null>(null),
+    [game, setState] = useState<State | null>(() => SHOP_REVIEW ? reviewShop() : null),
     [visual, setVisual] = useState<State | null>(null),
     [seed, setSeed] = useState(""),
     [selected, setSelected] = useState<CardInstance | null>(null),
@@ -153,7 +165,7 @@ function App({ assets }: { assets: Assets }) {
     phase = state?.phase,
     encounter = encounters[room],
     track =
-      !state ? OPENING_SCORE_ID : phase === "camp" || phase === "won"
+      !state ? OPENING_SCORE_ID : phase === "shop" ? infernalShopAppearance(state.seed,state.shops?.current ?? null).shopId : phase === "camp" || phase === "won"
         ? "explore"
         : room === encounters.length - 1
           ? "demon-boss"
@@ -186,7 +198,7 @@ function App({ assets }: { assets: Assets }) {
     }
   }, [assets, track, musicActive]);
   useEffect(() => {
-    if (!game) return;
+    if (!game || SHOP_REVIEW) return;
     try {
       localStorage.setItem(SAVE_KEY, save(game));
       setSaved(game);
@@ -201,7 +213,7 @@ function App({ assets }: { assets: Assets }) {
     setVisual(null);
     resolving.current = false;
     setBusy(false);
-    const next = resume && saved ? saved : newRun(seed.trim() ? Number(seed) >>> 0 : crypto.getRandomValues(new Uint32Array(1))[0], starterDeck);
+    const next = resume && saved ? saved : newRoguelikeRun(seed.trim() ? Number(seed) >>> 0 : crypto.getRandomValues(new Uint32Array(1))[0], starterDeck);
     setState(next);
     setMusicActive(true);
     setSelected(null);
@@ -209,7 +221,7 @@ function App({ assets }: { assets: Assets }) {
     setMessage("Select an attack, then an enemy. Click a skill to cast it.");
     animate("idle_breathe");
     void score
-      .play(assets, next.room === encounters.length - 1 ? "demon-boss" : "battle")
+      .play(assets, next.phase === "shop" ? infernalShopAppearance(next.seed,next.shops?.current ?? null).shopId : next.room === encounters.length - 1 ? "demon-boss" : "battle")
       .catch(() => setMusicError(true));
   };
   const act = async (action: Action) => {
@@ -265,6 +277,7 @@ function App({ assets }: { assets: Assets }) {
       );
     } else act({ type: "play", uid: c.uid, dismiss });
   };
+  if (state && phase === "shop") return <RoguelikeShop state={state} assets={assets} onAction={action => { void act(action); }} message={message} musicOn={musicActive && volume > 0} onMusic={() => { const v = !musicActive || !volume ? .35 : 0; setVolume(v); score.setVolume(v); void music(); }} />;
   if (!state && !introStarted) return <IntroCinematic volume={volume} onVolume={v => { setVolume(v); score.setVolume(v); }} onStart={() => { setIntroStarted(true); void music(); }} />;
   return (
     <main
@@ -574,6 +587,7 @@ function App({ assets }: { assets: Assets }) {
                 <CardView
                   key={c.uid}
                   id={c.id}
+                  level={c.level ?? 0}
                   cost={manaCost(state, c)}
                   assets={assets}
                   disabled={busy || !playable(state, c)}
@@ -612,6 +626,7 @@ function App({ assets }: { assets: Assets }) {
                       key={id}
                       id={id}
                       assets={assets}
+                      disabled={!canAddCard(state,id)}
                       onClick={() => act({ type: "reward", card: id })}
                     />
                   ))}
@@ -686,7 +701,7 @@ function App({ assets }: { assets: Assets }) {
         <span>
           {musicError
             ? "Music unavailable — toggle to retry"
-            : `♫ ${track === OPENING_SCORE_ID ? OPENING_SCORE_TITLE : assets.music[track]?.title ?? "Cinderforge score"}`}
+            : `♫ ${track === OPENING_SCORE_ID ? OPENING_SCORE_TITLE : INFERNAL_SCORES[track]?.title ?? assets.music[track]?.title ?? "Cinderforge score"}`}
         </span>
         <span>
           {state ? "AUTOSAVED LOCALLY" : "WARLOCK PLAYABLE DEMO · 0.1"}
@@ -698,7 +713,7 @@ function App({ assets }: { assets: Assets }) {
           <div className="inspection-kicker">{inspection === "brand" ? "RELIC OF THE NINTH PIT" : "THE WARLOCK’S GRIMOIRE"}</div>
           <h2>{inspection === "brand" ? "Brand of the Pit" : `${inspection === "draw" ? "Draw" : "Discard"} pile`}</h2>
           {inspection === "brand" ? <><div className="relic-display"><img className="inspected-item" src={assets.images.brand} alt="Brand of the Pit" /></div><div className="relic-description"><p>Start combat with <strong>3 Cinders.</strong></p><p>Gain <strong>1 Cinder</strong> whenever you lose HP on your turn.</p></div><div className="relic-status"><span aria-hidden="true">◆</span> PASSIVE ITEM · ALWAYS ACTIVE</div></> : <div className="deck-grid">
-            {(inspection === "draw" ? [...state.draw].sort((a, b) => a.id.localeCompare(b.id)) : state.discard).map(c => <CardView key={c.uid} id={c.id} assets={assets} />)}
+            {(inspection === "draw" ? [...state.draw].sort((a, b) => a.id.localeCompare(b.id)) : state.discard).map(c => <CardView key={c.uid} id={c.id} level={c.level ?? 0} assets={assets} />)}
             {!state[inspection].length && <p>This pile is empty.</p>}
           </div>}
         </section>
@@ -800,17 +815,7 @@ function App({ assets }: { assets: Assets }) {
             </button>
             <h2>Your pact</h2>
             <div className="deck-grid">
-              {Object.entries(
-                state.deck.reduce<Record<string, number>>(
-                  (a, id) => ((a[id] = (a[id] || 0) + 1), a),
-                  {},
-                ),
-              ).map(([id, n]) => (
-                <div key={id}>
-                  <CardView id={id as CardId} assets={assets} />
-                  <span>× {n}</span>
-                </div>
-              ))}
+              {state.deck.map((id,index) => <div key={index}><CardView id={id} level={cardLevel(state,index)} assets={assets}/></div>)}
             </div>
           </section>
         </div>

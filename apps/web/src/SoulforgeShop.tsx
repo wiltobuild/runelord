@@ -1,0 +1,59 @@
+import { useEffect, useRef, useState, type CSSProperties, type ReactNode } from "react";
+import { cards, items, type CardId, type ItemId } from "../../../packages/content/index";
+import { currentShop, upgradeCost, copyLimit, type State, type Action } from "../../../packages/engine/index";
+import { shopRerollCost, shopCanReroll, upgradePreview, cardEffectText } from "../../../packages/engine/index";
+import { HudStatIcon } from "./HudTemplate";
+import { assetUrl } from "./baseUrl";
+import type { Assets } from "./assets";
+import "./soulforge-shop.css";
+
+type Comparison=ReturnType<typeof upgradePreview>;
+type Inspection={kind:"card";id:CardId;level:number;comparison?:Comparison}|{kind:"relic";id:ItemId};
+function Gold({amount}:{amount:number}){return <><span className="soulforge-coin" aria-hidden="true"><HudStatIcon kind="gold"/></span> {amount.toLocaleString()}</>;}
+
+export function SoulforgeShop({state,assets,merchant,onAction,onTalk,onMusic,musicOn,message}:{state:State;assets:Assets;merchant:ReactNode;onAction:(action:Action)=>void;onTalk:()=>void;onMusic:()=>void;musicOn:boolean;message:string}){
+ const stock=currentShop(state)!;
+ const [inspection,setInspection]=useState<Inspection|null>(null);
+ const dialog=useRef<HTMLDivElement>(null);
+ useEffect(()=>{
+  if(!inspection)return;const previous=document.activeElement as HTMLElement|null;
+  dialog.current?.querySelector<HTMLButtonElement>("button")?.focus();
+  const keys=(event:KeyboardEvent)=>{if(event.key==="Escape")setInspection(null);if(event.key==="Tab") {const controls=dialog.current?.querySelectorAll<HTMLElement>('button:not(:disabled),[tabindex="0"]');if(!controls?.length)return;const first=controls[0],last=controls[controls.length-1];if(event.shiftKey&&document.activeElement===first){event.preventDefault();last.focus();}else if(!event.shiftKey&&document.activeElement===last){event.preventDefault();first.focus();}}};
+  window.addEventListener("keydown",keys);return()=>{window.removeEventListener("keydown",keys);previous?.focus();};
+ },[inspection]);
+ const inspectCard=(id:CardId,level=0,comparison?:Comparison)=>{onTalk();setInspection({kind:"card",id,level,comparison});};
+ const cardFace=(id:CardId,level=0,comparison?:Comparison)=><button className="soulforge-card-face" onClick={()=>inspectCard(id,level,comparison)} aria-label={`Inspect ${cards[id].name}${level?`, level ${level}`:""}${comparison?", upgrade comparison":""}`}>
+  {assets.cards[id]?<img src={assets.cards[id]} alt="" draggable={false}/>:<NeutralCard id={id} level={level}/>}
+  {level>0&&<><span className="soulforge-card-level">+{level}</span><span className="soulforge-live-cost">{cards[id].xCost?"X":Math.max(cards[id].cost>0?1:0,cards[id].cost-Math.floor(level/3))}</span></>}
+ </button>;
+ const act=(action:Action)=>{setInspection(null);onAction(action);};
+
+ return <div className="soulforge-shell"><p className="soulforge-pan-hint">Scroll to explore the exchange · Tap a card to read its details</p>
+  <section className="soulforge-board" aria-label="Soulforge Exchange" style={{backgroundImage:`url(${assetUrl("/infernal-assets/soul-template-v3.webp")})`,"--shop-button":`url(${assetUrl("/opening-assets/runic-button.webp")})`} as CSSProperties}>
+   <div className="soulforge-merchant">{merchant}</div>
+   <img className="soulforge-brazier forge-flame" src={assetUrl('/infernal-assets/soul-brazier.webp')} alt="" aria-hidden="true"/>
+   <img className="soulforge-brazier release-flame" src={assetUrl('/infernal-assets/soul-brazier.webp')} alt="" aria-hidden="true"/>
+   <header className="soulforge-heading"><h1>Soulforge Exchange</h1></header>
+   <div className="soulforge-gold" aria-label={`${state.gold} gold`}><Gold amount={state.gold}/></div>
+   <button className="soulforge-leave" onClick={()=>act({type:"leave-shop"})}>Leave</button>
+   <section className="soulforge-service soulforge-buy" aria-labelledby="soulforge-buy-title"><header><h2 id="soulforge-buy-title">Buy cards</h2><Reroll service="buy" state={state} onAction={act}/></header><div className="soulforge-card-pair">{stock.cards.slice(0,2).map((offer,index)=>{const owned=state.deck.filter(c=>c===offer.id).length,limit=copyLimit(offer.id);return <article key={`${index}-${offer.id}`} className={offer.sold?"sold":""}>{cardFace(offer.id)}<button className="soulforge-price" disabled={offer.sold||state.gold<offer.price||owned>=limit} title={owned>=limit?`Maximum ${limit} copies owned`:state.gold<offer.price?"Not enough gold":`Buy ${cards[offer.id].name}`} onClick={()=>act({type:"shop-buy",kind:"card",index})}>{offer.sold?"Sold":owned>=limit?"Copy limit":<Gold amount={offer.price}/>}</button></article>;})}</div></section>
+   <section className="soulforge-service soulforge-upgrade" aria-labelledby="soulforge-upgrade-title"><header><h2 id="soulforge-upgrade-title">Upgrade</h2><Reroll service="upgrade" state={state} onAction={act}/></header><div className="soulforge-card-pair">{stock.upgrades.map((offer,slot)=>{const {id,index,level}=offer,price=upgradeCost(level),comparison=!offer.sold&&index>=0?upgradePreview(state,index):undefined;return <article key={`${slot}-${id}-${index}`} className={offer.sold?"sold":""}>{cardFace(id,level,comparison)}{comparison&&<div className="soulforge-compare" aria-label="Upgrade comparison"><span title={comparison.text}>{comparison.text}</span><b>→</b><strong title={comparison.nextText}>{comparison.nextText}</strong></div>}<button className="soulforge-price" disabled={offer.sold||state.gold<price} aria-label={`Upgrade ${cards[id].name} for ${price} gold`} onClick={()=>act({type:"shop-upgrade",index})}>{offer.sold?"Forged":<Gold amount={price}/>}</button></article>;})}{!stock.upgrades.length&&<p className="soulforge-empty">No cards available to upgrade.</p>}</div></section>
+   <section className="soulforge-service soulforge-relics" aria-labelledby="soulforge-relic-title"><header><h2 id="soulforge-relic-title">Relics</h2></header><div className="soulforge-relic-row">{stock.relics.map((offer,index)=><article key={`${index}-${offer.id}`} className={offer.sold?"sold":""}><button className="soulforge-relic-art" onClick={()=>{onTalk();setInspection({kind:"relic",id:offer.id});}} aria-label={`Inspect ${items[offer.id].name}`}><img src={assetUrl(`/infernal-assets/relic-${offer.id}.webp`)} onError={e=>{if(!e.currentTarget.dataset.fallback){e.currentTarget.dataset.fallback="true";e.currentTarget.src=assets.images.brand;}}} alt=""/><span>{items[offer.id].name}</span></button><button className="soulforge-price" disabled={offer.sold||state.gold<offer.price||state.relics.includes(offer.id)} aria-label={`Buy ${items[offer.id].name} for ${offer.price} gold`} onClick={()=>act({type:"shop-buy",kind:"relic",index})}>{offer.sold?"Sold":state.relics.includes(offer.id)?"Owned":<Gold amount={offer.price}/>}</button></article>)}</div></section>
+   <section className="soulforge-service soulforge-remove" aria-labelledby="soulforge-remove-title"><header><h2 id="soulforge-remove-title">Remove</h2><Reroll service="remove" state={state} onAction={act}/></header><div className="soulforge-card-pair">{stock.removals.map((offer,slot)=>{const {id,index,level}=offer;return <article key={`${slot}-${id}-${index}`} className={offer.sold?"sold":""}>{cardFace(id,level)}<button className="soulforge-price" disabled={offer.sold||state.gold<10||state.deck.length<=10} title={state.deck.length<=10?"Keep at least 10 cards in your deck":`Remove ${cards[id].name}`} aria-label={`Remove ${cards[id].name} for 10 gold`} onClick={()=>act({type:"shop-remove",index})}>{offer.sold?"Removed":state.deck.length<=10?"10 card minimum":<Gold amount={10}/>}</button></article>;})}{!stock.removals.length&&<p className="soulforge-empty">Keep at least 10 cards.<br/>Buy a card to unlock removal offers.</p>}</div></section>
+   <div className="soulforge-status" role="status">{message||`Deck ${state.deck.length} cards · Maximum 3 copies, 2 for rares · Select any card or relic to inspect it.`}</div>
+   <button className="soulforge-music" onClick={onMusic} aria-label={musicOn?"Mute music":"Enable music"}>{musicOn?"♫":"♪"}</button>
+  </section>
+  {inspection&&<div className="soulforge-inspection-backdrop" onClick={()=>setInspection(null)}><div ref={dialog} className="soulforge-inspection" role="dialog" aria-modal="true" aria-label={inspection.kind==="card"?cards[inspection.id].name:items[inspection.id].name} onClick={e=>e.stopPropagation()}><button className="close" onClick={()=>setInspection(null)}>Close ×</button>{inspection.kind==="card"?<><h2>{cards[inspection.id].name}</h2>{assets.cards[inspection.id]?<img className="soulforge-inspected-card" src={assets.cards[inspection.id]} alt=""/>:<div className="soulforge-neutral-inspection"><NeutralCard id={inspection.id} level={inspection.level}/></div>}<div className="soulforge-inspected-detail"><p>{cardEffectText(inspection.id,inspection.level)}</p><p>Level {inspection.level} · {cards[inspection.id].rarity}</p>{inspection.comparison&&<UpgradeDetails preview={inspection.comparison}/>}</div></>:<><h2>{items[inspection.id].name}</h2><p>{items[inspection.id].text}</p><p>Passive relic · Active automatically once acquired.</p></>}</div></div>}
+ </div>;
+}
+function Reroll({service,state,onAction}:{service:"buy"|"upgrade"|"remove";state:State;onAction:(a:Action)=>void}){
+ const price=shopRerollCost(state,service),allowed=shopCanReroll(state,service);
+ return <button className="soulforge-reroll" disabled={!allowed} aria-label={`Reroll ${service} offers for ${price} gold`} title={`Refresh these two offers. Next reroll: ${price*2} gold. Each service has its own escalating cost.`} onClick={()=>onAction({type:"shop-reroll",kind:service})}>↻ Reroll <Gold amount={Number.isFinite(price)?price:0}/>{Number.isFinite(price)&&<small aria-hidden="true">{price} → {price*2} → {price*4}</small>}</button>;
+}
+function UpgradeDetails({preview}:{preview:Comparison}){return <><h3>Upgrade for {preview.price} gold</h3><table><thead><tr><th>Current · Level {preview.level}</th><th>Forged · Level {preview.nextLevel}</th></tr></thead><tbody><tr><td>{preview.cost} Mana</td><td>{preview.nextCost} Mana</td></tr><tr><td>{preview.text}</td><td>{preview.nextText}</td></tr></tbody></table></>;}
+
+/** Approved illustration reuse, with current gameplay text rather than baked source-card rules. */
+export function NeutralCard({id,level=0}:{id:CardId;level?:number}){
+ const card=cards[id],cost=card.xCost?"X":Math.max(card.cost>0?1:0,card.cost-Math.floor(level/3));
+ return <span className="soulforge-neutral-card"><img src={assetUrl(`/infernal-assets/neutral-${id}.webp`)} alt="" draggable={false}/><strong className="neutral-title">{card.name}</strong><b className="neutral-cost">{cost}</b><span className="neutral-type">{card.type}</span><span className="neutral-rules">{cardEffectText(id,level)}</span></span>;
+}
