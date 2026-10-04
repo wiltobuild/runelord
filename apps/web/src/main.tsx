@@ -1,3 +1,5 @@
+import { infernalShopAppearance } from "../../../packages/engine/infernal";
+import { InfernalJourney } from "./InfernalJourney";
 import { IntroCinematic } from "./IntroCinematic";
 import { OpeningScreen } from "./OpeningScreen";
 import { GuardAura } from "./GuardAura";
@@ -10,7 +12,7 @@ import {
   type CardId,
 } from "../../../packages/content/index";
 import {
-  newRun,
+  newInfernalRun, activeEncounter, cardPower, canAddCard,
   dispatch,
   playable,
   manaCost,
@@ -31,7 +33,7 @@ import { ResourceMeters } from "./ResourceMeters";
 import { EnemyName } from "./EnemyName";
 import { SpellEffects } from "./SpellEffects";
 import { useBattleDirector } from "./useBattleDirector";
-import { score, OPENING_SCORE_ID, OPENING_SCORE_TITLE } from "./music";
+import { score, OPENING_SCORE_ID, OPENING_SCORE_TITLE, INFERNAL_SCORES } from "./music";
 import { sfx } from "./sound";
 import "./style.css";
 import { HUD, HudTemplate, HudStatIcon, InventorySlot, useHudScale } from "./HudTemplate";
@@ -59,6 +61,7 @@ function CardView({
   disabled = false,
   selected = false,
   cost,
+  level = 0,
 }: {
   id: CardId;
   assets: Assets;
@@ -66,6 +69,7 @@ function CardView({
   disabled?: boolean;
   selected?: boolean;
   cost?: number;
+  level?: number;
 }) {
   const c = cards[id];
   const displayedCost = cost ?? (c.xCost ? "X" : c.cost);
@@ -85,11 +89,11 @@ function CardView({
         </div>
       )}
       <span className="card-info">
-        <strong>{c.name}</strong>
+        <strong>{c.name}{level > 0 ? ` · +${level}` : ""}</strong>
         <span>
           {displayedCost} Mana{c.cinders ? ` + ${c.cinders} Cinders` : ""}
         </span>
-        <span>{c.text}</span>
+        <span>{level > 0 ? `Level ${level} · ×${cardPower(level).toFixed(2)} primary power. Base: ` : ""}{c.text}</span>
       </span>
     </button>
   );
@@ -151,9 +155,13 @@ function App({ assets }: { assets: Assets }) {
   const resolving = useRef(false);
   const room = state?.room ?? 0,
     phase = state?.phase,
-    encounter = encounters[room],
+    encounter = state ? activeEncounter(state) : encounters[0],
     track =
-      !state ? OPENING_SCORE_ID : phase === "camp" || phase === "won"
+      !state ? OPENING_SCORE_ID : phase === "shop"
+        ? infernalShopAppearance(state.seed, state.journey?.current ?? null).shopId
+        : phase === "map" || phase === "treasure"
+          ? "infernal-map"
+          : phase === "camp" || phase === "won"
         ? "explore"
         : room === encounters.length - 1
           ? "demon-boss"
@@ -201,15 +209,15 @@ function App({ assets }: { assets: Assets }) {
     setVisual(null);
     resolving.current = false;
     setBusy(false);
-    const next = resume && saved ? saved : newRun(seed.trim() ? Number(seed) >>> 0 : crypto.getRandomValues(new Uint32Array(1))[0], starterDeck);
+    const next = resume && saved ? saved : newInfernalRun(seed.trim() ? Number(seed) >>> 0 : crypto.getRandomValues(new Uint32Array(1))[0], starterDeck);
     setState(next);
     setMusicActive(true);
     setSelected(null);
     setLog(next.events.map((e) => e.message));
-    setMessage("Select an attack, then an enemy. Click a skill to cast it.");
+    setMessage("");
     animate("idle_breathe");
     void score
-      .play(assets, next.room === encounters.length - 1 ? "demon-boss" : "battle")
+      .play(assets, next.phase === "shop" ? infernalShopAppearance(next.seed, next.journey?.current ?? null).shopId : next.phase === "map" || next.phase === "treasure" ? "infernal-map" : next.room === encounters.length - 1 ? "demon-boss" : "battle")
       .catch(() => setMusicError(true));
   };
   const act = async (action: Action) => {
@@ -230,7 +238,7 @@ function App({ assets }: { assets: Assets }) {
       setDismiss(undefined);
       setMessage("");
       if (animated) await director.run(before, next, action);
-      else if (action.type === "reward" || action.type === "camp" || action.type === "continue") {
+      else if (action.type === "reward" || action.type === "camp" || action.type === "continue" || action.type === "travel") {
         director.clear();
         animate("idle_breathe");
       }
@@ -265,6 +273,7 @@ function App({ assets }: { assets: Assets }) {
       );
     } else act({ type: "play", uid: c.uid, dismiss });
   };
+  if (state && (phase === "map" || phase === "shop" || phase === "treasure")) return <InfernalJourney state={state} assets={assets} onAction={action => { void act(action); }} message={message} musicOn={musicActive && volume > 0} onMusic={() => { const v = !musicActive || !volume ? .35 : 0; setVolume(v); score.setVolume(v); void music(); }} onHome={() => { director.clear(); setVisual(null); setState(null); setSelected(null); animate("idle_breathe"); }} />;
   if (!state && !introStarted) return <IntroCinematic volume={volume} onVolume={v => { setVolume(v); score.setVolume(v); }} onStart={() => { setIntroStarted(true); void music(); }} />;
   return (
     <main
@@ -294,7 +303,7 @@ function App({ assets }: { assets: Assets }) {
         </button>
         <div className="chapter">
           {state
-            ? `ENCOUNTER ${room + 1} OF ${encounters.length}`
+            ? state.journey ? `INFERNAL BIOME · ${encounter.name}` : `ENCOUNTER ${room + 1} OF ${encounters.length}`
             : "A DECKBUILDING ROGUELIKE"}
         </div>
         <nav>
@@ -575,6 +584,7 @@ function App({ assets }: { assets: Assets }) {
                   key={c.uid}
                   id={c.id}
                   cost={manaCost(state, c)}
+                  level={c.level}
                   assets={assets}
                   disabled={busy || !playable(state, c)}
                   selected={selected?.uid === c.uid}
@@ -612,6 +622,7 @@ function App({ assets }: { assets: Assets }) {
                       key={id}
                       id={id}
                       assets={assets}
+                      disabled={!!state.journey && !canAddCard(state,id)}
                       onClick={() => act({ type: "reward", card: id })}
                     />
                   ))}
@@ -655,7 +666,7 @@ function App({ assets }: { assets: Assets }) {
                 </h2>
                 <p>
                   {phase === "won"
-                    ? `You survived all ${encounters.length} encounters through the Cinderforge.`
+                    ? state.journey ? "You conquered the branching paths of the Infernal biome and defeated its Sovereign." : `You survived all ${encounters.length} encounters through the Cinderforge.`
                     : "A different pact. A different outcome. Try again."}
                 </p>
                 {phase === "won" && state.relics.includes("demon-lord-crown") && <div className="victory-crown"><img src={assets.images["item-demon-crown"]} alt="Demon Lord's Crown" /><h3>{items["demon-lord-crown"].name}</h3><p>{items["demon-lord-crown"].text}</p></div>}
@@ -686,7 +697,7 @@ function App({ assets }: { assets: Assets }) {
         <span>
           {musicError
             ? "Music unavailable — toggle to retry"
-            : `♫ ${track === OPENING_SCORE_ID ? OPENING_SCORE_TITLE : assets.music[track]?.title ?? "Cinderforge score"}`}
+            : `♫ ${track === OPENING_SCORE_ID ? OPENING_SCORE_TITLE : INFERNAL_SCORES[track]?.title ?? assets.music[track]?.title ?? "Cinderforge score"}`}
         </span>
         <span>
           {state ? "AUTOSAVED LOCALLY" : "WARLOCK PLAYABLE DEMO · 0.1"}
@@ -698,7 +709,7 @@ function App({ assets }: { assets: Assets }) {
           <div className="inspection-kicker">{inspection === "brand" ? "RELIC OF THE NINTH PIT" : "THE WARLOCK’S GRIMOIRE"}</div>
           <h2>{inspection === "brand" ? "Brand of the Pit" : `${inspection === "draw" ? "Draw" : "Discard"} pile`}</h2>
           {inspection === "brand" ? <><div className="relic-display"><img className="inspected-item" src={assets.images.brand} alt="Brand of the Pit" /></div><div className="relic-description"><p>Start combat with <strong>3 Cinders.</strong></p><p>Gain <strong>1 Cinder</strong> whenever you lose HP on your turn.</p></div><div className="relic-status"><span aria-hidden="true">◆</span> PASSIVE ITEM · ALWAYS ACTIVE</div></> : <div className="deck-grid">
-            {(inspection === "draw" ? [...state.draw].sort((a, b) => a.id.localeCompare(b.id)) : state.discard).map(c => <CardView key={c.uid} id={c.id} assets={assets} />)}
+            {(inspection === "draw" ? [...state.draw].sort((a, b) => a.id.localeCompare(b.id)) : state.discard).map(c => <CardView key={c.uid} id={c.id} level={c.level} cost={manaCost(state,c)} assets={assets} />)}
             {!state[inspection].length && <p>This pile is empty.</p>}
           </div>}
         </section>
@@ -722,7 +733,8 @@ function App({ assets }: { assets: Assets }) {
             </button>)}
             {!group.entries.length && !(group.title === "Potions" && state.potion) && <p>No {group.title.toLowerCase()} collected.</p>}
           </div></section>)}
-          {!state.inventory.length && <p>No supplies remain.</p>}
+          {state.relics.length>0 && <section aria-label="Passive relics"><h3>Passive relics</h3>{state.relics.map(id=><article key={id}><h4>{items[id].name}</h4><p>{items[id].text}</p></article>)}</section>}
+          {!state.inventory.length && <p>No consumable supplies remain.</p>}
         </section>
       </div>}
       {showHelp && (
@@ -800,17 +812,14 @@ function App({ assets }: { assets: Assets }) {
             </button>
             <h2>Your pact</h2>
             <div className="deck-grid">
-              {Object.entries(
-                state.deck.reduce<Record<string, number>>(
-                  (a, id) => ((a[id] = (a[id] || 0) + 1), a),
-                  {},
-                ),
-              ).map(([id, n]) => (
-                <div key={id}>
-                  <CardView id={id as CardId} assets={assets} />
-                  <span>× {n}</span>
-                </div>
-              ))}
+              {Object.values(state.deck.reduce<Record<string, {id:CardId;level:number;count:number}>>((groups,id,index)=>{
+                const level=state.deckLevels?.[index] ?? 0,key=`${id}:${level}`;
+                if(groups[key]) groups[key].count++; else groups[key]={id,level,count:1};
+                return groups;
+              },{})).map(({id,level,count}) => <div key={`${id}:${level}`}>
+                <CardView id={id} level={level} cost={Math.max(cards[id].cost>0?1:0,cards[id].cost-Math.floor(level/3))} assets={assets} />
+                <span>× {count}{level>0?` · Level ${level}`:""}</span>
+              </div>)}
             </div>
           </section>
         </div>

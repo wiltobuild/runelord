@@ -8,6 +8,12 @@ const openingScore = {
   start: 0,
   end: 64,
 };
+export const INFERNAL_SCORES: Record<string, {url:string;title:string;start:number;end:number}> = {
+  "infernal-map": {url:"/audio/music/infernal-scenes-r1/infernal-map.ogg",title:"Paths Beneath the Ember Sky",start:0,end:48},
+  "cinder-vault": {url:"/audio/music/infernal-scenes-r1/cinder-vault.ogg",title:"Gold Beneath the Cinders",start:0,end:48},
+  "chain-bazaar": {url:"/audio/music/infernal-scenes-r1/chain-bazaar.ogg",title:"The Price of Chains",start:0,end:42},
+  "infernal-scriptorium": {url:"/audio/music/infernal-scenes-r1/infernal-scriptorium.ogg",title:"Ink of the Unspoken",start:0,end:54},
+};
 export class ScorePlayer {
   private ctx: AudioContext | null = null;
   private gain: GainNode | null = null;
@@ -18,8 +24,10 @@ export class ScorePlayer {
   private track = "";
   private volume = 0.35;
   async play(assets: Assets, id: string) {
+    const serial = ++this.serial;
     this.ctx ??= new AudioContext();
     await this.ctx.resume();
+    if (serial !== this.serial) return;
     if (!this.gain) {
       this.gain = this.ctx.createGain();
       this.gain.gain.value = this.volume;
@@ -27,17 +35,27 @@ export class ScorePlayer {
     }
     if (this.track === id && this.source) {
       // Returning to the current scene also invalidates another scene's load.
-      ++this.serial;
       return;
     }
-    const serial = ++this.serial,
-      track = id === OPENING_SCORE_ID ? openingScore : assets.music[id];
+    const track = id === OPENING_SCORE_ID ? openingScore : INFERNAL_SCORES[id] ?? assets.music[id];
     if (!track) throw Error("Unknown score");
     let buffer = this.cache.get(id);
     if (!buffer) {
       const response = await fetch(assetUrl(track.url));
       if (!response.ok) throw Error("Score unavailable");
       buffer = await this.ctx.decodeAudioData(await response.arrayBuffer());
+      if (INFERNAL_SCORES[id]) {
+        // Vorbis can introduce tiny endpoint offsets after the master taper.
+        const edge = Math.round(buffer.sampleRate * .004);
+        for (let channel = 0; channel < buffer.numberOfChannels; channel++) {
+          const samples = buffer.getChannelData(channel);
+          for (let i = 0; i < edge; i++) {
+            const fade = i / edge;
+            samples[i] *= fade;
+            samples[samples.length - 1 - i] *= fade;
+          }
+        }
+      }
       this.cache.set(id, buffer);
     }
     if (serial !== this.serial) return;
@@ -63,6 +81,15 @@ export class ScorePlayer {
     this.source = source;
     this.sourceGain = voiceGain;
     this.track = id;
+  }
+  stop() {
+    this.serial++;
+    this.source?.stop();
+    this.source?.disconnect();
+    this.sourceGain?.disconnect();
+    this.source = null;
+    this.sourceGain = null;
+    this.track = "";
   }
   setVolume(value: number) {
     this.volume = value;
