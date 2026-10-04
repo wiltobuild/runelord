@@ -30,6 +30,7 @@ export type SpellEffect = {
   targets: Point[];
   scale?: number;
   height?: number;
+  targetActor?: string;
 };
 const clamp = (n: number) => Math.max(0, Math.min(1, n));
 const ease = (n: number) => 1 - Math.pow(1 - clamp(n), 3);
@@ -367,7 +368,22 @@ function EffectCanvas({ effects, ground = false }: { effects: SpellEffect[]; gro
       }
       ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
       ctx.clearRect(0, 0, box.width, box.height);
-      for (const e of latest.current) {
+      for (const original of latest.current) {
+        let e = original;
+        // Summons can move as the formation repacks. Both portal layers follow
+        // the rendered source root, in this canvas's coordinates, on every frame.
+        if (e.kind === "summon" && e.targetActor) {
+          const sprite = document.querySelector<HTMLElement>(`[data-actor="${e.targetActor}"] .actor-sprite`);
+          const image = sprite?.querySelector("img");
+          const anchor = sprite?.dataset.summonAnchor?.split(",").map(Number);
+          const source = anchor && image ? image.getBoundingClientRect() : sprite?.getBoundingClientRect();
+          const surface = el.getBoundingClientRect();
+          if (source && surface.width && surface.height) {
+            const x = source.left + source.width * (anchor?.[0] ?? .5);
+            const y = source.top + source.height * (anchor?.[1] ?? (e.targetActor.startsWith("enemy-") ? .88 : 1));
+            e = {...e, targets: [{x:(x-surface.left)*box.width/surface.width, y:(y-surface.top)*box.height/surface.height}]};
+          }
+        }
         if (ground) { if (e.kind === "summon") drawSummon(ctx, e, time, true); }
         else drawEffect(ctx, e, time);
       }

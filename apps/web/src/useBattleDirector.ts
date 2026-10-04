@@ -93,6 +93,7 @@ export function useBattleDirector(
     travel = 360,
     scale = 1,
     height?: number,
+    targetActor?: string,
   ) => {
     const e: SpellEffect = {
       id: ++serial.current,
@@ -116,6 +117,7 @@ export function useBattleDirector(
       targets,
       scale,
       height,
+      targetActor,
     };
     setEffects((previous) => [
       ...previous.filter((p) => performance.now() - p.start < p.duration),
@@ -433,7 +435,7 @@ export function useBattleDirector(
         sfx.play("boss-summon", 0, .3);
         const element = actor(id), box = element?.querySelector(".actor-sprite")?.getBoundingClientRect();
         const arena = document.querySelector(".battlefield")!.getBoundingClientRect(), zoom = stageScale();
-        if (box) effect("summon", point(`enemy-${event.target}`), [{x:(box.left+box.width*.5-arena.left)/zoom,y:(box.top+box.height*.88-arena.top)/zoom}], 80, 0, 1.15, box.height/zoom);
+        if (box) effect("summon", point(`enemy-${event.target}`), [{x:(box.left+box.width*.5-arena.left)/zoom,y:(box.top+box.height*.88-arena.top)/zoom}], 80, 0, 1.15, box.height/zoom, id);
         if (element) motions.current.push(element.animate([{opacity:0,filter:"brightness(3)"},{opacity:1,filter:"brightness(1)"}],{duration:1050,easing:"ease-out"}));
         recovery = 1300;
       }
@@ -516,7 +518,7 @@ export function useBattleDirector(
           const width = unit?.kind === "hellhound" ? 1.05 : unit?.kind === "pit-brute" ? 1.25 : .7;
           const worldUnit = parseFloat(getComputedStyle(sprite!).getPropertyValue("--summon-world-unit")) || 200;
           const size = worldUnit / (unit?.kind === "hellhound" ? 225.8064515 : 200);
-          effect("summon", point("hero", clip), [{x:(box.left+box.width/2-arena.left)/zoom,y:(box.bottom-arena.top)/zoom}], 160, 0, width * size, box.height/zoom);
+          effect("summon", point("hero", clip), [{x:(box.left+box.width/2-arena.left)/zoom,y:(box.bottom-arena.top)/zoom}], 160, 0, width * size, box.height/zoom, `unit-${event.actor}`);
           const guarded = after.units.find(u => u.id === event.actor);
           if (guarded && guarded.guard > 0) wardUnit(guarded, point("hero", clip), 900);
         }

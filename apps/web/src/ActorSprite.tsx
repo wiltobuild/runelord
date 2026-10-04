@@ -155,6 +155,7 @@ export function ActorSprite({
       className={`actor-sprite ${className}${cue?.state === "spawn" && hp > 0 ? " arriving" : ""}${pixelsPerUnit ? " source-scaled-summon" : ""}`}
       data-art={art}
       data-spawn-reveal={actor?.spawnReveal}
+      data-summon-anchor={pixelsPerUnit ? `${actor.anchor[0] / actor.size[0]},${actor.anchor[1] / actor.size[1]}` : undefined}
       data-death-effect={actor?.deathEffect}
       style={pixelsPerUnit ? { height: `calc(var(--summon-world-unit, 200px) * ${(geometry!.layout_bounds_px ? actor.anchor[1] - geometry!.layout_bounds_px[1] : geometry!.reference_visible_height_px) / pixelsPerUnit})` } : undefined}
     >
