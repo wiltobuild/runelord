@@ -120,8 +120,8 @@ export function useBattleDirector(
       e,
     ]);
   };
-  // Wards sit beyond the authored forward silhouette, not the sprite wrapper's
-  // center. Measuring the source-scaled image also handles packed and flying units.
+  // Center the ward just ahead of the forward silhouette, letting its near edge
+  // overlap the unit. Source-scaled bounds also handle packed and flying units.
   const wardUnit = (unit: Unit, from: Point, release: number) => {
     const sprite = actor(`unit-${unit.id}`)?.querySelector<HTMLElement>(".actor-sprite");
     const box = sprite?.querySelector("img")?.getBoundingClientRect();
@@ -133,14 +133,14 @@ export function useBattleDirector(
     const bottom = box.top + box.height * bounds[3] / art.size[1];
     const right = box.left + box.width * bounds[2] / art.size[0];
     const size = Math.max(.3, Math.min(.7, (bottom - top) / zoom / 260));
-    effect("ward", from, [{ x: (right - arena.left) / zoom + 57 * size + 8,
+    effect("ward", from, [{ x: (right - arena.left) / zoom + 8 * size,
       y: ((top + bottom) / 2 - arena.top) / zoom }], release, 0, size);
   };
   const number = (id: string, amount: number, cause?: "scorch") => {
     const item = {
       id: ++serial.current,
       point: point(id),
-      label: cause === "scorch" ? `SCORCH · ${amount ? `−${amount}` : "BLOCKED"}` : amount ? `−${amount}` : "BLOCKED",
+      label: cause === "scorch" ? `SCORCH ${amount ? `−${amount}` : "BLOCKED"}` : amount ? `−${amount}` : "BLOCKED",
       cause,
     };
     setNumbers((previous) => [...previous.slice(-8), item]);

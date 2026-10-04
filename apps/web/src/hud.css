@@ -289,8 +289,25 @@ main.battle-ui { width:1672px; height:941px; min-height:0; zoom:var(--hud-scale)
 .battle-ui .minion-name { gap:4px; height:20px; line-height:20px; font-size:13px; text-shadow:0 2px 3px #000,0 0 5px #000; }
 .battle-ui .minion-power, .battle-ui .minion-scorch { flex-shrink:0; font-size:12px; color:#f5dfb6; }
 .battle-ui .minion-scorch { color:#ffa653; }
-.battle-ui .damage-numbers .scorch-number { color:#ffe0a3; font-size:26px; white-space:nowrap; margin-left:-65px; padding:5px 10px; border:1px solid #e99848; border-radius:5px; background:#24100feb; animation:scorch-number 1.45s forwards; }
-@keyframes scorch-number { 0% { opacity:0; transform:translateY(4px); } 12%,78% { opacity:1; transform:translateY(-12px); } 100% { opacity:0; transform:translateY(-30px); } }
+.battle-ui .damage-numbers .scorch-number {
+  isolation:isolate; font-size:26px; font-weight:900; letter-spacing:1px;
+  white-space:nowrap; color:#fff1b8; padding:0; border:0; background:none;
+  text-shadow:0 2px 2px #301007,0 -2px 5px #ffb338,0 -6px 12px #ff531b;
+  animation:scorch-number 1.45s forwards,scorch-flicker .22s ease-in-out infinite alternate;
+}
+.battle-ui .damage-numbers .scorch-number::before {
+  content:attr(data-label); position:absolute; inset:0; z-index:-1;
+  color:#ff7b1a; filter:blur(2px); transform-origin:50% 100%;
+  text-shadow:0 -5px 3px #ffc34c,2px -11px 7px #ff5420,-2px -18px 12px #e82b12;
+  animation:scorch-flame .28s ease-in-out infinite alternate;
+}
+@keyframes scorch-number { 0% { opacity:0; transform:translate(-50%,4px) scale(.85); } 12%,78% { opacity:1; transform:translate(-50%,-12px) scale(1); } 100% { opacity:0; transform:translate(-50%,-38px) scale(1.04); } }
+@keyframes scorch-flame { from { transform:translateY(-2px) scale(1.01,1.12) skewX(-3deg); opacity:.7; } to { transform:translateY(-6px) scale(.98,1.35) skewX(3deg); opacity:1; } }
+@keyframes scorch-flicker { from { text-shadow:0 2px 2px #301007,0 -2px 5px #ffb338,0 -6px 12px #ff531b; } to { text-shadow:0 2px 2px #301007,0 -3px 7px #ffd267,0 -9px 16px #ff4015; } }
+@media (prefers-reduced-motion:reduce) {
+  .battle-ui .damage-numbers .scorch-number { animation:scorch-number 1.45s forwards; }
+  .battle-ui .damage-numbers .scorch-number::before { animation:none; }
+}
 .battle-ui .minion-details .hp-track { height:22px; margin-top:2px; border:2px solid #b3824b; background:#351311; }
 .battle-ui .minion-details .hp-track span { font:700 15px/18px "Runelord Text",Georgia,serif; }
 .battle-ui .formation-unit.airborne .minion-headroom { height:50px; }
