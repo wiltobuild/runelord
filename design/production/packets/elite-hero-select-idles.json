@@ -85,9 +85,7 @@
       "npm run build passed; Vite served root and both atlases with HTTP 200",
       "Runesmith apron variation remains an explicitly accepted limitation; browser automation was unavailable, so interactive visual playback is not claimed"
     ],
-    "remaining": [
-      
-    ],
+    "remaining": [],
     "blockers": [],
     "nextAction": "Integration complete; retain user-accepted apron limitation and request a browser playback check when automation is available."
   }
