@@ -1,0 +1,61 @@
+{
+  "hero": "runesmith",
+  "revision": "elite-select-idle-r1",
+  "status": "review_pending",
+  "approved_source": "assets/characters/runesmith-storm-crown/approved-master.png",
+  "approved_source_sha256": "1c0539c7922dc0745a8b186e7ddbaa796aa60b3ee053711e8e9a964f1b667a45",
+  "method": "reference-conditioned whole-character raster frames",
+  "required_states": [
+    "select_idle"
+  ],
+  "required_forms": [
+    "storm-crown"
+  ],
+  "geometry": {
+    "width": 480,
+    "height": 480,
+    "ground_y": 454,
+    "root": [
+      240,
+      454
+    ],
+    "scale": "one common source scale, no per-frame scale or recenter"
+  },
+  "assets": {
+    "atlas": "idle-atlas.png",
+    "frame_index": "frames/index.json",
+    "contact_sheet": "contact-sheet.png"
+  },
+  "states": {
+    "select_idle": {
+      "loop": true,
+      "duration_ms": 3080,
+      "frame_duration_ms": 220,
+      "authored_pose_count": 8,
+      "sequence": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        6,
+        5,
+        4,
+        3,
+        2,
+        1
+      ],
+      "events": []
+    }
+  },
+  "compatibility": "horizontal 14-cell RGBA PNG atlas; CSS steps(14) at 3080ms",
+  "effects": "Coil and hammer glow baked in authored frames. No separate effects-off track available.",
+  "limitations": [
+    "8 authored poses sampled at 220ms, not 60fps interpolated animation",
+    "Independent visual review pending",
+    "Baked effects prevent separate VFX-off review"
+  ]
+}

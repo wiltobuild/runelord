@@ -1,0 +1,18 @@
+{
+  "hero": "ranger",
+  "revision": "elite-select-idle-r1",
+  "status": "review_pending",
+  "states": {
+    "idle": {
+      "form": "nightfang",
+      "status": "review_pending",
+      "frameIndex": "frames/index.json",
+      "preview": "idle-preview.gif"
+    }
+  },
+  "coverage": {
+    "uniqueFrames": 6,
+    "loopSamples": 10
+  },
+  "otherStates": "Out of scope: user requested character-select idle only."
+}

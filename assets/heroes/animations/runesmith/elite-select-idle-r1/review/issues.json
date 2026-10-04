@@ -1,0 +1,53 @@
+[
+  {
+    "id": "RS-ID-001",
+    "severity": "blocking",
+    "frames": [
+      {
+        "frame": 0,
+        "time_ms": 0,
+        "file": "frames/idle-000.png"
+      },
+      {
+        "frame": 1,
+        "time_ms": 220,
+        "file": "frames/idle-001.png"
+      },
+      {
+        "frame": 2,
+        "time_ms": 440,
+        "file": "frames/idle-002.png"
+      },
+      {
+        "frame": 3,
+        "time_ms": 660,
+        "file": "frames/idle-003.png"
+      },
+      {
+        "frame": 4,
+        "time_ms": 880,
+        "file": "frames/idle-004.png"
+      },
+      {
+        "frame": 5,
+        "time_ms": 1100,
+        "file": "frames/idle-005.png"
+      },
+      {
+        "frame": 6,
+        "time_ms": 1320,
+        "file": "frames/idle-006.png"
+      },
+      {
+        "frame": 7,
+        "time_ms": 1540,
+        "file": "frames/idle-007.png"
+      }
+    ],
+    "expected": "Preserve the selected master broad continuous leather apron, central diamond proportions and single long pointed panel with gold border.",
+    "observed": "All eight poses narrow and shorten the main apron and add two parallel gold-edged hanging side strips beside the central panel. The small hollow-looking diamond and nested chevron assembly read as a different apron construction from the selected master.",
+    "repair": "Reference-condition corrected poses on the exact selected master, restoring the broad long central apron and original diamond/border topology while keeping planted feet, two-hand hammer grip and restrained breathing.",
+    "invariant_to_preserve": "Exact selected Storm Crown costume construction, hair, beard, hammer and coils.",
+    "acceptance_test": "Compare each corrected native frame against the selected master at matching character height; original apron width/length and gold-border topology retained across all poses; verify adjacent-frame stability."
+  }
+]

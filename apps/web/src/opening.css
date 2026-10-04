@@ -75,3 +75,8 @@
 /* The HD Runeblade uses four registered full-body frames. */
 .character-plaque[data-hero="runeblade"] .coming-hero-idle{filter:saturate(.92) brightness(.96)}
 .character-plaque[data-hero="runeblade"] .coming-hero-idle img{width:400%;animation:coming-hero-idle 1.4s steps(4,end) infinite}
+/* Elite selection idles retain their authored frames and restrained timing. */
+.character-plaque[data-hero="ranger"] .coming-hero-idle,
+.character-plaque[data-hero="runesmith"] .coming-hero-idle{filter:saturate(.92) brightness(.96)}
+.character-plaque[data-hero="ranger"] .coming-hero-idle img{width:1000%;animation:coming-hero-idle 2.2s steps(10,end) infinite}
+.character-plaque[data-hero="runesmith"] .coming-hero-idle img{width:1400%;animation:coming-hero-idle 3.08s steps(14,end) infinite}

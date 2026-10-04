@@ -1,0 +1,27 @@
+{
+  "frame_count": 8,
+  "unique_hashes": 8,
+  "dimensions": [
+    480,
+    480
+  ],
+  "alpha": true,
+  "boundary_clear": true,
+  "loop_sequence": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    6,
+    5,
+    4,
+    3,
+    2,
+    1
+  ],
+  "loop_duration_ms": 3080
+}

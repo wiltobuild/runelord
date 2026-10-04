@@ -1,0 +1,122 @@
+[
+  {
+    "hero": "runesmith",
+    "form": "storm-crown",
+    "state": "select_idle",
+    "frame": 0,
+    "time_ms": 0,
+    "file": "frames/idle-000.png",
+    "sha256": "1cbe0088c3a8f04e099ecb12df423a5ba5765a62965ffe68507ac9c79ac291a0",
+    "authored_cell": [
+      0,
+      0,
+      444,
+      444
+    ]
+  },
+  {
+    "hero": "runesmith",
+    "form": "storm-crown",
+    "state": "select_idle",
+    "frame": 1,
+    "time_ms": 220,
+    "file": "frames/idle-001.png",
+    "sha256": "848d6c78546c83f7777bc2b505a6b6d0f610c42d89a62d9c4f12518d53a07820",
+    "authored_cell": [
+      444,
+      0,
+      887,
+      444
+    ]
+  },
+  {
+    "hero": "runesmith",
+    "form": "storm-crown",
+    "state": "select_idle",
+    "frame": 2,
+    "time_ms": 440,
+    "file": "frames/idle-002.png",
+    "sha256": "0918eb7417fc7e1bbe8475fec6152b0a3c662d3a8ea371a3168de44068fe2921",
+    "authored_cell": [
+      887,
+      0,
+      1330,
+      444
+    ]
+  },
+  {
+    "hero": "runesmith",
+    "form": "storm-crown",
+    "state": "select_idle",
+    "frame": 3,
+    "time_ms": 660,
+    "file": "frames/idle-003.png",
+    "sha256": "6f83661f5356bfa8a002c4397d146d8bcb9825243e6a6757b9ded65f7a64fb22",
+    "authored_cell": [
+      1330,
+      0,
+      1774,
+      444
+    ]
+  },
+  {
+    "hero": "runesmith",
+    "form": "storm-crown",
+    "state": "select_idle",
+    "frame": 4,
+    "time_ms": 880,
+    "file": "frames/idle-004.png",
+    "sha256": "5ed35b746f77553065237b224ff5885d81fd7aa0b23136b89bf16f0230eb3642",
+    "authored_cell": [
+      0,
+      444,
+      444,
+      887
+    ]
+  },
+  {
+    "hero": "runesmith",
+    "form": "storm-crown",
+    "state": "select_idle",
+    "frame": 5,
+    "time_ms": 1100,
+    "file": "frames/idle-005.png",
+    "sha256": "d027772baf5406eeef08d0a51044660ffd090dd0c688e9c047a31dec924c08ea",
+    "authored_cell": [
+      444,
+      444,
+      887,
+      887
+    ]
+  },
+  {
+    "hero": "runesmith",
+    "form": "storm-crown",
+    "state": "select_idle",
+    "frame": 6,
+    "time_ms": 1320,
+    "file": "frames/idle-006.png",
+    "sha256": "bc0909caeab7bf84608f6b88ccff26bf97ff3d2610a5ab510b1688df7227cec6",
+    "authored_cell": [
+      887,
+      444,
+      1330,
+      887
+    ]
+  },
+  {
+    "hero": "runesmith",
+    "form": "storm-crown",
+    "state": "select_idle",
+    "frame": 7,
+    "time_ms": 1540,
+    "file": "frames/idle-007.png",
+    "sha256": "93c236b7e0fea03860384a4207fc9e50f266d0b4528dd6c7b32dd84a9918cc08",
+    "authored_cell": [
+      1330,
+      444,
+      1774,
+      887
+    ]
+  }
+]

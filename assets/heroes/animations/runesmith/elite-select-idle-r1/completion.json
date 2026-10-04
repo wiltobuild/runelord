@@ -1,0 +1,10 @@
+{
+  "status": "review_pending",
+  "states": {
+    "storm-crown/select_idle": {
+      "status": "review_pending",
+      "manifest": "manifest.json",
+      "review": null
+    }
+  }
+}

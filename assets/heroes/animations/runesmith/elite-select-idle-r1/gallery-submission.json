@@ -1,0 +1,8 @@
+{
+  "verified_endpoint": "http://localhost:4317/api/art",
+  "preview_url": "http://localhost:4317/asset/47264b40a9c169b022adf902",
+  "preview_sha256": "f01de588247db675eeb6b2a7213f2c3f6cc33c30a78421bd3b3b58fb3eb044d0",
+  "contact_url": "http://localhost:4317/asset/67580eab36b94a57d6f80218",
+  "contact_sha256": "f73ac73e4dac3e0b2eaeed4b4044d9efb3cb83512814da61dbd02e968d30e761",
+  "status": "Pending approval"
+}

@@ -1,0 +1,202 @@
+{
+  "frames": [
+    {
+      "hero": "ranger",
+      "form": "nightfang",
+      "state": "idle",
+      "frame": 0,
+      "index": 0,
+      "time_ms": 0,
+      "file": "frames/idle-00.png",
+      "sha256": "f969c35b0de788d034bc7bc346a2ee37de50d7677c9e55f257596de25a3f976f",
+      "sourceRect": {
+        "left": 0,
+        "top": 0,
+        "width": 418,
+        "height": 627
+      },
+      "sourceAlphaBounds": {
+        "left": 34,
+        "top": 58,
+        "right": 400,
+        "bottom": 594
+      },
+      "sourceEdgePixels": {
+        "left": 0,
+        "right": 0,
+        "top": 0,
+        "bottom": 0
+      },
+      "translation": [
+        36,
+        139
+      ],
+      "scale": 1
+    },
+    {
+      "hero": "ranger",
+      "form": "nightfang",
+      "state": "idle",
+      "frame": 1,
+      "index": 1,
+      "time_ms": 220,
+      "file": "frames/idle-01.png",
+      "sha256": "0fa2e1f008e3f307301938e2deeb43fe2e7d97f9de94df0d30049145fb3adb43",
+      "sourceRect": {
+        "left": 418,
+        "top": 0,
+        "width": 418,
+        "height": 627
+      },
+      "sourceAlphaBounds": {
+        "left": 28,
+        "top": 58,
+        "right": 391,
+        "bottom": 593
+      },
+      "sourceEdgePixels": {
+        "left": 0,
+        "right": 0,
+        "top": 0,
+        "bottom": 0
+      },
+      "translation": [
+        44,
+        140
+      ],
+      "scale": 1
+    },
+    {
+      "hero": "ranger",
+      "form": "nightfang",
+      "state": "idle",
+      "frame": 2,
+      "index": 2,
+      "time_ms": 440,
+      "file": "frames/idle-02.png",
+      "sha256": "925eddf6717f1ec8f6428ffdbd06f1335cc3bfc1f833b9062b081dc89120b630",
+      "sourceRect": {
+        "left": 836,
+        "top": 0,
+        "width": 418,
+        "height": 627
+      },
+      "sourceAlphaBounds": {
+        "left": 20,
+        "top": 60,
+        "right": 387,
+        "bottom": 595
+      },
+      "sourceEdgePixels": {
+        "left": 0,
+        "right": 0,
+        "top": 0,
+        "bottom": 0
+      },
+      "translation": [
+        48,
+        138
+      ],
+      "scale": 1
+    },
+    {
+      "hero": "ranger",
+      "form": "nightfang",
+      "state": "idle",
+      "frame": 3,
+      "index": 3,
+      "time_ms": 660,
+      "file": "frames/idle-03.png",
+      "sha256": "41d2d1481030d117fc41706b5b854dc670aae91d6d2f888c8e8d060103820ca9",
+      "sourceRect": {
+        "left": 0,
+        "top": 627,
+        "width": 418,
+        "height": 627
+      },
+      "sourceAlphaBounds": {
+        "left": 33,
+        "top": 39,
+        "right": 400,
+        "bottom": 572
+      },
+      "sourceEdgePixels": {
+        "left": 0,
+        "right": 0,
+        "top": 0,
+        "bottom": 0
+      },
+      "translation": [
+        36,
+        161
+      ],
+      "scale": 1
+    },
+    {
+      "hero": "ranger",
+      "form": "nightfang",
+      "state": "idle",
+      "frame": 4,
+      "index": 4,
+      "time_ms": 880,
+      "file": "frames/idle-04.png",
+      "sha256": "7f1e28daba9b043673b865cb9c9c066d1571a64803b172ccf701558750524c99",
+      "sourceRect": {
+        "left": 418,
+        "top": 627,
+        "width": 418,
+        "height": 627
+      },
+      "sourceAlphaBounds": {
+        "left": 27,
+        "top": 37,
+        "right": 398,
+        "bottom": 574
+      },
+      "sourceEdgePixels": {
+        "left": 0,
+        "right": 0,
+        "top": 0,
+        "bottom": 0
+      },
+      "translation": [
+        43,
+        159
+      ],
+      "scale": 1
+    },
+    {
+      "hero": "ranger",
+      "form": "nightfang",
+      "state": "idle",
+      "frame": 5,
+      "index": 5,
+      "time_ms": 1100,
+      "file": "frames/idle-05.png",
+      "sha256": "9bc5403d236d65dbc8a64c33c2297616b08aedd1e9d9bad120e3b65df20601b0",
+      "sourceRect": {
+        "left": 836,
+        "top": 627,
+        "width": 418,
+        "height": 627
+      },
+      "sourceAlphaBounds": {
+        "left": 21,
+        "top": 36,
+        "right": 390,
+        "bottom": 574
+      },
+      "sourceEdgePixels": {
+        "left": 0,
+        "right": 0,
+        "top": 0,
+        "bottom": 0
+      },
+      "translation": [
+        48,
+        159
+      ],
+      "scale": 1
+    }
+  ]
+}
