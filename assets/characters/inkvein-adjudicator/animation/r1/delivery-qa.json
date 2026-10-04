@@ -1,0 +1,34 @@
+{
+  "character_id": "inkvein-adjudicator",
+  "frame_count": 16,
+  "canvas": [
+    440,
+    400
+  ],
+  "states": [
+    "idle",
+    "attack",
+    "hit",
+    "wounded_idle",
+    "die"
+  ],
+  "transparent_frames_verified": true,
+  "death_loop": false,
+  "base_approval": "3d05eb3f-404d-449d-a25a-412f3758d5a3",
+  "preview_sha256": "208be4f9b76189ac0f3f2db7785e7817edbb377a1beed2711586f72662f208bd",
+  "preview_gallery_id": "6cf5ca96ddb7355a0b3d84bd",
+  "preview_approval": "Pending approval",
+  "playback": {
+    "method": "Headless Chrome timed playback captures at native canvas and small size; inspected captures",
+    "status": "verified at review level; low-frame cadence and identity-detail variation remain",
+    "evidence": "C:\\Users\\wilsh\\Documents\\Codex\\2026-10-02\\use\\work\\playback\\inkvein-adjudicator\\playback-audit.json"
+  },
+  "limitations": [
+    "Generated animation review assets, not a production-ready rig.",
+    "Per-frame native artwork approximately 280-320 pixels high; source sheet has HD dimensions, individual frames do not.",
+    "Low-frame-count motion and hand/cloth/mark detail drift need temporal art review before game integration.",
+    "Technical extraction isolates disconnected sprites, preserves pose pixels, aligns ground, and uniformly downsamples separate attack repair strip. No procedural artwork or whole-image-motion substitute.",
+    "Raised/tamed forms excluded by direct approved-base scope."
+  ],
+  "delivery_level": "Articulated frame animation review pack; not certified production-ready"
+}

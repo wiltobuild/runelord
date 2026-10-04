@@ -31,12 +31,12 @@ test('numerical upgrade previews match intrinsic scalar, summon and rounded effe
 });
 
 function reachShop(seed:number){let s=newRoguelikeRun(seed);for(let i=0;i<600&&s.phase!=='shop'&&s.phase!=='lost';i++){if(s.phase==='combat'){const c=s.hand.find(c=>playable(s,c)&&(!c.id.startsWith('summon-')||s.units.length<5));s=dispatch(s,c?{type:'play',uid:c.uid,target:s.enemies.find(e=>e.hp>0)!.id,...(s.units.length?{unit:s.units.at(-1)!.id}:{})}:{type:'end'});}else if(s.phase==='reward')s=dispatch(s,{type:'reward',card:null});else if(s.phase==='loot')s=dispatch(s,{type:'continue'});else if(s.phase==='camp')s=dispatch(s,{type:'camp'});}return s;}
-test('schema6 earned-gold shop replays purchases, upgrades, rerolls and departure exactly',()=>{
+test('schema7 earned-gold shop replays purchases, upgrades, rerolls and departure exactly',()=>{
  let s:State|undefined;for(let seed=0;seed<100;seed++){const candidate=reachShop(seed);if(candidate.phase==='shop'){s=candidate;break;}}assert.ok(s);assert.equal(s.room,2);assert.equal(s.gold,105);assert.deepEqual(restore(save(s)),s);
  const upgraded=dispatch(s,{type:'shop-upgrade',index:currentShop(s)!.upgrades[0].index});assert.deepEqual(restore(save(upgraded)),upgraded);
- s=dispatch(s,{type:'shop-reroll',kind:'buy'});s=dispatch(s,{type:'shop-reroll',kind:'upgrade'});const affordable=currentShop(s)!.cards.findIndex(c=>c.price<=s!.gold);assert.ok(affordable>=0);s=dispatch(s,{type:'shop-buy',kind:'card',index:affordable});assert.equal(JSON.parse(save(s)).schema,6);assert.deepEqual(restore(save(s)),s);s=dispatch(s,{type:'leave-shop'});assert.equal(s.room,3);assert.deepEqual(restore(save(s)),s);assert.throws(()=>dispatch(s!,{type:'leave-shop'}));
+ s=dispatch(s,{type:'shop-reroll',kind:'buy'});s=dispatch(s,{type:'shop-reroll',kind:'upgrade'});const affordable=currentShop(s)!.cards.findIndex(c=>c.price<=s!.gold);assert.ok(affordable>=0);s=dispatch(s,{type:'shop-buy',kind:'card',index:affordable});assert.equal(JSON.parse(save(s)).schema,7);assert.deepEqual(restore(save(s)),s);s=dispatch(s,{type:'leave-shop'});assert.equal(s.room,3);assert.deepEqual(restore(save(s)),s);assert.throws(()=>dispatch(s!,{type:'leave-shop'}));
 });
-test('all nine fights preserve rewards and loot; shops only follow fights three and six',()=>{
+test('all nine infernal fights preserve rewards and loot, with a third shop before forest',()=>{
  let s=newRoguelikeRun(32,'fire');const shops:number[]=[];
  for(let room=0;room<9;room++){
   assert.equal(s.room,room);assert.equal(s.phase,'combat');
@@ -46,7 +46,7 @@ test('all nine fights preserve rewards and loot; shops only follow fights three 
   if(s.phase==='shop'){shops.push(room+1);assert.equal(s.room,room);s=dispatch(s,{type:'leave-shop'});assert.throws(()=>dispatch(s,{type:'leave-shop'}));}
   if(s.phase==='camp')s=dispatch(s,{type:'camp'});
 }
- assert.deepEqual(shops,[3,6]);assert.equal(s.phase,'won');assert.equal(s.gold,585);
+ assert.deepEqual(shops,[3,6,9]);assert.equal(s.phase,'combat');assert.equal(s.room,9);assert.equal(s.gold,585);
 });
 
 test('levelled cards enter battle at their purchased level and all shop relic passives resolve',()=>{

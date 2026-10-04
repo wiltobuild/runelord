@@ -1,5 +1,7 @@
 import { useEffect, useRef, useState } from "react";
 import { cards, type CardId } from "../../../packages/content/index";
+import { FOREST_ENEMY_IDS } from "../../../packages/engine/forest";
+import { natureWardTargetForImage } from "./natureWardGeometry";
 import type {
   Action,
   State,
@@ -99,7 +101,7 @@ export function useBattleDirector(
       duration:
         kind === "summon"
           ? 1300
-          : kind === "ward"
+          : kind === "ward" || kind === "nature-ward"
             ? release + 3000
             : kind === "scorch"
               ? 1500
@@ -438,7 +440,15 @@ export function useBattleDirector(
       if (event.type === "enemy-shield") {
         const id = `enemy-${event.actor}`, center = point(id);
         cue(id, "cast"); setLabel(event.message); sfx.play("boss-shield",0,.3);
-        effect("ward",center,[{x:center.x-55,y:center.y+20}],100,0,1.5);
+        const enemy = event.view?.enemies.find(e => e.id === event.actor) ?? before.enemies.find(e => e.id === event.actor);
+        if (enemy && (FOREST_ENEMY_IDS as readonly string[]).includes(enemy.art)) {
+          const sprite = actor(id)?.querySelector(".actor-sprite img");
+          const arena = document.querySelector(".battlefield")!;
+          if (sprite) {
+            const target = natureWardTargetForImage(enemy.art,sprite.getBoundingClientRect(),arena.getBoundingClientRect(),stageScale());
+            effect("nature-ward",center,[target],100,0,1);
+          }
+        } else effect("ward",center,[{x:center.x-55,y:center.y+20}],100,0,1.5);
         recovery = 650;
       }
       if (event.type === "boss-phase") {

@@ -1,0 +1,30 @@
+[
+  {
+    "path": "apps/web/src/natureWardGeometry.ts",
+    "sha256": "8cb95737e83832116a210c7ed8a5396ee67ff413c2e34319fed86bd80bedafb2"
+  },
+  {
+    "path": "apps/web/src/natureWardEffect.ts",
+    "sha256": "6c9ad69dfdfa56279dcb6979208bc3341fb5e43d8b7d4238f63887fba93a55c2"
+  },
+  {
+    "path": "apps/web/src/NatureShieldReview.tsx",
+    "sha256": "2d17a03a7276ef496289f3945cd7be744edd6ef24d0d40a0ce6640372f103813"
+  },
+  {
+    "path": "apps/web/src/useBattleDirector.ts",
+    "sha256": "6b509d99aa4d5f3219c34fdeaf71c928b53bddbde2e2de879b1001d9b953ed1d"
+  },
+  {
+    "path": "apps/web/src/SpellEffects.tsx",
+    "sha256": "ecf225c43e01c668bbc1a212219ae02080fad76f148a3125f5227b3e2c444b04"
+  },
+  {
+    "path": "apps/web/src/wardEffect.ts",
+    "sha256": "886d2198bc9f0900b063c4c6976845574aaeec4fef97a35661b5c9dbda81e5d1"
+  },
+  {
+    "path": "packages/engine/index.ts",
+    "sha256": "7a795caffa4050f95cd796fbd8f4a6d87fd3472d80c84fc2523c1b390cf2d63e"
+  }
+]

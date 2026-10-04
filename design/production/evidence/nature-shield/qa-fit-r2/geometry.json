@@ -1,0 +1,18 @@
+{
+  "status": "pass",
+  "allForestActors": 12,
+  "zoomInvariant": true,
+  "crab": {
+    "x": 515.750000016,
+    "y": 400.88499998496,
+    "width": 72.64000006144,
+    "height": 118.04000009984001
+  },
+  "mushroom": {
+    "x": 903.0000000590541,
+    "y": 364.9999999563458,
+    "width": 78.37499997155501,
+    "height": 147.812499906803
+  },
+  "mushroomMatchesOriginal": true
+}

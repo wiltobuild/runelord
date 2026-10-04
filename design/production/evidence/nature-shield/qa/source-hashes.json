@@ -1,0 +1,34 @@
+[
+  {
+    "path": "packages/engine/index.ts",
+    "sha256": "7a795caffa4050f95cd796fbd8f4a6d87fd3472d80c84fc2523c1b390cf2d63e"
+  },
+  {
+    "path": "packages/engine/monster-shields.test.ts",
+    "sha256": "04304a9271a764efc65b408e4c130e4594dbb0f0766aba3065c172910d8e190b"
+  },
+  {
+    "path": "packages/engine/fixtures/monster-shields-victory.json",
+    "sha256": "8b964acd2df586df7c006dc63466bbc9c3685d026ff896817f32a1d13d5663d5"
+  },
+  {
+    "path": "apps/web/src/NatureShieldReview.tsx",
+    "sha256": "9a377843dbed59fee0d5327a07bc7be0427cd7ce1b8801e803d026a514dc14d8"
+  },
+  {
+    "path": "apps/web/src/natureWardEffect.ts",
+    "sha256": "dbe23e32d560094ae5674610ffab1ea86fd3801adced8aebe6ba33c6a5e6e229"
+  },
+  {
+    "path": "apps/web/src/wardEffect.ts",
+    "sha256": "886d2198bc9f0900b063c4c6976845574aaeec4fef97a35661b5c9dbda81e5d1"
+  },
+  {
+    "path": "apps/web/src/useBattleDirector.ts",
+    "sha256": "9de3f16c217a046b3a8932db2d31b03feea7ab7de41ae98a5fd50bca5c0fcc15"
+  },
+  {
+    "path": "apps/web/src/SpellEffects.tsx",
+    "sha256": "24875398f69304005817c2d0ac644cd09d075bed6c05295d142ca7cb1ef0fb4e"
+  }
+]

@@ -1,0 +1,54 @@
+[
+  {
+    "path": "packages/engine/index.ts",
+    "sha256": "69624c865658d54f5698fa85a3ec90837edae14f0596ac612a00727f356587c2"
+  },
+  {
+    "path": "packages/engine/forest.ts",
+    "sha256": "591fd8f985c6f3b2b231ad9ce7abc6c3cf7c2df3c5b0edff9ce97a03f1abac9d"
+  },
+  {
+    "path": "packages/engine/shop.ts",
+    "sha256": "bfe0c519ced1efc0fd8b2b1ffed3452b6db52d83bc6f763d3d6dfafffdf89e90"
+  },
+  {
+    "path": "packages/engine/forest.test.ts",
+    "sha256": "c0321c703d9d41dd8063e619427088eb8b78a0f5d9ba5714b2d4379e146d1486"
+  },
+  {
+    "path": "packages/engine/fixtures/forest-roguelike-complete.json",
+    "sha256": "5b7dece5d9448895b3c89a17c29400bb55801f354155dd8d102dc333c1a566c5"
+  },
+  {
+    "path": "apps/web/src/main.tsx",
+    "sha256": "23a3a873476767b8f4311997e2bf848256a88e03a44bb21388aa085541b63b6d"
+  },
+  {
+    "path": "apps/web/src/ForestShop.tsx",
+    "sha256": "21c79d873eff57fc6d9afc0999b184ff0f20ecd7da49aabe1ac705ec1c9db0d7"
+  },
+  {
+    "path": "apps/web/src/forest-shop.css",
+    "sha256": "16990e8e2fce048c711b40e55961c4d264bbe36a39e6a17247f001ab6fc80337"
+  },
+  {
+    "path": "apps/web/src/forestReview.ts",
+    "sha256": "f66299e55cac2f59e32b6a86698e41a31884e913157abb512e299c6aaf350091"
+  },
+  {
+    "path": "apps/web/src/AnimatedBackground.tsx",
+    "sha256": "0d20e0709fa6e6bdf9c6d9ca13c0414dec81490eafe9649df0a33c1e38197040"
+  },
+  {
+    "path": "apps/web/src/music.ts",
+    "sha256": "75e35ba82bd00a9d888becf30ba3ba543252ed9d346e1d92c9ec6181e8fa75f2"
+  },
+  {
+    "path": "apps/web/src/SoulforgeShop.tsx",
+    "sha256": "bb38ad5c06375b43797e5546f0780f61bd26de6624f1c03fd23eed5372a685b7"
+  },
+  {
+    "path": "apps/web/public/game-assets/manifest.json",
+    "sha256": "3fc2466ef0eb1019bfe15ee0575ba8dacb7b5d2418ef7b6562d8435333411b67"
+  }
+]

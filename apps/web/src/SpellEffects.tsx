@@ -1,7 +1,8 @@
 import { drawWard } from "./wardEffect";
+import { drawNatureWard } from "./natureWardEffect";
 import { drawSummon } from './summonEffect';
 import { useEffect, useRef } from "react";
-export type Point = { x: number; y: number };
+export type Point = { x: number; y: number; width?: number; height?: number };
 export type SpellKind =
   | "flaming-arrow"
   | "crossbow-bolt"
@@ -11,6 +12,7 @@ export type SpellKind =
   | "immolate"
   | "conflagrate"
   | "ward"
+  | "nature-ward"
   | "pact"
   | "kindle"
   | "summon"
@@ -300,6 +302,8 @@ function drawEffect(c: CanvasRenderingContext2D, e: SpellEffect, time: number) {
     drawSummon(c, e, time, false);
   } else if (e.kind === "ward") {
     drawWard(c, e, time);
+  } else if (e.kind === "nature-ward") {
+    drawNatureWard(c, e, time);
   } else if (e.kind === "pact" || e.kind === "kindle" || e.kind === "ascend") {
     const a = Math.sin(Math.PI * clamp(t / e.duration));
     rune(

@@ -43,6 +43,19 @@ export class ScorePlayer {
       const response = await fetch(assetUrl(track.url));
       if (!response.ok) throw Error("Score unavailable");
       buffer = await this.ctx.decodeAudioData(await response.arrayBuffer());
+      if (id === "forest-explore" || id === "forest-boss") {
+        // Forest Vorbis derivatives retain the source loop length; taper tiny
+        // codec endpoint offsets without changing the original score masters.
+        const edge = Math.round(buffer.sampleRate * .004);
+        for (let channel = 0; channel < buffer.numberOfChannels; channel++) {
+          const samples = buffer.getChannelData(channel);
+          for (let i = 0; i < edge; i++) {
+            const fade = i / edge;
+            samples[i] *= fade;
+            samples[samples.length - 1 - i] *= fade;
+          }
+        }
+      }
       this.cache.set(id, buffer);
     }
     if (serial !== this.serial) return;

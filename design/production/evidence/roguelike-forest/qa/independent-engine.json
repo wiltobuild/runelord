@@ -1,0 +1,17 @@
+{
+  "seed": 11,
+  "legalActions": 438,
+  "phase": "won",
+  "battles": 21,
+  "shops": [
+    3,
+    6,
+    9,
+    12,
+    15,
+    18,
+    21
+  ],
+  "checks": "No Conquer journey/map/treasure state; exact save/replay every10 actions and every phase transition; permitted forest enemies only",
+  "hp": 52
+}

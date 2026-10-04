@@ -1,0 +1,32 @@
+{
+  "character_id": "pleatcap-matriarch",
+  "frame_count": 16,
+  "canvas": [
+    362,
+    373
+  ],
+  "states": [
+    "idle",
+    "attack",
+    "hit",
+    "wounded_idle",
+    "die",
+    "cast"
+  ],
+  "transparent_frames_verified": true,
+  "death_loop": false,
+  "base_approval": "606fe293-da32-45c2-b865-53840fae00fa",
+  "preview_sha256": "d82ffd0d2fe316036c8d0fea97df2a192aec95380b093fdae5bb25cb3aed9839",
+  "preview_gallery_id": "457e5e41fd78fc5531656c41",
+  "preview_approval": "Pending approval",
+  "playback": {
+    "method": "Headless Chrome timed playback captures at native canvas and small size; inspected captures",
+    "status": "verified at review level; low-frame cadence and identity-detail variation remain",
+    "evidence": "C:\\Users\\wilsh\\Documents\\Codex\\2026-10-02\\use\\work\\playback\\pleatcap-matriarch\\playback-audit.json"
+  },
+  "limitations": [
+    "Generated frame animation with sparse key poses; no rig or in-between interpolation.",
+    "Minor changing contour/texture details remain; review prior to integration."
+  ],
+  "delivery_level": "Articulated frame animation review pack; not certified production-ready"
+}

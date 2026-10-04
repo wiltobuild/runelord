@@ -1,0 +1,16 @@
+✔ every monster shield grants rounded half max HP, independent of wounds and old content guard (5.5215ms)
+✔ shield Guard persists across rounds and later shield actions add to the unspent balance without cap (0.7598ms)
+✔ attacks and Scorch consume shield Guard normally with only overflow damaging HP (0.8942ms)
+✔ hero and Warband Guard still expire while monster shields persist (1.2896ms)
+✔ Infernal boss intent advertises its actual 75 Guard; enrage bonus remains separate (1.0946ms)
+✔ schema7 records new rules; schema6 replays old prefix then uses half-HP shields for new actions (252.497ms)
+✔ historical fixed demos keep their capped shield rules and save schema (0.5112ms)
+✔ a full newly started schema7 run wins and replays under half-HP monster shields (686.7718ms)
+ℹ tests 8
+ℹ suites 0
+ℹ pass 8
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 1117.4004

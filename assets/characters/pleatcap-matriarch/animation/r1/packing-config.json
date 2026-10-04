@@ -1,0 +1,221 @@
+{
+  "slug": "pleatcap-matriarch",
+  "source": "C:\\Users\\wilsh\\.codex\\generated_images\\01a0fae6-883e-7363-bae7-4314b60b92e3\\exec-e1bd80d7-bcbe-45ac-b7ae-8076e0c8122b.png",
+  "output": "C:/Users/wilsh/Projects/runelord/assets/characters/pleatcap-matriarch/animation/r1",
+  "cols": 4,
+  "rows": 4,
+  "boxes": {
+    "0": [
+      0,
+      0,
+      314,
+      325
+    ],
+    "1": [
+      314,
+      0,
+      627,
+      325
+    ],
+    "2": [
+      627,
+      0,
+      940,
+      325
+    ],
+    "3": [
+      940,
+      0,
+      1254,
+      325
+    ],
+    "4": [
+      0,
+      325,
+      314,
+      638
+    ],
+    "5": [
+      314,
+      325,
+      627,
+      638
+    ],
+    "6": [
+      627,
+      325,
+      940,
+      638
+    ],
+    "7": [
+      940,
+      325,
+      1254,
+      638
+    ],
+    "8": [
+      0,
+      638,
+      314,
+      945
+    ],
+    "9": [
+      314,
+      638,
+      627,
+      945
+    ],
+    "10": [
+      627,
+      638,
+      940,
+      945
+    ],
+    "11": [
+      940,
+      638,
+      1254,
+      945
+    ],
+    "12": [
+      0,
+      945,
+      314,
+      1254
+    ],
+    "13": [
+      314,
+      945,
+      627,
+      1254
+    ],
+    "14": [
+      627,
+      945,
+      940,
+      1254
+    ],
+    "15": [
+      940,
+      945,
+      1254,
+      1254
+    ]
+  },
+  "ybounds": [
+    0,
+    325,
+    638,
+    945,
+    1254
+  ],
+  "align_ground": true,
+  "states": {
+    "idle": {
+      "frames": [
+        0,
+        1,
+        2,
+        3,
+        2,
+        1
+      ],
+      "durations": [
+        180,
+        180,
+        180,
+        180,
+        180,
+        180
+      ],
+      "loop": true
+    },
+    "attack": {
+      "frames": [
+        4,
+        5,
+        6,
+        7,
+        0
+      ],
+      "durations": [
+        80,
+        70,
+        70,
+        70,
+        60
+      ],
+      "loop": false,
+      "event": {
+        "impact_ms": 150
+      }
+    },
+    "hit": {
+      "frames": [
+        8,
+        9,
+        0
+      ],
+      "durations": [
+        90,
+        90,
+        80
+      ],
+      "loop": false
+    },
+    "wounded_idle": {
+      "frames": [
+        10,
+        11,
+        10
+      ],
+      "durations": [
+        300,
+        300,
+        300
+      ],
+      "loop": true
+    },
+    "die": {
+      "frames": [
+        12,
+        13,
+        14,
+        15
+      ],
+      "durations": [
+        130,
+        130,
+        140,
+        1000
+      ],
+      "loop": false,
+      "transition": "hold_terminal"
+    },
+    "cast": {
+      "frames": [
+        4,
+        5,
+        6,
+        7,
+        0
+      ],
+      "durations": [
+        100,
+        140,
+        100,
+        100,
+        80
+      ],
+      "loop": false,
+      "event": {
+        "spore_release_ms": 240
+      },
+      "purpose": "Spore discharge uses same approved fan articulation as primary action."
+    }
+  },
+  "limitations": [
+    "Generated frame animation with sparse key poses; no rig or in-between interpolation.",
+    "Minor changing contour/texture details remain; review prior to integration."
+  ]
+}

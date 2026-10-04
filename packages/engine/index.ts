@@ -1,8 +1,10 @@
 import { currentShop, cardPower, cardLevel, upgradeCost, canAddCard, prepareShop, rerollShop, remapShopCopies, refreshRemovalOffers, enterRoguelikeShop, type ShopRerollKind, type RoguelikeShops } from "./shop";
 export * from "./shop";
+import { forestEncounters, forestEliteRooms } from "./forest";
+export * from "./forest";
 import {
   cards,
-  implemented, starterDecks, cardTargetsUnit, items, rewardWeight,
+  relicPool, implemented, starterDecks, cardTargetsUnit, items, rewardWeight,
   type StarterDeckId, type ItemId,
   starter,
   encounters,
@@ -11,6 +13,13 @@ import {
   type Move,
   type Targeting,
 } from "../content/index";
+/** Keep historical fixed demos intact; the shop-enabled roguelike continues into Thornroot. */
+export const encounterCount=(s:State)=>encounters.length+(s.shops?forestEncounters.length:0);
+export const currentRealm=(s:State):'infernal'|'forest'=>s.shops&&s.room>=encounters.length?'forest':'infernal';
+export const realmEncounterNumber=(s:State)=>s.room-(currentRealm(s)==='forest'?encounters.length:0)+1;
+export const realmEncounterCount=(s:State)=>currentRealm(s)==='forest'?forestEncounters.length:encounters.length;
+export const isRealmBoss=(s:State)=>realmEncounterNumber(s)===realmEncounterCount(s);
+export const activeEncounter=(s:State)=>currentRealm(s)==='forest'?forestEncounters[s.room-encounters.length]:encounters[s.room];
 export type DemonKind = "imp" | "hellhound" | "pit-brute";
 export type Unit = {
   id: number;
@@ -68,6 +77,8 @@ export type CombatView = Pick<
 >;
 export type PendingLoot = { gold: number; items: ItemId[]; final: boolean };
 export type State = {
+  /** Actions before this index retain historical shield grants when replaying an older save. */
+  monsterShieldRulesFrom?: number;
   shops?: RoguelikeShops;
   deckLevels?: number[];
   version: 1;
@@ -238,18 +249,19 @@ function checkWin(s: State) {
     emit(s, "reserve", `${replacement.name} steps out of reserve.`, { target: fallen.id, actor: replacement.id });
   }
   if (s.phase === "combat" && !alive(s).length) {
-    const final = s.room === (s.rulesVersion === 2 ? 7 : encounters.length - 1);
+    const forest = currentRealm(s) === "forest";
+    const final = s.rulesVersion === 2 ? s.room === 7 : isRealmBoss(s);
     s.phase = final ? (s.rulesVersion === 2 ? "won" : "loot") : "reward";
-    const gold = 25 + s.room * 10;
+    const gold = forest ? (final ? 200 : forestEliteRooms.includes(s.room-encounters.length) ? 90 : 45+(s.room-encounters.length)*4) : 25 + s.room * 10;
     s.gold += gold;
     const drops: ItemId[] = ["mana-potion", "barkskin-tonic", "shrapnel-jar", "banner-draught", "bonesetters-salve", "warhorn-oil", "healing-draught", "healing-draught", "demon-lord-crown"];
-    const item = drops[s.room];
+    const item:ItemId|undefined = forest ? (final || forestEliteRooms.includes(s.room-encounters.length) ? relicPool.find(id=>!s.relics.includes(id)) || "healing-draught" : (s.room-encounters.length)%3===2 ? "healing-draught" : undefined) : drops[s.room];
     if (item && items[item].passive) { if (!s.relics.includes(item)) s.relics.push(item); }
     else if(item) s.inventory.push(item);
     s.pendingLoot = s.rulesVersion === 3 ? { gold, items: item ? [item] : [], final } : null;
     emit(s, "loot", `Found ${gold} Gold${item ? ` and ${items[item].name}` : ""}.`);
     s.rewards = final ? [] : s.rulesVersion === 3 ? rollRewards(s) : s.starterDeck === "classic" && s.room < 2 ? [...rewardSets[s.room]] : shuffle(s, [...implemented].filter(id => cards[id].rarity !== "Basic")).slice(0, 3);
-    emit(s, "victory", final ? "The Infernal Sovereign falls. Claim his crown." : "The path is yours. Choose a card.");
+    emit(s, "victory", final ? (forest ? "The Living Orchard falls. Claim your spoils, then visit the final Woodland Exchange." : "The Infernal Sovereign falls. Claim his crown.") : "The path is yours. Choose a card.");
   }
 }
 function killUnit(s: State, u: Unit) {
@@ -324,10 +336,15 @@ function summonBossDemons(s: State, boss: Enemy) {
     emit(s, "enemy-summon", `${boss.name} summons ${add.name}.`, { actor: add.id, target: boss.id });
   }
 }
+export const usesPersistentMonsterShields = (s:State) => s.monsterShieldRulesFrom !== undefined && s.history.length >= s.monsterShieldRulesFrom;
 export function intent(s: State, e: Enemy) {
   let move = e.moves[(s.turn - 1) % e.moves.length];
   if (move.kind === "summon" && ((e.summonsMade || 0) >= 4 || alive(s).filter(add => add.summonedBy === e.id).length >= 2)) move = { name: "Crownfire Bolt", damage: 8, targeting: "front" };
   if (e.bossPhase === 2 && move.damage > 0) move = { ...move, name: `Enraged ${move.name}`, damage: move.damage + 2 };
+  if (move.kind === "shield" && usesPersistentMonsterShields(s)) {
+    const guard = Math.round(e.maxHp / 2);
+    move = { ...move, guard, name: move.name.replace(/\d+ Guard/g, `${guard} Guard`) };
+  }
   return e.sapped ? { ...move, damage: Math.floor(move.damage * .75) } : move;
 }
 export function resolveTargets(
@@ -390,7 +407,7 @@ function beginCombat(s: State) {
   s.units = [];
   s.hand = [];
   s.discard = [];
-  s.enemies = encounters[s.room].enemies.map((e) => ({
+  s.enemies = activeEncounter(s).enemies.map((e) => ({
     ...structuredClone(e),
     ...(e.boss ? { bossPhase: 1 as const, summonsMade: 0 } : {}),
     id: s.nextId++,
@@ -398,7 +415,7 @@ function beginCombat(s: State) {
     guard: 0,
     scorch: 0,
   }));
-  s.reserves = (encounters[s.room].reserves || []).map(e => ({ ...structuredClone(e), id: s.nextId++, maxHp: e.hp, guard: 0, scorch: 0 }));
+  s.reserves = (activeEncounter(s).reserves || []).map(e => ({ ...structuredClone(e), id: s.nextId++, maxHp: e.hp, guard: 0, scorch: 0 }));
   s.draw = shuffle(
     s,
     s.deck.map((id,index) => ({ id, uid: s.nextId++, ...(s.shops ? {level:cardLevel(s,index)} : {}) })),
@@ -444,13 +461,15 @@ export function newRun(seed = 7319, starterDeck: StarterDeckId = "classic", rule
   return s;
 }
 /** New roguelike saves opt into shops; schemas 1–3 replay the historical demo unchanged. */
-export function newRoguelikeRun(seed=7319,starterDeck:StarterDeckId='warband'):State {
- const s=newRun(seed,starterDeck);s.shops={current:null,stock:{}};s.deckLevels=s.deck.map(()=>0);
+export function newRoguelikeRun(seed=7319,starterDeck:StarterDeckId='warband',monsterShieldRulesFrom=0):State {
+ const s=newRun(seed,starterDeck);s.monsterShieldRulesFrom=monsterShieldRulesFrom;s.shops={current:null,stock:{}};s.deckLevels=s.deck.map(()=>0);
  if(starterDeck==='classic'){s.deck[3]='neutral-strike';s.deck[7]='neutral-bulwark';}
  // Recreate the opening battle from the original RNG position, with leveled card instances.
  s.rng=s.seed;s.nextId=1;s.events=[];beginCombat(s);return s;
 }
 function advanceAfterLoot(s:State){
+ if(s.room===encounterCount(s)-1){s.phase='won';return;}
+ if(s.shops&&s.room===encounters.length-1)emit(s,'realm','Thornroot Forest opens. Your cards, upgrades, relics and supplies travel with you.');
  if([1,3,5,7].includes(s.room))s.phase='camp';
  else{s.room++;beginCombat(s);}
 }
@@ -558,8 +577,8 @@ export function dispatch(previous: State, action: Action): State {
     if (s.phase !== "loot" || !s.pendingLoot) throw Error("There is no loot to acknowledge.");
     const final = s.pendingLoot.final;
     s.pendingLoot = null;
-    if (final) s.phase = "won";
-    else if (s.shops && (s.room+1)%3===0) enterRoguelikeShop(s);
+    if (s.shops && (s.room+1)%3===0) enterRoguelikeShop(s);
+    else if (final) s.phase = "won";
     else if ([1, 3, 5, 7].includes(s.room)) s.phase = "camp";
     else { s.room++; beginCombat(s); }
   } else if (action.type === "camp") {
@@ -755,7 +774,7 @@ export function dispatch(previous: State, action: Action): State {
             targets: targets.map((t) => (t === "hero" ? "hero" : t.id)),
           },
         );
-        if (m.kind === "shield") { e.guard = Math.min(24, e.guard + (m.guard || 0)); emit(s, "enemy-shield", `${e.name} raises a demonic barrier.`, { actor: e.id, amount: m.guard }); }
+        if (m.kind === "shield") { e.guard = usesPersistentMonsterShields(s) ? e.guard + (m.guard || 0) : Math.min(24, e.guard + (m.guard || 0)); emit(s, "enemy-shield", `${e.name} raises a protective barrier.`, { actor: e.id, amount: m.guard }); }
         if (m.kind === "summon") summonBossDemons(s, e);
         for (const target of targets) {
           if (target === "hero") {
@@ -823,11 +842,17 @@ export function replay(seed: number, actions: Action[], starterDeck: StarterDeck
   if (legacyActions === actions.length) s = migrateLegacy(s, legacyActions);
   return s;
 }
-export const save = (s: State) => JSON.stringify({ schema: s.shops ? 6 : 3, seed: s.seed, starterDeck: s.starterDeck, legacyActions: s.legacyActions, actions: s.history });
+export const save = (s: State) => JSON.stringify({ schema: s.shops ? 7 : 3, ...(s.shops ? {monsterShieldRulesFrom:s.monsterShieldRulesFrom ?? s.history.length} : {}), seed: s.seed, starterDeck: s.starterDeck, legacyActions: s.legacyActions, actions: s.history });
 export function restore(raw: string): State {
   const data = JSON.parse(raw);
-  if (![1, 2, 3, 6].includes(data.schema) || !Number.isInteger(data.seed) || !Array.isArray(data.actions) || data.actions.length > 10000) throw Error("Unsupported save.");
-  if(data.schema===6) { let s=newRoguelikeRun(data.seed,data.starterDeck); for(const action of data.actions)s=dispatch(s,action);return s; }
+  if (![1, 2, 3, 6, 7].includes(data.schema) || !Number.isInteger(data.seed) || !Array.isArray(data.actions) || data.actions.length > 10000) throw Error("Unsupported save.");
+  if(data.schema===6||data.schema===7) {
+    const shieldPrefix=data.schema===6?data.actions.length:data.monsterShieldRulesFrom;
+    if(!Number.isInteger(shieldPrefix)||shieldPrefix<0||shieldPrefix>data.actions.length)throw Error("Unsupported shield history.");
+    let s=newRoguelikeRun(data.seed,data.starterDeck,shieldPrefix);
+    for(const action of data.actions)s=dispatch(s,action);
+    return s;
+  }
   const legacyActions = data.schema < 3 ? data.actions.length : data.legacyActions ?? null;
   if (legacyActions !== null && (!Number.isInteger(legacyActions) || legacyActions < 0 || legacyActions > data.actions.length)) throw Error("Unsupported save history.");
   return replay(data.seed, data.actions, data.schema === 1 ? "classic" : data.starterDeck, legacyActions);

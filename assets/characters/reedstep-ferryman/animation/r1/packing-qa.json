@@ -1,0 +1,258 @@
+[
+  {
+    "frame": 0,
+    "source_rect": [
+      0,
+      0,
+      440,
+      400
+    ],
+    "solid_bounds": [
+      93,
+      76,
+      385,
+      373
+    ],
+    "edge_contact": false
+  },
+  {
+    "frame": 1,
+    "source_rect": [
+      440,
+      0,
+      880,
+      400
+    ],
+    "solid_bounds": [
+      87,
+      74,
+      373,
+      373
+    ],
+    "edge_contact": false
+  },
+  {
+    "frame": 2,
+    "source_rect": [
+      880,
+      0,
+      1320,
+      400
+    ],
+    "solid_bounds": [
+      82,
+      72,
+      366,
+      373
+    ],
+    "edge_contact": false
+  },
+  {
+    "frame": 3,
+    "source_rect": [
+      1320,
+      0,
+      1760,
+      400
+    ],
+    "solid_bounds": [
+      80,
+      76,
+      365,
+      373
+    ],
+    "edge_contact": false
+  },
+  {
+    "frame": 4,
+    "source_rect": [
+      0,
+      400,
+      440,
+      800
+    ],
+    "solid_bounds": [
+      107,
+      73,
+      338,
+      374
+    ],
+    "edge_contact": false
+  },
+  {
+    "frame": 5,
+    "source_rect": [
+      440,
+      400,
+      880,
+      800
+    ],
+    "solid_bounds": [
+      51,
+      97,
+      361,
+      374
+    ],
+    "edge_contact": false
+  },
+  {
+    "frame": 6,
+    "source_rect": [
+      880,
+      400,
+      1320,
+      800
+    ],
+    "solid_bounds": [
+      99,
+      92,
+      356,
+      374
+    ],
+    "edge_contact": false
+  },
+  {
+    "frame": 7,
+    "source_rect": [
+      1320,
+      400,
+      1760,
+      800
+    ],
+    "solid_bounds": [
+      110,
+      74,
+      334,
+      374
+    ],
+    "edge_contact": false
+  },
+  {
+    "frame": 8,
+    "source_rect": [
+      0,
+      800,
+      440,
+      1200
+    ],
+    "solid_bounds": [
+      80,
+      103,
+      362,
+      373
+    ],
+    "edge_contact": false
+  },
+  {
+    "frame": 9,
+    "source_rect": [
+      440,
+      800,
+      880,
+      1200
+    ],
+    "solid_bounds": [
+      95,
+      99,
+      368,
+      373
+    ],
+    "edge_contact": false
+  },
+  {
+    "frame": 10,
+    "source_rect": [
+      880,
+      800,
+      1320,
+      1200
+    ],
+    "solid_bounds": [
+      84,
+      125,
+      365,
+      372
+    ],
+    "edge_contact": false
+  },
+  {
+    "frame": 11,
+    "source_rect": [
+      1320,
+      800,
+      1760,
+      1200
+    ],
+    "solid_bounds": [
+      105,
+      146,
+      358,
+      373
+    ],
+    "edge_contact": false
+  },
+  {
+    "frame": 12,
+    "source_rect": [
+      0,
+      1200,
+      440,
+      1600
+    ],
+    "solid_bounds": [
+      76,
+      147,
+      380,
+      372
+    ],
+    "edge_contact": false
+  },
+  {
+    "frame": 13,
+    "source_rect": [
+      440,
+      1200,
+      880,
+      1600
+    ],
+    "solid_bounds": [
+      66,
+      170,
+      368,
+      373
+    ],
+    "edge_contact": false
+  },
+  {
+    "frame": 14,
+    "source_rect": [
+      880,
+      1200,
+      1320,
+      1600
+    ],
+    "solid_bounds": [
+      70,
+      212,
+      368,
+      373
+    ],
+    "edge_contact": false
+  },
+  {
+    "frame": 15,
+    "source_rect": [
+      1320,
+      1200,
+      1760,
+      1600
+    ],
+    "solid_bounds": [
+      59,
+      225,
+      358,
+      372
+    ],
+    "edge_contact": false
+  }
+]

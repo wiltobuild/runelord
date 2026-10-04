@@ -1,0 +1,54 @@
+{
+  "character_id": "cairnwheel-witness",
+  "display_name": "Cairnwheel Witness",
+  "status": "base_pending",
+  "role": "Proposed enemy concept; gameplay not implemented",
+  "size_class": "medium",
+  "rig_family": "Bespoke rolling ring",
+  "signature_action": "Rolling body strike",
+  "base": {
+    "revision": "base-r1",
+    "path": "base-r1.png",
+    "width": 1312,
+    "height": 1199,
+    "alpha": "RGBA verified; corner alpha 0",
+    "sha256": "1e678d0e1d66d3b6b93a48ee4543f06be809dcc1a47836981a0e879477d67b1f"
+  },
+  "style_lock": {
+    "reference": "C:/Users/wilsh/Projects/runelord/assets/heroes/references/runesmith/runesmith-base-r1.png",
+    "sha256": "769d160f774c58e54b619db419c88e693a9bcd0f9501aeceaece05f5325e5f48",
+    "evidenceId": "user-chat-2026-10-01-approve-existing-runelord",
+    "purpose": "Rendering style only, new identity"
+  },
+  "construction": {
+    "status": "proposed, flattened concept only",
+    "parts": "stone ring root; independently stabilized center mask on two straps; two balancing arms and palms"
+  },
+  "qa": {
+    "full_resolution": "visually inspected",
+    "game_scale": "96px on light and dark backgrounds inspected, distinct silhouettes",
+    "reference_comparison": "broad colors and hard cel shadows consistent",
+    "limitations": "Mask must remain stabilized while ring rotates; existing straps need bespoke motion solution. Nearly frontal."
+  },
+  "states": [
+    "idle",
+    "attack",
+    "hit",
+    "wounded_idle",
+    "die",
+    "spawn"
+  ],
+  "conditional_states": {
+    "cast": "not currently proposed",
+    "guard": "not currently proposed",
+    "victory": "not currently proposed",
+    "raised": "inorganic construct; no corpse proposed",
+    "tamed": "not a beast; not applicable"
+  },
+  "generation": {
+    "mode": "builtin image_gen",
+    "prompt": "prompt.txt"
+  },
+  "approval": "Pending explicit user gallery decision",
+  "gallery": "http://localhost:4317"
+}

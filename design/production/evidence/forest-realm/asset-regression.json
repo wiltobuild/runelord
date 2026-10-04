@@ -1,0 +1,7 @@
+{
+  "base": "9f7cfd7",
+  "checkout": "C:\\Users\\wilsh\\Projects\\runelord-tintfix-roguelike-main-push",
+  "existingRuntimeChanges": [],
+  "metadataNote": "Source provenance paths now identify target checkout. Cinematic source manifest hashes refreshed to actual local bytes; actor frames, timings, geometry and rendering remain identical.",
+  "status": "passed"
+}

@@ -11,7 +11,7 @@ type Comparison=ReturnType<typeof upgradePreview>;
 type Inspection={kind:"card";id:CardId;level:number;comparison?:Comparison}|{kind:"relic";id:ItemId};
 function Gold({amount}:{amount:number}){return <><span className="soulforge-coin" aria-hidden="true"><HudStatIcon kind="gold"/></span> {amount.toLocaleString()}</>;}
 
-export function SoulforgeShop({state,assets,merchant,onAction,onTalk,onMusic,musicOn,message}:{state:State;assets:Assets;merchant:ReactNode;onAction:(action:Action)=>void;onTalk:()=>void;onMusic:()=>void;musicOn:boolean;message:string}){
+export function SoulforgeShop({state,assets,merchant,onAction,onTalk,onMusic,musicOn,message,title="Soulforge Exchange"}:{state:State;assets:Assets;merchant:ReactNode;title?:string;onAction:(action:Action)=>void;onTalk:()=>void;onMusic:()=>void;musicOn:boolean;message:string}){
  const stock=currentShop(state)!;
  const [inspection,setInspection]=useState<Inspection|null>(null);
  const dialog=useRef<HTMLDivElement>(null);
@@ -29,11 +29,11 @@ export function SoulforgeShop({state,assets,merchant,onAction,onTalk,onMusic,mus
  const act=(action:Action)=>{setInspection(null);onAction(action);};
 
  return <div className="soulforge-shell"><p className="soulforge-pan-hint">Scroll to explore the exchange · Tap a card to read its details</p>
-  <section className="soulforge-board" aria-label="Soulforge Exchange" style={{backgroundImage:`url(${assetUrl("/infernal-assets/soul-template-v3.webp")})`,"--shop-button":`url(${assetUrl("/opening-assets/runic-button.webp")})`} as CSSProperties}>
+  <section className="soulforge-board" aria-label={title} style={{backgroundImage:`url(${assetUrl("/infernal-assets/soul-template-v3.webp")})`,"--shop-button":`url(${assetUrl("/opening-assets/runic-button.webp")})`} as CSSProperties}>
    <div className="soulforge-merchant">{merchant}</div>
    <img className="soulforge-brazier forge-flame" src={assetUrl('/infernal-assets/soul-brazier.webp')} alt="" aria-hidden="true"/>
    <img className="soulforge-brazier release-flame" src={assetUrl('/infernal-assets/soul-brazier.webp')} alt="" aria-hidden="true"/>
-   <header className="soulforge-heading"><h1>Soulforge Exchange</h1></header>
+   <header className="soulforge-heading"><h1>{title}</h1></header>
    <div className="soulforge-gold" aria-label={`${state.gold} gold`}><Gold amount={state.gold}/></div>
    <button className="soulforge-leave" onClick={()=>act({type:"leave-shop"})}>Leave</button>
    <section className="soulforge-service soulforge-buy" aria-labelledby="soulforge-buy-title"><header><h2 id="soulforge-buy-title">Buy cards</h2><Reroll service="buy" state={state} onAction={act}/></header><div className="soulforge-card-pair">{stock.cards.slice(0,2).map((offer,index)=>{const owned=state.deck.filter(c=>c===offer.id).length,limit=copyLimit(offer.id);return <article key={`${index}-${offer.id}`} className={offer.sold?"sold":""}>{cardFace(offer.id)}<button className="soulforge-price" disabled={offer.sold||state.gold<offer.price||owned>=limit} title={owned>=limit?`Maximum ${limit} copies owned`:state.gold<offer.price?"Not enough gold":`Buy ${cards[offer.id].name}`} onClick={()=>act({type:"shop-buy",kind:"card",index})}>{offer.sold?"Sold":owned>=limit?"Copy limit":<Gold amount={offer.price}/>}</button></article>;})}</div></section>

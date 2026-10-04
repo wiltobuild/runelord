@@ -1,6 +1,7 @@
 import { useEffect, useRef } from "react";
 import forge from "../../../assets/environments/cinderforge-approach/animation/fb9f7966288c/config.json";
 import forest from "../../../assets/environments/thornroot-crossing/animation/2b941d161d90/config.json";
+import forestHeart from "../../../assets/environments/thornroot-heart/animation/8d272d0f7645/config.json";
 import arena from "../../../assets/environments/cinderforge-caldera/animation/be96f4c43d3f/config.json";
 
 // Keep throne ambience above the combat lane. Deterministic, sparse motes
@@ -17,7 +18,7 @@ const demonThrone = {
     phase: index / 22, color: index % 4 === 0 ? "#f7c480" : "#e87e40",
   })),
 };
-const scenes = { forge, forest, arena, "demon-throne": demonThrone };
+const scenes = { forge, forest, "forest-heart": forestHeart, arena, "demon-throne": demonThrone };
 
 /** Existing eight-second scene loops, rendered as a transparent layer over their source art.
  * Geometry/opacity follows the saved RunelordWeather runtime, including its protected lane. */

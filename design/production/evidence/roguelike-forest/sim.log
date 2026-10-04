@@ -1,0 +1,12 @@
+
+> runelord@0.1.0 sim
+> tsx tools/sim/warlock.ts
+
+{
+  "runs": 1000,
+  "wins": 0,
+  "losses": 1000,
+  "softLocks": 0,
+  "identicalReplays": 1000,
+  "maxActions": 507
+}

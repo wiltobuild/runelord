@@ -1,0 +1,340 @@
+{
+  "character_id": "pleatcap-matriarch",
+  "format": "generated-frame-sprites",
+  "source": "source-sheet.png",
+  "atlas": "atlas.png",
+  "source_dimensions": [
+    1254,
+    1254
+  ],
+  "frame_canvas": [
+    362,
+    373
+  ],
+  "coordinate_system": "pixels, top-left, x right y down",
+  "anchor": [
+    181,
+    349
+  ],
+  "scale": "one source pixel per frame pixel; no per-frame scaling",
+  "states": {
+    "idle": {
+      "frames": [
+        0,
+        1,
+        2,
+        3,
+        2,
+        1
+      ],
+      "durations": [
+        180,
+        180,
+        180,
+        180,
+        180,
+        180
+      ],
+      "loop": true,
+      "durations_ms": [
+        180,
+        180,
+        180,
+        180,
+        180,
+        180
+      ],
+      "duration_ms": 1080,
+      "transition": "idle"
+    },
+    "attack": {
+      "frames": [
+        4,
+        5,
+        6,
+        7,
+        0
+      ],
+      "durations": [
+        80,
+        70,
+        70,
+        70,
+        60
+      ],
+      "loop": false,
+      "event": {
+        "impact_ms": 150
+      },
+      "durations_ms": [
+        80,
+        70,
+        70,
+        70,
+        60
+      ],
+      "duration_ms": 350,
+      "transition": "idle"
+    },
+    "hit": {
+      "frames": [
+        8,
+        9,
+        0
+      ],
+      "durations": [
+        90,
+        90,
+        80
+      ],
+      "loop": false,
+      "durations_ms": [
+        90,
+        90,
+        80
+      ],
+      "duration_ms": 260,
+      "transition": "idle"
+    },
+    "wounded_idle": {
+      "frames": [
+        10,
+        11,
+        10
+      ],
+      "durations": [
+        300,
+        300,
+        300
+      ],
+      "loop": true,
+      "durations_ms": [
+        300,
+        300,
+        300
+      ],
+      "duration_ms": 900,
+      "transition": "wounded_idle"
+    },
+    "die": {
+      "frames": [
+        12,
+        13,
+        14,
+        15
+      ],
+      "durations": [
+        130,
+        130,
+        140,
+        1000
+      ],
+      "loop": false,
+      "transition": "hold_terminal",
+      "durations_ms": [
+        130,
+        130,
+        140,
+        1000
+      ],
+      "duration_ms": 1400
+    },
+    "cast": {
+      "frames": [
+        4,
+        5,
+        6,
+        7,
+        0
+      ],
+      "durations": [
+        100,
+        140,
+        100,
+        100,
+        80
+      ],
+      "loop": false,
+      "event": {
+        "spore_release_ms": 240
+      },
+      "purpose": "Spore discharge uses same approved fan articulation as primary action.",
+      "durations_ms": [
+        100,
+        140,
+        100,
+        100,
+        80
+      ],
+      "duration_ms": 520,
+      "transition": "idle"
+    }
+  },
+  "frames": [
+    {
+      "index": 0,
+      "file": "frames/00.png",
+      "rect": [
+        0,
+        0,
+        362,
+        373
+      ]
+    },
+    {
+      "index": 1,
+      "file": "frames/01.png",
+      "rect": [
+        362,
+        0,
+        362,
+        373
+      ]
+    },
+    {
+      "index": 2,
+      "file": "frames/02.png",
+      "rect": [
+        724,
+        0,
+        362,
+        373
+      ]
+    },
+    {
+      "index": 3,
+      "file": "frames/03.png",
+      "rect": [
+        1086,
+        0,
+        362,
+        373
+      ]
+    },
+    {
+      "index": 4,
+      "file": "frames/04.png",
+      "rect": [
+        0,
+        373,
+        362,
+        373
+      ]
+    },
+    {
+      "index": 5,
+      "file": "frames/05.png",
+      "rect": [
+        362,
+        373,
+        362,
+        373
+      ]
+    },
+    {
+      "index": 6,
+      "file": "frames/06.png",
+      "rect": [
+        724,
+        373,
+        362,
+        373
+      ]
+    },
+    {
+      "index": 7,
+      "file": "frames/07.png",
+      "rect": [
+        1086,
+        373,
+        362,
+        373
+      ]
+    },
+    {
+      "index": 8,
+      "file": "frames/08.png",
+      "rect": [
+        0,
+        746,
+        362,
+        373
+      ]
+    },
+    {
+      "index": 9,
+      "file": "frames/09.png",
+      "rect": [
+        362,
+        746,
+        362,
+        373
+      ]
+    },
+    {
+      "index": 10,
+      "file": "frames/10.png",
+      "rect": [
+        724,
+        746,
+        362,
+        373
+      ]
+    },
+    {
+      "index": 11,
+      "file": "frames/11.png",
+      "rect": [
+        1086,
+        746,
+        362,
+        373
+      ]
+    },
+    {
+      "index": 12,
+      "file": "frames/12.png",
+      "rect": [
+        0,
+        1119,
+        362,
+        373
+      ]
+    },
+    {
+      "index": 13,
+      "file": "frames/13.png",
+      "rect": [
+        362,
+        1119,
+        362,
+        373
+      ]
+    },
+    {
+      "index": 14,
+      "file": "frames/14.png",
+      "rect": [
+        724,
+        1119,
+        362,
+        373
+      ]
+    },
+    {
+      "index": 15,
+      "file": "frames/15.png",
+      "rect": [
+        1086,
+        1119,
+        362,
+        373
+      ]
+    }
+  ],
+  "limitations": [
+    "Generated frame animation with sparse key poses; no rig or in-between interpolation.",
+    "Minor changing contour/texture details remain; review prior to integration."
+  ],
+  "status": "animation_review_pending"
+}

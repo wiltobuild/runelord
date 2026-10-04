@@ -1,0 +1,306 @@
+[
+  {
+    "index": 0,
+    "source": "exec-f2cfec9f-90e7-4083-ad37-17a37964ea76.png",
+    "source_rect": [
+      5,
+      7,
+      323,
+      294
+    ],
+    "uniform_source_scale": 1.0,
+    "placement": [
+      61,
+      88
+    ],
+    "ground_anchor": [
+      220.0,
+      375
+    ]
+  },
+  {
+    "index": 1,
+    "source": "exec-f2cfec9f-90e7-4083-ad37-17a37964ea76.png",
+    "source_rect": [
+      336,
+      7,
+      650,
+      295
+    ],
+    "uniform_source_scale": 1.0,
+    "placement": [
+      64,
+      87
+    ],
+    "ground_anchor": [
+      220.0,
+      375
+    ]
+  },
+  {
+    "index": 2,
+    "source": "exec-f2cfec9f-90e7-4083-ad37-17a37964ea76.png",
+    "source_rect": [
+      662,
+      7,
+      979,
+      295
+    ],
+    "uniform_source_scale": 1.0,
+    "placement": [
+      62,
+      87
+    ],
+    "ground_anchor": [
+      220.0,
+      375
+    ]
+  },
+  {
+    "index": 3,
+    "source": "exec-f2cfec9f-90e7-4083-ad37-17a37964ea76.png",
+    "source_rect": [
+      990,
+      7,
+      1307,
+      295
+    ],
+    "uniform_source_scale": 1.0,
+    "placement": [
+      62,
+      87
+    ],
+    "ground_anchor": [
+      220.0,
+      375
+    ]
+  },
+  {
+    "index": 4,
+    "source": "exec-acab5917-339c-47bc-95a7-c872c5a8029d.png",
+    "source_rect": [
+      12,
+      7,
+      523,
+      733
+    ],
+    "uniform_source_scale": 0.447,
+    "placement": [
+      110,
+      50
+    ],
+    "ground_anchor": [
+      220.0,
+      375
+    ]
+  },
+  {
+    "index": 5,
+    "source": "exec-acab5917-339c-47bc-95a7-c872c5a8029d.png",
+    "source_rect": [
+      530,
+      192,
+      1069,
+      734
+    ],
+    "uniform_source_scale": 0.447,
+    "placement": [
+      109,
+      133
+    ],
+    "ground_anchor": [
+      220.0,
+      375
+    ]
+  },
+  {
+    "index": 6,
+    "source": "exec-acab5917-339c-47bc-95a7-c872c5a8029d.png",
+    "source_rect": [
+      1026,
+      201,
+      1613,
+      734
+    ],
+    "uniform_source_scale": 0.447,
+    "placement": [
+      99,
+      137
+    ],
+    "ground_anchor": [
+      220.0,
+      375
+    ]
+  },
+  {
+    "index": 7,
+    "source": "exec-acab5917-339c-47bc-95a7-c872c5a8029d.png",
+    "source_rect": [
+      1619,
+      90,
+      2061,
+      734
+    ],
+    "uniform_source_scale": 0.447,
+    "placement": [
+      133,
+      87
+    ],
+    "ground_anchor": [
+      220.0,
+      375
+    ]
+  },
+  {
+    "index": 8,
+    "source": "exec-f2cfec9f-90e7-4083-ad37-17a37964ea76.png",
+    "source_rect": [
+      17,
+      609,
+      321,
+      894
+    ],
+    "uniform_source_scale": 1.0,
+    "placement": [
+      73,
+      90
+    ],
+    "ground_anchor": [
+      220.0,
+      375
+    ]
+  },
+  {
+    "index": 9,
+    "source": "exec-f2cfec9f-90e7-4083-ad37-17a37964ea76.png",
+    "source_rect": [
+      348,
+      609,
+      651,
+      897
+    ],
+    "uniform_source_scale": 1.0,
+    "placement": [
+      76,
+      87
+    ],
+    "ground_anchor": [
+      220.0,
+      375
+    ]
+  },
+  {
+    "index": 10,
+    "source": "exec-f2cfec9f-90e7-4083-ad37-17a37964ea76.png",
+    "source_rect": [
+      678,
+      636,
+      983,
+      896
+    ],
+    "uniform_source_scale": 1.0,
+    "placement": [
+      78,
+      115
+    ],
+    "ground_anchor": [
+      220.0,
+      375
+    ]
+  },
+  {
+    "index": 11,
+    "source": "exec-f2cfec9f-90e7-4083-ad37-17a37964ea76.png",
+    "source_rect": [
+      1001,
+      613,
+      1306,
+      900
+    ],
+    "uniform_source_scale": 1.0,
+    "placement": [
+      73,
+      88
+    ],
+    "ground_anchor": [
+      220.0,
+      375
+    ]
+  },
+  {
+    "index": 12,
+    "source": "exec-f2cfec9f-90e7-4083-ad37-17a37964ea76.png",
+    "source_rect": [
+      16,
+      935,
+      321,
+      1171
+    ],
+    "uniform_source_scale": 1.0,
+    "placement": [
+      72,
+      139
+    ],
+    "ground_anchor": [
+      220.0,
+      375
+    ]
+  },
+  {
+    "index": 13,
+    "source": "exec-f2cfec9f-90e7-4083-ad37-17a37964ea76.png",
+    "source_rect": [
+      335,
+      955,
+      648,
+      1162
+    ],
+    "uniform_source_scale": 1.0,
+    "placement": [
+      63,
+      168
+    ],
+    "ground_anchor": [
+      220.0,
+      375
+    ]
+  },
+  {
+    "index": 14,
+    "source": "exec-f2cfec9f-90e7-4083-ad37-17a37964ea76.png",
+    "source_rect": [
+      663,
+      999,
+      981,
+      1175
+    ],
+    "uniform_source_scale": 1.0,
+    "placement": [
+      63,
+      199
+    ],
+    "ground_anchor": [
+      220.0,
+      375
+    ]
+  },
+  {
+    "index": 15,
+    "source": "exec-f2cfec9f-90e7-4083-ad37-17a37964ea76.png",
+    "source_rect": [
+      989,
+      1019,
+      1309,
+      1183
+    ],
+    "uniform_source_scale": 1.0,
+    "placement": [
+      61,
+      211
+    ],
+    "ground_anchor": [
+      220.0,
+      375
+    ]
+  }
+]

@@ -1,0 +1,142 @@
+{
+  "status": "reviewable_generated_animation_draft",
+  "artwork_source": "builtin image_gen; technical crop/packing only",
+  "full_resolution_review": true,
+  "small_scale_review": "browser renders with neutral character 96px high",
+  "technical": {
+    "states": [
+      "idle",
+      "attack",
+      "hit",
+      "wounded_idle",
+      "die",
+      "spawn"
+    ],
+    "frames": 24,
+    "canvas": [
+      512,
+      312
+    ],
+    "rgba_frames": true,
+    "true_alpha": true
+  },
+  "limitations": [
+    "Four generated key poses per action; coarse stepped animation awaiting visual approval.",
+    "Original HD base retained separately; source animation sprites are smaller.",
+    "Generated detail drift, scale variation and contact sliding are not eliminated; not final production-quality temporal consistency.",
+    "Frames cropped to measured connected silhouette bounds; edge-contact flags are expected exact bounding rectangles, not canvas clipping.",
+    "Independent arms/mask and rolled ring attack visible; terminal collapsed ring holds. Rune shape/position varies during roll.",
+    "Tight component bounds isolate frames; low-alpha outermost antialias may be trimmed.",
+    "A tiny adjacent-source fragment remains below the terminal death mask; needs art cleanup before production."
+  ],
+  "approval": "New animation frames and previews pending review; base approval remains exact hash.",
+  "browser_playback": {
+    "slug": "cairnwheel-witness",
+    "errors": [],
+    "states": {
+      "idle": {
+        "seen": [
+          "idle frame 0 / 0",
+          "idle frame 1 / 1",
+          "idle frame 2 / 2",
+          "idle frame 2 / 2",
+          "idle frame 3 / 3",
+          "idle frame 2 / 4",
+          "idle frame 2 / 4",
+          "idle frame 1 / 5",
+          "idle frame 1 / 5",
+          "idle frame 0 / 0",
+          "idle frame 0 / 0",
+          "idle frame 1 / 1"
+        ],
+        "distinct": 6
+      },
+      "attack": {
+        "seen": [
+          "attack frame 4 / 0",
+          "attack frame 6 / 2",
+          "attack frame 7 / 3",
+          "attack frame 7 / 3",
+          "attack frame 7 / 3",
+          "attack frame 7 / 3",
+          "attack frame 7 / 3",
+          "attack frame 7 / 3",
+          "attack frame 7 / 3",
+          "attack frame 7 / 3",
+          "attack frame 7 / 3",
+          "attack frame 7 / 3"
+        ],
+        "distinct": 3
+      },
+      "hit": {
+        "seen": [
+          "hit frame 8 / 0",
+          "hit frame 9 / 1",
+          "hit frame 10 / 2",
+          "hit frame 11 / 3",
+          "hit frame 11 / 3",
+          "hit frame 11 / 3",
+          "hit frame 11 / 3",
+          "hit frame 11 / 3",
+          "hit frame 11 / 3",
+          "hit frame 11 / 3",
+          "hit frame 11 / 3",
+          "hit frame 11 / 3"
+        ],
+        "distinct": 4
+      },
+      "wounded_idle": {
+        "seen": [
+          "wounded_idle frame 12 / 0",
+          "wounded_idle frame 13 / 1",
+          "wounded_idle frame 13 / 1",
+          "wounded_idle frame 14 / 2",
+          "wounded_idle frame 14 / 2",
+          "wounded_idle frame 15 / 3",
+          "wounded_idle frame 15 / 3",
+          "wounded_idle frame 14 / 4",
+          "wounded_idle frame 14 / 4",
+          "wounded_idle frame 13 / 5",
+          "wounded_idle frame 12 / 0",
+          "wounded_idle frame 12 / 0"
+        ],
+        "distinct": 6
+      },
+      "die": {
+        "seen": [
+          "die frame 16 / 0",
+          "die frame 17 / 1",
+          "die frame 17 / 1",
+          "die frame 18 / 2",
+          "die frame 19 / 3",
+          "die frame 19 / 3",
+          "die frame 19 / 3",
+          "die frame 19 / 3",
+          "die frame 19 / 3",
+          "die frame 19 / 3",
+          "die frame 19 / 3",
+          "die frame 19 / 3"
+        ],
+        "distinct": 4
+      },
+      "spawn": {
+        "seen": [
+          "spawn frame 20 / 0",
+          "spawn frame 21 / 1",
+          "spawn frame 22 / 2",
+          "spawn frame 23 / 3",
+          "spawn frame 23 / 3",
+          "spawn frame 23 / 3",
+          "spawn frame 23 / 3",
+          "spawn frame 23 / 3",
+          "spawn frame 23 / 3",
+          "spawn frame 23 / 3",
+          "spawn frame 23 / 3",
+          "spawn frame 23 / 3"
+        ],
+        "distinct": 4
+      }
+    },
+    "deathHold": true
+  }
+}

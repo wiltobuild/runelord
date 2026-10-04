@@ -1,0 +1,86 @@
+{
+  "contract_version": 2,
+  "character_id": "cairnback-hermit",
+  "display_name": "Cairnback Hermit",
+  "species": "Land hermit crab",
+  "role": "defender",
+  "size_class": "large",
+  "rig_family": "arthropod",
+  "signature_action": "Stone-shell brace followed by pincer clamp",
+  "novelty": "Tall cairn above lateral crab stance; no existing crab family in gallery/catalog",
+  "style_references": [
+    {
+      "path": "C:/Users/wilsh/Projects/runelord/assets/heroes/references/ranger/ranger-base-r1.png",
+      "sha256": "9cd6ae4be65920528b211c20d2a1c12f68183b6bb6bb9ca6095b2ea23eb76912",
+      "evidence_id": "user-chat-2026-10-01-approve-existing-runelord",
+      "role": "style only"
+    },
+    {
+      "path": "C:/Users/wilsh/Projects/runelord/assets/characters/wolf-rider-goblins/base-b1.png",
+      "sha256": "4acf5ae1be00e3095d575a6486672011325f266ada1a88204cf6b51539fb48ad",
+      "evidence_id": "user-chat-2026-10-01-approve-existing-runelord",
+      "role": "style only"
+    }
+  ],
+  "base": {
+    "revision": "base-r1",
+    "asset": "base-r1.png",
+    "approval": "Pending approval",
+    "dimensions": [
+      1374,
+      1145
+    ],
+    "sha256": "3b6666c13888f149fc1a5d488956f83adff1cd650b2dbaf5b415b75baaa641bc"
+  },
+  "construction": {
+    "status": "proposed only, no separated layers",
+    "parts": "root under carapace; shell fixed to abdomen; 6 walking leg chains; 2 claw chains with hinged pincers; antennae secondary"
+  },
+  "geometry": {
+    "facing": "left",
+    "view": "shallow three-quarter",
+    "motion_canvas": "unresolved"
+  },
+  "gameplay": {
+    "proposal_only": true,
+    "tier": "normal",
+    "corpse": {
+      "raisable": true
+    },
+    "tame": {
+      "tameable": true
+    },
+    "forms": "Raised and tamed versions may follow explicit base and variant approvals; not generated."
+  },
+  "animations": {
+    "required": [
+      "idle",
+      "attack",
+      "hit",
+      "wounded_idle",
+      "die"
+    ],
+    "additional": [
+      "guard"
+    ],
+    "status": "not generated"
+  },
+  "qa": {
+    "full_resolution": "visually inspected",
+    "at_96px": "inspected on white and dark backgrounds; silhouettes distinct",
+    "transparency": "RGBA with transparent background verified by compositing",
+    "alpha_range": [
+      0,
+      255
+    ]
+  },
+  "limitations": [
+    "Shell is tall and close to top edge; expand motion canvas before animation. Some textured wear remains beyond preferred quiet surfaces.",
+    "Concept only, not a rig or completed animation. No variants generated."
+  ],
+  "generation": {
+    "mode": "built-in image_gen",
+    "prompt_file": "prompt.txt"
+  },
+  "status": "base_pending"
+}

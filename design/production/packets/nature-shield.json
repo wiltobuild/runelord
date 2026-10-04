@@ -1,0 +1,121 @@
+{
+  "schema": 1,
+  "id": "nature-shield",
+  "status": "complete",
+  "outcome": "Preview an emerald leaf-shaped monster shield for approval, then replace nature monster ward effects; grant monsters half max HP persistent Guard on shield casts.",
+  "authorization": "2026-10-04 user requested green non-demonic nature shield and explicitly required approval before visual swap; monster Guard behavior change authorized. Follow-up: user says the spell itself is acceptable, requests crab fit correction, and says mushroom fit is fine. This approves the design and authorizes correcting fit before live replacement.",
+  "contentIds": [],
+  "owner": "runelord-producer",
+  "integrationOwner": "root",
+  "reviewer": "runelord-game-qa",
+  "ownedPaths": [
+    "apps/web/src/natureWardEffect.ts",
+    "apps/web/src/NatureShieldReview.tsx",
+    "apps/web/src/main.tsx",
+    "packages/engine/index.ts",
+    "apps/web/src/natureWardGeometry.ts",
+    "apps/web/src/SpellEffects.tsx",
+    "apps/web/src/useBattleDirector.ts"
+  ],
+  "dependencies": [],
+  "exclusions": [
+    "Warlock shield visual changes",
+    "Conquer Mode edits",
+    "Automatic visual approval",
+    "Deployment"
+  ],
+  "inputs": [
+    {
+      "path": "apps/web/src/natureWardEffect.ts",
+      "sha256": "6c9ad69dfdfa56279dcb6979208bc3341fb5e43d8b7d4238f63887fba93a55c2"
+    },
+    {
+      "path": "apps/web/src/NatureShieldReview.tsx",
+      "sha256": "2d17a03a7276ef496289f3945cd7be744edd6ef24d0d40a0ce6640372f103813"
+    },
+    {
+      "path": "apps/web/src/main.tsx",
+      "sha256": "6579fb1329576f0f93aa040cad98753b93bd52ef4376d280bbb22ee03727cef7"
+    },
+    {
+      "path": "packages/engine/index.ts",
+      "sha256": "7a795caffa4050f95cd796fbd8f4a6d87fd3472d80c84fc2523c1b390cf2d63e"
+    },
+    {
+      "path": "apps/web/src/natureWardGeometry.ts",
+      "sha256": "8cb95737e83832116a210c7ed8a5396ee67ff413c2e34319fed86bd80bedafb2"
+    },
+    {
+      "path": "apps/web/src/SpellEffects.tsx",
+      "sha256": "ecf225c43e01c668bbc1a212219ae02080fad76f148a3125f5227b3e2c444b04"
+    },
+    {
+      "path": "apps/web/src/useBattleDirector.ts",
+      "sha256": "6b509d99aa4d5f3219c34fdeaf71c928b53bddbde2e2de879b1001d9b953ed1d"
+    }
+  ],
+  "animation": null,
+  "acceptance": [
+    {
+      "status": "pass",
+      "evidence": [
+        {
+          "path": "design/production/evidence/nature-shield/qa-fit-r2/report.md",
+          "sha256": "6a4cb5d325d0e3be334fc6fc673fe877aee88bc4a64a33cb383db9afd85046f7"
+        }
+      ],
+      "check": "Animated green leaf ward preview submitted for approval"
+    },
+    {
+      "status": "pass",
+      "evidence": [
+        {
+          "path": "design/production/evidence/nature-shield/qa-fit-r2/report.md",
+          "sha256": "6a4cb5d325d0e3be334fc6fc673fe877aee88bc4a64a33cb383db9afd85046f7"
+        }
+      ],
+      "check": "Monster shield actions grant half maxHP with persistent remaining Guard and accurate intents"
+    },
+    {
+      "status": "pass",
+      "evidence": [
+        {
+          "path": "design/production/evidence/nature-shield/qa-fit-r2/report.md",
+          "sha256": "6a4cb5d325d0e3be334fc6fc673fe877aee88bc4a64a33cb383db9afd85046f7"
+        }
+      ],
+      "check": "Legacy save replay remains stable"
+    },
+    {
+      "status": "pass",
+      "evidence": [
+        {
+          "path": "design/production/evidence/nature-shield/qa-fit-r2/report.md",
+          "sha256": "6a4cb5d325d0e3be334fc6fc673fe877aee88bc4a64a33cb383db9afd85046f7"
+        }
+      ],
+      "check": "After explicit user approval replace all nature monster ward effects"
+    }
+  ],
+  "checkpoint": {
+    "completed": [
+      "Green leaf shield animated preview created and submitted pending approval",
+      "Independent visual/endpoint QA passes",
+      "Half-maxHP persistent monster shield mechanics implemented",
+      "Schema7 protects historical replay",
+      "149 tests and production build pass",
+      "User approved spell design with crab-fit correction",
+      "Body-relative bounds measured for all twelve forest actors",
+      "Crab fitting corrected; mushroom preview fit preserved",
+      "Nature enemy shields routed to approved renderer; hero/fire wards unchanged",
+      "149 tests and production build pass after live integration",
+      "Independent live crab shield cast passes and remaining Guard persists",
+      "Warlock original ward verified unchanged",
+      "All twelve nature geometry and zoom checks pass",
+      "Mushroom accepted placement preserved exactly"
+    ],
+    "remaining": [],
+    "blockers": [],
+    "nextAction": "Play local roguelike demo; no further approval required for accepted spell with requested fit correction."
+  }
+}

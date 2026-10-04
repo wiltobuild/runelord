@@ -1,0 +1,159 @@
+{
+  "schema": 1,
+  "id": "roguelike-forest",
+  "status": "complete",
+  "outcome": "Extend the linear roguelike demo with twelve forest battles after its existing nine Infernal battles, preserving progression and three-battle shop cadence.",
+  "authorization": "User correction on 2026-10-04: this was supposed to be for the rogue like demo, implement there as well. Original request authorizes forest animations/music, listed roster excluding Suture Standard/fire/undead, scaled encounters, and agents.",
+  "contentIds": [
+    "thornroot-crossing",
+    "thornroot-heart",
+    "forest-encounters-1-12"
+  ],
+  "owner": "runelord-producer",
+  "integrationOwner": "root",
+  "reviewer": "runelord-game-qa",
+  "ownedPaths": [
+    "packages/engine/index.ts",
+    "packages/engine/forest.ts",
+    "apps/web/src/main.tsx",
+    "apps/web/src/ForestShop.tsx",
+    "apps/web/src/forest-shop.css",
+    "apps/web/src/LootReveal.tsx",
+    "apps/web/src/SoulforgeShop.tsx",
+    "apps/web/src/AnimatedBackground.tsx",
+    "apps/web/src/music.ts",
+    "tools/import/assets.mjs",
+    "packages/assets/manifest.json",
+    "apps/web/src/forestReview.ts",
+    "packages/engine/forest.test.ts",
+    "packages/engine/soulforge.test.ts"
+  ],
+  "dependencies": [],
+  "exclusions": [
+    "Conquer map or journey systems",
+    "Fire or undead forest enemies",
+    "Suture Standard",
+    "Unrelated existing documentation and simulator changes",
+    "Commit, push, deployment"
+  ],
+  "inputs": [
+    {
+      "sha256": "69624c865658d54f5698fa85a3ec90837edae14f0596ac612a00727f356587c2",
+      "path": "packages/engine/index.ts"
+    },
+    {
+      "sha256": "591fd8f985c6f3b2b231ad9ce7abc6c3cf7c2df3c5b0edff9ce97a03f1abac9d",
+      "path": "packages/engine/forest.ts"
+    },
+    {
+      "sha256": "23a3a873476767b8f4311997e2bf848256a88e03a44bb21388aa085541b63b6d",
+      "path": "apps/web/src/main.tsx"
+    },
+    {
+      "sha256": "21c79d873eff57fc6d9afc0999b184ff0f20ecd7da49aabe1ac705ec1c9db0d7",
+      "path": "apps/web/src/ForestShop.tsx"
+    },
+    {
+      "sha256": "16990e8e2fce048c711b40e55961c4d264bbe36a39e6a17247f001ab6fc80337",
+      "path": "apps/web/src/forest-shop.css"
+    },
+    {
+      "sha256": "f84e566ace9fd58bc90a6d7c1a9f05da457c0c621577f0c5b7ea26be5b9826df",
+      "path": "apps/web/src/LootReveal.tsx"
+    },
+    {
+      "sha256": "bb38ad5c06375b43797e5546f0780f61bd26de6624f1c03fd23eed5372a685b7",
+      "path": "apps/web/src/SoulforgeShop.tsx"
+    },
+    {
+      "sha256": "0d20e0709fa6e6bdf9c6d9ca13c0414dec81490eafe9649df0a33c1e38197040",
+      "path": "apps/web/src/AnimatedBackground.tsx"
+    },
+    {
+      "sha256": "75e35ba82bd00a9d888becf30ba3ba543252ed9d346e1d92c9ec6181e8fa75f2",
+      "path": "apps/web/src/music.ts"
+    },
+    {
+      "sha256": "c88adcaf5722216efb2b5d37ba7a6dce79aeb1e7f4a84900d39389f8db5cf859",
+      "path": "tools/import/assets.mjs"
+    },
+    {
+      "sha256": "52c5bb2f62837ecc5fe7b2933f82465753ff16f20d29160012603ef045c40af8",
+      "path": "packages/assets/manifest.json"
+    },
+    {
+      "sha256": "f66299e55cac2f59e32b6a86698e41a31884e913157abb512e299c6aaf350091",
+      "path": "apps/web/src/forestReview.ts"
+    },
+    {
+      "sha256": "c0321c703d9d41dd8063e619427088eb8b78a0f5d9ba5714b2d4379e146d1486",
+      "path": "packages/engine/forest.test.ts"
+    },
+    {
+      "sha256": "8b7396e5876d9e16a7be111ff4c0742ce9aac106a9c73d547b1803a3e3b3c6fb",
+      "path": "packages/engine/soulforge.test.ts"
+    }
+  ],
+  "animation": null,
+  "acceptance": [
+    {
+      "check": "Linear nine Infernal plus twelve forest battles with seven shops",
+      "status": "pass",
+      "evidence": [
+        {
+          "sha256": "661d4c55245356a00540266de6cdc7dcc140fb874fe87bae00a47e25e6c78fa0",
+          "path": "design/production/evidence/roguelike-forest/qa/report.md"
+        }
+      ]
+    },
+    {
+      "check": "Permanent progression and legacy/schema6 replay preserved",
+      "status": "pass",
+      "evidence": [
+        {
+          "sha256": "661d4c55245356a00540266de6cdc7dcc140fb874fe87bae00a47e25e6c78fa0",
+          "path": "design/production/evidence/roguelike-forest/qa/report.md"
+        }
+      ]
+    },
+    {
+      "check": "Forest assets and dedicated music without existing rendering regression",
+      "status": "pass",
+      "evidence": [
+        {
+          "sha256": "40d603056295c0b32d021c7402ed904e7956ae8e0e6da53d85d1abe963a83df0",
+          "path": "design/production/evidence/forest-realm/assets.json"
+        }
+      ]
+    },
+    {
+      "check": "Independent engine/browser verification and production build",
+      "status": "pass",
+      "evidence": [
+        {
+          "sha256": "661d4c55245356a00540266de6cdc7dcc140fb874fe87bae00a47e25e6c78fa0",
+          "path": "design/production/evidence/roguelike-forest/qa/report.md"
+        }
+      ]
+    }
+  ],
+  "checkpoint": {
+    "completed": [
+      "Correct roguelike target identified",
+      "Linear engine and assets ported",
+      "UI and forest shop integrated",
+      "Build passes",
+      "141 engine tests and 11 production tests pass",
+      "24 full legal bot runs completed without crashes",
+      "Correct roguelike crown-to-border-shop-to-forest browser flow passed",
+      "Forest shops and final victory browser-verified at 1280x720 and 960x540",
+      "Development fixture stale enemy arrays repaired and typechecked",
+      "Independent roguelike QA accepted with no unresolved production defects",
+      "1000-run simulator passes: no soft locks and identical replays; basic nonshopping bot loses all runs",
+      "24 upgraded-build runs:21wins/3losses; limited automated difficulty evidence"
+    ],
+    "remaining": [],
+    "blockers": [],
+    "nextAction": "Playtest local roguelike preview at http://127.0.0.1:5174/. Changes not pushed or deployed."
+  }
+}

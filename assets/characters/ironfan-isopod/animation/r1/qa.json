@@ -1,0 +1,326 @@
+{
+  "character_id": "ironfan-isopod",
+  "states": [
+    {
+      "state": "idle",
+      "source_frames": 4,
+      "gif_frames": 4,
+      "gif_loop": 0,
+      "duration_ms": 940,
+      "bbox": [
+        [
+          107,
+          276,
+          355,
+          410
+        ],
+        [
+          113,
+          276,
+          350,
+          409
+        ],
+        [
+          103,
+          277,
+          345,
+          410
+        ],
+        [
+          103,
+          273,
+          345,
+          410
+        ]
+      ],
+      "alpha_range": [
+        [
+          0,
+          254
+        ],
+        [
+          0,
+          254
+        ],
+        [
+          0,
+          254
+        ],
+        [
+          0,
+          254
+        ]
+      ],
+      "hard_edge_clipping": false
+    },
+    {
+      "state": "attack",
+      "source_frames": 4,
+      "gif_frames": 4,
+      "gif_loop": "one-shot",
+      "duration_ms": 400,
+      "bbox": [
+        [
+          109,
+          275,
+          339,
+          409
+        ],
+        [
+          102,
+          270,
+          336,
+          406
+        ],
+        [
+          80,
+          280,
+          350,
+          410
+        ],
+        [
+          102,
+          272,
+          345,
+          409
+        ]
+      ],
+      "alpha_range": [
+        [
+          0,
+          254
+        ],
+        [
+          0,
+          254
+        ],
+        [
+          0,
+          254
+        ],
+        [
+          0,
+          254
+        ]
+      ],
+      "hard_edge_clipping": false
+    },
+    {
+      "state": "hit",
+      "source_frames": 4,
+      "gif_frames": 4,
+      "gif_loop": "one-shot",
+      "duration_ms": 350,
+      "bbox": [
+        [
+          107,
+          272,
+          355,
+          410
+        ],
+        [
+          117,
+          266,
+          346,
+          410
+        ],
+        [
+          105,
+          272,
+          346,
+          410
+        ],
+        [
+          104,
+          274,
+          344,
+          410
+        ]
+      ],
+      "alpha_range": [
+        [
+          0,
+          254
+        ],
+        [
+          0,
+          254
+        ],
+        [
+          0,
+          254
+        ],
+        [
+          0,
+          254
+        ]
+      ],
+      "hard_edge_clipping": false
+    },
+    {
+      "state": "wounded_idle",
+      "source_frames": 4,
+      "gif_frames": 4,
+      "gif_loop": 0,
+      "duration_ms": 1080,
+      "bbox": [
+        [
+          109,
+          269,
+          345,
+          400
+        ],
+        [
+          110,
+          261,
+          340,
+          410
+        ],
+        [
+          102,
+          267,
+          338,
+          400
+        ],
+        [
+          101,
+          270,
+          341,
+          400
+        ]
+      ],
+      "alpha_range": [
+        [
+          0,
+          254
+        ],
+        [
+          0,
+          254
+        ],
+        [
+          0,
+          254
+        ],
+        [
+          0,
+          254
+        ]
+      ],
+      "hard_edge_clipping": false
+    },
+    {
+      "state": "die",
+      "source_frames": 4,
+      "gif_frames": 4,
+      "gif_loop": "one-shot",
+      "duration_ms": 1120,
+      "bbox": [
+        [
+          114,
+          271,
+          349,
+          410
+        ],
+        [
+          118,
+          265,
+          337,
+          407
+        ],
+        [
+          98,
+          292,
+          331,
+          407
+        ],
+        [
+          93,
+          306,
+          339,
+          406
+        ]
+      ],
+      "alpha_range": [
+        [
+          0,
+          254
+        ],
+        [
+          0,
+          254
+        ],
+        [
+          0,
+          254
+        ],
+        [
+          0,
+          254
+        ]
+      ],
+      "hard_edge_clipping": false
+    },
+    {
+      "state": "guard",
+      "source_frames": 4,
+      "gif_frames": 4,
+      "gif_loop": 0,
+      "duration_ms": 620,
+      "bbox": [
+        [
+          147,
+          250,
+          320,
+          409
+        ],
+        [
+          139,
+          244,
+          304,
+          408
+        ],
+        [
+          135,
+          246,
+          302,
+          408
+        ],
+        [
+          96,
+          270,
+          340,
+          410
+        ]
+      ],
+      "alpha_range": [
+        [
+          0,
+          254
+        ],
+        [
+          0,
+          254
+        ],
+        [
+          0,
+          254
+        ],
+        [
+          0,
+          254
+        ]
+      ],
+      "hard_edge_clipping": false
+    }
+  ],
+  "visual_frame_review": "Source sheet and packed contact inspected. Articulated poses, distinct wounded state, terminal collapse present.",
+  "playback_review": "Delegated to root for shared headless browser review; not verified by this agent.",
+  "limitations": [
+    "Four generated keyframes per state; stepped timing rather than interpolated full-rate animation.",
+    "Generated sheet preserves general identity but fine line/mark and foot placement variation remains.",
+    "No separated rig or VFX layers. Runtime game integration not performed.",
+    "Leg and shell segment spacing varies between generated poses; closed guard hides appendage count."
+  ],
+  "production_ready": false
+}

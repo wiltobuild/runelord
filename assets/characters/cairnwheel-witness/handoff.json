@@ -1,0 +1,135 @@
+{
+  "contract_version": 2,
+  "character_id": "cairnwheel-witness",
+  "display_name": "Cairnwheel Witness",
+  "project": "C:/Users/wilsh/Projects/runelord",
+  "role": "Proposed enemy concept; gameplay not implemented",
+  "scope": "20 approved base designs; direct animation request outside the three-variant workflow",
+  "base": {
+    "revision": "base-r1",
+    "asset": "C:/Users/wilsh/Projects/runelord/assets/characters/cairnwheel-witness/base-r1.png",
+    "dimensions": [
+      1312,
+      1199
+    ],
+    "sha256": "1e678d0e1d66d3b6b93a48ee4543f06be809dcc1a47836981a0e879477d67b1f",
+    "alpha": "verified RGBA"
+  },
+  "variants": [],
+  "approvals": [
+    {
+      "stage": "base",
+      "revision": "base-r1",
+      "sha256": "1e678d0e1d66d3b6b93a48ee4543f06be809dcc1a47836981a0e879477d67b1f",
+      "evidenceId": "c47406e1-9390-44f9-a2eb-2961fe255a79",
+      "at": "2026-10-02T04:57:52.852Z",
+      "user_text": "User explicitly approved all 20 concepts in this chat and requested: approve all of them and animate them with hd-animate-fantasy-character. Scope: animate the 20 approved base designs directly; no unrequested variant generation."
+    }
+  ],
+  "concept": {
+    "character_id": "cairnwheel-witness",
+    "display_name": "Cairnwheel Witness",
+    "status": "base_pending",
+    "role": "Proposed enemy concept; gameplay not implemented",
+    "size_class": "medium",
+    "rig_family": "Bespoke rolling ring",
+    "signature_action": "Rolling body strike",
+    "base": {
+      "revision": "base-r1",
+      "path": "base-r1.png",
+      "width": 1312,
+      "height": 1199,
+      "alpha": "RGBA verified; corner alpha 0",
+      "sha256": "1e678d0e1d66d3b6b93a48ee4543f06be809dcc1a47836981a0e879477d67b1f"
+    },
+    "style_lock": {
+      "reference": "C:/Users/wilsh/Projects/runelord/assets/heroes/references/runesmith/runesmith-base-r1.png",
+      "sha256": "769d160f774c58e54b619db419c88e693a9bcd0f9501aeceaece05f5325e5f48",
+      "evidenceId": "user-chat-2026-10-01-approve-existing-runelord",
+      "purpose": "Rendering style only, new identity"
+    },
+    "construction": {
+      "status": "proposed, flattened concept only",
+      "parts": "stone ring root; independently stabilized center mask on two straps; two balancing arms and palms"
+    },
+    "qa": {
+      "full_resolution": "visually inspected",
+      "game_scale": "96px on light and dark backgrounds inspected, distinct silhouettes",
+      "reference_comparison": "broad colors and hard cel shadows consistent",
+      "limitations": "Mask must remain stabilized while ring rotates; existing straps need bespoke motion solution. Nearly frontal."
+    },
+    "states": [
+      "idle",
+      "attack",
+      "hit",
+      "wounded_idle",
+      "die",
+      "spawn"
+    ],
+    "conditional_states": {
+      "cast": "not currently proposed",
+      "guard": "not currently proposed",
+      "victory": "not currently proposed",
+      "raised": "inorganic construct; no corpse proposed",
+      "tamed": "not a beast; not applicable"
+    },
+    "generation": {
+      "mode": "builtin image_gen",
+      "prompt": "prompt.txt"
+    },
+    "approval": "Pending explicit user gallery decision",
+    "gallery": "http://localhost:4317"
+  },
+  "style_lock": {
+    "approved_character_reference": "C:/Users/wilsh/Projects/runelord/assets/characters/cairnwheel-witness/base-r1.png",
+    "direction": "Preserve approved identity and serious clean 2D cel shading",
+    "references": {
+      "reference": "C:/Users/wilsh/Projects/runelord/assets/heroes/references/runesmith/runesmith-base-r1.png",
+      "sha256": "769d160f774c58e54b619db419c88e693a9bcd0f9501aeceaece05f5325e5f48",
+      "evidenceId": "user-chat-2026-10-01-approve-existing-runelord",
+      "purpose": "Rendering style only, new identity"
+    }
+  },
+  "construction": {
+    "status": "proposed, flattened concept only",
+    "parts": "stone ring root; independently stabilized center mask on two straps; two balancing arms and palms"
+  },
+  "geometry": {
+    "motion_canvas": "resolve in motion proof"
+  },
+  "animations": {
+    "required": [
+      "idle",
+      "attack",
+      "hit",
+      "wounded_idle",
+      "die"
+    ],
+    "additional_from_concept": "Inspect concept conditional states and include applicable support/cast/guard/spawn. Raised/tamed forms are separate unapproved designs and excluded from this base-only request."
+  },
+  "output": {
+    "directory": "C:/Users/wilsh/Projects/runelord/assets/characters/cairnwheel-witness/animation",
+    "format": "reference-conditioned frames or genuine articulated cutout, as verified",
+    "preview": "GIF and HTML playback"
+  },
+  "limitations": [
+    "Flattened approved source; no rig exists at intake.",
+    "Do not imply approval of newly generated animation frames."
+  ],
+  "status": "animation_in_progress",
+  "animation_delivery": {
+    "stage": "review_pack_delivered",
+    "directory": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\characters\\cairnwheel-witness\\animation\\r3",
+    "qa": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\characters\\cairnwheel-witness\\animation\\r3\\delivery-qa.json",
+    "frame_count": 24,
+    "states": [
+      "idle",
+      "attack",
+      "hit",
+      "wounded_idle",
+      "die",
+      "spawn"
+    ],
+    "pending": "User review of new animation frames; production polish of documented detail/foot-placement variation"
+  }
+}

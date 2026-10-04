@@ -1,0 +1,3554 @@
+{
+  "title": "The Silent Conclave",
+  "bpm": 72,
+  "meter": "3/4",
+  "bars": 32,
+  "notes": [
+    {
+      "part": "choir",
+      "beat": 0,
+      "pitch": 44,
+      "duration": 2.96,
+      "velocity": 47
+    },
+    {
+      "part": "choir",
+      "beat": 0,
+      "pitch": 61,
+      "duration": 2.96,
+      "velocity": 46
+    },
+    {
+      "part": "choir",
+      "beat": 0,
+      "pitch": 64,
+      "duration": 2.96,
+      "velocity": 45
+    },
+    {
+      "part": "organ",
+      "beat": 0,
+      "pitch": 37,
+      "duration": 2.9,
+      "velocity": 45
+    },
+    {
+      "part": "organ",
+      "beat": 0,
+      "pitch": 49,
+      "duration": 2.9,
+      "velocity": 44
+    },
+    {
+      "part": "strings",
+      "beat": 0,
+      "pitch": 56,
+      "duration": 2.93,
+      "velocity": 39
+    },
+    {
+      "part": "strings",
+      "beat": 0,
+      "pitch": 61,
+      "duration": 2.93,
+      "velocity": 38
+    },
+    {
+      "part": "strings",
+      "beat": 0,
+      "pitch": 64,
+      "duration": 2.93,
+      "velocity": 37
+    },
+    {
+      "part": "strings",
+      "beat": 0,
+      "pitch": 68,
+      "duration": 2.93,
+      "velocity": 36
+    },
+    {
+      "part": "bass",
+      "beat": 0,
+      "pitch": 37,
+      "duration": 2.8,
+      "velocity": 52
+    },
+    {
+      "part": "bells",
+      "beat": 0,
+      "pitch": 73,
+      "duration": 2.8,
+      "velocity": 43
+    },
+    {
+      "part": "harp",
+      "beat": 1,
+      "pitch": 61,
+      "duration": 0.75,
+      "velocity": 36
+    },
+    {
+      "part": "harp",
+      "beat": 2,
+      "pitch": 64,
+      "duration": 0.75,
+      "velocity": 44
+    },
+    {
+      "part": "harp",
+      "beat": 2.5,
+      "pitch": 68,
+      "duration": 0.75,
+      "velocity": 43
+    },
+    {
+      "part": "timpani",
+      "beat": 0,
+      "pitch": 49,
+      "duration": 1.5,
+      "velocity": 56
+    },
+    {
+      "part": "choir",
+      "beat": 3,
+      "pitch": 44,
+      "duration": 2.96,
+      "velocity": 50
+    },
+    {
+      "part": "choir",
+      "beat": 3,
+      "pitch": 61,
+      "duration": 2.96,
+      "velocity": 49
+    },
+    {
+      "part": "choir",
+      "beat": 3,
+      "pitch": 64,
+      "duration": 2.96,
+      "velocity": 48
+    },
+    {
+      "part": "organ",
+      "beat": 3,
+      "pitch": 37,
+      "duration": 2.9,
+      "velocity": 39
+    },
+    {
+      "part": "organ",
+      "beat": 3,
+      "pitch": 49,
+      "duration": 2.9,
+      "velocity": 38
+    },
+    {
+      "part": "strings",
+      "beat": 3,
+      "pitch": 56,
+      "duration": 2.93,
+      "velocity": 33
+    },
+    {
+      "part": "strings",
+      "beat": 3,
+      "pitch": 61,
+      "duration": 2.93,
+      "velocity": 41
+    },
+    {
+      "part": "strings",
+      "beat": 3,
+      "pitch": 64,
+      "duration": 2.93,
+      "velocity": 40
+    },
+    {
+      "part": "strings",
+      "beat": 3,
+      "pitch": 68,
+      "duration": 2.93,
+      "velocity": 39
+    },
+    {
+      "part": "bass",
+      "beat": 3,
+      "pitch": 37,
+      "duration": 2.8,
+      "velocity": 55
+    },
+    {
+      "part": "harp",
+      "beat": 4,
+      "pitch": 61,
+      "duration": 0.75,
+      "velocity": 40
+    },
+    {
+      "part": "harp",
+      "beat": 5,
+      "pitch": 64,
+      "duration": 0.75,
+      "velocity": 39
+    },
+    {
+      "part": "harp",
+      "beat": 5.5,
+      "pitch": 68,
+      "duration": 0.75,
+      "velocity": 38
+    },
+    {
+      "part": "choir",
+      "beat": 6,
+      "pitch": 42,
+      "duration": 2.96,
+      "velocity": 46
+    },
+    {
+      "part": "choir",
+      "beat": 6,
+      "pitch": 57,
+      "duration": 2.96,
+      "velocity": 45
+    },
+    {
+      "part": "choir",
+      "beat": 6,
+      "pitch": 62,
+      "duration": 2.96,
+      "velocity": 53
+    },
+    {
+      "part": "organ",
+      "beat": 6,
+      "pitch": 38,
+      "duration": 2.9,
+      "velocity": 44
+    },
+    {
+      "part": "organ",
+      "beat": 6,
+      "pitch": 50,
+      "duration": 2.9,
+      "velocity": 43
+    },
+    {
+      "part": "strings",
+      "beat": 6,
+      "pitch": 54,
+      "duration": 2.93,
+      "velocity": 38
+    },
+    {
+      "part": "strings",
+      "beat": 6,
+      "pitch": 57,
+      "duration": 2.93,
+      "velocity": 37
+    },
+    {
+      "part": "strings",
+      "beat": 6,
+      "pitch": 62,
+      "duration": 2.93,
+      "velocity": 36
+    },
+    {
+      "part": "strings",
+      "beat": 6,
+      "pitch": 66,
+      "duration": 2.93,
+      "velocity": 35
+    },
+    {
+      "part": "bass",
+      "beat": 6,
+      "pitch": 38,
+      "duration": 2.8,
+      "velocity": 51
+    },
+    {
+      "part": "bells",
+      "beat": 6,
+      "pitch": 74,
+      "duration": 2.8,
+      "velocity": 42
+    },
+    {
+      "part": "harp",
+      "beat": 7,
+      "pitch": 57,
+      "duration": 0.75,
+      "velocity": 44
+    },
+    {
+      "part": "harp",
+      "beat": 8,
+      "pitch": 62,
+      "duration": 0.75,
+      "velocity": 43
+    },
+    {
+      "part": "harp",
+      "beat": 8.5,
+      "pitch": 66,
+      "duration": 0.75,
+      "velocity": 42
+    },
+    {
+      "part": "choir",
+      "beat": 9,
+      "pitch": 44,
+      "duration": 2.96,
+      "velocity": 50
+    },
+    {
+      "part": "choir",
+      "beat": 9,
+      "pitch": 60,
+      "duration": 2.96,
+      "velocity": 49
+    },
+    {
+      "part": "choir",
+      "beat": 9,
+      "pitch": 63,
+      "duration": 2.96,
+      "velocity": 48
+    },
+    {
+      "part": "organ",
+      "beat": 9,
+      "pitch": 32,
+      "duration": 2.9,
+      "velocity": 39
+    },
+    {
+      "part": "organ",
+      "beat": 9,
+      "pitch": 44,
+      "duration": 2.9,
+      "velocity": 38
+    },
+    {
+      "part": "strings",
+      "beat": 9,
+      "pitch": 56,
+      "duration": 2.93,
+      "velocity": 33
+    },
+    {
+      "part": "strings",
+      "beat": 9,
+      "pitch": 60,
+      "duration": 2.93,
+      "velocity": 41
+    },
+    {
+      "part": "strings",
+      "beat": 9,
+      "pitch": 63,
+      "duration": 2.93,
+      "velocity": 40
+    },
+    {
+      "part": "strings",
+      "beat": 9,
+      "pitch": 66,
+      "duration": 2.93,
+      "velocity": 39
+    },
+    {
+      "part": "bass",
+      "beat": 9,
+      "pitch": 32,
+      "duration": 2.8,
+      "velocity": 55
+    },
+    {
+      "part": "choir",
+      "beat": 12,
+      "pitch": 45,
+      "duration": 2.96,
+      "velocity": 49
+    },
+    {
+      "part": "choir",
+      "beat": 12,
+      "pitch": 61,
+      "duration": 2.96,
+      "velocity": 48
+    },
+    {
+      "part": "choir",
+      "beat": 12,
+      "pitch": 64,
+      "duration": 2.96,
+      "velocity": 47
+    },
+    {
+      "part": "organ",
+      "beat": 12,
+      "pitch": 33,
+      "duration": 2.9,
+      "velocity": 38
+    },
+    {
+      "part": "organ",
+      "beat": 12,
+      "pitch": 45,
+      "duration": 2.9,
+      "velocity": 37
+    },
+    {
+      "part": "strings",
+      "beat": 12,
+      "pitch": 57,
+      "duration": 2.93,
+      "velocity": 41
+    },
+    {
+      "part": "strings",
+      "beat": 12,
+      "pitch": 61,
+      "duration": 2.93,
+      "velocity": 40
+    },
+    {
+      "part": "strings",
+      "beat": 12,
+      "pitch": 64,
+      "duration": 2.93,
+      "velocity": 39
+    },
+    {
+      "part": "strings",
+      "beat": 12,
+      "pitch": 68,
+      "duration": 2.93,
+      "velocity": 38
+    },
+    {
+      "part": "bass",
+      "beat": 12,
+      "pitch": 33,
+      "duration": 2.8,
+      "velocity": 54
+    },
+    {
+      "part": "bells",
+      "beat": 12,
+      "pitch": 69,
+      "duration": 2.8,
+      "velocity": 45
+    },
+    {
+      "part": "harp",
+      "beat": 13,
+      "pitch": 61,
+      "duration": 0.75,
+      "velocity": 38
+    },
+    {
+      "part": "harp",
+      "beat": 14,
+      "pitch": 64,
+      "duration": 0.75,
+      "velocity": 37
+    },
+    {
+      "part": "harp",
+      "beat": 14.5,
+      "pitch": 68,
+      "duration": 0.75,
+      "velocity": 36
+    },
+    {
+      "part": "timpani",
+      "beat": 12,
+      "pitch": 45,
+      "duration": 1.5,
+      "velocity": 58
+    },
+    {
+      "part": "choir",
+      "beat": 15,
+      "pitch": 45,
+      "duration": 2.96,
+      "velocity": 52
+    },
+    {
+      "part": "choir",
+      "beat": 15,
+      "pitch": 61,
+      "duration": 2.96,
+      "velocity": 51
+    },
+    {
+      "part": "choir",
+      "beat": 15,
+      "pitch": 66,
+      "duration": 2.96,
+      "velocity": 50
+    },
+    {
+      "part": "organ",
+      "beat": 15,
+      "pitch": 42,
+      "duration": 2.9,
+      "velocity": 41
+    },
+    {
+      "part": "organ",
+      "beat": 15,
+      "pitch": 54,
+      "duration": 2.9,
+      "velocity": 40
+    },
+    {
+      "part": "strings",
+      "beat": 15,
+      "pitch": 57,
+      "duration": 2.93,
+      "velocity": 35
+    },
+    {
+      "part": "strings",
+      "beat": 15,
+      "pitch": 61,
+      "duration": 2.93,
+      "velocity": 34
+    },
+    {
+      "part": "strings",
+      "beat": 15,
+      "pitch": 66,
+      "duration": 2.93,
+      "velocity": 33
+    },
+    {
+      "part": "strings",
+      "beat": 15,
+      "pitch": 68,
+      "duration": 2.93,
+      "velocity": 41
+    },
+    {
+      "part": "bass",
+      "beat": 15,
+      "pitch": 42,
+      "duration": 2.8,
+      "velocity": 57
+    },
+    {
+      "part": "harp",
+      "beat": 16,
+      "pitch": 61,
+      "duration": 0.75,
+      "velocity": 42
+    },
+    {
+      "part": "harp",
+      "beat": 17,
+      "pitch": 66,
+      "duration": 0.75,
+      "velocity": 41
+    },
+    {
+      "part": "harp",
+      "beat": 17.5,
+      "pitch": 68,
+      "duration": 0.75,
+      "velocity": 40
+    },
+    {
+      "part": "choir",
+      "beat": 18,
+      "pitch": 44,
+      "duration": 2.96,
+      "velocity": 48
+    },
+    {
+      "part": "choir",
+      "beat": 18,
+      "pitch": 61,
+      "duration": 2.96,
+      "velocity": 47
+    },
+    {
+      "part": "choir",
+      "beat": 18,
+      "pitch": 63,
+      "duration": 2.96,
+      "velocity": 46
+    },
+    {
+      "part": "organ",
+      "beat": 18,
+      "pitch": 32,
+      "duration": 2.9,
+      "velocity": 37
+    },
+    {
+      "part": "organ",
+      "beat": 18,
+      "pitch": 44,
+      "duration": 2.9,
+      "velocity": 45
+    },
+    {
+      "part": "strings",
+      "beat": 18,
+      "pitch": 56,
+      "duration": 2.93,
+      "velocity": 40
+    },
+    {
+      "part": "strings",
+      "beat": 18,
+      "pitch": 61,
+      "duration": 2.93,
+      "velocity": 39
+    },
+    {
+      "part": "strings",
+      "beat": 18,
+      "pitch": 63,
+      "duration": 2.93,
+      "velocity": 38
+    },
+    {
+      "part": "strings",
+      "beat": 18,
+      "pitch": 68,
+      "duration": 2.93,
+      "velocity": 37
+    },
+    {
+      "part": "bass",
+      "beat": 18,
+      "pitch": 32,
+      "duration": 2.8,
+      "velocity": 53
+    },
+    {
+      "part": "bells",
+      "beat": 18,
+      "pitch": 68,
+      "duration": 2.8,
+      "velocity": 44
+    },
+    {
+      "part": "harp",
+      "beat": 19,
+      "pitch": 61,
+      "duration": 0.75,
+      "velocity": 37
+    },
+    {
+      "part": "harp",
+      "beat": 20,
+      "pitch": 63,
+      "duration": 0.75,
+      "velocity": 36
+    },
+    {
+      "part": "harp",
+      "beat": 20.5,
+      "pitch": 68,
+      "duration": 0.75,
+      "velocity": 44
+    },
+    {
+      "part": "choir",
+      "beat": 21,
+      "pitch": 44,
+      "duration": 2.96,
+      "velocity": 52
+    },
+    {
+      "part": "choir",
+      "beat": 21,
+      "pitch": 60,
+      "duration": 2.96,
+      "velocity": 51
+    },
+    {
+      "part": "choir",
+      "beat": 21,
+      "pitch": 63,
+      "duration": 2.96,
+      "velocity": 50
+    },
+    {
+      "part": "organ",
+      "beat": 21,
+      "pitch": 32,
+      "duration": 2.9,
+      "velocity": 41
+    },
+    {
+      "part": "organ",
+      "beat": 21,
+      "pitch": 44,
+      "duration": 2.9,
+      "velocity": 40
+    },
+    {
+      "part": "strings",
+      "beat": 21,
+      "pitch": 56,
+      "duration": 2.93,
+      "velocity": 35
+    },
+    {
+      "part": "strings",
+      "beat": 21,
+      "pitch": 60,
+      "duration": 2.93,
+      "velocity": 34
+    },
+    {
+      "part": "strings",
+      "beat": 21,
+      "pitch": 63,
+      "duration": 2.93,
+      "velocity": 33
+    },
+    {
+      "part": "strings",
+      "beat": 21,
+      "pitch": 66,
+      "duration": 2.93,
+      "velocity": 41
+    },
+    {
+      "part": "bass",
+      "beat": 21,
+      "pitch": 32,
+      "duration": 2.8,
+      "velocity": 57
+    },
+    {
+      "part": "choir",
+      "beat": 24,
+      "pitch": 44,
+      "duration": 2.96,
+      "velocity": 51
+    },
+    {
+      "part": "choir",
+      "beat": 24,
+      "pitch": 61,
+      "duration": 2.96,
+      "velocity": 50
+    },
+    {
+      "part": "choir",
+      "beat": 24,
+      "pitch": 64,
+      "duration": 2.96,
+      "velocity": 49
+    },
+    {
+      "part": "organ",
+      "beat": 24,
+      "pitch": 37,
+      "duration": 2.9,
+      "velocity": 40
+    },
+    {
+      "part": "organ",
+      "beat": 24,
+      "pitch": 49,
+      "duration": 2.9,
+      "velocity": 39
+    },
+    {
+      "part": "strings",
+      "beat": 24,
+      "pitch": 56,
+      "duration": 2.93,
+      "velocity": 34
+    },
+    {
+      "part": "strings",
+      "beat": 24,
+      "pitch": 61,
+      "duration": 2.93,
+      "velocity": 33
+    },
+    {
+      "part": "strings",
+      "beat": 24,
+      "pitch": 64,
+      "duration": 2.93,
+      "velocity": 41
+    },
+    {
+      "part": "strings",
+      "beat": 24,
+      "pitch": 68,
+      "duration": 2.93,
+      "velocity": 40
+    },
+    {
+      "part": "bass",
+      "beat": 24,
+      "pitch": 37,
+      "duration": 2.8,
+      "velocity": 56
+    },
+    {
+      "part": "bells",
+      "beat": 24,
+      "pitch": 73,
+      "duration": 2.8,
+      "velocity": 47
+    },
+    {
+      "part": "harp",
+      "beat": 25,
+      "pitch": 61,
+      "duration": 0.75,
+      "velocity": 40
+    },
+    {
+      "part": "harp",
+      "beat": 26,
+      "pitch": 64,
+      "duration": 0.75,
+      "velocity": 39
+    },
+    {
+      "part": "harp",
+      "beat": 26.5,
+      "pitch": 68,
+      "duration": 0.75,
+      "velocity": 38
+    },
+    {
+      "part": "timpani",
+      "beat": 24,
+      "pitch": 49,
+      "duration": 1.5,
+      "velocity": 51
+    },
+    {
+      "part": "choir",
+      "beat": 27,
+      "pitch": 45,
+      "duration": 2.96,
+      "velocity": 45
+    },
+    {
+      "part": "choir",
+      "beat": 27,
+      "pitch": 61,
+      "duration": 2.96,
+      "velocity": 53
+    },
+    {
+      "part": "choir",
+      "beat": 27,
+      "pitch": 64,
+      "duration": 2.96,
+      "velocity": 52
+    },
+    {
+      "part": "organ",
+      "beat": 27,
+      "pitch": 33,
+      "duration": 2.9,
+      "velocity": 43
+    },
+    {
+      "part": "organ",
+      "beat": 27,
+      "pitch": 45,
+      "duration": 2.9,
+      "velocity": 42
+    },
+    {
+      "part": "strings",
+      "beat": 27,
+      "pitch": 57,
+      "duration": 2.93,
+      "velocity": 37
+    },
+    {
+      "part": "strings",
+      "beat": 27,
+      "pitch": 61,
+      "duration": 2.93,
+      "velocity": 36
+    },
+    {
+      "part": "strings",
+      "beat": 27,
+      "pitch": 64,
+      "duration": 2.93,
+      "velocity": 35
+    },
+    {
+      "part": "strings",
+      "beat": 27,
+      "pitch": 68,
+      "duration": 2.93,
+      "velocity": 34
+    },
+    {
+      "part": "bass",
+      "beat": 27,
+      "pitch": 33,
+      "duration": 2.8,
+      "velocity": 50
+    },
+    {
+      "part": "harp",
+      "beat": 28,
+      "pitch": 61,
+      "duration": 0.75,
+      "velocity": 44
+    },
+    {
+      "part": "harp",
+      "beat": 29,
+      "pitch": 64,
+      "duration": 0.75,
+      "velocity": 43
+    },
+    {
+      "part": "harp",
+      "beat": 29.5,
+      "pitch": 68,
+      "duration": 0.75,
+      "velocity": 42
+    },
+    {
+      "part": "choir",
+      "beat": 30,
+      "pitch": 45,
+      "duration": 2.96,
+      "velocity": 50
+    },
+    {
+      "part": "choir",
+      "beat": 30,
+      "pitch": 61,
+      "duration": 2.96,
+      "velocity": 49
+    },
+    {
+      "part": "choir",
+      "beat": 30,
+      "pitch": 66,
+      "duration": 2.96,
+      "velocity": 48
+    },
+    {
+      "part": "organ",
+      "beat": 30,
+      "pitch": 42,
+      "duration": 2.9,
+      "velocity": 39
+    },
+    {
+      "part": "organ",
+      "beat": 30,
+      "pitch": 54,
+      "duration": 2.9,
+      "velocity": 38
+    },
+    {
+      "part": "strings",
+      "beat": 30,
+      "pitch": 57,
+      "duration": 2.93,
+      "velocity": 33
+    },
+    {
+      "part": "strings",
+      "beat": 30,
+      "pitch": 61,
+      "duration": 2.93,
+      "velocity": 41
+    },
+    {
+      "part": "strings",
+      "beat": 30,
+      "pitch": 66,
+      "duration": 2.93,
+      "velocity": 40
+    },
+    {
+      "part": "strings",
+      "beat": 30,
+      "pitch": 68,
+      "duration": 2.93,
+      "velocity": 39
+    },
+    {
+      "part": "bass",
+      "beat": 30,
+      "pitch": 42,
+      "duration": 2.8,
+      "velocity": 55
+    },
+    {
+      "part": "bells",
+      "beat": 30,
+      "pitch": 78,
+      "duration": 2.8,
+      "velocity": 46
+    },
+    {
+      "part": "harp",
+      "beat": 31,
+      "pitch": 61,
+      "duration": 0.75,
+      "velocity": 39
+    },
+    {
+      "part": "harp",
+      "beat": 32,
+      "pitch": 66,
+      "duration": 0.75,
+      "velocity": 38
+    },
+    {
+      "part": "harp",
+      "beat": 32.5,
+      "pitch": 68,
+      "duration": 0.75,
+      "velocity": 37
+    },
+    {
+      "part": "choir",
+      "beat": 33,
+      "pitch": 44,
+      "duration": 2.96,
+      "velocity": 45
+    },
+    {
+      "part": "choir",
+      "beat": 33,
+      "pitch": 60,
+      "duration": 2.96,
+      "velocity": 53
+    },
+    {
+      "part": "choir",
+      "beat": 33,
+      "pitch": 63,
+      "duration": 2.96,
+      "velocity": 52
+    },
+    {
+      "part": "organ",
+      "beat": 33,
+      "pitch": 32,
+      "duration": 2.9,
+      "velocity": 43
+    },
+    {
+      "part": "organ",
+      "beat": 33,
+      "pitch": 44,
+      "duration": 2.9,
+      "velocity": 42
+    },
+    {
+      "part": "strings",
+      "beat": 33,
+      "pitch": 56,
+      "duration": 2.93,
+      "velocity": 37
+    },
+    {
+      "part": "strings",
+      "beat": 33,
+      "pitch": 60,
+      "duration": 2.93,
+      "velocity": 36
+    },
+    {
+      "part": "strings",
+      "beat": 33,
+      "pitch": 63,
+      "duration": 2.93,
+      "velocity": 35
+    },
+    {
+      "part": "strings",
+      "beat": 33,
+      "pitch": 66,
+      "duration": 2.93,
+      "velocity": 34
+    },
+    {
+      "part": "bass",
+      "beat": 33,
+      "pitch": 32,
+      "duration": 2.8,
+      "velocity": 50
+    },
+    {
+      "part": "choir",
+      "beat": 36,
+      "pitch": 42,
+      "duration": 2.96,
+      "velocity": 53
+    },
+    {
+      "part": "choir",
+      "beat": 36,
+      "pitch": 57,
+      "duration": 2.96,
+      "velocity": 52
+    },
+    {
+      "part": "choir",
+      "beat": 36,
+      "pitch": 62,
+      "duration": 2.96,
+      "velocity": 51
+    },
+    {
+      "part": "organ",
+      "beat": 36,
+      "pitch": 38,
+      "duration": 2.9,
+      "velocity": 42
+    },
+    {
+      "part": "organ",
+      "beat": 36,
+      "pitch": 50,
+      "duration": 2.9,
+      "velocity": 41
+    },
+    {
+      "part": "strings",
+      "beat": 36,
+      "pitch": 54,
+      "duration": 2.93,
+      "velocity": 36
+    },
+    {
+      "part": "strings",
+      "beat": 36,
+      "pitch": 57,
+      "duration": 2.93,
+      "velocity": 35
+    },
+    {
+      "part": "strings",
+      "beat": 36,
+      "pitch": 62,
+      "duration": 2.93,
+      "velocity": 34
+    },
+    {
+      "part": "strings",
+      "beat": 36,
+      "pitch": 66,
+      "duration": 2.93,
+      "velocity": 33
+    },
+    {
+      "part": "bass",
+      "beat": 36,
+      "pitch": 38,
+      "duration": 2.8,
+      "velocity": 58
+    },
+    {
+      "part": "bells",
+      "beat": 36,
+      "pitch": 74,
+      "duration": 2.8,
+      "velocity": 49
+    },
+    {
+      "part": "harp",
+      "beat": 37,
+      "pitch": 57,
+      "duration": 0.75,
+      "velocity": 42
+    },
+    {
+      "part": "harp",
+      "beat": 38,
+      "pitch": 62,
+      "duration": 0.75,
+      "velocity": 41
+    },
+    {
+      "part": "harp",
+      "beat": 38.5,
+      "pitch": 66,
+      "duration": 0.75,
+      "velocity": 40
+    },
+    {
+      "part": "timpani",
+      "beat": 36,
+      "pitch": 50,
+      "duration": 1.5,
+      "velocity": 53
+    },
+    {
+      "part": "choir",
+      "beat": 39,
+      "pitch": 45,
+      "duration": 2.96,
+      "velocity": 47
+    },
+    {
+      "part": "choir",
+      "beat": 39,
+      "pitch": 61,
+      "duration": 2.96,
+      "velocity": 46
+    },
+    {
+      "part": "choir",
+      "beat": 39,
+      "pitch": 64,
+      "duration": 2.96,
+      "velocity": 45
+    },
+    {
+      "part": "organ",
+      "beat": 39,
+      "pitch": 33,
+      "duration": 2.9,
+      "velocity": 45
+    },
+    {
+      "part": "organ",
+      "beat": 39,
+      "pitch": 45,
+      "duration": 2.9,
+      "velocity": 44
+    },
+    {
+      "part": "strings",
+      "beat": 39,
+      "pitch": 57,
+      "duration": 2.93,
+      "velocity": 39
+    },
+    {
+      "part": "strings",
+      "beat": 39,
+      "pitch": 61,
+      "duration": 2.93,
+      "velocity": 38
+    },
+    {
+      "part": "strings",
+      "beat": 39,
+      "pitch": 64,
+      "duration": 2.93,
+      "velocity": 37
+    },
+    {
+      "part": "strings",
+      "beat": 39,
+      "pitch": 68,
+      "duration": 2.93,
+      "velocity": 36
+    },
+    {
+      "part": "bass",
+      "beat": 39,
+      "pitch": 33,
+      "duration": 2.8,
+      "velocity": 52
+    },
+    {
+      "part": "harp",
+      "beat": 40,
+      "pitch": 61,
+      "duration": 0.75,
+      "velocity": 37
+    },
+    {
+      "part": "harp",
+      "beat": 41,
+      "pitch": 64,
+      "duration": 0.75,
+      "velocity": 36
+    },
+    {
+      "part": "harp",
+      "beat": 41.5,
+      "pitch": 68,
+      "duration": 0.75,
+      "velocity": 44
+    },
+    {
+      "part": "choir",
+      "beat": 42,
+      "pitch": 44,
+      "duration": 2.96,
+      "velocity": 52
+    },
+    {
+      "part": "choir",
+      "beat": 42,
+      "pitch": 61,
+      "duration": 2.96,
+      "velocity": 51
+    },
+    {
+      "part": "choir",
+      "beat": 42,
+      "pitch": 63,
+      "duration": 2.96,
+      "velocity": 50
+    },
+    {
+      "part": "organ",
+      "beat": 42,
+      "pitch": 32,
+      "duration": 2.9,
+      "velocity": 41
+    },
+    {
+      "part": "organ",
+      "beat": 42,
+      "pitch": 44,
+      "duration": 2.9,
+      "velocity": 40
+    },
+    {
+      "part": "strings",
+      "beat": 42,
+      "pitch": 56,
+      "duration": 2.93,
+      "velocity": 35
+    },
+    {
+      "part": "strings",
+      "beat": 42,
+      "pitch": 61,
+      "duration": 2.93,
+      "velocity": 34
+    },
+    {
+      "part": "strings",
+      "beat": 42,
+      "pitch": 63,
+      "duration": 2.93,
+      "velocity": 33
+    },
+    {
+      "part": "strings",
+      "beat": 42,
+      "pitch": 68,
+      "duration": 2.93,
+      "velocity": 41
+    },
+    {
+      "part": "bass",
+      "beat": 42,
+      "pitch": 32,
+      "duration": 2.8,
+      "velocity": 57
+    },
+    {
+      "part": "bells",
+      "beat": 42,
+      "pitch": 68,
+      "duration": 2.8,
+      "velocity": 48
+    },
+    {
+      "part": "harp",
+      "beat": 43,
+      "pitch": 61,
+      "duration": 0.75,
+      "velocity": 41
+    },
+    {
+      "part": "harp",
+      "beat": 44,
+      "pitch": 63,
+      "duration": 0.75,
+      "velocity": 40
+    },
+    {
+      "part": "harp",
+      "beat": 44.5,
+      "pitch": 68,
+      "duration": 0.75,
+      "velocity": 39
+    },
+    {
+      "part": "choir",
+      "beat": 45,
+      "pitch": 44,
+      "duration": 2.96,
+      "velocity": 47
+    },
+    {
+      "part": "choir",
+      "beat": 45,
+      "pitch": 60,
+      "duration": 2.96,
+      "velocity": 46
+    },
+    {
+      "part": "choir",
+      "beat": 45,
+      "pitch": 63,
+      "duration": 2.96,
+      "velocity": 45
+    },
+    {
+      "part": "organ",
+      "beat": 45,
+      "pitch": 32,
+      "duration": 2.9,
+      "velocity": 45
+    },
+    {
+      "part": "organ",
+      "beat": 45,
+      "pitch": 44,
+      "duration": 2.9,
+      "velocity": 44
+    },
+    {
+      "part": "strings",
+      "beat": 45,
+      "pitch": 56,
+      "duration": 2.93,
+      "velocity": 39
+    },
+    {
+      "part": "strings",
+      "beat": 45,
+      "pitch": 60,
+      "duration": 2.93,
+      "velocity": 38
+    },
+    {
+      "part": "strings",
+      "beat": 45,
+      "pitch": 63,
+      "duration": 2.93,
+      "velocity": 37
+    },
+    {
+      "part": "strings",
+      "beat": 45,
+      "pitch": 66,
+      "duration": 2.93,
+      "velocity": 36
+    },
+    {
+      "part": "bass",
+      "beat": 45,
+      "pitch": 32,
+      "duration": 2.8,
+      "velocity": 52
+    },
+    {
+      "part": "choir",
+      "beat": 48,
+      "pitch": 45,
+      "duration": 2.96,
+      "velocity": 58
+    },
+    {
+      "part": "choir",
+      "beat": 48,
+      "pitch": 61,
+      "duration": 2.96,
+      "velocity": 57
+    },
+    {
+      "part": "choir",
+      "beat": 48,
+      "pitch": 64,
+      "duration": 2.96,
+      "velocity": 65
+    },
+    {
+      "part": "organ",
+      "beat": 48,
+      "pitch": 33,
+      "duration": 2.9,
+      "velocity": 44
+    },
+    {
+      "part": "organ",
+      "beat": 48,
+      "pitch": 45,
+      "duration": 2.9,
+      "velocity": 43
+    },
+    {
+      "part": "strings",
+      "beat": 48,
+      "pitch": 57,
+      "duration": 2.93,
+      "velocity": 56
+    },
+    {
+      "part": "strings",
+      "beat": 48,
+      "pitch": 61,
+      "duration": 2.93,
+      "velocity": 55
+    },
+    {
+      "part": "strings",
+      "beat": 48,
+      "pitch": 64,
+      "duration": 2.93,
+      "velocity": 54
+    },
+    {
+      "part": "strings",
+      "beat": 48,
+      "pitch": 68,
+      "duration": 2.93,
+      "velocity": 53
+    },
+    {
+      "part": "bass",
+      "beat": 48,
+      "pitch": 33,
+      "duration": 2.8,
+      "velocity": 51
+    },
+    {
+      "part": "bells",
+      "beat": 48,
+      "pitch": 69,
+      "duration": 2.8,
+      "velocity": 42
+    },
+    {
+      "part": "harp",
+      "beat": 49,
+      "pitch": 61,
+      "duration": 0.75,
+      "velocity": 51
+    },
+    {
+      "part": "harp",
+      "beat": 50,
+      "pitch": 64,
+      "duration": 0.75,
+      "velocity": 50
+    },
+    {
+      "part": "harp",
+      "beat": 50.5,
+      "pitch": 68,
+      "duration": 0.75,
+      "velocity": 49
+    },
+    {
+      "part": "timpani",
+      "beat": 48,
+      "pitch": 45,
+      "duration": 1.5,
+      "velocity": 69
+    },
+    {
+      "part": "drums",
+      "beat": 49.5,
+      "pitch": 41,
+      "duration": 0.4,
+      "velocity": 40
+    },
+    {
+      "part": "choir",
+      "beat": 51,
+      "pitch": 44,
+      "duration": 2.96,
+      "velocity": 60
+    },
+    {
+      "part": "choir",
+      "beat": 51,
+      "pitch": 59,
+      "duration": 2.96,
+      "velocity": 59
+    },
+    {
+      "part": "choir",
+      "beat": 51,
+      "pitch": 64,
+      "duration": 2.96,
+      "velocity": 58
+    },
+    {
+      "part": "organ",
+      "beat": 51,
+      "pitch": 40,
+      "duration": 2.9,
+      "velocity": 37
+    },
+    {
+      "part": "organ",
+      "beat": 51,
+      "pitch": 52,
+      "duration": 2.9,
+      "velocity": 45
+    },
+    {
+      "part": "strings",
+      "beat": 51,
+      "pitch": 56,
+      "duration": 2.93,
+      "velocity": 58
+    },
+    {
+      "part": "strings",
+      "beat": 51,
+      "pitch": 59,
+      "duration": 2.93,
+      "velocity": 57
+    },
+    {
+      "part": "strings",
+      "beat": 51,
+      "pitch": 64,
+      "duration": 2.93,
+      "velocity": 56
+    },
+    {
+      "part": "strings",
+      "beat": 51,
+      "pitch": 68,
+      "duration": 2.93,
+      "velocity": 55
+    },
+    {
+      "part": "bass",
+      "beat": 51,
+      "pitch": 40,
+      "duration": 2.8,
+      "velocity": 53
+    },
+    {
+      "part": "harp",
+      "beat": 52,
+      "pitch": 59,
+      "duration": 0.75,
+      "velocity": 45
+    },
+    {
+      "part": "harp",
+      "beat": 53,
+      "pitch": 64,
+      "duration": 0.75,
+      "velocity": 44
+    },
+    {
+      "part": "harp",
+      "beat": 53.5,
+      "pitch": 68,
+      "duration": 0.75,
+      "velocity": 43
+    },
+    {
+      "part": "choir",
+      "beat": 54,
+      "pitch": 45,
+      "duration": 2.96,
+      "velocity": 65
+    },
+    {
+      "part": "choir",
+      "beat": 54,
+      "pitch": 61,
+      "duration": 2.96,
+      "velocity": 64
+    },
+    {
+      "part": "choir",
+      "beat": 54,
+      "pitch": 66,
+      "duration": 2.96,
+      "velocity": 63
+    },
+    {
+      "part": "organ",
+      "beat": 54,
+      "pitch": 42,
+      "duration": 2.9,
+      "velocity": 42
+    },
+    {
+      "part": "organ",
+      "beat": 54,
+      "pitch": 54,
+      "duration": 2.9,
+      "velocity": 41
+    },
+    {
+      "part": "strings",
+      "beat": 54,
+      "pitch": 57,
+      "duration": 2.93,
+      "velocity": 54
+    },
+    {
+      "part": "strings",
+      "beat": 54,
+      "pitch": 61,
+      "duration": 2.93,
+      "velocity": 53
+    },
+    {
+      "part": "strings",
+      "beat": 54,
+      "pitch": 66,
+      "duration": 2.93,
+      "velocity": 52
+    },
+    {
+      "part": "strings",
+      "beat": 54,
+      "pitch": 68,
+      "duration": 2.93,
+      "velocity": 51
+    },
+    {
+      "part": "bass",
+      "beat": 54,
+      "pitch": 42,
+      "duration": 2.8,
+      "velocity": 58
+    },
+    {
+      "part": "bells",
+      "beat": 54,
+      "pitch": 78,
+      "duration": 2.8,
+      "velocity": 49
+    },
+    {
+      "part": "harp",
+      "beat": 55,
+      "pitch": 61,
+      "duration": 0.75,
+      "velocity": 49
+    },
+    {
+      "part": "harp",
+      "beat": 56,
+      "pitch": 66,
+      "duration": 0.75,
+      "velocity": 48
+    },
+    {
+      "part": "harp",
+      "beat": 56.5,
+      "pitch": 68,
+      "duration": 0.75,
+      "velocity": 47
+    },
+    {
+      "part": "drums",
+      "beat": 55.5,
+      "pitch": 41,
+      "duration": 0.4,
+      "velocity": 39
+    },
+    {
+      "part": "choir",
+      "beat": 57,
+      "pitch": 44,
+      "duration": 2.96,
+      "velocity": 59
+    },
+    {
+      "part": "choir",
+      "beat": 57,
+      "pitch": 61,
+      "duration": 2.96,
+      "velocity": 58
+    },
+    {
+      "part": "choir",
+      "beat": 57,
+      "pitch": 64,
+      "duration": 2.96,
+      "velocity": 57
+    },
+    {
+      "part": "organ",
+      "beat": 57,
+      "pitch": 37,
+      "duration": 2.9,
+      "velocity": 45
+    },
+    {
+      "part": "organ",
+      "beat": 57,
+      "pitch": 49,
+      "duration": 2.9,
+      "velocity": 44
+    },
+    {
+      "part": "strings",
+      "beat": 57,
+      "pitch": 56,
+      "duration": 2.93,
+      "velocity": 57
+    },
+    {
+      "part": "strings",
+      "beat": 57,
+      "pitch": 61,
+      "duration": 2.93,
+      "velocity": 56
+    },
+    {
+      "part": "strings",
+      "beat": 57,
+      "pitch": 64,
+      "duration": 2.93,
+      "velocity": 55
+    },
+    {
+      "part": "strings",
+      "beat": 57,
+      "pitch": 68,
+      "duration": 2.93,
+      "velocity": 54
+    },
+    {
+      "part": "bass",
+      "beat": 57,
+      "pitch": 37,
+      "duration": 2.8,
+      "velocity": 52
+    },
+    {
+      "part": "choir",
+      "beat": 60,
+      "pitch": 42,
+      "duration": 2.96,
+      "velocity": 58
+    },
+    {
+      "part": "choir",
+      "beat": 60,
+      "pitch": 57,
+      "duration": 2.96,
+      "velocity": 57
+    },
+    {
+      "part": "choir",
+      "beat": 60,
+      "pitch": 62,
+      "duration": 2.96,
+      "velocity": 65
+    },
+    {
+      "part": "organ",
+      "beat": 60,
+      "pitch": 38,
+      "duration": 2.9,
+      "velocity": 44
+    },
+    {
+      "part": "organ",
+      "beat": 60,
+      "pitch": 50,
+      "duration": 2.9,
+      "velocity": 43
+    },
+    {
+      "part": "strings",
+      "beat": 60,
+      "pitch": 54,
+      "duration": 2.93,
+      "velocity": 56
+    },
+    {
+      "part": "strings",
+      "beat": 60,
+      "pitch": 57,
+      "duration": 2.93,
+      "velocity": 55
+    },
+    {
+      "part": "strings",
+      "beat": 60,
+      "pitch": 62,
+      "duration": 2.93,
+      "velocity": 54
+    },
+    {
+      "part": "strings",
+      "beat": 60,
+      "pitch": 66,
+      "duration": 2.93,
+      "velocity": 53
+    },
+    {
+      "part": "bass",
+      "beat": 60,
+      "pitch": 38,
+      "duration": 2.8,
+      "velocity": 51
+    },
+    {
+      "part": "bells",
+      "beat": 60,
+      "pitch": 74,
+      "duration": 2.8,
+      "velocity": 42
+    },
+    {
+      "part": "harp",
+      "beat": 61,
+      "pitch": 57,
+      "duration": 0.75,
+      "velocity": 51
+    },
+    {
+      "part": "harp",
+      "beat": 62,
+      "pitch": 62,
+      "duration": 0.75,
+      "velocity": 50
+    },
+    {
+      "part": "harp",
+      "beat": 62.5,
+      "pitch": 66,
+      "duration": 0.75,
+      "velocity": 49
+    },
+    {
+      "part": "timpani",
+      "beat": 60,
+      "pitch": 50,
+      "duration": 1.5,
+      "velocity": 69
+    },
+    {
+      "part": "drums",
+      "beat": 61.5,
+      "pitch": 41,
+      "duration": 0.4,
+      "velocity": 40
+    },
+    {
+      "part": "choir",
+      "beat": 63,
+      "pitch": 45,
+      "duration": 2.96,
+      "velocity": 60
+    },
+    {
+      "part": "choir",
+      "beat": 63,
+      "pitch": 61,
+      "duration": 2.96,
+      "velocity": 59
+    },
+    {
+      "part": "choir",
+      "beat": 63,
+      "pitch": 66,
+      "duration": 2.96,
+      "velocity": 58
+    },
+    {
+      "part": "organ",
+      "beat": 63,
+      "pitch": 42,
+      "duration": 2.9,
+      "velocity": 37
+    },
+    {
+      "part": "organ",
+      "beat": 63,
+      "pitch": 54,
+      "duration": 2.9,
+      "velocity": 45
+    },
+    {
+      "part": "strings",
+      "beat": 63,
+      "pitch": 57,
+      "duration": 2.93,
+      "velocity": 58
+    },
+    {
+      "part": "strings",
+      "beat": 63,
+      "pitch": 61,
+      "duration": 2.93,
+      "velocity": 57
+    },
+    {
+      "part": "strings",
+      "beat": 63,
+      "pitch": 66,
+      "duration": 2.93,
+      "velocity": 56
+    },
+    {
+      "part": "strings",
+      "beat": 63,
+      "pitch": 68,
+      "duration": 2.93,
+      "velocity": 55
+    },
+    {
+      "part": "bass",
+      "beat": 63,
+      "pitch": 42,
+      "duration": 2.8,
+      "velocity": 53
+    },
+    {
+      "part": "harp",
+      "beat": 64,
+      "pitch": 61,
+      "duration": 0.75,
+      "velocity": 45
+    },
+    {
+      "part": "harp",
+      "beat": 65,
+      "pitch": 66,
+      "duration": 0.75,
+      "velocity": 44
+    },
+    {
+      "part": "harp",
+      "beat": 65.5,
+      "pitch": 68,
+      "duration": 0.75,
+      "velocity": 43
+    },
+    {
+      "part": "choir",
+      "beat": 66,
+      "pitch": 44,
+      "duration": 2.96,
+      "velocity": 65
+    },
+    {
+      "part": "choir",
+      "beat": 66,
+      "pitch": 61,
+      "duration": 2.96,
+      "velocity": 64
+    },
+    {
+      "part": "choir",
+      "beat": 66,
+      "pitch": 63,
+      "duration": 2.96,
+      "velocity": 63
+    },
+    {
+      "part": "organ",
+      "beat": 66,
+      "pitch": 32,
+      "duration": 2.9,
+      "velocity": 42
+    },
+    {
+      "part": "organ",
+      "beat": 66,
+      "pitch": 44,
+      "duration": 2.9,
+      "velocity": 41
+    },
+    {
+      "part": "strings",
+      "beat": 66,
+      "pitch": 56,
+      "duration": 2.93,
+      "velocity": 54
+    },
+    {
+      "part": "strings",
+      "beat": 66,
+      "pitch": 61,
+      "duration": 2.93,
+      "velocity": 53
+    },
+    {
+      "part": "strings",
+      "beat": 66,
+      "pitch": 63,
+      "duration": 2.93,
+      "velocity": 52
+    },
+    {
+      "part": "strings",
+      "beat": 66,
+      "pitch": 68,
+      "duration": 2.93,
+      "velocity": 51
+    },
+    {
+      "part": "bass",
+      "beat": 66,
+      "pitch": 32,
+      "duration": 2.8,
+      "velocity": 58
+    },
+    {
+      "part": "bells",
+      "beat": 66,
+      "pitch": 68,
+      "duration": 2.8,
+      "velocity": 49
+    },
+    {
+      "part": "harp",
+      "beat": 67,
+      "pitch": 61,
+      "duration": 0.75,
+      "velocity": 49
+    },
+    {
+      "part": "harp",
+      "beat": 68,
+      "pitch": 63,
+      "duration": 0.75,
+      "velocity": 48
+    },
+    {
+      "part": "harp",
+      "beat": 68.5,
+      "pitch": 68,
+      "duration": 0.75,
+      "velocity": 47
+    },
+    {
+      "part": "drums",
+      "beat": 67.5,
+      "pitch": 41,
+      "duration": 0.4,
+      "velocity": 39
+    },
+    {
+      "part": "choir",
+      "beat": 69,
+      "pitch": 44,
+      "duration": 2.96,
+      "velocity": 59
+    },
+    {
+      "part": "choir",
+      "beat": 69,
+      "pitch": 60,
+      "duration": 2.96,
+      "velocity": 58
+    },
+    {
+      "part": "choir",
+      "beat": 69,
+      "pitch": 63,
+      "duration": 2.96,
+      "velocity": 57
+    },
+    {
+      "part": "organ",
+      "beat": 69,
+      "pitch": 32,
+      "duration": 2.9,
+      "velocity": 45
+    },
+    {
+      "part": "organ",
+      "beat": 69,
+      "pitch": 44,
+      "duration": 2.9,
+      "velocity": 44
+    },
+    {
+      "part": "strings",
+      "beat": 69,
+      "pitch": 56,
+      "duration": 2.93,
+      "velocity": 57
+    },
+    {
+      "part": "strings",
+      "beat": 69,
+      "pitch": 60,
+      "duration": 2.93,
+      "velocity": 56
+    },
+    {
+      "part": "strings",
+      "beat": 69,
+      "pitch": 63,
+      "duration": 2.93,
+      "velocity": 55
+    },
+    {
+      "part": "strings",
+      "beat": 69,
+      "pitch": 66,
+      "duration": 2.93,
+      "velocity": 54
+    },
+    {
+      "part": "bass",
+      "beat": 69,
+      "pitch": 32,
+      "duration": 2.8,
+      "velocity": 52
+    },
+    {
+      "part": "choir",
+      "beat": 72,
+      "pitch": 44,
+      "duration": 2.96,
+      "velocity": 46
+    },
+    {
+      "part": "choir",
+      "beat": 72,
+      "pitch": 61,
+      "duration": 2.96,
+      "velocity": 45
+    },
+    {
+      "part": "choir",
+      "beat": 72,
+      "pitch": 64,
+      "duration": 2.96,
+      "velocity": 53
+    },
+    {
+      "part": "organ",
+      "beat": 72,
+      "pitch": 37,
+      "duration": 2.9,
+      "velocity": 44
+    },
+    {
+      "part": "organ",
+      "beat": 72,
+      "pitch": 49,
+      "duration": 2.9,
+      "velocity": 43
+    },
+    {
+      "part": "strings",
+      "beat": 72,
+      "pitch": 56,
+      "duration": 2.93,
+      "velocity": 38
+    },
+    {
+      "part": "strings",
+      "beat": 72,
+      "pitch": 61,
+      "duration": 2.93,
+      "velocity": 37
+    },
+    {
+      "part": "strings",
+      "beat": 72,
+      "pitch": 64,
+      "duration": 2.93,
+      "velocity": 36
+    },
+    {
+      "part": "strings",
+      "beat": 72,
+      "pitch": 68,
+      "duration": 2.93,
+      "velocity": 35
+    },
+    {
+      "part": "bass",
+      "beat": 72,
+      "pitch": 37,
+      "duration": 2.8,
+      "velocity": 51
+    },
+    {
+      "part": "bells",
+      "beat": 72,
+      "pitch": 73,
+      "duration": 2.8,
+      "velocity": 42
+    },
+    {
+      "part": "harp",
+      "beat": 73,
+      "pitch": 61,
+      "duration": 0.75,
+      "velocity": 44
+    },
+    {
+      "part": "harp",
+      "beat": 74,
+      "pitch": 64,
+      "duration": 0.75,
+      "velocity": 43
+    },
+    {
+      "part": "harp",
+      "beat": 74.5,
+      "pitch": 68,
+      "duration": 0.75,
+      "velocity": 42
+    },
+    {
+      "part": "timpani",
+      "beat": 72,
+      "pitch": 49,
+      "duration": 1.5,
+      "velocity": 55
+    },
+    {
+      "part": "choir",
+      "beat": 75,
+      "pitch": 42,
+      "duration": 2.96,
+      "velocity": 49
+    },
+    {
+      "part": "choir",
+      "beat": 75,
+      "pitch": 57,
+      "duration": 2.96,
+      "velocity": 48
+    },
+    {
+      "part": "choir",
+      "beat": 75,
+      "pitch": 62,
+      "duration": 2.96,
+      "velocity": 47
+    },
+    {
+      "part": "organ",
+      "beat": 75,
+      "pitch": 38,
+      "duration": 2.9,
+      "velocity": 38
+    },
+    {
+      "part": "organ",
+      "beat": 75,
+      "pitch": 50,
+      "duration": 2.9,
+      "velocity": 37
+    },
+    {
+      "part": "strings",
+      "beat": 75,
+      "pitch": 54,
+      "duration": 2.93,
+      "velocity": 41
+    },
+    {
+      "part": "strings",
+      "beat": 75,
+      "pitch": 57,
+      "duration": 2.93,
+      "velocity": 40
+    },
+    {
+      "part": "strings",
+      "beat": 75,
+      "pitch": 62,
+      "duration": 2.93,
+      "velocity": 39
+    },
+    {
+      "part": "strings",
+      "beat": 75,
+      "pitch": 66,
+      "duration": 2.93,
+      "velocity": 38
+    },
+    {
+      "part": "bass",
+      "beat": 75,
+      "pitch": 38,
+      "duration": 2.8,
+      "velocity": 54
+    },
+    {
+      "part": "harp",
+      "beat": 76,
+      "pitch": 57,
+      "duration": 0.75,
+      "velocity": 39
+    },
+    {
+      "part": "harp",
+      "beat": 77,
+      "pitch": 62,
+      "duration": 0.75,
+      "velocity": 38
+    },
+    {
+      "part": "harp",
+      "beat": 77.5,
+      "pitch": 66,
+      "duration": 0.75,
+      "velocity": 37
+    },
+    {
+      "part": "choir",
+      "beat": 78,
+      "pitch": 45,
+      "duration": 2.96,
+      "velocity": 45
+    },
+    {
+      "part": "choir",
+      "beat": 78,
+      "pitch": 61,
+      "duration": 2.96,
+      "velocity": 53
+    },
+    {
+      "part": "choir",
+      "beat": 78,
+      "pitch": 64,
+      "duration": 2.96,
+      "velocity": 52
+    },
+    {
+      "part": "organ",
+      "beat": 78,
+      "pitch": 33,
+      "duration": 2.9,
+      "velocity": 43
+    },
+    {
+      "part": "organ",
+      "beat": 78,
+      "pitch": 45,
+      "duration": 2.9,
+      "velocity": 42
+    },
+    {
+      "part": "strings",
+      "beat": 78,
+      "pitch": 57,
+      "duration": 2.93,
+      "velocity": 37
+    },
+    {
+      "part": "strings",
+      "beat": 78,
+      "pitch": 61,
+      "duration": 2.93,
+      "velocity": 36
+    },
+    {
+      "part": "strings",
+      "beat": 78,
+      "pitch": 64,
+      "duration": 2.93,
+      "velocity": 35
+    },
+    {
+      "part": "strings",
+      "beat": 78,
+      "pitch": 68,
+      "duration": 2.93,
+      "velocity": 34
+    },
+    {
+      "part": "bass",
+      "beat": 78,
+      "pitch": 33,
+      "duration": 2.8,
+      "velocity": 50
+    },
+    {
+      "part": "bells",
+      "beat": 78,
+      "pitch": 69,
+      "duration": 2.8,
+      "velocity": 50
+    },
+    {
+      "part": "harp",
+      "beat": 79,
+      "pitch": 61,
+      "duration": 0.75,
+      "velocity": 43
+    },
+    {
+      "part": "harp",
+      "beat": 80,
+      "pitch": 64,
+      "duration": 0.75,
+      "velocity": 42
+    },
+    {
+      "part": "harp",
+      "beat": 80.5,
+      "pitch": 68,
+      "duration": 0.75,
+      "velocity": 41
+    },
+    {
+      "part": "choir",
+      "beat": 81,
+      "pitch": 45,
+      "duration": 2.96,
+      "velocity": 49
+    },
+    {
+      "part": "choir",
+      "beat": 81,
+      "pitch": 61,
+      "duration": 2.96,
+      "velocity": 48
+    },
+    {
+      "part": "choir",
+      "beat": 81,
+      "pitch": 66,
+      "duration": 2.96,
+      "velocity": 47
+    },
+    {
+      "part": "organ",
+      "beat": 81,
+      "pitch": 42,
+      "duration": 2.9,
+      "velocity": 38
+    },
+    {
+      "part": "organ",
+      "beat": 81,
+      "pitch": 54,
+      "duration": 2.9,
+      "velocity": 37
+    },
+    {
+      "part": "strings",
+      "beat": 81,
+      "pitch": 57,
+      "duration": 2.93,
+      "velocity": 41
+    },
+    {
+      "part": "strings",
+      "beat": 81,
+      "pitch": 61,
+      "duration": 2.93,
+      "velocity": 40
+    },
+    {
+      "part": "strings",
+      "beat": 81,
+      "pitch": 66,
+      "duration": 2.93,
+      "velocity": 39
+    },
+    {
+      "part": "strings",
+      "beat": 81,
+      "pitch": 68,
+      "duration": 2.93,
+      "velocity": 38
+    },
+    {
+      "part": "bass",
+      "beat": 81,
+      "pitch": 42,
+      "duration": 2.8,
+      "velocity": 54
+    },
+    {
+      "part": "choir",
+      "beat": 84,
+      "pitch": 44,
+      "duration": 2.96,
+      "velocity": 48
+    },
+    {
+      "part": "choir",
+      "beat": 84,
+      "pitch": 61,
+      "duration": 2.96,
+      "velocity": 47
+    },
+    {
+      "part": "choir",
+      "beat": 84,
+      "pitch": 64,
+      "duration": 2.96,
+      "velocity": 46
+    },
+    {
+      "part": "organ",
+      "beat": 84,
+      "pitch": 37,
+      "duration": 2.9,
+      "velocity": 37
+    },
+    {
+      "part": "organ",
+      "beat": 84,
+      "pitch": 49,
+      "duration": 2.9,
+      "velocity": 45
+    },
+    {
+      "part": "strings",
+      "beat": 84,
+      "pitch": 56,
+      "duration": 2.93,
+      "velocity": 40
+    },
+    {
+      "part": "strings",
+      "beat": 84,
+      "pitch": 61,
+      "duration": 2.93,
+      "velocity": 39
+    },
+    {
+      "part": "strings",
+      "beat": 84,
+      "pitch": 64,
+      "duration": 2.93,
+      "velocity": 38
+    },
+    {
+      "part": "strings",
+      "beat": 84,
+      "pitch": 68,
+      "duration": 2.93,
+      "velocity": 37
+    },
+    {
+      "part": "bass",
+      "beat": 84,
+      "pitch": 37,
+      "duration": 2.8,
+      "velocity": 53
+    },
+    {
+      "part": "bells",
+      "beat": 84,
+      "pitch": 73,
+      "duration": 2.8,
+      "velocity": 44
+    },
+    {
+      "part": "harp",
+      "beat": 85,
+      "pitch": 61,
+      "duration": 0.75,
+      "velocity": 37
+    },
+    {
+      "part": "harp",
+      "beat": 86,
+      "pitch": 64,
+      "duration": 0.75,
+      "velocity": 36
+    },
+    {
+      "part": "harp",
+      "beat": 86.5,
+      "pitch": 68,
+      "duration": 0.75,
+      "velocity": 44
+    },
+    {
+      "part": "timpani",
+      "beat": 84,
+      "pitch": 49,
+      "duration": 1.5,
+      "velocity": 57
+    },
+    {
+      "part": "choir",
+      "beat": 87,
+      "pitch": 45,
+      "duration": 2.96,
+      "velocity": 51
+    },
+    {
+      "part": "choir",
+      "beat": 87,
+      "pitch": 61,
+      "duration": 2.96,
+      "velocity": 50
+    },
+    {
+      "part": "choir",
+      "beat": 87,
+      "pitch": 64,
+      "duration": 2.96,
+      "velocity": 49
+    },
+    {
+      "part": "organ",
+      "beat": 87,
+      "pitch": 33,
+      "duration": 2.9,
+      "velocity": 40
+    },
+    {
+      "part": "organ",
+      "beat": 87,
+      "pitch": 45,
+      "duration": 2.9,
+      "velocity": 39
+    },
+    {
+      "part": "strings",
+      "beat": 87,
+      "pitch": 57,
+      "duration": 2.93,
+      "velocity": 34
+    },
+    {
+      "part": "strings",
+      "beat": 87,
+      "pitch": 61,
+      "duration": 2.93,
+      "velocity": 33
+    },
+    {
+      "part": "strings",
+      "beat": 87,
+      "pitch": 64,
+      "duration": 2.93,
+      "velocity": 41
+    },
+    {
+      "part": "strings",
+      "beat": 87,
+      "pitch": 68,
+      "duration": 2.93,
+      "velocity": 40
+    },
+    {
+      "part": "bass",
+      "beat": 87,
+      "pitch": 33,
+      "duration": 2.8,
+      "velocity": 56
+    },
+    {
+      "part": "harp",
+      "beat": 88,
+      "pitch": 61,
+      "duration": 0.75,
+      "velocity": 41
+    },
+    {
+      "part": "harp",
+      "beat": 89,
+      "pitch": 64,
+      "duration": 0.75,
+      "velocity": 40
+    },
+    {
+      "part": "harp",
+      "beat": 89.5,
+      "pitch": 68,
+      "duration": 0.75,
+      "velocity": 39
+    },
+    {
+      "part": "choir",
+      "beat": 90,
+      "pitch": 44,
+      "duration": 2.96,
+      "velocity": 47
+    },
+    {
+      "part": "choir",
+      "beat": 90,
+      "pitch": 61,
+      "duration": 2.96,
+      "velocity": 46
+    },
+    {
+      "part": "choir",
+      "beat": 90,
+      "pitch": 63,
+      "duration": 2.96,
+      "velocity": 45
+    },
+    {
+      "part": "organ",
+      "beat": 90,
+      "pitch": 32,
+      "duration": 2.9,
+      "velocity": 45
+    },
+    {
+      "part": "organ",
+      "beat": 90,
+      "pitch": 44,
+      "duration": 2.9,
+      "velocity": 44
+    },
+    {
+      "part": "strings",
+      "beat": 90,
+      "pitch": 56,
+      "duration": 2.93,
+      "velocity": 39
+    },
+    {
+      "part": "strings",
+      "beat": 90,
+      "pitch": 61,
+      "duration": 2.93,
+      "velocity": 38
+    },
+    {
+      "part": "strings",
+      "beat": 90,
+      "pitch": 63,
+      "duration": 2.93,
+      "velocity": 37
+    },
+    {
+      "part": "strings",
+      "beat": 90,
+      "pitch": 68,
+      "duration": 2.93,
+      "velocity": 36
+    },
+    {
+      "part": "bass",
+      "beat": 90,
+      "pitch": 32,
+      "duration": 2.8,
+      "velocity": 52
+    },
+    {
+      "part": "bells",
+      "beat": 90,
+      "pitch": 68,
+      "duration": 2.8,
+      "velocity": 43
+    },
+    {
+      "part": "harp",
+      "beat": 91,
+      "pitch": 61,
+      "duration": 0.75,
+      "velocity": 36
+    },
+    {
+      "part": "harp",
+      "beat": 92,
+      "pitch": 63,
+      "duration": 0.75,
+      "velocity": 44
+    },
+    {
+      "part": "harp",
+      "beat": 92.5,
+      "pitch": 68,
+      "duration": 0.75,
+      "velocity": 43
+    },
+    {
+      "part": "choir",
+      "beat": 93,
+      "pitch": 44,
+      "duration": 2.96,
+      "velocity": 51
+    },
+    {
+      "part": "choir",
+      "beat": 93,
+      "pitch": 60,
+      "duration": 2.96,
+      "velocity": 50
+    },
+    {
+      "part": "choir",
+      "beat": 93,
+      "pitch": 63,
+      "duration": 2.96,
+      "velocity": 49
+    },
+    {
+      "part": "organ",
+      "beat": 93,
+      "pitch": 32,
+      "duration": 2.9,
+      "velocity": 40
+    },
+    {
+      "part": "organ",
+      "beat": 93,
+      "pitch": 44,
+      "duration": 2.9,
+      "velocity": 39
+    },
+    {
+      "part": "strings",
+      "beat": 93,
+      "pitch": 56,
+      "duration": 2.93,
+      "velocity": 34
+    },
+    {
+      "part": "strings",
+      "beat": 93,
+      "pitch": 60,
+      "duration": 2.93,
+      "velocity": 33
+    },
+    {
+      "part": "strings",
+      "beat": 93,
+      "pitch": 63,
+      "duration": 2.93,
+      "velocity": 41
+    },
+    {
+      "part": "strings",
+      "beat": 93,
+      "pitch": 66,
+      "duration": 2.93,
+      "velocity": 40
+    },
+    {
+      "part": "bass",
+      "beat": 93,
+      "pitch": 32,
+      "duration": 2.8,
+      "velocity": 56
+    },
+    {
+      "part": "cello",
+      "beat": 0,
+      "pitch": 61,
+      "duration": 1.94,
+      "velocity": 74
+    },
+    {
+      "part": "cello",
+      "beat": 2,
+      "pitch": 68,
+      "duration": 0.97,
+      "velocity": 73
+    },
+    {
+      "part": "cello",
+      "beat": 3,
+      "pitch": 64,
+      "duration": 1.455,
+      "velocity": 72
+    },
+    {
+      "part": "cello",
+      "beat": 4.5,
+      "pitch": 63,
+      "duration": 0.485,
+      "velocity": 71
+    },
+    {
+      "part": "cello",
+      "beat": 5.0,
+      "pitch": 61,
+      "duration": 0.97,
+      "velocity": 70
+    },
+    {
+      "part": "cello",
+      "beat": 6,
+      "pitch": 62,
+      "duration": 1.94,
+      "velocity": 69
+    },
+    {
+      "part": "cello",
+      "beat": 8,
+      "pitch": 66,
+      "duration": 0.97,
+      "velocity": 77
+    },
+    {
+      "part": "cello",
+      "beat": 9,
+      "pitch": 63,
+      "duration": 0.97,
+      "velocity": 76
+    },
+    {
+      "part": "cello",
+      "beat": 10,
+      "pitch": 60,
+      "duration": 0.97,
+      "velocity": 75
+    },
+    {
+      "part": "cello",
+      "beat": 12,
+      "pitch": 64,
+      "duration": 1.455,
+      "velocity": 74
+    },
+    {
+      "part": "cello",
+      "beat": 13.5,
+      "pitch": 69,
+      "duration": 0.485,
+      "velocity": 73
+    },
+    {
+      "part": "cello",
+      "beat": 14.0,
+      "pitch": 73,
+      "duration": 0.97,
+      "velocity": 72
+    },
+    {
+      "part": "cello",
+      "beat": 15,
+      "pitch": 69,
+      "duration": 1.94,
+      "velocity": 71
+    },
+    {
+      "part": "cello",
+      "beat": 17,
+      "pitch": 66,
+      "duration": 0.97,
+      "velocity": 70
+    },
+    {
+      "part": "cello",
+      "beat": 18,
+      "pitch": 68,
+      "duration": 0.97,
+      "velocity": 69
+    },
+    {
+      "part": "cello",
+      "beat": 19,
+      "pitch": 73,
+      "duration": 0.97,
+      "velocity": 77
+    },
+    {
+      "part": "cello",
+      "beat": 20,
+      "pitch": 75,
+      "duration": 0.97,
+      "velocity": 76
+    },
+    {
+      "part": "cello",
+      "beat": 21,
+      "pitch": 72,
+      "duration": 1.94,
+      "velocity": 75
+    },
+    {
+      "part": "oboe",
+      "beat": 24,
+      "pitch": 61,
+      "duration": 1.425,
+      "velocity": 70
+    },
+    {
+      "part": "oboe",
+      "beat": 25.5,
+      "pitch": 56,
+      "duration": 0.475,
+      "velocity": 69
+    },
+    {
+      "part": "oboe",
+      "beat": 26.0,
+      "pitch": 52,
+      "duration": 0.95,
+      "velocity": 68
+    },
+    {
+      "part": "oboe",
+      "beat": 27,
+      "pitch": 57,
+      "duration": 0.95,
+      "velocity": 67
+    },
+    {
+      "part": "oboe",
+      "beat": 28,
+      "pitch": 61,
+      "duration": 0.95,
+      "velocity": 66
+    },
+    {
+      "part": "oboe",
+      "beat": 29,
+      "pitch": 64,
+      "duration": 0.95,
+      "velocity": 65
+    },
+    {
+      "part": "oboe",
+      "beat": 30,
+      "pitch": 61,
+      "duration": 1.9,
+      "velocity": 73
+    },
+    {
+      "part": "oboe",
+      "beat": 32,
+      "pitch": 57,
+      "duration": 0.95,
+      "velocity": 72
+    },
+    {
+      "part": "oboe",
+      "beat": 33,
+      "pitch": 60,
+      "duration": 1.425,
+      "velocity": 71
+    },
+    {
+      "part": "oboe",
+      "beat": 34.5,
+      "pitch": 56,
+      "duration": 0.475,
+      "velocity": 70
+    },
+    {
+      "part": "oboe",
+      "beat": 35.0,
+      "pitch": 51,
+      "duration": 0.95,
+      "velocity": 69
+    },
+    {
+      "part": "oboe",
+      "beat": 36,
+      "pitch": 62,
+      "duration": 0.95,
+      "velocity": 68
+    },
+    {
+      "part": "oboe",
+      "beat": 37,
+      "pitch": 66,
+      "duration": 0.95,
+      "velocity": 67
+    },
+    {
+      "part": "oboe",
+      "beat": 38,
+      "pitch": 62,
+      "duration": 0.95,
+      "velocity": 66
+    },
+    {
+      "part": "oboe",
+      "beat": 39,
+      "pitch": 61,
+      "duration": 1.9,
+      "velocity": 65
+    },
+    {
+      "part": "oboe",
+      "beat": 41,
+      "pitch": 57,
+      "duration": 0.95,
+      "velocity": 73
+    },
+    {
+      "part": "oboe",
+      "beat": 42,
+      "pitch": 56,
+      "duration": 0.95,
+      "velocity": 72
+    },
+    {
+      "part": "oboe",
+      "beat": 43,
+      "pitch": 61,
+      "duration": 0.95,
+      "velocity": 71
+    },
+    {
+      "part": "oboe",
+      "beat": 44,
+      "pitch": 63,
+      "duration": 0.95,
+      "velocity": 70
+    },
+    {
+      "part": "oboe",
+      "beat": 45,
+      "pitch": 60,
+      "duration": 1.9,
+      "velocity": 69
+    },
+    {
+      "part": "violin",
+      "beat": 48,
+      "pitch": 76,
+      "duration": 1.94,
+      "velocity": 75
+    },
+    {
+      "part": "violin",
+      "beat": 50,
+      "pitch": 73,
+      "duration": 0.97,
+      "velocity": 74
+    },
+    {
+      "part": "violin",
+      "beat": 51,
+      "pitch": 80,
+      "duration": 0.97,
+      "velocity": 73
+    },
+    {
+      "part": "violin",
+      "beat": 52,
+      "pitch": 78,
+      "duration": 0.97,
+      "velocity": 72
+    },
+    {
+      "part": "violin",
+      "beat": 53,
+      "pitch": 76,
+      "duration": 0.97,
+      "velocity": 80
+    },
+    {
+      "part": "violin",
+      "beat": 54,
+      "pitch": 78,
+      "duration": 1.455,
+      "velocity": 79
+    },
+    {
+      "part": "violin",
+      "beat": 55.5,
+      "pitch": 76,
+      "duration": 0.485,
+      "velocity": 78
+    },
+    {
+      "part": "violin",
+      "beat": 56.0,
+      "pitch": 73,
+      "duration": 0.97,
+      "velocity": 77
+    },
+    {
+      "part": "violin",
+      "beat": 57,
+      "pitch": 76,
+      "duration": 1.94,
+      "velocity": 76
+    },
+    {
+      "part": "violin",
+      "beat": 59,
+      "pitch": 73,
+      "duration": 0.97,
+      "velocity": 75
+    },
+    {
+      "part": "violin",
+      "beat": 60,
+      "pitch": 74,
+      "duration": 0.97,
+      "velocity": 74
+    },
+    {
+      "part": "violin",
+      "beat": 61,
+      "pitch": 78,
+      "duration": 0.97,
+      "velocity": 73
+    },
+    {
+      "part": "violin",
+      "beat": 62,
+      "pitch": 81,
+      "duration": 0.97,
+      "velocity": 72
+    },
+    {
+      "part": "violin",
+      "beat": 63,
+      "pitch": 78,
+      "duration": 1.455,
+      "velocity": 80
+    },
+    {
+      "part": "violin",
+      "beat": 64.5,
+      "pitch": 76,
+      "duration": 0.485,
+      "velocity": 79
+    },
+    {
+      "part": "violin",
+      "beat": 65.0,
+      "pitch": 73,
+      "duration": 0.97,
+      "velocity": 78
+    },
+    {
+      "part": "violin",
+      "beat": 66,
+      "pitch": 75,
+      "duration": 0.97,
+      "velocity": 77
+    },
+    {
+      "part": "violin",
+      "beat": 67,
+      "pitch": 73,
+      "duration": 0.97,
+      "velocity": 76
+    },
+    {
+      "part": "violin",
+      "beat": 68,
+      "pitch": 68,
+      "duration": 0.97,
+      "velocity": 75
+    },
+    {
+      "part": "violin",
+      "beat": 69,
+      "pitch": 72,
+      "duration": 1.94,
+      "velocity": 74
+    },
+    {
+      "part": "cello",
+      "beat": 72,
+      "pitch": 61,
+      "duration": 1.92,
+      "velocity": 67
+    },
+    {
+      "part": "cello",
+      "beat": 74,
+      "pitch": 68,
+      "duration": 0.96,
+      "velocity": 66
+    },
+    {
+      "part": "cello",
+      "beat": 75,
+      "pitch": 64,
+      "duration": 1.44,
+      "velocity": 74
+    },
+    {
+      "part": "cello",
+      "beat": 76.5,
+      "pitch": 63,
+      "duration": 0.48,
+      "velocity": 73
+    },
+    {
+      "part": "cello",
+      "beat": 77.0,
+      "pitch": 61,
+      "duration": 0.96,
+      "velocity": 72
+    },
+    {
+      "part": "cello",
+      "beat": 78,
+      "pitch": 62,
+      "duration": 1.92,
+      "velocity": 71
+    },
+    {
+      "part": "cello",
+      "beat": 80,
+      "pitch": 66,
+      "duration": 0.96,
+      "velocity": 70
+    },
+    {
+      "part": "cello",
+      "beat": 81,
+      "pitch": 63,
+      "duration": 0.96,
+      "velocity": 69
+    },
+    {
+      "part": "cello",
+      "beat": 82,
+      "pitch": 60,
+      "duration": 0.96,
+      "velocity": 68
+    },
+    {
+      "part": "cello",
+      "beat": 84,
+      "pitch": 64,
+      "duration": 1.44,
+      "velocity": 67
+    },
+    {
+      "part": "cello",
+      "beat": 85.5,
+      "pitch": 69,
+      "duration": 0.48,
+      "velocity": 66
+    },
+    {
+      "part": "cello",
+      "beat": 86.0,
+      "pitch": 73,
+      "duration": 0.96,
+      "velocity": 74
+    },
+    {
+      "part": "cello",
+      "beat": 87,
+      "pitch": 69,
+      "duration": 1.92,
+      "velocity": 73
+    },
+    {
+      "part": "cello",
+      "beat": 89,
+      "pitch": 66,
+      "duration": 0.96,
+      "velocity": 72
+    },
+    {
+      "part": "cello",
+      "beat": 90,
+      "pitch": 68,
+      "duration": 0.96,
+      "velocity": 71
+    },
+    {
+      "part": "cello",
+      "beat": 91,
+      "pitch": 73,
+      "duration": 0.96,
+      "velocity": 70
+    },
+    {
+      "part": "cello",
+      "beat": 92,
+      "pitch": 75,
+      "duration": 0.96,
+      "velocity": 69
+    },
+    {
+      "part": "cello",
+      "beat": 93,
+      "pitch": 72,
+      "duration": 1.92,
+      "velocity": 68
+    },
+    {
+      "part": "piano",
+      "beat": 73.0,
+      "pitch": 80,
+      "duration": 0.68,
+      "velocity": 43
+    },
+    {
+      "part": "piano",
+      "beat": 73.75,
+      "pitch": 76,
+      "duration": 0.68,
+      "velocity": 42
+    },
+    {
+      "part": "piano",
+      "beat": 79.0,
+      "pitch": 78,
+      "duration": 0.68,
+      "velocity": 50
+    },
+    {
+      "part": "piano",
+      "beat": 79.75,
+      "pitch": 74,
+      "duration": 0.68,
+      "velocity": 49
+    },
+    {
+      "part": "piano",
+      "beat": 85.0,
+      "pitch": 80,
+      "duration": 0.68,
+      "velocity": 48
+    },
+    {
+      "part": "piano",
+      "beat": 85.75,
+      "pitch": 76,
+      "duration": 0.68,
+      "velocity": 47
+    },
+    {
+      "part": "piano",
+      "beat": 91.0,
+      "pitch": 75,
+      "duration": 0.68,
+      "velocity": 46
+    },
+    {
+      "part": "piano",
+      "beat": 91.75,
+      "pitch": 73,
+      "duration": 0.68,
+      "velocity": 45
+    }
+  ],
+  "markers": [
+    [
+      0,
+      "A - Behind the sealed door"
+    ],
+    [
+      24,
+      "A2 - The listening stones"
+    ],
+    [
+      48,
+      "B - Voices remembered"
+    ],
+    [
+      72,
+      "A3 - The circle remains"
+    ]
+  ]
+}

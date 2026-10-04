@@ -1,0 +1,404 @@
+{
+  "character_id": "spindleback-threadwarden",
+  "format": "generated-frame-sprites",
+  "source": "source-sheet.png",
+  "atlas": "atlas.png",
+  "source_dimensions": [
+    1760,
+    2000
+  ],
+  "frame_canvas": [
+    440,
+    400
+  ],
+  "coordinate_system": "pixels, top-left, x right y down",
+  "anchor": [
+    220,
+    375
+  ],
+  "scale": "Native source pixels for main sheet; one constant downsample ratio for all four attack-repair strip poses where used; no per-frame fit-to-box scaling.",
+  "states": {
+    "idle": {
+      "frames": [
+        0,
+        1,
+        2,
+        3,
+        2,
+        1
+      ],
+      "durations": [
+        180,
+        180,
+        180,
+        180,
+        180,
+        180
+      ],
+      "loop": true,
+      "durations_ms": [
+        180,
+        180,
+        180,
+        180,
+        180,
+        180
+      ],
+      "duration_ms": 1080,
+      "transition": "idle"
+    },
+    "attack": {
+      "frames": [
+        4,
+        5,
+        6,
+        7,
+        0
+      ],
+      "durations": [
+        90,
+        70,
+        80,
+        110,
+        60
+      ],
+      "loop": false,
+      "events": [
+        {
+          "name": "impact",
+          "frame": 5,
+          "time_ms": 90
+        }
+      ],
+      "durations_ms": [
+        90,
+        70,
+        80,
+        110,
+        60
+      ],
+      "duration_ms": 410,
+      "transition": "idle"
+    },
+    "hit": {
+      "frames": [
+        8,
+        9,
+        0
+      ],
+      "durations": [
+        100,
+        140,
+        80
+      ],
+      "loop": false,
+      "durations_ms": [
+        100,
+        140,
+        80
+      ],
+      "duration_ms": 320,
+      "transition": "idle"
+    },
+    "wounded_idle": {
+      "frames": [
+        10,
+        11,
+        10
+      ],
+      "durations": [
+        350,
+        350,
+        350
+      ],
+      "loop": true,
+      "durations_ms": [
+        350,
+        350,
+        350
+      ],
+      "duration_ms": 1050,
+      "transition": "wounded_idle"
+    },
+    "die": {
+      "frames": [
+        12,
+        13,
+        14,
+        15
+      ],
+      "durations": [
+        150,
+        180,
+        190,
+        900
+      ],
+      "loop": false,
+      "transition": "hold_terminal",
+      "events": [
+        {
+          "name": "death_terminal",
+          "frame": 15,
+          "time_ms": 520
+        }
+      ],
+      "durations_ms": [
+        150,
+        180,
+        190,
+        900
+      ],
+      "duration_ms": 1420
+    },
+    "cast": {
+      "frames": [
+        16,
+        17,
+        18,
+        19,
+        0
+      ],
+      "durations": [
+        140,
+        140,
+        180,
+        140,
+        80
+      ],
+      "loop": false,
+      "events": [
+        {
+          "name": "release",
+          "frame": 18,
+          "time_ms": 280
+        }
+      ],
+      "durations_ms": [
+        140,
+        140,
+        180,
+        140,
+        80
+      ],
+      "duration_ms": 680,
+      "transition": "idle"
+    }
+  },
+  "frames": [
+    {
+      "index": 0,
+      "file": "frames/00.png",
+      "rect": [
+        0,
+        0,
+        440,
+        400
+      ]
+    },
+    {
+      "index": 1,
+      "file": "frames/01.png",
+      "rect": [
+        440,
+        0,
+        440,
+        400
+      ]
+    },
+    {
+      "index": 2,
+      "file": "frames/02.png",
+      "rect": [
+        880,
+        0,
+        440,
+        400
+      ]
+    },
+    {
+      "index": 3,
+      "file": "frames/03.png",
+      "rect": [
+        1320,
+        0,
+        440,
+        400
+      ]
+    },
+    {
+      "index": 4,
+      "file": "frames/04.png",
+      "rect": [
+        0,
+        400,
+        440,
+        400
+      ]
+    },
+    {
+      "index": 5,
+      "file": "frames/05.png",
+      "rect": [
+        440,
+        400,
+        440,
+        400
+      ]
+    },
+    {
+      "index": 6,
+      "file": "frames/06.png",
+      "rect": [
+        880,
+        400,
+        440,
+        400
+      ]
+    },
+    {
+      "index": 7,
+      "file": "frames/07.png",
+      "rect": [
+        1320,
+        400,
+        440,
+        400
+      ]
+    },
+    {
+      "index": 8,
+      "file": "frames/08.png",
+      "rect": [
+        0,
+        800,
+        440,
+        400
+      ]
+    },
+    {
+      "index": 9,
+      "file": "frames/09.png",
+      "rect": [
+        440,
+        800,
+        440,
+        400
+      ]
+    },
+    {
+      "index": 10,
+      "file": "frames/10.png",
+      "rect": [
+        880,
+        800,
+        440,
+        400
+      ]
+    },
+    {
+      "index": 11,
+      "file": "frames/11.png",
+      "rect": [
+        1320,
+        800,
+        440,
+        400
+      ]
+    },
+    {
+      "index": 12,
+      "file": "frames/12.png",
+      "rect": [
+        0,
+        1200,
+        440,
+        400
+      ]
+    },
+    {
+      "index": 13,
+      "file": "frames/13.png",
+      "rect": [
+        440,
+        1200,
+        440,
+        400
+      ]
+    },
+    {
+      "index": 14,
+      "file": "frames/14.png",
+      "rect": [
+        880,
+        1200,
+        440,
+        400
+      ]
+    },
+    {
+      "index": 15,
+      "file": "frames/15.png",
+      "rect": [
+        1320,
+        1200,
+        440,
+        400
+      ]
+    },
+    {
+      "index": 16,
+      "file": "frames/16.png",
+      "rect": [
+        0,
+        1600,
+        440,
+        400
+      ]
+    },
+    {
+      "index": 17,
+      "file": "frames/17.png",
+      "rect": [
+        440,
+        1600,
+        440,
+        400
+      ]
+    },
+    {
+      "index": 18,
+      "file": "frames/18.png",
+      "rect": [
+        880,
+        1600,
+        440,
+        400
+      ]
+    },
+    {
+      "index": 19,
+      "file": "frames/19.png",
+      "rect": [
+        1320,
+        1600,
+        440,
+        400
+      ]
+    }
+  ],
+  "limitations": [
+    "Generated animation review assets, not a production-ready rig.",
+    "Per-frame native artwork approximately 280-320 pixels high; source sheet has HD dimensions, individual frames do not.",
+    "Low-frame-count motion and hand/cloth/mark detail drift need temporal art review before game integration.",
+    "Technical extraction isolates disconnected sprites, preserves pose pixels, aligns ground, and uniformly downsamples separate attack repair strip. No procedural artwork or whole-image-motion substitute.",
+    "Raised/tamed forms excluded by direct approved-base scope."
+  ],
+  "status": "animation_review_pending",
+  "style_reference": {
+    "path": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\heroes\\references\\runesmith\\runesmith-base-r1.png",
+    "sha256": "769d160f774c58e54b619db419c88e693a9bcd0f9501aeceaece05f5325e5f48",
+    "evidence": "user-chat-2026-10-01-approve-existing-runelord"
+  },
+  "source_dimensions_note": "Normalized technical atlas; original generated sheet preserved as generated-original-sheet.png, extraction provenance in extraction.json.",
+  "root_displacement": "Ground y375 aligned. Lateral joint lunges are baked into poses; renderer must not auto-trim each frame."
+}

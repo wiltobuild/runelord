@@ -1,0 +1,85 @@
+{
+  "character_id": "siltglass-colony",
+  "display_name": "Siltglass Colony",
+  "status": "base_pending",
+  "revision": "base-r1",
+  "asset": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\concepts\\novel-20-2026-10-02\\siltglass-colony\\base-r1.png",
+  "sha256": "2e76ab58437a19098763fb533bc933c432161c73320af74f6d0a1d8116f55fc4",
+  "dimensions": [
+    1254,
+    1254
+  ],
+  "alpha": {
+    "extrema": [
+      0,
+      255
+    ],
+    "transparent_pixels": 852401,
+    "verified_on_light_and_dark": true
+  },
+  "role": "Mineral organism; elite defender",
+  "size_class": "large",
+  "signature_action_proposed": "Braces three legs and fans its plates into a frontal Guard barrier; slams leading plate at front target.",
+  "novelty": "Unlike humanoid constructs: fan crown on a three-point mineral tripod.",
+  "style_references": [
+    {
+      "path": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\heroes\\references\\ranger\\ranger-base-r1.png",
+      "sha256": "9cd6ae4be65920528b211c20d2a1c12f68183b6bb6bb9ca6095b2ea23eb76912",
+      "decision": {
+        "status": "Approved",
+        "at": "2026-10-02T03:44:25.533Z",
+        "evidenceId": "user-chat-2026-10-01-approve-existing-runelord",
+        "paths": [
+          "C:\\Users\\wilsh\\Projects\\runelord\\assets\\heroes\\references\\ranger\\ranger-base-r1.png"
+        ]
+      },
+      "purpose": "style only"
+    },
+    {
+      "path": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\characters\\goblin-raider\\goblin-base-b1.png",
+      "sha256": "b038cdc7f0761f797b631454d2ce67d93843fa5350d79731dbfeca0a559a91bf",
+      "decision": {
+        "status": "Approved",
+        "at": "2026-10-02T03:44:25.533Z",
+        "evidenceId": "user-chat-2026-10-01-approve-existing-runelord",
+        "paths": [
+          "C:\\Users\\wilsh\\Documents\\Codex\\2026-10-01\\r\\work\\runelord\\assets\\characters\\goblin-raider\\goblin-base-b1.png"
+        ]
+      },
+      "purpose": "style only"
+    }
+  ],
+  "construction": {
+    "status": "proposed only; flattened raster, no separated layers or rig",
+    "rig_family": "bespoke tripod",
+    "parts": "Rigid central mass, overlapping plate hinges, three two-segment legs and planted foot pivots; amber seam separate."
+  },
+  "required_states_proposed": [
+    "idle",
+    "attack",
+    "hit",
+    "wounded_idle",
+    "die"
+  ],
+  "conditional_states": {
+    "cast": "support release for Pleatcap; optional otherwise",
+    "guard": "required Siltglass; optional otherwise",
+    "spawn": "required Saltwake levitation entry; optional otherwise",
+    "victory": "not required for enemy concept",
+    "raised": "not applicable; botanical/fungal/mineral proposal excludes conventional corpses",
+    "tamed": "not applicable; not normal beasts"
+  },
+  "gameplay_status": "Concept proposal only, not implemented or balanced",
+  "qa": {
+    "full_size": "inspected",
+    "light_dark": "passed",
+    "small_scale": "96px character-height inspection passed on light and dark backgrounds"
+  },
+  "limitations": [
+    "Seven visible plate masses rather than the five requested; facing is shallow/front-biased.",
+    "No variants, animation, rig, or game integration created.",
+    "New artwork is pending explicit user approval."
+  ],
+  "generation_mode": "builtin image_gen",
+  "generation_prompt": "Use case: stylized-concept. Create ONE original Runelord full body base concept: Siltglass Colony, a hostile mineral organism. A squat asymmetrical cluster of FIVE broad smoky-quartz plates forming a tilted fan-shaped torso, supported on THREE thick articulated clay root legs, with a single narrow amber sensory seam under the central plate. No humanoid face, no arms, no armor, no equipment. Distinct triangle ground-contact footprint. Full silhouette neutral combat pose facing left shallow three-quarter, clean separation of all three legs, generous transparent margins. Use the supplied approved Runelord artwork as a reference for simplified 2D shapes and cel-shaded rendering ONLY, not identity. Make the new character grittier and more serious: tough stylized silhouette, muted colors with selective accents, a few bold signs of wear. Broad clean color shapes, crisp edges and hard-edged cel shadows. Slightly more designed detail, simple surfaces. Palette slate violet, ochre clay, amber seam. Avoid cute mascot expressions, realistic anatomy, painterly rendering, dense grunge, 3D/PBR, gradients, scenery, text, pedestals, shadows outside subject. Genuine transparent alpha. At least 1024 long edge."
+}

@@ -1,0 +1,72 @@
+{
+  "contract_version": 2,
+  "character_id": "spindleback-threadwarden",
+  "display_name": "Spindleback Threadwarden",
+  "status": "base_pending",
+  "revision": "base-r1",
+  "approval": "Pending approval",
+  "asset": "base-r1.png",
+  "sha256": "9a44b73d4c53b095ae50c8cd0f272c991c0714e51ab4cfbb3f2e687f4c21e3ce",
+  "dimensions": [
+    1312,
+    1199
+  ],
+  "alpha": {
+    "format": "Format32bppArgb",
+    "corner_alpha": 0,
+    "verified": "RGBA with transparent corners; visually inspected composited previews"
+  },
+  "generation_mode": "built-in image_gen",
+  "source": "C:\\Users\\wilsh\\.codex\\generated_images\\01a0fae9-7669-74d1-8afc-28dadb1a33e0\\exec-667447a4-fa59-452a-b6d1-32889e54aea1.png",
+  "novelty": "Four humanlike arms, elderly face, giant upright oval loom; distinct from insect fauna and existing humanoid casters.",
+  "role": "Elder silkfolk artisan; proposed elite controller, cord snare targeting weakest",
+  "style_reference": {
+    "approval_evidence": "user-chat-2026-10-01-approve-existing-runelord",
+    "sha256": "769d160f774c58e54b619db419c88e693a9bcd0f9501aeceaece05f5325e5f48",
+    "path": "C:/Users/wilsh/Projects/runelord/assets/heroes/references/runesmith/runesmith-base-r1.png"
+  },
+  "construction": {
+    "pivots": "proposed natural shoulders, elbows, wrists, hips, knees, ankles, neck; root pelvis; exact pixel coordinates unresolved",
+    "status": "proposed only; flattened raster, no separated layers or rig",
+    "rig_family": "humanoid bespoke",
+    "parts": "Pelvis/torso/head, four independently articulated upper/lower arms and hands, two upper/lower legs/feet, rigid oval back loom with shoulder anchors, four loom cords, separate shuttle and two short loose cords."
+  },
+  "animation_plan": {
+    "timing": "Ordinary action about 350ms; not implemented",
+    "required": [
+      "idle",
+      "attack",
+      "hit",
+      "wounded_idle",
+      "die"
+    ],
+    "conditional": "Guard and cast only if adopted gameplay kit requires; summon/victory not assigned",
+    "transform": "Not applicable",
+    "raised": "Potentially applicable because living body; all required motions need separate inventory after design approval",
+    "signature": "Lower arms pull cords while upper arms drive shuttle; restrained cord snare release.",
+    "tamed": "Not applicable: intelligent humanoid, not normal beast"
+  },
+  "geometry": {
+    "coordinates": "pixels, top-left, x right, y down",
+    "facing": "left, shallow three-quarter",
+    "ground": "Feet planted; actual pixel anchor and motion bounds unresolved"
+  },
+  "limitations": [
+    "Unapproved concept only; no variants generated",
+    "No layers, rig, animations or runtime-ready manifest",
+    "Gameplay role and targeting are proposals, not catalog changes"
+  ],
+  "qa": {
+    "qa_sheet": "C:/Users/wilsh/Documents/Codex/2026-10-02/use/work/concepts-c/review.png",
+    "full_size": "visually inspected",
+    "border_nontransparent_pixels": {
+      "left": 0,
+      "bottom": 0,
+      "top": 0,
+      "right": 0
+    },
+    "thumbnail_96px": "visually inspected, distinctive silhouette and role props readable",
+    "alpha_composite": "clean background verified on light QA sheet",
+    "border_note": "No opaque silhouette pixels touch edges. Some masters retain negligible alpha 1-3/255 border residue, preserved without modification."
+  }
+}

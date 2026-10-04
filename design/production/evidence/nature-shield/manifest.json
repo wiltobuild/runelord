@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "name": "Thornroot Ward",
+  "revision": "r1",
+  "status": "Pending user approval",
+  "method": "Native editable Canvas paths matching existing ward timing contract; no raster generation.",
+  "authorization": "User requested approval preview before any live effect swap.",
+  "liveIntegration": false,
+  "sources": [
+    {
+      "path": "apps/web/src/natureWardEffect.ts",
+      "sha256": "dbe23e32d560094ae5674610ffab1ea86fd3801adced8aebe6ba33c6a5e6e229"
+    },
+    {
+      "path": "apps/web/src/NatureShieldReview.tsx",
+      "sha256": "9a377843dbed59fee0d5327a07bc7be0427cd7ce1b8801e803d026a514dc14d8"
+    },
+    {
+      "path": "apps/web/src/natureShieldReview.css",
+      "sha256": "76ef8da4a8785f6d076dfc9fa7cf49faf57f23df3ee865171362d685db0b95b2"
+    }
+  ],
+  "deliverables": [
+    {
+      "path": "C:/Users/wilsh/Documents/Codex/2026-10-04/ok-i-want-you-to-make-2/outputs/nature-shield/thornroot-ward-preview.png",
+      "sha256": "60ee35028ee6629ae3a29ecbfb6fdc8619bea32193f9f3f72253f0dbbb88b44b",
+      "bytes": 736021
+    },
+    {
+      "path": "C:/Users/wilsh/Documents/Codex/2026-10-04/ok-i-want-you-to-make-2/outputs/nature-shield/thornroot-ward-preview.gif",
+      "sha256": "868a39e3af074978a410baee3a3f199882511a3e24d6406914200003a218c63b",
+      "bytes": 900201
+    },
+    {
+      "path": "C:/Users/wilsh/Documents/Codex/2026-10-04/ok-i-want-you-to-make-2/outputs/nature-shield/thornroot-ward-preview.webm",
+      "sha256": "4515149667cef1fe796bfd80ab6da0c823e7430ba724437e2cfb8c66813ec518",
+      "bytes": 185860
+    }
+  ],
+  "previewRoute": "/nature-shield-review",
+  "timing": {
+    "releaseMs": 450,
+    "effectDurationMs": 3450,
+    "charge": "existing ward charge envelope",
+    "growMs": 380,
+    "filamentMs": 500,
+    "fadeMs": 850,
+    "pulse": "0.86+0.14*sin(after*0.005)",
+    "loopMs": 4000
+  },
+  "capture": {
+    "frames": 80,
+    "fps": 20,
+    "size": [
+      960,
+      540
+    ],
+    "deterministic": "window.__natureShieldReview.render(timeMs)",
+    "retainedFrames": "work/production/nature-shield/frames"
+  },
+  "accessibility": "Reduced-motion users start at a still full shield; replay explicitly opts into animation; Pause at full shield button freezes playback.",
+  "gallery": {
+    "root": "C:/Users/wilsh/Projects/runelord/assets/approvals/inbox/nature-shield/r1",
+    "url": "http://localhost:4317",
+    "status": "Pending approval",
+    "ledgerUnchanged": true
+  },
+  "checks": {
+    "typescript": "passed",
+    "visual": "Builder inspected still; Producer separately reviewed exported PNG. Leaf shell, branching veins and green/mint pollen are readable; no face, horns or demonic symbols.",
+    "loop": "Full 4-second charge/ward/fade/rest sequence encoded to GIF and WebM."
+  }
+}

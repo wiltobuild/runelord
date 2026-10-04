@@ -1,0 +1,14 @@
+✔ linear roguelike keeps nine infernal fights and appends twelve forest fights without campaign state (1.5278ms)
+✔ forest roster uses only selected animated creatures and excludes fire, undead, standard and infernal summons (0.3445ms)
+✔ crown loot opens the third shop then forest with permanent progression intact and crown effects active (2.1331ms)
+✔ forest intents retain zero, one and five-unit targeting, Defender and unavoidable sweep (4.1955ms)
+✔ real schema6 history crosses realms and preserves forest purchases, upgrades and seeded next combat (334.2064ms)
+✔ full legal run replays all twenty-one victories, seven shops, and final victory exactly (823.9252ms)
+ℹ tests 6
+ℹ suites 0
+ℹ pass 6
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 1354.224

@@ -1,0 +1,84 @@
+{
+  "contract_version": 2,
+  "character_id": "tithe-mantis",
+  "display_name": "Tithe Mantis",
+  "species": "Praying mantis",
+  "role": "single-target striker",
+  "size_class": "medium",
+  "rig_family": "arthropod",
+  "signature_action": "Folded blade forearms open then snap shut",
+  "novelty": "Tall triangular insect with open blade arms rather than humanoid knight",
+  "style_references": [
+    {
+      "path": "C:/Users/wilsh/Projects/runelord/assets/heroes/references/ranger/ranger-base-r1.png",
+      "sha256": "9cd6ae4be65920528b211c20d2a1c12f68183b6bb6bb9ca6095b2ea23eb76912",
+      "evidence_id": "user-chat-2026-10-01-approve-existing-runelord",
+      "role": "style only"
+    },
+    {
+      "path": "C:/Users/wilsh/Projects/runelord/assets/characters/wolf-rider-goblins/base-b1.png",
+      "sha256": "4acf5ae1be00e3095d575a6486672011325f266ada1a88204cf6b51539fb48ad",
+      "evidence_id": "user-chat-2026-10-01-approve-existing-runelord",
+      "role": "style only"
+    }
+  ],
+  "base": {
+    "revision": "base-r1",
+    "asset": "base-r1.png",
+    "approval": "Pending approval",
+    "dimensions": [
+      1024,
+      1536
+    ],
+    "sha256": "f9236461dbacf77f928730b4b728a17d6406d10575bebd2052e1cda2776bcabe"
+  },
+  "construction": {
+    "status": "proposed only, no separated layers",
+    "parts": "root thorax; head swivel; abdomen hinge; 4 walking leg chains; 2 blade-arm hinges; bounded antennae"
+  },
+  "geometry": {
+    "facing": "left",
+    "view": "shallow three-quarter",
+    "motion_canvas": "unresolved"
+  },
+  "gameplay": {
+    "proposal_only": true,
+    "tier": "normal",
+    "corpse": {
+      "raisable": true
+    },
+    "tame": {
+      "tameable": true
+    },
+    "forms": "Raised and tamed versions may follow explicit base and variant approvals; not generated."
+  },
+  "animations": {
+    "required": [
+      "idle",
+      "attack",
+      "hit",
+      "wounded_idle",
+      "die"
+    ],
+    "additional": [],
+    "status": "not generated"
+  },
+  "qa": {
+    "full_resolution": "visually inspected",
+    "at_96px": "inspected on white and dark backgrounds; silhouettes distinct",
+    "transparency": "RGBA with transparent background verified by compositing",
+    "alpha_range": [
+      0,
+      254
+    ]
+  },
+  "limitations": [
+    "Thin legs and antennae need deliberate small-scale animation handling.",
+    "Concept only, not a rig or completed animation. No variants generated."
+  ],
+  "generation": {
+    "mode": "built-in image_gen",
+    "prompt_file": "prompt.txt"
+  },
+  "status": "base_pending"
+}

@@ -51,6 +51,7 @@ for (const [id, source] of Object.entries({
   forge:
     "assets/environments/cinderforge-approach/r1/cinderforge-approach-r1.png",
   forest: "assets/environments/thornroot-crossing/r1/thornroot-crossing-r1.png",
+  "forest-heart": "assets/environments/thornroot-heart/r1/thornroot-heart-r1.png",
   arena:
     "assets/environments/cinderforge-caldera/r1/cinderforge-caldera-r1.png",
   goblin: "assets/characters/cinderhook-marauder/variants-nine-2026-10-02/v01-cleaver-bruiser-r1.png",
@@ -64,7 +65,7 @@ for (const [id, source] of Object.entries({
   manifest.images[id] = await pack(
     source,
     `images/${id}.webp`,
-    ["forge", "forest", "arena", "demon-throne"].includes(id) ? 1672 : 850,
+    ["forge", "forest", "forest-heart", "arena", "demon-throne"].includes(id) ? 1672 : 850,
   );
 const catalog = JSON.parse(
   fs.readFileSync("packages/content/warlock-catalog.json", "utf8"),
@@ -136,6 +137,44 @@ for (const [id, folder, variant] of [
     anchor: source.anchor || source.ground_anchor,
   };
 }
+// Existing novel-20 forest cast. Fixed source canvases and authored state timings
+// are retained; the user explicitly requested reuse of these pending animations.
+// r3 Witness and r2 Colony are the source's reviewed packing repairs.
+const forestCast = [
+  ["cairnback-hermit", "r1"], ["cairnwheel-witness", "r3"],
+  ["gallows-orchard", "r1"], ["inkvein-adjudicator", "r1"],
+  ["ironfan-isopod", "r1"], ["pleatcap-matriarch", "r1"],
+  ["reedstep-ferryman", "r1"], ["siltglass-colony", "r2"],
+  ["spindleback-threadwarden", "r1"], ["tithe-mantis", "r1"],
+];
+for (const [id, revision] of forestCast) {
+  const directory = `assets/characters/${id}/animation/${revision}`;
+  const source = JSON.parse(fs.readFileSync(`${directory}/manifest.json`, "utf8"));
+  const size = source.frame_canvas ?? source.canvas ?? source.frame_size;
+  const files = new Map(), states = {};
+  for (const [name, clip] of Object.entries(source.states)) {
+    const durations = clip.durations_ms ?? (Array.isArray(clip.duration_ms) ? clip.duration_ms : clip.durations);
+    let time = 0;
+    const frames = [];
+    for (let i = 0; i < clip.frames.length; i++) {
+      const key = clip.frames[i];
+      const file = typeof key === "number" ? source.frames[key].file : key;
+      if (!files.has(file)) files.set(file, await pack(`${directory}/${file}`, `actors/${id}/${revision}/${file.replace(/\.png$/, ".webp")}`, size[0], true));
+      frames.push({ time, src: files.get(file) });
+      if (!(durations[i] > 0)) throw Error(`Invalid forest timing: ${id}/${name}/${i}`);
+      time += durations[i];
+    }
+    const event = clip.events?.find(event => event.name === "impact");
+    const impact = clip.event?.impact_ms ?? event?.time_ms ?? (event?.frame != null ? frames[event.frame]?.time : null);
+    states[name] = { frames, duration: time, loop: name === "die" ? false : clip.loop, impact };
+  }
+  manifest.actors[id] = { states, size, anchor: source.anchor ?? source.ground_anchor };
+  manifest.images[id] = states.idle.frames[0].src;
+}
+for (const [id, legacy] of [["briarjaw-ambusher", "briarjaw"], ["tollbell-penitent", "tollbell"]]) {
+  manifest.actors[id] = manifest.actors[legacy];
+  manifest.images[id] = manifest.actors[legacy].states.idle.frames[0].src;
+}
 // Fire goblins replace the opening enemies; keep IDs compatible with existing saves.
 for (const [id, variant] of [["goblin", "v01-cleaver-bruiser"], ["skirmisher", "v07-ashknife-cutthroat"],
   ["spear-guard", "v02-ash-spear-guard"], ["twinaxe-reaver", "v03-twinaxe-reaver"],
@@ -203,6 +242,15 @@ manifest.integration = {
   authorization: "User explicitly authorized the approved-for-integration Abyssal Seraph 32-frame package to replace the Warlock visual model. Ledger status is preserved and not relabeled approved.",
   hero: { revision: original.revision, manifest: sourceEvidence(`${root}/manifest.json`), animation: sourceEvidence(`${root}/animation.json`), master: sourceEvidence(`${root}/source/master.png`), frameCount: frameIndex.length, stateCount: Object.keys(original.states).length, facing: "right" },
   summons: {},
+  forest: {
+    authorization: "User explicitly requested existing animated forest scenes and pictured novel-20 enemies for the next realm. Pending ledger states remain pending; no artwork approval is implied.",
+    restoredSourceRevision: "d00c303",
+    cast: forestCast.map(([id, revision]) => ({ id, revision, manifest: sourceEvidence(`assets/characters/${id}/animation/${revision}/manifest.json`) })),
+    existingAliases: { "briarjaw-ambusher": "briarjaw", "tollbell-penitent": "tollbell" },
+    sceneConfigs: ["assets/environments/thornroot-crossing/animation/2b941d161d90/config.json", "assets/environments/thornroot-heart/animation/8d272d0f7645/config.json"].map(sourceEvidence),
+    excluded: ["suture-standard", "fire monsters", "undead"],
+    limitations: "Existing generated whole-character key poses retain source temporal/detail limitations. No new animation or art generated.",
+  },
 };
 const heroFiles = [];
 for (const f of frameIndex) {
@@ -309,6 +357,20 @@ const demonMusic = "assets/audio/music/demon-lord-r1/demon-lord.wav";
 fs.copyFileSync(demonMusic, path.join(out, "music/demon-lord.wav"));
 manifest.music["demon-boss"] = {url:"/game-assets/music/demon-lord.wav",title:"Crown of the Ninth Pit",start:0,end:90};
 manifest.provenance.push({source:demonMusic,sha256:hash(demonMusic),output:"music/demon-lord.wav",status:"User requested original boss score arrangement"});
+// Dedicated existing Lanterns & Iron forest/ritual cues, never infernal aliases.
+const forestMusicRoot = "assets/audio/music/forest-r1";
+const forestTracks = JSON.parse(fs.readFileSync(`${forestMusicRoot}/loop_manifest.json`, "utf8"));
+const forestDerivatives = JSON.parse(fs.readFileSync(`${forestMusicRoot}/runtime-derivatives.json`, "utf8"));
+for (const [id, slug] of [["forest-explore", "04_lanterns_in_the_hollow"], ["forest-boss", "06_the_silent_conclave"]]) {
+  const track = forestTracks.find(track => track.slug === slug);
+  const source = `${forestMusicRoot}/${slug}/${slug}.ogg`;
+  const derivative = forestDerivatives.records.find(record => record.output === source);
+  if (!derivative || hash(source) !== derivative.outputSha256 || hash(derivative.source) !== derivative.sourceSha256) throw Error(`Stale forest audio derivative: ${slug}`);
+  const output = `music/${slug}.ogg`;
+  fs.copyFileSync(source, path.join(out, output));
+  manifest.music[id] = { url: `/game-assets/${output}`, title: track.title, start: track.loop_start_sample / track.sample_rate, end: track.loop_end_sample_exclusive / track.sample_rate };
+  manifest.provenance.push({ source, sha256: hash(source), output, outputSha256: hash(path.join(out, output)), master: derivative.source, masterSha256: derivative.sourceSha256, transform: derivative.settings, status: "Existing Runelord score; user-requested forest integration" });
+}
 fs.mkdirSync("packages/assets", { recursive: true });
 fs.writeFileSync(
   "packages/assets/manifest.json",
@@ -317,5 +379,5 @@ fs.writeFileSync(
 const { provenance, integration, ...runtime } = manifest;
 fs.writeFileSync(path.join(out, "manifest.json"), JSON.stringify(runtime));
 console.log(
-  `Packed ${manifest.provenance.length} assets from existing collection; ${Object.keys(manifest.cards).length} cards, ${Object.keys(manifest.animations).length} Warlock states, ${Object.keys(manifest.actors).length} enemy animation sets, 3 original scores. Original files unchanged.`,
+  `Packed ${manifest.provenance.length} assets from existing collection; ${Object.keys(manifest.cards).length} cards, ${Object.keys(manifest.animations).length} Warlock states, ${Object.keys(manifest.actors).length} actor animation sets, ${Object.keys(manifest.music).length} original scores. Original files unchanged.`,
 );

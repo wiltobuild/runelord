@@ -1,0 +1,240 @@
+{
+  "revision": "r2",
+  "authorization": "User approved nature spell design and asked to correct crab fit. This authorizes integration after fit repair without a new approval gate.",
+  "galleryDecision": "New r2 bytes remain Pending approval in gallery; ledger not relabeled.",
+  "sources": [
+    {
+      "path": "apps/web/src/natureWardEffect.ts",
+      "sha256": "6c9ad69dfdfa56279dcb6979208bc3341fb5e43d8b7d4238f63887fba93a55c2"
+    },
+    {
+      "path": "apps/web/src/natureWardGeometry.ts",
+      "sha256": "8cb95737e83832116a210c7ed8a5396ee67ff413c2e34319fed86bd80bedafb2"
+    },
+    {
+      "path": "apps/web/src/NatureShieldReview.tsx",
+      "sha256": "2d17a03a7276ef496289f3945cd7be744edd6ef24d0d40a0ce6640372f103813"
+    }
+  ],
+  "fit": "Per-actor normalized first-idle opaque bounds measured at alpha>=32; body-relative height/width/center; DOM contain-fit and stage zoom handled once. No index-dependent size.",
+  "mushroomComparison": {
+    "crop": {
+      "left": 580,
+      "top": 130,
+      "width": 240,
+      "height": 290
+    },
+    "changedChannels": 0,
+    "maxChannelDelta": 0,
+    "note": "Accepted mushroom placement and dimensions preserved."
+  },
+  "crab": {
+    "old": {
+      "center": [
+        566,
+        360
+      ],
+      "width": 142.5,
+      "height": 268.75
+    },
+    "corrected": {
+      "center": [
+        515.75,
+        400.885
+      ],
+      "width": 72.64,
+      "height": 118.04
+    }
+  },
+  "sourceAlphaBounds": {
+    "cairnback-hermit": {
+      "source": "/game-assets/actors/cairnback-hermit/r1/idle/00.webp",
+      "sourceSize": [
+        448,
+        448
+      ],
+      "bounds": [
+        0.25,
+        0.4017857142857143,
+        0.7834821428571429,
+        0.9084821428571429
+      ],
+      "sha256": "438205be2869b5bb56e9e7c041b0f928a224519446a5617a5f09c48845ae08c3"
+    },
+    "cairnwheel-witness": {
+      "source": "/game-assets/actors/cairnwheel-witness/r3/frames/00.webp",
+      "sourceSize": [
+        512,
+        312
+      ],
+      "bounds": [
+        0.2734375,
+        0.22435897435897437,
+        0.814453125,
+        0.7948717948717948
+      ],
+      "sha256": "e5570c295d1c7b66753460ede7247aefc8d8ce42214725b7ebcc1b39c33954a0"
+    },
+    "gallows-orchard": {
+      "source": "/game-assets/actors/gallows-orchard/r1/frames/00.webp",
+      "sourceSize": [
+        369,
+        362
+      ],
+      "bounds": [
+        0.14905149051490515,
+        0.17955801104972377,
+        0.8590785907859079,
+        0.9337016574585635
+      ],
+      "sha256": "986aae38de0d81231a41f2cc71f528b3d8aed46d6a321976bf9368ea719154a0"
+    },
+    "inkvein-adjudicator": {
+      "source": "/game-assets/actors/inkvein-adjudicator/r1/frames/00.webp",
+      "sourceSize": [
+        440,
+        400
+      ],
+      "bounds": [
+        0.1431818181818182,
+        0.225,
+        0.8568181818181818,
+        0.9325
+      ],
+      "sha256": "e7a9f173014158164abfa1cf4b51cbb7e15b580b0a3cf7e2c5927c03ae152ff2"
+    },
+    "ironfan-isopod": {
+      "source": "/game-assets/actors/ironfan-isopod/r1/idle/00.webp",
+      "sourceSize": [
+        448,
+        448
+      ],
+      "bounds": [
+        0.23883928571428573,
+        0.6160714285714286,
+        0.7924107142857143,
+        0.9151785714285714
+      ],
+      "sha256": "c6a40e20302d0fb15088c2b81c33d9abdc32629aef35f592558f1db96455c710"
+    },
+    "pleatcap-matriarch": {
+      "source": "/game-assets/actors/pleatcap-matriarch/r1/frames/00.webp",
+      "sourceSize": [
+        362,
+        373
+      ],
+      "bounds": [
+        0.15469613259668508,
+        0.1447721179624665,
+        0.8701657458563536,
+        0.935656836461126
+      ],
+      "sha256": "83c1129a59332acbfef6d1fc33938ed9512b6ddf9c655bd26516b9239aadc086"
+    },
+    "reedstep-ferryman": {
+      "source": "/game-assets/actors/reedstep-ferryman/r1/frames/00.webp",
+      "sourceSize": [
+        440,
+        400
+      ],
+      "bounds": [
+        0.21136363636363636,
+        0.19,
+        0.875,
+        0.9325
+      ],
+      "sha256": "adaa400412f45c7f23163c2d8ed963d6cc9a6f42c9f42c587e1c714c07ce7f9b"
+    },
+    "siltglass-colony": {
+      "source": "/game-assets/actors/siltglass-colony/r2/frames/00.webp",
+      "sourceSize": [
+        376,
+        398
+      ],
+      "bounds": [
+        0.17553191489361702,
+        0.3015075376884422,
+        0.8723404255319149,
+        0.9396984924623115
+      ],
+      "sha256": "510210cd579eee049af61521964c04265135d20c79a008e78ea76911d3c2c7a9"
+    },
+    "spindleback-threadwarden": {
+      "source": "/game-assets/actors/spindleback-threadwarden/r1/frames/00.webp",
+      "sourceSize": [
+        440,
+        400
+      ],
+      "bounds": [
+        0.2159090909090909,
+        0.1825,
+        0.7363636363636363,
+        0.9375
+      ],
+      "sha256": "89e797a12604a95a266abbb3bb1f95532fe9bad725fdc912902c763db75c6201"
+    },
+    "tithe-mantis": {
+      "source": "/game-assets/actors/tithe-mantis/r1/idle/00.webp",
+      "sourceSize": [
+        448,
+        448
+      ],
+      "bounds": [
+        0.27901785714285715,
+        0.2611607142857143,
+        0.7611607142857143,
+        0.9084821428571429
+      ],
+      "sha256": "a8c4af4dd7e312f232ba5cf608680beaeea3da3d85b8ae61d20a9927bb4b7608"
+    },
+    "briarjaw-ambusher": {
+      "source": "/game-assets/actors/briarjaw/0.webp",
+      "sourceSize": [
+        370,
+        362
+      ],
+      "bounds": [
+        0.1918918918918919,
+        0.3259668508287293,
+        0.8756756756756757,
+        0.9337016574585635
+      ],
+      "sha256": "ef5b7d20900afe3cb1413ca577b5f8207a1f21982bd53bf1b4d3bf18978a0c24"
+    },
+    "tollbell-penitent": {
+      "source": "/game-assets/actors/tollbell/0.webp",
+      "sourceSize": [
+        376,
+        268
+      ],
+      "bounds": [
+        0.2047872340425532,
+        0.20522388059701493,
+        0.7872340425531915,
+        0.9104477611940298
+      ],
+      "sha256": "5653a9c507cc1577eed29988a95ddc6c4f8201f2b8c8ffe133d5290fe3636d9d"
+    }
+  },
+  "deliverables": [
+    {
+      "path": "C:/Users/wilsh/Documents/Codex/2026-10-04/ok-i-want-you-to-make-2/outputs/nature-shield/thornroot-ward-r2.png",
+      "sha256": "6bf0506a5f853f86e16145bbe456cedd40a8fdbba524e7dd28dc5af55ab30c57"
+    },
+    {
+      "path": "C:/Users/wilsh/Documents/Codex/2026-10-04/ok-i-want-you-to-make-2/outputs/nature-shield/thornroot-ward-r2.gif",
+      "sha256": "ac3b8c58a4a650681916aa41864efe5418791fa8e89233d9edbf5215d542d372"
+    },
+    {
+      "path": "C:/Users/wilsh/Documents/Codex/2026-10-04/ok-i-want-you-to-make-2/outputs/nature-shield/thornroot-ward-r2.webm",
+      "sha256": "30f43baf888397fd6794bd8e5b27112bb7b69e9fff019e001d5c2d2b27f3f1ac"
+    }
+  ],
+  "timing": "Unchanged 450ms charge/release; 380ms grow; 500ms filament; 850ms final fade; 3450ms total effect; 4s review loop.",
+  "checks": [
+    "TypeScript passed",
+    "Builder inspected r2 still",
+    "80 deterministic frames encoded at20fps into GIF/WebM"
+  ],
+  "independentReview": "Assigned to runelord-game-qa"
+}

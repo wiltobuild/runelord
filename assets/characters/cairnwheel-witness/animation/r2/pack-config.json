@@ -1,0 +1,294 @@
+{
+  "slug": "cairnwheel-witness",
+  "source": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\characters\\cairnwheel-witness\\animation\\r1\\generated-sheet-r1.png",
+  "output": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\characters\\cairnwheel-witness\\animation\\r1",
+  "cols": 4,
+  "rows": 6,
+  "xbounds": [
+    0,
+    384,
+    768,
+    1152,
+    1536
+  ],
+  "ybounds": [
+    0,
+    184,
+    360,
+    539,
+    698,
+    856,
+    1024
+  ],
+  "boxes": {
+    "0": [
+      76,
+      5,
+      353,
+      183
+    ],
+    "1": [
+      460,
+      5,
+      722,
+      184
+    ],
+    "2": [
+      844,
+      5,
+      1102,
+      183
+    ],
+    "3": [
+      1189,
+      6,
+      1463,
+      183
+    ],
+    "7": [
+      1179,
+      184,
+      1471,
+      359
+    ],
+    "4": [
+      73,
+      187,
+      321,
+      359
+    ],
+    "5": [
+      414,
+      190,
+      674,
+      358
+    ],
+    "6": [
+      818,
+      191,
+      1059,
+      366
+    ],
+    "8": [
+      80,
+      360,
+      360,
+      535
+    ],
+    "9": [
+      445,
+      361,
+      723,
+      533
+    ],
+    "11": [
+      1181,
+      361,
+      1465,
+      538
+    ],
+    "10": [
+      816,
+      379,
+      1094,
+      536
+    ],
+    "13": [
+      435,
+      540,
+      697,
+      694
+    ],
+    "14": [
+      817,
+      540,
+      1105,
+      694
+    ],
+    "12": [
+      77,
+      541,
+      345,
+      698
+    ],
+    "15": [
+      1188,
+      545,
+      1466,
+      698
+    ],
+    "16": [
+      90,
+      697,
+      319,
+      855
+    ],
+    "17": [
+      460,
+      705,
+      757,
+      850
+    ],
+    "18": [
+      810,
+      745,
+      1118,
+      846
+    ],
+    "19": [
+      1174,
+      777,
+      1478,
+      849
+    ],
+    "22": [
+      823,
+      844,
+      1099,
+      1014
+    ],
+    "23": [
+      1185,
+      845,
+      1474,
+      1015
+    ],
+    "21": [
+      454,
+      854,
+      708,
+      1012
+    ],
+    "20": [
+      54,
+      920,
+      361,
+      1012
+    ]
+  },
+  "padding": 64,
+  "states": {
+    "idle": {
+      "frames": [
+        0,
+        1,
+        2,
+        3,
+        2,
+        1
+      ],
+      "durations": [
+        180,
+        180,
+        180,
+        180,
+        180,
+        180
+      ],
+      "loop": true,
+      "transition": "idle"
+    },
+    "attack": {
+      "frames": [
+        4,
+        5,
+        6,
+        7
+      ],
+      "durations": [
+        100,
+        80,
+        70,
+        100
+      ],
+      "loop": false,
+      "transition": "idle",
+      "events": [
+        {
+          "name": "impact",
+          "time_ms": 180
+        }
+      ]
+    },
+    "hit": {
+      "frames": [
+        8,
+        9,
+        10,
+        11
+      ],
+      "durations": [
+        120,
+        120,
+        120,
+        120
+      ],
+      "loop": false,
+      "transition": "idle"
+    },
+    "wounded_idle": {
+      "frames": [
+        12,
+        13,
+        14,
+        15,
+        14,
+        13
+      ],
+      "durations": [
+        180,
+        180,
+        180,
+        180,
+        180,
+        180
+      ],
+      "loop": true,
+      "transition": "wounded_idle"
+    },
+    "die": {
+      "frames": [
+        16,
+        17,
+        18,
+        19
+      ],
+      "durations": [
+        150,
+        150,
+        160,
+        700
+      ],
+      "loop": false,
+      "transition": "hold_terminal"
+    },
+    "spawn": {
+      "frames": [
+        20,
+        21,
+        22,
+        23
+      ],
+      "durations": [
+        120,
+        120,
+        120,
+        120
+      ],
+      "loop": false,
+      "transition": "idle",
+      "events": [
+        {
+          "name": "arrival",
+          "time_ms": 240
+        }
+      ]
+    }
+  },
+  "limitations": [
+    "Four generated key poses per action; coarse stepped animation awaiting visual approval.",
+    "Original HD base retained separately; source animation sprites are smaller.",
+    "Generated detail drift, scale variation and contact sliding are not eliminated; not final production-quality temporal consistency.",
+    "Frames cropped to measured connected silhouette bounds; edge-contact flags are expected exact bounding rectangles, not canvas clipping."
+  ]
+}

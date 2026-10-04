@@ -1,0 +1,523 @@
+{
+  "character_id": "cairnwheel-witness",
+  "format": "generated-frame-sprites",
+  "source": "source-sheet.png",
+  "atlas": "atlas.png",
+  "source_dimensions": [
+    1536,
+    1024
+  ],
+  "frame_canvas": [
+    512,
+    312
+  ],
+  "coordinate_system": "pixels, top-left, x right y down",
+  "anchor": [
+    256,
+    248
+  ],
+  "scale": "one source pixel per frame pixel; no per-frame scaling",
+  "states": {
+    "idle": {
+      "frames": [
+        0,
+        1,
+        2,
+        3,
+        2,
+        1
+      ],
+      "durations": [
+        180,
+        180,
+        180,
+        180,
+        180,
+        180
+      ],
+      "loop": true,
+      "transition": "idle",
+      "durations_ms": [
+        180,
+        180,
+        180,
+        180,
+        180,
+        180
+      ],
+      "duration_ms": 1080
+    },
+    "attack": {
+      "frames": [
+        4,
+        5,
+        6,
+        7
+      ],
+      "durations": [
+        100,
+        80,
+        70,
+        100
+      ],
+      "loop": false,
+      "transition": "idle",
+      "events": [
+        {
+          "name": "impact",
+          "time_ms": 180
+        }
+      ],
+      "durations_ms": [
+        100,
+        80,
+        70,
+        100
+      ],
+      "duration_ms": 350
+    },
+    "hit": {
+      "frames": [
+        8,
+        9,
+        10,
+        11
+      ],
+      "durations": [
+        120,
+        120,
+        120,
+        120
+      ],
+      "loop": false,
+      "transition": "idle",
+      "durations_ms": [
+        120,
+        120,
+        120,
+        120
+      ],
+      "duration_ms": 480
+    },
+    "wounded_idle": {
+      "frames": [
+        12,
+        13,
+        14,
+        15,
+        14,
+        13
+      ],
+      "durations": [
+        180,
+        180,
+        180,
+        180,
+        180,
+        180
+      ],
+      "loop": true,
+      "transition": "wounded_idle",
+      "durations_ms": [
+        180,
+        180,
+        180,
+        180,
+        180,
+        180
+      ],
+      "duration_ms": 1080
+    },
+    "die": {
+      "frames": [
+        16,
+        17,
+        18,
+        19
+      ],
+      "durations": [
+        150,
+        150,
+        160,
+        700
+      ],
+      "loop": false,
+      "transition": "hold_terminal",
+      "durations_ms": [
+        150,
+        150,
+        160,
+        700
+      ],
+      "duration_ms": 1160
+    },
+    "spawn": {
+      "frames": [
+        20,
+        21,
+        22,
+        23
+      ],
+      "durations": [
+        120,
+        120,
+        120,
+        120
+      ],
+      "loop": false,
+      "transition": "idle",
+      "events": [
+        {
+          "name": "arrival",
+          "time_ms": 360
+        }
+      ],
+      "durations_ms": [
+        120,
+        120,
+        120,
+        120
+      ],
+      "duration_ms": 480
+    }
+  },
+  "frames": [
+    {
+      "index": 0,
+      "file": "frames/00.png",
+      "rect": [
+        0,
+        0,
+        512,
+        312
+      ]
+    },
+    {
+      "index": 1,
+      "file": "frames/01.png",
+      "rect": [
+        512,
+        0,
+        512,
+        312
+      ]
+    },
+    {
+      "index": 2,
+      "file": "frames/02.png",
+      "rect": [
+        1024,
+        0,
+        512,
+        312
+      ]
+    },
+    {
+      "index": 3,
+      "file": "frames/03.png",
+      "rect": [
+        1536,
+        0,
+        512,
+        312
+      ]
+    },
+    {
+      "index": 4,
+      "file": "frames/04.png",
+      "rect": [
+        0,
+        312,
+        512,
+        312
+      ]
+    },
+    {
+      "index": 5,
+      "file": "frames/05.png",
+      "rect": [
+        512,
+        312,
+        512,
+        312
+      ]
+    },
+    {
+      "index": 6,
+      "file": "frames/06.png",
+      "rect": [
+        1024,
+        312,
+        512,
+        312
+      ]
+    },
+    {
+      "index": 7,
+      "file": "frames/07.png",
+      "rect": [
+        1536,
+        312,
+        512,
+        312
+      ]
+    },
+    {
+      "index": 8,
+      "file": "frames/08.png",
+      "rect": [
+        0,
+        624,
+        512,
+        312
+      ]
+    },
+    {
+      "index": 9,
+      "file": "frames/09.png",
+      "rect": [
+        512,
+        624,
+        512,
+        312
+      ]
+    },
+    {
+      "index": 10,
+      "file": "frames/10.png",
+      "rect": [
+        1024,
+        624,
+        512,
+        312
+      ]
+    },
+    {
+      "index": 11,
+      "file": "frames/11.png",
+      "rect": [
+        1536,
+        624,
+        512,
+        312
+      ]
+    },
+    {
+      "index": 12,
+      "file": "frames/12.png",
+      "rect": [
+        0,
+        936,
+        512,
+        312
+      ]
+    },
+    {
+      "index": 13,
+      "file": "frames/13.png",
+      "rect": [
+        512,
+        936,
+        512,
+        312
+      ]
+    },
+    {
+      "index": 14,
+      "file": "frames/14.png",
+      "rect": [
+        1024,
+        936,
+        512,
+        312
+      ]
+    },
+    {
+      "index": 15,
+      "file": "frames/15.png",
+      "rect": [
+        1536,
+        936,
+        512,
+        312
+      ]
+    },
+    {
+      "index": 16,
+      "file": "frames/16.png",
+      "rect": [
+        0,
+        1248,
+        512,
+        312
+      ]
+    },
+    {
+      "index": 17,
+      "file": "frames/17.png",
+      "rect": [
+        512,
+        1248,
+        512,
+        312
+      ]
+    },
+    {
+      "index": 18,
+      "file": "frames/18.png",
+      "rect": [
+        1024,
+        1248,
+        512,
+        312
+      ]
+    },
+    {
+      "index": 19,
+      "file": "frames/19.png",
+      "rect": [
+        1536,
+        1248,
+        512,
+        312
+      ]
+    },
+    {
+      "index": 20,
+      "file": "frames/20.png",
+      "rect": [
+        0,
+        1560,
+        512,
+        312
+      ]
+    },
+    {
+      "index": 21,
+      "file": "frames/21.png",
+      "rect": [
+        512,
+        1560,
+        512,
+        312
+      ]
+    },
+    {
+      "index": 22,
+      "file": "frames/22.png",
+      "rect": [
+        1024,
+        1560,
+        512,
+        312
+      ]
+    },
+    {
+      "index": 23,
+      "file": "frames/23.png",
+      "rect": [
+        1536,
+        1560,
+        512,
+        312
+      ]
+    }
+  ],
+  "limitations": [
+    "Four generated key poses per action; coarse stepped animation awaiting visual approval.",
+    "Original HD base retained separately; source animation sprites are smaller.",
+    "Generated detail drift, scale variation and contact sliding are not eliminated; not final production-quality temporal consistency.",
+    "Frames cropped to measured connected silhouette bounds; edge-contact flags are expected exact bounding rectangles, not canvas clipping.",
+    "Independent arms/mask and rolled ring attack visible; terminal collapsed ring holds. Rune shape/position varies during roll.",
+    "Tight component bounds isolate frames; low-alpha outermost antialias may be trimmed."
+  ],
+  "status": "animation_review_pending",
+  "reference_character_height": 178,
+  "registration": "Fixed horizontal cell origin; measured opaque bottom aligned to shared floor. No pose scaling.",
+  "source_sha256": "680eaffb102b36da1df3bedf8921e37c70076ef356eed0cbbd10ad6700be2eb6",
+  "revision": "r3",
+  "packing_repair": {
+    "frames": "all24",
+    "method": "isolate largest connected sprite component plus2px original antialias fringe; source analysis proves each intended pose is one major connected component",
+    "component_sizes": {
+      "00": [
+        29273
+      ],
+      "01": [
+        28114
+      ],
+      "02": [
+        28409
+      ],
+      "03": [
+        29090,
+        1
+      ],
+      "04": [
+        26808
+      ],
+      "05": [
+        26120
+      ],
+      "06": [
+        26291
+      ],
+      "07": [
+        28938
+      ],
+      "08": [
+        29117
+      ],
+      "09": [
+        27709
+      ],
+      "10": [
+        28137
+      ],
+      "11": [
+        29754
+      ],
+      "12": [
+        27567,
+        19
+      ],
+      "13": [
+        27778
+      ],
+      "14": [
+        28520
+      ],
+      "15": [
+        26181
+      ],
+      "16": [
+        26782,
+        3
+      ],
+      "17": [
+        28121
+      ],
+      "18": [
+        19423,
+        27
+      ],
+      "19": [
+        15041
+      ],
+      "20": [
+        18807
+      ],
+      "21": [
+        26402
+      ],
+      "22": [
+        28069,
+        11
+      ],
+      "23": [
+        28811,
+        72
+      ]
+    }
+  }
+}

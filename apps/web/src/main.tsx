@@ -1,5 +1,7 @@
 import { NeutralCard } from "./SoulforgeShop";
 import { RoguelikeShop } from "./RoguelikeShop";
+import { ForestShop } from "./ForestShop";
+import { FOREST_REVIEW, forestReviewState } from "./forestReview";
 import { IntroCinematic } from "./IntroCinematic";
 import { OpeningScreen } from "./OpeningScreen";
 import { GuardAura } from "./GuardAura";
@@ -13,6 +15,7 @@ import {
 } from "../../../packages/content/index";
 import {
   newRoguelikeRun, infernalShopAppearance, cardEffectText, cardLevel, canAddCard, enterRoguelikeShop,
+  activeEncounter, encounterCount, currentRealm, realmEncounterNumber, realmEncounterCount, isRealmBoss,
   dispatch,
   playable,
   manaCost,
@@ -47,6 +50,13 @@ import "./mobile.css";
 import { MobileShell } from "./MobileShell";
 const SHOP_REVIEW = import.meta.env.DEV && new URLSearchParams(location.search).has("shopReview");
 const SAVE_KEY = "runelord-warlock-demo-v1";
+function demoScore(state: State | null) {
+  if (!state) return OPENING_SCORE_ID;
+  if (currentRealm(state) === "forest") return isRealmBoss(state) && ["combat", "reward", "loot"].includes(state.phase) ? "forest-boss" : "forest-explore";
+  if (state.phase === "shop") return infernalShopAppearance(state.seed,state.shops?.current ?? null).shopId;
+  if (state.phase === "camp" || state.phase === "won") return "explore";
+  return isRealmBoss(state) ? "demon-boss" : "battle";
+}
 function reviewShop() {
   const state = newRoguelikeRun(20261003,"warband");
   state.room = 2; state.gold = 500;
@@ -112,7 +122,7 @@ function App({ assets }: { assets: Assets }) {
   const [introStarted, setIntroStarted] = useState(false);
   const [starterDeck, setStarterDeck] = useState<StarterDeckId>("warband");
   const [saved, setSaved] = useState<State | null>(readSave),
-    [game, setState] = useState<State | null>(() => SHOP_REVIEW ? reviewShop() : null),
+    [game, setState] = useState<State | null>(() => FOREST_REVIEW ? forestReviewState() : SHOP_REVIEW ? reviewShop() : null),
     [visual, setVisual] = useState<State | null>(null),
     [seed, setSeed] = useState(""),
     [selected, setSelected] = useState<CardInstance | null>(null),
@@ -163,13 +173,8 @@ function App({ assets }: { assets: Assets }) {
   const resolving = useRef(false);
   const room = state?.room ?? 0,
     phase = state?.phase,
-    encounter = encounters[room],
-    track =
-      !state ? OPENING_SCORE_ID : phase === "shop" ? infernalShopAppearance(state.seed,state.shops?.current ?? null).shopId : phase === "camp" || phase === "won"
-        ? "explore"
-        : room === encounters.length - 1
-          ? "demon-boss"
-          : "battle";
+    encounter = state ? activeEncounter(state) : encounters[0],
+    track = demoScore(state);
   const animate = (name: string) => {
     setAnimation(name);
     setSequence((n) => n + 1);
@@ -198,7 +203,7 @@ function App({ assets }: { assets: Assets }) {
     }
   }, [assets, track, musicActive]);
   useEffect(() => {
-    if (!game || SHOP_REVIEW) return;
+    if (!game || SHOP_REVIEW || FOREST_REVIEW) return;
     try {
       localStorage.setItem(SAVE_KEY, save(game));
       setSaved(game);
@@ -221,7 +226,7 @@ function App({ assets }: { assets: Assets }) {
     setMessage("Select an attack, then an enemy. Click a skill to cast it.");
     animate("idle_breathe");
     void score
-      .play(assets, next.phase === "shop" ? infernalShopAppearance(next.seed,next.shops?.current ?? null).shopId : next.room === encounters.length - 1 ? "demon-boss" : "battle")
+      .play(assets, demoScore(next))
       .catch(() => setMusicError(true));
   };
   const act = async (action: Action) => {
@@ -277,7 +282,10 @@ function App({ assets }: { assets: Assets }) {
       );
     } else act({ type: "play", uid: c.uid, dismiss });
   };
-  if (state && phase === "shop") return <RoguelikeShop state={state} assets={assets} onAction={action => { void act(action); }} message={message} musicOn={musicActive && volume > 0} onMusic={() => { const v = !musicActive || !volume ? .35 : 0; setVolume(v); score.setVolume(v); void music(); }} />;
+  if (state && phase === "shop") {
+    const Shop = currentRealm(state) === "forest" ? ForestShop : RoguelikeShop;
+    return <Shop state={state} assets={assets} onAction={action => { void act(action); }} message={message} musicOn={musicActive && volume > 0} onMusic={() => { const v = !musicActive || !volume ? .35 : 0; setVolume(v); score.setVolume(v); void music(); }} />;
+  }
   if (!state && !introStarted) return <IntroCinematic volume={volume} onVolume={v => { setVolume(v); score.setVolume(v); }} onStart={() => { setIntroStarted(true); void music(); }} />;
   return (
     <main
@@ -307,7 +315,7 @@ function App({ assets }: { assets: Assets }) {
         </button>
         <div className="chapter">
           {state
-            ? `ENCOUNTER ${room + 1} OF ${encounters.length}`
+            ? `${currentRealm(state) === "forest" ? "FOREST" : "INFERNAL"} · ${realmEncounterNumber(state)} OF ${realmEncounterCount(state)}`
             : "A DECKBUILDING ROGUELIKE"}
         </div>
         <nav>
@@ -637,7 +645,7 @@ function App({ assets }: { assets: Assets }) {
               </section>
             </div>
           )}
-          {phase === "loot" && state.pendingLoot && <LootReveal loot={state.pendingLoot} assets={assets} onContinue={() => act({ type: "continue" })} />}
+          {phase === "loot" && state.pendingLoot && <LootReveal loot={state.pendingLoot} assets={assets} realm={currentRealm(state)} continuesToForest={!!state.shops && currentRealm(state) === "infernal"} onContinue={() => act({ type: "continue" })} />}
           {phase === "camp" && (
             <div className="overlay">
               <section className="result-panel">
@@ -665,12 +673,12 @@ function App({ assets }: { assets: Assets }) {
                 </div>
                 <h2>
                   {phase === "won"
-                    ? "The flame is yours."
+                    ? currentRealm(state) === "forest" ? "The forest bows." : "The flame is yours."
                     : "The Pit remembers."}
                 </h2>
                 <p>
                   {phase === "won"
-                    ? `You survived all ${encounters.length} encounters through the Cinderforge.`
+                    ? currentRealm(state) === "forest" ? `You survived all ${encounterCount(state)} encounters through the Infernal realm and Thornroot Forest.` : `You survived all ${encounterCount(state)} encounters through the Cinderforge.`
                     : "A different pact. A different outcome. Try again."}
                 </p>
                 {phase === "won" && state.relics.includes("demon-lord-crown") && <div className="victory-crown"><img src={assets.images["item-demon-crown"]} alt="Demon Lord's Crown" /><h3>{items["demon-lord-crown"].name}</h3><p>{items["demon-lord-crown"].text}</p></div>}
@@ -793,7 +801,7 @@ function App({ assets }: { assets: Assets }) {
               </article>
             </div>
             <p className="muted">
-              Explore {encounters.length} encounters with {Object.keys(cards).length} cards and three starting pacts. Your summoned demons use their original character artwork.
+              Conquer the Infernal realm, then carry your deck and upgrades through twelve forest encounters, with shops after every three battles. Choose from {Object.keys(cards).length} cards and three starting pacts. Your summoned demons use their original character artwork.
               Enemy animations and spell impacts play in combat order.
             </p>
             <button className="primary" onClick={() => setShowHelp(false)}>
@@ -830,7 +838,12 @@ root.render(
   </div>,
 );
 loadAssets()
-  .then((assets) => root.render(<MobileShell><App assets={assets} /></MobileShell>))
+  .then(async (assets) => {
+    if (import.meta.env.DEV && location.pathname === "/nature-shield-review") {
+      const { NatureShieldReview } = await import("./NatureShieldReview");
+      root.render(<NatureShieldReview />);
+    } else root.render(<MobileShell><App assets={assets} /></MobileShell>);
+  })
   .catch((e) =>
     root.render(
       <div className="loading">
