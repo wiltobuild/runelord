@@ -1,0 +1,46 @@
+{
+  "sources": [
+    {
+      "file": "assets\\heroes\\animations\\ranger\\elite-select-idle-r1\\frames\\idle-00.png",
+      "sha256": "f969c35b0de788d034bc7bc346a2ee37de50d7677c9e55f257596de25a3f976f"
+    },
+    {
+      "file": "assets\\heroes\\animations\\ranger\\elite-select-idle-r1\\frames\\idle-01.png",
+      "sha256": "0fa2e1f008e3f307301938e2deeb43fe2e7d97f9de94df0d30049145fb3adb43"
+    },
+    {
+      "file": "assets\\heroes\\animations\\ranger\\elite-select-idle-r1\\frames\\idle-02.png",
+      "sha256": "925eddf6717f1ec8f6428ffdbd06f1335cc3bfc1f833b9062b081dc89120b630"
+    },
+    {
+      "file": "assets\\heroes\\animations\\ranger\\elite-select-idle-r1\\frames\\idle-03.png",
+      "sha256": "41d2d1481030d117fc41706b5b854dc670aae91d6d2f888c8e8d060103820ca9"
+    },
+    {
+      "file": "assets\\heroes\\animations\\ranger\\elite-select-idle-r1\\frames\\idle-04.png",
+      "sha256": "7f1e28daba9b043673b865cb9c9c066d1571a64803b172ccf701558750524c99"
+    },
+    {
+      "file": "assets\\heroes\\animations\\ranger\\elite-select-idle-r1\\frames\\idle-05.png",
+      "sha256": "9bc5403d236d65dbc8a64c33c2297616b08aedd1e9d9bad120e3b65df20601b0"
+    }
+  ],
+  "manifest": "assets/heroes/animations/ranger/elite-select-idle-r1/manifest.json",
+  "manifestSha256": "0a6fbfd496d4bdb1651b055d387d4bdbbdf7811425dd715a92f40753f6c682b1",
+  "frameCount": 10,
+  "cellSize": 320,
+  "commonAlphaBounds": {
+    "left": 44,
+    "top": 160,
+    "right": 461,
+    "bottom": 748
+  },
+  "visibleHeight": 280,
+  "scale": 0.47538200339558573,
+  "translation": [
+    61,
+    20
+  ],
+  "transform": "Numbered source frames packed with one union alpha crop, one uniform scale, and one shared translation; no per-frame recentering.",
+  "authorization": "User explicitly approved the current middle-design Ranger and Runesmith idle-animation bytes for character selection (chat, 2026-10-04)."
+}

@@ -1,0 +1,55 @@
+{
+  "sources": [
+    {
+      "file": "assets\\heroes\\animations\\runesmith\\elite-select-idle-r1\\frames\\idle-000.png",
+      "sha256": "1cbe0088c3a8f04e099ecb12df423a5ba5765a62965ffe68507ac9c79ac291a0"
+    },
+    {
+      "file": "assets\\heroes\\animations\\runesmith\\elite-select-idle-r1\\frames\\idle-001.png",
+      "sha256": "848d6c78546c83f7777bc2b505a6b6d0f610c42d89a62d9c4f12518d53a07820"
+    },
+    {
+      "file": "assets\\heroes\\animations\\runesmith\\elite-select-idle-r1\\frames\\idle-002.png",
+      "sha256": "0918eb7417fc7e1bbe8475fec6152b0a3c662d3a8ea371a3168de44068fe2921"
+    },
+    {
+      "file": "assets\\heroes\\animations\\runesmith\\elite-select-idle-r1\\frames\\idle-003.png",
+      "sha256": "6f83661f5356bfa8a002c4397d146d8bcb9825243e6a6757b9ded65f7a64fb22"
+    },
+    {
+      "file": "assets\\heroes\\animations\\runesmith\\elite-select-idle-r1\\frames\\idle-004.png",
+      "sha256": "5ed35b746f77553065237b224ff5885d81fd7aa0b23136b89bf16f0230eb3642"
+    },
+    {
+      "file": "assets\\heroes\\animations\\runesmith\\elite-select-idle-r1\\frames\\idle-005.png",
+      "sha256": "d027772baf5406eeef08d0a51044660ffd090dd0c688e9c047a31dec924c08ea"
+    },
+    {
+      "file": "assets\\heroes\\animations\\runesmith\\elite-select-idle-r1\\frames\\idle-006.png",
+      "sha256": "bc0909caeab7bf84608f6b88ccff26bf97ff3d2610a5ab510b1688df7227cec6"
+    },
+    {
+      "file": "assets\\heroes\\animations\\runesmith\\elite-select-idle-r1\\frames\\idle-007.png",
+      "sha256": "93c236b7e0fea03860384a4207fc9e50f266d0b4528dd6c7b32dd84a9918cc08"
+    }
+  ],
+  "manifest": "assets/heroes/animations/runesmith/elite-select-idle-r1/manifest.json",
+  "manifestSha256": "6b7fe01ebaf7112e6eedd17af72195c0f3a028045713d6b2de5869b745343443",
+  "frameCount": 14,
+  "cellSize": 320,
+  "commonAlphaBounds": {
+    "left": 19,
+    "top": 18,
+    "right": 442,
+    "bottom": 460
+  },
+  "visibleHeight": 280,
+  "scale": 0.6320541760722348,
+  "translation": [
+    26,
+    20
+  ],
+  "transform": "Numbered source frames packed with one union alpha crop, one uniform scale, and one shared translation; no per-frame recentering.",
+  "authorization": "User explicitly approved the current middle-design Ranger and Runesmith idle-animation bytes for character selection (chat, 2026-10-04).",
+  "knownLimitation": "Independent review noted the apron variation; user accepted the current bytes. This export does not claim that variation was repaired."
+}
