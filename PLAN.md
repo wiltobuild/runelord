@@ -1,6 +1,6 @@
 # Runelord: campaign build plan (v3)
 
-**Updated 2026-10-03.** The [campaign direction](design/campaign-direction.md) is the authoritative product brief. This roadmap replaces the three-act roguelike plan. The [v2 plan](design/archive/build-plan-v2.md) is retained as historical reference, not an active specification.
+**Updated 2026-10-04.** This is the roadmap for **Conquer Mode**. The [campaign direction](design/campaign-direction.md) is the authoritative product brief. The deployed Roguelike Demo on `main` remains a separately preserved combat-first experience while Conquer Mode develops on its feature branch; see [mode ownership](design/branch-modes.md). This roadmap replaces the three-act roguelike plan. The [v2 plan](design/archive/build-plan-v2.md) is retained as historical reference, not an active specification.
 
 ## Product target
 
@@ -8,7 +8,7 @@ A browser campaign deckbuilding RPG lasting roughly **6–9 hours**, with tactic
 
 Keep the four hero identities and original content. Add repeated card upgrades, spell combination, elite Warband fusion, slotted gear, relic progression, configurable defenses, resource structures, and neutral-faction relationships.
 
-The current Warlock demo is a combat and presentation foundation. It does not implement the campaign. See [demo scope](design/warlock-demo.md).
+The current Warlock roguelike demo is a combat and presentation foundation. It does not implement Conquer Mode's persistent campaign systems. See [demo scope](design/warlock-demo.md).
 
 ## Source precedence and retained work
 

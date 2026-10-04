@@ -1,8 +1,10 @@
-# Runelord campaign direction
+# Runelord Conquer Mode direction
 
-**Decision date: 2026-10-03. Status: accepted product direction; implementation pending unless explicitly documented in the demo scope.**
+**Decision date: 2026-10-03. Status: accepted product direction for Conquer Mode; implementation is pending unless explicitly documented in the playable roguelike demo scope.**
 
-This document records the user's revised direction. It supersedes the old three-act roguelike structure, inherited reference economy, single-upgrade assumptions, and run-reset progression in the archived v2 plan. Existing combat, art, and catalog work remains useful; old numbers and acquisition rules are not automatically campaign requirements.
+Conquer Mode is the long-form six-to-nine-hour campaign being developed beside the deployed Roguelike Demo. The modes share Runelord's combat, cards, Warbands, hero classes, and growing production art library, but are intentionally preserved separately while territory progression matures. See [mode ownership](branch-modes.md).
+
+This document records the user's revised direction. It supersedes the old three-act roguelike structure, inherited reference economy, single-upgrade assumptions, and run-reset progression in the archived v2 plan. Existing combat, art, animation, music, and catalog work remains useful; old numbers and acquisition rules are not automatically campaign requirements.
 
 ## Experience and objective
 

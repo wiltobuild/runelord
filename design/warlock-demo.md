@@ -2,7 +2,7 @@
 
 ## Scope and relationship to the campaign
 
-The current roguelike demo is a playable Warlock combat and presentation prototype, maintained separately from Conquer mode. The [campaign direction](campaign-direction.md), adopted 2026-10-03, expands the product into a 6–9 hour campaign with territory and lasting progression. Those systems are **planned**, not delivered by this demo.
+The current roguelike demo is a playable Warlock combat and presentation prototype, maintained separately from Conquer Mode. It is built on a large and growing library of hero, Warband, environment, card, UI, VFX, and music assets rather than a narrow encounter-art slice. The [Conquer Mode direction](campaign-direction.md), adopted 2026-10-03, expands the product into a 6–9 hour campaign with territory and lasting progression. Those systems are **planned**, not delivered by this demo. See [mode ownership](branch-modes.md).
 
 The original first-slice notes are [archived](archive/warlock-demo-2026-10-02.md). Their three-fight route, fourteen-card implementation count, older hero renderer, and next-work list are historical and no longer describe the current demo.
 
@@ -17,7 +17,7 @@ npm run dev
 
 Open http://127.0.0.1:4320. Existing local artwork and music are needed for asset imports.
 
-The animated introduction leads to character and pact selection. Warlock is the playable class; the other heroes are previews marked Coming Soon. Master of Demons is the default pact, alongside the fire and blood-pact alternatives. The Runeblade preview now uses its selected HD model and simplified idle frames.
+The animated introduction leads to character and pact selection. Warlock is the playable class; Runeblade, Runesmith, and Ranger are previews marked Coming Soon, with their class decks and hero asset packages ready for later gameplay integration. Master of Demons is the default pact, alongside the fire and blood-pact alternatives. The Runeblade preview now uses its selected HD model and simplified idle frames.
 
 Attack cards select a target; applicable skills cast on selection. Allied units act through the Warband combat system. The interface supports resuming a local save and includes mobile landscape presentation.
 

@@ -1,20 +1,26 @@
 import {
-  newRun,
+  newRoguelikeRun,
+  canAddCard,
+  save,
+  restore,
   dispatch,
   playable,
-  replay,
   type State,
 } from "../../packages/engine/index";
 import assert from "node:assert/strict";
 let wins = 0,
   losses = 0,
   maxActions = 0;
+const maxActionsPerRun = 3000;
 for (let seed = 1; seed <= 1000; seed++) {
-  let s: State = newRun(seed),
+  let s: State = newRoguelikeRun(seed),
     actions = 0;
-  while (s.phase !== "won" && s.phase !== "lost" && actions < 600) {
+  while (s.phase !== "won" && s.phase !== "lost" && actions < maxActionsPerRun) {
+    const before = JSON.stringify(s);
     if (s.phase === "reward")
-      s = dispatch(s, { type: "reward", card: s.rewards[0] });
+      s = dispatch(s, { type: "reward", card: s.rewards.find(id => canAddCard(s, id)) ?? null });
+    else if (s.phase === "loot") s = dispatch(s, { type: "continue" });
+    else if (s.phase === "shop") s = dispatch(s, { type: "leave-shop" });
     else if (s.phase === "camp") s = dispatch(s, { type: "camp" });
     else if (s.hp <= 40 && s.potion) s = dispatch(s, { type: "potion" });
     else {
@@ -40,6 +46,7 @@ for (let seed = 1; seed <= 1000; seed++) {
           ? {
               type: "play",
               uid: c.uid,
+              ...(s.units.length ? { unit: s.units[0].id } : {}),
               target: s.enemies
                 .filter((e) => e.hp > 0)
                 .sort((a, b) => a.hp - b.hp)[0].id,
@@ -55,13 +62,14 @@ for (let seed = 1; seed <= 1000; seed++) {
         s.mana >= 0 &&
         s.units.length <= 5,
     );
+    assert.notEqual(JSON.stringify(s), before, `Unchanged-state stall at seed ${seed}`);
     actions++;
   }
   assert.ok(
     s.phase === "won" || s.phase === "lost",
-    `Soft lock at seed ${seed}`,
+    `Action budget exhausted at seed ${seed} after ${actions} actions`,
   );
-  assert.deepEqual(replay(seed, s.history), s);
+  assert.deepEqual(restore(save(s)), s);
   if (s.phase === "won") wins++;
   else losses++;
   maxActions = Math.max(maxActions, actions);
