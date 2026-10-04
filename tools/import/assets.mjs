@@ -238,7 +238,7 @@ manifest.integration.hero.idleDurationMultiplier = 1.2;
 manifest.integration.hero.releaseOrigins = { coordinateSystem: "Native 768x896 Seraph frame coordinates; authored event attachment", cast: { frame: "frames/cast-03.png", timeMs: 450, xy: [471, 333] } };
 manifest.integration.summonPresentation = { hudPixelsPerWorldUnit: 200, overrides: { hellhound: { hudPixelsPerWorldUnit: 225.8064515, visibleHeightPx: 140 } }, visibleHeightPx: { imp: 90, hellhound: 140, "pit-brute": 230 }, reason: "User requested Imp one third larger and other summons at enemy scale, then reduced Hellhound by 30% from 200px to 140px. Hellhound presentation overrides relative source proportions; every actor retains one uniform scale across its complete animation.", root: "Source root anchored to model container bottom; same transform across all frames." };
 // Existing director cues map explicitly onto the six authored states; no invented poses.
-const aliases = { idle_breathe: "idle", firebolt: "attack", summon_demon: "cast", blood_pact: "cast", guard_enter: "cast", guard_impact: "hit", hit_light: "hit", victory: "idle", empowered_idle: "idle", empowered_attack: "attack" };
+const aliases = { wounded_idle: "wounded", idle_breathe: "idle", firebolt: "attack", summon_demon: "cast", blood_pact: "cast", guard_enter: "cast", guard_impact: "hit", hit_light: "hit", victory: "idle", empowered_idle: "idle", empowered_attack: "attack" };
 for (const [alias, state] of Object.entries(aliases)) manifest.animations[alias] = { ...manifest.animations[state], sourceState: state };
 manifest.integration.hero.aliases = aliases;
 manifest.integration.hero.sheets = [...new Set(frameIndex.map((f) => f.file))].map((file) => sourceEvidence(`${root}/${file}`));

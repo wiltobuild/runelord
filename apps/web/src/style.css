@@ -899,6 +899,9 @@ footer i {
   color: #ab703c;
   margin: 0 8px;
 }
+
+/* A failed clip must never paint a fallback over the previous animated body. */
+.hero-canvas.hero-load-error canvas { visibility: hidden; }
 .loading {
   height: 100vh;
   display: flex;

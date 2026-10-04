@@ -466,7 +466,7 @@ export function useBattleDirector(
         number(`enemy-${event.target}`, event.amount || 0, burning ? "scorch" : undefined);
         if (burning) recovery = Math.max(recovery, 1450);
       }
-      if (event.type === "hurt") { heroHurtSinceAttack = true; sfx.play("hit-flesh", 0, -.35); number("hero", event.amount || 0); }
+      if (event.type === "hurt") { if ((event.amount || 0) > 0) { animate("hit_light"); recovery = Math.max(recovery, assets.animations.hit_light.duration); } heroHurtSinceAttack = true; sfx.play("hit-flesh", 0, -.35); number("hero", event.amount || 0); }
       if (event.type === "enemy-impact" && event.targets?.includes("hero") && !heroHurtSinceAttack) sfx.play("hit-block", 0, -.35);
       if (event.type === "unit-hit" && event.target !== undefined) {
         const unit = before.units.find(u => u.id === event.target);

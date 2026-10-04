@@ -5,7 +5,7 @@ import { heroPlacement } from "./heroGeometry";
 type Loaded = { clip: Clip; body: Texture[]; fx: Texture[] };
 const cache = new WeakMap<Clip, Promise<Loaded>>();
 function load(assets: Assets, name: string) {
-  const clip = assets.animations[name];
+  const clip = assets.animations[name] ?? (name === "wounded_idle" ? assets.animations.wounded : undefined);
   if (!clip) return Promise.reject(Error(`Missing hero clip: ${name}`));
   if (!cache.has(clip)) {
     cache.set(
@@ -128,17 +128,17 @@ export function Hero({
                   start.current = performance.now();
                 }
               })
-              .catch(() => setError(true));
+              .catch(() => { if (request === requested.current) setError(true); });
           }, c.clip.duration);
       })
-      .catch(() => setError(true));
+      .catch(() => { if (request === requested.current) setError(true); });
     return () => {
       requested.current++;
       if (timer) clearTimeout(timer);
     };
   }, [assets, animation, sequence, resting, ready]);
   return (
-    <div className="hero-canvas" ref={host} aria-label="Animated Warlock">
+    <div className={`hero-canvas${error ? " hero-load-error" : ""}`} ref={host} aria-label="Animated Warlock">
       {(!ready || error) && (
         <img
           className="hero-fallback"
