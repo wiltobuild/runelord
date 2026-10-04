@@ -14,7 +14,7 @@ import { warmHeroClip } from "./Hero";
 import { HERO_VIEW, heroSourcePoint } from "./heroGeometry";
 import { summonArt } from "./warbandLayout";
 import type { Point, SpellEffect, SpellKind } from "./SpellEffects";
-type Float = { id: number; point: Point; label: string };
+type Float = { id: number; point: Point; label: string; cause?: "scorch" };
 export function useBattleDirector(
   assets: Assets,
   animate: (name: string) => void,
@@ -101,6 +101,8 @@ export function useBattleDirector(
           ? 1300
           : kind === "ward"
             ? release + 3000
+            : kind === "scorch"
+              ? 1500
             : kind === "pact" ||
               kind === "kindle" ||
               kind === "ascend"
@@ -118,11 +120,28 @@ export function useBattleDirector(
       e,
     ]);
   };
-  const number = (id: string, amount: number) => {
+  // Wards sit beyond the authored forward silhouette, not the sprite wrapper's
+  // center. Measuring the source-scaled image also handles packed and flying units.
+  const wardUnit = (unit: Unit, from: Point, release: number) => {
+    const sprite = actor(`unit-${unit.id}`)?.querySelector<HTMLElement>(".actor-sprite");
+    const box = sprite?.querySelector("img")?.getBoundingClientRect();
+    const art = assets.actors[summonArt(unit.kind, assets)];
+    if (!box || !art) return;
+    const arena = document.querySelector(".battlefield")!.getBoundingClientRect(), zoom = stageScale();
+    const bounds = art.geometry?.layout_bounds_px ?? [0, 0, ...art.size];
+    const top = box.top + box.height * bounds[1] / art.size[1];
+    const bottom = box.top + box.height * bounds[3] / art.size[1];
+    const right = box.left + box.width * bounds[2] / art.size[0];
+    const size = Math.max(.3, Math.min(.7, (bottom - top) / zoom / 260));
+    effect("ward", from, [{ x: (right - arena.left) / zoom + 57 * size + 8,
+      y: ((top + bottom) / 2 - arena.top) / zoom }], release, 0, size);
+  };
+  const number = (id: string, amount: number, cause?: "scorch") => {
     const item = {
       id: ++serial.current,
       point: point(id),
-      label: amount ? `−${amount}` : "BLOCKED",
+      label: cause === "scorch" ? `SCORCH · ${amount ? `−${amount}` : "BLOCKED"}` : amount ? `−${amount}` : "BLOCKED",
+      cause,
     };
     setNumbers((previous) => [...previous.slice(-8), item]);
   };
@@ -195,6 +214,8 @@ export function useBattleDirector(
         await pause(itemRelease + 300);
       } else if (["barkskin-tonic", "banner-draught"].includes(action.item)) {
         effect("ward", hand, [{x:hand.x+55,y:hand.y+60}], itemRelease, 0);
+        for (const unit of before.units) if ((after.units.find(u => u.id === unit.id)?.guard ?? 0) > unit.guard)
+          wardUnit(unit, hand, itemRelease);
         await pause(itemRelease);
       } else {
         effect("kindle", hand, [point("hero")], itemRelease, 0);
@@ -235,6 +256,8 @@ export function useBattleDirector(
           : [event.target!];
         const targets = targetIds.map((id) => point(`enemy-${id}`)),
           hand = point("hero", clip);
+        for (const unit of before.units) if ((after.units.find(u => u.id === unit.id)?.guard ?? 0) > unit.guard)
+          wardUnit(unit, hand, release);
         if (card.startsWith("summon")) {
           await pause(release);
         } else if (cards[card].type === "Attack") {
@@ -276,9 +299,6 @@ export function useBattleDirector(
             hand,
             [
               { x: hand.x + 55, y: hand.y + 60 },
-              ...(card === "sinister-veil"
-                ? before.units.map((u) => point(`unit-${u.id}`))
-                : []),
             ],
             release,
             0,
@@ -429,20 +449,21 @@ export function useBattleDirector(
         recovery = 1250;
       }
       if (event.type === "damage" && event.target !== undefined) {
-        const target = before.enemies.find(e => e.id === event.target);
-        sfx.play(!event.amount ? "hit-block" : source === "card" || source === "enemy" || (source === "muster" && musterIsFire) ? "hit-fire" : target && ["goblin","skirmisher","tollbell","furnace-beetle"].includes(target.art) ? "hit-armor" : "hit-flesh", 0, .25);
-        cue(`enemy-${event.target}`, "hit");
-        number(`enemy-${event.target}`, event.amount || 0);
-        if (source === "enemy") {
-          effect(
-            "scorch",
-            point(`enemy-${event.target}`),
-            [point(`enemy-${event.target}`)],
-            0,
-            0,
-          );
-          recovery = Math.max(recovery, 450);
+        const target = event.view?.enemies.find(e => e.id === event.target) ?? before.enemies.find(e => e.id === event.target);
+        const burning = event.cause === "scorch";
+        if (burning) {
+          // Scorch resolves after this enemy's attack. Finish its lunge first,
+          // then give the burn its own lead-in and readable damage hold.
+          await settle();
+          source = "scorch";
+          setLabel(`Scorch · ${target?.name ?? "Enemy"} · ${event.amount ? `${event.amount} damage` : "blocked by Guard"}`);
+          effect("scorch", point(`enemy-${event.target}`), [point(`enemy-${event.target}`)], 0, 0);
+          await pause(300);
         }
+        sfx.play(!event.amount ? "hit-block" : burning || source === "card" || source === "enemy" || (source === "muster" && musterIsFire) ? "hit-fire" : target && ["goblin","skirmisher","tollbell","furnace-beetle"].includes(target.art) ? "hit-armor" : "hit-flesh", 0, .25);
+        cue(`enemy-${event.target}`, "hit");
+        number(`enemy-${event.target}`, event.amount || 0, burning ? "scorch" : undefined);
+        if (burning) recovery = Math.max(recovery, 1450);
       }
       if (event.type === "hurt") { heroHurtSinceAttack = true; sfx.play("hit-flesh", 0, -.35); number("hero", event.amount || 0); }
       if (event.type === "enemy-impact" && event.targets?.includes("hero") && !heroHurtSinceAttack) sfx.play("hit-block", 0, -.35);
@@ -485,6 +506,8 @@ export function useBattleDirector(
           const worldUnit = parseFloat(getComputedStyle(sprite!).getPropertyValue("--summon-world-unit")) || 200;
           const size = worldUnit / (unit?.kind === "hellhound" ? 225.8064515 : 200);
           effect("summon", point("hero", clip), [{x:(box.left+box.width/2-arena.left)/zoom,y:(box.bottom-arena.top)/zoom}], 160, 0, width * size, box.height/zoom);
+          const guarded = after.units.find(u => u.id === event.actor);
+          if (guarded && guarded.guard > 0) wardUnit(guarded, point("hero", clip), 900);
         }
         recovery = Math.max(recovery, 1300);
       }

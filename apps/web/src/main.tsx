@@ -540,7 +540,7 @@ function App({ assets }: { assets: Assets }) {
             <SpellEffects effects={director.effects} />
             <div className="damage-numbers" aria-hidden="true">
               {director.numbers.map((n) => (
-                <span key={n.id} style={{ left: n.point.x, top: n.point.y }}>
+                <span key={n.id} className={n.cause === "scorch" ? "scorch-number" : undefined} style={{ left: n.point.x, top: n.point.y }}>
                   {n.label}
                 </span>
               ))}

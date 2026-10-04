@@ -46,7 +46,7 @@ html.mobile-game{background:#08060b;overscroll-behavior:none}
  .mobile-game .tome-preview{min-height:44px}.mobile-game .pact-deck-dialog{max-height:90dvh;width:94vw}.mobile-game .pact-deck-content{padding:12px}.mobile-game .pact-card-grid{grid-template-columns:repeat(3,minmax(0,1fr))}
  .mobile-game .pact-deck-content button{min-height:44px}
  .mobile-game .battle-ui .hand .card:hover{transform:none}
- .mobile-game .battle-ui .hand .card.selected{transform:translateY(-14px);outline:3px solid #ffcc79}
+ .mobile-game .battle-ui .hand .card.selected{transform:translateY(-8px);outline:3px solid #ffcc79}
  .mobile-game .battle-ui .card:focus .card-info{display:block;font-size:26px;width:330px;pointer-events:none}
  .mobile-game .battle-ui .overlay{padding:24px}.mobile-game .battle-ui .overlay section{max-height:870px;overflow:auto;overscroll-behavior:contain}
  .mobile-game .battle-ui .overlay button{min-height:70px;font-size:26px}

@@ -75,10 +75,23 @@ main.battle-ui { width:1672px; height:941px; min-height:0; zoom:var(--hud-scale)
 .battle-ui .enemy.focused .hp-track { filter:brightness(1.2); }
 .battle-ui .combat-message { position:absolute; left:350px; top:587px; width:970px; height:29px; background:transparent; z-index:14; font-size:14px; color:#fff1d1; text-shadow:0 2px 4px #000,0 0 6px #000; }
 .battle-ui .combat-message button { font-size:12px; padding:3px 9px; }
-.battle-ui .hand { position:absolute; left:345px; top:627px; width:977px; height:271px; min-height:0; gap:8px; z-index:14; align-items:center; }
+.battle-ui .hand { position:absolute; left:345px; top:650px; width:977px; height:248px; min-height:0; gap:8px; z-index:14; align-items:center; }
 .battle-ui .hand .card { flex:0 1 188px; width:188px; min-width:0; max-width:188px; }
-.battle-ui .hand .card img { width:100%; height:272px; object-fit:contain; }
-.battle-ui .hand .card-info { font-size:14px; width:270px; }
+.battle-ui .hand .card img { width:100%; height:248px; object-fit:contain; }
+/* Keep the message strip clear, including the enlarged card's top edge.
+   Inspection text floats above that strip rather than between overlapping cards. */
+.battle-ui .hand .card:hover:not(:disabled),
+.battle-ui .hand .card:focus-visible,
+.battle-ui .hand .card.selected { transform:translateY(-8px) scale(1.03); z-index:15; }
+.battle-ui .hand .card-info {
+  bottom:calc(100% + 62px); width:340px; padding:18px 21px;
+  font:600 22px/1.35 "Runelord Text",Georgia,serif;
+  color:#f5e9d4; background:linear-gradient(135deg,#2a2225,#100e12 75%);
+  border:2px solid #bf8b50; border-radius:8px;
+  box-shadow:inset 0 0 0 3px #100d10,0 12px 32px #000c;
+}
+.battle-ui .hand .card-info strong { display:block; font:700 28px/1.1 "Runelord Text",Georgia,serif; color:#ffe2ae; }
+.battle-ui .hand .card-info span { margin-top:9px; color:#ead8bd; }
 .battle-ui .mana { position:absolute; left:55px; top:609px; width:175px; height:193px; z-index:13; }
 .battle-ui .mana strong { position:absolute; inset:45px 0 auto; width:100%; height:70px; margin:0; line-height:70px; background:none; font:bold 65px Georgia,serif; color:#effbff; text-shadow:0 0 14px #29cfff,0 2px 3px #001e3e; animation:mana-change .4s ease-out; }
 .battle-ui .mana > span { position:absolute; top:140px; width:100%; margin:0; font:bold 17px Georgia,serif; letter-spacing:1px; color:#c3f4ff; text-shadow:0 2px 3px #001426; }
@@ -171,10 +184,6 @@ main.battle-ui { width:1672px; height:941px; min-height:0; zoom:var(--hud-scale)
   letter-spacing:.5px; text-indent:.5px; color:#251309;
   transition:color .15s,text-shadow .15s;
 }
-.battle-ui .turn-controls .end-turn-button .end-turn-runes {
-  position:absolute; bottom:12px; left:0; width:100%; text-align:center;
-  font:600 17px/1 Georgia,serif; letter-spacing:6px; text-indent:6px; color:#76390b;
-}
 .battle-ui .turn-controls .end-turn-button:hover:not(:disabled) .end-turn-label,
 .battle-ui .turn-controls .end-turn-button:focus-visible .end-turn-label {
   color:#fff8df; text-shadow:0 1px 2px #592205,0 0 8px #fff0a6;
@@ -189,7 +198,6 @@ main.battle-ui { width:1672px; height:941px; min-height:0; zoom:var(--hud-scale)
 .battle-ui .turn-controls .end-turn-button:disabled .end-turn-label {
   font-size:25px; color:#5c3420; text-shadow:none;
 }
-.battle-ui .turn-controls .end-turn-button.is-resolving .end-turn-runes { color:#fff4cf; }
 .turn-embers { position:absolute; left:1525px; top:773px; width:0; height:0; z-index:14; pointer-events:none; }
 .turn-embers i { position:absolute; width:4px; height:8px; border-radius:1px; background:#ffe9a1; box-shadow:0 0 8px #ff9e26; opacity:0; }
 .turn-embers.released i { animation:turn-sparks .95s cubic-bezier(.12,.65,.23,1) both; animation-delay:calc(var(--i) * 14ms); }
@@ -281,6 +289,8 @@ main.battle-ui { width:1672px; height:941px; min-height:0; zoom:var(--hud-scale)
 .battle-ui .minion-name { gap:4px; height:20px; line-height:20px; font-size:13px; text-shadow:0 2px 3px #000,0 0 5px #000; }
 .battle-ui .minion-power, .battle-ui .minion-scorch { flex-shrink:0; font-size:12px; color:#f5dfb6; }
 .battle-ui .minion-scorch { color:#ffa653; }
+.battle-ui .damage-numbers .scorch-number { color:#ffe0a3; font-size:26px; white-space:nowrap; margin-left:-65px; padding:5px 10px; border:1px solid #e99848; border-radius:5px; background:#24100feb; animation:scorch-number 1.45s forwards; }
+@keyframes scorch-number { 0% { opacity:0; transform:translateY(4px); } 12%,78% { opacity:1; transform:translateY(-12px); } 100% { opacity:0; transform:translateY(-30px); } }
 .battle-ui .minion-details .hp-track { height:22px; margin-top:2px; border:2px solid #b3824b; background:#351311; }
 .battle-ui .minion-details .hp-track span { font:700 15px/18px "Runelord Text",Georgia,serif; }
 .battle-ui .formation-unit.airborne .minion-headroom { height:50px; }

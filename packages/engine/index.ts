@@ -45,6 +45,7 @@ export type GameEvent = {
   actor?: number;
   target?: number;
   amount?: number;
+  cause?: "scorch";
   targets?: (number | "hero")[];
   unit?: Unit;
   view?: CombatView;
@@ -170,7 +171,7 @@ function loseHp(s: State, n: number, playerTurn: boolean) {
     for (const e of alive(s)) hitEnemy(s, e, s.powers["infernal-pact"]!);
   }
 }
-function hitEnemy(s: State, e: Enemy, n: number, attack = false) {
+function hitEnemy(s: State, e: Enemy, n: number, attack = false, cause?: GameEvent["cause"]) {
   if (attack && e.exposed) n = Math.floor(n * 1.5);
   if (e.hp <= 0) return;
   const blocked = Math.min(e.guard, n);
@@ -180,6 +181,7 @@ function hitEnemy(s: State, e: Enemy, n: number, attack = false) {
   emit(s, "damage", `${e.name} takes ${amount} damage.`, {
     target: e.id,
     amount,
+    ...(cause ? { cause } : {}),
   });
   if (e.boss && e.hp > 0 && e.hp <= e.maxHp / 2 && e.bossPhase !== 2) {
     e.bossPhase = 2;
@@ -499,7 +501,12 @@ export function dispatch(previous: State, action: Action): State {
   } else if (action.type === "play") {
     const c = s.hand.find((c) => c.uid === action.uid);
     if (!c || !playable(s, c)) throw Error("You cannot play that card.");
-    const e = alive(s).find((e) => e.id === (action.target ?? s.focus));
+    const livingEnemies = alive(s);
+    // Untargeted cards must remain playable after the focused enemy dies.
+    // An explicitly selected target still needs to be alive.
+    const e = action.target === undefined
+      ? livingEnemies.find((enemy) => enemy.id === s.focus) ?? livingEnemies[0]
+      : livingEnemies.find((enemy) => enemy.id === action.target);
     if (!e) throw Error("Choose a living target.");
     if (
       c.id.startsWith("summon-") &&
@@ -703,7 +710,7 @@ export function dispatch(previous: State, action: Action): State {
         if (s.hp === 0) break;
         if (e.scorch > 0) {
           const burn = e.scorch;
-          hitEnemy(s, e, burn);
+          hitEnemy(s, e, burn, false, "scorch");
           if (e.hp > 0) e.scorch = Math.floor(burn / 2);
         }
         e.sapped = Math.max(0, (e.sapped || 0) - 1);
