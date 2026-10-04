@@ -20,8 +20,8 @@
     "item-banner-draught": "/game-assets/items/banner-draught.webp",
     "item-bonesetters-salve": "/game-assets/items/bonesetters-salve.webp",
     "item-warhorn-oil": "/game-assets/items/warhorn-oil.webp",
-    "summon-hellhound": "/game-assets/summons/hellhound/base-r1/0.webp",
-    "summon-pit-brute": "/game-assets/summons/pit-brute/hd-r1/0.webp",
+    "summon-hellhound": "/game-assets/summons/hellhound/cinematic32-repair-r2/0.webp",
+    "summon-pit-brute": "/game-assets/summons/pit-brute/cinematic32-r1/0.webp",
     "summon-imp": "/game-assets/summons/imp/base-r1/0.webp",
     "spear-guard": "/game-assets/actors/spear-guard/fire-v02-ash-spear-guard/frames/idle/00.webp",
     "twinaxe-reaver": "/game-assets/actors/twinaxe-reaver/fire-v03-twinaxe-reaver/frames/idle/00.webp",
@@ -3766,194 +3766,510 @@
           "frames": [
             {
               "time": 0,
-              "src": "/game-assets/summons/hellhound/base-r1/0.webp"
+              "src": "/game-assets/summons/hellhound/cinematic32-repair-r2/0.webp"
             },
             {
-              "time": 300,
-              "src": "/game-assets/summons/hellhound/base-r1/1.webp"
+              "time": 350,
+              "src": "/game-assets/summons/hellhound/cinematic32-repair-r2/1.webp"
             },
             {
-              "time": 580,
-              "src": "/game-assets/summons/hellhound/base-r1/2.webp"
+              "time": 700,
+              "src": "/game-assets/summons/hellhound/cinematic32-repair-r2/2.webp"
             },
             {
-              "time": 940,
-              "src": "/game-assets/summons/hellhound/base-r1/3.webp"
-            },
-            {
-              "time": 1240,
-              "src": "/game-assets/summons/hellhound/base-r1/2.webp"
-            },
-            {
-              "time": 1520,
-              "src": "/game-assets/summons/hellhound/base-r1/1.webp"
+              "time": 1050,
+              "src": "/game-assets/summons/hellhound/cinematic32-repair-r2/3.webp"
             }
           ],
-          "duration": 1840,
+          "duration": 1400,
           "loop": true,
-          "events": [],
-          "impact": null
-        },
-        "act": {
-          "frames": [
-            {
-              "time": 0,
-              "src": "/game-assets/summons/hellhound/base-r1/4.webp"
-            },
-            {
-              "time": 100,
-              "src": "/game-assets/summons/hellhound/base-r1/5.webp"
-            },
-            {
-              "time": 190,
-              "src": "/game-assets/summons/hellhound/base-r1/6.webp"
-            },
-            {
-              "time": 280,
-              "src": "/game-assets/summons/hellhound/base-r1/7.webp"
-            }
-          ],
-          "duration": 350,
-          "loop": false,
-          "events": [
-            {
-              "name": "impact",
-              "time_ms": 100
-            }
-          ],
-          "impact": 100
-        },
-        "hit": {
-          "frames": [
-            {
-              "time": 0,
-              "src": "/game-assets/summons/hellhound/base-r1/8.webp"
-            },
-            {
-              "time": 80,
-              "src": "/game-assets/summons/hellhound/base-r1/9.webp"
-            },
-            {
-              "time": 180,
-              "src": "/game-assets/summons/hellhound/base-r1/0.webp"
-            }
-          ],
-          "duration": 260,
-          "loop": false,
-          "events": [],
-          "impact": null
-        },
-        "wounded_idle": {
-          "frames": [
-            {
-              "time": 0,
-              "src": "/game-assets/summons/hellhound/base-r1/10.webp"
-            },
-            {
-              "time": 550,
-              "src": "/game-assets/summons/hellhound/base-r1/11.webp"
-            },
-            {
-              "time": 1200,
-              "src": "/game-assets/summons/hellhound/base-r1/10.webp"
-            }
-          ],
-          "duration": 1750,
-          "loop": true,
-          "events": [],
-          "impact": null
-        },
-        "die": {
-          "frames": [
-            {
-              "time": 0,
-              "src": "/game-assets/summons/hellhound/base-r1/12.webp"
-            },
-            {
-              "time": 150,
-              "src": "/game-assets/summons/hellhound/base-r1/13.webp"
-            },
-            {
-              "time": 310,
-              "src": "/game-assets/summons/hellhound/base-r1/14.webp"
-            },
-            {
-              "time": 490,
-              "src": "/game-assets/summons/hellhound/base-r1/15.webp"
-            }
-          ],
-          "duration": 740,
-          "loop": false,
-          "events": [
-            {
-              "name": "terminal",
-              "time_ms": 490
-            }
-          ],
-          "impact": null
-        },
-        "spawn": {
-          "frames": [
-            {
-              "time": 0,
-              "src": "/game-assets/summons/hellhound/base-r1/0.webp",
-              "opacity": 0
-            },
-            {
-              "time": 70,
-              "src": "/game-assets/summons/hellhound/base-r1/0.webp",
-              "opacity": 0.35
-            },
-            {
-              "time": 150,
-              "src": "/game-assets/summons/hellhound/base-r1/1.webp",
-              "opacity": 0.75
-            },
-            {
-              "time": 250,
-              "src": "/game-assets/summons/hellhound/base-r1/0.webp",
-              "opacity": 1
-            }
-          ],
-          "duration": 350,
-          "loop": false,
-          "events": [
-            {
-              "name": "arrival",
-              "time_ms": 250
-            }
-          ],
-          "impact": null
+          "impact": null,
+          "terminalHold": false,
+          "events": []
         },
         "attack": {
           "frames": [
             {
               "time": 0,
-              "src": "/game-assets/summons/hellhound/base-r1/4.webp"
+              "src": "/game-assets/summons/hellhound/cinematic32-repair-r2/4.webp"
             },
             {
-              "time": 100,
-              "src": "/game-assets/summons/hellhound/base-r1/5.webp"
+              "time": 140,
+              "src": "/game-assets/summons/hellhound/cinematic32-repair-r2/5.webp"
             },
             {
-              "time": 190,
-              "src": "/game-assets/summons/hellhound/base-r1/6.webp"
+              "time": 240,
+              "src": "/game-assets/summons/hellhound/cinematic32-repair-r2/6.webp"
             },
             {
-              "time": 280,
-              "src": "/game-assets/summons/hellhound/base-r1/7.webp"
+              "time": 330,
+              "src": "/game-assets/summons/hellhound/cinematic32-repair-r2/7.webp"
+            },
+            {
+              "time": 430,
+              "src": "/game-assets/summons/hellhound/cinematic32-repair-r2/8.webp"
+            },
+            {
+              "time": 530,
+              "src": "/game-assets/summons/hellhound/cinematic32-repair-r2/9.webp"
+            },
+            {
+              "time": 640,
+              "src": "/game-assets/summons/hellhound/cinematic32-repair-r2/10.webp"
+            },
+            {
+              "time": 760,
+              "src": "/game-assets/summons/hellhound/cinematic32-repair-r2/11.webp"
             }
           ],
-          "duration": 350,
+          "duration": 920,
           "loop": false,
+          "impact": 240,
+          "terminalHold": false,
           "events": [
             {
               "name": "impact",
-              "time_ms": 100
+              "time_ms": 240
+            }
+          ]
+        },
+        "hit": {
+          "frames": [
+            {
+              "time": 0,
+              "src": "/game-assets/summons/hellhound/cinematic32-repair-r2/12.webp"
+            },
+            {
+              "time": 100,
+              "src": "/game-assets/summons/hellhound/cinematic32-repair-r2/13.webp"
+            },
+            {
+              "time": 240,
+              "src": "/game-assets/summons/hellhound/cinematic32-repair-r2/14.webp"
+            },
+            {
+              "time": 370,
+              "src": "/game-assets/summons/hellhound/cinematic32-repair-r2/15.webp"
             }
           ],
-          "impact": 100,
-          "sourceState": "act"
+          "duration": 550,
+          "loop": false,
+          "impact": null,
+          "terminalHold": false,
+          "events": []
+        },
+        "wounded_idle": {
+          "frames": [
+            {
+              "time": 0,
+              "src": "/game-assets/summons/hellhound/cinematic32-repair-r2/16.webp"
+            },
+            {
+              "time": 400,
+              "src": "/game-assets/summons/hellhound/cinematic32-repair-r2/17.webp"
+            },
+            {
+              "time": 800,
+              "src": "/game-assets/summons/hellhound/cinematic32-repair-r2/18.webp"
+            },
+            {
+              "time": 1200,
+              "src": "/game-assets/summons/hellhound/cinematic32-repair-r2/19.webp"
+            }
+          ],
+          "duration": 1600,
+          "loop": true,
+          "impact": null,
+          "terminalHold": false,
+          "events": []
+        },
+        "spawn": {
+          "frames": [
+            {
+              "time": 0,
+              "src": "/game-assets/summons/hellhound/cinematic32-repair-r2/20.webp"
+            },
+            {
+              "time": 180,
+              "src": "/game-assets/summons/hellhound/cinematic32-repair-r2/21.webp"
+            },
+            {
+              "time": 360,
+              "src": "/game-assets/summons/hellhound/cinematic32-repair-r2/22.webp"
+            },
+            {
+              "time": 580,
+              "src": "/game-assets/summons/hellhound/cinematic32-repair-r2/23.webp"
+            }
+          ],
+          "duration": 840,
+          "loop": false,
+          "impact": null,
+          "terminalHold": false,
+          "events": [
+            {
+              "name": "arrival",
+              "time_ms": 360
+            }
+          ]
+        },
+        "die": {
+          "frames": [
+            {
+              "time": 0,
+              "src": "/game-assets/summons/hellhound/cinematic32-repair-r2/24.webp"
+            },
+            {
+              "time": 180,
+              "src": "/game-assets/summons/hellhound/cinematic32-repair-r2/25.webp"
+            },
+            {
+              "time": 320,
+              "src": "/game-assets/summons/hellhound/cinematic32-repair-r2/26.webp"
+            },
+            {
+              "time": 480,
+              "src": "/game-assets/summons/hellhound/cinematic32-repair-r2/27.webp"
+            },
+            {
+              "time": 640,
+              "src": "/game-assets/summons/hellhound/cinematic32-repair-r2/28.webp"
+            },
+            {
+              "time": 820,
+              "src": "/game-assets/summons/hellhound/cinematic32-repair-r2/29.webp"
+            },
+            {
+              "time": 1000,
+              "src": "/game-assets/summons/hellhound/cinematic32-repair-r2/30.webp"
+            },
+            {
+              "time": 1200,
+              "src": "/game-assets/summons/hellhound/cinematic32-repair-r2/31.webp"
+            }
+          ],
+          "duration": 1800,
+          "loop": false,
+          "impact": null,
+          "terminalHold": true,
+          "events": []
+        },
+        "act": {
+          "frames": [
+            {
+              "time": 0,
+              "src": "/game-assets/summons/hellhound/cinematic32-repair-r2/4.webp"
+            },
+            {
+              "time": 140,
+              "src": "/game-assets/summons/hellhound/cinematic32-repair-r2/5.webp"
+            },
+            {
+              "time": 240,
+              "src": "/game-assets/summons/hellhound/cinematic32-repair-r2/6.webp"
+            },
+            {
+              "time": 330,
+              "src": "/game-assets/summons/hellhound/cinematic32-repair-r2/7.webp"
+            },
+            {
+              "time": 430,
+              "src": "/game-assets/summons/hellhound/cinematic32-repair-r2/8.webp"
+            },
+            {
+              "time": 530,
+              "src": "/game-assets/summons/hellhound/cinematic32-repair-r2/9.webp"
+            },
+            {
+              "time": 640,
+              "src": "/game-assets/summons/hellhound/cinematic32-repair-r2/10.webp"
+            },
+            {
+              "time": 760,
+              "src": "/game-assets/summons/hellhound/cinematic32-repair-r2/11.webp"
+            }
+          ],
+          "duration": 920,
+          "loop": false,
+          "impact": 240,
+          "terminalHold": false,
+          "events": [
+            {
+              "name": "impact",
+              "time_ms": 240
+            }
+          ],
+          "sourceState": "attack"
+        }
+      },
+      "size": [
+        384,
+        320
+      ],
+      "anchor": [
+        85,
+        280
+      ],
+      "spawnReveal": "authored",
+      "geometry": {
+        "source_pixels_per_world_unit": 354.83870950000005,
+        "standing_height_world": 0.62000000031,
+        "reference_visible_height_px": 220,
+        "layout_bounds_px": [
+          27,
+          31.5,
+          316,
+          313
+        ]
+      },
+      "sourceManifest": {
+        "path": "assets/characters/hellhound/animations/frames32-cinematic-r1/animation.json",
+        "sha256": "2287cbe8c88fbb7c56315debd85253294f322385f073fe8bab3d00e4911d9b0d"
+      }
+    },
+    "summon-pit-brute": {
+      "states": {
+        "idle": {
+          "frames": [
+            {
+              "time": 0,
+              "src": "/game-assets/summons/pit-brute/cinematic32-r1/0.webp"
+            },
+            {
+              "time": 350,
+              "src": "/game-assets/summons/pit-brute/cinematic32-r1/1.webp"
+            },
+            {
+              "time": 700,
+              "src": "/game-assets/summons/pit-brute/cinematic32-r1/2.webp"
+            },
+            {
+              "time": 1050,
+              "src": "/game-assets/summons/pit-brute/cinematic32-r1/3.webp"
+            }
+          ],
+          "duration": 1400,
+          "loop": true,
+          "impact": null,
+          "terminalHold": false,
+          "events": []
+        },
+        "attack": {
+          "frames": [
+            {
+              "time": 0,
+              "src": "/game-assets/summons/pit-brute/cinematic32-r1/4.webp"
+            },
+            {
+              "time": 65,
+              "src": "/game-assets/summons/pit-brute/cinematic32-r1/5.webp"
+            },
+            {
+              "time": 130,
+              "src": "/game-assets/summons/pit-brute/cinematic32-r1/6.webp"
+            },
+            {
+              "time": 190,
+              "src": "/game-assets/summons/pit-brute/cinematic32-r1/7.webp"
+            },
+            {
+              "time": 235,
+              "src": "/game-assets/summons/pit-brute/cinematic32-r1/8.webp"
+            },
+            {
+              "time": 280,
+              "src": "/game-assets/summons/pit-brute/cinematic32-r1/9.webp"
+            },
+            {
+              "time": 340,
+              "src": "/game-assets/summons/pit-brute/cinematic32-r1/10.webp"
+            },
+            {
+              "time": 410,
+              "src": "/game-assets/summons/pit-brute/cinematic32-r1/11.webp"
+            }
+          ],
+          "duration": 500,
+          "loop": false,
+          "impact": 190,
+          "terminalHold": false,
+          "events": [
+            {
+              "name": "impact",
+              "frame": 3,
+              "time_ms": 190
+            }
+          ]
+        },
+        "hit": {
+          "frames": [
+            {
+              "time": 0,
+              "src": "/game-assets/summons/pit-brute/cinematic32-r1/12.webp"
+            },
+            {
+              "time": 70,
+              "src": "/game-assets/summons/pit-brute/cinematic32-r1/13.webp"
+            },
+            {
+              "time": 160,
+              "src": "/game-assets/summons/pit-brute/cinematic32-r1/14.webp"
+            },
+            {
+              "time": 250,
+              "src": "/game-assets/summons/pit-brute/cinematic32-r1/15.webp"
+            }
+          ],
+          "duration": 340,
+          "loop": false,
+          "impact": null,
+          "terminalHold": false,
+          "events": []
+        },
+        "wounded_idle": {
+          "frames": [
+            {
+              "time": 0,
+              "src": "/game-assets/summons/pit-brute/cinematic32-r1/16.webp"
+            },
+            {
+              "time": 400,
+              "src": "/game-assets/summons/pit-brute/cinematic32-r1/17.webp"
+            },
+            {
+              "time": 800,
+              "src": "/game-assets/summons/pit-brute/cinematic32-r1/18.webp"
+            },
+            {
+              "time": 1200,
+              "src": "/game-assets/summons/pit-brute/cinematic32-r1/19.webp"
+            }
+          ],
+          "duration": 1600,
+          "loop": true,
+          "impact": null,
+          "terminalHold": false,
+          "events": []
+        },
+        "spawn": {
+          "frames": [
+            {
+              "time": 0,
+              "src": "/game-assets/summons/pit-brute/cinematic32-r1/20.webp"
+            },
+            {
+              "time": 180,
+              "src": "/game-assets/summons/pit-brute/cinematic32-r1/21.webp"
+            },
+            {
+              "time": 360,
+              "src": "/game-assets/summons/pit-brute/cinematic32-r1/22.webp"
+            },
+            {
+              "time": 540,
+              "src": "/game-assets/summons/pit-brute/cinematic32-r1/23.webp"
+            }
+          ],
+          "duration": 720,
+          "loop": false,
+          "impact": null,
+          "terminalHold": false,
+          "events": [
+            {
+              "name": "arrival",
+              "frame": 3,
+              "time_ms": 540
+            }
+          ]
+        },
+        "die": {
+          "frames": [
+            {
+              "time": 0,
+              "src": "/game-assets/summons/pit-brute/cinematic32-r1/24.webp"
+            },
+            {
+              "time": 110,
+              "src": "/game-assets/summons/pit-brute/cinematic32-r1/25.webp"
+            },
+            {
+              "time": 220,
+              "src": "/game-assets/summons/pit-brute/cinematic32-r1/26.webp"
+            },
+            {
+              "time": 360,
+              "src": "/game-assets/summons/pit-brute/cinematic32-r1/27.webp"
+            },
+            {
+              "time": 500,
+              "src": "/game-assets/summons/pit-brute/cinematic32-r1/28.webp"
+            },
+            {
+              "time": 680,
+              "src": "/game-assets/summons/pit-brute/cinematic32-r1/29.webp"
+            },
+            {
+              "time": 860,
+              "src": "/game-assets/summons/pit-brute/cinematic32-r1/30.webp"
+            },
+            {
+              "time": 1060,
+              "src": "/game-assets/summons/pit-brute/cinematic32-r1/31.webp"
+            }
+          ],
+          "duration": 1510,
+          "loop": false,
+          "impact": null,
+          "terminalHold": true,
+          "events": []
+        },
+        "act": {
+          "frames": [
+            {
+              "time": 0,
+              "src": "/game-assets/summons/pit-brute/cinematic32-r1/4.webp"
+            },
+            {
+              "time": 65,
+              "src": "/game-assets/summons/pit-brute/cinematic32-r1/5.webp"
+            },
+            {
+              "time": 130,
+              "src": "/game-assets/summons/pit-brute/cinematic32-r1/6.webp"
+            },
+            {
+              "time": 190,
+              "src": "/game-assets/summons/pit-brute/cinematic32-r1/7.webp"
+            },
+            {
+              "time": 235,
+              "src": "/game-assets/summons/pit-brute/cinematic32-r1/8.webp"
+            },
+            {
+              "time": 280,
+              "src": "/game-assets/summons/pit-brute/cinematic32-r1/9.webp"
+            },
+            {
+              "time": 340,
+              "src": "/game-assets/summons/pit-brute/cinematic32-r1/10.webp"
+            },
+            {
+              "time": 410,
+              "src": "/game-assets/summons/pit-brute/cinematic32-r1/11.webp"
+            }
+          ],
+          "duration": 500,
+          "loop": false,
+          "impact": 190,
+          "terminalHold": false,
+          "events": [
+            {
+              "name": "impact",
+              "frame": 3,
+              "time_ms": 190
+            }
+          ],
+          "sourceState": "attack"
         }
       },
       "size": [
@@ -3964,266 +4280,21 @@
         256,
         340
       ],
+      "spawnReveal": "authored",
       "geometry": {
-        "coordinate_system": "pixels; top-left; x right, y down",
-        "facing": "right",
-        "canvas_px": [
-          512,
-          384
-        ],
-        "root_px": [
-          256,
-          340
-        ],
-        "anchor_normalized": [
-          0.5,
-          0.8854166666666666
-        ],
-        "source_pixels_per_world_unit": 345.16129032258067,
-        "standing_height_world": 0.62,
-        "hover_gap_world": 0,
-        "reference_visible_height_px": 214,
-        "root_motion": "in-place; translation-only packing registration; no camera movement",
-        "mirror_safe": false,
-        "layout_bounds_px": [
-          95,
-          113,
-          427,
-          340
-        ]
-      }
-    },
-    "summon-pit-brute": {
-      "states": {
-        "idle": {
-          "frames": [
-            {
-              "time": 0,
-              "src": "/game-assets/summons/pit-brute/hd-r1/0.webp"
-            },
-            {
-              "time": 300,
-              "src": "/game-assets/summons/pit-brute/hd-r1/1.webp"
-            },
-            {
-              "time": 580,
-              "src": "/game-assets/summons/pit-brute/hd-r1/2.webp"
-            },
-            {
-              "time": 940,
-              "src": "/game-assets/summons/pit-brute/hd-r1/3.webp"
-            },
-            {
-              "time": 1240,
-              "src": "/game-assets/summons/pit-brute/hd-r1/2.webp"
-            },
-            {
-              "time": 1520,
-              "src": "/game-assets/summons/pit-brute/hd-r1/1.webp"
-            }
-          ],
-          "duration": 1840,
-          "loop": true,
-          "events": [],
-          "impact": null
-        },
-        "act": {
-          "frames": [
-            {
-              "time": 0,
-              "src": "/game-assets/summons/pit-brute/hd-r1/4.webp"
-            },
-            {
-              "time": 100,
-              "src": "/game-assets/summons/pit-brute/hd-r1/5.webp"
-            },
-            {
-              "time": 190,
-              "src": "/game-assets/summons/pit-brute/hd-r1/6.webp"
-            },
-            {
-              "time": 280,
-              "src": "/game-assets/summons/pit-brute/hd-r1/7.webp"
-            }
-          ],
-          "duration": 350,
-          "loop": false,
-          "events": [
-            {
-              "name": "impact",
-              "time_ms": 100
-            }
-          ],
-          "impact": 100
-        },
-        "hit": {
-          "frames": [
-            {
-              "time": 0,
-              "src": "/game-assets/summons/pit-brute/hd-r1/8.webp"
-            },
-            {
-              "time": 80,
-              "src": "/game-assets/summons/pit-brute/hd-r1/9.webp"
-            },
-            {
-              "time": 180,
-              "src": "/game-assets/summons/pit-brute/hd-r1/0.webp"
-            }
-          ],
-          "duration": 260,
-          "loop": false,
-          "events": [],
-          "impact": null
-        },
-        "wounded_idle": {
-          "frames": [
-            {
-              "time": 0,
-              "src": "/game-assets/summons/pit-brute/hd-r1/10.webp"
-            },
-            {
-              "time": 550,
-              "src": "/game-assets/summons/pit-brute/hd-r1/11.webp"
-            },
-            {
-              "time": 1200,
-              "src": "/game-assets/summons/pit-brute/hd-r1/10.webp"
-            }
-          ],
-          "duration": 1750,
-          "loop": true,
-          "events": [],
-          "impact": null
-        },
-        "die": {
-          "frames": [
-            {
-              "time": 0,
-              "src": "/game-assets/summons/pit-brute/hd-r1/12.webp"
-            },
-            {
-              "time": 150,
-              "src": "/game-assets/summons/pit-brute/hd-r1/13.webp"
-            },
-            {
-              "time": 310,
-              "src": "/game-assets/summons/pit-brute/hd-r1/14.webp"
-            },
-            {
-              "time": 490,
-              "src": "/game-assets/summons/pit-brute/hd-r1/15.webp"
-            }
-          ],
-          "duration": 740,
-          "loop": false,
-          "events": [
-            {
-              "name": "terminal",
-              "time_ms": 490
-            }
-          ],
-          "impact": null
-        },
-        "spawn": {
-          "frames": [
-            {
-              "time": 0,
-              "src": "/game-assets/summons/pit-brute/hd-r1/0.webp",
-              "opacity": 0
-            },
-            {
-              "time": 70,
-              "src": "/game-assets/summons/pit-brute/hd-r1/0.webp",
-              "opacity": 0.35
-            },
-            {
-              "time": 150,
-              "src": "/game-assets/summons/pit-brute/hd-r1/1.webp",
-              "opacity": 0.75
-            },
-            {
-              "time": 250,
-              "src": "/game-assets/summons/pit-brute/hd-r1/0.webp",
-              "opacity": 1
-            }
-          ],
-          "duration": 350,
-          "loop": false,
-          "events": [
-            {
-              "name": "arrival",
-              "time_ms": 250
-            }
-          ],
-          "impact": null
-        },
-        "attack": {
-          "frames": [
-            {
-              "time": 0,
-              "src": "/game-assets/summons/pit-brute/hd-r1/4.webp"
-            },
-            {
-              "time": 100,
-              "src": "/game-assets/summons/pit-brute/hd-r1/5.webp"
-            },
-            {
-              "time": 190,
-              "src": "/game-assets/summons/pit-brute/hd-r1/6.webp"
-            },
-            {
-              "time": 280,
-              "src": "/game-assets/summons/pit-brute/hd-r1/7.webp"
-            }
-          ],
-          "duration": 350,
-          "loop": false,
-          "events": [
-            {
-              "name": "impact",
-              "time_ms": 100
-            }
-          ],
-          "impact": 100,
-          "sourceState": "act"
-        }
-      },
-      "size": [
-        1024,
-        768
-      ],
-      "anchor": [
-        512,
-        680
-      ],
-      "geometry": {
-        "coordinate_system": "pixels; top-left; x right, y down",
-        "facing": "right",
-        "canvas_px": [
-          1024,
-          768
-        ],
-        "root_px": [
-          512,
-          680
-        ],
-        "anchor_normalized": [
-          0.5,
-          0.8854166666666666
-        ],
-        "source_pixels_per_world_unit": 360,
+        "source_pixels_per_world_unit": 236.52173913043478,
         "standing_height_world": 1.15,
-        "hover_gap_world": 0,
-        "reference_visible_height_px": 414,
-        "root_motion": "In-place, one uniform scale per generated sheet, translation-only per pose to preserve original horizontal pose offset and common ground; no per-frame resizing",
-        "mirror_safe": false,
+        "reference_visible_height_px": 272,
         "layout_bounds_px": [
-          194,
-          197,
-          829,
-          680
+          81,
+          42.5,
+          402.5,
+          384
         ]
+      },
+      "sourceManifest": {
+        "path": "assets/characters/warlock-pit-brute/animations/frames32-cinematic-r1/animation.json",
+        "sha256": "f6d7ae56f4dbbaebfd9d4cd0ab8dc63fee2718e8809261db0961b1c005747c57"
       }
     },
     "summon-imp-flight": {
@@ -12290,6 +12361,838 @@
       "sha256": "eae6b4994d7963527ca895e07c09328c7e522a4ac330ea1d246476b59195816f",
       "output": "music/demon-lord.wav",
       "status": "User requested original boss score arrangement"
+    },
+    {
+      "source": "assets/characters/hellhound/animations/frames32-cinematic-r1/frames/idle-00.png",
+      "sha256": "ebef843b82d2330fbe2d620b3cb3c09a43298eb6980b78300e53b8505ce7cc17",
+      "output": "summons/hellhound/cinematic32-repair-r2/0.webp",
+      "outputSha256": "43d0869199f8138f2413450a63fec3d88d2696b82fa8ffc561072c721340b906",
+      "status": "Pending approval",
+      "transform": {
+        "uniformScale": 0.5,
+        "format": "webp",
+        "lossless": true
+      },
+      "authorization": "User requested game integration of new cinematic32 summons2026-10-04"
+    },
+    {
+      "source": "assets/characters/hellhound/animations/frames32-cinematic-r1/frames/idle-01.png",
+      "sha256": "2040219d4c185d1166fbf0c7189d989006f2c7e4619c3e2ed4bc5dececa1084b",
+      "output": "summons/hellhound/cinematic32-repair-r2/1.webp",
+      "outputSha256": "d5efefe89e207cf3bdddc5baf49cf5258be10bc15b28b192032fb081b81b283a",
+      "status": "Pending approval",
+      "transform": {
+        "uniformScale": 0.5,
+        "format": "webp",
+        "lossless": true
+      },
+      "authorization": "User requested game integration of new cinematic32 summons2026-10-04"
+    },
+    {
+      "source": "assets/characters/hellhound/animations/frames32-cinematic-r1/frames/idle-02.png",
+      "sha256": "ec4bb230dcb66194cfe47797a5ea008ea247cd5c68c17412b041a7754812d54b",
+      "output": "summons/hellhound/cinematic32-repair-r2/2.webp",
+      "outputSha256": "484315677f0048fb0fa244f2b1d0b5bf11648b4654ea84a9b538246d732df96d",
+      "status": "Pending approval",
+      "transform": {
+        "uniformScale": 0.5,
+        "format": "webp",
+        "lossless": true
+      },
+      "authorization": "User requested game integration of new cinematic32 summons2026-10-04"
+    },
+    {
+      "source": "assets/characters/hellhound/animations/frames32-cinematic-r1/frames/idle-03.png",
+      "sha256": "744da8823d09901fad7dfd360d4d879902d9d848fa4baa05913d79a5ad7faecf",
+      "output": "summons/hellhound/cinematic32-repair-r2/3.webp",
+      "outputSha256": "3fd9934d435c1874343fadb16432295de5b92d7ba37e818f182e1c4d7011e40a",
+      "status": "Pending approval",
+      "transform": {
+        "uniformScale": 0.5,
+        "format": "webp",
+        "lossless": true
+      },
+      "authorization": "User requested game integration of new cinematic32 summons2026-10-04"
+    },
+    {
+      "source": "assets/characters/hellhound/animations/frames32-cinematic-r1/frames/attack-00.png",
+      "sha256": "651c0544ac5484a10c0c43fcfba982c05cb93ed1a9e33e3c9773fbe35a1f0c44",
+      "output": "summons/hellhound/cinematic32-repair-r2/4.webp",
+      "outputSha256": "ad8fb37bf2f6677dab662181d77f5e0695a131989fe5fe85461599bcd5b17aaf",
+      "status": "Pending approval",
+      "transform": {
+        "uniformScale": 0.5,
+        "format": "webp",
+        "lossless": true
+      },
+      "authorization": "User requested game integration of new cinematic32 summons2026-10-04"
+    },
+    {
+      "source": "assets/characters/hellhound/animations/frames32-cinematic-r1/frames/attack-01.png",
+      "sha256": "0d06690736383e23b32f4d176d74d4c6741fecfad28053f79e63499306eb4946",
+      "output": "summons/hellhound/cinematic32-repair-r2/5.webp",
+      "outputSha256": "c0b68932b2b0a12be29ac97f0ae3209c36b5b63710a579440db369936e619e31",
+      "status": "Pending approval",
+      "transform": {
+        "uniformScale": 0.5,
+        "format": "webp",
+        "lossless": true
+      },
+      "authorization": "User requested game integration of new cinematic32 summons2026-10-04"
+    },
+    {
+      "source": "assets/characters/hellhound/animations/frames32-cinematic-r1/frames/attack-02.png",
+      "sha256": "c4d201ac48f5cb80f2b687201f833f4760ce2dc5a6a62faa014a4531aeec72e8",
+      "output": "summons/hellhound/cinematic32-repair-r2/6.webp",
+      "outputSha256": "0e2867128facf61138b5f3baf9618907e04b0f7a62f92819243f0e8e06b0071d",
+      "status": "Pending approval",
+      "transform": {
+        "uniformScale": 0.5,
+        "format": "webp",
+        "lossless": true
+      },
+      "authorization": "User requested game integration of new cinematic32 summons2026-10-04"
+    },
+    {
+      "source": "assets/characters/hellhound/animations/frames32-cinematic-r1/frames/attack-03.png",
+      "sha256": "8d8bc53a2dd0f006d87d4596df12338979a74700a87f02c2e7ff99d911ad267f",
+      "output": "summons/hellhound/cinematic32-repair-r2/7.webp",
+      "outputSha256": "d20227623c49e0a22f8e3c96c674ccb00192b2d4dfb34846a310005c22056b1b",
+      "status": "Pending approval",
+      "transform": {
+        "uniformScale": 0.5,
+        "format": "webp",
+        "lossless": true
+      },
+      "authorization": "User requested game integration of new cinematic32 summons2026-10-04"
+    },
+    {
+      "source": "assets/characters/hellhound/animations/frames32-cinematic-r1/frames/attack-04.png",
+      "sha256": "42b4f2c82c0a7eab41a50f7003f049d8d1bf94ac3e47adb1ae5ccc0f232c5a13",
+      "output": "summons/hellhound/cinematic32-repair-r2/8.webp",
+      "outputSha256": "86f6544db12b11f046c6be4c6e40ef01a866f781d814c6ac1511d34f2a926e8b",
+      "status": "Pending approval",
+      "transform": {
+        "uniformScale": 0.5,
+        "format": "webp",
+        "lossless": true
+      },
+      "authorization": "User requested game integration of new cinematic32 summons2026-10-04"
+    },
+    {
+      "source": "assets/characters/hellhound/animations/frames32-cinematic-r1/frames/attack-05.png",
+      "sha256": "73543fc93a2b3fe871b99c5903a3867542169691cd75b7c843cefa32b6c7f8df",
+      "output": "summons/hellhound/cinematic32-repair-r2/9.webp",
+      "outputSha256": "ff05674a0331b14c9ca65f69198479d2e81f36d156a5d4386d5a2914cfbed1bd",
+      "status": "Pending approval",
+      "transform": {
+        "uniformScale": 0.5,
+        "format": "webp",
+        "lossless": true
+      },
+      "authorization": "User requested game integration of new cinematic32 summons2026-10-04"
+    },
+    {
+      "source": "assets/characters/hellhound/animations/frames32-cinematic-r1/frames/attack-06.png",
+      "sha256": "57e02e9d2c8b2ecc4c3bfa5c9941cb7c6a1b1b17bb252a562213d58ae5595926",
+      "output": "summons/hellhound/cinematic32-repair-r2/10.webp",
+      "outputSha256": "275cdc878289ff441606c1986b64a52c9172674c5c5b481d58cfec794ddca8c8",
+      "status": "Pending approval",
+      "transform": {
+        "uniformScale": 0.5,
+        "format": "webp",
+        "lossless": true
+      },
+      "authorization": "User requested game integration of new cinematic32 summons2026-10-04"
+    },
+    {
+      "source": "assets/characters/hellhound/animations/frames32-cinematic-r1/frames/attack-07.png",
+      "sha256": "d6bc01413f820a7d6327b14cced2b647506220b59774c9a03ae26dab07d39a59",
+      "output": "summons/hellhound/cinematic32-repair-r2/11.webp",
+      "outputSha256": "0991a92d6872b28b87df0bac5e32a24d629a213f11f329972328f68837197a7e",
+      "status": "Pending approval",
+      "transform": {
+        "uniformScale": 0.5,
+        "format": "webp",
+        "lossless": true
+      },
+      "authorization": "User requested game integration of new cinematic32 summons2026-10-04"
+    },
+    {
+      "source": "assets/characters/hellhound/animations/frames32-cinematic-r1/frames/hit-00.png",
+      "sha256": "b5724afd7996c2425f3e7b9a1589092e4d64342bebd8b74248c6c8836182e466",
+      "output": "summons/hellhound/cinematic32-repair-r2/12.webp",
+      "outputSha256": "8b17a2341f797c116be457dd5731a5c3a003203c70986a3c689d4f87b7bc7340",
+      "status": "Pending approval",
+      "transform": {
+        "uniformScale": 0.5,
+        "format": "webp",
+        "lossless": true
+      },
+      "authorization": "User requested game integration of new cinematic32 summons2026-10-04"
+    },
+    {
+      "source": "assets/characters/hellhound/animations/frames32-cinematic-r1/frames/hit-01.png",
+      "sha256": "786fcbf6dc3df14ae5d53c22c3e86a5bfd0a3aa42de7cd076a044c964358ea78",
+      "output": "summons/hellhound/cinematic32-repair-r2/13.webp",
+      "outputSha256": "36e5f4d3e6559ba7457a18e9e6a3eeb1a47fa21dce9370018f6bc7918d750af6",
+      "status": "Pending approval",
+      "transform": {
+        "uniformScale": 0.5,
+        "format": "webp",
+        "lossless": true
+      },
+      "authorization": "User requested game integration of new cinematic32 summons2026-10-04"
+    },
+    {
+      "source": "assets/characters/hellhound/animations/frames32-cinematic-r1/frames/hit-02.png",
+      "sha256": "487ade4bd632d5f05f271a18c9b1693d4f383387b6e47b7c02b0daca1b26abaf",
+      "output": "summons/hellhound/cinematic32-repair-r2/14.webp",
+      "outputSha256": "1127c0931dee1a100772f7a4c49d86cf5c4becc220d7589e1e415bd181092a15",
+      "status": "Pending approval",
+      "transform": {
+        "uniformScale": 0.5,
+        "format": "webp",
+        "lossless": true
+      },
+      "authorization": "User requested game integration of new cinematic32 summons2026-10-04"
+    },
+    {
+      "source": "assets/characters/hellhound/animations/frames32-cinematic-r1/frames/hit-03.png",
+      "sha256": "f93d8bae5a2540eacc178beb2a1821e2fc586b9d44fb41cace313de87a18be66",
+      "output": "summons/hellhound/cinematic32-repair-r2/15.webp",
+      "outputSha256": "c00cf9ee1f674a82d77fe12b25bf9c11ccfe49b7ebb6b51387685374b271884d",
+      "status": "Pending approval",
+      "transform": {
+        "uniformScale": 0.5,
+        "format": "webp",
+        "lossless": true
+      },
+      "authorization": "User requested game integration of new cinematic32 summons2026-10-04"
+    },
+    {
+      "source": "assets/characters/hellhound/animations/frames32-cinematic-r1/frames/wounded_idle-00.png",
+      "sha256": "06c5bcea61b787b70ea13e106fcb22168edf48176a851e8011d3fdc98fe9e524",
+      "output": "summons/hellhound/cinematic32-repair-r2/16.webp",
+      "outputSha256": "c5294cd9c36fd34f113df4f9a49d672043f539f99359d57f9fbc42d28452b9cc",
+      "status": "Pending approval",
+      "transform": {
+        "uniformScale": 0.5,
+        "format": "webp",
+        "lossless": true
+      },
+      "authorization": "User requested game integration of new cinematic32 summons2026-10-04"
+    },
+    {
+      "source": "assets/characters/hellhound/animations/frames32-cinematic-r1/frames/wounded_idle-01.png",
+      "sha256": "3ac61b9283a5ceda8048eadcfba9cb508b284a5e60c6a7614dbab00061ae744c",
+      "output": "summons/hellhound/cinematic32-repair-r2/17.webp",
+      "outputSha256": "1f49e57f3bb03dbac65722ce1c14e8ca19c8e24defc867a7b355c1e237d8b349",
+      "status": "Pending approval",
+      "transform": {
+        "uniformScale": 0.5,
+        "format": "webp",
+        "lossless": true
+      },
+      "authorization": "User requested game integration of new cinematic32 summons2026-10-04"
+    },
+    {
+      "source": "assets/characters/hellhound/animations/frames32-cinematic-r1/frames/wounded_idle-02.png",
+      "sha256": "dcba8524c34e09bb5b61522ad975664d03623502fd80b60662c544afe2eca8bf",
+      "output": "summons/hellhound/cinematic32-repair-r2/18.webp",
+      "outputSha256": "12c89f08c13e61a9234f03f75823fdbeb8d5de58ea1ad46d70fef7ca4fd5ab19",
+      "status": "Pending approval",
+      "transform": {
+        "uniformScale": 0.5,
+        "format": "webp",
+        "lossless": true
+      },
+      "authorization": "User requested game integration of new cinematic32 summons2026-10-04"
+    },
+    {
+      "source": "assets/characters/hellhound/animations/frames32-cinematic-r1/frames/wounded_idle-03.png",
+      "sha256": "63e1bfd4dd25bb3f55b3fd271c59a184fd4fab13a09be41f8c03d7023e544bc3",
+      "output": "summons/hellhound/cinematic32-repair-r2/19.webp",
+      "outputSha256": "4150d522f797e909db9da8529ac1e7269c29d927c14549dc6f27446bce3b17e9",
+      "status": "Pending approval",
+      "transform": {
+        "uniformScale": 0.5,
+        "format": "webp",
+        "lossless": true
+      },
+      "authorization": "User requested game integration of new cinematic32 summons2026-10-04"
+    },
+    {
+      "source": "assets/characters/hellhound/animations/frames32-cinematic-r1/frames/spawn-00.png",
+      "sha256": "8a3a9238c2fbaf7e5029b53cc1f7541cb1d9bf479271dfea0767dadca2aa23cf",
+      "output": "summons/hellhound/cinematic32-repair-r2/20.webp",
+      "outputSha256": "d0bbf121673f64ca5eb3319ae0082b0c518db68ec0856b5ebe630df6eacdd5ae",
+      "status": "Pending approval",
+      "transform": {
+        "uniformScale": 0.5,
+        "format": "webp",
+        "lossless": true
+      },
+      "authorization": "User requested game integration of new cinematic32 summons2026-10-04"
+    },
+    {
+      "source": "assets/characters/hellhound/animations/frames32-cinematic-r1/frames/spawn-01.png",
+      "sha256": "f2622bfacd7a399f1873dadb234c979b60c81d58e39f37bd15881ce20b69dbd7",
+      "output": "summons/hellhound/cinematic32-repair-r2/21.webp",
+      "outputSha256": "ea9e31270d3bea4aacf722d838da65ef5ad94c7ee1f2e2679e56574f32cc383d",
+      "status": "Pending approval",
+      "transform": {
+        "uniformScale": 0.5,
+        "format": "webp",
+        "lossless": true
+      },
+      "authorization": "User requested game integration of new cinematic32 summons2026-10-04"
+    },
+    {
+      "source": "assets/characters/hellhound/animations/frames32-cinematic-r1/frames/spawn-02.png",
+      "sha256": "1caf52f699b890834b9a746f4008e8450d9fc2308d06b28ea9b6abd622afd82a",
+      "output": "summons/hellhound/cinematic32-repair-r2/22.webp",
+      "outputSha256": "bd1c2bf1861a12224a4badae423e204b8cbf7a273c5ae65de9678b22cf843eeb",
+      "status": "Pending approval",
+      "transform": {
+        "uniformScale": 0.5,
+        "format": "webp",
+        "lossless": true
+      },
+      "authorization": "User requested game integration of new cinematic32 summons2026-10-04"
+    },
+    {
+      "source": "assets/characters/hellhound/animations/frames32-cinematic-r1/frames/spawn-03.png",
+      "sha256": "b4850dc77aa087a8f1fbde2c18356a98e4d74b9519f028f6f07185c221bdd778",
+      "output": "summons/hellhound/cinematic32-repair-r2/23.webp",
+      "outputSha256": "fca500a16ce27fbbcfc40629f73050425839cb4d78af257c6edfeab07aade5da",
+      "status": "Pending approval",
+      "transform": {
+        "uniformScale": 0.5,
+        "format": "webp",
+        "lossless": true
+      },
+      "authorization": "User requested game integration of new cinematic32 summons2026-10-04"
+    },
+    {
+      "source": "assets/characters/hellhound/animations/frames32-cinematic-r1/frames/die-00.png",
+      "sha256": "6ad1c2caef756ca7003b7762f3d13563ac49056b3cb6305ba45cf8aff6a20c08",
+      "output": "summons/hellhound/cinematic32-repair-r2/24.webp",
+      "outputSha256": "4b74f5cdbf2b21c36c2117beee65e27fe8e974808e8cdc7df1f485e09db18eeb",
+      "status": "Pending approval",
+      "transform": {
+        "uniformScale": 0.5,
+        "format": "webp",
+        "lossless": true
+      },
+      "authorization": "User requested game integration of new cinematic32 summons2026-10-04"
+    },
+    {
+      "source": "assets/characters/hellhound/animations/frames32-cinematic-r1/frames/die-01.png",
+      "sha256": "c8af3fc88d4299ca5550d63fa455722ee7fd9ba4f280702bbc54446c632745fd",
+      "output": "summons/hellhound/cinematic32-repair-r2/25.webp",
+      "outputSha256": "89b5368663308c642f72db49b568ec999621a06bfc69c28d13f88303f4d5ef4f",
+      "status": "Pending approval",
+      "transform": {
+        "uniformScale": 0.5,
+        "format": "webp",
+        "lossless": true
+      },
+      "authorization": "User requested game integration of new cinematic32 summons2026-10-04"
+    },
+    {
+      "source": "assets/characters/hellhound/animations/frames32-cinematic-r1/frames/die-02.png",
+      "sha256": "55ed1aedac4f205f292807dd8abafe39d726ca980d06787d0df2e51de1acb3d1",
+      "output": "summons/hellhound/cinematic32-repair-r2/26.webp",
+      "outputSha256": "8bff1f93db7657047cfa02b8dec201c27c0608c5d22fbca084c9385e0c1306f2",
+      "status": "Pending approval",
+      "transform": {
+        "uniformScale": 0.5,
+        "format": "webp",
+        "lossless": true
+      },
+      "authorization": "User requested game integration of new cinematic32 summons2026-10-04"
+    },
+    {
+      "source": "assets/characters/hellhound/animations/frames32-cinematic-r1/frames/die-03.png",
+      "sha256": "ddf8430949c79c087e0ae3e541f6ea09d8ca52b1a97746470d18b2d18fe00e1f",
+      "output": "summons/hellhound/cinematic32-repair-r2/27.webp",
+      "outputSha256": "ff9eca39101027d24a361a86763994080270d70dce902fbf33d1dd52702b2b37",
+      "status": "Pending approval",
+      "transform": {
+        "uniformScale": 0.5,
+        "format": "webp",
+        "lossless": true
+      },
+      "authorization": "User requested game integration of new cinematic32 summons2026-10-04"
+    },
+    {
+      "source": "assets/characters/hellhound/animations/frames32-cinematic-r1/frames/die-04.png",
+      "sha256": "99f1990547b9aa9ab036733dfc5e1014bd840afe14ff67b391c2b2f5bfc62281",
+      "output": "summons/hellhound/cinematic32-repair-r2/28.webp",
+      "outputSha256": "6a78017825c1897683f971c4020ad232d4fc4b2113b69fd771ec93e4dca9deda",
+      "status": "Pending approval",
+      "transform": {
+        "uniformScale": 0.5,
+        "format": "webp",
+        "lossless": true
+      },
+      "authorization": "User requested game integration of new cinematic32 summons2026-10-04"
+    },
+    {
+      "source": "assets/characters/hellhound/animations/frames32-cinematic-r1/frames/die-05.png",
+      "sha256": "fc4b4dc449fe1d66b43478edebf1a31f531ba30fe4794d9530b6636c2ff2eca9",
+      "output": "summons/hellhound/cinematic32-repair-r2/29.webp",
+      "outputSha256": "ba9dcf4fb6ad4a398059e8027d96591c62358160bac3d61f72b50c95de2a7532",
+      "status": "Pending approval",
+      "transform": {
+        "uniformScale": 0.5,
+        "format": "webp",
+        "lossless": true
+      },
+      "authorization": "User requested game integration of new cinematic32 summons2026-10-04"
+    },
+    {
+      "source": "assets/characters/hellhound/animations/frames32-cinematic-r1/frames/die-06.png",
+      "sha256": "19b4c3ca7431c46f13a8408bb74345eb2dc7e6bd5fd9aacb768fb056576ec24d",
+      "output": "summons/hellhound/cinematic32-repair-r2/30.webp",
+      "outputSha256": "a12c63536fb50433ea888ce7ecf76f1a097d33909abb62c8a5fe03c8da7b4309",
+      "status": "Pending approval",
+      "transform": {
+        "uniformScale": 0.5,
+        "format": "webp",
+        "lossless": true
+      },
+      "authorization": "User requested game integration of new cinematic32 summons2026-10-04"
+    },
+    {
+      "source": "assets/characters/hellhound/animations/frames32-cinematic-r1/frames/die-07.png",
+      "sha256": "9854f064ea6af6fc65b897cca072d9ded12e948d7e91bbb9548501417fc46cd9",
+      "output": "summons/hellhound/cinematic32-repair-r2/31.webp",
+      "outputSha256": "afb786afd30991422b0bf9fa2d1487f4b5aa08919661d34fbc410c80169f43ec",
+      "status": "Pending approval",
+      "transform": {
+        "uniformScale": 0.5,
+        "format": "webp",
+        "lossless": true
+      },
+      "authorization": "User requested game integration of new cinematic32 summons2026-10-04"
+    },
+    {
+      "source": "assets/characters/warlock-pit-brute/animations/frames32-cinematic-r1/frames/idle-00.png",
+      "sha256": "865d1fd148fa738951f72de1a52be577d62ce5db1439851eb8e05ea99d6c382b",
+      "output": "summons/pit-brute/cinematic32-r1/0.webp",
+      "outputSha256": "6b619af041d3577e88d13aca9b48ca0330efc79ec26622b08da7161a8645aaed",
+      "status": "Pending approval",
+      "transform": {
+        "uniformScale": 0.5,
+        "format": "webp",
+        "lossless": true
+      },
+      "authorization": "User requested game integration of new cinematic32 summons2026-10-04"
+    },
+    {
+      "source": "assets/characters/warlock-pit-brute/animations/frames32-cinematic-r1/frames/idle-01.png",
+      "sha256": "13e67ec7f66ba75876d8fb86104e4e8b8f6a3ca20c4ee07323694cc552d61f26",
+      "output": "summons/pit-brute/cinematic32-r1/1.webp",
+      "outputSha256": "de00487c119d1e8c219af9f8f380e22bf9a7a07b86bba7aca62a89400cd1ef71",
+      "status": "Pending approval",
+      "transform": {
+        "uniformScale": 0.5,
+        "format": "webp",
+        "lossless": true
+      },
+      "authorization": "User requested game integration of new cinematic32 summons2026-10-04"
+    },
+    {
+      "source": "assets/characters/warlock-pit-brute/animations/frames32-cinematic-r1/frames/idle-02.png",
+      "sha256": "fbfdf04e4dd27d3663dba3380ede336a8bfec39c3a431e525e982d9d3cfc45fe",
+      "output": "summons/pit-brute/cinematic32-r1/2.webp",
+      "outputSha256": "393d6cc03bdbd4927fec1485f432735f6bba777995076183ecfa7e7e906d1f0c",
+      "status": "Pending approval",
+      "transform": {
+        "uniformScale": 0.5,
+        "format": "webp",
+        "lossless": true
+      },
+      "authorization": "User requested game integration of new cinematic32 summons2026-10-04"
+    },
+    {
+      "source": "assets/characters/warlock-pit-brute/animations/frames32-cinematic-r1/frames/idle-03.png",
+      "sha256": "30bc51518f63c2ccf4aef2b9a4145ef26ae1c4901ff440737dfac19df28632c6",
+      "output": "summons/pit-brute/cinematic32-r1/3.webp",
+      "outputSha256": "790f4df2d1ac6e718cb1e6c84d6ff5bf9a5d67594af2de3cfd730c047644ce41",
+      "status": "Pending approval",
+      "transform": {
+        "uniformScale": 0.5,
+        "format": "webp",
+        "lossless": true
+      },
+      "authorization": "User requested game integration of new cinematic32 summons2026-10-04"
+    },
+    {
+      "source": "assets/characters/warlock-pit-brute/animations/frames32-cinematic-r1/frames/attack-00.png",
+      "sha256": "633b50ed89216ec8c9999a96f6ea276f4c4c7cf86ec57e4c6dee2e16cdfb610c",
+      "output": "summons/pit-brute/cinematic32-r1/4.webp",
+      "outputSha256": "2d1158c32e0bba12df84fcf066c3ad094b28a6c50c22d278df85ccc30dbf1996",
+      "status": "Pending approval",
+      "transform": {
+        "uniformScale": 0.5,
+        "format": "webp",
+        "lossless": true
+      },
+      "authorization": "User requested game integration of new cinematic32 summons2026-10-04"
+    },
+    {
+      "source": "assets/characters/warlock-pit-brute/animations/frames32-cinematic-r1/frames/attack-01.png",
+      "sha256": "2400f2974c4d53b03cb47707d9dd805ee8f38cf3936742006fcda21843a10caa",
+      "output": "summons/pit-brute/cinematic32-r1/5.webp",
+      "outputSha256": "79aa1174733c53fc81bfa97abb6ab99bfb11d124541874cb77047210331405dd",
+      "status": "Pending approval",
+      "transform": {
+        "uniformScale": 0.5,
+        "format": "webp",
+        "lossless": true
+      },
+      "authorization": "User requested game integration of new cinematic32 summons2026-10-04"
+    },
+    {
+      "source": "assets/characters/warlock-pit-brute/animations/frames32-cinematic-r1/frames/attack-02.png",
+      "sha256": "684d687bfa8b7546c6bf4a94ed81cfb63640099f19de19edbc749eeac51cca92",
+      "output": "summons/pit-brute/cinematic32-r1/6.webp",
+      "outputSha256": "cded042c4f7effa5f811b625e3761dad883dbc3c112e5228e3ed77942f9dfdd3",
+      "status": "Pending approval",
+      "transform": {
+        "uniformScale": 0.5,
+        "format": "webp",
+        "lossless": true
+      },
+      "authorization": "User requested game integration of new cinematic32 summons2026-10-04"
+    },
+    {
+      "source": "assets/characters/warlock-pit-brute/animations/frames32-cinematic-r1/frames/attack-03.png",
+      "sha256": "ff678d6f499b5720cbc95e015b7969f6491c41f8108033efb9176c377f0ae7f6",
+      "output": "summons/pit-brute/cinematic32-r1/7.webp",
+      "outputSha256": "9965ca234f20c393ef504be919cb70255f8424ece3e3865ed95b514b309064ec",
+      "status": "Pending approval",
+      "transform": {
+        "uniformScale": 0.5,
+        "format": "webp",
+        "lossless": true
+      },
+      "authorization": "User requested game integration of new cinematic32 summons2026-10-04"
+    },
+    {
+      "source": "assets/characters/warlock-pit-brute/animations/frames32-cinematic-r1/frames/attack-04.png",
+      "sha256": "184497a50765acf13882a5d19f8bb4f2c4f423e087e9d8ac3e4fa13618285411",
+      "output": "summons/pit-brute/cinematic32-r1/8.webp",
+      "outputSha256": "5f3371181722bd0afefa334ad04996c9b40c525d60b7d3a21a405150d6a696c3",
+      "status": "Pending approval",
+      "transform": {
+        "uniformScale": 0.5,
+        "format": "webp",
+        "lossless": true
+      },
+      "authorization": "User requested game integration of new cinematic32 summons2026-10-04"
+    },
+    {
+      "source": "assets/characters/warlock-pit-brute/animations/frames32-cinematic-r1/frames/attack-05.png",
+      "sha256": "22f57a3489a85a6e9ce226768e7d818e6a81b3251a083265cb8e3788ef7dc86e",
+      "output": "summons/pit-brute/cinematic32-r1/9.webp",
+      "outputSha256": "e23af36e0951827205d097f17bb1305d177530734bda57ecbe9fdb34e8701f25",
+      "status": "Pending approval",
+      "transform": {
+        "uniformScale": 0.5,
+        "format": "webp",
+        "lossless": true
+      },
+      "authorization": "User requested game integration of new cinematic32 summons2026-10-04"
+    },
+    {
+      "source": "assets/characters/warlock-pit-brute/animations/frames32-cinematic-r1/frames/attack-06.png",
+      "sha256": "bfed6215bc30823ceb0b322f1928d34b10394ebb9e32f607c4c1697df0a3397a",
+      "output": "summons/pit-brute/cinematic32-r1/10.webp",
+      "outputSha256": "41c0d89d7f72fe336ba55d64750c56e52a6a2ec643cfbe52d0781300222b2262",
+      "status": "Pending approval",
+      "transform": {
+        "uniformScale": 0.5,
+        "format": "webp",
+        "lossless": true
+      },
+      "authorization": "User requested game integration of new cinematic32 summons2026-10-04"
+    },
+    {
+      "source": "assets/characters/warlock-pit-brute/animations/frames32-cinematic-r1/frames/attack-07.png",
+      "sha256": "a1fe5af31f8e05326f47608b13c98a2c452d8d9f267ebbb1ceaa004ba6542616",
+      "output": "summons/pit-brute/cinematic32-r1/11.webp",
+      "outputSha256": "03ccd66674746e312439ad2b911f51d3be52cd756e69cc27c33ce57162821993",
+      "status": "Pending approval",
+      "transform": {
+        "uniformScale": 0.5,
+        "format": "webp",
+        "lossless": true
+      },
+      "authorization": "User requested game integration of new cinematic32 summons2026-10-04"
+    },
+    {
+      "source": "assets/characters/warlock-pit-brute/animations/frames32-cinematic-r1/frames/hit-00.png",
+      "sha256": "34f242318ee7c801d0df634a60852e5144735ba8f1cdcbe4d752d78e9e1424e3",
+      "output": "summons/pit-brute/cinematic32-r1/12.webp",
+      "outputSha256": "f6f21a882c561b9aae2d749d94844a90cae4dbe9cc9d3f39de45ac583c4183e0",
+      "status": "Pending approval",
+      "transform": {
+        "uniformScale": 0.5,
+        "format": "webp",
+        "lossless": true
+      },
+      "authorization": "User requested game integration of new cinematic32 summons2026-10-04"
+    },
+    {
+      "source": "assets/characters/warlock-pit-brute/animations/frames32-cinematic-r1/frames/hit-01.png",
+      "sha256": "c4cf09398d36484c6ef8b79087558b86bbb8479e75665dd47ebeb16f649d34ca",
+      "output": "summons/pit-brute/cinematic32-r1/13.webp",
+      "outputSha256": "85e4d770acfeba909a840fa08a14edf6070f6562e1a09ac28f7b76eaff94f2cc",
+      "status": "Pending approval",
+      "transform": {
+        "uniformScale": 0.5,
+        "format": "webp",
+        "lossless": true
+      },
+      "authorization": "User requested game integration of new cinematic32 summons2026-10-04"
+    },
+    {
+      "source": "assets/characters/warlock-pit-brute/animations/frames32-cinematic-r1/frames/hit-02.png",
+      "sha256": "1b40e2e9f2e42548cf4d9f88316ff14449624219e0de3eeddc41fda37402aa2b",
+      "output": "summons/pit-brute/cinematic32-r1/14.webp",
+      "outputSha256": "5a3a5c15921d0c508ee4673df4c3b7f8d26959f7101beea569280a886ea218da",
+      "status": "Pending approval",
+      "transform": {
+        "uniformScale": 0.5,
+        "format": "webp",
+        "lossless": true
+      },
+      "authorization": "User requested game integration of new cinematic32 summons2026-10-04"
+    },
+    {
+      "source": "assets/characters/warlock-pit-brute/animations/frames32-cinematic-r1/frames/hit-03.png",
+      "sha256": "e3d2d9d0d7fe629b9cef5228c996e6df4664c7a3b690af49653f5a786334e575",
+      "output": "summons/pit-brute/cinematic32-r1/15.webp",
+      "outputSha256": "09692be29c7f5803b20ed248e3564b57e3404291b09c8abf10bf9638aa8050c0",
+      "status": "Pending approval",
+      "transform": {
+        "uniformScale": 0.5,
+        "format": "webp",
+        "lossless": true
+      },
+      "authorization": "User requested game integration of new cinematic32 summons2026-10-04"
+    },
+    {
+      "source": "assets/characters/warlock-pit-brute/animations/frames32-cinematic-r1/frames/wounded_idle-00.png",
+      "sha256": "b089903825ebdcae5444f79ff5edeb97351ce959b9663af9bfb5b761b246a094",
+      "output": "summons/pit-brute/cinematic32-r1/16.webp",
+      "outputSha256": "8a5c51a63db41cc4f18737b8e500f3e85be1ea41b77dbd42f482f863c6aaebba",
+      "status": "Pending approval",
+      "transform": {
+        "uniformScale": 0.5,
+        "format": "webp",
+        "lossless": true
+      },
+      "authorization": "User requested game integration of new cinematic32 summons2026-10-04"
+    },
+    {
+      "source": "assets/characters/warlock-pit-brute/animations/frames32-cinematic-r1/frames/wounded_idle-01.png",
+      "sha256": "f4be53a22ca2ec61395f62a42e6563372fb1fa6949335643bd25e8ee70734a82",
+      "output": "summons/pit-brute/cinematic32-r1/17.webp",
+      "outputSha256": "212cf3d0d3c23aef0341b93679005cb12da5782ea4b013d78b0a8dd17b97e185",
+      "status": "Pending approval",
+      "transform": {
+        "uniformScale": 0.5,
+        "format": "webp",
+        "lossless": true
+      },
+      "authorization": "User requested game integration of new cinematic32 summons2026-10-04"
+    },
+    {
+      "source": "assets/characters/warlock-pit-brute/animations/frames32-cinematic-r1/frames/wounded_idle-02.png",
+      "sha256": "2e8db659a2040d768d0320b29af24c0478243df879451f426b5ed0ceb02bc45c",
+      "output": "summons/pit-brute/cinematic32-r1/18.webp",
+      "outputSha256": "6e39b33eaf8ae543fd3ffc1e7bf7cb0cb96050ec2e6b25c38ddda948d81a34fe",
+      "status": "Pending approval",
+      "transform": {
+        "uniformScale": 0.5,
+        "format": "webp",
+        "lossless": true
+      },
+      "authorization": "User requested game integration of new cinematic32 summons2026-10-04"
+    },
+    {
+      "source": "assets/characters/warlock-pit-brute/animations/frames32-cinematic-r1/frames/wounded_idle-03.png",
+      "sha256": "a7b65e00330f9608575105926bcc861fc1894b504696066bf08288b1d42efc7b",
+      "output": "summons/pit-brute/cinematic32-r1/19.webp",
+      "outputSha256": "08e3cbecdfa156c51a7882364424172b6147aff04cca934031924700bfe2b750",
+      "status": "Pending approval",
+      "transform": {
+        "uniformScale": 0.5,
+        "format": "webp",
+        "lossless": true
+      },
+      "authorization": "User requested game integration of new cinematic32 summons2026-10-04"
+    },
+    {
+      "source": "assets/characters/warlock-pit-brute/animations/frames32-cinematic-r1/frames/spawn-00.png",
+      "sha256": "35f7044b3a242174997252a682fb05c197991b3f26766f1aa91387fee6fdb644",
+      "output": "summons/pit-brute/cinematic32-r1/20.webp",
+      "outputSha256": "8f845caf72e302f96fee3c935ad50cd1b721bccfbe826aa2fb0841450aac41a3",
+      "status": "Pending approval",
+      "transform": {
+        "uniformScale": 0.5,
+        "format": "webp",
+        "lossless": true
+      },
+      "authorization": "User requested game integration of new cinematic32 summons2026-10-04"
+    },
+    {
+      "source": "assets/characters/warlock-pit-brute/animations/frames32-cinematic-r1/frames/spawn-01.png",
+      "sha256": "af677327d76fbd1d997341d9a40a44db681bd323a1d39e0ebb3f9589f5efe28d",
+      "output": "summons/pit-brute/cinematic32-r1/21.webp",
+      "outputSha256": "e220863f933c21697d6fb5bcdef574975419824d18855379e166f4668a49bb64",
+      "status": "Pending approval",
+      "transform": {
+        "uniformScale": 0.5,
+        "format": "webp",
+        "lossless": true
+      },
+      "authorization": "User requested game integration of new cinematic32 summons2026-10-04"
+    },
+    {
+      "source": "assets/characters/warlock-pit-brute/animations/frames32-cinematic-r1/frames/spawn-02.png",
+      "sha256": "2f8ddb47ecd135d98c17e721a78020158d4734476069cc72d86d9c2204344c0d",
+      "output": "summons/pit-brute/cinematic32-r1/22.webp",
+      "outputSha256": "6bfb0e8e5bd8b08a57a5567a27a8246171c551bc984647731ac2e7a91654ab47",
+      "status": "Pending approval",
+      "transform": {
+        "uniformScale": 0.5,
+        "format": "webp",
+        "lossless": true
+      },
+      "authorization": "User requested game integration of new cinematic32 summons2026-10-04"
+    },
+    {
+      "source": "assets/characters/warlock-pit-brute/animations/frames32-cinematic-r1/frames/spawn-03.png",
+      "sha256": "96e081d57e330a3407b06ae5ddc5fdfb171dbb23dfa3501415e10d0c302b007e",
+      "output": "summons/pit-brute/cinematic32-r1/23.webp",
+      "outputSha256": "19c2817a18dcbc3a731ca71da6c71ed723e87bac3b2cddf3f9824e0d20009cd4",
+      "status": "Pending approval",
+      "transform": {
+        "uniformScale": 0.5,
+        "format": "webp",
+        "lossless": true
+      },
+      "authorization": "User requested game integration of new cinematic32 summons2026-10-04"
+    },
+    {
+      "source": "assets/characters/warlock-pit-brute/animations/frames32-cinematic-r1/frames/die-00.png",
+      "sha256": "fb89fb0dd3e6bf2b8a7b5fa397c690f8ba432d49a028990e8c0fdb8527cbd574",
+      "output": "summons/pit-brute/cinematic32-r1/24.webp",
+      "outputSha256": "43cc97663d06a0117f0a849faac6c7a015175eeac106e239aabd532756a8815f",
+      "status": "Pending approval",
+      "transform": {
+        "uniformScale": 0.5,
+        "format": "webp",
+        "lossless": true
+      },
+      "authorization": "User requested game integration of new cinematic32 summons2026-10-04"
+    },
+    {
+      "source": "assets/characters/warlock-pit-brute/animations/frames32-cinematic-r1/frames/die-01.png",
+      "sha256": "f5b454933aea971b4c67a36e9d52511cd7792cfd6efcb742480e81c14cfbba35",
+      "output": "summons/pit-brute/cinematic32-r1/25.webp",
+      "outputSha256": "5db57e1a202bf30f827c73f6bd39a15426a975b83212685935660842334f8ca3",
+      "status": "Pending approval",
+      "transform": {
+        "uniformScale": 0.5,
+        "format": "webp",
+        "lossless": true
+      },
+      "authorization": "User requested game integration of new cinematic32 summons2026-10-04"
+    },
+    {
+      "source": "assets/characters/warlock-pit-brute/animations/frames32-cinematic-r1/frames/die-02.png",
+      "sha256": "003530a24c4eb05f58324d3e4a3671b52b882ff9e521d07f69ccb14cfb367464",
+      "output": "summons/pit-brute/cinematic32-r1/26.webp",
+      "outputSha256": "235928830ce2bd098e5de9ab565a8371ce7000a778fbb9055e19937fd3d1c999",
+      "status": "Pending approval",
+      "transform": {
+        "uniformScale": 0.5,
+        "format": "webp",
+        "lossless": true
+      },
+      "authorization": "User requested game integration of new cinematic32 summons2026-10-04"
+    },
+    {
+      "source": "assets/characters/warlock-pit-brute/animations/frames32-cinematic-r1/frames/die-03.png",
+      "sha256": "913403ff834a7a7f99d41af817521e532246dd0113719df84e55ba533bd699e3",
+      "output": "summons/pit-brute/cinematic32-r1/27.webp",
+      "outputSha256": "21b735e5648ceea95ffebe5eba8889cbfce75d2a043f6486c7f81b150495430d",
+      "status": "Pending approval",
+      "transform": {
+        "uniformScale": 0.5,
+        "format": "webp",
+        "lossless": true
+      },
+      "authorization": "User requested game integration of new cinematic32 summons2026-10-04"
+    },
+    {
+      "source": "assets/characters/warlock-pit-brute/animations/frames32-cinematic-r1/frames/die-04.png",
+      "sha256": "cab3941f56a34ab15a2623e8216152393dcafb703ab32185873ced6414957b12",
+      "output": "summons/pit-brute/cinematic32-r1/28.webp",
+      "outputSha256": "e66bfc1f0bbea6dae9f2b3909daa7d25b27431e9ee831b0ffc94ad1ca817e253",
+      "status": "Pending approval",
+      "transform": {
+        "uniformScale": 0.5,
+        "format": "webp",
+        "lossless": true
+      },
+      "authorization": "User requested game integration of new cinematic32 summons2026-10-04"
+    },
+    {
+      "source": "assets/characters/warlock-pit-brute/animations/frames32-cinematic-r1/frames/die-05.png",
+      "sha256": "8b701d78605184685cab1bbb8ac9b6b63d6e138a72970ed07b8c922e713ef6f9",
+      "output": "summons/pit-brute/cinematic32-r1/29.webp",
+      "outputSha256": "f232975866f75e98bf44344067e07a9b346c8db833041839ab1077465bbeaef6",
+      "status": "Pending approval",
+      "transform": {
+        "uniformScale": 0.5,
+        "format": "webp",
+        "lossless": true
+      },
+      "authorization": "User requested game integration of new cinematic32 summons2026-10-04"
+    },
+    {
+      "source": "assets/characters/warlock-pit-brute/animations/frames32-cinematic-r1/frames/die-06.png",
+      "sha256": "ebe4831a154e3c3f80eb7bc6155bfff99099398582659e5f3441c6e827c43de7",
+      "output": "summons/pit-brute/cinematic32-r1/30.webp",
+      "outputSha256": "1d0b5d9a655b645822d6d7eac78f883141cc556e725522a8905e3ba8197c0716",
+      "status": "Pending approval",
+      "transform": {
+        "uniformScale": 0.5,
+        "format": "webp",
+        "lossless": true
+      },
+      "authorization": "User requested game integration of new cinematic32 summons2026-10-04"
+    },
+    {
+      "source": "assets/characters/warlock-pit-brute/animations/frames32-cinematic-r1/frames/die-07.png",
+      "sha256": "867764a3a6c4c94dd95025a595a4155e5d0941b82777c61e018db572145c6c47",
+      "output": "summons/pit-brute/cinematic32-r1/31.webp",
+      "outputSha256": "15f8e5918075e11d9c331a7e325b1d92f276eb8d93146afbbe9532027fcda42d",
+      "status": "Pending approval",
+      "transform": {
+        "uniformScale": 0.5,
+        "format": "webp",
+        "lossless": true
+      },
+      "authorization": "User requested game integration of new cinematic32 summons2026-10-04"
     }
   ],
   "integration": {
@@ -12559,72 +13462,304 @@
         }
       },
       "hellhound": {
-        "revision": "base-r1",
+        "revision": "cinematic32-repair-r2",
         "manifest": {
-          "source": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\characters\\warlock-summons\\animations\\base-r1\\warlock-hellhound\\animation.json",
-          "sha256": "939539de239bc7e81fd8cd7b1dc6bd29d9e7e0fcfd928312146af9a17026400a",
-          "status": "Pending approval",
-          "evidenceId": null
+          "path": "assets/characters/hellhound/animations/frames32-cinematic-r1/animation.json",
+          "sha256": "2287cbe8c88fbb7c56315debd85253294f322385f073fe8bab3d00e4911d9b0d"
         },
         "master": {
-          "source": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\characters\\warlock-hellhound\\base\\r1\\warlock-hellhound-base-r1.png",
-          "sha256": "cd8794ac38c33ac948600c0054a1bc75149df9af73b4bb712fe799356ee1207c",
-          "status": "Approved",
-          "evidenceId": "3770060c-0002-4fb4-9787-8301e9bb8c3c"
+          "path": "assets/cinematics/oath-intro/r3/hellhound.png",
+          "sha256": "f42e103c244b550e770f3a2d5bff02cc12d10f9532d545fe13ac5ea287c572f4"
         },
-        "sheet": {
-          "source": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\characters\\warlock-summons\\animations\\base-r1\\warlock-hellhound\\source-sheet.png",
-          "sha256": "1589187c89442c22ad693fb0d7c844e69c05d8abb80e2958b8289fbe1b2b4f53",
-          "status": "Pending approval",
-          "evidenceId": null
-        }
+        "frames": [
+          {
+            "path": "assets/characters/hellhound/animations/frames32-cinematic-r1/frames/idle-00.png",
+            "sha256": "ebef843b82d2330fbe2d620b3cb3c09a43298eb6980b78300e53b8505ce7cc17"
+          },
+          {
+            "path": "assets/characters/hellhound/animations/frames32-cinematic-r1/frames/idle-01.png",
+            "sha256": "2040219d4c185d1166fbf0c7189d989006f2c7e4619c3e2ed4bc5dececa1084b"
+          },
+          {
+            "path": "assets/characters/hellhound/animations/frames32-cinematic-r1/frames/idle-02.png",
+            "sha256": "ec4bb230dcb66194cfe47797a5ea008ea247cd5c68c17412b041a7754812d54b"
+          },
+          {
+            "path": "assets/characters/hellhound/animations/frames32-cinematic-r1/frames/idle-03.png",
+            "sha256": "744da8823d09901fad7dfd360d4d879902d9d848fa4baa05913d79a5ad7faecf"
+          },
+          {
+            "path": "assets/characters/hellhound/animations/frames32-cinematic-r1/frames/attack-00.png",
+            "sha256": "651c0544ac5484a10c0c43fcfba982c05cb93ed1a9e33e3c9773fbe35a1f0c44"
+          },
+          {
+            "path": "assets/characters/hellhound/animations/frames32-cinematic-r1/frames/attack-01.png",
+            "sha256": "0d06690736383e23b32f4d176d74d4c6741fecfad28053f79e63499306eb4946"
+          },
+          {
+            "path": "assets/characters/hellhound/animations/frames32-cinematic-r1/frames/attack-02.png",
+            "sha256": "c4d201ac48f5cb80f2b687201f833f4760ce2dc5a6a62faa014a4531aeec72e8"
+          },
+          {
+            "path": "assets/characters/hellhound/animations/frames32-cinematic-r1/frames/attack-03.png",
+            "sha256": "8d8bc53a2dd0f006d87d4596df12338979a74700a87f02c2e7ff99d911ad267f"
+          },
+          {
+            "path": "assets/characters/hellhound/animations/frames32-cinematic-r1/frames/attack-04.png",
+            "sha256": "42b4f2c82c0a7eab41a50f7003f049d8d1bf94ac3e47adb1ae5ccc0f232c5a13"
+          },
+          {
+            "path": "assets/characters/hellhound/animations/frames32-cinematic-r1/frames/attack-05.png",
+            "sha256": "73543fc93a2b3fe871b99c5903a3867542169691cd75b7c843cefa32b6c7f8df"
+          },
+          {
+            "path": "assets/characters/hellhound/animations/frames32-cinematic-r1/frames/attack-06.png",
+            "sha256": "57e02e9d2c8b2ecc4c3bfa5c9941cb7c6a1b1b17bb252a562213d58ae5595926"
+          },
+          {
+            "path": "assets/characters/hellhound/animations/frames32-cinematic-r1/frames/attack-07.png",
+            "sha256": "d6bc01413f820a7d6327b14cced2b647506220b59774c9a03ae26dab07d39a59"
+          },
+          {
+            "path": "assets/characters/hellhound/animations/frames32-cinematic-r1/frames/hit-00.png",
+            "sha256": "b5724afd7996c2425f3e7b9a1589092e4d64342bebd8b74248c6c8836182e466"
+          },
+          {
+            "path": "assets/characters/hellhound/animations/frames32-cinematic-r1/frames/hit-01.png",
+            "sha256": "786fcbf6dc3df14ae5d53c22c3e86a5bfd0a3aa42de7cd076a044c964358ea78"
+          },
+          {
+            "path": "assets/characters/hellhound/animations/frames32-cinematic-r1/frames/hit-02.png",
+            "sha256": "487ade4bd632d5f05f271a18c9b1693d4f383387b6e47b7c02b0daca1b26abaf"
+          },
+          {
+            "path": "assets/characters/hellhound/animations/frames32-cinematic-r1/frames/hit-03.png",
+            "sha256": "f93d8bae5a2540eacc178beb2a1821e2fc586b9d44fb41cace313de87a18be66"
+          },
+          {
+            "path": "assets/characters/hellhound/animations/frames32-cinematic-r1/frames/wounded_idle-00.png",
+            "sha256": "06c5bcea61b787b70ea13e106fcb22168edf48176a851e8011d3fdc98fe9e524"
+          },
+          {
+            "path": "assets/characters/hellhound/animations/frames32-cinematic-r1/frames/wounded_idle-01.png",
+            "sha256": "3ac61b9283a5ceda8048eadcfba9cb508b284a5e60c6a7614dbab00061ae744c"
+          },
+          {
+            "path": "assets/characters/hellhound/animations/frames32-cinematic-r1/frames/wounded_idle-02.png",
+            "sha256": "dcba8524c34e09bb5b61522ad975664d03623502fd80b60662c544afe2eca8bf"
+          },
+          {
+            "path": "assets/characters/hellhound/animations/frames32-cinematic-r1/frames/wounded_idle-03.png",
+            "sha256": "63e1bfd4dd25bb3f55b3fd271c59a184fd4fab13a09be41f8c03d7023e544bc3"
+          },
+          {
+            "path": "assets/characters/hellhound/animations/frames32-cinematic-r1/frames/spawn-00.png",
+            "sha256": "8a3a9238c2fbaf7e5029b53cc1f7541cb1d9bf479271dfea0767dadca2aa23cf"
+          },
+          {
+            "path": "assets/characters/hellhound/animations/frames32-cinematic-r1/frames/spawn-01.png",
+            "sha256": "f2622bfacd7a399f1873dadb234c979b60c81d58e39f37bd15881ce20b69dbd7"
+          },
+          {
+            "path": "assets/characters/hellhound/animations/frames32-cinematic-r1/frames/spawn-02.png",
+            "sha256": "1caf52f699b890834b9a746f4008e8450d9fc2308d06b28ea9b6abd622afd82a"
+          },
+          {
+            "path": "assets/characters/hellhound/animations/frames32-cinematic-r1/frames/spawn-03.png",
+            "sha256": "b4850dc77aa087a8f1fbde2c18356a98e4d74b9519f028f6f07185c221bdd778"
+          },
+          {
+            "path": "assets/characters/hellhound/animations/frames32-cinematic-r1/frames/die-00.png",
+            "sha256": "6ad1c2caef756ca7003b7762f3d13563ac49056b3cb6305ba45cf8aff6a20c08"
+          },
+          {
+            "path": "assets/characters/hellhound/animations/frames32-cinematic-r1/frames/die-01.png",
+            "sha256": "c8af3fc88d4299ca5550d63fa455722ee7fd9ba4f280702bbc54446c632745fd"
+          },
+          {
+            "path": "assets/characters/hellhound/animations/frames32-cinematic-r1/frames/die-02.png",
+            "sha256": "55ed1aedac4f205f292807dd8abafe39d726ca980d06787d0df2e51de1acb3d1"
+          },
+          {
+            "path": "assets/characters/hellhound/animations/frames32-cinematic-r1/frames/die-03.png",
+            "sha256": "ddf8430949c79c087e0ae3e541f6ea09d8ca52b1a97746470d18b2d18fe00e1f"
+          },
+          {
+            "path": "assets/characters/hellhound/animations/frames32-cinematic-r1/frames/die-04.png",
+            "sha256": "99f1990547b9aa9ab036733dfc5e1014bd840afe14ff67b391c2b2f5bfc62281"
+          },
+          {
+            "path": "assets/characters/hellhound/animations/frames32-cinematic-r1/frames/die-05.png",
+            "sha256": "fc4b4dc449fe1d66b43478edebf1a31f531ba30fe4794d9530b6636c2ff2eca9"
+          },
+          {
+            "path": "assets/characters/hellhound/animations/frames32-cinematic-r1/frames/die-06.png",
+            "sha256": "19b4c3ca7431c46f13a8408bb74345eb2dc7e6bd5fd9aacb768fb056576ec24d"
+          },
+          {
+            "path": "assets/characters/hellhound/animations/frames32-cinematic-r1/frames/die-07.png",
+            "sha256": "9854f064ea6af6fc65b897cca072d9ded12e948d7e91bbb9548501417fc46cd9"
+          }
+        ],
+        "facing": "right",
+        "frameCount": 32,
+        "aliases": {
+          "act": "attack"
+        },
+        "uniformScale": 0.5,
+        "encodedBytes": 1632684,
+        "decodedBytes": 15728640,
+        "authorization": "User requested pending assets installed in game2026-10-04; approval ledger unchanged"
       },
       "pit-brute": {
-        "revision": "hd-r1",
+        "revision": "cinematic32-r1",
         "manifest": {
-          "source": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\characters\\warlock-pit-brute\\animations\\hd-r1\\animation.json",
-          "sha256": "f450ec8cce944c4f09c86a9bcda87ff65f6bd584165b2f4bf09c1519ad0c61b9",
-          "status": "Pending approval",
-          "evidenceId": null
+          "path": "assets/characters/warlock-pit-brute/animations/frames32-cinematic-r1/animation.json",
+          "sha256": "f6d7ae56f4dbbaebfd9d4cd0ab8dc63fee2718e8809261db0961b1c005747c57"
         },
         "master": {
-          "source": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\characters\\warlock-pit-brute\\base\\r2\\warlock-pit-brute-base-r2.png",
-          "sha256": "8e882b2b1c26359fd19cef9874c924b6fbf6c22386a475875abcf724f64ff0f5",
-          "status": "Approved",
-          "evidenceId": "5510117e-0e1b-41e1-b547-3c3fa610b261"
+          "path": "assets/cinematics/oath-intro/r3/pit-brute.png",
+          "sha256": "0f8dc36570fd588701342dd9a89359bf1af59bf139fb2441ddf14f960b5a50b9"
         },
-        "sheet": {
-          "source": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\characters\\warlock-pit-brute\\animations\\hd-r1\\source\\detail-0.png",
-          "sha256": "1e6b36675544d60d6b74fe6fd4f165dd33d8f08d3efd9fe019d4023bbcbbc52b",
-          "status": "Pending approval",
-          "evidenceId": null
-        },
-        "sheets": [
+        "frames": [
           {
-            "source": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\characters\\warlock-pit-brute\\animations\\hd-r1\\source\\detail-0.png",
-            "sha256": "1e6b36675544d60d6b74fe6fd4f165dd33d8f08d3efd9fe019d4023bbcbbc52b",
-            "status": "Pending approval",
-            "evidenceId": null
+            "path": "assets/characters/warlock-pit-brute/animations/frames32-cinematic-r1/frames/idle-00.png",
+            "sha256": "865d1fd148fa738951f72de1a52be577d62ce5db1439851eb8e05ea99d6c382b"
           },
           {
-            "source": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\characters\\warlock-pit-brute\\animations\\hd-r1\\source\\detail-1.png",
-            "sha256": "c4e22595f8a22be1bad28daf85043bf5d8cd8876d1524e514cf7f7a3fd1992dd",
-            "status": "Pending approval",
-            "evidenceId": null
+            "path": "assets/characters/warlock-pit-brute/animations/frames32-cinematic-r1/frames/idle-01.png",
+            "sha256": "13e67ec7f66ba75876d8fb86104e4e8b8f6a3ca20c4ee07323694cc552d61f26"
           },
           {
-            "source": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\characters\\warlock-pit-brute\\animations\\hd-r1\\source\\detail-2.png",
-            "sha256": "ded4120c095244e911a55cd2ac5ae0dea95473b605729124c4b12abc2f6024b7",
-            "status": "Pending approval",
-            "evidenceId": null
+            "path": "assets/characters/warlock-pit-brute/animations/frames32-cinematic-r1/frames/idle-02.png",
+            "sha256": "fbfdf04e4dd27d3663dba3380ede336a8bfec39c3a431e525e982d9d3cfc45fe"
           },
           {
-            "source": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\characters\\warlock-pit-brute\\animations\\hd-r1\\source\\detail-3.png",
-            "sha256": "30b6d0e9085184e1b9ec5c19f676c3e59b460cf7a191343051c606d77ebe0b9c",
-            "status": "Pending approval",
-            "evidenceId": null
+            "path": "assets/characters/warlock-pit-brute/animations/frames32-cinematic-r1/frames/idle-03.png",
+            "sha256": "30bc51518f63c2ccf4aef2b9a4145ef26ae1c4901ff440737dfac19df28632c6"
+          },
+          {
+            "path": "assets/characters/warlock-pit-brute/animations/frames32-cinematic-r1/frames/attack-00.png",
+            "sha256": "633b50ed89216ec8c9999a96f6ea276f4c4c7cf86ec57e4c6dee2e16cdfb610c"
+          },
+          {
+            "path": "assets/characters/warlock-pit-brute/animations/frames32-cinematic-r1/frames/attack-01.png",
+            "sha256": "2400f2974c4d53b03cb47707d9dd805ee8f38cf3936742006fcda21843a10caa"
+          },
+          {
+            "path": "assets/characters/warlock-pit-brute/animations/frames32-cinematic-r1/frames/attack-02.png",
+            "sha256": "684d687bfa8b7546c6bf4a94ed81cfb63640099f19de19edbc749eeac51cca92"
+          },
+          {
+            "path": "assets/characters/warlock-pit-brute/animations/frames32-cinematic-r1/frames/attack-03.png",
+            "sha256": "ff678d6f499b5720cbc95e015b7969f6491c41f8108033efb9176c377f0ae7f6"
+          },
+          {
+            "path": "assets/characters/warlock-pit-brute/animations/frames32-cinematic-r1/frames/attack-04.png",
+            "sha256": "184497a50765acf13882a5d19f8bb4f2c4f423e087e9d8ac3e4fa13618285411"
+          },
+          {
+            "path": "assets/characters/warlock-pit-brute/animations/frames32-cinematic-r1/frames/attack-05.png",
+            "sha256": "22f57a3489a85a6e9ce226768e7d818e6a81b3251a083265cb8e3788ef7dc86e"
+          },
+          {
+            "path": "assets/characters/warlock-pit-brute/animations/frames32-cinematic-r1/frames/attack-06.png",
+            "sha256": "bfed6215bc30823ceb0b322f1928d34b10394ebb9e32f607c4c1697df0a3397a"
+          },
+          {
+            "path": "assets/characters/warlock-pit-brute/animations/frames32-cinematic-r1/frames/attack-07.png",
+            "sha256": "a1fe5af31f8e05326f47608b13c98a2c452d8d9f267ebbb1ceaa004ba6542616"
+          },
+          {
+            "path": "assets/characters/warlock-pit-brute/animations/frames32-cinematic-r1/frames/hit-00.png",
+            "sha256": "34f242318ee7c801d0df634a60852e5144735ba8f1cdcbe4d752d78e9e1424e3"
+          },
+          {
+            "path": "assets/characters/warlock-pit-brute/animations/frames32-cinematic-r1/frames/hit-01.png",
+            "sha256": "c4cf09398d36484c6ef8b79087558b86bbb8479e75665dd47ebeb16f649d34ca"
+          },
+          {
+            "path": "assets/characters/warlock-pit-brute/animations/frames32-cinematic-r1/frames/hit-02.png",
+            "sha256": "1b40e2e9f2e42548cf4d9f88316ff14449624219e0de3eeddc41fda37402aa2b"
+          },
+          {
+            "path": "assets/characters/warlock-pit-brute/animations/frames32-cinematic-r1/frames/hit-03.png",
+            "sha256": "e3d2d9d0d7fe629b9cef5228c996e6df4664c7a3b690af49653f5a786334e575"
+          },
+          {
+            "path": "assets/characters/warlock-pit-brute/animations/frames32-cinematic-r1/frames/wounded_idle-00.png",
+            "sha256": "b089903825ebdcae5444f79ff5edeb97351ce959b9663af9bfb5b761b246a094"
+          },
+          {
+            "path": "assets/characters/warlock-pit-brute/animations/frames32-cinematic-r1/frames/wounded_idle-01.png",
+            "sha256": "f4be53a22ca2ec61395f62a42e6563372fb1fa6949335643bd25e8ee70734a82"
+          },
+          {
+            "path": "assets/characters/warlock-pit-brute/animations/frames32-cinematic-r1/frames/wounded_idle-02.png",
+            "sha256": "2e8db659a2040d768d0320b29af24c0478243df879451f426b5ed0ceb02bc45c"
+          },
+          {
+            "path": "assets/characters/warlock-pit-brute/animations/frames32-cinematic-r1/frames/wounded_idle-03.png",
+            "sha256": "a7b65e00330f9608575105926bcc861fc1894b504696066bf08288b1d42efc7b"
+          },
+          {
+            "path": "assets/characters/warlock-pit-brute/animations/frames32-cinematic-r1/frames/spawn-00.png",
+            "sha256": "35f7044b3a242174997252a682fb05c197991b3f26766f1aa91387fee6fdb644"
+          },
+          {
+            "path": "assets/characters/warlock-pit-brute/animations/frames32-cinematic-r1/frames/spawn-01.png",
+            "sha256": "af677327d76fbd1d997341d9a40a44db681bd323a1d39e0ebb3f9589f5efe28d"
+          },
+          {
+            "path": "assets/characters/warlock-pit-brute/animations/frames32-cinematic-r1/frames/spawn-02.png",
+            "sha256": "2f8ddb47ecd135d98c17e721a78020158d4734476069cc72d86d9c2204344c0d"
+          },
+          {
+            "path": "assets/characters/warlock-pit-brute/animations/frames32-cinematic-r1/frames/spawn-03.png",
+            "sha256": "96e081d57e330a3407b06ae5ddc5fdfb171dbb23dfa3501415e10d0c302b007e"
+          },
+          {
+            "path": "assets/characters/warlock-pit-brute/animations/frames32-cinematic-r1/frames/die-00.png",
+            "sha256": "fb89fb0dd3e6bf2b8a7b5fa397c690f8ba432d49a028990e8c0fdb8527cbd574"
+          },
+          {
+            "path": "assets/characters/warlock-pit-brute/animations/frames32-cinematic-r1/frames/die-01.png",
+            "sha256": "f5b454933aea971b4c67a36e9d52511cd7792cfd6efcb742480e81c14cfbba35"
+          },
+          {
+            "path": "assets/characters/warlock-pit-brute/animations/frames32-cinematic-r1/frames/die-02.png",
+            "sha256": "003530a24c4eb05f58324d3e4a3671b52b882ff9e521d07f69ccb14cfb367464"
+          },
+          {
+            "path": "assets/characters/warlock-pit-brute/animations/frames32-cinematic-r1/frames/die-03.png",
+            "sha256": "913403ff834a7a7f99d41af817521e532246dd0113719df84e55ba533bd699e3"
+          },
+          {
+            "path": "assets/characters/warlock-pit-brute/animations/frames32-cinematic-r1/frames/die-04.png",
+            "sha256": "cab3941f56a34ab15a2623e8216152393dcafb703ab32185873ced6414957b12"
+          },
+          {
+            "path": "assets/characters/warlock-pit-brute/animations/frames32-cinematic-r1/frames/die-05.png",
+            "sha256": "8b701d78605184685cab1bbb8ac9b6b63d6e138a72970ed07b8c922e713ef6f9"
+          },
+          {
+            "path": "assets/characters/warlock-pit-brute/animations/frames32-cinematic-r1/frames/die-06.png",
+            "sha256": "ebe4831a154e3c3f80eb7bc6155bfff99099398582659e5f3441c6e827c43de7"
+          },
+          {
+            "path": "assets/characters/warlock-pit-brute/animations/frames32-cinematic-r1/frames/die-07.png",
+            "sha256": "867764a3a6c4c94dd95025a595a4155e5d0941b82777c61e018db572145c6c47"
           }
-        ]
+        ],
+        "facing": "right",
+        "frameCount": 32,
+        "aliases": {
+          "act": "attack"
+        },
+        "uniformScale": 0.5,
+        "encodedBytes": 2235662,
+        "decodedBytes": 25165824,
+        "authorization": "User requested pending assets installed in game2026-10-04; approval ledger unchanged"
       },
       "imp-flight": {
         "revision": "flight-r1",

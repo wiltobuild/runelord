@@ -2,6 +2,7 @@ import fs from "node:fs";
 import path from "node:path";
 import crypto from "node:crypto";
 import sharp from "sharp";
+import { integrateCinematicSummons } from "./cinematic-summons.mjs";
 const out = "apps/web/public/game-assets";
 fs.mkdirSync(out, { recursive: true });
 const previous = fs.existsSync("packages/assets/manifest.json") ? JSON.parse(fs.readFileSync("packages/assets/manifest.json", "utf8")) : { provenance: [] };
@@ -276,6 +277,7 @@ for (const [id, kind] of [["boss-imp", "imp"], ["boss-hellhound", "hellhound"]])
   if (kind === "imp") manifest.actors[id].ranged = {kind:"demon-bolt",origin:[.28,.52],travelMs:520};
   manifest.images[id] = manifest.images[`summon-${kind}`];
 }
+await integrateCinematicSummons(manifest);
 const musicRoot = process.env.RUNELORD_MUSIC_ROOT || "assets/audio/music";
 const tracks = JSON.parse(
   fs.readFileSync(path.join(musicRoot, "loop_manifest.json"), "utf8"),

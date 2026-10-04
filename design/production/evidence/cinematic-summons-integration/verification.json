@@ -1,0 +1,29 @@
+{
+  "date": "2026-10-04",
+  "authorization": "User requested the newly generated Pit Brute and Hellhound models installed for Warlock summons and committed/pushed. Explicit pending-art integration authorization; gallery ledger unchanged.",
+  "scope": "Two ally summon actors, authored spawn visibility, attack movement duration, death fade; enemy summon aliases retained.",
+  "build": "npm run build passed",
+  "engine": "npx tsx --test packages/engine/warlock.test.ts:28 passed",
+  "contracts": "Both source animation.json manifests pass production animation validator",
+  "independentReview": {
+    "reviewer": "runelord_rules_engineer",
+    "verdict": "PASS, no blocking findings",
+    "checks": ["64 source PNG hashes match reviewed canonical originals", "64 runtime WebPs have correct half dimensions and transparency", "Only two ally actor/image entries replaced; enemy aliases unchanged", "Six states retain frame counts, durations, impact events and anchors", "Authored spawn bypass and duration-aware lunge preserve clips"],
+    "minorObservation": "Pit Brute terminal death export has a few alpha1/255 edge pixels from resizing; no visible cropping."
+  },
+  "browser": {
+    "url": "http://127.0.0.1:4320/",
+    "normalGame": "Played Summon Hellhound from starter hand; observed new art and correct right-facing ground placement. End Turn played new attack, recovered to idle, then new hit frames after enemy attack. No browser errors.",
+    "componentFixture": "Both actors rendered together with production ActorSprite, layoutWarband, retreatGroundFormation, CSS and runtime manifest on the arena. Sampled all32 frames each across six states. Authored spawn frames visible from frame20; attack/hit return to idle, wounded loops, death reaches frame31. Hit sampling repeated to capture all brief frames. No browser errors.",
+    "limits": "Pit Brute verified with production component fixture, not a complete card acquisition run. Static source artwork independently reviewed previously."
+  },
+  "export": {
+    "uniformScale": 0.5,
+    "format": "lossless WebP with alpha",
+    "encodedBytes": 3868346,
+    "decodedBytes": 40894464,
+    "nativeStandingHeightsInHud": {"hellhound":140,"pit-brute":230},
+    "note": "Uniform scale applied to entire canvases, bounds and anchors; no per-pose resizing. Existing formation may reduce both for crowded warbands."
+  },
+  "sources": "The versioned integration inputs include numbered PNGs, animation/manifest/handoff metadata and exact cinematic r3 identity masters. Full authoring source sheets, atlases and review movies remain in the previously delivered runelord-summons32 package; not required by runtime import."
+}

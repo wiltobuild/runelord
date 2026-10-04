@@ -2,6 +2,7 @@ import { DemonLordGlow } from "./DemonLordGlow";
 import { useEffect, useRef, useState, type CSSProperties } from "react";
 import type { Assets } from "./assets";
 import { FireDeathEffect } from "./FireDeathEffect";
+import "./cinematic-summons.css";
 export type ActorCue = { state: string; sequence: number };
 const loaded = new Map<string, Promise<void>>();
 function imageReady(src: string) {
@@ -95,7 +96,7 @@ export function ActorSprite({
       if (image.current.getAttribute("src") !== frame.src)
         image.current.src = frame.src;
       if (frame.effects || actor.effects) image.current.dataset.glow = JSON.stringify(frame.effects ?? actor.effects);
-      const spawning = requested === "spawn" && elapsed < 1200;
+      const spawning = requested === "spawn" && actor.spawnReveal !== "authored" && elapsed < 1200;
       const reveal = Math.max(0, Math.min(1, (elapsed - 790) / 330));
       image.current.style.opacity = String((frame.opacity ?? 1) * (spawning ? reveal : 1));
       image.current.style.clipPath = spawning ? `inset(${Math.max(0, 100 - elapsed / 8)}% 0 0)` : "";
@@ -153,18 +154,19 @@ export function ActorSprite({
     <div
       className={`actor-sprite ${className}${cue?.state === "spawn" && hp > 0 ? " arriving" : ""}${pixelsPerUnit ? " source-scaled-summon" : ""}`}
       data-art={art}
+      data-spawn-reveal={actor?.spawnReveal}
       data-death-effect={actor?.deathEffect}
       style={pixelsPerUnit ? { height: `calc(var(--summon-world-unit, 200px) * ${(geometry!.layout_bounds_px ? actor.anchor[1] - geometry!.layout_bounds_px[1] : geometry!.reference_visible_height_px) / pixelsPerUnit})` } : undefined}
     >
       <img
         ref={image}
-        style={{...summonStyle, ...(cue?.state === "spawn" ? {opacity: 0} : {})}}
+        style={{...summonStyle, ...(cue?.state === "spawn" && actor?.spawnReveal !== "authored" ? {opacity: 0} : {})}}
         src={failed ? assets.images[art] : states?.idle.frames[0].src || assets.images[art]}
         onError={() => { setFailed(true); if (image.current) image.current.style.opacity = "1"; }}
         alt={name}
         draggable={false}
       />
-      {cue?.state === "spawn" && hp > 0 && <canvas ref={fire} width={actor?.size[0] ?? 512} height={actor?.size[1] ?? 512} className="summon-fire-silhouette" style={{...summonStyle, pointerEvents: "none", filter: "drop-shadow(0 0 7px #ff671d) drop-shadow(0 0 16px #ff300a)"}} aria-hidden="true" />}
+      {cue?.state === "spawn" && actor?.spawnReveal !== "authored" && hp > 0 && <canvas ref={fire} width={actor?.size[0] ?? 512} height={actor?.size[1] ?? 512} className="summon-fire-silhouette" style={{...summonStyle, pointerEvents: "none", filter: "drop-shadow(0 0 7px #ff671d) drop-shadow(0 0 16px #ff300a)"}} aria-hidden="true" />}
       {art === "demon-lord" && <DemonLordGlow image={image} active={hp > 0} enraged={hp / maxHp <= .5} sockets={actor?.effects} />}
       {deathFinished && hp <= 0 && actor.deathEffect === "fire" && image.current && <FireDeathEffect image={image.current} audible={wasAlive.current} />}
     </div>

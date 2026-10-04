@@ -13,7 +13,7 @@ export type Assets = {
   images: Record<string, string>;
   cards: Record<string, string>;
   animations: Record<string, Clip>;
-  actors: Record<string, {deathEffect?:"fire";effects?:DemonGlowSockets;ranged?:{kind:"flaming-arrow"|"crossbow-bolt"|"demon-bolt";origin:number[];travelMs:number};size:number[];anchor:number[];geometry?:{source_pixels_per_world_unit:number;standing_height_world:number;reference_visible_height_px:number;layout_bounds_px?:number[]};states:Record<string, {duration:number;loop:boolean;impact:number|null;frames:{time:number;src:string;opacity?:number;offsetX?:number;effects?:DemonGlowSockets}[]}>}>;
+  actors: Record<string, {spawnReveal?:"authored";deathEffect?:"fire";effects?:DemonGlowSockets;ranged?:{kind:"flaming-arrow"|"crossbow-bolt"|"demon-bolt";origin:number[];travelMs:number};size:number[];anchor:number[];geometry?:{source_pixels_per_world_unit:number;standing_height_world:number;reference_visible_height_px:number;layout_bounds_px?:number[]};states:Record<string, {duration:number;loop:boolean;impact:number|null;frames:{time:number;src:string;opacity?:number;offsetX?:number;effects?:DemonGlowSockets}[]}>}>;
   music: Record<
     string,
     { url: string; title: string; start: number; end: number }

@@ -1,0 +1,8 @@
+/* Let the authored collapse finish before the defeated summon leaves the field. */
+.battle-ui .formation-unit.unit-dying:has([data-spawn-reveal="authored"]) {
+  animation-name:cinematic-summon-death;
+}
+@keyframes cinematic-summon-death {
+  0%,90% { opacity:1; filter:none; transform:none; }
+  100% { opacity:0; filter:none; transform:none; }
+}

@@ -1,0 +1,279 @@
+{
+  "schema": 1,
+  "id": "hellhound-cinematic-32",
+  "revision": "repair-r2",
+  "frame_canvas": [
+    768,
+    640
+  ],
+  "anchor": [
+    170,
+    560
+  ],
+  "frames": [
+    {
+      "file": "frames/idle-00.png",
+      "sha256": "ebef843b82d2330fbe2d620b3cb3c09a43298eb6980b78300e53b8505ce7cc17"
+    },
+    {
+      "file": "frames/idle-01.png",
+      "sha256": "2040219d4c185d1166fbf0c7189d989006f2c7e4619c3e2ed4bc5dececa1084b"
+    },
+    {
+      "file": "frames/idle-02.png",
+      "sha256": "ec4bb230dcb66194cfe47797a5ea008ea247cd5c68c17412b041a7754812d54b"
+    },
+    {
+      "file": "frames/idle-03.png",
+      "sha256": "744da8823d09901fad7dfd360d4d879902d9d848fa4baa05913d79a5ad7faecf"
+    },
+    {
+      "file": "frames/attack-00.png",
+      "sha256": "651c0544ac5484a10c0c43fcfba982c05cb93ed1a9e33e3c9773fbe35a1f0c44"
+    },
+    {
+      "file": "frames/attack-01.png",
+      "sha256": "0d06690736383e23b32f4d176d74d4c6741fecfad28053f79e63499306eb4946"
+    },
+    {
+      "file": "frames/attack-02.png",
+      "sha256": "c4d201ac48f5cb80f2b687201f833f4760ce2dc5a6a62faa014a4531aeec72e8"
+    },
+    {
+      "file": "frames/attack-03.png",
+      "sha256": "8d8bc53a2dd0f006d87d4596df12338979a74700a87f02c2e7ff99d911ad267f"
+    },
+    {
+      "file": "frames/attack-04.png",
+      "sha256": "42b4f2c82c0a7eab41a50f7003f049d8d1bf94ac3e47adb1ae5ccc0f232c5a13"
+    },
+    {
+      "file": "frames/attack-05.png",
+      "sha256": "73543fc93a2b3fe871b99c5903a3867542169691cd75b7c843cefa32b6c7f8df"
+    },
+    {
+      "file": "frames/attack-06.png",
+      "sha256": "57e02e9d2c8b2ecc4c3bfa5c9941cb7c6a1b1b17bb252a562213d58ae5595926"
+    },
+    {
+      "file": "frames/attack-07.png",
+      "sha256": "d6bc01413f820a7d6327b14cced2b647506220b59774c9a03ae26dab07d39a59"
+    },
+    {
+      "file": "frames/hit-00.png",
+      "sha256": "b5724afd7996c2425f3e7b9a1589092e4d64342bebd8b74248c6c8836182e466"
+    },
+    {
+      "file": "frames/hit-01.png",
+      "sha256": "786fcbf6dc3df14ae5d53c22c3e86a5bfd0a3aa42de7cd076a044c964358ea78"
+    },
+    {
+      "file": "frames/hit-02.png",
+      "sha256": "487ade4bd632d5f05f271a18c9b1693d4f383387b6e47b7c02b0daca1b26abaf"
+    },
+    {
+      "file": "frames/hit-03.png",
+      "sha256": "f93d8bae5a2540eacc178beb2a1821e2fc586b9d44fb41cace313de87a18be66"
+    },
+    {
+      "file": "frames/wounded_idle-00.png",
+      "sha256": "06c5bcea61b787b70ea13e106fcb22168edf48176a851e8011d3fdc98fe9e524"
+    },
+    {
+      "file": "frames/wounded_idle-01.png",
+      "sha256": "3ac61b9283a5ceda8048eadcfba9cb508b284a5e60c6a7614dbab00061ae744c"
+    },
+    {
+      "file": "frames/wounded_idle-02.png",
+      "sha256": "dcba8524c34e09bb5b61522ad975664d03623502fd80b60662c544afe2eca8bf"
+    },
+    {
+      "file": "frames/wounded_idle-03.png",
+      "sha256": "63e1bfd4dd25bb3f55b3fd271c59a184fd4fab13a09be41f8c03d7023e544bc3"
+    },
+    {
+      "file": "frames/spawn-00.png",
+      "sha256": "8a3a9238c2fbaf7e5029b53cc1f7541cb1d9bf479271dfea0767dadca2aa23cf"
+    },
+    {
+      "file": "frames/spawn-01.png",
+      "sha256": "f2622bfacd7a399f1873dadb234c979b60c81d58e39f37bd15881ce20b69dbd7"
+    },
+    {
+      "file": "frames/spawn-02.png",
+      "sha256": "1caf52f699b890834b9a746f4008e8450d9fc2308d06b28ea9b6abd622afd82a"
+    },
+    {
+      "file": "frames/spawn-03.png",
+      "sha256": "b4850dc77aa087a8f1fbde2c18356a98e4d74b9519f028f6f07185c221bdd778"
+    },
+    {
+      "file": "frames/die-00.png",
+      "sha256": "6ad1c2caef756ca7003b7762f3d13563ac49056b3cb6305ba45cf8aff6a20c08"
+    },
+    {
+      "file": "frames/die-01.png",
+      "sha256": "c8af3fc88d4299ca5550d63fa455722ee7fd9ba4f280702bbc54446c632745fd"
+    },
+    {
+      "file": "frames/die-02.png",
+      "sha256": "55ed1aedac4f205f292807dd8abafe39d726ca980d06787d0df2e51de1acb3d1"
+    },
+    {
+      "file": "frames/die-03.png",
+      "sha256": "ddf8430949c79c087e0ae3e541f6ea09d8ca52b1a97746470d18b2d18fe00e1f"
+    },
+    {
+      "file": "frames/die-04.png",
+      "sha256": "99f1990547b9aa9ab036733dfc5e1014bd840afe14ff67b391c2b2f5bfc62281"
+    },
+    {
+      "file": "frames/die-05.png",
+      "sha256": "fc4b4dc449fe1d66b43478edebf1a31f531ba30fe4794d9530b6636c2ff2eca9"
+    },
+    {
+      "file": "frames/die-06.png",
+      "sha256": "19b4c3ca7431c46f13a8408bb74345eb2dc7e6bd5fd9aacb768fb056576ec24d"
+    },
+    {
+      "file": "frames/die-07.png",
+      "sha256": "9854f064ea6af6fc65b897cca072d9ded12e948d7e91bbb9548501417fc46cd9"
+    }
+  ],
+  "states": {
+    "idle": {
+      "frames": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "durations_ms": [
+        350,
+        350,
+        350,
+        350
+      ],
+      "loop": true,
+      "terminalHold": false,
+      "transition": "idle",
+      "events": []
+    },
+    "attack": {
+      "frames": [
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ],
+      "durations_ms": [
+        140,
+        100,
+        90,
+        100,
+        100,
+        110,
+        120,
+        160
+      ],
+      "loop": false,
+      "terminalHold": false,
+      "transition": "idle",
+      "events": [
+        {
+          "name": "impact",
+          "time_ms": 240
+        }
+      ]
+    },
+    "hit": {
+      "frames": [
+        12,
+        13,
+        14,
+        15
+      ],
+      "durations_ms": [
+        100,
+        140,
+        130,
+        180
+      ],
+      "loop": false,
+      "terminalHold": false,
+      "transition": "idle",
+      "events": []
+    },
+    "wounded_idle": {
+      "frames": [
+        16,
+        17,
+        18,
+        19
+      ],
+      "durations_ms": [
+        400,
+        400,
+        400,
+        400
+      ],
+      "loop": true,
+      "terminalHold": false,
+      "transition": "idle",
+      "events": []
+    },
+    "spawn": {
+      "frames": [
+        20,
+        21,
+        22,
+        23
+      ],
+      "durations_ms": [
+        180,
+        180,
+        220,
+        260
+      ],
+      "loop": false,
+      "terminalHold": false,
+      "transition": "idle",
+      "events": [
+        {
+          "name": "arrival",
+          "time_ms": 360
+        }
+      ]
+    },
+    "die": {
+      "frames": [
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31
+      ],
+      "durations_ms": [
+        180,
+        140,
+        160,
+        160,
+        180,
+        180,
+        200,
+        600
+      ],
+      "loop": false,
+      "terminalHold": true,
+      "transition": "terminal-hold",
+      "events": []
+    }
+  }
+}

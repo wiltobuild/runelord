@@ -329,6 +329,7 @@ export function useBattleDirector(
           recovery = Math.max(0, (attack?.duration ?? 350) - impact - 240);
         } else {
           const image = actor(id)?.querySelector<HTMLElement>(".actor-sprite");
+          const travelDuration = Math.max(700, 280 + (attack?.duration ?? 350));
           if (image) {
             const from = point(id),
               dx = target.x - from.x - 60,
@@ -337,14 +338,14 @@ export function useBattleDirector(
               image.animate(
                 [
                   { transform: "translate(0,0)" },
-                  { transform: `translate(${dx}px,${dy}px)`, offset: 0.4 },
+                  { transform: `translate(${dx}px,${dy}px)`, offset: 280 / travelDuration },
                   {
                     transform: `translate(${dx + 12}px,${dy}px)`,
-                    offset: 0.52,
+                    offset: (280 + impact) / travelDuration,
                   },
                   { transform: "translate(0,0)" },
                 ],
-                { duration: 700, easing: "ease-in-out" },
+                { duration: travelDuration, easing: "ease-in-out" },
               ),
             );
           }
@@ -353,7 +354,7 @@ export function useBattleDirector(
           cue(id, "attack");
           await pause(impact);
           effect("impact", target, [target], 0, 0);
-          recovery = Math.max(700 - 280 - impact, (attack?.duration ?? 350) - impact);
+          recovery = travelDuration - 280 - impact;
         }
       }
       if (event.type === "enemy") {

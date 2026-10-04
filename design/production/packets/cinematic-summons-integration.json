@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "cinematic-summons-integration",
+  "status": "complete",
+  "outcome": "Replace Warlock ally Hellhound and Pit Brute with new battle-facing32-frame cinematic animations",
+  "contentIds": [
+    "summon-hellhound",
+    "summon-pit-brute"
+  ],
+  "owner": "root",
+  "integrationOwner": "root",
+  "reviewer": "runelord_rules_engineer",
+  "ownedPaths": [
+    "tools/import/cinematic-summons.mjs",
+    "apps/web/src/ActorSprite.tsx",
+    "apps/web/src/cinematic-summons.css"
+  ],
+  "dependencies": [],
+  "inputs": [
+    {
+      "path": "assets/characters/hellhound/animations/frames32-cinematic-r1/animation.json",
+      "sha256": "2287cbe8c88fbb7c56315debd85253294f322385f073fe8bab3d00e4911d9b0d"
+    },
+    {
+      "path": "assets/characters/warlock-pit-brute/animations/frames32-cinematic-r1/animation.json",
+      "sha256": "f6d7ae56f4dbbaebfd9d4cd0ab8dc63fee2718e8809261db0961b1c005747c57"
+    }
+  ],
+  "acceptance": [
+    {
+      "check": "Reviewed32-frame inputs, production runtime export and in-game rendering",
+      "status": "pass",
+      "evidence": [
+        {
+          "path": "design/production/evidence/cinematic-summons-integration/verification.json",
+          "sha256": "45bdb3758002ed5deafedf7555377191bc52839004239ad94e266f6013f9a677"
+        },
+        {
+          "path": "packages/assets/manifest.json",
+          "sha256": "4316ff28d1a1cc1155fc0424c5bacd2b359b73ca09e3f4a5f6b181619fc2f3cf"
+        }
+      ]
+    }
+  ],
+  "checkpoint": {
+    "completed": [
+      "Imported exact reviewed sources",
+      "Exported uniform transparent runtime frames",
+      "Mapped all six authored states",
+      "Preserved spawn, attack and death playback",
+      "Independent structural review and browser verification passed"
+    ],
+    "remaining": [],
+    "blockers": [],
+    "nextAction": "Commit and push authorized integration; deployment handled by existing Pages workflow"
+  },
+  "authorization": "User2026-10-04 explicitly requested new Pit Brute and Hellhound models installed as Warlock summons, then committed/pushed",
+  "exclusions": [
+    "Unrelated shop work",
+    "Enemy artwork replacement",
+    "Art approval ledger changes"
+  ]
+}

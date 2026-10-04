@@ -1,0 +1,1356 @@
+{
+  "contract_version": 2,
+  "frame_canvas": [
+    1024,
+    768
+  ],
+  "anchor": [
+    512,
+    680
+  ],
+  "id": "warlock-pit-brute",
+  "revision": "frames32-cinematic-r1",
+  "method": "32 imagegen-authored whole-character poses; technical crop/translation only, no deformation or synthesized motion",
+  "base": {
+    "asset": "assets/cinematics/oath-intro/r3/pit-brute.png",
+    "sha256": "0f8dc36570fd588701342dd9a89359bf1af59bf139fb2441ddf14f960b5a50b9",
+    "approval": "Pending gallery decision; current user expressly authorized this exact battle-facing source"
+  },
+  "geometry": {
+    "coordinate_system": "pixels, top-left origin x right y down",
+    "facing": "right",
+    "canvas_px": [
+      1024,
+      768
+    ],
+    "root_px": [
+      512,
+      680
+    ],
+    "source_pixels_per_world_unit": 470,
+    "standing_height_world": 1.15,
+    "reference_visible_height_px": 540,
+    "root_motion": "Ground aligned by translation; no per-frame scaling. Horizontal source offset retained within each authored cell.",
+    "mirror_safe": false,
+    "layout_bounds_px": [
+      175,
+      127,
+      801,
+      680
+    ]
+  },
+  "source_sheets": [
+    {
+      "file": "source/idle.png",
+      "sha256": "bcb0a2a20217d75a919594aac88d2131b39942a10c702515991af7a640d6ec7b",
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "split_y": 627,
+      "split_x_by_row": [
+        627,
+        627
+      ],
+      "native_pose_cell_nominal": [
+        627,
+        627
+      ]
+    },
+    {
+      "file": "source/attack-a-r2.png",
+      "sha256": "fbf639b8102cb4f1fd58a928f979df66c3ebfb70f061abb1986f3dea354adb9e",
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "split_y": 627,
+      "split_x_by_row": [
+        627,
+        627
+      ],
+      "native_pose_cell_nominal": [
+        627,
+        627
+      ]
+    },
+    {
+      "file": "source/attack-b.png",
+      "sha256": "7ad50d1963982fb3e9d380b916908932489712b460aa8345971bedece68e3b90",
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "split_y": 627,
+      "split_x_by_row": [
+        627,
+        627
+      ],
+      "native_pose_cell_nominal": [
+        627,
+        627
+      ]
+    },
+    {
+      "file": "source/hit.png",
+      "sha256": "65f650b05d86a4ebcb4aae38e593a3c56a40c2ca3d1c64fcdd99668c58ea74b6",
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "split_y": 627,
+      "split_x_by_row": [
+        627,
+        627
+      ],
+      "native_pose_cell_nominal": [
+        627,
+        627
+      ]
+    },
+    {
+      "file": "source/wounded.png",
+      "sha256": "183789e1e251b1e8be64bec118cbcc6ad92f2be70a3c0bad186e80989f7260e9",
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "split_y": 627,
+      "split_x_by_row": [
+        641,
+        630
+      ],
+      "native_pose_cell_nominal": [
+        627,
+        627
+      ]
+    },
+    {
+      "file": "source/spawn-r2.png",
+      "sha256": "d109e8a0b7a4ed552914c59da794539d9af73af1751a640f9d611707644449e8",
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "split_y": 627,
+      "split_x_by_row": [
+        643,
+        627
+      ],
+      "native_pose_cell_nominal": [
+        627,
+        627
+      ]
+    },
+    {
+      "file": "source/die-a.png",
+      "sha256": "02a3adcbe6b04eb16082ffbba21e08b0e20e9a7947cf816faa9126eb335573ea",
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "split_y": 627,
+      "split_x_by_row": [
+        627,
+        631
+      ],
+      "native_pose_cell_nominal": [
+        627,
+        627
+      ]
+    },
+    {
+      "file": "source/die-b.png",
+      "sha256": "42c442ea4bc2ee933e3043245086f402e0e92384208fb425924b367e7391a11a",
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "split_y": 627,
+      "split_x_by_row": [
+        627,
+        627
+      ],
+      "native_pose_cell_nominal": [
+        627,
+        627
+      ]
+    }
+  ],
+  "frames": [
+    {
+      "id": 0,
+      "file": "frames/idle-00.png",
+      "sha256": "865d1fd148fa738951f72de1a52be577d62ce5db1439851eb8e05ea99d6c382b",
+      "visible_bbox": [
+        246,
+        148,
+        776,
+        680
+      ],
+      "source_sheet": "source/idle.png",
+      "source_crop": {
+        "left": 0,
+        "top": 0,
+        "width": 627,
+        "height": 627
+      },
+      "source_root": [
+        350,
+        585
+      ],
+      "packing_translation": [
+        162,
+        95
+      ],
+      "uniform_sheet_scale": 1,
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "cell_border_pixels": 0
+    },
+    {
+      "id": 1,
+      "file": "frames/idle-01.png",
+      "sha256": "13e67ec7f66ba75876d8fb86104e4e8b8f6a3ca20c4ee07323694cc552d61f26",
+      "visible_bbox": [
+        233,
+        146,
+        761,
+        680
+      ],
+      "source_sheet": "source/idle.png",
+      "source_crop": {
+        "left": 627,
+        "top": 0,
+        "width": 627,
+        "height": 627
+      },
+      "source_root": [
+        350,
+        586
+      ],
+      "packing_translation": [
+        162,
+        94
+      ],
+      "uniform_sheet_scale": 1,
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "cell_border_pixels": 0
+    },
+    {
+      "id": 2,
+      "file": "frames/idle-02.png",
+      "sha256": "fbfdf04e4dd27d3663dba3380ede336a8bfec39c3a431e525e982d9d3cfc45fe",
+      "visible_bbox": [
+        249,
+        149,
+        781,
+        680
+      ],
+      "source_sheet": "source/idle.png",
+      "source_crop": {
+        "left": 0,
+        "top": 627,
+        "width": 627,
+        "height": 627
+      },
+      "source_root": [
+        350,
+        571
+      ],
+      "packing_translation": [
+        162,
+        109
+      ],
+      "uniform_sheet_scale": 1,
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "cell_border_pixels": 0
+    },
+    {
+      "id": 3,
+      "file": "frames/idle-03.png",
+      "sha256": "30bc51518f63c2ccf4aef2b9a4145ef26ae1c4901ff440737dfac19df28632c6",
+      "visible_bbox": [
+        233,
+        150,
+        764,
+        680
+      ],
+      "source_sheet": "source/idle.png",
+      "source_crop": {
+        "left": 627,
+        "top": 627,
+        "width": 627,
+        "height": 627
+      },
+      "source_root": [
+        350,
+        573
+      ],
+      "packing_translation": [
+        162,
+        107
+      ],
+      "uniform_sheet_scale": 1,
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "cell_border_pixels": 0
+    },
+    {
+      "id": 4,
+      "file": "frames/attack-00.png",
+      "sha256": "633b50ed89216ec8c9999a96f6ea276f4c4c7cf86ec57e4c6dee2e16cdfb610c",
+      "visible_bbox": [
+        278,
+        150,
+        736,
+        680
+      ],
+      "source_sheet": "source/attack-a-r2.png",
+      "source_crop": {
+        "left": 0,
+        "top": 0,
+        "width": 627,
+        "height": 627
+      },
+      "source_root": [
+        350,
+        604
+      ],
+      "packing_translation": [
+        162,
+        76
+      ],
+      "uniform_sheet_scale": 1,
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "cell_border_pixels": 0
+    },
+    {
+      "id": 5,
+      "file": "frames/attack-01.png",
+      "sha256": "2400f2974c4d53b03cb47707d9dd805ee8f38cf3936742006fcda21843a10caa",
+      "visible_bbox": [
+        239,
+        224,
+        718,
+        680
+      ],
+      "source_sheet": "source/attack-a-r2.png",
+      "source_crop": {
+        "left": 627,
+        "top": 0,
+        "width": 627,
+        "height": 627
+      },
+      "source_root": [
+        350,
+        604
+      ],
+      "packing_translation": [
+        162,
+        76
+      ],
+      "uniform_sheet_scale": 1,
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "cell_border_pixels": 0
+    },
+    {
+      "id": 6,
+      "file": "frames/attack-02.png",
+      "sha256": "684d687bfa8b7546c6bf4a94ed81cfb63640099f19de19edbc749eeac51cca92",
+      "visible_bbox": [
+        273,
+        145,
+        773,
+        680
+      ],
+      "source_sheet": "source/attack-a-r2.png",
+      "source_crop": {
+        "left": 0,
+        "top": 627,
+        "width": 627,
+        "height": 627
+      },
+      "source_root": [
+        350,
+        564
+      ],
+      "packing_translation": [
+        162,
+        116
+      ],
+      "uniform_sheet_scale": 1,
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "cell_border_pixels": 0
+    },
+    {
+      "id": 7,
+      "file": "frames/attack-03.png",
+      "sha256": "ff678d6f499b5720cbc95e015b7969f6491c41f8108033efb9176c377f0ae7f6",
+      "visible_bbox": [
+        229,
+        266,
+        765,
+        680
+      ],
+      "source_sheet": "source/attack-a-r2.png",
+      "source_crop": {
+        "left": 627,
+        "top": 627,
+        "width": 627,
+        "height": 627
+      },
+      "source_root": [
+        350,
+        564
+      ],
+      "packing_translation": [
+        162,
+        116
+      ],
+      "uniform_sheet_scale": 1,
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "cell_border_pixels": 0
+    },
+    {
+      "id": 8,
+      "file": "frames/attack-04.png",
+      "sha256": "184497a50765acf13882a5d19f8bb4f2c4f423e087e9d8ac3e4fa13618285411",
+      "visible_bbox": [
+        267,
+        178,
+        777,
+        680
+      ],
+      "source_sheet": "source/attack-b.png",
+      "source_crop": {
+        "left": 0,
+        "top": 0,
+        "width": 627,
+        "height": 627
+      },
+      "source_root": [
+        350,
+        599
+      ],
+      "packing_translation": [
+        162,
+        81
+      ],
+      "uniform_sheet_scale": 1,
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "cell_border_pixels": 0
+    },
+    {
+      "id": 9,
+      "file": "frames/attack-05.png",
+      "sha256": "22f57a3489a85a6e9ce226768e7d818e6a81b3251a083265cb8e3788ef7dc86e",
+      "visible_bbox": [
+        237,
+        215,
+        723,
+        680
+      ],
+      "source_sheet": "source/attack-b.png",
+      "source_crop": {
+        "left": 627,
+        "top": 0,
+        "width": 627,
+        "height": 627
+      },
+      "source_root": [
+        350,
+        588
+      ],
+      "packing_translation": [
+        162,
+        92
+      ],
+      "uniform_sheet_scale": 1,
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "cell_border_pixels": 0
+    },
+    {
+      "id": 10,
+      "file": "frames/attack-06.png",
+      "sha256": "bfed6215bc30823ceb0b322f1928d34b10394ebb9e32f607c4c1697df0a3397a",
+      "visible_bbox": [
+        289,
+        180,
+        772,
+        680
+      ],
+      "source_sheet": "source/attack-b.png",
+      "source_crop": {
+        "left": 0,
+        "top": 627,
+        "width": 627,
+        "height": 627
+      },
+      "source_root": [
+        350,
+        536
+      ],
+      "packing_translation": [
+        162,
+        144
+      ],
+      "uniform_sheet_scale": 1,
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "cell_border_pixels": 0
+    },
+    {
+      "id": 11,
+      "file": "frames/attack-07.png",
+      "sha256": "a1fe5af31f8e05326f47608b13c98a2c452d8d9f267ebbb1ceaa004ba6542616",
+      "visible_bbox": [
+        231,
+        180,
+        742,
+        680
+      ],
+      "source_sheet": "source/attack-b.png",
+      "source_crop": {
+        "left": 627,
+        "top": 627,
+        "width": 627,
+        "height": 627
+      },
+      "source_root": [
+        350,
+        536
+      ],
+      "packing_translation": [
+        162,
+        144
+      ],
+      "uniform_sheet_scale": 1,
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "cell_border_pixels": 0
+    },
+    {
+      "id": 12,
+      "file": "frames/hit-00.png",
+      "sha256": "34f242318ee7c801d0df634a60852e5144735ba8f1cdcbe4d752d78e9e1424e3",
+      "visible_bbox": [
+        228,
+        127,
+        775,
+        680
+      ],
+      "source_sheet": "source/hit.png",
+      "source_crop": {
+        "left": 0,
+        "top": 0,
+        "width": 627,
+        "height": 627
+      },
+      "source_root": [
+        350,
+        600
+      ],
+      "packing_translation": [
+        162,
+        80
+      ],
+      "uniform_sheet_scale": 1,
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "cell_border_pixels": 0
+    },
+    {
+      "id": 13,
+      "file": "frames/hit-01.png",
+      "sha256": "c4cf09398d36484c6ef8b79087558b86bbb8479e75665dd47ebeb16f649d34ca",
+      "visible_bbox": [
+        255,
+        129,
+        743,
+        680
+      ],
+      "source_sheet": "source/hit.png",
+      "source_crop": {
+        "left": 627,
+        "top": 0,
+        "width": 627,
+        "height": 627
+      },
+      "source_root": [
+        350,
+        600
+      ],
+      "packing_translation": [
+        162,
+        80
+      ],
+      "uniform_sheet_scale": 1,
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "cell_border_pixels": 0
+    },
+    {
+      "id": 14,
+      "file": "frames/hit-02.png",
+      "sha256": "1b40e2e9f2e42548cf4d9f88316ff14449624219e0de3eeddc41fda37402aa2b",
+      "visible_bbox": [
+        267,
+        146,
+        770,
+        680
+      ],
+      "source_sheet": "source/hit.png",
+      "source_crop": {
+        "left": 0,
+        "top": 627,
+        "width": 627,
+        "height": 627
+      },
+      "source_root": [
+        350,
+        564
+      ],
+      "packing_translation": [
+        162,
+        116
+      ],
+      "uniform_sheet_scale": 1,
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "cell_border_pixels": 0
+    },
+    {
+      "id": 15,
+      "file": "frames/hit-03.png",
+      "sha256": "e3d2d9d0d7fe629b9cef5228c996e6df4664c7a3b690af49653f5a786334e575",
+      "visible_bbox": [
+        229,
+        141,
+        742,
+        680
+      ],
+      "source_sheet": "source/hit.png",
+      "source_crop": {
+        "left": 627,
+        "top": 627,
+        "width": 627,
+        "height": 627
+      },
+      "source_root": [
+        350,
+        563
+      ],
+      "packing_translation": [
+        162,
+        117
+      ],
+      "uniform_sheet_scale": 1,
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "cell_border_pixels": 0
+    },
+    {
+      "id": 16,
+      "file": "frames/wounded_idle-00.png",
+      "sha256": "b089903825ebdcae5444f79ff5edeb97351ce959b9663af9bfb5b761b246a094",
+      "visible_bbox": [
+        274,
+        127,
+        799,
+        680
+      ],
+      "source_sheet": "source/wounded.png",
+      "source_crop": {
+        "left": 0,
+        "top": 0,
+        "width": 641,
+        "height": 627
+      },
+      "source_root": [
+        350,
+        606
+      ],
+      "packing_translation": [
+        162,
+        74
+      ],
+      "uniform_sheet_scale": 1,
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "cell_border_pixels": 0
+    },
+    {
+      "id": 17,
+      "file": "frames/wounded_idle-01.png",
+      "sha256": "f4be53a22ca2ec61395f62a42e6563372fb1fa6949335643bd25e8ee70734a82",
+      "visible_bbox": [
+        262,
+        143,
+        751,
+        680
+      ],
+      "source_sheet": "source/wounded.png",
+      "source_crop": {
+        "left": 641,
+        "top": 0,
+        "width": 613,
+        "height": 627
+      },
+      "source_root": [
+        336,
+        607
+      ],
+      "packing_translation": [
+        176,
+        73
+      ],
+      "uniform_sheet_scale": 1,
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "cell_border_pixels": 0
+    },
+    {
+      "id": 18,
+      "file": "frames/wounded_idle-02.png",
+      "sha256": "2e8db659a2040d768d0320b29af24c0478243df879451f426b5ed0ceb02bc45c",
+      "visible_bbox": [
+        291,
+        163,
+        788,
+        680
+      ],
+      "source_sheet": "source/wounded.png",
+      "source_crop": {
+        "left": 0,
+        "top": 627,
+        "width": 630,
+        "height": 627
+      },
+      "source_root": [
+        350,
+        566
+      ],
+      "packing_translation": [
+        162,
+        114
+      ],
+      "uniform_sheet_scale": 1,
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "cell_border_pixels": 0
+    },
+    {
+      "id": 19,
+      "file": "frames/wounded_idle-03.png",
+      "sha256": "a7b65e00330f9608575105926bcc861fc1894b504696066bf08288b1d42efc7b",
+      "visible_bbox": [
+        247,
+        147,
+        769,
+        680
+      ],
+      "source_sheet": "source/wounded.png",
+      "source_crop": {
+        "left": 630,
+        "top": 627,
+        "width": 624,
+        "height": 627
+      },
+      "source_root": [
+        347,
+        569
+      ],
+      "packing_translation": [
+        165,
+        111
+      ],
+      "uniform_sheet_scale": 1,
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "cell_border_pixels": 0
+    },
+    {
+      "id": 20,
+      "file": "frames/spawn-00.png",
+      "sha256": "35f7044b3a242174997252a682fb05c197991b3f26766f1aa91387fee6fdb644",
+      "visible_bbox": [
+        243,
+        224,
+        801,
+        680
+      ],
+      "source_sheet": "source/spawn-r2.png",
+      "source_crop": {
+        "left": 0,
+        "top": 0,
+        "width": 643,
+        "height": 627
+      },
+      "source_root": [
+        350,
+        591
+      ],
+      "packing_translation": [
+        162,
+        89
+      ],
+      "uniform_sheet_scale": 1,
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "cell_border_pixels": 0
+    },
+    {
+      "id": 21,
+      "file": "frames/spawn-01.png",
+      "sha256": "af677327d76fbd1d997341d9a40a44db681bd323a1d39e0ebb3f9589f5efe28d",
+      "visible_bbox": [
+        215,
+        156,
+        759,
+        680
+      ],
+      "source_sheet": "source/spawn-r2.png",
+      "source_crop": {
+        "left": 643,
+        "top": 0,
+        "width": 611,
+        "height": 627
+      },
+      "source_root": [
+        334,
+        594
+      ],
+      "packing_translation": [
+        178,
+        86
+      ],
+      "uniform_sheet_scale": 1,
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "cell_border_pixels": 0
+    },
+    {
+      "id": 22,
+      "file": "frames/spawn-02.png",
+      "sha256": "2f8ddb47ecd135d98c17e721a78020158d4734476069cc72d86d9c2204344c0d",
+      "visible_bbox": [
+        244,
+        148,
+        778,
+        680
+      ],
+      "source_sheet": "source/spawn-r2.png",
+      "source_crop": {
+        "left": 0,
+        "top": 627,
+        "width": 627,
+        "height": 627
+      },
+      "source_root": [
+        350,
+        551
+      ],
+      "packing_translation": [
+        162,
+        129
+      ],
+      "uniform_sheet_scale": 1,
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "cell_border_pixels": 0
+    },
+    {
+      "id": 23,
+      "file": "frames/spawn-03.png",
+      "sha256": "96e081d57e330a3407b06ae5ddc5fdfb171dbb23dfa3501415e10d0c302b007e",
+      "visible_bbox": [
+        206,
+        142,
+        750,
+        680
+      ],
+      "source_sheet": "source/spawn-r2.png",
+      "source_crop": {
+        "left": 627,
+        "top": 627,
+        "width": 627,
+        "height": 627
+      },
+      "source_root": [
+        350,
+        550
+      ],
+      "packing_translation": [
+        162,
+        130
+      ],
+      "uniform_sheet_scale": 1,
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "cell_border_pixels": 0
+    },
+    {
+      "id": 24,
+      "file": "frames/die-00.png",
+      "sha256": "fb89fb0dd3e6bf2b8a7b5fa397c690f8ba432d49a028990e8c0fdb8527cbd574",
+      "visible_bbox": [
+        268,
+        155,
+        758,
+        680
+      ],
+      "source_sheet": "source/die-a.png",
+      "source_crop": {
+        "left": 0,
+        "top": 0,
+        "width": 627,
+        "height": 627
+      },
+      "source_root": [
+        350,
+        605
+      ],
+      "packing_translation": [
+        162,
+        75
+      ],
+      "uniform_sheet_scale": 1,
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "cell_border_pixels": 0
+    },
+    {
+      "id": 25,
+      "file": "frames/die-01.png",
+      "sha256": "f5b454933aea971b4c67a36e9d52511cd7792cfd6efcb742480e81c14cfbba35",
+      "visible_bbox": [
+        244,
+        232,
+        720,
+        680
+      ],
+      "source_sheet": "source/die-a.png",
+      "source_crop": {
+        "left": 627,
+        "top": 0,
+        "width": 627,
+        "height": 627
+      },
+      "source_root": [
+        350,
+        621
+      ],
+      "packing_translation": [
+        162,
+        59
+      ],
+      "uniform_sheet_scale": 1,
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "cell_border_pixels": 0
+    },
+    {
+      "id": 26,
+      "file": "frames/die-02.png",
+      "sha256": "003530a24c4eb05f58324d3e4a3671b52b882ff9e521d07f69ccb14cfb367464",
+      "visible_bbox": [
+        216,
+        323,
+        789,
+        680
+      ],
+      "source_sheet": "source/die-a.png",
+      "source_crop": {
+        "left": 0,
+        "top": 627,
+        "width": 631,
+        "height": 627
+      },
+      "source_root": [
+        350,
+        528
+      ],
+      "packing_translation": [
+        162,
+        152
+      ],
+      "uniform_sheet_scale": 1,
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "cell_border_pixels": 0
+    },
+    {
+      "id": 27,
+      "file": "frames/die-03.png",
+      "sha256": "913403ff834a7a7f99d41af817521e532246dd0113719df84e55ba533bd699e3",
+      "visible_bbox": [
+        212,
+        405,
+        753,
+        680
+      ],
+      "source_sheet": "source/die-a.png",
+      "source_crop": {
+        "left": 631,
+        "top": 627,
+        "width": 623,
+        "height": 627
+      },
+      "source_root": [
+        346,
+        522
+      ],
+      "packing_translation": [
+        166,
+        158
+      ],
+      "uniform_sheet_scale": 1,
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "cell_border_pixels": 0
+    },
+    {
+      "id": 28,
+      "file": "frames/die-04.png",
+      "sha256": "cab3941f56a34ab15a2623e8216152393dcafb703ab32185873ced6414957b12",
+      "visible_bbox": [
+        184,
+        355,
+        783,
+        680
+      ],
+      "source_sheet": "source/die-b.png",
+      "source_crop": {
+        "left": 0,
+        "top": 0,
+        "width": 627,
+        "height": 627
+      },
+      "source_root": [
+        350,
+        547
+      ],
+      "packing_translation": [
+        162,
+        133
+      ],
+      "uniform_sheet_scale": 1,
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "cell_border_pixels": 0
+    },
+    {
+      "id": 29,
+      "file": "frames/die-05.png",
+      "sha256": "8b701d78605184685cab1bbb8ac9b6b63d6e138a72970ed07b8c922e713ef6f9",
+      "visible_bbox": [
+        178,
+        418,
+        773,
+        680
+      ],
+      "source_sheet": "source/die-b.png",
+      "source_crop": {
+        "left": 627,
+        "top": 0,
+        "width": 627,
+        "height": 627
+      },
+      "source_root": [
+        350,
+        547
+      ],
+      "packing_translation": [
+        162,
+        133
+      ],
+      "uniform_sheet_scale": 1,
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "cell_border_pixels": 0
+    },
+    {
+      "id": 30,
+      "file": "frames/die-06.png",
+      "sha256": "ebe4831a154e3c3f80eb7bc6155bfff99099398582659e5f3441c6e827c43de7",
+      "visible_bbox": [
+        175,
+        442,
+        783,
+        680
+      ],
+      "source_sheet": "source/die-b.png",
+      "source_crop": {
+        "left": 0,
+        "top": 627,
+        "width": 627,
+        "height": 627
+      },
+      "source_root": [
+        350,
+        477
+      ],
+      "packing_translation": [
+        162,
+        203
+      ],
+      "uniform_sheet_scale": 1,
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "cell_border_pixels": 0
+    },
+    {
+      "id": 31,
+      "file": "frames/die-07.png",
+      "sha256": "867764a3a6c4c94dd95025a595a4155e5d0941b82777c61e018db572145c6c47",
+      "visible_bbox": [
+        175,
+        442,
+        776,
+        680
+      ],
+      "source_sheet": "source/die-b.png",
+      "source_crop": {
+        "left": 627,
+        "top": 627,
+        "width": 627,
+        "height": 627
+      },
+      "source_root": [
+        350,
+        477
+      ],
+      "packing_translation": [
+        162,
+        203
+      ],
+      "uniform_sheet_scale": 1,
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "cell_border_pixels": 0
+    }
+  ],
+  "animations": {
+    "idle": {
+      "frames": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "durations_ms": [
+        350,
+        350,
+        350,
+        350
+      ],
+      "loop": true,
+      "terminalHold": false,
+      "transition": "idle",
+      "events": []
+    },
+    "attack": {
+      "frames": [
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ],
+      "durations_ms": [
+        65,
+        65,
+        60,
+        45,
+        45,
+        60,
+        70,
+        90
+      ],
+      "loop": false,
+      "terminalHold": false,
+      "transition": "idle or wounded_idle",
+      "events": [
+        {
+          "name": "impact",
+          "frame": 3,
+          "time_ms": 190
+        }
+      ]
+    },
+    "hit": {
+      "frames": [
+        12,
+        13,
+        14,
+        15
+      ],
+      "durations_ms": [
+        70,
+        90,
+        90,
+        90
+      ],
+      "loop": false,
+      "terminalHold": false,
+      "transition": "idle or wounded_idle",
+      "events": []
+    },
+    "wounded_idle": {
+      "frames": [
+        16,
+        17,
+        18,
+        19
+      ],
+      "durations_ms": [
+        400,
+        400,
+        400,
+        400
+      ],
+      "loop": true,
+      "terminalHold": false,
+      "transition": "wounded_idle",
+      "events": []
+    },
+    "spawn": {
+      "frames": [
+        20,
+        21,
+        22,
+        23
+      ],
+      "durations_ms": [
+        180,
+        180,
+        180,
+        180
+      ],
+      "loop": false,
+      "terminalHold": false,
+      "transition": "idle or wounded_idle",
+      "events": [
+        {
+          "name": "arrival",
+          "frame": 3,
+          "time_ms": 540
+        }
+      ]
+    },
+    "die": {
+      "frames": [
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31
+      ],
+      "durations_ms": [
+        110,
+        110,
+        140,
+        140,
+        180,
+        180,
+        200,
+        450
+      ],
+      "loop": false,
+      "terminalHold": true,
+      "transition": "hold",
+      "events": []
+    }
+  },
+  "issues": [],
+  "status": "Pending independent final QA and gallery review",
+  "frame_count": 32,
+  "atlas": {
+    "file": "atlas.png",
+    "dimensions": [
+      4096,
+      6144
+    ],
+    "sha256": "9100cbb2cc91f91c786ba6c4b0a509df468e556a7ef8994e88f644bf63f0abb4",
+    "columns": 4
+  }
+}
