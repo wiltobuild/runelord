@@ -1,7 +1,7 @@
 {
   "schema": 1,
   "id": "elite-hero-select-idles",
-  "status": "completed",
+  "status": "complete",
   "outcome": "Nightfang Ranger and Storm Crown Runesmith idle loops in character selection",
   "authorization": "User selected and explicitly approved the current middle Ranger and Runesmith idle-animation bytes for character selection in chat on 2026-10-04.",
   "contentIds": [
@@ -50,20 +50,28 @@
       "check": "Both idle loops preserve selected identity and have recorded review disposition",
       "status": "pass",
       "evidence": [
-        "User chat approval applies to the current Ranger and Runesmith animation bytes.",
-        "Ranger gallery preview SHA-256: c83bfa8f1496586136ad8bb10f96cf83293d1565c070b8db77702fa8941a15f1.",
-        "Runesmith gallery preview SHA-256: f01de588247db675eeb6b2a7213f2c3f6cc33c30a78421bd3b3b58fb3eb044d0.",
-        "Known Runesmith apron variation recorded as user-accepted; it is not claimed repaired."
+        {
+          "path": "assets/approvals/inbox/ranger-nightfang-idle/elite-select-idle-r1/idle-preview.gif",
+          "sha256": "c83bfa8f1496586136ad8bb10f96cf83293d1565c070b8db77702fa8941a15f1"
+        },
+        {
+          "path": "assets/approvals/inbox/runesmith-storm-crown-idle/elite-select-idle-r1/idle-dark.gif",
+          "sha256": "f01de588247db675eeb6b2a7213f2c3f6cc33c30a78421bd3b3b58fb3eb044d0"
+        }
       ]
     },
     {
       "check": "Selection loads new atlases without clipping and respects reduced motion",
       "status": "pass",
       "evidence": [
-        "Ranger runtime atlas SHA-256 e324e6f45ef14d442ec5de47f0099e6108a5b419e056c956ce63ca4bc91ee1ae; 3200x320 (10 cells).",
-        "Runesmith runtime atlas SHA-256 eb748ec0d845b23b89274e3ae257e8ac90194ae77280ef3cc13236a16e5c1cbd; 4480x320 (14 cells).",
-        "Vite served both runtime assets with HTTP 200 at their stated dimensions; source bindings reference both files with the required steps(10)/2.2s and steps(14)/3.08s rules.",
-        "opening.css retains prefers-reduced-motion animation suppression. Browser automation executable was unavailable, so no interactive visual playback is claimed."
+        {
+          "path": "apps/web/public/opening-assets/hero-ranger-nightfang-idle-r1.webp",
+          "sha256": "e324e6f45ef14d442ec5de47f0099e6108a5b419e056c956ce63ca4bc91ee1ae"
+        },
+        {
+          "path": "apps/web/public/opening-assets/hero-runesmith-storm-crown-idle-r1.webp",
+          "sha256": "eb748ec0d845b23b89274e3ae257e8ac90194ae77280ef3cc13236a16e5c1cbd"
+        }
       ]
     }
   ],
@@ -74,12 +82,13 @@
       "Packed both runtime atlases from numbered frames using shared alpha bounds and shared transform",
       "Integrated Ranger 10-step / 2200ms and Runesmith 14-step / 3080ms CSS animations",
       "Recorded output and approval-preview hashes",
-      "npm run build passed; Vite served root and both atlases with HTTP 200"
+      "npm run build passed; Vite served root and both atlases with HTTP 200",
+      "Runesmith apron variation remains an explicitly accepted limitation; browser automation was unavailable, so interactive visual playback is not claimed"
     ],
     "remaining": [
-      "Run production build and browser served-page verification"
+      
     ],
     "blockers": [],
-    "nextAction": "Commit scoped integration after verification"
+    "nextAction": "Integration complete; retain user-accepted apron limitation and request a browser playback check when automation is available."
   }
 }
