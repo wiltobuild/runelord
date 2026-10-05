@@ -1,0 +1,97 @@
+{
+  "schema": 1,
+  "id": "gorthak-ignivar-integration-2026-10-05",
+  "status": "complete",
+  "outcome": "Use user-approved HD Gorthak and flying Ignivar as existing roguelite summon models; provide playable battle preview.",
+  "authorization": "User: they pass. implement them as the new models, open a preview when your done",
+  "contentIds": [
+    "warlock-gorthak",
+    "warlock-ignivar"
+  ],
+  "owner": "root",
+  "integrationOwner": "root",
+  "reviewer": "animation_qa",
+  "ownedPaths": [
+    "tools/import/arch-summons.mjs",
+    "apps/web/src/warbandLayout.ts",
+    "apps/web/src/assets.ts",
+    "apps/web/src/main.tsx",
+    "apps/web/src/hud.css",
+    "apps/web/src/summonReview.ts",
+    "assets/characters/warlock-gorthak/animations/hd-r2",
+    "assets/characters/warlock-ignivar/animations/flight-r1",
+    "apps/web/public/game-assets/summons/gorthak/hd-r2",
+    "apps/web/public/game-assets/summons/ignivar/flight-r1",
+    "packages/assets/manifest.json",
+    "apps/web/public/game-assets/manifest.json",
+    "work/production/gorthak-ignivar-integration-2026-10-05"
+  ],
+  "dependencies": [
+    "Existing arch summon gameplay and renderer; approved gallery revisions"
+  ],
+  "exclusions": [
+    "No gameplay balance changes",
+    "No deployment or commit",
+    "Preserve unrelated working changes"
+  ],
+  "inputs": [
+    {
+      "path": "assets/characters/warlock-gorthak/animations/hd-r2/animation.json",
+      "sha256": "0f5b7e21194999ecb45b20fc372a3552b029a2542d5b7436b483c9d2623f9cab"
+    },
+    {
+      "path": "assets/characters/warlock-ignivar/animations/flight-r1/animation.json",
+      "sha256": "8d2935306f2c285b805be843dafdbe51443207c4105cf418d8e6106c676be3f5"
+    },
+    {
+      "path": "work/production/gorthak-ignivar-integration-2026-10-05/approval.json",
+      "sha256": "544cd869af04f49e9536df3c4dff54648fd79549c9f222436918699edf26df90"
+    }
+  ],
+  "animation": {
+    "method": "whole-character-frames",
+    "requiredStates": [
+      "idle",
+      "act",
+      "hit",
+      "wounded_idle",
+      "die",
+      "spawn"
+    ]
+  },
+  "acceptance": [
+    {
+      "check": "Exact authorized revisions exported with alpha, fixed roots, state timing/events and terminal death",
+      "status": "pass",
+      "evidence": [
+        {
+          "path": "work/production/gorthak-ignivar-integration-2026-10-05/runtime-checks.json",
+          "sha256": "f2336cfc1a6413469946e52b228a8220a311893faffc46871b301683bce7378e"
+        }
+      ]
+    },
+    {
+      "check": "Independent playable preview verifies airborne Ignivar, grounded Gorthak and state playback",
+      "status": "pass",
+      "evidence": [
+        {
+          "path": "work/production/gorthak-ignivar-integration-2026-10-05/qa/final-review.json",
+          "sha256": "bcc75911a69a522bc404c4862cf01a4d7682853becfb779919bba10b91ab53f9"
+        }
+      ]
+    }
+  ],
+  "checkpoint": {
+    "completed": [
+      "Recorded explicit user preview approval and exact-frame integration authorization",
+      "Imported21 native-resolution lossless WebP frames",
+      "Routed Ignivar into air lane with290ms terminal landing",
+      "Build passed839runtime refs;25focused summon tests passed",
+      "Independent QA passed4/5unit battle spacing,1280viewport,actual attacks,wounded frames,andgrounded terminal death",
+      "Requested user preview opened in Codex at localhost5191/summon-review with both new models"
+    ],
+    "remaining": [],
+    "blockers": [],
+    "nextAction": "User can play the isolated preview; no deployment requested"
+  }
+}

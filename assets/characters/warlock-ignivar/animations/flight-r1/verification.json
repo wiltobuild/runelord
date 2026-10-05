@@ -1,0 +1,168 @@
+{
+  "technical_checks": "pass",
+  "frames": [
+    {
+      "id": 0,
+      "opaque_bounds": [
+        130,
+        81,
+        1342,
+        1282
+      ],
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "edge_clipping": false
+    },
+    {
+      "id": 1,
+      "opaque_bounds": [
+        201,
+        194,
+        1320,
+        1282
+      ],
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "edge_clipping": false
+    },
+    {
+      "id": 2,
+      "opaque_bounds": [
+        140,
+        238,
+        1345,
+        1279
+      ],
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "edge_clipping": false
+    },
+    {
+      "id": 3,
+      "opaque_bounds": [
+        129,
+        80,
+        1339,
+        1293
+      ],
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "edge_clipping": false
+    },
+    {
+      "id": 4,
+      "opaque_bounds": [
+        139,
+        161,
+        1358,
+        1198
+      ],
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "edge_clipping": false
+    },
+    {
+      "id": 5,
+      "opaque_bounds": [
+        173,
+        100,
+        1367,
+        1223
+      ],
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "edge_clipping": false
+    },
+    {
+      "id": 6,
+      "opaque_bounds": [
+        180,
+        98,
+        1374,
+        1280
+      ],
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "edge_clipping": false
+    },
+    {
+      "id": 7,
+      "opaque_bounds": [
+        185,
+        287,
+        1373,
+        1281
+      ],
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "edge_clipping": false
+    },
+    {
+      "id": 8,
+      "opaque_bounds": [
+        388,
+        182,
+        1176,
+        1406
+      ],
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "edge_clipping": false
+    },
+    {
+      "id": 9,
+      "opaque_bounds": [
+        262,
+        762,
+        1275,
+        1400
+      ],
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "edge_clipping": false
+    },
+    {
+      "id": 10,
+      "opaque_bounds": [
+        140,
+        348,
+        1345,
+        1389
+      ],
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "edge_clipping": false
+    }
+  ],
+  "state_count": 6,
+  "native_authored_source_count": 10,
+  "source_pixels_upscaled": false,
+  "atlas_max_dimensions": [
+    3072,
+    3072
+  ],
+  "visual_qa": "Independent animation_qa reviewed all 10 source poses and actual six-state browser playback: pass with limited-pose motion caveat. User design approval remains pending; parent packet retains independent report.",
+  "manifest_sha256": "8d2935306f2c285b805be843dafdbe51443207c4105cf418d8e6106c676be3f5"
+}

@@ -1,0 +1,93 @@
+{
+  "schema": 1,
+  "id": "empower-vfx",
+  "status": "complete",
+  "outcome": "All six Empower Demon pairs ignite a brighter summon seal, rising red light and particles, fiery silhouette morph, then reveal the Archdemon as the circle fades.",
+  "authorization": "User explicitly requested implementation of Empower Demon effect on every eligible demon.",
+  "contentIds": [
+    "empower-demon"
+  ],
+  "owner": "runelord-technical-artist",
+  "integrationOwner": "runelord-technical-artist",
+  "reviewer": "/root/review_empower",
+  "ownedPaths": [
+    "apps/web/src/ActorSprite.tsx",
+    "apps/web/src/SpellEffects.tsx",
+    "apps/web/src/summonEffect.ts",
+    "apps/web/src/empowerTiming.ts",
+    "apps/web/src/useBattleDirector.ts"
+  ],
+  "dependencies": [],
+  "exclusions": [
+    "Gameplay balance",
+    "New raster assets",
+    "Deployment",
+    "Commits"
+  ],
+  "inputs": [
+    {
+      "path": "apps/web/src/ActorSprite.tsx",
+      "sha256": "c03cce11d9a080fc6013161bead2ce9063a2eadd3bb5f432aed1ff292006d630"
+    },
+    {
+      "path": "apps/web/src/SpellEffects.tsx",
+      "sha256": "610b1fc60cb1132b21476f9ad997ee9a7c949daf93360b4b8ca6563fc846fdf8"
+    },
+    {
+      "path": "apps/web/src/summonEffect.ts",
+      "sha256": "afcd1424e454c8a2e0e503a4b616ba2b3595b11193fadcc910ce609c9acba79c"
+    },
+    {
+      "path": "apps/web/src/empowerTiming.ts",
+      "sha256": "042dec343fe8d5cf0eff1fbbab310bf930046a4ba5faf3ae0af86c5ae55fc6e8"
+    },
+    {
+      "path": "apps/web/src/useBattleDirector.ts",
+      "sha256": "a1de88fbd3d746af90c42f53a145e512adc1a1d5d3764d85c51ba5fa69beebb0"
+    }
+  ],
+  "animation": null,
+  "acceptance": [
+    {
+      "id": "empower-sequence",
+      "status": "pass",
+      "check": "All six transforms have hidden texture, animated fire, gradual reveal and clean final idle; crowd and passive sequencing verified.",
+      "evidence": [
+        {
+          "path": "design/production/evidence/empower-vfx/verification.json",
+          "sha256": "9b0bd6f6cdbffd024c13de4059bff46028000e239591d8d51f94b022d30d86c3"
+        },
+        {
+          "path": "design/production/evidence/empower-vfx/hellhound-morph-fixed.png",
+          "sha256": "30c7364e7b89bf0d02a4c1253b4473e3f507d615af1f37762d0a84a5dcf00677"
+        },
+        {
+          "path": "design/production/evidence/empower-vfx/crowded-revealed.png",
+          "sha256": "63b97a02d6516df6d0955f222b9f37a60d58fdeb82eafbce6656a1c8a81af0af"
+        }
+      ]
+    },
+    {
+      "id": "build",
+      "status": "pass",
+      "check": "Runtime asset validation, TypeScript and production build pass.",
+      "evidence": [
+        {
+          "path": "design/production/evidence/empower-vfx/build.log",
+          "sha256": "7f48a0f3840f21af7df0af5cbdf3d3ff95ca8af20786833c9f9ea7549c323a88"
+        }
+      ]
+    }
+  ],
+  "checkpoint": {
+    "completed": [
+      "Implemented effect",
+      "Corrected reviewed scale/paint issues",
+      "Browser checked all six mappings and a crowded formation",
+      "Built demo"
+    ],
+    "remaining": [],
+    "blockers": [],
+    "nextAction": "Ready to play in rebuilt local demo."
+  }
+}

@@ -12,6 +12,7 @@
     "build": "npm run check:assets && tsc --noEmit && vite build --config apps/web/vite.config.ts",
     "check:assets": "node tools/import/validate-runtime-assets.mjs",
     "test": "tsx --test packages/engine/*.test.ts",
+    "test:warband": "tsx --test apps/web/src/warbandLayout.test.ts",
     "import:content": "node tools/import/catalog.mjs",
     "import:assets": "node tools/import/assets.mjs",
     "render:sfx": "node tools/audio/render-sfx.mjs",

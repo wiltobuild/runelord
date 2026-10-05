@@ -1,0 +1,133 @@
+{
+  "authorization": "User explicitly requested swapping the latest three-pose idle into the game model for in-game review,2026-10-05. All other states preserved. This repair request authorizes replacing the existing game animation; new gallery previews remain pending visual approval.",
+  "at": "2026-10-05T07:22:14.890Z",
+  "manifestSha256": "396e7081f9646711d9a5ba7952886707a89557f180558dea6505ae3e66ef9c9b",
+  "approvedPreviews": [],
+  "frames": [
+    {
+      "file": "frame-00.png",
+      "sha256": "456914cbc23bc750db1ac4701b5c53875547c84a1b03ff78616e1fac0bea33b5"
+    },
+    {
+      "file": "frame-01.png",
+      "sha256": "dfed6b7ed64461734f4be6a8192fe98540e9dabf39b198f1a0075c7f204285a3"
+    },
+    {
+      "file": "frame-02.png",
+      "sha256": "370d814ea7431e47e3bb372bbc813c606fac98e63bf9ec1f471de1bb9e32832b"
+    },
+    {
+      "file": "frame-04.png",
+      "sha256": "4aa7009acae09fa863db9e42d8b841bb7cb7d963021a0dba411401c55ac50034"
+    },
+    {
+      "file": "frame-05.png",
+      "sha256": "676722d7176b5c9ebc0a868c36cfe6c6f39fcc806c441eef4715b004b74302ea"
+    },
+    {
+      "file": "frame-06.png",
+      "sha256": "34034d9d93fd1c7f2ce98390adff0d17671fcd1789775c2020fe86cfa822e701"
+    },
+    {
+      "file": "frame-07.png",
+      "sha256": "5063605ad85cb3ebdcdbd53ef761f139478a9c23a7dab445e6fb7a0431e62d8d"
+    },
+    {
+      "file": "frame-08.png",
+      "sha256": "a6bf95da4beeaef50fd4581eb0d9990b2aa2d928c8fdd9b93c558c2b474d6adb"
+    },
+    {
+      "file": "frame-09.png",
+      "sha256": "6d4e12529aa9f834f34d7f26b0377127500d8dc5213831d6771b28c14c59fe1c"
+    },
+    {
+      "file": "frame-10.png",
+      "sha256": "cc5dd54cd072c31041a2f75ed8645650c0e6df4aabfa25144488bb781d7d93a6"
+    },
+    {
+      "file": "frame-11.png",
+      "sha256": "47f7fb0de4d890b5fde2d8793bf589ceac5dc108732a56a999eae124b8842641"
+    },
+    {
+      "file": "frame-12.png",
+      "sha256": "934e621b3f5a3f96013c6842c87c299e5c37f27dc21044d689fbde665c3b6755"
+    },
+    {
+      "file": "frame-13.png",
+      "sha256": "454651a42301b9619ea3ff40c6896dcfd130118c4ca92551048c6581e6a71b26"
+    },
+    {
+      "file": "frame-14.png",
+      "sha256": "ec59ed5b7a596b104bc9590c0247e6731f370de50197455c4dfaa23ff4e782a5"
+    },
+    {
+      "file": "frame-15.png",
+      "sha256": "79ebab3112a37635d443672ca1ffe17d440efa4b554ffb581f92b714eee77d79"
+    },
+    {
+      "file": "frame-16.png",
+      "sha256": "5a907855eb7312cbdcdd6ae2b04d0b6e52b54e5be4f93ae3f2eb81fd93f03bd7"
+    },
+    {
+      "file": "frame-17.png",
+      "sha256": "c982aae7c7b574909c0945f642cd400d8cca151e9c4e6f0bd5ae0bb4235d1900"
+    },
+    {
+      "file": "frame-18.png",
+      "sha256": "3d5c2c7d7818d7bd29da48a6627bc930ad0a4c68c3cbaa19d3d3d93b22d4658e"
+    },
+    {
+      "file": "frame-19.png",
+      "sha256": "32c690375af36ab15c1b851a26404ee0f0709e7e825b5f2c0216cc0fedbb886d"
+    },
+    {
+      "file": "frame-20.png",
+      "sha256": "b988349edffd9d60cf1d1d7fbf5d074d8d5cba76cf086959a204328e49588b0b"
+    },
+    {
+      "file": "frame-21.png",
+      "sha256": "54ba7c988b16e4906c275ba7e3cfa07d51d9131e43b45a77a4fc1acc19c54592"
+    },
+    {
+      "file": "frame-22.png",
+      "sha256": "9b79981f9e442c524401259939b9c7ff474f96fc044446c01e2f0fcbf31c374d"
+    },
+    {
+      "file": "frame-23.png",
+      "sha256": "f46bd58e0ddf0e755fdabb8633c93c9df3e91644d4e5f4bcdadf2a898a2ac5d0"
+    },
+    {
+      "file": "frame-24.png",
+      "sha256": "da67f1e4703acb6aec94418c994fc3ad16173534c193e9308fd80f85605596a2"
+    },
+    {
+      "file": "frame-25.png",
+      "sha256": "4933dda82ef06840d385516a7659d728475990e29c6d906ac96d5a2dcd51e531"
+    },
+    {
+      "file": "frame-26.png",
+      "sha256": "93c71f709a351daf68596800945209254b501289a5ade2e096eb63f036218a11"
+    },
+    {
+      "file": "frame-27.png",
+      "sha256": "23564da650c0c21c135c7ade7f5cbd9e1d8ad72e8911d3f7d8f45b9b956195d7"
+    },
+    {
+      "file": "frame-28.png",
+      "sha256": "f0578dd04fee7906281e90a02dc2f83c970424fc679e0ae07c879df343326672"
+    },
+    {
+      "file": "frame-29.png",
+      "sha256": "36338d3a3b46f70fe5148428a68eaddd00e3f65231bf6411be8a636309adcbec"
+    },
+    {
+      "file": "frame-30.png",
+      "sha256": "fe742437db6905770df333582eb79a8d884ec327221575167a627e5245f55215"
+    },
+    {
+      "file": "frame-31.png",
+      "sha256": "3e80479dc706ac516ee807e7cd036ab63d39acf7ac0ef1c8c21d3cc8aa5b7948"
+    }
+  ],
+  "note": "Integration authorization, not a fabricated user approval of newly generated artwork."
+}

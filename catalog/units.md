@@ -23,18 +23,24 @@ Thralls are derived from the Corpse of a fallen enemy unless listed here.
 | Hellhound | 14 | 6 | 1 | Pack: +2 Power per other Hellhound | Bite |
 | Gloomstalker | 10 | — | 1 | Elusive | Alternates: 2 Sapped / 2 Exposed on the Focus Target |
 | Soul Leech | 8 | 4 | 1 | — | Drain: deal Power, heal the Warlock that much |
-| Pyre Warden | 12 | — | 1 | — | Warlock gains 4 Guard; 1 Scorch to ALL enemies |
-| Pit Brute | 26 | 10 | 2 | Defender | Slam |
+| Pyre Warden | 12 | — | 1 | — | Arrival and turn start: caster gains 6 Guard. Action: 1 Scorch to ALL enemies |
+| Pit Brute | 26 | 7 | 2 | Defender | Cleave ALL enemies |
 
-**Arch-forms** (from *Greater Summoning*; all **Unbound**, no Upkeep):
-| Arch-form | Base | HP | Power | Action |
+**Arch-forms** (tier-two demons; all **Unbound**, no Upkeep, one living copy of each):
+| Arch-form | Base | HP | Power | Action and passive |
 |---|---|---|---|---|
-| Ignivar, the Archimp | Imp | 24 | 6 | Swift. Firestorm: 3 hits of 6 damage, each applying 3 Scorch, at random enemies |
-| Cerberax, the Three-Jawed | Hellhound | 45 | 9 | Bites 3 times; +2 Power whenever it kills |
-| Nightmaw | Gloomstalker | 30 | 8 | Elusive. Apply 3 Sapped + 3 Exposed to ALL enemies, then attack |
-| The Hollow Saint | Soul Leech | 36 | 10 | Drain from ALL enemies; heal the Warlock the total |
-| Pyre Colossus | Pyre Warden | 50 | — | Warlock and all demons gain 10 Guard; 5 Scorch to ALL enemies |
-| Gorthak, the Pit Lord | Pit Brute | 90 | 20 | Defender. Cataclysm Slam: 20 damage to ALL enemies |
+| Ignivar, the Archimp | Imp | 18 | 6 | Firebolt +1 Scorch. All allied direct fire hits apply +4 Scorch per hit. Turn start: summon an Imp if space. |
+| Cerberax, the Three-Jawed | Hellhound | 28 | 8 | Bite; counts as a Hellhound for +2 Power per other pack member. Incoming pack damage splits evenly before each member's Guard. Turn start: summon a Hellhound if space. |
+| Nightmaw | Gloomstalker | 18 | — | Elusive. Apply 2 Sapped and 2 Exposed to the focus target. Arrival and turn start: gain 1 Mana and draw 1 card. |
+| The Hollow Saint | Soul Leech | 20 | 6 | Drain ALL enemies; heal caster for total HP actually dealt. |
+| Pyre Colossus | Pyre Warden | 24 | — | Arrival and turn start: caster gains 6 Guard. Action: 2 Scorch to ALL enemies. Double all caster Guard gains while alive. Each allied demon death rolls a seeded 50% chance to summon a Pyre Warden if space. |
+| Gorthak, the Pit Lord | Pit Brute | 40 | 9 | Defender; cleave ALL enemies. All allied damaging minion attacks gain +2 damage, including himself. Newly summoned lesser demons become Pit Brutes before arrival effects. |
+
+**Roguelike acquisition:** Empower Demon transforms a selected lesser demon into its paired Arch-form for 2 Mana +2 Cinders. Preserve unit ID, position, buffs and remaining HP percentage (round HP up); no death or Swift trigger. Nightmaw and Pyre arrival passives activate. Direct Archdemon summon cards cost 3 Mana; choose among three after defeating the Infernal Sovereign, and find them in forest encounter rewards and shops. Greater Summoning remains a retired catalog concept outside this demo's playable pool.
+
+**Ordering:** Guard resets, then upkeep, then start-turn passives and generators. Generated demons keep their normal upkeep and first pay it next turn. Full-board automatic summons do nothing. Gorthak converts generated lesser demons too; direct Archdemons and Empower transformations are not converted. Dismissal preserves existing death benefits but never triggers Pyre rebirth. Actual simultaneous attack damage is allocated before deaths; Cerberax shares damage once, rounding leftovers to the original target first. Scorch damage never retriggers Ignivar.
+
+**Upgrades:** summon levels scale HP and base damaging Power, not passive quantities, Guard, Scorch, card draw or generated counts. Single-step upgrades retain the base summon catalog rules; Archdemons gain 20% HP/Power; Empower's single-step upgrade reduces Mana to 1.
 
 ## Runesmith: Constructs & mech
 | Construct | HP | Traits | Action | Overcharge (3 Charge) |

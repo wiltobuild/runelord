@@ -39,7 +39,7 @@ test('Infernal boss intent advertises its actual 75 Guard; enrage bonus remains 
 test('schema7 records new rules; schema6 replays old prefix then uses half-HP shields for new actions',()=>{
  const raw=readFileSync(new URL('./fixtures/forest-roguelike-shop.json',import.meta.url),'utf8');const old=JSON.parse(raw);
  let s=restore(raw);assert.equal(s.monsterShieldRulesFrom,old.actions.length);assert.equal(usesPersistentMonsterShields(s),true);
- assert.deepEqual(restore(save(s)),s);assert.equal(JSON.parse(save(s)).schema,7);
+ assert.deepEqual(restore(save(s)),s);assert.equal(JSON.parse(save(s)).schema,8);
  s=dispatch(s,{type:'leave-shop'});const gain=Math.round(s.enemies[0].maxHp/2);assert.equal(intent(s,s.enemies[0]).guard,gain);
  s=dispatch(s,{type:'end'});assert.equal(s.enemies[0].guard,gain);assert.deepEqual(restore(save(s)),s);
  const fresh=newRoguelikeRun(42);assert.equal(fresh.monsterShieldRulesFrom,0);assert.deepEqual(restore(save(fresh)),fresh);

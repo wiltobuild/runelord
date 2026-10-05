@@ -26,7 +26,7 @@
     "cost": "1",
     "type": "Skill",
     "rarity": "Basic",
-    "text": "Summon an Imp.",
+    "text": "Summon an Imp: 6 HP, 4 fire damage +1 Scorch. Attacks immediately. Upkeep 0.",
     "upgrade": "Summon an Imp with +2 Power"
   },
   {
@@ -76,7 +76,7 @@
     "cost": "1 +2🔥",
     "type": "Skill",
     "rarity": "Common",
-    "text": "Summon a Hellhound.",
+    "text": "Summon a Hellhound: 14 HP, 6 damage +2 per other living Hellhound or Cerberax. Upkeep 1.",
     "upgrade": "It enters with 6 Guard"
   },
   {
@@ -226,7 +226,7 @@
     "cost": "2 +2🔥",
     "type": "Skill",
     "rarity": "Uncommon",
-    "text": "Summon a Pit Brute.",
+    "text": "Summon a Pit Brute: 26 HP, 7 damage to ALL enemies. Defender. Upkeep 2.",
     "upgrade": "It has +10 Max HP"
   },
   {
@@ -236,7 +236,7 @@
     "cost": "1 +2🔥",
     "type": "Skill",
     "rarity": "Uncommon",
-    "text": "Summon a Gloomstalker.",
+    "text": "Summon a Gloomstalker: 10 HP. Elusive. Alternate 2 Sapped and 2 Exposed on the focus target. Upkeep 1.",
     "upgrade": "Costs 1 +1🔥"
   },
   {
@@ -246,7 +246,7 @@
     "cost": "1 +1🔥",
     "type": "Skill",
     "rarity": "Uncommon",
-    "text": "Summon a Soul Leech.",
+    "text": "Summon a Soul Leech: 8 HP, drain 4 damage; heal caster for HP actually dealt. Upkeep 1.",
     "upgrade": "+2 Power"
   },
   {
@@ -256,7 +256,7 @@
     "cost": "2 +1🔥",
     "type": "Skill",
     "rarity": "Uncommon",
-    "text": "Summon a Pyre Warden.",
+    "text": "Summon a Pyre Warden: 12 HP. Grant caster 6 Guard on arrival and each turn. Action: 1 Scorch to ALL enemies. Upkeep 1.",
     "upgrade": "Costs 1 +1🔥"
   },
   {
@@ -698,5 +698,75 @@
     "rarity": "Ultimate",
     "text": "Unique. Enter Demon Form; it lasts until the end of combat. While in it, lose 4 HP per turn instead of 3. Consume.",
     "upgrade": "Lose 3 per turn"
+  },
+  {
+    "id": "empower-demon",
+    "number": 71,
+    "name": "Empower Demon",
+    "cost": "2 +2🔥",
+    "type": "Skill",
+    "rarity": "Uncommon",
+    "text": "Transform a lesser demon into its Arch-form. Preserve buffs, position and remaining HP percentage. One living copy per Arch-form.",
+    "upgrade": "Costs 1 +2🔥"
+  },
+  {
+    "id": "summon-ignivar",
+    "number": 72,
+    "name": "Summon Ignivar",
+    "cost": "3",
+    "type": "Skill",
+    "rarity": "Rare",
+    "text": "Summon Ignivar: 18 HP, 6 fire damage +1 Scorch. Your direct fire hits apply +4 Scorch. Each turn summon a free Imp if space. Unbound.",
+    "upgrade": "+20% HP and Power"
+  },
+  {
+    "id": "summon-cerberax",
+    "number": 73,
+    "name": "Summon Cerberax",
+    "cost": "3",
+    "type": "Skill",
+    "rarity": "Rare",
+    "text": "Summon Cerberax: 28 HP, 8 damage. Counts as a Hellhound. Incoming pack damage splits evenly before Guard. Each turn summon a free Hellhound if space. Unbound.",
+    "upgrade": "+20% HP and Power"
+  },
+  {
+    "id": "summon-nightmaw",
+    "number": 74,
+    "name": "Summon Nightmaw",
+    "cost": "3",
+    "type": "Skill",
+    "rarity": "Rare",
+    "text": "Summon Nightmaw: 18 HP, Elusive. Apply 2 Sapped and 2 Exposed. Gain 1 Mana and draw 1 card on arrival and each turn. Unbound.",
+    "upgrade": "+20% HP"
+  },
+  {
+    "id": "summon-hollow-saint",
+    "number": 75,
+    "name": "Summon Hollow Saint",
+    "cost": "3",
+    "type": "Skill",
+    "rarity": "Rare",
+    "text": "Summon the Hollow Saint: 20 HP. Drain 6 damage from all enemies; heal HP actually dealt. Unbound.",
+    "upgrade": "+20% HP and Power"
+  },
+  {
+    "id": "summon-pyre-colossus",
+    "number": 76,
+    "name": "Summon Pyre Colossus",
+    "cost": "3",
+    "type": "Skill",
+    "rarity": "Rare",
+    "text": "Summon Pyre Colossus: 24 HP. Grant caster 6 Guard on arrival and each turn. Action: 2 Scorch to ALL enemies. Double caster Guard gains. Allied demon deaths have a 50% chance to summon a Pyre Warden if space. Unbound.",
+    "upgrade": "+20% HP"
+  },
+  {
+    "id": "summon-gorthak",
+    "number": 77,
+    "name": "Summon Gorthak",
+    "cost": "3",
+    "type": "Skill",
+    "rarity": "Rare",
+    "text": "Summon Gorthak: 40 HP, 9 damage to all enemies, Defender. All allied minions gain +2 damage. New lesser summons become Pit Brutes. Unbound.",
+    "upgrade": "+20% HP and Power"
   }
 ]

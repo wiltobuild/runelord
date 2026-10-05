@@ -1,0 +1,754 @@
+{
+  "contract_version": 2,
+  "character_id": "warlock-ignivar",
+  "display_name": "Ignivar, the Archimp",
+  "role": "Three-hit Firestorm",
+  "form": "Arch-form",
+  "rig_family": "winged biped",
+  "format": "frame-based RGBA PNG",
+  "status": "animation_complete_pending_review",
+  "authorization": {
+    "source": "Direct user request in this conversation",
+    "text": "animate the base warlock summons and establish their scale relative to eachother",
+    "scope": "12 base summons; supersedes cosmetic variants"
+  },
+  "base": {
+    "revision": "r1",
+    "asset": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\characters\\warlock-ignivar\\base\\r1\\warlock-ignivar-base-r1.png",
+    "sha256": "4a12ae1d443da8df804ae070efbb135342eed8b9a140d1137fff221ca5d27974",
+    "dimensions": [
+      1239,
+      1269
+    ],
+    "alpha_extrema": [
+      0,
+      255
+    ],
+    "visible_bbox_alpha_gt_127": [
+      22,
+      9,
+      1229,
+      1258
+    ],
+    "approval": {
+      "status": "Pending approval"
+    }
+  },
+  "style_lock": {
+    "direction": "Serious Runelord hard-edged cel shading, broad oxblood/charcoal shapes, restrained ember accents",
+    "references": [
+      {
+        "path": "C:/Users/wilsh/Projects/runelord/assets/cards/reference-samples/warlock-summon-imp.png",
+        "sha256": "070283f1fb65b07531cec7b32c653ffc96a7adacde1c2ce4daca1f3b4ed78c9e",
+        "role": "parent card identity",
+        "approval": {
+          "status": "Approved",
+          "at": "2026-10-02T03:44:25.533Z",
+          "evidenceId": "user-chat-2026-10-01-approve-existing-runelord",
+          "paths": [
+            "C:\\Users\\wilsh\\Projects\\runelord\\assets\\cards\\reference-samples\\warlock-summon-imp.png"
+          ]
+        }
+      },
+      {
+        "path": "C:/Users/wilsh/Projects/runelord/assets/cards/reference-samples/warlock-summon-imp.png",
+        "sha256": "070283f1fb65b07531cec7b32c653ffc96a7adacde1c2ce4daca1f3b4ed78c9e",
+        "role": "approved rendering style",
+        "approval": {
+          "status": "Approved",
+          "at": "2026-10-02T03:44:25.533Z",
+          "evidenceId": "user-chat-2026-10-01-approve-existing-runelord",
+          "paths": [
+            "C:\\Users\\wilsh\\Projects\\runelord\\assets\\cards\\reference-samples\\warlock-summon-imp.png"
+          ]
+        }
+      }
+    ],
+    "camera": "shallow three-quarter facing right"
+  },
+  "source_sheet": {
+    "file": "source-sheet.png",
+    "dimensions": [
+      1536,
+      1024
+    ],
+    "sha256": "83a87da0f86fb21cd51cb3c1e7ec12b9f5b1951e3a7715a90de7f37b31884ab1"
+  },
+  "geometry": {
+    "coordinate_system": "pixels; top-left; x right, y down",
+    "facing": "right",
+    "canvas_px": [
+      512,
+      384
+    ],
+    "root_px": [
+      256,
+      340
+    ],
+    "anchor_normalized": [
+      0.5,
+      0.8854166666666666
+    ],
+    "source_pixels_per_world_unit": 313.75,
+    "standing_height_world": 0.8,
+    "hover_gap_world": 0,
+    "reference_visible_height_px": 251,
+    "root_motion": "in-place; translation-only packing registration; no camera movement",
+    "mirror_safe": false
+  },
+  "atlas": {
+    "file": "atlas.png",
+    "dimensions": [
+      2048,
+      1536
+    ],
+    "sha256": "7c61b057dcf0f2e33fcdb843fa8058f9b27776eae516c05746c8c85f2f0bffe1"
+  },
+  "frames": [
+    {
+      "id": 0,
+      "file": "frame-00.png",
+      "atlas_rect": [
+        0,
+        0,
+        512,
+        384
+      ],
+      "source_rect": [
+        0,
+        0,
+        384,
+        268
+      ],
+      "packing_translation": [
+        52,
+        81
+      ],
+      "visible_bbox": [
+        91,
+        89,
+        381,
+        340
+      ],
+      "ground_gap_px": 0
+    },
+    {
+      "id": 1,
+      "file": "frame-01.png",
+      "atlas_rect": [
+        512,
+        0,
+        512,
+        384
+      ],
+      "source_rect": [
+        384,
+        0,
+        768,
+        268
+      ],
+      "packing_translation": [
+        48,
+        81
+      ],
+      "visible_bbox": [
+        87,
+        90,
+        379,
+        340
+      ],
+      "ground_gap_px": 0
+    },
+    {
+      "id": 2,
+      "file": "frame-02.png",
+      "atlas_rect": [
+        1024,
+        0,
+        512,
+        384
+      ],
+      "source_rect": [
+        768,
+        0,
+        1152,
+        268
+      ],
+      "packing_translation": [
+        48,
+        81
+      ],
+      "visible_bbox": [
+        84,
+        88,
+        371,
+        340
+      ],
+      "ground_gap_px": 0
+    },
+    {
+      "id": 3,
+      "file": "frame-03.png",
+      "atlas_rect": [
+        1536,
+        0,
+        512,
+        384
+      ],
+      "source_rect": [
+        1152,
+        0,
+        1536,
+        268
+      ],
+      "packing_translation": [
+        48,
+        81
+      ],
+      "visible_bbox": [
+        84,
+        92,
+        370,
+        340
+      ],
+      "ground_gap_px": 0
+    },
+    {
+      "id": 4,
+      "file": "frame-04.png",
+      "atlas_rect": [
+        0,
+        384,
+        512,
+        384
+      ],
+      "source_rect": [
+        0,
+        268,
+        388,
+        528
+      ],
+      "packing_translation": [
+        56,
+        87
+      ],
+      "visible_bbox": [
+        93,
+        101,
+        389,
+        340
+      ],
+      "ground_gap_px": 0
+    },
+    {
+      "id": 5,
+      "file": "frame-05.png",
+      "atlas_rect": [
+        512,
+        384,
+        512,
+        384
+      ],
+      "source_rect": [
+        388,
+        268,
+        768,
+        528
+      ],
+      "packing_translation": [
+        63,
+        87
+      ],
+      "visible_bbox": [
+        84,
+        99,
+        433,
+        340
+      ],
+      "ground_gap_px": 0
+    },
+    {
+      "id": 6,
+      "file": "frame-06.png",
+      "atlas_rect": [
+        1024,
+        384,
+        512,
+        384
+      ],
+      "source_rect": [
+        768,
+        268,
+        1169,
+        528
+      ],
+      "packing_translation": [
+        57,
+        87
+      ],
+      "visible_bbox": [
+        103,
+        101,
+        448,
+        340
+      ],
+      "ground_gap_px": 0
+    },
+    {
+      "id": 7,
+      "file": "frame-07.png",
+      "atlas_rect": [
+        1536,
+        384,
+        512,
+        384
+      ],
+      "source_rect": [
+        1169,
+        268,
+        1536,
+        528
+      ],
+      "packing_translation": [
+        62,
+        87
+      ],
+      "visible_bbox": [
+        87,
+        92,
+        378,
+        340
+      ],
+      "ground_gap_px": 0
+    },
+    {
+      "id": 8,
+      "file": "frame-08.png",
+      "atlas_rect": [
+        0,
+        768,
+        512,
+        384
+      ],
+      "source_rect": [
+        0,
+        528,
+        392,
+        778
+      ],
+      "packing_translation": [
+        44,
+        106
+      ],
+      "visible_bbox": [
+        84,
+        113,
+        359,
+        340
+      ],
+      "ground_gap_px": 0
+    },
+    {
+      "id": 9,
+      "file": "frame-09.png",
+      "atlas_rect": [
+        512,
+        768,
+        512,
+        384
+      ],
+      "source_rect": [
+        392,
+        528,
+        772,
+        778
+      ],
+      "packing_translation": [
+        54,
+        105
+      ],
+      "visible_bbox": [
+        108,
+        113,
+        364,
+        340
+      ],
+      "ground_gap_px": 0
+    },
+    {
+      "id": 10,
+      "file": "frame-10.png",
+      "atlas_rect": [
+        1024,
+        768,
+        512,
+        384
+      ],
+      "source_rect": [
+        772,
+        528,
+        1152,
+        778
+      ],
+      "packing_translation": [
+        54,
+        106
+      ],
+      "visible_bbox": [
+        113,
+        134,
+        360,
+        340
+      ],
+      "ground_gap_px": 0
+    },
+    {
+      "id": 11,
+      "file": "frame-11.png",
+      "atlas_rect": [
+        1536,
+        768,
+        512,
+        384
+      ],
+      "source_rect": [
+        1152,
+        528,
+        1536,
+        778
+      ],
+      "packing_translation": [
+        52,
+        106
+      ],
+      "visible_bbox": [
+        115,
+        120,
+        357,
+        340
+      ],
+      "ground_gap_px": 0
+    },
+    {
+      "id": 12,
+      "file": "frame-12.png",
+      "atlas_rect": [
+        0,
+        1152,
+        512,
+        384
+      ],
+      "source_rect": [
+        0,
+        778,
+        384,
+        1024
+      ],
+      "packing_translation": [
+        68,
+        120
+      ],
+      "visible_bbox": [
+        132,
+        126,
+        381,
+        340
+      ],
+      "ground_gap_px": 0
+    },
+    {
+      "id": 13,
+      "file": "frame-13.png",
+      "atlas_rect": [
+        512,
+        1152,
+        512,
+        384
+      ],
+      "source_rect": [
+        384,
+        778,
+        778,
+        1024
+      ],
+      "packing_translation": [
+        54,
+        121
+      ],
+      "visible_bbox": [
+        112,
+        148,
+        399,
+        340
+      ],
+      "ground_gap_px": 0
+    },
+    {
+      "id": 14,
+      "file": "frame-14.png",
+      "atlas_rect": [
+        1024,
+        1152,
+        512,
+        384
+      ],
+      "source_rect": [
+        778,
+        778,
+        1152,
+        1024
+      ],
+      "packing_translation": [
+        77,
+        119
+      ],
+      "visible_bbox": [
+        95,
+        222,
+        417,
+        340
+      ],
+      "ground_gap_px": 0
+    },
+    {
+      "id": 15,
+      "file": "frame-15.png",
+      "atlas_rect": [
+        1536,
+        1152,
+        512,
+        384
+      ],
+      "source_rect": [
+        1152,
+        778,
+        1536,
+        1024
+      ],
+      "packing_translation": [
+        58,
+        117
+      ],
+      "visible_bbox": [
+        87,
+        238,
+        424,
+        340
+      ],
+      "ground_gap_px": 0
+    }
+  ],
+  "animations": {
+    "idle": {
+      "frames": [
+        0,
+        1,
+        2,
+        3,
+        2,
+        1
+      ],
+      "durations_ms": [
+        300,
+        280,
+        360,
+        300,
+        280,
+        320
+      ],
+      "loop": true,
+      "events": [],
+      "transition": "self"
+    },
+    "act": {
+      "frames": [
+        4,
+        5,
+        6,
+        7
+      ],
+      "durations_ms": [
+        140,
+        100,
+        110,
+        100
+      ],
+      "loop": false,
+      "events": [
+        {
+          "name": "release",
+          "at_ms": 140
+        }
+      ],
+      "transition": "idle"
+    },
+    "hit": {
+      "frames": [
+        8,
+        9,
+        0
+      ],
+      "durations_ms": [
+        80,
+        100,
+        80
+      ],
+      "loop": false,
+      "events": [],
+      "transition": "idle"
+    },
+    "wounded_idle": {
+      "frames": [
+        10,
+        11,
+        10
+      ],
+      "durations_ms": [
+        550,
+        650,
+        550
+      ],
+      "loop": true,
+      "events": [],
+      "transition": "self"
+    },
+    "die": {
+      "frames": [
+        12,
+        13,
+        14,
+        15
+      ],
+      "durations_ms": [
+        150,
+        160,
+        180,
+        250
+      ],
+      "loop": false,
+      "events": [
+        {
+          "name": "terminal",
+          "at_ms": 490
+        }
+      ],
+      "transition": "hold-last",
+      "terminal": true
+    },
+    "spawn": {
+      "frames": [
+        0,
+        0,
+        1,
+        0
+      ],
+      "durations_ms": [
+        70,
+        80,
+        100,
+        100
+      ],
+      "loop": false,
+      "events": [
+        {
+          "name": "arrival",
+          "at_ms": 250
+        }
+      ],
+      "transition": "idle",
+      "opacity": [
+        0,
+        0.35,
+        0.75,
+        1
+      ]
+    }
+  },
+  "aliases": {
+    "attack": "act",
+    "cast": "act"
+  },
+  "not_applicable": {
+    "guard": "No guard equipment/action.",
+    "victory": "Not required by summon catalog.",
+    "transform": "Arch-forms are separate summons."
+  },
+  "construction": {
+    "type": "16 generated articulated raster key poses, packed without per-frame rescaling",
+    "layers": "flattened RGBA frames; no rig or separated joint parts"
+  },
+  "limitations": [
+    "Limited-animation pose timing, not interpolated skeletal animation.",
+    "Small generated detail variations remain between frames.",
+    "Spawn is a four-step materialization opacity sequence using idle poses; VFX are external.",
+    "Source pose resolution is measured, not upscaled to claim HD."
+  ],
+  "generation": {
+    "id": "warlock-ignivar",
+    "prompt": "Create a PRODUCTION 2D SPRITE ANIMATION SHEET for the EXACT supplied Runelord creature. Image 1 is immutable character identity; image 2 is cel shading style only. Preserve its face, limb counts, armor, palette, proportions and asymmetry in EVERY frame. TRUE TRANSPARENT background. EXACTLY 4 COLUMNS x 4 ROWS, 16 equally sized square cells, orderly grid WITHOUT drawn dividers or labels. Aim for 2048x2048 pixels. Each cell uses the SAME camera, pixel scale and ground plane at 85% of cell height. Character fits within middle 80% of each cell, no overlap or cutoff. Facing right, shallow three-quarter side game view. Keep both feet planted in idle and hit, same foot positions; no bouncing whole sprite or sliding. Clear articulated limb poses, flat hard-edged cel shadows, no gradients, no added detail. No scenery, baked shadow, text, numbers or border. Cell content row-major:\nROW 1 = FOUR subtle IDLE breathing poses for a seamless loop: resting, mid inhale, full inhale, mid exhale. Feet identical, gentle chest expansion, small head and secondary appendage follow-through. NOT four identical copies. Keep same body size, anatomical landmarks.\nROW 2 = FOUR ACTION poses: anticipation, release/contact, follow-through, recover to original idle stance. Pose must use shoulders/elbows/spine and creature-specific action. Keep anatomy consistent.\nROW 3 = frame 1 HIT recoil, frame 2 HIT recovery, frame 3 WOUNDED IDLE lowered tired posture A, frame 4 WOUNDED IDLE breathing posture B. No gore. Feet planted, tired posture clearly different from brief hit.\nROW 4 = FOUR DEATH poses: knees buckle/body weakens; sink and fold; collapse onto ground; terminal lifeless prone body resting on same ground baseline. Distinctly articulated collapse, not whole-sprite spinning. Last frame fully in cell, keep silhouette recognizable. No flames or VFX obscuring anatomy.\n\nIMPORTANT: no projectiles or detached VFX; emission handled by game. Keep at least 12% empty gutter around each pose, especially extended limbs. All poses SAME pixels per body length, do not scale collapse poses up.\nIgnivar: two arms, two legs, two bat wings; larger imp with chest diamond and horns. Firestorm cast: spread hands, thrust both palms right, broad finger/claw follow-through, recover. Grounded idle with subtle wing flex and proud slow breath.\nLAYOUT PRIORITY: wide LANDSCAPE 1536x1024 canvas. Exactly 4 columns x4rows. Each creature small enough that ALL 16 poses have at least 35px empty transparent space on ALL sides of its cell. Same scale throughout. No glow background.",
+    "source": "C:\\Users\\wilsh\\.codex\\generated_images\\01a0fd05-4128-7311-a4cf-038e1591fcc4\\exec-3b7e5065-fe00-48bc-bcd7-c5e4e1ff38b6.png",
+    "rows": [
+      0,
+      268,
+      528,
+      778,
+      1024
+    ],
+    "columns_by_row": [
+      [
+        0,
+        384,
+        768,
+        1152,
+        1536
+      ],
+      [
+        0,
+        388,
+        768,
+        1169,
+        1536
+      ],
+      [
+        0,
+        392,
+        772,
+        1152,
+        1536
+      ],
+      [
+        0,
+        384,
+        778,
+        1152,
+        1536
+      ]
+    ],
+    "boundary_contact_frames": []
+  },
+  "qa": {
+    "id": "warlock-ignivar",
+    "frames": 16,
+    "alpha_extrema": [
+      0,
+      254
+    ],
+    "clipping": [],
+    "idle_height_px": 251,
+    "dimensions": [
+      512,
+      384
+    ],
+    "states": [
+      "idle",
+      "act",
+      "hit",
+      "wounded_idle",
+      "die",
+      "spawn"
+    ],
+    "runtime_tests": "Passed: state timing, event bounds, aliases, death terminal hold, scale at 80/160/240 screen px per unit.",
+    "visual_review": "Live Canvas playback reviewed in browser; full-source and 96 px individual idle, full roster action/hit/wounded/death comparisons; light and dark backgrounds.",
+    "limitations": "Limited pose count; small generated contour/shading variation. No skeletal interpolation or separated VFX."
+  }
+}

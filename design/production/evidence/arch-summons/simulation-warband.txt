@@ -1,0 +1,9 @@
+{
+  "runs": 30,
+  "starterDeck": "warband",
+  "wins": 0,
+  "losses": 30,
+  "softLocks": 0,
+  "identicalReplays": 30,
+  "maxActions": 549
+}

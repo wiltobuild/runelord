@@ -1,3 +1,5 @@
+import { flushSync } from "react-dom";
+import { EMPOWER_MS } from "./empowerTiming";
 import { useEffect, useRef, useState } from "react";
 import { cards, type CardId } from "../../../packages/content/index";
 import { FOREST_ENEMY_IDS } from "../../../packages/engine/forest";
@@ -172,6 +174,7 @@ export function useBattleDirector(
       source = "";
     let heroHurtSinceAttack = false;
     let musterIsFire = false;
+    let sacrificedActor: number | undefined;
     const pause = async (ms: number) => {
       await new Promise((resolve) => setTimeout(resolve, ms));
       if (token !== version.current) throw Error("Animation cancelled");
@@ -189,7 +192,7 @@ export function useBattleDirector(
       action.type === "play"
         ? before.hand.find((c) => c.uid === action.uid)?.id
         : undefined;
-    const clip = card?.startsWith("summon")
+    const clip = (card?.startsWith("summon") || card === "empower-demon")
       ? "summon_demon"
       : ["blood-pact", "feed-the-pit", "dark-bargain", "sacrificial-rite", "unholy-frenzy", "fiendish-feast"].includes(card ?? "")
         ? "blood_pact"
@@ -199,7 +202,10 @@ export function useBattleDirector(
             : "firebolt"
           : "guard_enter";
     await Promise.all([
-      warmActors(assets),
+      warmActors(assets, [before, after, ...after.events.flatMap(event => event.view ? [event.view] : [])].flatMap(view => [
+        ...view.units.map(unit => summonArt(unit.kind, assets)),
+        ...view.enemies.map(enemy => enemy.art),
+      ])),
       warmHeroClip(assets, clip),
       warmHeroClip(assets, "hit_light"),
       warmHeroClip(assets, "guard_impact"),
@@ -229,6 +235,8 @@ export function useBattleDirector(
         [
           "card",
           "muster",
+          "transform",
+          "passive",
           "reserve",
           "enemy-summon",
           "boss-phase",
@@ -252,7 +260,11 @@ export function useBattleDirector(
             assets.animations[clip].events?.find(e => ["impact", "release", "cast-release"].includes(e.name))?.time_ms ?? 300,
           ),
           all = ["conflagrate", "ashen-ward", "hellfire", "ember-storm", "smoke-and-mirrors"].includes(card);
-        sfx.play(card, release / 1000, -.15);
+        const summonSound = card.startsWith("summon-")
+          ? ["summon-hellhound", "summon-cerberax"].includes(card) ? "summon-hellhound"
+            : ["summon-pit-brute", "summon-gorthak", "summon-pyre-warden", "summon-pyre-colossus"].includes(card) ? "summon-pit-brute" : "summon-imp"
+          : card === "empower-demon" ? "ascend" : card;
+        sfx.play(summonSound, release / 1000, -.15);
         const targetIds = all
           ? before.enemies.filter((e) => e.hp > 0).map((e) => e.id)
           : [event.target!];
@@ -260,8 +272,39 @@ export function useBattleDirector(
           hand = point("hero", clip);
         for (const unit of before.units) if ((after.units.find(u => u.id === unit.id)?.guard ?? 0) > unit.guard)
           wardUnit(unit, hand, release);
-        if (card.startsWith("summon")) {
+        if (card.startsWith("summon") || card === "empower-demon") {
           await pause(release);
+        } else if (["sacrificial-rite", "fiendish-feast", "hellish-command", "feast-of-embers"].includes(card) && action.type === "play" && action.unit !== undefined) {
+          const id = `unit-${action.unit}`, center = point(id);
+          const sprite = actor(id)?.querySelector<HTMLElement>(".actor-sprite");
+          const height = (sprite?.getBoundingClientRect().height ?? 150) / stageScale();
+          await pause(release);
+          const sacrifice = card === "sacrificial-rite" || card === "fiendish-feast";
+          const duration = sacrifice ? 1700 : card === "hellish-command" ? 850 : 1500;
+          const kind: SpellKind = sacrifice ? card === "sacrificial-rite" ? "sacrifice-rite" : "sacrifice-feast" : card === "hellish-command" ? "command" : "ember-feast";
+          setEffects(previous => [...previous.filter(e => performance.now()-e.start < e.duration), {
+            id:++serial.current,kind,start:performance.now(),duration,release:0,travel:0,
+            from:sacrifice ? center : hand,targets:[sacrifice ? point("hero") : center],height,
+          }]);
+          if (sprite) motions.current.push(sprite.animate(sacrifice ? [
+            {opacity:1,filter:"brightness(1)",clipPath:"inset(0% 0% 0% 0%)"},
+            {opacity:1,filter:"brightness(1.8) sepia(1) saturate(8) hue-rotate(320deg) drop-shadow(0 0 12px #ff170c)",clipPath:"inset(0% 0% 0% 0%)",offset:.18},
+            {opacity:.6,filter:"brightness(2) sepia(1) saturate(10) hue-rotate(320deg) drop-shadow(0 0 16px #ed120c)",clipPath:"inset(0% 0% 65% 0%)",offset:.48},
+            {opacity:0,filter:"brightness(4)",clipPath:"inset(0% 0% 100% 0%)",offset:.7},
+            {opacity:0,clipPath:"inset(0% 0% 100% 0%)"},
+          ] : [
+            {filter:"brightness(1)"},
+            {filter:card === "hellish-command" ? "brightness(1.5) drop-shadow(0 0 16px #ff1808)" : "brightness(1.4) drop-shadow(0 0 18px #f51c12)",offset:.5},
+            {filter:"brightness(1)"},
+          ], {duration,easing:"ease-in-out",fill:sacrifice ? "forwards" : "none"}));
+          if (sacrifice) sacrificedActor = action.unit;
+          await pause(duration);
+          if (card === "feast-of-embers") {
+            const old = before.units.find(u => u.id === action.unit), next = after.units.find(u => u.id === action.unit);
+            if (old && next) setNumbers(previous => [...previous.slice(-8), {id:++serial.current,point:center,label:`${next.hp > old.hp ? `+${next.hp-old.hp} HP · ` : ""}+${next.power-old.power} Power`}]);
+          } else if (card === "fiendish-feast" && after.hp > before.hp) {
+            setNumbers(previous => [...previous.slice(-8), {id:++serial.current,point:point("hero"),label:`+${after.hp-before.hp} HP`}]);
+          }
         } else if (cards[card].type === "Attack") {
           const kind: SpellKind =
             ["searing-lash", "infernal-whip", "rend-flesh", "ritual-cut"].includes(card)
@@ -320,15 +363,23 @@ export function useBattleDirector(
             event.view?.units.find((u) => u.id === event.actor) ||
             after.units.find((u) => u.id === event.actor),
           target = point(`enemy-${event.target}`);
-        musterIsFire = unit?.kind === "imp";
+        musterIsFire = unit?.kind === "imp" || unit?.kind === "ignivar";
+        const allTargets = (event.targets?.filter(t => t !== "hero") ?? [event.target!]).map(t => point(`enemy-${t}`));
         const attack = unit ? assets.actors[summonArt(unit.kind, assets)]?.states.attack : undefined;
         const impact = attack?.impact ?? 100;
-        if (unit?.kind === "imp") {
+        if (musterIsFire) {
           sfx.play("attack-imp", impact / 1000);
           cue(id, "attack");
-          effect("fire", point(id), [target], impact, 240, 0.58);
+          effect("fire", point(id), allTargets, impact, 240, unit?.kind === "ignivar" ? .9 : .58);
           await pause(impact + 240);
           recovery = Math.max(0, (attack?.duration ?? 350) - impact - 240);
+        } else if (unit && ["gloomstalker", "nightmaw", "soul-leech", "hollow-saint", "pyre-warden", "pyre-colossus"].includes(unit.kind)) {
+          cue(id, "attack");
+          const support = ["pyre-warden", "pyre-colossus"].includes(unit.kind);
+          sfx.play(support ? "ward-of-ash" : "dark-bargain", impact / 1000);
+          effect(support ? "immolate" : "pact", point(id), allTargets, impact, 280, .8);
+          await pause(impact + 280);
+          recovery = Math.max(280, (attack?.duration ?? 600) - impact - 280);
         } else {
           const image = actor(id)?.querySelector<HTMLElement>(".actor-sprite");
           const travelDuration = Math.max(700, 280 + (attack?.duration ?? 350));
@@ -352,10 +403,10 @@ export function useBattleDirector(
             );
           }
           await pause(280);
-          if (unit) sfx.play(`attack-${unit.kind}`);
+          if (unit) sfx.play(["hellhound", "cerberax"].includes(unit.kind) ? "attack-hellhound" : "attack-pit-brute");
           cue(id, "attack");
           await pause(impact);
-          effect("impact", target, [target], 0, 0);
+          effect("impact", target, allTargets, 0, 0);
           recovery = travelDuration - 280 - impact;
         }
       }
@@ -481,6 +532,7 @@ export function useBattleDirector(
       if (event.type === "unit-hit" && event.target !== undefined) {
         const unit = before.units.find(u => u.id === event.target);
         sfx.play(!event.amount ? "hit-block" : unit?.kind === "pit-brute" ? "hit-armor" : "hit-flesh");
+        cue(`unit-${event.target}`, "hit");
         number(`unit-${event.target}`, event.amount || 0);
       }
       if (event.type === "reserve") {
@@ -500,6 +552,65 @@ export function useBattleDirector(
         const newcomer = actor(`enemy-${event.actor}`);
         if(newcomer)motions.current.push(newcomer.animate([{opacity:0,transform:"translateX(36px)"},{opacity:1,transform:"translateX(0)"}],{duration:550,easing:"ease-out"}));
         recovery=550;
+      }
+      if (event.type === "transform") {
+        const id = `unit-${event.actor}`;
+        const prior = before.units.find(u => u.id === event.actor);
+        const oldSprite = actor(id)?.querySelector<HTMLElement>(".actor-sprite");
+        const oldBox = oldSprite?.getBoundingClientRect();
+        const sourceWorldUnit = oldSprite ? parseFloat(getComputedStyle(oldSprite).getPropertyValue("--summon-world-unit")) || 200 : 200;
+        setLabel(event.message);
+        sfx.play("ascend");
+        const start = performance.now();
+        // Commit the new layout synchronously so its old-root offset is applied
+        // before the browser can paint a frame in the destination slot.
+        flushSync(() => {
+          setCues(current => ({...current, [id]: {state:"empower", sequence:++serial.current, fromArt:prior ? summonArt(prior.kind, assets) : undefined, startedAt:start, sourceWorldUnit}}));
+          if (event.view) show(event.view);
+        });
+        const element = actor(id), sprite = element?.querySelector<HTMLElement>(".actor-sprite");
+        const box = sprite?.getBoundingClientRect();
+        if (box && oldBox && element) {
+          const zoom = stageScale();
+          // Keep the ritual rooted at the sacrifice, then carry it into the new
+          // formation slot (including transformations between air and ground).
+          motions.current.push(element.animate([
+            {translate:`${(oldBox.left + oldBox.width/2 - box.left - box.width/2)/zoom}px ${(oldBox.bottom-box.bottom)/zoom}px`,offset:0},
+            {translate:`${(oldBox.left + oldBox.width/2 - box.left - box.width/2)/zoom}px ${(oldBox.bottom-box.bottom)/zoom}px`,offset:.18},
+            {translate:"0px 0px",offset:1},
+          ], {duration:1500,easing:"ease-in-out"}));
+        }
+        const arena = document.querySelector(".battlefield")!.getBoundingClientRect(), zoom = stageScale();
+        const root = box ? {x:(box.left+box.width/2-arena.left)/zoom,y:(box.bottom-arena.top)/zoom} : point(id);
+        setEffects(previous => [...previous.filter(e => start-e.start < e.duration), {
+          id:++serial.current,kind:"empower",start,duration:EMPOWER_MS,release:0,travel:0,
+          from:root,targets:[root],scale:Math.max(.85,Math.min(1.65,(box?.width ?? 150)/zoom/150)),
+          height:Math.max(260,(box?.height ?? 170)/zoom*1.8),targetActor:id,
+        }]);
+        // Complete the reveal before passive/cast cues can replace the silhouette.
+        await pause(Math.max(0, EMPOWER_MS - (performance.now()-start)));
+        cue(id,"idle");
+        continue;
+      }
+      if (event.type === "passive") {
+        setLabel(event.message);
+        const origin = event.actor ? point(`unit-${event.actor}`) : point("hero");
+        if (event.actor) cue(`unit-${event.actor}`, "cast");
+        effect("pact", origin, [point("hero")], 0, 180, .6);
+        recovery = 300;
+      }
+      if (event.type === "guard") {
+        setLabel(event.message);
+        const center = point("hero");
+        effect("ward", center, [{x:center.x+55,y:center.y+20}], 0, 0, .8);
+        sfx.play("ward-of-ash");
+        recovery = Math.max(recovery, 320);
+      }
+      if (event.type === "heal" && (event.amount ?? 0) > 0) {
+        setLabel(event.message);
+        effect("kindle", event.actor ? point(`unit-${event.actor}`) : point("hero"), [point("hero")], 0, 220, .8);
+        setNumbers(previous => [...previous.slice(-8), {id:++serial.current,point:point("hero"),label:`+${event.amount} HP`}]);
+        recovery = Math.max(recovery, 350);
       }
       if (event.type === "summon") {
         cue(`unit-${event.actor}`, "spawn");
@@ -530,7 +641,7 @@ export function useBattleDirector(
             enemy ? assets.actors[enemy.art].states.die.duration + (assets.actors[enemy.art].deathEffect === "fire" ? FIRE_DEATH_MS : 0) : 800,
         );
       }
-      if (event.type === "unit-death" && event.unit) {
+      if (event.type === "unit-death" && event.unit && event.actor !== sacrificedActor) {
         setGhosts((previous) => [...previous, { ...event.unit!, hp: 0 }]);
         cue(`unit-${event.actor}`, "die");
         recovery = Math.max(recovery, assets.actors[summonArt(event.unit.kind, assets)]?.states.die.duration ?? 740);

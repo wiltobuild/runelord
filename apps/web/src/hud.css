@@ -270,6 +270,8 @@ main.battle-ui { width:1672px; height:941px; min-height:0; zoom:var(--hud-scale)
 .battle-ui .formation-unit.airborne.unit-dying .actor-sprite { animation:imp-fall var(--death-duration) ease-in forwards; }
 @keyframes airborne-dissolve { 0%,55% { opacity:1; } 100% { opacity:0; } }
 @keyframes imp-fall { 0% { transform:translateY(0); } 66%,100% { transform:translateY(var(--flight-drop)); } }
+.battle-ui .formation-unit.summon-ignivar.airborne.unit-dying .actor-sprite { animation:archimp-fall var(--flight-landing-duration) ease-in forwards; }
+@keyframes archimp-fall { from { transform:translateY(0); } to { transform:translateY(var(--flight-drop)); } }
 
 /* Two live rows sit inside the formation's existing reserved footer. */
 .battle-ui .minion-details { margin:calc(4px + var(--summon-lower-padding, 0px)) auto 0; width:100%; max-width:180px; height:46px; padding:3px 6px; box-sizing:border-box; background:linear-gradient(#241c1a,#100f13); border:1px solid #9c713e; box-shadow:0 2px 5px #0009,inset 0 0 0 1px #33271f; }
@@ -448,3 +450,11 @@ main.battle-ui { width:1672px; height:941px; min-height:0; zoom:var(--hud-scale)
 .battle-ui:has(.demon-lord) .combat-message { left:350px; width:600px; }
 /* Keep the right reinforcement's intent below the fixed turn ribbon. */
 .battle-ui .enemies .boss-summon ~ .boss-summon .intent { top:103px; }
+
+/* Family art overlaps; independent status controls never overlap or scale down. */
+.battle-ui .packed-status { display:flex; gap:4px; z-index:80; }
+.battle-ui .packed-status > button { flex:1 1 0; min-width:0; margin:0; }
+.battle-ui .packed-status .minion-details { width:100%; max-width:none; margin:0; }
+.battle-ui .packed-status .minion-name { font-size:14px; gap:3px; }
+/* Selecting a health control lifts its model for inspection without resizing it. */
+.battle-ui .formation-unit.chosen { z-index:75!important; }

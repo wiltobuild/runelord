@@ -5,15 +5,20 @@ import {
   restore,
   dispatch,
   playable,
+  archForms,
   type State,
 } from "../../packages/engine/index";
 import assert from "node:assert/strict";
+import type {StarterDeckId} from '../../packages/content/index';
+const runCount=Number(process.argv.find(v=>v.startsWith('--runs='))?.split('=')[1]??1000);
+const deck=(process.argv.find(v=>v.startsWith('--deck='))?.split('=')[1]??'warband') as StarterDeckId;
+if(!Number.isInteger(runCount)||runCount<1||!['classic','fire','warband','pact'].includes(deck))throw Error('Use --runs=<positive integer> and --deck=classic|fire|warband|pact');
 let wins = 0,
   losses = 0,
   maxActions = 0;
 const maxActionsPerRun = 3000;
-for (let seed = 1; seed <= 1000; seed++) {
-  let s: State = newRoguelikeRun(seed),
+for (let seed = 1; seed <= runCount; seed++) {
+  let s: State = newRoguelikeRun(seed,deck),
     actions = 0;
   while (s.phase !== "won" && s.phase !== "lost" && actions < maxActionsPerRun) {
     const before = JSON.stringify(s);
@@ -40,13 +45,14 @@ for (let seed = 1; seed <= 1000; seed++) {
             !(c.id.startsWith("summon") && s.units.length >= 5),
         )
         .sort((a, b) => (ranks[b.id] ?? 5) - (ranks[a.id] ?? 5))[0];
+      const targetUnit=c?.id==='empower-demon'?s.units.find(u=>archForms[u.kind]&&!s.units.some(v=>v.kind===archForms[u.kind])):s.units[0];
       s = dispatch(
         s,
         c
           ? {
               type: "play",
               uid: c.uid,
-              ...(s.units.length ? { unit: s.units[0].id } : {}),
+              ...(targetUnit ? { unit: targetUnit.id } : {}),
               target: s.enemies
                 .filter((e) => e.hp > 0)
                 .sort((a, b) => a.hp - b.hp)[0].id,
@@ -77,11 +83,12 @@ for (let seed = 1; seed <= 1000; seed++) {
 console.log(
   JSON.stringify(
     {
-      runs: 1000,
+      runs: runCount,
+      starterDeck:deck,
       wins,
       losses,
       softLocks: 0,
-      identicalReplays: 1000,
+      identicalReplays: runCount,
       maxActions,
     },
     null,

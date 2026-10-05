@@ -1,7 +1,7 @@
 import { test } from 'node:test';
 import assert from 'node:assert/strict';
 import { newRun, dispatch, intent, rollRewards, save, restore, type State } from './index';
-import { cards, cardAffinities, encounters, starterDecks, items } from '../content/index';
+import { cards, cardAffinities, encounters, legacyStarterDecks as starterDecks, items } from '../content/index';
 function bossRoom(): State {
   let s=newRun(701,'warband'); s.room=7; s.phase='loot'; s.pendingLoot={gold:95,items:['healing-draught'],final:false};
   s=dispatch(s,{type:'continue'}); assert.equal(s.phase,'camp'); s=dispatch(s,{type:'camp'}); return s;

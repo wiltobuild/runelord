@@ -1,0 +1,156 @@
+{
+  "schema": 1,
+  "id": "arch-summons",
+  "status": "complete",
+  "outcome": "All six lesser demons and six Archdemons playable in the roguelike, with Empower, revised starters and Sovereign/forest acquisition.",
+  "authorization": "User: Implement all the changes now. Includes preceding agreed summon, passive, cleave and starter decisions.",
+  "contentIds": [
+    "empower-demon",
+    "summon-imp",
+    "summon-hellhound",
+    "summon-pit-brute",
+    "summon-gloomstalker",
+    "summon-soul-leech",
+    "summon-pyre-warden",
+    "summon-ignivar",
+    "summon-cerberax",
+    "summon-nightmaw",
+    "summon-gorthak",
+    "summon-hollow-saint",
+    "summon-pyre-colossus"
+  ],
+  "owner": "runelord-rules-engineer",
+  "integrationOwner": "runelord-technical-artist",
+  "reviewer": "runelord-game-qa",
+  "ownedPaths": [
+    "packages/engine",
+    "packages/content",
+    "apps/web/src",
+    "tools/import",
+    "assets/cards",
+    "packages/assets"
+  ],
+  "dependencies": [],
+  "exclusions": [
+    "Conquer Mode progression",
+    "deployment",
+    "commits"
+  ],
+  "inputs": [
+    {
+      "path": "packages/engine/index.ts",
+      "sha256": "05f38d9a55b44a2c346ff8de37c0391cd33e5bc1cb9a9aa230784486a8bd9d82"
+    },
+    {
+      "path": "packages/content/index.ts",
+      "sha256": "a62021a068ef12b70dcbd7bf1335b482f757add52929a40a511367bcea0a18ca"
+    },
+    {
+      "path": "packages/content/warlock-catalog.json",
+      "sha256": "7864499c48ee14c3b040f1975d1dc408425a72898f080c6f32d49d760d38cc4d"
+    },
+    {
+      "path": "apps/web/src/useBattleDirector.ts",
+      "sha256": "080f1a94ccce45e34ff692f81ed3ce2131c68e6bfc6cf54a040418282bf1f1cd"
+    },
+    {
+      "path": "apps/web/src/warbandLayout.ts",
+      "sha256": "1be0eb8e0b1f76c7e4c9aeb14dffccb69a83a66be29ac6951d64b3cc79f850aa"
+    },
+    {
+      "path": "packages/assets/manifest.json",
+      "sha256": "066740e6b4e3d110568cb3213a4db76ef1999a46a0a80bd6af35214b0f3751f3"
+    }
+  ],
+  "animation": {
+    "method": "whole-character-frames",
+    "requiredStates": [
+      "idle",
+      "attack",
+      "hit",
+      "wounded_idle",
+      "die",
+      "spawn"
+    ]
+  },
+  "acceptance": [
+    {
+      "id": "rules",
+      "status": "pass",
+      "check": "All 12 summons, transformations and aura interactions pass deterministic tests.",
+      "evidence": [
+        {
+          "path": "design/production/evidence/arch-summons/tests.log",
+          "sha256": "b9f82a3ad87087616987b167213e071ab36dc1c5ae35df555bfa10d91d295954"
+        }
+      ]
+    },
+    {
+      "id": "progression",
+      "status": "pass",
+      "check": "Starter swaps, Sovereign choice, forest rewards/shops and save replay verified.",
+      "evidence": [
+        {
+          "path": "design/production/evidence/arch-summons/tests.log",
+          "sha256": "b9f82a3ad87087616987b167213e071ab36dc1c5ae35df555bfa10d91d295954"
+        },
+        {
+          "path": "design/production/evidence/arch-summons/simulation-warband.txt",
+          "sha256": "a59bac41e9b6690e0780c52d3cb6f48b101dbc6d0b153548158cf5ffedc16c2a"
+        },
+        {
+          "path": "design/production/evidence/arch-summons/simulation-fire.txt",
+          "sha256": "872c73e6fc05893456411794eef7c198849896c047047a541b6b7cc579c74c7a"
+        },
+        {
+          "path": "design/production/evidence/arch-summons/simulation-pact.txt",
+          "sha256": "9786c4395618664bbbdc9674327642f9043fcbfc186b4e266140ae6f8e6ca005"
+        }
+      ]
+    },
+    {
+      "id": "presentation",
+      "status": "pass",
+      "check": "All card art and actors load; combat effects and transformation visible.",
+      "evidence": [
+        {
+          "path": "design/production/evidence/arch-summons/build.log",
+          "sha256": "e5385303d36f8f8d8fa232080ce0d718fa23bee3acb35a55962bdbd0e49c6e0c"
+        },
+        {
+          "path": "design/production/evidence/arch-summons/arch-formation.png",
+          "sha256": "53342a53b398e213fb11fbed28a3a314449c4fa5bf2b17e65355d423461e145d"
+        },
+        {
+          "path": "design/production/evidence/arch-summons/empower.png",
+          "sha256": "926dc6e25e11b780925ee5a0cba1af7e7e8ec9a610622751223bd8c1b6f115f4"
+        }
+      ]
+    },
+    {
+      "id": "independent",
+      "status": "pass",
+      "check": "Independent QA verifies combined implementation.",
+      "evidence": [
+        {
+          "path": "design/production/evidence/arch-summons/independent-qa.md",
+          "sha256": "df145b772c29c402341c53fa40009d6b7029730f692999ce9f9d825fc588a06e"
+        }
+      ]
+    }
+  ],
+  "checkpoint": {
+    "completed": [
+      "All twelve forms implemented",
+      "Seven new cards and revised Brute/Warden card art",
+      "Three starter decks and gated acquisition",
+      "174 gameplay +11 production checks pass",
+      "Build, independent browser scenarios and70 replay simulations pass",
+      "User correction: Ignivar grounded; rebuilt and visually checked.",
+      "Soul Leeches use flying row with Imp-format overhead health bars; build and browser checked."
+    ],
+    "remaining": [],
+    "blockers": [],
+    "nextAction": "Player playtesting for balance; gallery review of newly composed cards remains pending and is not an implementation blocker."
+  }
+}

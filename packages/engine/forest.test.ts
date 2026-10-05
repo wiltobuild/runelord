@@ -60,7 +60,7 @@ test('real schema6 history crosses realms and preserves forest purchases, upgrad
 test('full legal run replays all twenty-one victories, seven shops, and final victory exactly',()=>{
  const s=restore(fixture('complete'));assert.equal(s.phase,'won');assert.equal(s.room,20);assert.equal(currentRealm(s),'forest');
  assert.deepEqual(Object.keys(s.shops!.stock),[3,6,9,12,15,18,21].map(n=>`roguelike-${n}`));assert.deepEqual(restore(save(s)),s);
- const history=JSON.parse(fixture('complete'));let replay=newRoguelikeRun(history.seed,history.starterDeck,history.actions.length);let crownIndex=-1;
+ const history=JSON.parse(fixture('complete'));let replay=newRoguelikeRun(history.seed,history.starterDeck,history.actions.length,history.actions.length);let crownIndex=-1;
  for(let i=0;i<history.actions.length;i++) {
   if(replay.room===8&&replay.phase==='loot')crownIndex=i;
   replay=dispatch(replay,history.actions[i]);

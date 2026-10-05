@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "warband-fixed-scale",
+  "status": "complete",
+  "outcome": "Summons retain intrinsic model size across all formation changes; Gorthak/Pit Brute, Cerberax/Hellhound and Ignivar/Imp families stagger with independent controls.",
+  "authorization": "User approved the shown family stacking plan: yeah this is fine, 2026-10-05.",
+  "owner": "root",
+  "integrationOwner": "root",
+  "reviewer": "animation_qa",
+  "contentIds": [
+    "warband-layout"
+  ],
+  "ownedPaths": [
+    "apps/web/src/warbandLayout.ts",
+    "apps/web/src/packedWarband.ts",
+    "apps/web/src/main.tsx",
+    "apps/web/src/hud.css",
+    "apps/web/src/warbandLayout.test.ts",
+    "package.json",
+    "work/production/warband-fixed-scale"
+  ],
+  "dependencies": [
+    "Existing approved summon models and five-unit gameplay limit"
+  ],
+  "exclusions": [
+    "No balance or model changes",
+    "No deployment or commit"
+  ],
+  "inputs": [
+    {
+      "path": "packages/assets/manifest.json",
+      "sha256": "87e5d6accbbbec42e317e0d13213d050232030fed61227894e13bcbc9114bb2e"
+    }
+  ],
+  "acceptance": [
+    {
+      "check": "No composition-dependent scale in all legal1..5unit formations and transitions/ghost samples",
+      "status": "pass",
+      "evidence": [
+        {
+          "sha256": "4ba901ac3f443023fc1732877d3262b4cfbdf36e765593a06f96072528bd2776",
+          "path": "work/production/warband-fixed-scale/qa/matrix-result.json"
+        }
+      ]
+    },
+    {
+      "check": "Playable visual family stacking and individual selection verification",
+      "status": "pass",
+      "evidence": [
+        {
+          "sha256": "945437b589af2d0332aa76b173a6cfbab8c6b4d5167cd9a1cb6f8b7a65f8fcb4",
+          "path": "work/production/warband-fixed-scale/qa/final-review.json"
+        }
+      ]
+    }
+  ],
+  "checkpoint": {
+    "completed": [
+      "Fixed intrinsic model scaling",
+      "Three arch/lesser family stacks with frontmost smaller members",
+      "Independent named health/selection controls",
+      "Build and25summon+3layout tests passed",
+      "Exhaustive3652composition scale matrix passed",
+      "Independent family browser checks passed with before/after computed model widths unchanged",
+      "Repaired unrelated tall-unit occlusion with height-based depth and hero clearance",
+      "Individual health control lifts selected model for inspection",
+      "Final build passed;4permanent layout regressions passed",
+      "Requested crowded family preview opened in Codex"
+    ],
+    "remaining": [],
+    "blockers": [],
+    "nextAction": "User review in playable preview; dense parties intentionally overlap rather than shrink"
+  }
+}

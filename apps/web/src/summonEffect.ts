@@ -1,3 +1,4 @@
+import { empowerPhase } from "./empowerTiming";
 import type { SpellEffect } from './SpellEffects';
 const clamp = (n:number) => Math.max(0,Math.min(1,n));
 const noise = (i:number) => { const n=Math.sin(i*127.1+311.7)*43758.5453; return n-Math.floor(n); };
@@ -6,16 +7,31 @@ const noise = (i:number) => { const n=Math.sin(i*127.1+311.7)*43758.5453; return
 export function drawSummon(c:CanvasRenderingContext2D,e:SpellEffect,time:number,ground:boolean) {
   const t=time-e.start;if(t<0||t>e.duration)return;
   const p=e.targets[0];if(!p)return;
-  const size=e.scale??1, radius=78*size, height=e.height??170;
-  const fade=clamp(t/140)*clamp((e.duration-t)/450);
+  const size=e.scale??1, radius=78*size;
+  const height=e.kind==="empower" ? Math.min(e.height??170,Math.max(20,p.y-135)) : e.height??170;
+  const empowered=e.kind==="empower", phase=empowerPhase(t);
+  const fade=empowered ? phase.circle : clamp(t/140)*clamp((e.duration-t)/450);
   const emergence=clamp((t-e.release)/800);
   c.save();c.translate(p.x,p.y);c.globalCompositeOperation='lighter';
+  const beamHeight=Math.min(height*1.65,Math.max(20,p.y-135));
   if(ground) {
+    if(empowered) {
+      for(const [width,alpha] of [[radius*.95,.32],[radius*.48,.48],[radius*.12,.72]]) {
+        const g=c.createLinearGradient(0,0,0,-beamHeight);
+        g.addColorStop(0,'#fff0c5');g.addColorStop(.12,'#ff3854');g.addColorStop(.7,'#ed1036');g.addColorStop(1,'#d6002900');
+        c.globalAlpha=phase.beam*alpha*(.92+.08*Math.sin(t*.025));c.fillStyle=g;
+        c.beginPath();c.moveTo(-width,0);c.lineTo(-width*.65,-beamHeight);c.lineTo(width*.65,-beamHeight);c.lineTo(width,0);c.closePath();c.fill();
+      }
+    }
     c.scale(1,.3);c.globalAlpha=fade;
     const glow=c.createRadialGradient(0,0,5,0,0,radius*1.5);
     glow.addColorStop(0,'#75152a99');glow.addColorStop(.55,'#f4482580');glow.addColorStop(1,'#ff682000');
     c.fillStyle=glow;c.beginPath();c.arc(0,0,radius*1.5,0,Math.PI*2);c.fill();
-    c.rotate(t*.00018);c.shadowColor='#ff451c';c.shadowBlur=16;
+    c.rotate(t*.00018);c.shadowColor=empowered?'#ff163e':'#ff451c';c.shadowBlur=empowered?30:16;
+    if(empowered){
+      c.globalAlpha=fade*.85;c.fillStyle='#ff244c';c.beginPath();c.arc(0,0,radius*.68,0,Math.PI*2);c.fill();
+      c.globalAlpha=fade;c.strokeStyle='#fff2db';c.lineWidth=4;c.beginPath();c.arc(0,0,radius*1.06,0,Math.PI*2);c.stroke();
+    }
     for(const [r,w,color] of [[1,2.5,'#ffbd72'],[.88,1.2,'#e94539'],[.65,1.5,'#ff8251']] as const) {
       c.strokeStyle=color;c.lineWidth=w;c.beginPath();c.arc(0,0,radius*r,0,Math.PI*2);c.stroke();
     }
@@ -34,7 +50,19 @@ export function drawSummon(c:CanvasRenderingContext2D,e:SpellEffect,time:number,
     }
   } else {
     // Ember ribbons climb the silhouette while it resolves, then disperse.
-    const veil=fade*(1-emergence*.75);
+    const veil=empowered?phase.beam:fade*(1-emergence*.75);
+    if(empowered) {
+      // A broad crimson column with a hot central shaft rises from the seal.
+      // Its energy collapses before the final texture is fully revealed.
+      c.shadowColor='#ff244c';c.shadowBlur=16;
+      for(let i=0;i<90;i++) {
+        const progress=(t/(540+noise(i)*650)+noise(i+18))%1;
+        const angle=i*2.4+t*.003, spread=radius*(.15+noise(i+71)*.8)*(1-progress*.7);
+        const x=Math.cos(angle)*spread,y=-progress*beamHeight;
+        c.globalAlpha=phase.beam*.75*Math.sin(progress*Math.PI);c.strokeStyle=i%4?'#ff4161':'#fff3c9';c.lineWidth=1.5+noise(i)*2;
+        c.beginPath();c.moveTo(x,y);c.lineTo(x+Math.sin(angle)*5,y+12+noise(i+3)*22);c.stroke();
+      }
+    }
     for(let i=0;i<9;i++) {
       const x=(i-4)*radius*.19;
       const g=c.createLinearGradient(x,0,x,-height);

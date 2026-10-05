@@ -1,0 +1,26 @@
+{
+  "request": "Make yellow spells red and add detail and particles to all four spells.",
+  "date": "2026-10-05",
+  "changes": [
+    "Red palettes across both sacrifices, command and ember feast; red dissolve/body glow",
+    "Counter-rotating broken rune rings and diamond glyphs",
+    "150 sacrifice particles with three braided tethers and rising shards",
+    "Command rising shards plus48 orbit particles, no arrows",
+    "140 feeding embers,28 rising sparks and two body helixes"
+  ],
+  "checks": [
+    "TypeScript passed",
+    "Production build and asset validation passed",
+    "Red Feast of Embers visually checked in development preview"
+  ],
+  "inputs": [
+    {
+      "path": "apps/web/src/demonSpellEffects.ts",
+      "sha256": "b6285247e19b5b1a39483dd55b02528a5a688dfe938437cdf8e3314b307d1bae"
+    },
+    {
+      "path": "apps/web/src/useBattleDirector.ts",
+      "sha256": "abcde1e16b128f23bf4dc95ee76654b27f6b686b6617492dd6a1b0ad3442d6ef"
+    }
+  ]
+}

@@ -3,7 +3,7 @@ export function MinionDetails({ name, hp, maxHp, guard, defender, power, scorch 
 }) {
   const health = Math.max(0, Math.min(100, hp / Math.max(1, maxHp) * 100));
   return <div className="minion-details">
-    <div className="minion-name"><span>{name}</span><span className="minion-power" title={`${power} attack damage`} aria-label={`${power} attack damage`}>⚔{power}</span>{scorch > 0 && <span className="minion-scorch" title={`Applies ${scorch} Scorch`} aria-label={`Applies ${scorch} Scorch`}>✦{scorch}</span>}{(defender || guard > 0) &&
+    <div className="minion-name"><span>{name}</span><span className="minion-power" title={power ? `${power} attack damage` : "Support action"} aria-label={power ? `${power} attack damage` : "Support action"}>{power ? `⚔${power}` : "✧"}</span>{scorch > 0 && <span className="minion-scorch" title={`Applies ${scorch} Scorch`} aria-label={`Applies ${scorch} Scorch`}>✦{scorch}</span>}{(defender || guard > 0) &&
       <span className="minion-guard" title={`${defender ? "Defender · " : ""}${guard} Guard`} aria-label={`${defender ? "Defender, " : ""}${guard} Guard`}>⬡{guard > 0 ? guard : ""}</span>}</div>
     <div className="hp-track minion-health" role="meter" aria-label={`${name} health`} aria-valuemin={0} aria-valuemax={maxHp} aria-valuenow={Math.max(0, hp)}>
       <i style={{ width: `${health}%` }} />

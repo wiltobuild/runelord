@@ -1,0 +1,752 @@
+{
+  "contract_version": 2,
+  "character_id": "warlock-nightmaw",
+  "display_name": "Nightmaw",
+  "role": "Sapped and Exposed to all enemies then attack",
+  "form": "Arch-form",
+  "rig_family": "hovering wraith",
+  "format": "frame-based RGBA PNG",
+  "status": "animation_complete_pending_review",
+  "authorization": {
+    "source": "Direct user request in this conversation",
+    "text": "animate the base warlock summons and establish their scale relative to eachother",
+    "scope": "12 base summons; supersedes cosmetic variants"
+  },
+  "base": {
+    "revision": "r1",
+    "asset": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\characters\\warlock-nightmaw\\base\\r1\\warlock-nightmaw-base-r1.png",
+    "sha256": "fd7aba1d6b0804573d9c1c476726c5321685c24dbc624cd638272054018fc30c",
+    "dimensions": [
+      1430,
+      1100
+    ],
+    "alpha_extrema": [
+      0,
+      255
+    ],
+    "visible_bbox_alpha_gt_127": [
+      58,
+      4,
+      1413,
+      1082
+    ],
+    "approval": {
+      "status": "Pending approval"
+    }
+  },
+  "style_lock": {
+    "direction": "Serious Runelord hard-edged cel shading, broad oxblood/charcoal shapes, restrained ember accents",
+    "references": [
+      {
+        "path": "C:/Users/wilsh/Projects/runelord/assets/cards/warlock-2026-10-02/summon-gloomstalker/r1/illustration.png",
+        "sha256": "c372d9c4e013088f807bb45c7e89f188b816638a08419150b00ff7e4d674310e",
+        "role": "parent card identity",
+        "approval": {
+          "status": "Pending approval",
+          "note": "User requested card identity reference; not claimed as approved style."
+        }
+      },
+      {
+        "path": "C:/Users/wilsh/Projects/runelord/assets/cards/reference-samples/warlock-summon-imp.png",
+        "sha256": "070283f1fb65b07531cec7b32c653ffc96a7adacde1c2ce4daca1f3b4ed78c9e",
+        "role": "approved rendering style",
+        "approval": {
+          "status": "Approved",
+          "at": "2026-10-02T03:44:25.533Z",
+          "evidenceId": "user-chat-2026-10-01-approve-existing-runelord",
+          "paths": [
+            "C:\\Users\\wilsh\\Projects\\runelord\\assets\\cards\\reference-samples\\warlock-summon-imp.png"
+          ]
+        }
+      }
+    ],
+    "camera": "shallow three-quarter facing right"
+  },
+  "source_sheet": {
+    "file": "source-sheet.png",
+    "dimensions": [
+      1536,
+      1024
+    ],
+    "sha256": "ac4d85cc3eebb5598fa9c449d7ada6a6bee40a2db016251286900b50eb59af03"
+  },
+  "geometry": {
+    "coordinate_system": "pixels; top-left; x right, y down",
+    "facing": "right",
+    "canvas_px": [
+      512,
+      384
+    ],
+    "root_px": [
+      256,
+      340
+    ],
+    "anchor_normalized": [
+      0.5,
+      0.8854166666666666
+    ],
+    "source_pixels_per_world_unit": 177.48917748917748,
+    "standing_height_world": 1.2,
+    "hover_gap_world": 0.045,
+    "reference_visible_height_px": 205,
+    "root_motion": "in-place; translation-only packing registration; no camera movement",
+    "mirror_safe": false
+  },
+  "atlas": {
+    "file": "atlas.png",
+    "dimensions": [
+      2048,
+      1536
+    ],
+    "sha256": "0713cb5df899cfc9bc03a1a7abf7222776299c72592a5f9b2b3aaa34b0c6f499"
+  },
+  "frames": [
+    {
+      "id": 0,
+      "file": "frame-00.png",
+      "atlas_rect": [
+        0,
+        0,
+        512,
+        384
+      ],
+      "source_rect": [
+        0,
+        0,
+        384,
+        256
+      ],
+      "packing_translation": [
+        51,
+        100
+      ],
+      "visible_bbox": [
+        112,
+        127,
+        400,
+        332
+      ],
+      "ground_gap_px": 8
+    },
+    {
+      "id": 1,
+      "file": "frame-01.png",
+      "atlas_rect": [
+        512,
+        0,
+        512,
+        384
+      ],
+      "source_rect": [
+        384,
+        0,
+        768,
+        256
+      ],
+      "packing_translation": [
+        49,
+        99
+      ],
+      "visible_bbox": [
+        113,
+        123,
+        399,
+        332
+      ],
+      "ground_gap_px": 8
+    },
+    {
+      "id": 2,
+      "file": "frame-02.png",
+      "atlas_rect": [
+        1024,
+        0,
+        512,
+        384
+      ],
+      "source_rect": [
+        768,
+        0,
+        1151,
+        256
+      ],
+      "packing_translation": [
+        57,
+        98
+      ],
+      "visible_bbox": [
+        112,
+        121,
+        400,
+        332
+      ],
+      "ground_gap_px": 8
+    },
+    {
+      "id": 3,
+      "file": "frame-03.png",
+      "atlas_rect": [
+        1536,
+        0,
+        512,
+        384
+      ],
+      "source_rect": [
+        1151,
+        0,
+        1536,
+        256
+      ],
+      "packing_translation": [
+        50,
+        98
+      ],
+      "visible_bbox": [
+        116,
+        123,
+        397,
+        332
+      ],
+      "ground_gap_px": 8
+    },
+    {
+      "id": 4,
+      "file": "frame-04.png",
+      "atlas_rect": [
+        0,
+        384,
+        512,
+        384
+      ],
+      "source_rect": [
+        0,
+        256,
+        384,
+        511
+      ],
+      "packing_translation": [
+        52,
+        101
+      ],
+      "visible_bbox": [
+        103,
+        129,
+        409,
+        332
+      ],
+      "ground_gap_px": 8
+    },
+    {
+      "id": 5,
+      "file": "frame-05.png",
+      "atlas_rect": [
+        512,
+        384,
+        512,
+        384
+      ],
+      "source_rect": [
+        384,
+        256,
+        800,
+        511
+      ],
+      "packing_translation": [
+        34,
+        95
+      ],
+      "visible_bbox": [
+        74,
+        129,
+        439,
+        332
+      ],
+      "ground_gap_px": 8
+    },
+    {
+      "id": 6,
+      "file": "frame-06.png",
+      "atlas_rect": [
+        1024,
+        384,
+        512,
+        384
+      ],
+      "source_rect": [
+        800,
+        256,
+        1188,
+        511
+      ],
+      "packing_translation": [
+        53,
+        95
+      ],
+      "visible_bbox": [
+        84,
+        126,
+        428,
+        332
+      ],
+      "ground_gap_px": 8
+    },
+    {
+      "id": 7,
+      "file": "frame-07.png",
+      "atlas_rect": [
+        1536,
+        384,
+        512,
+        384
+      ],
+      "source_rect": [
+        1188,
+        256,
+        1536,
+        511
+      ],
+      "packing_translation": [
+        76,
+        97
+      ],
+      "visible_bbox": [
+        115,
+        125,
+        398,
+        332
+      ],
+      "ground_gap_px": 8
+    },
+    {
+      "id": 8,
+      "file": "frame-08.png",
+      "atlas_rect": [
+        0,
+        768,
+        512,
+        384
+      ],
+      "source_rect": [
+        0,
+        511,
+        384,
+        779
+      ],
+      "packing_translation": [
+        64,
+        92
+      ],
+      "visible_bbox": [
+        121,
+        121,
+        392,
+        332
+      ],
+      "ground_gap_px": 8
+    },
+    {
+      "id": 9,
+      "file": "frame-09.png",
+      "atlas_rect": [
+        512,
+        768,
+        512,
+        384
+      ],
+      "source_rect": [
+        384,
+        511,
+        768,
+        779
+      ],
+      "packing_translation": [
+        44,
+        90
+      ],
+      "visible_bbox": [
+        122,
+        124,
+        391,
+        332
+      ],
+      "ground_gap_px": 8
+    },
+    {
+      "id": 10,
+      "file": "frame-10.png",
+      "atlas_rect": [
+        1024,
+        768,
+        512,
+        384
+      ],
+      "source_rect": [
+        768,
+        511,
+        1152,
+        779
+      ],
+      "packing_translation": [
+        46,
+        84
+      ],
+      "visible_bbox": [
+        135,
+        139,
+        376,
+        332
+      ],
+      "ground_gap_px": 8
+    },
+    {
+      "id": 11,
+      "file": "frame-11.png",
+      "atlas_rect": [
+        1536,
+        768,
+        512,
+        384
+      ],
+      "source_rect": [
+        1152,
+        511,
+        1536,
+        779
+      ],
+      "packing_translation": [
+        50,
+        85
+      ],
+      "visible_bbox": [
+        134,
+        139,
+        377,
+        332
+      ],
+      "ground_gap_px": 8
+    },
+    {
+      "id": 12,
+      "file": "frame-12.png",
+      "atlas_rect": [
+        0,
+        1152,
+        512,
+        384
+      ],
+      "source_rect": [
+        0,
+        779,
+        384,
+        1024
+      ],
+      "packing_translation": [
+        46,
+        134
+      ],
+      "visible_bbox": [
+        140,
+        153,
+        373,
+        335
+      ],
+      "ground_gap_px": 5
+    },
+    {
+      "id": 13,
+      "file": "frame-13.png",
+      "atlas_rect": [
+        512,
+        1152,
+        512,
+        384
+      ],
+      "source_rect": [
+        384,
+        779,
+        770,
+        1024
+      ],
+      "packing_translation": [
+        36,
+        141
+      ],
+      "visible_bbox": [
+        122,
+        182,
+        391,
+        337
+      ],
+      "ground_gap_px": 3
+    },
+    {
+      "id": 14,
+      "file": "frame-14.png",
+      "atlas_rect": [
+        1024,
+        1152,
+        512,
+        384
+      ],
+      "source_rect": [
+        770,
+        779,
+        1152,
+        1024
+      ],
+      "packing_translation": [
+        36,
+        143
+      ],
+      "visible_bbox": [
+        115,
+        214,
+        396,
+        340
+      ],
+      "ground_gap_px": 0
+    },
+    {
+      "id": 15,
+      "file": "frame-15.png",
+      "atlas_rect": [
+        1536,
+        1152,
+        512,
+        384
+      ],
+      "source_rect": [
+        1152,
+        779,
+        1536,
+        1024
+      ],
+      "packing_translation": [
+        50,
+        142
+      ],
+      "visible_bbox": [
+        112,
+        242,
+        401,
+        340
+      ],
+      "ground_gap_px": 0
+    }
+  ],
+  "animations": {
+    "idle": {
+      "frames": [
+        0,
+        1,
+        2,
+        3,
+        2,
+        1
+      ],
+      "durations_ms": [
+        300,
+        280,
+        360,
+        300,
+        280,
+        320
+      ],
+      "loop": true,
+      "events": [],
+      "transition": "self"
+    },
+    "act": {
+      "frames": [
+        4,
+        5,
+        6,
+        7
+      ],
+      "durations_ms": [
+        140,
+        100,
+        110,
+        100
+      ],
+      "loop": false,
+      "events": [
+        {
+          "name": "release",
+          "at_ms": 140
+        }
+      ],
+      "transition": "idle"
+    },
+    "hit": {
+      "frames": [
+        8,
+        9,
+        0
+      ],
+      "durations_ms": [
+        80,
+        100,
+        80
+      ],
+      "loop": false,
+      "events": [],
+      "transition": "idle"
+    },
+    "wounded_idle": {
+      "frames": [
+        10,
+        11,
+        10
+      ],
+      "durations_ms": [
+        550,
+        650,
+        550
+      ],
+      "loop": true,
+      "events": [],
+      "transition": "self"
+    },
+    "die": {
+      "frames": [
+        12,
+        13,
+        14,
+        15
+      ],
+      "durations_ms": [
+        150,
+        160,
+        180,
+        250
+      ],
+      "loop": false,
+      "events": [
+        {
+          "name": "terminal",
+          "at_ms": 490
+        }
+      ],
+      "transition": "hold-last",
+      "terminal": true
+    },
+    "spawn": {
+      "frames": [
+        0,
+        0,
+        1,
+        0
+      ],
+      "durations_ms": [
+        70,
+        80,
+        100,
+        100
+      ],
+      "loop": false,
+      "events": [
+        {
+          "name": "arrival",
+          "at_ms": 250
+        }
+      ],
+      "transition": "idle",
+      "opacity": [
+        0,
+        0.35,
+        0.75,
+        1
+      ]
+    }
+  },
+  "aliases": {
+    "attack": "act",
+    "cast": "act"
+  },
+  "not_applicable": {
+    "guard": "No guard equipment/action.",
+    "victory": "Not required by summon catalog.",
+    "transform": "Arch-forms are separate summons."
+  },
+  "construction": {
+    "type": "16 generated articulated raster key poses, packed without per-frame rescaling",
+    "layers": "flattened RGBA frames; no rig or separated joint parts"
+  },
+  "limitations": [
+    "Limited-animation pose timing, not interpolated skeletal animation.",
+    "Small generated detail variations remain between frames.",
+    "Spawn is a four-step materialization opacity sequence using idle poses; VFX are external.",
+    "Source pose resolution is measured, not upscaled to claim HD."
+  ],
+  "generation": {
+    "id": "warlock-nightmaw",
+    "prompt": "Create a PRODUCTION 2D SPRITE ANIMATION SHEET for the EXACT supplied Runelord creature. Image 1 is immutable character identity; image 2 is cel shading style only. Preserve its face, limb counts, armor, palette, proportions and asymmetry in EVERY frame. TRUE TRANSPARENT background. EXACTLY 4 COLUMNS x 4 ROWS, 16 equally sized square cells, orderly grid WITHOUT drawn dividers or labels. Aim for 2048x2048 pixels. Each cell uses the SAME camera, pixel scale and ground plane at 85% of cell height. Character fits within middle 80% of each cell, no overlap or cutoff. Facing right, shallow three-quarter side game view. Keep both feet planted in idle and hit, same foot positions; no bouncing whole sprite or sliding. Clear articulated limb poses, flat hard-edged cel shadows, no gradients, no added detail. No scenery, baked shadow, text, numbers or border. Cell content row-major:\nROW 1 = FOUR subtle IDLE breathing poses for a seamless loop: resting, mid inhale, full inhale, mid exhale. Feet identical, gentle chest expansion, small head and secondary appendage follow-through. NOT four identical copies. Keep same body size, anatomical landmarks.\nROW 2 = FOUR ACTION poses: anticipation, release/contact, follow-through, recover to original idle stance. Pose must use shoulders/elbows/spine and creature-specific action. Keep anatomy consistent.\nROW 3 = frame 1 HIT recoil, frame 2 HIT recovery, frame 3 WOUNDED IDLE lowered tired posture A, frame 4 WOUNDED IDLE breathing posture B. No gore. Feet planted, tired posture clearly different from brief hit.\nROW 4 = FOUR DEATH poses: knees buckle/body weakens; sink and fold; collapse onto ground; terminal lifeless prone body resting on same ground baseline. Distinctly articulated collapse, not whole-sprite spinning. Last frame fully in cell, keep silhouette recognizable. No flames or VFX obscuring anatomy.\n\nIMPORTANT: no projectiles or detached VFX; emission handled by game. Keep at least 12% empty gutter around each pose, especially extended limbs. All poses SAME pixels per body length, do not scale collapse poses up.\nNightmaw: two long claw arms, no legs, shadow tail, jagged maw. Stable low hover. Curse then slash: draw claws inward, extend and rake right, follow through, recover. Death folds into a recognizable dark curled body on the ground.\nLAYOUT PRIORITY: wide LANDSCAPE 1536x1024 canvas. Exactly 4 columns x4rows. ALL 16 poses have at least 35px empty transparent space on ALL sides of each cell. Same scale throughout. No glow background.",
+    "repair_prompt": "Repair this 16-frame sprite sheet layout. Keep all 16 EXACT poses, colors and identity. Whole creatures uniformly 15% smaller within their existing 4x4 cells, entire sheet 1536x1024. Restore horn tips touching top edge. GENEROUS EMPTY MARGINS around every frame on all sides including top row. No overlapping figures or clipped tips. True transparent background, no glow or scenery. Preserve idle, claw attack, hit and wounded, four collapsing death poses.",
+    "prior_source": "C:\\Users\\wilsh\\.codex\\generated_images\\01a0fd05-4128-7311-a4cf-038e1591fcc4\\exec-05e6f95e-dce5-43b9-b9c0-0fb4dae18cbd.png",
+    "source": "C:\\Users\\wilsh\\.codex\\generated_images\\01a0fd05-4128-7311-a4cf-038e1591fcc4\\exec-59654ccf-4106-4520-b1b2-a550d4d3fb95.png",
+    "rows": [
+      0,
+      256,
+      511,
+      779,
+      1024
+    ],
+    "columns_by_row": [
+      [
+        0,
+        384,
+        768,
+        1151,
+        1536
+      ],
+      [
+        0,
+        384,
+        800,
+        1188,
+        1536
+      ],
+      [
+        0,
+        384,
+        768,
+        1152,
+        1536
+      ],
+      [
+        0,
+        384,
+        770,
+        1152,
+        1536
+      ]
+    ],
+    "boundary_contact_frames": []
+  },
+  "qa": {
+    "id": "warlock-nightmaw",
+    "frames": 16,
+    "alpha_extrema": [
+      0,
+      254
+    ],
+    "clipping": [],
+    "idle_height_px": 205,
+    "dimensions": [
+      512,
+      384
+    ],
+    "states": [
+      "idle",
+      "act",
+      "hit",
+      "wounded_idle",
+      "die",
+      "spawn"
+    ],
+    "runtime_tests": "Passed: state timing, event bounds, aliases, death terminal hold, scale at 80/160/240 screen px per unit.",
+    "visual_review": "Live Canvas playback reviewed in browser; full-source and 96 px individual idle, full roster action/hit/wounded/death comparisons; light and dark backgrounds.",
+    "limitations": "Limited pose count; small generated contour/shading variation. No skeletal interpolation or separated VFX."
+  }
+}

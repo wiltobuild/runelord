@@ -18,9 +18,9 @@ const rows = fs
       upgrade,
     };
   });
-const expected = { Basic: 4, Common: 18, Uncommon: 28, Rare: 18, Ultimate: 2 };
-if (rows.length !== 70 || new Set(rows.map((r) => r.id)).size !== 70)
-  throw Error("Expected 70 unique Warlock cards");
+const expected = { Basic: 4, Common: 18, Uncommon: 29, Rare: 24, Ultimate: 2 };
+if (rows.length !== 77 || new Set(rows.map((r) => r.id)).size !== 77)
+  throw Error("Expected 77 unique Warlock cards");
 for (const [rarity, count] of Object.entries(expected))
   if (rows.filter((r) => r.rarity === rarity).length !== count)
     throw Error(`Rarity mismatch: ${rarity}`);
@@ -30,5 +30,5 @@ fs.writeFileSync(
   JSON.stringify(rows, null, 2) + "\n",
 );
 console.log(
-  "Imported 70 Warlock card definitions; rarity counts and unique IDs pass. Design-only Echoes omitted. Effect handlers are implemented separately.",
+  "Imported 77 Warlock card definitions; rarity counts and unique IDs pass. Design-only Echoes omitted. Effect handlers are implemented separately.",
 );

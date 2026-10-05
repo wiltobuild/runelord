@@ -1,0 +1,65 @@
+{
+  "checkedAt": "2026-10-05T02:03:39.2933658Z",
+  "endpoint": "http://localhost:4317/api/art",
+  "characterId": "d0d09ea985bcc94e2df9f73d",
+  "states": [
+    {
+      "id": "2e2e4d703f73eeed4dfc4a13",
+      "name": "Ignivar flying - wounded_idle",
+      "status": "Pending approval",
+      "path": "approvals/inbox/warlock-ignivar/flight-wounded_idle-r1/wounded_idle.gif"
+    },
+    {
+      "id": "174b3005511442688d15df89",
+      "name": "Ignivar flying - spawn",
+      "status": "Pending approval",
+      "path": "approvals/inbox/warlock-ignivar/flight-spawn-r1/spawn.gif"
+    },
+    {
+      "id": "e4b572e7d01248ca131367d4",
+      "name": "Ignivar flying - all states",
+      "status": "Pending approval",
+      "path": "approvals/inbox/warlock-ignivar/flight-review-r1/flight-review.gif"
+    },
+    {
+      "id": "9148afabe8544a2d8792df65",
+      "name": "Ignivar flying - idle",
+      "status": "Pending approval",
+      "path": "approvals/inbox/warlock-ignivar/flight-idle-r1/idle.gif"
+    },
+    {
+      "id": "3acc4cca9981930c822f9d12",
+      "name": "Ignivar flying - hit",
+      "status": "Pending approval",
+      "path": "approvals/inbox/warlock-ignivar/flight-hit-r1/hit.gif"
+    },
+    {
+      "id": "90d015a75bb3e35ecb882148",
+      "name": "Ignivar flying - die",
+      "status": "Pending approval",
+      "path": "approvals/inbox/warlock-ignivar/flight-die-r1/die.gif"
+    },
+    {
+      "id": "b938924fed6fd2d8e4369979",
+      "name": "Ignivar flying - act",
+      "status": "Pending approval",
+      "path": "approvals/inbox/warlock-ignivar/flight-act-r1/act.gif"
+    }
+  ],
+  "designs": [
+    {
+      "id": "c21040bdef347ad01f474c51",
+      "name": "Ignivar - flying pose",
+      "status": "Pending approval",
+      "path": "approvals/inbox/warlock-ignivar/flight-design-r1/exec-daa316a6-b1f0-4c6f-82cb-c64fd96c1dc7.png"
+    }
+  ],
+  "reviewSheets": [
+    {
+      "id": "eee04cf09900b010fc69eb72",
+      "name": "Ignivar flying - key poses",
+      "status": "Pending approval",
+      "path": "approvals/inbox/warlock-ignivar/flight-review-poses-r1/flight-review-poses.png"
+    }
+  ]
+}

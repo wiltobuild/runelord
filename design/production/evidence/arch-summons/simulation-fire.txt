@@ -1,0 +1,9 @@
+{
+  "runs": 20,
+  "starterDeck": "fire",
+  "wins": 0,
+  "losses": 20,
+  "softLocks": 0,
+  "identicalReplays": 20,
+  "maxActions": 244
+}

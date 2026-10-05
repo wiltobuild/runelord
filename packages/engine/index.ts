@@ -4,7 +4,7 @@ import { forestEncounters, forestEliteRooms } from "./forest";
 export * from "./forest";
 import {
   cards,
-  relicPool, implemented, starterDecks, cardTargetsUnit, items, rewardWeight,
+  relicPool, implemented, legacyImplemented, legacyStarterDecks, summonExpansion, archCards, starterDecks, cardTargetsUnit, items, rewardWeight,
   type StarterDeckId, type ItemId,
   starter,
   encounters,
@@ -20,7 +20,29 @@ export const realmEncounterNumber=(s:State)=>s.room-(currentRealm(s)==='forest'?
 export const realmEncounterCount=(s:State)=>currentRealm(s)==='forest'?forestEncounters.length:encounters.length;
 export const isRealmBoss=(s:State)=>realmEncounterNumber(s)===realmEncounterCount(s);
 export const activeEncounter=(s:State)=>currentRealm(s)==='forest'?forestEncounters[s.room-encounters.length]:encounters[s.room];
-export type DemonKind = "imp" | "hellhound" | "pit-brute";
+export const demonStats = {
+ imp:{name:'Imp',hp:6,power:4,upkeep:0,defender:false},
+ hellhound:{name:'Hellhound',hp:14,power:6,upkeep:1,defender:false},
+ 'pit-brute':{name:'Pit Brute',hp:26,power:7,upkeep:2,defender:true},
+ gloomstalker:{name:'Gloomstalker',hp:10,power:0,upkeep:1,defender:false,elusive:true},
+ 'soul-leech':{name:'Soul Leech',hp:8,power:4,upkeep:1,defender:false},
+ 'pyre-warden':{name:'Pyre Warden',hp:12,power:0,upkeep:1,defender:false},
+ ignivar:{name:'Ignivar',hp:18,power:6,upkeep:0,defender:false},
+ cerberax:{name:'Cerberax',hp:28,power:8,upkeep:0,defender:false},
+ nightmaw:{name:'Nightmaw',hp:18,power:0,upkeep:0,defender:false,elusive:true},
+ 'hollow-saint':{name:'The Hollow Saint',hp:20,power:6,upkeep:0,defender:false},
+ 'pyre-colossus':{name:'Pyre Colossus',hp:24,power:0,upkeep:0,defender:false},
+ gorthak:{name:'Gorthak',hp:40,power:9,upkeep:0,defender:true},
+} as const;
+export type DemonKind = keyof typeof demonStats;
+export const archForms:Partial<Record<DemonKind,DemonKind>>={imp:'ignivar',hellhound:'cerberax','pit-brute':'gorthak',gloomstalker:'nightmaw','soul-leech':'hollow-saint','pyre-warden':'pyre-colossus'};
+export const isArchDemon=(kind:DemonKind)=>!archForms[kind];
+export const usesSummonRules=(s:State)=>s.summonRulesFrom!==undefined&&s.history.length>=s.summonRulesFrom;
+const hasArch=(s:State,kind:DemonKind)=>usesSummonRules(s)&&s.units.some(u=>u.kind===kind&&u.hp>0);
+const isHound=(u:Unit)=>u.kind==='hellhound'||u.kind==='cerberax';
+export const eligibleCardReward=(s:State,id:CardId)=> usesSummonRules(s) ? (!archCards.includes(id as typeof archCards[number])||s.room>=encounters.length) && (id!=='empower-demon'||s.starterDeck==='warband'||s.room>=encounters.length) : !summonExpansion.includes(id as typeof summonExpansion[number]);
+function gainGuard(s:State,n:number){const amount=n*(hasArch(s,'pyre-colossus')?2:1);s.guard+=amount;emit(s,'guard',`Warlock gains ${amount} Guard.`,{amount});}
+
 export type Unit = {
   id: number;
   kind: DemonKind;
@@ -32,6 +54,8 @@ export type Unit = {
   upkeep: number;
   defender: boolean;
   temporaryPower?: number;
+  elusive?: boolean;
+  actionCount?: number;
 };
 export type Enemy = {
   id: number;
@@ -79,6 +103,7 @@ export type PendingLoot = { gold: number; items: ItemId[]; final: boolean };
 export type State = {
   /** Actions before this index retain historical shield grants when replaying an older save. */
   monsterShieldRulesFrom?: number;
+  summonRulesFrom?: number;
   shops?: RoguelikeShops;
   deckLevels?: number[];
   version: 1;
@@ -224,7 +249,7 @@ function scorch(s: State, e: Enemy, n: number) {
 }
 /** Seeded weighted draw without replacement; no card is guaranteed or excluded by affinity. */
 export function rollRewards(s: State): CardId[] {
-  const pool = [...implemented].filter(id => cards[id].rarity !== "Basic" && (!s.shops || canAddCard(s,id)));
+  const pool = [...implemented].filter(id => cards[id].rarity !== "Basic" && eligibleCardReward(s,id) && (!s.shops || canAddCard(s,id)));
   const result: CardId[] = [];
   while (result.length < 3 && pool.length) {
     let ticket = random(s) * pool.reduce((total, id) => total + rewardWeight(s.starterDeck, id), 0);
@@ -260,68 +285,65 @@ function checkWin(s: State) {
     else if(item) s.inventory.push(item);
     s.pendingLoot = s.rulesVersion === 3 ? { gold, items: item ? [item] : [], final } : null;
     emit(s, "loot", `Found ${gold} Gold${item ? ` and ${items[item].name}` : ""}.`);
-    s.rewards = final ? [] : s.rulesVersion === 3 ? rollRewards(s) : s.starterDeck === "classic" && s.room < 2 ? [...rewardSets[s.room]] : shuffle(s, [...implemented].filter(id => cards[id].rarity !== "Basic")).slice(0, 3);
+    s.rewards = final ? [] : s.rulesVersion === 3 ? rollRewards(s) : s.starterDeck === "classic" && s.room < 2 ? [...rewardSets[s.room]] : shuffle(s, [...legacyImplemented].filter(id => cards[id].rarity !== "Basic")).slice(0, 3);
+    if(usesSummonRules(s)&&s.room===encounters.length-1){s.rewards=shuffle(s,[...archCards].filter(id=>!s.shops||canAddCard(s,id))).slice(0,3);s.phase='reward';}
     emit(s, "victory", final ? (forest ? "The Living Orchard falls. Claim your spoils, then visit the final Woodland Exchange." : "The Infernal Sovereign falls. Claim his crown.") : "The path is yours. Choose a card.");
   }
 }
-function killUnit(s: State, u: Unit) {
-  s.units = s.units.filter((v) => v.id !== u.id);
-  s.corruption = Math.min(10, s.corruption + 2);
-  const resilience = s.powers["demonic-resilience"] || 0;
-  if (resilience) { s.guard += resilience; cinders(s, 2); }
-  emit(s, "unit-death", `${u.name} falls. Gain 2 Corruption.`, {
-    actor: u.id,
-    unit: structuredClone(u),
-  });
+function killUnit(s: State, u: Unit, dismissed=false) {
+  if(!s.units.some(v=>v.id===u.id))return;
+  const rebirth=!dismissed&&hasArch(s,'pyre-colossus');
+  s.units = s.units.filter(v=>v.id!==u.id);
+  s.corruption=Math.min(10,s.corruption+2);
+  const resilience=s.powers['demonic-resilience']||0;
+  if(resilience){gainGuard(s,resilience);cinders(s,2);}
+  emit(s,'unit-death',`${u.name} falls. Gain 2 Corruption.`,{actor:u.id,unit:structuredClone(u)});
+  if(rebirth&&random(s)<.5&&s.units.length<5)summon(s,'pyre-warden');
 }
-function unitAct(s: State, u: Unit) {
-  const e = alive(s).find((e) => e.id === s.focus) || alive(s)[0];
-  if (!e) return;
-  const pack =
-    u.kind === "hellhound"
-      ? 2 *
-        s.units.filter((v) => v.kind === "hellhound" && v.id !== u.id).length
-      : 0;
-  const damage = u.power + pack + (s.demonTurns > 0 ? 2 : 0);
-  emit(s, "muster", `${u.name} attacks ${e.name}.`, {
-    actor: u.id,
-    target: e.id,
-  });
-  hitEnemy(s, e, damage, true);
-  if (s.powers["dread-aura"]) scorch(s, e, s.powers["dread-aura"]!);
-  if (u.kind === "imp") scorch(s, e, 1);
+export const unitPower=(s:State,u:Unit)=>['gloomstalker','nightmaw','pyre-warden','pyre-colossus'].includes(u.kind)?0:u.power+(isHound(u)?2*s.units.filter(v=>isHound(v)&&v.id!==u.id).length:0)+(s.demonTurns>0?2:0)+(hasArch(s,'gorthak')?2:0);
+export const unitScorch=(s:State,u:Unit)=>(u.kind==='imp'||u.kind==='ignivar'?1+(hasArch(s,'ignivar')?4:0):u.kind==='pyre-warden'?1:u.kind==='pyre-colossus'?2:0)+(['gloomstalker','nightmaw','pyre-warden','pyre-colossus'].includes(u.kind)?0:(s.powers['dread-aura']||0));
+function unitAct(s:State,u:Unit){
+ if(!s.units.some(v=>v.id===u.id))return;
+ const e=alive(s).find(e=>e.id===s.focus)||alive(s)[0];if(!e)return;
+ emit(s,'muster',`${u.name} acts.`,{actor:u.id,target:e.id,targets:((u.kind==='pit-brute'&&usesSummonRules(s))||['gorthak','hollow-saint','pyre-warden','pyre-colossus'].includes(u.kind)?alive(s):[e]).map(v=>v.id)});
+ if(u.kind==='gloomstalker'||u.kind==='nightmaw'){
+  if(u.kind==='nightmaw'||(u.actionCount||0)%2===0)e.sapped=(e.sapped||0)+2;
+  if(u.kind==='nightmaw'||(u.actionCount||0)%2)e.exposed=(e.exposed||0)+2;
+  u.actionCount=(u.actionCount||0)+1;emit(s,'passive',`${u.name} curses ${e.name}.`,{actor:u.id,target:e.id});return;
+ }
+ if(u.kind==='pyre-warden'||u.kind==='pyre-colossus'){for(const enemy of alive(s))scorch(s,enemy,u.kind==='pyre-warden'?1:2);return;}
+ const damage=unitPower(s,u);
+ const targets=(u.kind==='pit-brute'&&usesSummonRules(s))||u.kind==='gorthak'||u.kind==='hollow-saint'?alive(s):[e];
+ let drained=0;
+ for(const target of targets){const before=target.hp;hitEnemy(s,target,damage,true);drained+=before-target.hp;
+  if(s.powers['dread-aura'])scorch(s,target,s.powers['dread-aura']!);
+  if(u.kind==='imp'||u.kind==='ignivar')scorch(s,target,1+(hasArch(s,'ignivar')&&damage>0?4:0));
+ }
+ if(u.kind==='soul-leech'||u.kind==='hollow-saint'){const healed=Math.min(s.maxHp-s.hp,drained);s.hp+=healed;emit(s,'heal',`${u.name} restores ${healed} HP.`,{actor:u.id,amount:healed});}
 }
-function summon(s: State, kind: DemonKind, dismiss?: number, upgraded = false, level=0) {
-  if (s.units.length >= 5) {
-    const unit = s.units.find((u) => u.id === dismiss);
-    if (!unit) throw Error("Choose a demon to dismiss: your Warband is full.");
-    killUnit(s, unit);
-  }
-  const stats = {
-    imp: { name: "Imp", hp: 6, power: 4, upkeep: 0, defender: false },
-    hellhound: {
-      name: "Hellhound",
-      hp: 14,
-      power: 6,
-      upkeep: 1,
-      defender: false,
-    },
-    "pit-brute": {
-      name: "Pit Brute",
-      hp: 26,
-      power: 10,
-      upkeep: 2,
-      defender: true,
-    },
-  }[kind];
-  const u: Unit = { ...stats, maxHp: stats.hp, kind, id: s.nextId++, guard: 0 };
-  if(level) {u.power=Math.round(u.power*cardPower(level));u.hp=Math.round(u.hp*cardPower(level));u.maxHp=u.hp;}
-  if (upgraded && kind === "imp") u.power += 2;
-  u.power += (s.powers["masters-of-the-pit"] || 0) + (s.relics.includes("warband-fang") ? 2 : 0);
-  u.upkeep = Math.max(0, u.upkeep - (s.powers["burning-soul"] || 0));
-  s.units.push(u);
-  emit(s, "summon", `${u.name} joins the Warband.`, { actor: u.id });
-  if (kind === "imp") unitAct(s, u);
+function summon(s:State,kind:DemonKind,dismiss?:number,upgraded=false,level=0){
+ if(hasArch(s,'gorthak')&&!isArchDemon(kind))kind='pit-brute';
+ if(isArchDemon(kind)&&s.units.some(u=>u.kind===kind))throw Error('Only one living copy of each Archdemon is allowed.');
+ if(s.units.length>=5){const unit=s.units.find(u=>u.id===dismiss);if(!unit)throw Error('Choose a demon to dismiss: your Warband is full.');killUnit(s,unit,true);}
+ const stats=demonStats[kind];const u:Unit={...stats,maxHp:stats.hp,kind,id:s.nextId++,guard:0};
+ if(kind==='pit-brute'&&!usesSummonRules(s))u.power=10;
+ if(level){u.power=Math.round(u.power*cardPower(level));u.hp=Math.round(u.hp*cardPower(level));u.maxHp=u.hp;}
+ if(upgraded){if(kind==='imp'||kind==='soul-leech')u.power+=2;else if(isArchDemon(kind)){u.power=Math.round(u.power*1.2);u.hp=Math.round(u.hp*1.2);u.maxHp=u.hp;}}
+ u.power+=(s.powers['masters-of-the-pit']||0)+(s.relics.includes('warband-fang')?2:0);
+ u.upkeep=Math.max(0,u.upkeep-(s.powers['burning-soul']||0));s.units.push(u);
+ emit(s,'summon',`${u.name} joins the Warband.`,{actor:u.id,unit:structuredClone(u)});
+ if(kind==='pyre-warden'||kind==='pyre-colossus')gainGuard(s,6);
+ if(kind==='nightmaw'){s.mana++;draw(s,1);emit(s,'passive','Nightmaw grants 1 Mana and 1 card.',{actor:u.id});}
+ if(kind==='imp')unitAct(s,u);
+}
+function empower(s:State,u:Unit,level:number){
+ const kind=archForms[u.kind];if(!kind||s.units.some(v=>v.kind===kind))throw Error('Choose a lesser demon whose Arch-form is not already alive.');
+ const stats=demonStats[kind],old=demonStats[u.kind],fraction=u.hp/u.maxHp;
+ const maxHp=Math.round(stats.hp*cardPower(level))+Math.max(0,u.maxHp-old.hp);
+ Object.assign(u,stats,{kind,maxHp,hp:Math.max(1,Math.ceil(maxHp*fraction)),power:Math.round(stats.power*cardPower(level))+u.power-old.power,guard:u.guard,elusive:'elusive' in stats?stats.elusive:false});
+ emit(s,'transform',`${u.name} is empowered.`,{actor:u.id,unit:structuredClone(u)});
+ if(kind==='pyre-colossus')gainGuard(s,6);
+ if(kind==='nightmaw'){s.mana++;draw(s,1);emit(s,'passive','Nightmaw grants 1 Mana and 1 card.',{actor:u.id});}
 }
 function summonBossDemons(s: State, boss: Enemy) {
   const free = 2 - alive(s).filter(e => e.summonedBy === boss.id).length;
@@ -351,8 +373,9 @@ export function resolveTargets(
   s: State,
   targeting: Targeting,
 ): (Unit | "hero")[] {
-  const front = [...s.units].reverse();
-  if (targeting === "sweep") return ["hero", ...front];
+  const all=[...s.units].reverse();
+  const front=usesSummonRules(s)&&all.some(u=>!u.elusive)?all.filter(u=>!u.elusive):all;
+  if (targeting === "sweep") return ["hero", ...all];
   if (targeting === "front") return [front[0] || "hero"];
   if (targeting === "hero") return [front.find((u) => u.defender) || "hero"];
   if (targeting === "weakest")
@@ -368,7 +391,7 @@ function startTurn(s: State) {
   s.guard = 0;
   s.barrier = 0;
   s.mana = 3;
-  if(s.relics.includes("iron-sigil")) s.guard += 3;
+  if(s.relics.includes("iron-sigil")) gainGuard(s,3);
   if(s.relics.includes("cinder-charm")) cinders(s,1);
   s.focus = alive(s)[0]?.id ?? 0;
   for (const u of s.units) { u.guard = 0; u.power -= u.temporaryPower || 0; u.temporaryPower = 0; }
@@ -389,6 +412,12 @@ function startTurn(s: State) {
     checkWin(s);
     if (s.phase !== "combat") return;
   }
+  for(const u of [...s.units]){
+    if(u.kind==='pyre-warden'||u.kind==='pyre-colossus')gainGuard(s,6);
+    if(u.kind==='nightmaw'){s.mana++;draw(s,1);emit(s,'passive','Nightmaw grants 1 Mana and 1 card.',{actor:u.id});}
+    if((u.kind==='ignivar'||u.kind==='cerberax')&&s.units.length<5)summon(s,u.kind==='ignivar'?'imp':'hellhound');
+  }
+  checkWin(s);if(s.phase!=='combat')return;
   if (s.powers.pyroclasm) for (const e of alive(s)) scorch(s, e, s.powers.pyroclasm);
   draw(s, s.spent ? 4 : 5);
   s.spent = false;
@@ -423,12 +452,12 @@ function beginCombat(s: State) {
   startTurn(s);
   if(s.relics.includes("ember-heart")) s.hp=Math.min(s.maxHp,s.hp+5);
   if(s.relics.includes("scholar-seal")) draw(s,1);
-  if (s.relics.includes("demon-lord-crown")) { s.guard += 5; s.mana += 1; }
+  if (s.relics.includes("demon-lord-crown")) { gainGuard(s,5); s.mana += 1; }
 }
-export function newRun(seed = 7319, starterDeck: StarterDeckId = "classic", rulesVersion: 2 | 3 = 3): State {
+export function newRun(seed = 7319, starterDeck: StarterDeckId = "classic", rulesVersion: 2 | 3 = 3, summonRulesFrom:number|undefined=undefined): State {
   if (starterDeck !== "classic" && !starterDecks.some(d => d.id === starterDeck)) throw Error("Unknown starter deck.");
   const s: State = {
-    version: 1,
+    version: 1, summonRulesFrom,
     rulesVersion, legacyActions: null, pendingLoot: null, relics: [],
     starterDeck, gold: 0, inventory: [], reserves: [], powers: {}, barrier: 0,
     seed: seed >>> 0,
@@ -444,7 +473,7 @@ export function newRun(seed = 7319, starterDeck: StarterDeckId = "classic", rule
     corruption: 0,
     demonTurns: 0,
     spent: false,
-    deck: [...(starterDecks.find(d => d.id === starterDeck)?.cards || starter)],
+    deck: [...((summonRulesFrom===0?starterDecks:legacyStarterDecks).find(d => d.id === starterDeck)?.cards || starter)],
     draw: [],
     hand: [],
     discard: [],
@@ -461,8 +490,8 @@ export function newRun(seed = 7319, starterDeck: StarterDeckId = "classic", rule
   return s;
 }
 /** New roguelike saves opt into shops; schemas 1–3 replay the historical demo unchanged. */
-export function newRoguelikeRun(seed=7319,starterDeck:StarterDeckId='warband',monsterShieldRulesFrom=0):State {
- const s=newRun(seed,starterDeck);s.monsterShieldRulesFrom=monsterShieldRulesFrom;s.shops={current:null,stock:{}};s.deckLevels=s.deck.map(()=>0);
+export function newRoguelikeRun(seed=7319,starterDeck:StarterDeckId='warband',monsterShieldRulesFrom=0,summonRulesFrom:number|undefined=0):State {
+ const s=newRun(seed,starterDeck,3,summonRulesFrom);s.monsterShieldRulesFrom=monsterShieldRulesFrom;s.shops={current:null,stock:{}};s.deckLevels=s.deck.map(()=>0);
  if(starterDeck==='classic'){s.deck[3]='neutral-strike';s.deck[7]='neutral-bulwark';}
  // Recreate the opening battle from the original RNG position, with leveled card instances.
  s.rng=s.seed;s.nextId=1;s.events=[];beginCombat(s);return s;
@@ -517,16 +546,20 @@ function shopAction(s:State,action:Action):boolean {
 }
 export function manaCost(s: State, c: CardInstance) {
   if (cards[c.id].xCost) return s.mana;
+  if ((c.id === "empower-demon" || c.id === "summon-pyre-warden") && c.upgraded) return 1;
   if (c.id === "rend-flesh" && s.demonTurns > 0) return 0;
   if (c.id === "infernal-transformation" && c.upgraded) return 1;
   return Math.max(cards[c.id].cost > 0 ? 1 : 0, cards[c.id].cost - Math.floor((c.level || 0)/3));
 }
+export const cinderCost=(c:CardInstance)=>c.id==='summon-gloomstalker'&&c.upgraded?1:cards[c.id].cinders;
 export function playable(s: State, c: CardInstance) {
   return (
     s.phase === "combat" &&
     s.mana >= manaCost(s, c) &&
     (!cardTargetsUnit(c.id) || s.units.length > 0) &&
-    s.cinders >= cards[c.id].cinders
+    s.cinders >= cinderCost(c) &&
+    (c.id!=='empower-demon'||s.units.some(u=>archForms[u.kind]&&!s.units.some(v=>v.kind===archForms[u.kind]))) &&
+    (!archCards.includes(c.id as typeof archCards[number])||!s.units.some(u=>`summon-${u.kind}`===c.id))
   );
 }
 export function dispatch(previous: State, action: Action): State {
@@ -545,9 +578,9 @@ export function dispatch(previous: State, action: Action): State {
     switch(action.item) {
       case "healing-draught": s.hp = Math.min(s.maxHp, s.hp + Math.floor(s.maxHp * .2)); break;
       case "mana-potion": s.mana += 2; break;
-      case "barkskin-tonic": s.guard += 12; break;
+      case "barkskin-tonic": gainGuard(s,12); break;
       case "shrapnel-jar": for (const e of alive(s)) hitEnemy(s, e, 10); break;
-      case "banner-draught": s.guard += 8; for(const u of s.units) u.guard += 8; break;
+      case "banner-draught": gainGuard(s,8); for(const u of s.units) u.guard += 8; break;
       case "bonesetters-salve": for(const u of s.units) u.hp = Math.min(u.maxHp, u.hp + 10); break;
       case "warhorn-oil": for(const u of s.units) u.power += 3; break;
     }
@@ -604,13 +637,14 @@ export function dispatch(previous: State, action: Action): State {
       throw Error("Choose a demon to dismiss: your Warband is full.");
     const unit = action.unit === undefined ? s.units.at(-1) : s.units.find(u => u.id === action.unit);
     if (cardTargetsUnit(c.id) && !unit) throw Error("Choose a living demon.");
+    if(c.id==='empower-demon'&&(!archForms[unit!.kind]||s.units.some(v=>v.kind===archForms[unit!.kind])))throw Error('Choose a lesser demon whose Arch-form is not already alive.');
     const x = s.mana;
     const upgraded = !!c.upgraded;
     const value = (base: number, improved: number) => c.level ? Math.max(base+c.level, Math.round(base*cardPower(c.level))) : upgraded ? improved : base;
     const corruption = (n: number) => { s.corruption = Math.min(10, s.corruption + n); };
     const pact = (n: number) => { loseHp(s, n, true); if(s.phase !== "lost") corruption(n); return s.phase !== "lost"; };
     s.mana -= manaCost(s, c);
-    s.cinders -= cards[c.id].cinders;
+    s.cinders -= cinderCost(c);
     s.hand = s.hand.filter((x) => x.uid !== c.uid);
     if (cards[c.id].type !== "Power" && c.id !== "infernal-transformation") s.discard.push(c);
     s.focus = e.id;
@@ -618,17 +652,20 @@ export function dispatch(previous: State, action: Action): State {
     const damage = (amount: number, target = e) => {
       hitEnemy(s, target, amount + (s.demonTurns > 0 ? 3 : 0) + (s.relics.includes("blood-ruby") ? 1 : 0), true);
       if (s.demonTurns > 0) scorch(s, target, 2);
+      if(amount>0&&hasArch(s,'ignivar')&&['firebolt','immolate','smoldering-brand','searing-lash','conflagrate','chain-of-flame','infernal-whip','burning-hatred','hellfire','fire-and-brimstone','combust'].includes(c.id))scorch(s,target,4);
     };
     switch (c.id) {
+      case 'empower-demon':empower(s,unit!,c.level||0);break;
+      case 'summon-gloomstalker':case 'summon-soul-leech':case 'summon-pyre-warden':case 'summon-ignivar':case 'summon-cerberax':case 'summon-nightmaw':case 'summon-hollow-saint':case 'summon-pyre-colossus':case 'summon-gorthak':summon(s,c.id.slice(7) as DemonKind,action.dismiss,upgraded,c.level);break;
       case "neutral-strike": damage(value(8,10)); break;
-      case "neutral-bulwark": s.guard+=value(13,16); break;
-      case "neutral-insight": draw(s,value(2,3)); s.guard+=value(3,4); break;
-      case "neutral-renewal": s.hp=Math.min(s.maxHp,s.hp+value(6,8));s.guard+=value(6,8); break;
+      case "neutral-bulwark": gainGuard(s,value(13,16)); break;
+      case "neutral-insight": draw(s,value(2,3)); gainGuard(s,value(3,4)); break;
+      case "neutral-renewal": s.hp=Math.min(s.maxHp,s.hp+value(6,8));gainGuard(s,value(6,8)); break;
       case "firebolt":
         damage(value(6, 9));
         break;
       case "ward-of-ash":
-        s.guard += value(5, 8);
+        gainGuard(s,value(5, 8));
         break;
       case "summon-imp":
         summon(s, "imp", action.dismiss, upgraded, c.level);
@@ -675,11 +712,11 @@ export function dispatch(previous: State, action: Action): State {
         draw(s, 1);
         break;
       case "sinister-veil":
-        s.guard += value(8, 11);
+        gainGuard(s,value(8, 11));
         for (const u of s.units) u.guard += value(3, 4);
         break;
       case "ashen-ward":
-        s.guard += value(7, 9);
+        gainGuard(s,value(7, 9));
         for (const target of alive(s)) scorch(s, target, value(2, 3));
         break;
       case "conflagrate":
@@ -709,7 +746,7 @@ export function dispatch(previous: State, action: Action): State {
         for(const demon of [...s.units]) { emit(s, "muster", `${demon.name} lashes out.`, { actor: demon.id, target: e.id }); hitEnemy(s, e, value(3, 4), true); }
         break;
       case "burning-hatred": damage(value(15, 20)); corruption(2); break;
-      case "cinder-shield": s.guard += value(7, 9) * (s.cinders >= 5 ? 2 : 1); break;
+      case "cinder-shield": gainGuard(s,value(7, 9) * (s.cinders >= 5 ? 2 : 1)); break;
       case "smoke-and-mirrors":
         for(const enemy of alive(s)) enemy.sapped = (enemy.sapped || 0) + value(1, 2);
         for(const demon of s.units) demon.guard += value(3,3); break;
@@ -730,12 +767,12 @@ export function dispatch(previous: State, action: Action): State {
       case "ember-storm": for(const enemy of alive(s)) scorch(s, enemy, value(3, 4) * x); break;
       case "unholy-frenzy": if(pact(upgraded ? 2 : 3)) for(const demon of [...s.units].reverse()) { const power=demon.power; if(c.level)demon.power=Math.round(power*cardPower(c.level));unitAct(s,demon);demon.power=power; } break;
       case "pyroclasm": s.powers[c.id] = (s.powers[c.id] || 0) + value(3, 4); break;
-      case "shadowflame-barrier": s.guard += value(12, 16); s.barrier += value(3,3); break;
+      case "shadowflame-barrier": gainGuard(s,value(12, 16)); s.barrier += value(3,3); break;
       case "void-gaze": e.sapped = (e.sapped || 0) + value(2, 3); corruption(2); draw(s, 1); break;
       case "rend-flesh": damage(value(10, 13)); if(s.demonTurns) damage(value(10, 13)); break;
       case "combust": { const burn = e.scorch; e.scorch = 0; damage(c.level ? Math.max(burn * 2 + c.level, Math.round(burn * 2 * cardPower(c.level))) * (burn > 0 ? 1 : 0) : burn * value(2, 3)); break; }
       case "blood-price": if(pact(2)) { damage(value(6, 8)); damage(value(6, 8)); if(e.hp <= 0) corruption(4); } break;
-      case "wreathed-in-flame": s.guard += value(5, 8) + Math.floor(alive(s).reduce((sum, enemy) => sum + enemy.scorch, 0) / 2); break;
+      case "wreathed-in-flame": gainGuard(s,value(5, 8) + Math.floor(alive(s).reduce((sum, enemy) => sum + enemy.scorch, 0) / 2)); break;
       case "dread-aura": s.powers[c.id] = (s.powers[c.id] || 0) + value(1, 2); break;
       case "feast-of-embers": unit!.hp = Math.min(unit!.maxHp, unit!.hp + value(8, 12)); unit!.power += value(3, 4); break;
       case "abyssal-gaze": corruption(2); draw(s, value(1, 2)); break;
@@ -776,23 +813,21 @@ export function dispatch(previous: State, action: Action): State {
         );
         if (m.kind === "shield") { e.guard = usesPersistentMonsterShields(s) ? e.guard + (m.guard || 0) : Math.min(24, e.guard + (m.guard || 0)); emit(s, "enemy-shield", `${e.name} raises a protective barrier.`, { actor: e.id, amount: m.guard }); }
         if (m.kind === "summon") summonBossDemons(s, e);
+        const allocated=new Map<number,number>();
+        const sharing=hasArch(s,'cerberax')?s.units.filter(isHound):[];
+        for(const target of targets){if(target==='hero')continue;const recipients=sharing.length&&isHound(target)?[target,...sharing.filter(u=>u.id!==target.id)]:[target];for(const [i,u] of recipients.entries())allocated.set(u.id,(allocated.get(u.id)||0)+Math.floor(m.damage/recipients.length)+(i<m.damage%recipients.length?1:0));}
         for (const target of targets) {
           if (target === "hero") {
             const blocked = Math.min(s.guard, m.damage);
             s.guard -= blocked;
             loseHp(s, m.damage - blocked, false);
           } else {
-            const blocked = Math.min(target.guard, m.damage);
-            target.guard -= blocked;
-            const damage = Math.min(target.hp, m.damage - blocked);
-            target.hp = Math.max(0, target.hp - m.damage + blocked);
-            emit(s, "unit-hit", `${target.name} takes ${damage} damage.`, {
-              target: target.id,
-              amount: damage,
-            });
-            if (target.hp === 0) killUnit(s, target);
+            // Unit damage is applied below from the simultaneous allocation.
           }
         }
+        const deadUnits:Unit[]=[];
+        for(const [id,incoming] of allocated){const target=s.units.find(u=>u.id===id);if(!target)continue;const blocked=Math.min(target.guard,incoming);target.guard-=blocked;const amount=Math.min(target.hp,incoming-blocked);target.hp-=amount;emit(s,'unit-hit',`${target.name} takes ${amount} damage.`,{target:id,amount});if(!target.hp)deadUnits.push(target);}
+        for(const unit of deadUnits)killUnit(s,unit);
         if (targets.includes("hero") && s.barrier) scorch(s, e, s.barrier);
         emit(s, "enemy-impact", `${e.name}'s attack lands.`, {
           actor: e.id,
@@ -834,7 +869,7 @@ function migrateLegacy(s: State, prefix: number): State {
   return s;
 }
 export function replay(seed: number, actions: Action[], starterDeck: StarterDeckId = "classic", legacyActions: number | null = null): State {
-  let s = newRun(seed, starterDeck, legacyActions === null ? 3 : 2);
+  let s = newRun(seed, starterDeck, legacyActions === null ? 3 : 2, undefined);
   for (let i = 0; i < actions.length; i++) {
     if (i === legacyActions) s = migrateLegacy(s, legacyActions);
     s = dispatch(s, actions[i]);
@@ -842,14 +877,20 @@ export function replay(seed: number, actions: Action[], starterDeck: StarterDeck
   if (legacyActions === actions.length) s = migrateLegacy(s, legacyActions);
   return s;
 }
-export const save = (s: State) => JSON.stringify({ schema: s.shops ? 7 : 3, ...(s.shops ? {monsterShieldRulesFrom:s.monsterShieldRulesFrom ?? s.history.length} : {}), seed: s.seed, starterDeck: s.starterDeck, legacyActions: s.legacyActions, actions: s.history });
+export const save = (s: State) => JSON.stringify({ schema: s.shops ? 8 : 3, ...(s.shops ? {shops:true,summonRulesFrom:s.summonRulesFrom ?? s.history.length} : {}), ...(s.shops ? {monsterShieldRulesFrom:s.monsterShieldRulesFrom ?? s.history.length} : {}), seed: s.seed, starterDeck: s.starterDeck, legacyActions: s.legacyActions, actions: s.history });
 export function restore(raw: string): State {
   const data = JSON.parse(raw);
-  if (![1, 2, 3, 6, 7].includes(data.schema) || !Number.isInteger(data.seed) || !Array.isArray(data.actions) || data.actions.length > 10000) throw Error("Unsupported save.");
+  if (![1, 2, 3, 6, 7, 8].includes(data.schema) || !Number.isInteger(data.seed) || !Array.isArray(data.actions) || data.actions.length > 10000) throw Error("Unsupported save.");
+  if(data.schema===8){
+    if(data.shops&&(!Number.isInteger(data.monsterShieldRulesFrom)||data.monsterShieldRulesFrom<0||data.monsterShieldRulesFrom>data.actions.length))throw Error('Unsupported shield history.');
+    if(!Number.isInteger(data.summonRulesFrom)||data.summonRulesFrom<0||data.summonRulesFrom>data.actions.length)throw Error('Unsupported summon history.');
+    let s=data.shops?newRoguelikeRun(data.seed,data.starterDeck,data.monsterShieldRulesFrom,data.summonRulesFrom):newRun(data.seed,data.starterDeck,3,data.summonRulesFrom);
+    for(const action of data.actions)s=dispatch(s,action);return s;
+  }
   if(data.schema===6||data.schema===7) {
     const shieldPrefix=data.schema===6?data.actions.length:data.monsterShieldRulesFrom;
     if(!Number.isInteger(shieldPrefix)||shieldPrefix<0||shieldPrefix>data.actions.length)throw Error("Unsupported shield history.");
-    let s=newRoguelikeRun(data.seed,data.starterDeck,shieldPrefix);
+    let s=newRoguelikeRun(data.seed,data.starterDeck,shieldPrefix,data.actions.length);
     for(const action of data.actions)s=dispatch(s,action);
     return s;
   }

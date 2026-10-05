@@ -1,6 +1,7 @@
 import { NeutralCard } from "./SoulforgeShop";
 import { RoguelikeShop } from "./RoguelikeShop";
 import { ForestShop } from "./ForestShop";
+import { SUMMON_REVIEW, summonReviewState } from "./summonReview";
 import { FOREST_REVIEW, forestReviewState } from "./forestReview";
 import { IntroCinematic } from "./IntroCinematic";
 import { OpeningScreen } from "./OpeningScreen";
@@ -29,6 +30,7 @@ import {
 import { loadAssets, type Assets } from "./assets";
 import { Hero } from "./Hero";
 import { ActorSprite } from "./ActorSprite";
+import { summonDescription, summonPower, summonScorch } from "./summonDetails";
 import { MinionDetails } from "./MinionDetails";
 import { LootReveal } from "./LootReveal";
 import { LootIcon } from "./LootIcon";
@@ -122,7 +124,7 @@ function App({ assets }: { assets: Assets }) {
   const [introStarted, setIntroStarted] = useState(false);
   const [starterDeck, setStarterDeck] = useState<StarterDeckId>("warband");
   const [saved, setSaved] = useState<State | null>(readSave),
-    [game, setState] = useState<State | null>(() => FOREST_REVIEW ? forestReviewState() : SHOP_REVIEW ? reviewShop() : null),
+    [game, setState] = useState<State | null>(() => SUMMON_REVIEW ? summonReviewState() : FOREST_REVIEW ? forestReviewState() : SHOP_REVIEW ? reviewShop() : null),
     [visual, setVisual] = useState<State | null>(null),
     [seed, setSeed] = useState(""),
     [selected, setSelected] = useState<CardInstance | null>(null),
@@ -203,7 +205,7 @@ function App({ assets }: { assets: Assets }) {
     }
   }, [assets, track, musicActive]);
   useEffect(() => {
-    if (!game || SHOP_REVIEW || FOREST_REVIEW) return;
+    if (!game || SHOP_REVIEW || FOREST_REVIEW || SUMMON_REVIEW) return;
     try {
       localStorage.setItem(SAVE_KEY, save(game));
       setSaved(game);
@@ -262,7 +264,7 @@ function App({ assets }: { assets: Assets }) {
   const chooseCard = (c: CardInstance) => {
     if (!state || busy) return;
     if (!playable(state, c)) {
-      setMessage("You need more Mana or Cinders.");
+      setMessage("This card cannot be played now. Check its resources, target, and any Archdemon already on the field.");
       return;
     }
     if (cardTargetsUnit(c.id)) {
@@ -461,10 +463,11 @@ function App({ assets }: { assets: Assets }) {
                   <button
                     key={u.id}
                     className={`unit formation-unit ${stack ? "packed-unit" : ""} summon-${u.kind} ${slot.airborne ? "airborne" : ""} ${dismiss === u.id ? "chosen" : ""} ${u.hp <= 0 ? "unit-dying" : ""}`}
-                    style={{left: slot.x, top: slot.top, width: slot.width, zIndex: stack ? 10 - stack.ids.indexOf(u.id) : undefined, "--summon-world-unit": `${slot.worldUnit}px`, "--flight-drop": `${WARBAND_SPACE.ground - slot.root}px`, "--summon-lower-padding": `${Math.max(0, slot.bounds.bottom - slot.root - 50)}px`, "--death-duration": `${assets.actors[slot.art]?.states.die.duration ?? 740}ms`} as CSSProperties}
+                    style={{left: slot.x, top: slot.top, width: slot.width, zIndex: slot.depth, "--summon-world-unit": `${slot.worldUnit}px`, "--flight-drop": `${WARBAND_SPACE.ground - slot.root}px`, "--summon-lower-padding": `${Math.max(0, slot.bounds.bottom - slot.root - 50)}px`, "--flight-landing-duration": `${assets.actors[slot.art]?.flightLandingMs ?? 290}ms`, "--death-duration": `${assets.actors[slot.art]?.states.die.duration ?? 740}ms`} as CSSProperties}
                     data-actor={`unit-${u.id}`}
                     disabled={busy || u.hp <= 0}
-                    title={`${u.name}: ${u.power + (state.demonTurns ? 2 : 0)} Power, ${u.upkeep} Upkeep. ${u.defender ? "Defender intercepts hero attacks." : ""}`}
+                    title={summonDescription(u, state)}
+                    aria-label={summonDescription(u, state)}
                     onClick={() => {
                       if (selected && cardTargetsUnit(selected.id)) { void act({ type: "play", uid: selected.uid, unit: u.id }); return; }
                       setDismiss(u.id);
@@ -483,18 +486,15 @@ function App({ assets }: { assets: Assets }) {
                       name={u.name}
                       className="summon-model"
                     />
-                    {!stack && <MinionDetails name={u.name} hp={u.hp} maxHp={u.maxHp} guard={u.guard} defender={u.defender} power={u.power + (state.demonTurns ? 2 : 0) + (u.kind === "hellhound" ? 2 * state.units.filter(x => x.kind === "hellhound" && x.id !== u.id).length : 0)} scorch={u.kind === "imp" ? 1 : 0} />}
+                    {!stack && <MinionDetails name={u.name} hp={u.hp} maxHp={u.maxHp} guard={u.guard} defender={u.defender} power={summonPower(u, state)} scorch={summonScorch(u, state)} />}
                   </button>
                 ); })}
                 {packed?.groups.map(group => {
                   const members = group.ids.map(id => warbandUnits.find(u => u.id === id)!).filter(u => u.hp > 0);
                   if (!members.length) return null;
-                  const damage = members.map(u => u.power + (state.demonTurns ? 2 : 0) + (u.kind === "hellhound" ? 2 * (state.units.filter(x => x.kind === "hellhound").length - 1) : 0));
-                  const equal = damage.every(n => n === damage[0]);
-                  return <div key={group.kind} className="packed-status" style={{left:group.x+(group.width-240)/2-(group.airborne?0:groundRetreat.shift),top:group.top,width:240}}>
-                    <div>{members[0].name} · ⚔ {equal ? damage[0] : damage.join("+")} {equal && <b>×{members.length}</b>}{group.kind === "imp" ? " · ✦ 1" : ""}</div>
-                    {members.map((u,i)=><button key={u.id} disabled={busy} className={dismiss===u.id?"selected":""} aria-label={`${u.name} ${i+1}, ${u.hp} of ${u.maxHp} health, ${u.guard} Guard`} title={`${u.defender?"Defender · ":""}${u.guard} Guard · ${u.upkeep} Upkeep`} onClick={()=>{if(selected && cardTargetsUnit(selected.id)){void act({type:"play",uid:selected.uid,unit:u.id});return;}setDismiss(u.id);setMessage(`${u.name} selected for dismissal if the Warband is full.`);}}>
-                      <div className="hp-track" style={{height:Math.min(16,46/members.length)}}><i style={{width:`${u.hp/u.maxHp*100}%`}}/><span>{u.hp} / {u.maxHp}{u.guard ? ` · ⬡ ${u.guard}` : ""}</span></div>
+                  return <div key={group.kind} className="packed-status" style={{left:group.x-(group.airborne?0:groundRetreat.shift),top:group.top,width:group.width}}>
+                    {members.map((u,i)=><button key={u.id} disabled={busy} className={dismiss===u.id?"selected":""} aria-label={`${u.name} ${i+1}, ${u.hp} of ${u.maxHp} health, ${u.guard} Guard`} title={summonDescription(u,state)} onClick={()=>{if(selected && cardTargetsUnit(selected.id)){void act({type:"play",uid:selected.uid,unit:u.id});return;}setDismiss(u.id);setMessage(`${u.name} selected for dismissal if the Warband is full.`);}}>
+                      <MinionDetails name={u.name} hp={u.hp} maxHp={u.maxHp} guard={u.guard} defender={u.defender} power={summonPower(u,state)} scorch={summonScorch(u,state)} />
                     </button>)}
                   </div>;
                 })}
@@ -626,8 +626,8 @@ function App({ assets }: { assets: Assets }) {
             <div className="overlay">
               <section className="reward-panel">
                 <div className="eyebrow">A DEBT COLLECTED</div>
-                <h2>Deepen your pact.</h2>
-                <p>Choose one card to add to your deck. Offerings favor your starting pact.</p>
+                <h2>{isRealmBoss(state) ? "Claim an Archdemon." : "Deepen your pact."}</h2>
+                <p>{isRealmBoss(state) ? "The Sovereign falls. Choose an Archdemon to join your deck before entering the forest." : "Choose one card to add to your deck. Offerings favor your starting pact."}</p>
                 <div className="reward-cards">
                   {state.rewards.map((id) => (
                     <CardView
@@ -777,9 +777,9 @@ function App({ assets }: { assets: Assets }) {
               <article>
                 <h3>02 · Summon</h3>
                 <p>
-                  Demons attack the focus target, front to back, after your
+                  Demons act front to back after your
                   turn. Imps also act immediately. Cinders pay Upkeep; any
-                  shortfall costs HP. The front is the newest demon.
+                  shortfall costs HP. The front is the newest demon. Pit Brutes cleave every enemy; support demons use their own actions. Empower Demon transforms a lesser demon into its Arch-form. Only one of each Archdemon can be alive at a time.
                 </p>
               </article>
               <article>

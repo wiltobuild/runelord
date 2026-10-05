@@ -1,3 +1,4 @@
+import { drawDemonSpell } from "./demonSpellEffects";
 import { drawWard } from "./wardEffect";
 import { drawNatureWard } from "./natureWardEffect";
 import { drawSummon } from './summonEffect';
@@ -16,6 +17,11 @@ export type SpellKind =
   | "pact"
   | "kindle"
   | "summon"
+  | "empower"
+  | "sacrifice-rite"
+  | "sacrifice-feast"
+  | "command"
+  | "ember-feast"
   | "impact"
   | "scorch"
   | "ascend";
@@ -30,6 +36,7 @@ export type SpellEffect = {
   targets: Point[];
   scale?: number;
   height?: number;
+  targetActor?: string;
 };
 const clamp = (n: number) => Math.max(0, Math.min(1, n));
 const ease = (n: number) => 1 - Math.pow(1 - clamp(n), 3);
@@ -192,7 +199,9 @@ function drawEffect(c: CanvasRenderingContext2D, e: SpellEffect, time: number) {
     impact = e.release + e.travel;
   c.save();
   c.globalCompositeOperation = "lighter";
-  if (["flaming-arrow", "crossbow-bolt", "demon-bolt"].includes(e.kind)) {
+  if (["sacrifice-rite", "sacrifice-feast", "command", "ember-feast"].includes(e.kind)) {
+    drawDemonSpell(c, e, time);
+  } else if (["flaming-arrow", "crossbow-bolt", "demon-bolt"].includes(e.kind)) {
     for (const [index,target] of e.targets.entries()) {
       if (after >= 0 && after < e.travel) {
         const u=clamp(after/e.travel), dx=target.x-p.x, dy=target.y-p.y;
@@ -298,7 +307,7 @@ function drawEffect(c: CanvasRenderingContext2D, e: SpellEffect, time: number) {
           );
         }
     }
-  } else if (e.kind === "summon") {
+  } else if ((e.kind === "summon" || e.kind === "empower")) {
     drawSummon(c, e, time, false);
   } else if (e.kind === "ward") {
     drawWard(c, e, time);
@@ -367,8 +376,17 @@ function EffectCanvas({ effects, ground = false }: { effects: SpellEffect[]; gro
       }
       ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
       ctx.clearRect(0, 0, box.width, box.height);
-      for (const e of latest.current) {
-        if (ground) { if (e.kind === "summon") drawSummon(ctx, e, time, true); }
+      for (const original of latest.current) {
+        let e = original;
+        if (e.kind === "empower" && e.targetActor) {
+          const sprite = document.querySelector<HTMLElement>(`[data-actor="${e.targetActor}"] .actor-sprite`);
+          const root = sprite?.getBoundingClientRect(), surface = el.getBoundingClientRect();
+          if (root && surface.width && surface.height) e = {...e, targets:[{
+            x:(root.left+root.width/2-surface.left)*box.width/surface.width,
+            y:(root.bottom-surface.top)*box.height/surface.height,
+          }]};
+        }
+        if (ground) { if (e.kind === "summon" || e.kind === "empower") drawSummon(ctx, e, time, true); }
         else drawEffect(ctx, e, time);
       }
       raf = requestAnimationFrame(draw);

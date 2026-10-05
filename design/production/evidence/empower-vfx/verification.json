@@ -1,0 +1,76 @@
+{
+  "date": "2026-10-05",
+  "revision": "520a1d9 plus existing working changes and Empower VFX edits",
+  "url": "http://127.0.0.1:5191/summon-review",
+  "implementation": "Existing summon circle and fire mask reused. 350–1450ms morph;1600–2150ms reveal;2600ms total. Red beam behind actor, particles ahead. All anchors follow rendered actor, source world scale preserved, padded mask, synchronous formation offset.",
+  "browser": [
+    {
+      "from": "imp",
+      "to": "ignivar",
+      "fireSamples": 25,
+      "hiddenTextureSamples": 15,
+      "revealSamples": 7,
+      "finalOpacity": 1,
+      "finalClip": "idle"
+    },
+    {
+      "from": "hellhound",
+      "to": "cerberax",
+      "fireSamples": 23,
+      "hiddenTextureSamples": 15,
+      "revealSamples": 5,
+      "finalOpacity": 1,
+      "finalClip": "idle"
+    },
+    {
+      "from": "pit-brute",
+      "to": "gorthak",
+      "fireSamples": 21,
+      "hiddenTextureSamples": 15,
+      "revealSamples": 5,
+      "finalOpacity": 1,
+      "finalClip": "idle"
+    },
+    {
+      "from": "gloomstalker",
+      "to": "nightmaw",
+      "fireSamples": 22,
+      "hiddenTextureSamples": 15,
+      "revealSamples": 5,
+      "finalOpacity": 1,
+      "finalClip": "idle"
+    },
+    {
+      "from": "soul-leech",
+      "to": "hollow-saint",
+      "fireSamples": 23,
+      "hiddenTextureSamples": 15,
+      "revealSamples": 5,
+      "finalOpacity": 1,
+      "finalClip": "idle"
+    },
+    {
+      "from": "pyre-warden",
+      "to": "pyre-colossus",
+      "fireSamples": 23,
+      "hiddenTextureSamples": 17,
+      "revealSamples": 3,
+      "finalOpacity": 1,
+      "finalClip": "idle"
+    }
+  ],
+  "crowded": "Gloomstalker->Nightmaw alongside imp, hellhound,pit-brute,soul-leech passed;21 fire samples,13 hidden,6 revealing;final opacity1 idle.",
+  "checks": [
+    "Build and runtime asset validation pass. Existing large-bundle advisory.",
+    "Independent reviewer: TypeScript and 25 summons/formation tests pass.",
+    "Independent reviewer verified world scale compensation and padded root registration for all six pairs.",
+    "Browser errors empty after checks.",
+    "React checklist: primitive cue dependencies, RAF cleanup, decorative canvases aria-hidden, no per-frame React state updates."
+  ],
+  "limitations": [
+    "Morph is a procedural fiery silhouette blend using existing character frames; no new character art or authored mesh deformation.",
+    "Still-stage screenshot uses test-only RAF freeze at1150ms and delayed settle timer; all six behavioral checks run at normal speed.",
+    "One Hellhound check was interrupted by development hot reload, then rerun successfully.",
+    "Final HUD cap also applied to shared ribbons/embers after visual check."
+  ]
+}

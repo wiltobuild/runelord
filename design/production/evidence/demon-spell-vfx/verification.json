@@ -1,0 +1,28 @@
+{
+  "date": "2026-10-05",
+  "url": "http://127.0.0.1:5191/summon-review",
+  "inputs": [
+    {
+      "path": "apps/web/src/demonSpellEffects.ts",
+      "sha256": "472a6a71cf43ff39c05f089df113e75f8972b60852a1954e1587e8b01c6de8aa"
+    },
+    {
+      "path": "apps/web/src/SpellEffects.tsx",
+      "sha256": "2d77768e28d91b26f4c54871792cb9a73eae432b6788490bffd369393708e3a5"
+    },
+    {
+      "path": "apps/web/src/useBattleDirector.ts",
+      "sha256": "bdf8d1ab9a11df0ae2d37e951378a9a324c9ebb3bb419ad4512b7785c83af629"
+    }
+  ],
+  "browser": {
+    "sacrificialRite": "sacrifice-rite effect; unit removed; zero death ghost samples",
+    "fiendishFeast": "sacrifice-feast effect; unit removed; zero death ghost samples",
+    "hellishCommand": "command effect followed by attack (8 samples), then wounded idle",
+    "feastOfEmbers": "ember-feast effect; wounded unit returns to healthy idle; Power6 to9"
+  },
+  "visual": "Sacrifice stream, command sigil and selected-demon ember spiral visually inspected. Captures use test-only animation freezes; behavior checks ran at normal speed.",
+  "review": "Independent review /root/review_demon_spells:102 targeted engine tests passed. No timing, rebirth, resilience or cancellation defects found. Text separator corrected.",
+  "build": "Asset validation, TypeScript and production bundle passed; existing chunk-size warning only.",
+  "scope": "Four spell presentations only; no engine rules or raster assets changed."
+}

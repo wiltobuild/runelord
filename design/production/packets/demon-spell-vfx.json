@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "id": "demon-spell-vfx",
+  "status": "complete",
+  "outcome": "Dedicated sacrifice, command and ember feeding effects follow selected demons and resolve before their gameplay outcomes.",
+  "authorization": "User: do the sacrifice spells, Hellish Command and Feast of Embers.",
+  "contentIds": [
+    "sacrificial-rite",
+    "fiendish-feast",
+    "hellish-command",
+    "feast-of-embers"
+  ],
+  "owner": "runelord-technical-artist",
+  "integrationOwner": "runelord-technical-artist",
+  "reviewer": "/root/review_demon_spells",
+  "ownedPaths": [
+    "apps/web/src/demonSpellEffects.ts",
+    "apps/web/src/SpellEffects.tsx",
+    "apps/web/src/useBattleDirector.ts"
+  ],
+  "dependencies": [],
+  "exclusions": [
+    "Gameplay changes",
+    "New raster art",
+    "Commits",
+    "Deployment"
+  ],
+  "inputs": [
+    {
+      "path": "apps/web/src/demonSpellEffects.ts",
+      "sha256": "472a6a71cf43ff39c05f089df113e75f8972b60852a1954e1587e8b01c6de8aa"
+    },
+    {
+      "path": "apps/web/src/SpellEffects.tsx",
+      "sha256": "2d77768e28d91b26f4c54871792cb9a73eae432b6788490bffd369393708e3a5"
+    },
+    {
+      "path": "apps/web/src/useBattleDirector.ts",
+      "sha256": "bdf8d1ab9a11df0ae2d37e951378a9a324c9ebb3bb419ad4512b7785c83af629"
+    }
+  ],
+  "animation": null,
+  "acceptance": [
+    {
+      "id": "presentation",
+      "status": "pass",
+      "check": "Four live spell checks, selected-target visuals, corpse suppression, independent engine regression tests and production build.",
+      "evidence": [
+        {
+          "path": "design/production/evidence/demon-spell-vfx/verification.json",
+          "sha256": "b0b8719b494bfbb4b602b452cccfbd072363fb8a1dea27e61c0bf57d18b15882"
+        },
+        {
+          "path": "design/production/evidence/demon-spell-vfx/build.log",
+          "sha256": "1ef4ecf389787613ae3ef2322abb8f8121606f17378593e23abd6d6d6739140d"
+        },
+        {
+          "path": "design/production/evidence/demon-spell-vfx/sacrifice.png",
+          "sha256": "abece7f79cba28c4ff2d2ea049b7894d84e66317bb96c2e3b02325b3a98b77cf"
+        },
+        {
+          "path": "design/production/evidence/demon-spell-vfx/hellish-command.png",
+          "sha256": "f8ea54cea3b6d60c17ac98d04bb782684f1f94eba70b264b68c3f9f7f90fc8be"
+        },
+        {
+          "path": "design/production/evidence/demon-spell-vfx/feast-of-embers.png",
+          "sha256": "61b8639060cdea65be7b030a8b3dc370dd94d6ef8a5ac599ff3d60b75dbd2614"
+        }
+      ]
+    }
+  ],
+  "checkpoint": {
+    "completed": [
+      "Four effects implemented",
+      "Browser and independent checks passed",
+      "Demo rebuilt"
+    ],
+    "remaining": [],
+    "blockers": [],
+    "nextAction": "Ready for local play."
+  }
+}

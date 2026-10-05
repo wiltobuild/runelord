@@ -1,0 +1,23 @@
+
+> runelord@0.1.0 test:production
+> node --test tools/production/*.test.mjs
+
+✔ catalog parser handles neutral nonnumeric IDs and unnumbered curses; skips prose tables (1.7884ms)
+✔ path traversal is rejected (0.2938ms)
+✔ packet refuses fake completion, self-review and changed sources (11.7726ms)
+✔ record approval follows exact current bytes and reset decisions (12.5553ms)
+✔ status distinguishes imported, registered, stale and unmapped without scanning assets (24.7547ms)
+✔ encounter catches absent targeting, invalid tame and missing boss sweep (0.6666ms)
+✔ animation rejects missing frames, bad index and looping death (2.8045ms)
+✔ audio detects end beyond duration and invalid ranges (0.2659ms)
+✔ empty animation deliverables cannot pass structural verification (0.3498ms)
+✔ protected pixel comparison catches alpha changes and unsafe mask (1.1516ms)
+✔ paired balance retains failures and rejects duplicate or mismatched seeds (0.8389ms)
+ℹ tests 11
+ℹ suites 0
+ℹ pass 11
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 171.2106
