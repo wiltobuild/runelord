@@ -130,8 +130,8 @@ export const cardAffinities: Record<Exclude<StarterDeckId, "classic">, readonly 
 /** Weight4 favors the chosen approach while every implemented reward stays possible. */
 export const rewardWeight = (deck: StarterDeckId, id: CardId) => deck !== "classic" && cardAffinities[deck].includes(id) ? 4 : 1;
 export type Targeting = "hero" | "front" | "sweep" | "weakest" | "random_ally" | "ignore_defender";
-export type Move = { name: string; damage: number; targeting: Targeting; kind?: "summon" | "shield"; guard?: number };
-export type EnemyDefinition = { name: string; art: string; hp: number; moves: Move[]; boss?: "demon-lord" };
+export type Move = { name: string; damage: number; targeting: Targeting; kind?: "summon" | "shield"; guard?: number; spell?: "rootwake" | "verdant_cyclone" | "crownfall" };
+export type EnemyDefinition = { name: string; art: string; hp: number; moves: Move[]; boss?: "demon-lord" | "forest-sovereign" };
 export type Encounter = { name: string; subtitle: string; background: string; enemies: EnemyDefinition[]; reserves?: EnemyDefinition[] };
 const goblin = (name: string, art: string, hp: number, damage: number, targeting: Targeting = "front"): EnemyDefinition => ({
   name: `Fire Goblin ${name}`, art, hp, moves: [{ name: "Blazing strike", damage, targeting }, { name: "Ember assault", damage: damage + 2, targeting: "hero" }],

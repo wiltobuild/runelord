@@ -23,3 +23,21 @@ test('release demo ships all 13 forest shop presentation assets',()=>{
   const shop=readFileSync(path.join(root,'apps/web/src/ForestShop.tsx'),'utf8');
   for(const asset of ['background-${shopNumber}','shop-frame','shopkeeper-${shopNumber}']) assert.match(shop,new RegExp(asset.replace(/[${}]/g,'\\$&')));
 });
+
+test('release demo ships Root-Crown King, living-root, and all grounded forest spells',()=>{
+  const manifest=JSON.parse(readFileSync(path.join(root,'apps/web/public/game-assets/manifest.json'),'utf8'));
+  for(const id of ['forest-sovereign','sovereign-root']) {
+    const actor=manifest.actors[id];
+    assert.ok(actor,`missing ${id} actor`);
+    for(const state of ['idle','attack','die']) {
+      assert.ok(actor.states[state]?.frames.length,`missing ${id}/${state} frames`);
+      for(const frame of actor.states[state].frames) assert.ok(existsSync(path.join(root,'apps/web/public',frame.src)),`missing ${id} frame ${frame.src}`);
+    }
+  }
+  for(const spell of ['rootwake','verdant_cyclone','crownfall']) {
+    const effect=manifest.forestSpells?.[spell];
+    assert.ok(effect?.frames.length,`missing ${spell} frames`);
+    for(const frame of effect.frames) assert.ok(existsSync(path.join(root,'apps/web/public',frame.src)),`missing ${spell} frame ${frame.src}`);
+  }
+  assert.deepEqual(manifest.forestSpells.rootwake.anchor,[320,450],'Rootwake must remain grounded below the old anchor');
+});

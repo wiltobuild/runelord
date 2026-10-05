@@ -1,7 +1,7 @@
 import {test} from 'node:test';
 import assert from 'node:assert/strict';
 import {readFileSync} from 'node:fs';
-import {newRoguelikeRun,newRun,forestEncounters,FOREST_ENEMY_IDS,activeEncounter,currentRealm,encounterCount,realmEncounterNumber,realmEncounterCount,isRealmBoss,dispatch,currentShop,upgradeCost,canAddCard,resolveTargets,intent,save,restore,type State} from './index';
+import {newRoguelikeRun,newRun,forestEncounters,forestSovereignEncounter,FOREST_ENEMY_IDS,activeEncounter,currentRealm,encounterCount,realmEncounterNumber,realmEncounterCount,isRealmBoss,dispatch,currentShop,upgradeCost,canAddCard,resolveTargets,intent,save,restore,type State} from './index';
 import {encounters} from '../content/index';
 const fixture=(name:string)=>readFileSync(new URL(`./fixtures/forest-roguelike-${name}.json`,import.meta.url),'utf8');
 function crown():State {
@@ -17,7 +17,7 @@ test('linear roguelike keeps nine infernal fights and appends twelve forest figh
  for(let room=0;room<21;room++) {
   s.room=room;assert.equal(currentRealm(s),room<9?'infernal':'forest');assert.equal(realmEncounterNumber(s),room<9?room+1:room-8);
   assert.equal(realmEncounterCount(s),room<9?9:12);assert.equal(isRealmBoss(s),room===8||room===20);
-  assert.equal(activeEncounter(s),room<9?encounters[room]:forestEncounters[room-9]);
+  assert.equal(activeEncounter(s),room<9?encounters[room]:room===20?forestSovereignEncounter:forestEncounters[room-9]);
  }
 });
 test('forest roster uses only selected animated creatures and excludes fire, undead, standard and infernal summons',()=>{
@@ -60,7 +60,7 @@ test('real schema6 history crosses realms and preserves forest purchases, upgrad
 test('full legal run replays all twenty-one victories, seven shops, and final victory exactly',()=>{
  const s=restore(fixture('complete'));assert.equal(s.phase,'won');assert.equal(s.room,20);assert.equal(currentRealm(s),'forest');
  assert.deepEqual(Object.keys(s.shops!.stock),[3,6,9,12,15,18,21].map(n=>`roguelike-${n}`));assert.deepEqual(restore(save(s)),s);
- const history=JSON.parse(fixture('complete'));let replay=newRoguelikeRun(history.seed,history.starterDeck,history.actions.length,history.actions.length);let crownIndex=-1;
+ const history=JSON.parse(fixture('complete'));let replay=newRoguelikeRun(history.seed,history.starterDeck,history.actions.length,history.actions.length);replay.forestBossVersion=1;let crownIndex=-1;
  for(let i=0;i<history.actions.length;i++) {
   if(replay.room===8&&replay.phase==='loot')crownIndex=i;
   replay=dispatch(replay,history.actions[i]);

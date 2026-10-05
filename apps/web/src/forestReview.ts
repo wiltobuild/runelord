@@ -19,6 +19,7 @@ export function forestReviewState(): State | null {
   state.pendingLoot={gold:150,items:["demon-lord-crown"],final:true};
   if(stage==="crown") return state;
   if(stage==="border") return dispatch(state,{type:"continue"});
+  if(stage==="sovereign"){state.maxHp=state.hp=120;state.deckLevels=state.deck.map(()=>2);state.inventory=["healing-draught","mana-potion"];state.room=19;state.pendingLoot=null;enterRoguelikeShop(state);return dispatch(state,{type:"leave-shop"});}
   const number=Number(stage.replace("shop-","")) || 1;
   state.room=8+Math.max(1,Math.min(12,number))-(stage.startsWith("shop-")?0:1);
   state.pendingLoot=null;

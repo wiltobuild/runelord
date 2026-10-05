@@ -45,3 +45,6 @@ export const forestEncounters:Encounter[]=scripts.map((script,i)=>{
  return {name:script.name,subtitle:`Thornroot Forest - Encounter ${number} of 12`,background:number<=6?'forest':'forest-heart',enemies:script.roster.map(enemy),reserves:script.reserve?[enemy(script.reserve,3)]:[]};
 });
 export const forestEliteRooms=[4,7,10];
+
+import {forestSovereign} from './forestSovereign';
+export const forestSovereignEncounter:Encounter={...forestEncounters[11],name:'The Root-Crown Throne',enemies:[forestSovereign],reserves:[]};

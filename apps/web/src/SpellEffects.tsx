@@ -1,10 +1,12 @@
 import { drawDemonSpell } from "./demonSpellEffects";
+import type { Assets } from "./assets";
+import {drawForestSpell} from "./forestSpellRenderer";
 import { drawWard } from "./wardEffect";
 import { drawNatureWard } from "./natureWardEffect";
 import { drawSummon } from './summonEffect';
 import { useEffect, useRef } from "react";
 export type Point = { x: number; y: number; width?: number; height?: number };
-export type SpellKind =
+export type SpellKind = "rootwake" | "verdant_cyclone" | "crownfall" 
   | "flaming-arrow"
   | "crossbow-bolt"
   | "demon-bolt"
@@ -356,7 +358,7 @@ function drawEffect(c: CanvasRenderingContext2D, e: SpellEffect, time: number) {
     for (const target of e.targets) burst(c, target, t, e.id, 0.55, "#ffd5a0");
   c.restore();
 }
-function EffectCanvas({ effects, ground = false }: { effects: SpellEffect[]; ground?: boolean }) {
+function EffectCanvas({ effects, assets, ground = false }: { effects: SpellEffect[]; assets:Assets; ground?: boolean }) {
   const canvas = useRef<HTMLCanvasElement>(null),
     latest = useRef(effects);
   latest.current = effects;
@@ -401,6 +403,7 @@ function EffectCanvas({ effects, ground = false }: { effects: SpellEffect[]; gro
           }
         }
         if (ground) { if (e.kind === "summon" || e.kind === "empower") drawSummon(ctx, e, time, true); }
+        else if(assets.forestSpells?.[e.kind]) drawForestSpell(ctx,e,time,assets);
         else drawEffect(ctx, e, time);
       }
       raf = requestAnimationFrame(draw);
@@ -418,6 +421,6 @@ function EffectCanvas({ effects, ground = false }: { effects: SpellEffect[]; gro
   );
 }
 
-export function SpellEffects({effects}:{effects:SpellEffect[]}) {
-  return <><EffectCanvas effects={effects} ground /><EffectCanvas effects={effects} /></>;
+export function SpellEffects({effects,assets}:{effects:SpellEffect[];assets:Assets}) {
+  return <><EffectCanvas effects={effects} assets={assets} ground /><EffectCanvas effects={effects} assets={assets} /></>;
 }

@@ -1,5 +1,7 @@
 import { currentShop, cardPower, cardLevel, upgradeCost, canAddCard, prepareShop, rerollShop, remapShopCopies, refreshRemovalOffers, enterRoguelikeShop, type ShopRerollKind, type RoguelikeShops } from "./shop";
 export * from "./shop";
+import { sovereignRoot } from "./forestSovereign";
+import { forestSovereignEncounter } from "./forest";
 import { forestEncounters, forestEliteRooms } from "./forest";
 export * from "./forest";
 import {
@@ -19,7 +21,7 @@ export const currentRealm=(s:State):'infernal'|'forest'=>s.shops&&s.room>=encoun
 export const realmEncounterNumber=(s:State)=>s.room-(currentRealm(s)==='forest'?encounters.length:0)+1;
 export const realmEncounterCount=(s:State)=>currentRealm(s)==='forest'?forestEncounters.length:encounters.length;
 export const isRealmBoss=(s:State)=>realmEncounterNumber(s)===realmEncounterCount(s);
-export const activeEncounter=(s:State)=>currentRealm(s)==='forest'?forestEncounters[s.room-encounters.length]:encounters[s.room];
+export const activeEncounter=(s:State)=>currentRealm(s)==='forest'?(s.forestBossVersion===2&&s.room===encounters.length+11?forestSovereignEncounter:forestEncounters[s.room-encounters.length]):encounters[s.room];
 export const demonStats = {
  imp:{name:'Imp',hp:6,power:4,upkeep:0,defender:false},
  hellhound:{name:'Hellhound',hp:14,power:6,upkeep:1,defender:false},
@@ -66,7 +68,7 @@ export type Enemy = {
   guard: number;
   scorch: number;
   moves: Move[];
-  boss?: "demon-lord";
+  boss?: "demon-lord" | "forest-sovereign";
   bossPhase?: 1 | 2;
   summonsMade?: number;
   summonedBy?: number;
@@ -75,6 +77,7 @@ export type Enemy = {
 };
 export type CardInstance = { uid: number; id: CardId; upgraded?: boolean; level?: number };
 export type GameEvent = {
+  spell?: Move["spell"];
   type: string;
   message: string;
   actor?: number;
@@ -101,6 +104,7 @@ export type CombatView = Pick<
 >;
 export type PendingLoot = { gold: number; items: ItemId[]; final: boolean };
 export type State = {
+ forestBossVersion?:1|2;
   /** Actions before this index retain historical shield grants when replaying an older save. */
   monsterShieldRulesFrom?: number;
   summonRulesFrom?: number;
@@ -231,7 +235,7 @@ function hitEnemy(s: State, e: Enemy, n: number, attack = false, cause?: GameEve
   if (e.boss && e.hp > 0 && e.hp <= e.maxHp / 2 && e.bossPhase !== 2) {
     e.bossPhase = 2;
     e.guard += 8;
-    emit(s, "boss-phase", "The crown erupts: Vhalzor gains 8 Guard and his damaging spells gain +2 damage.", { actor: e.id });
+    emit(s, "boss-phase", e.boss === "forest-sovereign" ? "The heartwood awakens: the Forest Sovereign gains 8 Guard and +2 attack damage." : "The crown erupts: Vhalzor gains 8 Guard and his damaging spells gain +2 damage.", { actor: e.id });
   }
   if (e.hp === 0) {
     cinders(s, Math.floor(e.scorch / 2));
@@ -263,7 +267,7 @@ function checkWin(s: State) {
   const fallenLord = s.enemies.find(e => e.boss && e.hp <= 0);
   if (s.phase === "combat" && fallenLord) for (const add of alive(s).filter(e => e.summonedBy === fallenLord.id)) {
     add.hp = 0;
-    emit(s, "kill", `${add.name} vanishes as its master's bond breaks.`, { target: add.id });
+    emit(s, "kill", add.art === 'sovereign-root' ? `${add.name} withers as its master falls.` : `${add.name} vanishes as its master's bond breaks.`, { target: add.id });
   }
   if (s.phase === "combat") for (let i = 0; i < s.enemies.length && s.reserves.length; i++) {
     const fallen = s.enemies[i];
@@ -346,6 +350,17 @@ function empower(s:State,u:Unit,level:number){
  if(kind==='nightmaw'){s.mana++;draw(s,1);emit(s,'passive','Nightmaw grants 1 Mana and 1 card.',{actor:u.id});}
 }
 function summonBossDemons(s: State, boss: Enemy) {
+  if (boss.boss === "forest-sovereign") {
+    const count = Math.min(2 - alive(s).filter(e=>e.summonedBy===boss.id).length, 4-(boss.summonsMade||0));
+    for(let i=0;i<count;i++){
+      const add:Enemy={...structuredClone(sovereignRoot),id:s.nextId++,maxHp:sovereignRoot.hp,guard:0,scorch:0,summonedBy:boss.id};
+      const slot=s.enemies.findIndex(e=>e.summonedBy===boss.id&&e.hp<=0);
+      if(slot>=0)s.enemies[slot]=add;else s.enemies.push(add);
+      boss.summonsMade=(boss.summonsMade||0)+1;
+      emit(s,"enemy-summon",`${boss.name} raises a Living Root.`,{actor:add.id,target:boss.id,spell:"rootwake"});
+    }
+    return;
+  }
   const free = 2 - alive(s).filter(e => e.summonedBy === boss.id).length;
   const count = Math.min(free, 4 - (boss.summonsMade || 0));
   for (let i = 0; i < count; i++) {
@@ -361,7 +376,7 @@ function summonBossDemons(s: State, boss: Enemy) {
 export const usesPersistentMonsterShields = (s:State) => s.monsterShieldRulesFrom !== undefined && s.history.length >= s.monsterShieldRulesFrom;
 export function intent(s: State, e: Enemy) {
   let move = e.moves[(s.turn - 1) % e.moves.length];
-  if (move.kind === "summon" && ((e.summonsMade || 0) >= 4 || alive(s).filter(add => add.summonedBy === e.id).length >= 2)) move = { name: "Crownfire Bolt", damage: 8, targeting: "front" };
+  if (move.kind === "summon" && ((e.summonsMade || 0) >= 4 || alive(s).filter(add => add.summonedBy === e.id).length >= 2)) move = e.boss === "forest-sovereign" ? {name:"Ancient Fist",damage:11,targeting:"front"} : { name: "Crownfire Bolt", damage: 8, targeting: "front" };
   if (e.bossPhase === 2 && move.damage > 0) move = { ...move, name: `Enraged ${move.name}`, damage: move.damage + 2 };
   if (move.kind === "shield" && usesPersistentMonsterShields(s)) {
     const guard = Math.round(e.maxHp / 2);
@@ -491,7 +506,7 @@ export function newRun(seed = 7319, starterDeck: StarterDeckId = "classic", rule
 }
 /** New roguelike saves opt into shops; schemas 1–3 replay the historical demo unchanged. */
 export function newRoguelikeRun(seed=7319,starterDeck:StarterDeckId='warband',monsterShieldRulesFrom=0,summonRulesFrom:number|undefined=0):State {
- const s=newRun(seed,starterDeck,3,summonRulesFrom);s.monsterShieldRulesFrom=monsterShieldRulesFrom;s.shops={current:null,stock:{}};s.deckLevels=s.deck.map(()=>0);
+ const s=newRun(seed,starterDeck,3,summonRulesFrom);s.forestBossVersion=2;s.monsterShieldRulesFrom=monsterShieldRulesFrom;s.shops={current:null,stock:{}};s.deckLevels=s.deck.map(()=>0);
  if(starterDeck==='classic'){s.deck[3]='neutral-strike';s.deck[7]='neutral-bulwark';}
  // Recreate the opening battle from the original RNG position, with leveled card instances.
  s.rng=s.seed;s.nextId=1;s.events=[];beginCombat(s);return s;
@@ -808,6 +823,7 @@ export function dispatch(previous: State, action: Action): State {
           {
             actor: e.id,
             amount: m.damage,
+            spell: m.spell,
             targets: targets.map((t) => (t === "hero" ? "hero" : t.id)),
           },
         );
@@ -832,6 +848,7 @@ export function dispatch(previous: State, action: Action): State {
         emit(s, "enemy-impact", `${e.name}'s attack lands.`, {
           actor: e.id,
           amount: m.damage,
+            spell: m.spell,
           targets: targets.map((t) => (t === "hero" ? "hero" : t.id)),
         });
         if (s.hp === 0) break;
@@ -877,7 +894,7 @@ export function replay(seed: number, actions: Action[], starterDeck: StarterDeck
   if (legacyActions === actions.length) s = migrateLegacy(s, legacyActions);
   return s;
 }
-export const save = (s: State) => JSON.stringify({ schema: s.shops ? 8 : 3, ...(s.shops ? {shops:true,summonRulesFrom:s.summonRulesFrom ?? s.history.length} : {}), ...(s.shops ? {monsterShieldRulesFrom:s.monsterShieldRulesFrom ?? s.history.length} : {}), seed: s.seed, starterDeck: s.starterDeck, legacyActions: s.legacyActions, actions: s.history });
+export const save = (s: State) => JSON.stringify({ schema: s.shops ? 8 : 3, forestBossVersion:s.forestBossVersion??1, ...(s.shops ? {shops:true,summonRulesFrom:s.summonRulesFrom ?? s.history.length} : {}), ...(s.shops ? {monsterShieldRulesFrom:s.monsterShieldRulesFrom ?? s.history.length} : {}), seed: s.seed, starterDeck: s.starterDeck, legacyActions: s.legacyActions, actions: s.history });
 export function restore(raw: string): State {
   const data = JSON.parse(raw);
   if (![1, 2, 3, 6, 7, 8].includes(data.schema) || !Number.isInteger(data.seed) || !Array.isArray(data.actions) || data.actions.length > 10000) throw Error("Unsupported save.");
@@ -885,12 +902,14 @@ export function restore(raw: string): State {
     if(data.shops&&(!Number.isInteger(data.monsterShieldRulesFrom)||data.monsterShieldRulesFrom<0||data.monsterShieldRulesFrom>data.actions.length))throw Error('Unsupported shield history.');
     if(!Number.isInteger(data.summonRulesFrom)||data.summonRulesFrom<0||data.summonRulesFrom>data.actions.length)throw Error('Unsupported summon history.');
     let s=data.shops?newRoguelikeRun(data.seed,data.starterDeck,data.monsterShieldRulesFrom,data.summonRulesFrom):newRun(data.seed,data.starterDeck,3,data.summonRulesFrom);
+    s.forestBossVersion=data.forestBossVersion===2?2:1;
     for(const action of data.actions)s=dispatch(s,action);return s;
   }
   if(data.schema===6||data.schema===7) {
     const shieldPrefix=data.schema===6?data.actions.length:data.monsterShieldRulesFrom;
     if(!Number.isInteger(shieldPrefix)||shieldPrefix<0||shieldPrefix>data.actions.length)throw Error("Unsupported shield history.");
     let s=newRoguelikeRun(data.seed,data.starterDeck,shieldPrefix,data.actions.length);
+    s.forestBossVersion=data.forestBossVersion===2?2:1;
     for(const action of data.actions)s=dispatch(s,action);
     return s;
   }

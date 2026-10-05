@@ -1,0 +1,98 @@
+{
+  "schema": 1,
+  "id": "forest-sovereign-new-game",
+  "status": "complete",
+  "outcome": "Forest finale features the Root-Crown King, independent living roots, and three grounded spells in the current roguelike game.",
+  "authorization": "User requested game integration, lowered Rootwake, and preloaded encounter; corrected that the earlier preview used an older build.",
+  "contentIds": [
+    "forest-sovereign",
+    "sovereign-root",
+    "rootwake",
+    "verdant_cyclone",
+    "crownfall"
+  ],
+  "owner": "runelord-rules-engineer",
+  "integrationOwner": "runelord-technical-artist",
+  "reviewer": "/root/encounter_qa",
+  "ownedPaths": [
+    "packages/engine",
+    "apps/web/src",
+    "tools/import/forest-sovereign-assets.mjs"
+  ],
+  "dependencies": [
+    "main-push 70ef4cf"
+  ],
+  "exclusions": [
+    "deployment",
+    "art approval promotion",
+    "regenerating accepted frames"
+  ],
+  "inputs": [
+    {
+      "path": "assets/characters/forest-sovereign/animations/frames32-r1/animation.json",
+      "sha256": "f24b0890ca729d619e122f436c7113fb508c30e1dff0188a24d9ac633b0d34bc"
+    },
+    {
+      "path": "assets/characters/sovereign-root/animations/r1/animation.json",
+      "sha256": "f0aed5ea250afd3bcd6a972643538d4223152ad81295fcabccad2455818f1c8e"
+    }
+  ],
+  "animation": {
+    "method": "whole-character-frames",
+    "note": "32 boss frames,12 root frames,12 effect frames; pending artwork explicitly authorized for integration",
+    "requiredStates": [
+      "idle",
+      "attack",
+      "hit",
+      "wounded_idle",
+      "cast",
+      "die"
+    ]
+  },
+  "acceptance": [
+    {
+      "check": "Build and runtime assets",
+      "status": "pass",
+      "evidence": [
+        {
+          "path": "design/production/evidence/forest-sovereign-new-game/forest-sovereign-new-build-qa.json",
+          "sha256": "334ed4093c384e6c668021abbea0f126984406dfc427927ee55efd998f4a838b"
+        }
+      ],
+      "notes": "npm run build;916 runtime assets verified"
+    },
+    {
+      "check": "Independent engine acceptance",
+      "status": "pass",
+      "evidence": [
+        {
+          "path": "design/production/evidence/forest-sovereign-new-game/forest-sovereign-new-build-qa.json",
+          "sha256": "334ed4093c384e6c668021abbea0f126984406dfc427927ee55efd998f4a838b"
+        }
+      ],
+      "notes": "C:\\Users\\wilsh\\Documents\\Codex\\2026-10-05\\giv\\outputs\\forest-sovereign-new-build-qa.json"
+    },
+    {
+      "check": "Playable current-game encounter",
+      "status": "pass",
+      "evidence": [
+        {
+          "path": "design/production/evidence/forest-sovereign-new-game/forest-sovereign-new-build.png",
+          "sha256": "2910d1fbfd81e7983e027df7d710ecdbca14504d3be7d4c476cc249f017bf0d8"
+        }
+      ],
+      "notes": "http://127.0.0.1:5191/forest-review?stage=sovereign; browser turn1 Rootwake, turn2 two roots28HP, turn3 Cyclone7 plus two root strikes5, no console errors"
+    }
+  ],
+  "checkpoint": {
+    "completed": [
+      "Rootwake anchor lowered60 source pixels",
+      "Ported narrowly to newer roguelike checkout with arch summons and Empower Demon",
+      "Full suite174/174 plus independent7/7",
+      "User tab reset to fresh preloaded encounter"
+    ],
+    "remaining": [],
+    "blockers": [],
+    "nextAction": "User playtest"
+  }
+}

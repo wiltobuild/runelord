@@ -1,4 +1,5 @@
 import fs from "node:fs";
+import { integrateForestSovereign } from "./forest-sovereign-assets.mjs";
 import path from "node:path";
 import crypto from "node:crypto";
 import sharp from "sharp";
@@ -373,6 +374,7 @@ for (const [id, slug] of [["forest-explore", "04_lanterns_in_the_hollow"], ["for
   manifest.music[id] = { url: `/game-assets/${output}`, title: track.title, start: track.loop_start_sample / track.sample_rate, end: track.loop_end_sample_exclusive / track.sample_rate };
   manifest.provenance.push({ source, sha256: hash(source), output, outputSha256: hash(path.join(out, output)), master: derivative.source, masterSha256: derivative.sourceSha256, transform: derivative.settings, status: "Existing Runelord score; user-requested forest integration" });
 }
+integrateForestSovereign(manifest);
 fs.mkdirSync("packages/assets", { recursive: true });
 fs.writeFileSync(
   "packages/assets/manifest.json",

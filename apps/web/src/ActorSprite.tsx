@@ -115,12 +115,13 @@ export function ActorSprite({
       if (image.current.getAttribute("src") !== frame.src)
         image.current.src = frame.src;
       if (frame.effects || actor.effects) image.current.dataset.glow = JSON.stringify(frame.effects ?? actor.effects);
+      const rootSpawn = art === "sovereign-root" && requested === "spawn";
       const spawning = requested === "spawn" && actor.spawnReveal !== "authored" && elapsed < 1200;
       const empowering = requested === "empower" && elapsed < EMPOWER_MS;
       const phase = empowerPhase(elapsed);
       const reveal = empowering ? phase.reveal : Math.max(0, Math.min(1, (elapsed - 790) / 330));
-      image.current.style.opacity = String((frame.opacity ?? 1) * (spawning || empowering ? reveal : 1));
-      image.current.style.clipPath = spawning ? `inset(${Math.max(0, 100 - elapsed / 8)}% 0 0)` : "";
+      image.current.style.opacity = String((frame.opacity ?? 1) * (rootSpawn ? 1 : spawning || empowering ? reveal : 1));
+      image.current.style.clipPath = spawning ? `inset(${Math.max(0, 100 - elapsed / (rootSpawn ? 6 : 8))}% 0 0)` : "";
       const canvas = fire.current;
       if (canvas) {
         canvas.style.display = spawning || empowering ? "block" : "none";
@@ -203,7 +204,7 @@ export function ActorSprite({
         alt={name}
         draggable={false}
       />
-      {(cue?.state === "empower" || cue?.state === "spawn" && actor?.spawnReveal !== "authored") && hp > 0 && <canvas ref={fire} width={(actor?.size[0] ?? 512) * (empoweringCue ? 2 : 1)} height={(actor?.size[1] ?? 512) * (empoweringCue ? 2 : 1)} className="summon-fire-silhouette" style={{...fireStyle, pointerEvents: "none", filter: "drop-shadow(0 0 7px #ff671d) drop-shadow(0 0 16px #ff300a)"}} aria-hidden="true" />}
+      {(cue?.state === "empower" || cue?.state === "spawn" && actor?.spawnReveal !== "authored") && art !== "sovereign-root" && hp > 0 && <canvas ref={fire} width={(actor?.size[0] ?? 512) * (empoweringCue ? 2 : 1)} height={(actor?.size[1] ?? 512) * (empoweringCue ? 2 : 1)} className="summon-fire-silhouette" style={{...fireStyle, pointerEvents: "none", filter: "drop-shadow(0 0 7px #ff671d) drop-shadow(0 0 16px #ff300a)"}} aria-hidden="true" />}
       {art === "demon-lord" && <DemonLordGlow image={image} active={hp > 0} enraged={hp / maxHp <= .5} sockets={actor?.effects} />}
       {deathFinished && hp <= 0 && actor.deathEffect === "fire" && image.current && <FireDeathEffect image={image.current} audible={wasAlive.current} />}
     </div>

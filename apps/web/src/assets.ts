@@ -10,6 +10,7 @@ export type Clip = {
   frames: { time: number; body: string; fx?: string }[];
 };
 export type Assets = {
+  forestSpells?: Record<string,{size:number[];anchor:number[];duration:number;frames:{time:number;src:string}[]}>;
   images: Record<string, string>;
   cards: Record<string, string>;
   animations: Record<string, Clip>;

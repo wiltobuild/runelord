@@ -59,7 +59,9 @@
     "summon-nightmaw": "/game-assets/summons/nightmaw/base-r1/0.webp",
     "summon-gorthak": "/game-assets/summons/gorthak/idle-review-r3/0.webp",
     "summon-hollow-saint": "/game-assets/summons/hollow-saint/base-r1/0.webp",
-    "summon-pyre-colossus": "/game-assets/summons/pyre-colossus/base-r1/0.webp"
+    "summon-pyre-colossus": "/game-assets/summons/pyre-colossus/base-r1/0.webp",
+    "forest-sovereign": "/game-assets/forest-sovereign-r1/forest-sovereign/frames/idle-00.png",
+    "sovereign-root": "/game-assets/forest-sovereign-r1/sovereign-root/frames/idle-00.png"
   },
   "cards": {
     "firebolt": "/game-assets/cards/firebolt.webp",
@@ -9013,6 +9015,330 @@
           445,
           340
         ]
+      }
+    },
+    "forest-sovereign": {
+      "size": [
+        640,
+        560
+      ],
+      "anchor": [
+        320,
+        510
+      ],
+      "states": {
+        "idle": {
+          "duration": 1260,
+          "loop": true,
+          "impact": null,
+          "frames": [
+            {
+              "time": 0,
+              "src": "/game-assets/forest-sovereign-r1/forest-sovereign/frames/idle-00.png"
+            },
+            {
+              "time": 210,
+              "src": "/game-assets/forest-sovereign-r1/forest-sovereign/frames/idle-01.png"
+            },
+            {
+              "time": 420,
+              "src": "/game-assets/forest-sovereign-r1/forest-sovereign/frames/idle-02.png"
+            },
+            {
+              "time": 630,
+              "src": "/game-assets/forest-sovereign-r1/forest-sovereign/frames/idle-03.png"
+            },
+            {
+              "time": 840,
+              "src": "/game-assets/forest-sovereign-r1/forest-sovereign/frames/idle-02.png"
+            },
+            {
+              "time": 1050,
+              "src": "/game-assets/forest-sovereign-r1/forest-sovereign/frames/idle-01.png"
+            }
+          ]
+        },
+        "attack": {
+          "duration": 930,
+          "loop": false,
+          "impact": 460,
+          "frames": [
+            {
+              "time": 0,
+              "src": "/game-assets/forest-sovereign-r1/forest-sovereign/frames/attack-00.png"
+            },
+            {
+              "time": 110,
+              "src": "/game-assets/forest-sovereign-r1/forest-sovereign/frames/attack-01.png"
+            },
+            {
+              "time": 240,
+              "src": "/game-assets/forest-sovereign-r1/forest-sovereign/frames/attack-02.png"
+            },
+            {
+              "time": 390,
+              "src": "/game-assets/forest-sovereign-r1/forest-sovereign/frames/attack-03.png"
+            },
+            {
+              "time": 460,
+              "src": "/game-assets/forest-sovereign-r1/forest-sovereign/frames/attack-04.png"
+            },
+            {
+              "time": 540,
+              "src": "/game-assets/forest-sovereign-r1/forest-sovereign/frames/attack-05.png"
+            },
+            {
+              "time": 640,
+              "src": "/game-assets/forest-sovereign-r1/forest-sovereign/frames/attack-06.png"
+            },
+            {
+              "time": 760,
+              "src": "/game-assets/forest-sovereign-r1/forest-sovereign/frames/attack-07.png"
+            }
+          ]
+        },
+        "hit": {
+          "duration": 380,
+          "loop": false,
+          "impact": null,
+          "frames": [
+            {
+              "time": 0,
+              "src": "/game-assets/forest-sovereign-r1/forest-sovereign/frames/hit-00.png"
+            },
+            {
+              "time": 50,
+              "src": "/game-assets/forest-sovereign-r1/forest-sovereign/frames/hit-01.png"
+            },
+            {
+              "time": 140,
+              "src": "/game-assets/forest-sovereign-r1/forest-sovereign/frames/hit-02.png"
+            },
+            {
+              "time": 240,
+              "src": "/game-assets/forest-sovereign-r1/forest-sovereign/frames/hit-03.png"
+            }
+          ]
+        },
+        "wounded_idle": {
+          "duration": 1560,
+          "loop": true,
+          "impact": null,
+          "frames": [
+            {
+              "time": 0,
+              "src": "/game-assets/forest-sovereign-r1/forest-sovereign/frames/wounded_idle-00.png"
+            },
+            {
+              "time": 260,
+              "src": "/game-assets/forest-sovereign-r1/forest-sovereign/frames/wounded_idle-01.png"
+            },
+            {
+              "time": 520,
+              "src": "/game-assets/forest-sovereign-r1/forest-sovereign/frames/wounded_idle-02.png"
+            },
+            {
+              "time": 780,
+              "src": "/game-assets/forest-sovereign-r1/forest-sovereign/frames/wounded_idle-03.png"
+            },
+            {
+              "time": 1040,
+              "src": "/game-assets/forest-sovereign-r1/forest-sovereign/frames/wounded_idle-02.png"
+            },
+            {
+              "time": 1300,
+              "src": "/game-assets/forest-sovereign-r1/forest-sovereign/frames/wounded_idle-01.png"
+            }
+          ]
+        },
+        "cast": {
+          "duration": 710,
+          "loop": false,
+          "impact": 350,
+          "frames": [
+            {
+              "time": 0,
+              "src": "/game-assets/forest-sovereign-r1/forest-sovereign/frames/cast-00.png"
+            },
+            {
+              "time": 150,
+              "src": "/game-assets/forest-sovereign-r1/forest-sovereign/frames/cast-01.png"
+            },
+            {
+              "time": 350,
+              "src": "/game-assets/forest-sovereign-r1/forest-sovereign/frames/cast-02.png"
+            },
+            {
+              "time": 530,
+              "src": "/game-assets/forest-sovereign-r1/forest-sovereign/frames/cast-03.png"
+            }
+          ]
+        },
+        "die": {
+          "duration": 2360,
+          "loop": false,
+          "impact": null,
+          "frames": [
+            {
+              "time": 0,
+              "src": "/game-assets/forest-sovereign-r1/forest-sovereign/frames/die-00.png"
+            },
+            {
+              "time": 180,
+              "src": "/game-assets/forest-sovereign-r1/forest-sovereign/frames/die-01.png"
+            },
+            {
+              "time": 360,
+              "src": "/game-assets/forest-sovereign-r1/forest-sovereign/frames/die-02.png"
+            },
+            {
+              "time": 540,
+              "src": "/game-assets/forest-sovereign-r1/forest-sovereign/frames/die-03.png"
+            },
+            {
+              "time": 720,
+              "src": "/game-assets/forest-sovereign-r1/forest-sovereign/frames/die-04.png"
+            },
+            {
+              "time": 900,
+              "src": "/game-assets/forest-sovereign-r1/forest-sovereign/frames/die-05.png"
+            },
+            {
+              "time": 1080,
+              "src": "/game-assets/forest-sovereign-r1/forest-sovereign/frames/die-06.png"
+            },
+            {
+              "time": 1260,
+              "src": "/game-assets/forest-sovereign-r1/forest-sovereign/frames/die-07.png"
+            }
+          ]
+        }
+      }
+    },
+    "sovereign-root": {
+      "size": [
+        640,
+        560
+      ],
+      "anchor": [
+        320,
+        510
+      ],
+      "states": {
+        "idle": {
+          "duration": 1280,
+          "loop": true,
+          "impact": null,
+          "frames": [
+            {
+              "time": 0,
+              "src": "/game-assets/forest-sovereign-r1/sovereign-root/frames/idle-00.png"
+            },
+            {
+              "time": 320,
+              "src": "/game-assets/forest-sovereign-r1/sovereign-root/frames/idle-01.png"
+            },
+            {
+              "time": 640,
+              "src": "/game-assets/forest-sovereign-r1/sovereign-root/frames/idle-02.png"
+            },
+            {
+              "time": 960,
+              "src": "/game-assets/forest-sovereign-r1/sovereign-root/frames/idle-03.png"
+            }
+          ]
+        },
+        "attack": {
+          "duration": 540,
+          "loop": false,
+          "impact": 160,
+          "frames": [
+            {
+              "time": 0,
+              "src": "/game-assets/forest-sovereign-r1/sovereign-root/frames/attack-00.png"
+            },
+            {
+              "time": 160,
+              "src": "/game-assets/forest-sovereign-r1/sovereign-root/frames/attack-01.png"
+            },
+            {
+              "time": 260,
+              "src": "/game-assets/forest-sovereign-r1/sovereign-root/frames/attack-02.png"
+            },
+            {
+              "time": 360,
+              "src": "/game-assets/forest-sovereign-r1/sovereign-root/frames/attack-03.png"
+            }
+          ]
+        },
+        "die": {
+          "duration": 1640,
+          "loop": false,
+          "impact": null,
+          "frames": [
+            {
+              "time": 0,
+              "src": "/game-assets/forest-sovereign-r1/sovereign-root/frames/die-00.png"
+            },
+            {
+              "time": 180,
+              "src": "/game-assets/forest-sovereign-r1/sovereign-root/frames/die-01.png"
+            },
+            {
+              "time": 360,
+              "src": "/game-assets/forest-sovereign-r1/sovereign-root/frames/die-02.png"
+            },
+            {
+              "time": 540,
+              "src": "/game-assets/forest-sovereign-r1/sovereign-root/frames/die-03.png"
+            }
+          ]
+        },
+        "hit": {
+          "duration": 180,
+          "loop": false,
+          "impact": null,
+          "frames": [
+            {
+              "time": 0,
+              "src": "/game-assets/forest-sovereign-r1/sovereign-root/frames/idle-00.png"
+            }
+          ]
+        },
+        "wounded_idle": {
+          "duration": 1280,
+          "loop": true,
+          "impact": null,
+          "frames": [
+            {
+              "time": 0,
+              "src": "/game-assets/forest-sovereign-r1/sovereign-root/frames/idle-00.png"
+            },
+            {
+              "time": 320,
+              "src": "/game-assets/forest-sovereign-r1/sovereign-root/frames/idle-01.png"
+            },
+            {
+              "time": 640,
+              "src": "/game-assets/forest-sovereign-r1/sovereign-root/frames/idle-02.png"
+            },
+            {
+              "time": 960,
+              "src": "/game-assets/forest-sovereign-r1/sovereign-root/frames/idle-03.png"
+            }
+          ]
+        },
+        "spawn": {
+          "duration": 650,
+          "loop": false,
+          "impact": null,
+          "frames": [
+            {
+              "time": 0,
+              "src": "/game-assets/forest-sovereign-r1/sovereign-root/frames/idle-00.png"
+            }
+          ]
+        }
       }
     }
   },
@@ -23588,6 +23914,510 @@
         "lossless": true
       },
       "authorization": "User explicitly requested swapping the latest three-pose idle into the game model for in-game review,2026-10-05. All other states preserved. This repair request authorizes replacing the existing game animation; new gallery previews remain pending visual approval."
+    },
+    {
+      "source": "assets/characters/forest-sovereign/animations/frames32-r1/frames/idle-00.png",
+      "sha256": "486576e989c8b0f002ca6f77ad48af5fa15e88514e9b0b9ef2e379b742d81909",
+      "output": "forest-sovereign-r1/forest-sovereign/frames/idle-00.png",
+      "outputSha256": "486576e989c8b0f002ca6f77ad48af5fa15e88514e9b0b9ef2e379b742d81909",
+      "transform": "exact PNG copy; authored registration retained",
+      "status": "Pending approval",
+      "authorization": "User explicitly requested game integration on 2026-10-05."
+    },
+    {
+      "source": "assets/characters/forest-sovereign/animations/frames32-r1/frames/idle-01.png",
+      "sha256": "446ef25390b873afab71ffe68dea5c6af943f326ae4c4a6c8b5a8adc98479ecc",
+      "output": "forest-sovereign-r1/forest-sovereign/frames/idle-01.png",
+      "outputSha256": "446ef25390b873afab71ffe68dea5c6af943f326ae4c4a6c8b5a8adc98479ecc",
+      "transform": "exact PNG copy; authored registration retained",
+      "status": "Pending approval",
+      "authorization": "User explicitly requested game integration on 2026-10-05."
+    },
+    {
+      "source": "assets/characters/forest-sovereign/animations/frames32-r1/frames/idle-02.png",
+      "sha256": "c69f1da074087a8f1f7bc875f4400e719d23577d67c1d9cc4c2d790faefce1f9",
+      "output": "forest-sovereign-r1/forest-sovereign/frames/idle-02.png",
+      "outputSha256": "c69f1da074087a8f1f7bc875f4400e719d23577d67c1d9cc4c2d790faefce1f9",
+      "transform": "exact PNG copy; authored registration retained",
+      "status": "Pending approval",
+      "authorization": "User explicitly requested game integration on 2026-10-05."
+    },
+    {
+      "source": "assets/characters/forest-sovereign/animations/frames32-r1/frames/idle-03.png",
+      "sha256": "9cc1389b90f623571881b7728c79f95fba513530859b33b6a2d44c0185511953",
+      "output": "forest-sovereign-r1/forest-sovereign/frames/idle-03.png",
+      "outputSha256": "9cc1389b90f623571881b7728c79f95fba513530859b33b6a2d44c0185511953",
+      "transform": "exact PNG copy; authored registration retained",
+      "status": "Pending approval",
+      "authorization": "User explicitly requested game integration on 2026-10-05."
+    },
+    {
+      "source": "assets/characters/forest-sovereign/animations/frames32-r1/frames/attack-00.png",
+      "sha256": "df2488c26819ad0bb71597a144579aca2a78cdf626a53d1a36a0b78424c565bd",
+      "output": "forest-sovereign-r1/forest-sovereign/frames/attack-00.png",
+      "outputSha256": "df2488c26819ad0bb71597a144579aca2a78cdf626a53d1a36a0b78424c565bd",
+      "transform": "exact PNG copy; authored registration retained",
+      "status": "Pending approval",
+      "authorization": "User explicitly requested game integration on 2026-10-05."
+    },
+    {
+      "source": "assets/characters/forest-sovereign/animations/frames32-r1/frames/attack-01.png",
+      "sha256": "7a7588b6b15c2a495061b69b1c5c96cdb2b19f3896e2d15a3ac38111864a55f0",
+      "output": "forest-sovereign-r1/forest-sovereign/frames/attack-01.png",
+      "outputSha256": "7a7588b6b15c2a495061b69b1c5c96cdb2b19f3896e2d15a3ac38111864a55f0",
+      "transform": "exact PNG copy; authored registration retained",
+      "status": "Pending approval",
+      "authorization": "User explicitly requested game integration on 2026-10-05."
+    },
+    {
+      "source": "assets/characters/forest-sovereign/animations/frames32-r1/frames/attack-02.png",
+      "sha256": "d17057b331c81976c02c0f5d03f2361292d265fac3191b62de48305b9d8e2de9",
+      "output": "forest-sovereign-r1/forest-sovereign/frames/attack-02.png",
+      "outputSha256": "d17057b331c81976c02c0f5d03f2361292d265fac3191b62de48305b9d8e2de9",
+      "transform": "exact PNG copy; authored registration retained",
+      "status": "Pending approval",
+      "authorization": "User explicitly requested game integration on 2026-10-05."
+    },
+    {
+      "source": "assets/characters/forest-sovereign/animations/frames32-r1/frames/attack-03.png",
+      "sha256": "86392f1622f7f59d850331ccc48a0f3e6456d03d8ee0a29ef0d7bb7792c9d7d2",
+      "output": "forest-sovereign-r1/forest-sovereign/frames/attack-03.png",
+      "outputSha256": "86392f1622f7f59d850331ccc48a0f3e6456d03d8ee0a29ef0d7bb7792c9d7d2",
+      "transform": "exact PNG copy; authored registration retained",
+      "status": "Pending approval",
+      "authorization": "User explicitly requested game integration on 2026-10-05."
+    },
+    {
+      "source": "assets/characters/forest-sovereign/animations/frames32-r1/frames/attack-04.png",
+      "sha256": "448d66bd48c48b6ab141b923dce0b7a8e4ec329665ed0f06c16529ab49c64625",
+      "output": "forest-sovereign-r1/forest-sovereign/frames/attack-04.png",
+      "outputSha256": "448d66bd48c48b6ab141b923dce0b7a8e4ec329665ed0f06c16529ab49c64625",
+      "transform": "exact PNG copy; authored registration retained",
+      "status": "Pending approval",
+      "authorization": "User explicitly requested game integration on 2026-10-05."
+    },
+    {
+      "source": "assets/characters/forest-sovereign/animations/frames32-r1/frames/attack-05.png",
+      "sha256": "908ab7072e8ba21fcd2c1bcee5caf69ee123d5f056fc452206ab39e64fb768f1",
+      "output": "forest-sovereign-r1/forest-sovereign/frames/attack-05.png",
+      "outputSha256": "908ab7072e8ba21fcd2c1bcee5caf69ee123d5f056fc452206ab39e64fb768f1",
+      "transform": "exact PNG copy; authored registration retained",
+      "status": "Pending approval",
+      "authorization": "User explicitly requested game integration on 2026-10-05."
+    },
+    {
+      "source": "assets/characters/forest-sovereign/animations/frames32-r1/frames/attack-06.png",
+      "sha256": "bcc73e59cadfce8feef44aa541545b8deb7fc165968cdfc1d94e88364bb6aa7f",
+      "output": "forest-sovereign-r1/forest-sovereign/frames/attack-06.png",
+      "outputSha256": "bcc73e59cadfce8feef44aa541545b8deb7fc165968cdfc1d94e88364bb6aa7f",
+      "transform": "exact PNG copy; authored registration retained",
+      "status": "Pending approval",
+      "authorization": "User explicitly requested game integration on 2026-10-05."
+    },
+    {
+      "source": "assets/characters/forest-sovereign/animations/frames32-r1/frames/attack-07.png",
+      "sha256": "3d68c8b947442e5ce7bf855d6981255d0c6222af8f547cde303fee9e488443f0",
+      "output": "forest-sovereign-r1/forest-sovereign/frames/attack-07.png",
+      "outputSha256": "3d68c8b947442e5ce7bf855d6981255d0c6222af8f547cde303fee9e488443f0",
+      "transform": "exact PNG copy; authored registration retained",
+      "status": "Pending approval",
+      "authorization": "User explicitly requested game integration on 2026-10-05."
+    },
+    {
+      "source": "assets/characters/forest-sovereign/animations/frames32-r1/frames/hit-00.png",
+      "sha256": "3e4dcc1c59f92be71f3ec7463971b5d0d4da9b2ef095d2065356dbd4a5767a75",
+      "output": "forest-sovereign-r1/forest-sovereign/frames/hit-00.png",
+      "outputSha256": "3e4dcc1c59f92be71f3ec7463971b5d0d4da9b2ef095d2065356dbd4a5767a75",
+      "transform": "exact PNG copy; authored registration retained",
+      "status": "Pending approval",
+      "authorization": "User explicitly requested game integration on 2026-10-05."
+    },
+    {
+      "source": "assets/characters/forest-sovereign/animations/frames32-r1/frames/hit-01.png",
+      "sha256": "5cecf3f9a439259083f33bd3cf474ffacf140ef6abcd7ba3946304edcaf4235b",
+      "output": "forest-sovereign-r1/forest-sovereign/frames/hit-01.png",
+      "outputSha256": "5cecf3f9a439259083f33bd3cf474ffacf140ef6abcd7ba3946304edcaf4235b",
+      "transform": "exact PNG copy; authored registration retained",
+      "status": "Pending approval",
+      "authorization": "User explicitly requested game integration on 2026-10-05."
+    },
+    {
+      "source": "assets/characters/forest-sovereign/animations/frames32-r1/frames/hit-02.png",
+      "sha256": "51a902572aedfe8b54f0d43ccb6be65e47abe89e71ab6caffdf70bffbdccbea8",
+      "output": "forest-sovereign-r1/forest-sovereign/frames/hit-02.png",
+      "outputSha256": "51a902572aedfe8b54f0d43ccb6be65e47abe89e71ab6caffdf70bffbdccbea8",
+      "transform": "exact PNG copy; authored registration retained",
+      "status": "Pending approval",
+      "authorization": "User explicitly requested game integration on 2026-10-05."
+    },
+    {
+      "source": "assets/characters/forest-sovereign/animations/frames32-r1/frames/hit-03.png",
+      "sha256": "7c0b2e42671674eb291bae64bed33eee752932d9086b7c7be880d8d00660f7b1",
+      "output": "forest-sovereign-r1/forest-sovereign/frames/hit-03.png",
+      "outputSha256": "7c0b2e42671674eb291bae64bed33eee752932d9086b7c7be880d8d00660f7b1",
+      "transform": "exact PNG copy; authored registration retained",
+      "status": "Pending approval",
+      "authorization": "User explicitly requested game integration on 2026-10-05."
+    },
+    {
+      "source": "assets/characters/forest-sovereign/animations/frames32-r1/frames/wounded_idle-00.png",
+      "sha256": "a851e0683600d17f1a0424b1d2bbe95e2688cff1b8178da691a9719d3cf93a4f",
+      "output": "forest-sovereign-r1/forest-sovereign/frames/wounded_idle-00.png",
+      "outputSha256": "a851e0683600d17f1a0424b1d2bbe95e2688cff1b8178da691a9719d3cf93a4f",
+      "transform": "exact PNG copy; authored registration retained",
+      "status": "Pending approval",
+      "authorization": "User explicitly requested game integration on 2026-10-05."
+    },
+    {
+      "source": "assets/characters/forest-sovereign/animations/frames32-r1/frames/wounded_idle-01.png",
+      "sha256": "129b76b4f23ebae59e8e3601d8a1aff2b56ad616838f590de8887899c0b9a3a3",
+      "output": "forest-sovereign-r1/forest-sovereign/frames/wounded_idle-01.png",
+      "outputSha256": "129b76b4f23ebae59e8e3601d8a1aff2b56ad616838f590de8887899c0b9a3a3",
+      "transform": "exact PNG copy; authored registration retained",
+      "status": "Pending approval",
+      "authorization": "User explicitly requested game integration on 2026-10-05."
+    },
+    {
+      "source": "assets/characters/forest-sovereign/animations/frames32-r1/frames/wounded_idle-02.png",
+      "sha256": "ac7ee8094274efcfe5ba7bca0c067401c1158cb53b72effe484a532bc63b592c",
+      "output": "forest-sovereign-r1/forest-sovereign/frames/wounded_idle-02.png",
+      "outputSha256": "ac7ee8094274efcfe5ba7bca0c067401c1158cb53b72effe484a532bc63b592c",
+      "transform": "exact PNG copy; authored registration retained",
+      "status": "Pending approval",
+      "authorization": "User explicitly requested game integration on 2026-10-05."
+    },
+    {
+      "source": "assets/characters/forest-sovereign/animations/frames32-r1/frames/wounded_idle-03.png",
+      "sha256": "1a2b431fe58945be2e5fdb14246571a1c1fe0059969f40422c708e091c8c26fb",
+      "output": "forest-sovereign-r1/forest-sovereign/frames/wounded_idle-03.png",
+      "outputSha256": "1a2b431fe58945be2e5fdb14246571a1c1fe0059969f40422c708e091c8c26fb",
+      "transform": "exact PNG copy; authored registration retained",
+      "status": "Pending approval",
+      "authorization": "User explicitly requested game integration on 2026-10-05."
+    },
+    {
+      "source": "assets/characters/forest-sovereign/animations/frames32-r1/frames/cast-00.png",
+      "sha256": "a61db1ed0f6bb1cd37fe52bc12cfcaf3375fd0724d77b6e351c64deccbf0bf56",
+      "output": "forest-sovereign-r1/forest-sovereign/frames/cast-00.png",
+      "outputSha256": "a61db1ed0f6bb1cd37fe52bc12cfcaf3375fd0724d77b6e351c64deccbf0bf56",
+      "transform": "exact PNG copy; authored registration retained",
+      "status": "Pending approval",
+      "authorization": "User explicitly requested game integration on 2026-10-05."
+    },
+    {
+      "source": "assets/characters/forest-sovereign/animations/frames32-r1/frames/cast-01.png",
+      "sha256": "3904e0187f1ab0396d4fb08e20c21e70f79fe7ddfc4ef335b247da2759de1e30",
+      "output": "forest-sovereign-r1/forest-sovereign/frames/cast-01.png",
+      "outputSha256": "3904e0187f1ab0396d4fb08e20c21e70f79fe7ddfc4ef335b247da2759de1e30",
+      "transform": "exact PNG copy; authored registration retained",
+      "status": "Pending approval",
+      "authorization": "User explicitly requested game integration on 2026-10-05."
+    },
+    {
+      "source": "assets/characters/forest-sovereign/animations/frames32-r1/frames/cast-02.png",
+      "sha256": "fef7fca44f4b05679d9378fe52186e3d97575bd76dcbf8bff0573ca7b1456f59",
+      "output": "forest-sovereign-r1/forest-sovereign/frames/cast-02.png",
+      "outputSha256": "fef7fca44f4b05679d9378fe52186e3d97575bd76dcbf8bff0573ca7b1456f59",
+      "transform": "exact PNG copy; authored registration retained",
+      "status": "Pending approval",
+      "authorization": "User explicitly requested game integration on 2026-10-05."
+    },
+    {
+      "source": "assets/characters/forest-sovereign/animations/frames32-r1/frames/cast-03.png",
+      "sha256": "6bf30b0ae70b42d76fdedd54d6960217c409ae0e7750c469ca57a3a65b49675a",
+      "output": "forest-sovereign-r1/forest-sovereign/frames/cast-03.png",
+      "outputSha256": "6bf30b0ae70b42d76fdedd54d6960217c409ae0e7750c469ca57a3a65b49675a",
+      "transform": "exact PNG copy; authored registration retained",
+      "status": "Pending approval",
+      "authorization": "User explicitly requested game integration on 2026-10-05."
+    },
+    {
+      "source": "assets/characters/forest-sovereign/animations/frames32-r1/frames/die-00.png",
+      "sha256": "9280c9c6b5ec44204e9cd5471aae1f88510c13075b7207d5bb0807272fa29c30",
+      "output": "forest-sovereign-r1/forest-sovereign/frames/die-00.png",
+      "outputSha256": "9280c9c6b5ec44204e9cd5471aae1f88510c13075b7207d5bb0807272fa29c30",
+      "transform": "exact PNG copy; authored registration retained",
+      "status": "Pending approval",
+      "authorization": "User explicitly requested game integration on 2026-10-05."
+    },
+    {
+      "source": "assets/characters/forest-sovereign/animations/frames32-r1/frames/die-01.png",
+      "sha256": "fdec90145a75b99bb42c4490dfbaed91647e8e49d8f16ebe14986e7316433bc6",
+      "output": "forest-sovereign-r1/forest-sovereign/frames/die-01.png",
+      "outputSha256": "fdec90145a75b99bb42c4490dfbaed91647e8e49d8f16ebe14986e7316433bc6",
+      "transform": "exact PNG copy; authored registration retained",
+      "status": "Pending approval",
+      "authorization": "User explicitly requested game integration on 2026-10-05."
+    },
+    {
+      "source": "assets/characters/forest-sovereign/animations/frames32-r1/frames/die-02.png",
+      "sha256": "282c463a292572d6ba75a00c95b5d93c233f5eda1aefc3eac2cc370827723758",
+      "output": "forest-sovereign-r1/forest-sovereign/frames/die-02.png",
+      "outputSha256": "282c463a292572d6ba75a00c95b5d93c233f5eda1aefc3eac2cc370827723758",
+      "transform": "exact PNG copy; authored registration retained",
+      "status": "Pending approval",
+      "authorization": "User explicitly requested game integration on 2026-10-05."
+    },
+    {
+      "source": "assets/characters/forest-sovereign/animations/frames32-r1/frames/die-03.png",
+      "sha256": "6521fdd1b41e7f30b34b97b1dee3e59ce8bee53f8833c6ab63f752a93e400c4b",
+      "output": "forest-sovereign-r1/forest-sovereign/frames/die-03.png",
+      "outputSha256": "6521fdd1b41e7f30b34b97b1dee3e59ce8bee53f8833c6ab63f752a93e400c4b",
+      "transform": "exact PNG copy; authored registration retained",
+      "status": "Pending approval",
+      "authorization": "User explicitly requested game integration on 2026-10-05."
+    },
+    {
+      "source": "assets/characters/forest-sovereign/animations/frames32-r1/frames/die-04.png",
+      "sha256": "afeab262e577b1aeb07ef0a4624088168c3f470426f27eb677f8dc06e8e933ad",
+      "output": "forest-sovereign-r1/forest-sovereign/frames/die-04.png",
+      "outputSha256": "afeab262e577b1aeb07ef0a4624088168c3f470426f27eb677f8dc06e8e933ad",
+      "transform": "exact PNG copy; authored registration retained",
+      "status": "Pending approval",
+      "authorization": "User explicitly requested game integration on 2026-10-05."
+    },
+    {
+      "source": "assets/characters/forest-sovereign/animations/frames32-r1/frames/die-05.png",
+      "sha256": "15e8744a0f56aa2c5866af02c8bb475396997abec13adf6eb911e3d8a1a46edf",
+      "output": "forest-sovereign-r1/forest-sovereign/frames/die-05.png",
+      "outputSha256": "15e8744a0f56aa2c5866af02c8bb475396997abec13adf6eb911e3d8a1a46edf",
+      "transform": "exact PNG copy; authored registration retained",
+      "status": "Pending approval",
+      "authorization": "User explicitly requested game integration on 2026-10-05."
+    },
+    {
+      "source": "assets/characters/forest-sovereign/animations/frames32-r1/frames/die-06.png",
+      "sha256": "3b9c694e0ea99f9aa992b31df9526a7100d57ad1c84d37150326e221614071e7",
+      "output": "forest-sovereign-r1/forest-sovereign/frames/die-06.png",
+      "outputSha256": "3b9c694e0ea99f9aa992b31df9526a7100d57ad1c84d37150326e221614071e7",
+      "transform": "exact PNG copy; authored registration retained",
+      "status": "Pending approval",
+      "authorization": "User explicitly requested game integration on 2026-10-05."
+    },
+    {
+      "source": "assets/characters/forest-sovereign/animations/frames32-r1/frames/die-07.png",
+      "sha256": "367d3e36c07930f288d3d611ac5f7e04b1acd6827421f15fd62233aac164430c",
+      "output": "forest-sovereign-r1/forest-sovereign/frames/die-07.png",
+      "outputSha256": "367d3e36c07930f288d3d611ac5f7e04b1acd6827421f15fd62233aac164430c",
+      "transform": "exact PNG copy; authored registration retained",
+      "status": "Pending approval",
+      "authorization": "User explicitly requested game integration on 2026-10-05."
+    },
+    {
+      "source": "assets/characters/sovereign-root/animations/r1/frames/idle-00.png",
+      "sha256": "619c392675888da935c59747ae61cdc760e0bea99f740f77bcc19d9a54b438b4",
+      "output": "forest-sovereign-r1/sovereign-root/frames/idle-00.png",
+      "outputSha256": "619c392675888da935c59747ae61cdc760e0bea99f740f77bcc19d9a54b438b4",
+      "transform": "exact PNG copy; authored registration retained",
+      "status": "Pending approval",
+      "authorization": "User explicitly requested game integration on 2026-10-05."
+    },
+    {
+      "source": "assets/characters/sovereign-root/animations/r1/frames/idle-01.png",
+      "sha256": "5b0dac0f78613137a9eea6486376b02b759b129fea7f0c51c66599189657d737",
+      "output": "forest-sovereign-r1/sovereign-root/frames/idle-01.png",
+      "outputSha256": "5b0dac0f78613137a9eea6486376b02b759b129fea7f0c51c66599189657d737",
+      "transform": "exact PNG copy; authored registration retained",
+      "status": "Pending approval",
+      "authorization": "User explicitly requested game integration on 2026-10-05."
+    },
+    {
+      "source": "assets/characters/sovereign-root/animations/r1/frames/idle-02.png",
+      "sha256": "e5b4cad0311bab2f4289dea4f07d86cbfb1f3b0a05e86f46b2140ea64285b3cb",
+      "output": "forest-sovereign-r1/sovereign-root/frames/idle-02.png",
+      "outputSha256": "e5b4cad0311bab2f4289dea4f07d86cbfb1f3b0a05e86f46b2140ea64285b3cb",
+      "transform": "exact PNG copy; authored registration retained",
+      "status": "Pending approval",
+      "authorization": "User explicitly requested game integration on 2026-10-05."
+    },
+    {
+      "source": "assets/characters/sovereign-root/animations/r1/frames/idle-03.png",
+      "sha256": "fc1a80204f19e42d0332472f3f411d67b31f3c11904e6f0680cb9fd5ddc7c5c8",
+      "output": "forest-sovereign-r1/sovereign-root/frames/idle-03.png",
+      "outputSha256": "fc1a80204f19e42d0332472f3f411d67b31f3c11904e6f0680cb9fd5ddc7c5c8",
+      "transform": "exact PNG copy; authored registration retained",
+      "status": "Pending approval",
+      "authorization": "User explicitly requested game integration on 2026-10-05."
+    },
+    {
+      "source": "assets/characters/sovereign-root/animations/r1/frames/attack-00.png",
+      "sha256": "2ea4c8c69450393d360d0c36804bc4a62744c9f6c89748434eab43d2ac401edd",
+      "output": "forest-sovereign-r1/sovereign-root/frames/attack-00.png",
+      "outputSha256": "2ea4c8c69450393d360d0c36804bc4a62744c9f6c89748434eab43d2ac401edd",
+      "transform": "exact PNG copy; authored registration retained",
+      "status": "Pending approval",
+      "authorization": "User explicitly requested game integration on 2026-10-05."
+    },
+    {
+      "source": "assets/characters/sovereign-root/animations/r1/frames/attack-01.png",
+      "sha256": "cf17b8c77abdd07862e7b5f45f3e92dbc0b812328eba9669d1985cf0d6164e17",
+      "output": "forest-sovereign-r1/sovereign-root/frames/attack-01.png",
+      "outputSha256": "cf17b8c77abdd07862e7b5f45f3e92dbc0b812328eba9669d1985cf0d6164e17",
+      "transform": "exact PNG copy; authored registration retained",
+      "status": "Pending approval",
+      "authorization": "User explicitly requested game integration on 2026-10-05."
+    },
+    {
+      "source": "assets/characters/sovereign-root/animations/r1/frames/attack-02.png",
+      "sha256": "dcfd3d29620696815520406ed8e19a7065a558163f14fbac4d0ea2a24cedf00e",
+      "output": "forest-sovereign-r1/sovereign-root/frames/attack-02.png",
+      "outputSha256": "dcfd3d29620696815520406ed8e19a7065a558163f14fbac4d0ea2a24cedf00e",
+      "transform": "exact PNG copy; authored registration retained",
+      "status": "Pending approval",
+      "authorization": "User explicitly requested game integration on 2026-10-05."
+    },
+    {
+      "source": "assets/characters/sovereign-root/animations/r1/frames/attack-03.png",
+      "sha256": "19019f8d7e7b515a71df34bfb847e155edf5546a5f8a8e425a7571bc5eb44deb",
+      "output": "forest-sovereign-r1/sovereign-root/frames/attack-03.png",
+      "outputSha256": "19019f8d7e7b515a71df34bfb847e155edf5546a5f8a8e425a7571bc5eb44deb",
+      "transform": "exact PNG copy; authored registration retained",
+      "status": "Pending approval",
+      "authorization": "User explicitly requested game integration on 2026-10-05."
+    },
+    {
+      "source": "assets/characters/sovereign-root/animations/r1/frames/die-00.png",
+      "sha256": "95a71b066d88d4a4b6d62807b4865e097fe7dfa85fe3933d3f486449fef00426",
+      "output": "forest-sovereign-r1/sovereign-root/frames/die-00.png",
+      "outputSha256": "95a71b066d88d4a4b6d62807b4865e097fe7dfa85fe3933d3f486449fef00426",
+      "transform": "exact PNG copy; authored registration retained",
+      "status": "Pending approval",
+      "authorization": "User explicitly requested game integration on 2026-10-05."
+    },
+    {
+      "source": "assets/characters/sovereign-root/animations/r1/frames/die-01.png",
+      "sha256": "da0aec918559ccf51e5762540f72131a77a4cea3482fb47a1fe652594696810f",
+      "output": "forest-sovereign-r1/sovereign-root/frames/die-01.png",
+      "outputSha256": "da0aec918559ccf51e5762540f72131a77a4cea3482fb47a1fe652594696810f",
+      "transform": "exact PNG copy; authored registration retained",
+      "status": "Pending approval",
+      "authorization": "User explicitly requested game integration on 2026-10-05."
+    },
+    {
+      "source": "assets/characters/sovereign-root/animations/r1/frames/die-02.png",
+      "sha256": "262844ded6713086f55c7648c02fdfeb4c25ddc4c9e9b074012c543c2dcebc19",
+      "output": "forest-sovereign-r1/sovereign-root/frames/die-02.png",
+      "outputSha256": "262844ded6713086f55c7648c02fdfeb4c25ddc4c9e9b074012c543c2dcebc19",
+      "transform": "exact PNG copy; authored registration retained",
+      "status": "Pending approval",
+      "authorization": "User explicitly requested game integration on 2026-10-05."
+    },
+    {
+      "source": "assets/characters/sovereign-root/animations/r1/frames/die-03.png",
+      "sha256": "66b99a68ac8c50023ff5ef0ff9ec9723c1151dc9f4fc816da4f0d30e14712efd",
+      "output": "forest-sovereign-r1/sovereign-root/frames/die-03.png",
+      "outputSha256": "66b99a68ac8c50023ff5ef0ff9ec9723c1151dc9f4fc816da4f0d30e14712efd",
+      "transform": "exact PNG copy; authored registration retained",
+      "status": "Pending approval",
+      "authorization": "User explicitly requested game integration on 2026-10-05."
+    },
+    {
+      "source": "assets/characters/forest-sovereign/animations/frames32-r1/vfx/frames/rootwake-00.png",
+      "sha256": "65f13da806cc9b26e986f0b71cb47632f90a81d42e91c01e587886eeeada78c4",
+      "output": "forest-sovereign-r1/rootwake/frames/rootwake-00.png",
+      "outputSha256": "65f13da806cc9b26e986f0b71cb47632f90a81d42e91c01e587886eeeada78c4",
+      "transform": "exact PNG copy; authored registration retained",
+      "status": "Pending approval",
+      "authorization": "User explicitly requested game integration on 2026-10-05."
+    },
+    {
+      "source": "assets/characters/forest-sovereign/animations/frames32-r1/vfx/frames/rootwake-01.png",
+      "sha256": "8050f81f0191a4ece3ba0f1d6398ca62bb55022be93ca69ee37b173c4e26010f",
+      "output": "forest-sovereign-r1/rootwake/frames/rootwake-01.png",
+      "outputSha256": "8050f81f0191a4ece3ba0f1d6398ca62bb55022be93ca69ee37b173c4e26010f",
+      "transform": "exact PNG copy; authored registration retained",
+      "status": "Pending approval",
+      "authorization": "User explicitly requested game integration on 2026-10-05."
+    },
+    {
+      "source": "assets/characters/forest-sovereign/animations/frames32-r1/vfx/frames/rootwake-02.png",
+      "sha256": "053d63ba1a0980abf6ad1d9eb23a1c0314e15a68657ea20d421d302672e05f51",
+      "output": "forest-sovereign-r1/rootwake/frames/rootwake-02.png",
+      "outputSha256": "053d63ba1a0980abf6ad1d9eb23a1c0314e15a68657ea20d421d302672e05f51",
+      "transform": "exact PNG copy; authored registration retained",
+      "status": "Pending approval",
+      "authorization": "User explicitly requested game integration on 2026-10-05."
+    },
+    {
+      "source": "assets/characters/forest-sovereign/animations/frames32-r1/vfx/frames/rootwake-03.png",
+      "sha256": "30a8337331dbde55615d93e4dc1c0d42053109fe28d79cdef9495f6abc3acbe8",
+      "output": "forest-sovereign-r1/rootwake/frames/rootwake-03.png",
+      "outputSha256": "30a8337331dbde55615d93e4dc1c0d42053109fe28d79cdef9495f6abc3acbe8",
+      "transform": "exact PNG copy; authored registration retained",
+      "status": "Pending approval",
+      "authorization": "User explicitly requested game integration on 2026-10-05."
+    },
+    {
+      "source": "assets/characters/forest-sovereign/animations/frames32-r1/vfx/frames/verdant_cyclone-00.png",
+      "sha256": "71da4783de17ad7e55318f61c725f85e2beb7634b885239605dc92059a5843de",
+      "output": "forest-sovereign-r1/verdant_cyclone/frames/verdant_cyclone-00.png",
+      "outputSha256": "71da4783de17ad7e55318f61c725f85e2beb7634b885239605dc92059a5843de",
+      "transform": "exact PNG copy; authored registration retained",
+      "status": "Pending approval",
+      "authorization": "User explicitly requested game integration on 2026-10-05."
+    },
+    {
+      "source": "assets/characters/forest-sovereign/animations/frames32-r1/vfx/frames/verdant_cyclone-01.png",
+      "sha256": "ba73fca3499cdc22ac386af6c3dad8b326b6737ca8cd9280d10862161e6d53fe",
+      "output": "forest-sovereign-r1/verdant_cyclone/frames/verdant_cyclone-01.png",
+      "outputSha256": "ba73fca3499cdc22ac386af6c3dad8b326b6737ca8cd9280d10862161e6d53fe",
+      "transform": "exact PNG copy; authored registration retained",
+      "status": "Pending approval",
+      "authorization": "User explicitly requested game integration on 2026-10-05."
+    },
+    {
+      "source": "assets/characters/forest-sovereign/animations/frames32-r1/vfx/frames/verdant_cyclone-02.png",
+      "sha256": "743ee7dcc67020fac47c2287dc6f496c512d9fccef1dab4274ae57155dfc7a50",
+      "output": "forest-sovereign-r1/verdant_cyclone/frames/verdant_cyclone-02.png",
+      "outputSha256": "743ee7dcc67020fac47c2287dc6f496c512d9fccef1dab4274ae57155dfc7a50",
+      "transform": "exact PNG copy; authored registration retained",
+      "status": "Pending approval",
+      "authorization": "User explicitly requested game integration on 2026-10-05."
+    },
+    {
+      "source": "assets/characters/forest-sovereign/animations/frames32-r1/vfx/frames/verdant_cyclone-03.png",
+      "sha256": "b2234a88de3cd633aea6a1d19113777c2ba4a6b759c83b1662b8960ef4585f9d",
+      "output": "forest-sovereign-r1/verdant_cyclone/frames/verdant_cyclone-03.png",
+      "outputSha256": "b2234a88de3cd633aea6a1d19113777c2ba4a6b759c83b1662b8960ef4585f9d",
+      "transform": "exact PNG copy; authored registration retained",
+      "status": "Pending approval",
+      "authorization": "User explicitly requested game integration on 2026-10-05."
+    },
+    {
+      "source": "assets/characters/forest-sovereign/animations/frames32-r1/vfx/frames/crownfall-00.png",
+      "sha256": "9bac36d29f81c652c4e393f9f6a1da5f23991b649234d96e805ae87cf800b65f",
+      "output": "forest-sovereign-r1/crownfall/frames/crownfall-00.png",
+      "outputSha256": "9bac36d29f81c652c4e393f9f6a1da5f23991b649234d96e805ae87cf800b65f",
+      "transform": "exact PNG copy; authored registration retained",
+      "status": "Pending approval",
+      "authorization": "User explicitly requested game integration on 2026-10-05."
+    },
+    {
+      "source": "assets/characters/forest-sovereign/animations/frames32-r1/vfx/frames/crownfall-01.png",
+      "sha256": "cadfaa014cdcfcc52dc3d32512f8b11805673de66e710761ea7cd59aae2e7344",
+      "output": "forest-sovereign-r1/crownfall/frames/crownfall-01.png",
+      "outputSha256": "cadfaa014cdcfcc52dc3d32512f8b11805673de66e710761ea7cd59aae2e7344",
+      "transform": "exact PNG copy; authored registration retained",
+      "status": "Pending approval",
+      "authorization": "User explicitly requested game integration on 2026-10-05."
+    },
+    {
+      "source": "assets/characters/forest-sovereign/animations/frames32-r1/vfx/frames/crownfall-02.png",
+      "sha256": "c8fdbafa60a98724c1281dba579c97c8af7ad1417f0cdb10165ef8aa6cb2faaf",
+      "output": "forest-sovereign-r1/crownfall/frames/crownfall-02.png",
+      "outputSha256": "c8fdbafa60a98724c1281dba579c97c8af7ad1417f0cdb10165ef8aa6cb2faaf",
+      "transform": "exact PNG copy; authored registration retained",
+      "status": "Pending approval",
+      "authorization": "User explicitly requested game integration on 2026-10-05."
+    },
+    {
+      "source": "assets/characters/forest-sovereign/animations/frames32-r1/vfx/frames/crownfall-03.png",
+      "sha256": "fe23e55346ad3eea15b40de532f4d9c16561c82d623902f032bef2e7e6fda4a8",
+      "output": "forest-sovereign-r1/crownfall/frames/crownfall-03.png",
+      "outputSha256": "fe23e55346ad3eea15b40de532f4d9c16561c82d623902f032bef2e7e6fda4a8",
+      "transform": "exact PNG copy; authored registration retained",
+      "status": "Pending approval",
+      "authorization": "User explicitly requested game integration on 2026-10-05."
     }
   ],
   "integration": {
@@ -25331,6 +26161,95 @@
       },
       "reason": "User requested Imp one third larger and other summons at enemy scale, then reduced Hellhound by 30% from 200px to 140px. Hellhound presentation overrides relative source proportions; every actor retains one uniform scale across its complete animation.",
       "root": "Source root anchored to model container bottom; same transform across all frames."
+    }
+  },
+  "forestSpells": {
+    "rootwake": {
+      "size": [
+        640,
+        560
+      ],
+      "anchor": [
+        320,
+        450
+      ],
+      "duration": 680,
+      "frames": [
+        {
+          "src": "/game-assets/forest-sovereign-r1/rootwake/frames/rootwake-00.png",
+          "time": 0
+        },
+        {
+          "src": "/game-assets/forest-sovereign-r1/rootwake/frames/rootwake-01.png",
+          "time": 160
+        },
+        {
+          "src": "/game-assets/forest-sovereign-r1/rootwake/frames/rootwake-02.png",
+          "time": 300
+        },
+        {
+          "src": "/game-assets/forest-sovereign-r1/rootwake/frames/rootwake-03.png",
+          "time": 460
+        }
+      ]
+    },
+    "verdant_cyclone": {
+      "size": [
+        640,
+        560
+      ],
+      "anchor": [
+        320,
+        510
+      ],
+      "duration": 820,
+      "frames": [
+        {
+          "src": "/game-assets/forest-sovereign-r1/verdant_cyclone/frames/verdant_cyclone-00.png",
+          "time": 0
+        },
+        {
+          "src": "/game-assets/forest-sovereign-r1/verdant_cyclone/frames/verdant_cyclone-01.png",
+          "time": 160
+        },
+        {
+          "src": "/game-assets/forest-sovereign-r1/verdant_cyclone/frames/verdant_cyclone-02.png",
+          "time": 350
+        },
+        {
+          "src": "/game-assets/forest-sovereign-r1/verdant_cyclone/frames/verdant_cyclone-03.png",
+          "time": 570
+        }
+      ]
+    },
+    "crownfall": {
+      "size": [
+        640,
+        560
+      ],
+      "anchor": [
+        320,
+        510
+      ],
+      "duration": 820,
+      "frames": [
+        {
+          "src": "/game-assets/forest-sovereign-r1/crownfall/frames/crownfall-00.png",
+          "time": 0
+        },
+        {
+          "src": "/game-assets/forest-sovereign-r1/crownfall/frames/crownfall-01.png",
+          "time": 160
+        },
+        {
+          "src": "/game-assets/forest-sovereign-r1/crownfall/frames/crownfall-02.png",
+          "time": 350
+        },
+        {
+          "src": "/game-assets/forest-sovereign-r1/crownfall/frames/crownfall-03.png",
+          "time": 570
+        }
+      ]
     }
   }
 }

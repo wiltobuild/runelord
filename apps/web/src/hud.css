@@ -457,3 +457,11 @@ main.battle-ui { width:1672px; height:941px; min-height:0; zoom:var(--hud-scale)
 .battle-ui .packed-status .minion-details { width:100%; max-width:none; margin:0; }
 .battle-ui .packed-status .minion-name { font-size:14px; gap:3px; }
 /* Selecting a health control lifts its model for inspection without resizing it. */
+
+/* Authored forest geometry: same foot anchor in every pose, roots face the party. */
+.battle-ui .enemies .forest-sovereign .actor-sprite{left:-20px;top:55px;width:360px;height:315px;max-height:315px}
+.battle-ui .enemies .forest-sovereign .actor-sprite img{width:100%;height:100%;object-fit:fill;transform:scale(1.55);transform-origin:50% 91.0714%}
+.battle-ui .enemies .living-root .actor-sprite{left:-60px;top:28px;width:280px;height:245px;max-height:245px}
+.battle-ui .enemies .living-root .actor-sprite img{width:100%;height:100%;object-fit:fill;transform:none}
+.battle-ui .enemies .living-root .actor-sprite.arriving{animation:none}
+.battle-ui .enemies .forest-sovereign .boss-phase,.battle-ui .enemies .living-root .boss-phase{color:#d2e69b}

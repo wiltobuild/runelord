@@ -1,0 +1,554 @@
+{
+  "schema": 1,
+  "id": "sovereign-root",
+  "method": "reference-conditioned whole-character frames",
+  "canvas": [
+    640,
+    560
+  ],
+  "anchor": [
+    320,
+    510
+  ],
+  "facing": "left",
+  "coordinateSystem": "top-left pixels; x right, y down",
+  "states": {
+    "idle": {
+      "files": [
+        "frames/idle-00.png",
+        "frames/idle-01.png",
+        "frames/idle-02.png",
+        "frames/idle-03.png"
+      ],
+      "sequence": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "durationsMs": [
+        320,
+        320,
+        320,
+        320
+      ],
+      "loop": true,
+      "holdLastFrame": false,
+      "nextState": "idle",
+      "atlas": "idle-atlas.png",
+      "frameRects": [
+        [
+          0,
+          0,
+          640,
+          560
+        ],
+        [
+          640,
+          0,
+          640,
+          560
+        ],
+        [
+          1280,
+          0,
+          640,
+          560
+        ],
+        [
+          1920,
+          0,
+          640,
+          560
+        ]
+      ],
+      "events": []
+    },
+    "attack": {
+      "files": [
+        "frames/attack-00.png",
+        "frames/attack-01.png",
+        "frames/attack-02.png",
+        "frames/attack-03.png"
+      ],
+      "sequence": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "durationsMs": [
+        160,
+        100,
+        100,
+        180
+      ],
+      "loop": false,
+      "holdLastFrame": false,
+      "nextState": "idle",
+      "atlas": "attack-atlas.png",
+      "frameRects": [
+        [
+          0,
+          0,
+          640,
+          560
+        ],
+        [
+          640,
+          0,
+          640,
+          560
+        ],
+        [
+          1280,
+          0,
+          640,
+          560
+        ],
+        [
+          1920,
+          0,
+          640,
+          560
+        ]
+      ],
+      "events": [
+        {
+          "name": "impact",
+          "timeMs": 160
+        }
+      ]
+    },
+    "die": {
+      "files": [
+        "frames/die-00.png",
+        "frames/die-01.png",
+        "frames/die-02.png",
+        "frames/die-03.png"
+      ],
+      "sequence": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "durationsMs": [
+        180,
+        180,
+        180,
+        1100
+      ],
+      "loop": false,
+      "holdLastFrame": true,
+      "nextState": "terminal",
+      "atlas": "die-atlas.png",
+      "frameRects": [
+        [
+          0,
+          0,
+          640,
+          560
+        ],
+        [
+          640,
+          0,
+          640,
+          560
+        ],
+        [
+          1280,
+          0,
+          640,
+          560
+        ],
+        [
+          1920,
+          0,
+          640,
+          560
+        ]
+      ],
+      "events": []
+    }
+  },
+  "sourceRects": {
+    "idle": [
+      {
+        "trim": [
+          62,
+          9,
+          316,
+          359
+        ],
+        "scale": 0.8571428571428571,
+        "offset": [
+          212,
+          210
+        ],
+        "sourceAnchor": [
+          188.5,
+          359
+        ],
+        "exportAnchor": [
+          320,
+          510
+        ],
+        "sheet": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\characters\\sovereign-root\\animations\\r1\\source\\root-sheet.png",
+        "cell": [
+          0,
+          0,
+          362,
+          361
+        ],
+        "sha256": "60b71a6187174e45d6d48ae3bf61c305315930aa55b8ae4525332efcb39ca212"
+      },
+      {
+        "trim": [
+          63,
+          4,
+          312,
+          359
+        ],
+        "scale": 0.8571428571428571,
+        "offset": [
+          214,
+          206
+        ],
+        "sourceAnchor": [
+          187.0,
+          359
+        ],
+        "exportAnchor": [
+          320,
+          510
+        ],
+        "sheet": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\characters\\sovereign-root\\animations\\r1\\source\\root-sheet.png",
+        "cell": [
+          362,
+          0,
+          724,
+          361
+        ],
+        "sha256": "60b71a6187174e45d6d48ae3bf61c305315930aa55b8ae4525332efcb39ca212"
+      },
+      {
+        "trim": [
+          72,
+          6,
+          316,
+          359
+        ],
+        "scale": 0.8571428571428571,
+        "offset": [
+          216,
+          207
+        ],
+        "sourceAnchor": [
+          193.5,
+          359
+        ],
+        "exportAnchor": [
+          320,
+          510
+        ],
+        "sheet": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\characters\\sovereign-root\\animations\\r1\\source\\root-sheet.png",
+        "cell": [
+          724,
+          0,
+          1086,
+          361
+        ],
+        "sha256": "60b71a6187174e45d6d48ae3bf61c305315930aa55b8ae4525332efcb39ca212"
+      },
+      {
+        "trim": [
+          61,
+          7,
+          304,
+          359
+        ],
+        "scale": 0.8571428571428571,
+        "offset": [
+          216,
+          208
+        ],
+        "sourceAnchor": [
+          182.0,
+          359
+        ],
+        "exportAnchor": [
+          320,
+          510
+        ],
+        "sheet": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\characters\\sovereign-root\\animations\\r1\\source\\root-sheet.png",
+        "cell": [
+          1086,
+          0,
+          1448,
+          361
+        ],
+        "sha256": "60b71a6187174e45d6d48ae3bf61c305315930aa55b8ae4525332efcb39ca212"
+      }
+    ],
+    "attack": [
+      {
+        "trim": [
+          63,
+          23,
+          337,
+          346
+        ],
+        "scale": 0.8571428571428571,
+        "offset": [
+          211,
+          233
+        ],
+        "sourceAnchor": [
+          190.0,
+          346
+        ],
+        "exportAnchor": [
+          320,
+          510
+        ],
+        "sheet": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\characters\\sovereign-root\\animations\\r1\\source\\root-sheet.png",
+        "cell": [
+          0,
+          361,
+          351,
+          719
+        ],
+        "sha256": "60b71a6187174e45d6d48ae3bf61c305315930aa55b8ae4525332efcb39ca212"
+      },
+      {
+        "trim": [
+          1,
+          74,
+          363,
+          347
+        ],
+        "scale": 0.8571428571428571,
+        "offset": [
+          122,
+          276
+        ],
+        "sourceAnchor": [
+          232.0,
+          347
+        ],
+        "exportAnchor": [
+          320,
+          510
+        ],
+        "sheet": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\characters\\sovereign-root\\animations\\r1\\source\\root-sheet.png",
+        "cell": [
+          351,
+          361,
+          719,
+          719
+        ],
+        "sha256": "60b71a6187174e45d6d48ae3bf61c305315930aa55b8ae4525332efcb39ca212"
+      },
+      {
+        "trim": [
+          1,
+          139,
+          402,
+          348
+        ],
+        "scale": 0.8571428571428571,
+        "offset": [
+          128,
+          331
+        ],
+        "sourceAnchor": [
+          225.0,
+          348
+        ],
+        "exportAnchor": [
+          320,
+          510
+        ],
+        "sheet": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\characters\\sovereign-root\\animations\\r1\\source\\root-sheet.png",
+        "cell": [
+          719,
+          361,
+          1121,
+          719
+        ],
+        "sha256": "60b71a6187174e45d6d48ae3bf61c305315930aa55b8ae4525332efcb39ca212"
+      },
+      {
+        "trim": [
+          0,
+          1,
+          275,
+          347
+        ],
+        "scale": 0.8571428571428571,
+        "offset": [
+          203,
+          213
+        ],
+        "sourceAnchor": [
+          137.0,
+          347
+        ],
+        "exportAnchor": [
+          320,
+          510
+        ],
+        "sheet": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\characters\\sovereign-root\\animations\\r1\\source\\root-sheet.png",
+        "cell": [
+          1121,
+          361,
+          1448,
+          719
+        ],
+        "sha256": "60b71a6187174e45d6d48ae3bf61c305315930aa55b8ae4525332efcb39ca212"
+      }
+    ],
+    "die": [
+      {
+        "trim": [
+          67,
+          1,
+          321,
+          337
+        ],
+        "scale": 0.8571428571428571,
+        "offset": [
+          211,
+          222
+        ],
+        "sourceAnchor": [
+          194.0,
+          337
+        ],
+        "exportAnchor": [
+          320,
+          510
+        ],
+        "sheet": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\characters\\sovereign-root\\animations\\r1\\source\\root-sheet.png",
+        "cell": [
+          0,
+          719,
+          362,
+          1086
+        ],
+        "sha256": "60b71a6187174e45d6d48ae3bf61c305315930aa55b8ae4525332efcb39ca212"
+      },
+      {
+        "trim": [
+          67,
+          103,
+          324,
+          336
+        ],
+        "scale": 0.8571428571428571,
+        "offset": [
+          208,
+          310
+        ],
+        "sourceAnchor": [
+          197.5,
+          336
+        ],
+        "exportAnchor": [
+          320,
+          510
+        ],
+        "sheet": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\characters\\sovereign-root\\animations\\r1\\source\\root-sheet.png",
+        "cell": [
+          362,
+          719,
+          724,
+          1086
+        ],
+        "sha256": "60b71a6187174e45d6d48ae3bf61c305315930aa55b8ae4525332efcb39ca212"
+      },
+      {
+        "trim": [
+          33,
+          188,
+          326,
+          338
+        ],
+        "scale": 0.8571428571428571,
+        "offset": [
+          192,
+          381
+        ],
+        "sourceAnchor": [
+          182.5,
+          338
+        ],
+        "exportAnchor": [
+          320,
+          510
+        ],
+        "sheet": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\characters\\sovereign-root\\animations\\r1\\source\\root-sheet.png",
+        "cell": [
+          724,
+          719,
+          1086,
+          1086
+        ],
+        "sha256": "60b71a6187174e45d6d48ae3bf61c305315930aa55b8ae4525332efcb39ca212"
+      },
+      {
+        "trim": [
+          47,
+          219,
+          313,
+          337
+        ],
+        "scale": 0.8571428571428571,
+        "offset": [
+          206,
+          409
+        ],
+        "sourceAnchor": [
+          179.5,
+          337
+        ],
+        "exportAnchor": [
+          320,
+          510
+        ],
+        "sheet": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\characters\\sovereign-root\\animations\\r1\\source\\root-sheet.png",
+        "cell": [
+          1086,
+          719,
+          1448,
+          1086
+        ],
+        "sha256": "60b71a6187174e45d6d48ae3bf61c305315930aa55b8ae4525332efcb39ca212"
+      }
+    ]
+  },
+  "limitations": [
+    "Generated non-idle pose variation accepted by user; original proof preserved.",
+    "Whole-frame source art, no separated rig.",
+    "Game integration not requested.",
+    "Minor leaf/base contour variation and four-pose stepping remain.",
+    "Some source action/VFX sheet edges have tight margins; no repaint was requested for non-idles."
+  ],
+  "review": "Independent idle QA pass with minor notes; non-idle drawing variation accepted by user.",
+  "frameCount": 12,
+  "hashes": {
+    "frames/attack-00.png": "2ea4c8c69450393d360d0c36804bc4a62744c9f6c89748434eab43d2ac401edd",
+    "frames/attack-01.png": "cf17b8c77abdd07862e7b5f45f3e92dbc0b812328eba9669d1985cf0d6164e17",
+    "frames/attack-02.png": "dcfd3d29620696815520406ed8e19a7065a558163f14fbac4d0ea2a24cedf00e",
+    "frames/attack-03.png": "19019f8d7e7b515a71df34bfb847e155edf5546a5f8a8e425a7571bc5eb44deb",
+    "frames/die-00.png": "95a71b066d88d4a4b6d62807b4865e097fe7dfa85fe3933d3f486449fef00426",
+    "frames/die-01.png": "da0aec918559ccf51e5762540f72131a77a4cea3482fb47a1fe652594696810f",
+    "frames/die-02.png": "262844ded6713086f55c7648c02fdfeb4c25ddc4c9e9b074012c543c2dcebc19",
+    "frames/die-03.png": "66b99a68ac8c50023ff5ef0ff9ec9723c1151dc9f4fc816da4f0d30e14712efd",
+    "frames/idle-00.png": "619c392675888da935c59747ae61cdc760e0bea99f740f77bcc19d9a54b438b4",
+    "frames/idle-01.png": "5b0dac0f78613137a9eea6486376b02b759b129fea7f0c51c66599189657d737",
+    "frames/idle-02.png": "e5b4cad0311bab2f4289dea4f07d86cbfb1f3b0a05e86f46b2140ea64285b3cb",
+    "frames/idle-03.png": "fc1a80204f19e42d0332472f3f411d67b31f3c11904e6f0680cb9fd5ddc7c5c8"
+  }
+}

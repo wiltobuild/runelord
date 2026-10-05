@@ -505,12 +505,12 @@ function App({ assets }: { assets: Assets }) {
               {state.enemies.map((e) => {
                 const m = intent(state, e);
                 const enemyName = e.name;
-                const moveDescription = m.kind === "summon" ? "Summons a demon ally" : m.kind === "shield" ? `Gains ${m.guard ?? 0} Guard` : `${m.damage} damage. ${intentLabel(state, m.targeting)}`;
+                const moveDescription = m.kind === "summon" ? (e.boss === "forest-sovereign" ? "Raises up to 2 living roots" : "Summons a demon ally") : m.kind === "shield" ? `Gains ${m.guard ?? 0} Guard` : `${m.damage} damage. ${intentLabel(state, m.targeting)}`;
                 return (
                   <button
                     key={e.id}
                     data-actor={`enemy-${e.id}`}
-                    className={`enemy ${e.boss ? "demon-lord" : ""} ${e.summonedBy ? "boss-summon" : ""} ${state.focus === e.id ? "focused" : ""} ${e.hp <= 0 ? "fallen" : ""} ${selected && e.hp > 0 ? "targetable" : ""}`}
+                    className={`enemy ${e.boss ? "demon-lord" : ""} ${e.art === "forest-sovereign" ? "forest-sovereign" : ""} ${e.art === "sovereign-root" ? "living-root" : ""} ${e.summonedBy ? "boss-summon" : ""} ${state.focus === e.id ? "focused" : ""} ${e.hp <= 0 ? "fallen" : ""} ${selected && e.hp > 0 ? "targetable" : ""}`}
                     disabled={e.hp <= 0 || phase !== "combat" || busy || !!(selected && cardTargetsUnit(selected.id))}
                     onClick={() =>
                       selected
@@ -539,7 +539,7 @@ function App({ assets }: { assets: Assets }) {
                     />
                     <div className="enemy-status">
                       <EnemyName name={enemyName} />
-                      {e.boss && <span className="boss-phase">{e.bossPhase === 2 ? "PHASE II - ENRAGED" : "PHASE I - INFERNAL SOVEREIGN"}</span>}{e.summonedBy && <span className="boss-phase">SUMMONED DEMON</span>}
+                      {e.boss && <span className="boss-phase">{e.bossPhase === 2 ? "PHASE II - ENRAGED" : e.boss === "forest-sovereign" ? "PHASE I - FOREST SOVEREIGN" : "PHASE I - INFERNAL SOVEREIGN"}</span>}{e.summonedBy && <span className="boss-phase">{e.art === "sovereign-root" ? "LIVING ROOT" : "SUMMONED DEMON"}</span>}
                       <div className="hp-track">
                         <i style={{ width: `${(e.hp / e.maxHp) * 100}%` }} />
                         <span>
@@ -559,7 +559,7 @@ function App({ assets }: { assets: Assets }) {
               })}
             </div>
             {director.husks.map(husk => <img key={husk.id} src={husk.src} style={husk.style} className="fire-death-husk" alt="" aria-hidden="true" />)}
-            <SpellEffects effects={director.effects} />
+            <SpellEffects effects={director.effects} assets={assets} />
             <div className="damage-numbers" aria-hidden="true">
               {director.numbers.map((n) => (
                 <span key={n.id} className={n.cause === "scorch" ? "scorch-number" : undefined} data-label={n.cause === "scorch" ? n.label : undefined} style={{ left: n.point.x, top: n.point.y }}>

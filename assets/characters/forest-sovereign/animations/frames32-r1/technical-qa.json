@@ -1,0 +1,860 @@
+{
+  "sovereign": {
+    "frameCount": 32,
+    "uniqueHashes": 32,
+    "checks": [
+      {
+        "file": "frames/idle-00.png",
+        "size": [
+          640,
+          560
+        ],
+        "alphaTransparentPixels": 265081,
+        "bounds": [
+          161,
+          90,
+          470,
+          510
+        ],
+        "touchesCanvas": false
+      },
+      {
+        "file": "frames/idle-01.png",
+        "size": [
+          640,
+          560
+        ],
+        "alphaTransparentPixels": 264930,
+        "bounds": [
+          162,
+          90,
+          470,
+          510
+        ],
+        "touchesCanvas": false
+      },
+      {
+        "file": "frames/idle-02.png",
+        "size": [
+          640,
+          560
+        ],
+        "alphaTransparentPixels": 266235,
+        "bounds": [
+          162,
+          94,
+          471,
+          510
+        ],
+        "touchesCanvas": false
+      },
+      {
+        "file": "frames/idle-03.png",
+        "size": [
+          640,
+          560
+        ],
+        "alphaTransparentPixels": 265219,
+        "bounds": [
+          162,
+          95,
+          471,
+          510
+        ],
+        "touchesCanvas": false
+      },
+      {
+        "file": "frames/attack-00.png",
+        "size": [
+          640,
+          560
+        ],
+        "alphaTransparentPixels": 258808,
+        "bounds": [
+          154,
+          90,
+          479,
+          510
+        ],
+        "touchesCanvas": false
+      },
+      {
+        "file": "frames/attack-01.png",
+        "size": [
+          640,
+          560
+        ],
+        "alphaTransparentPixels": 263605,
+        "bounds": [
+          105,
+          137,
+          491,
+          510
+        ],
+        "touchesCanvas": false
+      },
+      {
+        "file": "frames/attack-02.png",
+        "size": [
+          640,
+          560
+        ],
+        "alphaTransparentPixels": 268083,
+        "bounds": [
+          159,
+          90,
+          504,
+          510
+        ],
+        "touchesCanvas": false
+      },
+      {
+        "file": "frames/attack-03.png",
+        "size": [
+          640,
+          560
+        ],
+        "alphaTransparentPixels": 263624,
+        "bounds": [
+          118,
+          173,
+          524,
+          510
+        ],
+        "touchesCanvas": false
+      },
+      {
+        "file": "frames/attack-04.png",
+        "size": [
+          640,
+          560
+        ],
+        "alphaTransparentPixels": 260351,
+        "bounds": [
+          115,
+          130,
+          526,
+          510
+        ],
+        "touchesCanvas": false
+      },
+      {
+        "file": "frames/attack-05.png",
+        "size": [
+          640,
+          560
+        ],
+        "alphaTransparentPixels": 271342,
+        "bounds": [
+          129,
+          173,
+          512,
+          510
+        ],
+        "touchesCanvas": false
+      },
+      {
+        "file": "frames/attack-06.png",
+        "size": [
+          640,
+          560
+        ],
+        "alphaTransparentPixels": 255929,
+        "bounds": [
+          117,
+          104,
+          487,
+          510
+        ],
+        "touchesCanvas": false
+      },
+      {
+        "file": "frames/attack-07.png",
+        "size": [
+          640,
+          560
+        ],
+        "alphaTransparentPixels": 258352,
+        "bounds": [
+          156,
+          98,
+          479,
+          510
+        ],
+        "touchesCanvas": false
+      },
+      {
+        "file": "frames/hit-00.png",
+        "size": [
+          640,
+          560
+        ],
+        "alphaTransparentPixels": 267418,
+        "bounds": [
+          157,
+          90,
+          468,
+          510
+        ],
+        "touchesCanvas": false
+      },
+      {
+        "file": "frames/hit-01.png",
+        "size": [
+          640,
+          560
+        ],
+        "alphaTransparentPixels": 272629,
+        "bounds": [
+          145,
+          117,
+          501,
+          510
+        ],
+        "touchesCanvas": false
+      },
+      {
+        "file": "frames/hit-02.png",
+        "size": [
+          640,
+          560
+        ],
+        "alphaTransparentPixels": 265220,
+        "bounds": [
+          124,
+          98,
+          486,
+          510
+        ],
+        "touchesCanvas": false
+      },
+      {
+        "file": "frames/hit-03.png",
+        "size": [
+          640,
+          560
+        ],
+        "alphaTransparentPixels": 266274,
+        "bounds": [
+          162,
+          96,
+          472,
+          510
+        ],
+        "touchesCanvas": false
+      },
+      {
+        "file": "frames/wounded_idle-00.png",
+        "size": [
+          640,
+          560
+        ],
+        "alphaTransparentPixels": 264602,
+        "bounds": [
+          166,
+          90,
+          463,
+          510
+        ],
+        "touchesCanvas": false
+      },
+      {
+        "file": "frames/wounded_idle-01.png",
+        "size": [
+          640,
+          560
+        ],
+        "alphaTransparentPixels": 263723,
+        "bounds": [
+          165,
+          93,
+          464,
+          510
+        ],
+        "touchesCanvas": false
+      },
+      {
+        "file": "frames/wounded_idle-02.png",
+        "size": [
+          640,
+          560
+        ],
+        "alphaTransparentPixels": 261874,
+        "bounds": [
+          164,
+          89,
+          463,
+          510
+        ],
+        "touchesCanvas": false
+      },
+      {
+        "file": "frames/wounded_idle-03.png",
+        "size": [
+          640,
+          560
+        ],
+        "alphaTransparentPixels": 262747,
+        "bounds": [
+          166,
+          89,
+          464,
+          510
+        ],
+        "touchesCanvas": false
+      },
+      {
+        "file": "frames/cast-00.png",
+        "size": [
+          640,
+          560
+        ],
+        "alphaTransparentPixels": 270090,
+        "bounds": [
+          111,
+          90,
+          495,
+          510
+        ],
+        "touchesCanvas": false
+      },
+      {
+        "file": "frames/cast-01.png",
+        "size": [
+          640,
+          560
+        ],
+        "alphaTransparentPixels": 274549,
+        "bounds": [
+          89,
+          141,
+          515,
+          510
+        ],
+        "touchesCanvas": false
+      },
+      {
+        "file": "frames/cast-02.png",
+        "size": [
+          640,
+          560
+        ],
+        "alphaTransparentPixels": 271461,
+        "bounds": [
+          54,
+          166,
+          500,
+          510
+        ],
+        "touchesCanvas": false
+      },
+      {
+        "file": "frames/cast-03.png",
+        "size": [
+          640,
+          560
+        ],
+        "alphaTransparentPixels": 263674,
+        "bounds": [
+          135,
+          93,
+          485,
+          510
+        ],
+        "touchesCanvas": false
+      },
+      {
+        "file": "frames/die-00.png",
+        "size": [
+          640,
+          560
+        ],
+        "alphaTransparentPixels": 274333,
+        "bounds": [
+          174,
+          90,
+          465,
+          510
+        ],
+        "touchesCanvas": false
+      },
+      {
+        "file": "frames/die-01.png",
+        "size": [
+          640,
+          560
+        ],
+        "alphaTransparentPixels": 276080,
+        "bounds": [
+          176,
+          104,
+          462,
+          510
+        ],
+        "touchesCanvas": false
+      },
+      {
+        "file": "frames/die-02.png",
+        "size": [
+          640,
+          560
+        ],
+        "alphaTransparentPixels": 284352,
+        "bounds": [
+          149,
+          186,
+          491,
+          510
+        ],
+        "touchesCanvas": false
+      },
+      {
+        "file": "frames/die-03.png",
+        "size": [
+          640,
+          560
+        ],
+        "alphaTransparentPixels": 291093,
+        "bounds": [
+          150,
+          229,
+          490,
+          510
+        ],
+        "touchesCanvas": false
+      },
+      {
+        "file": "frames/die-04.png",
+        "size": [
+          640,
+          560
+        ],
+        "alphaTransparentPixels": 296903,
+        "bounds": [
+          130,
+          280,
+          510,
+          510
+        ],
+        "touchesCanvas": false
+      },
+      {
+        "file": "frames/die-05.png",
+        "size": [
+          640,
+          560
+        ],
+        "alphaTransparentPixels": 307472,
+        "bounds": [
+          141,
+          319,
+          500,
+          510
+        ],
+        "touchesCanvas": false
+      },
+      {
+        "file": "frames/die-06.png",
+        "size": [
+          640,
+          560
+        ],
+        "alphaTransparentPixels": 310633,
+        "bounds": [
+          153,
+          321,
+          488,
+          510
+        ],
+        "touchesCanvas": false
+      },
+      {
+        "file": "frames/die-07.png",
+        "size": [
+          640,
+          560
+        ],
+        "alphaTransparentPixels": 315909,
+        "bounds": [
+          152,
+          338,
+          489,
+          510
+        ],
+        "touchesCanvas": false
+      }
+    ]
+  },
+  "root": {
+    "frameCount": 12,
+    "uniqueHashes": 12,
+    "checks": [
+      {
+        "file": "frames/idle-00.png",
+        "size": [
+          640,
+          560
+        ],
+        "alphaTransparentPixels": 320234,
+        "bounds": [
+          212,
+          210,
+          430,
+          510
+        ],
+        "touchesCanvas": false
+      },
+      {
+        "file": "frames/idle-01.png",
+        "size": [
+          640,
+          560
+        ],
+        "alphaTransparentPixels": 323028,
+        "bounds": [
+          214,
+          206,
+          427,
+          510
+        ],
+        "touchesCanvas": false
+      },
+      {
+        "file": "frames/idle-02.png",
+        "size": [
+          640,
+          560
+        ],
+        "alphaTransparentPixels": 321264,
+        "bounds": [
+          216,
+          207,
+          425,
+          510
+        ],
+        "touchesCanvas": false
+      },
+      {
+        "file": "frames/idle-03.png",
+        "size": [
+          640,
+          560
+        ],
+        "alphaTransparentPixels": 322526,
+        "bounds": [
+          216,
+          208,
+          424,
+          510
+        ],
+        "touchesCanvas": false
+      },
+      {
+        "file": "frames/attack-00.png",
+        "size": [
+          640,
+          560
+        ],
+        "alphaTransparentPixels": 318802,
+        "bounds": [
+          211,
+          233,
+          446,
+          510
+        ],
+        "touchesCanvas": false
+      },
+      {
+        "file": "frames/attack-01.png",
+        "size": [
+          640,
+          560
+        ],
+        "alphaTransparentPixels": 316508,
+        "bounds": [
+          122,
+          276,
+          432,
+          510
+        ],
+        "touchesCanvas": false
+      },
+      {
+        "file": "frames/attack-02.png",
+        "size": [
+          640,
+          560
+        ],
+        "alphaTransparentPixels": 319095,
+        "bounds": [
+          128,
+          331,
+          472,
+          510
+        ],
+        "touchesCanvas": false
+      },
+      {
+        "file": "frames/attack-03.png",
+        "size": [
+          640,
+          560
+        ],
+        "alphaTransparentPixels": 323337,
+        "bounds": [
+          203,
+          213,
+          439,
+          510
+        ],
+        "touchesCanvas": false
+      },
+      {
+        "file": "frames/die-00.png",
+        "size": [
+          640,
+          560
+        ],
+        "alphaTransparentPixels": 322266,
+        "bounds": [
+          211,
+          222,
+          429,
+          510
+        ],
+        "touchesCanvas": false
+      },
+      {
+        "file": "frames/die-01.png",
+        "size": [
+          640,
+          560
+        ],
+        "alphaTransparentPixels": 327077,
+        "bounds": [
+          208,
+          310,
+          428,
+          510
+        ],
+        "touchesCanvas": false
+      },
+      {
+        "file": "frames/die-02.png",
+        "size": [
+          640,
+          560
+        ],
+        "alphaTransparentPixels": 334447,
+        "bounds": [
+          192,
+          381,
+          443,
+          510
+        ],
+        "touchesCanvas": false
+      },
+      {
+        "file": "frames/die-03.png",
+        "size": [
+          640,
+          560
+        ],
+        "alphaTransparentPixels": 341116,
+        "bounds": [
+          206,
+          409,
+          434,
+          510
+        ],
+        "touchesCanvas": false
+      }
+    ]
+  },
+  "vfx": {
+    "frameCount": 12,
+    "uniqueHashes": 12,
+    "checks": [
+      {
+        "file": "frames/rootwake-00.png",
+        "size": [
+          640,
+          560
+        ],
+        "alphaTransparentPixels": 338123,
+        "bounds": [
+          206,
+          404,
+          462,
+          510
+        ],
+        "touchesCanvas": false
+      },
+      {
+        "file": "frames/rootwake-01.png",
+        "size": [
+          640,
+          560
+        ],
+        "alphaTransparentPixels": 307657,
+        "bounds": [
+          169,
+          300,
+          476,
+          510
+        ],
+        "touchesCanvas": false
+      },
+      {
+        "file": "frames/rootwake-02.png",
+        "size": [
+          640,
+          560
+        ],
+        "alphaTransparentPixels": 263122,
+        "bounds": [
+          142,
+          168,
+          485,
+          510
+        ],
+        "touchesCanvas": false
+      },
+      {
+        "file": "frames/rootwake-03.png",
+        "size": [
+          640,
+          560
+        ],
+        "alphaTransparentPixels": 323998,
+        "bounds": [
+          191,
+          339,
+          442,
+          510
+        ],
+        "touchesCanvas": false
+      },
+      {
+        "file": "frames/verdant_cyclone-00.png",
+        "size": [
+          640,
+          560
+        ],
+        "alphaTransparentPixels": 334952,
+        "bounds": [
+          217,
+          339,
+          421,
+          510
+        ],
+        "touchesCanvas": false
+      },
+      {
+        "file": "frames/verdant_cyclone-01.png",
+        "size": [
+          640,
+          560
+        ],
+        "alphaTransparentPixels": 292017,
+        "bounds": [
+          182,
+          193,
+          494,
+          510
+        ],
+        "touchesCanvas": false
+      },
+      {
+        "file": "frames/verdant_cyclone-02.png",
+        "size": [
+          640,
+          560
+        ],
+        "alphaTransparentPixels": 260320,
+        "bounds": [
+          139,
+          169,
+          485,
+          510
+        ],
+        "touchesCanvas": false
+      },
+      {
+        "file": "frames/verdant_cyclone-03.png",
+        "size": [
+          640,
+          560
+        ],
+        "alphaTransparentPixels": 305744,
+        "bounds": [
+          183,
+          216,
+          442,
+          510
+        ],
+        "touchesCanvas": false
+      },
+      {
+        "file": "frames/crownfall-00.png",
+        "size": [
+          640,
+          560
+        ],
+        "alphaTransparentPixels": 323776,
+        "bounds": [
+          191,
+          313,
+          448,
+          510
+        ],
+        "touchesCanvas": false
+      },
+      {
+        "file": "frames/crownfall-01.png",
+        "size": [
+          640,
+          560
+        ],
+        "alphaTransparentPixels": 289178,
+        "bounds": [
+          179,
+          222,
+          483,
+          510
+        ],
+        "touchesCanvas": false
+      },
+      {
+        "file": "frames/crownfall-02.png",
+        "size": [
+          640,
+          560
+        ],
+        "alphaTransparentPixels": 256602,
+        "bounds": [
+          102,
+          211,
+          512,
+          510
+        ],
+        "touchesCanvas": false
+      },
+      {
+        "file": "frames/crownfall-03.png",
+        "size": [
+          640,
+          560
+        ],
+        "alphaTransparentPixels": 315471,
+        "bounds": [
+          162,
+          331,
+          456,
+          510
+        ],
+        "touchesCanvas": false
+      }
+    ]
+  }
+}

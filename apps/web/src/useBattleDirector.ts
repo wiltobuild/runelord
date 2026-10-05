@@ -12,6 +12,7 @@ import type {
 } from "../../../packages/engine/index";
 import type { Assets } from "./assets";
 import { warmActors, type ActorCue } from "./ActorSprite";
+import {warmForestSpells} from "./forestSpellRenderer";
 import { FIRE_DEATH_MS } from "./FireDeathEffect";
 import { sfx } from "./sound";
 import { warmHeroClip } from "./Hero";
@@ -69,6 +70,14 @@ export function useBattleDirector(
         arena.top +
         box.height * (id === "hero" ? 0.43 : 0.5)) / scale,
     };
+  };
+  const groundPoint = (id:string):Point => {
+    const arena=document.querySelector<HTMLElement>(".battlefield")!.getBoundingClientRect();
+    const sprite=actor(id)?.querySelector<HTMLElement>(".actor-sprite");
+    const img=sprite?.querySelector("img"),box=(img??actor(id)?.querySelector(".hero-canvas canvas"))?.getBoundingClientRect();
+    const anchor=assets.actors[sprite?.dataset.art??""];
+    const zoom=stageScale();
+    return box?{x:(box.left+box.width*.5-arena.left)/zoom,y:(box.top+box.height*(anchor?anchor.anchor[1]/anchor.size[1]:.835)-arena.top)/zoom}:point(id);
   };
   const floor = (id: string) => {
     const element =
@@ -204,6 +213,7 @@ export function useBattleDirector(
             : "firebolt"
           : "guard_enter";
     await Promise.all([
+      warmForestSpells(assets),
       warmActors(assets, [before, after, ...after.events.flatMap(event => event.view ? [event.view] : [])].flatMap(view => [
         ...view.units.map(unit => summonArt(unit.kind, assets)),
         ...view.enemies.map(enemy => enemy.art),
@@ -429,6 +439,19 @@ export function useBattleDirector(
           await pause(360);
           continue;
         }
+        if(enemy.boss === "forest-sovereign" || enemy.art === "sovereign-root") {
+          const spell=event.spell,clip=assets.actors[enemy.art].states[spell?"cast":"attack"];
+          cue(id,spell?"cast":"attack");
+          const impact=clip.impact??350;
+          if(spell) effect(spell,groundPoint(id),targets.map(t=>groundPoint(t)),impact,0,spell==="crownfall"?1.05:.8);
+          await pause(impact);
+          if(!spell)effect("impact",destination,targets.map(t=>point(t)),0,0);
+          if(targets.includes("hero"))animate((event.view?.guard??0)>=(event.amount??0)?"guard_impact":"hit_light");
+          for(const t of targets.filter(t=>t!=="hero"))cue(t,"hit");
+          recovery=Math.max(clip.duration-impact,spell?700:180);
+          if(event.view)show(event.view);
+          continue;
+        }
         const from = point(id),
           image = actor(id)?.querySelector<HTMLElement>(".actor-sprite"),
           parent = actor(id);
@@ -480,6 +503,11 @@ export function useBattleDirector(
         await new Promise<void>(resolve => requestAnimationFrame(() => requestAnimationFrame(() => resolve())));
         if (token !== version.current) return;
         const id = `enemy-${event.actor}`;
+        if(event.spell === "rootwake") {
+          cue(`enemy-${event.target}`,"cast");cue(id,"spawn");setLabel(event.message);
+          effect("rootwake",groundPoint(`enemy-${event.target}`),[groundPoint(id)],0,0,.85);
+          recovery=900;continue;
+        }
         cue(`enemy-${event.target}`, "summon");
         cue(id, "spawn");
         setLabel(event.message);
@@ -508,6 +536,8 @@ export function useBattleDirector(
         const id = `enemy-${event.actor}`, center = point(id);
         if(event.view)show(event.view);
         cue(id,"cast"); setLabel(event.message); sfx.play("boss-phase",0,.25);
+        const forest=event.view?.enemies.find(e=>e.id===event.actor)?.boss==="forest-sovereign";
+        if(forest){effect("crownfall",center,[groundPoint(id)],100,0,1.2);recovery=1000;continue;}
         effect("ascend",center,[],100,0,2.2);
         effect("conflagrate",center,[center],120,200,2);
         recovery = 1250;
