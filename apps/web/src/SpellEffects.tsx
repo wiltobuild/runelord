@@ -386,6 +386,20 @@ function EffectCanvas({ effects, ground = false }: { effects: SpellEffect[]; gro
             y:(root.bottom-surface.top)*box.height/surface.height,
           }]};
         }
+        // Summons can move as the formation repacks. Both portal layers follow
+        // the rendered source root, in this canvas's coordinates, on every frame.
+        if (e.kind === "summon" && e.targetActor) {
+          const sprite = document.querySelector<HTMLElement>(`[data-actor="${e.targetActor}"] .actor-sprite`);
+          const image = sprite?.querySelector("img");
+          const anchor = sprite?.dataset.summonAnchor?.split(",").map(Number);
+          const source = anchor && image ? image.getBoundingClientRect() : sprite?.getBoundingClientRect();
+          const surface = el.getBoundingClientRect();
+          if (source && surface.width && surface.height) {
+            const x = source.left + source.width * (anchor?.[0] ?? .5);
+            const y = source.top + source.height * (anchor?.[1] ?? (e.targetActor.startsWith("enemy-") ? .88 : 1));
+            e = {...e, targets: [{x:(x-surface.left)*box.width/surface.width, y:(y-surface.top)*box.height/surface.height}]};
+          }
+        }
         if (ground) { if (e.kind === "summon" || e.kind === "empower") drawSummon(ctx, e, time, true); }
         else drawEffect(ctx, e, time);
       }
