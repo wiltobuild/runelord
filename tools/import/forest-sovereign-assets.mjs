@@ -23,7 +23,9 @@ export function integrateForestSovereign(manifest){
    states[name]={duration:time,loop:s.loop,impact:s.events?.[0]?.timeMs??null,frames};
   }
   if(id==='sovereign-root'){states.hit={duration:180,loop:false,impact:null,frames:[{time:0,src:states.idle.frames[0].src}]};states.wounded_idle=states.idle;states.spawn={duration:650,loop:false,impact:null,frames:[{time:0,src:states.idle.frames[0].src}]};}
-  manifest.actors[id]={size:m.canvas,anchor:m.anchor,states};manifest.images[id]=states.idle.frames[0].src;
+  // Roots use their authored spawn frame.  Without this flag ActorSprite starts
+  // the image at opacity 0 while waiting for its animation tick.
+  manifest.actors[id]={size:m.canvas,anchor:m.anchor,states,...(id==='sovereign-root'?{spawnReveal:'authored'}:{})};manifest.images[id]=states.idle.frames[0].src;
  }
  const fx=JSON.parse(fs.readFileSync(`${base}/vfx/animation.json`,'utf8'));
  manifest.forestSpells={};

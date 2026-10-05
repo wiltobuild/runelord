@@ -112,8 +112,11 @@ export function ActorSprite({
             clip.frames.findLastIndex((f) => f.time <= t),
           )
         ];
-      if (image.current.getAttribute("src") !== frame.src)
-        image.current.src = frame.src;
+      // A malformed clip must retain a visible image rather than clearing src.
+      // The release contract verifies every authored frame has this field.
+      const frameSrc = frame?.src || states.idle?.frames[0]?.src || assets.images[art];
+      if (frameSrc && image.current.getAttribute("src") !== frameSrc)
+        image.current.src = frameSrc;
       if (frame.effects || actor.effects) image.current.dataset.glow = JSON.stringify(frame.effects ?? actor.effects);
       const rootSpawn = art === "sovereign-root" && requested === "spawn";
       const spawning = requested === "spawn" && actor.spawnReveal !== "authored" && elapsed < 1200;

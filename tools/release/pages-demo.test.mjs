@@ -29,15 +29,24 @@ test('release demo ships Root-Crown King, living-root, and all grounded forest s
   for(const id of ['forest-sovereign','sovereign-root']) {
     const actor=manifest.actors[id];
     assert.ok(actor,`missing ${id} actor`);
+    if(id==='sovereign-root') assert.equal(actor.spawnReveal,'authored','Living Root must not start transparent while its authored spawn frame loads');
     for(const state of ['idle','attack','die']) {
       assert.ok(actor.states[state]?.frames.length,`missing ${id}/${state} frames`);
-      for(const frame of actor.states[state].frames) assert.ok(existsSync(path.join(root,'apps/web/public',frame.src)),`missing ${id} frame ${frame.src}`);
+      for(const frame of actor.states[state].frames) {
+        assert.equal(typeof frame.src,'string',`${id}/${state} frame must use renderer src schema`);
+        assert.ok(frame.src,`${id}/${state} frame src must not be empty`);
+        assert.ok(existsSync(path.join(root,'apps/web/public',frame.src)),`missing ${id} frame ${frame.src}`);
+      }
     }
   }
   for(const spell of ['rootwake','verdant_cyclone','crownfall']) {
     const effect=manifest.forestSpells?.[spell];
     assert.ok(effect?.frames.length,`missing ${spell} frames`);
-    for(const frame of effect.frames) assert.ok(existsSync(path.join(root,'apps/web/public',frame.src)),`missing ${spell} frame ${frame.src}`);
+    for(const frame of effect.frames) {
+      assert.equal(typeof frame.src,'string',`${spell} frame must use renderer src schema`);
+      assert.ok(frame.src,`${spell} frame src must not be empty`);
+      assert.ok(existsSync(path.join(root,'apps/web/public',frame.src)),`missing ${spell} frame ${frame.src}`);
+    }
   }
   assert.deepEqual(manifest.forestSpells.rootwake.anchor,[320,450],'Rootwake must remain grounded below the old anchor');
 });
