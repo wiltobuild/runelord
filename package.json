@@ -13,6 +13,8 @@
     "check:assets": "node tools/import/validate-runtime-assets.mjs",
     "test": "tsx --test packages/engine/*.test.ts",
     "test:warband": "tsx --test apps/web/src/warbandLayout.test.ts",
+    "test:release": "node --test tools/release/*.test.mjs",
+    "write:release-metadata": "node tools/release/write-release-metadata.mjs",
     "import:content": "node tools/import/catalog.mjs",
     "import:assets": "node tools/import/assets.mjs",
     "render:sfx": "node tools/audio/render-sfx.mjs",

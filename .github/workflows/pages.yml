@@ -22,15 +22,21 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - name: Guard the canonical Pages source
+        run: node tools/release/assert-canonical-pages-ref.mjs
       - uses: actions/setup-node@v4
         with:
           node-version: 24
           cache: npm
       - run: npm ci
       - run: npm run import:content
+      - run: npm run test:release
       - run: npm run build
         env:
           GITHUB_ACTIONS: "true"
+      - run: npm run write:release-metadata
       - uses: actions/upload-pages-artifact@v3
         with:
           path: dist
