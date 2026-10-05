@@ -22,6 +22,21 @@ export function arrangeWarband(units:Member[],assets:Assets){
  const measures=units.map(u=>measureSummon(u,assets)),slots=new Map<number,FormationSlot>(),groups:PackedGroup[]=[];
  for(const airborne of [false,true]){
   const row=measures.filter(m=>m.airborne===airborne);if(!row.length)continue;
+  const hounds=row.filter(m=>m.kind==='hellhound').sort((a,b)=>a.id-b.id);
+  const cerberax=row.find(m=>m.kind==='cerberax');
+  if(!airborne&&row.length===5&&hounds.length===4&&cerberax){
+   // A full canine pack frames its arch demon with a staggered pair per flank.
+   // Stable IDs keep the same hounds on each side across rerenders.
+   const pack=[hounds[0],hounds[1],cerberax,hounds[2],hounds[3]];
+   const centers=[60,140,300,415,495];
+   pack.forEach((m,i)=>{
+    const x=centers[i]-m.width/2,root=376-i*8,top=root-m.upper;
+    slots.set(m.id,{x,top,width:m.width,root,worldUnit:m.worldUnit,art:m.art,airborne:false,depth:15-i,
+     bounds:{left:x,right:x+m.width,top,bottom:root+m.lower}});
+   });
+   groups.push({kind:'ground-cerberax-pack',ids:pack.map(m=>m.id),x:60,top:386,width:640,airborne:false});
+   continue;
+  }
   const naturalRow=row.reduce((sum,m)=>sum+m.width,0)+(row.length-1)*16;
   // Crowded ground rows may use the space beside/partly behind the Warlock.
   const houndReserve=!airborne&&hasCrowdedHoundFamily(row.map(m=>m.kind));

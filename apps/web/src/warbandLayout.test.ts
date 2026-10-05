@@ -101,3 +101,20 @@ test('hellhounds pack tighter to leave Cerberax clear of Pyre Colossus',()=>{
  assert.ok(center(2)-center(3)<=80);
  assert.ok(slots.get(3)!.x<-210,'rear tail reaches behind Warlock');
 });
+
+
+test('four hellhounds flank Cerberax in a stable centered pack',()=>{
+ const units=['cerberax','hellhound','hellhound','hellhound','hellhound'].map((kind,id)=>({kind,id}));
+ const first=arrangeWarband(units,assets),reordered=arrangeWarband([...units].reverse(),assets);
+ const center=(s:ReturnType<typeof arrangeWarband>['slots'],id:number)=>s.get(id)!.x+s.get(id)!.width/2;
+ const arch=center(first.slots,0);
+ assert.equal(units.filter(u=>u.kind==='hellhound'&&center(first.slots,u.id)<arch).length,2);
+ assert.equal(units.filter(u=>u.kind==='hellhound'&&center(first.slots,u.id)>arch).length,2);
+ assert.deepEqual(first.groups[0].ids,[1,2,0,3,4]);
+ assert.equal(center(first.slots,3)-arch,115);
+ assert.equal(center(first.slots,4)-center(first.slots,3),80);
+ for(const unit of units){
+  assert.deepEqual(first.slots.get(unit.id),reordered.slots.get(unit.id));
+  assert.equal(first.slots.get(unit.id)!.worldUnit,measureSummon(unit,assets).worldUnit);
+ }
+});

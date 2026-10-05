@@ -480,6 +480,7 @@ function App({ assets }: { assets: Assets }) {
                     <ActorSprite
                       assets={assets}
                       art={slot.art}
+                      animationSeed={u.id}
                       cue={director.cues[`unit-${u.id}`]}
                       hp={u.hp}
                       maxHp={u.maxHp}

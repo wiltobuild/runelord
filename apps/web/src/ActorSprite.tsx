@@ -36,6 +36,7 @@ export function ActorSprite({
   maxHp,
   name,
   className = "enemy-art",
+  animationSeed = 0,
 }: {
   assets: Assets;
   art: string;
@@ -44,6 +45,7 @@ export function ActorSprite({
   maxHp: number;
   name: string;
   className?: string;
+  animationSeed?: number;
 }) {
   const [failed, setFailed] = useState(false);
   const [deathFinished, setDeathFinished] = useState(false);
@@ -96,6 +98,11 @@ export function ActorSprite({
       if (!clip.loop && elapsed >= clip.duration && requested !== "die") {
         clip = states[resting] || initial;
         t = elapsed - initial.duration;
+      }
+      // Stable per-unit phase separates resting loops, including after a cue.
+      // Combat/spawn/death clips retain their authored timing and first frame.
+      if (clip.loop && (clip === states.idle || clip === states.wounded_idle)) {
+        t += ((animationSeed * 0.618033988749895) % 1) * clip.duration;
       }
       if (clip.loop) t %= clip.duration;
       const frame =
@@ -177,7 +184,7 @@ export function ActorSprite({
       alive = false;
       cancelAnimationFrame(raf);
     };
-  }, [states, sequence, requestedState, resting, failed, cue?.fromArt, cue?.startedAt, cue?.sourceWorldUnit]);
+  }, [states, sequence, requestedState, resting, failed, animationSeed, cue?.fromArt, cue?.startedAt, cue?.sourceWorldUnit]);
   return (
     <div
       className={`actor-sprite ${className}${cue?.state === "spawn" && hp > 0 ? " arriving" : ""}${pixelsPerUnit ? " source-scaled-summon" : ""}`}
