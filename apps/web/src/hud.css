@@ -457,4 +457,3 @@ main.battle-ui { width:1672px; height:941px; min-height:0; zoom:var(--hud-scale)
 .battle-ui .packed-status .minion-details { width:100%; max-width:none; margin:0; }
 .battle-ui .packed-status .minion-name { font-size:14px; gap:3px; }
 /* Selecting a health control lifts its model for inspection without resizing it. */
-.battle-ui .formation-unit.chosen { z-index:75!important; }
