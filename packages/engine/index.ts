@@ -1,5 +1,7 @@
 import { generateInfernalJourney, activeEncounter, availableNodes, mapDestinations, canEnterLocation, currentShop, cardPower, cardLevel, upgradeCost, canAddCard, prepareShop, rerollShop, remapShopCopies, refreshRemovalOffers, type ShopRerollKind, type InfernalJourney } from "./infernal";
 export * from "./infernal";
+import { generateForestJourney } from "./forest";
+export * from "./forest";
 import {
   cards,
   relicPool, implemented, starterDecks, cardTargetsUnit, items, rewardWeight,
@@ -243,16 +245,17 @@ function checkWin(s: State) {
     const node = s.journey?.nodes.find(n=>n.id===s.journey?.current);
     const final = node ? node.kind === "boss" : s.room === (s.rulesVersion === 2 ? 7 : encounters.length - 1);
     s.phase = final ? (s.rulesVersion === 2 ? "won" : "loot") : "reward";
-    const gold = node ? (node.kind === "elite" ? 65 : node.kind === "boss" ? 150 : 30 + node.row * 3) : 25 + s.room * 10;
+    const forest = s.journey?.realm === "forest";
+    const gold = forest && node ? (final ? 200 : node.kind === "elite" ? 90 : 45 + node.row * 3) : node ? (node.kind === "elite" ? 65 : node.kind === "boss" ? 150 : 30 + node.row * 3) : 25 + s.room * 10;
     s.gold += gold;
     const drops: ItemId[] = ["mana-potion", "barkskin-tonic", "shrapnel-jar", "banner-draught", "bonesetters-salve", "warhorn-oil", "healing-draught", "healing-draught", "demon-lord-crown"];
-    const item = node ? (final ? "demon-lord-crown" : node.kind === "elite" ? relicPool[Math.floor(random(s)*relicPool.length)] : random(s)<.3 ? "healing-draught" : null) : drops[s.room];
+    const item = node ? (final ? (forest ? relicPool.find(id=>!s.relics.includes(id)) || "healing-draught" : "demon-lord-crown") : node.kind === "elite" ? relicPool[Math.floor(random(s)*relicPool.length)] : random(s)<.3 ? "healing-draught" : null) : drops[s.room];
     if (item && items[item].passive) { if (!s.relics.includes(item)) s.relics.push(item); }
     else if(item) s.inventory.push(item);
     s.pendingLoot = s.rulesVersion === 3 ? { gold, items: item ? [item] : [], final } : null;
     emit(s, "loot", `Found ${gold} Gold${item ? ` and ${items[item].name}` : ""}.`);
     s.rewards = final ? [] : s.rulesVersion === 3 ? rollRewards(s) : s.starterDeck === "classic" && s.room < 2 ? [...rewardSets[s.room]] : shuffle(s, [...implemented].filter(id => cards[id].rarity !== "Basic")).slice(0, 3);
-    emit(s, "victory", final ? "The Infernal Sovereign falls. Claim his crown." : "The path is yours. Choose a card.");
+    emit(s, "victory", final ? (forest ? "The Living Orchard falls. Claim your spoils, then visit the final Woodland Exchange." : "The Infernal Sovereign falls. Claim his crown.") : "The path is yours. Choose a card.");
   }
 }
 function killUnit(s: State, u: Unit) {
@@ -483,6 +486,7 @@ function journeyAction(s:State,action:Action):boolean {
   else beginCombat(s);
  } else if(action.type==="leave-shop") {
   if(s.phase!=="shop")throw Error("No shop here.");finishNode(s);
+  if(s.journey?.realm==="forest"&&s.journey.current==="forest-shop-12")s.phase="won";
  } else if(action.type==="claim-treasure") {
   if(s.phase!=="treasure")throw Error("No treasure here.");
   const pool=relicPool.filter(id=>!s.relics.includes(id));
@@ -589,7 +593,16 @@ export function dispatch(previous: State, action: Action): State {
     if (s.phase !== "loot" || !s.pendingLoot) throw Error("There is no loot to acknowledge.");
     const final = s.pendingLoot.final;
     s.pendingLoot = null;
-    if (final) { if(s.journey)finishNode(s);s.phase = "won"; }
+    if (final) {
+      if(s.journey?.realm === "forest") finishNode(s);
+      else if(s.journey?.shopRules === "soulforge") {
+        finishNode(s);
+        s.journey = generateForestJourney(s.seed);
+        s.room = 9;
+        s.enemies = []; s.reserves = []; s.hand = []; s.draw = []; s.discard = [];
+        emit(s, "realm", "The crown is yours. Thornroot Forest opens; your deck, upgrades, relics and supplies travel with you.");
+      } else { if(s.journey)finishNode(s);s.phase = "won"; }
+    }
     else if (s.journey) finishNode(s);
     else if ([1, 3, 5, 7].includes(s.room)) s.phase = "camp";
     else { s.room++; beginCombat(s); }
@@ -781,7 +794,7 @@ export function dispatch(previous: State, action: Action): State {
             targets: targets.map((t) => (t === "hero" ? "hero" : t.id)),
           },
         );
-        if (m.kind === "shield") { e.guard = Math.min(24, e.guard + (m.guard || 0)); emit(s, "enemy-shield", `${e.name} raises a demonic barrier.`, { actor: e.id, amount: m.guard }); }
+        if (m.kind === "shield") { e.guard = Math.min(24, e.guard + (m.guard || 0)); emit(s, "enemy-shield", `${e.name} raises a protective barrier.`, { actor: e.id, amount: m.guard }); }
         if (m.kind === "summon") summonBossDemons(s, e);
         for (const target of targets) {
           if (target === "hero") {

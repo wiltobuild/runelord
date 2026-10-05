@@ -1,5 +1,7 @@
 import { infernalShopAppearance } from "../../../packages/engine/infernal";
 import { InfernalJourney } from "./InfernalJourney";
+import { ForestJourney } from "./ForestJourney";
+import { forestReviewActive, forestReviewState } from "./forestReview";
 import { IntroCinematic } from "./IntroCinematic";
 import { OpeningScreen } from "./OpeningScreen";
 import { GuardAura } from "./GuardAura";
@@ -46,6 +48,17 @@ import "./hud.css";
 import "./mobile.css";
 import { MobileShell } from "./MobileShell";
 const SAVE_KEY = "runelord-warlock-demo-v1";
+function journeyScore(state: State | null) {
+  if (!state) return OPENING_SCORE_ID;
+  if (state.journey?.realm === "forest") {
+    const node = state.journey.nodes.find(node => node.id === state.journey?.current);
+    return node?.kind === "boss" && ["combat", "reward", "loot"].includes(state.phase) ? "forest-boss" : "forest-explore";
+  }
+  if (state.phase === "shop") return infernalShopAppearance(state.seed, state.journey?.current ?? null).shopId;
+  if (state.phase === "map" || state.phase === "treasure") return "infernal-map";
+  if (state.phase === "camp" || state.phase === "won") return "explore";
+  return state.room === encounters.length - 1 ? "demon-boss" : "battle";
+}
 function readSave() {
   try {
     const raw = localStorage.getItem(SAVE_KEY);
@@ -104,7 +117,7 @@ function App({ assets }: { assets: Assets }) {
   const [introStarted, setIntroStarted] = useState(false);
   const [starterDeck, setStarterDeck] = useState<StarterDeckId>("warband");
   const [saved, setSaved] = useState<State | null>(readSave),
-    [game, setState] = useState<State | null>(null),
+    [game, setState] = useState<State | null>(forestReviewState),
     [visual, setVisual] = useState<State | null>(null),
     [seed, setSeed] = useState(""),
     [selected, setSelected] = useState<CardInstance | null>(null),
@@ -156,16 +169,7 @@ function App({ assets }: { assets: Assets }) {
   const room = state?.room ?? 0,
     phase = state?.phase,
     encounter = state ? activeEncounter(state) : encounters[0],
-    track =
-      !state ? OPENING_SCORE_ID : phase === "shop"
-        ? infernalShopAppearance(state.seed, state.journey?.current ?? null).shopId
-        : phase === "map" || phase === "treasure"
-          ? "infernal-map"
-          : phase === "camp" || phase === "won"
-        ? "explore"
-        : room === encounters.length - 1
-          ? "demon-boss"
-          : "battle";
+    track = journeyScore(state);
   const animate = (name: string) => {
     setAnimation(name);
     setSequence((n) => n + 1);
@@ -194,7 +198,7 @@ function App({ assets }: { assets: Assets }) {
     }
   }, [assets, track, musicActive]);
   useEffect(() => {
-    if (!game) return;
+    if (!game || forestReviewActive) return;
     try {
       localStorage.setItem(SAVE_KEY, save(game));
       setSaved(game);
@@ -217,7 +221,7 @@ function App({ assets }: { assets: Assets }) {
     setMessage("");
     animate("idle_breathe");
     void score
-      .play(assets, next.phase === "shop" ? infernalShopAppearance(next.seed, next.journey?.current ?? null).shopId : next.phase === "map" || next.phase === "treasure" ? "infernal-map" : next.room === encounters.length - 1 ? "demon-boss" : "battle")
+      .play(assets, journeyScore(next))
       .catch(() => setMusicError(true));
   };
   const act = async (action: Action) => {
@@ -273,7 +277,10 @@ function App({ assets }: { assets: Assets }) {
       );
     } else act({ type: "play", uid: c.uid, dismiss });
   };
-  if (state && (phase === "map" || phase === "shop" || phase === "treasure")) return <InfernalJourney state={state} assets={assets} onAction={action => { void act(action); }} message={message} musicOn={musicActive && volume > 0} onMusic={() => { const v = !musicActive || !volume ? .35 : 0; setVolume(v); score.setVolume(v); void music(); }} onHome={() => { director.clear(); setVisual(null); setState(null); setSelected(null); animate("idle_breathe"); }} />;
+  if (state && (phase === "map" || phase === "shop" || phase === "treasure")) {
+    const Journey = state.journey?.realm === "forest" ? ForestJourney : InfernalJourney;
+    return <Journey state={state} assets={assets} onAction={action => { void act(action); }} message={message} musicOn={musicActive && volume > 0} onMusic={() => { const v = !musicActive || !volume ? .35 : 0; setVolume(v); score.setVolume(v); void music(); }} onHome={() => { director.clear(); setVisual(null); setState(null); setSelected(null); animate("idle_breathe"); }} />;
+  }
   if (!state && !introStarted) return <IntroCinematic volume={volume} onVolume={v => { setVolume(v); score.setVolume(v); }} onStart={() => { setIntroStarted(true); void music(); }} />;
   return (
     <main
@@ -303,7 +310,7 @@ function App({ assets }: { assets: Assets }) {
         </button>
         <div className="chapter">
           {state
-            ? state.journey ? `INFERNAL BIOME · ${encounter.name}` : `ENCOUNTER ${room + 1} OF ${encounters.length}`
+            ? state.journey ? `${state.journey.realm === "forest" ? "FOREST REALM" : "INFERNAL BIOME"} · ${encounter.name}` : `ENCOUNTER ${room + 1} OF ${encounters.length}`
             : "A DECKBUILDING ROGUELIKE"}
         </div>
         <nav>
@@ -633,7 +640,7 @@ function App({ assets }: { assets: Assets }) {
               </section>
             </div>
           )}
-          {phase === "loot" && state.pendingLoot && <LootReveal loot={state.pendingLoot} assets={assets} onContinue={() => act({ type: "continue" })} />}
+          {phase === "loot" && state.pendingLoot && <LootReveal loot={state.pendingLoot} assets={assets} realm={state.journey?.realm} continuesToForest={state.journey?.shopRules === "soulforge" && state.journey.realm !== "forest"} onContinue={() => act({ type: "continue" })} />}
           {phase === "camp" && (
             <div className="overlay">
               <section className="result-panel">
@@ -661,12 +668,12 @@ function App({ assets }: { assets: Assets }) {
                 </div>
                 <h2>
                   {phase === "won"
-                    ? "The flame is yours."
+                    ? state.journey?.realm === "forest" ? "The forest bows." : "The flame is yours."
                     : "The Pit remembers."}
                 </h2>
                 <p>
                   {phase === "won"
-                    ? state.journey ? "You conquered the branching paths of the Infernal biome and defeated its Sovereign." : `You survived all ${encounters.length} encounters through the Cinderforge.`
+                    ? state.journey?.realm === "forest" ? "You conquered the Infernal realm and all twelve encounters of Thornroot Forest." : state.journey ? "You conquered the branching paths of the Infernal biome and defeated its Sovereign." : `You survived all ${encounters.length} encounters through the Cinderforge.`
                     : "A different pact. A different outcome. Try again."}
                 </p>
                 {phase === "won" && state.relics.includes("demon-lord-crown") && <div className="victory-crown"><img src={assets.images["item-demon-crown"]} alt="Demon Lord's Crown" /><h3>{items["demon-lord-crown"].name}</h3><p>{items["demon-lord-crown"].text}</p></div>}
@@ -790,7 +797,7 @@ function App({ assets }: { assets: Assets }) {
               </article>
             </div>
             <p className="muted">
-              Explore {encounters.length} encounters with {Object.keys(cards).length} cards and three starting pacts. Your summoned demons use their original character artwork.
+              Conquer the Infernal realm, then carry your deck and upgrades through twelve forest encounters, with a shop after every three battles. Choose from {Object.keys(cards).length} cards and three starting pacts. Your summoned demons use their original character artwork.
               Enemy animations and spell impacts play in combat order.
             </p>
             <button className="primary" onClick={() => setShowHelp(false)}>
