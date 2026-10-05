@@ -71,3 +71,20 @@ test('full legal run replays all twenty-one victories, seven shops, and final vi
  const migrated=restore(JSON.stringify({...history,actions:history.actions.slice(0,crownIndex+1)}));assert.equal(migrated.phase,'shop');assert.equal(migrated.room,8);assert.equal(migrated.shops!.current,'roguelike-9');
  assert.throws(()=>dispatch(s,{type:'continue'}));
 });
+function sovereign():State {
+ const s=newRoguelikeRun(29);s.room=19;s.phase='shop';s.shops!.current='roguelike-21';return dispatch(s,{type:'leave-shop'});
+}
+test('Rootwake creates independently targetable roots, sequences its spells, and clears roots with the Sovereign',()=>{
+ let s=sovereign();const boss=s.enemies[0];assert.equal(boss.boss,'forest-sovereign');
+ s=dispatch(s,{type:'end'});assert.ok(s.events.some(e=>e.type==='enemy'&&e.spell==='rootwake'));const roots=s.enemies.filter(e=>e.summonedBy===boss.id&&e.hp>0);
+ assert.equal(roots.length,2);assert.equal(new Set(roots.map(e=>e.id)).size,2);assert.ok(roots.every(e=>e.art==='sovereign-root'));
+ const firstRoot=roots[0];firstRoot.hp=0;s=dispatch(s,{type:'end'});
+ assert.ok(s.enemies.some(e=>e.id===firstRoot.id&&e.hp===0));assert.ok(s.events.some(e=>e.type==='enemy'&&e.spell==='verdant_cyclone'));assert.equal(intent(s,s.enemies.find(e=>e.id===boss.id)!).spell,'crownfall');
+ s.enemies.find(e=>e.id===boss.id)!.hp=0;s=dispatch(s,{type:'end'});
+ assert.ok(s.enemies.filter(e=>e.summonedBy===boss.id).every(e=>e.hp===0));assert.equal(s.phase,'loot');
+});
+test('new runs select the Sovereign finale and save/replay keeps legacy forest finale versions',()=>{
+ const fresh=newRoguelikeRun(77);fresh.room=20;assert.equal(activeEncounter(fresh),forestSovereignEncounter);
+ const legacy={schema:8,shops:true,seed:77,starterDeck:'warband',monsterShieldRulesFrom:0,summonRulesFrom:0,forestBossVersion:1,legacyActions:null,actions:[]};
+ const restored=restore(JSON.stringify(legacy));restored.room=20;assert.equal(activeEncounter(restored),forestEncounters[11]);assert.equal(restore(save(restored)).forestBossVersion,1);
+});

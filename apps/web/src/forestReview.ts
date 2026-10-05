@@ -2,8 +2,10 @@ import { newRoguelikeRun, dispatch, enterRoguelikeShop, type State } from "../..
 
 /** Development-only presentation fixtures; these never replace a player's save. */
 export const FOREST_REVIEW = import.meta.env.DEV && location.pathname === "/forest-review";
+/** A production-safe, query-addressable finale fixture for Pages playtests. */
+export const SOVEREIGN_PLAYTEST = new URLSearchParams(location.search).get("encounter") === "forest-sovereign";
 export function forestReviewState(): State | null {
-  if (!FOREST_REVIEW) return null;
+  if (!FOREST_REVIEW && !SOVEREIGN_PLAYTEST) return null;
   let state = newRoguelikeRun(29,"warband");
   state.relics.push("demon-lord-crown");
   state.gold = 450;
@@ -13,7 +15,7 @@ export function forestReviewState(): State | null {
   state.hand=[];
   state.draw=[];
   state.discard=[];
-  const stage=new URLSearchParams(location.search).get("stage") || "1";
+  const stage=SOVEREIGN_PLAYTEST ? "sovereign" : new URLSearchParams(location.search).get("stage") || "1";
   state.room=8;
   state.phase="loot";
   state.pendingLoot={gold:150,items:["demon-lord-crown"],final:true};

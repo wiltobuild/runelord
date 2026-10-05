@@ -2,7 +2,7 @@ import { NeutralCard } from "./SoulforgeShop";
 import { RoguelikeShop } from "./RoguelikeShop";
 import { ForestShop } from "./ForestShop";
 import { SUMMON_REVIEW, summonReviewState } from "./summonReview";
-import { FOREST_REVIEW, forestReviewState } from "./forestReview";
+import { FOREST_REVIEW, SOVEREIGN_PLAYTEST, forestReviewState } from "./forestReview";
 import { IntroCinematic } from "./IntroCinematic";
 import { OpeningScreen } from "./OpeningScreen";
 import { GuardAura } from "./GuardAura";
@@ -124,7 +124,7 @@ function App({ assets }: { assets: Assets }) {
   const [introStarted, setIntroStarted] = useState(false);
   const [starterDeck, setStarterDeck] = useState<StarterDeckId>("warband");
   const [saved, setSaved] = useState<State | null>(readSave),
-    [game, setState] = useState<State | null>(() => SUMMON_REVIEW ? summonReviewState() : FOREST_REVIEW ? forestReviewState() : SHOP_REVIEW ? reviewShop() : null),
+    [game, setState] = useState<State | null>(() => SUMMON_REVIEW ? summonReviewState() : (FOREST_REVIEW || SOVEREIGN_PLAYTEST) ? forestReviewState() : SHOP_REVIEW ? reviewShop() : null),
     [visual, setVisual] = useState<State | null>(null),
     [seed, setSeed] = useState(""),
     [selected, setSelected] = useState<CardInstance | null>(null),
@@ -205,7 +205,7 @@ function App({ assets }: { assets: Assets }) {
     }
   }, [assets, track, musicActive]);
   useEffect(() => {
-    if (!game || SHOP_REVIEW || FOREST_REVIEW || SUMMON_REVIEW) return;
+    if (!game || SHOP_REVIEW || FOREST_REVIEW || SOVEREIGN_PLAYTEST || SUMMON_REVIEW) return;
     try {
       localStorage.setItem(SAVE_KEY, save(game));
       setSaved(game);
