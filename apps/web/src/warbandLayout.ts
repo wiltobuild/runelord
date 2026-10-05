@@ -17,11 +17,15 @@ export function measureSummon(unit:Member,assets:Assets){
 }
 type Measure=ReturnType<typeof measureSummon>;
 const families:Record<string,string>={'pit-brute':'gorthak',hellhound:'cerberax',imp:'ignivar',gloomstalker:'nightmaw'};
+const hasCrowdedHoundFamily=(kinds:string[])=>kinds.includes('hellhound')&&kinds.includes('cerberax')&&kinds.some(k=>k!=='hellhound'&&k!=='cerberax');
 export function arrangeWarband(units:Member[],assets:Assets){
  const measures=units.map(u=>measureSummon(u,assets)),slots=new Map<number,FormationSlot>(),groups:PackedGroup[]=[];
  for(const airborne of [false,true]){
   const row=measures.filter(m=>m.airborne===airborne);if(!row.length)continue;
-  const left=airborne?0:60,available=700-left;
+  const naturalRow=row.reduce((sum,m)=>sum+m.width,0)+(row.length-1)*16;
+  // Crowded ground rows may use the space beside/partly behind the Warlock.
+  const houndReserve=!airborne&&hasCrowdedHoundFamily(row.map(m=>m.kind));
+  const left=airborne?0:naturalRow>640?(houndReserve?-240:-180):60,available=700-left;
   const needsStack=row.reduce((sum,m)=>sum+m.width,0)+(row.length-1)*16>available;
   // First stack duplicates by kind. Only borrow an arch's stack when even
   // separate kind groups cannot fit at their intrinsic model widths.
@@ -36,38 +40,55 @@ export function arrangeWarband(units:Member[],assets:Assets){
    members.sort((a,b)=>(a.kind===key?-1:0)-(b.kind===key?-1:0)||b.upper-a.upper||a.id-b.id);
    const stride=airborne?56:72;
    const maxWidth=Math.max(...members.map(m=>m.width));
-   return {key,members,stride,maxWidth,span:maxWidth+(members.length-1)*stride};
+   return {key,members,stride,maxWidth};
   });
   const familyKey=(kind:string)=>families[kind]??kind;
   bundles.sort((a,b)=>{
    const ak=a.members[0].kind,bk=b.members[0].kind,af=familyKey(ak),bf=familyKey(bk);
-   return row.findIndex(m=>familyKey(m.kind)===af)-row.findIndex(m=>familyKey(m.kind)===bf)
+   const familyWidth=(family:string)=>Math.max(...row.filter(m=>familyKey(m.kind)===family).map(m=>m.width));
+   return (!airborne?familyWidth(af)-familyWidth(bf):0)||row.findIndex(m=>familyKey(m.kind)===af)-row.findIndex(m=>familyKey(m.kind)===bf)
     ||Number(ak===af)-Number(bk===bf);
   });
-  const gap=16,natural=bundles.reduce((s,b)=>s+b.span,0),budget=available-(bundles.length-1)*gap;
-  const compress=Math.min(1,budget/natural);
-  const packed=compress<1||bundles.some(b=>b.members.length>1);
-  let cursor=airborne?0:700-(natural*compress+(bundles.length-1)*gap);
-  // All packed labels share a separate row with one accessible control per unit.
-  let labelCursor=airborne?0:700-(natural*compress+(bundles.length-1)*gap);
-  const labelWidth=(natural*compress+(bundles.length-1)*gap)/row.length;
+  // Solve the entire row together. Clamping each bundle independently makes
+  // wide arch demons push several stacks into the same position.
+  const ordered=bundles.flatMap(b=>[...b.members].reverse().map(m=>({m,b})));
+  const desired=ordered.slice(1).map(({m,b},i)=>{
+   const previous=ordered[i];
+   if(previous.b===b&&m.kind==='hellhound'&&previous.m.kind==='hellhound')return 80;
+   return previous.b===b?Math.max(b.stride,(previous.m.width+m.width)*.24):(previous.m.width+m.width)/2+16;
+  });
+  const minimum=ordered.slice(1).map(({m},i)=>{
+   const previous=ordered[i].m;
+   if(airborne)return 56;
+   if(previous.kind===m.kind)return m.kind==='hellhound'?72:96;
+   // Reserve a clear shoulder/face gap between the hound family and a large neighbour.
+   if(houndReserve&&familyKey(previous.kind)==='cerberax'&&familyKey(m.kind)!=='cerberax'&&m.width>=400)return 230;
+   return 110;
+  });
+  const ideal=desired.map((d,i)=>Math.max(d,minimum[i]));
+  const edges=(ordered[0].m.width+ordered[ordered.length-1].m.width)/2;
+  const minimumSpan=minimum.reduce((s,n)=>s+n,0);
+  const idealSpan=ideal.reduce((s,n)=>s+n,0);
+  const room=available-edges;
+  const factor=idealSpan===minimumSpan?1:Math.max(0,Math.min(1,(room-minimumSpan)/(idealSpan-minimumSpan)));
+  const steps=ideal.map((d,i)=>minimum[i]+(d-minimum[i])*factor);
+  const centers=new Map<number,number>();
+  let center=airborne?ordered[0].m.width/2:700-ordered[ordered.length-1].m.width/2-steps.reduce((s,n)=>s+n,0);
+  ordered.forEach(({m},i)=>{if(i)center+=steps[i-1];centers.set(m.id,center);});
+  const packed=factor<1||bundles.some(b=>b.members.length>1);
+  // Keep controls in the original footer even when artwork extends behind hero.
+  let labelCursor=airborne?0:60;
+  const labelWidth=640/row.length;
   for(const b of bundles){
-   const allocation=b.span*compress;
    if(packed){groups.push({kind:`${airborne?'air':'ground'}-${b.key}`,ids:[...b.members].reverse().map(m=>m.id),x:labelCursor,top:airborne?-4:386,width:labelWidth*b.members.length,airborne});labelCursor+=labelWidth*b.members.length;}
-   const stride=Math.max(0,Math.min(b.stride*compress,(available-b.maxWidth)/Math.max(1,b.members.length-1)));
-   const margin=b.maxWidth/2+(b.members.length-1)*stride/2;
-   const groupCenter=Math.max(left+margin,Math.min(700-margin,cursor+allocation/2));
-   const baseDepth=airborne?60:10+Math.round((400-Math.max(...b.members.map(m=>m.upper)))/10);
+   const baseDepth=60;
    b.members.forEach((m,i)=>{
-    // Backmost member is nearest the enemy; foreground members stagger left.
-    // Clamp the whole stack, not individual sprites, to preserve this order.
-    const center=groupCenter+((b.members.length-1)/2-i)*stride;
-    const x=center-m.width/2;
+    const x=centers.get(m.id)!-m.width/2;
     const root=airborne?196-m.lower-(b.members.length-1-i)*4:376-(b.members.length-1-i)*8;
     const headroom=packed?0:airborne?50:24,top=root-m.upper-headroom;
-    slots.set(m.id,{x,top,width:m.width,root,worldUnit:m.worldUnit,art:m.art,airborne,depth:baseDepth+i,
+    slots.set(m.id,{x,top,width:m.width,root,worldUnit:m.worldUnit,art:m.art,airborne,depth:airborne?baseDepth+i:10+ordered.length-ordered.findIndex(entry=>entry.m.id===m.id),
      bounds:{left:x,right:x+m.width,top:root-m.upper,bottom:root+m.lower}});
-   });cursor+=allocation+gap;
+   });
   }
  }
  return {slots,groups};
@@ -80,6 +101,10 @@ export function retreatGroundFormation(slots:Map<number,FormationSlot>,assets:As
   const edge=g?s.x+s.width/2+(g.layout_bounds_px![2]-a.anchor[0])*s.worldUnit/g.source_pixels_per_world_unit:s.bounds.right;
   return Math.max(s.bounds.right,edge);
  }));
- const shift=ground.length?Math.max(100,right-590):0;
+ // Retreat only into unused rear room; otherwise this second translation
+ // cancels the crowded-row spacing and pushes models off the board.
+ const rear=Math.min(0,...ground.map(s=>s.bounds.left));
+ const rearLimit=hasCrowdedHoundFamily(ground.map(s=>s.art.replace('summon-','')))?240:180;
+ const shift=ground.length?Math.min(Math.max(100,right-590),Math.max(0,rear+rearLimit)):0;
  return {shift,slots:new Map([...slots].map(([id,s])=>[id,s.airborne?s:{...s,x:s.x-shift,bounds:{...s.bounds,left:s.bounds.left-shift,right:s.bounds.right-shift}}]))};
 }

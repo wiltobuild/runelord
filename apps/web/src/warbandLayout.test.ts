@@ -1,7 +1,7 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import fs from 'node:fs';
-import {arrangeWarband,measureSummon} from './warbandLayout';
+import {arrangeWarband,measureSummon,retreatGroundFormation} from './warbandLayout';
 import type {Assets} from './assets';
 const assets=JSON.parse(fs.readFileSync(new URL('../../../packages/assets/manifest.json',import.meta.url),'utf8')) as Assets;
 test('adding Gorthak-converted Imp preserves every existing model size',()=>{
@@ -62,10 +62,42 @@ test('unique crowded units and death ghosts never trigger scaling',()=>{
   for(const u of units){const s=result.slots.get(u.id)!;assert.equal(s.worldUnit,measureSummon(u,assets).worldUnit);assert.ok(Number.isFinite(s.x)&&s.width>0);}
  }
 });
-test('crowded unrelated large demons stay behind short units and clear the hero',()=>{
+test('crowded unrelated large demons stay behind short units and use the rear reserve',()=>{
  const units=['pit-brute','pyre-warden','cerberax','pyre-colossus','gorthak'].map((kind,id)=>({kind,id}));
  const {slots}=arrangeWarband(units,assets);
  assert.ok(slots.get(2)!.depth>slots.get(3)!.depth);
- assert.ok(slots.get(1)!.depth>slots.get(4)!.depth);
- for(const slot of slots.values())assert.ok(slot.x>=60);
+ const ordered=[...slots.values()].sort((a,b)=>(a.x+a.width/2)-(b.x+b.width/2));
+ for(let i=1;i<ordered.length;i++)assert.ok(ordered[i-1].depth>ordered[i].depth);
+ for(const slot of slots.values())assert.ok(slot.x>=-180-1e-6);
+});
+
+
+test('arch demons and three hellhounds use rear space without collapsing stagger',()=>{
+ for(const kinds of [
+  ['cerberax','hellhound','hellhound','hellhound','pyre-colossus'],
+  ['pyre-colossus','hellhound','cerberax','hellhound','hellhound'],
+  ['cerberax','hellhound','gorthak','pit-brute','pyre-colossus'],
+ ]){
+  const units=kinds.map((kind,id)=>({kind,id}));
+  const {slots}=arrangeWarband(units,assets);
+  const ordered=[...slots.values()].sort((a,b)=>(a.x+a.width/2)-(b.x+b.width/2));
+  assert.ok(ordered[0].x<60,'uses space behind Warlock instead of bunching');
+  for(let i=1;i<ordered.length;i++){
+   assert.ok(ordered[i].x+ordered[i].width/2-ordered[i-1].x-ordered[i-1].width/2>=71.99,'readable minimum stagger');
+  }
+  for(const u of units)assert.equal(slots.get(u.id)!.worldUnit,measureSummon(u,assets).worldUnit);
+  const retreated=retreatGroundFormation(slots,assets);
+  for(const s of retreated.slots.values())assert.ok(s.x>=-240-1e-6,'retreat preserves rear boundary');
+ }
+});
+
+
+test('hellhounds pack tighter to leave Cerberax clear of Pyre Colossus',()=>{
+ const units=['cerberax','hellhound','hellhound','hellhound','pyre-colossus'].map((kind,id)=>({kind,id}));
+ const {slots}=arrangeWarband(units,assets);
+ const center=(id:number)=>{const s=slots.get(id)!;return s.x+s.width/2;};
+ assert.ok(center(4)-center(0)>=230);
+ assert.ok(center(1)-center(2)<=80);
+ assert.ok(center(2)-center(3)<=80);
+ assert.ok(slots.get(3)!.x<-210,'rear tail reaches behind Warlock');
 });
