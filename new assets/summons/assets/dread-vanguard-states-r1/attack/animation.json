@@ -1,0 +1,47 @@
+{
+  "state": "attack",
+  "canvas": [
+    2000,
+    1200
+  ],
+  "anchor": [
+    1000,
+    1080
+  ],
+  "duration": 750,
+  "loop": false,
+  "impact": 250,
+  "events": [],
+  "frames": [
+    {
+      "time": 0,
+      "file": "frames/frame-00.png",
+      "duration_ms": 80
+    },
+    {
+      "time": 80,
+      "file": "frames/frame-01.png",
+      "duration_ms": 170
+    },
+    {
+      "time": 250,
+      "file": "frames/frame-02.png",
+      "duration_ms": 90
+    },
+    {
+      "time": 340,
+      "file": "frames/frame-03.png",
+      "duration_ms": 110
+    },
+    {
+      "time": 450,
+      "file": "frames/frame-04.png",
+      "duration_ms": 140
+    },
+    {
+      "time": 590,
+      "file": "frames/frame-05.png",
+      "duration_ms": 160
+    }
+  ]
+}

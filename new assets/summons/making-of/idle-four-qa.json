@@ -1,0 +1,137 @@
+{
+  "maledictor": {
+    "png_count": 8,
+    "unique_pixel_frames": 8,
+    "feet_identical": true,
+    "alpha_bbox_all": [
+      [
+        40,
+        34,
+        667,
+        992
+      ],
+      [
+        77,
+        36,
+        614,
+        992
+      ],
+      [
+        77,
+        38,
+        614,
+        992
+      ],
+      [
+        77,
+        36,
+        614,
+        992
+      ],
+      [
+        40,
+        34,
+        667,
+        992
+      ],
+      [
+        77,
+        32,
+        614,
+        992
+      ],
+      [
+        77,
+        31,
+        614,
+        992
+      ],
+      [
+        77,
+        32,
+        614,
+        992
+      ]
+    ],
+    "canvas_edge_alpha_clear": true,
+    "source_hash_matches": true,
+    "no_per_frame_scale": "Confirmed script uses one registered source and small mesh displacement, no per-frame resize",
+    "visual_review": "Complete silhouette, intact staff/spear and grips, no visible fragments or clipping in contact sheet.",
+    "gif_frames": 8,
+    "webp_frames": 8,
+    "distinct_flame_source_cells": 4,
+    "flame_phase_sequence": [
+      0,
+      1,
+      2,
+      3,
+      0,
+      1,
+      2,
+      3
+    ],
+    "notes": "Source alpha present. Staff continuity visually good; tiny mesh bending is intentional. Four fire shapes visually distinct and anchored at fingers."
+  },
+  "ash-pikeman": {
+    "png_count": 8,
+    "unique_pixel_frames": 8,
+    "feet_identical": true,
+    "alpha_bbox_all": [
+      [
+        61,
+        51,
+        667,
+        973
+      ],
+      [
+        61,
+        52,
+        668,
+        973
+      ],
+      [
+        61,
+        53,
+        668,
+        973
+      ],
+      [
+        61,
+        52,
+        668,
+        973
+      ],
+      [
+        61,
+        51,
+        667,
+        973
+      ],
+      [
+        61,
+        49,
+        667,
+        973
+      ],
+      [
+        61,
+        49,
+        667,
+        973
+      ],
+      [
+        61,
+        49,
+        667,
+        973
+      ]
+    ],
+    "canvas_edge_alpha_clear": true,
+    "source_hash_matches": true,
+    "no_per_frame_scale": "Confirmed script uses one registered source and small mesh displacement, no per-frame resize",
+    "visual_review": "Complete silhouette, intact staff/spear and grips, no visible fragments or clipping in contact sheet.",
+    "gif_frames": 8,
+    "webp_frames": 8
+  },
+  "scope": "Independent static frame/script checks; no realtime playback audit. No blocking defects found."
+}

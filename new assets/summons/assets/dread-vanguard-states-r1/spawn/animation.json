@@ -1,0 +1,46 @@
+{
+  "state": "spawn",
+  "canvas": [
+    1200,
+    1100
+  ],
+  "anchor": [
+    600,
+    1020
+  ],
+  "duration": 880,
+  "loop": false,
+  "impact": null,
+  "terminal_hold": false,
+  "frames": [
+    {
+      "file": "frame-00.png",
+      "time": 0,
+      "duration_ms": 180
+    },
+    {
+      "file": "frame-01.png",
+      "time": 180,
+      "duration_ms": 200
+    },
+    {
+      "file": "frame-02.png",
+      "time": 380,
+      "duration_ms": 180
+    },
+    {
+      "file": "frame-03.png",
+      "time": 560,
+      "duration_ms": 160
+    },
+    {
+      "file": "frame-04.png",
+      "time": 720,
+      "duration_ms": 160
+    }
+  ],
+  "method": "Four authored whole-character poses, constant 1.5 source scale registered to ground; approved idle transition. No per-frame automatic fit.",
+  "source_sha256": "8e2c648e678639a766d686e4036cbc8faa64397531d1adad8a24bf968a9e0bf4",
+  "master": "../dread-vanguard-idle-r5/battle-stance.png",
+  "tool": "built-in image_gen"
+}

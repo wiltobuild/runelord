@@ -1,0 +1,84 @@
+{
+  "schema": 1,
+  "id": "imp-states-summon-samples-r1",
+  "status": "ready",
+  "outcome": "Preview remaining Imp animation states and four new demon concept samples.",
+  "authorization": "User: looks good, give it the other animation states; at same time new goatmen and demon soldier samples. Later soldier armor/runes revision.",
+  "contentIds": [
+    "summon-imp-flight"
+  ],
+  "owner": "runelord-technical-artist",
+  "integrationOwner": "runelord-technical-artist",
+  "reviewer": "runelord-art-director",
+  "ownedPaths": [
+    "assets/approvals/inbox/warlock-imp/states-r1",
+    "design/production/packets/imp-states-summon-samples-r1.json"
+  ],
+  "dependencies": [],
+  "exclusions": [
+    "Production gameplay/art deployment",
+    "New summon mechanics"
+  ],
+  "inputs": [
+    {
+      "path": "assets/approvals/inbox/warlock-imp/idle-8-r5/imp-idle.gif",
+      "sha256": "ae1ff099cbed8cd47018155af38b9dd3e5843088f3bb1f1e1875d99e22a5bb78"
+    }
+  ],
+  "animation": {
+    "method": "whole-character-frames",
+    "requiredStates": [
+      "idle",
+      "attack",
+      "hit",
+      "wounded_idle",
+      "spawn",
+      "die"
+    ]
+  },
+  "acceptance": [
+    {
+      "check": "Preserve approved idle",
+      "status": "pass",
+      "evidence": [
+        {
+          "path": "work/production/imp-states-summon-samples-r1/qa.json",
+          "sha256": "945e99b606bfc1ba52d06d6cdd4dbbb357e01e2aee7d25beb3d6a36f8004b6e4"
+        }
+      ]
+    },
+    {
+      "check": "State previews load and finish correctly",
+      "status": "pass",
+      "evidence": [
+        {
+          "path": "work/production/imp-states-summon-samples-r1/qa.json",
+          "sha256": "945e99b606bfc1ba52d06d6cdd4dbbb357e01e2aee7d25beb3d6a36f8004b6e4"
+        }
+      ]
+    },
+    {
+      "check": "Independent visual review",
+      "status": "pass",
+      "evidence": [
+        {
+          "path": "work/production/imp-states-summon-samples-r1/independent-review.md",
+          "sha256": "d76dccc6948a875924112550853cc1f67ac97fe2c101fdebca517dedaddfc132"
+        }
+      ]
+    }
+  ],
+  "checkpoint": {
+    "completed": [
+      "Five new Imp state previews with unchanged approved idle",
+      "Independent static review and spawn scale correction",
+      "Browser state controls, completion, death hold/replay verified",
+      "Two goatman concepts",
+      "Two revised aggressive demon soldiers with glowing weapon runes",
+      "All previews submitted pending user design review"
+    ],
+    "remaining": [],
+    "blockers": [],
+    "nextAction": "User reviews animation and concept previews"
+  }
+}

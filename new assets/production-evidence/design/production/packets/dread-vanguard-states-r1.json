@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "dread-vanguard-states-r1",
+  "status": "ready",
+  "outcome": "Preview seven additional Dread Vanguard summon animation states with unchanged breathing idle and approved scale.",
+  "authorization": "User requested all missing summon animation states and specified breathing as idle.",
+  "contentIds": [
+    "summon-pit-brute"
+  ],
+  "owner": "runelord-technical-artist",
+  "integrationOwner": "runelord-technical-artist",
+  "reviewer": "runelord-art-director",
+  "ownedPaths": [
+    "assets/approvals/inbox/dread-vanguard",
+    "design/production/packets/dread-vanguard-states-r1.json"
+  ],
+  "dependencies": [],
+  "exclusions": [
+    "Production deployment",
+    "New summon mechanics"
+  ],
+  "inputs": [
+    {
+      "path": "assets/approvals/inbox/dread-vanguard/attack-r1/animation.gif",
+      "sha256": "b7213ca0662d0e61bb10dd092390d53d15949621acc7283d0d48db77ccf8d649"
+    }
+  ],
+  "animation": {
+    "method": "whole-character-frames",
+    "requiredStates": [
+      "idle",
+      "attack",
+      "cast",
+      "hit",
+      "block",
+      "wounded_idle",
+      "spawn",
+      "die"
+    ]
+  },
+  "acceptance": [
+    {
+      "check": "All frames unclipped and idle pixels unchanged",
+      "status": "pass",
+      "evidence": [
+        {
+          "path": "work/production/dread-vanguard-states-r1/qa.json",
+          "sha256": "585f406b00cc26ffd49bfdc4481ee820169804b2206ae8b1d4f0937b1183534e"
+        }
+      ]
+    },
+    {
+      "check": "Independent visual review after corrections",
+      "status": "pass",
+      "evidence": [
+        {
+          "path": "work/production/dread-vanguard-states-r1/independent-review.md",
+          "sha256": "ea37f1afd21a076cd188d00fc68a04b1a492375bfe33833df1647c9a7bfd5a9a"
+        }
+      ]
+    }
+  ],
+  "checkpoint": {
+    "completed": [
+      "Exported49 frames across8 states",
+      "Interactive review and isolated battle preview verified",
+      "New state art submitted pending user review"
+    ],
+    "remaining": [],
+    "blockers": [],
+    "nextAction": "User reviews animation states"
+  }
+}

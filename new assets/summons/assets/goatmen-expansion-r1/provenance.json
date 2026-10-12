@@ -1,0 +1,58 @@
+{
+  "schema_version": 1,
+  "tool": "built-in image_gen",
+  "approval_basis": "User chat: 'goat men are good give me 3 more to expand out the family'. Existing two reference designs explicitly approved in chat; inspected ledger has no entries for their hashes. New three images remain pending.",
+  "references": [
+    {
+      "path": "C:/Users/Wil/Documents/Codex/2026-10-09/sp-2/outputs/goatmen-samples-r1/cinderhorn-reaver.png",
+      "sha256": "e550c53f180dc516a6529169919b71483c07e133eba5c8362c2343a67938464e"
+    },
+    {
+      "path": "C:/Users/Wil/Documents/Codex/2026-10-09/sp-2/outputs/goatmen-samples-r1/blackhorn-cantor.png",
+      "sha256": "744204203b0204cd797a2735f8f908197d72816cf6fc832de7adc3a54b17eb5e"
+    }
+  ],
+  "concepts": [
+    {
+      "name": "Ironhorn Bulwark",
+      "file": "ironhorn-bulwark.png",
+      "source": "C:/Users/Wil/.codex/generated_images/01a11efa-7397-7560-9504-70188201352c/exec-4f4703b3-7490-4d03-891a-242be28cd18a.png",
+      "prompt": "Create one new full-body goatman demon in EXACT SAME FAMILY and refined serious angular 2D cel-shaded style as both supplied approved goatman references. References define anatomy vocabulary, dark contour lines, crisp angular color planes, charcoal fur, red skin, iron material rendering; create a different individual and role, not a pose variation or hybrid. Subject: IRONHORN BULWARK, a short stocky veteran ram-goatman shield guardian. Very broad low stance, stern square goat muzzle, two thick tightly curled ram horns, small forked dark beard, amber slit eyes; humanoid arms, red muscular body, black furry digitigrade shins ending in large split hooves. One enormous plain rectangular black-iron tower shield with clipped upper corners is braced on his left arm in front of one side of his body, a single broad diagonal crimson slash across its face; right hand holds a SHORT heavy spiked cudgel downwards. One simple iron collar and plain broad leather belt, bare shoulders, charcoal loin wrap; do not copy reference cleaver or cantor robes. Silhouette is low and wide, massive shield vertical mass, horns and goat face fully visible above shield, both hooves visible. Stubborn disciplined guard, unmistakably demonic, not a cute satyr. Match reference finish, bold large planes and selective hard highlights. Full body three-quarter front view with entire shield, weapon, horns and feet inside generous margins. Genuine transparent background; no glow, no scene, no floor, no words. No extra characters, no tiny ornament, no photorealism, no noisy texture, no wings.",
+      "role": "Shield guardian",
+      "sha256": "5b4cd8ebf36b121479d7e76896f22b5ff65ec842579951a68e55833cff5d52fa",
+      "dimensions": [
+        1094,
+        1438
+      ],
+      "alpha": true
+    },
+    {
+      "name": "Gorehook Stalker",
+      "file": "gorehook-stalker.png",
+      "source": "C:/Users/Wil/.codex/generated_images/01a11efa-7397-7560-9504-70188201352c/exec-efb18ef5-110d-4513-8e67-de9877cd230b.png",
+      "prompt": "One NEW full-body goatman demon in the SAME family as the two supplied approved references. Match their refined serious 2D angular cel-shaded illustration exactly: red/burgundy skin, dark sharp outlines, black charcoal lower-leg fur, faceted black horns and split hooves, yellow slit eyes, selective iron highlights. Reference images are family/style references, not targets to duplicate. Subject: GOREHOOK STALKER, a lean wiry goatman hunter carrying a long hooked glaive. DIFFERENT silhouette from broad cleaver reaver and standing spell cantor: crouched sideways prowling stance, long bent digitigrade legs apart, narrow shoulders, elongated goat muzzle with a short sharp beard, two nearly straight backward-slanting dagger horns (not curled ram horns, not huge sideways ibex horns), torn left ear. Both clawed hands grip a long simple black-iron polearm held diagonally across the body from near one hoof to well above the opposite shoulder; broad hooked crescent blade with a downward barb at its top. Give the weapon a clear continuous shaft and anatomically convincing separated two-hand grip. One small plain iron shoulder plate, leather chest strap, short asymmetrical charcoal waist cloth; largely bare red torso; no cloak or robe, no magic, no armor suit, no second weapon. Quiet patient assassin-like malice, not a heroic spear soldier. Same demonic humanoid goat anatomy as references, obvious cloven hooves and black furry shins. Whole figure and ALL weapon/horn tips completely within canvas with generous 8% margins; three-quarter view. Genuine transparent background, no ground, no text, no scenery, no aura. Large clear shapes and restrained detail; no photorealism, no soft painted gradients, no dense ornament or individual fur strands. One concept character, no sheet.",
+      "role": "Polearm hunter",
+      "sha256": "9e92d293cc6865d3f91abb190db92199912b9a8cff96ba0f46b81702ba0246ec",
+      "dimensions": [
+        1094,
+        1438
+      ],
+      "alpha": true
+    },
+    {
+      "name": "Ashbone Elder",
+      "file": "ashbone-elder.png",
+      "source": "C:/Users/Wil/.codex/generated_images/01a11efa-7397-7560-9504-70188201352c/exec-ff57239d-93f9-4307-9022-7e7e77b021ec.png",
+      "prompt": "One NEW full-body goatman demon of the SAME FAMILY as both supplied approved character references. Precisely preserve their rendering language: refined serious 2D cel-shaded illustration, clean dark outlines, broad angular red/charcoal color facets, crisp restrained material highlights, simplified black fur, faceted horns/hooves, yellow slit eyes. Create an original third caste rather than duplicate either reference. Subject: ASHBONE ELDER, an ancient hunched goatman sacrificial shaman. Small narrow stooped body, pronounced bent spine/shoulders, long angular elderly goat muzzle, small harsh yellow eyes, LONG jagged ash-white beard reaching the waist. Two uneven black horns sweep outward close to the head; one ends in an old blunt broken tip. Thin humanoid arms and bent digitigrade goat legs with visible cloven hooves, dark-red skin, charcoal lower-leg fur. Leaning slightly on a SINGLE crooked black staff gripped in one hand; staff top is a large primitive IVORY BONE fork with one simple red bound stone between its tines (NOT another goat head or skull head). His free claw hand holds a small shallow iron offering bowl at waist level with just a narrow ember line inside, no smoke plume. Plain heavy charcoal shawl over the upper back and one shoulder, open front leaving arms and narrow chest clear, short dark-red waistcloth. Two or three LARGE ivory bone segments on one cord, not intricate jewelry. Silhouette: low hunched elder, tall asymmetrical staff, long white beard; clearly distinct from both broad cleaver fighter and upright tall-horned rune cantor. Malevolent ancient ritualist, not a friendly woodland shaman. Full body 3/4 view, whole staff/horns/bowl/hooves inside generous clear margins. Genuine transparent background. No background glow, no scenery, no floor, no text, no cape train, no wings, no additional character, no photorealistic wrinkles, no detailed fur strands, no tiny baubles, no painterly gradients. Keep deliberate simplified anatomy consistent with the family, and bold quiet forms readable in a game.",
+      "role": "Sacrificial shaman",
+      "sha256": "c01c3bdd853f8c2ccfd2befb5459ec05a929903d8fd35b9dfe3d7f097a576ea8",
+      "dimensions": [
+        1024,
+        1536
+      ],
+      "alpha": true
+    }
+  ],
+  "gallery": "http://localhost:4317",
+  "new_art_status": "All three submitted via style-gallery/submit.mjs as Characters / sample-r1 / Pending approval. No approval decisions changed."
+}

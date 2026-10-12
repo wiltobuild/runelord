@@ -1,0 +1,57 @@
+{
+  "tool": "built-in image_gen",
+  "transparent_background_requested": true,
+  "variants": [
+    {
+      "name": "dread-cowl",
+      "prompt": "Use case: stylized-concept. Input image 1 is Hex Votary edit target and binding Runelord style reference. Create one full-body variation of this same red-skinned horned demon curse caster, same serious angular 2D cel shading, broad flat colors, crisp graphic shadows and refined readable finish. Transparent background. Robes ONLY: folded cloth, no armor, no metal shoulder plates. Sinister and demonic, not human wizard. Red face, charcoal horns, predatory features, hooked nails, black and oxblood robes, controlled glowing infernal glyphs on staff/focus. Full character and staff inside canvas with margin. No text or scene. Preserve original proportions and detail density, quiet cloth surfaces, avoid photorealism and dense tiny ornament. Variant A: Dread Cowl. Deep oversized black pointed hood splits around two swept-back horns, face half-submerged in shadow with narrow ember eyes and exposed red jaw. Mantle made of overlapping hooked CLOTH panels like bat wings, deep wine-red lining, long split hanging sleeves and severe tapered robe hem. Jagged rune stave held upright and free claw raised in curse sign. Cloth silhouette heavy at shoulders narrowing toward ankles; no armor.",
+      "source": "C:/Users/Wil/.codex/generated_images/01a121ae-43ee-7ee3-a606-b0a167e32e45/exec-72774d3f-2914-4696-944c-5c67a02a8804.png",
+      "output_path": "C:\\Users\\Wil\\Documents\\Codex\\2026-10-09\\sp-2\\outputs\\hex-votary-variants-r1\\dread-cowl.png",
+      "sha256": "99f90cfbf241613c8bb4e0bdb6156df5904d4ae2a22b22c0c665c508b4abccec",
+      "size": [
+        1024,
+        1536
+      ],
+      "alpha_extrema": [
+        0,
+        254
+      ]
+    },
+    {
+      "name": "gallows-veil",
+      "prompt": "Use case: stylized-concept. Input image 1 is Hex Votary edit target and binding Runelord style reference. Create one full-body variation of this same red-skinned horned demon curse caster, same serious angular 2D cel shading, broad flat colors, crisp graphic shadows and refined readable finish. Transparent background. Robes ONLY: folded cloth, no armor, no metal shoulder plates. Sinister and demonic, not human wizard. Red face, charcoal horns, predatory features, hooked nails, black and oxblood robes, controlled glowing infernal glyphs on staff/focus. Full character and staff inside canvas with margin. No text or scene. Preserve original proportions and detail density, quiet cloth surfaces, avoid photorealism and dense tiny ornament. Variant B: Gallows Veil. Radically different ROBE CUT from reference: almost monastic tall narrow silhouette, fully sleeved arms, very high soft folded cloth neck-wrap covering jaw, no shoulder pads. Bare horned red forehead and burning eyes above veil, tall forked black fabric collar behind head. A long tabard of heavy charcoal cloth splits into three cruel pointed lappets, sparse large ember rune embroidery, oxblood inner sleeve visible as one arm extends. Cord sash with three bone-like carved curse seals. Use a shorter hooked demonic rune rod with floating ember sigil, held downward; free palm forms a curse. Heavy folded cloth, sinister executioner-priest mood; absolutely no metal armor.",
+      "source": "C:/Users/Wil/.codex/generated_images/01a121ae-43ee-7ee3-a606-b0a167e32e45/exec-802ba9be-922c-493e-9826-b72bf07f31d3.png",
+      "output_path": "C:\\Users\\Wil\\Documents\\Codex\\2026-10-09\\sp-2\\outputs\\hex-votary-variants-r1\\gallows-veil.png",
+      "sha256": "1d646221412f047b604600387f9fc685b0030bbc4e9d232b68b4c76089270302",
+      "size": [
+        1024,
+        1536
+      ],
+      "alpha_extrema": [
+        0,
+        254
+      ]
+    },
+    {
+      "name": "widows-shroud",
+      "prompt": "Use case: stylized-concept. Input image 1 is Hex Votary edit target and binding Runelord style reference. Create one full-body variation of this same red-skinned horned demon curse caster, same serious angular 2D cel shading, broad flat colors, crisp graphic shadows and refined readable finish. Transparent background. Robes ONLY: folded cloth, no armor, no metal shoulder plates. Sinister and demonic, not human wizard. Red face, charcoal horns, predatory features, hooked nails, black and oxblood robes, controlled glowing infernal glyphs on staff/focus. Full character and staff inside canvas with margin. No text or scene. Preserve original proportions and detail density, quiet cloth surfaces, avoid photorealism and dense tiny ornament. Variant C: Widows Shroud. Visibly different broad ritual vestment silhouette: enormous draping black CLOTH bell sleeves with deep oxblood lining, broad overlapping stole cut like downward fangs, wide folded fabric shawl spanning upper arms. Hoodless severe angular red demon head with swept charcoal horns; a black cloth blindfold with a single red infernal sigil hides eyes. Long dark robes with jagged split hems, knotted red rope cincture, two large rune-marked hanging cloth pennants. Hands spread slightly away from body as if binding a curse, one grips a tall gnarled demonic staff topped by a crescent of three clawlike hooks enclosing one ember rune. Majestic ominous silhouette, sinister priest, all garment surfaces clearly fabric without armor plates. No skull shoulder pads or ornate jewelry.",
+      "source": "C:/Users/Wil/.codex/generated_images/01a121ae-43ee-7ee3-a606-b0a167e32e45/exec-a3da1a08-e9ce-41a8-b162-e07cd09ab299.png",
+      "output_path": "C:\\Users\\Wil\\Documents\\Codex\\2026-10-09\\sp-2\\outputs\\hex-votary-variants-r1\\widows-shroud.png",
+      "sha256": "6fb7ab3d59625efc90ed11fe4c56103c968cb742dc456cf3a9763dcac5f9706d",
+      "size": [
+        1024,
+        1536
+      ],
+      "alpha_extrema": [
+        0,
+        254
+      ]
+    }
+  ],
+  "reference": {
+    "path": "C:\\Users\\Wil\\Documents\\Codex\\2026-10-09\\sp-2\\outputs\\demon-command-robes-r1\\hex-votary.png",
+    "sha256": "729dedc7fd59b3e6fcd298bc5565473c439fc58f93897fd3827a00370b491878",
+    "ledger_status": null,
+    "basis": "Explicit current user-requested edit reference"
+  }
+}

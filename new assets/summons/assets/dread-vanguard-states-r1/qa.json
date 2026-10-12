@@ -1,0 +1,506 @@
+{
+  "all_frames_dimensions": [
+    2000,
+    1200
+  ],
+  "anchor": [
+    1000,
+    1080
+  ],
+  "idle_pixel_exact": true,
+  "ppu": 573.4265734265734,
+  "frame_checks": [
+    {
+      "state": "idle",
+      "frame": 0,
+      "bounds_alpha32": [
+        702,
+        153,
+        1319,
+        1080
+      ]
+    },
+    {
+      "state": "idle",
+      "frame": 1,
+      "bounds_alpha32": [
+        702,
+        149,
+        1321,
+        1080
+      ]
+    },
+    {
+      "state": "idle",
+      "frame": 2,
+      "bounds_alpha32": [
+        702,
+        146,
+        1317,
+        1080
+      ]
+    },
+    {
+      "state": "idle",
+      "frame": 3,
+      "bounds_alpha32": [
+        702,
+        157,
+        1312,
+        1080
+      ]
+    },
+    {
+      "state": "idle",
+      "frame": 4,
+      "bounds_alpha32": [
+        702,
+        163,
+        1311,
+        1080
+      ]
+    },
+    {
+      "state": "idle",
+      "frame": 5,
+      "bounds_alpha32": [
+        702,
+        159,
+        1308,
+        1080
+      ]
+    },
+    {
+      "state": "idle",
+      "frame": 6,
+      "bounds_alpha32": [
+        702,
+        158,
+        1304,
+        1080
+      ]
+    },
+    {
+      "state": "idle",
+      "frame": 7,
+      "bounds_alpha32": [
+        702,
+        155,
+        1312,
+        1080
+      ]
+    },
+    {
+      "state": "attack",
+      "frame": 0,
+      "bounds_alpha32": [
+        702,
+        153,
+        1319,
+        1080
+      ]
+    },
+    {
+      "state": "attack",
+      "frame": 1,
+      "bounds_alpha32": [
+        394,
+        103,
+        1384,
+        1091
+      ]
+    },
+    {
+      "state": "attack",
+      "frame": 2,
+      "bounds_alpha32": [
+        582,
+        277,
+        1823,
+        1087
+      ]
+    },
+    {
+      "state": "attack",
+      "frame": 3,
+      "bounds_alpha32": [
+        528,
+        248,
+        1908,
+        1090
+      ]
+    },
+    {
+      "state": "attack",
+      "frame": 4,
+      "bounds_alpha32": [
+        608,
+        97,
+        1604,
+        1085
+      ]
+    },
+    {
+      "state": "attack",
+      "frame": 5,
+      "bounds_alpha32": [
+        702,
+        153,
+        1319,
+        1080
+      ]
+    },
+    {
+      "state": "cast",
+      "frame": 0,
+      "bounds_alpha32": [
+        702,
+        153,
+        1319,
+        1080
+      ]
+    },
+    {
+      "state": "cast",
+      "frame": 1,
+      "bounds_alpha32": [
+        627,
+        167,
+        1331,
+        1087
+      ]
+    },
+    {
+      "state": "cast",
+      "frame": 2,
+      "bounds_alpha32": [
+        629,
+        168,
+        1408,
+        1087
+      ]
+    },
+    {
+      "state": "cast",
+      "frame": 3,
+      "bounds_alpha32": [
+        627,
+        167,
+        1331,
+        1087
+      ]
+    },
+    {
+      "state": "cast",
+      "frame": 4,
+      "bounds_alpha32": [
+        702,
+        153,
+        1319,
+        1080
+      ]
+    },
+    {
+      "state": "hit",
+      "frame": 0,
+      "bounds_alpha32": [
+        702,
+        153,
+        1319,
+        1080
+      ]
+    },
+    {
+      "state": "hit",
+      "frame": 1,
+      "bounds_alpha32": [
+        704,
+        269,
+        1390,
+        1080
+      ]
+    },
+    {
+      "state": "hit",
+      "frame": 2,
+      "bounds_alpha32": [
+        704,
+        269,
+        1388,
+        1080
+      ]
+    },
+    {
+      "state": "hit",
+      "frame": 3,
+      "bounds_alpha32": [
+        634,
+        95,
+        1451,
+        1084
+      ]
+    },
+    {
+      "state": "hit",
+      "frame": 4,
+      "bounds_alpha32": [
+        702,
+        163,
+        1311,
+        1080
+      ]
+    },
+    {
+      "state": "hit",
+      "frame": 5,
+      "bounds_alpha32": [
+        702,
+        159,
+        1308,
+        1080
+      ]
+    },
+    {
+      "state": "block",
+      "frame": 0,
+      "bounds_alpha32": [
+        702,
+        153,
+        1319,
+        1080
+      ]
+    },
+    {
+      "state": "block",
+      "frame": 1,
+      "bounds_alpha32": [
+        634,
+        84,
+        1442,
+        1084
+      ]
+    },
+    {
+      "state": "block",
+      "frame": 2,
+      "bounds_alpha32": [
+        631,
+        78,
+        1383,
+        1084
+      ]
+    },
+    {
+      "state": "block",
+      "frame": 3,
+      "bounds_alpha32": [
+        631,
+        76,
+        1378,
+        1084
+      ]
+    },
+    {
+      "state": "block",
+      "frame": 4,
+      "bounds_alpha32": [
+        634,
+        96,
+        1451,
+        1084
+      ]
+    },
+    {
+      "state": "block",
+      "frame": 5,
+      "bounds_alpha32": [
+        702,
+        159,
+        1308,
+        1080
+      ]
+    },
+    {
+      "state": "wounded_idle",
+      "frame": 0,
+      "bounds_alpha32": [
+        700,
+        101,
+        1349,
+        1085
+      ]
+    },
+    {
+      "state": "wounded_idle",
+      "frame": 1,
+      "bounds_alpha32": [
+        700,
+        101,
+        1350,
+        1085
+      ]
+    },
+    {
+      "state": "wounded_idle",
+      "frame": 2,
+      "bounds_alpha32": [
+        700,
+        101,
+        1350,
+        1085
+      ]
+    },
+    {
+      "state": "wounded_idle",
+      "frame": 3,
+      "bounds_alpha32": [
+        661,
+        96,
+        1336,
+        1088
+      ]
+    },
+    {
+      "state": "wounded_idle",
+      "frame": 4,
+      "bounds_alpha32": [
+        661,
+        101,
+        1334,
+        1088
+      ]
+    },
+    {
+      "state": "wounded_idle",
+      "frame": 5,
+      "bounds_alpha32": [
+        661,
+        101,
+        1330,
+        1088
+      ]
+    },
+    {
+      "state": "wounded_idle",
+      "frame": 6,
+      "bounds_alpha32": [
+        661,
+        101,
+        1330,
+        1088
+      ]
+    },
+    {
+      "state": "wounded_idle",
+      "frame": 7,
+      "bounds_alpha32": [
+        700,
+        100,
+        1346,
+        1085
+      ]
+    },
+    {
+      "state": "spawn",
+      "frame": 0,
+      "bounds_alpha32": [
+        653,
+        408,
+        1337,
+        1080
+      ]
+    },
+    {
+      "state": "spawn",
+      "frame": 1,
+      "bounds_alpha32": [
+        686,
+        215,
+        1412,
+        1081
+      ]
+    },
+    {
+      "state": "spawn",
+      "frame": 2,
+      "bounds_alpha32": [
+        662,
+        148,
+        1442,
+        1080
+      ]
+    },
+    {
+      "state": "spawn",
+      "frame": 3,
+      "bounds_alpha32": [
+        673,
+        142,
+        1379,
+        1081
+      ]
+    },
+    {
+      "state": "spawn",
+      "frame": 4,
+      "bounds_alpha32": [
+        702,
+        153,
+        1319,
+        1080
+      ]
+    },
+    {
+      "state": "die",
+      "frame": 0,
+      "bounds_alpha32": [
+        702,
+        153,
+        1319,
+        1080
+      ]
+    },
+    {
+      "state": "die",
+      "frame": 1,
+      "bounds_alpha32": [
+        466,
+        203,
+        1442,
+        1082
+      ]
+    },
+    {
+      "state": "die",
+      "frame": 2,
+      "bounds_alpha32": [
+        634,
+        437,
+        1371,
+        1081
+      ]
+    },
+    {
+      "state": "die",
+      "frame": 3,
+      "bounds_alpha32": [
+        538,
+        484,
+        1449,
+        1082
+      ]
+    },
+    {
+      "state": "die",
+      "frame": 4,
+      "bounds_alpha32": [
+        594,
+        584,
+        1411,
+        1080
+      ]
+    }
+  ],
+  "browser": "Eight state controls, action completion, death hold/replay and named battle sprite verified; no page errors.",
+  "limitations": "Whole-character keypose timing; cast and block available for review, no new gameplay triggers introduced."
+}

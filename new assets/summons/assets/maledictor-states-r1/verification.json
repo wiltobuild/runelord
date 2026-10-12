@@ -1,0 +1,62 @@
+{
+  "checks": [
+    {
+      "state": "idle",
+      "slots": 8,
+      "duration": 1440,
+      "loop": true,
+      "no_canvas_clipping": true
+    },
+    {
+      "state": "cast",
+      "slots": 8,
+      "duration": 900,
+      "loop": false,
+      "no_canvas_clipping": true
+    },
+    {
+      "state": "hit",
+      "slots": 4,
+      "duration": 430,
+      "loop": false,
+      "no_canvas_clipping": true
+    },
+    {
+      "state": "wounded_idle",
+      "slots": 8,
+      "duration": 1440,
+      "loop": true,
+      "no_canvas_clipping": true
+    },
+    {
+      "state": "spawn",
+      "slots": 5,
+      "duration": 740,
+      "loop": false,
+      "no_canvas_clipping": true
+    },
+    {
+      "state": "die",
+      "slots": 5,
+      "duration": 1280,
+      "loop": false,
+      "no_canvas_clipping": true
+    },
+    {
+      "state": "attack",
+      "slots": 8,
+      "duration": 900,
+      "loop": false,
+      "no_canvas_clipping": true
+    },
+    {
+      "state": "act",
+      "slots": 8,
+      "duration": 900,
+      "loop": false,
+      "no_canvas_clipping": true
+    }
+  ],
+  "idle_pixels_exact": true,
+  "death_terminal": true
+}

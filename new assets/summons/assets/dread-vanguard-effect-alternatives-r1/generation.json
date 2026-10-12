@@ -1,0 +1,21 @@
+{
+  "tool": "built-in image_gen",
+  "status": "Pending approval",
+  "scope": "Static alternative empowerment direction previews, not animation/integration",
+  "reference": {
+    "path": "C:/Users/Wil/Documents/Codex/2026-10-09/sp-2/outputs/dread-vanguard-empowerment-r1/unlit-registered.png",
+    "sha256": "f31a4c7d8512d924ade5882a6cc8246a07a5e28d783bdea4ffe711009fd184e3",
+    "ledgerDecision": null
+  },
+  "prompts": [
+    {
+      "file": "molten-cutting-edges.png",
+      "prompt": "Precisely EDIT the supplied Dread Vanguard character image with ONLY a sword empowerment effect. Preserve EXACT same battle pose, sword shape/angle/size/placement, all anatomy, hands/grip, horned helmet, armor shading, red cloth, composition/framing and transparent background. Do not redraw or brighten armor. Serious crisp angular 2D Runelord finish. Keep whole character and sword within frame. No scenery, floor shadow, text or border. Effect must hug actual existing blade geometry without floating or offset overlay. OPTION A: MOLTEN CUTTING EDGES. Along both true cutting edges of the blade, add a VERY NARROW incandescent white-hot amber line with orange-red outer rim, exactly tracing metal blade contour from guard to tip. Interior blade remains dark charcoal metal. Existing engraved runes glow molten orange with bright yellow centers. A restrained tight glow hugs edges and runes; no broad aura. NO large flame tongues, no smoke, no particles, no flame sheet around or above sword. Elegant menacing heated enchanted blade, clearly aligned and sharp."
+    },
+    {
+      "file": "rune-ignition.png",
+      "prompt": "Precisely EDIT the supplied Dread Vanguard character image with ONLY a sword empowerment effect. Preserve EXACT same battle pose, sword shape/angle/size/placement, all anatomy, hands/grip, horned helmet, armor shading, red cloth, composition/framing and transparent background. Do not redraw or brighten armor. Serious crisp angular 2D Runelord finish. Keep whole character and sword within frame. No scenery, floor shadow, text or border. Effect must hug actual existing blade geometry without floating or offset overlay. OPTION B: RUNE IGNITION. Keep blade metal and cutting edges dark and cold; ONLY existing engraved infernal blade runes blaze bright legible orange-red with hot amber centers and modest tight bloom. Add just 4-6 tiny separate glowing ember sparks rising from runes beside upper blade, sparse and clear, never concealing the sword. No flaming edges, no large flame tongues, no fire sheet, no broad aura, no smoke. Dark blade with emphatic readable demonic rune activation and controlled ember magic."
+    }
+  ],
+  "note": "Overall pose visually preserved; generated alternatives are not pixel-identical originals or registered VFX layers."
+}

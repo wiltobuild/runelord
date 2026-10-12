@@ -1,0 +1,13 @@
+{
+  "frame_count_each": 8,
+  "canvas": [
+    720,
+    1024
+  ],
+  "duration_ms": 1280,
+  "states": [
+    "unlit",
+    "empowered"
+  ],
+  "method": "Same unlit body and identical subtle breathing in both states. Empowered adds four authored fire VFX phases with in-between blends sampled into eight frames. Lower body byte-identical between paired frames. No attack/lunge."
+}

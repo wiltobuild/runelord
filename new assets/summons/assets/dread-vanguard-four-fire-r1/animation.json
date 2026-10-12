@@ -1,0 +1,59 @@
+{
+  "frame_count": 8,
+  "duration_ms": 1280,
+  "fire_phase_order": [
+    0,
+    1,
+    2,
+    3,
+    0,
+    1,
+    2,
+    3
+  ],
+  "method": "All four existing authored fire phases remapped to traced left and right blade edges; fixed metal/runes occlude fire interior; same subtle breathing transform.",
+  "alignment_trace": {
+    "y": [
+      80.0,
+      96.0,
+      130.0,
+      177.0,
+      230.0,
+      280.0,
+      330.0,
+      370.0,
+      390.0,
+      415.0,
+      439.0,
+      457.0
+    ],
+    "left": [
+      652.0,
+      646.0,
+      614.0,
+      574.0,
+      550.0,
+      524.0,
+      499.0,
+      478.0,
+      453.0,
+      471.0,
+      470.0,
+      483.0
+    ],
+    "right": [
+      652.0,
+      646.0,
+      639.0,
+      627.0,
+      608.0,
+      585.0,
+      560.0,
+      543.0,
+      533.0,
+      527.0,
+      538.0,
+      483.0
+    ]
+  }
+}

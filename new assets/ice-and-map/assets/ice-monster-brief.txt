@@ -1,0 +1,19 @@
+Runelord ice monster concepts — October 9, 2026
+
+User direction: monsters face SCREEN LEFT for combat. Pose future concepts in a shallow three-quarter left-facing view with snout, eyes, chest and attacking direction toward the left edge; hindquarters on right. Existing concepts were permitted to be horizontally flipped for this preview.
+
+Current style references (not the retired original Warlock or Pleatcap):
+Forest Sovereign idle-00, frames32-r1, October 5: 486576e989c8b0f002ca6f77ad48af5fa15e88514e9b0b9ef2e379b742d81909
+Gorthak frame-00, idle-review-r3, October 5: 456914cbc23bc750db1ac4701b5c53875547c84a1b03ff78616e1fac0bea33b5
+Abyssal Seraph master, frames32-r2, October 3: 8cbd77e13301c7b34f72a1560e8e537bcbc5eb593b46b66340c3896ee0856aec
+These are current runtime references; exact-hash gallery approval was not established.
+
+Prompt set / design brief:
+Shared: polished dimensional 2D graphic fantasy illustration; sculpted organic anatomy, curved contours and angular cel shadows, layered material forms, deep shadows, selective bright edges. Ice white, turquoise, cobalt, midnight shadows. Serious monster expression. Complete isolated silhouette. Style references only; do not copy character identities.
+Rimejaw: low heavy quadrupedal ambush beast; massive forelimbs, slate stone hide, split shovel ice jaw; plows and snaps upward.
+Bellwraith: hollow floating asymmetric ice bell shell; suspended stern face, hooked crest, three shard pendants; emits frost rings.
+Driftling Broodmother: low wide snow basin body, short legs, jagged rim and three stern wedge-shaped brood heads; summons a snowling barricade.
+Needlecrown: tall narrow two-legged ice predator with swept four-blade crown, dark mineral core and claw arms; telegraphed shard volley.
+Thawbelly: elevated barrel-bodied quadruped, high front shoulders, hanging belly with waterline and heartstone; belly-slides left.
+
+Generated with built-in image_gen. First four final previews horizontally mirrored on explicit user instruction; Thawbelly generated left-facing. These are concept illustrations with backdrops, not transparent combat sprites. New art remains pending user approval. No gameplay or animation integration performed.

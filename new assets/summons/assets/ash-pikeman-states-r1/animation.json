@@ -1,0 +1,374 @@
+{
+  "schema": 1,
+  "canvas": [
+    1400,
+    1200
+  ],
+  "anchor": [
+    700,
+    1093
+  ],
+  "layout_bounds_px": [
+    345,
+    82,
+    1086,
+    1098
+  ],
+  "approved_idle": "ash-pikeman-idle-r1",
+  "idle_padding_offset": [
+    340,
+    120
+  ],
+  "method": "Authored whole-character combat and lifecycle poses. Uniform registration scale per source sheet; no per-frame fit scaling. Accepted idle retained byte-for-byte in accepted-idle-original and pixel-for-pixel with fixed padding in state frames. Wounded breathing is restrained deformation of authored wounded pose.",
+  "states": {
+    "idle": {
+      "frames": [
+        {
+          "time": 0,
+          "src": "idle/frame-00.png",
+          "duration_ms": 160
+        },
+        {
+          "time": 160,
+          "src": "idle/frame-01.png",
+          "duration_ms": 160
+        },
+        {
+          "time": 320,
+          "src": "idle/frame-02.png",
+          "duration_ms": 160
+        },
+        {
+          "time": 480,
+          "src": "idle/frame-03.png",
+          "duration_ms": 160
+        },
+        {
+          "time": 640,
+          "src": "idle/frame-04.png",
+          "duration_ms": 160
+        },
+        {
+          "time": 800,
+          "src": "idle/frame-05.png",
+          "duration_ms": 160
+        },
+        {
+          "time": 960,
+          "src": "idle/frame-06.png",
+          "duration_ms": 160
+        },
+        {
+          "time": 1120,
+          "src": "idle/frame-07.png",
+          "duration_ms": 160
+        }
+      ],
+      "duration": 1280,
+      "loop": true,
+      "impact": null,
+      "events": []
+    },
+    "attack": {
+      "frames": [
+        {
+          "time": 0,
+          "src": "attack/frame-00.png",
+          "duration_ms": 100
+        },
+        {
+          "time": 100,
+          "src": "attack/frame-01.png",
+          "duration_ms": 170
+        },
+        {
+          "time": 270,
+          "src": "attack/frame-02.png",
+          "duration_ms": 90
+        },
+        {
+          "time": 360,
+          "src": "attack/frame-03.png",
+          "duration_ms": 90
+        },
+        {
+          "time": 450,
+          "src": "attack/frame-04.png",
+          "duration_ms": 170
+        },
+        {
+          "time": 620,
+          "src": "attack/frame-05.png",
+          "duration_ms": 140
+        }
+      ],
+      "duration": 760,
+      "loop": false,
+      "impact": 270,
+      "events": [
+        {
+          "name": "impact",
+          "time_ms": 270
+        }
+      ]
+    },
+    "hit": {
+      "frames": [
+        {
+          "time": 0,
+          "src": "hit/frame-00.png",
+          "duration_ms": 70
+        },
+        {
+          "time": 70,
+          "src": "hit/frame-01.png",
+          "duration_ms": 90
+        },
+        {
+          "time": 160,
+          "src": "hit/frame-02.png",
+          "duration_ms": 140
+        },
+        {
+          "time": 300,
+          "src": "hit/frame-03.png",
+          "duration_ms": 150
+        },
+        {
+          "time": 450,
+          "src": "hit/frame-04.png",
+          "duration_ms": 160
+        }
+      ],
+      "duration": 610,
+      "loop": false,
+      "impact": null,
+      "events": []
+    },
+    "wounded_idle": {
+      "frames": [
+        {
+          "time": 0,
+          "src": "wounded_idle/frame-00.png",
+          "duration_ms": 170
+        },
+        {
+          "time": 170,
+          "src": "wounded_idle/frame-01.png",
+          "duration_ms": 170
+        },
+        {
+          "time": 340,
+          "src": "wounded_idle/frame-02.png",
+          "duration_ms": 170
+        },
+        {
+          "time": 510,
+          "src": "wounded_idle/frame-03.png",
+          "duration_ms": 170
+        },
+        {
+          "time": 680,
+          "src": "wounded_idle/frame-04.png",
+          "duration_ms": 170
+        },
+        {
+          "time": 850,
+          "src": "wounded_idle/frame-05.png",
+          "duration_ms": 170
+        },
+        {
+          "time": 1020,
+          "src": "wounded_idle/frame-06.png",
+          "duration_ms": 170
+        },
+        {
+          "time": 1190,
+          "src": "wounded_idle/frame-07.png",
+          "duration_ms": 170
+        }
+      ],
+      "duration": 1360,
+      "loop": true,
+      "impact": null,
+      "events": []
+    },
+    "spawn": {
+      "frames": [
+        {
+          "time": 0,
+          "src": "spawn/frame-00.png",
+          "duration_ms": 130
+        },
+        {
+          "time": 130,
+          "src": "spawn/frame-01.png",
+          "duration_ms": 130
+        },
+        {
+          "time": 260,
+          "src": "spawn/frame-02.png",
+          "duration_ms": 170
+        },
+        {
+          "time": 430,
+          "src": "spawn/frame-03.png",
+          "duration_ms": 150
+        },
+        {
+          "time": 580,
+          "src": "spawn/frame-04.png",
+          "duration_ms": 180
+        }
+      ],
+      "duration": 760,
+      "loop": false,
+      "impact": null,
+      "events": []
+    },
+    "die": {
+      "frames": [
+        {
+          "time": 0,
+          "src": "die/frame-00.png",
+          "duration_ms": 140
+        },
+        {
+          "time": 140,
+          "src": "die/frame-01.png",
+          "duration_ms": 170
+        },
+        {
+          "time": 310,
+          "src": "die/frame-02.png",
+          "duration_ms": 240
+        },
+        {
+          "time": 550,
+          "src": "die/frame-03.png",
+          "duration_ms": 850
+        }
+      ],
+      "duration": 1400,
+      "loop": false,
+      "impact": null,
+      "events": [
+        {
+          "name": "terminal",
+          "time_ms": 550
+        }
+      ]
+    },
+    "act": {
+      "frames": [
+        {
+          "time": 0,
+          "src": "attack/frame-00.png",
+          "duration_ms": 100
+        },
+        {
+          "time": 100,
+          "src": "attack/frame-01.png",
+          "duration_ms": 170
+        },
+        {
+          "time": 270,
+          "src": "attack/frame-02.png",
+          "duration_ms": 90
+        },
+        {
+          "time": 360,
+          "src": "attack/frame-03.png",
+          "duration_ms": 90
+        },
+        {
+          "time": 450,
+          "src": "attack/frame-04.png",
+          "duration_ms": 170
+        },
+        {
+          "time": 620,
+          "src": "attack/frame-05.png",
+          "duration_ms": 140
+        }
+      ],
+      "duration": 760,
+      "loop": false,
+      "impact": 270,
+      "events": [
+        {
+          "name": "impact",
+          "time_ms": 270
+        }
+      ],
+      "sourceState": "attack"
+    },
+    "cast": {
+      "frames": [
+        {
+          "time": 0,
+          "src": "attack/frame-00.png",
+          "duration_ms": 100
+        },
+        {
+          "time": 100,
+          "src": "attack/frame-01.png",
+          "duration_ms": 170
+        },
+        {
+          "time": 270,
+          "src": "attack/frame-02.png",
+          "duration_ms": 90
+        },
+        {
+          "time": 360,
+          "src": "attack/frame-03.png",
+          "duration_ms": 90
+        },
+        {
+          "time": 450,
+          "src": "attack/frame-04.png",
+          "duration_ms": 170
+        },
+        {
+          "time": 620,
+          "src": "attack/frame-05.png",
+          "duration_ms": 140
+        }
+      ],
+      "duration": 760,
+      "loop": false,
+      "impact": 270,
+      "events": [
+        {
+          "name": "impact",
+          "time_ms": 270
+        }
+      ],
+      "sourceState": "attack"
+    }
+  },
+  "sources": {
+    "combat": {
+      "path": "combat-source.png",
+      "sha256": "1b7b973f7293cdd3a64f425842f7f2d12d6c6828c2829058c22ab6ec91847ce9"
+    },
+    "lifecycle": {
+      "path": "lifecycle-source.png",
+      "sha256": "c4302fcdbbb020b6d72f7b8db9375559380f8765e0c5ff0ee6375fd92359f313"
+    }
+  },
+  "qa": {
+    "status": "pending-independent-review",
+    "idle_pixels_preserved": true,
+    "source_sheet_scale": {
+      "combat": 1.25,
+      "lifecycle": 1.18
+    },
+    "exported_png_frames": 36
+  },
+  "reference": {
+    "path": "../demon-soldier-samples-r2/ash-pikeman-r2.png",
+    "sha256": "b846974c9c97f3f463b24782fe398d435f2566c00e852acee7c882215d28de53"
+  }
+}

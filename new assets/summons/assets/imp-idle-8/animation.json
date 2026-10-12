@@ -1,0 +1,176 @@
+{
+  "name": "Imp flying idle",
+  "frame_count": 8,
+  "canvas": [
+    560,
+    520
+  ],
+  "loop": true,
+  "duration_ms": 960,
+  "fps": 8.333333,
+  "method": "Eight image-generated whole-character wing poses, cropped and registered by translation; no rigging or synthetic in-between frames.",
+  "source_sha256": "117616bca06963956efd2f8d05c7cba3c84b1d26ee72fdf96fb67aeb9e053166",
+  "frames": [
+    {
+      "file": "frames/frame-00.png",
+      "duration_ms": 120,
+      "source_rect": [
+        0,
+        0,
+        468,
+        468
+      ],
+      "translation": [
+        45,
+        37
+      ],
+      "alpha_bounds": [
+        65,
+        57,
+        491,
+        486
+      ]
+    },
+    {
+      "file": "frames/frame-01.png",
+      "duration_ms": 120,
+      "source_rect": [
+        420,
+        0,
+        911,
+        468
+      ],
+      "translation": [
+        26,
+        38
+      ],
+      "alpha_bounds": [
+        62,
+        85,
+        496,
+        480
+      ]
+    },
+    {
+      "file": "frames/frame-02.png",
+      "duration_ms": 120,
+      "source_rect": [
+        863,
+        0,
+        1354,
+        468
+      ],
+      "translation": [
+        35,
+        36
+      ],
+      "alpha_bounds": [
+        59,
+        131,
+        504,
+        476
+      ]
+    },
+    {
+      "file": "frames/frame-03.png",
+      "duration_ms": 120,
+      "source_rect": [
+        1306,
+        0,
+        1774,
+        468
+      ],
+      "translation": [
+        35,
+        33
+      ],
+      "alpha_bounds": [
+        72,
+        132,
+        486,
+        471
+      ]
+    },
+    {
+      "file": "frames/frame-04.png",
+      "duration_ms": 120,
+      "source_rect": [
+        0,
+        420,
+        468,
+        887
+      ],
+      "translation": [
+        55,
+        17
+      ],
+      "alpha_bounds": [
+        88,
+        140,
+        478,
+        457
+      ]
+    },
+    {
+      "file": "frames/frame-05.png",
+      "duration_ms": 120,
+      "source_rect": [
+        420,
+        420,
+        911,
+        887
+      ],
+      "translation": [
+        34,
+        19
+      ],
+      "alpha_bounds": [
+        58,
+        140,
+        513,
+        463
+      ]
+    },
+    {
+      "file": "frames/frame-06.png",
+      "duration_ms": 120,
+      "source_rect": [
+        863,
+        420,
+        1354,
+        887
+      ],
+      "translation": [
+        36,
+        18
+      ],
+      "alpha_bounds": [
+        83,
+        94,
+        486,
+        462
+      ]
+    },
+    {
+      "file": "frames/frame-07.png",
+      "duration_ms": 120,
+      "source_rect": [
+        1306,
+        420,
+        1774,
+        887
+      ],
+      "translation": [
+        30,
+        10
+      ],
+      "alpha_bounds": [
+        69,
+        41,
+        475,
+        457
+      ]
+    }
+  ],
+  "status": "Pending art review"
+}

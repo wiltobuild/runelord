@@ -1,0 +1,25 @@
+{
+  "tool": "image_gen",
+  "source": "exec-13d457b9-d5c2-46e8-9bfb-885e41b6e64d.png",
+  "source_sha256": "3d2a7dfc28ca6d4506da85066d7860df632e569f6be9b651cb4b8a364fafbcc2",
+  "fixed_scale": 2.1,
+  "source_anchors": [
+    [
+      428,
+      480
+    ],
+    [
+      1068,
+      489
+    ],
+    [
+      379,
+      980
+    ],
+    [
+      1094,
+      980
+    ]
+  ],
+  "method": "Authored whole-character keyposes; fixed anatomical scale and ground registration, approved idle endpoints."
+}

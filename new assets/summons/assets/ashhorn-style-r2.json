@@ -1,0 +1,17 @@
+{
+  "generator": "built-in image_gen",
+  "status": "Pending approval",
+  "concept": "Ashhorn corrected style study",
+  "prompt": "STYLE-REFERENCE GENERATION. Both supplied images are APPROVED RUNELORD STYLE REFERENCES, not characters to combine. Draw ONE new goatman demon in PRECISELY their visual language and level of simplification. It should look as though the same artist drew it for the same sprite roster. Copy rendering grammar: very broad angular flat red shapes, extremely simple black facial voids, solid yellow wedge eyes, severe exaggerated monster proportions, oversized hands/feet/head, almost vector-cut silhouette, a few large polygonal shadow planes. NO realistic anatomy, illustrated-book style, fine fur, layered shading, anatomical ribs, human pupils or costume detail. Subject ASHHORN, a compact hunched bipedal goatman hex demon: huge wide curled black ram horns dominate its silhouette, blunt long wedge goat muzzle, short angular black chin tuft, two large cloven hooves, thick short digitigrade shins, narrow compressed torso, disproportionately long sinewy arms and large three-clawed hands. Crimson skin like references. One tiny ragged black waistcloth, otherwise unclothed monstrous anatomy; no mantle, necklace, staff, jewelry, armor or wings. One claw raised makes an angular orange hex mark, other held low. Mean primitive demon expression. Stance three-quarter, full body completely visible, compact approximately four heads tall, front-loaded weight, NOT a realistic tall goat wizard. EXACTLY the references' restrained red-black-yellow colors, crisp hard edges, simple flat surfaces. Transparent background, no ground or scene, no text. This must be a new goatman silhouette, not an imp with swapped horns or a brute mashup.",
+  "references": [
+    {
+      "path": "C:/Users/Wil/Documents/Codex/2026-10-09/i-x20/runelord/assets/characters/warlock-imp/base/r1/warlock-imp-base-r1.png",
+      "sha256": "72f0117479ddd46b1468868b90fe3d78800836364bac730db5a8861c7f6fff3e"
+    },
+    {
+      "path": "C:/Users/Wil/Documents/Codex/2026-10-09/i-x20/runelord/assets/characters/warlock-pit-brute/base/r1/warlock-pit-brute-base-r1.png",
+      "sha256": "8a082cc7556c8959bd6dcc7f570e61738f0bd017586ad28cacf462fca880fa95"
+    }
+  ],
+  "output_sha256": "f98176bdb1d6f80df9f7e8be1cf0a64164e89730ce3745329a001ef600ed5bcc"
+}

@@ -1,0 +1,52 @@
+{
+  "schema_version": 1,
+  "tool": "built-in image_gen",
+  "mode": "three separately generated robe variants with actual reference image",
+  "reference": {
+    "path": "C:/Users/Wil/Documents/Codex/2026-10-09/sp-2/outputs/demon-command-robes-r1/ember-ritualist.png",
+    "sha256": "a42e7b93591d565d2010c91f75f8ab4d9f883e2540946ede2ceacbf891685a77",
+    "ledger_decision": null,
+    "note": "Explicit user-selected edit reference"
+  },
+  "concepts": [
+    {
+      "name": "Cinder Veil",
+      "file": "cinder-veil.png",
+      "role": "Shadowed hood and long sleeves",
+      "source": "C:/Users/Wil/.codex/generated_images/01a11efa-7397-7560-9504-70188201352c/exec-04f96c46-8d33-402f-a489-7d0d6e1b9074.png",
+      "prompt": "Create one CLOTH-ONLY sinister demonic robe VARIANT of the supplied Ember Ritualist. Actual reference is edit/style/identity basis: preserve same red-skinned horned male humanoid demon, yellow ember eyes, angular severe face, claw hands and claw feet, black/crimson palette and refined serious Runelord 2D angular cel-shaded finish. Rework robe structure to become clearly infernal and threatening, not a generic wizard or mere recolor. Variant A: CINDER VEIL. Tall narrow shrouded silhouette, DEEP elongated angular charcoal hood pulled far forward so most upper face disappears in a hard black shadow with only narrow gold eyes and red lower face visible. Same two horns emerge naturally through hood slots. Cloth veil wraps the lower neck and collar but leaves red mouth/chin visible. Torso tightly wrapped in crossing dark-crimson rune cloth strips, three broad jagged black cloth panels taper from shoulders and waist like a ritual blade silhouette. Extremely LONG hanging bell-sleeve ends terminate in three large fang-shaped cloth points, one forearm lifted and one low, clearly visible claw hands, one small controlled ember sigil held at sternum. Keep only two or three large stitched ember glyphs on bound cloth. Robes made entirely of woven cloth: absolutely NO metal armor, plates, pauldrons, gauntlets, chainmail, metallic edging, buckles or jewelry. Use cloth ties. Deliberate broad dark surfaces, readable silhouette and sinister ritual bearing. Full body 3/4 front, both feet visible beneath jagged skirt, whole horns/sleeves/hem inside generous margins. Genuine transparent background, no scene, ground, fog or background glow, no labels. Same reference-level rendering and detail restraint, no photorealism or cute proportions.",
+      "sha256": "f7c00337a4b75371ecdbccfe3b9e0b39734f7104dd64095d4518aeacc7f9b986",
+      "dimensions": [
+        1024,
+        1536
+      ],
+      "alpha": true
+    },
+    {
+      "name": "Black Covenant",
+      "file": "black-covenant.png",
+      "role": "Broad ceremonial mantle",
+      "source": "C:/Users/Wil/.codex/generated_images/01a11efa-7397-7560-9504-70188201352c/exec-804b378b-7504-4206-8bed-416fc24c97c3.png",
+      "prompt": "Create one distinctly different CLOTH ROBE VARIANT of supplied Ember Ritualist, preserving exact species/identity family: angular red demon male face, two black horns, gold slit eyes, claw hands/feet, same serious refined angular Runelord 2D cel shading. User wants sinister DEMONIC robes, no metal armor. Variant B: BLACK COVENANT. Broad looming triangular silhouette. REPLACE standard wizard hood with a LOW WIDE slit-like black cloth cowl, stretched between his two horns over the brow; only narrow burning eyes and red pointed lower face show beneath. Huge layered BLACK CLOTH SHOULDER MANTLE extends laterally as a severe chevron, visibly woven/folded fabric NOT plates or armor. Elbow-length wide open sleeves form two heavy jagged hanging cloth wings at sides (not actual wings); forearms emerge downward with both claw hands held in a controlling ritual gesture around a small horizontal ember sigil at waist. Broad robe resembles a sinister ceremonial executioner's vestment: charcoal outer garment, deep crimson underlayers glimpsed through three large angular ritual slits. Lower skirt splits into THREE broad heavy panels with large forked points, no shredded thin ribbons; crimson cloth bindings across ribs and waist, one large dull ember stitched rune on center panel. Horns poke through fabric naturally, clawed feet visible. Different robe silhouette from original and narrow long-sleeve priest: broad shoulders, low cowl, short wide sleeves, heavy three-panel skirt. Absolutely NO metal parts, armor, pauldrons, plates, chainmail, buckles, crown or jewelry; everything garment-related is cloth and ties. Sinister demonic identity and shadowed face, no generic wizard hat or staff. Full-body 3/4 front, all extremities clear with generous transparent margins. Genuine transparent background, no scenery/floor/aura, no text. Preserve reference rendering without soft paint or photorealism.",
+      "sha256": "83e09abe090657b3691162b175007d107a8719de5cc7c777efd5e8944eef743e",
+      "dimensions": [
+        1024,
+        1536
+      ],
+      "alpha": true
+    },
+    {
+      "name": "Oathbound Hexer",
+      "file": "oathbound-hexer.png",
+      "role": "Asymmetric bound robes",
+      "source": "C:/Users/Wil/.codex/generated_images/01a11efa-7397-7560-9504-70188201352c/exec-9cda5b49-8cd7-4f85-8c1f-5db170be5519.png",
+      "prompt": "Create one new SINISTER CLOTH-ONLY ROBE VARIANT using supplied Ember Ritualist as exact identity/style reference. Keep the same red-skinned horned humanoid demon male, severe angular face, ember-yellow eyes, black claws, same Runelord refined serious dark outlined angular 2D cel-shading, crimson/charcoal palette. Variant C: OATHBOUND HEXER, clearly ASYMMETRICAL robes. One high narrow pointed cloth hood leans toward viewer's left with deep hard black eye shadow; both existing horns emerge naturally. A severe crimson cloth binding passes over lower cheek and neck, leaving most red face and both yellow eyes visible. The left side of body has a heavy charcoal mantle wrapping shoulder down into ONE long closed drooping fang-cut sleeve; the right shoulder and red upper arm are BARE, right forearm wrapped in three broad black rune-cloth bands, right claw hand lifted and open with a small ember curse mark just above palm. Left claw hand emerges low from huge dark sleeve holding a loose trailing strip of rune-inscribed cloth (not a weapon). Waist tightly bound with wide crimson fabric, three short diagonal overlapping skirt panels on bare-arm side expose one red shin with dark cloth wraps; opposite side has a single long black ritual train ending near ankle. Each panel edge sharp jagged cloth cuts, broad simple folds. One large restrained ember glyph stitched onto binding strip, no dense magical decorations. Sinister cult executioner-priest presence, different silhouette from symmetrical wide-robed generic wizard. Absolutely NO metal armor, shoulder plates, pauldrons, gauntlets, buckles, jewelry, sword, staff or shield. All clothes are fabric. Clawed feet visible, whole figure and cloth tails fully in frame. Genuine transparent background, no scene, floor, smoke, aura or text. Keep reference-level graphic shadows, not realistic skin/materials or soft painterly gradients.",
+      "sha256": "b00eb16bf01ad1125a56e989650c670f68ad58d9b21c36cf202793bc73629ecb",
+      "dimensions": [
+        1024,
+        1536
+      ],
+      "alpha": true
+    }
+  ]
+}

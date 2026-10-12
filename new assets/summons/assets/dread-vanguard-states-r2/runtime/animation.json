@@ -1,0 +1,273 @@
+{
+  "name": "Dread Vanguard",
+  "size": [
+    2000,
+    1200
+  ],
+  "anchor": [
+    1000,
+    1080
+  ],
+  "states": {
+    "idle": {
+      "duration": 1280,
+      "loop": true,
+      "impact": null,
+      "events": [],
+      "frames": [
+        {
+          "time": 0,
+          "src": "idle/frame-00.png"
+        },
+        {
+          "time": 160,
+          "src": "idle/frame-01.png"
+        },
+        {
+          "time": 320,
+          "src": "idle/frame-02.png"
+        },
+        {
+          "time": 480,
+          "src": "idle/frame-03.png"
+        },
+        {
+          "time": 640,
+          "src": "idle/frame-04.png"
+        },
+        {
+          "time": 800,
+          "src": "idle/frame-05.png"
+        },
+        {
+          "time": 960,
+          "src": "idle/frame-06.png"
+        },
+        {
+          "time": 1120,
+          "src": "idle/frame-07.png"
+        }
+      ]
+    },
+    "attack": {
+      "duration": 750,
+      "loop": false,
+      "impact": 250,
+      "events": [],
+      "frames": [
+        {
+          "time": 0,
+          "src": "attack/frame-00.png"
+        },
+        {
+          "time": 80,
+          "src": "attack/frame-01.png"
+        },
+        {
+          "time": 250,
+          "src": "attack/frame-02.png"
+        },
+        {
+          "time": 340,
+          "src": "attack/frame-03.png"
+        },
+        {
+          "time": 450,
+          "src": "attack/frame-04.png"
+        },
+        {
+          "time": 590,
+          "src": "attack/frame-05.png"
+        }
+      ]
+    },
+    "cast": {
+      "duration": 880,
+      "loop": false,
+      "impact": 320,
+      "events": [],
+      "frames": [
+        {
+          "time": 0,
+          "src": "cast/frame-00.png"
+        },
+        {
+          "time": 100,
+          "src": "cast/frame-01.png"
+        },
+        {
+          "time": 320,
+          "src": "cast/frame-02.png"
+        },
+        {
+          "time": 580,
+          "src": "cast/frame-03.png"
+        },
+        {
+          "time": 720,
+          "src": "cast/frame-04.png"
+        }
+      ]
+    },
+    "hit": {
+      "duration": 580,
+      "loop": false,
+      "impact": null,
+      "events": [],
+      "frames": [
+        {
+          "time": 0,
+          "src": "hit/frame-00.png"
+        },
+        {
+          "time": 60,
+          "src": "hit/frame-01.png"
+        },
+        {
+          "time": 150,
+          "src": "hit/frame-02.png"
+        },
+        {
+          "time": 240,
+          "src": "hit/frame-03.png"
+        },
+        {
+          "time": 350,
+          "src": "hit/frame-04.png"
+        },
+        {
+          "time": 450,
+          "src": "hit/frame-05.png"
+        }
+      ]
+    },
+    "block": {
+      "duration": 650,
+      "loop": false,
+      "impact": null,
+      "events": [],
+      "frames": [
+        {
+          "time": 0,
+          "src": "block/frame-00.png"
+        },
+        {
+          "time": 60,
+          "src": "block/frame-01.png"
+        },
+        {
+          "time": 140,
+          "src": "block/frame-02.png"
+        },
+        {
+          "time": 270,
+          "src": "block/frame-03.png"
+        },
+        {
+          "time": 400,
+          "src": "block/frame-04.png"
+        },
+        {
+          "time": 500,
+          "src": "block/frame-05.png"
+        }
+      ]
+    },
+    "wounded_idle": {
+      "duration": 1280,
+      "loop": true,
+      "impact": null,
+      "events": [],
+      "frames": [
+        {
+          "time": 0,
+          "src": "wounded_idle/frame-00.png"
+        },
+        {
+          "time": 160,
+          "src": "wounded_idle/frame-01.png"
+        },
+        {
+          "time": 320,
+          "src": "wounded_idle/frame-02.png"
+        },
+        {
+          "time": 480,
+          "src": "wounded_idle/frame-03.png"
+        },
+        {
+          "time": 640,
+          "src": "wounded_idle/frame-04.png"
+        },
+        {
+          "time": 800,
+          "src": "wounded_idle/frame-05.png"
+        },
+        {
+          "time": 960,
+          "src": "wounded_idle/frame-06.png"
+        },
+        {
+          "time": 1120,
+          "src": "wounded_idle/frame-07.png"
+        }
+      ]
+    },
+    "spawn": {
+      "duration": 880,
+      "loop": false,
+      "impact": null,
+      "events": [],
+      "frames": [
+        {
+          "time": 0,
+          "src": "spawn/frame-00.png"
+        },
+        {
+          "time": 180,
+          "src": "spawn/frame-01.png"
+        },
+        {
+          "time": 380,
+          "src": "spawn/frame-02.png"
+        },
+        {
+          "time": 560,
+          "src": "spawn/frame-03.png"
+        },
+        {
+          "time": 720,
+          "src": "spawn/frame-04.png"
+        }
+      ]
+    },
+    "die": {
+      "duration": 1420,
+      "loop": false,
+      "impact": null,
+      "events": [],
+      "frames": [
+        {
+          "time": 0,
+          "src": "die/frame-00.png"
+        },
+        {
+          "time": 100,
+          "src": "die/frame-01.png"
+        },
+        {
+          "time": 280,
+          "src": "die/frame-02.png"
+        },
+        {
+          "time": 500,
+          "src": "die/frame-03.png"
+        },
+        {
+          "time": 720,
+          "src": "die/frame-04.png"
+        }
+      ]
+    }
+  }
+}

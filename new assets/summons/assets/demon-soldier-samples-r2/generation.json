@@ -1,0 +1,27 @@
+{
+  "tool": "built-in image_gen",
+  "status": "Pending approval",
+  "userRevision": "demon soldiers look too refined; make armor more demonic and aggressive; weapons with glowing demonic runes",
+  "sources": [
+    {
+      "path": "../demon-soldier-samples-r1/iron-legionary-r1.png",
+      "sha256": "497cff70b40df2d92e8c32ec2ca0fd1b6a06f6b0d28ae018013cb15da66ae921",
+      "ledgerDecision": null
+    },
+    {
+      "path": "../demon-soldier-samples-r1/ash-pikeman-r1.png",
+      "sha256": "66c17f61a8142231af372df72d843c70b03794d5f65f52af0d07d26d9ce4e66a",
+      "ledgerDecision": null
+    }
+  ],
+  "prompts": [
+    {
+      "file": "iron-legionary-r2.png",
+      "prompt": "Edit this EXACT demon soldier character concept. User says armor is too refined; make it clearly more demonic and aggressive and give weapons glowing demonic runes. Preserve face identity, red skin, horns, adult proportions, sword-and-shield equipment, full-body pose, charcoal/red palette and current crisp angular 2D cel-shaded Runelord finish. Change the armor DESIGN strongly: replace neat silver-edged knight plates with dark infernal overlapping fang-shaped plates, hooked shoulder ridges with 2-3 large backward barbs, vicious pointed collar, asymmetrical jagged forearm plates and talonlike greaves. Keep broad readable surfaces, blunt blackened iron edges and only a few controlled highlights; remove the uniform bright silver trim. Armor should look forged in hell and intimidating, without tiny random spikes or noisy grunge. Shield becomes a brutal angular demonic shield with a central raised dark ridge and two meaningful fang-like points, retaining red diagonal marking but less orderly silhouette. Sword becomes a brutal broad black iron blade with a few hooked notches on its spine, same basic length and grip. CRITICAL: etch 4-5 LARGE distinct demonic rune glyphs along the sword's blade, glowing vivid orange-red with hot amber centers and narrow controlled bloom; unmistakable magical engraved weapon at thumbnail scale. No runic text outside weapon, no giant flames. Maintain natural hand grips, two arms/two legs, all equipment fully inside canvas. Transparent background, preserve alpha. No scenery, vignette, ground shadow, decorative frame or label."
+    },
+    {
+      "file": "ash-pikeman-r2.png",
+      "prompt": "Edit this EXACT spear-wielding demon soldier. User says armor is too refined; make it more demonic and aggressive with glowing demonic runes on weapon. Preserve lean adult humanoid physique, face and horn identity, red skin, existing two-handed spear pose, charcoal/red palette, full-body framing, and clean angular 2D cel-shaded Runelord illustration finish. Change armor DESIGN decisively away from orderly silver-trim knight armor: dark blackened fang-shaped breastplate with aggressive pointed ribs, two swept-back hooked shoulder fins, savage hooked bracers, jagged interlocking waist plates and talonlike greaves. Exposed upper arms remain. Broad surfaces, few hard highlight facets, no continuous bright silver trim, no excessive tiny spikes or noisy grunge. Silhouette is lean vicious infernal infantry, not bulky brute.\nSpear head should be a dark cruel elongated barbed blade with a jagged hooked secondary tine, forged black iron with muted sharp edges. CRITICAL: 3-4 large readable demonic rune glyphs are engraved down spear blade, glowing vivid molten orange-red with hot amber centers and restrained bloom. Runes look deliberately carved, no language words; magical weapon clearly readable. Keep shaft intact with natural two hand grips and same diagonal posture. No extra weapons, no giant fire effects, no armor glow competing with blade. Fit entire spear tip, horns and feet comfortably inside canvas. Genuine transparent background, no vignette, scenery, ground shadow, frame or labels."
+    }
+  ]
+}

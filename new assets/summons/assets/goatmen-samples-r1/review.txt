@@ -1,0 +1,7 @@
+Two initial goatman concept samples, made with built-in imagegen in separate calls using both actual requested style images.
+
+Cinderhorn Reaver: compact and broad, massive curled horns, bare torso, hooked cleaver, simple wrist bands. Blackhorn Cantor: leaner and upright, long open swept horns, white facial blaze, ritual tabard, curse hand. They share a coherent refined outlined angular finish while differing in silhouette, face, stance, equipment and role.
+
+Creator self-review: full-size images and 96px light/dark thumbnails inspected. Complete horns, limbs and hooves remain within frame. No obvious extra limbs, hand/prop detachment or clipping. Character identities remain readable at 96px. The horns and cleaver retain especially clear silhouettes; the cantor's fine hand/rune details are less legible at small size, while its long horn silhouette remains clear. Both are RGBA PNGs with transparent pixels; some partially transparent color/glow is retained by the generator. These are samples, not technically approved runtime sprites. No independent review claimed.
+
+Gallery: both submitted via style-gallery/submit.mjs as pending Characters, revision sample-r1. No ledger decisions were changed. No runtime or shared code edits were made. New exact-hash user approval remains pending. Prompt and reference provenance is in provenance.json; basic image dimensions/alpha counts in image-checks.json; 96px review image in readability-96px.png.

@@ -1,0 +1,33 @@
+{
+  "tool": "built-in image_gen",
+  "status": "Pending approval",
+  "request": "Three alternate captain concepts with darker armor",
+  "references": [
+    {
+      "path": "C:/Users/Wil/Documents/Codex/2026-10-09/sp-2/outputs/demon-command-robes-r1/infernal-captain-r2.png",
+      "sha256": "69bfda55f0c6e0dbcafb5d29f2403412226bb083f718b9d8e688264b34e87249",
+      "ledgerDecision": null,
+      "authority": "Current user-directed family reference"
+    },
+    {
+      "path": "C:/Users/Wil/Documents/Codex/2026-10-09/sp-2/outputs/demon-soldier-samples-r2/iron-legionary-r2.png",
+      "sha256": "df9d38597d30f265ebfc188e8273d237480edc9a02f30af03ead55f612045bc9",
+      "ledgerDecision": null,
+      "authority": "Current user-directed family reference"
+    }
+  ],
+  "prompts": [
+    {
+      "file": "obsidian-marshal.png",
+      "prompt": "Create ONE alternate design of the Infernal Captain shown in reference1. Reference2 shows his demonic infantry family. Keep same red humanoid devil species, horned elite commander identity, normal adult proportions, serious refined angular 2D Runelord cel shading, full body three-quarter pose on genuine transparent background. USER'S PRIORITY: armor MUCH DARKER, near-black charcoal, broad matte black plates and only thin very subdued dark-gray edges; NO bright silver faces or trim, no polished steel. Equipment has restrained molten orange-red engraved runes. Elite rank through bespoke intentional helmet and armor silhouette, not random spike clutter. No floating ornament/banner/spike between head and viewer-left shoulder. Two horns coherently attached to helmet, no wings. No background/aura/vignette, no text/frame. All equipment comfortably inside canvas. Sharp clean geometric shadows, quiet large surfaces, selective details, no photoreal/PBR/painterly blur. ALTERNATE A: OBSIDIAN MARSHAL. Heavy blocklike angular near-black segmented armor with wide low shoulder plates shaped like flattened hooked anvils, a tall close-fitting gorget and broad squared chest. Closed severe wedge helmet with vertical narrow mouth slit and glowing amber eye slits, thick swept-back black horns. Compact crimson half-cape. Armored boots, heavy legs. One hand holds a broad BLACK straight execution sword low at side with three large orange-red blade runes; other hand clenched at waist. Commanding grounded calm stance, intentional dense compact officer silhouette. Dark metal must be visibly several values darker than reference. No gold or silver."
+    },
+    {
+      "file": "dread-vanguard.png",
+      "prompt": "Create ONE alternate design of the Infernal Captain shown in reference1. Reference2 shows his demonic infantry family. Keep same red humanoid devil species, horned elite commander identity, normal adult proportions, serious refined angular 2D Runelord cel shading, full body three-quarter pose on genuine transparent background. USER'S PRIORITY: armor MUCH DARKER, near-black charcoal, broad matte black plates and only thin very subdued dark-gray edges; NO bright silver faces or trim, no polished steel. Equipment has restrained molten orange-red engraved runes. Elite rank through bespoke intentional helmet and armor silhouette, not random spike clutter. No floating ornament/banner/spike between head and viewer-left shoulder. Two horns coherently attached to helmet, no wings. No background/aura/vignette, no text/frame. All equipment comfortably inside canvas. Sharp clean geometric shadows, quiet large surfaces, selective details, no photoreal/PBR/painterly blur. ALTERNATE B: DREAD VANGUARD. Lean aggressive elite officer with near-black layered blade-shaped armor, sharply tapered waist and tall narrow pointed shoulder fins swept backward. Closed narrow falconlike demonic helm (not animal head) with long angular faceguard and swept-forward hooked black horns. Short split oxblood officer tabard, no cape. Both hands rest on pommel of a long BLACK two-handed rune sword held point-down in front, shoulders relaxed but threatening. Long greaves and narrow daggerlike armor shapes make tall clean silhouette distinctly different from broad marshal. Ember runes form a sparse vertical line along blade, eyes amber. No bright steel trim."
+    },
+    {
+      "file": "hellforge-commandant.png",
+      "prompt": "Create ONE alternate design of the Infernal Captain shown in reference1. Reference2 shows his demonic infantry family. Keep same red humanoid devil species, horned elite commander identity, normal adult proportions, serious refined angular 2D Runelord cel shading, full body three-quarter pose on genuine transparent background. USER'S PRIORITY: armor MUCH DARKER, near-black charcoal, broad matte black plates and only thin very subdued dark-gray edges; NO bright silver faces or trim, no polished steel. Equipment has restrained molten orange-red engraved runes. Elite rank through bespoke intentional helmet and armor silhouette, not random spike clutter. No floating ornament/banner/spike between head and viewer-left shoulder. Two horns coherently attached to helmet, no wings. No background/aura/vignette, no text/frame. All equipment comfortably inside canvas. Sharp clean geometric shadows, quiet large surfaces, selective details, no photoreal/PBR/painterly blur. ALTERNATE C: HELLFORGE COMMANDANT. Asymmetrical powerful officer, near-black smooth angular breastplate with one broad embossed infernal chevron, massive single viewer-left shoulder mantle of three broad overlapping hooked BLACK plates, smaller right shoulder. Closed angular crownlike helmet with two SHORT thick outward horns integrated into temple guards, no extra crown spikes or tall floating ornaments. Deep red waist sash and short torn shoulder cloth. Wields a long-handled brutal BLACK poleaxe diagonally beside body, massive crescent cleaver head with 3 large molten orange-red runes; off hand extends commanding gesture. Substantial armor with few broad panels and purposeful black silhouette, no ornate silver filigree. Adult commander not giant brute."
+    }
+  ]
+}
