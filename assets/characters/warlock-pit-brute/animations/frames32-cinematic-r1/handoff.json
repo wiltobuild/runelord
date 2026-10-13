@@ -1,0 +1,136 @@
+{
+  "contract_version": 2,
+  "character_id": "warlock-pit-brute",
+  "display_name": "Pit Brute Cinematic 32",
+  "project": "C:/Users/wilsh/Projects/runelord",
+  "role": "melee summon",
+  "rig_family": "humanoid",
+  "size_class": "large",
+  "method": "32 authored whole-character frames; generated poses, transparent extraction and translation",
+  "base": {
+    "revision": "cinematic-r3",
+    "asset": "../../../../cinematics/oath-intro/r3/pit-brute.png",
+    "sha256": "0f8dc36570fd588701342dd9a89359bf1af59bf139fb2441ddf14f960b5a50b9",
+    "gallery_status": "Pending approval",
+    "authorization": "Current user expressly selected battle-facing cinematic master for32-frame animation; r6 front-facing variant excluded"
+  },
+  "variants": [],
+  "variant_count_exception": "User directly requested one Pit Brute master outside3-variant workflow",
+  "style_lock": {
+    "direction": "Master's angular red/charcoal serious cel-shaded2D design",
+    "facing": "three-quarter right",
+    "invariants": [
+      "Two large curved black horns",
+      "yellow angular eyes until terminal death",
+      "massive plated fists",
+      "black spiked shoulder armor",
+      "red flesh, black knees/feet"
+    ],
+    "style_reference": {
+      "path": "assets/cards/reference-samples/warlock-summon-imp.png",
+      "sha256": "070283f1fb65b07531cec7b32c653ffc96a7adacde1c2ce4daca1f3b4ed78c9e",
+      "evidenceId": "user-chat-2026-10-01-approve-existing-runelord",
+      "role": "rendering language only, proof reference"
+    }
+  },
+  "construction": {
+    "format": "flattened whole-character frames; no layered rig claimed",
+    "source_assets": "source/*.png",
+    "generation_prompts": [
+      "source/prompts.json",
+      "source/spawn-r2-prompt.txt"
+    ],
+    "packing_script": "pack.mjs"
+  },
+  "geometry": {
+    "canvas_px": [
+      1024,
+      768
+    ],
+    "root_px": [
+      512,
+      680
+    ],
+    "coordinate_system": "pixels, top-left x right y down",
+    "uniform_scale": 1,
+    "native_source_sheet": [
+      1254,
+      1254
+    ],
+    "nominal_source_cells": [
+      627,
+      627
+    ],
+    "per_frame_resizing": false
+  },
+  "animations": {
+    "idle": {
+      "count": 4,
+      "loop": true,
+      "duration_ms": 1400
+    },
+    "attack": {
+      "count": 8,
+      "duration_ms": 500,
+      "impact_ms": 190,
+      "act_alias": "Same authored melee slam"
+    },
+    "hit": {
+      "count": 4,
+      "duration_ms": 340
+    },
+    "wounded_idle": {
+      "count": 4,
+      "loop": true,
+      "duration_ms": 1600
+    },
+    "spawn": {
+      "count": 4,
+      "duration_ms": 720,
+      "arrival_ms": 540
+    },
+    "die": {
+      "count": 8,
+      "duration_ms": 1510,
+      "terminalHold": true
+    },
+    "cast": {
+      "applicability": "not applicable",
+      "reason": "current melee summon runtime has no casting action"
+    },
+    "guard": {
+      "applicability": "not applicable",
+      "reason": "current melee summon runtime uses shared ward effects, no authored guard state"
+    },
+    "victory": {
+      "applicability": "not applicable",
+      "reason": "current melee summon runtime does not request victory state"
+    }
+  },
+  "output": {
+    "manifest": "manifest.json",
+    "runtime_manifest": "animation.json",
+    "frames": "frames/",
+    "atlas": "atlas.png",
+    "preview": "preview.html",
+    "video": "animation-review.mp4",
+    "gif": "animation-review.gif",
+    "contact_sheets": "review/contact-*.png",
+    "runtime_integration": "not performed"
+  },
+  "verification": {
+    "technical": "32 unique frames/hash match/true alpha/no crop-edge findings passed",
+    "playback": "Independent parent browser check passed state transitions, light/dark96px and terminal death",
+    "static": "PASS: independent final-review.json, all32 original-resolution and96px frames reviewed",
+    "evidence": "design/production/evidence/cinematic-summons32/final-review.json"
+  },
+  "approval": {
+    "gallery": "Pending user review; playable and pose submissions in canonical gallery"
+  },
+  "limitations": [
+    "Native source627px cell resolution, not2048px requested sheet",
+    "500ms attack authored heavier than350ms ordinary Muster target",
+    "No production runtime edits; importer alias act must be mapped by integration owner"
+  ],
+  "status": "authored-animation-complete-independent-QA-passed-user-review-pending"
+}

@@ -1,0 +1,43 @@
+{
+  "states": [
+    {
+      "path": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\approvals\\inbox\\warlock-gorthak\\frames32-r1-idle\\idle.gif",
+      "sha256": "20975b8fd55945853179caa761b5fec737e01064f78b3e86d4d69d694cfb234d",
+      "status": "Pending approval",
+      "gallery": "http://localhost:4317"
+    },
+    {
+      "path": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\approvals\\inbox\\warlock-gorthak\\frames32-r1-attack\\attack.gif",
+      "sha256": "49de878eb9fa0332c869c5de282fa21b266ddda64a09e3f80a70a8958a2f66c3",
+      "status": "Pending approval",
+      "gallery": "http://localhost:4317"
+    },
+    {
+      "path": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\approvals\\inbox\\warlock-gorthak\\frames32-r1-hit\\hit.gif",
+      "sha256": "4b0ffd2cd36fa1d80fb0c6b77495e6a5878503a057c6939d11a0b0165bd386f6",
+      "status": "Pending approval",
+      "gallery": "http://localhost:4317"
+    },
+    {
+      "path": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\approvals\\inbox\\warlock-gorthak\\frames32-r1-wounded_idle\\wounded_idle.gif",
+      "sha256": "3241c56869a0f889b02740f858f87eb98a0eea15be105ead7fc5fc071a8cb3a7",
+      "status": "Pending approval",
+      "gallery": "http://localhost:4317"
+    },
+    {
+      "path": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\approvals\\inbox\\warlock-gorthak\\frames32-r1-spawn\\spawn.gif",
+      "sha256": "dbd27e4a50e5f60549cb636f73c5fef2a840fac2da490f24d843c389cd62e891",
+      "status": "Pending approval",
+      "gallery": "http://localhost:4317"
+    },
+    {
+      "path": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\approvals\\inbox\\warlock-gorthak\\frames32-r1-die\\die.gif",
+      "sha256": "a34ab503c23db287ceb4bd9609d5b8c03977b7dbaf81cc286312696bd2322a90",
+      "status": "Pending approval",
+      "gallery": "http://localhost:4317"
+    }
+  ],
+  "verifiedDiscovery": "GET http://localhost:4317/api/art; Warlock Gorthak states includes all six frames32-r1 entries, all Pending approval",
+  "qa": "work/production/gorthak-frames32/qa/final-review.json",
+  "qaHash": "85deaabc9973348ab14653d1206b49ecb4b38b404201165d8054559dcb879886"
+}

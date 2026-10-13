@@ -1,0 +1,84 @@
+{
+  "date": "2026-10-05",
+  "approval": "User: these are all good, replace the current placeholder shops with these shops for the forest encounters",
+  "scope": "Three forest shop settings, shared UI, three merchants and delivered reaction poses",
+  "route": {
+    "after3": 1,
+    "after9": 3,
+    "after6": 2,
+    "after12": 1
+  },
+  "validation": "TypeScript passed. All four normal shop selections verified without shop override. Route labels match. Images loaded.",
+  "files": [
+    {
+      "file": "background-1.webp",
+      "sha256": "29ece4be7859d3c8674b2b137131aaf55360f5e9311c8bb818aa9a470adf1aeb",
+      "galleryDecision": null
+    },
+    {
+      "file": "background-2.webp",
+      "sha256": "8b8c021c0cc3eb20b6ca095577e66074ce49ca9909d3b052bc45a8f584ddb559",
+      "galleryDecision": null
+    },
+    {
+      "file": "background-3.webp",
+      "sha256": "36bc904c06a4bc0494b33778482df7a3c51cde1da6fd1d9bd6909b504d6bb7cd",
+      "galleryDecision": null
+    },
+    {
+      "file": "shop-frame.webp",
+      "sha256": "55be1738ea0eca3b45420149a36b4c312870a829563932f697e78fcfae64f230",
+      "galleryDecision": null
+    },
+    {
+      "file": "shopkeeper-1-satisfied.webp",
+      "sha256": "dda23475f3bba5346e861773ea45ddafd753c29f8536612b348cdde3cac62a00",
+      "galleryDecision": null
+    },
+    {
+      "file": "shopkeeper-1-skeptical.webp",
+      "sha256": "727789990fcac9bad21cf345a2cb4026d13fd4622ff5b963e36203399c020b3d",
+      "galleryDecision": null
+    },
+    {
+      "file": "shopkeeper-1-talk.webp",
+      "sha256": "759e6e6d95dc24a43842086c8a70085b9d174dc41761a7fe99b1f9ddb2ec1781",
+      "galleryDecision": null
+    },
+    {
+      "file": "shopkeeper-1.webp",
+      "sha256": "d32579e434a9f12b5427be8f8f0a44ed8bbef90116ee4462eb9f5787c989aafc",
+      "galleryDecision": null
+    },
+    {
+      "file": "shopkeeper-2-satisfied.webp",
+      "sha256": "eb03b691773859a45587c045685163d91e24ae6a7baf095d8dc1e813dbdf534e",
+      "galleryDecision": null
+    },
+    {
+      "file": "shopkeeper-2-talk.webp",
+      "sha256": "d8dbbfc22622681dce65a5acd59c8ffd5b72107a0ee44e5fa7ffcb1022c2f905",
+      "galleryDecision": null
+    },
+    {
+      "file": "shopkeeper-2.webp",
+      "sha256": "abe49dd6e76be9855360d5d8ab3cb79cf0d89d704e44555ea16a52c67af928ea",
+      "galleryDecision": null
+    },
+    {
+      "file": "shopkeeper-3-satisfied.webp",
+      "sha256": "a55e37aec1b8109d8318c9403b475eb2bef9cf4fdc19895cd108bc6be0effe1e",
+      "galleryDecision": null
+    },
+    {
+      "file": "shopkeeper-3-talk.webp",
+      "sha256": "ba593dc953b5841964a31ff49202772f5a1870dc672709b19939acdbd853b99a",
+      "galleryDecision": null
+    },
+    {
+      "file": "shopkeeper-3.webp",
+      "sha256": "b9ba35fe05ed83df854ad5ab51d7f4f6cd73cd46960d0aff7392ad46ac7c124d",
+      "galleryDecision": null
+    }
+  ]
+}

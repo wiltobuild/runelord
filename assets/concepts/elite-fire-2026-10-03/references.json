@@ -1,0 +1,38 @@
+[
+  {
+    "path": "assets/characters/ashfall-wyrm/base-r1.png",
+    "sha256": "e95ad233d110039df5a89809b682a833e503086d73ded3aef6d1321ee34051f8",
+    "decision": {
+      "status": "Approved",
+      "at": "2026-10-02T22:20:49.176Z",
+      "evidenceId": "03618946-ec1b-45e7-a6cc-06fdc22d6eaf",
+      "paths": [
+        "C:\\Users\\wilsh\\Projects\\runelord\\assets\\approvals\\inbox\\ashfall-wyrm\\base-r1\\base-r1.png"
+      ]
+    }
+  },
+  {
+    "path": "assets/characters/warlock-ignivar/base/r1/warlock-ignivar-base-r1.png",
+    "sha256": "4a12ae1d443da8df804ae070efbb135342eed8b9a140d1137fff221ca5d27974",
+    "decision": {
+      "status": "Approved",
+      "at": "2026-10-02T22:20:56.989Z",
+      "evidenceId": "fc3fc045-9e89-468c-a0a7-36e445fcfb43",
+      "paths": [
+        "C:\\Users\\wilsh\\Projects\\runelord\\assets\\approvals\\inbox\\warlock-ignivar\\base-r1\\warlock-ignivar-base-r1.png"
+      ]
+    }
+  },
+  {
+    "path": "assets/characters/crucible-sentinel/base-r1.png",
+    "sha256": "c23e408eb947b8021a78d98909e6b0b8e1e780cda17bedd05efa27db59e68636",
+    "decision": {
+      "status": "Approved",
+      "at": "2026-10-02T22:20:49.176Z",
+      "evidenceId": "895c8c17-9aea-4ee2-bba3-4f43c88c97b5",
+      "paths": [
+        "C:\\Users\\wilsh\\Projects\\runelord\\assets\\approvals\\inbox\\crucible-sentinel\\base-r1\\base-r1.png"
+      ]
+    }
+  }
+]

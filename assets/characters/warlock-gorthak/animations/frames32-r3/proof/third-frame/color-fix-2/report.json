@@ -1,0 +1,29 @@
+{
+  "method": "Regional shoulder highlight and red middle-tone refinement; alpha >200 included; emissive orange preserved",
+  "geometry_and_alpha_unchanged": true,
+  "scope": "Third pose only; other two poses unchanged; not installed",
+  "measurements": [
+    {
+      "region": "near shoulder",
+      "max_rgb_adjustment": [
+        -4,
+        0,
+        0
+      ],
+      "pixels": 15395
+    },
+    {
+      "region": "far shoulder",
+      "max_rgb_adjustment": [
+        -3,
+        -1,
+        -2
+      ],
+      "pixels": 5467
+    },
+    {
+      "region": "red skin",
+      "method": "Bounded middle-tone correction; red highlights changed by at most3RGB, ember pixels excluded"
+    }
+  ]
+}

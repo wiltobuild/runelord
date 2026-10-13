@@ -1,0 +1,329 @@
+{
+  "characterId": "whiteout-ray",
+  "state": "idle",
+  "status": "pending_independent_QA_and_user_approval",
+  "method": "generated whole-character poses",
+  "motion": "Wing undulation and trailing tail fins",
+  "sourceApproval": {
+    "id": "whiteout-ray",
+    "name": "Whiteout Ray",
+    "path": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\characters\\whiteout-ray\\base\\ice-detail-r2-2026-10-13\\master.png",
+    "sha256": "6785c628780e5d3c916edf87476eea7e7b73936444d6e668a7bea4929327edaf",
+    "decision": {
+      "status": "Approved",
+      "at": "2026-10-13T05:09:37.842Z",
+      "evidenceId": "ba9d75c8-5fe4-4805-92bd-ccc3aeb4b14c",
+      "paths": [
+        "C:\\Users\\wilsh\\Projects\\runelord\\assets\\characters\\whiteout-ray\\base\\ice-detail-r2-2026-10-13\\master.png"
+      ]
+    }
+  },
+  "sourceSheet": "generated-sheet.png",
+  "atlas": "atlas.png",
+  "frameCanvas": [
+    512,
+    512
+  ],
+  "coordinateSystem": "pixels, top-left origin, x right / y down",
+  "anchor": [
+    130,
+    280
+  ],
+  "anchorType": "cyan eye landmark",
+  "frames": [
+    {
+      "file": "frame-00.png",
+      "rect": [
+        0,
+        0,
+        512,
+        512
+      ],
+      "durationMs": 180
+    },
+    {
+      "file": "frame-01.png",
+      "rect": [
+        512,
+        0,
+        512,
+        512
+      ],
+      "durationMs": 180
+    },
+    {
+      "file": "frame-02.png",
+      "rect": [
+        1024,
+        0,
+        512,
+        512
+      ],
+      "durationMs": 180
+    },
+    {
+      "file": "frame-03.png",
+      "rect": [
+        1536,
+        0,
+        512,
+        512
+      ],
+      "durationMs": 180
+    },
+    {
+      "file": "frame-04.png",
+      "rect": [
+        2048,
+        0,
+        512,
+        512
+      ],
+      "durationMs": 180
+    },
+    {
+      "file": "frame-05.png",
+      "rect": [
+        2560,
+        0,
+        512,
+        512
+      ],
+      "durationMs": 180
+    },
+    {
+      "file": "frame-06.png",
+      "rect": [
+        3072,
+        0,
+        512,
+        512
+      ],
+      "durationMs": 180
+    },
+    {
+      "file": "frame-07.png",
+      "rect": [
+        3584,
+        0,
+        512,
+        512
+      ],
+      "durationMs": 180
+    }
+  ],
+  "sequence": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7
+  ],
+  "loop": true,
+  "durationMs": 1440,
+  "events": [],
+  "transitions": {
+    "idle": "idle"
+  },
+  "combatStates": "attack, hit, wounded_idle, die, cast unproduced; idle-only request",
+  "technicalExtraction": [
+    {
+      "sourceRect": [
+        0,
+        0,
+        429,
+        427
+      ],
+      "pasteOffset": [
+        28,
+        20
+      ],
+      "solidBounds": [
+        24,
+        44,
+        429,
+        412
+      ],
+      "alphaExtrema": [
+        0,
+        255
+      ]
+    },
+    {
+      "sourceRect": [
+        429,
+        0,
+        890,
+        427
+      ],
+      "pasteOffset": [
+        12,
+        21
+      ],
+      "solidBounds": [
+        37,
+        76,
+        461,
+        424
+      ],
+      "alphaExtrema": [
+        0,
+        255
+      ]
+    },
+    {
+      "sourceRect": [
+        890,
+        0,
+        1342,
+        427
+      ],
+      "pasteOffset": [
+        28,
+        20
+      ],
+      "solidBounds": [
+        13,
+        127,
+        452,
+        424
+      ],
+      "alphaExtrema": [
+        0,
+        255
+      ]
+    },
+    {
+      "sourceRect": [
+        1342,
+        0,
+        1774,
+        427
+      ],
+      "pasteOffset": [
+        36,
+        24
+      ],
+      "solidBounds": [
+        1,
+        183,
+        418,
+        427
+      ],
+      "alphaExtrema": [
+        0,
+        255
+      ]
+    },
+    {
+      "sourceRect": [
+        0,
+        427,
+        448,
+        887
+      ],
+      "pasteOffset": [
+        22,
+        7
+      ],
+      "solidBounds": [
+        23,
+        181,
+        448,
+        426
+      ],
+      "alphaExtrema": [
+        0,
+        255
+      ]
+    },
+    {
+      "sourceRect": [
+        448,
+        427,
+        876,
+        887
+      ],
+      "pasteOffset": [
+        25,
+        7
+      ],
+      "solidBounds": [
+        19,
+        134,
+        428,
+        414
+      ],
+      "alphaExtrema": [
+        0,
+        255
+      ]
+    },
+    {
+      "sourceRect": [
+        876,
+        427,
+        1314,
+        887
+      ],
+      "pasteOffset": [
+        12,
+        7
+      ],
+      "solidBounds": [
+        38,
+        36,
+        438,
+        387
+      ],
+      "alphaExtrema": [
+        0,
+        255
+      ]
+    },
+    {
+      "sourceRect": [
+        1314,
+        427,
+        1774,
+        887
+      ],
+      "pasteOffset": [
+        4,
+        7
+      ],
+      "solidBounds": [
+        53,
+        36,
+        445,
+        397
+      ],
+      "alphaExtrema": [
+        0,
+        255
+      ]
+    }
+  ],
+  "limitations": [
+    "Generated source resolution retained; not upscaled to claim HD.",
+    "No game integration.",
+    "Independent playback review pending."
+  ],
+  "preview": {
+    "file": "preview.gif",
+    "sha256": "935e331452aa8afb726b887ebebcbeb173339de54e932241f89f5cd6f121cbbe",
+    "galleryRevision": "idle-2026-10-13-r2",
+    "galleryStatus": "Pending approval",
+    "frameCount": 8,
+    "durationMs": 1440
+  },
+  "qa": {
+    "builderReview": "Full-size source/keypose light/dark passed identity, alpha and silhouette; actual GIF playback sampled through gallery in browser. Independent review pending.",
+    "gifDecode": "pass",
+    "alpha": "PNG RGBA preserved; source alpha not edited",
+    "reviewScale": "96px canvas (character height below 96px); independent exact 96px review pending"
+  }
+}

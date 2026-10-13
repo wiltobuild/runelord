@@ -1,0 +1,629 @@
+{
+  "contract_version": 2,
+  "character_id": "warlock-ignivar",
+  "display_name": "Ignivar \u2014 flying revision",
+  "status": "animation_complete_pending_review",
+  "format": "whole-character generated RGBA frames",
+  "base": {
+    "asset": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\approvals\\inbox\\warlock-ignivar\\base-r1\\warlock-ignivar-base-r1.png",
+    "sha256": "4a12ae1d443da8df804ae070efbb135342eed8b9a140d1137fff221ca5d27974",
+    "approval": {
+      "status": "Approved",
+      "at": "2026-10-02T22:20:56.989Z",
+      "evidenceId": "fc3fc045-9e89-468c-a0a7-36e445fcfb43",
+      "paths": [
+        "C:\\Users\\wilsh\\Projects\\runelord\\assets\\approvals\\inbox\\warlock-ignivar\\base-r1\\warlock-ignivar-base-r1.png"
+      ]
+    }
+  },
+  "authorization": "User requested redo Igvar flying using current imps as motion reference, 2026-10-04; one character not variants.",
+  "frame_canvas": [
+    1536,
+    1536
+  ],
+  "anchor": [
+    850,
+    1400
+  ],
+  "geometry": {
+    "coordinate_system": "pixels top-left x-right y-down",
+    "facing": "right",
+    "mirror_safe": false,
+    "root_px": [
+      850,
+      1400
+    ],
+    "anchor_normalized": [
+      0.5533854166666666,
+      0.9114583333333334
+    ],
+    "reference_visible_height_px": 1213,
+    "standing_height_world": 0.8,
+    "hover_gap_world": 0.18,
+    "root_motion": "In-place chest-registered flight; folded knees remain airborne. Renderer adds flight-lane elevation .18 world, removing over death first290ms; terminal grounded bbox bottom1400. Spawn frame10 has +110px entry displacement. No automatic bounding-box normalization."
+  },
+  "frames": [
+    {
+      "id": 0,
+      "file": "frame-00.png",
+      "sha256": "3f980dcc9fa39006a6ab4895b3da9cf0deca34ef39e20461d95d08fd40c510ab",
+      "source": "source/up.png",
+      "source_sha256": "14cd8fdbf9e9bbd7ead63cfa6ed3101bba7a98060a1a9b9de164a81c6f650ac1",
+      "source_dimensions": [
+        1240,
+        1269
+      ],
+      "source_opaque_bbox": [
+        14,
+        19,
+        1226,
+        1220
+      ],
+      "registration_translation_px": [
+        116,
+        62
+      ],
+      "uniform_scale": 1,
+      "visible_bbox": [
+        127,
+        78,
+        1346,
+        1291
+      ]
+    },
+    {
+      "id": 1,
+      "file": "frame-01.png",
+      "sha256": "b97dc1ed1b3a421b0226ac90b6849954bd76c65d113d37a399ef2ff5e8706d02",
+      "source": "source/mid.png",
+      "source_sha256": "3b28ad8c55c8ba31aeea16d871231d418a341741566b7b9ef4ac969a98354cba",
+      "source_dimensions": [
+        1240,
+        1269
+      ],
+      "source_opaque_bbox": [
+        84,
+        131,
+        1203,
+        1219
+      ],
+      "registration_translation_px": [
+        117,
+        63
+      ],
+      "uniform_scale": 1,
+      "visible_bbox": [
+        142,
+        114,
+        1325,
+        1292
+      ]
+    },
+    {
+      "id": 2,
+      "file": "frame-02.png",
+      "sha256": "eee5df19071b6104335b2c6c8ade14d1d075d252cd119419d59af3cb3751affa",
+      "source": "source/down.png",
+      "source_sha256": "9025f1ab8f3fbcceebf69cbbb95b71f64ca38a736974033eff3e1a9a3c1e5370",
+      "source_dimensions": [
+        1240,
+        1269
+      ],
+      "source_opaque_bbox": [
+        21,
+        167,
+        1226,
+        1208
+      ],
+      "registration_translation_px": [
+        119,
+        71
+      ],
+      "uniform_scale": 1,
+      "visible_bbox": [
+        119,
+        92,
+        1349,
+        1340
+      ]
+    },
+    {
+      "id": 3,
+      "file": "frame-03.png",
+      "sha256": "35e1b0c3fa88c028ae998a4835d60f8fd42f0ac17374f6f628ad24ad44c54a79",
+      "source": "source/anticipation.png",
+      "source_sha256": "d3e886f6e7eeebbd5eadab6f52e92eb0e813ed83de6189b162fe449041040e67",
+      "source_dimensions": [
+        1240,
+        1269
+      ],
+      "source_opaque_bbox": [
+        15,
+        10,
+        1225,
+        1223
+      ],
+      "registration_translation_px": [
+        114,
+        70
+      ],
+      "uniform_scale": 1,
+      "visible_bbox": [
+        126,
+        77,
+        1342,
+        1299
+      ]
+    },
+    {
+      "id": 4,
+      "file": "frame-04.png",
+      "sha256": "89b1ed20add6930acb68bb9fb837a45f4aede3a5741a67027e0be7aac0b471f5",
+      "source": "source/release.png",
+      "source_sha256": "de9dc40a8b8058861d7d554b6557043415fcd51f21c6140a6b070fcf1490f4db",
+      "source_dimensions": [
+        1241,
+        1268
+      ],
+      "source_opaque_bbox": [
+        15,
+        98,
+        1234,
+        1135
+      ],
+      "registration_translation_px": [
+        124,
+        63
+      ],
+      "uniform_scale": 1,
+      "visible_bbox": [
+        124,
+        63,
+        1365,
+        1331
+      ]
+    },
+    {
+      "id": 5,
+      "file": "frame-05.png",
+      "sha256": "ee078e70a3652b289f2f13d7a290ef87fe58584c64ef7b09943a16189a9cca7c",
+      "source": "source/hit.png",
+      "source_sha256": "ebec89f382f27066bc8294f07bc5d7550ca5889a4c16b000ecec55d1f9e3671b",
+      "source_dimensions": [
+        1240,
+        1269
+      ],
+      "source_opaque_bbox": [
+        21,
+        19,
+        1215,
+        1142
+      ],
+      "registration_translation_px": [
+        152,
+        81
+      ],
+      "uniform_scale": 1,
+      "visible_bbox": [
+        170,
+        97,
+        1374,
+        1350
+      ]
+    },
+    {
+      "id": 6,
+      "file": "frame-06.png",
+      "sha256": "0fb0b11f5c84c262235fa13e071911eb4386bf13712d074bf14b4edc01debfff",
+      "source": "source/wounded-up.png",
+      "source_sha256": "05f346925ef2008f9624ec36e067b2b222cfba62c8e9803823c5946f5023110c",
+      "source_dimensions": [
+        1240,
+        1269
+      ],
+      "source_opaque_bbox": [
+        26,
+        18,
+        1220,
+        1200
+      ],
+      "registration_translation_px": [
+        154,
+        80
+      ],
+      "uniform_scale": 1,
+      "visible_bbox": [
+        176,
+        95,
+        1378,
+        1309
+      ]
+    },
+    {
+      "id": 7,
+      "file": "frame-07.png",
+      "sha256": "9c13b9f1323e6a195bb7579fee8ca42102ce65ca5918975b356566b41a6385a5",
+      "source": "source/wounded-down.png",
+      "source_sha256": "4003786dd570e37cd6d7bb43961f68dcbe024b4d5c20ca469585aedd6b728a91",
+      "source_dimensions": [
+        1240,
+        1269
+      ],
+      "source_opaque_bbox": [
+        30,
+        206,
+        1218,
+        1200
+      ],
+      "registration_translation_px": [
+        155,
+        81
+      ],
+      "uniform_scale": 1,
+      "visible_bbox": [
+        155,
+        102,
+        1381,
+        1350
+      ]
+    },
+    {
+      "id": 8,
+      "file": "frame-08.png",
+      "sha256": "fdfc193349fbe455c91b53d08111645a5324052430fcf2b3871d282df936ea5c",
+      "source": "source/fall.png",
+      "source_sha256": "3ca101d9b2c4636528c9fcbe8d08cc46faf0a9982dc227790320ab707f55bbeb",
+      "source_dimensions": [
+        1240,
+        1269
+      ],
+      "source_opaque_bbox": [
+        265,
+        7,
+        1053,
+        1231
+      ],
+      "registration_translation_px": [
+        123,
+        175
+      ],
+      "uniform_scale": 1,
+      "visible_bbox": [
+        162,
+        179,
+        1335,
+        1412
+      ]
+    },
+    {
+      "id": 9,
+      "file": "frame-09.png",
+      "sha256": "1eb2eb12eaeb591db6d91606516db44bb77f6ad55db8123bed71a40715aa1f53",
+      "source": "source/terminal.png",
+      "source_sha256": "8de26181c65fe394ee9e59c597b0f0901581ece88d3a6ec154decd2169169c5c",
+      "source_dimensions": [
+        1240,
+        1269
+      ],
+      "registration_translation_px": [
+        126,
+        185
+      ],
+      "uniform_scale": 1,
+      "visible_bbox": [
+        126,
+        226,
+        1344,
+        1404
+      ]
+    },
+    {
+      "id": 10,
+      "file": "frame-10.png",
+      "sha256": "3de3465a286492b4a232fd11cc828b73830010cb89a8e0109c3393e41a221685",
+      "derived_from": 2,
+      "registration_translation_px": [
+        0,
+        110
+      ],
+      "visible_bbox": [
+        119,
+        202,
+        1349,
+        1450
+      ]
+    }
+  ],
+  "atlases": {
+    "idle": {
+      "file": "idle-atlas.png",
+      "dimensions": [
+        3072,
+        3072
+      ],
+      "rects": {
+        "0": [
+          0,
+          0,
+          1536,
+          1536
+        ],
+        "1": [
+          1536,
+          0,
+          1536,
+          1536
+        ],
+        "2": [
+          0,
+          1536,
+          1536,
+          1536
+        ]
+      },
+      "sha256": "fa57dc527997d45827a918640be8fa53cb9a7aa6d49bd552b71f6b8ad7006a53"
+    },
+    "act": {
+      "file": "act-atlas.png",
+      "dimensions": [
+        3072,
+        3072
+      ],
+      "rects": {
+        "3": [
+          0,
+          0,
+          1536,
+          1536
+        ],
+        "4": [
+          1536,
+          0,
+          1536,
+          1536
+        ],
+        "1": [
+          0,
+          1536,
+          1536,
+          1536
+        ]
+      },
+      "sha256": "7ac8ed1c1523d3f20a706326aa1024643c83b8329c93b62558637288cdd0360e"
+    },
+    "hit": {
+      "file": "hit-atlas.png",
+      "dimensions": [
+        3072,
+        3072
+      ],
+      "rects": {
+        "5": [
+          0,
+          0,
+          1536,
+          1536
+        ],
+        "1": [
+          1536,
+          0,
+          1536,
+          1536
+        ],
+        "0": [
+          0,
+          1536,
+          1536,
+          1536
+        ]
+      },
+      "sha256": "1aa888b84392c95e79bc17181c0b3026eebed6b5222e8396738a817c1cd989f2"
+    },
+    "wounded_idle": {
+      "file": "wounded_idle-atlas.png",
+      "dimensions": [
+        3072,
+        1536
+      ],
+      "rects": {
+        "6": [
+          0,
+          0,
+          1536,
+          1536
+        ],
+        "7": [
+          1536,
+          0,
+          1536,
+          1536
+        ]
+      },
+      "sha256": "7c67fecb8924c9a72920aaf669c6c47b18c72547e97da678055886b787c63afd"
+    },
+    "die": {
+      "file": "die-atlas.png",
+      "dimensions": [
+        3072,
+        3072
+      ],
+      "rects": {
+        "5": [
+          0,
+          0,
+          1536,
+          1536
+        ],
+        "8": [
+          1536,
+          0,
+          1536,
+          1536
+        ],
+        "9": [
+          0,
+          1536,
+          1536,
+          1536
+        ]
+      },
+      "sha256": "83bd65fd34e1cd1e15ede0a5e52599d966876ad6969fb3c89fd63f8b7f2f4117"
+    },
+    "spawn": {
+      "file": "spawn-atlas.png",
+      "dimensions": [
+        3072,
+        3072
+      ],
+      "rects": {
+        "10": [
+          0,
+          0,
+          1536,
+          1536
+        ],
+        "2": [
+          1536,
+          0,
+          1536,
+          1536
+        ],
+        "1": [
+          0,
+          1536,
+          1536,
+          1536
+        ],
+        "0": [
+          1536,
+          1536,
+          1536,
+          1536
+        ]
+      },
+      "sha256": "c62322fa4c7443d62ee6292112a64c4b5ab01146a8cc6702863a2ef13e227b0c"
+    }
+  },
+  "animations": {
+    "idle": {
+      "frames": [
+        0,
+        1,
+        2,
+        1
+      ],
+      "durations_ms": [
+        140,
+        90,
+        140,
+        90
+      ],
+      "loop": true,
+      "events": [],
+      "transition": "self"
+    },
+    "act": {
+      "frames": [
+        3,
+        4,
+        4,
+        1
+      ],
+      "durations_ms": [
+        100,
+        70,
+        80,
+        100
+      ],
+      "loop": false,
+      "events": [
+        {
+          "name": "release",
+          "at_ms": 100
+        }
+      ],
+      "transition": "idle"
+    },
+    "hit": {
+      "frames": [
+        5,
+        1,
+        0
+      ],
+      "durations_ms": [
+        100,
+        100,
+        100
+      ],
+      "loop": false,
+      "events": [],
+      "transition": "idle"
+    },
+    "wounded_idle": {
+      "frames": [
+        6,
+        7
+      ],
+      "durations_ms": [
+        230,
+        230
+      ],
+      "loop": true,
+      "events": [],
+      "transition": "self"
+    },
+    "die": {
+      "frames": [
+        5,
+        8,
+        9
+      ],
+      "durations_ms": [
+        110,
+        180,
+        850
+      ],
+      "loop": false,
+      "events": [
+        {
+          "name": "terminal",
+          "at_ms": 290
+        }
+      ],
+      "transition": "hold-last"
+    },
+    "spawn": {
+      "frames": [
+        10,
+        2,
+        1,
+        0
+      ],
+      "durations_ms": [
+        100,
+        100,
+        100,
+        120
+      ],
+      "loop": false,
+      "events": [
+        {
+          "name": "arrival",
+          "at_ms": 300
+        }
+      ],
+      "transition": "idle"
+    }
+  },
+  "generation": {
+    "tool": "built-in image_gen",
+    "method": "Individual native master-scale poses then integer translation-only registration; all RGB/alpha kept. No upscaling.",
+    "motion_reference": "assets/characters/warlock-summons/animations/flight-r1/warlock-imp",
+    "unique_authored_poses": 10
+  },
+  "limitations": [
+    "Limited-animation timing: three authored idle wing phases, two wounded phases. No skeletal interpolation.",
+    "Generated contours vary slightly, chiefly claws and spikes; user review pending.",
+    "Runtime integration is not part of this package; use documented flight lane and death offset removal."
+  ]
+}

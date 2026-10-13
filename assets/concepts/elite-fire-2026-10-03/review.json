@@ -1,0 +1,30 @@
+{
+  "reviewer": "/root/style_audit (independent Runelord art-director)",
+  "result": "All three suitable for concept review; no visual blocker at full size and 96px light/dark composites.",
+  "findings": [
+    "Dragon: broad wings, long tail and four-legged body remain readable.",
+    "Demon: tall crown, sword and claw silhouette; gold trims and overlapping wings/arms become busy at 96px.",
+    "Cyclops: exactly one visible eye, organic skin, massive hammer; eye becomes tiny at 96px.",
+    "All preserve serious angular Runelord cel shading.",
+    "Backgrounds composite cleanly. Raw image preview haze is not evidence of cutout failure; dominant foreground alpha is 253/255."
+  ],
+  "limitations": [
+    "Flattened single-pose artwork, not separated layers or completed rigs.",
+    "Embedded fire details require planning for animation.",
+    "No runtime size or gameplay implementation verified."
+  ],
+  "construction": {
+    "dragon": "Proposed: chest/pelvis, head/jaw and neck chain, four upper/lower leg pairs with paws, wing roots/spans, segmented tail, throat VFX.",
+    "demon": "Proposed: pelvis/torso/head, paired arms/legs, claw hands/feet, independent sword at hand grip, wings and crown fire.",
+    "cyclops": "Proposed: torso/pelvis/head/jaw, paired limbs, overlapping shoulder/hip armor, independent maul at grip, crest/eye VFX."
+  },
+  "requiredFutureStates": [
+    "idle",
+    "attack",
+    "hit",
+    "wounded_idle",
+    "die"
+  ],
+  "conditionalStates": "Cast, guard and spawn applicability unresolved until gameplay specification; no raised/tamed forms assumed.",
+  "status": "base_pending"
+}

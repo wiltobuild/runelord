@@ -1,0 +1,115 @@
+{
+  "result": "pass",
+  "checks": [
+    "1536 RGBA frames",
+    "all source alpha>127 pixels preserved by translation",
+    "opaque borders safely padded",
+    "valid state frame references and timings",
+    "1024 GIF preview dimensions",
+    "death one-shot hold-last"
+  ],
+  "frames": [
+    {
+      "frame": 0,
+      "opaque_bounds": [
+        150,
+        215,
+        1386,
+        1400
+      ],
+      "opaque_pixels_preserved": true
+    },
+    {
+      "frame": 1,
+      "opaque_bounds": [
+        162,
+        203,
+        1374,
+        1400
+      ],
+      "opaque_pixels_preserved": true
+    },
+    {
+      "frame": 2,
+      "opaque_bounds": [
+        279,
+        182,
+        1257,
+        1400
+      ],
+      "opaque_pixels_preserved": true
+    },
+    {
+      "frame": 3,
+      "opaque_bounds": [
+        158,
+        299,
+        1378,
+        1400
+      ],
+      "opaque_pixels_preserved": true
+    },
+    {
+      "frame": 4,
+      "opaque_bounds": [
+        174,
+        218,
+        1363,
+        1400
+      ],
+      "opaque_pixels_preserved": true
+    },
+    {
+      "frame": 5,
+      "opaque_bounds": [
+        180,
+        198,
+        1357,
+        1400
+      ],
+      "opaque_pixels_preserved": true
+    },
+    {
+      "frame": 6,
+      "opaque_bounds": [
+        183,
+        270,
+        1353,
+        1400
+      ],
+      "opaque_pixels_preserved": true
+    },
+    {
+      "frame": 7,
+      "opaque_bounds": [
+        165,
+        683,
+        1371,
+        1400
+      ],
+      "opaque_pixels_preserved": true
+    },
+    {
+      "frame": 8,
+      "opaque_bounds": [
+        179,
+        198,
+        1358,
+        1400
+      ],
+      "opaque_pixels_preserved": true
+    },
+    {
+      "frame": 9,
+      "opaque_bounds": [
+        211,
+        244,
+        1326,
+        1400
+      ],
+      "opaque_pixels_preserved": true
+    }
+  ],
+  "limitation": "Faint source alpha outside visible silhouette may extend beyond registered canvas in terminal pose.",
+  "rechecked_after": "wounded-exhale strict identity repair"
+}

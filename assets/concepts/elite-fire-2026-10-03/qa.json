@@ -1,0 +1,41 @@
+[
+  {
+    "id": "elite-fire-dragon",
+    "name": "Caldera Tyrant",
+    "revision": "base-r2",
+    "asset": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\concepts\\elite-fire-2026-10-03\\elite-fire-dragon-base-r2.png",
+    "width": 1536,
+    "height": 1024,
+    "hasAlpha": true,
+    "transparentPixels": 697022,
+    "partialAlphaPixels": 875842,
+    "sha256": "66bbf1a1e0d227b9522e3a80c56ad8a8b58547fa55d8cdf2de5a7ae5acd5c1c2",
+    "approval": "Pending approval"
+  },
+  {
+    "id": "elite-greater-arch-demon",
+    "name": "Pyre Sovereign",
+    "revision": "base-r2",
+    "asset": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\concepts\\elite-fire-2026-10-03\\elite-greater-arch-demon-base-r2.png",
+    "width": 1240,
+    "height": 1269,
+    "hasAlpha": true,
+    "transparentPixels": 848369,
+    "partialAlphaPixels": 723510,
+    "sha256": "c3cc9aa44e6d6538d45aecaaab9466edc459076027d56073cde194d2e23934e0",
+    "approval": "Pending approval"
+  },
+  {
+    "id": "elite-armored-flame-cyclops",
+    "name": "Furnace Colossus",
+    "revision": "base-r1",
+    "asset": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\concepts\\elite-fire-2026-10-03\\elite-armored-flame-cyclops-base-r1.png",
+    "width": 1240,
+    "height": 1269,
+    "hasAlpha": true,
+    "transparentPixels": 677702,
+    "partialAlphaPixels": 893627,
+    "sha256": "85ddd6617090fccd58634fbb14760bb54929dbadab1c41def06561a33ab0b157",
+    "approval": "Pending approval"
+  }
+]

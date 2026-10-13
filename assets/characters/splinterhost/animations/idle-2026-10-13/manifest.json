@@ -1,0 +1,42 @@
+{
+  "characterId": "splinterhost",
+  "state": "idle",
+  "status": "failed_technical_QA",
+  "runtimeReady": false,
+  "sourceApproval": {
+    "id": "splinterhost",
+    "name": "Splinterhost",
+    "path": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\characters\\splinterhost\\base\\ice-detail-r2-2026-10-13\\master.png",
+    "sha256": "da927820534c9ab34ebb57ddeeca5445efecd5c156c83fe0ba6055ee86ac089e",
+    "decision": {
+      "status": "Approved",
+      "at": "2026-10-13T05:09:47.242Z",
+      "evidenceId": "3a490bf6-ea37-46db-b2bc-6255e8589272",
+      "paths": [
+        "C:\\Users\\wilsh\\Projects\\runelord\\assets\\characters\\splinterhost\\base\\ice-detail-r2-2026-10-13\\master.png"
+      ]
+    }
+  },
+  "method": "generated whole-creature frame study",
+  "motion": "Suspended stone plates expand and contract with ice-shard lag",
+  "frameCanvas": [
+    768,
+    512
+  ],
+  "candidateSequence": [
+    0,
+    1,
+    2,
+    3,
+    2,
+    1
+  ],
+  "candidateDurationMs": 1680,
+  "preview": "candidate-preview.gif",
+  "combatStates": "unproduced; idle-only request",
+  "limitations": [
+    "Three image-generation repair attempts did not remove diffuse grey/blue source haze. Alpha channel exists but is not a clean runtime cutout.",
+    "Candidate frames and preview preserved for transparency repair. Do not integrate or claim completed animation."
+  ],
+  "generationPrompts": "generation-prompts.json"
+}

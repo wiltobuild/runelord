@@ -1,0 +1,55 @@
+{
+  "exact_reused": 9,
+  "new_authored": 23,
+  "excluded": [
+    "../hd-r2/source/idle-inhale.png",
+    "../hd-r2/source/wounded-exhale-first-pass.png"
+  ],
+  "mapping": [
+    {
+      "source": "source/idle-00.png",
+      "reused_from": "../hd-r2/source/neutral.png",
+      "sha256": "5e5700db391d6b020f31307d1af113102eb81f5d80575eef2c01777119f5c191"
+    },
+    {
+      "source": "source/attack-02.png",
+      "reused_from": "../hd-r2/source/attack-windup.png",
+      "sha256": "fa02ed47fe1d41a561d1778ba8d3e8b33643a849f0dd3b411ddaba0e2a32136c"
+    },
+    {
+      "source": "source/attack-04.png",
+      "reused_from": "../hd-r2/source/attack-impact.png",
+      "sha256": "e3a87d2c73a567bd113fb446a16f77cc95af9aa4efac1f89e27d5ca816c3b07d"
+    },
+    {
+      "source": "source/attack-06.png",
+      "reused_from": "../hd-r2/source/attack-recovery.png",
+      "sha256": "42309e4e6df1106f15c498afd6ddb58ed5a8e06c4464f6e52888ad5cf35237e3"
+    },
+    {
+      "source": "source/hit-01.png",
+      "reused_from": "../hd-r2/source/hit.png",
+      "sha256": "5f688c325cd6ed44db267be4217050b7e4498a4c6c66663811aa01470a42ef39"
+    },
+    {
+      "source": "source/wounded_idle-00.png",
+      "reused_from": "../hd-r2/source/wounded.png",
+      "sha256": "4c09c9a9ac769adbb2c3bca16b0bd86fdcc9e5ede84a79c3d631dad6227cb3e8"
+    },
+    {
+      "source": "source/wounded_idle-02.png",
+      "reused_from": "../hd-r2/source/wounded-exhale.png",
+      "sha256": "00082fe23e5ad529483d5ec1766ffe3f70bdb61ecea84b68345244de7a610efe"
+    },
+    {
+      "source": "source/die-03.png",
+      "reused_from": "../hd-r2/source/die-fall.png",
+      "sha256": "820dc03ec66cf0711deec378b8601905b11913ffda88442b1d94992faabef868"
+    },
+    {
+      "source": "source/die-07.png",
+      "reused_from": "../hd-r2/source/die-terminal.png",
+      "sha256": "f10bc2b7d1aabd857dfee9cfcb36e3ba1c3cf3177884f8024e668892135ea2a9"
+    }
+  ]
+}

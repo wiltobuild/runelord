@@ -1,0 +1,58 @@
+{
+  "tool": "built-in image_gen",
+  "date": "2026-10-04",
+  "reference": "source/neutral.png",
+  "method": "Individual full-character reference-conditioned poses; no upscaling. Rejected first 2x2 sheet due native resolution too small.",
+  "sources": [
+    {
+      "name": "idle-inhale",
+      "pose": "A subtle articulated inhale: chest rises and expands, shoulders lift slightly, elbows flex a little. BOTH feet remain in exact reference stance. Preserve full normal standing height.",
+      "path": "C:\\Users\\wilsh\\.codex\\generated_images\\01a109bb-a329-7403-b926-addf3e929de1\\exec-b579605e-ebe2-40f0-8c88-a24a2304be78.png"
+    },
+    {
+      "name": "attack-windup",
+      "pose": "Anticipation for a devastating two-fist ground slam: both giant fists raised high above his head, elbows bent, chest extended, knees subtly bent. Full anatomy including raised fists must fit with generous margins. Same frontal-three-quarter right facing camera.",
+      "path": "C:\\Users\\wilsh\\.codex\\generated_images\\01a109bb-a329-7403-b926-addf3e929de1\\exec-20c40061-7b2d-451b-b2d8-a666a5104559.png"
+    },
+    {
+      "name": "attack-impact",
+      "pose": "Impact of a devastating two-fist ground slam: both huge fists slammed down forward on the ground to screen right, torso bent deeply forward, knees crouched. Grounded, no effects or impact dust. Preserve limb lengths; this is a crouch not shrinking. Full anatomy fits safely.",
+      "path": "C:\\Users\\wilsh\\.codex\\generated_images\\01a109bb-a329-7403-b926-addf3e929de1\\exec-9fc859f4-6cfc-481a-88af-245cf0d28a53.png"
+    },
+    {
+      "name": "hit",
+      "pose": "Hit recoil: shoulders and head recoil slightly backward toward screen left, arms lift defensively, legs planted. A clear articulated flinch preserving anatomy.",
+      "path": "C:\\Users\\wilsh\\.codex\\generated_images\\01a109bb-a329-7403-b926-addf3e929de1\\exec-10de85a4-ca80-4a69-a74a-e1fea966c277.png"
+    },
+    {
+      "name": "wounded",
+      "pose": "Wounded idle: tired hunched low shoulders, one knee slightly bent, both fists hanging lower, head bowed yet ember eyes alert. Keep feet planted, exact same outfit and horns. No blood or wounds.",
+      "path": "C:\\Users\\wilsh\\.codex\\generated_images\\01a109bb-a329-7403-b926-addf3e929de1\\exec-770c7ce0-1302-4051-8a63-bd87d4f69310.png"
+    },
+    {
+      "name": "die-fall",
+      "pose": "Death collapse intermediate: one knee on ground, torso tipping toward screen right, one massive fist braces on ground, other arm slack. Head bowed, eye glow dim. Full body, horns and feet safely inside canvas.",
+      "path": "C:\\Users\\wilsh\\.codex\\generated_images\\01a109bb-a329-7403-b926-addf3e929de1\\exec-1df480de-59ce-4b84-b135-00ce64b5a955.png"
+    },
+    {
+      "name": "die-terminal",
+      "pose": "Final death pose: fallen fully onto his side on ground, body lying horizontally, legs folded naturally, huge fists resting inert, head sideways low, ember eyes extinguished. Recognizable exact body armor and horns. One complete intact body, no dismemberment, no effects. Full silhouette safe inside canvas.",
+      "path": "C:\\Users\\wilsh\\.codex\\generated_images\\01a109bb-a329-7403-b926-addf3e929de1\\exec-59f34757-8748-4ea5-9354-d74c055bf884.png"
+    },
+    {
+      "name": "wounded-exhale",
+      "path": "C:\\Users\\wilsh\\.codex\\generated_images\\01a109bb-a329-7403-b926-addf3e929de1\\exec-5f4112b7-cb68-4a1c-a012-cb2fc7685223.png"
+    },
+    {
+      "name": "attack-recovery",
+      "path": "C:\\Users\\wilsh\\.codex\\generated_images\\01a109bb-a329-7403-b926-addf3e929de1\\exec-fc44d11f-d2a7-4178-83e4-4fe01530c126.png"
+    }
+  ],
+  "repair": {
+    "source": "source/wounded.png",
+    "output": "source/wounded-exhale.png",
+    "tool": "built-in image_gen",
+    "original": "source/wounded-exhale-first-pass.png",
+    "prompt": "Preserve exact silhouette, proportions and feet; only5px chest and chin exhale to eliminate width popping."
+  }
+}

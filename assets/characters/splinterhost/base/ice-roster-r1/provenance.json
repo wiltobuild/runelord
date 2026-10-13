@@ -1,0 +1,76 @@
+{
+  "character_id": "splinterhost",
+  "display_name": "Splinterhost",
+  "role": "collective armor swarm",
+  "revision": "ice-roster-r1",
+  "status": "base_pending",
+  "generator": "built-in image_gen",
+  "asset": "master.png",
+  "sha256": "3578258642e98ec3d3f344efcc9c653f51ff0981cfdfccb83063dc92d6d9ea81",
+  "dimensions": {
+    "width": 1536,
+    "height": 1024
+  },
+  "alpha": {
+    "hasAlpha": true,
+    "transparentPixels": 957601,
+    "partialPixels": 615263,
+    "visibleBounds": [
+      193,
+      60,
+      1471,
+      968
+    ]
+  },
+  "style_references": [
+    {
+      "path": "assets/heroes/references/runeblade/runeblade-base-r1.png",
+      "sha256": "adbd33fb14e91b761f355ffeb9966cb262aacca78429099ec09b0fab9faf84ef",
+      "decision": {
+        "status": "Approved",
+        "at": "2026-10-02T03:44:25.533Z",
+        "evidenceId": "user-chat-2026-10-01-approve-existing-runelord",
+        "paths": [
+          "C:\\Users\\wilsh\\Projects\\runelord\\assets\\heroes\\references\\runeblade\\runeblade-base-r1.png"
+        ]
+      }
+    },
+    {
+      "path": "assets/characters/runeblade-base-summons/selected-r1/rime-seer/master.png",
+      "sha256": "ee7a6e63d64486e6b85159a04bb981f41c1ef51fb6d93eed01bc9c16117275c9",
+      "decision": {
+        "status": "Approved",
+        "at": "2026-10-05T10:56:14.695Z",
+        "evidenceId": "e0d1dda9-6d98-47cc-b49a-4d766faf5063",
+        "paths": [
+          "C:/Users/wilsh/Projects/runelord/assets/characters/runeblade-base-summons/selected-r1/rime-seer/master.png"
+        ]
+      }
+    }
+  ],
+  "repair_prompt": "Edit the supplied Splinterhost haunted armor swarm artwork only. Preserve EXACT creature design, arrangement, scale, three face fragments, armor fragments, cyan ice shards and hard-edged cel shading. Remove ALL dark background AND diffuse blue haze/halo around and BETWEEN floating parts. Output physical armor and ice fragments only with genuine transparent alpha in all negative spaces and outside creature. No mist, no shadow, no glow, no backdrop. Expand empty transparent margin so every tip is well inside frame. Keep broad chips and frost accents, do not simplify the subject.\nSecond unsuccessful repair:\nBACKGROUND REMOVAL task. Cut out the solid armor and ice shards from reference image. ALL blue and gray fog is BACKGROUND and must be completely erased, including mist between floating armor fragments. The ONLY things remaining are crisp solid physical armor fragments and ice pieces. Deliver hard clean cutout on genuine transparent background with empty transparent margins and clear transparent negative spaces between the floating pieces. Keep design, layout, cel shading, three faceplates and ice claws. Absolutely no aura, shadow, fog, blue blurry connection, rectangle, black or blue backdrop. Isolated 2D sprite.",
+  "construction": {
+    "status": "proposed only; flattened raster, no separated parts or rig",
+    "family": "bespoke floating collective",
+    "parts": [
+      "swarm root",
+      "three face fragments",
+      "large armor fragments",
+      "ice claw shards"
+    ]
+  },
+  "qa": {
+    "builder": "ice_monster_artist",
+    "fullSize": "inspected",
+    "smallScale": "Inspected review-96.png; role and silhouette readable",
+    "observations": "Distinct three-faced collective creature, no humanoid body, transparent negative spaces confirmed by explicit light/dark composites.",
+    "independentReview": "pending",
+    "alphaDisplayNote": "Full-size tool preview exposed hidden RGB haze; actual composited alpha is clean. qa-light.png and qa-dark.png verify. Two unnecessary cleanup candidates were not selected."
+  },
+  "limitations": [
+    "New design awaits user gallery approval.",
+    "No variants, animations or runtime integration produced.",
+    "Motion bounds and joint pivots need future animation production."
+  ],
+  "source": "C:/Users/wilsh/.codex/generated_images/01a1327a-7080-7cb3-806e-ca61fbb25fc1/exec-9ad0dd35-4be7-49c4-b196-407eb13d4789.png"
+}

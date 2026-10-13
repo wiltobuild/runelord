@@ -1,0 +1,41 @@
+{
+  "original_hd_r2_reused": 9,
+  "frames32_r1_new_nonidle_reused": 20,
+  "new_idle_repairs": 3,
+  "unchanged_packed_frames": [
+    0,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30,
+    31
+  ],
+  "changed_idle_frames": [
+    1,
+    2,
+    3
+  ]
+}

@@ -1,0 +1,6 @@
+undefined
+
+ALPHA REPAIR:
+Edit the supplied Splinterhost haunted armor swarm artwork only. Preserve EXACT creature design, arrangement, scale, three face fragments, armor fragments, cyan ice shards and hard-edged cel shading. Remove ALL dark background AND diffuse blue haze/halo around and BETWEEN floating parts. Output physical armor and ice fragments only with genuine transparent alpha in all negative spaces and outside creature. No mist, no shadow, no glow, no backdrop. Expand empty transparent margin so every tip is well inside frame. Keep broad chips and frost accents, do not simplify the subject.
+Second unsuccessful repair:
+BACKGROUND REMOVAL task. Cut out the solid armor and ice shards from reference image. ALL blue and gray fog is BACKGROUND and must be completely erased, including mist between floating armor fragments. The ONLY things remaining are crisp solid physical armor fragments and ice pieces. Deliver hard clean cutout on genuine transparent background with empty transparent margins and clear transparent negative spaces between the floating pieces. Keep design, layout, cel shading, three faceplates and ice claws. Absolutely no aura, shadow, fog, blue blurry connection, rectangle, black or blue backdrop. Isolated 2D sprite.

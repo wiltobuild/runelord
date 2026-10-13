@@ -1,0 +1,41 @@
+{
+  "characterId": "whiteout-ray",
+  "revision": "ice-detail-r3-2026-10-13",
+  "method": "built-in image_gen edit",
+  "source": "C:/Users/wilsh/.codex/generated_images/01a13279-3456-74b2-b38a-630b9fc043ef/exec-0049cded-86ac-4dfd-9dcb-2fca85e08267.png",
+  "sha256": "5152e444c28d83708e126978f96fc98f3ded16c2095bb1d95700bd221b9302de",
+  "size": [
+    1536,
+    1024
+  ],
+  "alphaExtrema": [
+    0,
+    254
+  ],
+  "references": [
+    {
+      "path": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\characters\\whiteout-ray\\base\\ice-roster-r1\\base.png",
+      "sha256": "44cbb23aafbeb6c9bcf331ea12ebe7402efe87400111cc42f673c2cd76727724",
+      "decision": {
+        "status": "not recorded"
+      }
+    }
+  ],
+  "status": "Pending approval",
+  "qa": {
+    "visual": "pass",
+    "checks": [
+      "Identity and pose retained",
+      "Crisp silhouette without fuzzy frost fringe",
+      "Light and dark composites inspected at full resolution",
+      "96 px readability inspected",
+      "Broad cel color planes with selective fractures and bevels"
+    ],
+    "reviewer": "clean_ray_skitterer (self-review)",
+    "alpha": "genuine transparent background; unmodified source alpha 0..254"
+  },
+  "limitations": [
+    "Base illustration, no separated layers or animation."
+  ],
+  "recovery": true
+}

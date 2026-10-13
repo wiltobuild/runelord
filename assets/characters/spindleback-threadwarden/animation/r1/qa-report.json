@@ -1,0 +1,117 @@
+{
+  "character_id": "spindleback-threadwarden",
+  "status": "animation_review_pending",
+  "format": "generated articulated keyframe sprite animation",
+  "frame_canvas": [
+    440,
+    400
+  ],
+  "frame_count": 20,
+  "states": {
+    "idle": {
+      "frames": [
+        0,
+        1,
+        2,
+        3,
+        2,
+        1
+      ],
+      "duration_ms": 1080,
+      "loop": true,
+      "gif_frames": 6,
+      "gif_loop": 0,
+      "exists": true
+    },
+    "attack": {
+      "frames": [
+        4,
+        5,
+        6,
+        7,
+        0
+      ],
+      "duration_ms": 410,
+      "loop": false,
+      "gif_frames": 5,
+      "gif_loop": null,
+      "exists": true
+    },
+    "hit": {
+      "frames": [
+        8,
+        9,
+        0
+      ],
+      "duration_ms": 320,
+      "loop": false,
+      "gif_frames": 3,
+      "gif_loop": null,
+      "exists": true
+    },
+    "wounded_idle": {
+      "frames": [
+        10,
+        11,
+        10
+      ],
+      "duration_ms": 1050,
+      "loop": true,
+      "gif_frames": 3,
+      "gif_loop": 0,
+      "exists": true
+    },
+    "die": {
+      "frames": [
+        12,
+        13,
+        14,
+        15
+      ],
+      "duration_ms": 1420,
+      "loop": false,
+      "gif_frames": 4,
+      "gif_loop": null,
+      "exists": true
+    },
+    "cast": {
+      "frames": [
+        16,
+        17,
+        18,
+        19,
+        0
+      ],
+      "duration_ms": 680,
+      "loop": false,
+      "gif_frames": 5,
+      "gif_loop": null,
+      "exists": true
+    }
+  },
+  "checks": {
+    "alpha": true,
+    "packing_no_clipping": true,
+    "articulated_poses": "visually inspected: elbow, knee, torso and neck poses differ",
+    "identity": "Compared to approved base; core silhouette and equipment preserved. Minor proportion and fine-detail drift remain.",
+    "full_size_contact": "reviewed",
+    "thumbnail_contact": "reviewed",
+    "actual_playback": "parent central browser review pending"
+  },
+  "conditional_states": {
+    "cast": "present",
+    "guard": "not assigned by concept kit",
+    "spawn": "not summoned; no required arrival kit",
+    "victory": "not assigned",
+    "raised": "separate form outside approved-base request",
+    "tamed": "intelligent humanoid, not tameable normal beast"
+  },
+  "limitations": [
+    "Generated animation review assets, not a production-ready rig.",
+    "Per-frame native artwork approximately 280-320 pixels high; source sheet has HD dimensions, individual frames do not.",
+    "Low-frame-count motion and hand/cloth/mark detail drift need temporal art review before game integration.",
+    "Technical extraction isolates disconnected sprites, preserves pose pixels, aligns ground, and uniformly downsamples separate attack repair strip. No procedural artwork or whole-image-motion substitute.",
+    "Raised/tamed forms excluded by direct approved-base scope."
+  ],
+  "preview_sha256": "5a99188196aa3f00906e572a2e7dd743cbfbced849932359e508cd499bc95807"
+}

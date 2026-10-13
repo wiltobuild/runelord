@@ -1,0 +1,42 @@
+[
+  {
+    "slug": "shopkeeper-2-talk",
+    "n": 2,
+    "pose": "talk",
+    "prompt": "Edit the reference into ONE additional full-body TALKING / explaining a bargain merchant frame. Preserve EXACT character identity, face, mushroom cap shape and colors, apron, potions, book, root feet, costume, proportions, view and entire silhouette. Mouth open slightly mid-sentence; lean head a little toward viewer; extend the prop-bearing hand in a presenting gesture while keeping prop and book. Same feet positions and full-body scale, all extremities in frame with padding. Serious Runelord clean 2D cel shading, flat color regions and hard edged shadows. No surface texture increase, no scenery or glow. Genuine transparent alpha outside the character. Portrait 1024x1536. Only one pose per image.",
+    "referenced_image_paths": [
+      "C:/Users/wilsh/Projects/runelord/assets/concepts/forest-shops/expansion-r1/forest-shopkeeper-2.png"
+    ],
+    "transparent_background": true
+  },
+  {
+    "slug": "shopkeeper-2-satisfied",
+    "n": 2,
+    "pose": "satisfied",
+    "prompt": "Edit the reference into ONE additional full-body SATISFIED / successful sale merchant frame. Preserve EXACT character identity, face, mushroom cap shape and colors, apron, potions, book, root feet, costume, proportions, view and entire silhouette. Small knowing smile, relaxed brow; lift the prop-bearing hand toward shoulder height in a confident satisfied gesture; keep book held on other side. Same feet positions and full-body scale, all extremities in frame with padding. Serious Runelord clean 2D cel shading, flat color regions and hard edged shadows. No surface texture increase, no scenery or glow. Genuine transparent alpha outside the character. Portrait 1024x1536. Only one pose per image.",
+    "referenced_image_paths": [
+      "C:/Users/wilsh/Projects/runelord/assets/concepts/forest-shops/expansion-r1/forest-shopkeeper-2.png"
+    ],
+    "transparent_background": true
+  },
+  {
+    "slug": "shopkeeper-3-talk",
+    "n": 3,
+    "pose": "talk",
+    "prompt": "Edit the reference into ONE additional full-body TALKING / explaining a bargain merchant frame. Preserve EXACT character identity, face, antlers, beard, coat, brass scale, book, hooves, costume, proportions, view and entire silhouette. Mouth open slightly mid-sentence; lean head a little toward viewer; extend the prop-bearing hand in a presenting gesture while keeping prop and book. Same feet positions and full-body scale, all extremities in frame with padding. Serious Runelord clean 2D cel shading, flat color regions and hard edged shadows. No surface texture increase, no scenery or glow. Genuine transparent alpha outside the character. Portrait 1024x1536. Only one pose per image.",
+    "referenced_image_paths": [
+      "C:/Users/wilsh/Projects/runelord/assets/concepts/forest-shops/expansion-r1/forest-shopkeeper-3.png"
+    ],
+    "transparent_background": true
+  },
+  {
+    "slug": "shopkeeper-3-satisfied",
+    "n": 3,
+    "pose": "satisfied",
+    "prompt": "Edit the reference into ONE additional full-body SATISFIED / successful sale merchant frame. Preserve EXACT character identity, face, antlers, beard, coat, brass scale, book, hooves, costume, proportions, view and entire silhouette. Small knowing smile, relaxed brow; lift the prop-bearing hand toward shoulder height in a confident satisfied gesture; keep book held on other side. Same feet positions and full-body scale, all extremities in frame with padding. Serious Runelord clean 2D cel shading, flat color regions and hard edged shadows. No surface texture increase, no scenery or glow. Genuine transparent alpha outside the character. Portrait 1024x1536. Only one pose per image.",
+    "referenced_image_paths": [
+      "C:/Users/wilsh/Projects/runelord/assets/concepts/forest-shops/expansion-r1/forest-shopkeeper-3.png"
+    ],
+    "transparent_background": true
+  }
+]

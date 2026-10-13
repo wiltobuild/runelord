@@ -1,0 +1,66 @@
+{
+  "id": "gravekeepers-seal",
+  "name": "Gravekeeper's Seal",
+  "category": "Runeblade relic",
+  "state": "static",
+  "intendedUse": "Roguelike shop and equipped relic icon",
+  "catalogSource": "Current user-requested Runeblade demo rules in packages/content/runeblade.ts; older catalog effects superseded",
+  "engineMapping": "item-gravekeepers-seal",
+  "source": {
+    "path": "assets/objects/gravekeepers-seal/r1/source.png",
+    "size": [
+      1254,
+      1254
+    ],
+    "sha256": "591181a7ffff7b7af0096d1e2e6f024d80461e853147d3cf2d060ebb730e8f2b",
+    "generatedPath": "C:\\Users\\wilsh\\.codex\\generated_images\\01a130b1-fb8d-7721-bbfb-8a1842795816\\exec-ed73cc7b-d4f2-4043-a6f1-22911676b364.png"
+  },
+  "exports": [
+    {
+      "path": "apps/web/public/opening-assets/runeblade-items/gravekeepers-seal-128.webp",
+      "size": [
+        128,
+        128
+      ],
+      "sha256": "927d116d2c82fb3937338748c520067fabf22a53396160bbe0f738722e0ecad7"
+    },
+    {
+      "path": "apps/web/public/opening-assets/runeblade-items/gravekeepers-seal.webp",
+      "size": [
+        256,
+        256
+      ],
+      "sha256": "66b745126cac11d92e9d0bd57da37793bcaebf09e68d9c5ec07316f47ee1eb1c"
+    }
+  ],
+  "generationTool": "built-in image_gen",
+  "prompt": "Use case: stylized-concept. Create ONE isolated Runelord Runeblade inventory relic icon. The supplied knight is STYLE AND PALETTE REFERENCE ONLY, do not depict a character. Match serious 2D cel-shading, broad flat regions, two or three crisp hard shadow tones, chunky silhouette, steel gray, deep navy, bone ivory and ice cyan. Quiet surfaces, few large functional details, strong dark contours, no PBR realism, no painterly gradients, no bloom or decorative clutter. Square canvas, whole object centered with generous clear padding; genuine transparent background, no frame, scenery, text, lettering or watermark. Must read clearly at 128px. Subject: A compact angular steel funeral seal medallion on a short dark loop, with ONE bold ivory skull relief over a navy inset and one cyan diamond rune below it. Small restrained ice facet at its bottom. Simple starter relic that gathers one corpse at every battle start.",
+  "reference": {
+    "path": "C:/Users/wilsh/Projects/runelord/assets/heroes/references/runeblade/runeblade-base-r1.png",
+    "sha256": "adbd33fb14e91b761f355ffeb9966cb262aacca78429099ec09b0fab9faf84ef",
+    "status": "Approved",
+    "evidenceId": "user-chat-2026-10-01-approve-existing-runelord"
+  },
+  "technicalQA": {
+    "alphaExtrema": [
+      0,
+      255
+    ],
+    "sourcePreserved": true,
+    "targetDimensionsVerified": true
+  },
+  "visualQA": {
+    "fullSize": "Passed: complete distinct silhouette, serious steel/navy/cyan cel shading, no scenery or text",
+    "nativeSize": "Passed at 128px on dark and ivory backgrounds: distinct silhouettes, clean alpha edges, readable central symbols; narrow banner is intentionally slender."
+  },
+  "approvalStatus": "Pending approval",
+  "integrationAuthorization": "User request to add Runeblade items and shop art",
+  "gallery": {
+    "url": "http://localhost:4317/asset/843792b7eb4a15896e63bcfe",
+    "subject": "roguelike-gravekeepers-seal",
+    "revision": "r1",
+    "sha256": "591181a7ffff7b7af0096d1e2e6f024d80461e853147d3cf2d060ebb730e8f2b",
+    "status": "Pending approval",
+    "verified": true
+  }
+}

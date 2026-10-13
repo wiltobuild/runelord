@@ -1,0 +1,7 @@
+{
+  "unchanged_nonidle_frames": 28,
+  "unchanged_neutral": true,
+  "unchanged_all_timing_and_geometry": true,
+  "source_registration": "all idle use exact neutral translation, not silhouette fit",
+  "unique_frames": 32
+}

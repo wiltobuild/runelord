@@ -1,0 +1,6 @@
+{
+  "visual": "All five character exports inspected on light/dark backgrounds and at reduced size; intact silhouettes, clear pose differences, no visible backdrop halos. Backgrounds inspected at source size.",
+  "technical": "Five 512x768 alpha WebP sprites; two opaque 1672x941 backgrounds; dryad strip 1536x768 in talk/satisfied/skeptical order.",
+  "limitations": "Static poses and base samples only. Not animated or integrated into game UI. New samples pending review.",
+  "design": "Character body and equipment remain readable. Myconid is broad, faun is tall with antlers and scale. Environment variants are mushroom hollow and canopy platform."
+}

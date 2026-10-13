@@ -1,0 +1,7 @@
+{
+  "attempt": 2,
+  "method": "Map opaque low-saturation material pixels to nearest of192 most frequent gray RGB colors actually present in approved original. Other pixels,alpha andgeometry unchanged.",
+  "changed_pixels": 510,
+  "palette_size": 192,
+  "limitation": "Palette correspondence does not correct different facet boundaries or create missing animation frames. Two-pose proof only; not integrated."
+}

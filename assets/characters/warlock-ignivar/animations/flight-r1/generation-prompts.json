@@ -1,0 +1,104 @@
+{
+  "tool": "built-in image_gen",
+  "reference_identity": {
+    "asset": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\approvals\\inbox\\warlock-ignivar\\base-r1\\warlock-ignivar-base-r1.png",
+    "sha256": "4a12ae1d443da8df804ae070efbb135342eed8b9a140d1137fff221ca5d27974",
+    "approval": {
+      "status": "Approved",
+      "at": "2026-10-02T22:20:56.989Z",
+      "evidenceId": "fc3fc045-9e89-468c-a0a7-36e445fcfb43",
+      "paths": [
+        "C:\\Users\\wilsh\\Projects\\runelord\\assets\\approvals\\inbox\\warlock-ignivar\\base-r1\\warlock-ignivar-base-r1.png"
+      ]
+    }
+  },
+  "motion_reference": "assets/characters/warlock-summons/animations/flight-r1/warlock-imp/source-sheet.png",
+  "prompt_summary": "Individual native-resolution transparent whole-character frame generation. Exact approved Ignivar asymmetrical horns, spiked collar, diamond chest, long lean limbs, red/black hard-edged cel rendering. Flying poses with bent knees and tucked talons; up/mid/down wing phases, cast anticipation/release, recoil, wounded wing phases, fall and collapse. No procedural painting or image deformation.",
+  "rejected_outputs": [
+    "6-pose small sheet",
+    "horizontal mid wings with opaque haze, two attempts",
+    "landscape terminal with opaque haze"
+  ],
+  "accepted_sources": [
+    {
+      "source": "source/up.png",
+      "source_sha256": "14cd8fdbf9e9bbd7ead63cfa6ed3101bba7a98060a1a9b9de164a81c6f650ac1",
+      "source_dimensions": [
+        1240,
+        1269
+      ]
+    },
+    {
+      "source": "source/mid.png",
+      "source_sha256": "3b28ad8c55c8ba31aeea16d871231d418a341741566b7b9ef4ac969a98354cba",
+      "source_dimensions": [
+        1240,
+        1269
+      ]
+    },
+    {
+      "source": "source/down.png",
+      "source_sha256": "9025f1ab8f3fbcceebf69cbbb95b71f64ca38a736974033eff3e1a9a3c1e5370",
+      "source_dimensions": [
+        1240,
+        1269
+      ]
+    },
+    {
+      "source": "source/anticipation.png",
+      "source_sha256": "d3e886f6e7eeebbd5eadab6f52e92eb0e813ed83de6189b162fe449041040e67",
+      "source_dimensions": [
+        1240,
+        1269
+      ]
+    },
+    {
+      "source": "source/release.png",
+      "source_sha256": "de9dc40a8b8058861d7d554b6557043415fcd51f21c6140a6b070fcf1490f4db",
+      "source_dimensions": [
+        1241,
+        1268
+      ]
+    },
+    {
+      "source": "source/hit.png",
+      "source_sha256": "ebec89f382f27066bc8294f07bc5d7550ca5889a4c16b000ecec55d1f9e3671b",
+      "source_dimensions": [
+        1240,
+        1269
+      ]
+    },
+    {
+      "source": "source/wounded-up.png",
+      "source_sha256": "05f346925ef2008f9624ec36e067b2b222cfba62c8e9803823c5946f5023110c",
+      "source_dimensions": [
+        1240,
+        1269
+      ]
+    },
+    {
+      "source": "source/wounded-down.png",
+      "source_sha256": "4003786dd570e37cd6d7bb43961f68dcbe024b4d5c20ca469585aedd6b728a91",
+      "source_dimensions": [
+        1240,
+        1269
+      ]
+    },
+    {
+      "source": "source/fall.png",
+      "source_sha256": "3ca101d9b2c4636528c9fcbe8d08cc46faf0a9982dc227790320ab707f55bbeb",
+      "source_dimensions": [
+        1240,
+        1269
+      ]
+    },
+    {
+      "source": "source/terminal.png",
+      "source_sha256": "8de26181c65fe394ee9e59c597b0f0901581ece88d3a6ec154decd2169169c5c",
+      "source_dimensions": [
+        1240,
+        1269
+      ]
+    }
+  ]
+}

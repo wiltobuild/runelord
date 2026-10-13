@@ -1,0 +1,73 @@
+{
+  "tool": "built-in image_gen",
+  "jobs": [
+    {
+      "slug": "dryad-talk",
+      "kind": "pose",
+      "transparent_background": true,
+      "referenced_image_paths": [
+        "C:/Users/wilsh/Projects/runelord/assets/concepts/forest-shops/r1/forest-shopkeeper-1.png"
+      ],
+      "prompt": "Use case: identity-preserve. Use reference image as EXACT approved dryad identity. Generate ONE full-body additional merchant pose, portrait 1024x1536, transparent alpha everywhere outside the character. Preserve face, sage skin, amber eyes, long dark teal angular hair, twig leaf crown, gold earrings, leaf clasp, cream sleeves, brown corset, green split overskirt, dark trousers, root boots, belt and coin pouch. Preserve exact body scale, foot baseline, camera and framing of reference. Book remains in her left hand on viewer right. Only pose/expression specified changes. No aura or scenery. Serious stylized 2D CEL-SHADED Runelord game art. Broad flat colors, crisp angular contours, base tone plus 1-2 hard shadow shapes, quiet untextured surfaces, restrained graphic highlights. No painterly texture, grunge, speckles, gradients, realistic rendering, cute mascot proportions or 3D. TALKING: friendly shrewd explanation, mouth slightly open mid-sentence, right hand on viewer left extended palm up with separated natural fingers, no coin in that hand. Left hand cradles the same leaf-emblem ledger. Keep lower-body stance and outfit unchanged."
+    },
+    {
+      "slug": "dryad-satisfied",
+      "kind": "pose",
+      "transparent_background": true,
+      "referenced_image_paths": [
+        "C:/Users/wilsh/Projects/runelord/assets/concepts/forest-shops/r1/forest-shopkeeper-1.png"
+      ],
+      "prompt": "Use case: identity-preserve. Use reference image as EXACT approved dryad identity. Generate ONE full-body additional merchant pose, portrait 1024x1536, transparent alpha everywhere outside the character. Preserve face, sage skin, amber eyes, long dark teal angular hair, twig leaf crown, gold earrings, leaf clasp, cream sleeves, brown corset, green split overskirt, dark trousers, root boots, belt and coin pouch. Preserve exact body scale, foot baseline, camera and framing of reference. Book remains in her left hand on viewer right. Only pose/expression specified changes. No aura or scenery. Serious stylized 2D CEL-SHADED Runelord game art. Broad flat colors, crisp angular contours, base tone plus 1-2 hard shadow shapes, quiet untextured surfaces, restrained graphic highlights. No painterly texture, grunge, speckles, gradients, realistic rendering, cute mascot proportions or 3D. SATISFIED: pleased knowing closed-mouth smile, one eyebrow slightly raised, right hand on viewer left raises the same gold leaf coin to beside shoulder for appraisal. Left hand cradles same ledger. Keep lower-body stance and outfit unchanged."
+    },
+    {
+      "slug": "dryad-skeptical",
+      "kind": "pose",
+      "transparent_background": true,
+      "referenced_image_paths": [
+        "C:/Users/wilsh/Projects/runelord/assets/concepts/forest-shops/r1/forest-shopkeeper-1.png"
+      ],
+      "prompt": "Use case: identity-preserve. Use reference image as EXACT approved dryad identity. Generate ONE full-body additional merchant pose, portrait 1024x1536, transparent alpha everywhere outside the character. Preserve face, sage skin, amber eyes, long dark teal angular hair, twig leaf crown, gold earrings, leaf clasp, cream sleeves, brown corset, green split overskirt, dark trousers, root boots, belt and coin pouch. Preserve exact body scale, foot baseline, camera and framing of reference. Book remains in her left hand on viewer right. Only pose/expression specified changes. No aura or scenery. Serious stylized 2D CEL-SHADED Runelord game art. Broad flat colors, crisp angular contours, base tone plus 1-2 hard shadow shapes, quiet untextured surfaces, restrained graphic highlights. No painterly texture, grunge, speckles, gradients, realistic rendering, cute mascot proportions or 3D. SKEPTICAL: narrowed questioning eyes, one raised eyebrow, slight wry closed mouth, head tilts subtly, right hand on viewer left touches chin with thoughtful bent elbow; no coin in this hand. Left hand holds same ledger. Keep lower-body stance and outfit unchanged."
+    },
+    {
+      "slug": "forest-shopkeeper-2",
+      "kind": "character",
+      "transparent_background": true,
+      "referenced_image_paths": [
+        "C:/Users/wilsh/Projects/runelord/assets/concepts/forest-shops/r1/forest-shopkeeper-1.png"
+      ],
+      "prompt": "Use case: stylized-concept. One NEW forest shopkeeper sample, single full-body isolated merchant, portrait 1024x1536 and genuinely transparent alpha background. Reference dryad is STYLE AND FORMAT ONLY; do not copy her identity. Three-quarter frontal pose, entire silhouette intact with clear padding, feet visible, merchant props and clear expressive adult face. Serious stylized 2D CEL-SHADED Runelord game art. Broad flat colors, crisp angular contours, base tone plus 1-2 hard shadow shapes, quiet untextured surfaces, restrained graphic highlights. No painterly texture, grunge, speckles, gradients, realistic rendering, cute mascot proportions or 3D. A stout adult MYCONID APOTHECARY, living fungal humanoid with a broad angular muted plum and russet mushroom cap, pale warm ivory face, small sharp amber eyes and stern thoughtful brow. Stocky compact body, two arms and two short legs, moss-green patched merchant apron, dark brown utility belt, two large corked potion flasks, sturdy rootlike feet. Present one sealed teal medicine bottle in viewer-left hand, hold a closed herb ledger in viewer-right arm. Different unmistakable stocky mushroom silhouette from the slender dryad. Few broad cap patches, no dense gills or dot textures. Intelligent weathered merchant, not a cute mushroom mascot. No extra mushrooms or scenery."
+    },
+    {
+      "slug": "forest-shopkeeper-3",
+      "kind": "character",
+      "transparent_background": true,
+      "referenced_image_paths": [
+        "C:/Users/wilsh/Projects/runelord/assets/concepts/forest-shops/r1/forest-shopkeeper-1.png"
+      ],
+      "prompt": "Use case: stylized-concept. One NEW forest shopkeeper sample, single full-body isolated merchant, portrait 1024x1536 and genuinely transparent alpha background. Reference dryad is STYLE AND FORMAT ONLY; do not copy her identity. Three-quarter frontal pose, entire silhouette intact with clear padding, feet visible, merchant props and clear expressive adult face. Serious stylized 2D CEL-SHADED Runelord game art. Broad flat colors, crisp angular contours, base tone plus 1-2 hard shadow shapes, quiet untextured surfaces, restrained graphic highlights. No painterly texture, grunge, speckles, gradients, realistic rendering, cute mascot proportions or 3D. An elderly male ANTLERED WOODLAND TRADER, tall lean faun with two modest branching deer antlers, weathered tan face, pointed ears, angular silver-gray beard, shrewd narrow eyes. Deep petrol-blue hoodless traveling coat over ochre waistcoat, brown leather belts, large brass clasp, satchel and one rolled map, digitigrade deer legs ending in cloven hooves. Viewer-left hand presents a small brass balance scale; viewer-right hand holds a closed trading ledger. Entire antlers, scale and hooves visible. Distinct tall angular silhouette, dignified seasoned forest merchant, no combat weapons. Flat broad beard shapes, no individual hairs. No scenery or aura."
+    },
+    {
+      "slug": "forest-background-2",
+      "kind": "background",
+      "transparent_background": false,
+      "referenced_image_paths": [
+        "C:/Users/wilsh/Projects/runelord/assets/concepts/forest-shops/r2/forest-background-1.png"
+      ],
+      "prompt": "Use case: stylized-concept. One new forest shop BACKGROUND variant. Reference is user-approved cel-shaded style and output format, NOT a scene to duplicate. Landscape 1672x941, opaque full bleed. Match its clean flat shading, contour clarity and low texture exactly. Keep broad open foreground, shop shelves/counter concentrated on left third, scenic view through center-right, dark foreground corners; compatible with the same overlaid shop UI and separate merchant. No characters, words, UI, cards or prices. Serious stylized 2D CEL-SHADED Runelord game art. Broad flat colors, crisp angular contours, base tone plus 1-2 hard shadow shapes, quiet untextured surfaces, restrained graphic highlights. No painterly texture, grunge, speckles, gradients, realistic rendering, cute mascot proportions or 3D. MUSHROOM HOLLOW APOTHECARY: a sheltered market beneath colossal gnarled roots and huge overlapping shelf fungi in an ancient forest, left-side counter carved from a fallen log with simple jars and tied herbs, massive plum-capped mushrooms at sides, a shallow stream running through middle distance on right crossed by flat stepping stones, distant teal tree silhouettes. Restrained cyan fungal gills and amber seed lamps as flat luminous color accents without bloom. Shop floor is a broad dry root-and-stone platform, leave center foreground open. Convey humid deep forest ecology through large readable fungus/root silhouettes and layered color blocks, not texture. Clearly different architecture and scenery from reference."
+    },
+    {
+      "slug": "forest-background-3",
+      "kind": "background",
+      "transparent_background": false,
+      "referenced_image_paths": [
+        "C:/Users/wilsh/Projects/runelord/assets/concepts/forest-shops/r2/forest-background-1.png"
+      ],
+      "prompt": "Use case: stylized-concept. One new forest shop BACKGROUND variant. Reference is user-approved cel-shaded style and output format, NOT a scene to duplicate. Landscape 1672x941, opaque full bleed. Match its clean flat shading, contour clarity and low texture exactly. Keep broad open foreground, shop shelves/counter concentrated on left third, scenic view through center-right, dark foreground corners; compatible with the same overlaid shop UI and separate merchant. No characters, words, UI, cards or prices. Serious stylized 2D CEL-SHADED Runelord game art. Broad flat colors, crisp angular contours, base tone plus 1-2 hard shadow shapes, quiet untextured surfaces, restrained graphic highlights. No painterly texture, grunge, speckles, gradients, realistic rendering, cute mascot proportions or 3D. ANCIENT CANOPY MARKET: a high forest trading platform nestled in the fork of an enormous oak, chunky carved timber floor and left merchant counter stocked with map scrolls, seed jars and folded cloth; arcing branches frame a center-right view over layered treetops, a sturdy hanging rope bridge leads into distant giant trunks. Broad green leaf awning on upper left, gold acorn lanterns, controlled warm sunlit ochre against cool blue-green foliage. Keep wide flat walkable foreground, simple low railing in middle distance to show height, no ground-level stone arch. Large clean leaf masses, wood as flat shaded planes with only a few long structural lines. Strong vertical woodland depth, clearly distinct canopy biome setting."
+    }
+  ],
+  "approvalEvidence": {
+    "dryad": "User chat: the shop keeper is good",
+    "background": "User chat: the shop background is good create 2 more variants that use the same style"
+  },
+  "scope": "Three static dryad expressions, two distinct merchant base samples, two forest backgrounds. No character variants or animations requested."
+}

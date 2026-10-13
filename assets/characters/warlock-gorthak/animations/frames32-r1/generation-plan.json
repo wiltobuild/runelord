@@ -1,0 +1,134 @@
+{
+  "lock": "EDIT THE EXACT supplied approved Gorthak master into ONE whole-character animation pose. Preserve the EXACT existing local colors and three cel shade values for each surface: same oxblood reds, same dark charcoal armor facets, same orange eyes/fist fissures/diamond belt. CRITICAL FIX: absolutely no overall brightening/darkening, no relighting, no extra highlights or gradients. Constant diffuse graphic lighting locked to reference. Keep all original details, same head face horns asymmetry massive fists armor cloven feet. Full native high resolution square1254/1536, one character not sheet, transparent true alpha. No effects/ground/shadow/text. Camera locked three-quarter facing right. Retain entire anatomy with safe60px margins. Feet fixed in reference stance unless action explicitly changes them. Never redesign.",
+  "reuse": {
+    "attack-02": "attack-windup",
+    "attack-04": "attack-impact",
+    "attack-06": "attack-recovery",
+    "hit-01": "hit",
+    "wounded_idle-00": "wounded",
+    "wounded_idle-02": "wounded-exhale",
+    "die-03": "die-fall",
+    "die-07": "die-terminal"
+  },
+  "idle": [
+    {
+      "path": "C:\\Users\\wilsh\\.codex\\generated_images\\01a109bb-a329-7403-b926-addf3e929de1\\exec-bae8c9a0-c29f-414d-85cc-da328c449200.png",
+      "prompt": "Idle01: neutral resting combat stance almost exactly as master, shoulders relaxed. Only tiny chin lowering and very slight elbow adjustment. Keep chest color planes IDENTICAL."
+    },
+    {
+      "path": "C:\\Users\\wilsh\\.codex\\generated_images\\01a109bb-a329-7403-b926-addf3e929de1\\exec-c1f8674e-ef16-46f5-90cb-f537e6994d58.png",
+      "prompt": "Idle02: shallow inhale, chest raises5pixels and elbows open3pixels, fists rotate2degrees. Feet absolutely fixed. NO color/shade change."
+    },
+    {
+      "path": "C:\\Users\\wilsh\\.codex\\generated_images\\01a109bb-a329-7403-b926-addf3e929de1\\exec-55a5bfc3-57f3-4d2b-801c-c49d707fc88f.png",
+      "prompt": "Idle03: peak of very shallow inhale, chest lifts just8pixels, elbows just5pixels open, chin remains low. No stance change and exact same foot position and scale."
+    },
+    {
+      "path": "C:\\Users\\wilsh\\.codex\\generated_images\\01a109bb-a329-7403-b926-addf3e929de1\\exec-6f7cc208-e88f-4347-9980-68d9d55f33cd.png",
+      "prompt": "Idle04: exhaling toward neutral, chest drops3pixels fromreference, wrists relax with only2degree rotation. Same stance identical scale."
+    }
+  ],
+  "idleRepair": "Generated images are saved to C:\\Users\\wilsh\\.codex\\generated_images\\01a109bb-a329-7403-b926-addf3e929de1 as C:\\Users\\wilsh\\.codex\\generated_images\\01a109bb-a329-7403-b926-addf3e929de1\\exec-2e84e5ec-b7a5-419b-b57f-9c6c0508f99c.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link.",
+  "plannedMissing": [
+    [
+      "attack-00",
+      "neutral",
+      "Slam anticipation begins: knees bend subtly, both elbows bend and fists draw inward just below waist. Tiny transition from resting pose."
+    ],
+    [
+      "attack-01",
+      "attack-windup",
+      "Mid-windup: both huge fists lift to chest height, elbows flexed wide, torso straight, planted feet. HALF WAY between neutral and fists overhead."
+    ],
+    [
+      "attack-03",
+      "attack-windup",
+      "Fast downswing between overhead and ground impact: fists at shoulder height in front and moving down, torso leaning forward35degrees, knees bent. No blur. Feet same place."
+    ],
+    [
+      "attack-05",
+      "attack-impact",
+      "Impact follow-through: crouched with both fists onground, elbows more flexed, shoulders lowered slightly from impact, head low. Tiny recoil on ground."
+    ],
+    [
+      "attack-07",
+      "attack-recovery",
+      "End recovery: nearly exact neutralstanding, shoulders settled, fists hanging by hips a little nearer body, knees straightening. Same stance."
+    ],
+    [
+      "hit-00",
+      "neutral",
+      "Hit onset: chin just recoiling10pixels backward, near shoulder pulls back slightly, fists starting to lift, feet planted."
+    ],
+    [
+      "hit-02",
+      "hit",
+      "Hit rebound: halfway between strong recoil reference and neutral, torso10degrees back, elbows starting to lower, feet planted."
+    ],
+    [
+      "hit-03",
+      "neutral",
+      "Hit recovery: near neutral, chest slightly forward and one elbow still raised a little protectively. Feet fixed."
+    ],
+    [
+      "wounded_idle-01",
+      "wounded",
+      "Tiny wounded inhale: preserve identical silhouette, shoulderwidth and feet, only chest interior planes lift5pixels and chin rises3pixels. No brighter colors."
+    ],
+    [
+      "wounded_idle-03",
+      "wounded-exhale",
+      "Tiny wounded recovery: exact same scale shoulderwidth stance, chest interior planes lift2pixels toward wounded neutral, fingertips flex veryslightly. No relighting."
+    ],
+    [
+      "spawn-00",
+      "wounded",
+      "Summon arrival low crouch: both knees deeply bent, body compact with giant fists besidefeet, head tilteddown. Full corporeal body, no portal effects."
+    ],
+    [
+      "spawn-01",
+      "die-fall",
+      "Summon rising from one-knee crouch: torso lifting, bothfists near ground for support, eyes alert. Not injured. Facing right."
+    ],
+    [
+      "spawn-02",
+      "attack-recovery",
+      "Summon rising toward standing: knees bent halfway, torso lifting and elbows opening, fists lowering naturally toward sides."
+    ],
+    [
+      "spawn-03",
+      "neutral",
+      "Summon arrival settling: fullheight neutral stance, shoulders firm and fists clenched, head slightly raised in challenge."
+    ],
+    [
+      "die-00",
+      "wounded",
+      "Death initial stagger: torso hunches, head dips, both knees bend20degrees, fists fall loosely below hips, eyes dimmer only."
+    ],
+    [
+      "die-01",
+      "wounded",
+      "Death knees buckle: both knees deeply bent, shoulders dropping, arms hanging slack and torso tiltedright15degrees."
+    ],
+    [
+      "die-02",
+      "die-fall",
+      "Death descent just before kneeling: near knee almost onground, one fist reaches downward to support, torso leansright. Head bowed."
+    ],
+    [
+      "die-04",
+      "die-fall",
+      "Death falling sideways: kneeling support gives way, shoulder tips right45degrees, supporting elbow bending, other arm slack, legs folding."
+    ],
+    [
+      "die-05",
+      "die-terminal",
+      "Death torso reachesground: side lying like terminalreference but upper shoulder still slightly raised and head justabove ground, legs almost folded, inertfists."
+    ],
+    [
+      "die-06",
+      "die-terminal",
+      "Death finalsettle: same side-lyingpose terminalreference, head a fewpixels raised before settling, upper elbow slightly bent. Eyes extinguished, noeffects."
+    ]
+  ]
+}

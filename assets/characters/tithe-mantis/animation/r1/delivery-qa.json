@@ -1,0 +1,33 @@
+{
+  "character_id": "tithe-mantis",
+  "frame_count": 20,
+  "canvas": [
+    448,
+    448
+  ],
+  "states": [
+    "idle",
+    "attack",
+    "hit",
+    "wounded_idle",
+    "die"
+  ],
+  "transparent_frames_verified": true,
+  "death_loop": false,
+  "base_approval": "09693631-f5c7-4e80-a0c3-878f15ed9251",
+  "preview_sha256": "92aedd3ebcdd4c13b1fa71c61d10fd16728e6ca4bee0652891e20b85618ce3c9",
+  "preview_gallery_id": "cfc5e932c297aa529275978e",
+  "preview_approval": "Pending approval",
+  "playback": {
+    "method": "Headless Chrome timed playback captures at native canvas and small size; inspected captures",
+    "status": "verified at review level; low-frame cadence and identity-detail variation remain",
+    "evidence": "C:\\Users\\wilsh\\Documents\\Codex\\2026-10-02\\use\\work\\playback\\tithe-mantis\\playback-audit.json"
+  },
+  "limitations": [
+    "Four generated keyframes per state; stepped timing rather than interpolated full-rate animation.",
+    "Generated sheet preserves general identity but fine line/mark and foot placement variation remains.",
+    "No separated rig or VFX layers. Runtime game integration not performed.",
+    "Mantis torso is somewhat more compact than tall approved master; identity details retained but proportion drift needs review."
+  ],
+  "delivery_level": "Articulated frame animation review pack; not certified production-ready"
+}

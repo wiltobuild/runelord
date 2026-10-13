@@ -1,0 +1,322 @@
+[
+  {
+    "frame": 0,
+    "source_rect": [
+      0,
+      0,
+      440,
+      400
+    ],
+    "solid_bounds": [
+      95,
+      73,
+      324,
+      375
+    ],
+    "edge_contact": false
+  },
+  {
+    "frame": 1,
+    "source_rect": [
+      440,
+      0,
+      880,
+      400
+    ],
+    "solid_bounds": [
+      91,
+      72,
+      327,
+      373
+    ],
+    "edge_contact": false
+  },
+  {
+    "frame": 2,
+    "source_rect": [
+      880,
+      0,
+      1320,
+      400
+    ],
+    "solid_bounds": [
+      92,
+      71,
+      326,
+      373
+    ],
+    "edge_contact": false
+  },
+  {
+    "frame": 3,
+    "source_rect": [
+      1320,
+      0,
+      1760,
+      400
+    ],
+    "solid_bounds": [
+      97,
+      71,
+      326,
+      373
+    ],
+    "edge_contact": false
+  },
+  {
+    "frame": 4,
+    "source_rect": [
+      0,
+      400,
+      440,
+      800
+    ],
+    "solid_bounds": [
+      113,
+      80,
+      329,
+      373
+    ],
+    "edge_contact": false
+  },
+  {
+    "frame": 5,
+    "source_rect": [
+      440,
+      400,
+      880,
+      800
+    ],
+    "solid_bounds": [
+      64,
+      78,
+      340,
+      373
+    ],
+    "edge_contact": false
+  },
+  {
+    "frame": 6,
+    "source_rect": [
+      880,
+      400,
+      1320,
+      800
+    ],
+    "solid_bounds": [
+      81,
+      77,
+      341,
+      373
+    ],
+    "edge_contact": false
+  },
+  {
+    "frame": 7,
+    "source_rect": [
+      1320,
+      400,
+      1760,
+      800
+    ],
+    "solid_bounds": [
+      106,
+      76,
+      324,
+      373
+    ],
+    "edge_contact": false
+  },
+  {
+    "frame": 8,
+    "source_rect": [
+      0,
+      800,
+      440,
+      1200
+    ],
+    "solid_bounds": [
+      103,
+      99,
+      339,
+      373
+    ],
+    "edge_contact": false
+  },
+  {
+    "frame": 9,
+    "source_rect": [
+      440,
+      800,
+      880,
+      1200
+    ],
+    "solid_bounds": [
+      108,
+      98,
+      325,
+      373
+    ],
+    "edge_contact": false
+  },
+  {
+    "frame": 10,
+    "source_rect": [
+      880,
+      800,
+      1320,
+      1200
+    ],
+    "solid_bounds": [
+      102,
+      110,
+      329,
+      373
+    ],
+    "edge_contact": false
+  },
+  {
+    "frame": 11,
+    "source_rect": [
+      1320,
+      800,
+      1760,
+      1200
+    ],
+    "solid_bounds": [
+      116,
+      109,
+      334,
+      373
+    ],
+    "edge_contact": false
+  },
+  {
+    "frame": 12,
+    "source_rect": [
+      0,
+      1200,
+      440,
+      1600
+    ],
+    "solid_bounds": [
+      104,
+      127,
+      332,
+      373
+    ],
+    "edge_contact": false
+  },
+  {
+    "frame": 13,
+    "source_rect": [
+      440,
+      1200,
+      880,
+      1600
+    ],
+    "solid_bounds": [
+      111,
+      136,
+      317,
+      373
+    ],
+    "edge_contact": false
+  },
+  {
+    "frame": 14,
+    "source_rect": [
+      880,
+      1200,
+      1320,
+      1600
+    ],
+    "solid_bounds": [
+      73,
+      186,
+      353,
+      373
+    ],
+    "edge_contact": false
+  },
+  {
+    "frame": 15,
+    "source_rect": [
+      1320,
+      1200,
+      1760,
+      1600
+    ],
+    "solid_bounds": [
+      83,
+      231,
+      358,
+      373
+    ],
+    "edge_contact": false
+  },
+  {
+    "frame": 16,
+    "source_rect": [
+      0,
+      1600,
+      440,
+      2000
+    ],
+    "solid_bounds": [
+      101,
+      92,
+      333,
+      374
+    ],
+    "edge_contact": false
+  },
+  {
+    "frame": 17,
+    "source_rect": [
+      440,
+      1600,
+      880,
+      2000
+    ],
+    "solid_bounds": [
+      90,
+      100,
+      314,
+      373
+    ],
+    "edge_contact": false
+  },
+  {
+    "frame": 18,
+    "source_rect": [
+      880,
+      1600,
+      1320,
+      2000
+    ],
+    "solid_bounds": [
+      44,
+      95,
+      355,
+      373
+    ],
+    "edge_contact": false
+  },
+  {
+    "frame": 19,
+    "source_rect": [
+      1320,
+      1600,
+      1760,
+      2000
+    ],
+    "solid_bounds": [
+      116,
+      94,
+      334,
+      374
+    ],
+    "edge_contact": false
+  }
+]

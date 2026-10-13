@@ -1,0 +1,24 @@
+{
+  "status": "Pending user review; not integrated",
+  "native_size": [
+    1312,
+    1199
+  ],
+  "packed_size": [
+    1536,
+    1536
+  ],
+  "translation": [
+    105,
+    242
+  ],
+  "authored_poses": 3,
+  "playback_order": [
+    "neutral",
+    "raised",
+    "third",
+    "raised"
+  ],
+  "third_sha256": "cfa76d68d57cbba9c4f0cf6525d76ef37ce981d47f50ea930624599b6dc30cd5",
+  "note": "New generated third pose raises shoulders further; not an exact midpoint. Existing poses unchanged; no upscaling."
+}

@@ -1,0 +1,21 @@
+{
+  "id": "tome-rimebound",
+  "name": "rimebound",
+  "source": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\objects\\tome-rimebound\\r1\\source.png",
+  "output": "C:\\Users\\wilsh\\Projects\\runelord\\apps\\web\\public\\opening-assets\\tome-rimebound.webp",
+  "source_sha256": "a8b8d686fd37c5d52f1e43304be63cd5744525ff8b34e05c05bd01acef2b788c",
+  "output_sha256": "2ae07515fadd5d7f61f8bc70ba7a914dbd39aef9d9fb0f3908f301335f1e1fd0",
+  "source_dimensions": [
+    1254,
+    1254
+  ],
+  "dimensions": [
+    640,
+    640
+  ],
+  "alpha": true,
+  "approval": "pending",
+  "integration_authorization": "User requested3Runeblade starterbooks in playable demo.",
+  "tool": "built-in imagegen",
+  "prompt": "prompt.txt"
+}

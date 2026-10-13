@@ -1,0 +1,109 @@
+{
+  "authorization": "User approved both revised animation sets and instructed: \"they pass. implement them as the new models, open a preview when your done\" on 2026-10-05.",
+  "at": "2026-10-05T04:28:43.787Z",
+  "manifestSha256": "8d2935306f2c285b805be843dafdbe51443207c4105cf418d8e6106c676be3f5",
+  "approvedPreviews": [
+    {
+      "path": "C:/Users/wilsh/Projects/runelord/assets/approvals/inbox/warlock-ignivar/flight-act-r1/act.gif",
+      "sha256": "525b5f846182e570366239e77ff81c786f6e9f9319b221077ded924a10f2f20c",
+      "evidenceId": "e8d17925-31c8-41f4-8087-4ad4323849cb"
+    },
+    {
+      "path": "C:/Users/wilsh/Projects/runelord/assets/approvals/inbox/warlock-ignivar/flight-contact-r1/flight-contact.png",
+      "sha256": "9ec46bdf503bd079d2dbc4129fec34d0d51e72f6b78b0aa4644ee5da8b585991",
+      "evidenceId": "4b0d4920-064c-41e4-b473-f06eab07fcce"
+    },
+    {
+      "path": "C:/Users/wilsh/Projects/runelord/assets/approvals/inbox/warlock-ignivar/flight-design-r1/exec-daa316a6-b1f0-4c6f-82cb-c64fd96c1dc7.png",
+      "sha256": "14cd8fdbf9e9bbd7ead63cfa6ed3101bba7a98060a1a9b9de164a81c6f650ac1",
+      "evidenceId": "7eafb11d-5ae7-424b-b35b-87e01b991e1e"
+    },
+    {
+      "path": "C:/Users/wilsh/Projects/runelord/assets/approvals/inbox/warlock-ignivar/flight-die-r1/die.gif",
+      "sha256": "71162f90da740c518d83ad419be7a83c5be21ed8cd3607753762d46681463ab2",
+      "evidenceId": "f56368d5-021e-41f6-9a87-a2cb9316f196"
+    },
+    {
+      "path": "C:/Users/wilsh/Projects/runelord/assets/approvals/inbox/warlock-ignivar/flight-hit-r1/hit.gif",
+      "sha256": "c1bbeb9ff3dec1d469e71081dafaee7d5231ae3844df46410efdc996da47ec70",
+      "evidenceId": "bdb6ff2a-14c6-4e54-8e40-f5d9482ba2ee"
+    },
+    {
+      "path": "C:/Users/wilsh/Projects/runelord/assets/approvals/inbox/warlock-ignivar/flight-idle-r1/idle.gif",
+      "sha256": "ca14692fb9781d434c0bd2fe2a72f7d14afbf3b4819ead4ba82d16fb1f7828b4",
+      "evidenceId": "a357603e-6630-48af-b307-64cb0c12325a"
+    },
+    {
+      "path": "C:/Users/wilsh/Projects/runelord/assets/approvals/inbox/warlock-ignivar/flight-pose-r1/up.png",
+      "sha256": "14cd8fdbf9e9bbd7ead63cfa6ed3101bba7a98060a1a9b9de164a81c6f650ac1",
+      "evidenceId": "a6f9bdaf-f5b9-4e09-beef-e6a664512881"
+    },
+    {
+      "path": "C:/Users/wilsh/Projects/runelord/assets/approvals/inbox/warlock-ignivar/flight-review-poses-r1/flight-review-poses.png",
+      "sha256": "9ec46bdf503bd079d2dbc4129fec34d0d51e72f6b78b0aa4644ee5da8b585991",
+      "evidenceId": "856b1d6a-a8b4-4a2e-a806-69b392a05588"
+    },
+    {
+      "path": "C:/Users/wilsh/Projects/runelord/assets/approvals/inbox/warlock-ignivar/flight-review-r1/flight-review.gif",
+      "sha256": "a6c5021e916fbd3d8ac15a133d00fd931f1655111e7d3ecf791f8c93c3a61127",
+      "evidenceId": "b0e729c0-1ccd-443f-83e1-55ea98e28cab"
+    },
+    {
+      "path": "C:/Users/wilsh/Projects/runelord/assets/approvals/inbox/warlock-ignivar/flight-spawn-r1/spawn.gif",
+      "sha256": "f2eed6c2ec53647846b34f63007984d1491ceab4eec1dce12ee024a3b720e4de",
+      "evidenceId": "5ec6ae2f-e448-4c9c-a782-81c4f4acdf85"
+    },
+    {
+      "path": "C:/Users/wilsh/Projects/runelord/assets/approvals/inbox/warlock-ignivar/flight-wounded_idle-r1/wounded_idle.gif",
+      "sha256": "cb8609722103d75d4fcff1b87095e010d454347e0f08d4b4c44318ec1fddae25",
+      "evidenceId": "9c33a693-d1cd-4c33-8f12-5998ec9c209f"
+    }
+  ],
+  "frames": [
+    {
+      "file": "frame-00.png",
+      "sha256": "3f980dcc9fa39006a6ab4895b3da9cf0deca34ef39e20461d95d08fd40c510ab"
+    },
+    {
+      "file": "frame-01.png",
+      "sha256": "b97dc1ed1b3a421b0226ac90b6849954bd76c65d113d37a399ef2ff5e8706d02"
+    },
+    {
+      "file": "frame-02.png",
+      "sha256": "eee5df19071b6104335b2c6c8ade14d1d075d252cd119419d59af3cb3751affa"
+    },
+    {
+      "file": "frame-03.png",
+      "sha256": "35e1b0c3fa88c028ae998a4835d60f8fd42f0ac17374f6f628ad24ad44c54a79"
+    },
+    {
+      "file": "frame-04.png",
+      "sha256": "89b1ed20add6930acb68bb9fb837a45f4aede3a5741a67027e0be7aac0b471f5"
+    },
+    {
+      "file": "frame-05.png",
+      "sha256": "ee078e70a3652b289f2f13d7a290ef87fe58584c64ef7b09943a16189a9cca7c"
+    },
+    {
+      "file": "frame-06.png",
+      "sha256": "0fb0b11f5c84c262235fa13e071911eb4386bf13712d074bf14b4edc01debfff"
+    },
+    {
+      "file": "frame-07.png",
+      "sha256": "9c13b9f1323e6a195bb7579fee8ca42102ce65ca5918975b356566b41a6385a5"
+    },
+    {
+      "file": "frame-08.png",
+      "sha256": "fdfc193349fbe455c91b53d08111645a5324052430fcf2b3871d282df936ea5c"
+    },
+    {
+      "file": "frame-09.png",
+      "sha256": "1eb2eb12eaeb591db6d91606516db44bb77f6ad55db8123bed71a40715aa1f53"
+    },
+    {
+      "file": "frame-10.png",
+      "sha256": "3de3465a286492b4a232fd11cc828b73830010cb89a8e0109c3393e41a221685"
+    }
+  ],
+  "note": "Preview approvals are recorded in the canonical gallery ledger. This exact frame set is authorized for game integration; individual frame review status is not relabeled."
+}

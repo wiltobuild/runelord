@@ -1,0 +1,66 @@
+{
+  "id": "hoarfrost-whetstone",
+  "name": "Hoarfrost Whetstone",
+  "category": "Runeblade relic",
+  "state": "static",
+  "intendedUse": "Roguelike shop and equipped relic icon",
+  "catalogSource": "Current user-requested Runeblade demo rules in packages/content/runeblade.ts; older catalog effects superseded",
+  "engineMapping": "item-hoarfrost-whetstone",
+  "source": {
+    "path": "assets/objects/hoarfrost-whetstone/r1/source.png",
+    "size": [
+      1254,
+      1254
+    ],
+    "sha256": "eefdae0a41b3276ab609858ae64a1dcafba20834bdc6ec36af7a6225035bf95e",
+    "generatedPath": "C:\\Users\\wilsh\\.codex\\generated_images\\01a130b1-fb8d-7721-bbfb-8a1842795816\\exec-e6f9ec16-8280-493e-8ed5-095246afc0ed.png"
+  },
+  "exports": [
+    {
+      "path": "apps/web/public/opening-assets/runeblade-items/hoarfrost-whetstone-128.webp",
+      "size": [
+        128,
+        128
+      ],
+      "sha256": "fed11f073d756e681648fbcf5aeaa0e7b25bee06354d8f3db168a9190a8f9fb9"
+    },
+    {
+      "path": "apps/web/public/opening-assets/runeblade-items/hoarfrost-whetstone.webp",
+      "size": [
+        256,
+        256
+      ],
+      "sha256": "d044c10fe50cc5fc7247c5e236c939ab3983470fad03b53631567dcbece16231"
+    }
+  ],
+  "generationTool": "built-in image_gen",
+  "prompt": "Use case: stylized-concept. Create ONE isolated Runelord Runeblade inventory relic icon. The supplied knight is STYLE AND PALETTE REFERENCE ONLY, do not depict a character. Match serious 2D cel-shading, broad flat regions, two or three crisp hard shadow tones, chunky silhouette, steel gray, deep navy, bone ivory and ice cyan. Quiet surfaces, few large functional details, strong dark contours, no PBR realism, no painterly gradients, no bloom or decorative clutter. Square canvas, whole object centered with generous clear padding; genuine transparent background, no frame, scenery, text, lettering or watermark. Must read clearly at 128px. Subject: A chunky long rectangular dark blue sharpening stone tilted diagonally, clamped in a simple broad steel holder, crystalline cyan frost along one cutting edge and one large pale cyan rune engraved on its face. A single object, no weapon. Relic that increases attack damage.",
+  "reference": {
+    "path": "C:/Users/wilsh/Projects/runelord/assets/heroes/references/runeblade/runeblade-base-r1.png",
+    "sha256": "adbd33fb14e91b761f355ffeb9966cb262aacca78429099ec09b0fab9faf84ef",
+    "status": "Approved",
+    "evidenceId": "user-chat-2026-10-01-approve-existing-runelord"
+  },
+  "technicalQA": {
+    "alphaExtrema": [
+      0,
+      255
+    ],
+    "sourcePreserved": true,
+    "targetDimensionsVerified": true
+  },
+  "visualQA": {
+    "fullSize": "Passed: complete distinct silhouette, serious steel/navy/cyan cel shading, no scenery or text",
+    "nativeSize": "Passed at 128px on dark and ivory backgrounds: distinct silhouettes, clean alpha edges, readable central symbols; narrow banner is intentionally slender."
+  },
+  "approvalStatus": "Pending approval",
+  "integrationAuthorization": "User request to add Runeblade items and shop art",
+  "gallery": {
+    "url": "http://localhost:4317/asset/9439221949573f6be32535a9",
+    "subject": "roguelike-hoarfrost-whetstone",
+    "revision": "r1",
+    "sha256": "eefdae0a41b3276ab609858ae64a1dcafba20834bdc6ec36af7a6225035bf95e",
+    "status": "Pending approval",
+    "verified": true
+  }
+}

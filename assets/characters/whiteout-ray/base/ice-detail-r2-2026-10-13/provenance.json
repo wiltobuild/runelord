@@ -1,0 +1,32 @@
+{
+  "characterId": "whiteout-ray",
+  "revision": "ice-detail-r2-2026-10-13",
+  "status": "Pending approval",
+  "method": "built-in image_gen edit",
+  "source": "exec-ac8f3a72-172f-4122-b897-264a7b0b9b68.png",
+  "sha256": "6785c628780e5d3c916edf87476eea7e7b73936444d6e668a7bea4929327edaf",
+  "size": [
+    1536,
+    1024
+  ],
+  "alphaExtrema": [
+    0,
+    254
+  ],
+  "identityReference": {
+    "path": "assets\\characters\\whiteout-ray\\base\\ice-roster-r1\\base.png",
+    "sha256": "44cbb23aafbeb6c9bcf331ea12ebe7402efe87400111cc42f673c2cd76727724"
+  },
+  "styleReference": {
+    "path": "assets\\characters\\avalanche-colossus\\base\\ice-roster-r2\\base.png",
+    "sha256": "c4c6ae8b6243ff2f2631cd84632dd4b0c45c8178704f75b2fbc2293f9f12b4d9",
+    "status": "Approved",
+    "evidenceId": "fdd2dbac-29c7-4e35-9049-5a178f074a09"
+  },
+  "userDirection": "Increase detail and material texture to approved Avalanche Colossus r2; preserve identity, anatomy and pose. Overrides older simplicity preference for this revision.",
+  "prompt": "prompt.txt",
+  "qa": "pending visual composites inspection",
+  "limitations": [
+    "Base artwork only; no new approval, animation or runtime integration."
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "tool": "built-in image_gen",
+  "newFrames": [
+    {
+      "slug": "shopkeeper-2-talk",
+      "sha256": "79bf1123a002358b05ae8dbeefe9fa5271d94c4aaaf161fe966142a6a97d693d"
+    },
+    {
+      "slug": "shopkeeper-2-satisfied",
+      "sha256": "cb30a44f00c0b6e51f7b5951cd29167ff951df6e5f72aa9d0ad9db73aba671df"
+    },
+    {
+      "slug": "shopkeeper-3-talk",
+      "sha256": "10bb9b03ad9210a2a1f7fdc15ba32a2e54ba396cbac7b2c862327e520dfff791"
+    },
+    {
+      "slug": "shopkeeper-3-satisfied",
+      "sha256": "0e5720bdb97d8d4f711d56622005baa8f5379e03df0b0abfe7369594e8dcb5b0"
+    }
+  ],
+  "states": [
+    "idle",
+    "talk",
+    "satisfied"
+  ],
+  "scope": "Two additional static frames per merchant; three paired forest shops integrated in ForestJourney."
+}

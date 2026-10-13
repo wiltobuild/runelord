@@ -1,0 +1,69 @@
+{
+  "attempt": 1,
+  "scope": "One candidate only; not a complete idle loop; no integration",
+  "method": "Piecewise RGB correction of low-saturation grays, calibrated to three previously measured corresponding material colors. No geometry/alpha edits.",
+  "reference": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\characters\\warlock-gorthak\\animations\\frames32-r2\\source\\idle-00.png",
+  "input": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\characters\\warlock-gorthak\\animations\\frames32-r3\\proof\\peak-attempt-3.png",
+  "output": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\characters\\warlock-gorthak\\animations\\frames32-r3\\proof\\manual-color-first-try\\gorthak-color-first-try.png",
+  "changed_pixels": 480783,
+  "alpha_unchanged": true,
+  "unmasked_pixels_unchanged": true,
+  "calibration_anchors": [
+    {
+      "region": "Dark horn",
+      "before": [
+        31,
+        21,
+        22
+      ],
+      "target": [
+        27,
+        18,
+        20
+      ],
+      "after": [
+        27,
+        18,
+        20
+      ]
+    },
+    {
+      "region": "Shoulder shadow",
+      "before": [
+        65,
+        51,
+        53
+      ],
+      "target": [
+        60,
+        47,
+        50
+      ],
+      "after": [
+        60,
+        47,
+        50
+      ]
+    },
+    {
+      "region": "Shoulder light",
+      "before": [
+        73,
+        57,
+        58
+      ],
+      "target": [
+        72,
+        57,
+        60
+      ],
+      "after": [
+        72,
+        57,
+        60
+      ]
+    }
+  ],
+  "limitation": "Anchor colors match by construction; other facets still require visual judgment. This does not prove every material pixel matches.",
+  "sha256": "f67c38492ae325fed5d61b34346bf0ea635ce06da11d2e47b51c0aa61ed0cf95"
+}

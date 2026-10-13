@@ -1,0 +1,14 @@
+{
+  "status": "pass",
+  "frames": 32,
+  "unique_native_sources": 32,
+  "checks": [
+    "native source pixel scale1",
+    "all opaque pixels preserved",
+    "1536RGBA output",
+    "padded silhouette bounds",
+    "valid frame references",
+    "six states plus act alias",
+    "death one-shot hold-last"
+  ]
+}

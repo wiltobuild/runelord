@@ -1,0 +1,43 @@
+{
+  "method": "Bounded per-material RGB percentile transfer to original palette; alpha >200 included; emissive orange preserved",
+  "geometry_and_alpha_unchanged": true,
+  "scope": "Third pose only; other two poses unchanged; not installed",
+  "measurements": [
+    {
+      "material": "armor",
+      "before_mean_rgb": [
+        54.42,
+        40.44,
+        41.64
+      ],
+      "after_mean_rgb": [
+        49.9,
+        35.98,
+        38.32
+      ],
+      "reference_mean_rgb": [
+        49.78,
+        36.05,
+        37.92
+      ]
+    },
+    {
+      "material": "skin",
+      "before_mean_rgb": [
+        115.59,
+        42.72,
+        35.54
+      ],
+      "after_mean_rgb": [
+        99.72,
+        34.31,
+        29.99
+      ],
+      "reference_mean_rgb": [
+        98.52,
+        32.52,
+        29.9
+      ]
+    }
+  ]
+}

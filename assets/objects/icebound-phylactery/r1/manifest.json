@@ -1,0 +1,66 @@
+{
+  "id": "icebound-phylactery",
+  "name": "Icebound Phylactery",
+  "category": "Runeblade relic",
+  "state": "static",
+  "intendedUse": "Roguelike shop and equipped relic icon",
+  "catalogSource": "Current user-requested Runeblade demo rules in packages/content/runeblade.ts; older catalog effects superseded",
+  "engineMapping": "item-icebound-phylactery",
+  "source": {
+    "path": "assets/objects/icebound-phylactery/r1/source.png",
+    "size": [
+      1254,
+      1254
+    ],
+    "sha256": "ce1b162e3ed9af53ce91aa57f9950a1bae50e7b5501f66c795cbac99561cc2c2",
+    "generatedPath": "C:\\Users\\wilsh\\.codex\\generated_images\\01a130b1-fb8d-7721-bbfb-8a1842795816\\exec-07b218e8-3b52-4c8a-8895-b58d239c3a7b.png"
+  },
+  "exports": [
+    {
+      "path": "apps/web/public/opening-assets/runeblade-items/icebound-phylactery-128.webp",
+      "size": [
+        128,
+        128
+      ],
+      "sha256": "fe764afb8558c3d262b8470fe9b1ccf35a286d81cda90bd40d1992c1d220530e"
+    },
+    {
+      "path": "apps/web/public/opening-assets/runeblade-items/icebound-phylactery.webp",
+      "size": [
+        256,
+        256
+      ],
+      "sha256": "27791d3cd3a6c9fa52c60f33acd8fc2be48e8d7bdc8c2bab05c028cd45e20bac"
+    }
+  ],
+  "generationTool": "built-in image_gen",
+  "prompt": "Use case: stylized-concept. Create ONE isolated Runelord Runeblade inventory relic icon. The supplied knight is STYLE AND PALETTE REFERENCE ONLY, do not depict a character. Match serious 2D cel-shading, broad flat regions, two or three crisp hard shadow tones, chunky silhouette, steel gray, deep navy, bone ivory and ice cyan. Quiet surfaces, few large functional details, strong dark contours, no PBR realism, no painterly gradients, no bloom or decorative clutter. Square canvas, whole object centered with generous clear padding; genuine transparent background, no frame, scenery, text, lettering or watermark. Must read clearly at 128px. Subject: A squat hexagonal steel soul vessel with a large central faceted cyan ice core held in four broad iron ribs, dark navy cap and base, a single ivory bone latch. Robust closed protective reliquary, not a potion bottle. Strong guard-granting silhouette.",
+  "reference": {
+    "path": "C:/Users/wilsh/Projects/runelord/assets/heroes/references/runeblade/runeblade-base-r1.png",
+    "sha256": "adbd33fb14e91b761f355ffeb9966cb262aacca78429099ec09b0fab9faf84ef",
+    "status": "Approved",
+    "evidenceId": "user-chat-2026-10-01-approve-existing-runelord"
+  },
+  "technicalQA": {
+    "alphaExtrema": [
+      0,
+      255
+    ],
+    "sourcePreserved": true,
+    "targetDimensionsVerified": true
+  },
+  "visualQA": {
+    "fullSize": "Passed: complete distinct silhouette, serious steel/navy/cyan cel shading, no scenery or text",
+    "nativeSize": "Passed at 128px on dark and ivory backgrounds: distinct silhouettes, clean alpha edges, readable central symbols; narrow banner is intentionally slender."
+  },
+  "approvalStatus": "Pending approval",
+  "integrationAuthorization": "User request to add Runeblade items and shop art",
+  "gallery": {
+    "url": "http://localhost:4317/asset/8c76bc7c19c3fc2bf94ffea5",
+    "subject": "roguelike-icebound-phylactery",
+    "revision": "r1",
+    "sha256": "ce1b162e3ed9af53ce91aa57f9950a1bae50e7b5501f66c795cbac99561cc2c2",
+    "status": "Pending approval",
+    "verified": true
+  }
+}

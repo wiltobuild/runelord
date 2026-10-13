@@ -1,0 +1,394 @@
+{
+  "contract_version": 2,
+  "character_id": "warlock-gorthak",
+  "display_name": "Gorthak, the Pit Lord",
+  "revision": "hd-r2",
+  "status": "Pending approval",
+  "format": "whole-character RGBA PNG keyframes",
+  "base": {
+    "file": "source/neutral.png",
+    "sha256": "5e5700db391d6b020f31307d1af113102eb81f5d80575eef2c01777119f5c191",
+    "approval_evidence": "60fd264d-616b-4049-b781-ca8acf21506a"
+  },
+  "geometry": {
+    "canvas_px": [
+      1536,
+      1536
+    ],
+    "root_px": [
+      768,
+      1400
+    ],
+    "anchor_normalized": [
+      0.5,
+      0.9114583333333334
+    ],
+    "source_pixels_per_world_unit": 718.1818181818182,
+    "standing_height_world": 1.65,
+    "facing": "right",
+    "root_motion": "in-place ground registration, no per-frame scaling"
+  },
+  "frames": [
+    {
+      "id": 0,
+      "file": "frame-00.png",
+      "source": "source/neutral.png",
+      "source_dimensions": [
+        1312,
+        1199
+      ],
+      "source_sha256": "5e5700db391d6b020f31307d1af113102eb81f5d80575eef2c01777119f5c191",
+      "source_anchor": [
+        663,
+        1188
+      ],
+      "translation": [
+        105,
+        212
+      ],
+      "visible_bbox": [
+        150,
+        215,
+        1386,
+        1400
+      ]
+    },
+    {
+      "id": 1,
+      "file": "frame-01.png",
+      "source": "source/idle-inhale.png",
+      "source_dimensions": [
+        1254,
+        1254
+      ],
+      "source_sha256": "d0f6b2db97c97c88f60c4963cdbf3011f83a9c32bc3b4b23b285c22c1c83890e",
+      "source_anchor": [
+        640,
+        1200
+      ],
+      "translation": [
+        128,
+        200
+      ],
+      "visible_bbox": [
+        162,
+        203,
+        1374,
+        1400
+      ]
+    },
+    {
+      "id": 2,
+      "file": "frame-02.png",
+      "source": "source/attack-windup.png",
+      "source_dimensions": [
+        1254,
+        1254
+      ],
+      "source_sha256": "fa02ed47fe1d41a561d1778ba8d3e8b33643a849f0dd3b411ddaba0e2a32136c",
+      "source_anchor": [
+        676,
+        1226
+      ],
+      "translation": [
+        92,
+        174
+      ],
+      "visible_bbox": [
+        279,
+        182,
+        1257,
+        1400
+      ]
+    },
+    {
+      "id": 3,
+      "file": "frame-03.png",
+      "source": "source/attack-impact.png",
+      "source_dimensions": [
+        1254,
+        1254
+      ],
+      "source_sha256": "e3a87d2c73a567bd113fb446a16f77cc95af9aa4efac1f89e27d5ca816c3b07d",
+      "source_anchor": [
+        630,
+        1170
+      ],
+      "translation": [
+        138,
+        230
+      ],
+      "visible_bbox": [
+        158,
+        299,
+        1378,
+        1400
+      ]
+    },
+    {
+      "id": 4,
+      "file": "frame-04.png",
+      "source": "source/hit.png",
+      "source_dimensions": [
+        1254,
+        1254
+      ],
+      "source_sha256": "5f688c325cd6ed44db267be4217050b7e4498a4c6c66663811aa01470a42ef39",
+      "source_anchor": [
+        626,
+        1208
+      ],
+      "translation": [
+        142,
+        192
+      ],
+      "visible_bbox": [
+        174,
+        218,
+        1363,
+        1400
+      ]
+    },
+    {
+      "id": 5,
+      "file": "frame-05.png",
+      "source": "source/wounded.png",
+      "source_dimensions": [
+        1254,
+        1254
+      ],
+      "source_sha256": "4c09c9a9ac769adbb2c3bca16b0bd86fdcc9e5ede84a79c3d631dad6227cb3e8",
+      "source_anchor": [
+        637,
+        1220
+      ],
+      "translation": [
+        131,
+        180
+      ],
+      "visible_bbox": [
+        180,
+        198,
+        1357,
+        1400
+      ]
+    },
+    {
+      "id": 6,
+      "file": "frame-06.png",
+      "source": "source/die-fall.png",
+      "source_dimensions": [
+        1254,
+        1254
+      ],
+      "source_sha256": "820dc03ec66cf0711deec378b8601905b11913ffda88442b1d94992faabef868",
+      "source_anchor": [
+        650,
+        1192
+      ],
+      "translation": [
+        118,
+        208
+      ],
+      "visible_bbox": [
+        183,
+        270,
+        1353,
+        1400
+      ]
+    },
+    {
+      "id": 7,
+      "file": "frame-07.png",
+      "source": "source/die-terminal.png",
+      "source_dimensions": [
+        1254,
+        1254
+      ],
+      "source_sha256": "f10bc2b7d1aabd857dfee9cfcb36e3ba1c3cf3177884f8024e668892135ea2a9",
+      "source_anchor": [
+        629,
+        986
+      ],
+      "translation": [
+        139,
+        414
+      ],
+      "visible_bbox": [
+        165,
+        683,
+        1371,
+        1400
+      ]
+    },
+    {
+      "id": 8,
+      "file": "frame-08.png",
+      "source": "source/wounded-exhale.png",
+      "source_dimensions": [
+        1254,
+        1254
+      ],
+      "source_sha256": "00082fe23e5ad529483d5ec1766ffe3f70bdb61ecea84b68345244de7a610efe",
+      "source_anchor": [
+        637,
+        1221
+      ],
+      "translation": [
+        131,
+        179
+      ],
+      "visible_bbox": [
+        179,
+        198,
+        1358,
+        1400
+      ]
+    },
+    {
+      "id": 9,
+      "file": "frame-09.png",
+      "source": "source/attack-recovery.png",
+      "source_dimensions": [
+        1254,
+        1254
+      ],
+      "source_sha256": "42309e4e6df1106f15c498afd6ddb58ed5a8e06c4464f6e52888ad5cf35237e3",
+      "source_anchor": [
+        652,
+        1194
+      ],
+      "translation": [
+        116,
+        206
+      ],
+      "visible_bbox": [
+        211,
+        244,
+        1326,
+        1400
+      ]
+    }
+  ],
+  "animations": {
+    "idle": {
+      "frames": [
+        0,
+        1,
+        0
+      ],
+      "durations_ms": [
+        700,
+        700,
+        700
+      ],
+      "loop": true,
+      "transition": "self"
+    },
+    "act": {
+      "frames": [
+        0,
+        2,
+        3,
+        9,
+        0
+      ],
+      "durations_ms": [
+        80,
+        160,
+        110,
+        100,
+        120
+      ],
+      "loop": false,
+      "transition": "idle",
+      "events": [
+        {
+          "name": "impact",
+          "at_ms": 240
+        }
+      ]
+    },
+    "hit": {
+      "frames": [
+        0,
+        4,
+        0
+      ],
+      "durations_ms": [
+        70,
+        130,
+        100
+      ],
+      "loop": false,
+      "transition": "idle"
+    },
+    "wounded_idle": {
+      "frames": [
+        5,
+        8,
+        5
+      ],
+      "durations_ms": [
+        850,
+        1000,
+        450
+      ],
+      "loop": true,
+      "transition": "self"
+    },
+    "die": {
+      "frames": [
+        5,
+        6,
+        7
+      ],
+      "durations_ms": [
+        180,
+        220,
+        900
+      ],
+      "loop": false,
+      "transition": "hold-last",
+      "terminal": true
+    },
+    "spawn": {
+      "frames": [
+        0,
+        0,
+        1,
+        0
+      ],
+      "durations_ms": [
+        100,
+        100,
+        150,
+        150
+      ],
+      "loop": false,
+      "transition": "idle",
+      "opacity": [
+        0,
+        0.35,
+        0.75,
+        1
+      ],
+      "events": [
+        {
+          "name": "arrival",
+          "at_ms": 350
+        }
+      ]
+    }
+  },
+  "aliases": {
+    "attack": "act"
+  },
+  "limitations": [
+    "Ten full-resolution key poses; stepped limited animation, no interpolation.",
+    "Idle and wounded each use two authored breathing poses; changes are deliberately held, not smooth interpolation.",
+    "Generated proportions and foot placement require visual QA; not claimed frame-perfect.",
+    "GIF previews downsample to1024px; transparent1536px runtime frames retain native source pixels.",
+    "New revision is pending user approval and is not runtime-integrated."
+  ]
+}

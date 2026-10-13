@@ -1,0 +1,13 @@
+# Gorthak · 32 whole-character frames
+
+32 distinct full-resolution poses across idle4, attack8, hit4, wounded_idle4, spawn4 and die8. Per latest user instruction, nine eligible hd-r2 sources are reused byte-for-byte; only23 missing poses were authored with built-in imagegen. `reuse.json` records exact old/new source hashes. The old brighter idle-inhale and discarded wounded first pass are excluded.
+
+The approved master is1312×1199, hash5e5700db391d6b020f31307d1af113102eb81f5d80575eef2c01777119f5c191; current ledger approval evidence60fd264d-616b-4049-b781-ca8acf21506a. The new frames remain pending user approval; reuse is not a claim every source is independently approved. All source dimensions and hashes are in `animation.json`; source pixel scale is1, with transparent1536×1536 canvas padding. Root768,1400 and718.1818pixels/world-unit preserve the earlier runtime convention. The independent idle proof rejected two initial candidates, repaired them using strict minimal edits of the matching adjacent pose, then passed material-value and silhouette review before extending.
+
+`pack.py` performs only native raster registration and technical export. It does not recolor, warp, interpolate or generate artwork. Frames are numbered00–31; six1024px GIFs provide actual playback. `preview.html` displays original transparent frames at large and approximately96px height on contrasting backgrounds. Contact sheets are review aids. `generation-plan.json` and `generated-poses.json` record prompts and provenance; excluded source attempts are retained outside the manifest for audit.
+
+Attack500ms with impact240ms; hit350ms; idle1400ms loop; wounded1600ms loop; spawn720ms with arrival540ms; death1560ms one-shot followed by terminal hold. `act` aliases attack semantics. Normal nonlooping states transition to idle; the game may select wounded based on gameplay health. Pose changes are authored limited animation, not interpolated skeletal motion. Small panel/neck changes can remain between held frames. No game logic, deployment or user approvals are modified by this package.
+
+`packing-checks.json` confirms32 unique native source hashes, padded opaque bounds, alpha preservation and geometry. Independent final playback findings belong to the parent QA evidence, not a self-issued approval.
+
+`nFinal independent QA passed all32 sources and packed live playback. Report: work/production/gorthak-frames32/qa/final-review.json (SHA25685deaabc9973348ab14653d1206b49ecb4b38b404201165d8054559dcb879886). Limitations: held/stepped poses, visible wounded head bob, mild facet variation; no broad idle light/dark flash. Six final previews and contact sheet submitted pending; gallery API discovery verified. This QA result does not change user approval status.

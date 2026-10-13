@@ -1,0 +1,42 @@
+{
+  "id": "splinterhost",
+  "name": "Splinterhost",
+  "revision": "ice-detail-r3-2026-10-13",
+  "sha256": "dbec3a5e26ecd16b8fbd5867003b09f09166d236b7ce248122f2b8cea8540060",
+  "path": "C:/Users/wilsh/Projects/runelord/assets/characters/splinterhost/base/ice-detail-r3-2026-10-13/master.png",
+  "generationSource": "C:\\Users\\wilsh\\.codex\\generated_images\\01a13278-e699-7143-9725-41483d4a7ef8\\exec-84369071-bf09-43c1-80a2-c10b61de2ae6.png",
+  "generator": "built-in imagegen",
+  "dimensions": [
+    1536,
+    1024
+  ],
+  "alpha": [
+    0,
+    254
+  ],
+  "status": "Pending approval",
+  "identityReference": {
+    "path": "C:/Users/wilsh/Projects/runelord/assets/characters/splinterhost/base/ice-roster-r1/master.png",
+    "sha256": "3578258642e98ec3d3f344efcc9c653f51ff0981cfdfccb83063dc92d6d9ea81",
+    "decision": null
+  },
+  "earlierMaterialReference": {
+    "path": "C:/Users/wilsh/Projects/runelord/assets/characters/avalanche-colossus/base/ice-roster-r2/base.png",
+    "sha256": "c4c6ae8b6243ff2f2631cd84632dd4b0c45c8178704f75b2fbc2293f9f12b4d9",
+    "decision": {
+      "status": "Approved",
+      "at": "2026-10-13T04:35:29.547Z",
+      "evidenceId": "fdd2dbac-29c7-4e35-9049-5a178f074a09",
+      "paths": [
+        "C:\\Users\\wilsh\\Projects\\runelord\\assets\\approvals\\inbox\\avalanche-colossus\\ice-roster-r2\\base.png"
+      ]
+    }
+  },
+  "direction": "Latest user correction: moderate internal designed detail, clean solid edges, no noisy texture. Heavy r2 superseded and preserved.",
+  "qa": {
+    "fullSize": "Pass: identity preserved, controlled internal material details, crisp closed contours, quiet planar surfaces",
+    "at96": "Pass: silhouette and key identity readable",
+    "alphaComposites": "Pass: explicit sharp white and dark composites inspected, no halo/fuzzy frost rim"
+  },
+  "limitations": "Base design revision only; not separated parts, animation, or runtime verification"
+}

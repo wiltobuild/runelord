@@ -1,0 +1,176 @@
+{
+  "assets": [
+    {
+      "slug": "dryad-talk",
+      "source": "C:/Users/wilsh/Projects/runelord/assets/concepts/forest-shops/expansion-r1/dryad-talk.png",
+      "sourceHash": "5c3eced50689153abcdaf515bec978baf2c0bd6a8a7a8938f938e4fed0884c9b",
+      "export": "C:/Users/wilsh/Projects/runelord/assets/concepts/forest-shops/expansion-r1/dryad-talk.webp",
+      "exportHash": "759e6e6d95dc24a43842086c8a70085b9d174dc41761a7fe99b1f9ddb2ec1781",
+      "width": 512,
+      "height": 768,
+      "hasAlpha": true,
+      "alphaRange": [
+        0,
+        255
+      ],
+      "sourceBox": {
+        "left": 180,
+        "top": 4,
+        "width": 741,
+        "height": 1476
+      },
+      "approval": "Pending approval",
+      "kind": "static expression",
+      "rig": "Static artwork only; humanoid pivots proposed, no layers or animation",
+      "integration": "Not wired into runtime"
+    },
+    {
+      "slug": "dryad-satisfied",
+      "source": "C:/Users/wilsh/Projects/runelord/assets/concepts/forest-shops/expansion-r1/dryad-satisfied.png",
+      "sourceHash": "5cc9373bc6265bbf252b2fa828d44b0fe3dc106d19e83c053e6adf883313580e",
+      "export": "C:/Users/wilsh/Projects/runelord/assets/concepts/forest-shops/expansion-r1/dryad-satisfied.webp",
+      "exportHash": "dda23475f3bba5346e861773ea45ddafd753c29f8536612b348cdde3cac62a00",
+      "width": 512,
+      "height": 768,
+      "hasAlpha": true,
+      "alphaRange": [
+        0,
+        255
+      ],
+      "sourceBox": {
+        "left": 192,
+        "top": 28,
+        "width": 722,
+        "height": 1459
+      },
+      "approval": "Pending approval",
+      "kind": "static expression",
+      "rig": "Static artwork only; humanoid pivots proposed, no layers or animation",
+      "integration": "Not wired into runtime"
+    },
+    {
+      "slug": "dryad-skeptical",
+      "source": "C:/Users/wilsh/Projects/runelord/assets/concepts/forest-shops/expansion-r1/dryad-skeptical.png",
+      "sourceHash": "1ad9a1a2b7293338f139ba7b669821b3209edac35238ca17de5f71acaa334006",
+      "export": "C:/Users/wilsh/Projects/runelord/assets/concepts/forest-shops/expansion-r1/dryad-skeptical.webp",
+      "exportHash": "727789990fcac9bad21cf345a2cb4026d13fd4622ff5b963e36203399c020b3d",
+      "width": 512,
+      "height": 768,
+      "hasAlpha": true,
+      "alphaRange": [
+        0,
+        255
+      ],
+      "sourceBox": {
+        "left": 175,
+        "top": 10,
+        "width": 735,
+        "height": 1474
+      },
+      "approval": "Pending approval",
+      "kind": "static expression",
+      "rig": "Static artwork only; humanoid pivots proposed, no layers or animation",
+      "integration": "Not wired into runtime"
+    },
+    {
+      "slug": "forest-shopkeeper-2",
+      "source": "C:/Users/wilsh/Projects/runelord/assets/concepts/forest-shops/expansion-r1/forest-shopkeeper-2.png",
+      "sourceHash": "cb17b11d1551efb544a0d0291b7caacf98ed9ce83fb365f6548a058c985ee8b8",
+      "export": "C:/Users/wilsh/Projects/runelord/assets/concepts/forest-shops/expansion-r1/forest-shopkeeper-2.webp",
+      "exportHash": "abe49dd6e76be9855360d5d8ab3cb79cf0d89d704e44555ea16a52c67af928ea",
+      "width": 512,
+      "height": 768,
+      "hasAlpha": true,
+      "alphaRange": [
+        0,
+        255
+      ],
+      "sourceBox": {
+        "left": 88,
+        "top": 23,
+        "width": 887,
+        "height": 1498
+      },
+      "approval": "Pending approval",
+      "kind": "base sample",
+      "rig": "Static artwork only; humanoid pivots proposed, no layers or animation",
+      "integration": "Not wired into runtime"
+    },
+    {
+      "slug": "forest-shopkeeper-3",
+      "source": "C:/Users/wilsh/Projects/runelord/assets/concepts/forest-shops/expansion-r1/forest-shopkeeper-3.png",
+      "sourceHash": "6c7d72db0a00c538bb17de33ed78729e2aa8694f49ba699d41a5075e3904dbbf",
+      "export": "C:/Users/wilsh/Projects/runelord/assets/concepts/forest-shops/expansion-r1/forest-shopkeeper-3.webp",
+      "exportHash": "b9ba35fe05ed83df854ad5ab51d7f4f6cd73cd46960d0aff7392ad46ac7c124d",
+      "width": 512,
+      "height": 768,
+      "hasAlpha": true,
+      "alphaRange": [
+        0,
+        255
+      ],
+      "sourceBox": {
+        "left": 133,
+        "top": 9,
+        "width": 760,
+        "height": 1514
+      },
+      "approval": "Pending approval",
+      "kind": "base sample",
+      "rig": "Static artwork only; humanoid pivots proposed, no layers or animation",
+      "integration": "Not wired into runtime"
+    },
+    {
+      "slug": "forest-background-2",
+      "source": "C:/Users/wilsh/Projects/runelord/assets/concepts/forest-shops/expansion-r1/forest-background-2.png",
+      "sourceHash": "cc6c2bcb71241bc0ace5ade7c82047602f261f88f0b93e34bb4f8a61768394bd",
+      "export": "C:/Users/wilsh/Projects/runelord/assets/concepts/forest-shops/expansion-r1/forest-background-2.webp",
+      "exportHash": "8b8c021c0cc3eb20b6ca095577e66074ce49ca9909d3b052bc45a8f584ddb559",
+      "width": 1672,
+      "height": 941,
+      "hasAlpha": false,
+      "alphaRange": null,
+      "sourceBox": null,
+      "approval": "Pending approval",
+      "kind": "background",
+      "rig": "Static artwork only; humanoid pivots proposed, no layers or animation",
+      "integration": "Not wired into runtime"
+    },
+    {
+      "slug": "forest-background-3",
+      "source": "C:/Users/wilsh/Projects/runelord/assets/concepts/forest-shops/expansion-r1/forest-background-3.png",
+      "sourceHash": "590ee00adb66dbea84bc4273608597c2941842efb81119e5bc551ce5ef7b403a",
+      "export": "C:/Users/wilsh/Projects/runelord/assets/concepts/forest-shops/expansion-r1/forest-background-3.webp",
+      "exportHash": "36bc904c06a4bc0494b33778482df7a3c51cde1da6fd1d9bd6909b504d6bb7cd",
+      "width": 1672,
+      "height": 941,
+      "hasAlpha": false,
+      "alphaRange": null,
+      "sourceBox": null,
+      "approval": "Pending approval",
+      "kind": "background",
+      "rig": "Static artwork only; humanoid pivots proposed, no layers or animation",
+      "integration": "Not wired into runtime"
+    }
+  ],
+  "atlas": {
+    "path": "C:/Users/wilsh/Projects/runelord/assets/concepts/forest-shops/expansion-r1/shopkeeper-1-expressions.webp",
+    "width": 1536,
+    "height": 768,
+    "cell": [
+      512,
+      768
+    ],
+    "order": [
+      "talk",
+      "satisfied",
+      "skeptical"
+    ],
+    "timing": "Static reaction states; no animation timing"
+  },
+  "acceptedReferences": {
+    "dryadHash": "619d43301a9c54dc0b33e332935f61eb1cad46e32f05a85e940ec766f69466a0",
+    "backgroundHash": "88749650136b1df5f7e4c31be0515aaa32f594a972526961f8160461d735a646",
+    "evidence": "Explicit user approval in this chat; no overriding gallery decision at generation"
+  }
+}

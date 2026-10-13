@@ -1,0 +1,45 @@
+{
+  "character_id": "whiteout-ray",
+  "display_name": "Whiteout Ray",
+  "role": "flying disruptor",
+  "status": "base_pending",
+  "source_revision": "03338e4da39bbaf1f48651557e45f71f455a291a",
+  "method": "built-in image_gen",
+  "source": "C:/Users/wilsh/.codex/generated_images/01a13279-3456-74b2-b38a-630b9fc043ef/exec-63959aec-c6b0-449d-9d7a-da38e7f946df.png",
+  "asset": "base.png",
+  "dimensions": [
+    1536,
+    1024
+  ],
+  "alphaRange": [
+    0,
+    254
+  ],
+  "referencePaths": [
+    "C:/Users/wilsh/Projects/runelord/assets/approvals/inbox/dragon-frost-mammoth/base-r1/base-r1.png",
+    "C:/Users/wilsh/Projects/runelord/assets/heroes/references/runeblade/runeblade-base-r1.png"
+  ],
+  "referenceHashes": [
+    "3730fd449dda0734e012f6fa91fb10244b2396421d93a3e2e6099780ba3378cd",
+    "adbd33fb14e91b761f355ffeb9966cb262aacca78429099ec09b0fab9faf84ef"
+  ],
+  "referenceEvidenceIds": [
+    "3d3835b8-f2f8-4ce8-8acd-cd24979a21b7",
+    "user-chat-2026-10-01-approve-existing-runelord"
+  ],
+  "brief": "A haunting airborne ice manta, wide flattened diamond silhouette with two immense swept fins and a long narrow split tail, no legs. Navy upper body, ivory underside, opaque milky ice edging on fins, narrow cyan eyes, two short horn-like cephalic lobes. Slight hovering bank in neutral pose, head pointing left, visibly winglike fins yet unmistakably ray anatomy. Only three contained ice motes nearby, no mist or backdrop.",
+  "construction": {
+    "status": "proposed only; no separated layers",
+    "parts": "head/body, two fins, cephalic lobes, tail segments, three detached motes"
+  },
+  "qa": {
+    "fullSize": "inspected; cel style, complete silhouette and distinct role",
+    "runtime": "not implemented",
+    "limitations": [
+      "Design base only; no animation, variants, separated parts, approval or gameplay certification."
+    ],
+    "at96px": "inspected; wolf, skitterer, ray distinguishable at 96px",
+    "alphaComposite": "PASS: inspected explicit alpha composites on light and dark; no surrounding halo. Initial raw viewer displayed hidden RGB as haze."
+  },
+  "sha256": "44cbb23aafbeb6c9bcf331ea12ebe7402efe87400111cc42f673c2cd76727724"
+}

@@ -1,0 +1,66 @@
+{
+  "id": "gravebound-sigil",
+  "name": "Gravebound Sigil",
+  "category": "Runeblade relic",
+  "state": "static",
+  "intendedUse": "Roguelike shop and equipped relic icon",
+  "catalogSource": "Current user-requested Runeblade demo rules in packages/content/runeblade.ts; older catalog effects superseded",
+  "engineMapping": "item-gravebound-sigil",
+  "source": {
+    "path": "assets/objects/gravebound-sigil/r1/source.png",
+    "size": [
+      1254,
+      1254
+    ],
+    "sha256": "78c79117b9922fcae8c3278e7ce092db940034fe29d5611225e1e512690ec389",
+    "generatedPath": "C:\\Users\\wilsh\\.codex\\generated_images\\01a130b1-fb8d-7721-bbfb-8a1842795816\\exec-ec9c31fc-d9bf-452f-949c-5ad493d931df.png"
+  },
+  "exports": [
+    {
+      "path": "apps/web/public/opening-assets/runeblade-items/gravebound-sigil-128.webp",
+      "size": [
+        128,
+        128
+      ],
+      "sha256": "abb74001a7b8d39edf1a8e27f851099c3abfe0feb1512fb13583374ced685527"
+    },
+    {
+      "path": "apps/web/public/opening-assets/runeblade-items/gravebound-sigil.webp",
+      "size": [
+        256,
+        256
+      ],
+      "sha256": "d34a630b3e905715c90401161bedc9c5ae346ca63a6968bdfc774d8431be1589"
+    }
+  ],
+  "generationTool": "built-in image_gen",
+  "prompt": "Use case: stylized-concept. Create ONE isolated Runelord Runeblade inventory relic icon. The supplied knight is STYLE AND PALETTE REFERENCE ONLY, do not depict a character. Match serious 2D cel-shading, broad flat regions, two or three crisp hard shadow tones, chunky silhouette, steel gray, deep navy, bone ivory and ice cyan. Quiet surfaces, few large functional details, strong dark contours, no PBR realism, no painterly gradients, no bloom or decorative clutter. Square canvas, whole object centered with generous clear padding; genuine transparent background, no frame, scenery, text, lettering or watermark. Must read clearly at 128px. Subject: A heavy jagged slate tombstone-shaped talisman clasped by two large steel bands, TWO stylized ivory bone shards crossing under one bright cyan angular diamond sigil. Larger commanding silhouette, pair of small ice crystals at base. Relic that gathers two corpses at battle start.",
+  "reference": {
+    "path": "C:/Users/wilsh/Projects/runelord/assets/heroes/references/runeblade/runeblade-base-r1.png",
+    "sha256": "adbd33fb14e91b761f355ffeb9966cb262aacca78429099ec09b0fab9faf84ef",
+    "status": "Approved",
+    "evidenceId": "user-chat-2026-10-01-approve-existing-runelord"
+  },
+  "technicalQA": {
+    "alphaExtrema": [
+      0,
+      255
+    ],
+    "sourcePreserved": true,
+    "targetDimensionsVerified": true
+  },
+  "visualQA": {
+    "fullSize": "Passed: complete distinct silhouette, serious steel/navy/cyan cel shading, no scenery or text",
+    "nativeSize": "Passed at 128px on dark and ivory backgrounds: distinct silhouettes, clean alpha edges, readable central symbols; narrow banner is intentionally slender."
+  },
+  "approvalStatus": "Pending approval",
+  "integrationAuthorization": "User request to add Runeblade items and shop art",
+  "gallery": {
+    "url": "http://localhost:4317/asset/0e6425b6d0afb02da009c100",
+    "subject": "roguelike-gravebound-sigil",
+    "revision": "r1",
+    "sha256": "78c79117b9922fcae8c3278e7ce092db940034fe29d5611225e1e512690ec389",
+    "status": "Pending approval",
+    "verified": true
+  }
+}

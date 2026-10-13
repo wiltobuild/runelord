@@ -1,0 +1,14 @@
+{
+  "checks": [
+    "TypeScript passed",
+    "All 7 forest engine tests passed",
+    "Three assembled shops visually checked at 1280x720",
+    "Canopy shop checked at 960x540",
+    "No broken images or horizontal overflow in checked DOM snapshots",
+    "Inspection triggers talk; purchase triggers satisfied and gold changes 450 to 405",
+    "Browser error log empty"
+  ],
+  "scope": "Four new static reaction frames; three forest shops integrated with existing services",
+  "source": "apps/web/src/ForestJourney.tsx and forest-journey.css",
+  "preview": "http://127.0.0.1:4330/forest-review?stage=shop-3"
+}

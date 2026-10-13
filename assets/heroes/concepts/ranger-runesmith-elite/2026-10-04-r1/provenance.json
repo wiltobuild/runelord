@@ -1,0 +1,114 @@
+{
+  "date": "2026-10-04",
+  "tool": "built-in image_gen",
+  "status": "Six requested concept samples; pending user selection",
+  "scope": "User explicitly requested three samples of each, superseding default single-base gate. No animation or runtime replacement requested.",
+  "references": [
+    "C:/Users/wilsh/Projects/runelord/assets/heroes/concepts/runeblade-ascendant/r3/gravewarden-clear-helm.png",
+    "C:/Users/wilsh/Projects/runelord/assets/heroes/animations/abyssal-seraph/frames32-r2/source/master.png"
+  ],
+  "referenceStatus": "New Runeblade and Seraph explicitly selected by user as quality references; no exact hash approval in ledger. Original Ranger and Runesmith approved with evidence user-chat-2026-10-01-approve-existing-runelord.",
+  "limitations": [
+    "Static flattened concept images, not rigs or animated game assets.",
+    "Ranger samples retain painted backgrounds.",
+    "Some source silhouettes approach canvas edges; animation needs padding."
+  ],
+  "concepts": [
+    {
+      "id": "ranger-01-thorn-crown",
+      "name": "Ranger — Thorn Crown",
+      "prompt": "Use case: stylized-concept. Create ONE full-body elite Runelord hero concept, a polished high-detail 2D cel-shaded game character on genuine transparent background. Image 1 is the newer Runeblade and image 2 the newer Warlock Seraph: match their elite visual presence, sculpted angular equipment, decisive layered silhouettes, crisp faceted cel shading and finish, but do not copy their class equipment or wings. Image 3 is the existing basic version of this subject: retain its recognizable character identity and class palette as a general starting direction while dramatically upgrading the design. Serious mature expression, bold clean color masses, designed bevels, hard shadow shapes, restrained runic glow, no realistic painting or PBR, no cute or chibi face. Full silhouette, boots and weapon tips within generous 8 percent padding. Neutral ready stance, shallow three-quarter view facing screen-right, stable feet, leg and arm separation. No text, scenery, pedestal, inset, alternate poses, companions or extra figures. Elite female elf archer with long pale-blonde hair, pointed ears and stern emerald eyes. Regal woodland huntress, crown of swept dark antlers with emerald centerpiece; tailored deep moss cloak split into elegant long leaf-shaped panels, layered dark bark leather and beautifully sculpted antique silver leaf armor on shoulders, vambraces, shins; commanding but agile silhouette. Majestic enormous recurved living-wood longbow with silver thorn fittings, emerald runic channels and clearly visible taut string, carried upright in left hand, right hand relaxed near an arrow on belt. Quiver, small restrained bone companion charms. More sophisticated and dangerous than basic ranger; high-ranking forest sovereign without royal gown. Green and bark palette, silver edges.",
+      "source": "C:/Users/wilsh/.codex/generated_images/01a10700-806a-7cb3-bd2a-1d49cab1682f/exec-f903a490-6b8a-4b73-b96f-e01f219c9be0.png",
+      "path": "C:/Users/wilsh/Projects/runelord/assets/heroes/concepts/ranger-runesmith-elite/2026-10-04-r1/ranger-01-thorn-crown.png",
+      "sha256": "5c5ae1bbfad4b7b10d79461364165785d9f78a4192ec8d6f9a01dcfa3d1afb28",
+      "dimensions": [
+        1024,
+        1536
+      ],
+      "hasAlpha": true
+    },
+    {
+      "id": "ranger-02-nightfang",
+      "name": "Ranger — Nightfang",
+      "prompt": "Use case: stylized-concept. Create ONE full-body elite Runelord hero concept, a polished high-detail 2D cel-shaded game character on genuine transparent background. Image 1 is the newer Runeblade and image 2 the newer Warlock Seraph: match their elite visual presence, sculpted angular equipment, decisive layered silhouettes, crisp faceted cel shading and finish, but do not copy their class equipment or wings. Image 3 is the existing basic version of this subject: retain its recognizable character identity and class palette as a general starting direction while dramatically upgrading the design. Serious mature expression, bold clean color masses, designed bevels, hard shadow shapes, restrained runic glow, no realistic painting or PBR, no cute or chibi face. Full silhouette, boots and weapon tips within generous 8 percent padding. Neutral ready stance, shallow three-quarter view facing screen-right, stable feet, leg and arm separation. No text, scenery, pedestal, inset, alternate poses, companions or extra figures. Elite female elf archer with pale-blonde hair, pointed ears, stern mature face. Apex woodland predator huntress: sharp deep-green hood frames face, compact swept antler circlet over hood, charcoal bark leather, asymmetric layered dark silver leaf-edged shoulder armor, refined overlapping armored bracers and boots, long split moss-green cloak with pale sage inner lining. One bold fang-shaped emerald clasp. Exceptional blackwood recurved longbow with blade-like silver tips and three clean green rune inlays, real visible bowstring, held upright; other hand holds one arrow lowered. Quiver and three bone trophies fixed to belt. Menacing restrained emerald venom accents. Agile and regal lethal ranger, not assassin with swords. Strong asymmetric silhouette and equipment comparable in polish to Runeblade.",
+      "source": "C:/Users/wilsh/.codex/generated_images/01a10700-806a-7cb3-bd2a-1d49cab1682f/exec-955ce898-5b2d-423b-a842-0cac40e8dfb5.png",
+      "path": "C:/Users/wilsh/Projects/runelord/assets/heroes/concepts/ranger-runesmith-elite/2026-10-04-r1/ranger-02-nightfang.png",
+      "sha256": "0a8603350719235c059921c9ff2d6ea77650db9caef3c4027140ce04d9e31d87",
+      "dimensions": [
+        1024,
+        1536
+      ],
+      "hasAlpha": true
+    },
+    {
+      "id": "ranger-03-briar-marshal",
+      "name": "Ranger — Briar Marshal",
+      "prompt": "Use case: stylized-concept. Create ONE full-body elite Runelord hero concept, a polished high-detail 2D cel-shaded game character on genuine transparent background. Image 1 is the newer Runeblade and image 2 the newer Warlock Seraph: match their elite visual presence, sculpted angular equipment, decisive layered silhouettes, crisp faceted cel shading and finish, but do not copy their class equipment or wings. Image 3 is the existing basic version of this subject: retain its recognizable character identity and class palette as a general starting direction while dramatically upgrading the design. Serious mature expression, bold clean color masses, designed bevels, hard shadow shapes, restrained runic glow, no realistic painting or PBR, no cute or chibi face. Full silhouette, boots and weapon tips within generous 8 percent padding. Neutral ready stance, shallow three-quarter view facing screen-right, stable feet, leg and arm separation. No text, scenery, pedestal, inset, alternate poses, companions or extra figures. Elite female elf archer with long pale-blonde hair swept back, pointed ears, stern mature angular face. Armored commander of the wild: distinctive short branching antler diadem, emerald central jewel, powerful mantle of overlapping broad sculpted leaf plates, burnished pale bronze armor borders over deep forest-green and bark-brown articulated lamellar, fitted waist, long split green cloak and leaf tabard. Preserve slim athletic elf proportions, not bulky knight. Oversized legendary thornwood warbow with sweeping antler-like limbs, pale bronze reinforcement and emerald crystal at grip, taut visible bowstring; carried upright in left hand with relaxed right hand near quiver strap. Knees and arms clearly segmented, sophisticated layered boots. Few bone companion talismans, no living animal. The most martial and commanding Ranger option.",
+      "source": "C:/Users/wilsh/.codex/generated_images/01a10700-806a-7cb3-bd2a-1d49cab1682f/exec-7495b974-fdbc-4b79-926b-9a339a44f05e.png",
+      "path": "C:/Users/wilsh/Projects/runelord/assets/heroes/concepts/ranger-runesmith-elite/2026-10-04-r1/ranger-03-briar-marshal.png",
+      "sha256": "3f29813332174ff22deb0b9545bc984be2b7d0fbb21e046356fd15fd8bf025c5",
+      "dimensions": [
+        1024,
+        1536
+      ],
+      "hasAlpha": true
+    },
+    {
+      "id": "runesmith-01-forge-thane",
+      "name": "Runesmith — Forge Thane",
+      "prompt": "Use case: stylized-concept. Create ONE full-body elite Runelord hero concept, a polished high-detail 2D cel-shaded game character on genuine transparent background. Image 1 is the newer Runeblade and image 2 the newer Warlock Seraph: match their elite visual presence, sculpted angular equipment, decisive layered silhouettes, crisp faceted cel shading and finish, but do not copy their class equipment or wings. Image 3 is the existing basic version of this subject: retain its recognizable character identity and class palette as a general starting direction while dramatically upgrading the design. Serious mature expression, bold clean color masses, designed bevels, hard shadow shapes, restrained runic glow, no realistic painting or PBR, no cute or chibi face. Full silhouette, boots and weapon tips within generous 8 percent padding. Neutral ready stance, shallow three-quarter view facing screen-right, stable feet, leg and arm separation. No text, scenery, pedestal, inset, alternate poses, companions or extra figures. Elite dwarven Runesmith matching image 3's auburn hair topknot, braided beard, rune goggles, short broad powerful build and serious face. Upgrade from novice workshop dwarf to legendary forge thane. Monumental precisely sculpted copper and gunmetal layered plate, broad angular pauldrons, deep leather split forge apron with bold geometric copper border, electric-yellow rune cores. Magnificent heavy warhammer with architectural copper head, inset glowing yellow rune, dark steel striking faces and reinforced grip, held confidently angled down away from feet. Refined compact twin-coil backpack, large readable brass beard clasps, armored articulated gauntlets and layered boots. Goggles pushed onto brow to show narrowed eyes. Strong powerful proportions with smaller mature head than old cute model, broad torso and grounded legs. Premium dwarven royal craftsmanship, not excessive steampunk clutter.",
+      "source": "C:/Users/wilsh/.codex/generated_images/01a10700-806a-7cb3-bd2a-1d49cab1682f/exec-e834187b-a769-4b75-b31b-119085c1a5ff.png",
+      "path": "C:/Users/wilsh/Projects/runelord/assets/heroes/concepts/ranger-runesmith-elite/2026-10-04-r1/runesmith-01-forge-thane.png",
+      "sha256": "1e712337b0113597d43507c34486cc8677f3ef6380c4724d4cb66851fa4d76f4",
+      "dimensions": [
+        1145,
+        1374
+      ],
+      "hasAlpha": true
+    },
+    {
+      "id": "runesmith-02-storm-crowned",
+      "name": "Runesmith — Storm Crown",
+      "prompt": "Use case: stylized-concept. Create ONE full-body elite Runelord hero concept, a polished high-detail 2D cel-shaded game character on genuine transparent background. Image 1 is the newer Runeblade and image 2 the newer Warlock Seraph: match their elite visual presence, sculpted angular equipment, decisive layered silhouettes, crisp faceted cel shading and finish, but do not copy their class equipment or wings. Image 3 is the existing basic version of this subject: retain its recognizable character identity and class palette as a general starting direction while dramatically upgrading the design. Serious mature expression, bold clean color masses, designed bevels, hard shadow shapes, restrained runic glow, no realistic painting or PBR, no cute or chibi face. Full silhouette, boots and weapon tips within generous 8 percent padding. Neutral ready stance, shallow three-quarter view facing screen-right, stable feet, leg and arm separation. No text, scenery, pedestal, inset, alternate poses, companions or extra figures. Elite dwarven Runesmith matching image 3's auburn hair, braided beard, goggles, short broad build. Legendary lightning runeforger: austere dark gunmetal plate with faceted copper borders, large yellow rune crystal at chest, asymmetrical heavy forge gauntlet, sculpted angular copper shoulders. Twin tall copper induction prongs integrated into compact backpack frame make an imposing storm-crown silhouette behind head; tightly contained yellow energy bridge between them, no huge effects obscuring body. Auburn braid and topknot, serious weathered adult face, angular rune goggles on forehead. Sophisticated two-handed rune hammer held in a relaxed low diagonal grip, with split copper hammerhead enclosing one yellow power core; leather apron in layered shield-shaped panels, solid armored boots, few large engineered fasteners. Massive authority, elite clear geometric craftsmanship.",
+      "source": "C:/Users/wilsh/.codex/generated_images/01a10700-806a-7cb3-bd2a-1d49cab1682f/exec-6d33457d-147e-4434-a194-71d5cb1e51e5.png",
+      "path": "C:/Users/wilsh/Projects/runelord/assets/heroes/concepts/ranger-runesmith-elite/2026-10-04-r1/runesmith-02-storm-crowned.png",
+      "sha256": "1c0539c7922dc0745a8b186e7ddbaa796aa60b3ee053711e8e9a964f1b667a45",
+      "dimensions": [
+        1145,
+        1374
+      ],
+      "hasAlpha": true
+    },
+    {
+      "id": "runesmith-03-anvil-sovereign",
+      "name": "Runesmith — Anvil Sovereign",
+      "prompt": "Use case: stylized-concept. Create ONE full-body elite Runelord hero concept, a polished high-detail 2D cel-shaded game character on genuine transparent background. Image 1 is the newer Runeblade and image 2 the newer Warlock Seraph: match their elite visual presence, sculpted angular equipment, decisive layered silhouettes, crisp faceted cel shading and finish, but do not copy their class equipment or wings. Image 3 is the existing basic version of this subject: retain its recognizable character identity and class palette as a general starting direction while dramatically upgrading the design. Serious mature expression, bold clean color masses, designed bevels, hard shadow shapes, restrained runic glow, no realistic painting or PBR, no cute or chibi face. Full silhouette, boots and weapon tips within generous 8 percent padding. Neutral ready stance, shallow three-quarter view facing screen-right, stable feet, leg and arm separation. No text, scenery, pedestal, inset, alternate poses, companions or extra figures. Elite dwarven Runesmith preserving image 3's auburn hair topknot, braided beard, rune goggles and short broad sturdy humanoid build. Heavily armored master artificer: refined fortress-like copper and dark iron plate with geometric stepped shoulders, overlapping elbow and knee protection, broad angular high collar, black leather apron framed with copper chevrons, three bold electric-yellow rune inlays. Huge magnificent anvil-headed lightning hammer held in one armored hand at low ready, visible separate gripping hand and solid handle; other hand a precision forging gauntlet with a single large yellow rune. Compact reinforced coil backpack with two visible capacitors, contained yellow accents. Stern mature face, smaller head than basic model, braided beard secured by ornate broad copper bands, goggles on forehead. Highest elite armor craftsmanship without becoming a robot or full mech, balanced readable silhouette.",
+      "source": "C:/Users/wilsh/.codex/generated_images/01a10700-806a-7cb3-bd2a-1d49cab1682f/exec-23897ff2-a823-41e3-85c1-fdef2c477f51.png",
+      "path": "C:/Users/wilsh/Projects/runelord/assets/heroes/concepts/ranger-runesmith-elite/2026-10-04-r1/runesmith-03-anvil-sovereign.png",
+      "sha256": "de83c0b603d12aebce5fad0800b89bb188479efbefb55c7c42d7292c1ea5a8da",
+      "dimensions": [
+        1145,
+        1374
+      ],
+      "hasAlpha": true
+    }
+  ],
+  "referenceHashes": [
+    {
+      "path": "C:/Users/wilsh/Projects/runelord/assets/heroes/concepts/runeblade-ascendant/r3/gravewarden-clear-helm.png",
+      "sha256": "0c9c6b978133ae94c9f6988243f062a038a55f2fa6402e06673c7cd3abf06e80"
+    },
+    {
+      "path": "C:/Users/wilsh/Projects/runelord/assets/heroes/animations/abyssal-seraph/frames32-r2/source/master.png",
+      "sha256": "8cbd77e13301c7b34f72a1560e8e537bcbc5eb593b46b66340c3896ee0856aec"
+    },
+    {
+      "path": "C:/Users/wilsh/Projects/runelord/assets/heroes/references/ranger/ranger-base-r1.png",
+      "sha256": "9cd6ae4be65920528b211c20d2a1c12f68183b6bb6bb9ca6095b2ea23eb76912"
+    },
+    {
+      "path": "C:/Users/wilsh/Projects/runelord/assets/heroes/references/runesmith/runesmith-base-r1.png",
+      "sha256": "769d160f774c58e54b619db419c88e693a9bcd0f9501aeceaece05f5325e5f48"
+    }
+  ]
+}

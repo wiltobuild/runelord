@@ -1,0 +1,15 @@
+{
+  "scope": "Background-only revision. User clarified existing shop UI is fine; nymph also accepted in chat. Preserve both r1 assets.",
+  "tool": "built-in image_gen",
+  "prompt": {
+    "slug": "forest-background-1",
+    "transparent_background": false,
+    "referenced_image_paths": [
+      "C:/Users/wilsh/Documents/Codex/2026-10-05/g/outputs/forest-shop-samples/forest-background-1.png"
+    ],
+    "prompt": "Use case: style-transfer. Revise this existing Runelord forest asset to a MUCH cleaner, strongly CEL-SHADED 2D style with dramatically LESS TEXTURE. Keep exact composition, aspect ratio 1672:941, geometry, object locations, silhouettes and forest palette. Replace all mottled paint, tiny chips, speckles, noisy grain and rough surface strokes with broad uninterrupted flat color regions. Exactly a base tone plus one or two sharply bounded shadow planes per material. Confident crisp dark outlines, selective simple hard highlights. Remove 85% of surface texture. Wood has at most a few long simple angular grain lines; stone has only a few major facet boundaries; moss is clean solid green silhouette patches. No gradients, airbrush, blur, realistic lighting or painterly brushwork. Maintain serious fantasy game art, not cute. BACKGROUND layer: retain shelves and counter on left, giant tree arch, stone arch and distant forest centered right, open foreground paving, same books/potions/chests/lanterns in original locations. Simplify foliage into large readable leaf masses, distant forest into flat layered teal silhouettes, paving into broad quiet polygons with clean shadows. Lantern light as small flat amber shapes, no diffuse glow. Preserve depth through discrete value layers. Opaque edge-to-edge background, no merchant, no UI, no text. This must look substantially flatter, cleaner and less busy than the input while keeping its exact scene."
+  },
+  "sourceGenerated": "C:/Users/wilsh/.codex/generated_images/01a10b34-98a6-75f0-8bfd-6c96dfd56320/exec-4fdb5fba-b6c9-4a2e-882e-89b1b710eedd.png",
+  "status": "Pending review",
+  "qa": "Visually checked cleaner flat forms, preserved scene composition, no character or UI. Export dimension checked separately."
+}

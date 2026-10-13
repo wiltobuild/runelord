@@ -1,0 +1,85 @@
+{
+  "authorization": "User approved both revised animation sets and instructed: \"they pass. implement them as the new models, open a preview when your done\" on 2026-10-05.",
+  "at": "2026-10-05T04:28:43.191Z",
+  "manifestSha256": "0f5b7e21194999ecb45b20fc372a3552b029a2542d5b7436b483c9d2623f9cab",
+  "approvedPreviews": [
+    {
+      "path": "C:/Users/wilsh/Projects/runelord/assets/approvals/inbox/warlock-gorthak/hd-r2-act/act.gif",
+      "sha256": "577da6b5942cb3e15be05f888a4be12ec2763f87cacd5177f0d3a1789957d674",
+      "evidenceId": "664f3a44-e06a-4d12-abef-895f34a8fd77"
+    },
+    {
+      "path": "C:/Users/wilsh/Projects/runelord/assets/approvals/inbox/warlock-gorthak/hd-r2-die/die.gif",
+      "sha256": "c012c8502b9a0b7a25fc179389fbf34e2ca915dea08c00221382c2d571e94669",
+      "evidenceId": "951d5301-c040-4762-9e20-36fce6a1c8e3"
+    },
+    {
+      "path": "C:/Users/wilsh/Projects/runelord/assets/approvals/inbox/warlock-gorthak/hd-r2-hit/hit.gif",
+      "sha256": "e63a3c175a8ff06d631c9fc11199a6f4f4cc9326c18f29d03b7d397424f6f5e1",
+      "evidenceId": "e24bf5aa-4ced-40e2-a078-a21b3e249c6b"
+    },
+    {
+      "path": "C:/Users/wilsh/Projects/runelord/assets/approvals/inbox/warlock-gorthak/hd-r2-idle/idle.gif",
+      "sha256": "94ead7d82084184cb90033818b9246fd81ce0da21a28b20d9014d2f729d7cb08",
+      "evidenceId": "aacb9d8e-0101-406e-9364-27960de96fa2"
+    },
+    {
+      "path": "C:/Users/wilsh/Projects/runelord/assets/approvals/inbox/warlock-gorthak/hd-r2-spawn/spawn.gif",
+      "sha256": "6a895072af9a692b756417ffc1f3210fe9bb67c8f7b678ba7aef1ba37f622e47",
+      "evidenceId": "6ed3a4d4-8325-4d22-8f3c-f902ab09dc55"
+    },
+    {
+      "path": "C:/Users/wilsh/Projects/runelord/assets/approvals/inbox/warlock-gorthak/hd-r2b-key-poses/key-poses.jpg",
+      "sha256": "4dbdc2c2f44b3c7d58a3e85d95228939fa789cf65274d8ec031ad1e0ddfa1404",
+      "evidenceId": "d7c998ec-c09e-44ff-8874-efe11c710d60"
+    },
+    {
+      "path": "C:/Users/wilsh/Projects/runelord/assets/approvals/inbox/warlock-gorthak/hd-r2b-wounded_idle/wounded_idle.gif",
+      "sha256": "9da30bd020a63c07915b76558dfe8b0771ea818ad2a8dedae35d0c187c0a5758",
+      "evidenceId": "f0405e1d-8c03-4d8c-8306-20c017a73b39"
+    }
+  ],
+  "frames": [
+    {
+      "file": "frame-00.png",
+      "sha256": "456914cbc23bc750db1ac4701b5c53875547c84a1b03ff78616e1fac0bea33b5"
+    },
+    {
+      "file": "frame-01.png",
+      "sha256": "dbed6977b2021d039df5873ae5d03383e7727443951e407e6d39b09104be2aea"
+    },
+    {
+      "file": "frame-02.png",
+      "sha256": "34034d9d93fd1c7f2ce98390adff0d17671fcd1789775c2020fe86cfa822e701"
+    },
+    {
+      "file": "frame-03.png",
+      "sha256": "a6bf95da4beeaef50fd4581eb0d9990b2aa2d928c8fdd9b93c558c2b474d6adb"
+    },
+    {
+      "file": "frame-04.png",
+      "sha256": "454651a42301b9619ea3ff40c6896dcfd130118c4ca92551048c6581e6a71b26"
+    },
+    {
+      "file": "frame-05.png",
+      "sha256": "5a907855eb7312cbdcdd6ae2b04d0b6e52b54e5be4f93ae3f2eb81fd93f03bd7"
+    },
+    {
+      "file": "frame-06.png",
+      "sha256": "23564da650c0c21c135c7ade7f5cbd9e1d8ad72e8911d3f7d8f45b9b956195d7"
+    },
+    {
+      "file": "frame-07.png",
+      "sha256": "3e80479dc706ac516ee807e7cd036ab63d39acf7ac0ef1c8c21d3cc8aa5b7948"
+    },
+    {
+      "file": "frame-08.png",
+      "sha256": "3d5c2c7d7818d7bd29da48a6627bc930ad0a4c68c3cbaa19d3d3d93b22d4658e"
+    },
+    {
+      "file": "frame-09.png",
+      "sha256": "cc5dd54cd072c31041a2f75ed8645650c0e6df4aabfa25144488bb781d7d93a6"
+    }
+  ],
+  "note": "Preview approvals are recorded in the canonical gallery ledger. This exact frame set is authorized for game integration; individual frame review status is not relabeled."
+}

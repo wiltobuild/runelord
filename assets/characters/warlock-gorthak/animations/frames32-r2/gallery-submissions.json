@@ -1,0 +1,10 @@
+{
+  "revision": "frames32-r2",
+  "submitted": [
+    "assets/approvals/inbox/warlock-gorthak/frames32-r2-idle/idle.gif"
+  ],
+  "sha256": "303635e2801eb652f7cdb993d24558948b33bc286f074f1f4ca013cc2b5eb9e1",
+  "status": "Pending approval",
+  "unchanged_state_submissions": "../frames32-r1/gallery-submissions.json",
+  "independent_qa": "qualified pass for runtime preview; neutral-fixed chest ROI54.32/56.50/55.63/54.25 and seam offsets0/0/-1px; no conspicuous dark beat in sampled full/small actualplayback; residual minor color variation"
+}
