@@ -1,0 +1,54 @@
+{
+  "id": "mireice-gulper",
+  "name": "Mireice Gulper",
+  "brief": "A massive low broad glacier toad bruiser: squat horizontal amphibian with four short powerful splayed legs, enormous wedge jaw, small hostile eyes, thick pale slate skin, three broad opaque ice plates on its back, flat tusklike ice lower jaw teeth. Navy belly, ice blue ridges. No gear, no humanoid features. A planted crouch shows all four feet with distinct negative space. Broad simple weighty anatomy, no tiny warts.",
+  "proposedParts": "quadruped amphibian; body, jaw, eyes, four jointed legs, back plates",
+  "prompt": "Use case: stylized-concept. Create one full-body transparent Runelord enemy base: Mireice Gulper. A massive low broad glacier toad bruiser: squat horizontal amphibian with four short powerful splayed legs, enormous wedge jaw, small hostile eyes, thick pale slate skin, three broad opaque ice plates on its back, flat tusklike ice lower jaw teeth. Navy belly, ice blue ridges. No gear, no humanoid features. A planted crouch shows all four feet with distinct negative space. Broad simple weighty anatomy, no tiny warts. References supplied are STYLE ONLY, not identities to copy: preserve approved Runelord broad clean color shapes, crisp hard-edged cel shadows, serious stylized proportions and chunky surfaces. More monster than realistic animal. Face LEFT in shallow three-quarter game view in a neutral combat stance. Entire silhouette occupies at most 78% of canvas; generous empty margin on every side. Genuinely transparent empty background. No ground shadow, aura, glow halo, gradients, bloom, landscape, text, border or watermark. No realism, painterly surface, grain, tiny detail or cute mascot. No extra limbs. Single character only.",
+  "source": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\characters\\mireice-gulper\\base\\ice-roster-r1\\master.png",
+  "generationSource": "C:\\Users\\wilsh\\.codex\\generated_images\\01a13278-e699-7143-9725-41483d4a7ef8\\exec-4d290b14-d6e9-4bb0-ad3d-4f4b6a13ed6b.png",
+  "sha256": "bb3a97d559ce02ea14e6b0a95e68398033d882b56b5f12bbfc58e496d5d8cdee",
+  "dimensions": [
+    1426,
+    1103
+  ],
+  "hasAlpha": true,
+  "alphaRange": [
+    0,
+    255
+  ],
+  "references": [
+    {
+      "path": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\heroes\\references\\runeblade\\runeblade-base-r1.png",
+      "sha256": "adbd33fb14e91b761f355ffeb9966cb262aacca78429099ec09b0fab9faf84ef",
+      "role": "style only",
+      "decision": {
+        "status": "Approved",
+        "at": "2026-10-02T03:44:25.533Z",
+        "evidenceId": "user-chat-2026-10-01-approve-existing-runelord",
+        "paths": [
+          "C:\\Users\\wilsh\\Projects\\runelord\\assets\\heroes\\references\\runeblade\\runeblade-base-r1.png"
+        ]
+      }
+    },
+    {
+      "path": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\characters\\runeblade-base-summons\\selected-r1\\frost-thrall\\master.png",
+      "sha256": "32183e9e97d29d42b4f8674e8a9bb7e6dfe888fc871149f33405b3c8491be5e9",
+      "role": "style only",
+      "decision": {
+        "status": "Approved",
+        "at": "2026-10-05T10:56:14.478Z",
+        "evidenceId": "6b887dd8-b9de-44bd-9137-527e577e0a1c",
+        "paths": [
+          "C:/Users/wilsh/Projects/runelord/assets/characters/runeblade-base-summons/selected-r1/frost-thrall/master.png"
+        ]
+      }
+    }
+  ],
+  "status": "Pending approval",
+  "generationTool": "built-in image_gen",
+  "qa": {
+    "fullSize": "inspected; serious cel shading, distinct readable role, complete figure",
+    "display96px": "Inspected; silhouette and role-defining equipment readable at 96px",
+    "limitations": "Concept base only; proposed parts not separated. No animation or runtime integration. Some edge margins are tight; normalize padding before animation."
+  }
+}

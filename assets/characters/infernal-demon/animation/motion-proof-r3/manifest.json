@@ -1,0 +1,28 @@
+{
+  "id": "infernal-demon",
+  "revision": "motion-proof-r3",
+  "format": "frame-based transparent PNG",
+  "preview": "infernal-demon-motion-proof-r3.mp4 (flattened dark-background review video)",
+  "canvas": { "width": 1240, "height": 1269 },
+  "anchor": { "coordinate_system": "pixels; top-left origin; x right/y down", "ground": { "x": 620, "y": 1160 } },
+  "states": {
+    "idle": {
+      "files": ["idle-00.png", "idle-01.png", "idle-00.png", "idle-01.png"],
+      "durations_ms": [220, 220, 220, 220],
+      "loop": true,
+      "motion": "restrained breathing, wing-joint flex, flame-crown flicker; planted feet"
+    },
+    "attack": {
+      "files": ["idle-00.png", "attack-01-windup.png", "attack-02-impact.png", "idle-00.png"],
+      "durations_ms": [180, 180, 140, 280],
+      "loop": false,
+      "impact_marker": { "frame": 2, "time_ms": 360 },
+      "motion": "crouched anticipation, diagonal sword impact, recovery to idle"
+    }
+  },
+  "verification": {
+    "anatomy": "Each authored frame visually checked: two arms, two legs, two wings, one head, one sword.",
+    "background": "transparent PNG source frames",
+    "limitation": "This is a motion proof. Hit, wounded idle, and death have not yet been produced."
+  }
+}

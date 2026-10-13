@@ -1,0 +1,85 @@
+{
+  "character_id": "pleatcap-matriarch",
+  "display_name": "Pleatcap Matriarch",
+  "status": "base_pending",
+  "revision": "base-r1",
+  "asset": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\concepts\\novel-20-2026-10-02\\pleatcap-matriarch\\base-r1.png",
+  "sha256": "bd6a80873622abe3ddf062abf86786928c1fd36a62cb936f6fd8f3502fe1f987",
+  "dimensions": [
+    1254,
+    1254
+  ],
+  "alpha": {
+    "extrema": [
+      0,
+      255
+    ],
+    "transparent_pixels": 781772,
+    "verified_on_light_and_dark": true
+  },
+  "role": "Fungal support disruptor; elite enemy",
+  "size_class": "medium",
+  "signature_action_proposed": "Fans gills to deliver Sapped spores as a sweep action.",
+  "novelty": "Broad drooping cap, gills and split stalk rather than a humanoid caster.",
+  "style_references": [
+    {
+      "path": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\heroes\\references\\ranger\\ranger-base-r1.png",
+      "sha256": "9cd6ae4be65920528b211c20d2a1c12f68183b6bb6bb9ca6095b2ea23eb76912",
+      "decision": {
+        "status": "Approved",
+        "at": "2026-10-02T03:44:25.533Z",
+        "evidenceId": "user-chat-2026-10-01-approve-existing-runelord",
+        "paths": [
+          "C:\\Users\\wilsh\\Projects\\runelord\\assets\\heroes\\references\\ranger\\ranger-base-r1.png"
+        ]
+      },
+      "purpose": "style only"
+    },
+    {
+      "path": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\characters\\goblin-raider\\goblin-base-b1.png",
+      "sha256": "b038cdc7f0761f797b631454d2ce67d93843fa5350d79731dbfeca0a559a91bf",
+      "decision": {
+        "status": "Approved",
+        "at": "2026-10-02T03:44:25.533Z",
+        "evidenceId": "user-chat-2026-10-01-approve-existing-runelord",
+        "paths": [
+          "C:\\Users\\wilsh\\Documents\\Codex\\2026-10-01\\r\\work\\runelord\\assets\\characters\\goblin-raider\\goblin-base-b1.png"
+        ]
+      },
+      "purpose": "style only"
+    }
+  ],
+  "construction": {
+    "status": "proposed only; flattened raster, no separated layers or rig",
+    "rig_family": "bespoke biped",
+    "parts": "Cap and stalk root, two broad walking lobes, left/right spore fans, elastic cap rim."
+  },
+  "required_states_proposed": [
+    "idle",
+    "attack",
+    "hit",
+    "wounded_idle",
+    "die"
+  ],
+  "conditional_states": {
+    "cast": "support release for Pleatcap; optional otherwise",
+    "guard": "required Siltglass; optional otherwise",
+    "spawn": "required Saltwake levitation entry; optional otherwise",
+    "victory": "not required for enemy concept",
+    "raised": "not applicable; botanical/fungal/mineral proposal excludes conventional corpses",
+    "tamed": "not applicable; not normal beasts"
+  },
+  "gameplay_status": "Concept proposal only, not implemented or balanced",
+  "qa": {
+    "full_size": "inspected",
+    "light_dark": "passed",
+    "small_scale": "96px character-height inspection passed on light and dark backgrounds"
+  },
+  "limitations": [
+    "Pose is nearly frontal; left-facing motion identity needs locking during rig work.",
+    "No variants, animation, rig, or game integration created.",
+    "New artwork is pending explicit user approval."
+  ],
+  "generation_mode": "builtin image_gen",
+  "generation_prompt": "Use case: stylized-concept. ONE original Runelord character base: Pleatcap Matriarch, a hostile fungal organism. One enormous drooping asymmetrical bell-shaped mushroom cap in muted indigo with scalloped pale bone rim, wide bold gills beneath. Thick ochre stalk splits into TWO broad bent walking lobes firmly planted apart. TWO short folded fan-shaped fungal fronds beside stalk used to release spores. A severe horizontal sensory slit under cap, no human face. Low heavy broad triangular silhouette, no gear or humanoid hands, no tiny mushrooms clutter. Neutral combat stance facing left shallow three-quarter game view, all limbs separated, full silhouette generous margins, genuine transparent background. Approved supplied Runelord artwork is STYLE ONLY. Tough serious exaggerated graphic 2D shapes, broad flat color planes, crisp hard-edged cel shadows, restrained highlights, few large nicks. Keep quiet surfaces and few readable gill lines. Avoid cute mascot, realistic fungus texture, painterly gradients, dense grunge, PBR/3D, scenery, text, ground shadow; at least 1024 long edge."
+}

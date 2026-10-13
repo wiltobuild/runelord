@@ -1,0 +1,7 @@
+{
+  "method": "built-in image_gen",
+  "prompt": "Edit this exact image. Remove ALL soft blue/gray aura and every blurry background pixel around the wolf and between its legs. Output a clean solid character cutout with a genuinely TRANSPARENT alpha background. Keep every solid wolf pixel, silhouette, pose, jaw, claws, cloth, tail, colors and details unchanged. No new scene, shadows, glow or background. Background extraction only.",
+  "result": "C:/Users/wilsh/.codex/generated_images/01a13279-3456-74b2-b38a-630b9fc043ef/exec-e0f47008-98b5-4bdf-a181-75d2b13d5709.png",
+  "selected": false,
+  "reason": "Original base retained for stronger style. Initial haze concern was a raw-viewer hidden-RGB artifact; explicit light/dark alpha composites confirm clean cutout. No alpha cleanup needed."
+}

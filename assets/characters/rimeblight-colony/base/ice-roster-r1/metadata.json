@@ -1,0 +1,54 @@
+{
+  "id": "rimeblight-colony",
+  "name": "Rimeblight Colony",
+  "brief": "One low broad frozen fungal monster debuffer: a single squat dark teal rootlike body with exactly three big pale icy mushroom caps growing together, largest middle cap offset left, two smaller side caps. Three thick angular creeping root feet support it. Beneath main cap a stern narrow cyan slit, no cute face. Large navy gill planes, ivory cap tops with broad crystal facets, one muted plum patch on underside. No tiny mushroom scatter, no scenery, no spores drifting off, no humanoid limbs. Clear monster silhouette distinct from plant prop.",
+  "proposedParts": "bespoke colony; root body, three cap stalks/caps, three creeping root feet, gill plane overlays",
+  "prompt": "Edit this same Rimeblight Colony, preserving three mushroom caps, one connected sinister root body, cyan slit and rooted limbs, navy teal ivory ice and plum palette. Increase designed material richness while retaining Runelord hard-edged cel shading: add broad radial cap fissures with frosted chipped edges, visible layered frozen gills beneath caps, a few oval dark fungal pits across cap tops, weathered root ridges with cold encrustations and two small broken root stubs. Keep clean readable silhouette, no tiny random noise or realistic textures, no extra mushrooms or faces. Full creature faces LEFT shallow three quarter, complete within generous empty margins, genuinely transparent background no halo shadow or scene. Maintain serious monster anatomy and crisp layered 2D rendering.",
+  "source": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\characters\\rimeblight-colony\\base\\ice-roster-r1\\master.png",
+  "generationSource": "C:\\Users\\wilsh\\.codex\\generated_images\\01a13278-e699-7143-9725-41483d4a7ef8\\exec-0c6c4696-f9b6-47a5-a513-a463666cf9d2.png",
+  "sha256": "45c983ee451e637b743fdb745bcfc619dbea0f7029c7aa97c6b7c4537ed093d7",
+  "dimensions": [
+    1145,
+    1374
+  ],
+  "hasAlpha": true,
+  "alphaRange": [
+    0,
+    255
+  ],
+  "references": [
+    {
+      "path": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\heroes\\references\\runeblade\\runeblade-base-r1.png",
+      "sha256": "adbd33fb14e91b761f355ffeb9966cb262aacca78429099ec09b0fab9faf84ef",
+      "role": "style only",
+      "decision": {
+        "status": "Approved",
+        "at": "2026-10-02T03:44:25.533Z",
+        "evidenceId": "user-chat-2026-10-01-approve-existing-runelord",
+        "paths": [
+          "C:\\Users\\wilsh\\Projects\\runelord\\assets\\heroes\\references\\runeblade\\runeblade-base-r1.png"
+        ]
+      }
+    },
+    {
+      "path": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\characters\\runeblade-base-summons\\selected-r1\\frost-thrall\\master.png",
+      "sha256": "32183e9e97d29d42b4f8674e8a9bb7e6dfe888fc871149f33405b3c8491be5e9",
+      "role": "style only",
+      "decision": {
+        "status": "Approved",
+        "at": "2026-10-05T10:56:14.478Z",
+        "evidenceId": "6b887dd8-b9de-44bd-9137-527e577e0a1c",
+        "paths": [
+          "C:/Users/wilsh/Projects/runelord/assets/characters/runeblade-base-summons/selected-r1/frost-thrall/master.png"
+        ]
+      }
+    }
+  ],
+  "status": "Pending approval",
+  "generationTool": "built-in image_gen",
+  "qa": {
+    "fullSize": "inspected; serious cel shading, distinct readable role, complete figure",
+    "display96px": "Inspected; silhouette and role-defining equipment readable at 96px",
+    "limitations": "Concept base only; proposed parts not separated. No animation or runtime integration. Some edge margins are tight; normalize padding before animation."
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "status": "three_alternative_concepts_pending_selection",
+  "scope": "User explicitly requested three different concepts; alternatives, not variants of an approved base.",
+  "method": "built-in imagegen",
+  "style_reference": {
+    "path": "C:/Users/wilsh/Projects/runelord/assets/heroes/references/ranger/ranger-base-r1.png",
+    "sha256": "9cd6ae4be65920528b211c20d2a1c12f68183b6bb6bb9ca6095b2ea23eb76912",
+    "evidenceId": "user-chat-2026-10-01-approve-existing-runelord"
+  },
+  "concepts": [
+    {
+      "name": "Root-Crown King",
+      "file": "01-root-crown-king.png",
+      "prompt": "Use case: stylized-concept. Create ONE original full-body Forest Sovereign boss concept for Runelord. Supplied ranger is STYLE ONLY, do not copy character or bow. Use supplied approved Runelord artwork as reference for simplified 2D shapes and cel-shaded rendering. Serious threatening expression, tough exaggerated silhouette, muted moss/bark colors with selective accents, few bold wear marks. Broad clean color shapes, crisp edges, hard-edged cel shadows, quiet surfaces, no black outlines, no painterly texture, realism, gradients, dense grunge, 3D/PBR. Full body shallow three-quarter game view facing LEFT, grounded neutral combat stance, separated limbs, entire silhouette with generous padding. Transparent background, no scenery, text, base platform or motion effects. Concept illustration only, not sprite sheet. CONCEPT 1: THE ROOT-CROWN KING. A colossal ancient oak humanoid, immensely broad shoulders, squat weighty proportions, two thick trunk legs with blunt root feet, two enormous articulated wooden arms and heavy knotted fists. Stern carved angular face sunken between shoulders, small amber eyes. A sparse enormous crown of five upward broken boughs, asymmetrical shoulder canopy of broad dark moss-green leaf masses. Pale ancient wood face contrasts with dark bark armor plates. One large amber sap-heart rune inset into chest, minimal glow. Royal presence from branch crown and leaf mantle, no human clothing, no weapons. Read as ancient forest ruler, not ordinary tree monster. Keep crown sparse, joints visible, bark in large graphic plates.",
+      "battle_idea": "Root barricades and crushing sweeps; cracking bark exposes amber heart.",
+      "construction": "Proposed only: pelvis, chest, neck/head/crown, upper/lower arms, fists, thigh/shin/root feet, shoulder foliage.",
+      "limitations": "Soft translucent perimeter haze; dense shoulder foliage; needs sprite cleanup and motion padding."
+    },
+    {
+      "name": "Hollow Hart",
+      "file": "02-hollow-hart.png",
+      "prompt": "Use case: stylized-concept. Create ONE original full-body Forest Sovereign boss concept for Runelord. Supplied ranger is STYLE ONLY, do not copy character or bow. Use supplied approved Runelord artwork as reference for simplified 2D shapes and cel-shaded rendering. Serious threatening expression, tough exaggerated silhouette, muted moss/bark colors with selective accents, few bold wear marks. Broad clean color shapes, crisp edges, hard-edged cel shadows, quiet surfaces, no black outlines, no painterly texture, realism, gradients, dense grunge, 3D/PBR. Full body shallow three-quarter game view facing LEFT, grounded neutral combat stance, separated limbs, entire silhouette with generous padding. Transparent background, no scenery, text, base platform or motion effects. Concept illustration only, not sprite sheet. CONCEPT 2: THE HOLLOW HART. A colossal living stag forest monarch, quadruped with exactly four muscular stylized deer legs and cloven hooves, heavy neck and angular predatory deer face, ivory facial markings NOT exposed skull. Broad rack of six massive blade-like ancient wood antler branches forms regal crown. Charcoal-brown body, pale birch bark armor plates on chest and shoulders, a short thick dark-green moss mane with three hanging leaf pennants. Restrained turquoise eyes and one large turquoise crescent sigil on chest. Wild proud menacing, no saddle/rider/humanoid arms/clothes/weapons. Full horizontal quadruped profile in shallow three-quarter facing left. Hooves and antlers entirely inside canvas with clear margin. Large simple shapes not individual fur or detailed twigs. Dynamic potential but still standing firmly in neutral alert combat stance. DISTINCT from oak humanoid: sleek beast silhouette, long neck, powerful forequarters.",
+      "battle_idea": "Telegraphed antler charge and a call that rallies forest beasts.",
+      "construction": "Proposed only: trunk, neck/head/antlers, four upper/lower legs and hooves, mane/tail.",
+      "limitations": "Antlers approach upper canvas edge; add margin before animation."
+    },
+    {
+      "name": "Briar Regent",
+      "file": "03-briar-regent.png",
+      "prompt": "Use case: stylized-concept. Create ONE original full-body Forest Sovereign boss concept for Runelord. Supplied ranger is STYLE ONLY, do not copy character or bow. Use supplied approved Runelord artwork as reference for simplified 2D shapes and cel-shaded rendering. Serious threatening expression, tough exaggerated silhouette, muted moss/bark colors with selective accents, few bold wear marks. Broad clean color shapes, crisp edges, hard-edged cel shadows, quiet surfaces, no black outlines, no painterly texture, realism, gradients, dense grunge, 3D/PBR. Full body shallow three-quarter game view facing LEFT, grounded neutral combat stance, separated limbs, entire silhouette with generous padding. Transparent background, no scenery, text, base platform or motion effects. Concept illustration only, not sprite sheet. CONCEPT 3: THE BRIAR REGENT. Tall regal adult fae warrior queen, powerful angular stylized proportions, pale sage-gray skin, severe face with narrowed golden eyes, swept-back ivory hair in one simple sculpted shape. A tall blackthorn crown with five large points. Two arms two legs, full enclosed dark bark plate armor, overlapping breastplate and wide leaf-shaped shoulder pauldrons, moss-green split royal mantle anchored at shoulders, pale gold large leaf clasp. Deep burgundy thorn accents. Her near hand grips a long heavy thorn glaive with one broad curved ivory blade, held almost upright to left of body and clearly separated. Off hand open and threatening, no floating effects. Armored boots firmly visible under split mantle. Warrior monarch and controlling spellcaster, dignified menacing queen, no wings or antlers, no revealing outfit, no ornate jewelry clutter. Strong triangular silhouette, fewer and larger armor plates. Whole crown, glaive and feet fully in frame with 10 percent empty margin. Pure transparent empty background no colored haze.",
+      "battle_idea": "Thorn bindings isolate allies before a royal glaive execution.",
+      "construction": "Proposed only: pelvis, chest, head/crown, paired articulated limbs, separate glaive and mantle panels.",
+      "limitations": "Faces right; needs newly generated left-facing production pose. Translucent haze and tight weapon padding require cleanup."
+    }
+  ],
+  "technical_status": "Flattened concept PNGs with alpha; not separated layers or animation-ready rigs. Full-size visual inspection completed. All three submitted to gallery. No design approved or game code changed."
+}

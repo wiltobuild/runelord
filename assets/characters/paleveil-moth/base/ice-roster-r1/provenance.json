@@ -1,0 +1,78 @@
+{
+  "character_id": "paleveil-moth",
+  "display_name": "Paleveil Moth",
+  "role": "flying healer",
+  "revision": "ice-roster-r1",
+  "status": "base_pending",
+  "generator": "built-in image_gen",
+  "asset": "master.png",
+  "sha256": "77687e08082bcc770ad2a50514c6129bac288459ef89e31ce486e0107ea4a51e",
+  "dimensions": {
+    "width": 1145,
+    "height": 1374
+  },
+  "alpha": {
+    "hasAlpha": true,
+    "transparentPixels": 880058,
+    "partialPixels": 691056,
+    "visibleBounds": [
+      51,
+      20,
+      1125,
+      1274
+    ]
+  },
+  "style_references": [
+    {
+      "path": "assets/heroes/references/runeblade/runeblade-base-r1.png",
+      "sha256": "adbd33fb14e91b761f355ffeb9966cb262aacca78429099ec09b0fab9faf84ef",
+      "decision": {
+        "status": "Approved",
+        "at": "2026-10-02T03:44:25.533Z",
+        "evidenceId": "user-chat-2026-10-01-approve-existing-runelord",
+        "paths": [
+          "C:\\Users\\wilsh\\Projects\\runelord\\assets\\heroes\\references\\runeblade\\runeblade-base-r1.png"
+        ]
+      }
+    },
+    {
+      "path": "assets/characters/runeblade-base-summons/selected-r1/rime-seer/master.png",
+      "sha256": "ee7a6e63d64486e6b85159a04bb981f41c1ef51fb6d93eed01bc9c16117275c9",
+      "decision": {
+        "status": "Approved",
+        "at": "2026-10-05T10:56:14.695Z",
+        "evidenceId": "e0d1dda9-6d98-47cc-b49a-4d766faf5063",
+        "paths": [
+          "C:/Users/wilsh/Projects/runelord/assets/characters/runeblade-base-summons/selected-r1/rime-seer/master.png"
+        ]
+      }
+    }
+  ],
+  "prompt": "Use case: stylized-concept. Generate ONE original full-body Runelord enemy base sprite on genuine transparent background. Supplied images are STYLE references ONLY, not identities to copy. Use supplied approved Runelord artwork as reference for simplified 2D shapes and cel-shaded rendering. Serious tough stylized silhouette, muted cold colors, broad clean color shapes, crisp edges, one hard-edged shadow and restrained flat highlight per material. Favor reference 1's simplicity. No black outlines. Keep surfaces quiet, only a few bold signs of wear. NOT realistic anatomy, painterly fantasy rendering, dense grunge, glossy/PBR/3D lighting, cute expressions. Shallow three-quarter side game view FACING LEFT, neutral readable combat stance, complete silhouette centered with generous transparent padding, no floor/background/text/border. Subject: Paleveil Moth: large eerie winged ice moth healer enemy. Nonhumanoid insect with small stern masklike moth head clearly turned left, thick short dark navy thorax and tapered abdomen, six tucked slender insect legs. Four large broad wings form a single fan-shaped diamond silhouette, open in shallow three-quarter view: pale gray-blue wing panels, ONE large dark blue crescent healing mark per upper wing and muted cyan flat edge accents. Two short swept-back feathery antennae. Cold sacred moth, solemn and threatening rather than cute or butterfly-pretty. Hovering poised, wings entirely inside frame with a lot of empty transparent margin. No humanoid arms, staff, robes, jewelry, particles or light bloom. Simplified graphic insect, broad quiet wing panels.",
+  "repair_prompt": null,
+  "construction": {
+    "status": "proposed only; flattened raster, no separated parts or rig",
+    "family": "winged insect",
+    "parts": [
+      "thorax",
+      "head",
+      "abdomen",
+      "four wings",
+      "six legs",
+      "two antennae"
+    ]
+  },
+  "qa": {
+    "builder": "ice_monster_artist",
+    "fullSize": "inspected",
+    "smallScale": "review-96.png produced for explicit review",
+    "observations": "Clear four-wing moth shape and bold crescent healer sigils. Foreground legs visible, far legs occluded. Wings approach right edge; future flapping motion needs larger canvas.",
+    "independentReview": "pending"
+  },
+  "limitations": [
+    "New design awaits user gallery approval.",
+    "No variants, animations or runtime integration produced.",
+    "Motion bounds and joint pivots need future animation production."
+  ],
+  "source": "C:/Users/wilsh/.codex/generated_images/01a1327a-7080-7cb3-806e-ca61fbb25fc1/exec-39b4ba77-2f8c-497b-aa20-bd160e66753d.png"
+}

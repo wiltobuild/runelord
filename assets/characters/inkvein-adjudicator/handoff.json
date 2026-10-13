@@ -1,0 +1,165 @@
+{
+  "contract_version": 2,
+  "character_id": "inkvein-adjudicator",
+  "display_name": "Inkvein Adjudicator",
+  "project": "C:/Users/wilsh/Projects/runelord",
+  "role": "Living cephalopod magistrate; proposed elite, verdict paddle strike targeting hero",
+  "scope": "20 approved base designs; direct animation request outside the three-variant workflow",
+  "base": {
+    "revision": "base-r1",
+    "asset": "C:/Users/wilsh/Projects/runelord/assets/characters/inkvein-adjudicator/base-r1.png",
+    "dimensions": [
+      1312,
+      1199
+    ],
+    "sha256": "68f642db173a5017de4ac63a6bf92a76051f0e5aa3e147e150c23f5aee597321",
+    "alpha": "verified RGBA"
+  },
+  "variants": [],
+  "approvals": [
+    {
+      "stage": "base",
+      "revision": "base-r1",
+      "sha256": "68f642db173a5017de4ac63a6bf92a76051f0e5aa3e147e150c23f5aee597321",
+      "evidenceId": "3d05eb3f-404d-449d-a25a-412f3758d5a3",
+      "at": "2026-10-02T04:57:53.351Z",
+      "user_text": "User explicitly approved all 20 concepts in this chat and requested: approve all of them and animate them with hd-animate-fantasy-character. Scope: animate the 20 approved base designs directly; no unrequested variant generation."
+    }
+  ],
+  "concept": {
+    "contract_version": 2,
+    "character_id": "inkvein-adjudicator",
+    "display_name": "Inkvein Adjudicator",
+    "status": "base_pending",
+    "revision": "base-r1",
+    "approval": "Pending approval",
+    "asset": "base-r1.png",
+    "sha256": "68f642db173a5017de4ac63a6bf92a76051f0e5aa3e147e150c23f5aee597321",
+    "dimensions": [
+      1312,
+      1199
+    ],
+    "alpha": {
+      "format": "Format32bppArgb",
+      "corner_alpha": 0,
+      "verified": "RGBA with transparent corners; visually inspected composited previews"
+    },
+    "generation_mode": "built-in image_gen",
+    "source": "C:\\Users\\wilsh\\.codex\\generated_images\\01a0fae9-7669-74d1-8afc-28dadb1a33e0\\exec-c23dfff1-b2fe-47e7-b790-ca3cde93cf0a.png",
+    "novelty": "Broad flattened cuttlefish mantle head, two planted walking legs, huge rectangular verdict paddle and short sash; no robes or caster equipment.",
+    "role": "Living cephalopod magistrate; proposed elite, verdict paddle strike targeting hero",
+    "style_reference": {
+      "approval_evidence": "user-chat-2026-10-01-approve-existing-runelord",
+      "sha256": "769d160f774c58e54b619db419c88e693a9bcd0f9501aeceaece05f5325e5f48",
+      "path": "C:/Users/wilsh/Projects/runelord/assets/heroes/references/runesmith/runesmith-base-r1.png"
+    },
+    "construction": {
+      "pivots": "proposed natural shoulders, elbows, wrists, hips, knees, ankles, neck; root pelvis; exact pixel coordinates unresolved",
+      "status": "proposed only; flattened raster, no separated layers or rig",
+      "rig_family": "humanoid bespoke",
+      "parts": "Pelvis/chest, broad mantle head, short bounded mouth tendrils, paired upper/lower arms and hands, paired upper/lower legs/feet, separate verdict paddle, sash knot and two tails."
+    },
+    "animation_plan": {
+      "timing": "Ordinary action about 350ms; not implemented",
+      "required": [
+        "idle",
+        "attack",
+        "hit",
+        "wounded_idle",
+        "die"
+      ],
+      "conditional": "Guard and cast only if adopted gameplay kit requires; summon/victory not assigned",
+      "transform": "Not applicable",
+      "raised": "Potentially applicable because living body; all required motions need separate inventory after design approval",
+      "signature": "Palm-down command anticipation, short overhead paddle strike then grounded recovery.",
+      "tamed": "Not applicable: intelligent humanoid, not normal beast"
+    },
+    "geometry": {
+      "coordinates": "pixels, top-left, x right, y down",
+      "facing": "left, shallow three-quarter",
+      "ground": "Feet planted; actual pixel anchor and motion bounds unresolved"
+    },
+    "limitations": [
+      "Unapproved concept only; no variants generated",
+      "No layers, rig, animations or runtime-ready manifest",
+      "Gameplay role and targeting are proposals, not catalog changes"
+    ],
+    "qa": {
+      "qa_sheet": "C:/Users/wilsh/Documents/Codex/2026-10-02/use/work/concepts-c/review.png",
+      "full_size": "visually inspected",
+      "border_nontransparent_pixels": {
+        "left": 30,
+        "bottom": 3,
+        "top": 8,
+        "right": 0
+      },
+      "thumbnail_96px": "visually inspected, distinctive silhouette and role props readable",
+      "alpha_composite": "clean background verified on light QA sheet",
+      "border_note": "No opaque silhouette pixels touch edges. Some masters retain negligible alpha 1-3/255 border residue, preserved without modification."
+    }
+  },
+  "style_lock": {
+    "approved_character_reference": "C:/Users/wilsh/Projects/runelord/assets/characters/inkvein-adjudicator/base-r1.png",
+    "direction": "Preserve approved identity and serious clean 2D cel shading",
+    "references": []
+  },
+  "construction": {
+    "pivots": "proposed natural shoulders, elbows, wrists, hips, knees, ankles, neck; root pelvis; exact pixel coordinates unresolved",
+    "status": "proposed only; flattened raster, no separated layers or rig",
+    "rig_family": "humanoid bespoke",
+    "parts": "Pelvis/chest, broad mantle head, short bounded mouth tendrils, paired upper/lower arms and hands, paired upper/lower legs/feet, separate verdict paddle, sash knot and two tails."
+  },
+  "geometry": {
+    "coordinates": "pixels, top-left, x right, y down",
+    "facing": "left, shallow three-quarter",
+    "ground": "Feet planted; actual pixel anchor and motion bounds unresolved"
+  },
+  "animations": {
+    "required": [
+      "idle",
+      "attack",
+      "hit",
+      "wounded_idle",
+      "die"
+    ],
+    "additional_from_concept": "Inspect concept conditional states and include applicable support/cast/guard/spawn. Raised/tamed forms are separate unapproved designs and excluded from this base-only request."
+  },
+  "output": {
+    "directory": "C:/Users/wilsh/Projects/runelord/assets/characters/inkvein-adjudicator/animation",
+    "format": "reference-conditioned frames or genuine articulated cutout, as verified",
+    "preview": "GIF and HTML playback"
+  },
+  "limitations": [
+    "Flattened approved source; no rig exists at intake.",
+    "Do not imply approval of newly generated animation frames."
+  ],
+  "status": "animation_in_progress",
+  "animation_package": {
+    "revision": "r1",
+    "path": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\characters\\inkvein-adjudicator\\animation\\r1",
+    "manifest": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\characters\\inkvein-adjudicator\\animation\\r1\\manifest.json",
+    "preview": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\characters\\inkvein-adjudicator\\animation\\r1\\review.gif",
+    "state_inventory": [
+      "idle",
+      "attack",
+      "hit",
+      "wounded_idle",
+      "die"
+    ],
+    "status": "review package generated; pending central playback QA and user approval"
+  },
+  "animation_delivery": {
+    "stage": "review_pack_delivered",
+    "directory": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\characters\\inkvein-adjudicator\\animation\\r1",
+    "qa": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\characters\\inkvein-adjudicator\\animation\\r1\\delivery-qa.json",
+    "frame_count": 16,
+    "states": [
+      "idle",
+      "attack",
+      "hit",
+      "wounded_idle",
+      "die"
+    ],
+    "pending": "User review of new animation frames; production polish of documented detail/foot-placement variation"
+  }
+}

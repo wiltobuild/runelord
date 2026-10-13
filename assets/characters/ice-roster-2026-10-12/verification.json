@@ -1,0 +1,169 @@
+{
+  "date": "2026-10-12",
+  "uniqueIds": 20,
+  "uniqueHashes": 20,
+  "newArt": 16,
+  "allFound": true,
+  "checks": [
+    {
+      "id": "frost-sovereign",
+      "sha256": "f4df3394b302381613d00a126a38f22953b147c84da3f367f41ca33c75c6cf3c",
+      "exists": true,
+      "hashMatches": true,
+      "gallery": true,
+      "approval": "Pending approval"
+    },
+    {
+      "id": "dragon-frost-mammoth",
+      "sha256": "3730fd449dda0734e012f6fa91fb10244b2396421d93a3e2e6099780ba3378cd",
+      "exists": true,
+      "hashMatches": true,
+      "gallery": true,
+      "approval": "Approved"
+    },
+    {
+      "id": "dragon-rime-antler",
+      "sha256": "e4fab93af107e89c60c280c3621a72e9f8b50c143f54269a853650e817dceed0",
+      "exists": true,
+      "hashMatches": true,
+      "gallery": true,
+      "approval": "Approved"
+    },
+    {
+      "id": "abomination-rime-hauler",
+      "sha256": "405909560042c7e5ffbe43597440c8b9f3a1fcd8f1f751fa196943aaaf1321f6",
+      "exists": true,
+      "hashMatches": true,
+      "gallery": true,
+      "approval": "Pending approval"
+    },
+    {
+      "id": "rimejaw-scavenger",
+      "sha256": "baefb70c5fdffb81b5bd144e02dac78406bd9b283ff48a777d5b21f8f92b3e7c",
+      "exists": true,
+      "hashMatches": true,
+      "gallery": true,
+      "approval": "Pending approval"
+    },
+    {
+      "id": "shardstep-skitterer",
+      "sha256": "aa064acf124a72e871186f1fff70d23761aa5fa5191d4c3842d1daf6c2ee501c",
+      "exists": true,
+      "hashMatches": true,
+      "gallery": true,
+      "approval": "Pending approval"
+    },
+    {
+      "id": "whiteout-ray",
+      "sha256": "44cbb23aafbeb6c9bcf331ea12ebe7402efe87400111cc42f673c2cd76727724",
+      "exists": true,
+      "hashMatches": true,
+      "gallery": true,
+      "approval": "Pending approval"
+    },
+    {
+      "id": "mireice-gulper",
+      "sha256": "bb3a97d559ce02ea14e6b0a95e68398033d882b56b5f12bbfc58e496d5d8cdee",
+      "exists": true,
+      "hashMatches": true,
+      "gallery": true,
+      "approval": "Pending approval"
+    },
+    {
+      "id": "coffinback-bastion",
+      "sha256": "710d95eda75e9eb6ef79ba80dd281bc3aee11e17f71cd10de32fe67d3b5f2c3c",
+      "exists": true,
+      "hashMatches": true,
+      "gallery": true,
+      "approval": "Pending approval"
+    },
+    {
+      "id": "knellbound-mourner",
+      "sha256": "249f534fd13106445893a983f1ec0d6b28146a345b53ddc491170609b2b94435",
+      "exists": true,
+      "hashMatches": true,
+      "gallery": true,
+      "approval": "Pending approval"
+    },
+    {
+      "id": "rimehook-dredger",
+      "sha256": "26ca6785cca4ede9620476e942265d41da807560649944c26944621a325da22f",
+      "exists": true,
+      "hashMatches": true,
+      "gallery": true,
+      "approval": "Pending approval"
+    },
+    {
+      "id": "hollowmask-oracle",
+      "sha256": "c24c1cdb0649065871068c1b975ccdb9e1a126edd716c18aa87f7e95ab5d5742",
+      "exists": true,
+      "hashMatches": true,
+      "gallery": true,
+      "approval": "Pending approval"
+    },
+    {
+      "id": "rimeblight-colony",
+      "sha256": "45c983ee451e637b743fdb745bcfc619dbea0f7029c7aa97c6b7c4537ed093d7",
+      "exists": true,
+      "hashMatches": true,
+      "gallery": true,
+      "approval": "Pending approval"
+    },
+    {
+      "id": "shardlance-stalker",
+      "sha256": "872f31b1f3e2acfa16a6e330d32b5ef7dc1662816a73ea4f718e5769ea8028a4",
+      "exists": true,
+      "hashMatches": true,
+      "gallery": true,
+      "approval": "Pending approval"
+    },
+    {
+      "id": "hoarveil-crone",
+      "sha256": "1532f314acfa76844cfe1272fb92e319c78d3285f519bdfb0616a0e56098a06c",
+      "exists": true,
+      "hashMatches": true,
+      "gallery": true,
+      "approval": "Pending approval"
+    },
+    {
+      "id": "iceclamp-bombardier",
+      "sha256": "b2f5f6f96b6e56bc4587daea8708c9925392180baf43c79545bf0f9feab7959c",
+      "exists": true,
+      "hashMatches": true,
+      "gallery": true,
+      "approval": "Pending approval"
+    },
+    {
+      "id": "paleveil-moth",
+      "sha256": "77687e08082bcc770ad2a50514c6129bac288459ef89e31ce486e0107ea4a51e",
+      "exists": true,
+      "hashMatches": true,
+      "gallery": true,
+      "approval": "Pending approval"
+    },
+    {
+      "id": "cairnfrost-ursine",
+      "sha256": "067b223d862e0c9bc147b101ffb6275007a7561f97aabe220745f9301b2b66d6",
+      "exists": true,
+      "hashMatches": true,
+      "gallery": true,
+      "approval": "Pending approval"
+    },
+    {
+      "id": "splinterhost",
+      "sha256": "3578258642e98ec3d3f344efcc9c653f51ff0981cfdfccb83063dc92d6d9ea81",
+      "exists": true,
+      "hashMatches": true,
+      "gallery": true,
+      "approval": "Pending approval"
+    },
+    {
+      "id": "avalanche-colossus",
+      "sha256": "c4c6ae8b6243ff2f2631cd84632dd4b0c45c8178704f75b2fbc2293f9f12b4d9",
+      "exists": true,
+      "hashMatches": true,
+      "gallery": true,
+      "approval": "Pending approval"
+    }
+  ]
+}

@@ -1,0 +1,54 @@
+{
+  "id": "rimehook-dredger",
+  "name": "Rimehook Dredger",
+  "brief": "A lean drowned revenant battlefield controller, hunched barrel-chested blue-grey corpse with fishlike flat broad nose, stern sunken face, bald head. Chunky ragged dark navy fisher coat with broad ice crusts and rope waist. One hand grips one oversized blunt steel hook on a SHORT slack heavy chain hanging beside its body, other hand open. Wide webbed bootlike feet, two readable legs. Asymmetric shoulder made of one boat plank. No sword or crown, no water/background or loose debris. Hook is complete in frame.",
+  "proposedParts": "humanoid; torso/pelvis/head, four limbs, chain with hook, plank shoulder, coat tails",
+  "prompt": "Edit this exact Rimehook Dredger enemy base. Turn entire character to face LEFT in shallow three-quarter game view, preserve all anatomy and original identity: bald drowned blue revenant, two arms, tattered navy coat, rope belt, one plank shoulder and one chain hook, no bell. Keep large complete hook visible. Enrich materials with large weathered plank grain splits, a few broad scars, stitched coat repair seams and frayed layered torn edges, patches of ice buildup on boots and shoulders, selective chipped metal and frosty hook edges. Broad clean hard-edged 2D cel shading remains, no photorealism, dense noise, gradients or glow. Keep entire character inside canvas with ten percent empty margins all sides. Genuine transparent background with no shadow, halo or scene.",
+  "source": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\characters\\rimehook-dredger\\base\\ice-roster-r1\\master.png",
+  "generationSource": "C:\\Users\\wilsh\\.codex\\generated_images\\01a13278-e699-7143-9725-41483d4a7ef8\\exec-3105c170-590b-4efe-b4cd-d181456da954.png",
+  "sha256": "26ca6785cca4ede9620476e942265d41da807560649944c26944621a325da22f",
+  "dimensions": [
+    1145,
+    1374
+  ],
+  "hasAlpha": true,
+  "alphaRange": [
+    0,
+    255
+  ],
+  "references": [
+    {
+      "path": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\heroes\\references\\runeblade\\runeblade-base-r1.png",
+      "sha256": "adbd33fb14e91b761f355ffeb9966cb262aacca78429099ec09b0fab9faf84ef",
+      "role": "style only",
+      "decision": {
+        "status": "Approved",
+        "at": "2026-10-02T03:44:25.533Z",
+        "evidenceId": "user-chat-2026-10-01-approve-existing-runelord",
+        "paths": [
+          "C:\\Users\\wilsh\\Projects\\runelord\\assets\\heroes\\references\\runeblade\\runeblade-base-r1.png"
+        ]
+      }
+    },
+    {
+      "path": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\characters\\runeblade-base-summons\\selected-r1\\frost-thrall\\master.png",
+      "sha256": "32183e9e97d29d42b4f8674e8a9bb7e6dfe888fc871149f33405b3c8491be5e9",
+      "role": "style only",
+      "decision": {
+        "status": "Approved",
+        "at": "2026-10-05T10:56:14.478Z",
+        "evidenceId": "6b887dd8-b9de-44bd-9137-527e577e0a1c",
+        "paths": [
+          "C:/Users/wilsh/Projects/runelord/assets/characters/runeblade-base-summons/selected-r1/frost-thrall/master.png"
+        ]
+      }
+    }
+  ],
+  "status": "Pending approval",
+  "generationTool": "built-in image_gen",
+  "qa": {
+    "fullSize": "inspected; serious cel shading, distinct readable role, complete figure",
+    "display96px": "Inspected; silhouette and role-defining equipment readable at 96px",
+    "limitations": "Concept base only; proposed parts not separated. No animation or runtime integration. Some edge margins are tight; normalize padding before animation."
+  }
+}

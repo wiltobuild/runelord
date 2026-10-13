@@ -1,0 +1,194 @@
+{
+  "id": "avalanche-colossus",
+  "state": "idle",
+  "status": "idle_candidate_pending_user_review",
+  "method": "four generated whole-character poses, six-step forward/reverse playback",
+  "motion": "Heavy chest expansion and stone shoulder settling",
+  "canvas": [
+    768,
+    704
+  ],
+  "anchor": [
+    384,
+    672
+  ],
+  "coordinateSystem": "pixels top-left, x right y down",
+  "frames": [
+    {
+      "file": "idle-00.png",
+      "sourceRectangle": [
+        0,
+        0,
+        707,
+        579
+      ],
+      "sourceAlphaBounds": [
+        0,
+        21,
+        695,
+        575
+      ],
+      "placement": [
+        36,
+        118
+      ],
+      "registrationTranslation": [
+        -9,
+        5
+      ],
+      "contactAnchor": [
+        340,
+        672
+      ],
+      "size": [
+        768,
+        704
+      ]
+    },
+    {
+      "file": "idle-01.png",
+      "sourceRectangle": [
+        707,
+        0,
+        1374,
+        579
+      ],
+      "sourceAlphaBounds": [
+        9,
+        19,
+        649,
+        579
+      ],
+      "placement": [
+        64,
+        112
+      ],
+      "registrationTranslation": [
+        19,
+        10
+      ],
+      "contactAnchor": [
+        340,
+        672
+      ],
+      "size": [
+        768,
+        704
+      ]
+    },
+    {
+      "file": "idle-02.png",
+      "sourceRectangle": [
+        0,
+        579,
+        707,
+        1145
+      ],
+      "sourceAlphaBounds": [
+        0,
+        1,
+        705,
+        540
+      ],
+      "placement": [
+        31,
+        133
+      ],
+      "registrationTranslation": [
+        -4,
+        6
+      ],
+      "contactAnchor": [
+        340,
+        672
+      ],
+      "size": [
+        768,
+        704
+      ]
+    },
+    {
+      "file": "idle-03.png",
+      "sourceRectangle": [
+        707,
+        579,
+        1374,
+        1145
+      ],
+      "sourceAlphaBounds": [
+        1,
+        0,
+        653,
+        548
+      ],
+      "placement": [
+        58,
+        124
+      ],
+      "registrationTranslation": [
+        16,
+        6
+      ],
+      "contactAnchor": [
+        340,
+        672
+      ],
+      "size": [
+        768,
+        704
+      ]
+    }
+  ],
+  "sequence": [
+    0,
+    1,
+    2,
+    3,
+    2,
+    1
+  ],
+  "frameDurationsMs": [
+    400,
+    400,
+    400,
+    400,
+    400,
+    400
+  ],
+  "durationMs": 2400,
+  "loop": true,
+  "atlas": {
+    "file": "atlas.png",
+    "columns": 2,
+    "rows": 2,
+    "cell": [
+      768,
+      704
+    ]
+  },
+  "sourceApproval": {
+    "id": "avalanche-colossus",
+    "name": "Avalanche Colossus",
+    "path": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\approvals\\inbox\\avalanche-colossus\\ice-roster-r2\\base.png",
+    "sha256": "c4c6ae8b6243ff2f2631cd84632dd4b0c45c8178704f75b2fbc2293f9f12b4d9",
+    "decision": {
+      "status": "Approved",
+      "at": "2026-10-13T04:35:29.547Z",
+      "evidenceId": "fdd2dbac-29c7-4e35-9049-5a178f074a09",
+      "paths": [
+        "C:\\Users\\wilsh\\Projects\\runelord\\assets\\approvals\\inbox\\avalanche-colossus\\ice-roster-r2\\base.png"
+      ]
+    }
+  },
+  "generation": "built-in image_gen",
+  "limitations": [
+    "Idle only; attack, hit, wounded_idle and die not produced.",
+    "Generated pose details require visual approval; no game integration performed.",
+    "Frame canvas is export padding; no resolution upscaling."
+  ],
+  "preview": "review.gif",
+  "qa": {
+    "independentReview": "assets/characters/ice-idle-2026-10-13/qa-root-r2.json",
+    "result": "registration and identity checks passed; continuous live playback not fully verified"
+  }
+}

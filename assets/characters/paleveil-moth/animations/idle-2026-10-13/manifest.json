@@ -1,0 +1,199 @@
+{
+  "characterId": "paleveil-moth",
+  "state": "idle",
+  "status": "pending_independent_QA_and_user_approval",
+  "method": "generated whole-character poses",
+  "motion": "Shallow floating wing beat, reversible four-pose arc",
+  "sourceApproval": {
+    "id": "paleveil-moth",
+    "name": "Paleveil Moth",
+    "path": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\characters\\paleveil-moth\\base\\ice-detail-r2-2026-10-13\\master.png",
+    "sha256": "45aaa174e0e8322a0e2c689ede65aafab8930900a44543c908b2238aee0819e1",
+    "decision": {
+      "status": "Approved",
+      "at": "2026-10-13T05:09:33.938Z",
+      "evidenceId": "876dfbe1-cc13-4d97-afde-11db19725eb3",
+      "paths": [
+        "C:\\Users\\wilsh\\Projects\\runelord\\assets\\characters\\paleveil-moth\\base\\ice-detail-r2-2026-10-13\\master.png"
+      ]
+    }
+  },
+  "sourceSheet": "generated-sheet.png",
+  "atlas": "atlas.png",
+  "frameCanvas": [
+    672,
+    672
+  ],
+  "coordinateSystem": "pixels, top-left origin, x right / y down",
+  "anchor": [
+    255,
+    350
+  ],
+  "anchorType": "face landmark",
+  "frames": [
+    {
+      "file": "frame-00.png",
+      "rect": [
+        0,
+        0,
+        672,
+        672
+      ],
+      "durationMs": 140
+    },
+    {
+      "file": "frame-01.png",
+      "rect": [
+        672,
+        0,
+        672,
+        672
+      ],
+      "durationMs": 140
+    },
+    {
+      "file": "frame-02.png",
+      "rect": [
+        1344,
+        0,
+        672,
+        672
+      ],
+      "durationMs": 140
+    },
+    {
+      "file": "frame-03.png",
+      "rect": [
+        2016,
+        0,
+        672,
+        672
+      ],
+      "durationMs": 140
+    }
+  ],
+  "sequence": [
+    0,
+    1,
+    2,
+    3,
+    2,
+    1
+  ],
+  "loop": true,
+  "durationMs": 840,
+  "events": [],
+  "transitions": {
+    "idle": "idle"
+  },
+  "combatStates": "attack, hit, wounded_idle, die, cast unproduced; idle-only request",
+  "technicalExtraction": [
+    {
+      "sourceRect": [
+        0,
+        0,
+        612,
+        582
+      ],
+      "pasteOffset": [
+        29,
+        9
+      ],
+      "solidBounds": [
+        67,
+        116,
+        612,
+        582
+      ],
+      "alphaExtrema": [
+        0,
+        255
+      ]
+    },
+    {
+      "sourceRect": [
+        612,
+        0,
+        1254,
+        582
+      ],
+      "pasteOffset": [
+        40,
+        9
+      ],
+      "solidBounds": [
+        56,
+        72,
+        599,
+        582
+      ],
+      "alphaExtrema": [
+        0,
+        255
+      ]
+    },
+    {
+      "sourceRect": [
+        0,
+        582,
+        616,
+        1254
+      ],
+      "pasteOffset": [
+        30,
+        -29
+      ],
+      "solidBounds": [
+        72,
+        71,
+        616,
+        626
+      ],
+      "alphaExtrema": [
+        0,
+        255
+      ]
+    },
+    {
+      "sourceRect": [
+        616,
+        582,
+        1254,
+        1254
+      ],
+      "pasteOffset": [
+        46,
+        -30
+      ],
+      "solidBounds": [
+        80,
+        54,
+        617,
+        626
+      ],
+      "alphaExtrema": [
+        0,
+        255
+      ]
+    }
+  ],
+  "limitations": [
+    "Generated source resolution retained; not upscaled to claim HD.",
+    "No game integration.",
+    "Independent playback review pending."
+  ],
+  "preview": {
+    "file": "preview.gif",
+    "sha256": "3ab0880e0647ea18e82ff7e4d9386b483ff5d6db23c6d02a345999a4a6e6f474",
+    "galleryRevision": "idle-2026-10-13-r2",
+    "galleryStatus": "Pending approval",
+    "frameCount": 6,
+    "durationMs": 840
+  },
+  "qa": {
+    "builderReview": "Full-size source/keypose light/dark passed identity, alpha and silhouette; actual GIF playback sampled through gallery in browser. Independent review pending.",
+    "gifDecode": "pass",
+    "alpha": "PNG RGBA preserved; source alpha not edited",
+    "reviewScale": "96px canvas (character height below 96px); independent exact 96px review pending"
+  }
+}

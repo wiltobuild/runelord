@@ -1,0 +1,12 @@
+{
+  "reviewer": "ice_beasts worker, independent of root builder",
+  "reviewed": ["hoarveil-crone", "avalanche-colossus"],
+  "method": "Read manifests; inspected approved identity masters; observed actual GIF playback in browser at full preview and 96px light/dark panels; measured opaque contact anchors without changing assets.",
+  "status": "repair_requested",
+  "defects": [
+    {"id":"avalanche-colossus", "severity":"P2", "issue":"Planted fists/feet slide as frame registration drifts horizontally by 27 pixels.", "ground_opaque_y":[667,662,666,666], "bottom_contact_median_x":[341,314,335.5,315.5], "recommendation":"Translate complete poses to common near-foot x/y anchor measured from opaque pixels. Preserve pose artwork and scale."},
+    {"id":"hoarveil-crone", "severity":"P2", "issue":"Ground baseline shifts by 12 pixels over the four poses, making stance bounce.", "ground_opaque_y":[662,662,654,666], "bottom_contact_median_x":[540,552,548.5,549.5], "recommendation":"Register planted near foot to stable opaque-pixel ground anchor; alpha getbbox includes low-opacity margins."}
+  ],
+  "positive_checks": ["Actual playable loops", "Full and 96px panels present on light/dark backgrounds", "Recognizable approved identities and equipment retained", "No visible colored fringe on composited previews"],
+  "limitation":"Generated minor contour/detail changes remain; no user approval inferred. Recheck required after registration repair."
+}

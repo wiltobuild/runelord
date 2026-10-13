@@ -1,0 +1,449 @@
+{
+  "reviewer": "ice_grounded independent reviewer of ice_flyers",
+  "assets": [
+    {
+      "id": "whiteout-ray",
+      "manifest_sha256": "4daf636f0eb8f97ed74246ffd2ad5c9ea4aadf9320f346f061cc27ff6b41e019",
+      "frames": [
+        {
+          "file": "frame-00.png",
+          "sha256": "085115113aeced017b24b32cc0b76577462577c454098de42286d550e0296fae",
+          "canvas": [
+            512,
+            512
+          ],
+          "solid_bounds": [
+            52,
+            64,
+            457,
+            433
+          ],
+          "alpha": [
+            0,
+            255
+          ],
+          "canvas_edge_clipping": false
+        },
+        {
+          "file": "frame-01.png",
+          "sha256": "96f3189add893cdef0d382c00b088804128c13486b9ed373ff0a05db67a14ca8",
+          "canvas": [
+            512,
+            512
+          ],
+          "solid_bounds": [
+            49,
+            96,
+            473,
+            445
+          ],
+          "alpha": [
+            0,
+            255
+          ],
+          "canvas_edge_clipping": false
+        },
+        {
+          "file": "frame-02.png",
+          "sha256": "ce1a6b6db44f3c8c202deffb73888c2719fcc61f3c67badf0e7e0fab1007734e",
+          "canvas": [
+            512,
+            512
+          ],
+          "solid_bounds": [
+            41,
+            146,
+            480,
+            444
+          ],
+          "alpha": [
+            0,
+            255
+          ],
+          "canvas_edge_clipping": false
+        },
+        {
+          "file": "frame-03.png",
+          "sha256": "fd913b6f20825fa3d8886dfa511e8028df96890ff328115e3a22c59e138a7643",
+          "canvas": [
+            512,
+            512
+          ],
+          "solid_bounds": [
+            37,
+            207,
+            454,
+            451
+          ],
+          "alpha": [
+            0,
+            255
+          ],
+          "canvas_edge_clipping": false
+        },
+        {
+          "file": "frame-04.png",
+          "sha256": "dedb1370b62470e52607d0201484944811668a564e2857aa37f83e1fc20de6cf",
+          "canvas": [
+            512,
+            512
+          ],
+          "solid_bounds": [
+            45,
+            188,
+            470,
+            433
+          ],
+          "alpha": [
+            0,
+            255
+          ],
+          "canvas_edge_clipping": false
+        },
+        {
+          "file": "frame-05.png",
+          "sha256": "3f1ef3bce38b32e4d10550382e96749d9ee1209b463c63ed318b3f8d409bba41",
+          "canvas": [
+            512,
+            512
+          ],
+          "solid_bounds": [
+            44,
+            140,
+            453,
+            422
+          ],
+          "alpha": [
+            0,
+            255
+          ],
+          "canvas_edge_clipping": false
+        },
+        {
+          "file": "frame-06.png",
+          "sha256": "4e5e54d7842eb974f4dea855a7e5da764608ce1aa22fac1fa4ab262a3ec9f25b",
+          "canvas": [
+            512,
+            512
+          ],
+          "solid_bounds": [
+            12,
+            43,
+            450,
+            395
+          ],
+          "alpha": [
+            0,
+            255
+          ],
+          "canvas_edge_clipping": false
+        },
+        {
+          "file": "frame-07.png",
+          "sha256": "860e63c392317ad6b798b0f691c75468c26df3c94e1f25dd9d817d92211db541",
+          "canvas": [
+            512,
+            512
+          ],
+          "solid_bounds": [
+            57,
+            42,
+            449,
+            404
+          ],
+          "alpha": [
+            0,
+            255
+          ],
+          "canvas_edge_clipping": false
+        }
+      ],
+      "gif_sha256": "935e331452aa8afb726b887ebebcbeb173339de54e932241f89f5cd6f121cbbe",
+      "gif_frames": 8,
+      "gif_duration_ms": 1440,
+      "loop": 0,
+      "scale96": 0.2601626016260163,
+      "status": "pass_with_limitations",
+      "visual_observations": "Eight poses show articulated wing undulation; cyan eye/head anchor stable. Palette, jaw, ice wing edges and forked tail retained. Wing pattern simplification and minor surface shimmer remain at full resolution.",
+      "playback_review": "Sampled actual gallery GIF playback through CUA screenshots at different times; compared approved master and full-size keypose, all-pose 96px light/dark contact.",
+      "exact96_evidence": "work/production/ice-idle-2026-10-13/ice_grounded/flyers-96px.png",
+      "limitation": "Screenshot sampling verifies changing poses but is not continuous video observation. Source crop boundaries sometimes touch solid alpha; exported canvas bounds have no clipping."
+    },
+    {
+      "id": "paleveil-moth",
+      "manifest_sha256": "eb87361eb1ebfbbe79beb7dec98fe5aedc01591c6ff85f24808be00e407b00b7",
+      "frames": [
+        {
+          "file": "frame-00.png",
+          "sha256": "a97e380a5d5d33d92e926729296719111fe1350bde7957f39c81378ce771caf5",
+          "canvas": [
+            672,
+            672
+          ],
+          "solid_bounds": [
+            95,
+            125,
+            641,
+            591
+          ],
+          "alpha": [
+            0,
+            255
+          ],
+          "canvas_edge_clipping": false
+        },
+        {
+          "file": "frame-01.png",
+          "sha256": "81813013178660f96f13dd43e2aab24842c09571f0deabc9227ce54c467d7bb2",
+          "canvas": [
+            672,
+            672
+          ],
+          "solid_bounds": [
+            95,
+            81,
+            640,
+            591
+          ],
+          "alpha": [
+            0,
+            255
+          ],
+          "canvas_edge_clipping": false
+        },
+        {
+          "file": "frame-02.png",
+          "sha256": "4660832f76087b6f0681e42fac50f1e8280a8fb65554796484ee9846f2e14fdc",
+          "canvas": [
+            672,
+            672
+          ],
+          "solid_bounds": [
+            102,
+            42,
+            646,
+            597
+          ],
+          "alpha": [
+            0,
+            255
+          ],
+          "canvas_edge_clipping": false
+        },
+        {
+          "file": "frame-03.png",
+          "sha256": "fb8272ac7d14ccdfb7d60c10af54fa6adfbc89de76de3929e2abfb6b16de784d",
+          "canvas": [
+            672,
+            672
+          ],
+          "solid_bounds": [
+            126,
+            24,
+            664,
+            596
+          ],
+          "alpha": [
+            0,
+            255
+          ],
+          "canvas_edge_clipping": false
+        }
+      ],
+      "gif_sha256": "3ab0880e0647ea18e82ff7e4d9386b483ff5d6db23c6d02a345999a4a6e6f474",
+      "gif_frames": 6,
+      "gif_duration_ms": 840,
+      "loop": 0,
+      "scale96": 0.16783216783216784,
+      "status": "pass_with_limitations",
+      "visual_observations": "Four poses/six-step reversal retains crescent wing marks, mask face, four-wing silhouette and abdomen. Clean light/dark silhouette, mild hard-cel texture shimmer; sequence reverses without a large seam.",
+      "playback_review": "Sampled actual gallery GIF playback through CUA screenshots at different times; compared approved master and full-size keypose, all-pose 96px light/dark contact.",
+      "exact96_evidence": "work/production/ice-idle-2026-10-13/ice_grounded/flyers-96px.png",
+      "limitation": "Screenshot sampling verifies changing poses but is not continuous video observation. Source crop boundaries sometimes touch solid alpha; exported canvas bounds have no clipping."
+    },
+    {
+      "id": "hollowmask-oracle",
+      "manifest_sha256": "cbd76491667298454314aed7a91b476b398bb1dcd1c266aa54a64e8ad1358719",
+      "frames": [
+        {
+          "file": "frame-00.png",
+          "sha256": "e06da2584f8cc371b740fc323070bdb6f1092d2bf368eb177b78a061b6629f89",
+          "canvas": [
+            512,
+            512
+          ],
+          "solid_bounds": [
+            89,
+            47,
+            462,
+            468
+          ],
+          "alpha": [
+            0,
+            255
+          ],
+          "canvas_edge_clipping": false
+        },
+        {
+          "file": "frame-01.png",
+          "sha256": "e1791bbebc0d50c0ab0314dd1119d4209f405956b6046a20ad95cb26f0750f73",
+          "canvas": [
+            512,
+            512
+          ],
+          "solid_bounds": [
+            89,
+            45,
+            483,
+            468
+          ],
+          "alpha": [
+            0,
+            255
+          ],
+          "canvas_edge_clipping": false
+        },
+        {
+          "file": "frame-02.png",
+          "sha256": "41a7a8fa64e60a0398aa6fba3c03a5d9506040decf5a29e2f49f739d4f01c06a",
+          "canvas": [
+            512,
+            512
+          ],
+          "solid_bounds": [
+            81,
+            47,
+            478,
+            465
+          ],
+          "alpha": [
+            0,
+            255
+          ],
+          "canvas_edge_clipping": false
+        },
+        {
+          "file": "frame-03.png",
+          "sha256": "729e14429347d4bc060e7effe6ffe028d87b9377944a1cd370b7097a9829ce99",
+          "canvas": [
+            512,
+            512
+          ],
+          "solid_bounds": [
+            19,
+            47,
+            459,
+            468
+          ],
+          "alpha": [
+            0,
+            255
+          ],
+          "canvas_edge_clipping": false
+        }
+      ],
+      "gif_sha256": "31210318884c0f679237f0d3784296e82352aa0eaf26f541cad82d432d021784",
+      "gif_frames": 6,
+      "gif_duration_ms": 1560,
+      "loop": 0,
+      "scale96": 0.22695035460992907,
+      "status": "pass_with_limitations",
+      "visual_observations": "Four retained poses preserve mask crystal on correct side and stitch asymmetry. Claws/cloth sway with mask apex held. Some silhouette width change and cloth surface variation; readable at 96px.",
+      "playback_review": "Sampled actual gallery GIF playback through CUA screenshots at different times; compared approved master and full-size keypose, all-pose 96px light/dark contact.",
+      "exact96_evidence": "work/production/ice-idle-2026-10-13/ice_grounded/flyers-96px.png",
+      "limitation": "Screenshot sampling verifies changing poses but is not continuous video observation. Source crop boundaries sometimes touch solid alpha; exported canvas bounds have no clipping."
+    },
+    {
+      "id": "splinterhost",
+      "manifest_sha256": "e15269084006dfc9daf135291da0cbb6c3d0eba882ff659e41691b7853eba86d",
+      "frames": [
+        {
+          "file": "candidate-frame-00.png",
+          "sha256": "975c08498cf7c66fbddcdf1d9cd46f840af1c26fc3972a8138f0435b18f5a516",
+          "canvas": [
+            768,
+            512
+          ],
+          "solid_bounds": [
+            79,
+            34,
+            685,
+            496
+          ],
+          "alpha": [
+            0,
+            254
+          ],
+          "canvas_edge_clipping": false
+        },
+        {
+          "file": "candidate-frame-01.png",
+          "sha256": "db29f3eb0bb7037cf68151e5b1bad07cba4a26d53802a62e92cf81fb022c43da",
+          "canvas": [
+            768,
+            512
+          ],
+          "solid_bounds": [
+            45,
+            30,
+            733,
+            499
+          ],
+          "alpha": [
+            0,
+            254
+          ],
+          "canvas_edge_clipping": false
+        },
+        {
+          "file": "candidate-frame-02.png",
+          "sha256": "7535c1d0eedf1d673eaf2bc7877a8fd24d50d891038714ba9c69060db8f0e5df",
+          "canvas": [
+            768,
+            512
+          ],
+          "solid_bounds": [
+            49,
+            2,
+            729,
+            465
+          ],
+          "alpha": [
+            0,
+            254
+          ],
+          "canvas_edge_clipping": false
+        },
+        {
+          "file": "candidate-frame-03.png",
+          "sha256": "e75e43eec06c5a98c3a030888e039993a3a02e8357cf5daaa4ffe873702d8ca5",
+          "canvas": [
+            768,
+            512
+          ],
+          "solid_bounds": [
+            20,
+            1,
+            755,
+            491
+          ],
+          "alpha": [
+            0,
+            254
+          ],
+          "canvas_edge_clipping": false
+        }
+      ],
+      "gif_sha256": "fd65e2680cda932272f5f7f7a192f8ff856677582ede5f36c00f0dbdd1359b90",
+      "gif_frames": 6,
+      "gif_duration_ms": 1680,
+      "loop": 0,
+      "scale96": 0.19591836734693877,
+      "status": "fail",
+      "visual_observations": "Playable study visibly retains diffuse grey/cyan outline halo on light background. Non-art haze conflicts with clean runtime cutout. Keep runtimeReady false; do not promote candidate to completed animation.",
+      "playback_review": "Sampled actual gallery GIF playback through CUA screenshots at different times; compared approved master and full-size keypose, all-pose 96px light/dark contact.",
+      "exact96_evidence": "work/production/ice-idle-2026-10-13/ice_grounded/flyers-96px.png",
+      "limitation": "Screenshot sampling verifies changing poses but is not continuous video observation. Source crop boundaries sometimes touch solid alpha; exported canvas bounds have no clipping."
+    }
+  ]
+}

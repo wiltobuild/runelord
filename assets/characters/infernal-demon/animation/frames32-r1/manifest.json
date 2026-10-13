@@ -1,0 +1,373 @@
+{
+  "schema": 1,
+  "id": "infernal-demon",
+  "revision": "frames32-r1",
+  "method": "8 existing key poses plus 24 reference-conditioned in-between poses, each preserved as a separate transparent PNG",
+  "canvas": {
+    "width": 1240,
+    "height": 1269
+  },
+  "root": {
+    "x": 620,
+    "y": 1160,
+    "coordinate_system": "pixels; top-left origin; x right/y down"
+  },
+  "frame_count": 32,
+  "frames": [
+    {
+      "name": "idle-base",
+      "file": "frames/00-idle-base.png",
+      "source": "C:/Users/wilsh/AppData/Local/Temp/codex-clipboard-e807a341-e937-4c1b-a20b-00c61eae9856.png",
+      "sha256": "e96a5424f01eed75f9b4b2c2e495966dec913e45b3ba1351f6371d0559dcfe0f"
+    },
+    {
+      "name": "idle-lift",
+      "file": "frames/01-idle-lift.png",
+      "source": "C:\\Users\\wilsh\\.codex\\generated_images\\01a10683-1c14-7da0-aa81-4c88ffdd4257\\exec-91d2fbfa-13dc-49a1-8cd5-8213c53dd9cf.png",
+      "sha256": "47571dfbba29e22990cb63153d43af3104163bcc0f1cc756152d06161c162cdd"
+    },
+    {
+      "name": "attack-windup",
+      "file": "frames/02-attack-windup.png",
+      "source": "C:\\Users\\wilsh\\.codex\\generated_images\\01a10683-1c14-7da0-aa81-4c88ffdd4257\\exec-5a438f9e-50de-4890-b84a-5973bc3ab8d4.png",
+      "sha256": "8738f89f3bc99f96e91b7cc7674a590e91c244fc758038b3b82ba6793a41ce25"
+    },
+    {
+      "name": "attack-impact",
+      "file": "frames/03-attack-impact.png",
+      "source": "C:\\Users\\wilsh\\.codex\\generated_images\\01a10683-1c14-7da0-aa81-4c88ffdd4257\\exec-81d3db8b-81d5-40c3-b38a-e10f4c8af991.png",
+      "sha256": "978e1eb32d72d0b203e21c6ca7d8981a57da8cb78f49878cbc9c9f65f4e18836"
+    },
+    {
+      "name": "hit-peak",
+      "file": "frames/04-hit-peak.png",
+      "source": "C:\\Users\\wilsh\\.codex\\generated_images\\01a10683-1c14-7da0-aa81-4c88ffdd4257\\exec-e228f397-133f-4be9-bbc7-b4b457a4df5a.png",
+      "sha256": "0cdc9aa6cbd0d7bcad0e515417794423eb6705528fe5693649f396ba987fd909"
+    },
+    {
+      "name": "wounded-high",
+      "file": "frames/05-wounded-high.png",
+      "source": "C:\\Users\\wilsh\\.codex\\generated_images\\01a10683-1c14-7da0-aa81-4c88ffdd4257\\exec-aed63580-ab07-4da0-a138-414710705ddf.png",
+      "sha256": "4ac45a18d0972c31856af9ea7d98502fc1fb383e6182112dac506b1a599d8d7e"
+    },
+    {
+      "name": "wounded-low",
+      "file": "frames/06-wounded-low.png",
+      "source": "C:\\Users\\wilsh\\.codex\\generated_images\\01a10683-1c14-7da0-aa81-4c88ffdd4257\\exec-97ccf20a-f843-4d47-a1d3-f284eae37d19.png",
+      "sha256": "9d405f275e84dbab89b04c5a2017c58faa3564babd22572e2aef0213a78050cf"
+    },
+    {
+      "name": "death-terminal",
+      "file": "frames/07-death-terminal.png",
+      "source": "C:\\Users\\wilsh\\.codex\\generated_images\\01a10683-1c14-7da0-aa81-4c88ffdd4257\\exec-e99924eb-d2bb-4a77-8446-a40b6139af40.png",
+      "sha256": "2f72f6464d1151ac20c467b1780d0ca0a7ea626ce4dd5be45e922b5efd660e85"
+    },
+    {
+      "name": "idle-between-0",
+      "file": "frames/08-idle-between-0.png",
+      "source": "C:\\Users\\wilsh\\.codex\\generated_images\\01a10683-1c14-7da0-aa81-4c88ffdd4257\\exec-60dabba2-7ac5-4dbb-b759-3050c9340db7.png",
+      "cell": 0,
+      "sha256": "1d9c97ca32f3298d0c374fa35a7a8920106af18ffec526ebf123c6ba1db75ea2"
+    },
+    {
+      "name": "idle-between-1",
+      "file": "frames/09-idle-between-1.png",
+      "source": "C:\\Users\\wilsh\\.codex\\generated_images\\01a10683-1c14-7da0-aa81-4c88ffdd4257\\exec-60dabba2-7ac5-4dbb-b759-3050c9340db7.png",
+      "cell": 1,
+      "sha256": "b0def5ade4680a13a57751f326ac566e4f961c2a3a46e3b3099d25eadf8ee56c"
+    },
+    {
+      "name": "idle-between-2",
+      "file": "frames/10-idle-between-2.png",
+      "source": "C:\\Users\\wilsh\\.codex\\generated_images\\01a10683-1c14-7da0-aa81-4c88ffdd4257\\exec-60dabba2-7ac5-4dbb-b759-3050c9340db7.png",
+      "cell": 2,
+      "sha256": "e6ed3a270ea9b707c6d92acccec21c22e992ca7fce3686b73115173be92436d4"
+    },
+    {
+      "name": "idle-between-3",
+      "file": "frames/11-idle-between-3.png",
+      "source": "C:\\Users\\wilsh\\.codex\\generated_images\\01a10683-1c14-7da0-aa81-4c88ffdd4257\\exec-60dabba2-7ac5-4dbb-b759-3050c9340db7.png",
+      "cell": 3,
+      "sha256": "3b2c04036b88f0ab18f6d51ca670d6f768da7453090936e2bb2d53b26559f70e"
+    },
+    {
+      "name": "attack-between-0",
+      "file": "frames/12-attack-between-0.png",
+      "source": "C:\\Users\\wilsh\\.codex\\generated_images\\01a10683-1c14-7da0-aa81-4c88ffdd4257\\exec-503c6fb6-4fc2-4338-bda2-23d3b624ae43.png",
+      "cell": 0,
+      "sha256": "d5ddd4451d86df292b07ad646719b421df221cb05473c7d055dec046c7233048"
+    },
+    {
+      "name": "attack-between-1",
+      "file": "frames/13-attack-between-1.png",
+      "source": "C:\\Users\\wilsh\\.codex\\generated_images\\01a10683-1c14-7da0-aa81-4c88ffdd4257\\exec-503c6fb6-4fc2-4338-bda2-23d3b624ae43.png",
+      "cell": 1,
+      "sha256": "0ca4a4f6e2d8d9f3e3978ee5570999c8564b7b821d8d48a1bbaee0ec27062e79"
+    },
+    {
+      "name": "attack-between-2",
+      "file": "frames/14-attack-between-2.png",
+      "source": "C:\\Users\\wilsh\\.codex\\generated_images\\01a10683-1c14-7da0-aa81-4c88ffdd4257\\exec-503c6fb6-4fc2-4338-bda2-23d3b624ae43.png",
+      "cell": 2,
+      "sha256": "4fa2c21bebb8a7a72dfbab45c4647399ed9781f6543386b5b9d8f363d17a93d4"
+    },
+    {
+      "name": "attack-between-3",
+      "file": "frames/15-attack-between-3.png",
+      "source": "C:\\Users\\wilsh\\.codex\\generated_images\\01a10683-1c14-7da0-aa81-4c88ffdd4257\\exec-503c6fb6-4fc2-4338-bda2-23d3b624ae43.png",
+      "cell": 3,
+      "sha256": "0be4ef62a0e754bf1589aa0bf41bbbb54e2f5613c79576c6ed420a92d7bb45ec"
+    },
+    {
+      "name": "hit-between-0",
+      "file": "frames/16-hit-between-0.png",
+      "source": "C:\\Users\\wilsh\\.codex\\generated_images\\01a10683-1c14-7da0-aa81-4c88ffdd4257\\exec-231e015f-335b-499c-8d45-8c00375c488b.png",
+      "cell": 0,
+      "sha256": "1c812bb7a0fbe49cb88e1e3fd2f320a40a39fc3bcdf588011baa379ba9722e71"
+    },
+    {
+      "name": "hit-between-1",
+      "file": "frames/17-hit-between-1.png",
+      "source": "C:\\Users\\wilsh\\.codex\\generated_images\\01a10683-1c14-7da0-aa81-4c88ffdd4257\\exec-231e015f-335b-499c-8d45-8c00375c488b.png",
+      "cell": 1,
+      "sha256": "2e5bf28a298e8ec0910a9e7a5294df4fd17bcd869874a9048dba675d421a464e"
+    },
+    {
+      "name": "hit-between-2",
+      "file": "frames/18-hit-between-2.png",
+      "source": "C:\\Users\\wilsh\\.codex\\generated_images\\01a10683-1c14-7da0-aa81-4c88ffdd4257\\exec-231e015f-335b-499c-8d45-8c00375c488b.png",
+      "cell": 2,
+      "sha256": "f24199bb5a09a00aa81a6eca4973206396c20f383f2d66705bf826e096d44c36"
+    },
+    {
+      "name": "hit-between-3",
+      "file": "frames/19-hit-between-3.png",
+      "source": "C:\\Users\\wilsh\\.codex\\generated_images\\01a10683-1c14-7da0-aa81-4c88ffdd4257\\exec-231e015f-335b-499c-8d45-8c00375c488b.png",
+      "cell": 3,
+      "sha256": "2aebb4ffa25501a3b315be916d0eaf22eee6772a2473b8da61bb038339c07637"
+    },
+    {
+      "name": "wounded-between-0",
+      "file": "frames/20-wounded-between-0.png",
+      "source": "C:\\Users\\wilsh\\.codex\\generated_images\\01a10683-1c14-7da0-aa81-4c88ffdd4257\\exec-892ef370-8b9c-4bd5-9e62-35cce724da75.png",
+      "cell": 0,
+      "sha256": "67b43c665a3b302af0b5ea11f88a40bf1da85f95469a71db8d7fe873a0f77427"
+    },
+    {
+      "name": "wounded-between-1",
+      "file": "frames/21-wounded-between-1.png",
+      "source": "C:\\Users\\wilsh\\.codex\\generated_images\\01a10683-1c14-7da0-aa81-4c88ffdd4257\\exec-892ef370-8b9c-4bd5-9e62-35cce724da75.png",
+      "cell": 1,
+      "sha256": "c489ae2d2e9a7123d3bbbeedfe6b4cb2512f1ef806aba1c4b26aaa85fefff301"
+    },
+    {
+      "name": "wounded-between-2",
+      "file": "frames/22-wounded-between-2.png",
+      "source": "C:\\Users\\wilsh\\.codex\\generated_images\\01a10683-1c14-7da0-aa81-4c88ffdd4257\\exec-892ef370-8b9c-4bd5-9e62-35cce724da75.png",
+      "cell": 2,
+      "sha256": "c213df382e37b1a0b7b80bb423e94a74436282907e9c7453c9829056b99c09f5"
+    },
+    {
+      "name": "wounded-between-3",
+      "file": "frames/23-wounded-between-3.png",
+      "source": "C:\\Users\\wilsh\\.codex\\generated_images\\01a10683-1c14-7da0-aa81-4c88ffdd4257\\exec-892ef370-8b9c-4bd5-9e62-35cce724da75.png",
+      "cell": 3,
+      "sha256": "cc6bac3b01b5b0fd4ca894e7e81ad6f2435f8e1cac7812ff7364d5c2ab290c71"
+    },
+    {
+      "name": "death-between-0",
+      "file": "frames/24-death-between-0.png",
+      "source": "C:\\Users\\wilsh\\.codex\\generated_images\\01a10683-1c14-7da0-aa81-4c88ffdd4257\\exec-7782cb66-7f43-4546-9521-d2a7af01b21a.png",
+      "cell": 0,
+      "sha256": "14f9f76044647a48d334a8e3e59875ca0fb132aa2d8b60e7d07bc2ce6e6888c6"
+    },
+    {
+      "name": "death-between-1",
+      "file": "frames/25-death-between-1.png",
+      "source": "C:\\Users\\wilsh\\.codex\\generated_images\\01a10683-1c14-7da0-aa81-4c88ffdd4257\\exec-7782cb66-7f43-4546-9521-d2a7af01b21a.png",
+      "cell": 1,
+      "sha256": "a9c6266ba3841d52338947244d21c8512375c2c492d4c1cca475cbad44fe818f"
+    },
+    {
+      "name": "death-between-2",
+      "file": "frames/26-death-between-2.png",
+      "source": "C:\\Users\\wilsh\\.codex\\generated_images\\01a10683-1c14-7da0-aa81-4c88ffdd4257\\exec-7782cb66-7f43-4546-9521-d2a7af01b21a.png",
+      "cell": 2,
+      "sha256": "1f374e8f43a5d600e1138df7eef775356dadc4e6917dd1d1de6c15c014afc66d"
+    },
+    {
+      "name": "death-between-3",
+      "file": "frames/27-death-between-3.png",
+      "source": "C:\\Users\\wilsh\\.codex\\generated_images\\01a10683-1c14-7da0-aa81-4c88ffdd4257\\exec-7782cb66-7f43-4546-9521-d2a7af01b21a.png",
+      "cell": 3,
+      "sha256": "81097e11cb5543921ae52d081e2797846bd4f8e68e77fe86c68ae8e2cdca0b21"
+    },
+    {
+      "name": "cast-0",
+      "file": "frames/28-cast-0.png",
+      "source": "C:\\Users\\wilsh\\.codex\\generated_images\\01a10683-1c14-7da0-aa81-4c88ffdd4257\\exec-0bb723c3-1a20-40f4-b1ae-38857c38ac1d.png",
+      "cell": 0,
+      "sha256": "df1b280f1e51e84ac8ceeb7fde7083fe700c3fd3b341f31deebe888e2e5626f9"
+    },
+    {
+      "name": "cast-1",
+      "file": "frames/29-cast-1.png",
+      "source": "C:\\Users\\wilsh\\.codex\\generated_images\\01a10683-1c14-7da0-aa81-4c88ffdd4257\\exec-0bb723c3-1a20-40f4-b1ae-38857c38ac1d.png",
+      "cell": 1,
+      "sha256": "2de6c513ffe3c6d6a5977ab088049c651bc12fa20206e138d9ffb5542245ad50"
+    },
+    {
+      "name": "cast-2",
+      "file": "frames/30-cast-2.png",
+      "source": "C:\\Users\\wilsh\\.codex\\generated_images\\01a10683-1c14-7da0-aa81-4c88ffdd4257\\exec-0bb723c3-1a20-40f4-b1ae-38857c38ac1d.png",
+      "cell": 2,
+      "sha256": "8aff2b5aa7e9848b0f05ddc9383ede6e98beeb67fc3058bebc8cccbf5362822d"
+    },
+    {
+      "name": "cast-3",
+      "file": "frames/31-cast-3.png",
+      "source": "C:\\Users\\wilsh\\.codex\\generated_images\\01a10683-1c14-7da0-aa81-4c88ffdd4257\\exec-0bb723c3-1a20-40f4-b1ae-38857c38ac1d.png",
+      "cell": 3,
+      "sha256": "f218fdcd77cfe752edef1a709b13852eeb15c0f0375d7676a5928ed3a21dd6d2"
+    }
+  ],
+  "states": {
+    "idle": {
+      "frames": [
+        0,
+        8,
+        9,
+        1,
+        10,
+        11
+      ],
+      "durations_ms": [
+        140,
+        140,
+        140,
+        140,
+        140,
+        140
+      ],
+      "loop": true
+    },
+    "attack": {
+      "frames": [
+        0,
+        2,
+        12,
+        13,
+        14,
+        3,
+        15,
+        0
+      ],
+      "durations_ms": [
+        100,
+        110,
+        110,
+        110,
+        110,
+        120,
+        140,
+        180
+      ],
+      "loop": false,
+      "events": [
+        {
+          "name": "impact",
+          "frame": 5,
+          "time_ms": 550
+        }
+      ]
+    },
+    "hit": {
+      "frames": [
+        0,
+        16,
+        17,
+        4,
+        18,
+        19,
+        0
+      ],
+      "durations_ms": [
+        100,
+        100,
+        100,
+        120,
+        100,
+        100,
+        180
+      ],
+      "loop": false
+    },
+    "wounded_idle": {
+      "frames": [
+        5,
+        20,
+        21,
+        6,
+        22,
+        23
+      ],
+      "durations_ms": [
+        160,
+        160,
+        160,
+        160,
+        160,
+        160
+      ],
+      "loop": true
+    },
+    "die": {
+      "frames": [
+        5,
+        24,
+        25,
+        26,
+        27,
+        7
+      ],
+      "durations_ms": [
+        160,
+        180,
+        180,
+        220,
+        260,
+        600
+      ],
+      "loop": false,
+      "terminal_hold": true
+    },
+    "cast": {
+      "frames": [
+        28,
+        29,
+        30,
+        31,
+        0
+      ],
+      "durations_ms": [
+        160,
+        160,
+        120,
+        200,
+        220
+      ],
+      "loop": false,
+      "events": [
+        {
+          "name": "cast-release",
+          "frame": 2,
+          "time_ms": 320
+        }
+      ]
+    }
+  },
+  "verification": {
+    "anatomy": "Two arms, two legs, two wings, one head, one sword reviewed on all source sheet cells and key poses.",
+    "limitation": "Reference-conditioned frame animation; visual continuity must be reviewed in playback before production sign-off."
+  }
+}

@@ -1,0 +1,194 @@
+{
+  "id": "hoarveil-crone",
+  "state": "idle",
+  "status": "idle_candidate_pending_user_review",
+  "method": "four generated whole-character poses, six-step forward/reverse playback",
+  "motion": "Hunched breathing with cloak and charm sway",
+  "canvas": [
+    768,
+    704
+  ],
+  "anchor": [
+    384,
+    672
+  ],
+  "coordinateSystem": "pixels top-left, x right y down",
+  "frames": [
+    {
+      "file": "idle-00.png",
+      "sourceRectangle": [
+        0,
+        0,
+        666,
+        599
+      ],
+      "sourceAlphaBounds": [
+        21,
+        25,
+        658,
+        599
+      ],
+      "placement": [
+        65,
+        98
+      ],
+      "registrationTranslation": [
+        -39,
+        10
+      ],
+      "contactAnchor": [
+        500,
+        672
+      ],
+      "size": [
+        768,
+        704
+      ]
+    },
+    {
+      "file": "idle-01.png",
+      "sourceRectangle": [
+        666,
+        0,
+        1312,
+        599
+      ],
+      "sourceAlphaBounds": [
+        7,
+        21,
+        628,
+        599
+      ],
+      "placement": [
+        73,
+        94
+      ],
+      "registrationTranslation": [
+        -51,
+        10
+      ],
+      "contactAnchor": [
+        500,
+        672
+      ],
+      "size": [
+        768,
+        704
+      ]
+    },
+    {
+      "file": "idle-02.png",
+      "sourceRectangle": [
+        0,
+        599,
+        666,
+        1199
+      ],
+      "sourceAlphaBounds": [
+        0,
+        0,
+        666,
+        600
+      ],
+      "placement": [
+        51,
+        72
+      ],
+      "registrationTranslation": [
+        -47,
+        18
+      ],
+      "contactAnchor": [
+        500,
+        672
+      ],
+      "size": [
+        768,
+        704
+      ]
+    },
+    {
+      "file": "idle-03.png",
+      "sourceRectangle": [
+        666,
+        599,
+        1312,
+        1199
+      ],
+      "sourceAlphaBounds": [
+        1,
+        0,
+        643,
+        588
+      ],
+      "placement": [
+        63,
+        84
+      ],
+      "registrationTranslation": [
+        -48,
+        6
+      ],
+      "contactAnchor": [
+        500,
+        672
+      ],
+      "size": [
+        768,
+        704
+      ]
+    }
+  ],
+  "sequence": [
+    0,
+    1,
+    2,
+    3,
+    2,
+    1
+  ],
+  "frameDurationsMs": [
+    320,
+    320,
+    320,
+    320,
+    320,
+    320
+  ],
+  "durationMs": 1920,
+  "loop": true,
+  "atlas": {
+    "file": "atlas.png",
+    "columns": 2,
+    "rows": 2,
+    "cell": [
+      768,
+      704
+    ]
+  },
+  "sourceApproval": {
+    "id": "hoarveil-crone",
+    "name": "Hoarveil Crone",
+    "path": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\approvals\\inbox\\hoarveil-crone\\ice-roster-r1\\master.png",
+    "sha256": "1532f314acfa76844cfe1272fb92e319c78d3285f519bdfb0616a0e56098a06c",
+    "decision": {
+      "status": "Approved",
+      "at": "2026-10-13T05:07:06.426Z",
+      "evidenceId": "9d07ab2b-ae4b-4ec7-ba9f-7c4d1b424161",
+      "paths": [
+        "C:\\Users\\wilsh\\Projects\\runelord\\assets\\approvals\\inbox\\hoarveil-crone\\ice-roster-r1\\master.png"
+      ]
+    }
+  },
+  "generation": "built-in image_gen",
+  "limitations": [
+    "Idle only; attack, hit, wounded_idle and die not produced.",
+    "Generated pose details require visual approval; no game integration performed.",
+    "Frame canvas is export padding; no resolution upscaling."
+  ],
+  "preview": "review.gif",
+  "qa": {
+    "independentReview": "assets/characters/ice-idle-2026-10-13/qa-root-r2.json",
+    "result": "registration and identity checks passed; continuous live playback not fully verified"
+  }
+}

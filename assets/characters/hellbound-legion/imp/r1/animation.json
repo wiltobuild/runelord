@@ -1,0 +1,387 @@
+{
+  "schema": 1,
+  "canvas": [
+    560,
+    520
+  ],
+  "anchor": [
+    300,
+    475
+  ],
+  "approved_idle": "imp-idle-8-r5",
+  "method": "Drawn body action poses with existing wing phases; authored full-character arrival/death; constant scale within each source sheet. Fixed neutral legs during attack.",
+  "states": {
+    "idle": {
+      "frames": [
+        {
+          "time": 0,
+          "src": "idle/frame-00.png",
+          "duration_ms": 120
+        },
+        {
+          "time": 120,
+          "src": "idle/frame-01.png",
+          "duration_ms": 120
+        },
+        {
+          "time": 240,
+          "src": "idle/frame-02.png",
+          "duration_ms": 120
+        },
+        {
+          "time": 360,
+          "src": "idle/frame-03.png",
+          "duration_ms": 120
+        },
+        {
+          "time": 480,
+          "src": "idle/frame-04.png",
+          "duration_ms": 120
+        },
+        {
+          "time": 600,
+          "src": "idle/frame-05.png",
+          "duration_ms": 120
+        },
+        {
+          "time": 720,
+          "src": "idle/frame-06.png",
+          "duration_ms": 120
+        },
+        {
+          "time": 840,
+          "src": "idle/frame-07.png",
+          "duration_ms": 120
+        }
+      ],
+      "duration": 960,
+      "loop": true,
+      "impact": null,
+      "events": []
+    },
+    "attack": {
+      "frames": [
+        {
+          "time": 0,
+          "src": "attack/frame-00.png",
+          "duration_ms": 90
+        },
+        {
+          "time": 90,
+          "src": "attack/frame-01.png",
+          "duration_ms": 120
+        },
+        {
+          "time": 210,
+          "src": "attack/frame-02.png",
+          "duration_ms": 90
+        },
+        {
+          "time": 300,
+          "src": "attack/frame-03.png",
+          "duration_ms": 90
+        },
+        {
+          "time": 390,
+          "src": "attack/frame-04.png",
+          "duration_ms": 110
+        },
+        {
+          "time": 500,
+          "src": "attack/frame-05.png",
+          "duration_ms": 90
+        },
+        {
+          "time": 590,
+          "src": "attack/frame-06.png",
+          "duration_ms": 90
+        }
+      ],
+      "duration": 680,
+      "loop": false,
+      "impact": 210,
+      "events": [
+        {
+          "name": "release",
+          "time_ms": 210
+        }
+      ]
+    },
+    "hit": {
+      "frames": [
+        {
+          "time": 0,
+          "src": "hit/frame-00.png",
+          "duration_ms": 80
+        },
+        {
+          "time": 80,
+          "src": "hit/frame-01.png",
+          "duration_ms": 100
+        },
+        {
+          "time": 180,
+          "src": "hit/frame-02.png",
+          "duration_ms": 100
+        },
+        {
+          "time": 280,
+          "src": "hit/frame-03.png",
+          "duration_ms": 100
+        },
+        {
+          "time": 380,
+          "src": "hit/frame-04.png",
+          "duration_ms": 100
+        }
+      ],
+      "duration": 480,
+      "loop": false,
+      "impact": null,
+      "events": []
+    },
+    "wounded_idle": {
+      "frames": [
+        {
+          "time": 0,
+          "src": "wounded_idle/frame-00.png",
+          "duration_ms": 150
+        },
+        {
+          "time": 150,
+          "src": "wounded_idle/frame-01.png",
+          "duration_ms": 150
+        },
+        {
+          "time": 300,
+          "src": "wounded_idle/frame-02.png",
+          "duration_ms": 150
+        },
+        {
+          "time": 450,
+          "src": "wounded_idle/frame-03.png",
+          "duration_ms": 150
+        },
+        {
+          "time": 600,
+          "src": "wounded_idle/frame-04.png",
+          "duration_ms": 150
+        },
+        {
+          "time": 750,
+          "src": "wounded_idle/frame-05.png",
+          "duration_ms": 150
+        },
+        {
+          "time": 900,
+          "src": "wounded_idle/frame-06.png",
+          "duration_ms": 150
+        },
+        {
+          "time": 1050,
+          "src": "wounded_idle/frame-07.png",
+          "duration_ms": 150
+        }
+      ],
+      "duration": 1200,
+      "loop": true,
+      "impact": null,
+      "events": []
+    },
+    "spawn": {
+      "frames": [
+        {
+          "time": 0,
+          "src": "spawn/frame-00.png",
+          "duration_ms": 130
+        },
+        {
+          "time": 130,
+          "src": "spawn/frame-01.png",
+          "duration_ms": 130
+        },
+        {
+          "time": 260,
+          "src": "spawn/frame-02.png",
+          "duration_ms": 130
+        },
+        {
+          "time": 390,
+          "src": "spawn/frame-03.png",
+          "duration_ms": 130
+        },
+        {
+          "time": 520,
+          "src": "spawn/frame-04.png",
+          "duration_ms": 120
+        },
+        {
+          "time": 640,
+          "src": "spawn/frame-05.png",
+          "duration_ms": 120
+        }
+      ],
+      "duration": 760,
+      "loop": false,
+      "impact": null,
+      "events": []
+    },
+    "die": {
+      "frames": [
+        {
+          "time": 0,
+          "src": "die/frame-00.png",
+          "duration_ms": 90
+        },
+        {
+          "time": 90,
+          "src": "die/frame-01.png",
+          "duration_ms": 150
+        },
+        {
+          "time": 240,
+          "src": "die/frame-02.png",
+          "duration_ms": 170
+        },
+        {
+          "time": 410,
+          "src": "die/frame-03.png",
+          "duration_ms": 210
+        },
+        {
+          "time": 620,
+          "src": "die/frame-04.png",
+          "duration_ms": 700
+        }
+      ],
+      "duration": 1320,
+      "loop": false,
+      "impact": null,
+      "events": [
+        {
+          "name": "terminal",
+          "time_ms": 620
+        }
+      ]
+    },
+    "act": {
+      "frames": [
+        {
+          "time": 0,
+          "src": "attack/frame-00.png",
+          "duration_ms": 90
+        },
+        {
+          "time": 90,
+          "src": "attack/frame-01.png",
+          "duration_ms": 120
+        },
+        {
+          "time": 210,
+          "src": "attack/frame-02.png",
+          "duration_ms": 90
+        },
+        {
+          "time": 300,
+          "src": "attack/frame-03.png",
+          "duration_ms": 90
+        },
+        {
+          "time": 390,
+          "src": "attack/frame-04.png",
+          "duration_ms": 110
+        },
+        {
+          "time": 500,
+          "src": "attack/frame-05.png",
+          "duration_ms": 90
+        },
+        {
+          "time": 590,
+          "src": "attack/frame-06.png",
+          "duration_ms": 90
+        }
+      ],
+      "duration": 680,
+      "loop": false,
+      "impact": 210,
+      "events": [
+        {
+          "name": "release",
+          "time_ms": 210
+        }
+      ],
+      "sourceState": "attack"
+    },
+    "cast": {
+      "frames": [
+        {
+          "time": 0,
+          "src": "attack/frame-00.png",
+          "duration_ms": 90
+        },
+        {
+          "time": 90,
+          "src": "attack/frame-01.png",
+          "duration_ms": 120
+        },
+        {
+          "time": 210,
+          "src": "attack/frame-02.png",
+          "duration_ms": 90
+        },
+        {
+          "time": 300,
+          "src": "attack/frame-03.png",
+          "duration_ms": 90
+        },
+        {
+          "time": 390,
+          "src": "attack/frame-04.png",
+          "duration_ms": 110
+        },
+        {
+          "time": 500,
+          "src": "attack/frame-05.png",
+          "duration_ms": 90
+        },
+        {
+          "time": 590,
+          "src": "attack/frame-06.png",
+          "duration_ms": 90
+        }
+      ],
+      "duration": 680,
+      "loop": false,
+      "impact": 210,
+      "events": [
+        {
+          "name": "release",
+          "time_ms": 210
+        }
+      ],
+      "sourceState": "attack"
+    }
+  },
+  "sources": {
+    "attack": {
+      "path": "attack-source.png",
+      "sha256": "d7672e217bb6ee683580d990f4d900f4885ab58c0df95537f47eea3088443ca8"
+    },
+    "reactions": {
+      "path": "reactions-source.png",
+      "sha256": "cba2a694fc324743300d92d7f4e24f83e108d72e02387e4a29ca380f3d0c88dc"
+    },
+    "death": {
+      "path": "death-source.png",
+      "sha256": "3acbe410a6ae216ca3cd533030819dcfed978a98d6b55cd27604230c1bd52d7f"
+    },
+    "spawn": {
+      "path": "spawn-source.png",
+      "sha256": "b1a9f301702a4ac5c4effb8fa9910200f416ad59dfe0473b6c1bbabdf0ffd29a"
+    }
+  },
+  "qa": {
+    "status": "pending-independent-review"
+  }
+}

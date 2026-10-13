@@ -1,0 +1,184 @@
+{
+  "contract_version": 2,
+  "character_id": "cairnback-hermit",
+  "display_name": "Cairnback Hermit",
+  "project": "C:/Users/wilsh/Projects/runelord",
+  "role": "defender",
+  "scope": "20 approved base designs; direct animation request outside the three-variant workflow",
+  "base": {
+    "revision": "base-r1",
+    "asset": "C:/Users/wilsh/Projects/runelord/assets/characters/cairnback-hermit/base-r1.png",
+    "dimensions": [
+      1374,
+      1145
+    ],
+    "sha256": "3b6666c13888f149fc1a5d488956f83adff1cd650b2dbaf5b415b75baaa641bc",
+    "alpha": "verified RGBA"
+  },
+  "variants": [],
+  "approvals": [
+    {
+      "stage": "base",
+      "revision": "base-r1",
+      "sha256": "3b6666c13888f149fc1a5d488956f83adff1cd650b2dbaf5b415b75baaa641bc",
+      "evidenceId": "cfad9474-b86f-4610-a14e-d4ab22bad6ae",
+      "at": "2026-10-02T04:57:52.718Z",
+      "user_text": "User explicitly approved all 20 concepts in this chat and requested: approve all of them and animate them with hd-animate-fantasy-character. Scope: animate the 20 approved base designs directly; no unrequested variant generation."
+    }
+  ],
+  "concept": {
+    "contract_version": 2,
+    "character_id": "cairnback-hermit",
+    "display_name": "Cairnback Hermit",
+    "species": "Land hermit crab",
+    "role": "defender",
+    "size_class": "large",
+    "rig_family": "arthropod",
+    "signature_action": "Stone-shell brace followed by pincer clamp",
+    "novelty": "Tall cairn above lateral crab stance; no existing crab family in gallery/catalog",
+    "style_references": [
+      {
+        "path": "C:/Users/wilsh/Projects/runelord/assets/heroes/references/ranger/ranger-base-r1.png",
+        "sha256": "9cd6ae4be65920528b211c20d2a1c12f68183b6bb6bb9ca6095b2ea23eb76912",
+        "evidence_id": "user-chat-2026-10-01-approve-existing-runelord",
+        "role": "style only"
+      },
+      {
+        "path": "C:/Users/wilsh/Projects/runelord/assets/characters/wolf-rider-goblins/base-b1.png",
+        "sha256": "4acf5ae1be00e3095d575a6486672011325f266ada1a88204cf6b51539fb48ad",
+        "evidence_id": "user-chat-2026-10-01-approve-existing-runelord",
+        "role": "style only"
+      }
+    ],
+    "base": {
+      "revision": "base-r1",
+      "asset": "base-r1.png",
+      "approval": "Pending approval",
+      "dimensions": [
+        1374,
+        1145
+      ],
+      "sha256": "3b6666c13888f149fc1a5d488956f83adff1cd650b2dbaf5b415b75baaa641bc"
+    },
+    "construction": {
+      "status": "proposed only, no separated layers",
+      "parts": "root under carapace; shell fixed to abdomen; 6 walking leg chains; 2 claw chains with hinged pincers; antennae secondary"
+    },
+    "geometry": {
+      "facing": "left",
+      "view": "shallow three-quarter",
+      "motion_canvas": "unresolved"
+    },
+    "gameplay": {
+      "proposal_only": true,
+      "tier": "normal",
+      "corpse": {
+        "raisable": true
+      },
+      "tame": {
+        "tameable": true
+      },
+      "forms": "Raised and tamed versions may follow explicit base and variant approvals; not generated."
+    },
+    "animations": {
+      "required": [
+        "idle",
+        "attack",
+        "hit",
+        "wounded_idle",
+        "die"
+      ],
+      "additional": [
+        "guard"
+      ],
+      "status": "not generated"
+    },
+    "qa": {
+      "full_resolution": "visually inspected",
+      "at_96px": "inspected on white and dark backgrounds; silhouettes distinct",
+      "transparency": "RGBA with transparent background verified by compositing",
+      "alpha_range": [
+        0,
+        255
+      ]
+    },
+    "limitations": [
+      "Shell is tall and close to top edge; expand motion canvas before animation. Some textured wear remains beyond preferred quiet surfaces.",
+      "Concept only, not a rig or completed animation. No variants generated."
+    ],
+    "generation": {
+      "mode": "built-in image_gen",
+      "prompt_file": "prompt.txt"
+    },
+    "status": "base_pending"
+  },
+  "style_lock": {
+    "approved_character_reference": "C:/Users/wilsh/Projects/runelord/assets/characters/cairnback-hermit/base-r1.png",
+    "direction": "Preserve approved identity and serious clean 2D cel shading",
+    "references": [
+      {
+        "path": "C:/Users/wilsh/Projects/runelord/assets/heroes/references/ranger/ranger-base-r1.png",
+        "sha256": "9cd6ae4be65920528b211c20d2a1c12f68183b6bb6bb9ca6095b2ea23eb76912",
+        "evidence_id": "user-chat-2026-10-01-approve-existing-runelord",
+        "role": "style only"
+      },
+      {
+        "path": "C:/Users/wilsh/Projects/runelord/assets/characters/wolf-rider-goblins/base-b1.png",
+        "sha256": "4acf5ae1be00e3095d575a6486672011325f266ada1a88204cf6b51539fb48ad",
+        "evidence_id": "user-chat-2026-10-01-approve-existing-runelord",
+        "role": "style only"
+      }
+    ]
+  },
+  "construction": {
+    "status": "proposed only, no separated layers",
+    "parts": "root under carapace; shell fixed to abdomen; 6 walking leg chains; 2 claw chains with hinged pincers; antennae secondary"
+  },
+  "geometry": {
+    "facing": "left",
+    "view": "shallow three-quarter",
+    "motion_canvas": "unresolved"
+  },
+  "animations": {
+    "required": [
+      "idle",
+      "attack",
+      "hit",
+      "wounded_idle",
+      "die"
+    ],
+    "additional_from_concept": "Inspect concept conditional states and include applicable support/cast/guard/spawn. Raised/tamed forms are separate unapproved designs and excluded from this base-only request."
+  },
+  "output": {
+    "directory": "C:/Users/wilsh/Projects/runelord/assets/characters/cairnback-hermit/animation",
+    "format": "reference-conditioned frames or genuine articulated cutout, as verified",
+    "preview": "GIF and HTML playback"
+  },
+  "limitations": [
+    "Flattened approved source; no rig exists at intake.",
+    "Do not imply approval of newly generated animation frames."
+  ],
+  "status": "animation_in_progress",
+  "animation_review": {
+    "revision": "r1",
+    "status": "animation_study_pending_review",
+    "production_ready": false,
+    "preview": "animation/r1/review.gif",
+    "manifest": "animation/r1/manifest.json"
+  },
+  "animation_delivery": {
+    "stage": "review_pack_delivered",
+    "directory": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\characters\\cairnback-hermit\\animation\\r1",
+    "qa": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\characters\\cairnback-hermit\\animation\\r1\\delivery-qa.json",
+    "frame_count": 24,
+    "states": [
+      "idle",
+      "attack",
+      "hit",
+      "wounded_idle",
+      "die",
+      "guard"
+    ],
+    "pending": "User review of new animation frames; production polish of documented detail/foot-placement variation"
+  }
+}

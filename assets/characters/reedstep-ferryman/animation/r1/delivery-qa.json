@@ -1,0 +1,34 @@
+{
+  "character_id": "reedstep-ferryman",
+  "frame_count": 16,
+  "canvas": [
+    440,
+    400
+  ],
+  "states": [
+    "idle",
+    "attack",
+    "hit",
+    "wounded_idle",
+    "die"
+  ],
+  "transparent_frames_verified": true,
+  "death_loop": false,
+  "base_approval": "4a6bb135-aac6-43e2-8ab2-c786c8ca7ce9",
+  "preview_sha256": "a8a0555db3750ae51a445209b838ca0d887a6a9f9d8f59fdef78b6c45ba2e7c4",
+  "preview_gallery_id": "875a0f8e9123bbeb97432a15",
+  "preview_approval": "Pending approval",
+  "playback": {
+    "method": "Headless Chrome timed playback captures at native canvas and small size; inspected captures",
+    "status": "verified at review level; low-frame cadence and identity-detail variation remain",
+    "evidence": "C:\\Users\\wilsh\\Documents\\Codex\\2026-10-02\\use\\work\\playback\\reedstep-ferryman\\playback-audit.json"
+  },
+  "limitations": [
+    "Generated animation review assets, not a production-ready rig.",
+    "Per-frame native artwork approximately 280-320 pixels high; source sheet has HD dimensions, individual frames do not.",
+    "Low-frame-count motion and hand/cloth/mark detail drift need temporal art review before game integration.",
+    "Technical extraction isolates disconnected sprites, preserves pose pixels, aligns ground, and uniformly downsamples separate attack repair strip. No procedural artwork or whole-image-motion substitute.",
+    "Raised/tamed forms excluded by direct approved-base scope."
+  ],
+  "delivery_level": "Articulated frame animation review pack; not certified production-ready"
+}

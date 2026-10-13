@@ -1,0 +1,34 @@
+{
+  "character_id": "cairnwheel-witness",
+  "frame_count": 24,
+  "canvas": [
+    512,
+    312
+  ],
+  "states": [
+    "idle",
+    "attack",
+    "hit",
+    "wounded_idle",
+    "die",
+    "spawn"
+  ],
+  "transparent_frames_verified": true,
+  "death_loop": false,
+  "base_approval": "c47406e1-9390-44f9-a2eb-2961fe255a79",
+  "preview_sha256": "34db22e40606efa72c399407ae70b053d01cde5d5dfd6b102d00f094f80adb49",
+  "preview_gallery_id": "9a4f7a1eb1bf1cfcd30d5925",
+  "preview_approval": "Pending approval",
+  "playback": {
+    "status": "agent playback evidence; see package QA"
+  },
+  "limitations": [
+    "Four generated key poses per action; coarse stepped animation awaiting visual approval.",
+    "Original HD base retained separately; source animation sprites are smaller.",
+    "Generated detail drift, scale variation and contact sliding are not eliminated; not final production-quality temporal consistency.",
+    "Frames cropped to measured connected silhouette bounds; edge-contact flags are expected exact bounding rectangles, not canvas clipping.",
+    "Independent arms/mask and rolled ring attack visible; terminal collapsed ring holds. Rune shape/position varies during roll.",
+    "Tight component bounds isolate frames; low-alpha outermost antialias may be trimmed."
+  ],
+  "delivery_level": "Articulated frame animation review pack; not certified production-ready"
+}

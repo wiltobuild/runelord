@@ -1,0 +1,184 @@
+{
+  "contract_version": 2,
+  "character_id": "ironfan-isopod",
+  "display_name": "Ironfan Isopod",
+  "project": "C:/Users/wilsh/Projects/runelord",
+  "role": "rolling defender",
+  "scope": "20 approved base designs; direct animation request outside the three-variant workflow",
+  "base": {
+    "revision": "base-r1",
+    "asset": "C:/Users/wilsh/Projects/runelord/assets/characters/ironfan-isopod/base-r1.png",
+    "dimensions": [
+      1536,
+      1024
+    ],
+    "sha256": "5aadb4f1e1a9e7a83eea286d683a2e9535959c172a9d9b213c32c6857e17a9b2",
+    "alpha": "verified RGBA"
+  },
+  "variants": [],
+  "approvals": [
+    {
+      "stage": "base",
+      "revision": "base-r1",
+      "sha256": "5aadb4f1e1a9e7a83eea286d683a2e9535959c172a9d9b213c32c6857e17a9b2",
+      "evidenceId": "b401059a-7e1d-4c60-bf61-59d15b1476f1",
+      "at": "2026-10-02T04:57:53.469Z",
+      "user_text": "User explicitly approved all 20 concepts in this chat and requested: approve all of them and animate them with hd-animate-fantasy-character. Scope: animate the 20 approved base designs directly; no unrequested variant generation."
+    }
+  ],
+  "concept": {
+    "contract_version": 2,
+    "character_id": "ironfan-isopod",
+    "display_name": "Ironfan Isopod",
+    "species": "Giant terrestrial isopod",
+    "role": "rolling defender",
+    "size_class": "medium",
+    "rig_family": "arthropod",
+    "signature_action": "Fan plates close into guarding roll, then body-check",
+    "novelty": "Low horizontal segmented shield profile absent from existing library",
+    "style_references": [
+      {
+        "path": "C:/Users/wilsh/Projects/runelord/assets/heroes/references/ranger/ranger-base-r1.png",
+        "sha256": "9cd6ae4be65920528b211c20d2a1c12f68183b6bb6bb9ca6095b2ea23eb76912",
+        "evidence_id": "user-chat-2026-10-01-approve-existing-runelord",
+        "role": "style only"
+      },
+      {
+        "path": "C:/Users/wilsh/Projects/runelord/assets/characters/wolf-rider-goblins/base-b1.png",
+        "sha256": "4acf5ae1be00e3095d575a6486672011325f266ada1a88204cf6b51539fb48ad",
+        "evidence_id": "user-chat-2026-10-01-approve-existing-runelord",
+        "role": "style only"
+      }
+    ],
+    "base": {
+      "revision": "base-r1",
+      "asset": "base-r1.png",
+      "approval": "Pending approval",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "sha256": "5aadb4f1e1a9e7a83eea286d683a2e9535959c172a9d9b213c32c6857e17a9b2"
+    },
+    "construction": {
+      "status": "proposed only, no separated layers",
+      "parts": "segmented root chain; seven shell plates; paired short leg chains per segment; head and tail shield; antennae"
+    },
+    "geometry": {
+      "facing": "left",
+      "view": "shallow three-quarter",
+      "motion_canvas": "unresolved"
+    },
+    "gameplay": {
+      "proposal_only": true,
+      "tier": "normal",
+      "corpse": {
+        "raisable": true
+      },
+      "tame": {
+        "tameable": true
+      },
+      "forms": "Raised and tamed versions may follow explicit base and variant approvals; not generated."
+    },
+    "animations": {
+      "required": [
+        "idle",
+        "attack",
+        "hit",
+        "wounded_idle",
+        "die"
+      ],
+      "additional": [
+        "guard"
+      ],
+      "status": "not generated"
+    },
+    "qa": {
+      "full_resolution": "visually inspected",
+      "at_96px": "inspected on white and dark backgrounds; silhouettes distinct",
+      "transparency": "RGBA with transparent background verified by compositing",
+      "alpha_range": [
+        0,
+        254
+      ]
+    },
+    "limitations": [
+      "Far-side legs overlap and must be revealed for rigging. Roll needs distinct closed-body pose.",
+      "Concept only, not a rig or completed animation. No variants generated."
+    ],
+    "generation": {
+      "mode": "built-in image_gen",
+      "prompt_file": "prompt.txt"
+    },
+    "status": "base_pending"
+  },
+  "style_lock": {
+    "approved_character_reference": "C:/Users/wilsh/Projects/runelord/assets/characters/ironfan-isopod/base-r1.png",
+    "direction": "Preserve approved identity and serious clean 2D cel shading",
+    "references": [
+      {
+        "path": "C:/Users/wilsh/Projects/runelord/assets/heroes/references/ranger/ranger-base-r1.png",
+        "sha256": "9cd6ae4be65920528b211c20d2a1c12f68183b6bb6bb9ca6095b2ea23eb76912",
+        "evidence_id": "user-chat-2026-10-01-approve-existing-runelord",
+        "role": "style only"
+      },
+      {
+        "path": "C:/Users/wilsh/Projects/runelord/assets/characters/wolf-rider-goblins/base-b1.png",
+        "sha256": "4acf5ae1be00e3095d575a6486672011325f266ada1a88204cf6b51539fb48ad",
+        "evidence_id": "user-chat-2026-10-01-approve-existing-runelord",
+        "role": "style only"
+      }
+    ]
+  },
+  "construction": {
+    "status": "proposed only, no separated layers",
+    "parts": "segmented root chain; seven shell plates; paired short leg chains per segment; head and tail shield; antennae"
+  },
+  "geometry": {
+    "facing": "left",
+    "view": "shallow three-quarter",
+    "motion_canvas": "unresolved"
+  },
+  "animations": {
+    "required": [
+      "idle",
+      "attack",
+      "hit",
+      "wounded_idle",
+      "die"
+    ],
+    "additional_from_concept": "Inspect concept conditional states and include applicable support/cast/guard/spawn. Raised/tamed forms are separate unapproved designs and excluded from this base-only request."
+  },
+  "output": {
+    "directory": "C:/Users/wilsh/Projects/runelord/assets/characters/ironfan-isopod/animation",
+    "format": "reference-conditioned frames or genuine articulated cutout, as verified",
+    "preview": "GIF and HTML playback"
+  },
+  "limitations": [
+    "Flattened approved source; no rig exists at intake.",
+    "Do not imply approval of newly generated animation frames."
+  ],
+  "status": "animation_in_progress",
+  "animation_review": {
+    "revision": "r1",
+    "status": "animation_study_pending_review",
+    "production_ready": false,
+    "preview": "animation/r1/review.gif",
+    "manifest": "animation/r1/manifest.json"
+  },
+  "animation_delivery": {
+    "stage": "review_pack_delivered",
+    "directory": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\characters\\ironfan-isopod\\animation\\r1",
+    "qa": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\characters\\ironfan-isopod\\animation\\r1\\delivery-qa.json",
+    "frame_count": 24,
+    "states": [
+      "idle",
+      "attack",
+      "hit",
+      "wounded_idle",
+      "die",
+      "guard"
+    ],
+    "pending": "User review of new animation frames; production polish of documented detail/foot-placement variation"
+  }
+}

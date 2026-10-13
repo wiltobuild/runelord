@@ -1,0 +1,364 @@
+{
+  "character_id": "iceclamp-bombardier",
+  "revision": "idle-2026-10-13",
+  "state": "idle",
+  "format": "whole-character-authored-frames",
+  "motion": "Claw flex with heavy mortar suspension settle",
+  "loop": true,
+  "duration_ms": 1680,
+  "frame_count": 8,
+  "canvas": [
+    528,
+    576
+  ],
+  "anchor": [
+    264,
+    534
+  ],
+  "coordinate_system": "pixels, top-left origin, x right, y down",
+  "atlas": "idle-atlas.png",
+  "frames": [
+    {
+      "file": "frames/idle-00.png",
+      "duration_ms": 210,
+      "source_rect": [
+        0,
+        0,
+        444,
+        444
+      ],
+      "source_offset": [
+        42,
+        97
+      ],
+      "atlas_rect": [
+        0,
+        0,
+        528,
+        576
+      ]
+    },
+    {
+      "file": "frames/idle-01.png",
+      "duration_ms": 210,
+      "source_rect": [
+        444,
+        0,
+        887,
+        444
+      ],
+      "source_offset": [
+        42,
+        97
+      ],
+      "atlas_rect": [
+        528,
+        0,
+        528,
+        576
+      ]
+    },
+    {
+      "file": "frames/idle-02.png",
+      "duration_ms": 210,
+      "source_rect": [
+        887,
+        0,
+        1330,
+        444
+      ],
+      "source_offset": [
+        42,
+        105
+      ],
+      "atlas_rect": [
+        1056,
+        0,
+        528,
+        576
+      ]
+    },
+    {
+      "file": "frames/idle-03.png",
+      "duration_ms": 210,
+      "source_rect": [
+        1330,
+        0,
+        1774,
+        444
+      ],
+      "source_offset": [
+        42,
+        96
+      ],
+      "atlas_rect": [
+        1584,
+        0,
+        528,
+        576
+      ]
+    },
+    {
+      "file": "frames/idle-04.png",
+      "duration_ms": 210,
+      "source_rect": [
+        0,
+        444,
+        444,
+        887
+      ],
+      "source_offset": [
+        42,
+        121
+      ],
+      "atlas_rect": [
+        0,
+        576,
+        528,
+        576
+      ]
+    },
+    {
+      "file": "frames/idle-05.png",
+      "duration_ms": 210,
+      "source_rect": [
+        444,
+        444,
+        887,
+        887
+      ],
+      "source_offset": [
+        42,
+        125
+      ],
+      "atlas_rect": [
+        528,
+        576,
+        528,
+        576
+      ]
+    },
+    {
+      "file": "frames/idle-06.png",
+      "duration_ms": 210,
+      "source_rect": [
+        887,
+        444,
+        1330,
+        887
+      ],
+      "source_offset": [
+        42,
+        121
+      ],
+      "atlas_rect": [
+        1056,
+        576,
+        528,
+        576
+      ]
+    },
+    {
+      "file": "frames/idle-07.png",
+      "duration_ms": 210,
+      "source_rect": [
+        1330,
+        444,
+        1774,
+        887
+      ],
+      "source_offset": [
+        42,
+        121
+      ],
+      "atlas_rect": [
+        1584,
+        576,
+        528,
+        576
+      ]
+    }
+  ],
+  "events": [],
+  "transition": "loops to idle frame 0",
+  "source_approval": {
+    "id": "iceclamp-bombardier",
+    "name": "Iceclamp Bombardier",
+    "path": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\characters\\iceclamp-bombardier\\base\\ice-detail-r2-2026-10-13\\master.png",
+    "sha256": "a68173ffa335c76286fadc04f395ac68c2cc1d23c755f2fe32fcf8bde3de244c",
+    "decision": {
+      "status": "Approved",
+      "at": "2026-10-13T05:09:23.585Z",
+      "evidenceId": "d0cb20f0-6264-4135-bb7c-3d6af7d5e906",
+      "paths": [
+        "C:\\Users\\wilsh\\Projects\\runelord\\assets\\characters\\iceclamp-bombardier\\base\\ice-detail-r2-2026-10-13\\master.png"
+      ]
+    }
+  },
+  "generation": {
+    "tool": "built-in image_gen",
+    "prompt": "Use case: identity-preserve. Create a spritesheet of approved Iceclamp Bombardier from image 1, which is identity reference, and image 2 which is simple cel shading reference only. Eight sequential idle poses in exactly 4 columns by 2 rows on transparent alpha. Every cell has 25% empty margin all around character, small sprites with generous spacing so limbs cannot cross cells. Full body, same scale and camera throughout. Preserve dark squat crab construct body, two massive ice clamps, four walking legs, narrow icy eyes, tall hollow stone mortar barrel on its back with snowy rim, crystal spikes and broad snow strips. Idle only: slow claw flex and mechanical suspension settle, heavy barrel follows tiny chest movement, grounded walking feet stay fixed; no shooting, no particles. One loop with eight gradual poses rising and settling. Keep approved 2D angular ice and stone design with broad cel-shadow shapes. No text, numbers, grids, borders, background, glow clouds or shadows. Entire sheet transparent except monster shapes.",
+    "source_sheet": "source-sheet.png",
+    "source_sheet_dimensions": [
+      1774,
+      887
+    ]
+  },
+  "states_not_produced": [
+    "attack",
+    "hit",
+    "wounded_idle",
+    "die",
+    "cast",
+    "guard",
+    "spawn",
+    "victory"
+  ],
+  "review_status": "pending approval",
+  "technical_qa": [
+    {
+      "frame": 0,
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "strong_bounds": [
+        20,
+        51,
+        443,
+        437
+      ],
+      "strong_touches_cell_edge": false
+    },
+    {
+      "frame": 1,
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "strong_bounds": [
+        16,
+        41,
+        436,
+        437
+      ],
+      "strong_touches_cell_edge": false
+    },
+    {
+      "frame": 2,
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "strong_bounds": [
+        5,
+        36,
+        436,
+        429
+      ],
+      "strong_touches_cell_edge": false
+    },
+    {
+      "frame": 3,
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "strong_bounds": [
+        10,
+        37,
+        433,
+        438
+      ],
+      "strong_touches_cell_edge": false
+    },
+    {
+      "frame": 4,
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "strong_bounds": [
+        24,
+        25,
+        443,
+        413
+      ],
+      "strong_touches_cell_edge": false
+    },
+    {
+      "frame": 5,
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "strong_bounds": [
+        17,
+        21,
+        439,
+        409
+      ],
+      "strong_touches_cell_edge": false
+    },
+    {
+      "frame": 6,
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "strong_bounds": [
+        18,
+        32,
+        435,
+        413
+      ],
+      "strong_touches_cell_edge": false
+    },
+    {
+      "frame": 7,
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "strong_bounds": [
+        19,
+        37,
+        431,
+        413
+      ],
+      "strong_touches_cell_edge": false
+    }
+  ],
+  "limitations": [
+    "Generated whole-character frames; modest pose and surface variation requires user review.",
+    "No game integration or combat states."
+  ],
+  "preview_files": [
+    "preview-dark.gif",
+    "preview-light.gif"
+  ],
+  "authored_pose_count": 8,
+  "preview_hashes": {
+    "preview-dark.gif": "a30469c6157896a4e04a7da5d5607bf9fa7061577d9e050dda2c7d63fc9ac2cc",
+    "preview-light.gif": "36851afc1265b02cb699961e1e637be1f767a463730472cda429bbe1f7827e92"
+  },
+  "builder_review": {
+    "dark_playback": "Actual gallery GIF sampled in browser at different times; complete silhouettes and readable 96px small versions.",
+    "light_review": "Full-size and 96px keypose reviewed; light GIF created and decoded but continuous playback not fully observed.",
+    "remaining": "Independent review pending; minor generated pose/surface variance. Coffinback frame 3 source boundary alpha flag retained for reviewer."
+  },
+  "gif_verification": [
+    {
+      "file": "preview-dark.gif",
+      "decoded_frames": 8,
+      "duration_ms": 1680,
+      "loop": 0
+    },
+    {
+      "file": "preview-light.gif",
+      "decoded_frames": 8,
+      "duration_ms": 1680,
+      "loop": 0
+    }
+  ]
+}

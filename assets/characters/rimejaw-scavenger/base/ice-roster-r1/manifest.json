@@ -1,0 +1,45 @@
+{
+  "character_id": "rimejaw-scavenger",
+  "display_name": "Rimejaw Scavenger",
+  "role": "fast pressure predator",
+  "status": "base_pending",
+  "source_revision": "03338e4da39bbaf1f48651557e45f71f455a291a",
+  "method": "built-in image_gen",
+  "source": "C:/Users/wilsh/.codex/generated_images/01a13279-3456-74b2-b38a-630b9fc043ef/exec-4427639b-d007-43c8-8f72-8ef42c556e2a.png",
+  "asset": "base.png",
+  "dimensions": [
+    1536,
+    1024
+  ],
+  "alphaRange": [
+    0,
+    254
+  ],
+  "referencePaths": [
+    "C:/Users/wilsh/Projects/runelord/assets/approvals/inbox/dragon-frost-mammoth/base-r1/base-r1.png",
+    "C:/Users/wilsh/Projects/runelord/assets/heroes/references/runeblade/runeblade-base-r1.png"
+  ],
+  "referenceHashes": [
+    "3730fd449dda0734e012f6fa91fb10244b2396421d93a3e2e6099780ba3378cd",
+    "adbd33fb14e91b761f355ffeb9966cb262aacca78429099ec09b0fab9faf84ef"
+  ],
+  "referenceEvidenceIds": [
+    "3d3835b8-f2f8-4ce8-8acd-cd24979a21b7",
+    "user-chat-2026-10-01-approve-existing-runelord"
+  ],
+  "brief": "Lean starving undead ice wolf, long low horizontal body, four visibly separate wiry legs, hooked angular muzzle and one exposed ivory lower jaw, torn broad slate pelt plates, short icy spine crest, long thin ragged tail. Blue soul light eyes, stalking grounded crouch. Clearly canine, not mammoth or dragon, no tusks, armor, wings or antlers. One broad funerary cloth strip tied around foreleg. Non-gory.",
+  "construction": {
+    "status": "proposed only; no separated layers",
+    "parts": "head, neck, torso, four upper/lower legs, paws, tail segments, cloth"
+  },
+  "qa": {
+    "fullSize": "inspected; cel style, complete silhouette and distinct role",
+    "runtime": "not implemented",
+    "limitations": [
+      "Design base only; no animation, variants, separated parts, approval or gameplay certification."
+    ],
+    "at96px": "inspected; wolf, skitterer, ray distinguishable at 96px",
+    "alphaComposite": "PASS: inspected explicit alpha composites on light and dark; no surrounding halo. Initial raw viewer displayed hidden RGB as haze."
+  },
+  "sha256": "baefb70c5fdffb81b5bd144e02dac78406bd9b283ff48a777d5b21f8f92b3e7c"
+}

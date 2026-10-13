@@ -1,0 +1,106 @@
+[
+  {
+    "name": "idle",
+    "cols": 2,
+    "rows": 2,
+    "source": "C:\\Users\\wilsh\\.codex\\generated_images\\01a10b44-06ff-7222-996f-c1ddf2bb5181\\exec-3ef6e39d-f00d-4814-8263-2c795d428765.png",
+    "prompt": "Create exactly FOUR closely matched consecutive idle animation frames of this EXACT tree king character in a clean 2x2 sprite sheet. Reference is identity AND rendering lock. TRANSPARENT background. Every cell equal square, consistent scale; entire character fits within middle 80% of each cell with generous padding. No text/grid/lines/shadows/scenery. In EVERY frame preserve precisely same bark plate shapes and colors, same amber heart emblem and brightness, same branch crown count and silhouette, same leaf clusters, face, limbs. Absolutely no lighting changes, flickering glow, new leaves or redesigned details. Four subtle breathing poses: 1 relaxed resting, 2 chest rises slightly and both elbows flex a tiny amount, 3 peak gentle inhale with shoulders up just 2% of body height, 4 release halfway back to rest. Both root feet, knees and pelvis stay stationary in identical position and orientation; head crown almost stationary, forearms gently follow chest breathing, no steps or bouncing. Genuine tiny articulated upper-body movement, not entire-image translation. Palette matches reference exactly in all four poses; broad clean flat cel shading with no gradients. All four images nearly identical for stable loop. Left-facing shallow 3/4 view exactly as reference.",
+    "storedSource": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\characters\\forest-sovereign\\animations\\frames32-r1\\source\\idle-sheet.png",
+    "dimensions": [
+      1254,
+      1254
+    ],
+    "sha256": "7f54895b482574d5dd04b58a589e5bf662a0cf622aee54fce4fa144e7b93bfdd"
+  },
+  {
+    "name": "attack",
+    "cols": 4,
+    "rows": 2,
+    "source": "C:\\Users\\wilsh\\.codex\\generated_images\\01a10b44-06ff-7222-996f-c1ddf2bb5181\\exec-13866215-a3f4-4071-8062-35d0435e5679.png",
+    "prompt": "Production Runelord whole-character animation sprite sheet. Reference is EXACT approved tree king identity and cel-shaded style: same crown branches, face, shoulder leaves, pale bark armor, dark trunk, amber heart. Transparent background, no haze/scenery/text/grid lines. LEFT facing shallow 3/4. Equal grid cells, full figures entirely inside each cell with 12% margins. Same body SCALE throughout, don't enlarge crouching poses. Flat muted moss/bark colors, crisp hard cel shadows. EXACTLY EIGHT poses in 4 columns x 2 rows, read left to right then next row. Consecutive frames of one heavy ground slam attack. 1 neutral standing. 2 bends knees and draws near fist back. 3 raises fist, torso twists right, anticipation. 4 heavy fist swings forward/down left. 5 impact: massive fist on ground left, torso leans down left, opposite elbow drawn back. 6 follow through with same fist low and knees bent. 7 begins straightening knees, lifts fist. 8 returns almost exactly to neutral. Both feet planted in fixed same location each cell. Actual shoulder/elbow/knee articulation, preserve same arm lengths. No effects baked in. No extra limbs. Crown stays entirely in frame. Wide sheet so each cell is square.",
+    "storedSource": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\characters\\forest-sovereign\\animations\\frames32-r1\\source\\attack-sheet.png",
+    "dimensions": [
+      1774,
+      887
+    ],
+    "sha256": "813cc9e78693d52392973a09a5887d2fd9664b06ae579f41eef5b38426a493c5"
+  },
+  {
+    "name": "hit",
+    "cols": 2,
+    "rows": 2,
+    "source": "C:\\Users\\wilsh\\.codex\\generated_images\\01a10b44-06ff-7222-996f-c1ddf2bb5181\\exec-2f15fba7-64de-4d7e-bcc1-54acf0643196.png",
+    "prompt": "Production Runelord whole-character animation sprite sheet. Reference is EXACT approved tree king identity and cel-shaded style: same crown branches, face, shoulder leaves, pale bark armor, dark trunk, amber heart. Transparent background, no haze/scenery/text/grid lines. LEFT facing shallow 3/4. Equal grid cells, full figures entirely inside each cell with 12% margins. Same body SCALE throughout, don't enlarge crouching poses. Flat muted moss/bark colors, crisp hard cel shadows. Exactly FOUR consecutive HIT REACTION animation poses in a 2x2 grid. 1 braced neutral. 2 sudden sharp torso recoil backward to right, head tilts back, elbows rise, fingers open, knees flex. 3 smaller recoil, torso begins forward recovery. 4 nearly neutral recovery pose. Feet planted. Keep root feet fixed same ground level, upper body articulates, armor and crown retained. No blood, impact effects or debris.",
+    "storedSource": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\characters\\forest-sovereign\\animations\\frames32-r1\\source\\hit-sheet.png",
+    "dimensions": [
+      1254,
+      1254
+    ],
+    "sha256": "c4d38f968d78523b9c7606b9230a941b2363e72e0504ca9bbd1a872899072fbd"
+  },
+  {
+    "name": "wounded_idle",
+    "cols": 2,
+    "rows": 2,
+    "source": "C:\\Users\\wilsh\\.codex\\generated_images\\01a10b44-06ff-7222-996f-c1ddf2bb5181\\exec-b9defb69-5d88-4f73-bb11-6be6d84312bd.png",
+    "prompt": "Production Runelord whole-character animation sprite sheet. Reference is EXACT approved tree king identity and cel-shaded style: same crown branches, face, shoulder leaves, pale bark armor, dark trunk, amber heart. Transparent background, no haze/scenery/text/grid lines. LEFT facing shallow 3/4. Equal grid cells, full figures entirely inside each cell with 12% margins. Same body SCALE throughout, don't enlarge crouching poses. Flat muted moss/bark colors, crisp hard cel shadows. EXACTLY FOUR consecutive wounded idle frames in a 2x2 sheet. All four should be almost identical, gently breathing in a persistent weakened pose: torso leaned forward just slightly, knees mildly bent, both massive fists hanging low, head bowed but eyes watching left. Keep pelvis, root feet, crown topology and armor pieces in exactly same locations and colors; no new branches. Very subtle coordinated shoulder/elbow/chest breathing across frames 1 resting, 2 inhale, 3 peak inhale, 4 gentle exhale. Feet planted, no steps. Amber heart dimmer than healthy but CONSTANT brightness throughout four frames. Foliage remains green. No damage chunks, no blood, no particles. This is a seamless slow breathing LOOP, not progressively collapsing or taking a hit. Maintain EXACTLY consistent anatomy and scale.",
+    "storedSource": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\characters\\forest-sovereign\\animations\\frames32-r1\\source\\wounded_idle-sheet.png",
+    "dimensions": [
+      1254,
+      1254
+    ],
+    "sha256": "099a27a20fa17831e061ff1806f7dcc157a78a592cf1cc2730749ab98f94cba5"
+  },
+  {
+    "name": "cast",
+    "cols": 2,
+    "rows": 2,
+    "source": "C:\\Users\\wilsh\\.codex\\generated_images\\01a10b44-06ff-7222-996f-c1ddf2bb5181\\exec-24851c03-74c9-4665-b0d9-e1a077c6da94.png",
+    "prompt": "Production Runelord whole-character animation sprite sheet. Reference is EXACT approved tree king identity and cel-shaded style: same crown branches, face, shoulder leaves, pale bark armor, dark trunk, amber heart. Transparent background, no haze/scenery/text/grid lines. LEFT facing shallow 3/4. Equal grid cells, full figures entirely inside each cell with 12% margins. Same body SCALE throughout, don't enlarge crouching poses. Flat muted moss/bark colors, crisp hard cel shadows. Exactly FOUR poses in a 2x2 grid: cast animation to summon living roots. Frame 1 standing, arms begin rising from sides, open hands. Frame 2 crouch gently, spread hands palms DOWN at waist height with fingers wide. Frame 3 strongest cast: both hands push forcefully DOWN, torso lowered, eyes focused left, knees braced, heart amber brighter but no haze. Frame 4 returns toward neutral, arms lowering. Feet stay rooted same place. Full figure with generous transparent margins and consistent body scale; no roots or spell effects in sheet; they are separate assets.",
+    "storedSource": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\characters\\forest-sovereign\\animations\\frames32-r1\\source\\cast-sheet.png",
+    "dimensions": [
+      1254,
+      1254
+    ],
+    "sha256": "56f78c61668813d8c69e72b05d3de596a5a2994658d05c69af993b05ff2f9601"
+  },
+  {
+    "name": "die",
+    "cols": 4,
+    "rows": 2,
+    "source": "C:\\Users\\wilsh\\.codex\\generated_images\\01a10b44-06ff-7222-996f-c1ddf2bb5181\\exec-68c17aee-75ee-45ef-9037-24df33ea23ef.png",
+    "prompt": "Production Runelord whole-character animation sprite sheet. Reference is EXACT approved tree king identity and cel-shaded style: same crown branches, face, shoulder leaves, pale bark armor, dark trunk, amber heart. Transparent background, no haze/scenery/text/grid lines. LEFT facing shallow 3/4. Equal grid cells, full figures entirely inside each cell with 12% margins. Same body SCALE throughout, don't enlarge crouching poses. Flat muted moss/bark colors, crisp hard cel shadows. EXACTLY EIGHT consecutive DEATH poses in 4 columns x 2 rows. Read row-major. 1 wounded standing. 2 shoulders sag knees bend heart dims. 3 drops one knee and reaches toward ground. 4 both knees on ground, fists supporting torso. 5 torso collapses forward left, crown tilts down, leaves fading brown. 6 chest rests low on forearms, head bowed, heart dark. 7 fully collapsed resting on knees/forearms, brown dead foliage. 8 same terminal lifeless crouched heap settled slightly lower, heart entirely dark. Keep SAME body size in every cell, leave more empty upper space as he collapses! Do not crop any crown/feet/arms. No explosion, dismemberment or debris. Slow weighty collapse. Ground contact same baseline all cells. Existing design retained even when withered.",
+    "storedSource": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\characters\\forest-sovereign\\animations\\frames32-r1\\source\\die-sheet.png",
+    "dimensions": [
+      1774,
+      887
+    ],
+    "sha256": "23f6174b960a31b89d41434d08ce0eef1f879d4ca6eab3d8a40062beef9d4c1c"
+  },
+  {
+    "name": "root",
+    "cols": 4,
+    "rows": 3,
+    "source": "C:\\Users\\wilsh\\.codex\\generated_images\\01a10b44-06ff-7222-996f-c1ddf2bb5181\\exec-ecfee59d-f6c8-434c-9fcf-918c5de63f42.png",
+    "prompt": "Create a clean game-animation sprite sheet for ONE root monster summoned by the supplied forest tree king. Reference is STYLE/PALETTE only. Root monster is a single thick curved woody serpent-like root emerging vertically from earth with a three-pronged thorn claw at its tip, two small amber eyes in a knot beneath claw, two broad green leaves on neck. No humanoid body, legs, arms, or separate head. Broad bark plates, pale pointed thorn tips, graphic clean cel shading. Exactly TWELVE frames in FOUR columns by THREE rows, each equal cell with clear transparent gutters. Transparent background, no text, no frame borders. Consistent character scale, ground base same location in every cell; root emerges from small fixed cracked earth socket. Entire root inside each cell with at least 15% margin. ROW 1 idle four closely matching frames, small gentle neck bend left-right breathing, base completely fixed, same leaves, thorns, eyes and shade in every frame. ROW 2 attack four frames: 1 coils back right, 2 lunges claw strongly LEFT, 3 claw sweeps low left, 4 returns upright matching idle. ROW 3 death WITHERING four frames: 1 eyes dim and leaves begin yellowing, 2 stem curls inward and leaves brown, 3 stem droops close to ground dry brown, 4 dead root curled into low dry husk at ground with no eye glow. Do not enlarge death frames to fill cells. Same individual creature in all twelve frames. No attack VFX. Serious Runelord game style, flat color and hard shadows, no realistic wood grain, painterly texture, gradients or halos.",
+    "storedSource": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\characters\\sovereign-root\\animations\\r1\\source\\root-sheet.png",
+    "dimensions": [
+      1448,
+      1086
+    ],
+    "sha256": "60b71a6187174e45d6d48ae3bf61c305315930aa55b8ae4525332efcb39ca212"
+  },
+  {
+    "name": "vfx",
+    "cols": 4,
+    "rows": 3,
+    "source": "C:\\Users\\wilsh\\.codex\\generated_images\\01a10b44-06ff-7222-996f-c1ddf2bb5181\\exec-15d7a92f-005c-4cda-be0b-ad7144fc3aeb.png",
+    "prompt": "Create a polished transparent 2D fantasy game VFX sprite sheet, EXACTLY 12 cells in 4 columns x 3 rows. Each row is FOUR progressive frames of a DIFFERENT forest sovereign spell. Clean graphic cel-shaded style, sharp broad shape language, gold/amber and vivid moss/emerald accents. No characters, no lettering, no grid lines, no background or black fill. All effects contained within their cells, at least 12% transparent gutters, nothing touching neighboring cells. Each row same center/scale and progressive timing. ROW 1 ROOTWAKE eruption on ground: frame1 tiny amber branching rune cracks on flat ellipse; frame2 widening amber cracks with small brown soil shards rising; frame3 burst of pale amber rays and six chunky soil shards above ring, emerald leaves lifted; frame4 dissipating soil shards and fading short gold cracks. No actual root monster, separate asset. ROW 2 VERDANT CYCLONE: frame1 small curling emerald wind arc with 3 pointed leaves; frame2 two large spiral arcs encircling empty center with 6 broad gold-green leaves; frame3 full powerful diagonal spiral vortex with 10 sharp leaves, hollow readable center; frame4 broken departing arcs and scattered leaves. ROW 3 CROWNFALL shockwave: frame1 compact amber crown-shaped sigil just above ground ellipse; frame2 tall five-point golden spectral branch crown with bright central diamond; frame3 broad expanding elliptical gold/emerald shockwave ring with five crown spikes, empty transparent center; frame4 wide broken dissipating ring and a few gold leaf sparks. VFX meant to overlay dark forest gameplay with readable luminous contrast. Use bright cream-gold cores and hard green edges, no realistic smoke, no smooth fog, no enormous glow rectangle. Timing progression not four identical effects.",
+    "storedSource": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\characters\\forest-sovereign\\animations\\frames32-r1\\vfx\\source\\vfx-sheet.png",
+    "dimensions": [
+      1448,
+      1086
+    ],
+    "sha256": "c8eef63f8f4b1ea22afed35955f6697242deab2278ecd758477fc11fdf54d13f"
+  }
+]

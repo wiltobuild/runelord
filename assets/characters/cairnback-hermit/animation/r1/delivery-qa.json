@@ -1,0 +1,34 @@
+{
+  "character_id": "cairnback-hermit",
+  "frame_count": 24,
+  "canvas": [
+    448,
+    448
+  ],
+  "states": [
+    "idle",
+    "attack",
+    "hit",
+    "wounded_idle",
+    "die",
+    "guard"
+  ],
+  "transparent_frames_verified": true,
+  "death_loop": false,
+  "base_approval": "cfad9474-b86f-4610-a14e-d4ab22bad6ae",
+  "preview_sha256": "f2c46fe718bd06c17494d8d68579d2a343596a5fdf834db496980506fb895cfb",
+  "preview_gallery_id": "d8781bbf44b97dff2ddb3ca1",
+  "preview_approval": "Pending approval",
+  "playback": {
+    "method": "Headless Chrome timed playback captures at native canvas and small size; inspected captures",
+    "status": "verified at review level; low-frame cadence and identity-detail variation remain",
+    "evidence": "C:\\Users\\wilsh\\Documents\\Codex\\2026-10-02\\use\\work\\playback\\cairnback-hermit\\playback-audit.json"
+  },
+  "limitations": [
+    "Four generated keyframes per state; stepped timing rather than interpolated full-rate animation.",
+    "Generated sheet preserves general identity but fine line/mark and foot placement variation remains.",
+    "No separated rig or VFX layers. Runtime game integration not performed.",
+    "Attack starts with farther claw opening, then large foreground claw extends; claw staging needs refinement."
+  ],
+  "delivery_level": "Articulated frame animation review pack; not certified production-ready"
+}

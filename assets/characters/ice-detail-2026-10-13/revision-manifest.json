@@ -1,0 +1,117 @@
+{
+  "date": "2026-10-13",
+  "method": "built-in image_gen",
+  "reference": {
+    "path": "C:/Users/wilsh/Projects/runelord/assets/characters/avalanche-colossus/base/ice-roster-r2/base.png",
+    "sha256": "c4c6ae8b6243ff2f2631cd84632dd4b0c45c8178704f75b2fbc2293f9f12b4d9",
+    "approvalEvidenceId": "fdd2dbac-29c7-4e35-9049-5a178f074a09"
+  },
+  "count": 7,
+  "entries": [
+    {
+      "id": "hollowmask-oracle",
+      "name": "Hollowmask Oracle",
+      "oldPath": "C:/Users/wilsh/Projects/runelord/assets/characters/hollowmask-oracle/base/ice-roster-r1/master.png",
+      "oldSha256": "c24c1cdb0649065871068c1b975ccdb9e1a126edd716c18aa87f7e95ab5d5742",
+      "path": "C:/Users/wilsh/Projects/runelord/assets/characters/hollowmask-oracle/base/ice-detail-r3-2026-10-13/master.png",
+      "sha256": "355c50640ca591d98f372f8f71b49d3cac2de863a1d78e830ff7181e3ff4fc13",
+      "dimensions": [
+        1145,
+        1374
+      ],
+      "approval": "Pending approval",
+      "galleryUrl": "http://localhost:4317/asset/393dcb2fc280da299cbac84e",
+      "prompt": "Create a measured MIDPOINT between these TWO versions of the SAME Hollowmask Oracle. Image1 is clean endpoint; Image2 is too textured endpoint. Use Image1 exact silhouette, pose, head/mask/hand geometry, smoothly shaded navy cloth and CLEAN hard outer edges. Add ONLY about 30 percent of Image2 material detail, concentrated INSIDE mask and ice: 4 or 5 broad faint ivory weathering patches with sharp shape boundaries on mask planes, two additional medium chips within mask edges, several controlled branching internal fracture lines in cyan lens and shoulder ice panels. A little restrained carved depth around existing mask grooves. Cloth stays SMOOTH flat cel-shaded navy, no fabric grain or weave; retain original large stitches and broad folds with at most two added sharp seam lines. Hands remain dark planar clean. No white frost rim, no edge fuzz, no granular snow, no microscopic speckles, no dense network of cracks, no all-over texture, no blurry brush surface. Preserve entire identity and layout, crisp serious 2D cel rendering. True transparent background. It should feel modestly weathered and materially rich INSIDE surfaces but as sharp, clear and clean at the boundaries as Image1. This is neither blank nor busy."
+    },
+    {
+      "id": "splinterhost",
+      "name": "Splinterhost",
+      "oldPath": "C:/Users/wilsh/Projects/runelord/assets/characters/splinterhost/base/ice-roster-r1/master.png",
+      "oldSha256": "3578258642e98ec3d3f344efcc9c653f51ff0981cfdfccb83063dc92d6d9ea81",
+      "path": "C:/Users/wilsh/Projects/runelord/assets/characters/splinterhost/base/ice-detail-r3-2026-10-13/master.png",
+      "sha256": "dbec3a5e26ecd16b8fbd5867003b09f09166d236b7ce248122f2b8cea8540060",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "approval": "Pending approval",
+      "galleryUrl": "http://localhost:4317/asset/d450e25be21b0ed9d76cc346",
+      "prompt": "Refine this original Splinterhost to a CLEAN RESTRAINED DETAIL revision. Latest user correction: texture looked blurry and AI-generated, tone it back SIGNIFICANTLY especially edges. Use this original r1 as exact identity and clarity reference. Preserve exact cluster arrangement and silhouette, three small mask heads left, large central rune plate, all floating plate and ice fragment positions, proportions, original cold grey navy cyan colors and pose. Broad smooth quiet flat colors and crisp hard-edged cel shadows. Add only a FEW material details: clean chipped bevels on 3 large plate edges, 2 sharp single-line cracks within large plates, thin clearly incised rim around original central rune, and 2 broad graphic inner fractures inside biggest ice shards. Every small head stays same. Do not increase texture density or add plates. No grain, granular frost, speckles, mottling, noise, fuzzy edge, brush texture, tiny scratches, realism, halo, aura, glow or smudging. Strong sharp closed solid contours. Complete cluster fully in frame with empty margins. Genuine transparent background. Serious polished crisp 2D cel shading, not 3D."
+    },
+    {
+      "id": "whiteout-ray",
+      "name": "Whiteout Ray",
+      "oldPath": "C:/Users/wilsh/Projects/runelord/assets/characters/whiteout-ray/base/ice-roster-r1/base.png",
+      "oldSha256": "44cbb23aafbeb6c9bcf331ea12ebe7402efe87400111cc42f673c2cd76727724",
+      "path": "C:/Users/wilsh/Projects/runelord/assets/characters/whiteout-ray/base/ice-detail-r3-2026-10-13/master.png",
+      "sha256": "5152e444c28d83708e126978f96fc98f3ded16c2095bb1d95700bd221b9302de",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "approval": "Pending approval",
+      "galleryUrl": "http://localhost:4317/asset/e3cb42b11979aa70b3d5472b",
+      "prompt": "Edit this Whiteout Ray character with ONLY a small restrained detail addition. Latest user correction: previous rich texture was far too much, blurry and AI-generated; tone texture back SIGNIFICANTLY, especially edges. Preserve this supplied original r1 pose, exact identity/anatomy, clean silhouette, fins/horns/tail/shards, colors and markings. Stay very close to its original broad smooth quiet color planes and hard cel shadows. Add just a few purposeful clean thin branching cracks INSIDE the blue ice fin rims, two or three broad crisp inset panel lines in the dark back, and sparse tiny corner bevels. NO grain, mottling, speckles, powder snow, granular frost, rough irregular rims, fuzzy edges, all-over microtexture or realistic stone/ice. All outside edges must stay solid crisp and simple. This is a polished clean 2D cel-shaded game asset, not textured concept painting. Transparent background, no aura, text or scene. Do not increase detail beyond these few discrete lines."
+    },
+    {
+      "id": "cairnfrost-ursine",
+      "name": "Cairnfrost Ursine",
+      "oldPath": "C:/Users/wilsh/Projects/runelord/assets/characters/cairnfrost-ursine/base/ice-roster-r1/master.png",
+      "oldSha256": "067b223d862e0c9bc147b101ffb6275007a7561f97aabe220745f9301b2b66d6",
+      "path": "C:/Users/wilsh/Projects/runelord/assets/characters/cairnfrost-ursine/base/ice-detail-r3-2026-10-13/master.png",
+      "sha256": "52ab1d0b4834a449bdbb2ec759163a1b4efe5cdf0ca439c5225874059e11abf1",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "approval": "Pending approval",
+      "galleryUrl": "http://localhost:4317/asset/92e1bd56dd7ddc2f6479eaa8",
+      "prompt": "Use case: identity-preserve. Edit image 1 Cairnfrost Ursine. Keep exact heavy bear identity, pose, four paws, claw count, left facing head, neck shackle, 3 back ice spines, slate shoulder armor. Remove the ENTIRE luminous fog/halo behind and around bear; genuine transparent background right up to solid silhouette, no shadow. Image 2 clean Hollowmask and image 3 textured Hollowmask are USER STYLE ENDPOINTS: target midpoint but strongly favor image 2 crisp edges and broad quiet color planes. Image 4 approved Colossus provides serious material vocabulary only, use much LESS surface texture. Add moderately designed internal detail: several broad grouped fur locks, a few crisp slate fractures and beveled chips, selected larger internal ice cracks, readable shackle wear. Detailed illustrative construction, NO all-over grain, fine hairs, snow fringes, mottling, fabric noise, blurry edges, bloom, haze. Clean hard-edged cel shadows; large areas remain smooth. All paws and spines inside generous transparent padding. Preserve original colors and anatomy. One full creature only, no sheet, no text.\n"
+    },
+    {
+      "id": "paleveil-moth",
+      "name": "Paleveil Moth",
+      "oldPath": "C:/Users/wilsh/Projects/runelord/assets/characters/paleveil-moth/base/ice-roster-r1/master.png",
+      "oldSha256": "77687e08082bcc770ad2a50514c6129bac288459ef89e31ce486e0107ea4a51e",
+      "path": "C:/Users/wilsh/Projects/runelord/assets/characters/paleveil-moth/base/ice-detail-r3-2026-10-13/master.png",
+      "sha256": "2746855d71ef905d8bac6ac5bee0a0e705d8763a8c59f31a0de09ee58a74e361",
+      "dimensions": [
+        1145,
+        1374
+      ],
+      "approval": "Pending approval",
+      "galleryUrl": "http://localhost:4317/asset/50f5f78c2461284c8c57dddf",
+      "prompt": "Use case: identity-preserve. Edit image 1 Paleveil Moth: preserve exact moth identity, pose, four angular ice wings with two dark crescent markings, pointed abdomen, mask face, feathered antennae, six legs, colors and anatomy. Image 2 clean Hollowmask and image 3 textured Hollowmask are USER STYLE ENDPOINTS. Aim midpoint detail: more deliberately drawn internal structure than image 1, considerably less surface noise than image 3. Add crisp branching wing veins within existing pale wing panels, a small number of broad interior ice fractures, layered neck fur tufts with smooth shading and a few defined chitin joints. KEEP crescent markings strong. About 75 percent quiet smooth cel surfaces. The silhouette must remain clean solid sharp polygonal wing edges, no fuzzy frost fringe, flecks, dust, hairs, all-over grain, mottling, glow, blur. Hard-edged graphic cel shading serious Runelord style. No other creature traits. One full moth centered with generous margin around all wing tips, transparent background, no scene, shadow or text.\n"
+    },
+    {
+      "id": "iceclamp-bombardier",
+      "name": "Iceclamp Bombardier",
+      "oldPath": "C:/Users/wilsh/Projects/runelord/assets/characters/iceclamp-bombardier/base/ice-roster-r1/master.png",
+      "oldSha256": "b2f5f6f96b6e56bc4587daea8708c9925392180baf43c79545bf0f9feab7959c",
+      "path": "C:/Users/wilsh/Projects/runelord/assets/characters/iceclamp-bombardier/base/ice-detail-r3-2026-10-13/master.png",
+      "sha256": "f97ae98331880473bbad19b4f158eb612aa2ab78a16f2e0334966e9e3739f626",
+      "dimensions": [
+        1396,
+        1127
+      ],
+      "approval": "Pending approval",
+      "galleryUrl": "http://localhost:4317/asset/bfe4b62b75229f7f8cdecabe",
+      "prompt": "Use case: identity-preserve. Edit image 1 Iceclamp Bombardier, keeping exact identity, blue crab chitin armor, two giant pincers, all existing legs/joints, left-facing pose, upward open mortar chimney on back, ice crystals and white rims. Image 2 clean Hollowmask and image 3 textured Hollowmask are USER STYLE ENDPOINTS: target somewhere between with clean crisp edges especially. Add moderate designed interior detail: a few bold plate seams and curved chitin growth bands, selected large bevel chips, internal ice crack branches and thicker mortar rim layers. Do not add hundreds of marks: leave at least 70 percent of surface broad quiet smooth cel color planes. NO all-over noise, pores, grain, mottling, scratch network, fuzzy snow, frosty fringes, bloom or blur. Clean solid silhouette, crisp cel shading, serious illustrative Runelord game art. Preserve all proportions, equipment and colors. One complete character with transparent margin on all sides, genuine transparent background, no scene/shadow, text or other creature.\n"
+    },
+    {
+      "id": "shardstep-skitterer",
+      "name": "Shardstep Skitterer",
+      "oldPath": "C:/Users/wilsh/Projects/runelord/assets/characters/shardstep-skitterer/base/ice-roster-r1/base.png",
+      "oldSha256": "aa064acf124a72e871186f1fff70d23761aa5fa5191d4c3842d1daf6c2ee501c",
+      "path": "C:/Users/wilsh/Projects/runelord/assets/characters/shardstep-skitterer/base/ice-detail-r3-2026-10-13/master.png",
+      "sha256": "d5950651aaf94055837ef426b6bb843b99f8f6db2511381a164b258141a006f9",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "approval": "Pending approval",
+      "galleryUrl": "http://localhost:4317/asset/b58893870bdbb0517cb5dfab",
+      "prompt": "Use case: style-transfer edit. Edit Image 1 Shardstep Skitterer ONLY, keep exact identity, anatomy, six leg layout, antennae, chisel feet, mandibles, cyan runes, three big back crystals, pose, framing and palette. Image 2 is user clean rendering endpoint and Image 3 the excessive texture endpoint. Aim between them, much closer to clean: moderate designed material detail inside surfaces, broad smooth cel-shaded regions and perfectly crisp clean silhouette. Add selected branching fractures inside big ice crystals/feet, restrained crisp plate bevels, a handful of large chips and joint seams. Preserve quiet navy chitin and ivory trim with no all-over surface texture. Detail comes from intentional sculpted shapes, NOT grain. No cloth weave, mottling, speckles, tiny scratches, granular frost, fuzzy white edge fringe, blur, halo, photorealism or painterly shading. Preserve serious Runelord 2D cel shaded art. Background genuinely transparent, no scene/text/shadow/aura. Single full character, all appendages in frame. Do not copy mask character anatomy or costume from style endpoints.\r\n"
+    }
+  ]
+}

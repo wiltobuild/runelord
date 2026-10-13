@@ -1,0 +1,1386 @@
+{
+  "schema": 1,
+  "id": "forest-sovereign",
+  "method": "reference-conditioned whole-character frames",
+  "canvas": [
+    640,
+    560
+  ],
+  "anchor": [
+    320,
+    510
+  ],
+  "facing": "left",
+  "coordinateSystem": "top-left pixels; x right, y down",
+  "states": {
+    "idle": {
+      "files": [
+        "frames/idle-00.png",
+        "frames/idle-01.png",
+        "frames/idle-02.png",
+        "frames/idle-03.png"
+      ],
+      "sequence": [
+        0,
+        1,
+        2,
+        3,
+        2,
+        1
+      ],
+      "durationsMs": [
+        210,
+        210,
+        210,
+        210,
+        210,
+        210
+      ],
+      "loop": true,
+      "holdLastFrame": false,
+      "nextState": "idle",
+      "atlas": "idle-atlas.png",
+      "frameRects": [
+        [
+          0,
+          0,
+          640,
+          560
+        ],
+        [
+          640,
+          0,
+          640,
+          560
+        ],
+        [
+          1280,
+          0,
+          640,
+          560
+        ],
+        [
+          1920,
+          0,
+          640,
+          560
+        ]
+      ],
+      "events": []
+    },
+    "attack": {
+      "files": [
+        "frames/attack-00.png",
+        "frames/attack-01.png",
+        "frames/attack-02.png",
+        "frames/attack-03.png",
+        "frames/attack-04.png",
+        "frames/attack-05.png",
+        "frames/attack-06.png",
+        "frames/attack-07.png"
+      ],
+      "sequence": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "durationsMs": [
+        110,
+        130,
+        150,
+        70,
+        80,
+        100,
+        120,
+        170
+      ],
+      "loop": false,
+      "holdLastFrame": false,
+      "nextState": "idle",
+      "atlas": "attack-atlas.png",
+      "frameRects": [
+        [
+          0,
+          0,
+          640,
+          560
+        ],
+        [
+          640,
+          0,
+          640,
+          560
+        ],
+        [
+          1280,
+          0,
+          640,
+          560
+        ],
+        [
+          1920,
+          0,
+          640,
+          560
+        ],
+        [
+          2560,
+          0,
+          640,
+          560
+        ],
+        [
+          3200,
+          0,
+          640,
+          560
+        ],
+        [
+          3840,
+          0,
+          640,
+          560
+        ],
+        [
+          4480,
+          0,
+          640,
+          560
+        ]
+      ],
+      "events": [
+        {
+          "name": "impact",
+          "timeMs": 460
+        }
+      ]
+    },
+    "hit": {
+      "files": [
+        "frames/hit-00.png",
+        "frames/hit-01.png",
+        "frames/hit-02.png",
+        "frames/hit-03.png"
+      ],
+      "sequence": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "durationsMs": [
+        50,
+        90,
+        100,
+        140
+      ],
+      "loop": false,
+      "holdLastFrame": false,
+      "nextState": "idle",
+      "atlas": "hit-atlas.png",
+      "frameRects": [
+        [
+          0,
+          0,
+          640,
+          560
+        ],
+        [
+          640,
+          0,
+          640,
+          560
+        ],
+        [
+          1280,
+          0,
+          640,
+          560
+        ],
+        [
+          1920,
+          0,
+          640,
+          560
+        ]
+      ],
+      "events": []
+    },
+    "wounded_idle": {
+      "files": [
+        "frames/wounded_idle-00.png",
+        "frames/wounded_idle-01.png",
+        "frames/wounded_idle-02.png",
+        "frames/wounded_idle-03.png"
+      ],
+      "sequence": [
+        0,
+        1,
+        2,
+        3,
+        2,
+        1
+      ],
+      "durationsMs": [
+        260,
+        260,
+        260,
+        260,
+        260,
+        260
+      ],
+      "loop": true,
+      "holdLastFrame": false,
+      "nextState": "wounded_idle",
+      "atlas": "wounded_idle-atlas.png",
+      "frameRects": [
+        [
+          0,
+          0,
+          640,
+          560
+        ],
+        [
+          640,
+          0,
+          640,
+          560
+        ],
+        [
+          1280,
+          0,
+          640,
+          560
+        ],
+        [
+          1920,
+          0,
+          640,
+          560
+        ]
+      ],
+      "events": []
+    },
+    "cast": {
+      "files": [
+        "frames/cast-00.png",
+        "frames/cast-01.png",
+        "frames/cast-02.png",
+        "frames/cast-03.png"
+      ],
+      "sequence": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "durationsMs": [
+        150,
+        200,
+        180,
+        180
+      ],
+      "loop": false,
+      "holdLastFrame": false,
+      "nextState": "idle",
+      "atlas": "cast-atlas.png",
+      "frameRects": [
+        [
+          0,
+          0,
+          640,
+          560
+        ],
+        [
+          640,
+          0,
+          640,
+          560
+        ],
+        [
+          1280,
+          0,
+          640,
+          560
+        ],
+        [
+          1920,
+          0,
+          640,
+          560
+        ]
+      ],
+      "events": [
+        {
+          "name": "release",
+          "timeMs": 350
+        }
+      ]
+    },
+    "die": {
+      "files": [
+        "frames/die-00.png",
+        "frames/die-01.png",
+        "frames/die-02.png",
+        "frames/die-03.png",
+        "frames/die-04.png",
+        "frames/die-05.png",
+        "frames/die-06.png",
+        "frames/die-07.png"
+      ],
+      "sequence": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "durationsMs": [
+        180,
+        180,
+        180,
+        180,
+        180,
+        180,
+        180,
+        1100
+      ],
+      "loop": false,
+      "holdLastFrame": true,
+      "nextState": "terminal",
+      "atlas": "die-atlas.png",
+      "frameRects": [
+        [
+          0,
+          0,
+          640,
+          560
+        ],
+        [
+          640,
+          0,
+          640,
+          560
+        ],
+        [
+          1280,
+          0,
+          640,
+          560
+        ],
+        [
+          1920,
+          0,
+          640,
+          560
+        ],
+        [
+          2560,
+          0,
+          640,
+          560
+        ],
+        [
+          3200,
+          0,
+          640,
+          560
+        ],
+        [
+          3840,
+          0,
+          640,
+          560
+        ],
+        [
+          4480,
+          0,
+          640,
+          560
+        ]
+      ],
+      "events": []
+    }
+  },
+  "sourceRects": {
+    "idle": [
+      {
+        "trim": [
+          133,
+          6,
+          580,
+          613
+        ],
+        "scale": 0.6919275123558485,
+        "offset": [
+          161,
+          90
+        ],
+        "sourceAnchor": [
+          363.5,
+          613
+        ],
+        "exportAnchor": [
+          320,
+          510
+        ],
+        "sheet": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\characters\\forest-sovereign\\animations\\frames32-r1\\source\\idle-sheet.png",
+        "cell": [
+          0,
+          0,
+          627,
+          627
+        ],
+        "sha256": "7f54895b482574d5dd04b58a589e5bf662a0cf622aee54fce4fa144e7b93bfdd"
+      },
+      {
+        "trim": [
+          107,
+          5,
+          552,
+          612
+        ],
+        "scale": 0.6919275123558485,
+        "offset": [
+          162,
+          90
+        ],
+        "sourceAnchor": [
+          335.5,
+          612
+        ],
+        "exportAnchor": [
+          320,
+          510
+        ],
+        "sheet": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\characters\\forest-sovereign\\animations\\frames32-r1\\source\\idle-sheet.png",
+        "cell": [
+          627,
+          0,
+          1254,
+          627
+        ],
+        "sha256": "7f54895b482574d5dd04b58a589e5bf662a0cf622aee54fce4fa144e7b93bfdd"
+      },
+      {
+        "trim": [
+          135,
+          3,
+          581,
+          604
+        ],
+        "scale": 0.6919275123558485,
+        "offset": [
+          162,
+          94
+        ],
+        "sourceAnchor": [
+          364.0,
+          604
+        ],
+        "exportAnchor": [
+          320,
+          510
+        ],
+        "sheet": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\characters\\forest-sovereign\\animations\\frames32-r1\\source\\idle-sheet.png",
+        "cell": [
+          0,
+          627,
+          627,
+          1254
+        ],
+        "sha256": "7f54895b482574d5dd04b58a589e5bf662a0cf622aee54fce4fa144e7b93bfdd"
+      },
+      {
+        "trim": [
+          107,
+          4,
+          553,
+          604
+        ],
+        "scale": 0.6919275123558485,
+        "offset": [
+          162,
+          95
+        ],
+        "sourceAnchor": [
+          335.5,
+          604
+        ],
+        "exportAnchor": [
+          320,
+          510
+        ],
+        "sheet": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\characters\\forest-sovereign\\animations\\frames32-r1\\source\\idle-sheet.png",
+        "cell": [
+          627,
+          627,
+          1254,
+          1254
+        ],
+        "sha256": "7f54895b482574d5dd04b58a589e5bf662a0cf622aee54fce4fa144e7b93bfdd"
+      }
+    ],
+    "attack": [
+      {
+        "trim": [
+          58,
+          1,
+          404,
+          448
+        ],
+        "scale": 0.9395973154362416,
+        "offset": [
+          154,
+          90
+        ],
+        "sourceAnchor": [
+          234.5,
+          448
+        ],
+        "exportAnchor": [
+          320,
+          510
+        ],
+        "sheet": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\characters\\forest-sovereign\\animations\\frames32-r1\\source\\attack-sheet.png",
+        "cell": [
+          0,
+          0,
+          444,
+          448
+        ],
+        "sha256": "813cc9e78693d52392973a09a5887d2fd9664b06ae579f41eef5b38426a493c5"
+      },
+      {
+        "trim": [
+          22,
+          51,
+          433,
+          448
+        ],
+        "scale": 0.9395973154362416,
+        "offset": [
+          105,
+          137
+        ],
+        "sourceAnchor": [
+          250.5,
+          448
+        ],
+        "exportAnchor": [
+          320,
+          510
+        ],
+        "sheet": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\characters\\forest-sovereign\\animations\\frames32-r1\\source\\attack-sheet.png",
+        "cell": [
+          444,
+          0,
+          887,
+          448
+        ],
+        "sha256": "813cc9e78693d52392973a09a5887d2fd9664b06ae579f41eef5b38426a493c5"
+      },
+      {
+        "trim": [
+          51,
+          1,
+          418,
+          448
+        ],
+        "scale": 0.9395973154362416,
+        "offset": [
+          159,
+          90
+        ],
+        "sourceAnchor": [
+          222.5,
+          448
+        ],
+        "exportAnchor": [
+          320,
+          510
+        ],
+        "sheet": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\characters\\forest-sovereign\\animations\\frames32-r1\\source\\attack-sheet.png",
+        "cell": [
+          887,
+          0,
+          1330,
+          448
+        ],
+        "sha256": "813cc9e78693d52392973a09a5887d2fd9664b06ae579f41eef5b38426a493c5"
+      },
+      {
+        "trim": [
+          5,
+          89,
+          437,
+          448
+        ],
+        "scale": 0.9395973154362416,
+        "offset": [
+          118,
+          173
+        ],
+        "sourceAnchor": [
+          220.5,
+          448
+        ],
+        "exportAnchor": [
+          320,
+          510
+        ],
+        "sheet": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\characters\\forest-sovereign\\animations\\frames32-r1\\source\\attack-sheet.png",
+        "cell": [
+          1330,
+          0,
+          1774,
+          448
+        ],
+        "sha256": "813cc9e78693d52392973a09a5887d2fd9664b06ae579f41eef5b38426a493c5"
+      },
+      {
+        "trim": [
+          10,
+          62,
+          619,
+          626
+        ],
+        "scale": 0.6741573033707865,
+        "offset": [
+          115,
+          130
+        ],
+        "sourceAnchor": [
+          314.5,
+          626
+        ],
+        "exportAnchor": [
+          320,
+          510
+        ],
+        "source": "proof-attack.png",
+        "preservedAcceptedProof": true
+      },
+      {
+        "trim": [
+          34,
+          78,
+          442,
+          437
+        ],
+        "scale": 0.9395973154362416,
+        "offset": [
+          129,
+          173
+        ],
+        "sourceAnchor": [
+          237.0,
+          437
+        ],
+        "exportAnchor": [
+          320,
+          510
+        ],
+        "sheet": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\characters\\forest-sovereign\\animations\\frames32-r1\\source\\attack-sheet.png",
+        "cell": [
+          444,
+          448,
+          887,
+          887
+        ],
+        "sha256": "813cc9e78693d52392973a09a5887d2fd9664b06ae579f41eef5b38426a493c5"
+      },
+      {
+        "trim": [
+          22,
+          6,
+          416,
+          438
+        ],
+        "scale": 0.9395973154362416,
+        "offset": [
+          117,
+          104
+        ],
+        "sourceAnchor": [
+          238.5,
+          438
+        ],
+        "exportAnchor": [
+          320,
+          510
+        ],
+        "sheet": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\characters\\forest-sovereign\\animations\\frames32-r1\\source\\attack-sheet.png",
+        "cell": [
+          887,
+          448,
+          1330,
+          887
+        ],
+        "sha256": "813cc9e78693d52392973a09a5887d2fd9664b06ae579f41eef5b38426a493c5"
+      },
+      {
+        "trim": [
+          59,
+          0,
+          403,
+          438
+        ],
+        "scale": 0.9395973154362416,
+        "offset": [
+          156,
+          98
+        ],
+        "sourceAnchor": [
+          233.5,
+          438
+        ],
+        "exportAnchor": [
+          320,
+          510
+        ],
+        "sheet": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\characters\\forest-sovereign\\animations\\frames32-r1\\source\\attack-sheet.png",
+        "cell": [
+          1330,
+          448,
+          1774,
+          887
+        ],
+        "sha256": "813cc9e78693d52392973a09a5887d2fd9664b06ae579f41eef5b38426a493c5"
+      }
+    ],
+    "hit": [
+      {
+        "trim": [
+          128,
+          9,
+          561,
+          594
+        ],
+        "scale": 0.717948717948718,
+        "offset": [
+          157,
+          90
+        ],
+        "sourceAnchor": [
+          355.5,
+          594
+        ],
+        "exportAnchor": [
+          320,
+          510
+        ],
+        "sheet": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\characters\\forest-sovereign\\animations\\frames32-r1\\source\\hit-sheet.png",
+        "cell": [
+          0,
+          0,
+          627,
+          626
+        ],
+        "sha256": "c4d38f968d78523b9c7606b9230a941b2363e72e0504ca9bbd1a872899072fbd"
+      },
+      {
+        "trim": [
+          72,
+          0,
+          600,
+          583
+        ],
+        "scale": 0.6741573033707865,
+        "offset": [
+          145,
+          117
+        ],
+        "sourceAnchor": [
+          331.5,
+          583
+        ],
+        "exportAnchor": [
+          320,
+          510
+        ],
+        "source": "proof-hit.png",
+        "preservedAcceptedProof": true
+      },
+      {
+        "trim": [
+          85,
+          1,
+          589,
+          575
+        ],
+        "scale": 0.717948717948718,
+        "offset": [
+          124,
+          98
+        ],
+        "sourceAnchor": [
+          358.5,
+          575
+        ],
+        "exportAnchor": [
+          320,
+          510
+        ],
+        "sheet": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\characters\\forest-sovereign\\animations\\frames32-r1\\source\\hit-sheet.png",
+        "cell": [
+          0,
+          626,
+          627,
+          1254
+        ],
+        "sha256": "c4d38f968d78523b9c7606b9230a941b2363e72e0504ca9bbd1a872899072fbd"
+      },
+      {
+        "trim": [
+          113,
+          4,
+          545,
+          580
+        ],
+        "scale": 0.717948717948718,
+        "offset": [
+          162,
+          96
+        ],
+        "sourceAnchor": [
+          333.0,
+          580
+        ],
+        "exportAnchor": [
+          320,
+          510
+        ],
+        "sheet": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\characters\\forest-sovereign\\animations\\frames32-r1\\source\\hit-sheet.png",
+        "cell": [
+          627,
+          626,
+          1254,
+          1254
+        ],
+        "sha256": "c4d38f968d78523b9c7606b9230a941b2363e72e0504ca9bbd1a872899072fbd"
+      }
+    ],
+    "wounded_idle": [
+      {
+        "trim": [
+          161,
+          20,
+          577,
+          608
+        ],
+        "scale": 0.7142857142857143,
+        "offset": [
+          166,
+          90
+        ],
+        "sourceAnchor": [
+          376.5,
+          608
+        ],
+        "exportAnchor": [
+          320,
+          510
+        ],
+        "sheet": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\characters\\forest-sovereign\\animations\\frames32-r1\\source\\wounded_idle-sheet.png",
+        "cell": [
+          0,
+          0,
+          627,
+          627
+        ],
+        "sha256": "099a27a20fa17831e061ff1806f7dcc157a78a592cf1cc2730749ab98f94cba5"
+      },
+      {
+        "trim": [
+          81,
+          22,
+          499,
+          606
+        ],
+        "scale": 0.7142857142857143,
+        "offset": [
+          165,
+          93
+        ],
+        "sourceAnchor": [
+          298.5,
+          606
+        ],
+        "exportAnchor": [
+          320,
+          510
+        ],
+        "sheet": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\characters\\forest-sovereign\\animations\\frames32-r1\\source\\wounded_idle-sheet.png",
+        "cell": [
+          627,
+          0,
+          1254,
+          627
+        ],
+        "sha256": "099a27a20fa17831e061ff1806f7dcc157a78a592cf1cc2730749ab98f94cba5"
+      },
+      {
+        "trim": [
+          158,
+          14,
+          577,
+          603
+        ],
+        "scale": 0.7142857142857143,
+        "offset": [
+          164,
+          89
+        ],
+        "sourceAnchor": [
+          376.5,
+          603
+        ],
+        "exportAnchor": [
+          320,
+          510
+        ],
+        "sheet": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\characters\\forest-sovereign\\animations\\frames32-r1\\source\\wounded_idle-sheet.png",
+        "cell": [
+          0,
+          627,
+          627,
+          1254
+        ],
+        "sha256": "099a27a20fa17831e061ff1806f7dcc157a78a592cf1cc2730749ab98f94cba5"
+      },
+      {
+        "trim": [
+          82,
+          16,
+          499,
+          605
+        ],
+        "scale": 0.7142857142857143,
+        "offset": [
+          166,
+          89
+        ],
+        "sourceAnchor": [
+          297.5,
+          605
+        ],
+        "exportAnchor": [
+          320,
+          510
+        ],
+        "sheet": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\characters\\forest-sovereign\\animations\\frames32-r1\\source\\wounded_idle-sheet.png",
+        "cell": [
+          627,
+          627,
+          1254,
+          1254
+        ],
+        "sha256": "099a27a20fa17831e061ff1806f7dcc157a78a592cf1cc2730749ab98f94cba5"
+      }
+    ],
+    "cast": [
+      {
+        "trim": [
+          48,
+          9,
+          602,
+          615
+        ],
+        "scale": 0.693069306930693,
+        "offset": [
+          111,
+          90
+        ],
+        "sourceAnchor": [
+          350.0,
+          615
+        ],
+        "exportAnchor": [
+          320,
+          510
+        ],
+        "sheet": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\characters\\forest-sovereign\\animations\\frames32-r1\\source\\cast-sheet.png",
+        "cell": [
+          0,
+          0,
+          622,
+          616
+        ],
+        "sha256": "56f78c61668813d8c69e72b05d3de596a5a2994658d05c69af993b05ff2f9601"
+      },
+      {
+        "trim": [
+          1,
+          83,
+          615,
+          616
+        ],
+        "scale": 0.693069306930693,
+        "offset": [
+          89,
+          141
+        ],
+        "sourceAnchor": [
+          334.0,
+          616
+        ],
+        "exportAnchor": [
+          320,
+          510
+        ],
+        "sheet": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\characters\\forest-sovereign\\animations\\frames32-r1\\source\\cast-sheet.png",
+        "cell": [
+          622,
+          0,
+          1254,
+          616
+        ],
+        "sha256": "56f78c61668813d8c69e72b05d3de596a5a2994658d05c69af993b05ff2f9601"
+      },
+      {
+        "trim": [
+          19,
+          105,
+          662,
+          602
+        ],
+        "scale": 0.693069306930693,
+        "offset": [
+          54,
+          166
+        ],
+        "sourceAnchor": [
+          403.5,
+          602
+        ],
+        "exportAnchor": [
+          320,
+          510
+        ],
+        "sheet": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\characters\\forest-sovereign\\animations\\frames32-r1\\source\\cast-sheet.png",
+        "cell": [
+          0,
+          616,
+          662,
+          1254
+        ],
+        "sha256": "56f78c61668813d8c69e72b05d3de596a5a2994658d05c69af993b05ff2f9601"
+      },
+      {
+        "trim": [
+          28,
+          1,
+          533,
+          603
+        ],
+        "scale": 0.693069306930693,
+        "offset": [
+          135,
+          93
+        ],
+        "sourceAnchor": [
+          295.5,
+          603
+        ],
+        "exportAnchor": [
+          320,
+          510
+        ],
+        "sheet": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\characters\\forest-sovereign\\animations\\frames32-r1\\source\\cast-sheet.png",
+        "cell": [
+          662,
+          616,
+          1254,
+          1254
+        ],
+        "sha256": "56f78c61668813d8c69e72b05d3de596a5a2994658d05c69af993b05ff2f9601"
+      }
+    ],
+    "die": [
+      {
+        "trim": [
+          91,
+          10,
+          413,
+          475
+        ],
+        "scale": 0.9032258064516129,
+        "offset": [
+          174,
+          90
+        ],
+        "sourceAnchor": [
+          253.0,
+          475
+        ],
+        "exportAnchor": [
+          320,
+          510
+        ],
+        "sheet": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\characters\\forest-sovereign\\animations\\frames32-r1\\source\\die-sheet.png",
+        "cell": [
+          0,
+          0,
+          444,
+          480
+        ],
+        "sha256": "23f6174b960a31b89d41434d08ce0eef1f879d4ca6eab3d8a40062beef9d4c1c"
+      },
+      {
+        "trim": [
+          88,
+          25,
+          405,
+          475
+        ],
+        "scale": 0.9032258064516129,
+        "offset": [
+          176,
+          104
+        ],
+        "sourceAnchor": [
+          247.0,
+          475
+        ],
+        "exportAnchor": [
+          320,
+          510
+        ],
+        "sheet": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\characters\\forest-sovereign\\animations\\frames32-r1\\source\\die-sheet.png",
+        "cell": [
+          444,
+          0,
+          887,
+          480
+        ],
+        "sha256": "23f6174b960a31b89d41434d08ce0eef1f879d4ca6eab3d8a40062beef9d4c1c"
+      },
+      {
+        "trim": [
+          45,
+          117,
+          424,
+          476
+        ],
+        "scale": 0.9032258064516129,
+        "offset": [
+          149,
+          186
+        ],
+        "sourceAnchor": [
+          234.0,
+          476
+        ],
+        "exportAnchor": [
+          320,
+          510
+        ],
+        "sheet": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\characters\\forest-sovereign\\animations\\frames32-r1\\source\\die-sheet.png",
+        "cell": [
+          887,
+          0,
+          1330,
+          480
+        ],
+        "sha256": "23f6174b960a31b89d41434d08ce0eef1f879d4ca6eab3d8a40062beef9d4c1c"
+      },
+      {
+        "trim": [
+          42,
+          169,
+          418,
+          480
+        ],
+        "scale": 0.9032258064516129,
+        "offset": [
+          150,
+          229
+        ],
+        "sourceAnchor": [
+          230.0,
+          480
+        ],
+        "exportAnchor": [
+          320,
+          510
+        ],
+        "sheet": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\characters\\forest-sovereign\\animations\\frames32-r1\\source\\die-sheet.png",
+        "cell": [
+          1330,
+          0,
+          1774,
+          480
+        ],
+        "sha256": "23f6174b960a31b89d41434d08ce0eef1f879d4ca6eab3d8a40062beef9d4c1c"
+      },
+      {
+        "trim": [
+          24,
+          117,
+          445,
+          372
+        ],
+        "scale": 0.9032258064516129,
+        "offset": [
+          130,
+          280
+        ],
+        "sourceAnchor": [
+          234.0,
+          372
+        ],
+        "exportAnchor": [
+          320,
+          510
+        ],
+        "sheet": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\characters\\forest-sovereign\\animations\\frames32-r1\\source\\die-sheet.png",
+        "cell": [
+          0,
+          480,
+          445,
+          887
+        ],
+        "sha256": "23f6174b960a31b89d41434d08ce0eef1f879d4ca6eab3d8a40062beef9d4c1c"
+      },
+      {
+        "trim": [
+          50,
+          161,
+          448,
+          372
+        ],
+        "scale": 0.9032258064516129,
+        "offset": [
+          141,
+          319
+        ],
+        "sourceAnchor": [
+          248.0,
+          372
+        ],
+        "exportAnchor": [
+          320,
+          510
+        ],
+        "sheet": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\characters\\forest-sovereign\\animations\\frames32-r1\\source\\die-sheet.png",
+        "cell": [
+          445,
+          480,
+          893,
+          887
+        ],
+        "sha256": "23f6174b960a31b89d41434d08ce0eef1f879d4ca6eab3d8a40062beef9d4c1c"
+      },
+      {
+        "trim": [
+          47,
+          164,
+          418,
+          373
+        ],
+        "scale": 0.9032258064516129,
+        "offset": [
+          153,
+          321
+        ],
+        "sourceAnchor": [
+          231.5,
+          373
+        ],
+        "exportAnchor": [
+          320,
+          510
+        ],
+        "sheet": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\characters\\forest-sovereign\\animations\\frames32-r1\\source\\die-sheet.png",
+        "cell": [
+          893,
+          480,
+          1330,
+          887
+        ],
+        "sha256": "23f6174b960a31b89d41434d08ce0eef1f879d4ca6eab3d8a40062beef9d4c1c"
+      },
+      {
+        "trim": [
+          47,
+          183,
+          420,
+          373
+        ],
+        "scale": 0.9032258064516129,
+        "offset": [
+          152,
+          338
+        ],
+        "sourceAnchor": [
+          233.5,
+          373
+        ],
+        "exportAnchor": [
+          320,
+          510
+        ],
+        "sheet": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\characters\\forest-sovereign\\animations\\frames32-r1\\source\\die-sheet.png",
+        "cell": [
+          1330,
+          480,
+          1774,
+          887
+        ],
+        "sha256": "23f6174b960a31b89d41434d08ce0eef1f879d4ca6eab3d8a40062beef9d4c1c"
+      }
+    ]
+  },
+  "limitations": [
+    "Generated non-idle pose variation accepted by user; original proof preserved.",
+    "Whole-frame source art, no separated rig.",
+    "Game integration not requested.",
+    "Minor leaf/base contour variation and four-pose stepping remain.",
+    "Some source action/VFX sheet edges have tight margins; no repaint was requested for non-idles."
+  ],
+  "review": "Independent idle QA pass with minor notes; non-idle drawing variation accepted by user.",
+  "frameCount": 32,
+  "hashes": {
+    "frames/attack-00.png": "df2488c26819ad0bb71597a144579aca2a78cdf626a53d1a36a0b78424c565bd",
+    "frames/attack-01.png": "7a7588b6b15c2a495061b69b1c5c96cdb2b19f3896e2d15a3ac38111864a55f0",
+    "frames/attack-02.png": "d17057b331c81976c02c0f5d03f2361292d265fac3191b62de48305b9d8e2de9",
+    "frames/attack-03.png": "86392f1622f7f59d850331ccc48a0f3e6456d03d8ee0a29ef0d7bb7792c9d7d2",
+    "frames/attack-04.png": "448d66bd48c48b6ab141b923dce0b7a8e4ec329665ed0f06c16529ab49c64625",
+    "frames/attack-05.png": "908ab7072e8ba21fcd2c1bcee5caf69ee123d5f056fc452206ab39e64fb768f1",
+    "frames/attack-06.png": "bcc73e59cadfce8feef44aa541545b8deb7fc165968cdfc1d94e88364bb6aa7f",
+    "frames/attack-07.png": "3d68c8b947442e5ce7bf855d6981255d0c6222af8f547cde303fee9e488443f0",
+    "frames/cast-00.png": "a61db1ed0f6bb1cd37fe52bc12cfcaf3375fd0724d77b6e351c64deccbf0bf56",
+    "frames/cast-01.png": "3904e0187f1ab0396d4fb08e20c21e70f79fe7ddfc4ef335b247da2759de1e30",
+    "frames/cast-02.png": "fef7fca44f4b05679d9378fe52186e3d97575bd76dcbf8bff0573ca7b1456f59",
+    "frames/cast-03.png": "6bf30b0ae70b42d76fdedd54d6960217c409ae0e7750c469ca57a3a65b49675a",
+    "frames/die-00.png": "9280c9c6b5ec44204e9cd5471aae1f88510c13075b7207d5bb0807272fa29c30",
+    "frames/die-01.png": "fdec90145a75b99bb42c4490dfbaed91647e8e49d8f16ebe14986e7316433bc6",
+    "frames/die-02.png": "282c463a292572d6ba75a00c95b5d93c233f5eda1aefc3eac2cc370827723758",
+    "frames/die-03.png": "6521fdd1b41e7f30b34b97b1dee3e59ce8bee53f8833c6ab63f752a93e400c4b",
+    "frames/die-04.png": "afeab262e577b1aeb07ef0a4624088168c3f470426f27eb677f8dc06e8e933ad",
+    "frames/die-05.png": "15e8744a0f56aa2c5866af02c8bb475396997abec13adf6eb911e3d8a1a46edf",
+    "frames/die-06.png": "3b9c694e0ea99f9aa992b31df9526a7100d57ad1c84d37150326e221614071e7",
+    "frames/die-07.png": "367d3e36c07930f288d3d611ac5f7e04b1acd6827421f15fd62233aac164430c",
+    "frames/hit-00.png": "3e4dcc1c59f92be71f3ec7463971b5d0d4da9b2ef095d2065356dbd4a5767a75",
+    "frames/hit-01.png": "5cecf3f9a439259083f33bd3cf474ffacf140ef6abcd7ba3946304edcaf4235b",
+    "frames/hit-02.png": "51a902572aedfe8b54f0d43ccb6be65e47abe89e71ab6caffdf70bffbdccbea8",
+    "frames/hit-03.png": "7c0b2e42671674eb291bae64bed33eee752932d9086b7c7be880d8d00660f7b1",
+    "frames/idle-00.png": "486576e989c8b0f002ca6f77ad48af5fa15e88514e9b0b9ef2e379b742d81909",
+    "frames/idle-01.png": "446ef25390b873afab71ffe68dea5c6af943f326ae4c4a6c8b5a8adc98479ecc",
+    "frames/idle-02.png": "c69f1da074087a8f1f7bc875f4400e719d23577d67c1d9cc4c2d790faefce1f9",
+    "frames/idle-03.png": "9cc1389b90f623571881b7728c79f95fba513530859b33b6a2d44c0185511953",
+    "frames/wounded_idle-00.png": "a851e0683600d17f1a0424b1d2bbe95e2688cff1b8178da691a9719d3cf93a4f",
+    "frames/wounded_idle-01.png": "129b76b4f23ebae59e8e3601d8a1aff2b56ad616838f590de8887899c0b9a3a3",
+    "frames/wounded_idle-02.png": "ac7ee8094274efcfe5ba7bca0c067401c1158cb53b72effe484a532bc63b592c",
+    "frames/wounded_idle-03.png": "1a2b431fe58945be2e5fdb14246571a1c1fe0059969f40422c708e091c8c26fb"
+  }
+}

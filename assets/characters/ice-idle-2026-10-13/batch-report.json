@@ -1,0 +1,1076 @@
+[
+  {
+    "id": "dragon-frost-mammoth",
+    "name": "Frost Mammoth",
+    "sourceApproval": {
+      "status": "Approved",
+      "at": "2026-10-02T22:20:49.176Z",
+      "evidenceId": "3d3835b8-f2f8-4ce8-8acd-cd24979a21b7",
+      "paths": [
+        "C:\\Users\\wilsh\\Projects\\runelord\\assets\\approvals\\inbox\\dragon-frost-mammoth\\base-r1\\base-r1.png"
+      ]
+    },
+    "sourceSha256": "3730fd449dda0734e012f6fa91fb10244b2396421d93a3e2e6099780ba3378cd",
+    "package": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\characters\\dragon-frost-mammoth\\animations\\idle-2026-10-13",
+    "manifest": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\characters\\dragon-frost-mammoth\\animations\\idle-2026-10-13\\manifest.json",
+    "previewSha256": "61aaa22e25b69a981099541cb1f3a6bc13431690c9741a4d0063040055d91701",
+    "galleryUrl": "http://localhost:4317/asset/2a13089ac1320407fe2ab39a",
+    "authoredPoseCount": 4,
+    "exportedFrameCount": 4,
+    "gifSteps": 6,
+    "durationMs": 1880,
+    "loop": true,
+    "frames": [
+      {
+        "file": "assets\\characters\\dragon-frost-mammoth\\animations\\idle-2026-10-13\\frame-00.png",
+        "sha256": "a5f6c490929895468757e688cf273e6a324b42cfe2a84313580be255d7e73034",
+        "canvas": [
+          800,
+          800
+        ]
+      },
+      {
+        "file": "assets\\characters\\dragon-frost-mammoth\\animations\\idle-2026-10-13\\frame-01.png",
+        "sha256": "4f55e42dcea14aed242b06fd1ad55a115f85005817a3bc2a1d696d0dcec16d4c",
+        "canvas": [
+          800,
+          800
+        ]
+      },
+      {
+        "file": "assets\\characters\\dragon-frost-mammoth\\animations\\idle-2026-10-13\\frame-02.png",
+        "sha256": "9fc756cf402bbc271797fbe3a888993d4fbbb2c188b3c42b7e50347764a29062",
+        "canvas": [
+          800,
+          800
+        ]
+      },
+      {
+        "file": "assets\\characters\\dragon-frost-mammoth\\animations\\idle-2026-10-13\\frame-03.png",
+        "sha256": "ad0da8684e3dd5cdc08462a6deecf9fa36f8c56edf183aa6031d195ec04f0a7d",
+        "canvas": [
+          800,
+          800
+        ]
+      }
+    ],
+    "status": "idle_candidate_pending_user_review",
+    "limitations": [
+      "Minor generated contour/detail variation; review before integration.",
+      "Idle only; no attack, hit, wounded idle, death or game integration.",
+      "Playback sampled; continuous frame-accurate live loop review remains limited."
+    ]
+  },
+  {
+    "id": "dragon-rime-antler",
+    "name": "Rime Antler",
+    "sourceApproval": {
+      "status": "Approved",
+      "at": "2026-10-02T22:20:49.176Z",
+      "evidenceId": "c3130d0a-2308-4f64-bff5-67dd8f8312a2",
+      "paths": [
+        "C:\\Users\\wilsh\\Projects\\runelord\\assets\\approvals\\inbox\\dragon-rime-antler\\base-r1\\base-r1.png"
+      ]
+    },
+    "sourceSha256": "e4fab93af107e89c60c280c3621a72e9f8b50c143f54269a853650e817dceed0",
+    "package": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\characters\\dragon-rime-antler\\animations\\idle-2026-10-13",
+    "manifest": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\characters\\dragon-rime-antler\\animations\\idle-2026-10-13\\manifest.json",
+    "previewSha256": "aeb0c8b0ebefdc73517bf68ffad0a56f5aebb2d47bd394f14d4d8822cb6b1cbe",
+    "galleryUrl": "http://localhost:4317/asset/b040b5dded1f27aea8f2b526",
+    "authoredPoseCount": 4,
+    "exportedFrameCount": 4,
+    "gifSteps": 6,
+    "durationMs": 1880,
+    "loop": true,
+    "frames": [
+      {
+        "file": "assets\\characters\\dragon-rime-antler\\animations\\idle-2026-10-13\\frame-00.png",
+        "sha256": "1427792cc7f9533c5013e8c409ab7bd05d5eb65dc3e500d14b8a7b3cb80f77ae",
+        "canvas": [
+          800,
+          800
+        ]
+      },
+      {
+        "file": "assets\\characters\\dragon-rime-antler\\animations\\idle-2026-10-13\\frame-01.png",
+        "sha256": "2fb05b4dd286fed852317386012cc7acc801ffc2cdca43fac2fb9c323bf7eaa5",
+        "canvas": [
+          800,
+          800
+        ]
+      },
+      {
+        "file": "assets\\characters\\dragon-rime-antler\\animations\\idle-2026-10-13\\frame-02.png",
+        "sha256": "7252b32b5021b841290e979418d948b17f9b71b37c413d9dc8f915ab37931244",
+        "canvas": [
+          800,
+          800
+        ]
+      },
+      {
+        "file": "assets\\characters\\dragon-rime-antler\\animations\\idle-2026-10-13\\frame-03.png",
+        "sha256": "0914ff338c31cc80c6d7e74c34b689ba78978aabfdc27e5e722b1f8704e65e79",
+        "canvas": [
+          800,
+          800
+        ]
+      }
+    ],
+    "status": "idle_candidate_pending_user_review",
+    "limitations": [
+      "Minor generated contour/detail variation; review before integration.",
+      "Idle only; no attack, hit, wounded idle, death or game integration.",
+      "Playback sampled; continuous frame-accurate live loop review remains limited."
+    ]
+  },
+  {
+    "id": "rimejaw-scavenger",
+    "name": "Rimejaw Scavenger",
+    "sourceApproval": {
+      "status": "Approved",
+      "at": "2026-10-13T05:06:58.678Z",
+      "evidenceId": "fc0ba40e-d72a-4754-92eb-787703e3f5fc",
+      "paths": [
+        "C:\\Users\\wilsh\\Projects\\runelord\\assets\\approvals\\inbox\\rimejaw-scavenger\\ice-roster-r1\\base.png"
+      ]
+    },
+    "sourceSha256": "baefb70c5fdffb81b5bd144e02dac78406bd9b283ff48a777d5b21f8f92b3e7c",
+    "package": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\characters\\rimejaw-scavenger\\animations\\idle-2026-10-13",
+    "manifest": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\characters\\rimejaw-scavenger\\animations\\idle-2026-10-13\\manifest.json",
+    "previewSha256": "c5bed0f41d8e57800d55d81018b2843728080ac00a458726bcf2f5ad62ed83a8",
+    "galleryUrl": "http://localhost:4317/asset/b304b7a2cc248c1536e3f09a",
+    "authoredPoseCount": 4,
+    "exportedFrameCount": 4,
+    "gifSteps": 6,
+    "durationMs": 1300,
+    "loop": true,
+    "frames": [
+      {
+        "file": "assets\\characters\\rimejaw-scavenger\\animations\\idle-2026-10-13\\frame-00.png",
+        "sha256": "6fe8a735d7d81729e47379b777ef01bfc81c7b08ead6bd76b992a30994546fc6",
+        "canvas": [
+          800,
+          800
+        ]
+      },
+      {
+        "file": "assets\\characters\\rimejaw-scavenger\\animations\\idle-2026-10-13\\frame-01.png",
+        "sha256": "614a7475fc469c2c833f8698f3df6d03cf946135d57544841fbe69a4a8353cc5",
+        "canvas": [
+          800,
+          800
+        ]
+      },
+      {
+        "file": "assets\\characters\\rimejaw-scavenger\\animations\\idle-2026-10-13\\frame-02.png",
+        "sha256": "8d0f9d2d1b3080c09669b5f392f4a08aceca77e98b658a3b7f92df8c5b9fd568",
+        "canvas": [
+          800,
+          800
+        ]
+      },
+      {
+        "file": "assets\\characters\\rimejaw-scavenger\\animations\\idle-2026-10-13\\frame-03.png",
+        "sha256": "2b1940a006fbbbba8e52443be3d3e450dfa9fcbcc6a3de16ad5914aeebfd95d5",
+        "canvas": [
+          800,
+          800
+        ]
+      }
+    ],
+    "status": "idle_candidate_pending_user_review",
+    "limitations": [
+      "Minor generated contour/detail variation; review before integration.",
+      "Idle only; no attack, hit, wounded idle, death or game integration.",
+      "Playback sampled; continuous frame-accurate live loop review remains limited."
+    ]
+  },
+  {
+    "id": "shardstep-skitterer",
+    "name": "Shardstep Skitterer",
+    "sourceApproval": {
+      "status": "Approved",
+      "at": "2026-10-13T05:09:41.486Z",
+      "evidenceId": "71cd1195-8259-47be-9e1a-480955e5d224",
+      "paths": [
+        "C:\\Users\\wilsh\\Projects\\runelord\\assets\\characters\\shardstep-skitterer\\base\\ice-detail-r2-2026-10-13\\master.png"
+      ]
+    },
+    "sourceSha256": "69819badf98de585e6f30f5aff72a74cb28aa9d35762a1413ff12d6456d4acc3",
+    "package": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\characters\\shardstep-skitterer\\animations\\idle-2026-10-13",
+    "manifest": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\characters\\shardstep-skitterer\\animations\\idle-2026-10-13\\animation.json",
+    "previewSha256": "653ea33bfb320c0418589eb2ffc69a5788aec660e98c45604e42965a5c05241f",
+    "galleryUrl": "http://localhost:4317/asset/701a0f59af86d79e76588a9e",
+    "authoredPoseCount": 4,
+    "exportedFrameCount": 6,
+    "gifSteps": 6,
+    "durationMs": 1080,
+    "loop": true,
+    "frames": [
+      {
+        "file": "assets\\characters\\shardstep-skitterer\\animations\\idle-2026-10-13\\frames\\idle-00.png",
+        "sha256": "e734a8b283c16362d7b3fe9b4fb4cf52cfb3167b3a6cb3a23257d47342298cab",
+        "canvas": [
+          711,
+          711
+        ]
+      },
+      {
+        "file": "assets\\characters\\shardstep-skitterer\\animations\\idle-2026-10-13\\frames\\idle-01.png",
+        "sha256": "5eefcba36db6a14b650e9d572ccff5624ded5d20710acf339c5263e9cc397299",
+        "canvas": [
+          711,
+          711
+        ]
+      },
+      {
+        "file": "assets\\characters\\shardstep-skitterer\\animations\\idle-2026-10-13\\frames\\idle-02.png",
+        "sha256": "e734a8b283c16362d7b3fe9b4fb4cf52cfb3167b3a6cb3a23257d47342298cab",
+        "canvas": [
+          711,
+          711
+        ]
+      },
+      {
+        "file": "assets\\characters\\shardstep-skitterer\\animations\\idle-2026-10-13\\frames\\idle-03.png",
+        "sha256": "30deb6c0096bc8b8294d9c037790ba54146811925e6af00e1ff5e2aa91d5dc86",
+        "canvas": [
+          711,
+          711
+        ]
+      },
+      {
+        "file": "assets\\characters\\shardstep-skitterer\\animations\\idle-2026-10-13\\frames\\idle-04.png",
+        "sha256": "53448e7f94049cfd46a84c40d56fca2f0fe3f9059ded93de160935c9b9e6f21d",
+        "canvas": [
+          711,
+          711
+        ]
+      },
+      {
+        "file": "assets\\characters\\shardstep-skitterer\\animations\\idle-2026-10-13\\frames\\idle-05.png",
+        "sha256": "30deb6c0096bc8b8294d9c037790ba54146811925e6af00e1ff5e2aa91d5dc86",
+        "canvas": [
+          711,
+          711
+        ]
+      }
+    ],
+    "status": "idle_candidate_pending_user_review",
+    "limitations": [
+      "Minor generated contour/detail variation; review before integration.",
+      "Idle only; no attack, hit, wounded idle, death or game integration.",
+      "Playback sampled; continuous frame-accurate live loop review remains limited."
+    ]
+  },
+  {
+    "id": "whiteout-ray",
+    "name": "Whiteout Ray",
+    "sourceApproval": {
+      "status": "Approved",
+      "at": "2026-10-13T05:09:37.842Z",
+      "evidenceId": "ba9d75c8-5fe4-4805-92bd-ccc3aeb4b14c",
+      "paths": [
+        "C:\\Users\\wilsh\\Projects\\runelord\\assets\\characters\\whiteout-ray\\base\\ice-detail-r2-2026-10-13\\master.png"
+      ]
+    },
+    "sourceSha256": "6785c628780e5d3c916edf87476eea7e7b73936444d6e668a7bea4929327edaf",
+    "package": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\characters\\whiteout-ray\\animations\\idle-2026-10-13",
+    "manifest": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\characters\\whiteout-ray\\animations\\idle-2026-10-13\\manifest.json",
+    "previewSha256": "935e331452aa8afb726b887ebebcbeb173339de54e932241f89f5cd6f121cbbe",
+    "galleryUrl": "http://localhost:4317/asset/946bb965f80dd8b5a78f9063",
+    "authoredPoseCount": 8,
+    "exportedFrameCount": 8,
+    "gifSteps": 8,
+    "durationMs": 1440,
+    "loop": true,
+    "frames": [
+      {
+        "file": "assets\\characters\\whiteout-ray\\animations\\idle-2026-10-13\\frame-00.png",
+        "sha256": "085115113aeced017b24b32cc0b76577462577c454098de42286d550e0296fae",
+        "canvas": [
+          512,
+          512
+        ]
+      },
+      {
+        "file": "assets\\characters\\whiteout-ray\\animations\\idle-2026-10-13\\frame-01.png",
+        "sha256": "96f3189add893cdef0d382c00b088804128c13486b9ed373ff0a05db67a14ca8",
+        "canvas": [
+          512,
+          512
+        ]
+      },
+      {
+        "file": "assets\\characters\\whiteout-ray\\animations\\idle-2026-10-13\\frame-02.png",
+        "sha256": "ce1a6b6db44f3c8c202deffb73888c2719fcc61f3c67badf0e7e0fab1007734e",
+        "canvas": [
+          512,
+          512
+        ]
+      },
+      {
+        "file": "assets\\characters\\whiteout-ray\\animations\\idle-2026-10-13\\frame-03.png",
+        "sha256": "fd913b6f20825fa3d8886dfa511e8028df96890ff328115e3a22c59e138a7643",
+        "canvas": [
+          512,
+          512
+        ]
+      },
+      {
+        "file": "assets\\characters\\whiteout-ray\\animations\\idle-2026-10-13\\frame-04.png",
+        "sha256": "dedb1370b62470e52607d0201484944811668a564e2857aa37f83e1fc20de6cf",
+        "canvas": [
+          512,
+          512
+        ]
+      },
+      {
+        "file": "assets\\characters\\whiteout-ray\\animations\\idle-2026-10-13\\frame-05.png",
+        "sha256": "3f1ef3bce38b32e4d10550382e96749d9ee1209b463c63ed318b3f8d409bba41",
+        "canvas": [
+          512,
+          512
+        ]
+      },
+      {
+        "file": "assets\\characters\\whiteout-ray\\animations\\idle-2026-10-13\\frame-06.png",
+        "sha256": "4e5e54d7842eb974f4dea855a7e5da764608ce1aa22fac1fa4ab262a3ec9f25b",
+        "canvas": [
+          512,
+          512
+        ]
+      },
+      {
+        "file": "assets\\characters\\whiteout-ray\\animations\\idle-2026-10-13\\frame-07.png",
+        "sha256": "860e63c392317ad6b798b0f691c75468c26df3c94e1f25dd9d817d92211db541",
+        "canvas": [
+          512,
+          512
+        ]
+      }
+    ],
+    "status": "idle_candidate_pending_user_review",
+    "limitations": [
+      "Minor generated contour/detail variation; review before integration.",
+      "Idle only; no attack, hit, wounded idle, death or game integration.",
+      "Playback sampled; continuous frame-accurate live loop review remains limited."
+    ]
+  },
+  {
+    "id": "coffinback-bastion",
+    "name": "Coffinback Bastion",
+    "sourceApproval": {
+      "status": "Approved",
+      "at": "2026-10-13T05:07:03.058Z",
+      "evidenceId": "f5b7fc14-ef50-460e-ab06-3818d18a76a3",
+      "paths": [
+        "C:\\Users\\wilsh\\Projects\\runelord\\assets\\approvals\\inbox\\coffinback-bastion\\ice-roster-r1\\master.png"
+      ]
+    },
+    "sourceSha256": "710d95eda75e9eb6ef79ba80dd281bc3aee11e17f71cd10de32fe67d3b5f2c3c",
+    "package": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\characters\\coffinback-bastion\\animations\\idle-2026-10-13",
+    "manifest": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\characters\\coffinback-bastion\\animations\\idle-2026-10-13\\animation.json",
+    "previewSha256": "5774e7a8c9c2d97486b4168308ffee5e6ff5659439b007b3a0072d1689211e81",
+    "galleryUrl": "http://localhost:4317/asset/8d957f43e0726753606ed2d4",
+    "authoredPoseCount": 8,
+    "exportedFrameCount": 8,
+    "gifSteps": 8,
+    "durationMs": 1840,
+    "loop": true,
+    "frames": [
+      {
+        "file": "assets\\characters\\coffinback-bastion\\animations\\idle-2026-10-13\\frames\\idle-00.png",
+        "sha256": "68f6212d5a1342577b5a2ad25832cd6a789fc096fb83d3e79e4b0207669207d2",
+        "canvas": [
+          512,
+          596
+        ]
+      },
+      {
+        "file": "assets\\characters\\coffinback-bastion\\animations\\idle-2026-10-13\\frames\\idle-01.png",
+        "sha256": "7edfbb87a3986f776544e446826a100770d8a28e0f1e0195d3fc9ae65344f0ff",
+        "canvas": [
+          512,
+          596
+        ]
+      },
+      {
+        "file": "assets\\characters\\coffinback-bastion\\animations\\idle-2026-10-13\\frames\\idle-02.png",
+        "sha256": "db088b90f0c501eb44dd977c09332b4ce4c8f377eb50881397e59950bb8f2bda",
+        "canvas": [
+          512,
+          596
+        ]
+      },
+      {
+        "file": "assets\\characters\\coffinback-bastion\\animations\\idle-2026-10-13\\frames\\idle-03.png",
+        "sha256": "1cf14e00aa3e90d04fd7082dd1b97be30102aca33e41a8c3aa010a019864b940",
+        "canvas": [
+          512,
+          596
+        ]
+      },
+      {
+        "file": "assets\\characters\\coffinback-bastion\\animations\\idle-2026-10-13\\frames\\idle-04.png",
+        "sha256": "a06ec2150b815bca9970b8cab3665b6bc3fbdf6a5eb2f70f81585b202a2a78f4",
+        "canvas": [
+          512,
+          596
+        ]
+      },
+      {
+        "file": "assets\\characters\\coffinback-bastion\\animations\\idle-2026-10-13\\frames\\idle-05.png",
+        "sha256": "932f25a82399b21e031887c985686b99f48c20a997a1afedfd3c6abe75d93c8a",
+        "canvas": [
+          512,
+          596
+        ]
+      },
+      {
+        "file": "assets\\characters\\coffinback-bastion\\animations\\idle-2026-10-13\\frames\\idle-06.png",
+        "sha256": "a2cfe4ae1f3aee97ba08f40dee373d6a583b03427dddef6c02f1291109188ce3",
+        "canvas": [
+          512,
+          596
+        ]
+      },
+      {
+        "file": "assets\\characters\\coffinback-bastion\\animations\\idle-2026-10-13\\frames\\idle-07.png",
+        "sha256": "eb3bd508dde6b67fbe1d09a6527ef7e7c9f63c678df4f215e7d51494c8794f7e",
+        "canvas": [
+          512,
+          596
+        ]
+      }
+    ],
+    "status": "idle_candidate_pending_user_review",
+    "limitations": [
+      "Minor generated contour/detail variation; review before integration.",
+      "Idle only; no attack, hit, wounded idle, death or game integration.",
+      "Playback sampled; continuous frame-accurate live loop review remains limited."
+    ]
+  },
+  {
+    "id": "hollowmask-oracle",
+    "name": "Hollowmask Oracle",
+    "sourceApproval": {
+      "status": "Approved",
+      "at": "2026-10-13T05:09:18.441Z",
+      "evidenceId": "50e07ace-3a79-497d-9614-604286ef7bdd",
+      "paths": [
+        "C:\\Users\\wilsh\\Projects\\runelord\\assets\\characters\\hollowmask-oracle\\base\\ice-detail-r2-2026-10-13\\master.png"
+      ]
+    },
+    "sourceSha256": "4e34d314f4d61f89b311ca7d2cade28e79b257f96d9e3e9d2d2b75c4c7b9ae45",
+    "package": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\characters\\hollowmask-oracle\\animations\\idle-2026-10-13",
+    "manifest": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\characters\\hollowmask-oracle\\animations\\idle-2026-10-13\\manifest.json",
+    "previewSha256": "31210318884c0f679237f0d3784296e82352aa0eaf26f541cad82d432d021784",
+    "galleryUrl": "http://localhost:4317/asset/04ab6d654afaf429a90306f1",
+    "authoredPoseCount": 4,
+    "exportedFrameCount": 4,
+    "gifSteps": 6,
+    "durationMs": 1560,
+    "loop": true,
+    "frames": [
+      {
+        "file": "assets\\characters\\hollowmask-oracle\\animations\\idle-2026-10-13\\frame-00.png",
+        "sha256": "e06da2584f8cc371b740fc323070bdb6f1092d2bf368eb177b78a061b6629f89",
+        "canvas": [
+          512,
+          512
+        ]
+      },
+      {
+        "file": "assets\\characters\\hollowmask-oracle\\animations\\idle-2026-10-13\\frame-01.png",
+        "sha256": "e1791bbebc0d50c0ab0314dd1119d4209f405956b6046a20ad95cb26f0750f73",
+        "canvas": [
+          512,
+          512
+        ]
+      },
+      {
+        "file": "assets\\characters\\hollowmask-oracle\\animations\\idle-2026-10-13\\frame-02.png",
+        "sha256": "41a7a8fa64e60a0398aa6fba3c03a5d9506040decf5a29e2f49f739d4f01c06a",
+        "canvas": [
+          512,
+          512
+        ]
+      },
+      {
+        "file": "assets\\characters\\hollowmask-oracle\\animations\\idle-2026-10-13\\frame-03.png",
+        "sha256": "729e14429347d4bc060e7effe6ffe028d87b9377944a1cd370b7097a9829ce99",
+        "canvas": [
+          512,
+          512
+        ]
+      }
+    ],
+    "status": "idle_candidate_pending_user_review",
+    "limitations": [
+      "Minor generated contour/detail variation; review before integration.",
+      "Idle only; no attack, hit, wounded idle, death or game integration.",
+      "Playback sampled; continuous frame-accurate live loop review remains limited."
+    ]
+  },
+  {
+    "id": "shardlance-stalker",
+    "name": "Shardlance Stalker",
+    "sourceApproval": {
+      "status": "Approved",
+      "at": "2026-10-13T05:06:52.799Z",
+      "evidenceId": "1316bad9-8645-453e-97d3-2a6094f05866",
+      "paths": [
+        "C:\\Users\\wilsh\\Projects\\runelord\\assets\\approvals\\inbox\\shardlance-stalker\\ice-roster-r1\\master.png"
+      ]
+    },
+    "sourceSha256": "872f31b1f3e2acfa16a6e330d32b5ef7dc1662816a73ea4f718e5769ea8028a4",
+    "package": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\characters\\shardlance-stalker\\animations\\idle-2026-10-13",
+    "manifest": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\characters\\shardlance-stalker\\animations\\idle-2026-10-13\\animation.json",
+    "previewSha256": "835ffecf423f4fb9c9e08ef3885afcf9c9bda1714a2d031f9b0ed9ccb6c2dfc8",
+    "galleryUrl": "http://localhost:4317/asset/c67645847ab01540f58faf2e",
+    "authoredPoseCount": 8,
+    "exportedFrameCount": 8,
+    "gifSteps": 8,
+    "durationMs": 1520,
+    "loop": true,
+    "frames": [
+      {
+        "file": "assets\\characters\\shardlance-stalker\\animations\\idle-2026-10-13\\frames\\idle-00.png",
+        "sha256": "f09771a55ba88fbdde2affb65fefc3c1d9f51ad4c5bae56c134ab7754f686d7b",
+        "canvas": [
+          528,
+          576
+        ]
+      },
+      {
+        "file": "assets\\characters\\shardlance-stalker\\animations\\idle-2026-10-13\\frames\\idle-01.png",
+        "sha256": "db7beb9752dc4f94af8372ebaf3d8680a4fb49070e4593d60023aa0507117165",
+        "canvas": [
+          528,
+          576
+        ]
+      },
+      {
+        "file": "assets\\characters\\shardlance-stalker\\animations\\idle-2026-10-13\\frames\\idle-02.png",
+        "sha256": "bbbef6c80d8d7407696aca0f004fae8cce96588e04df2f7374ba4d40652e0ca8",
+        "canvas": [
+          528,
+          576
+        ]
+      },
+      {
+        "file": "assets\\characters\\shardlance-stalker\\animations\\idle-2026-10-13\\frames\\idle-03.png",
+        "sha256": "6e48d57c30554b7d57e1a17738bd3948231ee6eae262c7925ae1e9cfb3df9565",
+        "canvas": [
+          528,
+          576
+        ]
+      },
+      {
+        "file": "assets\\characters\\shardlance-stalker\\animations\\idle-2026-10-13\\frames\\idle-04.png",
+        "sha256": "86fe102faca04a9d97042b33cdae43bf39c2a623b692ba04ce204280597693e6",
+        "canvas": [
+          528,
+          576
+        ]
+      },
+      {
+        "file": "assets\\characters\\shardlance-stalker\\animations\\idle-2026-10-13\\frames\\idle-05.png",
+        "sha256": "a5b1bfd68ae2f76622a43a0b45a533c7f413e5fde5a99a9272e374c815a6010c",
+        "canvas": [
+          528,
+          576
+        ]
+      },
+      {
+        "file": "assets\\characters\\shardlance-stalker\\animations\\idle-2026-10-13\\frames\\idle-06.png",
+        "sha256": "a650a3b8303253e3b1b2618ffabd3bf417c97c71e0d3abc340e013d2d6a833d2",
+        "canvas": [
+          528,
+          576
+        ]
+      },
+      {
+        "file": "assets\\characters\\shardlance-stalker\\animations\\idle-2026-10-13\\frames\\idle-07.png",
+        "sha256": "1da2eb8706f6eae36864afb9cca5b6011a486e2e6bb491d5b128cde3bbc27984",
+        "canvas": [
+          528,
+          576
+        ]
+      }
+    ],
+    "status": "idle_candidate_pending_user_review",
+    "limitations": [
+      "Minor generated contour/detail variation; review before integration.",
+      "Idle only; no attack, hit, wounded idle, death or game integration.",
+      "Playback sampled; continuous frame-accurate live loop review remains limited."
+    ]
+  },
+  {
+    "id": "hoarveil-crone",
+    "name": "Hoarveil Crone",
+    "sourceApproval": {
+      "status": "Approved",
+      "at": "2026-10-13T05:07:06.426Z",
+      "evidenceId": "9d07ab2b-ae4b-4ec7-ba9f-7c4d1b424161",
+      "paths": [
+        "C:\\Users\\wilsh\\Projects\\runelord\\assets\\approvals\\inbox\\hoarveil-crone\\ice-roster-r1\\master.png"
+      ]
+    },
+    "sourceSha256": "1532f314acfa76844cfe1272fb92e319c78d3285f519bdfb0616a0e56098a06c",
+    "package": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\characters\\hoarveil-crone\\animations\\idle-2026-10-13",
+    "manifest": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\characters\\hoarveil-crone\\animations\\idle-2026-10-13\\manifest.json",
+    "previewSha256": "35c091c56215f5b195ddff2d952f285defd16d77b423344f1531e6b6d784d11e",
+    "galleryUrl": "http://localhost:4317/asset/1a99884dda9aab8ecb285f45",
+    "authoredPoseCount": 4,
+    "exportedFrameCount": 4,
+    "gifSteps": 6,
+    "durationMs": 1920,
+    "loop": true,
+    "frames": [
+      {
+        "file": "assets\\characters\\hoarveil-crone\\animations\\idle-2026-10-13\\idle-00.png",
+        "sha256": "38f78fb7bcd84d0f29d80ddd546cbe72f6c1a3bb931e9faa5f43eeb850715426",
+        "canvas": [
+          768,
+          704
+        ]
+      },
+      {
+        "file": "assets\\characters\\hoarveil-crone\\animations\\idle-2026-10-13\\idle-01.png",
+        "sha256": "d728a13a0de5b24d3f53228ce53a4898a76f9cfe9d7654ddb8753e5c0f766493",
+        "canvas": [
+          768,
+          704
+        ]
+      },
+      {
+        "file": "assets\\characters\\hoarveil-crone\\animations\\idle-2026-10-13\\idle-02.png",
+        "sha256": "2bf00708c62179e45008c0011b2e28fff59acb41835952d4ee389f9df532e0cc",
+        "canvas": [
+          768,
+          704
+        ]
+      },
+      {
+        "file": "assets\\characters\\hoarveil-crone\\animations\\idle-2026-10-13\\idle-03.png",
+        "sha256": "129e512d7222ed82cd252323471a86a7277b24af113833f25457031f35259386",
+        "canvas": [
+          768,
+          704
+        ]
+      }
+    ],
+    "status": "idle_candidate_pending_user_review",
+    "limitations": [
+      "Minor generated contour/detail variation; review before integration.",
+      "Idle only; no attack, hit, wounded idle, death or game integration.",
+      "Playback sampled; continuous frame-accurate live loop review remains limited."
+    ]
+  },
+  {
+    "id": "iceclamp-bombardier",
+    "name": "Iceclamp Bombardier",
+    "sourceApproval": {
+      "status": "Approved",
+      "at": "2026-10-13T05:09:23.585Z",
+      "evidenceId": "d0cb20f0-6264-4135-bb7c-3d6af7d5e906",
+      "paths": [
+        "C:\\Users\\wilsh\\Projects\\runelord\\assets\\characters\\iceclamp-bombardier\\base\\ice-detail-r2-2026-10-13\\master.png"
+      ]
+    },
+    "sourceSha256": "a68173ffa335c76286fadc04f395ac68c2cc1d23c755f2fe32fcf8bde3de244c",
+    "package": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\characters\\iceclamp-bombardier\\animations\\idle-2026-10-13",
+    "manifest": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\characters\\iceclamp-bombardier\\animations\\idle-2026-10-13\\animation.json",
+    "previewSha256": "a30469c6157896a4e04a7da5d5607bf9fa7061577d9e050dda2c7d63fc9ac2cc",
+    "galleryUrl": "http://localhost:4317/asset/99d599e9d17b061122018095",
+    "authoredPoseCount": 8,
+    "exportedFrameCount": 8,
+    "gifSteps": 8,
+    "durationMs": 1680,
+    "loop": true,
+    "frames": [
+      {
+        "file": "assets\\characters\\iceclamp-bombardier\\animations\\idle-2026-10-13\\frames\\idle-00.png",
+        "sha256": "56016718dc4f5042d529cff399e97d29160aeccd84cbd9384c2eca295992f22a",
+        "canvas": [
+          528,
+          576
+        ]
+      },
+      {
+        "file": "assets\\characters\\iceclamp-bombardier\\animations\\idle-2026-10-13\\frames\\idle-01.png",
+        "sha256": "c20de703417af4c1dbb2ff877369c78a8edc31606d8abab47941c2f49c30b3d4",
+        "canvas": [
+          528,
+          576
+        ]
+      },
+      {
+        "file": "assets\\characters\\iceclamp-bombardier\\animations\\idle-2026-10-13\\frames\\idle-02.png",
+        "sha256": "c13e124f7bae3fecf05f8f45e62d81c297098437ce8ad78f458cada2e5f5c6ae",
+        "canvas": [
+          528,
+          576
+        ]
+      },
+      {
+        "file": "assets\\characters\\iceclamp-bombardier\\animations\\idle-2026-10-13\\frames\\idle-03.png",
+        "sha256": "1ec00b89ac74a3f4aba2630226d8a87c534f89a3fbb7377754b6927515a4f48e",
+        "canvas": [
+          528,
+          576
+        ]
+      },
+      {
+        "file": "assets\\characters\\iceclamp-bombardier\\animations\\idle-2026-10-13\\frames\\idle-04.png",
+        "sha256": "40b5b4126a37ef102caa4d26f41d12e44d0d16d571a4f271b9e4dba72d218da2",
+        "canvas": [
+          528,
+          576
+        ]
+      },
+      {
+        "file": "assets\\characters\\iceclamp-bombardier\\animations\\idle-2026-10-13\\frames\\idle-05.png",
+        "sha256": "c80f30105d9fd4652be85f871e09ab5660e8bd2dca2e0f76e73d75aea3bf26d5",
+        "canvas": [
+          528,
+          576
+        ]
+      },
+      {
+        "file": "assets\\characters\\iceclamp-bombardier\\animations\\idle-2026-10-13\\frames\\idle-06.png",
+        "sha256": "31b2ba78e8c81d49384ae518b81befe5882d206e16d89e4db1844590e2c968b7",
+        "canvas": [
+          528,
+          576
+        ]
+      },
+      {
+        "file": "assets\\characters\\iceclamp-bombardier\\animations\\idle-2026-10-13\\frames\\idle-07.png",
+        "sha256": "8c03e3e8bd4a966522d47a069788a80673cb8d62c37cf25731dd93370f819205",
+        "canvas": [
+          528,
+          576
+        ]
+      }
+    ],
+    "status": "idle_candidate_pending_user_review",
+    "limitations": [
+      "Minor generated contour/detail variation; review before integration.",
+      "Idle only; no attack, hit, wounded idle, death or game integration.",
+      "Playback sampled; continuous frame-accurate live loop review remains limited."
+    ]
+  },
+  {
+    "id": "paleveil-moth",
+    "name": "Paleveil Moth",
+    "sourceApproval": {
+      "status": "Approved",
+      "at": "2026-10-13T05:09:33.938Z",
+      "evidenceId": "876dfbe1-cc13-4d97-afde-11db19725eb3",
+      "paths": [
+        "C:\\Users\\wilsh\\Projects\\runelord\\assets\\characters\\paleveil-moth\\base\\ice-detail-r2-2026-10-13\\master.png"
+      ]
+    },
+    "sourceSha256": "45aaa174e0e8322a0e2c689ede65aafab8930900a44543c908b2238aee0819e1",
+    "package": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\characters\\paleveil-moth\\animations\\idle-2026-10-13",
+    "manifest": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\characters\\paleveil-moth\\animations\\idle-2026-10-13\\manifest.json",
+    "previewSha256": "3ab0880e0647ea18e82ff7e4d9386b483ff5d6db23c6d02a345999a4a6e6f474",
+    "galleryUrl": "http://localhost:4317/asset/62fb2b565a50491d353941c9",
+    "authoredPoseCount": 4,
+    "exportedFrameCount": 4,
+    "gifSteps": 6,
+    "durationMs": 840,
+    "loop": true,
+    "frames": [
+      {
+        "file": "assets\\characters\\paleveil-moth\\animations\\idle-2026-10-13\\frame-00.png",
+        "sha256": "a97e380a5d5d33d92e926729296719111fe1350bde7957f39c81378ce771caf5",
+        "canvas": [
+          672,
+          672
+        ]
+      },
+      {
+        "file": "assets\\characters\\paleveil-moth\\animations\\idle-2026-10-13\\frame-01.png",
+        "sha256": "81813013178660f96f13dd43e2aab24842c09571f0deabc9227ce54c467d7bb2",
+        "canvas": [
+          672,
+          672
+        ]
+      },
+      {
+        "file": "assets\\characters\\paleveil-moth\\animations\\idle-2026-10-13\\frame-02.png",
+        "sha256": "4660832f76087b6f0681e42fac50f1e8280a8fb65554796484ee9846f2e14fdc",
+        "canvas": [
+          672,
+          672
+        ]
+      },
+      {
+        "file": "assets\\characters\\paleveil-moth\\animations\\idle-2026-10-13\\frame-03.png",
+        "sha256": "fb8272ac7d14ccdfb7d60c10af54fa6adfbc89de76de3929e2abfb6b16de784d",
+        "canvas": [
+          672,
+          672
+        ]
+      }
+    ],
+    "status": "idle_candidate_pending_user_review",
+    "limitations": [
+      "Minor generated contour/detail variation; review before integration.",
+      "Idle only; no attack, hit, wounded idle, death or game integration.",
+      "Playback sampled; continuous frame-accurate live loop review remains limited."
+    ]
+  },
+  {
+    "id": "cairnfrost-ursine",
+    "name": "Cairnfrost Ursine",
+    "sourceApproval": {
+      "status": "Approved",
+      "at": "2026-10-13T05:09:28.120Z",
+      "evidenceId": "c6785a74-f295-48ba-934e-9d9d7c1b8c47",
+      "paths": [
+        "C:\\Users\\wilsh\\Projects\\runelord\\assets\\characters\\cairnfrost-ursine\\base\\ice-detail-r2-2026-10-13\\master.png"
+      ]
+    },
+    "sourceSha256": "4cdd821f7a08781e3371987302ccb934031a2be064b09e8f8d065f11176c2a6d",
+    "package": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\characters\\cairnfrost-ursine\\animations\\idle-2026-10-13",
+    "manifest": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\characters\\cairnfrost-ursine\\animations\\idle-2026-10-13\\manifest.json",
+    "previewSha256": "27d1458ddbde93fc4bc883948f366b2c906e5d533e4e25bd9e136cf626c8586d",
+    "galleryUrl": "http://localhost:4317/asset/9a055f5c1a9eb337d626426b",
+    "authoredPoseCount": 4,
+    "exportedFrameCount": 4,
+    "gifSteps": 6,
+    "durationMs": 2280,
+    "loop": true,
+    "frames": [
+      {
+        "file": "assets\\characters\\cairnfrost-ursine\\animations\\idle-2026-10-13\\frame-00.png",
+        "sha256": "f0f2d19ce4502251be33c02db7ebcefde2f336c22bcef6b0b66e8674f4ec03e5",
+        "canvas": [
+          800,
+          800
+        ]
+      },
+      {
+        "file": "assets\\characters\\cairnfrost-ursine\\animations\\idle-2026-10-13\\frame-01.png",
+        "sha256": "ffcb548f4a2a026be578143cf009fae24cb23fcce51291517548192b89dcb868",
+        "canvas": [
+          800,
+          800
+        ]
+      },
+      {
+        "file": "assets\\characters\\cairnfrost-ursine\\animations\\idle-2026-10-13\\frame-02.png",
+        "sha256": "78f6b742184636e52b30ed4d30a443b26cb1917200106283bb8e75a568412fb3",
+        "canvas": [
+          800,
+          800
+        ]
+      },
+      {
+        "file": "assets\\characters\\cairnfrost-ursine\\animations\\idle-2026-10-13\\frame-03.png",
+        "sha256": "f49adddc5d165ab1840e43c6fb94ebf4ba5d3220df0e572c8199010e19614d9a",
+        "canvas": [
+          800,
+          800
+        ]
+      }
+    ],
+    "status": "idle_candidate_pending_user_review",
+    "limitations": [
+      "Minor generated contour/detail variation; review before integration.",
+      "Idle only; no attack, hit, wounded idle, death or game integration.",
+      "Playback sampled; continuous frame-accurate live loop review remains limited."
+    ]
+  },
+  {
+    "id": "splinterhost",
+    "name": "Splinterhost",
+    "sourceApproval": {
+      "status": "Approved",
+      "at": "2026-10-13T05:09:47.242Z",
+      "evidenceId": "3a490bf6-ea37-46db-b2bc-6255e8589272",
+      "paths": [
+        "C:\\Users\\wilsh\\Projects\\runelord\\assets\\characters\\splinterhost\\base\\ice-detail-r2-2026-10-13\\master.png"
+      ]
+    },
+    "sourceSha256": "da927820534c9ab34ebb57ddeeca5445efecd5c156c83fe0ba6055ee86ac089e",
+    "package": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\characters\\splinterhost\\animations\\idle-2026-10-13",
+    "manifest": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\characters\\splinterhost\\animations\\idle-2026-10-13\\manifest.json",
+    "previewSha256": "fd65e2680cda932272f5f7f7a192f8ff856677582ede5f36c00f0dbdd1359b90",
+    "galleryUrl": "http://localhost:4317/asset/dcaa15d36da59d0880b00e89",
+    "authoredPoseCount": 4,
+    "exportedFrameCount": 4,
+    "gifSteps": 6,
+    "durationMs": 1680,
+    "loop": true,
+    "frames": [
+      {
+        "file": "assets\\characters\\splinterhost\\animations\\idle-2026-10-13\\candidate-frame-00.png",
+        "sha256": "975c08498cf7c66fbddcdf1d9cd46f840af1c26fc3972a8138f0435b18f5a516",
+        "canvas": [
+          768,
+          512
+        ]
+      },
+      {
+        "file": "assets\\characters\\splinterhost\\animations\\idle-2026-10-13\\candidate-frame-01.png",
+        "sha256": "db29f3eb0bb7037cf68151e5b1bad07cba4a26d53802a62e92cf81fb022c43da",
+        "canvas": [
+          768,
+          512
+        ]
+      },
+      {
+        "file": "assets\\characters\\splinterhost\\animations\\idle-2026-10-13\\candidate-frame-02.png",
+        "sha256": "7535c1d0eedf1d673eaf2bc7877a8fd24d50d891038714ba9c69060db8f0e5df",
+        "canvas": [
+          768,
+          512
+        ]
+      },
+      {
+        "file": "assets\\characters\\splinterhost\\animations\\idle-2026-10-13\\candidate-frame-03.png",
+        "sha256": "e75e43eec06c5a98c3a030888e039993a3a02e8357cf5daaa4ffe873702d8ca5",
+        "canvas": [
+          768,
+          512
+        ]
+      }
+    ],
+    "status": "failed_transparency_motion_study",
+    "limitations": [
+      "Minor generated contour/detail variation; review before integration.",
+      "Idle only; no attack, hit, wounded idle, death or game integration.",
+      "Playback sampled; continuous frame-accurate live loop review remains limited."
+    ]
+  },
+  {
+    "id": "avalanche-colossus",
+    "name": "Avalanche Colossus",
+    "sourceApproval": {
+      "status": "Approved",
+      "at": "2026-10-13T04:35:29.547Z",
+      "evidenceId": "fdd2dbac-29c7-4e35-9049-5a178f074a09",
+      "paths": [
+        "C:\\Users\\wilsh\\Projects\\runelord\\assets\\approvals\\inbox\\avalanche-colossus\\ice-roster-r2\\base.png"
+      ]
+    },
+    "sourceSha256": "c4c6ae8b6243ff2f2631cd84632dd4b0c45c8178704f75b2fbc2293f9f12b4d9",
+    "package": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\characters\\avalanche-colossus\\animations\\idle-2026-10-13",
+    "manifest": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\characters\\avalanche-colossus\\animations\\idle-2026-10-13\\manifest.json",
+    "previewSha256": "acf19ecbea760f118cbdd6d52ecb2e0c2230a3fc16b8bd286544c754e5c14546",
+    "galleryUrl": "http://localhost:4317/asset/f6765ff046b3bf0684cae1a9",
+    "authoredPoseCount": 4,
+    "exportedFrameCount": 4,
+    "gifSteps": 6,
+    "durationMs": 2400,
+    "loop": true,
+    "frames": [
+      {
+        "file": "assets\\characters\\avalanche-colossus\\animations\\idle-2026-10-13\\idle-00.png",
+        "sha256": "f9c4b67968bce5f93a88f5e55a676571c8d7e54b9b4e315ef98a93fb2841dede",
+        "canvas": [
+          768,
+          704
+        ]
+      },
+      {
+        "file": "assets\\characters\\avalanche-colossus\\animations\\idle-2026-10-13\\idle-01.png",
+        "sha256": "58727ea0f55b5842fdab53d4aeaa4a7d43c44b5fe1cceac551c613e301868c71",
+        "canvas": [
+          768,
+          704
+        ]
+      },
+      {
+        "file": "assets\\characters\\avalanche-colossus\\animations\\idle-2026-10-13\\idle-02.png",
+        "sha256": "ec424c5a9e0434a6020954135e587284029fbdde8d9b47b2af77ac7ab53bd73b",
+        "canvas": [
+          768,
+          704
+        ]
+      },
+      {
+        "file": "assets\\characters\\avalanche-colossus\\animations\\idle-2026-10-13\\idle-03.png",
+        "sha256": "be374ac6d69a777142bb52f358a40d31a65ca4d5630fa68f7899ad24058fa3d0",
+        "canvas": [
+          768,
+          704
+        ]
+      }
+    ],
+    "status": "idle_candidate_pending_user_review",
+    "limitations": [
+      "Minor generated contour/detail variation; review before integration.",
+      "Idle only; no attack, hit, wounded idle, death or game integration.",
+      "Playback sampled; continuous frame-accurate live loop review remains limited."
+    ]
+  },
+  {
+    "id": "abomination-rime-hauler",
+    "name": "Rime Hauler",
+    "sourceApproval": {
+      "status": "Approved",
+      "at": "2026-10-13T04:34:47.406Z",
+      "evidenceId": "f5381e45-023f-4d01-ae7a-5d9d07f945d1",
+      "paths": [
+        "C:\\Users\\wilsh\\Projects\\runelord\\assets\\approvals\\inbox\\abomination-rime-hauler\\concept-r1\\abomination-rime-hauler-concept-r1.png"
+      ]
+    },
+    "sourceSha256": "405909560042c7e5ffbe43597440c8b9f3a1fcd8f1f751fa196943aaaf1321f6",
+    "package": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\characters\\abomination-rime-hauler\\animations\\idle-2026-10-13",
+    "manifest": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\characters\\abomination-rime-hauler\\animations\\idle-2026-10-13\\manifest.json",
+    "previewSha256": "f220efabd7cb61e1767a75a75feb764378dba675d1d0d0e404c8d188d85e9c98",
+    "galleryUrl": "http://localhost:4317/asset/956b63ef8d7647036634f3a4",
+    "authoredPoseCount": 4,
+    "exportedFrameCount": 4,
+    "gifSteps": 6,
+    "durationMs": 2100,
+    "loop": true,
+    "frames": [
+      {
+        "file": "assets\\characters\\abomination-rime-hauler\\animations\\idle-2026-10-13\\idle-00.png",
+        "sha256": "23d0e246f1996a5e945f98c4afc17cdb145a60e5679a07564a2febb7b52eebdb",
+        "canvas": [
+          768,
+          704
+        ]
+      },
+      {
+        "file": "assets\\characters\\abomination-rime-hauler\\animations\\idle-2026-10-13\\idle-01.png",
+        "sha256": "1439ccefd0de200f6c8775aea3443a2396ff4405f02a072a2f21af6628ab9159",
+        "canvas": [
+          768,
+          704
+        ]
+      },
+      {
+        "file": "assets\\characters\\abomination-rime-hauler\\animations\\idle-2026-10-13\\idle-02.png",
+        "sha256": "2e041993054a3c5cb0bb340328346d154b0fbc812bf186642d3b01c4b534f15b",
+        "canvas": [
+          768,
+          704
+        ]
+      },
+      {
+        "file": "assets\\characters\\abomination-rime-hauler\\animations\\idle-2026-10-13\\idle-03.png",
+        "sha256": "d012cb9d26aa159a078612dc950bfc2c0e15a4be23a4fd00f750ffbc92586672",
+        "canvas": [
+          768,
+          704
+        ]
+      }
+    ],
+    "status": "idle_candidate_pending_user_review",
+    "limitations": [
+      "Minor generated contour/detail variation; review before integration.",
+      "Idle only; no attack, hit, wounded idle, death or game integration.",
+      "Playback sampled; continuous frame-accurate live loop review remains limited."
+    ]
+  }
+]

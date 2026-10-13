@@ -1,0 +1,14 @@
+{
+  "reviewer": "root, independent of ice_grounded builder",
+  "status": "candidate_review_pass_with_limitations",
+  "assets": ["shardstep-skitterer", "coffinback-bastion", "shardlance-stalker", "iceclamp-bombardier"],
+  "observations": [
+    "Inspected light-background large and small key poses for all four.",
+    "Coffinback eight-pose atlas compared to approved master: coffin crest, lock, paired shields and limb count preserved; no visible clipping.",
+    "Coffinback and Stalker GIFs opened in gallery browser. Screenshot samples repeated a pose, so continuous timing/seam verification is not claimed.",
+    "Stalker tabard diamond-count concern checked by builder on all eight frames: two diamond motifs remain; adjacent hanging pendant is separate. Modest shape drift remains.",
+    "Export dimensions, transparent alpha, files and GIF timing validated in batch-report.json. Coffinback maximum alpha is 254 rather than 255; preserved as authored.",
+    "Generated contour and facet variance remains; new animations need visual review."
+  ],
+  "limitations": ["Not integrated or game-tested.", "Continuous real-time playback audit incomplete; playable assets and step-through review provided."]
+}

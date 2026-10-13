@@ -1,0 +1,8 @@
+{
+  "stage": "base",
+  "revision": "base-r1",
+  "sha256": "5aadb4f1e1a9e7a83eea286d683a2e9535959c172a9d9b213c32c6857e17a9b2",
+  "evidenceId": "b401059a-7e1d-4c60-bf61-59d15b1476f1",
+  "at": "2026-10-02T04:57:53.469Z",
+  "user_text": "User explicitly approved all 20 concepts in this chat and requested: approve all of them and animate them with hd-animate-fantasy-character. Scope: animate the 20 approved base designs directly; no unrequested variant generation."
+}

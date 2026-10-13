@@ -1,0 +1,85 @@
+{
+  "character_id": "gallows-orchard",
+  "display_name": "Gallows Orchard",
+  "status": "base_pending",
+  "revision": "base-r1",
+  "asset": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\concepts\\novel-20-2026-10-02\\gallows-orchard\\base-r1.png",
+  "sha256": "95454a08693db0d8800a808092d119b674b387a60c42a044788a94144d8c42df",
+  "dimensions": [
+    1254,
+    1254
+  ],
+  "alpha": {
+    "extrema": [
+      0,
+      255
+    ],
+    "transparent_pixels": 835462,
+    "verified_on_light_and_dark": true
+  },
+  "role": "Botanical seed bombardier; normal enemy",
+  "size_class": "large",
+  "signature_action_proposed": "Boughs flex back and lob one seed pod at random_ally; pods regrow between attacks.",
+  "novelty": "Horizontal walking orchard with a three-pod artillery crown; no humanoid tree body.",
+  "style_references": [
+    {
+      "path": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\heroes\\references\\ranger\\ranger-base-r1.png",
+      "sha256": "9cd6ae4be65920528b211c20d2a1c12f68183b6bb6bb9ca6095b2ea23eb76912",
+      "decision": {
+        "status": "Approved",
+        "at": "2026-10-02T03:44:25.533Z",
+        "evidenceId": "user-chat-2026-10-01-approve-existing-runelord",
+        "paths": [
+          "C:\\Users\\wilsh\\Projects\\runelord\\assets\\heroes\\references\\ranger\\ranger-base-r1.png"
+        ]
+      },
+      "purpose": "style only"
+    },
+    {
+      "path": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\characters\\goblin-raider\\goblin-base-b1.png",
+      "sha256": "b038cdc7f0761f797b631454d2ce67d93843fa5350d79731dbfeca0a559a91bf",
+      "decision": {
+        "status": "Approved",
+        "at": "2026-10-02T03:44:25.533Z",
+        "evidenceId": "user-chat-2026-10-01-approve-existing-runelord",
+        "paths": [
+          "C:\\Users\\wilsh\\Documents\\Codex\\2026-10-01\\r\\work\\runelord\\assets\\characters\\goblin-raider\\goblin-base-b1.png"
+        ]
+      },
+      "purpose": "style only"
+    }
+  ],
+  "construction": {
+    "status": "proposed only; flattened raster, no separated layers or rig",
+    "rig_family": "root quadruped",
+    "parts": "Horizontal trunk root, four leg branches, three flexible boughs with separate seed pod attachments."
+  },
+  "required_states_proposed": [
+    "idle",
+    "attack",
+    "hit",
+    "wounded_idle",
+    "die"
+  ],
+  "conditional_states": {
+    "cast": "support release for Pleatcap; optional otherwise",
+    "guard": "required Siltglass; optional otherwise",
+    "spawn": "required Saltwake levitation entry; optional otherwise",
+    "victory": "not required for enemy concept",
+    "raised": "not applicable; botanical/fungal/mineral proposal excludes conventional corpses",
+    "tamed": "not applicable; not normal beasts"
+  },
+  "gameplay_status": "Concept proposal only, not implemented or balanced",
+  "qa": {
+    "full_size": "inspected",
+    "light_dark": "passed",
+    "small_scale": "96px character-height inspection passed on light and dark backgrounds"
+  },
+  "limitations": [
+    "Root feet have tight frame margins; motion canvas must expand.",
+    "No variants, animation, rig, or game integration created.",
+    "New artwork is pending explicit user approval."
+  ],
+  "generation_mode": "builtin image_gen",
+  "generation_prompt": "Use case: stylized-concept. ONE original Runelord character base: Gallows Orchard, a living hostile orchard plant. Full body compact wide silhouette of an UPSIDE-DOWN bare tree: four separated thick arching woody ROOT LEGS supporting a horizontal trunk, above which three blunt upward boughs each carry ONE large rust-red seedpod. One angular knothole sensory opening on left end of horizontal trunk indicates facing left. No humanoid body/head/arms, no skull, no hanging people, no weapon, no leaves clutter. Neutral stable combat stance, shallow three-quarter game view. Clearly a botanical seed bombardier, broad muted bark brown and ochre regions, rust-red pods. Supplied Runelord artworks are STYLE ONLY, no copied identity. Serious tough exaggerated simplified 2D shapes, broad clean color shapes, crisp edges hard-edged cel shadows, restrained flat highlights, few bold chips. Keep quiet surfaces, no photorealism, no painterly texture/gradients, no 3D/PBR, no dense grunge, no cute face. Whole silhouette in frame with generous margins, genuinely transparent background, no text, no scenery, at least 1024 long edge."
+}

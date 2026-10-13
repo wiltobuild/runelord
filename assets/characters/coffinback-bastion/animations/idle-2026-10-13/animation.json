@@ -1,0 +1,364 @@
+{
+  "character_id": "coffinback-bastion",
+  "revision": "idle-2026-10-13",
+  "state": "idle",
+  "format": "whole-character-authored-frames",
+  "motion": "Heavy mechanical shoulder and knee settling",
+  "loop": true,
+  "duration_ms": 1840,
+  "frame_count": 8,
+  "canvas": [
+    512,
+    596
+  ],
+  "anchor": [
+    256,
+    554
+  ],
+  "coordinate_system": "pixels, top-left origin, x right, y down",
+  "atlas": "idle-atlas.png",
+  "frames": [
+    {
+      "file": "frames/idle-00.png",
+      "duration_ms": 230,
+      "source_rect": [
+        0,
+        0,
+        386,
+        512
+      ],
+      "source_offset": [
+        63,
+        77
+      ],
+      "atlas_rect": [
+        0,
+        0,
+        512,
+        596
+      ]
+    },
+    {
+      "file": "frames/idle-01.png",
+      "duration_ms": 230,
+      "source_rect": [
+        386,
+        0,
+        771,
+        512
+      ],
+      "source_offset": [
+        63,
+        77
+      ],
+      "atlas_rect": [
+        512,
+        0,
+        512,
+        596
+      ]
+    },
+    {
+      "file": "frames/idle-02.png",
+      "duration_ms": 230,
+      "source_rect": [
+        771,
+        0,
+        1157,
+        512
+      ],
+      "source_offset": [
+        63,
+        77
+      ],
+      "atlas_rect": [
+        1024,
+        0,
+        512,
+        596
+      ]
+    },
+    {
+      "file": "frames/idle-03.png",
+      "duration_ms": 230,
+      "source_rect": [
+        1157,
+        0,
+        1536,
+        512
+      ],
+      "source_offset": [
+        66,
+        77
+      ],
+      "atlas_rect": [
+        1536,
+        0,
+        512,
+        596
+      ]
+    },
+    {
+      "file": "frames/idle-04.png",
+      "duration_ms": 230,
+      "source_rect": [
+        0,
+        512,
+        386,
+        1024
+      ],
+      "source_offset": [
+        63,
+        80
+      ],
+      "atlas_rect": [
+        0,
+        596,
+        512,
+        596
+      ]
+    },
+    {
+      "file": "frames/idle-05.png",
+      "duration_ms": 230,
+      "source_rect": [
+        386,
+        512,
+        771,
+        1024
+      ],
+      "source_offset": [
+        63,
+        80
+      ],
+      "atlas_rect": [
+        512,
+        596,
+        512,
+        596
+      ]
+    },
+    {
+      "file": "frames/idle-06.png",
+      "duration_ms": 230,
+      "source_rect": [
+        771,
+        512,
+        1157,
+        1024
+      ],
+      "source_offset": [
+        63,
+        80
+      ],
+      "atlas_rect": [
+        1024,
+        596,
+        512,
+        596
+      ]
+    },
+    {
+      "file": "frames/idle-07.png",
+      "duration_ms": 230,
+      "source_rect": [
+        1157,
+        512,
+        1536,
+        1024
+      ],
+      "source_offset": [
+        66,
+        80
+      ],
+      "atlas_rect": [
+        1536,
+        596,
+        512,
+        596
+      ]
+    }
+  ],
+  "events": [],
+  "transition": "loops to idle frame 0",
+  "source_approval": {
+    "id": "coffinback-bastion",
+    "name": "Coffinback Bastion",
+    "path": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\approvals\\inbox\\coffinback-bastion\\ice-roster-r1\\master.png",
+    "sha256": "710d95eda75e9eb6ef79ba80dd281bc3aee11e17f71cd10de32fe67d3b5f2c3c",
+    "decision": {
+      "status": "Approved",
+      "at": "2026-10-13T05:07:03.058Z",
+      "evidenceId": "f5b7fc14-ef50-460e-ab06-3818d18a76a3",
+      "paths": [
+        "C:\\Users\\wilsh\\Projects\\runelord\\assets\\approvals\\inbox\\coffinback-bastion\\ice-roster-r1\\master.png"
+      ]
+    }
+  },
+  "generation": {
+    "tool": "built-in image_gen",
+    "prompt": "Use case: identity-preserve. Approved Coffinback Bastion reference is exact identity and style. Make eight sequential restrained idle animation frames in a 4 column x 2 row spritesheet on true transparent alpha. 1536x1024. Equal cells, full body inside each cell with generous padding. Same scale, 3/4 camera, same grounded foot positions. Preserve enormous dark coffin-shaped torso shield and central cyan diamond, ring lock and bands, chunky ivory stone limbs, cyan crystal joints, two elongated shield forearms, two broad planted feet. Slow heavy mechanical breathing/settling: knees bend very slightly, shoulders and elbows settle fractionally, fists tighten, coffin torso remains rigid. Cycle rises then lowers smoothly and frame8 returns close to frame1. Render all eight poses with minimal shape differences and no redesign, no added face. Serious Runelord cel-shaded 2D broad hard-edged regions, stable simple materials. No text, frame borders, effects, fog, aura, shadows or scenery. Eight complete standalone cutouts on transparent alpha.",
+    "source_sheet": "source-sheet.png",
+    "source_sheet_dimensions": [
+      1536,
+      1024
+    ]
+  },
+  "states_not_produced": [
+    "attack",
+    "hit",
+    "wounded_idle",
+    "die",
+    "cast",
+    "guard",
+    "spawn",
+    "victory"
+  ],
+  "review_status": "pending approval",
+  "technical_qa": [
+    {
+      "frame": 0,
+      "alpha_extrema": [
+        0,
+        254
+      ],
+      "strong_bounds": [
+        8,
+        42,
+        383,
+        477
+      ],
+      "strong_touches_cell_edge": false
+    },
+    {
+      "frame": 1,
+      "alpha_extrema": [
+        0,
+        254
+      ],
+      "strong_bounds": [
+        3,
+        37,
+        380,
+        477
+      ],
+      "strong_touches_cell_edge": false
+    },
+    {
+      "frame": 2,
+      "alpha_extrema": [
+        0,
+        254
+      ],
+      "strong_bounds": [
+        2,
+        24,
+        381,
+        477
+      ],
+      "strong_touches_cell_edge": false
+    },
+    {
+      "frame": 3,
+      "alpha_extrema": [
+        0,
+        254
+      ],
+      "strong_bounds": [
+        0,
+        42,
+        375,
+        477
+      ],
+      "strong_touches_cell_edge": true
+    },
+    {
+      "frame": 4,
+      "alpha_extrema": [
+        0,
+        254
+      ],
+      "strong_bounds": [
+        8,
+        30,
+        384,
+        474
+      ],
+      "strong_touches_cell_edge": false
+    },
+    {
+      "frame": 5,
+      "alpha_extrema": [
+        0,
+        254
+      ],
+      "strong_bounds": [
+        2,
+        41,
+        382,
+        474
+      ],
+      "strong_touches_cell_edge": false
+    },
+    {
+      "frame": 6,
+      "alpha_extrema": [
+        0,
+        254
+      ],
+      "strong_bounds": [
+        2,
+        30,
+        381,
+        474
+      ],
+      "strong_touches_cell_edge": false
+    },
+    {
+      "frame": 7,
+      "alpha_extrema": [
+        0,
+        254
+      ],
+      "strong_bounds": [
+        1,
+        29,
+        377,
+        474
+      ],
+      "strong_touches_cell_edge": false
+    }
+  ],
+  "limitations": [
+    "Generated whole-character frames; modest pose and surface variation requires user review.",
+    "No game integration or combat states."
+  ],
+  "preview_files": [
+    "preview-dark.gif",
+    "preview-light.gif"
+  ],
+  "authored_pose_count": 8,
+  "preview_hashes": {
+    "preview-dark.gif": "5774e7a8c9c2d97486b4168308ffee5e6ff5659439b007b3a0072d1689211e81",
+    "preview-light.gif": "5ff15872981fbe037a187004b374cf3efc5f72c4034e36b8fbb2f0b46d0bfd7a"
+  },
+  "builder_review": {
+    "dark_playback": "Actual gallery GIF sampled in browser at different times; complete silhouettes and readable 96px small versions.",
+    "light_review": "Full-size and 96px keypose reviewed; light GIF created and decoded but continuous playback not fully observed.",
+    "remaining": "Independent review pending; minor generated pose/surface variance. Coffinback frame 3 source boundary alpha flag retained for reviewer."
+  },
+  "gif_verification": [
+    {
+      "file": "preview-dark.gif",
+      "decoded_frames": 8,
+      "duration_ms": 1840,
+      "loop": 0
+    },
+    {
+      "file": "preview-light.gif",
+      "decoded_frames": 8,
+      "duration_ms": 1840,
+      "loop": 0
+    }
+  ]
+}

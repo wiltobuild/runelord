@@ -1,0 +1,9 @@
+Animate EXACT Cairnwheel Witness supplied image1; image2 style only. Transparent sprite sheet FOUR COLUMNS and SIX ROWS, 24 complete distinct sprites, NO text/grid. Fixed scale/camera/floor baseline in equal cells, 15% transparent margin each cell. Preserve thick upright hollow stone ring, large open void, stern small stone mask held by TWO brown straps, two short balancing arms/palms, grey stone, gold two rune marks, moss patches, teal eyes. NO legs/body.
+Rows sequential left-to-right:
+1 IDLE ring grounded, mask subtly turns and arms bend, neutral, arms slightly lower.
+2 ATTACK arms draw back/mask braces, ring tips winding up, ring rolls quarter-turn toward LEFT with arms extending LEFT and mask staying upright on flexed straps, ring returns upright neutral. Ring runes turn with ring, mask independent.
+3 HIT neutral, mask recoils back and ring tilts with arms flared, ring rocks forward with arms lowered, neutral.
+4 WOUNDED IDLE ring leaning and mask hanging low on slack straps, slight mask sway, hanging low, subtle arm tremble; clearly wounded throughout.
+5 DIE ring cracks across bottom with mask dropping, ring falls sideways and arms collapse, broken ring pieces flat on ground with detached mask, settled dead ring and mask with teal eyes extinguished.
+6 SPAWN broken-looking inert ring lying angled with mask down, ring rises halfway as arms brace, mask straightens on taut straps, intact neutral stance.
+Real articulated motion, not translated static image. Keep identity and hard-edged simplified 2D cel shaded color regions. No realistic texture, backgrounds or ground shadows.

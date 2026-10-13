@@ -1,0 +1,80 @@
+{
+  "character_id": "hoarveil-crone",
+  "display_name": "Hoarveil Crone",
+  "role": "curse support",
+  "revision": "ice-roster-r1",
+  "status": "base_pending",
+  "generator": "built-in image_gen",
+  "asset": "master.png",
+  "sha256": "1532f314acfa76844cfe1272fb92e319c78d3285f519bdfb0616a0e56098a06c",
+  "dimensions": {
+    "width": 1145,
+    "height": 1374
+  },
+  "alpha": {
+    "hasAlpha": true,
+    "transparentPixels": 866771,
+    "partialPixels": 704127,
+    "visibleBounds": [
+      88,
+      208,
+      1115,
+      1306
+    ]
+  },
+  "style_references": [
+    {
+      "path": "assets/heroes/references/runeblade/runeblade-base-r1.png",
+      "sha256": "adbd33fb14e91b761f355ffeb9966cb262aacca78429099ec09b0fab9faf84ef",
+      "decision": {
+        "status": "Approved",
+        "at": "2026-10-02T03:44:25.533Z",
+        "evidenceId": "user-chat-2026-10-01-approve-existing-runelord",
+        "paths": [
+          "C:\\Users\\wilsh\\Projects\\runelord\\assets\\heroes\\references\\runeblade\\runeblade-base-r1.png"
+        ]
+      }
+    },
+    {
+      "path": "assets/characters/runeblade-base-summons/selected-r1/rime-seer/master.png",
+      "sha256": "ee7a6e63d64486e6b85159a04bb981f41c1ef51fb6d93eed01bc9c16117275c9",
+      "decision": {
+        "status": "Approved",
+        "at": "2026-10-05T10:56:14.695Z",
+        "evidenceId": "e0d1dda9-6d98-47cc-b49a-4d766faf5063",
+        "paths": [
+          "C:/Users/wilsh/Projects/runelord/assets/characters/runeblade-base-summons/selected-r1/rime-seer/master.png"
+        ]
+      }
+    }
+  ],
+  "prompt": "Use case: stylized-concept. Generate ONE original full-body Runelord enemy base sprite on genuine transparent background. Supplied images are STYLE references ONLY, not identities to copy. Use supplied approved Runelord artwork as reference for simplified 2D shapes and cel-shaded rendering. Serious tough stylized silhouette, muted cold colors, broad clean color shapes, crisp edges, one hard-edged shadow and restrained flat highlight per material. Favor reference 1's simplicity. No black outlines. Keep surfaces quiet, only a few bold signs of wear. NOT realistic anatomy, painterly fantasy rendering, dense grunge, glossy/PBR/3D lighting, cute expressions. Shallow three-quarter side game view FACING LEFT, neutral readable combat stance, complete silhouette centered with generous transparent padding, no floor/background/text/border. Subject: Hoarveil Crone: bent ancient living frost hag, curse-support enemy, very pronounced hooked nose and narrowed eyes visible in left profile beneath a heavy torn blue-gray cowl, broad humpback, thin clawed hands, short bowed legs and visible bare frost-dark feet. One hand leans on simple crooked black ice cane, other presents a large knotted curse charm. Single heavy ragged robe with large quiet folds, two trailing cloth ends, icy pale blue skin. No antlers, no horns, no skull face, no floating crystal staff, no witch hat. Low crooked triangular silhouette, threatening purposeful expression, distinct from upright skeletal sorcerer reference.",
+  "repair_prompt": null,
+  "construction": {
+    "status": "proposed only; flattened raster, no separated parts or rig",
+    "family": "humanoid",
+    "parts": [
+      "hunched torso",
+      "head and cowl",
+      "paired arms",
+      "hands",
+      "cane",
+      "curse charm",
+      "robe panels",
+      "feet"
+    ]
+  },
+  "qa": {
+    "builder": "ice_monster_artist",
+    "fullSize": "inspected",
+    "smallScale": "review-96.png produced for explicit review",
+    "observations": "Pronounced hooked-nose hag identity, no antlers, bent asymmetric pose and distinct hand props. Fine robe tears should be consolidated for small animation.",
+    "independentReview": "pending"
+  },
+  "limitations": [
+    "New design awaits user gallery approval.",
+    "No variants, animations or runtime integration produced.",
+    "Motion bounds and joint pivots need future animation production."
+  ],
+  "source": "C:/Users/wilsh/.codex/generated_images/01a1327a-7080-7cb3-806e-ca61fbb25fc1/exec-a087c8ad-f1f4-4a1a-b20e-1429967a5a4f.png"
+}

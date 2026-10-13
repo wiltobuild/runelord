@@ -1,0 +1,153 @@
+{
+  "reviewer": "encounter_designer",
+  "independence": "Reviewer did not generate any of the 13 target assets. Own three bases excluded from independent acceptance.",
+  "sourceRevision": "03338e4da39bbaf1f48651557e45f71f455a291a",
+  "status": "complete: 13 independent design reviews; future animation padding/preparation remain",
+  "method": "Direct view_image inspection at full-size plus rendered96 thumbnails. Bear/swarm alpha additionally verified on explicit light/dark composites.",
+  "scope": "Artwork role distinction, silhouette and style. Does not certify animation, layers, technical alpha readiness, balance or gameplay integration; does not grant user approval.",
+  "generalFindings": [
+    "Cold palette cohesive; anatomy/equipment communicates varied encounter archetypes.",
+    "Several masters need motion-safe padding. Explicit light/dark compositing confirms bear and swarm clean alpha; initial raw viewer haze was hidden RGB, not visible alpha.",
+    "Colossus increased snow/ice texture is intentional per user direction relayed by producer."
+  ],
+  "entries": [
+    {
+      "id": "shardlance-stalker",
+      "verdict": "design-readable-with-padding-defect",
+      "notes": [
+        "Gaunt spear silhouette and narrow mask distinguish it from royal sovereign and bent crone.",
+        "Broad cel materials consistent at full size; spear/icy head remain readable at96.",
+        "Spear point reaches left canvas edge and shaft tail approaches right edge; motion export needs extra canvas padding."
+      ],
+      "path": "assets/characters/shardlance-stalker/base/ice-roster-r1/master.png",
+      "sha256": "872f31b1f3e2acfa16a6e330d32b5ef7dc1662816a73ea4f718e5769ea8028a4"
+    },
+    {
+      "id": "hoarveil-crone",
+      "verdict": "design-readable",
+      "notes": [
+        "Hunched robed silhouette, crooked nose, staff and hanging charm clearly identify curse support.",
+        "Serious palette and graphic cloth match references; at96 facial detail reduces but posture remains identifiable."
+      ],
+      "path": "assets/characters/hoarveil-crone/base/ice-roster-r1/master.png",
+      "sha256": "1532f314acfa76844cfe1272fb92e319c78d3285f519bdfb0616a0e56098a06c"
+    },
+    {
+      "id": "iceclamp-bombardier",
+      "verdict": "design-readable",
+      "notes": [
+        "Large upward mortar and paired pincers unmistakably communicate artillery.",
+        "Compact body and graphic shell align with reference family; silhouette legibility strong at96.",
+        "Mortar currently points upper right although head faces left; animation aiming must be established."
+      ],
+      "path": "assets/characters/iceclamp-bombardier/base/ice-roster-r1/master.png",
+      "sha256": "b2f5f6f96b6e56bc4587daea8708c9925392180baf43c79545bf0f9feab7959c"
+    },
+    {
+      "id": "paleveil-moth",
+      "verdict": "design-readable-with-padding-defect",
+      "notes": [
+        "Four broad moonmarked wings give a distinctive light support silhouette; very readable at96.",
+        "Cel planes and quiet wing interiors fit style.",
+        "Upper right wing approaches canvas edge; needs safe animation padding."
+      ],
+      "path": "assets/characters/paleveil-moth/base/ice-roster-r1/master.png",
+      "sha256": "77687e08082bcc770ad2a50514c6129bac288459ef89e31ce486e0107ea4a51e"
+    },
+    {
+      "id": "avalanche-colossus",
+      "revision": "ice-roster-r2",
+      "filename": "base.png",
+      "verdict": "design-readable-intentional-texture-variation",
+      "notes": [
+        "Knuckle-walking gorilla anatomy distinct from bear, mammoth and royal humanoid; strong96 silhouette.",
+        "Full-size snow and ice use denser textured treatment than flat refs; producer relayed user explicitly requested increased texture after simple r1, so intentional style variation, not an unmet requirement.",
+        "Large hands and feet have limited lower margins; no animation/motion validation."
+      ],
+      "path": "assets/characters/avalanche-colossus/base/ice-roster-r2/base.png",
+      "sha256": "c4c6ae8b6243ff2f2631cd84632dd4b0c45c8178704f75b2fbc2293f9f12b4d9"
+    },
+    {
+      "id": "mireice-gulper",
+      "verdict": "design-readable",
+      "notes": [
+        "Wide low toad bruiser has huge jaw silhouette distinct from all other quadrupeds.",
+        "Broad hard cel planes and clean cold palette; readable at96."
+      ],
+      "path": "assets/characters/mireice-gulper/base/ice-roster-r1/master.png",
+      "sha256": "bb3a97d559ce02ea14e6b0a95e68398033d882b56b5f12bbfc58e496d5d8cdee"
+    },
+    {
+      "id": "coffinback-bastion",
+      "verdict": "design-readable",
+      "notes": [
+        "Faceless coffin torso plus paired shield arms communicates defender at96.",
+        "Clearly a construct instead of armored royal humanoid; broad quiet materials."
+      ],
+      "path": "assets/characters/coffinback-bastion/base/ice-roster-r1/master.png",
+      "sha256": "710d95eda75e9eb6ef79ba80dd281bc3aee11e17f71cd10de32fe67d3b5f2c3c"
+    },
+    {
+      "id": "knellbound-mourner",
+      "verdict": "design-readable",
+      "notes": [
+        "Large back bell and stooped two-arm anatomy make support role distinct.",
+        "Warm brass bell is a useful controlled contrast to ice-blue roster; no visual duplication of three-arm Rime Hauler."
+      ],
+      "path": "assets/characters/knellbound-mourner/base/ice-roster-r1/master.png",
+      "sha256": "249f534fd13106445893a983f1ec0d6b28146a345b53ddc491170609b2b94435"
+    },
+    {
+      "id": "rimehook-dredger",
+      "verdict": "design-readable",
+      "notes": [
+        "Two-arm drowned humanoid carrying one low hook; no bell and no grafted arm, distinct from Rime Hauler.",
+        "Neutral silhouette clear at96 though hook action and targeting remain future gameplay work."
+      ],
+      "path": "assets/characters/rimehook-dredger/base/ice-roster-r1/master.png",
+      "sha256": "26ca6785cca4ede9620476e942265d41da807560649944c26944621a325da22f"
+    },
+    {
+      "id": "hollowmask-oracle",
+      "verdict": "design-readable",
+      "notes": [
+        "Floating disembodied elongated mask and clawed hands read caster at96.",
+        "Some diamond decoration shared with frost palette but no duplicated body silhouette; no crown/royal armor."
+      ],
+      "path": "assets/characters/hollowmask-oracle/base/ice-roster-r1/master.png",
+      "sha256": "c24c1cdb0649065871068c1b975ccdb9e1a126edd716c18aa87f7e95ab5d5742"
+    },
+    {
+      "id": "rimeblight-colony",
+      "verdict": "design-readable",
+      "notes": [
+        "Three connected mushroom caps, rooted limbs and branchlike body strongly distinct.",
+        "Purple gill accent restrained; at96 large cap shape is legible."
+      ],
+      "path": "assets/characters/rimeblight-colony/base/ice-roster-r1/master.png",
+      "sha256": "45c983ee451e637b743fdb745bcfc619dbea0f7029c7aa97c6b7c4537ed093d7"
+    },
+    {
+      "id": "cairnfrost-ursine",
+      "verdict": "design-readable-alpha-clean",
+      "notes": [
+        "Heavy bear anatomy and pale pelt distinct from low canine and ape colossus; readable at96.",
+        "Broad fur shapes and ice plates consistent with cel family.",
+        "PASS: explicit qa-light.png and qa-dark.png show clean alpha. Raw viewer halo was hidden RGB artifact, not a source defect."
+      ],
+      "path": "assets/characters/cairnfrost-ursine/base/ice-roster-r1/master.png",
+      "sha256": "067b223d862e0c9bc147b101ffb6275007a7561f97aabe220745f9301b2b66d6"
+    },
+    {
+      "id": "splinterhost",
+      "verdict": "design-readable-alpha-clean",
+      "notes": [
+        "Three disembodied helm faces and armor swarm silhouette distinct from single mask oracle and ordinary humanoid.",
+        "Readable compact swarm at96, but individual parts will need separation for animation.",
+        "PASS: explicit qa-light.png and qa-dark.png show clean alpha. Raw viewer halo was hidden RGB artifact, not a source defect."
+      ],
+      "path": "assets/characters/splinterhost/base/ice-roster-r1/master.png",
+      "sha256": "3578258642e98ec3d3f344efcc9c653f51ff0981cfdfccb83063dc92d6d9ea81"
+    }
+  ]
+}

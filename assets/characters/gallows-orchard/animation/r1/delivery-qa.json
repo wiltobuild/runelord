@@ -1,0 +1,31 @@
+{
+  "character_id": "gallows-orchard",
+  "frame_count": 16,
+  "canvas": [
+    369,
+    362
+  ],
+  "states": [
+    "idle",
+    "attack",
+    "hit",
+    "wounded_idle",
+    "die"
+  ],
+  "transparent_frames_verified": true,
+  "death_loop": false,
+  "base_approval": "56e34aeb-ba0c-4af3-8d28-682a48432761",
+  "preview_sha256": "f6bba5e072092bd0aa2948ebbb75ac699ca70005aa6d9395516107649457f163",
+  "preview_gallery_id": "1bcac0a11243e4f4aba2fc0a",
+  "preview_approval": "Pending approval",
+  "playback": {
+    "method": "Headless Chrome timed playback captures at native canvas and small size; inspected captures",
+    "status": "verified at review level; low-frame cadence and identity-detail variation remain",
+    "evidence": "C:\\Users\\wilsh\\Documents\\Codex\\2026-10-02\\use\\work\\playback\\gallows-orchard\\playback-audit.json"
+  },
+  "limitations": [
+    "Generated frame animation with sparse key poses; no rig or in-between interpolation.",
+    "Minor changing contour/texture details remain; review prior to integration."
+  ],
+  "delivery_level": "Articulated frame animation review pack; not certified production-ready"
+}

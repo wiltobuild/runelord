@@ -1,0 +1,294 @@
+{
+  "date": "2026-10-13",
+  "count": 20,
+  "newCount": 16,
+  "retainedCount": 4,
+  "entries": [
+    {
+      "id": "frost-sovereign",
+      "name": "Frost Sovereign",
+      "role": "boss / concept selection pending",
+      "path": "C:/Users/wilsh/Projects/runelord/assets/approvals/inbox/frost-sovereign/2026-10-12-frost-d1/frost-d1.png",
+      "origin": "existing",
+      "note": "Representative Sepulcher King only; six sovereign concepts count as one slot, selection pending.",
+      "sha256": "f4df3394b302381613d00a126a38f22953b147c84da3f367f41ca33c75c6cf3c",
+      "approval": "Pending approval",
+      "dimensions": [
+        1024,
+        1536
+      ]
+    },
+    {
+      "id": "dragon-frost-mammoth",
+      "name": "Frost Mammoth",
+      "role": "heavy tusked beast",
+      "path": "C:/Users/wilsh/Projects/runelord/assets/approvals/inbox/dragon-frost-mammoth/base-r1/base-r1.png",
+      "origin": "existing",
+      "note": "Existing dragon family design retained.",
+      "sha256": "3730fd449dda0734e012f6fa91fb10244b2396421d93a3e2e6099780ba3378cd",
+      "approval": "Approved",
+      "dimensions": [
+        1374,
+        1145
+      ]
+    },
+    {
+      "id": "dragon-rime-antler",
+      "name": "Rime Antler",
+      "role": "antlered dragon",
+      "path": "C:/Users/wilsh/Projects/runelord/assets/approvals/inbox/dragon-rime-antler/base-r1/base-r1.png",
+      "origin": "existing",
+      "note": "Existing dragon family design retained.",
+      "sha256": "e4fab93af107e89c60c280c3621a72e9f8b50c143f54269a853650e817dceed0",
+      "approval": "Approved",
+      "dimensions": [
+        1254,
+        1254
+      ]
+    },
+    {
+      "id": "abomination-rime-hauler",
+      "name": "Rime Hauler",
+      "role": "abomination / hauler",
+      "path": "C:/Users/wilsh/Projects/runelord/assets/approvals/inbox/abomination-rime-hauler/concept-r1/abomination-rime-hauler-concept-r1.png",
+      "origin": "existing",
+      "note": "Legacy allied-context concept faces right; enemy-facing adaptation pending.",
+      "sha256": "405909560042c7e5ffbe43597440c8b9f3a1fcd8f1f751fa196943aaaf1321f6",
+      "approval": "Pending approval",
+      "dimensions": [
+        1145,
+        1374
+      ]
+    },
+    {
+      "id": "rimejaw-scavenger",
+      "name": "Rimejaw Scavenger",
+      "role": "pack pressure",
+      "path": "C:/Users/wilsh/Projects/runelord/assets/characters/rimejaw-scavenger/base/ice-roster-r1/base.png",
+      "origin": "new",
+      "note": "Base concept; pending user approval. See per-asset QA for framing and animation-preparation limitations.",
+      "sha256": "baefb70c5fdffb81b5bd144e02dac78406bd9b283ff48a777d5b21f8f92b3e7c",
+      "approval": "Pending approval",
+      "dimensions": [
+        1536,
+        1024
+      ]
+    },
+    {
+      "id": "shardstep-skitterer",
+      "name": "Shardstep Skitterer",
+      "role": "ambusher",
+      "path": "C:/Users/wilsh/Projects/runelord/assets/characters/shardstep-skitterer/base/ice-detail-r3-2026-10-13/master.png",
+      "origin": "new",
+      "note": "Balanced detail r3 using approved Colossus reference; previous revision retained.",
+      "sha256": "d5950651aaf94055837ef426b6bb843b99f8f6db2511381a164b258141a006f9",
+      "approval": "Pending approval",
+      "dimensions": [
+        1536,
+        1024
+      ]
+    },
+    {
+      "id": "whiteout-ray",
+      "name": "Whiteout Ray",
+      "role": "flying disruptor",
+      "path": "C:/Users/wilsh/Projects/runelord/assets/characters/whiteout-ray/base/ice-detail-r3-2026-10-13/master.png",
+      "origin": "new",
+      "note": "Balanced detail r3 using approved Colossus reference; previous revision retained.",
+      "sha256": "5152e444c28d83708e126978f96fc98f3ded16c2095bb1d95700bd221b9302de",
+      "approval": "Pending approval",
+      "dimensions": [
+        1536,
+        1024
+      ]
+    },
+    {
+      "id": "mireice-gulper",
+      "name": "Mireice Gulper",
+      "role": "bruiser",
+      "path": "C:/Users/wilsh/Projects/runelord/assets/characters/mireice-gulper/base/ice-roster-r1/master.png",
+      "origin": "new",
+      "note": "Base concept; pending user approval. See per-asset QA for framing and animation-preparation limitations.",
+      "sha256": "bb3a97d559ce02ea14e6b0a95e68398033d882b56b5f12bbfc58e496d5d8cdee",
+      "approval": "Pending approval",
+      "dimensions": [
+        1426,
+        1103
+      ]
+    },
+    {
+      "id": "coffinback-bastion",
+      "name": "Coffinback Bastion",
+      "role": "defender",
+      "path": "C:/Users/wilsh/Projects/runelord/assets/characters/coffinback-bastion/base/ice-roster-r1/master.png",
+      "origin": "new",
+      "note": "Base concept; pending user approval. See per-asset QA for framing and animation-preparation limitations.",
+      "sha256": "710d95eda75e9eb6ef79ba80dd281bc3aee11e17f71cd10de32fe67d3b5f2c3c",
+      "approval": "Pending approval",
+      "dimensions": [
+        1145,
+        1374
+      ]
+    },
+    {
+      "id": "knellbound-mourner",
+      "name": "Knellbound Mourner",
+      "role": "support",
+      "path": "C:/Users/wilsh/Projects/runelord/assets/characters/knellbound-mourner/base/ice-roster-r1/master.png",
+      "origin": "new",
+      "note": "Base concept; pending user approval. See per-asset QA for framing and animation-preparation limitations.",
+      "sha256": "249f534fd13106445893a983f1ec0d6b28146a345b53ddc491170609b2b94435",
+      "approval": "Pending approval",
+      "dimensions": [
+        1145,
+        1374
+      ]
+    },
+    {
+      "id": "rimehook-dredger",
+      "name": "Rimehook Dredger",
+      "role": "pull controller",
+      "path": "C:/Users/wilsh/Projects/runelord/assets/characters/rimehook-dredger/base/ice-roster-r1/master.png",
+      "origin": "new",
+      "note": "Base concept; pending user approval. See per-asset QA for framing and animation-preparation limitations.",
+      "sha256": "26ca6785cca4ede9620476e942265d41da807560649944c26944621a325da22f",
+      "approval": "Pending approval",
+      "dimensions": [
+        1145,
+        1374
+      ]
+    },
+    {
+      "id": "hollowmask-oracle",
+      "name": "Hollowmask Oracle",
+      "role": "caster",
+      "path": "C:/Users/wilsh/Projects/runelord/assets/characters/hollowmask-oracle/base/ice-detail-r3-2026-10-13/master.png",
+      "origin": "new",
+      "note": "Balanced detail r3 using approved Colossus reference; previous revision retained.",
+      "sha256": "355c50640ca591d98f372f8f71b49d3cac2de863a1d78e830ff7181e3ff4fc13",
+      "approval": "Pending approval",
+      "dimensions": [
+        1145,
+        1374
+      ]
+    },
+    {
+      "id": "rimeblight-colony",
+      "name": "Rimeblight Colony",
+      "role": "debuffer",
+      "path": "C:/Users/wilsh/Projects/runelord/assets/characters/rimeblight-colony/base/ice-roster-r1/master.png",
+      "origin": "new",
+      "note": "Base concept; pending user approval. See per-asset QA for framing and animation-preparation limitations.",
+      "sha256": "45c983ee451e637b743fdb745bcfc619dbea0f7029c7aa97c6b7c4537ed093d7",
+      "approval": "Pending approval",
+      "dimensions": [
+        1145,
+        1374
+      ]
+    },
+    {
+      "id": "shardlance-stalker",
+      "name": "Shardlance Stalker",
+      "role": "spear skirmisher",
+      "path": "C:/Users/wilsh/Projects/runelord/assets/characters/shardlance-stalker/base/ice-roster-r1/master.png",
+      "origin": "new",
+      "note": "Base concept; pending user approval. See per-asset QA for framing and animation-preparation limitations.",
+      "sha256": "872f31b1f3e2acfa16a6e330d32b5ef7dc1662816a73ea4f718e5769ea8028a4",
+      "approval": "Pending approval",
+      "dimensions": [
+        1145,
+        1374
+      ]
+    },
+    {
+      "id": "hoarveil-crone",
+      "name": "Hoarveil Crone",
+      "role": "curse support",
+      "path": "C:/Users/wilsh/Projects/runelord/assets/characters/hoarveil-crone/base/ice-roster-r1/master.png",
+      "origin": "new",
+      "note": "Base concept; pending user approval. See per-asset QA for framing and animation-preparation limitations.",
+      "sha256": "1532f314acfa76844cfe1272fb92e319c78d3285f519bdfb0616a0e56098a06c",
+      "approval": "Pending approval",
+      "dimensions": [
+        1145,
+        1374
+      ]
+    },
+    {
+      "id": "iceclamp-bombardier",
+      "name": "Iceclamp Bombardier",
+      "role": "artillery",
+      "path": "C:/Users/wilsh/Projects/runelord/assets/characters/iceclamp-bombardier/base/ice-detail-r3-2026-10-13/master.png",
+      "origin": "new",
+      "note": "Balanced detail r3 using approved Colossus reference; previous revision retained.",
+      "sha256": "f97ae98331880473bbad19b4f158eb612aa2ab78a16f2e0334966e9e3739f626",
+      "approval": "Pending approval",
+      "dimensions": [
+        1396,
+        1127
+      ]
+    },
+    {
+      "id": "paleveil-moth",
+      "name": "Paleveil Moth",
+      "role": "healer",
+      "path": "C:/Users/wilsh/Projects/runelord/assets/characters/paleveil-moth/base/ice-detail-r3-2026-10-13/master.png",
+      "origin": "new",
+      "note": "Balanced detail r3 using approved Colossus reference; previous revision retained.",
+      "sha256": "2746855d71ef905d8bac6ac5bee0a0e705d8763a8c59f31a0de09ee58a74e361",
+      "approval": "Pending approval",
+      "dimensions": [
+        1145,
+        1374
+      ]
+    },
+    {
+      "id": "cairnfrost-ursine",
+      "name": "Cairnfrost Ursine",
+      "role": "executioner elite",
+      "path": "C:/Users/wilsh/Projects/runelord/assets/characters/cairnfrost-ursine/base/ice-detail-r3-2026-10-13/master.png",
+      "origin": "new",
+      "note": "Balanced detail r3 using approved Colossus reference; previous revision retained.",
+      "sha256": "52ab1d0b4834a449bdbb2ec759163a1b4efe5cdf0ca439c5225874059e11abf1",
+      "approval": "Pending approval",
+      "dimensions": [
+        1536,
+        1024
+      ]
+    },
+    {
+      "id": "splinterhost",
+      "name": "Splinterhost",
+      "role": "armor swarm",
+      "path": "C:/Users/wilsh/Projects/runelord/assets/characters/splinterhost/base/ice-detail-r3-2026-10-13/master.png",
+      "origin": "new",
+      "note": "Balanced detail r3 using approved Colossus reference; previous revision retained.",
+      "sha256": "dbec3a5e26ecd16b8fbd5867003b09f09166d236b7ce248122f2b8cea8540060",
+      "approval": "Pending approval",
+      "dimensions": [
+        1536,
+        1024
+      ]
+    },
+    {
+      "id": "avalanche-colossus",
+      "name": "Avalanche Colossus",
+      "role": "slam brute",
+      "path": "C:/Users/wilsh/Projects/runelord/assets/characters/avalanche-colossus/base/ice-roster-r2/base.png",
+      "origin": "new",
+      "note": "Textured r2 follows direct user feedback; r1 preserved.",
+      "sha256": "c4c6ae8b6243ff2f2631cd84632dd4b0c45c8178704f75b2fbc2293f9f12b4d9",
+      "approval": "Pending approval",
+      "dimensions": [
+        1374,
+        1145
+      ]
+    }
+  ],
+  "limitations": [
+    "Sovereign final selection pending",
+    "Rime Hauler enemy-facing adaptation pending",
+    "Concept art only; no animation/runtime integration",
+    "Motion-safe padding and animation preparation remain"
+  ]
+}

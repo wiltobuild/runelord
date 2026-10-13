@@ -1,0 +1,194 @@
+{
+  "schema": 1,
+  "reviewer": "independent agent /root/idle_review",
+  "date": "2026-10-05",
+  "status": "pass_with_notes",
+  "scope": [
+    "boss idle",
+    "boss wounded_idle",
+    "root idle"
+  ],
+  "browserURL": "http://localhost:4328/preview.html",
+  "method": [
+    "Inspected source sheets, accepted proof-idle.png, and exported full-size PNGs.",
+    "Sampled actual playing browser canvas on light/dark backgrounds and boss 96px inset.",
+    "Sampled exported root idle GIF playing on simultaneous dark/light panels, including its small inset (approximately 52px character height).",
+    "Inspected manifests, alpha bounding boxes and opaque-pixel RGB means. Rechecked corrected exports after reload."
+  ],
+  "resolvedFindings": [
+    {
+      "id": "idle-registration",
+      "severity": "high",
+      "before": "Healthy frame0 was approximately24px left of remaining poses, affecting both feet and crown.",
+      "resolution": "Technical horizontal registration corrected; final bbox x values161,162,162,162. No whole-body hop observed on recheck."
+    },
+    {
+      "id": "wounded-transition-registration",
+      "severity": "medium",
+      "before": "Wounded idle was approximately60px left of healthy idle.",
+      "resolution": "Corrected low-body registration brings wounded bbox x164\u2013166 alongside healthy161\u2013162; sideways transition hop removed."
+    },
+    {
+      "id": "root-loop-sequence",
+      "severity": "medium",
+      "before": "Generic pingpong repeated right sway because four source poses already form a cycle.",
+      "resolution": "Sequence changed to0,1,2,3 and verified in final manifest."
+    }
+  ],
+  "checks": {
+    "grounding": "pass: all idle alpha bounds end at y510; no vertical floating; residual local foot/stone contours differ slightly.",
+    "lighting": "pass: no broad flicker observed; mean opaque RGB variation <=0.6/channel boss and <=1.9 root.",
+    "identity": "pass: crown prong pattern, facial mask, heart, leaf mantle remain recognizable against proof; local drawing contours vary.",
+    "loopSeams": "pass_with_notes: healthy and wounded pingpong reverse adjacent frames; root uses direct cyclic order. Four-pose motion remains visibly stepped at full scale.",
+    "articulation": "pass: arm/crown breathing and root neck lean occur relative to planted lower body.",
+    "smallScale": "boss readable at96px character height; root silhouette readable at approximately52px GIF inset; exact96px root view not independently tested.",
+    "transparency": "pass: suspected red fringe in raw viewer absent on actual composited dark/light preview and GIF."
+  },
+  "residualNotes": [
+    {
+      "priority": "low",
+      "finding": "Root stone/base and boss foot/foliage contours are not pixel-identical across authored frames.",
+      "impact": "Minor contour shimmer possible at full resolution; no major sliding observed after registration.",
+      "recommendation": "Optional future authoring pass if user demands pixel-stable idles; retain current requested artwork now."
+    },
+    {
+      "priority": "low",
+      "finding": "Wounded idle is subtly slumped with lower fists but visually close to healthy state.",
+      "impact": "State difference may be weak at96px.",
+      "recommendation": "Optional later stronger fatigue posture or heart dimming; not required to repair current loop."
+    }
+  ],
+  "limitations": [
+    "This is sampled visual playback plus source/frame inspection, not a continuous video motion measurement.",
+    "Non-idle states, VFX, gameplay integration and gallery approval are outside this review.",
+    "Technical QA is not design approval and does not certify perfect animation."
+  ],
+  "testedFiles": {
+    "boss": {
+      "path": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\characters\\forest-sovereign\\animations\\frames32-r1",
+      "manifestSHA256": "d62272a02a82cc30dc5184b60b8da1b13379ade733dd12d8acebfae52e8aece9",
+      "frames": {
+        "frames/idle-00.png": "486576e989c8b0f002ca6f77ad48af5fa15e88514e9b0b9ef2e379b742d81909",
+        "frames/idle-01.png": "446ef25390b873afab71ffe68dea5c6af943f326ae4c4a6c8b5a8adc98479ecc",
+        "frames/idle-02.png": "c69f1da074087a8f1f7bc875f4400e719d23577d67c1d9cc4c2d790faefce1f9",
+        "frames/idle-03.png": "9cc1389b90f623571881b7728c79f95fba513530859b33b6a2d44c0185511953",
+        "frames/wounded_idle-00.png": "a851e0683600d17f1a0424b1d2bbe95e2688cff1b8178da691a9719d3cf93a4f",
+        "frames/wounded_idle-01.png": "129b76b4f23ebae59e8e3601d8a1aff2b56ad616838f590de8887899c0b9a3a3",
+        "frames/wounded_idle-02.png": "ac7ee8094274efcfe5ba7bca0c067401c1158cb53b72effe484a532bc63b592c",
+        "frames/wounded_idle-03.png": "1a2b431fe58945be2e5fdb14246571a1c1fe0059969f40422c708e091c8c26fb"
+      },
+      "sequences": {
+        "idle": [
+          0,
+          1,
+          2,
+          3,
+          2,
+          1
+        ],
+        "wounded_idle": [
+          0,
+          1,
+          2,
+          3,
+          2,
+          1
+        ]
+      },
+      "bounds": {
+        "frames/idle-00.png": [
+          161,
+          90,
+          470,
+          510
+        ],
+        "frames/idle-01.png": [
+          162,
+          90,
+          470,
+          510
+        ],
+        "frames/idle-02.png": [
+          162,
+          94,
+          471,
+          510
+        ],
+        "frames/idle-03.png": [
+          162,
+          95,
+          471,
+          510
+        ],
+        "frames/wounded_idle-00.png": [
+          166,
+          90,
+          463,
+          510
+        ],
+        "frames/wounded_idle-01.png": [
+          165,
+          93,
+          464,
+          510
+        ],
+        "frames/wounded_idle-02.png": [
+          164,
+          89,
+          463,
+          510
+        ],
+        "frames/wounded_idle-03.png": [
+          166,
+          89,
+          464,
+          510
+        ]
+      }
+    },
+    "root": {
+      "path": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\characters\\sovereign-root\\animations\\r1",
+      "manifestSHA256": "86bb6867a600ad7121af671e9ced3790752bf0ac61f68cf217befb613a2b2fa8",
+      "frames": {
+        "frames/idle-00.png": "619c392675888da935c59747ae61cdc760e0bea99f740f77bcc19d9a54b438b4",
+        "frames/idle-01.png": "5b0dac0f78613137a9eea6486376b02b759b129fea7f0c51c66599189657d737",
+        "frames/idle-02.png": "e5b4cad0311bab2f4289dea4f07d86cbfb1f3b0a05e86f46b2140ea64285b3cb",
+        "frames/idle-03.png": "fc1a80204f19e42d0332472f3f411d67b31f3c11904e6f0680cb9fd5ddc7c5c8"
+      },
+      "sequences": {
+        "idle": [
+          0,
+          1,
+          2,
+          3
+        ]
+      },
+      "bounds": {
+        "frames/idle-00.png": [
+          212,
+          210,
+          430,
+          510
+        ],
+        "frames/idle-01.png": [
+          214,
+          206,
+          427,
+          510
+        ],
+        "frames/idle-02.png": [
+          216,
+          207,
+          425,
+          510
+        ],
+        "frames/idle-03.png": [
+          216,
+          208,
+          424,
+          510
+        ]
+      }
+    }
+  }
+}

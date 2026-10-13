@@ -1,0 +1,6 @@
+[
+  {
+    "prompt": "Generate a sprite animation contact sheet of FOUR full-body Avalanche Colossus poses in a 2x2 grid on transparent alpha. Input is exact approved identity and style. Huge padding/gutters: make each gorilla creature small, fully contained in central 65% of its quadrant; all spikes, knuckles, feet visible. Four slight stages of a heavy breathing idle: low rest, chest subtly lifting while fists and rear feet stay planted, high inhale with shoulders raised a little, slow settled exhale. Preserve all anatomy, same left facing camera/scale, enormous icy stone gorilla proportions, snowy blue crystal dorsal spikes, long stone forearms, cyan eyes and exact carved shoulder/leg runes, chunky gray fingers. The action is restrained rock-plate settling with tiny head tilt, not jumping or walking. Match reference serious Runelord 2D cel-shaded illustration; preserve approved fractures/snow shapes; no new spikes, no particles, no glowing backdrop, no shadow, no text. Four consistent images to be packed into breathing loop. Ensure transparent empty margin on EVERY side of each sprite. No sprite cropped.",
+    "method": "built-in image_gen"
+  }
+]

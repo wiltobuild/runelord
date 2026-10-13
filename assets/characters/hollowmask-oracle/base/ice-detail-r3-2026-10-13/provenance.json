@@ -1,0 +1,56 @@
+{
+  "id": "hollowmask-oracle",
+  "name": "Hollowmask Oracle",
+  "revision": "ice-detail-r3-2026-10-13",
+  "sha256": "355c50640ca591d98f372f8f71b49d3cac2de863a1d78e830ff7181e3ff4fc13",
+  "path": "C:/Users/wilsh/Projects/runelord/assets/characters/hollowmask-oracle/base/ice-detail-r3-2026-10-13/master.png",
+  "generationSource": "C:\\Users\\wilsh\\.codex\\generated_images\\01a13278-e699-7143-9725-41483d4a7ef8\\exec-258627dd-b9af-42ee-ba24-e7da79505e4f.png",
+  "generator": "built-in imagegen",
+  "dimensions": [
+    1145,
+    1374
+  ],
+  "alpha": [
+    0,
+    255
+  ],
+  "status": "Pending approval",
+  "identityReference": {
+    "path": "C:/Users/wilsh/Projects/runelord/assets/characters/hollowmask-oracle/base/ice-roster-r1/master.png",
+    "sha256": "c24c1cdb0649065871068c1b975ccdb9e1a126edd716c18aa87f7e95ab5d5742",
+    "decision": null
+  },
+  "earlierMaterialReference": {
+    "path": "C:/Users/wilsh/Projects/runelord/assets/characters/avalanche-colossus/base/ice-roster-r2/base.png",
+    "sha256": "c4c6ae8b6243ff2f2631cd84632dd4b0c45c8178704f75b2fbc2293f9f12b4d9",
+    "decision": {
+      "status": "Approved",
+      "at": "2026-10-13T04:35:29.547Z",
+      "evidenceId": "fdd2dbac-29c7-4e35-9049-5a178f074a09",
+      "paths": [
+        "C:\\Users\\wilsh\\Projects\\runelord\\assets\\approvals\\inbox\\avalanche-colossus\\ice-roster-r2\\base.png"
+      ]
+    }
+  },
+  "direction": "Latest user correction: moderate internal designed detail, clean solid edges, no noisy texture. Heavy r2 superseded and preserved.",
+  "qa": {
+    "fullSize": "Pass: identity preserved, controlled internal material details, crisp closed contours, quiet planar surfaces",
+    "at96": "Pass: silhouette and key identity readable",
+    "alphaComposites": "Pass: explicit sharp white and dark composites inspected, no halo/fuzzy frost rim"
+  },
+  "limitations": "Base design revision only; not separated parts, animation, or runtime verification",
+  "endpointReferences": [
+    {
+      "path": "C:/Users/wilsh/Projects/runelord/assets/characters/hollowmask-oracle/base/ice-detail-r3-2026-10-13/endpoint-clean.png",
+      "sha256": "5e13b63b16d89e0b6c1c79fb50d0220a356b1b87bf8592ee09b54d585eb146b9",
+      "role": "clean identity and edge reference",
+      "selection": "user attachment, not approval of new output"
+    },
+    {
+      "path": "C:/Users/wilsh/Projects/runelord/assets/characters/hollowmask-oracle/base/ice-detail-r3-2026-10-13/endpoint-textured.png",
+      "sha256": "e8b7028c9f940eeba9208a7510a9c22e1ff8b7a14a0afd1e53e04decacdf636e",
+      "role": "textured endpoint, reduce to about 30 percent",
+      "selection": "user attachment, not approval of new output"
+    }
+  ]
+}

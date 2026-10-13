@@ -1,0 +1,132 @@
+{
+  "records": [
+    {
+      "id": "fire-d1",
+      "name": "The Pit Emperor",
+      "brief": "Broad muscular oxblood DEMON with an exposed, unmistakably nonhuman face: wide heavy square jaw, flattened batlike nose, two short upward tusks and small amber eyes beneath a thick brow. NO beard, human stone face or pointed chin. Two huge swept ram horns grow out sideways, forming a low wide silhouette, not a tall spike crown. Black iron armor with brass trim over red demonic flesh, short crimson mantle. Huge single-edged infernal cleaver held low, other clawed hand casts a contained flame. Heavy claw feet. Keep armor regal and formidable.",
+      "prompt": "Create one full-body concept option for Runelord: The Pit Emperor. Broad muscular oxblood DEMON with an exposed, unmistakably nonhuman face: wide heavy square jaw, flattened batlike nose, two short upward tusks and small amber eyes beneath a thick brow. NO beard, human stone face or pointed chin. Two huge swept ram horns grow out sideways, forming a low wide silhouette, not a tall spike crown. Black iron armor with brass trim over red demonic flesh, short crimson mantle. Huge single-edged infernal cleaver held low, other clawed hand casts a contained flame. Heavy claw feet. Keep armor regal and formidable.\nImage1 is the user's selected Fire Sovereign starting design: retain the serious imposing armored ruler, cel-shaded rendering, restrained elemental palette, and game-ready stance. User explicitly requests MUCH MORE DISTINCTIVE identity: redesign head, face, silhouette and faction motifs according to the brief. Do NOT reuse the stern bearded stone-man face or repeated diamond-chest-and-spiky-crown formula from the earlier elemental rulers. Image2 is approved Runelord STYLE ONLY: broad graphic color shapes, crisp edges, hard-edged cel shadows and clean stylized proportions.\nEntire character with generous empty margins around head, feet, wings and weapon, shallow three-quarter game view facing LEFT. Clear grounded stance, limbs separate, weapons readable. Gritty serious 2D game illustration, not realistic anatomy, oil painting, 3D/PBR, dense scratch texture, or cute mascot. Truly transparent background, NO backdrop, gradient halo, smoke cloud or scene. Controlled magic shapes kept close to hands/weapon. No text. Concept selection sample only.",
+      "source": "C:\\Users\\wilsh\\.codex\\generated_images\\01a10b44-06ff-7222-996f-c1ddf2bb5181\\exec-58dace50-2183-4bf7-98f9-c09546ffdc16.png",
+      "sha256": "ea9cef4c6e6e754b87db57807e1fe80b28200910029d94cab0873bdf64330bc2",
+      "size": [
+        1111,
+        1416
+      ],
+      "alphaExtrema": [
+        0,
+        255
+      ],
+      "status": "Pending approval",
+      "qaNotes": "Distinct face and silhouette inspected. Concept art only; some glow backdrop remains, Fire faces right, spacing/alpha cleanup and animation proof pending. No repair pass initiated.",
+      "proposedParts": "head/neck, torso/pelvis, upper/lower arms, hands, thighs/shins/feet, weapon and cloak; additional tail/wings/lantern as design requires. Not separated layers."
+    },
+    {
+      "id": "fire-d2",
+      "name": "The Hellmouth Regent",
+      "brief": "Tall lean regal DEMON with a long wedge-shaped reptilian face, smooth dark crimson skin, four yellow eyes (two pairs), and a sharply split fanged jaw. NO human face, beard, skull, or helmet. Four swept-back black horns form a streamlined crown; longer neck clearly visible. Elegant black and aged-gold segmented armor, narrow waist, long split crimson tabard, a thick barbed tail curls visibly to one side. Serrated obsidian sword held low and a long clawed casting hand. Clearly demonic aristocrat, predatory and cunning; two arms two legs, no wings.",
+      "prompt": "Create one full-body concept option for Runelord: The Hellmouth Regent. Tall lean regal DEMON with a long wedge-shaped reptilian face, smooth dark crimson skin, four yellow eyes (two pairs), and a sharply split fanged jaw. NO human face, beard, skull, or helmet. Four swept-back black horns form a streamlined crown; longer neck clearly visible. Elegant black and aged-gold segmented armor, narrow waist, long split crimson tabard, a thick barbed tail curls visibly to one side. Serrated obsidian sword held low and a long clawed casting hand. Clearly demonic aristocrat, predatory and cunning; two arms two legs, no wings.\nImage1 is the user's selected Fire Sovereign starting design: retain the serious imposing armored ruler, cel-shaded rendering, restrained elemental palette, and game-ready stance. User explicitly requests MUCH MORE DISTINCTIVE identity: redesign head, face, silhouette and faction motifs according to the brief. Do NOT reuse the stern bearded stone-man face or repeated diamond-chest-and-spiky-crown formula from the earlier elemental rulers. Image2 is approved Runelord STYLE ONLY: broad graphic color shapes, crisp edges, hard-edged cel shadows and clean stylized proportions.\nEntire character with generous empty margins around head, feet, wings and weapon, shallow three-quarter game view facing LEFT. Clear grounded stance, limbs separate, weapons readable. Gritty serious 2D game illustration, not realistic anatomy, oil painting, 3D/PBR, dense scratch texture, or cute mascot. Truly transparent background, NO backdrop, gradient halo, smoke cloud or scene. Controlled magic shapes kept close to hands/weapon. No text. Concept selection sample only.",
+      "source": "C:\\Users\\wilsh\\.codex\\generated_images\\01a10b44-06ff-7222-996f-c1ddf2bb5181\\exec-49f02b1f-16f0-4419-91bf-042a5538a1f4.png",
+      "sha256": "0a9f3ea617a5facab9b243b38091ad2caaa163bf7f25f2e1f63e536544b0661c",
+      "size": [
+        1024,
+        1536
+      ],
+      "alphaExtrema": [
+        0,
+        254
+      ],
+      "status": "Pending approval",
+      "qaNotes": "Distinct face and silhouette inspected. Concept art only; some glow backdrop remains, Fire faces right, spacing/alpha cleanup and animation proof pending. No repair pass initiated.",
+      "proposedParts": "head/neck, torso/pelvis, upper/lower arms, hands, thighs/shins/feet, weapon and cloak; additional tail/wings/lantern as design requires. Not separated layers."
+    },
+    {
+      "id": "fire-d3",
+      "name": "The Ashwing Overlord",
+      "brief": "A massive demonic warlord with a short monstrous face like a snarling predatory bat: flared nose, broad mouth of large fangs, deep-set ember eyes, rough charcoal hide. NO human face or beard. A pair of thick forward-curving bull horns, asymmetric broken horn tip. Short folded leathery wings behind shoulders create a broad upper silhouette, their fingers tipped brass. Black iron and oxblood royal armor, brass waist emblem shaped like a demon claw instead of a chest diamond. Massive flaming executioner sword held low in one hand, free taloned hand. Cloven armored hooves. Dominant brutal winged demon king.",
+      "prompt": "Create one full-body concept option for Runelord: The Ashwing Overlord. A massive demonic warlord with a short monstrous face like a snarling predatory bat: flared nose, broad mouth of large fangs, deep-set ember eyes, rough charcoal hide. NO human face or beard. A pair of thick forward-curving bull horns, asymmetric broken horn tip. Short folded leathery wings behind shoulders create a broad upper silhouette, their fingers tipped brass. Black iron and oxblood royal armor, brass waist emblem shaped like a demon claw instead of a chest diamond. Massive flaming executioner sword held low in one hand, free taloned hand. Cloven armored hooves. Dominant brutal winged demon king.\nImage1 is the user's selected Fire Sovereign starting design: retain the serious imposing armored ruler, cel-shaded rendering, restrained elemental palette, and game-ready stance. User explicitly requests MUCH MORE DISTINCTIVE identity: redesign head, face, silhouette and faction motifs according to the brief. Do NOT reuse the stern bearded stone-man face or repeated diamond-chest-and-spiky-crown formula from the earlier elemental rulers. Image2 is approved Runelord STYLE ONLY: broad graphic color shapes, crisp edges, hard-edged cel shadows and clean stylized proportions.\nEntire character with generous empty margins around head, feet, wings and weapon, shallow three-quarter game view facing LEFT. Clear grounded stance, limbs separate, weapons readable. Gritty serious 2D game illustration, not realistic anatomy, oil painting, 3D/PBR, dense scratch texture, or cute mascot. Truly transparent background, NO backdrop, gradient halo, smoke cloud or scene. Controlled magic shapes kept close to hands/weapon. No text. Concept selection sample only.",
+      "source": "C:\\Users\\wilsh\\.codex\\generated_images\\01a10b44-06ff-7222-996f-c1ddf2bb5181\\exec-205612bc-86ef-42b2-91c8-9fce77d47ae7.png",
+      "sha256": "69d342f299d1582e67cc830330ccbdf099da8c97c573bd3d25e964a25977456e",
+      "size": [
+        1024,
+        1536
+      ],
+      "alphaExtrema": [
+        0,
+        254
+      ],
+      "status": "Pending approval",
+      "qaNotes": "Distinct face and silhouette inspected. Concept art only; some glow backdrop remains, Fire faces right, spacing/alpha cleanup and animation proof pending. No repair pass initiated.",
+      "proposedParts": "head/neck, torso/pelvis, upper/lower arms, hands, thighs/shins/feet, weapon and cloak; additional tail/wings/lantern as design requires. Not separated layers."
+    },
+    {
+      "id": "frost-d1",
+      "name": "The Sepulcher King",
+      "brief": "A death-aligned frost monarch as an armored REVENANT. His face is an exposed elongated ivory human skull with no skin, no beard, hollow nose and two tiny cold blue soul lights in sockets; expression impassive. A low broken iron coronet frozen into the skull, no tall crystal crown. Broad blackened steel plate edged with a few big ice blades, ribcage-shaped silver breastplate with a sealed funerary emblem instead of a diamond. Tattered navy burial mantle. Huge straight frost greatsword held low, free skeletal gauntlet. Two armored planted feet. Regal dead king, restrained and severe, non-gory.",
+      "prompt": "Create one full-body concept option for Runelord: The Sepulcher King. A death-aligned frost monarch as an armored REVENANT. His face is an exposed elongated ivory human skull with no skin, no beard, hollow nose and two tiny cold blue soul lights in sockets; expression impassive. A low broken iron coronet frozen into the skull, no tall crystal crown. Broad blackened steel plate edged with a few big ice blades, ribcage-shaped silver breastplate with a sealed funerary emblem instead of a diamond. Tattered navy burial mantle. Huge straight frost greatsword held low, free skeletal gauntlet. Two armored planted feet. Regal dead king, restrained and severe, non-gory.\nImage1 is the user's selected Frost Sovereign starting design: retain the serious imposing armored ruler, cel-shaded rendering, restrained elemental palette, and game-ready stance. User explicitly requests MUCH MORE DISTINCTIVE identity: redesign head, face, silhouette and faction motifs according to the brief. Do NOT reuse the stern bearded stone-man face or repeated diamond-chest-and-spiky-crown formula from the earlier elemental rulers. Image2 is approved Runelord STYLE ONLY: broad graphic color shapes, crisp edges, hard-edged cel shadows and clean stylized proportions.\nEntire character with generous empty margins around head, feet, wings and weapon, shallow three-quarter game view facing LEFT. Clear grounded stance, limbs separate, weapons readable. Gritty serious 2D game illustration, not realistic anatomy, oil painting, 3D/PBR, dense scratch texture, or cute mascot. Truly transparent background, NO backdrop, gradient halo, smoke cloud or scene. Controlled magic shapes kept close to hands/weapon. No text. Concept selection sample only.",
+      "source": "C:\\Users\\wilsh\\.codex\\generated_images\\01a10b44-06ff-7222-996f-c1ddf2bb5181\\exec-3bbe4409-0d64-446d-851e-9dc19ce0cd37.png",
+      "sha256": "f4df3394b302381613d00a126a38f22953b147c84da3f367f41ca33c75c6cf3c",
+      "size": [
+        1024,
+        1536
+      ],
+      "alphaExtrema": [
+        0,
+        254
+      ],
+      "status": "Pending approval",
+      "qaNotes": "Distinct face and silhouette inspected. Concept art only; some glow backdrop remains, Fire faces right, spacing/alpha cleanup and animation proof pending. No repair pass initiated.",
+      "proposedParts": "head/neck, torso/pelvis, upper/lower arms, hands, thighs/shins/feet, weapon and cloak; additional tail/wings/lantern as design requires. Not separated layers."
+    },
+    {
+      "id": "frost-d2",
+      "name": "The Soul Gaoler",
+      "brief": "A tall death-aligned frost ruler with NO visible face: deep black hood and featureless funerary mask of smooth pale ice, a single narrow vertical cyan fissure instead of eyes/nose/mouth. Hood framed by three blunt broken crown prongs, not antlers. Broad tombstone-shaped dark armor, one high icy pauldron and one lower chainbound shoulder, ragged dark teal shroud. A small caged spectral soul glows through an oval chest reliquary, NOT a diamond. Heavy ice executioner's sword held low; other hand holds one large iron soul-lantern on a short chain, containing a simple faint spectral face. Gaunt two-legged grounded silhouette, ominous jailer of the dead, no gore.",
+      "prompt": "Create one full-body concept option for Runelord: The Soul Gaoler. A tall death-aligned frost ruler with NO visible face: deep black hood and featureless funerary mask of smooth pale ice, a single narrow vertical cyan fissure instead of eyes/nose/mouth. Hood framed by three blunt broken crown prongs, not antlers. Broad tombstone-shaped dark armor, one high icy pauldron and one lower chainbound shoulder, ragged dark teal shroud. A small caged spectral soul glows through an oval chest reliquary, NOT a diamond. Heavy ice executioner's sword held low; other hand holds one large iron soul-lantern on a short chain, containing a simple faint spectral face. Gaunt two-legged grounded silhouette, ominous jailer of the dead, no gore.\nImage1 is the user's selected Frost Sovereign starting design: retain the serious imposing armored ruler, cel-shaded rendering, restrained elemental palette, and game-ready stance. User explicitly requests MUCH MORE DISTINCTIVE identity: redesign head, face, silhouette and faction motifs according to the brief. Do NOT reuse the stern bearded stone-man face or repeated diamond-chest-and-spiky-crown formula from the earlier elemental rulers. Image2 is approved Runelord STYLE ONLY: broad graphic color shapes, crisp edges, hard-edged cel shadows and clean stylized proportions.\nEntire character with generous empty margins around head, feet, wings and weapon, shallow three-quarter game view facing LEFT. Clear grounded stance, limbs separate, weapons readable. Gritty serious 2D game illustration, not realistic anatomy, oil painting, 3D/PBR, dense scratch texture, or cute mascot. Truly transparent background, NO backdrop, gradient halo, smoke cloud or scene. Controlled magic shapes kept close to hands/weapon. No text. Concept selection sample only.",
+      "source": "C:\\Users\\wilsh\\.codex\\generated_images\\01a10b44-06ff-7222-996f-c1ddf2bb5181\\exec-5a4e2618-95c8-47c9-922f-268c90b131a4.png",
+      "sha256": "4994244a632b56d1fd733582ee8c68db0087f56697b276db18498655a788be07",
+      "size": [
+        1024,
+        1536
+      ],
+      "alphaExtrema": [
+        0,
+        254
+      ],
+      "status": "Pending approval",
+      "qaNotes": "Distinct face and silhouette inspected. Concept art only; some glow backdrop remains, Fire faces right, spacing/alpha cleanup and animation proof pending. No repair pass initiated.",
+      "proposedParts": "head/neck, torso/pelvis, upper/lower arms, hands, thighs/shins/feet, weapon and cloak; additional tail/wings/lantern as design requires. Not separated layers."
+    },
+    {
+      "id": "frost-d3",
+      "name": "The Pale Reaper",
+      "brief": "Death-aligned frost sovereign with a distinct exposed mummified face: pallid blue-grey taut skin, hollow cheekbones, blind white eyes, lipless closed mouth, clean-shaven bald head. No skull face, beard, human heroic stone face or conventional helmet. A crescent-shaped broken crown behind the bald head like a funerary halo, attached to neck armor. Long black-blue royal coat of armor with overlapping bone-colored ribs and restrained frost edging, heavy layered torn burial cloth, skeletal fingers. A tall single crescent ice scythe held at his side, the full blade clear in frame, other hand conjures one tiny stylized soul. Elegant, terrifying ruler of winter death; two planted armored feet.",
+      "prompt": "Create one full-body concept option for Runelord: The Pale Reaper. Death-aligned frost sovereign with a distinct exposed mummified face: pallid blue-grey taut skin, hollow cheekbones, blind white eyes, lipless closed mouth, clean-shaven bald head. No skull face, beard, human heroic stone face or conventional helmet. A crescent-shaped broken crown behind the bald head like a funerary halo, attached to neck armor. Long black-blue royal coat of armor with overlapping bone-colored ribs and restrained frost edging, heavy layered torn burial cloth, skeletal fingers. A tall single crescent ice scythe held at his side, the full blade clear in frame, other hand conjures one tiny stylized soul. Elegant, terrifying ruler of winter death; two planted armored feet.\nImage1 is the user's selected Frost Sovereign starting design: retain the serious imposing armored ruler, cel-shaded rendering, restrained elemental palette, and game-ready stance. User explicitly requests MUCH MORE DISTINCTIVE identity: redesign head, face, silhouette and faction motifs according to the brief. Do NOT reuse the stern bearded stone-man face or repeated diamond-chest-and-spiky-crown formula from the earlier elemental rulers. Image2 is approved Runelord STYLE ONLY: broad graphic color shapes, crisp edges, hard-edged cel shadows and clean stylized proportions.\nEntire character with generous empty margins around head, feet, wings and weapon, shallow three-quarter game view facing LEFT. Clear grounded stance, limbs separate, weapons readable. Gritty serious 2D game illustration, not realistic anatomy, oil painting, 3D/PBR, dense scratch texture, or cute mascot. Truly transparent background, NO backdrop, gradient halo, smoke cloud or scene. Controlled magic shapes kept close to hands/weapon. No text. Concept selection sample only.",
+      "source": "C:\\Users\\wilsh\\.codex\\generated_images\\01a10b44-06ff-7222-996f-c1ddf2bb5181\\exec-b7ead697-6a6c-4898-a6c0-f10cf8416101.png",
+      "sha256": "eab885ac56d8e88c564d83d4a6cb7a87d4e6e1677d237d51ed035ba34fc28d25",
+      "size": [
+        1024,
+        1536
+      ],
+      "alphaExtrema": [
+        0,
+        254
+      ],
+      "status": "Pending approval",
+      "qaNotes": "Distinct face and silhouette inspected. Concept art only; some glow backdrop remains, Fire faces right, spacing/alpha cleanup and animation proof pending. No repair pass initiated.",
+      "proposedParts": "head/neck, torso/pelvis, upper/lower arms, hands, thighs/shins/feet, weapon and cloak; additional tail/wings/lantern as design requires. Not separated layers."
+    }
+  ],
+  "references": {
+    "fire": {
+      "path": "C:\\Users\\wilsh\\Documents\\Codex\\2026-10-05\\giv\\outputs\\sovereign-demons-death\\fire-selected-reference.png",
+      "sha256": "25d76694edc4be2d2e1b497aaec8395131341bdc4f87322059569b0769eefe13",
+      "approval": "Selected by user in chat for concept development"
+    },
+    "frost": {
+      "path": "C:\\Users\\wilsh\\Documents\\Codex\\2026-10-05\\giv\\outputs\\sovereign-demons-death\\frost-selected-reference.png",
+      "sha256": "9d07ad134cd9d5f794375f6a39dea492c3fce1179c3bf364905b0f388b8c3856",
+      "approval": "Selected by user in chat for concept development"
+    }
+  },
+  "method": "built-in image_gen",
+  "authorization": "User selected armored Fire and Frost designs and requested 3 of each; Fire aligned demons, Frost death, distinctive faces."
+}

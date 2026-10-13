@@ -1,0 +1,91 @@
+{
+  "reviewer": "ice_asset_audit / independent art-director cross-review",
+  "date": "2026-10-12",
+  "scope": "Full-size and 96px review of four bases created by other workers. No asset edits.",
+  "status": "Design-review ready; alpha compositing clean. Colossus canvas padding remains for animation. Not user approval or runtime verification.",
+  "checks": {
+    "fullSize": "Inspected exact local files",
+    "display96": "Inspected work/*-audit96.png generated from each reviewed file",
+    "independent": true
+  },
+  "assets": [
+    {
+      "id": "avalanche-colossus",
+      "path": "assets/characters/avalanche-colossus/base/ice-roster-r2/base.png",
+      "dimensions": [
+        1374,
+        1145
+      ],
+      "alpha": [
+        0,
+        255
+      ],
+      "style": "Serious cel-shaded glacier gorilla; deliberate richer snow, ice fissures, layered stone and runic material detail addresses user feedback.",
+      "readability96": "Pass: hulking forward fists and glacier back silhouette retain clear role.",
+      "issues": [
+        {
+          "severity": "runtime-preparation",
+          "detail": "Topmost glacier spike touches top canvas. Some side margins tight; add transparent padding before animation/export."
+        }
+      ],
+      "disposition": "Suitable for user design review; padding remains.",
+      "sha256": "c4c6ae8b6243ff2f2631cd84632dd4b0c45c8178704f75b2fbc2293f9f12b4d9"
+    },
+    {
+      "id": "rimejaw-scavenger",
+      "path": "assets/characters/rimejaw-scavenger/base/ice-roster-r1/base.png",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "alpha": [
+        0,
+        254
+      ],
+      "style": "Distinct lean four-legged predatory scavenger, cold bone/navy palette and crisp cel shapes.",
+      "readability96": "Pass: long canine body, head and limbs readable; different from colossus and other roster silhouettes.",
+      "issues": [],
+      "disposition": "Suitable for user design review; proper white/dark alpha compositing verified clean, no halo.",
+      "sha256": "baefb70c5fdffb81b5bd144e02dac78406bd9b283ff48a777d5b21f8f92b3e7c",
+      "compositing": "Verified with sharp flatten white #ffffff and dark #222222 at 650px wide; both clean. Direct transparent viewer showed hidden RGB, not actual composited haze."
+    },
+    {
+      "id": "shardstep-skitterer",
+      "path": "assets/characters/shardstep-skitterer/base/ice-roster-r1/base.png",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "alpha": [
+        0,
+        254
+      ],
+      "style": "Distinct arthropod with raised crystal back, angular legs and restrained readable markings.",
+      "readability96": "Pass: insect silhouette and ice-bladed limbs remain distinct.",
+      "issues": [],
+      "disposition": "Suitable for user design review; proper white/dark alpha compositing verified clean, no halo.",
+      "sha256": "aa064acf124a72e871186f1fff70d23761aa5fa5191d4c3842d1daf6c2ee501c",
+      "compositing": "Verified with sharp flatten white #ffffff and dark #222222 at 650px wide; both clean. Direct transparent viewer showed hidden RGB, not actual composited haze."
+    },
+    {
+      "id": "whiteout-ray",
+      "path": "assets/characters/whiteout-ray/base/ice-roster-r1/base.png",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "alpha": [
+        0,
+        254
+      ],
+      "style": "Distinct aerial manta silhouette, wide swept ice fins, dark cold palette and clear angular face.",
+      "readability96": "Pass: winged ray reads clearly and contrasts with moth/ground creatures.",
+      "issues": [],
+      "disposition": "Suitable for user design review; proper white/dark alpha compositing verified clean, no halo.",
+      "sha256": "44cbb23aafbeb6c9bcf331ea12ebe7402efe87400111cc42f673c2cd76727724",
+      "compositing": "Verified with sharp flatten white #ffffff and dark #222222 at 650px wide; both clean. Direct transparent viewer showed hidden RGB, not actual composited haze."
+    }
+  ],
+  "limitations": "These are base design reviews only. No animation, layered rigs, gameplay or runtime verification. Texture richness in Colossus is explicitly requested direction; it does not imply user approval of the resulting bytes.",
+  "correction": "Retracted earlier halo findings on rimejaw-scavenger, shardstep-skitterer and whiteout-ray after explicit white/dark compositing. No cleanup required. Future transparent viewer output alone cannot establish halo."
+}

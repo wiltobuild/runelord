@@ -1,0 +1,79 @@
+{
+  "id": "avalanche-colossus",
+  "name": "Avalanche Colossus",
+  "role": "Heavy slam brute",
+  "method": "built-in image_gen",
+  "path": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\characters\\avalanche-colossus\\base\\ice-roster-r1\\base.png",
+  "sha256": "e943b5d3e46572e5feeed73cd99598627ff78ec5b84771bec48e2fd36c61d269",
+  "dimensions": [
+    1374,
+    1145
+  ],
+  "alpha": {
+    "min": 0,
+    "max": 255,
+    "sum": 230623530,
+    "squaresSum": 58195022286,
+    "mean": 146.592380008009,
+    "stdev": 124.5049198997727,
+    "minX": 0,
+    "minY": 48,
+    "maxX": 747,
+    "maxY": 48
+  },
+  "references": [
+    {
+      "path": "assets/heroes/references/runeblade/runeblade-base-r1.png",
+      "sha256": "adbd33fb14e91b761f355ffeb9966cb262aacca78429099ec09b0fab9faf84ef",
+      "decision": {
+        "status": "Approved",
+        "at": "2026-10-02T03:44:25.533Z",
+        "evidenceId": "user-chat-2026-10-01-approve-existing-runelord",
+        "paths": [
+          "C:\\Users\\wilsh\\Projects\\runelord\\assets\\heroes\\references\\runeblade\\runeblade-base-r1.png"
+        ]
+      }
+    },
+    {
+      "path": "assets/approvals/inbox/dragon-frost-mammoth/base-r1/base-r1.png",
+      "sha256": "3730fd449dda0734e012f6fa91fb10244b2396421d93a3e2e6099780ba3378cd",
+      "decision": {
+        "status": "Approved",
+        "at": "2026-10-02T22:20:49.176Z",
+        "evidenceId": "3d3835b8-f2f8-4ce8-8acd-cd24979a21b7",
+        "paths": [
+          "C:\\Users\\wilsh\\Projects\\runelord\\assets\\approvals\\inbox\\dragon-frost-mammoth\\base-r1\\base-r1.png"
+        ]
+      }
+    }
+  ],
+  "approval": "Pending approval",
+  "rigFamily": "ape-like quadruped",
+  "construction": {
+    "status": "proposed only; flattened artwork",
+    "parts": [
+      "torso/root",
+      "head/jaw",
+      "two upper/lower arms and knuckle hands",
+      "two hind thighs/shins/feet",
+      "back ice wedges"
+    ],
+    "pivots": "shoulders/elbows/wrists/hips/knees/neck; unresolved exact pixel coordinates"
+  },
+  "requiredStates": [
+    "idle",
+    "attack",
+    "hit",
+    "wounded_idle",
+    "die"
+  ],
+  "qa": {
+    "fullSize": "Serious graphic cel shading, distinct ape silhouette, coherent four limbs, no background halo",
+    "limitations": [
+      "Silhouette margins tighter than requested; motion canvas must add padding",
+      "No rig, separated layers or animation",
+      "Design approval pending"
+    ]
+  },
+  "prompt": "prompt.txt"
+}

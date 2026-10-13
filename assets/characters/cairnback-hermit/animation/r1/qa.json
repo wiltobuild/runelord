@@ -1,0 +1,326 @@
+{
+  "character_id": "cairnback-hermit",
+  "states": [
+    {
+      "state": "idle",
+      "source_frames": 4,
+      "gif_frames": 4,
+      "gif_loop": 0,
+      "duration_ms": 940,
+      "bbox": [
+        [
+          112,
+          180,
+          351,
+          407
+        ],
+        [
+          115,
+          180,
+          349,
+          406
+        ],
+        [
+          114,
+          180,
+          349,
+          408
+        ],
+        [
+          109,
+          180,
+          342,
+          408
+        ]
+      ],
+      "alpha_range": [
+        [
+          0,
+          254
+        ],
+        [
+          0,
+          254
+        ],
+        [
+          0,
+          254
+        ],
+        [
+          0,
+          254
+        ]
+      ],
+      "hard_edge_clipping": false
+    },
+    {
+      "state": "attack",
+      "source_frames": 4,
+      "gif_frames": 4,
+      "gif_loop": "one-shot",
+      "duration_ms": 400,
+      "bbox": [
+        [
+          105,
+          186,
+          360,
+          408
+        ],
+        [
+          103,
+          188,
+          364,
+          408
+        ],
+        [
+          112,
+          190,
+          355,
+          408
+        ],
+        [
+          119,
+          186,
+          345,
+          408
+        ]
+      ],
+      "alpha_range": [
+        [
+          0,
+          254
+        ],
+        [
+          0,
+          254
+        ],
+        [
+          0,
+          254
+        ],
+        [
+          0,
+          254
+        ]
+      ],
+      "hard_edge_clipping": false
+    },
+    {
+      "state": "hit",
+      "source_frames": 4,
+      "gif_frames": 4,
+      "gif_loop": "one-shot",
+      "duration_ms": 350,
+      "bbox": [
+        [
+          114,
+          175,
+          356,
+          407
+        ],
+        [
+          121,
+          181,
+          358,
+          408
+        ],
+        [
+          118,
+          174,
+          351,
+          407
+        ],
+        [
+          111,
+          177,
+          345,
+          407
+        ]
+      ],
+      "alpha_range": [
+        [
+          0,
+          254
+        ],
+        [
+          0,
+          254
+        ],
+        [
+          0,
+          254
+        ],
+        [
+          0,
+          254
+        ]
+      ],
+      "hard_edge_clipping": false
+    },
+    {
+      "state": "wounded_idle",
+      "source_frames": 4,
+      "gif_frames": 4,
+      "gif_loop": 0,
+      "duration_ms": 1080,
+      "bbox": [
+        [
+          113,
+          181,
+          349,
+          405
+        ],
+        [
+          116,
+          179,
+          345,
+          408
+        ],
+        [
+          120,
+          179,
+          349,
+          408
+        ],
+        [
+          113,
+          179,
+          341,
+          408
+        ]
+      ],
+      "alpha_range": [
+        [
+          0,
+          254
+        ],
+        [
+          0,
+          254
+        ],
+        [
+          0,
+          254
+        ],
+        [
+          0,
+          254
+        ]
+      ],
+      "hard_edge_clipping": false
+    },
+    {
+      "state": "die",
+      "source_frames": 4,
+      "gif_frames": 4,
+      "gif_loop": "one-shot",
+      "duration_ms": 1120,
+      "bbox": [
+        [
+          110,
+          199,
+          351,
+          408
+        ],
+        [
+          111,
+          197,
+          350,
+          407
+        ],
+        [
+          96,
+          241,
+          339,
+          407
+        ],
+        [
+          89,
+          245,
+          346,
+          404
+        ]
+      ],
+      "alpha_range": [
+        [
+          0,
+          254
+        ],
+        [
+          0,
+          254
+        ],
+        [
+          0,
+          254
+        ],
+        [
+          0,
+          254
+        ]
+      ],
+      "hard_edge_clipping": false
+    },
+    {
+      "state": "guard",
+      "source_frames": 4,
+      "gif_frames": 4,
+      "gif_loop": 0,
+      "duration_ms": 620,
+      "bbox": [
+        [
+          113,
+          171,
+          348,
+          408
+        ],
+        [
+          115,
+          181,
+          349,
+          398
+        ],
+        [
+          117,
+          174,
+          344,
+          398
+        ],
+        [
+          110,
+          173,
+          343,
+          405
+        ]
+      ],
+      "alpha_range": [
+        [
+          0,
+          254
+        ],
+        [
+          0,
+          254
+        ],
+        [
+          0,
+          254
+        ],
+        [
+          0,
+          254
+        ]
+      ],
+      "hard_edge_clipping": false
+    }
+  ],
+  "visual_frame_review": "Source sheet and packed contact inspected. Articulated poses, distinct wounded state, terminal collapse present.",
+  "playback_review": "Delegated to root for shared headless browser review; not verified by this agent.",
+  "limitations": [
+    "Four generated keyframes per state; stepped timing rather than interpolated full-rate animation.",
+    "Generated sheet preserves general identity but fine line/mark and foot placement variation remains.",
+    "No separated rig or VFX layers. Runtime game integration not performed.",
+    "Attack starts with farther claw opening, then large foreground claw extends; claw staging needs refinement."
+  ],
+  "production_ready": false
+}

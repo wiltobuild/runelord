@@ -1,0 +1,91 @@
+{
+  "id": "hellhound-cinematic-32",
+  "revision": "repair-r2",
+  "status": "authored-animation-complete-independent-QA-passed-user-review-pending",
+  "sourceRevision": "816ca764006b2a4da2c022215ecf0484e4bfc426",
+  "assetRoot": "assets/characters/hellhound/animations/frames32-cinematic-r1",
+  "identity": {
+    "file": "assets/cinematics/oath-intro/r3/hellhound.png",
+    "sha256": "f42e103c244b550e770f3a2d5bff02cc12d10f9532d545fe13ac5ea287c572f4",
+    "authorization": "Explicit current user request to animate this existing battle-facing cinematic design",
+    "galleryStatusAtIntake": "Unreviewed",
+    "newArtGalleryStatus": "Pending approval"
+  },
+  "method": "Built-in imagegen authored whole-character frames; source-preserving rectangle extraction, sheet-uniform scaling and root registration",
+  "frameCount": 32,
+  "states": {
+    "idle": 4,
+    "attack": 8,
+    "hit": 4,
+    "wounded_idle": 4,
+    "spawn": 4,
+    "die": 8
+  },
+  "notApplicable": {
+    "cast": "Melee unit has no cast action; spawn receives its own poses",
+    "guard": "Separate ward visual overlay",
+    "victory": "Current summon actor runtime does not consume this state"
+  },
+  "aliasesForLaterIntegration": {
+    "act": "attack"
+  },
+  "deliverables": [
+    "frames/",
+    "idle-atlas.png",
+    "attack-atlas.png",
+    "hit-atlas.png",
+    "wounded_idle-atlas.png",
+    "spawn-atlas.png",
+    "die-atlas.png",
+    "manifest.json",
+    "animation.json",
+    "technical-check.json",
+    "preview.html",
+    "motion-proof.mp4",
+    "motion-proof.gif",
+    "contact-sheet.png",
+    "evidence/96px-light.png",
+    "evidence/96px-dark.png",
+    "source/generation-provenance.json",
+    "source/prompts-final.json",
+    "pack.mjs",
+    "finalize.mjs"
+  ],
+  "checks": {
+    "frameCountAndUniqueHashes": "pass32/32",
+    "transparency": "pass all32 have transparent and opaque pixels",
+    "exportClipping": "pass zero opaque pixels on export edges",
+    "animationValidator": "pass file references/timing",
+    "parentBrowserPlayback": "pass all six states; repaired attack8-to-idle and wounded4-loop rechecked; errors empty",
+    "parentEvidence": "work/production/cinematic-summons32-parent",
+    "independentReviewer": "runelord_rules_engineer",
+    "independentEvidence": "work/production/cinematic-summons32-review",
+    "independentFinalStatus": "PASS all32 frames at original and96px light/dark, repaired8 rechecked",
+    "independentFinalReport": "evidence/independent-final-review.json",
+    "independentFrameAudit": "evidence/independent-frame-audit.json",
+    "metadataOnlyAfterAudit": "Status and acceptance metadata updated after review; all32 frame hashes reverified unchanged against independent report."
+  },
+  "gallery": {
+    "subject": "hellhound-cinematic-32",
+    "revision": "repair-r2",
+    "displayName": "Hellhound Cinematic 32",
+    "mp4": "http://localhost:4317/asset/e2c977e52a4e52d09469920b",
+    "gif": "http://localhost:4317/asset/a44faa25372e2dcfa87cdce5",
+    "poses": "http://localhost:4317/asset/ecac12fb2d9a51ddca2b3be7",
+    "mp4Sha256": "51b36bb3eb39b09b3ff67a821db57e1bf40148e25646195a51afe25452e8e94d",
+    "gifSha256": "0ace6d4bf92d00fd918dddb2d65af7272a1cb1dd77c0262ff953afcdda14dfce",
+    "posesSha256": "618e179a54aed768fdd4af7072bb96343cf58ba9cd8e0e7f9901272206d342d7"
+  },
+  "gifExport": {
+    "input": "motion-proof.mp4",
+    "filter": "fps=15,scale=880:-1:flags=lanczos,split[s0][s1];[s0]palettegen=max_colors=192:stats_mode=diff[p];[s1][p]paletteuse=dither=sierra2_4a",
+    "loop": "comparison reel repeats; death state itself holds terminal frame"
+  },
+  "knownLimits": [
+    "Tiny red alpha fringe retained at native resolution; no pixel repaint workaround used",
+    "Actual native sheets1254x1254, not requested2048",
+    "Standalone export only; runtime integration and user art approval are separate"
+  ],
+  "runtimeIntegrated": false,
+  "nextAction": "User gallery design review; integrate only when separately requested."
+}

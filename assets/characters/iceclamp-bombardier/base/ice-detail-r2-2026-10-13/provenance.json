@@ -1,0 +1,48 @@
+{
+  "character_id": "iceclamp-bombardier",
+  "revision": "ice-detail-r2-2026-10-13",
+  "status": "Pending approval",
+  "asset": "master.png",
+  "sha256": "a68173ffa335c76286fadc04f395ac68c2cc1d23c755f2fe32fcf8bde3de244c",
+  "dimensions": {
+    "width": 1396,
+    "height": 1127
+  },
+  "alpha": {
+    "hasAlpha": true,
+    "transparentPixels": 796045,
+    "partialPixels": 776510
+  },
+  "generator": "built-in image_gen",
+  "source": "C:/Users/wilsh/.codex/generated_images/01a1327a-7080-7cb3-806e-ca61fbb25fc1/exec-f7a9e9b7-0054-4dc1-a68d-3719587071eb.png",
+  "identity_reference": {
+    "path": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\characters\\iceclamp-bombardier\\base\\ice-roster-r1\\master.png",
+    "sha256": "b2f5f6f96b6e56bc4587daea8708c9925392180baf43c79545bf0f9feab7959c",
+    "decision": {
+      "status": "Pending approval"
+    }
+  },
+  "detail_reference": {
+    "path": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\characters\\avalanche-colossus\\base\\ice-roster-r2\\base.png",
+    "sha256": "c4c6ae8b6243ff2f2631cd84632dd4b0c45c8178704f75b2fbc2293f9f12b4d9",
+    "decision": {
+      "status": "Approved",
+      "at": "2026-10-13T04:35:29.547Z",
+      "evidenceId": "fdd2dbac-29c7-4e35-9049-5a178f074a09",
+      "paths": [
+        "C:\\Users\\wilsh\\Projects\\runelord\\assets\\approvals\\inbox\\avalanche-colossus\\ice-roster-r2\\base.png"
+      ]
+    }
+  },
+  "user_direction": "2026-10-13 high detail pass matching Avalanche Colossus r2; overrides older simplicity defaults",
+  "qa": {
+    "fullSize": "pending composited inspection",
+    "smallScale": "pending",
+    "independentReview": "not performed by builder"
+  },
+  "limitations": [
+    "Flattened concept raster, no rig or animation.",
+    "Pending user approval; no runtime integration."
+  ],
+  "prompt": "Use case: identity-preserve. HIGH DETAIL MATERIAL PASS editing image 1. Image 1 is the exact character identity, silhouette, anatomy, colors, pose and camera to KEEP. Image 2 is user-selected Avalanche Colossus r2 QUALITY AND TEXTURE reference only. Match image 2's substantial intricately designed material detail, layered chipped surfaces, frost crust, internal cloudy fractures and weathered edges. This must be a visibly major quality/detail upgrade, NOT just extra flat facets. Preserve crisp serious stylized 2D cel shading, no photoreal/PBR, no cute design. Keep entire original character and all appendages inside generous transparent margin. Genuine transparent background, no scene/shadow/aura/text. Iceclamp Bombardier crab artillery monster: retain exact wide silhouette, same leg and claw positions and number, large hollow mortar funnel on back, angular head facing left, navy shell with pale blue ice accents. Substantial Colossus-quality surface pass: shell stratification and chitin seams, frost crust along raised shell edges, layered chipped pincers with growth lines and worn notches, segmented joint grooves, cloudy fracture webs and tiny trapped bubble clusters inside ice panels. Mortar remains open hollow funnel with detailed weathered inner rim and frosted cracked lip. Show many designed material accents, careful crisp 2D cel-shadows. Preserve face/eyes, blue palette and shapes. Do not add equipment or change anatomy.\n"
+}

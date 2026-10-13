@@ -1,0 +1,549 @@
+{
+  "schema": 1,
+  "id": "forest-sovereign-vfx",
+  "method": "reference-conditioned whole-character frames",
+  "canvas": [
+    640,
+    560
+  ],
+  "anchor": [
+    320,
+    510
+  ],
+  "facing": "left",
+  "coordinateSystem": "top-left pixels; x right, y down",
+  "states": {
+    "rootwake": {
+      "files": [
+        "frames/rootwake-00.png",
+        "frames/rootwake-01.png",
+        "frames/rootwake-02.png",
+        "frames/rootwake-03.png"
+      ],
+      "sequence": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "durationsMs": [
+        100,
+        100,
+        100,
+        100
+      ],
+      "loop": false,
+      "holdLastFrame": false,
+      "nextState": "hidden",
+      "atlas": "rootwake-atlas.png",
+      "frameRects": [
+        [
+          0,
+          0,
+          640,
+          560
+        ],
+        [
+          640,
+          0,
+          640,
+          560
+        ],
+        [
+          1280,
+          0,
+          640,
+          560
+        ],
+        [
+          1920,
+          0,
+          640,
+          560
+        ]
+      ],
+      "events": []
+    },
+    "verdant_cyclone": {
+      "files": [
+        "frames/verdant_cyclone-00.png",
+        "frames/verdant_cyclone-01.png",
+        "frames/verdant_cyclone-02.png",
+        "frames/verdant_cyclone-03.png"
+      ],
+      "sequence": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "durationsMs": [
+        100,
+        100,
+        100,
+        100
+      ],
+      "loop": false,
+      "holdLastFrame": false,
+      "nextState": "hidden",
+      "atlas": "verdant_cyclone-atlas.png",
+      "frameRects": [
+        [
+          0,
+          0,
+          640,
+          560
+        ],
+        [
+          640,
+          0,
+          640,
+          560
+        ],
+        [
+          1280,
+          0,
+          640,
+          560
+        ],
+        [
+          1920,
+          0,
+          640,
+          560
+        ]
+      ],
+      "events": []
+    },
+    "crownfall": {
+      "files": [
+        "frames/crownfall-00.png",
+        "frames/crownfall-01.png",
+        "frames/crownfall-02.png",
+        "frames/crownfall-03.png"
+      ],
+      "sequence": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "durationsMs": [
+        100,
+        100,
+        100,
+        100
+      ],
+      "loop": false,
+      "holdLastFrame": false,
+      "nextState": "hidden",
+      "atlas": "crownfall-atlas.png",
+      "frameRects": [
+        [
+          0,
+          0,
+          640,
+          560
+        ],
+        [
+          640,
+          0,
+          640,
+          560
+        ],
+        [
+          1280,
+          0,
+          640,
+          560
+        ],
+        [
+          1920,
+          0,
+          640,
+          560
+        ]
+      ],
+      "events": []
+    }
+  },
+  "sourceRects": {
+    "rootwake": [
+      {
+        "trim": [
+          40,
+          255,
+          309,
+          367
+        ],
+        "scale": 0.95,
+        "offset": [
+          206,
+          404
+        ],
+        "sourceAnchor": [
+          160.0,
+          367
+        ],
+        "exportAnchor": [
+          320,
+          510
+        ],
+        "sheet": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\characters\\forest-sovereign\\animations\\frames32-r1\\vfx\\source\\vfx-sheet.png",
+        "cell": [
+          0,
+          0,
+          362,
+          372
+        ],
+        "sha256": "c8eef63f8f4b1ea22afed35955f6697242deab2278ecd758477fc11fdf54d13f"
+      },
+      {
+        "trim": [
+          13,
+          150,
+          336,
+          371
+        ],
+        "scale": 0.95,
+        "offset": [
+          169,
+          300
+        ],
+        "sourceAnchor": [
+          171.5,
+          371
+        ],
+        "exportAnchor": [
+          320,
+          510
+        ],
+        "sheet": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\characters\\forest-sovereign\\animations\\frames32-r1\\vfx\\source\\vfx-sheet.png",
+        "cell": [
+          362,
+          0,
+          724,
+          372
+        ],
+        "sha256": "c8eef63f8f4b1ea22afed35955f6697242deab2278ecd758477fc11fdf54d13f"
+      },
+      {
+        "trim": [
+          7,
+          12,
+          368,
+          372
+        ],
+        "scale": 0.95,
+        "offset": [
+          142,
+          168
+        ],
+        "sourceAnchor": [
+          194.0,
+          372
+        ],
+        "exportAnchor": [
+          320,
+          510
+        ],
+        "sheet": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\characters\\forest-sovereign\\animations\\frames32-r1\\vfx\\source\\vfx-sheet.png",
+        "cell": [
+          724,
+          0,
+          1092,
+          372
+        ],
+        "sha256": "c8eef63f8f4b1ea22afed35955f6697242deab2278ecd758477fc11fdf54d13f"
+      },
+      {
+        "trim": [
+          62,
+          174,
+          326,
+          354
+        ],
+        "scale": 0.95,
+        "offset": [
+          191,
+          339
+        ],
+        "sourceAnchor": [
+          197.5,
+          354
+        ],
+        "exportAnchor": [
+          320,
+          510
+        ],
+        "sheet": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\characters\\forest-sovereign\\animations\\frames32-r1\\vfx\\source\\vfx-sheet.png",
+        "cell": [
+          1092,
+          0,
+          1448,
+          372
+        ],
+        "sha256": "c8eef63f8f4b1ea22afed35955f6697242deab2278ecd758477fc11fdf54d13f"
+      }
+    ],
+    "verdant_cyclone": [
+      {
+        "trim": [
+          55,
+          130,
+          270,
+          310
+        ],
+        "scale": 0.95,
+        "offset": [
+          217,
+          339
+        ],
+        "sourceAnchor": [
+          163.0,
+          310
+        ],
+        "exportAnchor": [
+          320,
+          510
+        ],
+        "sheet": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\characters\\forest-sovereign\\animations\\frames32-r1\\vfx\\source\\vfx-sheet.png",
+        "cell": [
+          0,
+          372,
+          362,
+          750
+        ],
+        "sha256": "c8eef63f8f4b1ea22afed35955f6697242deab2278ecd758477fc11fdf54d13f"
+      },
+      {
+        "trim": [
+          11,
+          44,
+          339,
+          378
+        ],
+        "scale": 0.95,
+        "offset": [
+          182,
+          193
+        ],
+        "sourceAnchor": [
+          156.0,
+          378
+        ],
+        "exportAnchor": [
+          320,
+          510
+        ],
+        "sheet": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\characters\\forest-sovereign\\animations\\frames32-r1\\vfx\\source\\vfx-sheet.png",
+        "cell": [
+          362,
+          372,
+          724,
+          750
+        ],
+        "sha256": "c8eef63f8f4b1ea22afed35955f6697242deab2278ecd758477fc11fdf54d13f"
+      },
+      {
+        "trim": [
+          11,
+          19,
+          375,
+          378
+        ],
+        "scale": 0.95,
+        "offset": [
+          139,
+          169
+        ],
+        "sourceAnchor": [
+          202.0,
+          378
+        ],
+        "exportAnchor": [
+          320,
+          510
+        ],
+        "sheet": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\characters\\forest-sovereign\\animations\\frames32-r1\\vfx\\source\\vfx-sheet.png",
+        "cell": [
+          724,
+          372,
+          1099,
+          750
+        ],
+        "sha256": "c8eef63f8f4b1ea22afed35955f6697242deab2278ecd758477fc11fdf54d13f"
+      },
+      {
+        "trim": [
+          46,
+          42,
+          319,
+          351
+        ],
+        "scale": 0.95,
+        "offset": [
+          183,
+          216
+        ],
+        "sourceAnchor": [
+          190.5,
+          351
+        ],
+        "exportAnchor": [
+          320,
+          510
+        ],
+        "sheet": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\characters\\forest-sovereign\\animations\\frames32-r1\\vfx\\source\\vfx-sheet.png",
+        "cell": [
+          1099,
+          372,
+          1448,
+          750
+        ],
+        "sha256": "c8eef63f8f4b1ea22afed35955f6697242deab2278ecd758477fc11fdf54d13f"
+      }
+    ],
+    "crownfall": [
+      {
+        "trim": [
+          23,
+          63,
+          294,
+          270
+        ],
+        "scale": 0.95,
+        "offset": [
+          191,
+          313
+        ],
+        "sourceAnchor": [
+          158.5,
+          270
+        ],
+        "exportAnchor": [
+          320,
+          510
+        ],
+        "sheet": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\characters\\forest-sovereign\\animations\\frames32-r1\\vfx\\source\\vfx-sheet.png",
+        "cell": [
+          0,
+          750,
+          362,
+          1086
+        ],
+        "sha256": "c8eef63f8f4b1ea22afed35955f6697242deab2278ecd758477fc11fdf54d13f"
+      },
+      {
+        "trim": [
+          6,
+          0,
+          326,
+          303
+        ],
+        "scale": 0.95,
+        "offset": [
+          179,
+          222
+        ],
+        "sourceAnchor": [
+          154.5,
+          303
+        ],
+        "exportAnchor": [
+          320,
+          510
+        ],
+        "sheet": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\characters\\forest-sovereign\\animations\\frames32-r1\\vfx\\source\\vfx-sheet.png",
+        "cell": [
+          362,
+          750,
+          688,
+          1086
+        ],
+        "sha256": "c8eef63f8f4b1ea22afed35955f6697242deab2278ecd758477fc11fdf54d13f"
+      },
+      {
+        "trim": [
+          0,
+          7,
+          432,
+          322
+        ],
+        "scale": 0.95,
+        "offset": [
+          102,
+          211
+        ],
+        "sourceAnchor": [
+          229.5,
+          322
+        ],
+        "exportAnchor": [
+          320,
+          510
+        ],
+        "sheet": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\characters\\forest-sovereign\\animations\\frames32-r1\\vfx\\source\\vfx-sheet.png",
+        "cell": [
+          688,
+          750,
+          1120,
+          1086
+        ],
+        "sha256": "c8eef63f8f4b1ea22afed35955f6697242deab2278ecd758477fc11fdf54d13f"
+      },
+      {
+        "trim": [
+          0,
+          108,
+          310,
+          296
+        ],
+        "scale": 0.95,
+        "offset": [
+          162,
+          331
+        ],
+        "sourceAnchor": [
+          166.0,
+          296
+        ],
+        "exportAnchor": [
+          320,
+          510
+        ],
+        "sheet": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\characters\\forest-sovereign\\animations\\frames32-r1\\vfx\\source\\vfx-sheet.png",
+        "cell": [
+          1120,
+          750,
+          1448,
+          1086
+        ],
+        "sha256": "c8eef63f8f4b1ea22afed35955f6697242deab2278ecd758477fc11fdf54d13f"
+      }
+    ]
+  },
+  "limitations": [
+    "Generated non-idle pose variation accepted by user; original proof preserved.",
+    "Whole-frame source art, no separated rig.",
+    "Game integration not requested.",
+    "Minor leaf/base contour variation and four-pose stepping remain.",
+    "Some source action/VFX sheet edges have tight margins; no repaint was requested for non-idles."
+  ],
+  "review": "Independent idle QA pass with minor notes; non-idle drawing variation accepted by user.",
+  "frameCount": 12,
+  "hashes": {
+    "frames/crownfall-00.png": "9bac36d29f81c652c4e393f9f6a1da5f23991b649234d96e805ae87cf800b65f",
+    "frames/crownfall-01.png": "cadfaa014cdcfcc52dc3d32512f8b11805673de66e710761ea7cd59aae2e7344",
+    "frames/crownfall-02.png": "c8fdbafa60a98724c1281dba579c97c8af7ad1417f0cdb10165ef8aa6cb2faaf",
+    "frames/crownfall-03.png": "fe23e55346ad3eea15b40de532f4d9c16561c82d623902f032bef2e7e6fda4a8",
+    "frames/rootwake-00.png": "65f13da806cc9b26e986f0b71cb47632f90a81d42e91c01e587886eeeada78c4",
+    "frames/rootwake-01.png": "8050f81f0191a4ece3ba0f1d6398ca62bb55022be93ca69ee37b173c4e26010f",
+    "frames/rootwake-02.png": "053d63ba1a0980abf6ad1d9eb23a1c0314e15a68657ea20d421d302672e05f51",
+    "frames/rootwake-03.png": "30a8337331dbde55615d93e4dc1c0d42053109fe28d79cdef9495f6abc3acbe8",
+    "frames/verdant_cyclone-00.png": "71da4783de17ad7e55318f61c725f85e2beb7634b885239605dc92059a5843de",
+    "frames/verdant_cyclone-01.png": "ba73fca3499cdc22ac386af6c3dad8b326b6737ca8cd9280d10862161e6d53fe",
+    "frames/verdant_cyclone-02.png": "743ee7dcc67020fac47c2287dc6f496c512d9fccef1dab4274ae57155dfc7a50",
+    "frames/verdant_cyclone-03.png": "b2234a88de3cd633aea6a1d19113777c2ba4a6b759c83b1662b8960ef4585f9d"
+  }
+}

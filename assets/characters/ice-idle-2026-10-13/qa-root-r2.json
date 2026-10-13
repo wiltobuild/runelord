@@ -1,0 +1,43 @@
+{
+  "reviewer": "ice_beasts worker; independent of root builder",
+  "status": "technical_registration_pass_playback_recheck_unavailable",
+  "scope": ["hoarveil-crone", "avalanche-colossus", "abomination-rime-hauler"],
+  "browser_limitation": "Previous real playback was reviewed for Crone and Colossus r1. During this r2 recheck, browser 2 unavailable; cua.getState returned empty browsers/apps and createBrowserTab(iab) unavailable. No fresh real-time r2 playback or Rime Hauler playback is claimed.",
+  "checks": [
+    "Read current manifests and four exported frames per character.",
+    "Inspected approved masters, composed full-resolution four-frame contacts, and light/dark large plus small preview panels.",
+    "Decoded all six GIF frames and verified durations and infinite loop flag.",
+    "Verified r2 gallery preview entries through api/art nested states.",
+    "Measured alpha>200 bottom-contact coordinates; near-ground vertical drift eliminated."
+  ],
+  "results": {
+    "hoarveil-crone": {
+      "manifest_sha256": "abfff67c7477a71d463bb5e313c700225351a81c6cfa0ee3e25ee467caf300bf",
+      "ground_y": [672,672,672,672],
+      "bottom_4_rows_median_x": [501,500.5,501,501],
+      "gif_frames": 6,
+      "gif_duration_ms": 1920,
+      "prior_registration_defect": "resolved by numerical and frame inspection",
+      "identity": "Recognizable approved face, cloak, staff, charms and rune banners retained; small authored contour variation remains."
+    },
+    "avalanche-colossus": {
+      "manifest_sha256": "0d228fe2fc451a74cecb45e22fde3a0bcca61089945027559b30c7fa69ec3245",
+      "ground_y": [672,672,672,672],
+      "bottom_4_rows_median_x": [336,337,335,335.5],
+      "gif_frames": 6,
+      "gif_duration_ms": 2400,
+      "prior_registration_defect": "27px drift reduced to 2px under independent bottom-four-row measurement; no blocking contact defect visible in frames",
+      "identity": "Approved ice/stone gorilla anatomy, fists, shoulder/hip runes and spikes retained; minor facet and contour variation remains."
+    },
+    "abomination-rime-hauler": {
+      "manifest_sha256": "c6e941fcad4b02f2334b12817e9ceef4a0882854dde93abc640ed960903ad8e9",
+      "ground_y": [672,672,672,672],
+      "bottom_4_rows_median_x": [340,340,340,340],
+      "gif_frames": 6,
+      "gif_duration_ms": 2100,
+      "identity": "Approved asymmetric huge stitched shoulder, small third bell arm, jaw brace, teal cloth, chains and hook retained in all four frames. Bell angle and chain contour change consistent with secondary motion; no missing major feature found."
+    }
+  },
+  "blocking_defects_found": [],
+  "remaining_acceptance": "Fresh real playback recheck required before claiming fully verified r2 timing/seams; static contacts and GIF decoding alone do not prove visual seam quality. User design approval remains separate and pending."
+}

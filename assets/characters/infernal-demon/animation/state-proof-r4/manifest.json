@@ -1,0 +1,19 @@
+{
+  "id": "infernal-demon",
+  "revision": "state-proof-r4",
+  "format": "frame-based transparent PNG",
+  "canvas": { "width": 1240, "height": 1269 },
+  "anchor": { "coordinate_system": "pixels; top-left origin; x right/y down", "ground": { "x": 620, "y": 1160 } },
+  "states": {
+    "idle": { "files": ["idle-00.png", "idle-01.png", "idle-00.png", "idle-01.png"], "durations_ms": [220, 220, 220, 220], "loop": true },
+    "attack": { "files": ["idle-00.png", "attack-01-windup.png", "attack-02-impact.png", "idle-00.png"], "durations_ms": [180, 180, 140, 280], "loop": false, "impact_marker": { "frame": 2, "time_ms": 360 } },
+    "hit": { "files": ["idle-00.png", "hit-01.png", "idle-00.png"], "durations_ms": [120, 160, 200], "loop": false },
+    "wounded_idle": { "files": ["wounded-01.png", "wounded-02.png", "wounded-01.png", "wounded-02.png"], "durations_ms": [250, 250, 250, 250], "loop": true },
+    "die": { "files": ["idle-00.png", "wounded-01.png", "die-01.png", "die-01.png"], "durations_ms": [180, 220, 350, 350], "loop": false, "terminal_hold": true }
+  },
+  "verification": {
+    "anatomy": "Every authored pose visually checked: two arms, two legs, two wings, one head, one sword.",
+    "background": "Transparent PNG source frames; MP4 previews are flattened with a black background.",
+    "limitation": "Short pose-to-pose proof. Additional in-betweens and smoother continuity are required for production-ready loops."
+  }
+}

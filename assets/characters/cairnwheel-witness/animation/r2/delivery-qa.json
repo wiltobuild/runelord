@@ -1,0 +1,32 @@
+{
+  "character_id": "cairnwheel-witness",
+  "frame_count": 24,
+  "canvas": [
+    512,
+    312
+  ],
+  "states": [
+    "idle",
+    "attack",
+    "hit",
+    "wounded_idle",
+    "die",
+    "spawn"
+  ],
+  "transparent_frames_verified": true,
+  "death_loop": false,
+  "base_approval": "c47406e1-9390-44f9-a2eb-2961fe255a79",
+  "preview_sha256": "fd4b5002d236fd9b7902c4b5e70f11dd6ec1a66b02e861e7f6d00a6f4026ae9e",
+  "preview_gallery_id": "7b39db05def36a486a2023bc",
+  "preview_approval": "Pending approval",
+  "playback": {
+    "status": "agent playback evidence; see package QA"
+  },
+  "limitations": [
+    "Four generated key poses per action; coarse stepped animation awaiting visual approval.",
+    "Original HD base retained separately; source animation sprites are smaller.",
+    "Generated detail drift, scale variation and contact sliding are not eliminated; not final production-quality temporal consistency.",
+    "Frames cropped to measured connected silhouette bounds; edge-contact flags are expected exact bounding rectangles, not canvas clipping."
+  ],
+  "delivery_level": "Articulated frame animation review pack; not certified production-ready"
+}

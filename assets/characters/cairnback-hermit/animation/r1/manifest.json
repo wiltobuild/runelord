@@ -1,0 +1,172 @@
+{
+  "schema_version": 1,
+  "character_id": "cairnback-hermit",
+  "format": "numbered RGBA frames",
+  "canvas": [
+    448,
+    448
+  ],
+  "anchor": [
+    224,
+    408
+  ],
+  "source": "source-sheet.png",
+  "source_dimensions": [
+    1024,
+    1536
+  ],
+  "approval": "Pending approval",
+  "status": "animation_study_pending_review",
+  "states": {
+    "idle": {
+      "frames": [
+        "idle/00.png",
+        "idle/01.png",
+        "idle/02.png",
+        "idle/03.png"
+      ],
+      "duration_ms": [
+        220,
+        250,
+        220,
+        250
+      ],
+      "loop": true,
+      "events": [],
+      "next": "self"
+    },
+    "attack": {
+      "frames": [
+        "attack/00.png",
+        "attack/01.png",
+        "attack/02.png",
+        "attack/03.png"
+      ],
+      "duration_ms": [
+        100,
+        80,
+        100,
+        120
+      ],
+      "loop": false,
+      "events": [
+        {
+          "frame": 2,
+          "name": "impact"
+        }
+      ],
+      "next": "idle"
+    },
+    "hit": {
+      "frames": [
+        "hit/00.png",
+        "hit/01.png",
+        "hit/02.png",
+        "hit/03.png"
+      ],
+      "duration_ms": [
+        70,
+        100,
+        100,
+        80
+      ],
+      "loop": false,
+      "events": [],
+      "next": "idle"
+    },
+    "wounded_idle": {
+      "frames": [
+        "wounded_idle/00.png",
+        "wounded_idle/01.png",
+        "wounded_idle/02.png",
+        "wounded_idle/03.png"
+      ],
+      "duration_ms": [
+        280,
+        260,
+        280,
+        260
+      ],
+      "loop": true,
+      "events": [],
+      "next": "self"
+    },
+    "die": {
+      "frames": [
+        "die/00.png",
+        "die/01.png",
+        "die/02.png",
+        "die/03.png"
+      ],
+      "duration_ms": [
+        120,
+        140,
+        160,
+        700
+      ],
+      "loop": false,
+      "events": [],
+      "next": "hold_terminal"
+    },
+    "guard": {
+      "frames": [
+        "guard/00.png",
+        "guard/01.png",
+        "guard/02.png",
+        "guard/03.png"
+      ],
+      "duration_ms": [
+        100,
+        200,
+        200,
+        120
+      ],
+      "loop": false,
+      "events": [],
+      "next": "idle",
+      "hold_frame": 2,
+      "release_frame": 3
+    }
+  },
+  "limitations": [
+    "Four generated keyframes per state; stepped timing rather than interpolated full-rate animation.",
+    "Generated sheet preserves general identity but fine line/mark and foot placement variation remains.",
+    "No separated rig or VFX layers. Runtime game integration not performed.",
+    "Attack starts with farther claw opening, then large foreground claw extends; claw staging needs refinement."
+  ],
+  "identity_reference": {
+    "revision": "base-r1",
+    "asset": "C:/Users/wilsh/Projects/runelord/assets/characters/cairnback-hermit/base-r1.png",
+    "dimensions": [
+      1374,
+      1145
+    ],
+    "sha256": "3b6666c13888f149fc1a5d488956f83adff1cd650b2dbaf5b415b75baaa641bc",
+    "alpha": "verified RGBA"
+  },
+  "approval_evidence": [
+    {
+      "stage": "base",
+      "revision": "base-r1",
+      "sha256": "3b6666c13888f149fc1a5d488956f83adff1cd650b2dbaf5b415b75baaa641bc",
+      "evidenceId": "cfad9474-b86f-4610-a14e-d4ab22bad6ae",
+      "at": "2026-10-02T04:57:52.718Z",
+      "user_text": "User explicitly approved all 20 concepts in this chat and requested: approve all of them and animate them with hd-animate-fantasy-character. Scope: animate the 20 approved base designs directly; no unrequested variant generation."
+    }
+  ],
+  "style_references": [
+    {
+      "path": "C:/Users/wilsh/Projects/runelord/assets/heroes/references/ranger/ranger-base-r1.png",
+      "sha256": "9cd6ae4be65920528b211c20d2a1c12f68183b6bb6bb9ca6095b2ea23eb76912",
+      "evidence_id": "user-chat-2026-10-01-approve-existing-runelord",
+      "role": "style only"
+    },
+    {
+      "path": "C:/Users/wilsh/Projects/runelord/assets/characters/wolf-rider-goblins/base-b1.png",
+      "sha256": "4acf5ae1be00e3095d575a6486672011325f266ada1a88204cf6b51539fb48ad",
+      "evidence_id": "user-chat-2026-10-01-approve-existing-runelord",
+      "role": "style only"
+    }
+  ],
+  "qa": "qa.json"
+}

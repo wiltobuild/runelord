@@ -1,0 +1,200 @@
+{
+  "characterId": "hollowmask-oracle",
+  "state": "idle",
+  "status": "pending_independent_QA_and_user_approval",
+  "method": "generated whole-character poses",
+  "motion": "Spectral cloth and claw sway, reversible four-pose arc",
+  "sourceApproval": {
+    "id": "hollowmask-oracle",
+    "name": "Hollowmask Oracle",
+    "path": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\characters\\hollowmask-oracle\\base\\ice-detail-r2-2026-10-13\\master.png",
+    "sha256": "4e34d314f4d61f89b311ca7d2cade28e79b257f96d9e3e9d2d2b75c4c7b9ae45",
+    "decision": {
+      "status": "Approved",
+      "at": "2026-10-13T05:09:18.441Z",
+      "evidenceId": "50e07ace-3a79-497d-9614-604286ef7bdd",
+      "paths": [
+        "C:\\Users\\wilsh\\Projects\\runelord\\assets\\characters\\hollowmask-oracle\\base\\ice-detail-r2-2026-10-13\\master.png"
+      ]
+    }
+  },
+  "sourceSheet": "generated-sheet.png",
+  "atlas": "atlas.png",
+  "frameCanvas": [
+    512,
+    512
+  ],
+  "coordinateSystem": "pixels, top-left origin, x right / y down",
+  "anchor": [
+    256,
+    48
+  ],
+  "anchorType": "mask apex landmark",
+  "frames": [
+    {
+      "file": "frame-00.png",
+      "rect": [
+        0,
+        0,
+        512,
+        512
+      ],
+      "durationMs": 260
+    },
+    {
+      "file": "frame-01.png",
+      "rect": [
+        512,
+        0,
+        512,
+        512
+      ],
+      "durationMs": 260
+    },
+    {
+      "file": "frame-02.png",
+      "rect": [
+        1024,
+        0,
+        512,
+        512
+      ],
+      "durationMs": 260
+    },
+    {
+      "file": "frame-03.png",
+      "rect": [
+        1536,
+        0,
+        512,
+        512
+      ],
+      "durationMs": 260
+    }
+  ],
+  "sequence": [
+    0,
+    1,
+    2,
+    3,
+    2,
+    1
+  ],
+  "loop": true,
+  "durationMs": 1560,
+  "events": [],
+  "transitions": {
+    "idle": "idle"
+  },
+  "combatStates": "attack, hit, wounded_idle, die, cast unproduced; idle-only request",
+  "technicalExtraction": [
+    {
+      "sourceRect": [
+        0,
+        0,
+        426,
+        437
+      ],
+      "pasteOffset": [
+        36,
+        31
+      ],
+      "solidBounds": [
+        54,
+        16,
+        426,
+        437
+      ],
+      "alphaExtrema": [
+        0,
+        255
+      ]
+    },
+    {
+      "sourceRect": [
+        426,
+        0,
+        877,
+        437
+      ],
+      "pasteOffset": [
+        32,
+        31
+      ],
+      "solidBounds": [
+        58,
+        15,
+        451,
+        437
+      ],
+      "alphaExtrema": [
+        0,
+        255
+      ]
+    },
+    {
+      "sourceRect": [
+        877,
+        0,
+        1316,
+        437
+      ],
+      "pasteOffset": [
+        39,
+        31
+      ],
+      "solidBounds": [
+        42,
+        16,
+        439,
+        434
+      ],
+      "alphaExtrema": [
+        0,
+        255
+      ]
+    },
+    {
+      "sourceRect": [
+        1316,
+        0,
+        1774,
+        437
+      ],
+      "pasteOffset": [
+        19,
+        31
+      ],
+      "solidBounds": [
+        65,
+        16,
+        439,
+        437
+      ],
+      "alphaExtrema": [
+        0,
+        255
+      ]
+    }
+  ],
+  "limitations": [
+    "Generated source resolution retained; not upscaled to claim HD.",
+    "No game integration.",
+    "Independent playback review pending.",
+    "Generated poses 5-8 excluded; poses 6-7 mirrored the approved mask asymmetry. Four consistent facing poses used with reversible sequence."
+  ],
+  "preview": {
+    "file": "preview.gif",
+    "sha256": "31210318884c0f679237f0d3784296e82352aa0eaf26f541cad82d432d021784",
+    "galleryRevision": "idle-2026-10-13-r2",
+    "galleryStatus": "Pending approval",
+    "frameCount": 6,
+    "durationMs": 1560
+  },
+  "qa": {
+    "builderReview": "Full-size source/keypose light/dark passed identity, alpha and silhouette; actual GIF playback sampled through gallery in browser. Independent review pending.",
+    "gifDecode": "pass",
+    "alpha": "PNG RGBA preserved; source alpha not edited",
+    "reviewScale": "96px canvas (character height below 96px); independent exact 96px review pending"
+  }
+}

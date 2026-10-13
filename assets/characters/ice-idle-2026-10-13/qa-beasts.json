@@ -1,0 +1,281 @@
+{
+  "status": "independent_audit_complete_with_playback_sampling_limit",
+  "assets": [
+    {
+      "characterId": "dragon-frost-mammoth",
+      "result": "pass_with_limitations",
+      "reviewer": "ice_flyers (independent of beasts builder)",
+      "review": "Approved source and all four exported keyposes compared. Gallery animated GIF sampled at separated times on light/dark with small-scale inset; all unique keyposes visually reviewed. Complete continuous real-time loop seam not measured.",
+      "identity": "Recognizable approved silhouette, palette, markings and facing retained. No missing or extra major limbs detected.",
+      "motion": "Restrained four-pose breathing arc with forward/reverse timing; minor generated contour drift remains at full resolution.",
+      "previewSha256": "61aaa22e25b69a981099541cb1f3a6bc13431690c9741a4d0063040055d91701",
+      "decodedGifFrameCount": 6,
+      "decodedDurationMs": 1880,
+      "frames": [
+        {
+          "file": "frame-00.png",
+          "size": [
+            800,
+            800
+          ],
+          "alpha": [
+            0,
+            255
+          ],
+          "edgeAlphaMax": 0,
+          "sha256": "a5f6c490929895468757e688cf273e6a324b42cfe2a84313580be255d7e73034"
+        },
+        {
+          "file": "frame-01.png",
+          "size": [
+            800,
+            800
+          ],
+          "alpha": [
+            0,
+            255
+          ],
+          "edgeAlphaMax": 0,
+          "sha256": "4f55e42dcea14aed242b06fd1ad55a115f85005817a3bc2a1d696d0dcec16d4c"
+        },
+        {
+          "file": "frame-02.png",
+          "size": [
+            800,
+            800
+          ],
+          "alpha": [
+            0,
+            255
+          ],
+          "edgeAlphaMax": 0,
+          "sha256": "9fc756cf402bbc271797fbe3a888993d4fbbb2c188b3c42b7e50347764a29062"
+        },
+        {
+          "file": "frame-03.png",
+          "size": [
+            800,
+            800
+          ],
+          "alpha": [
+            0,
+            255
+          ],
+          "edgeAlphaMax": 0,
+          "sha256": "ad0da8684e3dd5cdc08462a6deecf9fa36f8c56edf183aa6031d195ec04f0a7d"
+        }
+      ],
+      "limitations": [
+        "Browser fit-to-window scales preview; inset is smaller than a literal 96 displayed pixels.",
+        "Not game integrated, no combat states, pending user visual approval."
+      ]
+    },
+    {
+      "characterId": "dragon-rime-antler",
+      "result": "pass_with_limitations",
+      "reviewer": "ice_flyers (independent of beasts builder)",
+      "review": "Approved source and all four exported keyposes compared. Gallery animated GIF sampled at separated times on light/dark with small-scale inset; all unique keyposes visually reviewed. Complete continuous real-time loop seam not measured.",
+      "identity": "Recognizable approved silhouette, palette, markings and facing retained. No missing or extra major limbs detected.",
+      "motion": "Restrained four-pose breathing arc with forward/reverse timing; minor generated contour drift remains at full resolution.",
+      "previewSha256": "aeb0c8b0ebefdc73517bf68ffad0a56f5aebb2d47bd394f14d4d8822cb6b1cbe",
+      "decodedGifFrameCount": 6,
+      "decodedDurationMs": 1880,
+      "frames": [
+        {
+          "file": "frame-00.png",
+          "size": [
+            800,
+            800
+          ],
+          "alpha": [
+            0,
+            255
+          ],
+          "edgeAlphaMax": 0,
+          "sha256": "1427792cc7f9533c5013e8c409ab7bd05d5eb65dc3e500d14b8a7b3cb80f77ae"
+        },
+        {
+          "file": "frame-01.png",
+          "size": [
+            800,
+            800
+          ],
+          "alpha": [
+            0,
+            255
+          ],
+          "edgeAlphaMax": 0,
+          "sha256": "2fb05b4dd286fed852317386012cc7acc801ffc2cdca43fac2fb9c323bf7eaa5"
+        },
+        {
+          "file": "frame-02.png",
+          "size": [
+            800,
+            800
+          ],
+          "alpha": [
+            0,
+            255
+          ],
+          "edgeAlphaMax": 0,
+          "sha256": "7252b32b5021b841290e979418d948b17f9b71b37c413d9dc8f915ab37931244"
+        },
+        {
+          "file": "frame-03.png",
+          "size": [
+            800,
+            800
+          ],
+          "alpha": [
+            0,
+            255
+          ],
+          "edgeAlphaMax": 0,
+          "sha256": "0914ff338c31cc80c6d7e74c34b689ba78978aabfdc27e5e722b1f8704e65e79"
+        }
+      ],
+      "limitations": [
+        "Browser fit-to-window scales preview; inset is smaller than a literal 96 displayed pixels.",
+        "Not game integrated, no combat states, pending user visual approval."
+      ]
+    },
+    {
+      "characterId": "rimejaw-scavenger",
+      "result": "pass_with_limitations",
+      "reviewer": "ice_flyers (independent of beasts builder)",
+      "review": "Approved source and all four exported keyposes compared. Gallery animated GIF sampled at separated times on light/dark with small-scale inset; all unique keyposes visually reviewed. Complete continuous real-time loop seam not measured.",
+      "identity": "Recognizable approved silhouette, palette, markings and facing retained. No missing or extra major limbs detected.",
+      "motion": "Restrained four-pose breathing arc with forward/reverse timing; minor generated contour drift remains at full resolution.",
+      "previewSha256": "c5bed0f41d8e57800d55d81018b2843728080ac00a458726bcf2f5ad62ed83a8",
+      "decodedGifFrameCount": 6,
+      "decodedDurationMs": 1300,
+      "frames": [
+        {
+          "file": "frame-00.png",
+          "size": [
+            800,
+            800
+          ],
+          "alpha": [
+            0,
+            255
+          ],
+          "edgeAlphaMax": 0,
+          "sha256": "6fe8a735d7d81729e47379b777ef01bfc81c7b08ead6bd76b992a30994546fc6"
+        },
+        {
+          "file": "frame-01.png",
+          "size": [
+            800,
+            800
+          ],
+          "alpha": [
+            0,
+            255
+          ],
+          "edgeAlphaMax": 0,
+          "sha256": "614a7475fc469c2c833f8698f3df6d03cf946135d57544841fbe69a4a8353cc5"
+        },
+        {
+          "file": "frame-02.png",
+          "size": [
+            800,
+            800
+          ],
+          "alpha": [
+            0,
+            255
+          ],
+          "edgeAlphaMax": 0,
+          "sha256": "8d0f9d2d1b3080c09669b5f392f4a08aceca77e98b658a3b7f92df8c5b9fd568"
+        },
+        {
+          "file": "frame-03.png",
+          "size": [
+            800,
+            800
+          ],
+          "alpha": [
+            0,
+            255
+          ],
+          "edgeAlphaMax": 0,
+          "sha256": "2b1940a006fbbbba8e52443be3d3e450dfa9fcbcc6a3de16ad5914aeebfd95d5"
+        }
+      ],
+      "limitations": [
+        "Browser fit-to-window scales preview; inset is smaller than a literal 96 displayed pixels.",
+        "Not game integrated, no combat states, pending user visual approval."
+      ]
+    },
+    {
+      "characterId": "cairnfrost-ursine",
+      "result": "pass_with_limitations",
+      "reviewer": "ice_flyers (independent of beasts builder)",
+      "review": "Approved source and all four exported keyposes compared. Gallery animated GIF sampled at separated times on light/dark with small-scale inset; all unique keyposes visually reviewed. Complete continuous real-time loop seam not measured.",
+      "identity": "Recognizable approved silhouette, palette, markings and facing retained. No missing or extra major limbs detected.",
+      "motion": "Restrained four-pose breathing arc with forward/reverse timing; minor generated contour drift remains at full resolution.",
+      "previewSha256": "27d1458ddbde93fc4bc883948f366b2c906e5d533e4e25bd9e136cf626c8586d",
+      "decodedGifFrameCount": 6,
+      "decodedDurationMs": 2280,
+      "frames": [
+        {
+          "file": "frame-00.png",
+          "size": [
+            800,
+            800
+          ],
+          "alpha": [
+            0,
+            255
+          ],
+          "edgeAlphaMax": 0,
+          "sha256": "f0f2d19ce4502251be33c02db7ebcefde2f336c22bcef6b0b66e8674f4ec03e5"
+        },
+        {
+          "file": "frame-01.png",
+          "size": [
+            800,
+            800
+          ],
+          "alpha": [
+            0,
+            255
+          ],
+          "edgeAlphaMax": 0,
+          "sha256": "ffcb548f4a2a026be578143cf009fae24cb23fcce51291517548192b89dcb868"
+        },
+        {
+          "file": "frame-02.png",
+          "size": [
+            800,
+            800
+          ],
+          "alpha": [
+            0,
+            255
+          ],
+          "edgeAlphaMax": 0,
+          "sha256": "78f6b742184636e52b30ed4d30a443b26cb1917200106283bb8e75a568412fb3"
+        },
+        {
+          "file": "frame-03.png",
+          "size": [
+            800,
+            800
+          ],
+          "alpha": [
+            0,
+            255
+          ],
+          "edgeAlphaMax": 0,
+          "sha256": "f49adddc5d165ab1840e43c6fb94ebf4ba5d3220df0e572c8199010e19614d9a"
+        }
+      ],
+      "limitations": [
+        "Browser fit-to-window scales preview; inset is smaller than a literal 96 displayed pixels.",
+        "Not game integrated, no combat states, pending user visual approval."
+      ]
+    }
+  ]
+}

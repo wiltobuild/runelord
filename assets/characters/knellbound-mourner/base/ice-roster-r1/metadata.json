@@ -1,0 +1,54 @@
+{
+  "id": "knellbound-mourner",
+  "name": "Knellbound Mourner",
+  "brief": "A bent undead support creature carrying ONE huge cracked bronze funeral bell strapped across its hunched back. Thin pallid blue humanoid with a featureless cloth shroud covering head and face, a wide stooped silhouette and two spindly legs beneath short navy robes. One hand holds a short broad bone mallet, other hand balances bell harness. Frost gathers only on bell lip and shoulders, muted bronze provides distinct accent. No crown, sword or staff. Bell silhouette clearly separate from head.",
+  "proposedParts": "hunched humanoid; pelvis/chest/head, limbs, bell with back harness, mallet, short cloth panels",
+  "prompt": "Use case: stylized-concept. Create one full-body transparent Runelord enemy base: Knellbound Mourner. A bent undead support creature carrying ONE huge cracked bronze funeral bell strapped across its hunched back. Thin pallid blue humanoid with a featureless cloth shroud covering head and face, a wide stooped silhouette and two spindly legs beneath short navy robes. One hand holds a short broad bone mallet, other hand balances bell harness. Frost gathers only on bell lip and shoulders, muted bronze provides distinct accent. No crown, sword or staff. Bell silhouette clearly separate from head. References supplied are STYLE ONLY, not identities to copy: preserve approved Runelord broad clean color shapes, crisp hard-edged cel shadows, serious stylized proportions and chunky surfaces. Face LEFT in shallow three-quarter game view in a neutral combat stance. Entire silhouette occupies at most 78% of canvas; generous empty margin on every side. Genuinely transparent empty background. No ground shadow, aura, glow halo, gradients, bloom, landscape, text, border or watermark. No realism, painterly surface, grain, tiny detail or cute mascot. Single character only.",
+  "source": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\characters\\knellbound-mourner\\base\\ice-roster-r1\\master.png",
+  "generationSource": "C:\\Users\\wilsh\\.codex\\generated_images\\01a13278-e699-7143-9725-41483d4a7ef8\\exec-bc3c4e0e-ae60-46f1-830b-bee28f746793.png",
+  "sha256": "249f534fd13106445893a983f1ec0d6b28146a345b53ddc491170609b2b94435",
+  "dimensions": [
+    1145,
+    1374
+  ],
+  "hasAlpha": true,
+  "alphaRange": [
+    0,
+    255
+  ],
+  "references": [
+    {
+      "path": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\heroes\\references\\runeblade\\runeblade-base-r1.png",
+      "sha256": "adbd33fb14e91b761f355ffeb9966cb262aacca78429099ec09b0fab9faf84ef",
+      "role": "style only",
+      "decision": {
+        "status": "Approved",
+        "at": "2026-10-02T03:44:25.533Z",
+        "evidenceId": "user-chat-2026-10-01-approve-existing-runelord",
+        "paths": [
+          "C:\\Users\\wilsh\\Projects\\runelord\\assets\\heroes\\references\\runeblade\\runeblade-base-r1.png"
+        ]
+      }
+    },
+    {
+      "path": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\characters\\runeblade-base-summons\\selected-r1\\frost-thrall\\master.png",
+      "sha256": "32183e9e97d29d42b4f8674e8a9bb7e6dfe888fc871149f33405b3c8491be5e9",
+      "role": "style only",
+      "decision": {
+        "status": "Approved",
+        "at": "2026-10-05T10:56:14.478Z",
+        "evidenceId": "6b887dd8-b9de-44bd-9137-527e577e0a1c",
+        "paths": [
+          "C:/Users/wilsh/Projects/runelord/assets/characters/runeblade-base-summons/selected-r1/frost-thrall/master.png"
+        ]
+      }
+    }
+  ],
+  "status": "Pending approval",
+  "generationTool": "built-in image_gen",
+  "qa": {
+    "fullSize": "inspected; serious cel shading, distinct readable role, complete figure",
+    "display96px": "Inspected; silhouette and role-defining equipment readable at 96px",
+    "limitations": "Concept base only; proposed parts not separated. No animation or runtime integration. Some edge margins are tight; normalize padding before animation."
+  }
+}

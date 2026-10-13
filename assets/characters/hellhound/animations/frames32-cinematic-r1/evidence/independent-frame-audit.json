@@ -1,0 +1,454 @@
+{
+  "root": "assets/characters/hellhound/animations/frames32-cinematic-r1",
+  "scaleNote": "96px reference body height; same scale all frames",
+  "frames": [
+    {
+      "file": "attack-00.png",
+      "sha256": "651c0544ac5484a10c0c43fcfba982c05cb93ed1a9e33e3c9773fbe35a1f0c44",
+      "width": 768,
+      "height": 640,
+      "bounds": [
+        105,
+        150,
+        579,
+        560
+      ],
+      "nontransparentPixels": 107948,
+      "outerEdgePixels": 0
+    },
+    {
+      "file": "attack-01.png",
+      "sha256": "0d06690736383e23b32f4d176d74d4c6741fecfad28053f79e63499306eb4946",
+      "width": 768,
+      "height": 640,
+      "bounds": [
+        105,
+        129,
+        612,
+        559
+      ],
+      "nontransparentPixels": 101159,
+      "outerEdgePixels": 0
+    },
+    {
+      "file": "attack-02.png",
+      "sha256": "c4d201ac48f5cb80f2b687201f833f4760ce2dc5a6a62faa014a4531aeec72e8",
+      "width": 768,
+      "height": 640,
+      "bounds": [
+        104,
+        151,
+        609,
+        560
+      ],
+      "nontransparentPixels": 98074,
+      "outerEdgePixels": 0
+    },
+    {
+      "file": "attack-03.png",
+      "sha256": "8d8bc53a2dd0f006d87d4596df12338979a74700a87f02c2e7ff99d911ad267f",
+      "width": 768,
+      "height": 640,
+      "bounds": [
+        104,
+        135,
+        584,
+        560
+      ],
+      "nontransparentPixels": 105743,
+      "outerEdgePixels": 0
+    },
+    {
+      "file": "attack-04.png",
+      "sha256": "42b4f2c82c0a7eab41a50f7003f049d8d1bf94ac3e47adb1ae5ccc0f232c5a13",
+      "width": 768,
+      "height": 640,
+      "bounds": [
+        94,
+        215,
+        584,
+        560
+      ],
+      "nontransparentPixels": 97386,
+      "outerEdgePixels": 0
+    },
+    {
+      "file": "attack-05.png",
+      "sha256": "73543fc93a2b3fe871b99c5903a3867542169691cd75b7c843cefa32b6c7f8df",
+      "width": 768,
+      "height": 640,
+      "bounds": [
+        93,
+        190,
+        576,
+        560
+      ],
+      "nontransparentPixels": 95193,
+      "outerEdgePixels": 0
+    },
+    {
+      "file": "attack-06.png",
+      "sha256": "57e02e9d2c8b2ecc4c3bfa5c9941cb7c6a1b1b17bb252a562213d58ae5595926",
+      "width": 768,
+      "height": 640,
+      "bounds": [
+        93,
+        157,
+        594,
+        561
+      ],
+      "nontransparentPixels": 109848,
+      "outerEdgePixels": 0
+    },
+    {
+      "file": "attack-07.png",
+      "sha256": "d6bc01413f820a7d6327b14cced2b647506220b59774c9a03ae26dab07d39a59",
+      "width": 768,
+      "height": 640,
+      "bounds": [
+        93,
+        160,
+        588,
+        559
+      ],
+      "nontransparentPixels": 105323,
+      "outerEdgePixels": 0
+    },
+    {
+      "file": "die-00.png",
+      "sha256": "6ad1c2caef756ca7003b7762f3d13563ac49056b3cb6305ba45cf8aff6a20c08",
+      "width": 768,
+      "height": 640,
+      "bounds": [
+        90,
+        214,
+        573,
+        560
+      ],
+      "nontransparentPixels": 93584,
+      "outerEdgePixels": 0
+    },
+    {
+      "file": "die-01.png",
+      "sha256": "c8af3fc88d4299ca5550d63fa455722ee7fd9ba4f280702bbc54446c632745fd",
+      "width": 768,
+      "height": 640,
+      "bounds": [
+        94,
+        236,
+        622,
+        560
+      ],
+      "nontransparentPixels": 96527,
+      "outerEdgePixels": 0
+    },
+    {
+      "file": "die-02.png",
+      "sha256": "55ed1aedac4f205f292807dd8abafe39d726ca980d06787d0df2e51de1acb3d1",
+      "width": 768,
+      "height": 640,
+      "bounds": [
+        90,
+        315,
+        579,
+        560
+      ],
+      "nontransparentPixels": 68776,
+      "outerEdgePixels": 0
+    },
+    {
+      "file": "die-03.png",
+      "sha256": "ddf8430949c79c087e0ae3e541f6ea09d8ca52b1a97746470d18b2d18fe00e1f",
+      "width": 768,
+      "height": 640,
+      "bounds": [
+        93,
+        335,
+        610,
+        560
+      ],
+      "nontransparentPixels": 72389,
+      "outerEdgePixels": 0
+    },
+    {
+      "file": "die-04.png",
+      "sha256": "99f1990547b9aa9ab036733dfc5e1014bd840afe14ff67b391c2b2f5bfc62281",
+      "width": 768,
+      "height": 640,
+      "bounds": [
+        90,
+        348,
+        621,
+        560
+      ],
+      "nontransparentPixels": 66570,
+      "outerEdgePixels": 0
+    },
+    {
+      "file": "die-05.png",
+      "sha256": "fc4b4dc449fe1d66b43478edebf1a31f531ba30fe4794d9530b6636c2ff2eca9",
+      "width": 768,
+      "height": 640,
+      "bounds": [
+        93,
+        360,
+        625,
+        560
+      ],
+      "nontransparentPixels": 66263,
+      "outerEdgePixels": 0
+    },
+    {
+      "file": "die-06.png",
+      "sha256": "19b4c3ca7431c46f13a8408bb74345eb2dc7e6bd5fd9aacb768fb056576ec24d",
+      "width": 768,
+      "height": 640,
+      "bounds": [
+        93,
+        382,
+        620,
+        559
+      ],
+      "nontransparentPixels": 58413,
+      "outerEdgePixels": 0
+    },
+    {
+      "file": "die-07.png",
+      "sha256": "9854f064ea6af6fc65b897cca072d9ded12e948d7e91bbb9548501417fc46cd9",
+      "width": 768,
+      "height": 640,
+      "bounds": [
+        90,
+        374,
+        628,
+        560
+      ],
+      "nontransparentPixels": 62053,
+      "outerEdgePixels": 0
+    },
+    {
+      "file": "hit-00.png",
+      "sha256": "b5724afd7996c2425f3e7b9a1589092e4d64342bebd8b74248c6c8836182e466",
+      "width": 768,
+      "height": 640,
+      "bounds": [
+        104,
+        132,
+        595,
+        559
+      ],
+      "nontransparentPixels": 98607,
+      "outerEdgePixels": 0
+    },
+    {
+      "file": "hit-01.png",
+      "sha256": "786fcbf6dc3df14ae5d53c22c3e86a5bfd0a3aa42de7cd076a044c964358ea78",
+      "width": 768,
+      "height": 640,
+      "bounds": [
+        104,
+        202,
+        532,
+        560
+      ],
+      "nontransparentPixels": 86618,
+      "outerEdgePixels": 0
+    },
+    {
+      "file": "hit-02.png",
+      "sha256": "487ade4bd632d5f05f271a18c9b1693d4f383387b6e47b7c02b0daca1b26abaf",
+      "width": 768,
+      "height": 640,
+      "bounds": [
+        105,
+        199,
+        576,
+        560
+      ],
+      "nontransparentPixels": 90647,
+      "outerEdgePixels": 0
+    },
+    {
+      "file": "hit-03.png",
+      "sha256": "f93d8bae5a2540eacc178beb2a1821e2fc586b9d44fb41cace313de87a18be66",
+      "width": 768,
+      "height": 640,
+      "bounds": [
+        104,
+        188,
+        558,
+        561
+      ],
+      "nontransparentPixels": 90884,
+      "outerEdgePixels": 0
+    },
+    {
+      "file": "idle-00.png",
+      "sha256": "ebef843b82d2330fbe2d620b3cb3c09a43298eb6980b78300e53b8505ce7cc17",
+      "width": 768,
+      "height": 640,
+      "bounds": [
+        90,
+        198,
+        568,
+        560
+      ],
+      "nontransparentPixels": 88385,
+      "outerEdgePixels": 0
+    },
+    {
+      "file": "idle-01.png",
+      "sha256": "2040219d4c185d1166fbf0c7189d989006f2c7e4619c3e2ed4bc5dececa1084b",
+      "width": 768,
+      "height": 640,
+      "bounds": [
+        90,
+        196,
+        583,
+        560
+      ],
+      "nontransparentPixels": 91171,
+      "outerEdgePixels": 0
+    },
+    {
+      "file": "idle-02.png",
+      "sha256": "ec4bb230dcb66194cfe47797a5ea008ea247cd5c68c17412b041a7754812d54b",
+      "width": 768,
+      "height": 640,
+      "bounds": [
+        90,
+        202,
+        588,
+        560
+      ],
+      "nontransparentPixels": 92872,
+      "outerEdgePixels": 0
+    },
+    {
+      "file": "idle-03.png",
+      "sha256": "744da8823d09901fad7dfd360d4d879902d9d848fa4baa05913d79a5ad7faecf",
+      "width": 768,
+      "height": 640,
+      "bounds": [
+        90,
+        201,
+        593,
+        560
+      ],
+      "nontransparentPixels": 93597,
+      "outerEdgePixels": 0
+    },
+    {
+      "file": "spawn-00.png",
+      "sha256": "8a3a9238c2fbaf7e5029b53cc1f7541cb1d9bf479271dfea0767dadca2aa23cf",
+      "width": 768,
+      "height": 640,
+      "bounds": [
+        98,
+        205,
+        589,
+        560
+      ],
+      "nontransparentPixels": 87130,
+      "outerEdgePixels": 0
+    },
+    {
+      "file": "spawn-01.png",
+      "sha256": "f2622bfacd7a399f1873dadb234c979b60c81d58e39f37bd15881ce20b69dbd7",
+      "width": 768,
+      "height": 640,
+      "bounds": [
+        98,
+        153,
+        590,
+        560
+      ],
+      "nontransparentPixels": 96308,
+      "outerEdgePixels": 0
+    },
+    {
+      "file": "spawn-02.png",
+      "sha256": "1caf52f699b890834b9a746f4008e8450d9fc2308d06b28ea9b6abd622afd82a",
+      "width": 768,
+      "height": 640,
+      "bounds": [
+        97,
+        191,
+        603,
+        560
+      ],
+      "nontransparentPixels": 99938,
+      "outerEdgePixels": 0
+    },
+    {
+      "file": "spawn-03.png",
+      "sha256": "b4850dc77aa087a8f1fbde2c18356a98e4d74b9519f028f6f07185c221bdd778",
+      "width": 768,
+      "height": 640,
+      "bounds": [
+        98,
+        166,
+        608,
+        561
+      ],
+      "nontransparentPixels": 107030,
+      "outerEdgePixels": 0
+    },
+    {
+      "file": "wounded_idle-00.png",
+      "sha256": "06c5bcea61b787b70ea13e106fcb22168edf48176a851e8011d3fdc98fe9e524",
+      "width": 768,
+      "height": 640,
+      "bounds": [
+        90,
+        252,
+        583,
+        560
+      ],
+      "nontransparentPixels": 83656,
+      "outerEdgePixels": 0
+    },
+    {
+      "file": "wounded_idle-01.png",
+      "sha256": "3ac61b9283a5ceda8048eadcfba9cb508b284a5e60c6a7614dbab00061ae744c",
+      "width": 768,
+      "height": 640,
+      "bounds": [
+        90,
+        240,
+        584,
+        560
+      ],
+      "nontransparentPixels": 84972,
+      "outerEdgePixels": 0
+    },
+    {
+      "file": "wounded_idle-02.png",
+      "sha256": "dcba8524c34e09bb5b61522ad975664d03623502fd80b60662c544afe2eca8bf",
+      "width": 768,
+      "height": 640,
+      "bounds": [
+        90,
+        225,
+        579,
+        560
+      ],
+      "nontransparentPixels": 88495,
+      "outerEdgePixels": 0
+    },
+    {
+      "file": "wounded_idle-03.png",
+      "sha256": "63e1bfd4dd25bb3f55b3fd271c59a184fd4fab13a09be41f8c03d7023e544bc3",
+      "width": 768,
+      "height": 640,
+      "bounds": [
+        90,
+        243,
+        591,
+        560
+      ],
+      "nontransparentPixels": 87144,
+      "outerEdgePixels": 0
+    }
+  ]
+}

@@ -1,0 +1,165 @@
+{
+  "contract_version": 2,
+  "character_id": "reedstep-ferryman",
+  "display_name": "Reedstep Ferryman",
+  "project": "C:/Users/wilsh/Projects/runelord",
+  "role": "Marsh ferry worker; proposed normal enemy, punt shove targeting front",
+  "scope": "20 approved base designs; direct animation request outside the three-variant workflow",
+  "base": {
+    "revision": "base-r1",
+    "asset": "C:/Users/wilsh/Projects/runelord/assets/characters/reedstep-ferryman/base-r1.png",
+    "dimensions": [
+      1199,
+      1312
+    ],
+    "sha256": "71e49f94a41fba91c9a4e104b8969e2cb4e0b11382f8970b3cb5ab0fba22506b",
+    "alpha": "verified RGBA"
+  },
+  "variants": [],
+  "approvals": [
+    {
+      "stage": "base",
+      "revision": "base-r1",
+      "sha256": "71e49f94a41fba91c9a4e104b8969e2cb4e0b11382f8970b3cb5ab0fba22506b",
+      "evidenceId": "4a6bb135-aac6-43e2-8ab2-c786c8ca7ce9",
+      "at": "2026-10-02T04:57:53.710Z",
+      "user_text": "User explicitly approved all 20 concepts in this chat and requested: approve all of them and animate them with hd-animate-fantasy-character. Scope: animate the 20 approved base designs directly; no unrequested variant generation."
+    }
+  ],
+  "concept": {
+    "contract_version": 2,
+    "character_id": "reedstep-ferryman",
+    "display_name": "Reedstep Ferryman",
+    "status": "base_pending",
+    "revision": "base-r1",
+    "approval": "Pending approval",
+    "asset": "base-r1.png",
+    "sha256": "71e49f94a41fba91c9a4e104b8969e2cb4e0b11382f8970b3cb5ab0fba22506b",
+    "dimensions": [
+      1199,
+      1312
+    ],
+    "alpha": {
+      "format": "Format32bppArgb",
+      "corner_alpha": 0,
+      "verified": "RGBA with transparent corners; visually inspected composited previews"
+    },
+    "generation_mode": "built-in image_gen",
+    "source": "C:\\Users\\wilsh\\.codex\\generated_images\\01a0fae9-7669-74d1-8afc-28dadb1a33e0\\exec-9c2fceb5-3d95-4557-95dd-839ca8dfe208.png",
+    "novelty": "Extremely long wader legs and broad feet, horizontal shoulder yoke with two giant buoy baskets; unlike Ranger bird companions.",
+    "role": "Marsh ferry worker; proposed normal enemy, punt shove targeting front",
+    "style_reference": {
+      "approval_evidence": "user-chat-2026-10-01-approve-existing-runelord",
+      "sha256": "769d160f774c58e54b619db419c88e693a9bcd0f9501aeceaece05f5325e5f48",
+      "path": "C:/Users/wilsh/Projects/runelord/assets/heroes/references/runesmith/runesmith-base-r1.png"
+    },
+    "construction": {
+      "pivots": "proposed natural shoulders, elbows, wrists, hips, knees, ankles, neck; root pelvis; exact pixel coordinates unresolved",
+      "status": "proposed only; flattened raster, no separated layers or rig",
+      "rig_family": "humanoid bespoke",
+      "parts": "Pelvis, short torso, neck/head/beak/crest, paired upper/lower arms and hands, two upper/lower stilt legs and paddle feet, rigid yoke, each basket on bounded secondary pivot, punt blade."
+    },
+    "animation_plan": {
+      "timing": "Ordinary action about 350ms; not implemented",
+      "required": [
+        "idle",
+        "attack",
+        "hit",
+        "wounded_idle",
+        "die"
+      ],
+      "conditional": "Guard and cast only if adopted gameplay kit requires; summon/victory not assigned",
+      "transform": "Not applicable",
+      "raised": "Potentially applicable because living body; all required motions need separate inventory after design approval",
+      "signature": "Brace wide feet, shove punt paddle forward; yoke and baskets counterbalance.",
+      "tamed": "Not applicable: intelligent humanoid, not normal beast"
+    },
+    "geometry": {
+      "coordinates": "pixels, top-left, x right, y down",
+      "facing": "left, shallow three-quarter",
+      "ground": "Feet planted; actual pixel anchor and motion bounds unresolved"
+    },
+    "limitations": [
+      "Unapproved concept only; no variants generated",
+      "No layers, rig, animations or runtime-ready manifest",
+      "Gameplay role and targeting are proposals, not catalog changes"
+    ],
+    "qa": {
+      "qa_sheet": "C:/Users/wilsh/Documents/Codex/2026-10-02/use/work/concepts-c/review.png",
+      "full_size": "visually inspected",
+      "border_nontransparent_pixels": {
+        "left": 32,
+        "bottom": 141,
+        "top": 55,
+        "right": 0
+      },
+      "thumbnail_96px": "visually inspected, distinctive silhouette and role props readable",
+      "alpha_composite": "clean background verified on light QA sheet",
+      "border_note": "No opaque silhouette pixels touch edges. Some masters retain negligible alpha 1-3/255 border residue, preserved without modification."
+    }
+  },
+  "style_lock": {
+    "approved_character_reference": "C:/Users/wilsh/Projects/runelord/assets/characters/reedstep-ferryman/base-r1.png",
+    "direction": "Preserve approved identity and serious clean 2D cel shading",
+    "references": []
+  },
+  "construction": {
+    "pivots": "proposed natural shoulders, elbows, wrists, hips, knees, ankles, neck; root pelvis; exact pixel coordinates unresolved",
+    "status": "proposed only; flattened raster, no separated layers or rig",
+    "rig_family": "humanoid bespoke",
+    "parts": "Pelvis, short torso, neck/head/beak/crest, paired upper/lower arms and hands, two upper/lower stilt legs and paddle feet, rigid yoke, each basket on bounded secondary pivot, punt blade."
+  },
+  "geometry": {
+    "coordinates": "pixels, top-left, x right, y down",
+    "facing": "left, shallow three-quarter",
+    "ground": "Feet planted; actual pixel anchor and motion bounds unresolved"
+  },
+  "animations": {
+    "required": [
+      "idle",
+      "attack",
+      "hit",
+      "wounded_idle",
+      "die"
+    ],
+    "additional_from_concept": "Inspect concept conditional states and include applicable support/cast/guard/spawn. Raised/tamed forms are separate unapproved designs and excluded from this base-only request."
+  },
+  "output": {
+    "directory": "C:/Users/wilsh/Projects/runelord/assets/characters/reedstep-ferryman/animation",
+    "format": "reference-conditioned frames or genuine articulated cutout, as verified",
+    "preview": "GIF and HTML playback"
+  },
+  "limitations": [
+    "Flattened approved source; no rig exists at intake.",
+    "Do not imply approval of newly generated animation frames."
+  ],
+  "status": "animation_in_progress",
+  "animation_package": {
+    "revision": "r1",
+    "path": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\characters\\reedstep-ferryman\\animation\\r1",
+    "manifest": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\characters\\reedstep-ferryman\\animation\\r1\\manifest.json",
+    "preview": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\characters\\reedstep-ferryman\\animation\\r1\\review.gif",
+    "state_inventory": [
+      "idle",
+      "attack",
+      "hit",
+      "wounded_idle",
+      "die"
+    ],
+    "status": "review package generated; pending central playback QA and user approval"
+  },
+  "animation_delivery": {
+    "stage": "review_pack_delivered",
+    "directory": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\characters\\reedstep-ferryman\\animation\\r1",
+    "qa": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\characters\\reedstep-ferryman\\animation\\r1\\delivery-qa.json",
+    "frame_count": 16,
+    "states": [
+      "idle",
+      "attack",
+      "hit",
+      "wounded_idle",
+      "die"
+    ],
+    "pending": "User review of new animation frames; production polish of documented detail/foot-placement variation"
+  }
+}

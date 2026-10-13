@@ -1,0 +1,118 @@
+{
+  "date": "2026-10-12",
+  "method": "built-in image_gen",
+  "references": [
+    "C:/Users/wilsh/Projects/runelord/assets/characters/forest-sovereign/concepts/2026-10-05-r1/01-root-crown-king.png",
+    "C:/Users/wilsh/Projects/runelord/assets/heroes/references/runeblade/runeblade-base-r1.png"
+  ],
+  "records": [
+    {
+      "id": "fire-01",
+      "name": "Fire Sovereign \u00e2\u20ac\u201d Caldera King",
+      "brief": "An immense humanoid king made of broad charcoal basalt plates and restrained molten orange seams. A jagged volcanic crown grows directly from his stern stone head, amber furnace heart in chest, enormous rock fists and firmly planted crag feet. Broad powerful shoulders. No weapon. Royal volcanic elemental, not a tree.",
+      "prompt": "Use case: stylized-concept. Create ONE full-body Runelord boss concept sample: Fire Sovereign \u00e2\u20ac\u201d Caldera King. An immense humanoid king made of broad charcoal basalt plates and restrained molten orange seams. A jagged volcanic crown grows directly from his stern stone head, amber furnace heart in chest, enormous rock fists and firmly planted crag feet. Broad powerful shoulders. No weapon. Royal volcanic elemental, not a tree.\nReferences: image1 is the user-selected Forest Sovereign BLUEPRINT for boss scale, commanding presence, grounded proportions and designed detail, not an identity to recolor. Image2 is APPROVED rendering reference for broad simplified 2D shapes and clean hard-edged cel shadows; do not copy its knight identity. Make this new character gritty and serious with weighty stylized proportions, quiet surfaces, crisp edges, muted palette and selective strong elemental accents. No painterly gradients, photoreal texture, dense scratches, PBR lighting, cute mascot expression or bloom. Enemy faces LEFT in shallow three-quarter view, neutral combat stance. Two arms/two legs clearly separated, all crown tips and weapon fully visible, generous 10% clear margin around silhouette. Transparent background, no landscape, ground pedestal, labels, text or watermark. Keep magic confined to a few designed shapes so later idle animation has stable identity. Concept only, not animation frames.",
+      "source": "C:\\Users\\wilsh\\.codex\\generated_images\\01a10b44-06ff-7222-996f-c1ddf2bb5181\\exec-ebc576a2-136b-4ae8-9228-186819a553e2.png",
+      "size": [
+        1145,
+        1374
+      ],
+      "sha256": "543374a96efed10ad8a8e81c54ffe9735179834f1f5efbe8f67b9fe0767fee39",
+      "alphaRange": [
+        0,
+        255
+      ],
+      "status": "Pending approval",
+      "productionNotes": "Concept only; normalize left-facing view, margins, true transparency and separate glow after selection. No animation or rig yet."
+    },
+    {
+      "id": "fire-02",
+      "name": "Fire Sovereign \u00e2\u20ac\u201d Cinder Tyrant",
+      "brief": "A towering demonic emperor in chunky blackened iron and oxblood armor, a crown of swept horns enclosing a short flame crest, stern ember-eyed face, broad shoulders, one large cleaver-like obsidian sword held low in his near hand, free casting hand clear from torso, short split burnt-red mantle. Two legs, two arms, no wings. Regal intimidating demon ruler.",
+      "prompt": "Use case: stylized-concept. Create ONE full-body Runelord boss concept sample: Fire Sovereign \u00e2\u20ac\u201d Cinder Tyrant. A towering demonic emperor in chunky blackened iron and oxblood armor, a crown of swept horns enclosing a short flame crest, stern ember-eyed face, broad shoulders, one large cleaver-like obsidian sword held low in his near hand, free casting hand clear from torso, short split burnt-red mantle. Two legs, two arms, no wings. Regal intimidating demon ruler.\nReferences: image1 is the user-selected Forest Sovereign BLUEPRINT for boss scale, commanding presence, grounded proportions and designed detail, not an identity to recolor. Image2 is APPROVED rendering reference for broad simplified 2D shapes and clean hard-edged cel shadows; do not copy its knight identity. Make this new character gritty and serious with weighty stylized proportions, quiet surfaces, crisp edges, muted palette and selective strong elemental accents. No painterly gradients, photoreal texture, dense scratches, PBR lighting, cute mascot expression or bloom. Enemy faces LEFT in shallow three-quarter view, neutral combat stance. Two arms/two legs clearly separated, all crown tips and weapon fully visible, generous 10% clear margin around silhouette. Transparent background, no landscape, ground pedestal, labels, text or watermark. Keep magic confined to a few designed shapes so later idle animation has stable identity. Concept only, not animation frames.",
+      "source": "C:\\Users\\wilsh\\.codex\\generated_images\\01a10b44-06ff-7222-996f-c1ddf2bb5181\\exec-ad968f7a-c20b-44ab-a12a-09c0f9c39cda.png",
+      "size": [
+        1024,
+        1536
+      ],
+      "sha256": "e4aa13001f39a6c34deebbfe3ea278396f6a85852ca82432c279488dedd04b88",
+      "alphaRange": [
+        0,
+        254
+      ],
+      "status": "Pending approval",
+      "productionNotes": "Concept only; normalize left-facing view, margins, true transparency and separate glow after selection. No animation or rig yet."
+    },
+    {
+      "id": "fire-03",
+      "name": "Fire Sovereign \u00e2\u20ac\u201d Furnace Colossus",
+      "brief": "A hulking ancient living furnace monarch with a wide squat silhouette, terracotta and charcoal armored stone body, monumental vented shoulder towers, a compact crowned iron mask head, a large geometric furnace opening in chest containing a clean orange flame shape. Oversized hammer-shaped bare fists, chunky planted feet. No carried weapon, no machinery clutter. Ancient magical construct.",
+      "prompt": "Use case: stylized-concept. Create ONE full-body Runelord boss concept sample: Fire Sovereign \u00e2\u20ac\u201d Furnace Colossus. A hulking ancient living furnace monarch with a wide squat silhouette, terracotta and charcoal armored stone body, monumental vented shoulder towers, a compact crowned iron mask head, a large geometric furnace opening in chest containing a clean orange flame shape. Oversized hammer-shaped bare fists, chunky planted feet. No carried weapon, no machinery clutter. Ancient magical construct.\nReferences: image1 is the user-selected Forest Sovereign BLUEPRINT for boss scale, commanding presence, grounded proportions and designed detail, not an identity to recolor. Image2 is APPROVED rendering reference for broad simplified 2D shapes and clean hard-edged cel shadows; do not copy its knight identity. Make this new character gritty and serious with weighty stylized proportions, quiet surfaces, crisp edges, muted palette and selective strong elemental accents. No painterly gradients, photoreal texture, dense scratches, PBR lighting, cute mascot expression or bloom. Enemy faces LEFT in shallow three-quarter view, neutral combat stance. Two arms/two legs clearly separated, all crown tips and weapon fully visible, generous 10% clear margin around silhouette. Transparent background, no landscape, ground pedestal, labels, text or watermark. Keep magic confined to a few designed shapes so later idle animation has stable identity. Concept only, not animation frames.",
+      "source": "C:\\Users\\wilsh\\.codex\\generated_images\\01a10b44-06ff-7222-996f-c1ddf2bb5181\\exec-5235873b-427d-4303-bdb0-848ba611c477.png",
+      "size": [
+        1145,
+        1374
+      ],
+      "sha256": "19584c08f4b5311b301c65a9a97230cba6c3afc3c61d48efb61c0779d059d432",
+      "alphaRange": [
+        0,
+        255
+      ],
+      "status": "Pending approval",
+      "productionNotes": "Concept only; normalize left-facing view, margins, true transparency and separate glow after selection. No animation or rig yet."
+    },
+    {
+      "id": "ice-01",
+      "name": "Ice Sovereign \u00e2\u20ac\u201d Glacier Crown",
+      "brief": "An immense glacier elemental king, body formed from broad angular opaque blue-white ice slabs with navy shadow planes. Stern sculpted face, tall crystalline crown, luminous cyan geometric heart, huge glacier fists, two separated planted legs. Broad shoulders with a few massive ice spires, not many needles. Regal monolithic silhouette, no weapon, no tree motifs.",
+      "prompt": "Use case: stylized-concept. Create ONE full-body Runelord boss concept sample: Ice Sovereign \u00e2\u20ac\u201d Glacier Crown. An immense glacier elemental king, body formed from broad angular opaque blue-white ice slabs with navy shadow planes. Stern sculpted face, tall crystalline crown, luminous cyan geometric heart, huge glacier fists, two separated planted legs. Broad shoulders with a few massive ice spires, not many needles. Regal monolithic silhouette, no weapon, no tree motifs.\nReferences: image1 is the user-selected Forest Sovereign BLUEPRINT for boss scale, commanding presence, grounded proportions and designed detail, not an identity to recolor. Image2 is APPROVED rendering reference for broad simplified 2D shapes and clean hard-edged cel shadows; do not copy its knight identity. Make this new character gritty and serious with weighty stylized proportions, quiet surfaces, crisp edges, muted palette and selective strong elemental accents. No painterly gradients, photoreal texture, dense scratches, PBR lighting, cute mascot expression or bloom. Enemy faces LEFT in shallow three-quarter view, neutral combat stance. Two arms/two legs clearly separated, all crown tips and weapon fully visible, generous 10% clear margin around silhouette. Transparent background, no landscape, ground pedestal, labels, text or watermark. Keep magic confined to a few designed shapes so later idle animation has stable identity. Concept only, not animation frames.",
+      "source": "C:\\Users\\wilsh\\.codex\\generated_images\\01a10b44-06ff-7222-996f-c1ddf2bb5181\\exec-bdb29674-ce71-485a-b651-c8b9c32aa731.png",
+      "size": [
+        1024,
+        1536
+      ],
+      "sha256": "417069ff39bacd4f8cdab1298e53340f7893e9a01dad569482b315c7f77c9f1f",
+      "alphaRange": [
+        0,
+        254
+      ],
+      "status": "Pending approval",
+      "productionNotes": "Concept only; normalize left-facing view, margins, true transparency and separate glow after selection. No animation or rig yet."
+    },
+    {
+      "id": "ice-02",
+      "name": "Ice Sovereign \u00e2\u20ac\u201d Rime Regent",
+      "brief": "A towering frost-armored warrior ruler, heavy blue-black armor edged in pale ice, a crown integrated into an angular stern closed helmet, broad ice pauldrons, heavy dark teal split mantle, massive ice greatsword held low beside the body in one hand and free casting hand. Two grounded legs, formidable royal silhouette, no tiny jewelry.",
+      "prompt": "Use case: stylized-concept. Create ONE full-body Runelord boss concept sample: Ice Sovereign \u00e2\u20ac\u201d Rime Regent. A towering frost-armored warrior ruler, heavy blue-black armor edged in pale ice, a crown integrated into an angular stern closed helmet, broad ice pauldrons, heavy dark teal split mantle, massive ice greatsword held low beside the body in one hand and free casting hand. Two grounded legs, formidable royal silhouette, no tiny jewelry.\nReferences: image1 is the user-selected Forest Sovereign BLUEPRINT for boss scale, commanding presence, grounded proportions and designed detail, not an identity to recolor. Image2 is APPROVED rendering reference for broad simplified 2D shapes and clean hard-edged cel shadows; do not copy its knight identity. Make this new character gritty and serious with weighty stylized proportions, quiet surfaces, crisp edges, muted palette and selective strong elemental accents. No painterly gradients, photoreal texture, dense scratches, PBR lighting, cute mascot expression or bloom. Enemy faces LEFT in shallow three-quarter view, neutral combat stance. Two arms/two legs clearly separated, all crown tips and weapon fully visible, generous 10% clear margin around silhouette. Transparent background, no landscape, ground pedestal, labels, text or watermark. Keep magic confined to a few designed shapes so later idle animation has stable identity. Concept only, not animation frames.",
+      "source": "C:\\Users\\wilsh\\.codex\\generated_images\\01a10b44-06ff-7222-996f-c1ddf2bb5181\\exec-b3198878-d3f2-45f2-bfaf-ecf2fab491a4.png",
+      "size": [
+        1024,
+        1536
+      ],
+      "sha256": "c2267e857f37d44522aea66925213beaffb9467d8e2804a24e128c2a91a19872",
+      "alphaRange": [
+        0,
+        254
+      ],
+      "status": "Pending approval",
+      "productionNotes": "Concept only; normalize left-facing view, margins, true transparency and separate glow after selection. No animation or rig yet."
+    },
+    {
+      "id": "ice-03",
+      "name": "Ice Sovereign \u00e2\u20ac\u201d Winter Wraith",
+      "brief": "A towering ancient winter spirit with a severe pale mask face beneath an antler-like crown of just five large ice prongs, broad mantle of overlapping slate-blue ice plates, elongated powerful arms with icy claw hands, tapering split navy robes revealing two solid icy feet planted on ground. A suspended cyan core in riblike chest armor. Regal ominous long silhouette, not skeletal undead, no weapon, no floating pose.",
+      "prompt": "Use case: stylized-concept. Create ONE full-body Runelord boss concept sample: Ice Sovereign \u00e2\u20ac\u201d Winter Wraith. A towering ancient winter spirit with a severe pale mask face beneath an antler-like crown of just five large ice prongs, broad mantle of overlapping slate-blue ice plates, elongated powerful arms with icy claw hands, tapering split navy robes revealing two solid icy feet planted on ground. A suspended cyan core in riblike chest armor. Regal ominous long silhouette, not skeletal undead, no weapon, no floating pose.\nReferences: image1 is the user-selected Forest Sovereign BLUEPRINT for boss scale, commanding presence, grounded proportions and designed detail, not an identity to recolor. Image2 is APPROVED rendering reference for broad simplified 2D shapes and clean hard-edged cel shadows; do not copy its knight identity. Make this new character gritty and serious with weighty stylized proportions, quiet surfaces, crisp edges, muted palette and selective strong elemental accents. No painterly gradients, photoreal texture, dense scratches, PBR lighting, cute mascot expression or bloom. Enemy faces LEFT in shallow three-quarter view, neutral combat stance. Two arms/two legs clearly separated, all crown tips and weapon fully visible, generous 10% clear margin around silhouette. Transparent background, no landscape, ground pedestal, labels, text or watermark. Keep magic confined to a few designed shapes so later idle animation has stable identity. Concept only, not animation frames.",
+      "source": "C:\\Users\\wilsh\\.codex\\generated_images\\01a10b44-06ff-7222-996f-c1ddf2bb5181\\exec-d7ff9b4b-b4f0-4967-b91e-2908c918c0c7.png",
+      "size": [
+        1024,
+        1536
+      ],
+      "sha256": "9fb8bb450c2e52da657e8faf433d2c974f3bc57dd9ad5ee325b1460e354981b5",
+      "alphaRange": [
+        0,
+        254
+      ],
+      "status": "Pending approval",
+      "productionNotes": "Concept only; normalize left-facing view, margins, true transparency and separate glow after selection. No animation or rig yet."
+    }
+  ]
+}

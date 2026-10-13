@@ -1,0 +1,13 @@
+{
+  "approved": true,
+  "character_id": "greater-fiend",
+  "display_name": "Greater Fiend",
+  "asset": "greater-fiend-base-r1.png",
+  "sha256": "c4b631ee3634cc7299665ea4b7f4387f59162d09b2b5f43ff45c99cb3bab7ef0",
+  "approval_text": "approve",
+  "approval_source": "user chat, 2026-10-04",
+  "gallery_submission": "assets/approvals/inbox/greater-fiend/base-r1/exec-209d6ab4-9246-42fd-8ab2-62847a3f3f58.png",
+  "gallery_status_at_approval": "Pending approval",
+  "revision": "base-r1",
+  "stage": "base"
+}

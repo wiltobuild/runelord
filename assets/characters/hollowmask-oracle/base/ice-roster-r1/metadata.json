@@ -1,0 +1,54 @@
+{
+  "id": "hollowmask-oracle",
+  "name": "Hollowmask Oracle",
+  "brief": "A nonhumanoid hovering funerary mask caster: ONE giant elongated ivory death mask, empty narrow eye slits and severe angular mouth, surrounded by exactly three large dark navy folded cloth panels tapering below like a triangular shroud. A small pale cyan solid ice lens mounted above brow, two disembodied dark gloved claw hands emerging at either side of shroud. No torso armor, no legs, no crown, no staff, no skull, no extra faces. Upright floating triangular silhouette, hard-edged folds, restrained ice accents, no glow halo or smoke.",
+  "proposedParts": "bespoke floating mask; mask/lens, three shroud panels, two hands with local pivots",
+  "prompt": "Edit this exact Hollowmask Oracle, preserving its floating triangular shroud, singular long ivory mask, two claw hands, navy palette and graphic cel-shaded identity. Add meaningful designed material detail: two old repaired cracks and chipped edges in ivory mask, inset carved funerary grooves on brow and cheek planes, three broad icy frost-crust patches at shroud shoulders and hem, visible stitched repair across one cloth panel, layered cloth edging and a few frayed tears. Add restrained cloudy internal fissures to forehead ice lens. Do not add torso or legs, armor or extra accessories. Face LEFT in shallow three-quarter view. Keep clean broad hard-edged cel-shading, no photorealism or noise, no painterly gradients. Complete figure with 10% transparent margins. Genuine transparent backdrop, no halo or ground. Same character with richer materials.",
+  "source": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\characters\\hollowmask-oracle\\base\\ice-roster-r1\\master.png",
+  "generationSource": "C:\\Users\\wilsh\\.codex\\generated_images\\01a13278-e699-7143-9725-41483d4a7ef8\\exec-5e3ffa27-3dc5-480d-9cf1-028d8b8c5d22.png",
+  "sha256": "c24c1cdb0649065871068c1b975ccdb9e1a126edd716c18aa87f7e95ab5d5742",
+  "dimensions": [
+    1145,
+    1374
+  ],
+  "hasAlpha": true,
+  "alphaRange": [
+    0,
+    255
+  ],
+  "references": [
+    {
+      "path": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\heroes\\references\\runeblade\\runeblade-base-r1.png",
+      "sha256": "adbd33fb14e91b761f355ffeb9966cb262aacca78429099ec09b0fab9faf84ef",
+      "role": "style only",
+      "decision": {
+        "status": "Approved",
+        "at": "2026-10-02T03:44:25.533Z",
+        "evidenceId": "user-chat-2026-10-01-approve-existing-runelord",
+        "paths": [
+          "C:\\Users\\wilsh\\Projects\\runelord\\assets\\heroes\\references\\runeblade\\runeblade-base-r1.png"
+        ]
+      }
+    },
+    {
+      "path": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\characters\\runeblade-base-summons\\selected-r1\\frost-thrall\\master.png",
+      "sha256": "32183e9e97d29d42b4f8674e8a9bb7e6dfe888fc871149f33405b3c8491be5e9",
+      "role": "style only",
+      "decision": {
+        "status": "Approved",
+        "at": "2026-10-05T10:56:14.478Z",
+        "evidenceId": "6b887dd8-b9de-44bd-9137-527e577e0a1c",
+        "paths": [
+          "C:/Users/wilsh/Projects/runelord/assets/characters/runeblade-base-summons/selected-r1/frost-thrall/master.png"
+        ]
+      }
+    }
+  ],
+  "status": "Pending approval",
+  "generationTool": "built-in image_gen",
+  "qa": {
+    "fullSize": "inspected; serious cel shading, distinct readable role, complete figure",
+    "display96px": "Inspected; silhouette and role-defining equipment readable at 96px",
+    "limitations": "Concept base only; proposed parts not separated. No animation or runtime integration. Some edge margins are tight; normalize padding before animation."
+  }
+}

@@ -1,0 +1,70 @@
+{
+  "character_id": "cairnfrost-ursine",
+  "revision": "ice-detail-r3-2026-10-13",
+  "status": "Pending approval",
+  "asset": "master.png",
+  "sha256": "52ab1d0b4834a449bdbb2ec759163a1b4efe5cdf0ca439c5225874059e11abf1",
+  "dimensions": {
+    "width": 1536,
+    "height": 1024
+  },
+  "alpha": {
+    "hasAlpha": true,
+    "transparentPixels": 718750,
+    "partialPixels": 854114,
+    "opaquePixels": 0
+  },
+  "generator": "built-in image_gen",
+  "source": "C:/Users/wilsh/.codex/generated_images/01a133b3-3f10-7fe1-bf83-e6e01c00a074/exec-f47b4a07-c1d1-4f9f-9274-9ffd35a6c867.png",
+  "references": [
+    {
+      "path": "C:/Users/wilsh/Projects/runelord/assets/characters/cairnfrost-ursine/base/ice-roster-r1/master.png",
+      "sha256": "067b223d862e0c9bc147b101ffb6275007a7561f97aabe220745f9301b2b66d6",
+      "role": "identity",
+      "decision": {
+        "status": "Pending approval"
+      }
+    },
+    {
+      "path": "C:/Users/wilsh/Projects/runelord/assets/characters/ice-detail-2026-10-13/references/user-clean-endpoint.png",
+      "sha256": "5e13b63b16d89e0b6c1c79fb50d0220a356b1b87bf8592ee09b54d585eb146b9",
+      "role": "user-selected style endpoint",
+      "decision": {
+        "status": "Pending approval"
+      }
+    },
+    {
+      "path": "C:/Users/wilsh/Projects/runelord/assets/characters/ice-detail-2026-10-13/references/user-textured-endpoint.png",
+      "sha256": "e8b7028c9f940eeba9208a7510a9c22e1ff8b7a14a0afd1e53e04decacdf636e",
+      "role": "user-selected style endpoint",
+      "decision": {
+        "status": "Pending approval"
+      }
+    },
+    {
+      "path": "C:/Users/wilsh/Projects/runelord/assets/characters/avalanche-colossus/base/ice-roster-r2/base.png",
+      "sha256": "c4c6ae8b6243ff2f2631cd84632dd4b0c45c8178704f75b2fbc2293f9f12b4d9",
+      "role": "approved style reference",
+      "decision": {
+        "status": "Approved",
+        "at": "2026-10-13T04:35:29.547Z",
+        "evidenceId": "fdd2dbac-29c7-4e35-9049-5a178f074a09",
+        "paths": [
+          "C:\\Users\\wilsh\\Projects\\runelord\\assets\\approvals\\inbox\\avalanche-colossus\\ice-roster-r2\\base.png"
+        ]
+      }
+    }
+  ],
+  "user_direction": "Midpoint between supplied endpoints; significantly reduce texture especially edges.",
+  "prompt": "Use case: identity-preserve. Edit image 1 Cairnfrost Ursine. Keep exact heavy bear identity, pose, four paws, claw count, left facing head, neck shackle, 3 back ice spines, slate shoulder armor. Remove the ENTIRE luminous fog/halo behind and around bear; genuine transparent background right up to solid silhouette, no shadow. Image 2 clean Hollowmask and image 3 textured Hollowmask are USER STYLE ENDPOINTS: target midpoint but strongly favor image 2 crisp edges and broad quiet color planes. Image 4 approved Colossus provides serious material vocabulary only, use much LESS surface texture. Add moderately designed internal detail: several broad grouped fur locks, a few crisp slate fractures and beveled chips, selected larger internal ice cracks, readable shackle wear. Detailed illustrative construction, NO all-over grain, fine hairs, snow fringes, mottling, fabric noise, blurry edges, bloom, haze. Clean hard-edged cel shadows; large areas remain smooth. All paws and spines inside generous transparent padding. Preserve original colors and anatomy. One full creature only, no sheet, no text.\n",
+  "qa": {
+    "fullSize": "Pass: inspected correctly alpha-flattened light and dark composites; crisp silhouette, no visible halo, preserved identity, moderate interior detail",
+    "smallScale": "Pass: inspected 96px height light and dark composites; distinct silhouette and signature marks readable",
+    "independentReview": "not performed by builder",
+    "evidenceDirectory": "C:/Users/wilsh/Projects/runelord/work/ice-balanced-qa/cairnfrost-ursine"
+  },
+  "limitations": [
+    "Flattened concept raster, no separated rig or animation.",
+    "New revision pending approval, no runtime integration."
+  ]
+}

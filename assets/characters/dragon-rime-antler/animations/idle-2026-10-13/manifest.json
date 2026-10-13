@@ -1,0 +1,235 @@
+{
+  "character_id": "dragon-rime-antler",
+  "status": "idle_complete_pending_independent_review",
+  "format": "whole-character RGBA frames",
+  "source_approval": {
+    "id": "dragon-rime-antler",
+    "name": "Rime Antler",
+    "path": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\approvals\\inbox\\dragon-rime-antler\\base-r1\\base-r1.png",
+    "sha256": "e4fab93af107e89c60c280c3621a72e9f8b50c143f54269a853650e817dceed0",
+    "decision": {
+      "status": "Approved",
+      "at": "2026-10-02T22:20:49.176Z",
+      "evidenceId": "c3130d0a-2308-4f64-bff5-67dd8f8312a2",
+      "paths": [
+        "C:\\Users\\wilsh\\Projects\\runelord\\assets\\approvals\\inbox\\dragon-rime-antler\\base-r1\\base-r1.png"
+      ]
+    }
+  },
+  "generation": {
+    "tool": "built-in image_gen",
+    "source": "C:/Users/wilsh/.codex/generated_images/01a133ae-1b4e-7ac1-91fa-8f7f5ebdfe6d/exec-89bc71f0-811e-4e42-a361-6770da585585.png",
+    "prompt": "prompt.txt",
+    "source_sheet_sha256": "da78db8c29790d0b29c98b35fd5b36cb18832299c0043692584a9e5b7992209c"
+  },
+  "geometry": {
+    "frame_canvas": [
+      800,
+      800
+    ],
+    "coordinate_system": "pixels; top-left origin; x right y down",
+    "ground_anchor": [
+      350,
+      728
+    ],
+    "registration": "integer front-paw ground registration; no pose scaling",
+    "facing": "left",
+    "root_motion": "in-place"
+  },
+  "atlas": {
+    "file": "atlas.png",
+    "dimensions": [
+      1600,
+      1600
+    ],
+    "sha256": "48704c31ab393d118b4fd555f5886776c9eaa187c1d30f655b9126063081d464"
+  },
+  "frames": [
+    {
+      "id": 0,
+      "file": "frame-00.png",
+      "source_rect": [
+        40,
+        40,
+        620,
+        610
+      ],
+      "packing_translation": [
+        130,
+        181
+      ],
+      "sha256": "1427792cc7f9533c5013e8c409ab7bd05d5eb65dc3e500d14b8a7b3cb80f77ae",
+      "bbox": [
+        131,
+        181,
+        710,
+        751
+      ],
+      "atlas_rect": [
+        0,
+        0,
+        800,
+        800
+      ],
+      "duration_ms": 0
+    },
+    {
+      "id": 1,
+      "file": "frame-01.png",
+      "source_rect": [
+        670,
+        40,
+        1225,
+        610
+      ],
+      "packing_translation": [
+        139,
+        181
+      ],
+      "sha256": "2fb05b4dd286fed852317386012cc7acc801ffc2cdca43fac2fb9c323bf7eaa5",
+      "bbox": [
+        139,
+        181,
+        694,
+        751
+      ],
+      "atlas_rect": [
+        800,
+        0,
+        800,
+        800
+      ],
+      "duration_ms": 0
+    },
+    {
+      "id": 2,
+      "file": "frame-02.png",
+      "source_rect": [
+        40,
+        630,
+        620,
+        1210
+      ],
+      "packing_translation": [
+        129,
+        166
+      ],
+      "sha256": "7252b32b5021b841290e979418d948b17f9b71b37c413d9dc8f915ab37931244",
+      "bbox": [
+        129,
+        166,
+        709,
+        738
+      ],
+      "atlas_rect": [
+        0,
+        800,
+        800,
+        800
+      ],
+      "duration_ms": 0
+    },
+    {
+      "id": 3,
+      "file": "frame-03.png",
+      "source_rect": [
+        670,
+        630,
+        1225,
+        1210
+      ],
+      "packing_translation": [
+        140,
+        165
+      ],
+      "sha256": "0914ff338c31cc80c6d7e74c34b689ba78978aabfdc27e5e722b1f8704e65e79",
+      "bbox": [
+        140,
+        165,
+        694,
+        741
+      ],
+      "atlas_rect": [
+        800,
+        800,
+        800,
+        800
+      ],
+      "duration_ms": 0
+    }
+  ],
+  "animations": {
+    "idle": {
+      "frames": [
+        0,
+        1,
+        2,
+        3,
+        2,
+        1
+      ],
+      "durations_ms": [
+        420,
+        260,
+        260,
+        420,
+        260,
+        260
+      ],
+      "duration_ms": 1880,
+      "loop": true,
+      "events": [],
+      "transition": "self",
+      "method": "four authored progressive inhale poses, six-step forward/reverse breath cycle"
+    }
+  },
+  "unproduced_states": [
+    "attack",
+    "hit",
+    "wounded_idle",
+    "die",
+    "cast",
+    "guard",
+    "spawn",
+    "victory"
+  ],
+  "scope": "Idle only per current request; combat states not produced.",
+  "preview": {
+    "file": "idle-review.gif",
+    "sha256": "aeb0c8b0ebefdc73517bf68ffad0a56f5aebb2d47bd394f14d4d8822cb6b1cbe",
+    "views": "full size and 96px, light and dark backgrounds"
+  },
+  "qa": {
+    "alpha_extrema": [
+      0,
+      255
+    ],
+    "unique_frames": 4,
+    "source_clipping": false,
+    "visual_playback": "Builder observed actual gallery GIF in browser on light/dark panels at full view and 96px; restrained breathing, clean composited edges, no visible clipping. Pending independent QA.",
+    "limitations": [
+      "Four authored key poses, no interpolation; minor generated contour variation requires review."
+    ],
+    "contact_points": [
+      [
+        350.0,
+        728
+      ],
+      [
+        350.0,
+        728
+      ],
+      [
+        350.0,
+        728
+      ],
+      [
+        350.0,
+        728
+      ]
+    ],
+    "gif_frames": 6,
+    "gif_duration_ms": 1880
+  },
+  "approval": "Pending approval"
+}

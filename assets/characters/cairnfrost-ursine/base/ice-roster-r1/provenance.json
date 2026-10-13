@@ -1,0 +1,78 @@
+{
+  "character_id": "cairnfrost-ursine",
+  "display_name": "Cairnfrost Ursine",
+  "role": "elite executioner",
+  "revision": "ice-roster-r1",
+  "status": "base_pending",
+  "generator": "built-in image_gen",
+  "asset": "master.png",
+  "sha256": "067b223d862e0c9bc147b101ffb6275007a7561f97aabe220745f9301b2b66d6",
+  "dimensions": {
+    "width": 1536,
+    "height": 1024
+  },
+  "alpha": {
+    "hasAlpha": true,
+    "transparentPixels": 775529,
+    "partialPixels": 797335,
+    "visibleBounds": [
+      95,
+      18,
+      1463,
+      1005
+    ]
+  },
+  "style_references": [
+    {
+      "path": "assets/heroes/references/runeblade/runeblade-base-r1.png",
+      "sha256": "adbd33fb14e91b761f355ffeb9966cb262aacca78429099ec09b0fab9faf84ef",
+      "decision": {
+        "status": "Approved",
+        "at": "2026-10-02T03:44:25.533Z",
+        "evidenceId": "user-chat-2026-10-01-approve-existing-runelord",
+        "paths": [
+          "C:\\Users\\wilsh\\Projects\\runelord\\assets\\heroes\\references\\runeblade\\runeblade-base-r1.png"
+        ]
+      }
+    },
+    {
+      "path": "assets/characters/runeblade-base-summons/selected-r1/rime-seer/master.png",
+      "sha256": "ee7a6e63d64486e6b85159a04bb981f41c1ef51fb6d93eed01bc9c16117275c9",
+      "decision": {
+        "status": "Approved",
+        "at": "2026-10-05T10:56:14.695Z",
+        "evidenceId": "e0d1dda9-6d98-47cc-b49a-4d766faf5063",
+        "paths": [
+          "C:/Users/wilsh/Projects/runelord/assets/characters/runeblade-base-summons/selected-r1/rime-seer/master.png"
+        ]
+      }
+    }
+  ],
+  "prompt": "Use case: stylized-concept. Generate ONE original full-body Runelord enemy base sprite on genuine transparent background. Supplied images are STYLE references ONLY, not identities to copy. Use supplied approved Runelord artwork as reference for simplified 2D shapes and cel-shaded rendering. Serious tough stylized silhouette, muted cold colors, broad clean color shapes, crisp edges, one hard-edged shadow and restrained flat highlight per material. Favor reference 1's simplicity. No black outlines. Keep surfaces quiet, only a few bold signs of wear. NOT realistic anatomy, painterly fantasy rendering, dense grunge, glossy/PBR/3D lighting, cute expressions. Shallow three-quarter side game view FACING LEFT, neutral readable combat stance, complete silhouette centered with generous transparent padding, no floor/background/text/border. Subject: Cairnfrost Ursine: enormous heavy bear executioner elite. Full quadruped polar-bear monster in LEFT-facing side three-quarter combat stance, four distinct weight-bearing legs with huge dark hooked ice claws, massive shoulder hump and lowered angular bear head, snarling but closed enough jaw for clear face. Dense fur represented ONLY by a few broad jagged graphic shapes, not individual hairs. Matte chalk-blue fur with navy underside, layered dark slate cairn-like slabs over shoulders and spine, three large blunt icy ridges, a single broken iron neck shackle with no chain. Very broad muscular stylized silhouette, small threatening eye, dark muzzle. No antlers, no humanoid hands, no weapon, no rider, no scenery. All paws and fur comfortably within transparent margins.",
+  "repair_prompt": "Edit the supplied Cairnfrost Ursine bear artwork only. Preserve the exact bear design, full silhouette, pose, left facing, crisp cel shaded colors, armor plates, fur shapes and claws. Remove ALL dark background AND diffuse blue haze/halo around and between the legs. Output clean isolated bear with genuine transparent alpha everywhere outside the physical bear, no mist, no shadow, no glow, no background. Expand transparent margin if needed so whole silhouette is well inside frame. Preserve the original detailed graphic rendering.\nSecond unsuccessful repair:\nBACKGROUND REMOVAL task. Cut out the bear from reference image. The blue fog is BACKGROUND and must be completely erased, including blue haze between paws and belly. No gradients anywhere outside the animal. Deliver a hard clean cutout of the bear alone on fully transparent background with empty transparent margins. Keep four paws, white fur, slate armor and ice spines. Every physical bear pixel stays crisp cel shading. Absolutely no aura, shadow, fog, rectangle, black or blue backdrop. This is an isolated 2D sprite.",
+  "construction": {
+    "status": "proposed only; flattened raster, no separated parts or rig",
+    "family": "quadruped",
+    "parts": [
+      "body root",
+      "head",
+      "jaw",
+      "four legs and paws",
+      "armor plates"
+    ]
+  },
+  "qa": {
+    "builder": "ice_monster_artist",
+    "fullSize": "inspected",
+    "smallScale": "Inspected review-96.png; role and silhouette readable",
+    "observations": "Strong detailed bear silhouette, four paws, clean physical alpha confirmed by explicit light/dark composites.",
+    "independentReview": "pending",
+    "alphaDisplayNote": "Full-size tool preview exposed hidden RGB haze; actual composited alpha is clean. qa-light.png and qa-dark.png verify. Two unnecessary cleanup candidates were not selected."
+  },
+  "limitations": [
+    "New design awaits user gallery approval.",
+    "No variants, animations or runtime integration produced.",
+    "Motion bounds and joint pivots need future animation production."
+  ],
+  "source": "C:/Users/wilsh/.codex/generated_images/01a1327a-7080-7cb3-806e-ca61fbb25fc1/exec-2001d1bb-5fd1-49c7-a26e-e335bae6ba08.png"
+}

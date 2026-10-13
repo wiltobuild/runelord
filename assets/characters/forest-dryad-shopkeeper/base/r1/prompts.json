@@ -1,0 +1,41 @@
+{
+  "scope": "One sample each; background, shop interface frame, forest nymph merchant. Remaining two of each are outside this sample batch.",
+  "tool": "built-in image_gen",
+  "approval": "Pending approval",
+  "referenceNotes": "Fire files are user-requested format references, without current hash approval. Forest style reference has verified hash approval.",
+  "approvedStyle": {
+    "path": "assets/approvals/inbox/battle-map-thornroot-crossing/r1/thornroot-crossing-r1.png",
+    "sha256": "8c3dc173f3960d82326c311dac633347bc280d7ad7c4c4a388449884de711b20",
+    "evidenceId": "58cbae24-4480-462a-bcb9-dd2f07990130"
+  },
+  "prompts": [
+    {
+      "slug": "forest-background-1",
+      "transparent_background": false,
+      "referenced_image_paths": [
+        "C:/Users/wilsh/Projects/runelord/assets/approvals/inbox/infernal-shop-1/r1/shop-1.png",
+        "C:/Users/wilsh/Projects/runelord/assets/approvals/inbox/battle-map-thornroot-crossing/r1/thornroot-crossing-r1.png"
+      ],
+      "prompt": "Use case: stylized-concept. Create one FOREST BIOME SHOP BACKGROUND sample for Runelord. Image 1 is exact composition/format reference: retain its 16:9 wide eye-level shop-interior environment composition, merchant counter and stocked shelves on left third, grand arch/opening around center-right, broad clear foreground floor, dark bottom edge. Image 2 is approved forest rendering/palette reference. Translate infernal architecture to a woodland exchange built inside ancient interwoven tree trunks, angular carved oak shelves, mossy stone, emerald cloth banners, herb jars and ancient books, amber seed lanterns; arch opens onto deep teal forest and old standing stones. Use the same serious 2D cel shading, large angular color shapes and crisp hard shadows, controlled detail and quiet surfaces. No lava, red fire biome, people, shopkeeper, UI frames, letters, cards or prices. This is ONLY the opaque full-bleed scenery layer, no border. Preserve compositional geometry of image 1. Landscape 1672:941 aspect ratio."
+    },
+    {
+      "slug": "forest-shop-1",
+      "transparent_background": true,
+      "referenced_image_paths": [
+        "C:/Users/wilsh/Projects/runelord/apps/web/public/infernal-assets/soul-template-v3.webp",
+        "C:/Users/wilsh/Projects/runelord/assets/approvals/inbox/battle-map-thornroot-crossing/r1/thornroot-crossing-r1.png"
+      ],
+      "prompt": "Use case: style-transfer. Edit Image 1 into the FOREST biome version of the EXACT same Runelord shop interface frame. Image 2 is forest palette/style reference only. CRITICAL preserve exact image-1 canvas ratio 1672:941 and every panel edge, rectangle, slot, relative location and size. Keep upper-left 30% empty/transparent for separate merchant; same left lower counter and empty parchment dialogue plaque. Keep long blank title plaque at x31%-76%, small gold plaque x78%-91%, hanging exit pennant upper right. Same four dark empty service bays in right 70%: two top/two bottom, horizontal blank headers y19%-26% and y57%-63%. Keep exactly FIVE small relic plinths in bottom-left service bay and single small plinths in other two right bays. Bottom counter unchanged footprint. ONLY reskin materials: basalt becomes chunky dark carved oak and mossy forest stone; crimson cloth becomes deep leaf green; bronze gold fasteners become aged brass; diamond emblems become simple golden leaf emblems; hanging chains become sturdy vine ropes. Crisp serious angular 2D cel shading. Keep dark opaque panel interiors to support live cards and controls. All exterior negative space genuinely transparent alpha. NO scene background, no characters, no products, no cards, no labels, no text, no prices. NO redesign, no shifted geometry, no extra frames or ornament clutter. Complete frame all edges contained as reference."
+    },
+    {
+      "slug": "forest-shopkeeper-1",
+      "transparent_background": true,
+      "referenced_image_paths": [
+        "C:/Users/wilsh/Projects/runelord/apps/web/public/infernal-assets/shopkeeper-1.webp",
+        "C:/Users/wilsh/Projects/runelord/assets/approvals/inbox/battle-map-thornroot-crossing/r1/thornroot-crossing-r1.png"
+      ],
+      "prompt": "Use case: stylized-concept. Create ONE forest NYMPH SHOPKEEPER character sample for Runelord matching the exact output format of image 1: a single full-body isolated merchant, portrait 2:3 canvas, truly transparent background, complete head/hair/feet within frame, same approximately 18% top clearance and merchant scale, standing in three-quarter front view presenting a gold coin in the hand on viewer left, holding a closed trading ledger at viewer right. Image 1 is silhouette footprint, merchant gesture and cel-shaded rendering reference ONLY; replace demon identity entirely with adult female forest nymph. Image 2 is approved forest palette/style reference. Graceful confident mature woodland trader, sage green skin, pointed ears, amber eyes, long dark teal leaf-shaped hair with a modest twig-and-leaf crown, layered moss-green and bark-brown fully clothed merchant tunic and long split overskirt over trousers, brass leaf clasp, coin pouch and sturdy rootlike boots. Clever welcoming expression. Strong readable silhouette and facial features; angular stylized proportions, crisp dark contours, broad flat regions with 2-3 hard shadow tones, selective graphic gold highlights. Quiet surfaces, no microdetail. No horns/wings/tail, no scenery, no pedestal, no aura, no text, no UI. Not cute/chibi, not photorealistic, no soft painterly rendering. Keep both hands and coin readable, limbs distinct. Single character, no expression sheet."
+    }
+  ],
+  "merchantRepairPrompt": "Edit this exact forest nymph image: remove the ENTIRE black and colored atmospheric background and all glow. Output a clean isolated character on a genuinely transparent alpha background. Preserve the nymph's face, body, outfit, hair, ledger, coin, pose, colors and hard cel shading exactly; no redesign. No shadow backdrop, no gradient, no aura, no colored haze, no floor. Portrait 2:3 canvas. Scale the entire intact character down uniformly slightly so the crown begins at 20% canvas height and feet end at 96% height, centered horizontally, matching the generous top clearance of Runelord merchant sprites. Keep full silhouette and all limbs intact. Transparent pixels everywhere outside the character, including gaps between limbs and hair."
+}

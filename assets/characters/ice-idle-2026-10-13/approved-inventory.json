@@ -1,0 +1,212 @@
+[
+  {
+    "id": "dragon-frost-mammoth",
+    "name": "Frost Mammoth",
+    "path": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\approvals\\inbox\\dragon-frost-mammoth\\base-r1\\base-r1.png",
+    "sha256": "3730fd449dda0734e012f6fa91fb10244b2396421d93a3e2e6099780ba3378cd",
+    "decision": {
+      "status": "Approved",
+      "at": "2026-10-02T22:20:49.176Z",
+      "evidenceId": "3d3835b8-f2f8-4ce8-8acd-cd24979a21b7",
+      "paths": [
+        "C:\\Users\\wilsh\\Projects\\runelord\\assets\\approvals\\inbox\\dragon-frost-mammoth\\base-r1\\base-r1.png"
+      ]
+    }
+  },
+  {
+    "id": "dragon-rime-antler",
+    "name": "Rime Antler",
+    "path": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\approvals\\inbox\\dragon-rime-antler\\base-r1\\base-r1.png",
+    "sha256": "e4fab93af107e89c60c280c3621a72e9f8b50c143f54269a853650e817dceed0",
+    "decision": {
+      "status": "Approved",
+      "at": "2026-10-02T22:20:49.176Z",
+      "evidenceId": "c3130d0a-2308-4f64-bff5-67dd8f8312a2",
+      "paths": [
+        "C:\\Users\\wilsh\\Projects\\runelord\\assets\\approvals\\inbox\\dragon-rime-antler\\base-r1\\base-r1.png"
+      ]
+    }
+  },
+  {
+    "id": "rimejaw-scavenger",
+    "name": "Rimejaw Scavenger",
+    "path": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\approvals\\inbox\\rimejaw-scavenger\\ice-roster-r1\\base.png",
+    "sha256": "baefb70c5fdffb81b5bd144e02dac78406bd9b283ff48a777d5b21f8f92b3e7c",
+    "decision": {
+      "status": "Approved",
+      "at": "2026-10-13T05:06:58.678Z",
+      "evidenceId": "fc0ba40e-d72a-4754-92eb-787703e3f5fc",
+      "paths": [
+        "C:\\Users\\wilsh\\Projects\\runelord\\assets\\approvals\\inbox\\rimejaw-scavenger\\ice-roster-r1\\base.png"
+      ]
+    }
+  },
+  {
+    "id": "shardstep-skitterer",
+    "name": "Shardstep Skitterer",
+    "path": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\characters\\shardstep-skitterer\\base\\ice-detail-r2-2026-10-13\\master.png",
+    "sha256": "69819badf98de585e6f30f5aff72a74cb28aa9d35762a1413ff12d6456d4acc3",
+    "decision": {
+      "status": "Approved",
+      "at": "2026-10-13T05:09:41.486Z",
+      "evidenceId": "71cd1195-8259-47be-9e1a-480955e5d224",
+      "paths": [
+        "C:\\Users\\wilsh\\Projects\\runelord\\assets\\characters\\shardstep-skitterer\\base\\ice-detail-r2-2026-10-13\\master.png"
+      ]
+    }
+  },
+  {
+    "id": "whiteout-ray",
+    "name": "Whiteout Ray",
+    "path": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\characters\\whiteout-ray\\base\\ice-detail-r2-2026-10-13\\master.png",
+    "sha256": "6785c628780e5d3c916edf87476eea7e7b73936444d6e668a7bea4929327edaf",
+    "decision": {
+      "status": "Approved",
+      "at": "2026-10-13T05:09:37.842Z",
+      "evidenceId": "ba9d75c8-5fe4-4805-92bd-ccc3aeb4b14c",
+      "paths": [
+        "C:\\Users\\wilsh\\Projects\\runelord\\assets\\characters\\whiteout-ray\\base\\ice-detail-r2-2026-10-13\\master.png"
+      ]
+    }
+  },
+  {
+    "id": "coffinback-bastion",
+    "name": "Coffinback Bastion",
+    "path": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\approvals\\inbox\\coffinback-bastion\\ice-roster-r1\\master.png",
+    "sha256": "710d95eda75e9eb6ef79ba80dd281bc3aee11e17f71cd10de32fe67d3b5f2c3c",
+    "decision": {
+      "status": "Approved",
+      "at": "2026-10-13T05:07:03.058Z",
+      "evidenceId": "f5b7fc14-ef50-460e-ab06-3818d18a76a3",
+      "paths": [
+        "C:\\Users\\wilsh\\Projects\\runelord\\assets\\approvals\\inbox\\coffinback-bastion\\ice-roster-r1\\master.png"
+      ]
+    }
+  },
+  {
+    "id": "hollowmask-oracle",
+    "name": "Hollowmask Oracle",
+    "path": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\characters\\hollowmask-oracle\\base\\ice-detail-r2-2026-10-13\\master.png",
+    "sha256": "4e34d314f4d61f89b311ca7d2cade28e79b257f96d9e3e9d2d2b75c4c7b9ae45",
+    "decision": {
+      "status": "Approved",
+      "at": "2026-10-13T05:09:18.441Z",
+      "evidenceId": "50e07ace-3a79-497d-9614-604286ef7bdd",
+      "paths": [
+        "C:\\Users\\wilsh\\Projects\\runelord\\assets\\characters\\hollowmask-oracle\\base\\ice-detail-r2-2026-10-13\\master.png"
+      ]
+    }
+  },
+  {
+    "id": "shardlance-stalker",
+    "name": "Shardlance Stalker",
+    "path": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\approvals\\inbox\\shardlance-stalker\\ice-roster-r1\\master.png",
+    "sha256": "872f31b1f3e2acfa16a6e330d32b5ef7dc1662816a73ea4f718e5769ea8028a4",
+    "decision": {
+      "status": "Approved",
+      "at": "2026-10-13T05:06:52.799Z",
+      "evidenceId": "1316bad9-8645-453e-97d3-2a6094f05866",
+      "paths": [
+        "C:\\Users\\wilsh\\Projects\\runelord\\assets\\approvals\\inbox\\shardlance-stalker\\ice-roster-r1\\master.png"
+      ]
+    }
+  },
+  {
+    "id": "hoarveil-crone",
+    "name": "Hoarveil Crone",
+    "path": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\approvals\\inbox\\hoarveil-crone\\ice-roster-r1\\master.png",
+    "sha256": "1532f314acfa76844cfe1272fb92e319c78d3285f519bdfb0616a0e56098a06c",
+    "decision": {
+      "status": "Approved",
+      "at": "2026-10-13T05:07:06.426Z",
+      "evidenceId": "9d07ab2b-ae4b-4ec7-ba9f-7c4d1b424161",
+      "paths": [
+        "C:\\Users\\wilsh\\Projects\\runelord\\assets\\approvals\\inbox\\hoarveil-crone\\ice-roster-r1\\master.png"
+      ]
+    }
+  },
+  {
+    "id": "iceclamp-bombardier",
+    "name": "Iceclamp Bombardier",
+    "path": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\characters\\iceclamp-bombardier\\base\\ice-detail-r2-2026-10-13\\master.png",
+    "sha256": "a68173ffa335c76286fadc04f395ac68c2cc1d23c755f2fe32fcf8bde3de244c",
+    "decision": {
+      "status": "Approved",
+      "at": "2026-10-13T05:09:23.585Z",
+      "evidenceId": "d0cb20f0-6264-4135-bb7c-3d6af7d5e906",
+      "paths": [
+        "C:\\Users\\wilsh\\Projects\\runelord\\assets\\characters\\iceclamp-bombardier\\base\\ice-detail-r2-2026-10-13\\master.png"
+      ]
+    }
+  },
+  {
+    "id": "paleveil-moth",
+    "name": "Paleveil Moth",
+    "path": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\characters\\paleveil-moth\\base\\ice-detail-r2-2026-10-13\\master.png",
+    "sha256": "45aaa174e0e8322a0e2c689ede65aafab8930900a44543c908b2238aee0819e1",
+    "decision": {
+      "status": "Approved",
+      "at": "2026-10-13T05:09:33.938Z",
+      "evidenceId": "876dfbe1-cc13-4d97-afde-11db19725eb3",
+      "paths": [
+        "C:\\Users\\wilsh\\Projects\\runelord\\assets\\characters\\paleveil-moth\\base\\ice-detail-r2-2026-10-13\\master.png"
+      ]
+    }
+  },
+  {
+    "id": "cairnfrost-ursine",
+    "name": "Cairnfrost Ursine",
+    "path": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\characters\\cairnfrost-ursine\\base\\ice-detail-r2-2026-10-13\\master.png",
+    "sha256": "4cdd821f7a08781e3371987302ccb934031a2be064b09e8f8d065f11176c2a6d",
+    "decision": {
+      "status": "Approved",
+      "at": "2026-10-13T05:09:28.12Z",
+      "evidenceId": "c6785a74-f295-48ba-934e-9d9d7c1b8c47",
+      "paths": [
+        "C:\\Users\\wilsh\\Projects\\runelord\\assets\\characters\\cairnfrost-ursine\\base\\ice-detail-r2-2026-10-13\\master.png"
+      ]
+    }
+  },
+  {
+    "id": "splinterhost",
+    "name": "Splinterhost",
+    "path": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\characters\\splinterhost\\base\\ice-detail-r2-2026-10-13\\master.png",
+    "sha256": "da927820534c9ab34ebb57ddeeca5445efecd5c156c83fe0ba6055ee86ac089e",
+    "decision": {
+      "status": "Approved",
+      "at": "2026-10-13T05:09:47.242Z",
+      "evidenceId": "3a490bf6-ea37-46db-b2bc-6255e8589272",
+      "paths": [
+        "C:\\Users\\wilsh\\Projects\\runelord\\assets\\characters\\splinterhost\\base\\ice-detail-r2-2026-10-13\\master.png"
+      ]
+    }
+  },
+  {
+    "id": "avalanche-colossus",
+    "name": "Avalanche Colossus",
+    "path": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\approvals\\inbox\\avalanche-colossus\\ice-roster-r2\\base.png",
+    "sha256": "c4c6ae8b6243ff2f2631cd84632dd4b0c45c8178704f75b2fbc2293f9f12b4d9",
+    "decision": {
+      "status": "Approved",
+      "at": "2026-10-13T04:35:29.547Z",
+      "evidenceId": "fdd2dbac-29c7-4e35-9049-5a178f074a09",
+      "paths": [
+        "C:\\Users\\wilsh\\Projects\\runelord\\assets\\approvals\\inbox\\avalanche-colossus\\ice-roster-r2\\base.png"
+      ]
+    }
+  },
+  {
+    "id": "abomination-rime-hauler",
+    "name": "Rime Hauler",
+    "path": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\approvals\\inbox\\abomination-rime-hauler\\concept-r1\\abomination-rime-hauler-concept-r1.png",
+    "sha256": "405909560042c7e5ffbe43597440c8b9f3a1fcd8f1f751fa196943aaaf1321f6",
+    "decision": {
+      "status": "Approved",
+      "at": "2026-10-13T04:34:47.406Z",
+      "evidenceId": "f5381e45-023f-4d01-ae7a-5d9d07f945d1",
+      "paths": [
+        "C:\\Users\\wilsh\\Projects\\runelord\\assets\\approvals\\inbox\\abomination-rime-hauler\\concept-r1\\abomination-rime-hauler-concept-r1.png"
+      ]
+    }
+  }
+]

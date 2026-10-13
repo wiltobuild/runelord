@@ -1,0 +1,791 @@
+{
+  "schema": 1,
+  "canvas": [
+    1400,
+    1200
+  ],
+  "anchor": [
+    700,
+    1104
+  ],
+  "layout_bounds": {
+    "x": 300,
+    "y": 100,
+    "width": 800,
+    "height": 1056
+  },
+  "approved_idle": "ironhorn-bulwark-idle-r3",
+  "idle_pixel_preservation": {
+    "offset": [
+      300,
+      100
+    ],
+    "exact_rgba": true
+  },
+  "method": "Authored whole-character action poses; constant scale within each source sheet. Exact accepted idle pixels padded at constant offset. No per-pose fit-to-box scaling.",
+  "states": {
+    "idle": {
+      "frames": [
+        {
+          "time": 0,
+          "src": "idle/frame-00.png",
+          "duration_ms": 160
+        },
+        {
+          "time": 160,
+          "src": "idle/frame-01.png",
+          "duration_ms": 160
+        },
+        {
+          "time": 320,
+          "src": "idle/frame-02.png",
+          "duration_ms": 160
+        },
+        {
+          "time": 480,
+          "src": "idle/frame-03.png",
+          "duration_ms": 160
+        },
+        {
+          "time": 640,
+          "src": "idle/frame-04.png",
+          "duration_ms": 160
+        },
+        {
+          "time": 800,
+          "src": "idle/frame-05.png",
+          "duration_ms": 160
+        },
+        {
+          "time": 960,
+          "src": "idle/frame-06.png",
+          "duration_ms": 160
+        },
+        {
+          "time": 1120,
+          "src": "idle/frame-07.png",
+          "duration_ms": 160
+        }
+      ],
+      "duration": 1280,
+      "loop": true,
+      "impact": null,
+      "events": []
+    },
+    "attack": {
+      "frames": [
+        {
+          "time": 0,
+          "src": "attack/frame-00.png",
+          "duration_ms": 120
+        },
+        {
+          "time": 120,
+          "src": "attack/frame-01.png",
+          "duration_ms": 180
+        },
+        {
+          "time": 300,
+          "src": "attack/frame-02.png",
+          "duration_ms": 140
+        },
+        {
+          "time": 440,
+          "src": "attack/frame-03.png",
+          "duration_ms": 150
+        },
+        {
+          "time": 590,
+          "src": "attack/frame-04.png",
+          "duration_ms": 160
+        }
+      ],
+      "duration": 750,
+      "loop": false,
+      "impact": 300,
+      "events": [
+        {
+          "name": "release",
+          "time_ms": 300
+        }
+      ]
+    },
+    "hit": {
+      "frames": [
+        {
+          "time": 0,
+          "src": "hit/frame-00.png",
+          "duration_ms": 130
+        },
+        {
+          "time": 130,
+          "src": "hit/frame-01.png",
+          "duration_ms": 170
+        },
+        {
+          "time": 300,
+          "src": "hit/frame-02.png",
+          "duration_ms": 160
+        }
+      ],
+      "duration": 460,
+      "loop": false,
+      "impact": null,
+      "events": []
+    },
+    "wounded_idle": {
+      "frames": [
+        {
+          "time": 0,
+          "src": "wounded_idle/frame-00.png",
+          "duration_ms": 600
+        },
+        {
+          "time": 600,
+          "src": "wounded_idle/frame-01.png",
+          "duration_ms": 600
+        }
+      ],
+      "duration": 1200,
+      "loop": true,
+      "impact": null,
+      "events": []
+    },
+    "spawn": {
+      "frames": [
+        {
+          "time": 0,
+          "src": "spawn/frame-00.png",
+          "duration_ms": 170
+        },
+        {
+          "time": 170,
+          "src": "spawn/frame-01.png",
+          "duration_ms": 150
+        },
+        {
+          "time": 320,
+          "src": "spawn/frame-02.png",
+          "duration_ms": 150
+        },
+        {
+          "time": 470,
+          "src": "spawn/frame-03.png",
+          "duration_ms": 150
+        },
+        {
+          "time": 620,
+          "src": "spawn/frame-04.png",
+          "duration_ms": 160
+        }
+      ],
+      "duration": 780,
+      "loop": false,
+      "impact": null,
+      "events": []
+    },
+    "die": {
+      "frames": [
+        {
+          "time": 0,
+          "src": "die/frame-00.png",
+          "duration_ms": 100
+        },
+        {
+          "time": 100,
+          "src": "die/frame-01.png",
+          "duration_ms": 180
+        },
+        {
+          "time": 280,
+          "src": "die/frame-02.png",
+          "duration_ms": 200
+        },
+        {
+          "time": 480,
+          "src": "die/frame-03.png",
+          "duration_ms": 220
+        },
+        {
+          "time": 700,
+          "src": "die/frame-04.png",
+          "duration_ms": 1000
+        }
+      ],
+      "duration": 1700,
+      "loop": false,
+      "impact": null,
+      "events": [
+        {
+          "name": "terminal",
+          "time_ms": 700
+        }
+      ]
+    },
+    "act": {
+      "frames": [
+        {
+          "time": 0,
+          "src": "attack/frame-00.png",
+          "duration_ms": 120
+        },
+        {
+          "time": 120,
+          "src": "attack/frame-01.png",
+          "duration_ms": 180
+        },
+        {
+          "time": 300,
+          "src": "attack/frame-02.png",
+          "duration_ms": 140
+        },
+        {
+          "time": 440,
+          "src": "attack/frame-03.png",
+          "duration_ms": 150
+        },
+        {
+          "time": 590,
+          "src": "attack/frame-04.png",
+          "duration_ms": 160
+        }
+      ],
+      "duration": 750,
+      "loop": false,
+      "impact": 300,
+      "events": [
+        {
+          "name": "release",
+          "time_ms": 300
+        }
+      ],
+      "sourceState": "attack"
+    },
+    "cast": {
+      "frames": [
+        {
+          "time": 0,
+          "src": "attack/frame-00.png",
+          "duration_ms": 120
+        },
+        {
+          "time": 120,
+          "src": "attack/frame-01.png",
+          "duration_ms": 180
+        },
+        {
+          "time": 300,
+          "src": "attack/frame-02.png",
+          "duration_ms": 140
+        },
+        {
+          "time": 440,
+          "src": "attack/frame-03.png",
+          "duration_ms": 150
+        },
+        {
+          "time": 590,
+          "src": "attack/frame-04.png",
+          "duration_ms": 160
+        }
+      ],
+      "duration": 750,
+      "loop": false,
+      "impact": 300,
+      "events": [
+        {
+          "name": "release",
+          "time_ms": 300
+        }
+      ],
+      "sourceState": "attack"
+    }
+  },
+  "registration": {
+    "attack": [
+      {
+        "source_bounds": [
+          50,
+          12,
+          582,
+          620
+        ],
+        "scale": 1.57,
+        "source_anchor": [
+          330,
+          617
+        ],
+        "destination_offset": [
+          260,
+          154
+        ]
+      },
+      {
+        "source_bounds": [
+          668,
+          7,
+          1242,
+          622
+        ],
+        "scale": 1.57,
+        "source_anchor": [
+          937,
+          617
+        ],
+        "destination_offset": [
+          278,
+          146
+        ]
+      },
+      {
+        "source_bounds": [
+          39,
+          658,
+          663,
+          1218
+        ],
+        "scale": 1.57,
+        "source_anchor": [
+          337,
+          1217
+        ],
+        "destination_offset": [
+          232,
+          226
+        ]
+      },
+      {
+        "source_bounds": [
+          658,
+          623,
+          1215,
+          1222
+        ],
+        "scale": 1.57,
+        "source_anchor": [
+          967,
+          1217
+        ],
+        "destination_offset": [
+          215,
+          171
+        ]
+      }
+    ],
+    "reaction": [
+      {
+        "source_bounds": [
+          82,
+          54,
+          650,
+          605
+        ],
+        "scale": 1.77,
+        "source_anchor": [
+          365,
+          600
+        ],
+        "destination_offset": [
+          199,
+          138
+        ]
+      },
+      {
+        "source_bounds": [
+          680,
+          68,
+          1183,
+          611
+        ],
+        "scale": 1.77,
+        "source_anchor": [
+          952,
+          603
+        ],
+        "destination_offset": [
+          219,
+          157
+        ]
+      },
+      {
+        "source_bounds": [
+          164,
+          666,
+          588,
+          1191
+        ],
+        "scale": 1.77,
+        "source_anchor": [
+          363,
+          1186
+        ],
+        "destination_offset": [
+          348,
+          184
+        ]
+      },
+      {
+        "source_bounds": [
+          756,
+          672,
+          1187,
+          1196
+        ],
+        "scale": 1.77,
+        "source_anchor": [
+          976,
+          1186
+        ],
+        "destination_offset": [
+          311,
+          194
+        ]
+      }
+    ],
+    "spawn": [
+      {
+        "source_bounds": [
+          38,
+          129,
+          613,
+          586
+        ],
+        "scale": 1.61,
+        "source_anchor": [
+          327,
+          575
+        ],
+        "destination_offset": [
+          235,
+          386
+        ]
+      },
+      {
+        "source_bounds": [
+          667,
+          42,
+          1195,
+          575
+        ],
+        "scale": 1.61,
+        "source_anchor": [
+          929,
+          566
+        ],
+        "destination_offset": [
+          278,
+          260
+        ]
+      },
+      {
+        "source_bounds": [
+          40,
+          630,
+          604,
+          1217
+        ],
+        "scale": 1.61,
+        "source_anchor": [
+          346,
+          1210
+        ],
+        "destination_offset": [
+          207,
+          170
+        ]
+      },
+      {
+        "source_bounds": [
+          706,
+          627,
+          1215,
+          1226
+        ],
+        "scale": 1.61,
+        "source_anchor": [
+          970,
+          1215
+        ],
+        "destination_offset": [
+          275,
+          157
+        ]
+      }
+    ],
+    "death": [
+      {
+        "source_bounds": [
+          56,
+          31,
+          545,
+          658
+        ],
+        "scale": 1.52,
+        "source_anchor": [
+          293,
+          652
+        ],
+        "destination_offset": [
+          340,
+          160
+        ]
+      },
+      {
+        "source_bounds": [
+          651,
+          157,
+          1231,
+          672
+        ],
+        "scale": 1.52,
+        "source_anchor": [
+          931,
+          660
+        ],
+        "destination_offset": [
+          274,
+          339
+        ]
+      },
+      {
+        "source_bounds": [
+          14,
+          800,
+          608,
+          1184
+        ],
+        "scale": 1.52,
+        "source_anchor": [
+          322,
+          1177
+        ],
+        "destination_offset": [
+          232,
+          531
+        ]
+      },
+      {
+        "source_bounds": [
+          625,
+          873,
+          1252,
+          1196
+        ],
+        "scale": 1.52,
+        "source_anchor": [
+          950,
+          1190
+        ],
+        "destination_offset": [
+          206,
+          622
+        ]
+      }
+    ]
+  },
+  "sources": {
+    "attack": {
+      "path": "attack-source.png",
+      "sha256": "09e113fb5f491b6f045b27e4268f6fa3ab1987c3a1aabe9143983ea179bb9619"
+    },
+    "reaction": {
+      "path": "reaction-source.png",
+      "sha256": "55de062795da88694bf25b4463495bdc94ef9a8e3328b479354036d445b4793b"
+    },
+    "spawn": {
+      "path": "spawn-source.png",
+      "sha256": "6aefbb54ce1387aafaa4ebf3b088e2c0d6aafec3bab7657b5b9c55932ecaec5c"
+    },
+    "death": {
+      "path": "death-source.png",
+      "sha256": "cee02f2325f17d9249b14369a798f771fd6afd498faf4465517d22f32fd12584"
+    }
+  },
+  "qa": {
+    "status": "pending-independent-review",
+    "canvas_edges": "pass",
+    "idle_exact_pixels": "pass",
+    "frame_bounds": {
+      "idle": [
+        [
+          338,
+          154,
+          1070,
+          1106
+        ],
+        [
+          339,
+          152,
+          1071,
+          1106
+        ],
+        [
+          339,
+          151,
+          1071,
+          1106
+        ],
+        [
+          339,
+          152,
+          1071,
+          1106
+        ],
+        [
+          339,
+          154,
+          1070,
+          1106
+        ],
+        [
+          338,
+          155,
+          1070,
+          1106
+        ],
+        [
+          338,
+          156,
+          1069,
+          1106
+        ],
+        [
+          338,
+          155,
+          1070,
+          1106
+        ]
+      ],
+      "attack": [
+        [
+          338,
+          154,
+          1070,
+          1106
+        ],
+        [
+          279,
+          148,
+          1177,
+          1111
+        ],
+        [
+          233,
+          228,
+          1210,
+          1104
+        ],
+        [
+          216,
+          173,
+          1088,
+          1110
+        ],
+        [
+          338,
+          155,
+          1070,
+          1106
+        ]
+      ],
+      "hit": [
+        [
+          201,
+          139,
+          1203,
+          1112
+        ],
+        [
+          221,
+          159,
+          1107,
+          1117
+        ],
+        [
+          338,
+          155,
+          1070,
+          1106
+        ]
+      ],
+      "wounded_idle": [
+        [
+          350,
+          185,
+          1097,
+          1111
+        ],
+        [
+          312,
+          195,
+          1071,
+          1119
+        ]
+      ],
+      "spawn": [
+        [
+          236,
+          387,
+          1159,
+          1120
+        ],
+        [
+          280,
+          262,
+          1127,
+          1116
+        ],
+        [
+          209,
+          171,
+          1114,
+          1114
+        ],
+        [
+          276,
+          158,
+          1093,
+          1120
+        ],
+        [
+          338,
+          155,
+          1070,
+          1106
+        ]
+      ],
+      "die": [
+        [
+          338,
+          154,
+          1070,
+          1106
+        ],
+        [
+          342,
+          161,
+          1081,
+          1112
+        ],
+        [
+          275,
+          340,
+          1154,
+          1121
+        ],
+        [
+          234,
+          532,
+          1134,
+          1114
+        ],
+        [
+          208,
+          623,
+          1158,
+          1111
+        ]
+      ]
+    }
+  }
+}
