@@ -146959,6 +146959,425 @@
       "paths": [
         "C:\\Users\\wilsh\\Projects\\runelord\\assets\\approvals\\inbox\\red-goblins-nine-animation\\overview-r1\\all-nine-review.gif"
       ]
+    },
+    "577da6b5942cb3e15be05f888a4be12ec2763f87cacd5177f0d3a1789957d674": {
+      "status": "Approved",
+      "at": "2026-10-05T04:28:42.785Z",
+      "evidenceId": "664f3a44-e06a-4d12-abef-895f34a8fd77",
+      "paths": [
+        "C:/Users/wilsh/Projects/runelord/assets/approvals/inbox/warlock-gorthak/hd-r2-act/act.gif"
+      ]
+    },
+    "c012c8502b9a0b7a25fc179389fbf34e2ca915dea08c00221382c2d571e94669": {
+      "status": "Approved",
+      "at": "2026-10-05T04:28:42.845Z",
+      "evidenceId": "951d5301-c040-4762-9e20-36fce6a1c8e3",
+      "paths": [
+        "C:/Users/wilsh/Projects/runelord/assets/approvals/inbox/warlock-gorthak/hd-r2-die/die.gif"
+      ]
+    },
+    "e63a3c175a8ff06d631c9fc11199a6f4f4cc9326c18f29d03b7d397424f6f5e1": {
+      "status": "Approved",
+      "at": "2026-10-05T04:28:42.901Z",
+      "evidenceId": "e24bf5aa-4ced-40e2-a078-a21b3e249c6b",
+      "paths": [
+        "C:/Users/wilsh/Projects/runelord/assets/approvals/inbox/warlock-gorthak/hd-r2-hit/hit.gif"
+      ]
+    },
+    "94ead7d82084184cb90033818b9246fd81ce0da21a28b20d9014d2f729d7cb08": {
+      "status": "Needs revision",
+      "at": "2026-10-05T05:03:35.613Z",
+      "evidenceId": "3e7ea299-8efe-428c-94fb-b5c68b890874",
+      "paths": [
+        "C:/Users/wilsh/Projects/runelord/assets/approvals/inbox/warlock-gorthak/hd-r2-idle/idle.gif",
+        "assets/approvals/inbox/warlock-gorthak/hd-r2-idle/idle.gif"
+      ]
+    },
+    "6a895072af9a692b756417ffc1f3210fe9bb67c8f7b678ba7aef1ba37f622e47": {
+      "status": "Approved",
+      "at": "2026-10-05T04:28:43.054Z",
+      "evidenceId": "6ed3a4d4-8325-4d22-8f3c-f902ab09dc55",
+      "paths": [
+        "C:/Users/wilsh/Projects/runelord/assets/approvals/inbox/warlock-gorthak/hd-r2-spawn/spawn.gif"
+      ]
+    },
+    "4dbdc2c2f44b3c7d58a3e85d95228939fa789cf65274d8ec031ad1e0ddfa1404": {
+      "status": "Approved",
+      "at": "2026-10-05T04:28:43.112Z",
+      "evidenceId": "d7c998ec-c09e-44ff-8874-efe11c710d60",
+      "paths": [
+        "C:/Users/wilsh/Projects/runelord/assets/approvals/inbox/warlock-gorthak/hd-r2b-key-poses/key-poses.jpg"
+      ]
+    },
+    "9da30bd020a63c07915b76558dfe8b0771ea818ad2a8dedae35d0c187c0a5758": {
+      "status": "Approved",
+      "at": "2026-10-05T04:28:43.166Z",
+      "evidenceId": "f0405e1d-8c03-4d8c-8306-20c017a73b39",
+      "paths": [
+        "C:/Users/wilsh/Projects/runelord/assets/approvals/inbox/warlock-gorthak/hd-r2b-wounded_idle/wounded_idle.gif"
+      ]
+    },
+    "525b5f846182e570366239e77ff81c786f6e9f9319b221077ded924a10f2f20c": {
+      "status": "Approved",
+      "at": "2026-10-05T04:28:43.233Z",
+      "evidenceId": "e8d17925-31c8-41f4-8087-4ad4323849cb",
+      "paths": [
+        "C:/Users/wilsh/Projects/runelord/assets/approvals/inbox/warlock-ignivar/flight-act-r1/act.gif"
+      ]
+    },
+    "9ec46bdf503bd079d2dbc4129fec34d0d51e72f6b78b0aa4644ee5da8b585991": {
+      "status": "Approved",
+      "at": "2026-10-05T04:28:43.611Z",
+      "evidenceId": "856b1d6a-a8b4-4a2e-a806-69b392a05588",
+      "paths": [
+        "C:/Users/wilsh/Projects/runelord/assets/approvals/inbox/warlock-ignivar/flight-contact-r1/flight-contact.png",
+        "C:/Users/wilsh/Projects/runelord/assets/approvals/inbox/warlock-ignivar/flight-review-poses-r1/flight-review-poses.png"
+      ]
+    },
+    "14cd8fdbf9e9bbd7ead63cfa6ed3101bba7a98060a1a9b9de164a81c6f650ac1": {
+      "status": "Approved",
+      "at": "2026-10-05T04:28:43.556Z",
+      "evidenceId": "a6f9bdaf-f5b9-4e09-beef-e6a664512881",
+      "paths": [
+        "C:/Users/wilsh/Projects/runelord/assets/approvals/inbox/warlock-ignivar/flight-design-r1/exec-daa316a6-b1f0-4c6f-82cb-c64fd96c1dc7.png",
+        "C:/Users/wilsh/Projects/runelord/assets/approvals/inbox/warlock-ignivar/flight-pose-r1/up.png"
+      ]
+    },
+    "71162f90da740c518d83ad419be7a83c5be21ed8cd3607753762d46681463ab2": {
+      "status": "Approved",
+      "at": "2026-10-05T04:28:43.395Z",
+      "evidenceId": "f56368d5-021e-41f6-9a87-a2cb9316f196",
+      "paths": [
+        "C:/Users/wilsh/Projects/runelord/assets/approvals/inbox/warlock-ignivar/flight-die-r1/die.gif"
+      ]
+    },
+    "c1bbeb9ff3dec1d469e71081dafaee7d5231ae3844df46410efdc996da47ec70": {
+      "status": "Approved",
+      "at": "2026-10-05T04:28:43.448Z",
+      "evidenceId": "bdb6ff2a-14c6-4e54-8e40-f5d9482ba2ee",
+      "paths": [
+        "C:/Users/wilsh/Projects/runelord/assets/approvals/inbox/warlock-ignivar/flight-hit-r1/hit.gif"
+      ]
+    },
+    "ca14692fb9781d434c0bd2fe2a72f7d14afbf3b4819ead4ba82d16fb1f7828b4": {
+      "status": "Approved",
+      "at": "2026-10-05T04:28:43.503Z",
+      "evidenceId": "a357603e-6630-48af-b307-64cb0c12325a",
+      "paths": [
+        "C:/Users/wilsh/Projects/runelord/assets/approvals/inbox/warlock-ignivar/flight-idle-r1/idle.gif"
+      ]
+    },
+    "a6c5021e916fbd3d8ac15a133d00fd931f1655111e7d3ecf791f8c93c3a61127": {
+      "status": "Approved",
+      "at": "2026-10-05T04:28:43.666Z",
+      "evidenceId": "b0e729c0-1ccd-443f-83e1-55ea98e28cab",
+      "paths": [
+        "C:/Users/wilsh/Projects/runelord/assets/approvals/inbox/warlock-ignivar/flight-review-r1/flight-review.gif"
+      ]
+    },
+    "f2eed6c2ec53647846b34f63007984d1491ceab4eec1dce12ee024a3b720e4de": {
+      "status": "Approved",
+      "at": "2026-10-05T04:28:43.720Z",
+      "evidenceId": "5ec6ae2f-e448-4c9c-a782-81c4f4acdf85",
+      "paths": [
+        "C:/Users/wilsh/Projects/runelord/assets/approvals/inbox/warlock-ignivar/flight-spawn-r1/spawn.gif"
+      ]
+    },
+    "cb8609722103d75d4fcff1b87095e010d454347e0f08d4b4c44318ec1fddae25": {
+      "status": "Approved",
+      "at": "2026-10-05T04:28:43.767Z",
+      "evidenceId": "9c33a693-d1cd-4c33-8f12-5998ec9c209f",
+      "paths": [
+        "C:/Users/wilsh/Projects/runelord/assets/approvals/inbox/warlock-ignivar/flight-wounded_idle-r1/wounded_idle.gif"
+      ]
+    },
+    "20975b8fd55945853179caa761b5fec737e01064f78b3e86d4d69d694cfb234d": {
+      "status": "Needs revision",
+      "at": "2026-10-05T05:41:16.368Z",
+      "evidenceId": "c3753d5a-aa67-4b4a-8cd8-2aacf4b5ef0d",
+      "paths": [
+        "assets/approvals/inbox/warlock-gorthak/frames32-r1-idle/idle.gif"
+      ]
+    },
+    "303635e2801eb652f7cdb993d24558948b33bc286f074f1f4ca013cc2b5eb9e1": {
+      "status": "Needs revision",
+      "at": "2026-10-05T06:05:42.081Z",
+      "evidenceId": "f74980ff-d95a-4f88-8138-f546bfa1fecc",
+      "paths": [
+        "assets/approvals/inbox/warlock-gorthak/frames32-r2-idle/idle.gif"
+      ]
+    },
+    "152f147afe120fe70220ea688c57b77ffddfca3b17474da0871e0e7e5706587e": {
+      "status": "Needs revision",
+      "at": "2026-10-05T09:58:44.303Z",
+      "evidenceId": "17457f1e-b630-48d9-b75c-c488454e925a",
+      "paths": [
+        "C:/Users/wilsh/Projects/runelord/assets/characters/runeblade-summon-concepts/2026-10-05-r1/bone-thrall-concept-r1.png"
+      ]
+    },
+    "b567aa885ce19766259b70d4af812bb4d2d0b49b5c63a95728f3e01cb2dd1c0d": {
+      "status": "Approved",
+      "at": "2026-10-05T09:58:44.514Z",
+      "evidenceId": "9a53e5f6-cc0e-4cde-9f1f-f6b30ad0e1a0",
+      "paths": [
+        "C:/Users/wilsh/Projects/runelord/assets/characters/runeblade-summon-concepts/2026-10-05-r1/frost-thrall-concept-r1.png"
+      ]
+    },
+    "52e9c8bd692e2fa07acdbc4a3599dfc44857bce63cf7f06fe5277a2783001259": {
+      "status": "Needs revision",
+      "at": "2026-10-05T09:58:44.749Z",
+      "evidenceId": "effa58ce-13d9-48ad-93db-45fecbc9d9ed",
+      "paths": [
+        "C:/Users/wilsh/Projects/runelord/assets/characters/runeblade-summon-concepts/2026-10-05-r1/risen-legionnaire-concept-r1.png"
+      ]
+    },
+    "66b584fa3f80878616790d4d0ddbfb39d04710aef670beb4ccc780c64c11205e": {
+      "status": "Approved",
+      "at": "2026-10-05T10:21:59.400Z",
+      "evidenceId": "d3c6b781-d26a-458a-92dc-7e388bd80fc4",
+      "paths": [
+        "C:/Users/wilsh/Projects/runelord/assets/characters/runeblade-summon-concepts/2026-10-05-r3/bone-thrall-concept-r3.png"
+      ]
+    },
+    "8cbf9775adebf82dc0018adf9da816a1b1fd1b258f298b8d8f82d06b9ebfae86": {
+      "status": "Approved",
+      "at": "2026-10-05T10:21:59.497Z",
+      "evidenceId": "49a930e1-ea68-408b-9525-1a7a3746babf",
+      "paths": [
+        "C:/Users/wilsh/Projects/runelord/assets/characters/runeblade-summon-concepts/2026-10-05-r3/risen-legionnaire-concept-r3.png"
+      ]
+    },
+    "32183e9e97d29d42b4f8674e8a9bb7e6dfe888fc871149f33405b3c8491be5e9": {
+      "status": "Approved",
+      "at": "2026-10-05T10:56:14.478Z",
+      "evidenceId": "6b887dd8-b9de-44bd-9137-527e577e0a1c",
+      "paths": [
+        "C:/Users/wilsh/Projects/runelord/assets/characters/runeblade-base-summons/selected-r1/frost-thrall/master.png"
+      ]
+    },
+    "a995d730c43a7cecf17710075938845da3a4d5b7330ec61de8ef87aa3daabdc1": {
+      "status": "Approved",
+      "at": "2026-10-05T10:56:14.582Z",
+      "evidenceId": "73e64d5c-bd0b-4077-885e-1aba0f2d1290",
+      "paths": [
+        "C:/Users/wilsh/Projects/runelord/assets/characters/runeblade-base-summons/selected-r1/shattered-queen/master.png"
+      ]
+    },
+    "ee7a6e63d64486e6b85159a04bb981f41c1ef51fb6d93eed01bc9c16117275c9": {
+      "status": "Approved",
+      "at": "2026-10-05T10:56:14.695Z",
+      "evidenceId": "e0d1dda9-6d98-47cc-b49a-4d766faf5063",
+      "paths": [
+        "C:/Users/wilsh/Projects/runelord/assets/characters/runeblade-base-summons/selected-r1/rime-seer/master.png"
+      ]
+    },
+    "afa9d76fe84274c9115cae94705c327d6300d1524f6fc2545030863f3fd8249a": {
+      "status": "Approved",
+      "at": "2026-10-05T10:56:14.795Z",
+      "evidenceId": "de576508-30cb-4caa-8998-cd4eb46a7e86",
+      "paths": [
+        "C:/Users/wilsh/Projects/runelord/assets/characters/runeblade-base-summons/selected-r1/rune-revenant/master.png"
+      ]
+    },
+    "917309154a8f7e2067a8f5ede95a3e53941872ae80d35982c8eb26c9b1caeaf9": {
+      "status": "Approved",
+      "at": "2026-10-05T10:56:14.919Z",
+      "evidenceId": "fb4e645d-da24-4364-9d04-a80314ea066f",
+      "paths": [
+        "C:/Users/wilsh/Projects/runelord/assets/characters/runeblade-base-summons/selected-r1/bone-defender/master.png"
+      ]
+    },
+    "e1e04624501b75e43621d6587debacef9d2c756fee3611e7743376edb09d0167": {
+      "status": "Approved",
+      "at": "2026-10-13T04:34:39.492Z",
+      "evidenceId": "d741af12-6721-4f49-b7dc-cbb595b6407f",
+      "paths": [
+        "C:\\Users\\wilsh\\Projects\\runelord\\assets\\approvals\\inbox\\abomination-grave-butcher\\concept-r1\\abomination-grave-butcher-concept-r1.png"
+      ]
+    },
+    "c9c4dcb706ad900f77137701574d2f09dbfc177e01dc53aa812b2943c6303abc": {
+      "status": "Approved",
+      "at": "2026-10-13T04:34:43.979Z",
+      "evidenceId": "d08009f4-1f7e-4ec8-abe2-3a4f6d20744e",
+      "paths": [
+        "C:\\Users\\wilsh\\Projects\\runelord\\assets\\approvals\\inbox\\abomination-ossuary-brute\\concept-r1\\abomination-ossuary-brute-concept-r1.png"
+      ]
+    },
+    "405909560042c7e5ffbe43597440c8b9f3a1fcd8f1f751fa196943aaaf1321f6": {
+      "status": "Approved",
+      "at": "2026-10-13T04:34:47.406Z",
+      "evidenceId": "f5381e45-023f-4d01-ae7a-5d9d07f945d1",
+      "paths": [
+        "C:\\Users\\wilsh\\Projects\\runelord\\assets\\approvals\\inbox\\abomination-rime-hauler\\concept-r1\\abomination-rime-hauler-concept-r1.png"
+      ]
+    },
+    "31f9a016eca5a8c942a5760415060120a76401270d1cb24676db95a487a251f1": {
+      "status": "Approved",
+      "at": "2026-10-13T04:35:20.121Z",
+      "evidenceId": "61e4fa44-f7ba-4720-922c-f4966cfdef92",
+      "paths": [
+        "C:\\Users\\wilsh\\Projects\\runelord\\assets\\approvals\\inbox\\banshee-chainbound-widow\\concept-r1\\banshee-chainbound-widow-concept-r1.png"
+      ]
+    },
+    "6f78e6e02b976d137c4c88b6a47a1bddb9d72f3a2ee3cfe6d6efd57a5ce043e3": {
+      "status": "Approved",
+      "at": "2026-10-13T04:35:23.296Z",
+      "evidenceId": "e0d03d81-6cbc-4eea-ada3-ea6cc2f12d07",
+      "paths": [
+        "C:\\Users\\wilsh\\Projects\\runelord\\assets\\approvals\\inbox\\banshee-mourning-veil\\concept-r1\\banshee-mourning-veil-concept-r1.png"
+      ]
+    },
+    "d66ce5b2949733a00d1704bbc4e2bdf9e181e72246baa92f93acae724cd25a8f": {
+      "status": "Approved",
+      "at": "2026-10-13T04:35:26.077Z",
+      "evidenceId": "4815fdbf-2dd0-49a6-8b84-ac52e4482776",
+      "paths": [
+        "C:\\Users\\wilsh\\Projects\\runelord\\assets\\approvals\\inbox\\banshee-shattered-queen\\concept-r1\\banshee-shattered-queen-concept-r1.png"
+      ]
+    },
+    "c4c6ae8b6243ff2f2631cd84632dd4b0c45c8178704f75b2fbc2293f9f12b4d9": {
+      "status": "Approved",
+      "at": "2026-10-13T04:35:29.547Z",
+      "evidenceId": "fdd2dbac-29c7-4e35-9049-5a178f074a09",
+      "paths": [
+        "C:\\Users\\wilsh\\Projects\\runelord\\assets\\approvals\\inbox\\avalanche-colossus\\ice-roster-r2\\base.png"
+      ]
+    },
+    "ec80a79caa52db70a54fb8a6204d8305697e6bfcaf1773af14d959265ab43301": {
+      "status": "Approved",
+      "at": "2026-10-13T05:05:12.677Z",
+      "evidenceId": "242861af-7ec6-44f5-9734-e28bb21df601",
+      "paths": [
+        "C:\\Users\\wilsh\\Projects\\runelord\\assets\\characters\\iceclamp-bombardier\\base\\ice-detail-r2-2026-10-13\\qa-dark.png"
+      ]
+    },
+    "872f31b1f3e2acfa16a6e330d32b5ef7dc1662816a73ea4f718e5769ea8028a4": {
+      "status": "Approved",
+      "at": "2026-10-13T05:06:52.799Z",
+      "evidenceId": "1316bad9-8645-453e-97d3-2a6094f05866",
+      "paths": [
+        "C:\\Users\\wilsh\\Projects\\runelord\\assets\\approvals\\inbox\\shardlance-stalker\\ice-roster-r1\\master.png"
+      ]
+    },
+    "baefb70c5fdffb81b5bd144e02dac78406bd9b283ff48a777d5b21f8f92b3e7c": {
+      "status": "Approved",
+      "at": "2026-10-13T05:06:58.678Z",
+      "evidenceId": "fc0ba40e-d72a-4754-92eb-787703e3f5fc",
+      "paths": [
+        "C:\\Users\\wilsh\\Projects\\runelord\\assets\\approvals\\inbox\\rimejaw-scavenger\\ice-roster-r1\\base.png"
+      ]
+    },
+    "710d95eda75e9eb6ef79ba80dd281bc3aee11e17f71cd10de32fe67d3b5f2c3c": {
+      "status": "Approved",
+      "at": "2026-10-13T05:07:03.058Z",
+      "evidenceId": "f5b7fc14-ef50-460e-ab06-3818d18a76a3",
+      "paths": [
+        "C:\\Users\\wilsh\\Projects\\runelord\\assets\\approvals\\inbox\\coffinback-bastion\\ice-roster-r1\\master.png"
+      ]
+    },
+    "1532f314acfa76844cfe1272fb92e319c78d3285f519bdfb0616a0e56098a06c": {
+      "status": "Approved",
+      "at": "2026-10-13T05:07:06.426Z",
+      "evidenceId": "9d07ab2b-ae4b-4ec7-ba9f-7c4d1b424161",
+      "paths": [
+        "C:\\Users\\wilsh\\Projects\\runelord\\assets\\approvals\\inbox\\hoarveil-crone\\ice-roster-r1\\master.png"
+      ]
+    },
+    "b9c9410d1888fc7da350d1e1169dfea30c0ca5be501b49bf1b18e77a1241a598": {
+      "status": "Approved",
+      "at": "2026-10-13T05:07:57.836Z",
+      "evidenceId": "abf53e82-ab19-4ac3-95f6-82bcc08ad7cd",
+      "paths": [
+        "C:\\Users\\wilsh\\Projects\\runelord\\assets\\characters\\iceclamp-bombardier\\base\\ice-detail-r2-2026-10-13\\qa-light.png"
+      ]
+    },
+    "4d455077567fe0c54cb987a4469f362e01daa65db126500e2de52f715313d71a": {
+      "status": "Approved",
+      "at": "2026-10-13T05:08:01.368Z",
+      "evidenceId": "f2c5e85e-6a67-4108-b9e2-9e1f881eaa4b",
+      "paths": [
+        "C:\\Users\\wilsh\\Projects\\runelord\\assets\\characters\\paleveil-moth\\base\\ice-detail-r2-2026-10-13\\qa-dark.png"
+      ]
+    },
+    "8a7ddcedb183664b24a0929970df167e79fadbf5f6032c324f04456d446c6658": {
+      "status": "Approved",
+      "at": "2026-10-13T05:08:03.559Z",
+      "evidenceId": "4c808b2c-7c43-417b-bd37-2d7953430906",
+      "paths": [
+        "C:\\Users\\wilsh\\Projects\\runelord\\assets\\characters\\paleveil-moth\\base\\ice-detail-r2-2026-10-13\\qa-light.png"
+      ]
+    },
+    "9baef9272f2977640a740930308e06c6c170c2cb255a4e168b6d2d5b6cb67bc6": {
+      "status": "Approved",
+      "at": "2026-10-13T05:08:06.565Z",
+      "evidenceId": "c94b4fd9-3d9a-4858-8716-b9e7eb8e60ae",
+      "paths": [
+        "C:\\Users\\wilsh\\Projects\\runelord\\assets\\characters\\cairnfrost-ursine\\base\\ice-detail-r2-2026-10-13\\qa-dark.png"
+      ]
+    },
+    "3e9f9ec7146bd433982e842202f38ad381934082ec70b9cdbfbe84ae92c1e673": {
+      "status": "Approved",
+      "at": "2026-10-13T05:08:10.256Z",
+      "evidenceId": "01af04bf-0a34-43b7-8082-48d3c3291b85",
+      "paths": [
+        "C:\\Users\\wilsh\\Projects\\runelord\\assets\\characters\\cairnfrost-ursine\\base\\ice-detail-r2-2026-10-13\\qa-light.png"
+      ]
+    },
+    "4e34d314f4d61f89b311ca7d2cade28e79b257f96d9e3e9d2d2b75c4c7b9ae45": {
+      "status": "Approved",
+      "at": "2026-10-13T05:09:18.441Z",
+      "evidenceId": "50e07ace-3a79-497d-9614-604286ef7bdd",
+      "paths": [
+        "C:\\Users\\wilsh\\Projects\\runelord\\assets\\characters\\hollowmask-oracle\\base\\ice-detail-r2-2026-10-13\\master.png"
+      ]
+    },
+    "a68173ffa335c76286fadc04f395ac68c2cc1d23c755f2fe32fcf8bde3de244c": {
+      "status": "Approved",
+      "at": "2026-10-13T05:09:23.585Z",
+      "evidenceId": "d0cb20f0-6264-4135-bb7c-3d6af7d5e906",
+      "paths": [
+        "C:\\Users\\wilsh\\Projects\\runelord\\assets\\characters\\iceclamp-bombardier\\base\\ice-detail-r2-2026-10-13\\master.png"
+      ]
+    },
+    "4cdd821f7a08781e3371987302ccb934031a2be064b09e8f8d065f11176c2a6d": {
+      "status": "Approved",
+      "at": "2026-10-13T05:09:28.120Z",
+      "evidenceId": "c6785a74-f295-48ba-934e-9d9d7c1b8c47",
+      "paths": [
+        "C:\\Users\\wilsh\\Projects\\runelord\\assets\\characters\\cairnfrost-ursine\\base\\ice-detail-r2-2026-10-13\\master.png"
+      ]
+    },
+    "45aaa174e0e8322a0e2c689ede65aafab8930900a44543c908b2238aee0819e1": {
+      "status": "Approved",
+      "at": "2026-10-13T05:09:33.938Z",
+      "evidenceId": "876dfbe1-cc13-4d97-afde-11db19725eb3",
+      "paths": [
+        "C:\\Users\\wilsh\\Projects\\runelord\\assets\\characters\\paleveil-moth\\base\\ice-detail-r2-2026-10-13\\master.png"
+      ]
+    },
+    "6785c628780e5d3c916edf87476eea7e7b73936444d6e668a7bea4929327edaf": {
+      "status": "Approved",
+      "at": "2026-10-13T05:09:37.842Z",
+      "evidenceId": "ba9d75c8-5fe4-4805-92bd-ccc3aeb4b14c",
+      "paths": [
+        "C:\\Users\\wilsh\\Projects\\runelord\\assets\\characters\\whiteout-ray\\base\\ice-detail-r2-2026-10-13\\master.png"
+      ]
+    },
+    "69819badf98de585e6f30f5aff72a74cb28aa9d35762a1413ff12d6456d4acc3": {
+      "status": "Approved",
+      "at": "2026-10-13T05:09:41.486Z",
+      "evidenceId": "71cd1195-8259-47be-9e1a-480955e5d224",
+      "paths": [
+        "C:\\Users\\wilsh\\Projects\\runelord\\assets\\characters\\shardstep-skitterer\\base\\ice-detail-r2-2026-10-13\\master.png"
+      ]
+    },
+    "da927820534c9ab34ebb57ddeeca5445efecd5c156c83fe0ba6055ee86ac089e": {
+      "status": "Approved",
+      "at": "2026-10-13T05:09:47.242Z",
+      "evidenceId": "3a490bf6-ea37-46db-b2bc-6255e8589272",
+      "paths": [
+        "C:\\Users\\wilsh\\Projects\\runelord\\assets\\characters\\splinterhost\\base\\ice-detail-r2-2026-10-13\\master.png"
+      ]
     }
   },
   "evidence": {
@@ -151801,6 +152220,336 @@
     "2ce9172d-06cb-4d3d-963c-f29c2ff82234": {
       "actor": "gallery-user",
       "at": "2026-10-03T03:36:20.226Z",
+      "note": "",
+      "action": "Approved"
+    },
+    "664f3a44-e06a-4d12-abef-895f34a8fd77": {
+      "actor": "user-chat",
+      "at": "2026-10-05T04:28:42.785Z",
+      "note": "User approved both revised animation sets and instructed: \"they pass. implement them as the new models, open a preview when your done\" on 2026-10-05.",
+      "action": "Approved"
+    },
+    "951d5301-c040-4762-9e20-36fce6a1c8e3": {
+      "actor": "user-chat",
+      "at": "2026-10-05T04:28:42.845Z",
+      "note": "User approved both revised animation sets and instructed: \"they pass. implement them as the new models, open a preview when your done\" on 2026-10-05.",
+      "action": "Approved"
+    },
+    "e24bf5aa-4ced-40e2-a078-a21b3e249c6b": {
+      "actor": "user-chat",
+      "at": "2026-10-05T04:28:42.901Z",
+      "note": "User approved both revised animation sets and instructed: \"they pass. implement them as the new models, open a preview when your done\" on 2026-10-05.",
+      "action": "Approved"
+    },
+    "aacb9d8e-0101-406e-9364-27960de96fa2": {
+      "actor": "user-chat",
+      "at": "2026-10-05T04:28:42.963Z",
+      "note": "User approved both revised animation sets and instructed: \"they pass. implement them as the new models, open a preview when your done\" on 2026-10-05.",
+      "action": "Approved"
+    },
+    "6ed3a4d4-8325-4d22-8f3c-f902ab09dc55": {
+      "actor": "user-chat",
+      "at": "2026-10-05T04:28:43.054Z",
+      "note": "User approved both revised animation sets and instructed: \"they pass. implement them as the new models, open a preview when your done\" on 2026-10-05.",
+      "action": "Approved"
+    },
+    "d7c998ec-c09e-44ff-8874-efe11c710d60": {
+      "actor": "user-chat",
+      "at": "2026-10-05T04:28:43.112Z",
+      "note": "User approved both revised animation sets and instructed: \"they pass. implement them as the new models, open a preview when your done\" on 2026-10-05.",
+      "action": "Approved"
+    },
+    "f0405e1d-8c03-4d8c-8306-20c017a73b39": {
+      "actor": "user-chat",
+      "at": "2026-10-05T04:28:43.166Z",
+      "note": "User approved both revised animation sets and instructed: \"they pass. implement them as the new models, open a preview when your done\" on 2026-10-05.",
+      "action": "Approved"
+    },
+    "e8d17925-31c8-41f4-8087-4ad4323849cb": {
+      "actor": "user-chat",
+      "at": "2026-10-05T04:28:43.233Z",
+      "note": "User approved both revised animation sets and instructed: \"they pass. implement them as the new models, open a preview when your done\" on 2026-10-05.",
+      "action": "Approved"
+    },
+    "4b0d4920-064c-41e4-b473-f06eab07fcce": {
+      "actor": "user-chat",
+      "at": "2026-10-05T04:28:43.295Z",
+      "note": "User approved both revised animation sets and instructed: \"they pass. implement them as the new models, open a preview when your done\" on 2026-10-05.",
+      "action": "Approved"
+    },
+    "7eafb11d-5ae7-424b-b35b-87e01b991e1e": {
+      "actor": "user-chat",
+      "at": "2026-10-05T04:28:43.346Z",
+      "note": "User approved both revised animation sets and instructed: \"they pass. implement them as the new models, open a preview when your done\" on 2026-10-05.",
+      "action": "Approved"
+    },
+    "f56368d5-021e-41f6-9a87-a2cb9316f196": {
+      "actor": "user-chat",
+      "at": "2026-10-05T04:28:43.395Z",
+      "note": "User approved both revised animation sets and instructed: \"they pass. implement them as the new models, open a preview when your done\" on 2026-10-05.",
+      "action": "Approved"
+    },
+    "bdb6ff2a-14c6-4e54-8e40-f5d9482ba2ee": {
+      "actor": "user-chat",
+      "at": "2026-10-05T04:28:43.448Z",
+      "note": "User approved both revised animation sets and instructed: \"they pass. implement them as the new models, open a preview when your done\" on 2026-10-05.",
+      "action": "Approved"
+    },
+    "a357603e-6630-48af-b307-64cb0c12325a": {
+      "actor": "user-chat",
+      "at": "2026-10-05T04:28:43.503Z",
+      "note": "User approved both revised animation sets and instructed: \"they pass. implement them as the new models, open a preview when your done\" on 2026-10-05.",
+      "action": "Approved"
+    },
+    "a6f9bdaf-f5b9-4e09-beef-e6a664512881": {
+      "actor": "user-chat",
+      "at": "2026-10-05T04:28:43.556Z",
+      "note": "User approved both revised animation sets and instructed: \"they pass. implement them as the new models, open a preview when your done\" on 2026-10-05.",
+      "action": "Approved"
+    },
+    "856b1d6a-a8b4-4a2e-a806-69b392a05588": {
+      "actor": "user-chat",
+      "at": "2026-10-05T04:28:43.611Z",
+      "note": "User approved both revised animation sets and instructed: \"they pass. implement them as the new models, open a preview when your done\" on 2026-10-05.",
+      "action": "Approved"
+    },
+    "b0e729c0-1ccd-443f-83e1-55ea98e28cab": {
+      "actor": "user-chat",
+      "at": "2026-10-05T04:28:43.666Z",
+      "note": "User approved both revised animation sets and instructed: \"they pass. implement them as the new models, open a preview when your done\" on 2026-10-05.",
+      "action": "Approved"
+    },
+    "5ec6ae2f-e448-4c9c-a782-81c4f4acdf85": {
+      "actor": "user-chat",
+      "at": "2026-10-05T04:28:43.720Z",
+      "note": "User approved both revised animation sets and instructed: \"they pass. implement them as the new models, open a preview when your done\" on 2026-10-05.",
+      "action": "Approved"
+    },
+    "9c33a693-d1cd-4c33-8f12-5998ec9c209f": {
+      "actor": "user-chat",
+      "at": "2026-10-05T04:28:43.767Z",
+      "note": "User approved both revised animation sets and instructed: \"they pass. implement them as the new models, open a preview when your done\" on 2026-10-05.",
+      "action": "Approved"
+    },
+    "3e7ea299-8efe-428c-94fb-b5c68b890874": {
+      "actor": "user-chat",
+      "at": "2026-10-05T05:03:35.613Z",
+      "note": "User reports alternating light and dark idle frames and requests a32-frame Gorthak animation revision with consistent shading,2026-10-05. Approved master identity remains unchanged.",
+      "action": "Needs revision"
+    },
+    "c3753d5a-aa67-4b4a-8cd8-2aacf4b5ef0d": {
+      "actor": "user-chat",
+      "at": "2026-10-05T05:41:16.368Z",
+      "note": "User reports a dark frame and excessive chest movement in the new idle. Requests idle-only correction, preserving other animation states.",
+      "action": "Needs revision"
+    },
+    "f74980ff-d95a-4f88-8138-f546bfa1fecc": {
+      "actor": "user-chat",
+      "at": "2026-10-05T06:05:42.081Z",
+      "note": "User rejects r2 idle: mismatched gray horns and armor, insufficient coordinated movement, mostly poorly animated fist. Requests effective idle repair with visible whole-body articulation and stable approved palette; preserve all other states.",
+      "action": "Needs revision"
+    },
+    "17457f1e-b630-48d9-b75c-c488454e925a": {
+      "actor": "user-chat-recorded-by-codex",
+      "at": "2026-10-05T09:58:44.303Z",
+      "note": "Explicit user chat, 2026-10-05: \"i liek the middle one as is, lets make the other two more serious and gritty\". Middle image is Frost Thrall — Shatterbound concept-r1.",
+      "action": "Needs revision"
+    },
+    "9a53e5f6-cc0e-4cde-9f1f-f6b30ad0e1a0": {
+      "actor": "user-chat-recorded-by-codex",
+      "at": "2026-10-05T09:58:44.514Z",
+      "note": "Explicit user chat, 2026-10-05: \"i liek the middle one as is, lets make the other two more serious and gritty\". Middle image is Frost Thrall — Shatterbound concept-r1.",
+      "action": "Approved"
+    },
+    "effa58ce-13d9-48ad-93db-45fecbc9d9ed": {
+      "actor": "user-chat-recorded-by-codex",
+      "at": "2026-10-05T09:58:44.749Z",
+      "note": "Explicit user chat, 2026-10-05: \"i liek the middle one as is, lets make the other two more serious and gritty\". Middle image is Frost Thrall — Shatterbound concept-r1.",
+      "action": "Needs revision"
+    },
+    "d3c6b781-d26a-458a-92dc-7e388bd80fc4": {
+      "actor": "user-chat-recorded-by-codex",
+      "at": "2026-10-05T10:21:59.400Z",
+      "note": "Explicit user chat 2026-10-05: \"these are good use the 3 approved as refrences for make samples for the rest\". Approves Bone Thrall r3 and Risen Legionnaire r3 alongside previously approved Frost Thrall r1.",
+      "action": "Approved"
+    },
+    "49a930e1-ea68-408b-9525-1a7a3746babf": {
+      "actor": "user-chat-recorded-by-codex",
+      "at": "2026-10-05T10:21:59.497Z",
+      "note": "Explicit user chat 2026-10-05: \"these are good use the 3 approved as refrences for make samples for the rest\". Approves Bone Thrall r3 and Risen Legionnaire r3 alongside previously approved Frost Thrall r1.",
+      "action": "Approved"
+    },
+    "6b887dd8-b9de-44bd-9137-527e577e0a1c": {
+      "actor": "user-chat-recorded-by-codex",
+      "at": "2026-10-05T10:56:14.478Z",
+      "note": "User selected these five attached images as Runeblade base summons and explicitly requested 32-frame animation with special attention to idle, and cards with fresh reference-based illustration. User message: these will be the runeblades 5 base summons animate them using our 32 frame workflow, and pay specail attention to the idle frames. Also create cards for them, creating new card artwork using each as a refrence.",
+      "action": "Approved"
+    },
+    "73e64d5c-bd0b-4077-885e-1aba0f2d1290": {
+      "actor": "user-chat-recorded-by-codex",
+      "at": "2026-10-05T10:56:14.582Z",
+      "note": "User selected these five attached images as Runeblade base summons and explicitly requested 32-frame animation with special attention to idle, and cards with fresh reference-based illustration. User message: these will be the runeblades 5 base summons animate them using our 32 frame workflow, and pay specail attention to the idle frames. Also create cards for them, creating new card artwork using each as a refrence.",
+      "action": "Approved"
+    },
+    "e0d1dda9-6d98-47cc-b49a-4d766faf5063": {
+      "actor": "user-chat-recorded-by-codex",
+      "at": "2026-10-05T10:56:14.695Z",
+      "note": "User selected these five attached images as Runeblade base summons and explicitly requested 32-frame animation with special attention to idle, and cards with fresh reference-based illustration. User message: these will be the runeblades 5 base summons animate them using our 32 frame workflow, and pay specail attention to the idle frames. Also create cards for them, creating new card artwork using each as a refrence.",
+      "action": "Approved"
+    },
+    "de576508-30cb-4caa-8998-cd4eb46a7e86": {
+      "actor": "user-chat-recorded-by-codex",
+      "at": "2026-10-05T10:56:14.795Z",
+      "note": "User selected these five attached images as Runeblade base summons and explicitly requested 32-frame animation with special attention to idle, and cards with fresh reference-based illustration. User message: these will be the runeblades 5 base summons animate them using our 32 frame workflow, and pay specail attention to the idle frames. Also create cards for them, creating new card artwork using each as a refrence.",
+      "action": "Approved"
+    },
+    "fb4e645d-da24-4364-9d04-a80314ea066f": {
+      "actor": "user-chat-recorded-by-codex",
+      "at": "2026-10-05T10:56:14.919Z",
+      "note": "User selected these five attached images as Runeblade base summons and explicitly requested 32-frame animation with special attention to idle, and cards with fresh reference-based illustration. User message: these will be the runeblades 5 base summons animate them using our 32 frame workflow, and pay specail attention to the idle frames. Also create cards for them, creating new card artwork using each as a refrence.",
+      "action": "Approved"
+    },
+    "d741af12-6721-4f49-b7dc-cbb595b6407f": {
+      "actor": "gallery-user",
+      "at": "2026-10-13T04:34:39.492Z",
+      "note": "",
+      "action": "Approved"
+    },
+    "d08009f4-1f7e-4ec8-abe2-3a4f6d20744e": {
+      "actor": "gallery-user",
+      "at": "2026-10-13T04:34:43.979Z",
+      "note": "",
+      "action": "Approved"
+    },
+    "f5381e45-023f-4d01-ae7a-5d9d07f945d1": {
+      "actor": "gallery-user",
+      "at": "2026-10-13T04:34:47.406Z",
+      "note": "",
+      "action": "Approved"
+    },
+    "61e4fa44-f7ba-4720-922c-f4966cfdef92": {
+      "actor": "gallery-user",
+      "at": "2026-10-13T04:35:20.121Z",
+      "note": "",
+      "action": "Approved"
+    },
+    "e0d03d81-6cbc-4eea-ada3-ea6cc2f12d07": {
+      "actor": "gallery-user",
+      "at": "2026-10-13T04:35:23.296Z",
+      "note": "",
+      "action": "Approved"
+    },
+    "4815fdbf-2dd0-49a6-8b84-ac52e4482776": {
+      "actor": "gallery-user",
+      "at": "2026-10-13T04:35:26.077Z",
+      "note": "",
+      "action": "Approved"
+    },
+    "fdd2dbac-29c7-4e35-9049-5a178f074a09": {
+      "actor": "gallery-user",
+      "at": "2026-10-13T04:35:29.547Z",
+      "note": "",
+      "action": "Approved"
+    },
+    "242861af-7ec6-44f5-9734-e28bb21df601": {
+      "actor": "gallery-user",
+      "at": "2026-10-13T05:05:12.677Z",
+      "note": "",
+      "action": "Approved"
+    },
+    "1316bad9-8645-453e-97d3-2a6094f05866": {
+      "actor": "gallery-user",
+      "at": "2026-10-13T05:06:52.799Z",
+      "note": "",
+      "action": "Approved"
+    },
+    "fc0ba40e-d72a-4754-92eb-787703e3f5fc": {
+      "actor": "gallery-user",
+      "at": "2026-10-13T05:06:58.678Z",
+      "note": "",
+      "action": "Approved"
+    },
+    "f5b7fc14-ef50-460e-ab06-3818d18a76a3": {
+      "actor": "gallery-user",
+      "at": "2026-10-13T05:07:03.058Z",
+      "note": "",
+      "action": "Approved"
+    },
+    "9d07ab2b-ae4b-4ec7-ba9f-7c4d1b424161": {
+      "actor": "gallery-user",
+      "at": "2026-10-13T05:07:06.426Z",
+      "note": "",
+      "action": "Approved"
+    },
+    "abf53e82-ab19-4ac3-95f6-82bcc08ad7cd": {
+      "actor": "gallery-user",
+      "at": "2026-10-13T05:07:57.836Z",
+      "note": "",
+      "action": "Approved"
+    },
+    "f2c5e85e-6a67-4108-b9e2-9e1f881eaa4b": {
+      "actor": "gallery-user",
+      "at": "2026-10-13T05:08:01.368Z",
+      "note": "",
+      "action": "Approved"
+    },
+    "4c808b2c-7c43-417b-bd37-2d7953430906": {
+      "actor": "gallery-user",
+      "at": "2026-10-13T05:08:03.559Z",
+      "note": "",
+      "action": "Approved"
+    },
+    "c94b4fd9-3d9a-4858-8716-b9e7eb8e60ae": {
+      "actor": "gallery-user",
+      "at": "2026-10-13T05:08:06.565Z",
+      "note": "",
+      "action": "Approved"
+    },
+    "01af04bf-0a34-43b7-8082-48d3c3291b85": {
+      "actor": "gallery-user",
+      "at": "2026-10-13T05:08:10.256Z",
+      "note": "",
+      "action": "Approved"
+    },
+    "50e07ace-3a79-497d-9614-604286ef7bdd": {
+      "actor": "gallery-user",
+      "at": "2026-10-13T05:09:18.441Z",
+      "note": "",
+      "action": "Approved"
+    },
+    "d0cb20f0-6264-4135-bb7c-3d6af7d5e906": {
+      "actor": "gallery-user",
+      "at": "2026-10-13T05:09:23.585Z",
+      "note": "",
+      "action": "Approved"
+    },
+    "c6785a74-f295-48ba-934e-9d9d7c1b8c47": {
+      "actor": "gallery-user",
+      "at": "2026-10-13T05:09:28.120Z",
+      "note": "",
+      "action": "Approved"
+    },
+    "876dfbe1-cc13-4d97-afde-11db19725eb3": {
+      "actor": "gallery-user",
+      "at": "2026-10-13T05:09:33.938Z",
+      "note": "",
+      "action": "Approved"
+    },
+    "ba9d75c8-5fe4-4805-92bd-ccc3aeb4b14c": {
+      "actor": "gallery-user",
+      "at": "2026-10-13T05:09:37.842Z",
+      "note": "",
+      "action": "Approved"
+    },
+    "71cd1195-8259-47be-9e1a-480955e5d224": {
+      "actor": "gallery-user",
+      "at": "2026-10-13T05:09:41.486Z",
+      "note": "",
+      "action": "Approved"
+    },
+    "3a490bf6-ea37-46db-b2bc-6255e8589272": {
+      "actor": "gallery-user",
+      "at": "2026-10-13T05:09:47.242Z",
       "note": "",
       "action": "Approved"
     }
@@ -158742,6 +159491,501 @@
       "actor": "gallery-user",
       "at": "2026-10-03T03:36:20.226Z",
       "assetPath": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\approvals\\inbox\\red-goblins-nine-animation\\overview-r1\\all-nine-review.gif"
+    },
+    {
+      "id": "664f3a44-e06a-4d12-abef-895f34a8fd77",
+      "sha256": "577da6b5942cb3e15be05f888a4be12ec2763f87cacd5177f0d3a1789957d674",
+      "status": "Approved",
+      "note": "User approved both revised animation sets and instructed: \"they pass. implement them as the new models, open a preview when your done\" on 2026-10-05.",
+      "actor": "user-chat",
+      "at": "2026-10-05T04:28:42.785Z",
+      "assetPath": "C:/Users/wilsh/Projects/runelord/assets/approvals/inbox/warlock-gorthak/hd-r2-act/act.gif"
+    },
+    {
+      "id": "951d5301-c040-4762-9e20-36fce6a1c8e3",
+      "sha256": "c012c8502b9a0b7a25fc179389fbf34e2ca915dea08c00221382c2d571e94669",
+      "status": "Approved",
+      "note": "User approved both revised animation sets and instructed: \"they pass. implement them as the new models, open a preview when your done\" on 2026-10-05.",
+      "actor": "user-chat",
+      "at": "2026-10-05T04:28:42.845Z",
+      "assetPath": "C:/Users/wilsh/Projects/runelord/assets/approvals/inbox/warlock-gorthak/hd-r2-die/die.gif"
+    },
+    {
+      "id": "e24bf5aa-4ced-40e2-a078-a21b3e249c6b",
+      "sha256": "e63a3c175a8ff06d631c9fc11199a6f4f4cc9326c18f29d03b7d397424f6f5e1",
+      "status": "Approved",
+      "note": "User approved both revised animation sets and instructed: \"they pass. implement them as the new models, open a preview when your done\" on 2026-10-05.",
+      "actor": "user-chat",
+      "at": "2026-10-05T04:28:42.901Z",
+      "assetPath": "C:/Users/wilsh/Projects/runelord/assets/approvals/inbox/warlock-gorthak/hd-r2-hit/hit.gif"
+    },
+    {
+      "id": "aacb9d8e-0101-406e-9364-27960de96fa2",
+      "sha256": "94ead7d82084184cb90033818b9246fd81ce0da21a28b20d9014d2f729d7cb08",
+      "status": "Approved",
+      "note": "User approved both revised animation sets and instructed: \"they pass. implement them as the new models, open a preview when your done\" on 2026-10-05.",
+      "actor": "user-chat",
+      "at": "2026-10-05T04:28:42.963Z",
+      "assetPath": "C:/Users/wilsh/Projects/runelord/assets/approvals/inbox/warlock-gorthak/hd-r2-idle/idle.gif"
+    },
+    {
+      "id": "6ed3a4d4-8325-4d22-8f3c-f902ab09dc55",
+      "sha256": "6a895072af9a692b756417ffc1f3210fe9bb67c8f7b678ba7aef1ba37f622e47",
+      "status": "Approved",
+      "note": "User approved both revised animation sets and instructed: \"they pass. implement them as the new models, open a preview when your done\" on 2026-10-05.",
+      "actor": "user-chat",
+      "at": "2026-10-05T04:28:43.054Z",
+      "assetPath": "C:/Users/wilsh/Projects/runelord/assets/approvals/inbox/warlock-gorthak/hd-r2-spawn/spawn.gif"
+    },
+    {
+      "id": "d7c998ec-c09e-44ff-8874-efe11c710d60",
+      "sha256": "4dbdc2c2f44b3c7d58a3e85d95228939fa789cf65274d8ec031ad1e0ddfa1404",
+      "status": "Approved",
+      "note": "User approved both revised animation sets and instructed: \"they pass. implement them as the new models, open a preview when your done\" on 2026-10-05.",
+      "actor": "user-chat",
+      "at": "2026-10-05T04:28:43.112Z",
+      "assetPath": "C:/Users/wilsh/Projects/runelord/assets/approvals/inbox/warlock-gorthak/hd-r2b-key-poses/key-poses.jpg"
+    },
+    {
+      "id": "f0405e1d-8c03-4d8c-8306-20c017a73b39",
+      "sha256": "9da30bd020a63c07915b76558dfe8b0771ea818ad2a8dedae35d0c187c0a5758",
+      "status": "Approved",
+      "note": "User approved both revised animation sets and instructed: \"they pass. implement them as the new models, open a preview when your done\" on 2026-10-05.",
+      "actor": "user-chat",
+      "at": "2026-10-05T04:28:43.166Z",
+      "assetPath": "C:/Users/wilsh/Projects/runelord/assets/approvals/inbox/warlock-gorthak/hd-r2b-wounded_idle/wounded_idle.gif"
+    },
+    {
+      "id": "e8d17925-31c8-41f4-8087-4ad4323849cb",
+      "sha256": "525b5f846182e570366239e77ff81c786f6e9f9319b221077ded924a10f2f20c",
+      "status": "Approved",
+      "note": "User approved both revised animation sets and instructed: \"they pass. implement them as the new models, open a preview when your done\" on 2026-10-05.",
+      "actor": "user-chat",
+      "at": "2026-10-05T04:28:43.233Z",
+      "assetPath": "C:/Users/wilsh/Projects/runelord/assets/approvals/inbox/warlock-ignivar/flight-act-r1/act.gif"
+    },
+    {
+      "id": "4b0d4920-064c-41e4-b473-f06eab07fcce",
+      "sha256": "9ec46bdf503bd079d2dbc4129fec34d0d51e72f6b78b0aa4644ee5da8b585991",
+      "status": "Approved",
+      "note": "User approved both revised animation sets and instructed: \"they pass. implement them as the new models, open a preview when your done\" on 2026-10-05.",
+      "actor": "user-chat",
+      "at": "2026-10-05T04:28:43.295Z",
+      "assetPath": "C:/Users/wilsh/Projects/runelord/assets/approvals/inbox/warlock-ignivar/flight-contact-r1/flight-contact.png"
+    },
+    {
+      "id": "7eafb11d-5ae7-424b-b35b-87e01b991e1e",
+      "sha256": "14cd8fdbf9e9bbd7ead63cfa6ed3101bba7a98060a1a9b9de164a81c6f650ac1",
+      "status": "Approved",
+      "note": "User approved both revised animation sets and instructed: \"they pass. implement them as the new models, open a preview when your done\" on 2026-10-05.",
+      "actor": "user-chat",
+      "at": "2026-10-05T04:28:43.346Z",
+      "assetPath": "C:/Users/wilsh/Projects/runelord/assets/approvals/inbox/warlock-ignivar/flight-design-r1/exec-daa316a6-b1f0-4c6f-82cb-c64fd96c1dc7.png"
+    },
+    {
+      "id": "f56368d5-021e-41f6-9a87-a2cb9316f196",
+      "sha256": "71162f90da740c518d83ad419be7a83c5be21ed8cd3607753762d46681463ab2",
+      "status": "Approved",
+      "note": "User approved both revised animation sets and instructed: \"they pass. implement them as the new models, open a preview when your done\" on 2026-10-05.",
+      "actor": "user-chat",
+      "at": "2026-10-05T04:28:43.395Z",
+      "assetPath": "C:/Users/wilsh/Projects/runelord/assets/approvals/inbox/warlock-ignivar/flight-die-r1/die.gif"
+    },
+    {
+      "id": "bdb6ff2a-14c6-4e54-8e40-f5d9482ba2ee",
+      "sha256": "c1bbeb9ff3dec1d469e71081dafaee7d5231ae3844df46410efdc996da47ec70",
+      "status": "Approved",
+      "note": "User approved both revised animation sets and instructed: \"they pass. implement them as the new models, open a preview when your done\" on 2026-10-05.",
+      "actor": "user-chat",
+      "at": "2026-10-05T04:28:43.448Z",
+      "assetPath": "C:/Users/wilsh/Projects/runelord/assets/approvals/inbox/warlock-ignivar/flight-hit-r1/hit.gif"
+    },
+    {
+      "id": "a357603e-6630-48af-b307-64cb0c12325a",
+      "sha256": "ca14692fb9781d434c0bd2fe2a72f7d14afbf3b4819ead4ba82d16fb1f7828b4",
+      "status": "Approved",
+      "note": "User approved both revised animation sets and instructed: \"they pass. implement them as the new models, open a preview when your done\" on 2026-10-05.",
+      "actor": "user-chat",
+      "at": "2026-10-05T04:28:43.503Z",
+      "assetPath": "C:/Users/wilsh/Projects/runelord/assets/approvals/inbox/warlock-ignivar/flight-idle-r1/idle.gif"
+    },
+    {
+      "id": "a6f9bdaf-f5b9-4e09-beef-e6a664512881",
+      "sha256": "14cd8fdbf9e9bbd7ead63cfa6ed3101bba7a98060a1a9b9de164a81c6f650ac1",
+      "status": "Approved",
+      "note": "User approved both revised animation sets and instructed: \"they pass. implement them as the new models, open a preview when your done\" on 2026-10-05.",
+      "actor": "user-chat",
+      "at": "2026-10-05T04:28:43.556Z",
+      "assetPath": "C:/Users/wilsh/Projects/runelord/assets/approvals/inbox/warlock-ignivar/flight-pose-r1/up.png"
+    },
+    {
+      "id": "856b1d6a-a8b4-4a2e-a806-69b392a05588",
+      "sha256": "9ec46bdf503bd079d2dbc4129fec34d0d51e72f6b78b0aa4644ee5da8b585991",
+      "status": "Approved",
+      "note": "User approved both revised animation sets and instructed: \"they pass. implement them as the new models, open a preview when your done\" on 2026-10-05.",
+      "actor": "user-chat",
+      "at": "2026-10-05T04:28:43.611Z",
+      "assetPath": "C:/Users/wilsh/Projects/runelord/assets/approvals/inbox/warlock-ignivar/flight-review-poses-r1/flight-review-poses.png"
+    },
+    {
+      "id": "b0e729c0-1ccd-443f-83e1-55ea98e28cab",
+      "sha256": "a6c5021e916fbd3d8ac15a133d00fd931f1655111e7d3ecf791f8c93c3a61127",
+      "status": "Approved",
+      "note": "User approved both revised animation sets and instructed: \"they pass. implement them as the new models, open a preview when your done\" on 2026-10-05.",
+      "actor": "user-chat",
+      "at": "2026-10-05T04:28:43.666Z",
+      "assetPath": "C:/Users/wilsh/Projects/runelord/assets/approvals/inbox/warlock-ignivar/flight-review-r1/flight-review.gif"
+    },
+    {
+      "id": "5ec6ae2f-e448-4c9c-a782-81c4f4acdf85",
+      "sha256": "f2eed6c2ec53647846b34f63007984d1491ceab4eec1dce12ee024a3b720e4de",
+      "status": "Approved",
+      "note": "User approved both revised animation sets and instructed: \"they pass. implement them as the new models, open a preview when your done\" on 2026-10-05.",
+      "actor": "user-chat",
+      "at": "2026-10-05T04:28:43.720Z",
+      "assetPath": "C:/Users/wilsh/Projects/runelord/assets/approvals/inbox/warlock-ignivar/flight-spawn-r1/spawn.gif"
+    },
+    {
+      "id": "9c33a693-d1cd-4c33-8f12-5998ec9c209f",
+      "sha256": "cb8609722103d75d4fcff1b87095e010d454347e0f08d4b4c44318ec1fddae25",
+      "status": "Approved",
+      "note": "User approved both revised animation sets and instructed: \"they pass. implement them as the new models, open a preview when your done\" on 2026-10-05.",
+      "actor": "user-chat",
+      "at": "2026-10-05T04:28:43.767Z",
+      "assetPath": "C:/Users/wilsh/Projects/runelord/assets/approvals/inbox/warlock-ignivar/flight-wounded_idle-r1/wounded_idle.gif"
+    },
+    {
+      "id": "3e7ea299-8efe-428c-94fb-b5c68b890874",
+      "sha256": "94ead7d82084184cb90033818b9246fd81ce0da21a28b20d9014d2f729d7cb08",
+      "status": "Needs revision",
+      "note": "User reports alternating light and dark idle frames and requests a32-frame Gorthak animation revision with consistent shading,2026-10-05. Approved master identity remains unchanged.",
+      "actor": "user-chat",
+      "at": "2026-10-05T05:03:35.613Z",
+      "assetPath": "assets/approvals/inbox/warlock-gorthak/hd-r2-idle/idle.gif"
+    },
+    {
+      "id": "c3753d5a-aa67-4b4a-8cd8-2aacf4b5ef0d",
+      "sha256": "20975b8fd55945853179caa761b5fec737e01064f78b3e86d4d69d694cfb234d",
+      "status": "Needs revision",
+      "note": "User reports a dark frame and excessive chest movement in the new idle. Requests idle-only correction, preserving other animation states.",
+      "actor": "user-chat",
+      "at": "2026-10-05T05:41:16.368Z",
+      "assetPath": "assets/approvals/inbox/warlock-gorthak/frames32-r1-idle/idle.gif"
+    },
+    {
+      "id": "f74980ff-d95a-4f88-8138-f546bfa1fecc",
+      "sha256": "303635e2801eb652f7cdb993d24558948b33bc286f074f1f4ca013cc2b5eb9e1",
+      "status": "Needs revision",
+      "note": "User rejects r2 idle: mismatched gray horns and armor, insufficient coordinated movement, mostly poorly animated fist. Requests effective idle repair with visible whole-body articulation and stable approved palette; preserve all other states.",
+      "actor": "user-chat",
+      "at": "2026-10-05T06:05:42.081Z",
+      "assetPath": "assets/approvals/inbox/warlock-gorthak/frames32-r2-idle/idle.gif"
+    },
+    {
+      "id": "17457f1e-b630-48d9-b75c-c488454e925a",
+      "sha256": "152f147afe120fe70220ea688c57b77ffddfca3b17474da0871e0e7e5706587e",
+      "status": "Needs revision",
+      "note": "Explicit user chat, 2026-10-05: \"i liek the middle one as is, lets make the other two more serious and gritty\". Middle image is Frost Thrall — Shatterbound concept-r1.",
+      "actor": "user-chat-recorded-by-codex",
+      "at": "2026-10-05T09:58:44.303Z",
+      "assetPath": "C:/Users/wilsh/Projects/runelord/assets/characters/runeblade-summon-concepts/2026-10-05-r1/bone-thrall-concept-r1.png"
+    },
+    {
+      "id": "9a53e5f6-cc0e-4cde-9f1f-f6b30ad0e1a0",
+      "sha256": "b567aa885ce19766259b70d4af812bb4d2d0b49b5c63a95728f3e01cb2dd1c0d",
+      "status": "Approved",
+      "note": "Explicit user chat, 2026-10-05: \"i liek the middle one as is, lets make the other two more serious and gritty\". Middle image is Frost Thrall — Shatterbound concept-r1.",
+      "actor": "user-chat-recorded-by-codex",
+      "at": "2026-10-05T09:58:44.514Z",
+      "assetPath": "C:/Users/wilsh/Projects/runelord/assets/characters/runeblade-summon-concepts/2026-10-05-r1/frost-thrall-concept-r1.png"
+    },
+    {
+      "id": "effa58ce-13d9-48ad-93db-45fecbc9d9ed",
+      "sha256": "52e9c8bd692e2fa07acdbc4a3599dfc44857bce63cf7f06fe5277a2783001259",
+      "status": "Needs revision",
+      "note": "Explicit user chat, 2026-10-05: \"i liek the middle one as is, lets make the other two more serious and gritty\". Middle image is Frost Thrall — Shatterbound concept-r1.",
+      "actor": "user-chat-recorded-by-codex",
+      "at": "2026-10-05T09:58:44.749Z",
+      "assetPath": "C:/Users/wilsh/Projects/runelord/assets/characters/runeblade-summon-concepts/2026-10-05-r1/risen-legionnaire-concept-r1.png"
+    },
+    {
+      "id": "d3c6b781-d26a-458a-92dc-7e388bd80fc4",
+      "sha256": "66b584fa3f80878616790d4d0ddbfb39d04710aef670beb4ccc780c64c11205e",
+      "status": "Approved",
+      "note": "Explicit user chat 2026-10-05: \"these are good use the 3 approved as refrences for make samples for the rest\". Approves Bone Thrall r3 and Risen Legionnaire r3 alongside previously approved Frost Thrall r1.",
+      "actor": "user-chat-recorded-by-codex",
+      "at": "2026-10-05T10:21:59.400Z",
+      "assetPath": "C:/Users/wilsh/Projects/runelord/assets/characters/runeblade-summon-concepts/2026-10-05-r3/bone-thrall-concept-r3.png"
+    },
+    {
+      "id": "49a930e1-ea68-408b-9525-1a7a3746babf",
+      "sha256": "8cbf9775adebf82dc0018adf9da816a1b1fd1b258f298b8d8f82d06b9ebfae86",
+      "status": "Approved",
+      "note": "Explicit user chat 2026-10-05: \"these are good use the 3 approved as refrences for make samples for the rest\". Approves Bone Thrall r3 and Risen Legionnaire r3 alongside previously approved Frost Thrall r1.",
+      "actor": "user-chat-recorded-by-codex",
+      "at": "2026-10-05T10:21:59.497Z",
+      "assetPath": "C:/Users/wilsh/Projects/runelord/assets/characters/runeblade-summon-concepts/2026-10-05-r3/risen-legionnaire-concept-r3.png"
+    },
+    {
+      "id": "6b887dd8-b9de-44bd-9137-527e577e0a1c",
+      "sha256": "32183e9e97d29d42b4f8674e8a9bb7e6dfe888fc871149f33405b3c8491be5e9",
+      "status": "Approved",
+      "note": "User selected these five attached images as Runeblade base summons and explicitly requested 32-frame animation with special attention to idle, and cards with fresh reference-based illustration. User message: these will be the runeblades 5 base summons animate them using our 32 frame workflow, and pay specail attention to the idle frames. Also create cards for them, creating new card artwork using each as a refrence.",
+      "actor": "user-chat-recorded-by-codex",
+      "at": "2026-10-05T10:56:14.478Z",
+      "assetPath": "C:/Users/wilsh/Projects/runelord/assets/characters/runeblade-base-summons/selected-r1/frost-thrall/master.png"
+    },
+    {
+      "id": "73e64d5c-bd0b-4077-885e-1aba0f2d1290",
+      "sha256": "a995d730c43a7cecf17710075938845da3a4d5b7330ec61de8ef87aa3daabdc1",
+      "status": "Approved",
+      "note": "User selected these five attached images as Runeblade base summons and explicitly requested 32-frame animation with special attention to idle, and cards with fresh reference-based illustration. User message: these will be the runeblades 5 base summons animate them using our 32 frame workflow, and pay specail attention to the idle frames. Also create cards for them, creating new card artwork using each as a refrence.",
+      "actor": "user-chat-recorded-by-codex",
+      "at": "2026-10-05T10:56:14.582Z",
+      "assetPath": "C:/Users/wilsh/Projects/runelord/assets/characters/runeblade-base-summons/selected-r1/shattered-queen/master.png"
+    },
+    {
+      "id": "e0d1dda9-6d98-47cc-b49a-4d766faf5063",
+      "sha256": "ee7a6e63d64486e6b85159a04bb981f41c1ef51fb6d93eed01bc9c16117275c9",
+      "status": "Approved",
+      "note": "User selected these five attached images as Runeblade base summons and explicitly requested 32-frame animation with special attention to idle, and cards with fresh reference-based illustration. User message: these will be the runeblades 5 base summons animate them using our 32 frame workflow, and pay specail attention to the idle frames. Also create cards for them, creating new card artwork using each as a refrence.",
+      "actor": "user-chat-recorded-by-codex",
+      "at": "2026-10-05T10:56:14.695Z",
+      "assetPath": "C:/Users/wilsh/Projects/runelord/assets/characters/runeblade-base-summons/selected-r1/rime-seer/master.png"
+    },
+    {
+      "id": "de576508-30cb-4caa-8998-cd4eb46a7e86",
+      "sha256": "afa9d76fe84274c9115cae94705c327d6300d1524f6fc2545030863f3fd8249a",
+      "status": "Approved",
+      "note": "User selected these five attached images as Runeblade base summons and explicitly requested 32-frame animation with special attention to idle, and cards with fresh reference-based illustration. User message: these will be the runeblades 5 base summons animate them using our 32 frame workflow, and pay specail attention to the idle frames. Also create cards for them, creating new card artwork using each as a refrence.",
+      "actor": "user-chat-recorded-by-codex",
+      "at": "2026-10-05T10:56:14.795Z",
+      "assetPath": "C:/Users/wilsh/Projects/runelord/assets/characters/runeblade-base-summons/selected-r1/rune-revenant/master.png"
+    },
+    {
+      "id": "fb4e645d-da24-4364-9d04-a80314ea066f",
+      "sha256": "917309154a8f7e2067a8f5ede95a3e53941872ae80d35982c8eb26c9b1caeaf9",
+      "status": "Approved",
+      "note": "User selected these five attached images as Runeblade base summons and explicitly requested 32-frame animation with special attention to idle, and cards with fresh reference-based illustration. User message: these will be the runeblades 5 base summons animate them using our 32 frame workflow, and pay specail attention to the idle frames. Also create cards for them, creating new card artwork using each as a refrence.",
+      "actor": "user-chat-recorded-by-codex",
+      "at": "2026-10-05T10:56:14.919Z",
+      "assetPath": "C:/Users/wilsh/Projects/runelord/assets/characters/runeblade-base-summons/selected-r1/bone-defender/master.png"
+    },
+    {
+      "id": "d741af12-6721-4f49-b7dc-cbb595b6407f",
+      "sha256": "e1e04624501b75e43621d6587debacef9d2c756fee3611e7743376edb09d0167",
+      "status": "Approved",
+      "note": "",
+      "actor": "gallery-user",
+      "at": "2026-10-13T04:34:39.492Z",
+      "assetPath": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\approvals\\inbox\\abomination-grave-butcher\\concept-r1\\abomination-grave-butcher-concept-r1.png"
+    },
+    {
+      "id": "d08009f4-1f7e-4ec8-abe2-3a4f6d20744e",
+      "sha256": "c9c4dcb706ad900f77137701574d2f09dbfc177e01dc53aa812b2943c6303abc",
+      "status": "Approved",
+      "note": "",
+      "actor": "gallery-user",
+      "at": "2026-10-13T04:34:43.979Z",
+      "assetPath": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\approvals\\inbox\\abomination-ossuary-brute\\concept-r1\\abomination-ossuary-brute-concept-r1.png"
+    },
+    {
+      "id": "f5381e45-023f-4d01-ae7a-5d9d07f945d1",
+      "sha256": "405909560042c7e5ffbe43597440c8b9f3a1fcd8f1f751fa196943aaaf1321f6",
+      "status": "Approved",
+      "note": "",
+      "actor": "gallery-user",
+      "at": "2026-10-13T04:34:47.406Z",
+      "assetPath": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\approvals\\inbox\\abomination-rime-hauler\\concept-r1\\abomination-rime-hauler-concept-r1.png"
+    },
+    {
+      "id": "61e4fa44-f7ba-4720-922c-f4966cfdef92",
+      "sha256": "31f9a016eca5a8c942a5760415060120a76401270d1cb24676db95a487a251f1",
+      "status": "Approved",
+      "note": "",
+      "actor": "gallery-user",
+      "at": "2026-10-13T04:35:20.121Z",
+      "assetPath": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\approvals\\inbox\\banshee-chainbound-widow\\concept-r1\\banshee-chainbound-widow-concept-r1.png"
+    },
+    {
+      "id": "e0d03d81-6cbc-4eea-ada3-ea6cc2f12d07",
+      "sha256": "6f78e6e02b976d137c4c88b6a47a1bddb9d72f3a2ee3cfe6d6efd57a5ce043e3",
+      "status": "Approved",
+      "note": "",
+      "actor": "gallery-user",
+      "at": "2026-10-13T04:35:23.296Z",
+      "assetPath": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\approvals\\inbox\\banshee-mourning-veil\\concept-r1\\banshee-mourning-veil-concept-r1.png"
+    },
+    {
+      "id": "4815fdbf-2dd0-49a6-8b84-ac52e4482776",
+      "sha256": "d66ce5b2949733a00d1704bbc4e2bdf9e181e72246baa92f93acae724cd25a8f",
+      "status": "Approved",
+      "note": "",
+      "actor": "gallery-user",
+      "at": "2026-10-13T04:35:26.077Z",
+      "assetPath": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\approvals\\inbox\\banshee-shattered-queen\\concept-r1\\banshee-shattered-queen-concept-r1.png"
+    },
+    {
+      "id": "fdd2dbac-29c7-4e35-9049-5a178f074a09",
+      "sha256": "c4c6ae8b6243ff2f2631cd84632dd4b0c45c8178704f75b2fbc2293f9f12b4d9",
+      "status": "Approved",
+      "note": "",
+      "actor": "gallery-user",
+      "at": "2026-10-13T04:35:29.547Z",
+      "assetPath": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\approvals\\inbox\\avalanche-colossus\\ice-roster-r2\\base.png"
+    },
+    {
+      "id": "242861af-7ec6-44f5-9734-e28bb21df601",
+      "sha256": "ec80a79caa52db70a54fb8a6204d8305697e6bfcaf1773af14d959265ab43301",
+      "status": "Approved",
+      "note": "",
+      "actor": "gallery-user",
+      "at": "2026-10-13T05:05:12.677Z",
+      "assetPath": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\characters\\iceclamp-bombardier\\base\\ice-detail-r2-2026-10-13\\qa-dark.png"
+    },
+    {
+      "id": "1316bad9-8645-453e-97d3-2a6094f05866",
+      "sha256": "872f31b1f3e2acfa16a6e330d32b5ef7dc1662816a73ea4f718e5769ea8028a4",
+      "status": "Approved",
+      "note": "",
+      "actor": "gallery-user",
+      "at": "2026-10-13T05:06:52.799Z",
+      "assetPath": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\approvals\\inbox\\shardlance-stalker\\ice-roster-r1\\master.png"
+    },
+    {
+      "id": "fc0ba40e-d72a-4754-92eb-787703e3f5fc",
+      "sha256": "baefb70c5fdffb81b5bd144e02dac78406bd9b283ff48a777d5b21f8f92b3e7c",
+      "status": "Approved",
+      "note": "",
+      "actor": "gallery-user",
+      "at": "2026-10-13T05:06:58.678Z",
+      "assetPath": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\approvals\\inbox\\rimejaw-scavenger\\ice-roster-r1\\base.png"
+    },
+    {
+      "id": "f5b7fc14-ef50-460e-ab06-3818d18a76a3",
+      "sha256": "710d95eda75e9eb6ef79ba80dd281bc3aee11e17f71cd10de32fe67d3b5f2c3c",
+      "status": "Approved",
+      "note": "",
+      "actor": "gallery-user",
+      "at": "2026-10-13T05:07:03.058Z",
+      "assetPath": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\approvals\\inbox\\coffinback-bastion\\ice-roster-r1\\master.png"
+    },
+    {
+      "id": "9d07ab2b-ae4b-4ec7-ba9f-7c4d1b424161",
+      "sha256": "1532f314acfa76844cfe1272fb92e319c78d3285f519bdfb0616a0e56098a06c",
+      "status": "Approved",
+      "note": "",
+      "actor": "gallery-user",
+      "at": "2026-10-13T05:07:06.426Z",
+      "assetPath": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\approvals\\inbox\\hoarveil-crone\\ice-roster-r1\\master.png"
+    },
+    {
+      "id": "abf53e82-ab19-4ac3-95f6-82bcc08ad7cd",
+      "sha256": "b9c9410d1888fc7da350d1e1169dfea30c0ca5be501b49bf1b18e77a1241a598",
+      "status": "Approved",
+      "note": "",
+      "actor": "gallery-user",
+      "at": "2026-10-13T05:07:57.836Z",
+      "assetPath": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\characters\\iceclamp-bombardier\\base\\ice-detail-r2-2026-10-13\\qa-light.png"
+    },
+    {
+      "id": "f2c5e85e-6a67-4108-b9e2-9e1f881eaa4b",
+      "sha256": "4d455077567fe0c54cb987a4469f362e01daa65db126500e2de52f715313d71a",
+      "status": "Approved",
+      "note": "",
+      "actor": "gallery-user",
+      "at": "2026-10-13T05:08:01.368Z",
+      "assetPath": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\characters\\paleveil-moth\\base\\ice-detail-r2-2026-10-13\\qa-dark.png"
+    },
+    {
+      "id": "4c808b2c-7c43-417b-bd37-2d7953430906",
+      "sha256": "8a7ddcedb183664b24a0929970df167e79fadbf5f6032c324f04456d446c6658",
+      "status": "Approved",
+      "note": "",
+      "actor": "gallery-user",
+      "at": "2026-10-13T05:08:03.559Z",
+      "assetPath": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\characters\\paleveil-moth\\base\\ice-detail-r2-2026-10-13\\qa-light.png"
+    },
+    {
+      "id": "c94b4fd9-3d9a-4858-8716-b9e7eb8e60ae",
+      "sha256": "9baef9272f2977640a740930308e06c6c170c2cb255a4e168b6d2d5b6cb67bc6",
+      "status": "Approved",
+      "note": "",
+      "actor": "gallery-user",
+      "at": "2026-10-13T05:08:06.565Z",
+      "assetPath": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\characters\\cairnfrost-ursine\\base\\ice-detail-r2-2026-10-13\\qa-dark.png"
+    },
+    {
+      "id": "01af04bf-0a34-43b7-8082-48d3c3291b85",
+      "sha256": "3e9f9ec7146bd433982e842202f38ad381934082ec70b9cdbfbe84ae92c1e673",
+      "status": "Approved",
+      "note": "",
+      "actor": "gallery-user",
+      "at": "2026-10-13T05:08:10.256Z",
+      "assetPath": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\characters\\cairnfrost-ursine\\base\\ice-detail-r2-2026-10-13\\qa-light.png"
+    },
+    {
+      "id": "50e07ace-3a79-497d-9614-604286ef7bdd",
+      "sha256": "4e34d314f4d61f89b311ca7d2cade28e79b257f96d9e3e9d2d2b75c4c7b9ae45",
+      "status": "Approved",
+      "note": "",
+      "actor": "gallery-user",
+      "at": "2026-10-13T05:09:18.441Z",
+      "assetPath": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\characters\\hollowmask-oracle\\base\\ice-detail-r2-2026-10-13\\master.png"
+    },
+    {
+      "id": "d0cb20f0-6264-4135-bb7c-3d6af7d5e906",
+      "sha256": "a68173ffa335c76286fadc04f395ac68c2cc1d23c755f2fe32fcf8bde3de244c",
+      "status": "Approved",
+      "note": "",
+      "actor": "gallery-user",
+      "at": "2026-10-13T05:09:23.585Z",
+      "assetPath": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\characters\\iceclamp-bombardier\\base\\ice-detail-r2-2026-10-13\\master.png"
+    },
+    {
+      "id": "c6785a74-f295-48ba-934e-9d9d7c1b8c47",
+      "sha256": "4cdd821f7a08781e3371987302ccb934031a2be064b09e8f8d065f11176c2a6d",
+      "status": "Approved",
+      "note": "",
+      "actor": "gallery-user",
+      "at": "2026-10-13T05:09:28.120Z",
+      "assetPath": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\characters\\cairnfrost-ursine\\base\\ice-detail-r2-2026-10-13\\master.png"
+    },
+    {
+      "id": "876dfbe1-cc13-4d97-afde-11db19725eb3",
+      "sha256": "45aaa174e0e8322a0e2c689ede65aafab8930900a44543c908b2238aee0819e1",
+      "status": "Approved",
+      "note": "",
+      "actor": "gallery-user",
+      "at": "2026-10-13T05:09:33.938Z",
+      "assetPath": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\characters\\paleveil-moth\\base\\ice-detail-r2-2026-10-13\\master.png"
+    },
+    {
+      "id": "ba9d75c8-5fe4-4805-92bd-ccc3aeb4b14c",
+      "sha256": "6785c628780e5d3c916edf87476eea7e7b73936444d6e668a7bea4929327edaf",
+      "status": "Approved",
+      "note": "",
+      "actor": "gallery-user",
+      "at": "2026-10-13T05:09:37.842Z",
+      "assetPath": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\characters\\whiteout-ray\\base\\ice-detail-r2-2026-10-13\\master.png"
+    },
+    {
+      "id": "71cd1195-8259-47be-9e1a-480955e5d224",
+      "sha256": "69819badf98de585e6f30f5aff72a74cb28aa9d35762a1413ff12d6456d4acc3",
+      "status": "Approved",
+      "note": "",
+      "actor": "gallery-user",
+      "at": "2026-10-13T05:09:41.486Z",
+      "assetPath": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\characters\\shardstep-skitterer\\base\\ice-detail-r2-2026-10-13\\master.png"
+    },
+    {
+      "id": "3a490bf6-ea37-46db-b2bc-6255e8589272",
+      "sha256": "da927820534c9ab34ebb57ddeeca5445efecd5c156c83fe0ba6055ee86ac089e",
+      "status": "Approved",
+      "note": "",
+      "actor": "gallery-user",
+      "at": "2026-10-13T05:09:47.242Z",
+      "assetPath": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\characters\\splinterhost\\base\\ice-detail-r2-2026-10-13\\master.png"
     }
   ]
 }
