@@ -1,0 +1,286 @@
+{
+  "results": [
+    {
+      "seed": 0,
+      "encounters": 12,
+      "enemyTurnsPerEncounter": 12,
+      "excludedEnemySpawns": 0
+    },
+    {
+      "seed": 42,
+      "encounters": 12,
+      "enemyTurnsPerEncounter": 12,
+      "excludedEnemySpawns": 0
+    },
+    {
+      "seed": 7319,
+      "encounters": 12,
+      "enemyTurnsPerEncounter": 12,
+      "excludedEnemySpawns": 0
+    },
+    {
+      "seed": 4294967295,
+      "encounters": 12,
+      "enemyTurnsPerEncounter": 12,
+      "excludedEnemySpawns": 0
+    }
+  ],
+  "replayPrefixes": 228,
+  "snapshots": [
+    {
+      "actions": 1,
+      "phase": "combat"
+    },
+    {
+      "actions": 180,
+      "realm": "forest",
+      "phase": "map"
+    },
+    {
+      "actions": 181,
+      "realm": "forest",
+      "phase": "combat"
+    },
+    {
+      "actions": 182,
+      "realm": "forest",
+      "phase": "combat"
+    },
+    {
+      "actions": 183,
+      "realm": "forest",
+      "phase": "combat"
+    },
+    {
+      "actions": 184,
+      "realm": "forest",
+      "phase": "combat"
+    },
+    {
+      "actions": 185,
+      "realm": "forest",
+      "phase": "combat"
+    },
+    {
+      "actions": 186,
+      "realm": "forest",
+      "phase": "combat"
+    },
+    {
+      "actions": 187,
+      "realm": "forest",
+      "phase": "combat"
+    },
+    {
+      "actions": 188,
+      "realm": "forest",
+      "phase": "combat"
+    },
+    {
+      "actions": 189,
+      "realm": "forest",
+      "phase": "combat"
+    },
+    {
+      "actions": 190,
+      "realm": "forest",
+      "phase": "combat"
+    },
+    {
+      "actions": 191,
+      "realm": "forest",
+      "phase": "combat"
+    },
+    {
+      "actions": 192,
+      "realm": "forest",
+      "phase": "combat"
+    },
+    {
+      "actions": 193,
+      "realm": "forest",
+      "phase": "combat"
+    },
+    {
+      "actions": 194,
+      "realm": "forest",
+      "phase": "reward"
+    },
+    {
+      "actions": 195,
+      "realm": "forest",
+      "phase": "loot"
+    },
+    {
+      "actions": 196,
+      "realm": "forest",
+      "phase": "map"
+    },
+    {
+      "actions": 197,
+      "realm": "forest",
+      "phase": "combat"
+    },
+    {
+      "actions": 198,
+      "realm": "forest",
+      "phase": "combat"
+    },
+    {
+      "actions": 199,
+      "realm": "forest",
+      "phase": "combat"
+    },
+    {
+      "actions": 200,
+      "realm": "forest",
+      "phase": "combat"
+    },
+    {
+      "actions": 201,
+      "realm": "forest",
+      "phase": "combat"
+    },
+    {
+      "actions": 202,
+      "realm": "forest",
+      "phase": "combat"
+    },
+    {
+      "actions": 203,
+      "realm": "forest",
+      "phase": "combat"
+    },
+    {
+      "actions": 204,
+      "realm": "forest",
+      "phase": "combat"
+    },
+    {
+      "actions": 205,
+      "realm": "forest",
+      "phase": "combat"
+    },
+    {
+      "actions": 206,
+      "realm": "forest",
+      "phase": "combat"
+    },
+    {
+      "actions": 207,
+      "realm": "forest",
+      "phase": "combat"
+    },
+    {
+      "actions": 208,
+      "realm": "forest",
+      "phase": "combat"
+    },
+    {
+      "actions": 209,
+      "realm": "forest",
+      "phase": "reward"
+    },
+    {
+      "actions": 210,
+      "realm": "forest",
+      "phase": "loot"
+    },
+    {
+      "actions": 211,
+      "realm": "forest",
+      "phase": "map"
+    },
+    {
+      "actions": 212,
+      "realm": "forest",
+      "phase": "combat"
+    },
+    {
+      "actions": 213,
+      "realm": "forest",
+      "phase": "combat"
+    },
+    {
+      "actions": 214,
+      "realm": "forest",
+      "phase": "combat"
+    },
+    {
+      "actions": 215,
+      "realm": "forest",
+      "phase": "combat"
+    },
+    {
+      "actions": 216,
+      "realm": "forest",
+      "phase": "combat"
+    },
+    {
+      "actions": 217,
+      "realm": "forest",
+      "phase": "combat"
+    },
+    {
+      "actions": 218,
+      "realm": "forest",
+      "phase": "combat"
+    },
+    {
+      "actions": 219,
+      "realm": "forest",
+      "phase": "combat"
+    },
+    {
+      "actions": 220,
+      "realm": "forest",
+      "phase": "combat"
+    },
+    {
+      "actions": 221,
+      "realm": "forest",
+      "phase": "combat"
+    },
+    {
+      "actions": 222,
+      "realm": "forest",
+      "phase": "combat"
+    },
+    {
+      "actions": 223,
+      "realm": "forest",
+      "phase": "combat"
+    },
+    {
+      "actions": 224,
+      "realm": "forest",
+      "phase": "combat"
+    },
+    {
+      "actions": 225,
+      "realm": "forest",
+      "phase": "reward"
+    },
+    {
+      "actions": 226,
+      "realm": "forest",
+      "phase": "loot"
+    },
+    {
+      "actions": 227,
+      "realm": "forest",
+      "phase": "map"
+    },
+    {
+      "actions": 228,
+      "realm": "forest",
+      "phase": "shop"
+    }
+  ],
+  "sourceHashes": {
+    "packages/engine/index.ts": "1847e47faadf8947510cffe88041ef5e5c6ab2138f2ee72f62ad029463cd2a0a",
+    "packages/engine/forest.ts": "c6aa16bc8539d1acbeb0a8f1335ab97620c72f55b49ede8f39123b5d0cb7156b",
+    "packages/engine/infernal.ts": "b3c5543e19151e1d70f2a5bed2fd7fedcf53038f3ef6f97a281400d03b646b61",
+    "packages/engine/fixtures/forest-shop-save.json": "c8096d9288cb9d33458e4ab662e505d4d60dc88fb357c7a53e92f5b12f34f1d0"
+  }
+}

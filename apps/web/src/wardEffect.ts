@@ -13,7 +13,7 @@ export function drawWard(c:CanvasRenderingContext2D,e:SpellEffect,time:number) {
   for(let i=0;i<=5;i++){const a=i*4*Math.PI/5;c.lineTo(Math.cos(a)*13,Math.sin(a)*13);}c.stroke();c.restore();
   if(after<0){c.restore();return;}
   for(const [index,target] of e.targets.entries()) {
-    const size=index===0?1:.55, grow=1-Math.pow(1-clamp(after/380),3);
+    const size=(index===0?1:.55)*(e.scale ?? 1), grow=1-Math.pow(1-clamp(after/380),3);
     const fade=clamp(after/160)*clamp((e.duration-t)/850);
     const pulse=.86+.14*Math.sin(after*.005);
     // A brief ember filament visually carries the ward out of the casting hand.

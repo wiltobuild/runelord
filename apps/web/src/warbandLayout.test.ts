@@ -1,0 +1,187 @@
+import test from 'node:test';
+import assert from 'node:assert/strict';
+import fs from 'node:fs';
+import {arrangeWarband,measureSummon,retreatGroundFormation} from './warbandLayout';
+import type {Assets} from './assets';
+const assets=JSON.parse(fs.readFileSync(new URL('../../../packages/assets/manifest.json',import.meta.url),'utf8')) as Assets;
+test('adding Gorthak-converted Imp preserves every existing model size',()=>{
+ const before=['imp','cerberax','ignivar','gorthak'].map((kind,id)=>({kind,id}));
+ const a=arrangeWarband(before,assets),b=arrangeWarband([...before,{kind:'pit-brute',id:4}],assets);
+ for(const u of before)assert.equal(a.slots.get(u.id)!.worldUnit,b.slots.get(u.id)!.worldUnit);
+ assert.equal(b.slots.get(3)!.worldUnit,200);
+ const family=b.groups.find(g=>g.ids.includes(3))!;assert.deepEqual(family.ids,[4,3]);
+ assert.ok(b.slots.get(4)!.depth>b.slots.get(3)!.depth);
+});
+test('crowded arch families put foreground members farther from the enemy',()=>{
+ for(const [arch,lesser] of [['gorthak','pit-brute'],['cerberax','hellhound'],['ignivar','imp']]){
+  const result=arrangeWarband([{id:1,kind:lesser},{id:2,kind:arch},{id:3,kind:lesser},{id:4,kind:lesser},{id:5,kind:lesser}],assets);
+  assert.equal(result.slots.size,5);
+  for(const group of result.groups){
+   const backToFront=[...group.ids].reverse();
+   for(let i=1;i<backToFront.length;i++){
+    const back=result.slots.get(backToFront[i-1])!,front=result.slots.get(backToFront[i])!;
+    assert.ok(front.depth>back.depth);
+    assert.ok(front.x+front.width/2<back.x+back.width/2);
+    if(!front.airborne)assert.ok(front.root>=back.root);
+   }
+  }
+ }
+});
+
+test('three hellhounds form their own stack behind Cerberax when kind groups fit',()=>{
+ const result=arrangeWarband(['cerberax','hellhound','hellhound','hellhound'].map((kind,id)=>({kind,id})),assets);
+ assert.equal(result.groups.length,2);
+ assert.deepEqual(result.groups.find(g=>g.ids.includes(0))!.ids,[0]);
+ const members=[1,2,3].map(id=>result.slots.get(id)!).sort((a,b)=>a.depth-b.depth);
+ for(let i=1;i<members.length;i++)assert.ok(members[i].x+members[i].width/2<members[i-1].x+members[i-1].width/2);
+ const arch=result.slots.get(0)!;
+ for(const hound of members)assert.ok(hound.x+hound.width/2<arch.x+arch.width/2);
+});
+
+test('same-kind units and arch relatives spread out when the row has room',()=>{
+ for(const kinds of [['imp','imp','imp'],['imp','ignivar'],['hellhound','hellhound']]){
+  const {slots,groups}=arrangeWarband(kinds.map((kind,id)=>({kind,id})),assets);
+  assert.equal(groups.length,0);
+  const ordered=[...slots.values()].sort((a,b)=>a.x-b.x);
+  for(let i=1;i<ordered.length;i++)assert.ok(ordered[i].bounds.left>=ordered[i-1].bounds.right+15);
+ }
+});
+
+test('Gloomstalker shares the flying row with Nightmaw and frees ground space',()=>{
+ const {slots}=arrangeWarband(['gloomstalker','nightmaw','hellhound'].map((kind,id)=>({kind,id})),assets);
+ assert.equal(slots.get(0)!.airborne,true);
+ assert.equal(slots.get(1)!.airborne,true);
+ assert.equal(slots.get(2)!.airborne,false);
+ assert.ok(slots.get(0)!.root<slots.get(2)!.root);
+});
+test('unique crowded units and death ghosts never trigger scaling',()=>{
+ const kinds=['gorthak','cerberax','pyre-colossus','pit-brute','pyre-warden','nightmaw','ignivar','imp','hellhound','soul-leech'];
+ for(let count=1;count<=kinds.length;count++){
+  const units=kinds.slice(0,count).map((kind,id)=>({kind,id}));
+  const result=arrangeWarband(units,assets);
+  for(const u of units){const s=result.slots.get(u.id)!;assert.equal(s.worldUnit,measureSummon(u,assets).worldUnit);assert.ok(Number.isFinite(s.x)&&s.width>0);}
+ }
+});
+test('crowded unrelated large demons stay behind short units and use the rear reserve',()=>{
+ const units=['pit-brute','pyre-warden','cerberax','pyre-colossus','gorthak'].map((kind,id)=>({kind,id}));
+ const {slots}=arrangeWarband(units,assets);
+ assert.ok(slots.get(2)!.depth>slots.get(3)!.depth);
+ const ordered=[...slots.values()].sort((a,b)=>(a.x+a.width/2)-(b.x+b.width/2));
+ for(let i=1;i<ordered.length;i++)assert.ok(ordered[i-1].depth>ordered[i].depth);
+ for(const slot of slots.values())assert.ok(slot.x>=-180-1e-6);
+});
+
+
+test('arch demons and three hellhounds use rear space without collapsing stagger',()=>{
+ for(const kinds of [
+  ['cerberax','hellhound','hellhound','hellhound','pyre-colossus'],
+  ['pyre-colossus','hellhound','cerberax','hellhound','hellhound'],
+  ['cerberax','hellhound','gorthak','pit-brute','pyre-colossus'],
+ ]){
+  const units=kinds.map((kind,id)=>({kind,id}));
+  const {slots}=arrangeWarband(units,assets);
+  const ordered=[...slots.values()].sort((a,b)=>(a.x+a.width/2)-(b.x+b.width/2));
+  assert.ok(ordered[0].x<60,'uses space behind Warlock instead of bunching');
+  for(let i=1;i<ordered.length;i++){
+   assert.ok(ordered[i].x+ordered[i].width/2-ordered[i-1].x-ordered[i-1].width/2>=71.99,'readable minimum stagger');
+  }
+  for(const u of units)assert.equal(slots.get(u.id)!.worldUnit,measureSummon(u,assets).worldUnit);
+  const retreated=retreatGroundFormation(slots,assets);
+  for(const s of retreated.slots.values())assert.ok(s.x>=-240-1e-6,'retreat preserves rear boundary');
+ }
+});
+
+
+test('hellhounds pack tighter to leave Cerberax clear of Pyre Colossus',()=>{
+ const units=['cerberax','hellhound','hellhound','hellhound','pyre-colossus'].map((kind,id)=>({kind,id}));
+ const {slots}=arrangeWarband(units,assets);
+ const center=(id:number)=>{const s=slots.get(id)!;return s.x+s.width/2;};
+ assert.ok(center(4)-center(0)>=230);
+ assert.ok(center(1)-center(2)<=80);
+ assert.ok(center(2)-center(3)<=80);
+ assert.ok(slots.get(3)!.x<-210,'rear tail reaches behind Warlock');
+});
+
+
+test('four hellhounds flank Cerberax in a stable centered pack',()=>{
+ const units=['cerberax','hellhound','hellhound','hellhound','hellhound'].map((kind,id)=>({kind,id}));
+ const first=arrangeWarband(units,assets),reordered=arrangeWarband([...units].reverse(),assets);
+ const center=(s:ReturnType<typeof arrangeWarband>['slots'],id:number)=>s.get(id)!.x+s.get(id)!.width/2;
+ const arch=center(first.slots,0);
+ assert.equal(units.filter(u=>u.kind==='hellhound'&&center(first.slots,u.id)<arch).length,2);
+ assert.equal(units.filter(u=>u.kind==='hellhound'&&center(first.slots,u.id)>arch).length,2);
+ assert.deepEqual(first.groups[0].ids,[1,2,0,3,4]);
+ assert.equal(center(first.slots,3)-arch,115);
+ assert.equal(center(first.slots,4)-center(first.slots,3),80);
+ for(const unit of units){
+  assert.deepEqual(first.slots.get(unit.id),reordered.slots.get(unit.id));
+  assert.equal(first.slots.get(unit.id)!.worldUnit,measureSummon(unit,assets).worldUnit);
+ }
+});
+
+
+test('Runeblade summons retain finite intrinsic geometry in solo and crowded formations',()=>{
+ const kinds=['frost-thrall','shattered-queen','rime-seer','rune-revenant','bone-defender'];
+ const rosters=[...kinds.map(kind=>[kind]),kinds,[...kinds,...kinds]];
+ for(const roster of rosters){
+  const units=roster.map((kind,id)=>({kind,id})),layout=arrangeWarband(units,assets);
+  const retreat=retreatGroundFormation(layout.slots,assets);
+  assert.ok(Number.isFinite(retreat.shift));assert.equal(layout.slots.size,units.length);
+  for(const unit of units){const slot=layout.slots.get(unit.id)!;assert.ok(assets.actors[slot.art]);
+   for(const value of [slot.x,slot.top,slot.width,slot.root,slot.worldUnit,...Object.values(slot.bounds)])assert.ok(Number.isFinite(value));
+   assert.equal(slot.worldUnit,200);
+  }
+ }
+});
+
+
+test('Runeblade scale never changes across 1–5 allies, duplicates, and lingering death ghosts',()=>{
+ const kinds=['frost-thrall','shattered-queen','rime-seer','rune-revenant','bone-defender'];
+ for(const kind of kinds){
+  const solo=measureSummon({id:100,kind},assets);
+  for(let count=1;count<=5;count++){
+   const units=[{id:100,kind},...Array.from({length:count-1},(_,i)=>({id:i,kind:kinds[i]}))];
+   for(const roster of [units,[...units,{id:999,kind}]]){
+    const layout=arrangeWarband(roster,assets),reversed=arrangeWarband([...roster].reverse(),assets);
+    const member=layout.slots.get(100)!;
+    assert.equal(member.worldUnit,solo.worldUnit);assert.equal(member.width,solo.width);
+    assert.equal(member.root-member.top,solo.upper);
+    for(const unit of roster)assert.deepEqual(layout.slots.get(unit.id),reversed.slots.get(unit.id));
+    assert.equal(retreatGroundFormation(layout.slots,assets).shift,0);
+    assert.equal(layout.groups.length,roster.length);
+    const labels=[...layout.groups].sort((a,b)=>a.x-b.x);
+    for(let i=1;i<labels.length;i++)assert.ok(labels[i].x>=labels[i-1].x+labels[i-1].width-.001);
+    for(const label of labels){assert.equal(label.ids.length,1);assert.ok(label.width>=640/6);assert.equal(label.top,386);}
+   }
+  }
+ }
+});
+
+test('Runeblade Queen hovers at full authored scale without pushing ground allies into the sky',()=>{
+ const units=['shattered-queen','rime-seer','rune-revenant','frost-thrall','bone-defender'].map((kind,id)=>({kind,id}));
+ const {slots}=arrangeWarband(units,assets),queen=slots.get(0)!;
+ assert.equal(queen.airborne,true);assert.equal(queen.worldUnit,200);assert.equal(queen.root,300);
+ for(const id of [1,2,3,4]){assert.equal(slots.get(id)!.airborne,false);assert.ok(slots.get(id)!.root>=349);assert.ok(slots.get(id)!.depth>queen.depth);}
+});
+
+
+test('ten mixed ground summons fit within the available rear reserve at full scale',()=>{
+ const units=['gorthak','cerberax','pyre-colossus','pit-brute','pyre-warden','hellhound','iron-legionary','dread-vanguard','maledictor','ash-pikeman'].map((kind,id)=>({kind,id}));
+ const {slots,groups}=arrangeWarband(units,assets);
+ assert.equal(slots.size,10);assert.equal(groups.length,10);
+ for(const u of units){const slot=slots.get(u.id)!;
+  assert.equal(slot.worldUnit,measureSummon(u,assets).worldUnit);
+  assert.ok(slot.bounds.left>=-240.01&&slot.bounds.right<=700.01);
+  assert.ok(slot.root>=318&&slot.root<=324);
+  assert.equal(groups.filter(g=>g.ids.includes(u.id)).length,1);
+ }
+ for(const [i,g] of groups.entries())for(const other of groups.slice(i+1))if(g.top===other.top)assert.ok(g.x+g.width<=other.x+.001||other.x+other.width<=g.x+.001);
+});
+
+
+test('ten Runeblade allies keep individual readable controls in two rows',()=>{
+ const kinds=['rime-seer','rune-revenant','frost-thrall','bone-defender','shattered-queen'];
+ const {groups}=arrangeWarband(Array.from({length:10},(_,id)=>({id,kind:kinds[id%5]})),assets);
+ assert.equal(groups.length,10);assert.ok(groups.every(g=>g.width===128&&g.ids.length===1));
+ assert.deepEqual([...new Set(groups.map(g=>g.top))],[334,386]);
+});

@@ -10,17 +10,23 @@ export type Clip = {
   frames: { time: number; body: string; fx?: string }[];
 };
 export type Assets = {
+  legacyWarlockCards?: Record<string, string>;
+  legacyRunebladeCards?: Record<string, string>;
+  heroAnimations?: Record<string, Record<string, Clip>>;
+  forestSpells?: Record<string,{size:number[];anchor:number[];duration:number;frames:{time:number;src:string}[]}>;
   images: Record<string, string>;
   cards: Record<string, string>;
   animations: Record<string, Clip>;
-  actors: Record<string, {deathEffect?:"fire";effects?:DemonGlowSockets;ranged?:{kind:"flaming-arrow"|"crossbow-bolt"|"demon-bolt";origin:number[];travelMs:number};size:number[];anchor:number[];geometry?:{source_pixels_per_world_unit:number;standing_height_world:number;reference_visible_height_px:number;layout_bounds_px?:number[]};states:Record<string, {duration:number;loop:boolean;impact:number|null;frames:{time:number;src:string;opacity?:number;offsetX?:number;effects?:DemonGlowSockets}[]}>}>;
+  actors: Record<string, {spawnReveal?:"authored";flightLandingMs?:number;deathEffect?:"fire";effects?:DemonGlowSockets;ranged?:{kind:"flaming-arrow"|"crossbow-bolt"|"demon-bolt";origin:number[];travelMs:number};size:number[];anchor:number[];geometry?:{source_pixels_per_world_unit:number;standing_height_world:number;reference_visible_height_px:number;layout_bounds_px?:number[]};states:Record<string, {duration:number;loop:boolean;impact:number|null;frames:{time:number;src:string;opacity?:number;offsetX?:number;effects?:DemonGlowSockets}[]}>}>;
   music: Record<
     string,
     { url: string; title: string; start: number; end: number }
   >;
 };
 export async function loadAssets(): Promise<Assets> {
-  const response = await fetch(`${import.meta.env.BASE_URL}game-assets/manifest.json`);
+  const response = await fetch(`${import.meta.env.BASE_URL}game-assets/manifest.json`, {
+    cache: "no-cache",
+  });
   if (!response.ok)
     throw Error("Asset manifest is missing. Run npm run import:assets.");
   return normalizeAssetUrls(await response.json());

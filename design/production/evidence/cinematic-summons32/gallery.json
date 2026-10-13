@@ -1,0 +1,34 @@
+[
+  {
+    "id": "e2c977e52a4e52d09469920b",
+    "name": "Hellhound Cinematic 32",
+    "path": "approvals/inbox/hellhound-cinematic-32/repair-r2/motion-proof.mp4",
+    "sha256": "51b36bb3eb39b09b3ff67a821db57e1bf40148e25646195a51afe25452e8e94d",
+    "status": "Pending approval",
+    "url": "http://localhost:4317/asset/e2c977e52a4e52d09469920b"
+  },
+  {
+    "id": "fecc0de0c1867a8b3b941f13",
+    "name": "Pit Brute Cinematic 32",
+    "path": "approvals/inbox/pit-brute-cinematic-32/r1/animation-review.gif",
+    "sha256": "60adbe6f337947a972fecdf6a658781b992196564cf376989526788e3ebb915d",
+    "status": "Pending approval",
+    "url": "http://localhost:4317/asset/fecc0de0c1867a8b3b941f13"
+  },
+  {
+    "id": "ecac12fb2d9a51ddca2b3be7",
+    "name": "Hellhound Cinematic 32",
+    "path": "approvals/inbox/hellhound-cinematic-32/repair-r2/contact-sheet.png",
+    "sha256": "618e179a54aed768fdd4af7072bb96343cf58ba9cd8e0e7f9901272206d342d7",
+    "status": "Pending approval",
+    "url": "http://localhost:4317/asset/ecac12fb2d9a51ddca2b3be7"
+  },
+  {
+    "id": "e35c4a2bbd3050f73ac37531",
+    "name": "Pit Brute Cinematic 32 - All Poses",
+    "path": "approvals/inbox/pit-brute-cinematic-32/r1/contact-sheet.png",
+    "sha256": "25f43c361b04665c1cff8c9cbd18ae442e31efc2aca4d61c6fbaac2decb071f8",
+    "status": "Pending approval",
+    "url": "http://localhost:4317/asset/e35c4a2bbd3050f73ac37531"
+  }
+]

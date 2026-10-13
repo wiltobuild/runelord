@@ -1,4 +1,4 @@
-# Warlock cards (70)
+# Warlock cards (77, including seven tier-two summon additions)
 
 Systems: **Scorch** (end-of-turn damage, then halves), **Cinders 🔥** (summon fuel, carries over, cap 20), Demons with **Upkeep** (unpaid Upkeep = Hunger damage to you), **Pact X** (lose X HP, gain X Corruption), **Corruption → Demon Form** (at 10), **Sacrifice** (destroy your demon as a cost), **Soul Shard** tokens. See [heroes.md §2](../design/heroes.md). Cost `1 +2🔥` = 1 Mana and 2 Cinders.
 
@@ -6,12 +6,12 @@ Systems: **Scorch** (end-of-turn damage, then halves), **Cinders 🔥** (summon 
 |---|---|---|---|---|---|---|---|
 | 1 | Firebolt | 1 | Attack | Basic | Deal 6 damage. | 9 dmg | Strike |
 | 2 | Ward of Ash | 1 | Skill | Basic | Gain 5 Guard. | 8 Guard | Defend |
-| 3 | Summon Imp | 1 | Skill | Basic | Summon an Imp. | Summon an Imp with +2 Power | Bodyguard |
+| 3 | Summon Imp | 1 | Skill | Basic | Summon an Imp: 6 HP, 4 fire damage +1 Scorch. Attacks immediately. Upkeep 0. | Summon an Imp with +2 Power | Bodyguard |
 | 4 | Blood Pact | 0 | Skill | Basic | Pact 3. Gain 1 Mana and 2 Cinders. | Gain 3 Cinders | Bloodletting |
 | 5 | Immolate | 1 | Attack | Common | Deal 4 damage. Apply 4 Scorch. | 5 dmg, 6 Scorch | Poisoned Stab |
 | 6 | Searing Lash | 1 | Attack | Common | Deal 9 damage. If the enemy has Scorch, gain 1 Cinder. | 12 dmg | — |
 | 7 | Conflagrate | 2 | Attack | Common | Deal 8 damage to ALL enemies. Apply 2 Scorch to ALL enemies. | 10 dmg, 3 Scorch | Breakthrough |
-| 8 | Summon Hellhound | 1 +2🔥 | Skill | Common | Summon a Hellhound. | It enters with 6 Guard | Afterlife |
+| 8 | Summon Hellhound | 1 +2🔥 | Skill | Common | Summon a Hellhound: 14 HP, 6 damage +2 per other living Hellhound or Cerberax. Upkeep 1. | It enters with 6 Guard | Afterlife |
 | 9 | Feed the Pit | 0 | Skill | Common | Pact 2. Gain 3 Cinders. | 5 Cinders | Bloodletting |
 | 10 | Sinister Veil | 1 | Skill | Common | Gain 8 Guard. Your demons gain 3 Guard. | 11 / 4 | Pull Aggro |
 | 11 | Hellish Command | 0 | Skill | Common | **Command:** a demon acts now. | It also gains +2 Power this turn | Fetch |
@@ -26,10 +26,10 @@ Systems: **Scorch** (end-of-turn damage, then halves), **Cinders 🔥** (summon 
 | 20 | Burning Hatred | 2 | Attack | Common | Deal 15 damage. Gain 2 Corruption. | 20 dmg | Defile |
 | 21 | Cinder Shield | 1 | Skill | Common | Gain 7 Guard. If you have 5+ Cinders, gain 7 more. | 9 + 9 | Evil Eye |
 | 22 | Smoke and Mirrors | 1 | Skill | Common | Apply 1 Sapped to ALL enemies. Your demons gain 3 Guard. | 2 Sapped | Scare |
-| 23 | Summon Pit Brute | 2 +2🔥 | Skill | Uncommon | Summon a Pit Brute. | It has +10 Max HP | Reanimate |
-| 24 | Summon Gloomstalker | 1 +2🔥 | Skill | Uncommon | Summon a Gloomstalker. | Costs 1 +1🔥 | — |
-| 25 | Summon Soul Leech | 1 +1🔥 | Skill | Uncommon | Summon a Soul Leech. | +2 Power | Devour Life |
-| 26 | Summon Pyre Warden | 2 +1🔥 | Skill | Uncommon | Summon a Pyre Warden. | Costs 1 +1🔥 | Pyre |
+| 23 | Summon Pit Brute | 2 +2🔥 | Skill | Uncommon | Summon a Pit Brute: 26 HP, 7 damage to ALL enemies. Defender. Upkeep 2. | It has +10 Max HP | Reanimate |
+| 24 | Summon Gloomstalker | 1 +2🔥 | Skill | Uncommon | Summon a Gloomstalker: 10 HP. Elusive. Alternate 2 Sapped and 2 Exposed on the focus target. Upkeep 1. | Costs 1 +1🔥 | — |
+| 25 | Summon Soul Leech | 1 +1🔥 | Skill | Uncommon | Summon a Soul Leech: 8 HP, drain 4 damage; heal caster for HP actually dealt. Upkeep 1. | +2 Power | Devour Life |
+| 26 | Summon Pyre Warden | 2 +1🔥 | Skill | Uncommon | Summon a Pyre Warden: 12 HP. Grant caster 6 Guard on arrival and each turn. Action: 1 Scorch to ALL enemies. Upkeep 1. | Costs 1 +1🔥 | Pyre |
 | 27 | Hellfire | 2 | Attack | Uncommon | Deal 6 damage to ALL enemies twice. Each hit applies 1 Scorch. | 8 per hit | Dagger Spray |
 | 28 | Infernal Pact | 1 | Power | Uncommon | Whenever you lose HP on your turn, deal 5 damage to ALL enemies. | 7 dmg | Inferno |
 | 29 | Masters of the Pit | 1 | Power | Uncommon | Your demons have +2 Power. | +3 | Calcify |
@@ -79,3 +79,19 @@ Systems: **Scorch** (end-of-turn damage, then halves), **Cinders 🔥** (summon 
 | Card | Cost | Type | Effect | Upgrade |
 |---|---|---|---|---|
 | Soul Shard | 0 | Skill (Token) | Gain 2 Cinders. Draw 1 card. Consume. | 3 Cinders |
+
+## Tier-two summon expansion — roguelike demo
+
+Greater Summoning is superseded in the playable demo by Empower Demon and six direct Archdemon summon cards. Old ultimate row is retained for historical catalog reference, not offered in demo rewards.
+
+| # | Name | Cost | Type | Rarity | Effect | Upgrade | Reference |
+|---|---|---|---|---|---|---|---|
+| 71 | Empower Demon | 2 +2🔥 | Skill | Uncommon | Transform a lesser demon into its Arch-form. Preserve buffs, position and remaining HP percentage. One living copy per Arch-form. | Costs 1 +2🔥 | — |
+| 72 | Summon Ignivar | 3 | Skill | Rare | Summon Ignivar: 18 HP, 6 fire damage +1 Scorch. Your direct fire hits apply +4 Scorch. Each turn summon a free Imp if space. Unbound. | +20% HP and Power | — |
+| 73 | Summon Cerberax | 3 | Skill | Rare | Summon Cerberax: 28 HP, 8 damage. Counts as a Hellhound. Incoming pack damage splits evenly before Guard. Each turn summon a free Hellhound if space. Unbound. | +20% HP and Power | — |
+| 74 | Summon Nightmaw | 3 | Skill | Rare | Summon Nightmaw: 18 HP, Elusive. Apply 2 Sapped and 2 Exposed. Gain 1 Mana and draw 1 card on arrival and each turn. Unbound. | +20% HP | — |
+| 75 | Summon Hollow Saint | 3 | Skill | Rare | Summon the Hollow Saint: 20 HP. Drain 6 damage from all enemies; heal HP actually dealt. Unbound. | +20% HP and Power | — |
+| 76 | Summon Pyre Colossus | 3 | Skill | Rare | Summon Pyre Colossus: 24 HP. Grant caster 6 Guard on arrival and each turn. Action: 2 Scorch to ALL enemies. Double caster Guard gains. Allied demon deaths have a 50% chance to summon a Pyre Warden if space. Unbound. | +20% HP | — |
+| 77 | Summon Gorthak | 3 | Skill | Rare | Summon Gorthak: 40 HP, 9 damage to all enemies, Defender. All allied minions gain +2 damage. New lesser summons become Pit Brutes. Unbound. | +20% HP and Power | — |
+
+Starter changes: Master of Demons replaces Firebolt with Summon Pit Brute and Ward of Ash with Empower Demon. Hellfire Adept replaces Ward of Ash with Summon Ignivar. Blood Covenant replaces one Ward of Ash with Summon Nightmaw. All three remain ten cards. All six lesser summons are eligible for early rewards and shops, with Master of Demons affinity; acquiring their cards provides the remaining early Empower options. Other starters cannot acquire Empower before forest.

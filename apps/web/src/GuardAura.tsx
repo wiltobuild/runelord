@@ -1,9 +1,10 @@
 import { useEffect, useRef } from "react";
 import { HERO_VIEW } from "./heroGeometry";
 import { drawSummon } from "./summonEffect";
+import { drawIceShield } from './runebladeSpellEffects';
 
 // Guard is authoritative: losing some guard keeps the ward alive; losing all fades it.
-export function GuardAura({ active }: { active: boolean }) {
+export function GuardAura({ active, hero = 'warlock' }: { active: boolean; hero?: string }) {
   const canvas = useRef<HTMLCanvasElement>(null);
   const strength = useRef(0);
   useEffect(() => {
@@ -21,6 +22,11 @@ export function GuardAura({ active }: { active: boolean }) {
       el.style.opacity = String(strength.current * pulse);
       c.setTransform(dpr, 0, 0, dpr, 0, 0); c.clearRect(0, 0, HERO_VIEW.width, HERO_VIEW.height);
       const x = HERO_VIEW.width / 2, y = HERO_VIEW.ground;
+      if(hero==='runeblade') {
+        drawIceShield(c,{x:x+60,y:y-108},1.16,.65,clock);
+        if(active || strength.current>0)raf=requestAnimationFrame(draw);
+        return;
+      }
       drawSummon(c, { id: 0, kind: "summon", start: time - 650, duration: 1300, release: 160, travel: 0,
         from: { x, y }, targets: [{ x, y }], scale: 1.12 }, time, true);
       c.save(); c.translate(x, y); c.globalCompositeOperation = "lighter";
@@ -41,6 +47,6 @@ export function GuardAura({ active }: { active: boolean }) {
     };
     if (active || strength.current > 0) raf = requestAnimationFrame(draw);
     return () => cancelAnimationFrame(raf);
-  }, [active]);
+  }, [active,hero]);
   return <canvas ref={canvas} className="guard-aura" aria-hidden="true" data-active={active} style={{ opacity: 0 }} />;
 }

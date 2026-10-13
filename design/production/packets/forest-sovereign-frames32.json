@@ -1,0 +1,99 @@
+{
+  "schema": 1,
+  "id": "forest-sovereign-frames32",
+  "status": "complete",
+  "outcome": "Create 32 whole-character Forest Sovereign frames, independent root creature idle/attack/wither animations, and separate forest spell effects.",
+  "authorization": "User selected first tree concept and requested 32 frames using standard formula, root creatures with idle/attack/withering death, and showy spell effects. User explicitly requires stopping and reporting before continuing if render repair/adjustment snags arise. Latest user direction: keep current poses as is, continue, prioritize perfect idles; modest variation in other actions accepted.",
+  "contentIds": [
+    "forest-sovereign",
+    "sovereign-root"
+  ],
+  "owner": "root",
+  "integrationOwner": "not requested",
+  "reviewer": "independent idle_review agent",
+  "ownedPaths": [
+    "assets/characters/forest-sovereign/animations/frames32-r1",
+    "assets/characters/sovereign-root",
+    "design/production/packets/forest-sovereign-frames32.json"
+  ],
+  "dependencies": [],
+  "exclusions": [
+    "Game integration",
+    "Unselected concepts",
+    "Automatic repair iteration after render snag"
+  ],
+  "inputs": [
+    {
+      "path": "assets/characters/forest-sovereign/concepts/2026-10-05-r1/01-root-crown-king.png",
+      "sha256": "d285260c2995fa4673f9d1c25daec5ba16b143072a3d93ec8950ee3b162f306c"
+    }
+  ],
+  "animation": {
+    "method": "whole-character-frames",
+    "facing": "left",
+    "frameCounts": {
+      "idle": 4,
+      "attack": 8,
+      "hit": 4,
+      "wounded_idle": 4,
+      "cast": 4,
+      "die": 8
+    },
+    "requiredStates": [
+      "idle",
+      "attack",
+      "hit",
+      "wounded_idle",
+      "cast",
+      "die"
+    ]
+  },
+  "acceptance": [
+    {
+      "check": "Motion proof preserves exact approved design, clean alpha, distinct articulation and grounded geometry",
+      "status": "pass",
+      "evidence": [
+        "User explicitly accepted original proof variations; idle registration corrected and independently reviewed."
+      ]
+    },
+    {
+      "check": "32 authored frames with playback, timings, anchors and terminal death",
+      "status": "pass",
+      "evidence": [
+        "assets/characters/forest-sovereign/animations/frames32-r1/technical-qa.json"
+      ]
+    },
+    {
+      "check": "Root creature three-state playback and separate showy spell effects",
+      "status": "pass",
+      "evidence": [
+        "assets/characters/sovereign-root/animations/r1/animation.json",
+        "assets/characters/forest-sovereign/animations/frames32-r1/vfx/animation.json"
+      ]
+    },
+    {
+      "check": "Independent full/small scale idle review, parent source/action playback inspection, and gallery submission",
+      "status": "pass",
+      "evidence": [
+        "assets/characters/forest-sovereign/animations/frames32-r1/idle-qa.json",
+        "http://localhost:4317",
+        "http://localhost:4328/preview.html"
+      ]
+    }
+  ],
+  "checkpoint": {
+    "completed": [
+      "32 boss frames exported",
+      "12 independent root creature frames including withering death",
+      "12 separate spell frames",
+      "Idle registration and root sequencing corrected",
+      "Independent idle QA pass with minor notes",
+      "No export canvas clipping in 56 frames",
+      "Self-contained playable preview and ZIP delivered",
+      "Gallery submissions verified"
+    ],
+    "remaining": [],
+    "blockers": [],
+    "nextAction": "User review. Game integration is a separate task."
+  }
+}

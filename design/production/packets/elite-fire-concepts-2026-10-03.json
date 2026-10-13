@@ -1,0 +1,86 @@
+{
+  "schema": 1,
+  "id": "elite-fire-concepts-2026-10-03",
+  "status": "review",
+  "outcome": "Three distinct larger elite fire monster base concepts matching approved Runelord cel shading",
+  "authorization": "User requested three concepts: fire dragon, greater arch-demon, armored flame cyclops, using hd-fantasy-character and relevant agents/skills.",
+  "contentIds": [
+    "elite-fire-dragon",
+    "elite-greater-arch-demon",
+    "elite-armored-flame-cyclops"
+  ],
+  "owner": "root-producer",
+  "integrationOwner": "root-producer",
+  "reviewer": "style_audit-art-director",
+  "ownedPaths": [
+    "assets/concepts/elite-fire-2026-10-03/",
+    "assets/approvals/inbox/elite-fire-dragon/",
+    "assets/approvals/inbox/elite-greater-arch-demon/",
+    "assets/approvals/inbox/elite-armored-flame-cyclops/"
+  ],
+  "dependencies": [],
+  "exclusions": [
+    "Gameplay implementation",
+    "Animation generation",
+    "Variants before explicit base approval"
+  ],
+  "inputs": [
+    {
+      "path": "assets/characters/ashfall-wyrm/base-r1.png",
+      "sha256": "e95ad233d110039df5a89809b682a833e503086d73ded3aef6d1321ee34051f8"
+    },
+    {
+      "path": "assets/characters/warlock-ignivar/base/r1/warlock-ignivar-base-r1.png",
+      "sha256": "4a12ae1d443da8df804ae070efbb135342eed8b9a140d1137fff221ca5d27974"
+    },
+    {
+      "path": "assets/characters/crucible-sentinel/base-r1.png",
+      "sha256": "c23e408eb947b8021a78d98909e6b0b8e1e780cda17bedd05efa27db59e68636"
+    },
+    {
+      "path": "assets/concepts/elite-fire-2026-10-03/elite-fire-dragon-base-r2.png",
+      "sha256": "66bbf1a1e0d227b9522e3a80c56ad8a8b58547fa55d8cdf2de5a7ae5acd5c1c2"
+    },
+    {
+      "path": "assets/concepts/elite-fire-2026-10-03/elite-greater-arch-demon-base-r2.png",
+      "sha256": "c3cc9aa44e6d6538d45aecaaab9466edc459076027d56073cde194d2e23934e0"
+    },
+    {
+      "path": "assets/concepts/elite-fire-2026-10-03/elite-armored-flame-cyclops-base-r1.png",
+      "sha256": "85ddd6617090fccd58634fbb14760bb54929dbadab1c41def06561a33ab0b157"
+    }
+  ],
+  "animation": null,
+  "acceptance": [
+    {
+      "check": "Three species-specific base concepts visually reviewed at full size and 96px against approved art",
+      "status": "pass",
+      "evidence": [
+        {
+          "path": "assets/concepts/elite-fire-2026-10-03/review.json",
+          "sha256": "eebcc218d0adc7ad67cefa97db1ca5badc0438d00db7a02cedb3cc5f740f37c3"
+        },
+        {
+          "path": "assets/concepts/elite-fire-2026-10-03/qa.json",
+          "sha256": "829ecefb5b216af76ca99082020d819e45357b3d22541ab10a2aec8584ddb220"
+        }
+      ]
+    },
+    {
+      "check": "Exact-revision user approval before variants",
+      "status": "pending"
+    }
+  ],
+  "checkpoint": {
+    "completed": [
+      "Generated and saved three candidates with prompts, hashes, reference evidence and proposed articulation",
+      "Independent concept review passed",
+      "Submitted all three to canonical gallery"
+    ],
+    "remaining": [
+      "User design approval of three exact revisions"
+    ],
+    "blockers": [],
+    "nextAction": "Read latest hash-specific gallery decisions when user resumes. Save approved bases to character library before authorized next stage."
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "reviewer": "root, independent of both creature builders",
+  "date": "2026-10-04",
+  "method": "Actual local HTML canvas playback in agent-browser; sampled DOM frame progression and visually inspected browser screenshots at dark/light backgrounds and approximately 96px character height. Not a continuous video viewing claim.",
+  "hellhound": {
+    "revision": "repair-r2",
+    "result": "pass",
+    "observed": ["attack 1-8 returns to idle", "hit returns to idle", "spawn returns to idle", "wounded_idle 1-4 loops", "die 1-8 holds final frame", "right-facing identity and clear silhouette at preview scales", "no browser errors"],
+    "repair_recheck": "Attack and wounded_idle playback rerun after final eight repaired frames. Other 24 frame bytes unchanged per creator and independent audit.",
+    "screenshots": ["hellhound-wounded-repaired.png", "hellhound-death-full.png"]
+  },
+  "pit_brute": {
+    "result": "pass",
+    "observed": ["attack 1-8 returns to idle", "hit 1-4 returns to idle", "spawn 1-4 returns to idle with corrected right-facing spawn-r2", "wounded_idle 1-4 loops", "die 1-8 holds final frame", "dark/light and 96px preview inspected", "no browser errors"],
+    "screenshots": ["pit-idle.png", "pit-spawn.png", "pit-death.png", "pit-wounded.png"]
+  },
+  "scope": "Standalone asset preview verification; no runtime integration or game deployment of these animation assets. Gallery approval remains the user's decision."
+}

@@ -1,0 +1,135 @@
+{
+  "schema": 1,
+  "id": "infernal-soldier-card-art-2026-10-13",
+  "status": "review",
+  "outcome": "Eight new illustrations on the in-game Hellbound Legion cards, with fixed frames and review gallery entries.",
+  "authorization": "User requested proper Infernal Soldier card art and review, then: implement them on their cards.",
+  "contentIds": [
+    "summon-iron-legionary",
+    "summon-ash-pikeman",
+    "summon-ironhorn-bulwark",
+    "summon-maledictor",
+    "summon-dread-vanguard",
+    "muster-legion",
+    "pike-detail",
+    "field-promotion",
+    "blood-ascension",
+    "battlefield-commission",
+    "rally-legion",
+    "infernal-logistics",
+    "hold-the-line",
+    "hellgate-rite",
+    "veteran-command"
+  ],
+  "owner": "runelord-art-director",
+  "integrationOwner": "runelord-technical-artist",
+  "reviewer": "self-reviewed; user design approval pending",
+  "ownedPaths": [
+    "assets/cards/infernal-soldiers-2026-10-13",
+    "assets/cards/card-art-index.json",
+    "tools/import/hellbound-cards.mjs",
+    "apps/web/public/game-assets/cards",
+    "packages/assets/manifest.json",
+    "apps/web/public/game-assets/manifest.json"
+  ],
+  "dependencies": [],
+  "exclusions": [
+    "Gameplay changes",
+    "Animation",
+    "Deployment"
+  ],
+  "inputs": [
+    {
+      "path": "packages/content/hellbound.ts",
+      "sha256": "3568c185ecd47f404d83b87e3dc79c6a09606eae763584b2c1d4a00d7719ae43"
+    },
+    {
+      "path": "assets/cards/infernal-soldiers-2026-10-13/manifest.json",
+      "sha256": "7fe9a5b8a6bff00da0748d0e636a440fc6df1748a1ebe4e401b912c6ca5de890"
+    },
+    {
+      "path": "assets/cards/infernal-soldiers-2026-10-13/runtime-qa.json",
+      "sha256": "a86a60679e98da3ff1602ca485dde318aa44f1a619463d50522662dae7dac3d8"
+    },
+    {
+      "path": "assets/cards/infernal-soldiers-2026-10-13/gallery-verification.json",
+      "sha256": "58302bbf5cf2558c6f5c46eafdd66eb10797271492eeea8e5cef6ad830f2c371"
+    }
+  ],
+  "animation": null,
+  "acceptance": [
+    {
+      "status": "pass",
+      "evidence": [
+        {
+          "path": "assets/cards/infernal-soldiers-2026-10-13/manifest.json",
+          "sha256": "7fe9a5b8a6bff00da0748d0e636a440fc6df1748a1ebe4e401b912c6ca5de890"
+        },
+        {
+          "path": "assets/cards/infernal-soldiers-2026-10-13/runtime-qa.json",
+          "sha256": "a86a60679e98da3ff1602ca485dde318aa44f1a619463d50522662dae7dac3d8"
+        },
+        {
+          "path": "assets/cards/infernal-soldiers-2026-10-13/gallery-verification.json",
+          "sha256": "58302bbf5cf2558c6f5c46eafdd66eb10797271492eeea8e5cef6ad830f2c371"
+        }
+      ],
+      "check": "Fixed frames"
+    },
+    {
+      "status": "pass",
+      "evidence": [
+        {
+          "path": "assets/cards/infernal-soldiers-2026-10-13/manifest.json",
+          "sha256": "7fe9a5b8a6bff00da0748d0e636a440fc6df1748a1ebe4e401b912c6ca5de890"
+        },
+        {
+          "path": "assets/cards/infernal-soldiers-2026-10-13/runtime-qa.json",
+          "sha256": "a86a60679e98da3ff1602ca485dde318aa44f1a619463d50522662dae7dac3d8"
+        },
+        {
+          "path": "assets/cards/infernal-soldiers-2026-10-13/gallery-verification.json",
+          "sha256": "58302bbf5cf2558c6f5c46eafdd66eb10797271492eeea8e5cef6ad830f2c371"
+        }
+      ],
+      "check": "Integration"
+    },
+    {
+      "status": "pass",
+      "evidence": [
+        {
+          "path": "assets/cards/infernal-soldiers-2026-10-13/manifest.json",
+          "sha256": "7fe9a5b8a6bff00da0748d0e636a440fc6df1748a1ebe4e401b912c6ca5de890"
+        },
+        {
+          "path": "assets/cards/infernal-soldiers-2026-10-13/runtime-qa.json",
+          "sha256": "a86a60679e98da3ff1602ca485dde318aa44f1a619463d50522662dae7dac3d8"
+        },
+        {
+          "path": "assets/cards/infernal-soldiers-2026-10-13/gallery-verification.json",
+          "sha256": "58302bbf5cf2558c6f5c46eafdd66eb10797271492eeea8e5cef6ad830f2c371"
+        }
+      ],
+      "check": "Gallery submission"
+    },
+    {
+      "status": "pending",
+      "evidence": [],
+      "check": "User design approval"
+    }
+  ],
+  "checkpoint": {
+    "completed": [
+      "Eight new illustrations",
+      "Eight fixed-frame revisions",
+      "Runtime integration",
+      "Browser and build verification",
+      "Gallery submission"
+    ],
+    "remaining": [
+      "User review"
+    ],
+    "blockers": [],
+    "nextAction": "User reviews the current exact revisions in gallery."
+  }
+}

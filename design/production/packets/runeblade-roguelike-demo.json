@@ -1,0 +1,110 @@
+{
+  "schema": 1,
+  "id": "runeblade-roguelike-demo",
+  "status": "complete",
+  "outcome": "Playable Runeblade in existing GitHub Pages roguelike demo with corpse summons,3decks, Infernal encounters and class-specific commerce.",
+  "authorization": "User requested corpse resource,1per everyfriendly/enemydeath, automatic summonCorpsecost, unlockRuneblade,3starterdecks/books, workingengine/shop/rewards/relics. Explicitly scoped to current GitHubPagesroguelike; said do it.",
+  "contentIds": [
+    "runeblade",
+    "gravehost",
+    "rimebound",
+    "runewarden"
+  ],
+  "owner": "root",
+  "integrationOwner": "root",
+  "reviewer": "runeblade_qa",
+  "ownedPaths": [
+    "packages/content/runeblade.ts",
+    "packages/content/index.ts",
+    "packages/engine",
+    "apps/web",
+    "tools/import/runeblade-assets.mjs",
+    "tools/import/runeblade-books.mjs",
+    "assets/cards/runeblade-demo-2026-10-06",
+    "assets/objects/tome-gravehost",
+    "assets/objects/tome-rimebound",
+    "assets/objects/tome-runewarden"
+  ],
+  "dependencies": [],
+  "exclusions": [
+    "Campaign roadmap expansion",
+    "Automatic commit/push/deployment",
+    "Art selfapproval"
+  ],
+  "inputs": [
+    {
+      "path": "design/runeblade-roguelike-demo.md",
+      "sha256": "813a83526a199d41992f06049e2266b4cb95eca514f6614b8e056a4c1a90047c"
+    }
+  ],
+  "animation": {
+    "method": "whole-character-frames",
+    "requiredStates": [
+      "idle",
+      "attack",
+      "hit",
+      "wounded_idle",
+      "cast",
+      "die"
+    ]
+  },
+  "acceptance": [
+    {
+      "check": "Independent engine accounting, classpool, progression and replay",
+      "status": "pass",
+      "evidence": [
+        {
+          "path": "work/production/runeblade-demo/qa-report.json",
+          "sha256": "77be98f8b9b068e99244e767e98bbbd452f6a4d807a01c82229d308174333096"
+        }
+      ]
+    },
+    {
+      "check": "22cards exactframe and corpus payment text",
+      "status": "pass",
+      "evidence": [
+        {
+          "path": "assets/cards/runeblade-demo-2026-10-06/text-and-runtime-verification.json",
+          "sha256": "cd4270c25d4df62c5bd968b4d01d40b75455eeccf4ef0bc3db4853886764bbcc"
+        }
+      ]
+    },
+    {
+      "check": "Browser selection, combat, corpse payment and rewards; shop and progression engine audit",
+      "status": "pass",
+      "evidence": [
+        {
+          "path": "work/production/runeblade-demo/browser-verification.json",
+          "sha256": "135e5f33ab23412c5133789bb026f75ddfdfddf036e3e3cab831df7f664287f1"
+        },
+        {
+          "path": "work/production/runeblade-demo/qa-report.json",
+          "sha256": "77be98f8b9b068e99244e767e98bbbd452f6a4d807a01c82229d308174333096"
+        }
+      ]
+    },
+    {
+      "check": "Final GitHub Pages base-path build",
+      "status": "pass",
+      "evidence": [
+        {
+          "path": "work/production/runeblade-demo/browser-verification.json",
+          "sha256": "135e5f33ab23412c5133789bb026f75ddfdfddf036e3e3cab831df7f664287f1"
+        }
+      ]
+    }
+  ],
+  "checkpoint": {
+    "completed": [
+      "22 working cards, 5 summons, 3 decks, 6 relics",
+      "192 animation frames and 3 generated spellbooks integrated",
+      "Corpse resource, class-specific shops and rewards implemented",
+      "Independent 36-run engine audit and 6 formation regression tests",
+      "Browser corpse payment, sacrifice, combat, reward and resume checks",
+      "Final GitHub Pages base-path build"
+    ],
+    "remaining": [],
+    "blockers": [],
+    "nextAction": "User review of local demo; publication is a separate action. Known baseline test failures and unrun browser coverage are recorded in QA evidence."
+  }
+}

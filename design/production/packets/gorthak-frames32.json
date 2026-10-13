@@ -1,0 +1,129 @@
+{
+  "schema": 1,
+  "id": "gorthak-frames32",
+  "status": "active",
+  "outcome": "32authored Gorthak animation poses with consistent approved cel shading and no visible idle brightness alternating; reviewed game replacement.",
+  "authorization": "User reports alternating light and dark idle frames and requests a32-frame Gorthak animation revision with consistent shading,2026-10-05. Approved master identity remains unchanged. Latest user direction: reuse all usable existing frames except the problematic idle frame; generate only missing poses. Latest feedback: User reports a dark frame and excessive chest movement in the new idle. Requests idle-only correction, preserving other animation states. Latest feedback: User rejects r2 idle: mismatched gray horns and armor, insufficient coordinated movement, mostly poorly animated fist. Requests effective idle repair with visible whole-body articulation and stable approved palette; preserve all other states.",
+  "owner": "gorthak",
+  "integrationOwner": "root",
+  "reviewer": "animation_qa",
+  "contentIds": [
+    "warlock-gorthak"
+  ],
+  "ownedPaths": [
+    "assets/characters/warlock-gorthak/animations/frames32-r1",
+    "assets/approvals/inbox/warlock-gorthak",
+    "work/production/gorthak-frames32",
+    "assets/characters/warlock-gorthak/animations/frames32-r2",
+    "assets/characters/warlock-gorthak/animations/frames32-r3"
+  ],
+  "dependencies": [
+    "Approved Gorthak master",
+    "Existing32frame summon pipeline",
+    "Newer roguelite runtime in runelord-tintfix-roguelike-main-push"
+  ],
+  "exclusions": [
+    "No redesign",
+    "No interpolated or repeated-frame substitution for32authored poses",
+    "No deployment/commit",
+    "No unrelated model or layout changes",
+    "Do not regenerate existing usable poses; exclude old idle-inhale bright frame"
+  ],
+  "inputs": [
+    {
+      "path": "assets/approvals/inbox/warlock-gorthak/base-r1/warlock-gorthak-base-r1.png",
+      "sha256": "5e5700db391d6b020f31307d1af113102eb81f5d80575eef2c01777119f5c191",
+      "approval": {
+        "status": "Approved",
+        "at": "2026-10-02T22:20:49.176Z",
+        "evidenceId": "60fd264d-616b-4049-b781-ca8acf21506a",
+        "paths": [
+          "C:\\Users\\wilsh\\Projects\\runelord\\assets\\approvals\\inbox\\warlock-gorthak\\base-r1\\warlock-gorthak-base-r1.png"
+        ]
+      }
+    }
+  ],
+  "animation": {
+    "method": "whole-character-frames",
+    "requiredStates": [
+      "idle",
+      "act",
+      "hit",
+      "wounded_idle",
+      "spawn",
+      "die"
+    ]
+  },
+  "acceptance": [
+    {
+      "check": "Four-frame idle proof matches approved material colors and has no visible brightness pulse",
+      "status": "fail",
+      "evidence": [
+        {
+          "path": "work/production/gorthak-frames32/qa/r2-fixed-metrics.json",
+          "sha256": "81fa5db16482180c8ba1a47fabcdd6e0ccc2610136bb0469d60d51a3e102a30b"
+        },
+        {
+          "path": "work/production/gorthak-frames32/qa/r2-final-playback-trace.json",
+          "sha256": "8fcc972d20bb5703d9b757a6adf4158e27ce5587605220a3d456493ca0392a16"
+        }
+      ],
+      "note": "User rejected r2 idle. Three bounded r3 motion proof attempts retain visible horn/armor gray drift. No r3 runtime integration. Awaiting explicit user authorization for scripted palette matching, as imagegen-only repairs have not preserved palette."
+    },
+    {
+      "check": "32authored highresolution poses preserve identity,shading,transparency and coherent motion across6states",
+      "status": "pass",
+      "evidence": [
+        {
+          "path": "work/production/gorthak-frames32/qa/final-review.json",
+          "sha256": "85deaabc9973348ab14653d1206b49ecb4b38b404201165d8054559dcb879886"
+        }
+      ]
+    },
+    {
+      "check": "Independent fullsize/96px playback and game replacement verified",
+      "status": "pending",
+      "evidence": [
+        {
+          "path": "work/production/gorthak-frames32/qa/r2-runtime-trace.json",
+          "sha256": "fe07df6a4b39902a06ee8bd1e12a2aba02379870a838324fe56a4cc57e8f715e"
+        },
+        {
+          "path": "work/production/gorthak-frames32/qa/r2-runtime.png",
+          "sha256": "e74df88dffc24ca94caf1b988b952b04df6c3983e4e887fe05fed39ccdc42faf"
+        }
+      ]
+    },
+    {
+      "check": "New gallery revision discoverable pending decision; oldidle needsrevision recorded",
+      "status": "pass",
+      "evidence": [
+        {
+          "path": "assets/characters/warlock-gorthak/animations/frames32-r2/gallery-submissions.json",
+          "sha256": "2fbec69490bead9b817b5cdcbdb08f2d5d7413ce55488c265d9a9d6568f3197a"
+        }
+      ]
+    }
+  ],
+  "checkpoint": {
+    "completed": [
+      "32 unique authored poses complete: nine exact reused sources and 23 new poses; defective bright idle excluded",
+      "Independent six-state playback and pixel-preservation QA passed",
+      "Six gallery state previews submitted and discovered pending approval",
+      "Runtime integrated; build,861 asset references,state mappings and four formation tests passed",
+      "Idle-only r2 correction: three idle frames replaced, neutral and28 nonidle frames unchanged; timings and geometry unchanged",
+      "R2 independent idle QA passed with minor residual color variation; new gallery idle pending approval",
+      "R2 live runtime loaded, fixed scale trace verified,861asset references andstate mappings passed",
+      "Recorded r2 idle Needs revision from user feedback",
+      "Inspected Pit Brute movement; generated coordinated idle keypose proof",
+      "Three bounded imagegen palette repairs failed gray consistency gate; best proof preserved and not installed"
+    ],
+    "remaining": [
+      "Resolve palette correction method with user",
+      "Complete coherent idle loop after proof passes",
+      "Verify other28 frames unchanged and review actual game playback"
+    ],
+    "blockers": [],
+    "nextAction": "Await user answer on scripted palette matching; do not silently substitute image-editing method"
+  }
+}

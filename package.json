@@ -16,7 +16,8 @@
     "render:sfx": "node tools/audio/render-sfx.mjs",
     "sim": "tsx tools/sim/warlock.ts",
     "production:status": "node tools/production/cli.mjs status --repo .",
-    "test:production": "node --test tools/production/*.test.mjs"
+    "test:production": "node --test tools/production/*.test.mjs",
+    "test:shared-assets": "node --test tools/release/shared-game-assets.test.mjs"
   },
   "dependencies": {
     "pixi.js": "^8.14.0",

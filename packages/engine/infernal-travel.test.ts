@@ -76,13 +76,13 @@ test('unconnected locations and the distant Sovereign remain inaccessible withou
  s.journey!.current='missing-location';assert.deepEqual(availableNodes(s),[]);
 });
 
-test('acknowledging Sovereign loot marks its location completed and ends the journey',()=>{
+test('acknowledging Sovereign loot opens the forest journey',()=>{
  let s=newInfernalRun(42);
  const boss=s.journey!.nodes.find(n=>n.kind==='boss')!;
  s.journey!.current=boss.id;s.phase='loot';s.pendingLoot={gold:0,items:[],final:true};
  s=dispatch(s,{type:'continue'});
- assert.equal(s.phase,'won');assert.ok(s.journey!.completed.includes(boss.id));
- assert.deepEqual(availableNodes(s),[]);
+ assert.equal(s.phase,'map');assert.equal(s.journey!.realm,'forest');
+ assert.equal(availableNodes(s)[0].id,'forest-1');
 });
 
 function reachShop(seed:number,legacy:boolean):State {

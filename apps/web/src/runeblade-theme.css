@@ -1,0 +1,45 @@
+/* Palette-only Runeblade skin. Native 1672 × 941 layout and hit regions are unchanged.
+   Filters touch decorative bitmap layers only; Mana, HP, actors, cards and item art
+   retain their semantic colors. The unfiltered overlay restores the blue Mana gem. */
+[data-hero="runeblade"] { --rime-trim:#9bd7ea; --rime-ink:#d8eff7; --rime-filter:grayscale(1) sepia(1) hue-rotate(155deg) saturate(2.1) brightness(1.13); }
+.battle-ui[data-hero="runeblade"] .hud-template { filter:var(--rime-filter); }
+.battle-ui[data-hero="runeblade"] .hud-template.hud-mana-preserved { filter:none; clip-path:polygon(142px 609px,190px 655px,199px 731px,156px 781px,111px 756px,78px 706px,94px 650px); }
+.battle-ui[data-hero="runeblade"] .wordmark small,
+.battle-ui[data-hero="runeblade"] .chapter,
+.battle-ui[data-hero="runeblade"] .stat label,
+.battle-ui[data-hero="runeblade"] .turn-tag strong,
+.battle-ui[data-hero="runeblade"] .pile,
+.battle-ui[data-hero="runeblade"] .inventory-category { color:var(--rime-ink); }
+.battle-ui[data-hero="runeblade"] .intent { border-color:#75adbf; background:linear-gradient(135deg,#172d3b,#0c131e); box-shadow:0 3px 0 #101d29,0 0 0 3px #0b121c99; }
+.battle-ui[data-hero="runeblade"] .intent b,
+.battle-ui[data-hero="runeblade"] .intent small { color:#d6edf6; }
+.battle-ui[data-hero="runeblade"] .hp-track { border-color:#79acbe; }
+.battle-ui[data-hero="runeblade"] .hand .card-info,
+.battle-ui[data-hero="runeblade"] .inventory-slot .slot-tooltip,
+.battle-ui[data-hero="runeblade"] .inspection-panel { border-color:#80b4c7; background:linear-gradient(135deg,#182a38,#0c111b 75%); }
+.battle-ui[data-hero="runeblade"] .hand .card-info strong { color:#d8f1ff; }
+.battle-ui[data-hero="runeblade"] .hand .card-info span { color:#c5dce8; }
+.battle-ui[data-hero="runeblade"] .inventory-slot.occupied:hover img { filter:drop-shadow(0 0 7px #9ee7ff); }
+.battle-ui[data-hero="runeblade"] .turn-controls .end-turn-button .end-turn-label { color:#102b3b; }
+.battle-ui[data-hero="runeblade"] .turn-controls .end-turn-button:hover:not(:disabled) .end-turn-label,
+.battle-ui[data-hero="runeblade"] .turn-controls .end-turn-button:focus-visible .end-turn-label { color:#f0fbff; text-shadow:0 1px 2px #16495b,0 0 8px #c2f0ff; }
+.battle-ui[data-hero="runeblade"] .turn-controls .end-turn-button:disabled .end-turn-label { color:#395865; }
+.battle-ui[data-hero="runeblade"] .turn-embers i { background:#e1f8ff; box-shadow:0 0 8px #75cce9; }
+.battle-ui[data-hero="runeblade"] .turn-announcement { border-color:#8dd3ed99; background:linear-gradient(90deg,transparent,#101e2be8 20%,#101e2be8 80%,transparent); }
+.battle-ui[data-hero="runeblade"] .turn-announcement span { color:#abdced; }
+/* Repaint only the existing shop frame beneath its live controls and merchant. */
+.soulforge-shell[data-hero="runeblade"] .soulforge-board::before { content:""; position:absolute; inset:0; background:inherit; background-size:100% 100%; filter:var(--rime-filter); pointer-events:none; z-index:0; }
+.soulforge-shell[data-hero="runeblade"] .soulforge-board > * { z-index:1; }
+.soulforge-shell[data-hero="runeblade"] .soulforge-brazier { filter:var(--rime-filter); }
+.soulforge-shell[data-hero="runeblade"] .soulforge-heading h1,
+.soulforge-shell[data-hero="runeblade"] .soulforge-service > header h2,
+.soulforge-shell[data-hero="runeblade"] .soulforge-relic-art span,
+.soulforge-shell[data-hero="runeblade"] .soulforge-status { color:#d8edf5; }
+.soulforge-shell[data-hero="runeblade"] .soulforge-price,
+.soulforge-shell[data-hero="runeblade"] .soulforge-reroll { border-color:#719aaa; background:linear-gradient(#243846,#101c27); color:#e2f2f8; }
+.soulforge-shell[data-hero="runeblade"] .soulforge-card-face:focus-visible,
+.soulforge-shell[data-hero="runeblade"] .soulforge-card-face:hover,
+.soulforge-shell[data-hero="runeblade"] .soulforge-relic-art:focus-visible,
+.soulforge-shell[data-hero="runeblade"] .soulforge-relic-art:hover { outline-color:#a8e5f5; }
+
+.hud-frost-accents { position:absolute; inset:0; width:1672px; height:941px; z-index:11; pointer-events:none; }

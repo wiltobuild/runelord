@@ -1,0 +1,131 @@
+[
+  {
+    "repo": "runelord",
+    "head": "03338e4da39bbaf1f48651557e45f71f455a291a",
+    "trackedModified": 52,
+    "untracked": 6813,
+    "totalBytes": 4651137087,
+    "categories": {
+      "Documentation, tooling and configuration": {
+        "files": 71,
+        "bytes": 9912791
+      },
+      "Runtime art, audio and public assets": {
+        "files": 768,
+        "bytes": 87492927
+      },
+      "Gameplay, presentation and tests": {
+        "files": 68,
+        "bytes": 585342
+      },
+      "Gallery decisions": {
+        "files": 1,
+        "bytes": 8453300
+      },
+      "Character source art and animation studies": {
+        "files": 2825,
+        "bytes": 1547411609
+      },
+      "Runtime asset provenance manifest": {
+        "files": 1,
+        "bytes": 1202273
+      },
+      "Art approval previews": {
+        "files": 2052,
+        "bytes": 1700248579
+      },
+      "Other art, objects, environments and music sources": {
+        "files": 234,
+        "bytes": 257344154
+      },
+      "Card masters and production files": {
+        "files": 679,
+        "bytes": 327183879
+      },
+      "Scratch work, captures and handoff archives": {
+        "files": 166,
+        "bytes": 711302233
+      }
+    },
+    "ignoredAuthoringArchive": {
+      "assets/cards/warlock-2026-10-02/__pycache__": {
+        "files": 1,
+        "bytes": 19354
+      },
+      "assets/heroes/animations/base-set-2026-10-02-r1": {
+        "files": 2,
+        "bytes": 25245598
+      },
+      "assets/heroes/animations/ranger": {
+        "files": 57508,
+        "bytes": 6507012123
+      },
+      "assets/heroes/animations/runeblade": {
+        "files": 23277,
+        "bytes": 6270537203
+      },
+      "assets/heroes/animations/runesmith": {
+        "files": 20607,
+        "bytes": 13049796464
+      },
+      "assets/heroes/animations/warlock": {
+        "files": 17328,
+        "bytes": 2239876327
+      },
+      "assets/heroes/references/ranger": {
+        "files": 3,
+        "bytes": 1511523
+      },
+      "assets/heroes/references/runeblade": {
+        "files": 4,
+        "bytes": 3326868
+      },
+      "assets/heroes/references/runesmith": {
+        "files": 3,
+        "bytes": 1193595
+      }
+    }
+  },
+  {
+    "repo": "runelord-roguelike-pages-recovery",
+    "head": "be1dc8c85d04dbf335352a212cd1d16efedf0700",
+    "trackedModified": 35,
+    "untracked": 827,
+    "totalBytes": 273472510,
+    "categories": {
+      "Documentation, tooling and configuration": {
+        "files": 14,
+        "bytes": 67302
+      },
+      "Runtime art, audio and public assets": {
+        "files": 281,
+        "bytes": 18369571
+      },
+      "Gameplay, presentation and tests": {
+        "files": 39,
+        "bytes": 434290
+      },
+      "Character source art and animation studies": {
+        "files": 166,
+        "bytes": 42112289
+      },
+      "Runtime asset provenance manifest": {
+        "files": 1,
+        "bytes": 1312005
+      },
+      "Card masters and production files": {
+        "files": 323,
+        "bytes": 199782198
+      },
+      "Other art, objects, environments and music sources": {
+        "files": 33,
+        "bytes": 11349437
+      },
+      "Scratch work, captures and handoff archives": {
+        "files": 5,
+        "bytes": 45418
+      }
+    },
+    "ignoredAuthoringArchive": {}
+  }
+]

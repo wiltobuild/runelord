@@ -1,0 +1,2306 @@
+[
+  {
+    "seed": 1,
+    "strategy": "pressure",
+    "variant": "forest-1",
+    "outcome": "win",
+    "turns": 4,
+    "hpRemaining": 69
+  },
+  {
+    "seed": 1,
+    "strategy": "pressure",
+    "variant": "forest-2",
+    "outcome": "win",
+    "turns": 4,
+    "hpRemaining": 67
+  },
+  {
+    "seed": 1,
+    "strategy": "pressure",
+    "variant": "forest-3",
+    "outcome": "win",
+    "turns": 4,
+    "hpRemaining": 65
+  },
+  {
+    "seed": 1,
+    "strategy": "pressure",
+    "variant": "forest-4",
+    "outcome": "win",
+    "turns": 5,
+    "hpRemaining": 61
+  },
+  {
+    "seed": 1,
+    "strategy": "pressure",
+    "variant": "forest-5",
+    "outcome": "win",
+    "turns": 4,
+    "hpRemaining": 65
+  },
+  {
+    "seed": 1,
+    "strategy": "pressure",
+    "variant": "forest-6",
+    "outcome": "win",
+    "turns": 5,
+    "hpRemaining": 66
+  },
+  {
+    "seed": 1,
+    "strategy": "pressure",
+    "variant": "forest-7",
+    "outcome": "win",
+    "turns": 5,
+    "hpRemaining": 52
+  },
+  {
+    "seed": 1,
+    "strategy": "pressure",
+    "variant": "forest-8",
+    "outcome": "win",
+    "turns": 5,
+    "hpRemaining": 66
+  },
+  {
+    "seed": 1,
+    "strategy": "pressure",
+    "variant": "forest-9",
+    "outcome": "win",
+    "turns": 5,
+    "hpRemaining": 63
+  },
+  {
+    "seed": 1,
+    "strategy": "pressure",
+    "variant": "forest-10",
+    "outcome": "win",
+    "turns": 5,
+    "hpRemaining": 56
+  },
+  {
+    "seed": 1,
+    "strategy": "pressure",
+    "variant": "forest-11",
+    "outcome": "win",
+    "turns": 5,
+    "hpRemaining": 66
+  },
+  {
+    "seed": 1,
+    "strategy": "pressure",
+    "variant": "forest-12",
+    "outcome": "win",
+    "turns": 6,
+    "hpRemaining": 53
+  },
+  {
+    "seed": 2,
+    "strategy": "pressure",
+    "variant": "forest-1",
+    "outcome": "win",
+    "turns": 3,
+    "hpRemaining": 70
+  },
+  {
+    "seed": 2,
+    "strategy": "pressure",
+    "variant": "forest-2",
+    "outcome": "win",
+    "turns": 3,
+    "hpRemaining": 70
+  },
+  {
+    "seed": 2,
+    "strategy": "pressure",
+    "variant": "forest-3",
+    "outcome": "win",
+    "turns": 3,
+    "hpRemaining": 70
+  },
+  {
+    "seed": 2,
+    "strategy": "pressure",
+    "variant": "forest-4",
+    "outcome": "win",
+    "turns": 5,
+    "hpRemaining": 68
+  },
+  {
+    "seed": 2,
+    "strategy": "pressure",
+    "variant": "forest-5",
+    "outcome": "win",
+    "turns": 4,
+    "hpRemaining": 67
+  },
+  {
+    "seed": 2,
+    "strategy": "pressure",
+    "variant": "forest-6",
+    "outcome": "win",
+    "turns": 5,
+    "hpRemaining": 70
+  },
+  {
+    "seed": 2,
+    "strategy": "pressure",
+    "variant": "forest-7",
+    "outcome": "win",
+    "turns": 4,
+    "hpRemaining": 70
+  },
+  {
+    "seed": 2,
+    "strategy": "pressure",
+    "variant": "forest-8",
+    "outcome": "win",
+    "turns": 5,
+    "hpRemaining": 59
+  },
+  {
+    "seed": 2,
+    "strategy": "pressure",
+    "variant": "forest-9",
+    "outcome": "win",
+    "turns": 4,
+    "hpRemaining": 70
+  },
+  {
+    "seed": 2,
+    "strategy": "pressure",
+    "variant": "forest-10",
+    "outcome": "win",
+    "turns": 5,
+    "hpRemaining": 62
+  },
+  {
+    "seed": 2,
+    "strategy": "pressure",
+    "variant": "forest-11",
+    "outcome": "win",
+    "turns": 5,
+    "hpRemaining": 67
+  },
+  {
+    "seed": 2,
+    "strategy": "pressure",
+    "variant": "forest-12",
+    "outcome": "win",
+    "turns": 6,
+    "hpRemaining": 65
+  },
+  {
+    "seed": 3,
+    "strategy": "pressure",
+    "variant": "forest-1",
+    "outcome": "win",
+    "turns": 3,
+    "hpRemaining": 70
+  },
+  {
+    "seed": 3,
+    "strategy": "pressure",
+    "variant": "forest-2",
+    "outcome": "win",
+    "turns": 3,
+    "hpRemaining": 70
+  },
+  {
+    "seed": 3,
+    "strategy": "pressure",
+    "variant": "forest-3",
+    "outcome": "win",
+    "turns": 3,
+    "hpRemaining": 66
+  },
+  {
+    "seed": 3,
+    "strategy": "pressure",
+    "variant": "forest-4",
+    "outcome": "win",
+    "turns": 6,
+    "hpRemaining": 60
+  },
+  {
+    "seed": 3,
+    "strategy": "pressure",
+    "variant": "forest-5",
+    "outcome": "win",
+    "turns": 4,
+    "hpRemaining": 65
+  },
+  {
+    "seed": 3,
+    "strategy": "pressure",
+    "variant": "forest-6",
+    "outcome": "win",
+    "turns": 5,
+    "hpRemaining": 66
+  },
+  {
+    "seed": 3,
+    "strategy": "pressure",
+    "variant": "forest-7",
+    "outcome": "win",
+    "turns": 5,
+    "hpRemaining": 53
+  },
+  {
+    "seed": 3,
+    "strategy": "pressure",
+    "variant": "forest-8",
+    "outcome": "win",
+    "turns": 5,
+    "hpRemaining": 64
+  },
+  {
+    "seed": 3,
+    "strategy": "pressure",
+    "variant": "forest-9",
+    "outcome": "win",
+    "turns": 5,
+    "hpRemaining": 70
+  },
+  {
+    "seed": 3,
+    "strategy": "pressure",
+    "variant": "forest-10",
+    "outcome": "win",
+    "turns": 6,
+    "hpRemaining": 39
+  },
+  {
+    "seed": 3,
+    "strategy": "pressure",
+    "variant": "forest-11",
+    "outcome": "win",
+    "turns": 6,
+    "hpRemaining": 61
+  },
+  {
+    "seed": 3,
+    "strategy": "pressure",
+    "variant": "forest-12",
+    "outcome": "win",
+    "turns": 6,
+    "hpRemaining": 44
+  },
+  {
+    "seed": 4,
+    "strategy": "pressure",
+    "variant": "forest-1",
+    "outcome": "win",
+    "turns": 3,
+    "hpRemaining": 70
+  },
+  {
+    "seed": 4,
+    "strategy": "pressure",
+    "variant": "forest-2",
+    "outcome": "win",
+    "turns": 4,
+    "hpRemaining": 66
+  },
+  {
+    "seed": 4,
+    "strategy": "pressure",
+    "variant": "forest-3",
+    "outcome": "win",
+    "turns": 4,
+    "hpRemaining": 64
+  },
+  {
+    "seed": 4,
+    "strategy": "pressure",
+    "variant": "forest-4",
+    "outcome": "win",
+    "turns": 5,
+    "hpRemaining": 60
+  },
+  {
+    "seed": 4,
+    "strategy": "pressure",
+    "variant": "forest-5",
+    "outcome": "win",
+    "turns": 4,
+    "hpRemaining": 63
+  },
+  {
+    "seed": 4,
+    "strategy": "pressure",
+    "variant": "forest-6",
+    "outcome": "win",
+    "turns": 5,
+    "hpRemaining": 68
+  },
+  {
+    "seed": 4,
+    "strategy": "pressure",
+    "variant": "forest-7",
+    "outcome": "win",
+    "turns": 5,
+    "hpRemaining": 53
+  },
+  {
+    "seed": 4,
+    "strategy": "pressure",
+    "variant": "forest-8",
+    "outcome": "win",
+    "turns": 5,
+    "hpRemaining": 64
+  },
+  {
+    "seed": 4,
+    "strategy": "pressure",
+    "variant": "forest-9",
+    "outcome": "win",
+    "turns": 5,
+    "hpRemaining": 64
+  },
+  {
+    "seed": 4,
+    "strategy": "pressure",
+    "variant": "forest-10",
+    "outcome": "win",
+    "turns": 5,
+    "hpRemaining": 54
+  },
+  {
+    "seed": 4,
+    "strategy": "pressure",
+    "variant": "forest-11",
+    "outcome": "win",
+    "turns": 5,
+    "hpRemaining": 64
+  },
+  {
+    "seed": 4,
+    "strategy": "pressure",
+    "variant": "forest-12",
+    "outcome": "win",
+    "turns": 6,
+    "hpRemaining": 55
+  },
+  {
+    "seed": 5,
+    "strategy": "pressure",
+    "variant": "forest-1",
+    "outcome": "win",
+    "turns": 2,
+    "hpRemaining": 72
+  },
+  {
+    "seed": 5,
+    "strategy": "pressure",
+    "variant": "forest-2",
+    "outcome": "win",
+    "turns": 2,
+    "hpRemaining": 72
+  },
+  {
+    "seed": 5,
+    "strategy": "pressure",
+    "variant": "forest-3",
+    "outcome": "win",
+    "turns": 3,
+    "hpRemaining": 72
+  },
+  {
+    "seed": 5,
+    "strategy": "pressure",
+    "variant": "forest-4",
+    "outcome": "win",
+    "turns": 4,
+    "hpRemaining": 68
+  },
+  {
+    "seed": 5,
+    "strategy": "pressure",
+    "variant": "forest-5",
+    "outcome": "win",
+    "turns": 4,
+    "hpRemaining": 62
+  },
+  {
+    "seed": 5,
+    "strategy": "pressure",
+    "variant": "forest-6",
+    "outcome": "win",
+    "turns": 4,
+    "hpRemaining": 69
+  },
+  {
+    "seed": 5,
+    "strategy": "pressure",
+    "variant": "forest-7",
+    "outcome": "win",
+    "turns": 4,
+    "hpRemaining": 65
+  },
+  {
+    "seed": 5,
+    "strategy": "pressure",
+    "variant": "forest-8",
+    "outcome": "win",
+    "turns": 5,
+    "hpRemaining": 54
+  },
+  {
+    "seed": 5,
+    "strategy": "pressure",
+    "variant": "forest-9",
+    "outcome": "win",
+    "turns": 4,
+    "hpRemaining": 68
+  },
+  {
+    "seed": 5,
+    "strategy": "pressure",
+    "variant": "forest-10",
+    "outcome": "win",
+    "turns": 4,
+    "hpRemaining": 65
+  },
+  {
+    "seed": 5,
+    "strategy": "pressure",
+    "variant": "forest-11",
+    "outcome": "win",
+    "turns": 5,
+    "hpRemaining": 66
+  },
+  {
+    "seed": 5,
+    "strategy": "pressure",
+    "variant": "forest-12",
+    "outcome": "win",
+    "turns": 6,
+    "hpRemaining": 55
+  },
+  {
+    "seed": 6,
+    "strategy": "pressure",
+    "variant": "forest-1",
+    "outcome": "win",
+    "turns": 3,
+    "hpRemaining": 70
+  },
+  {
+    "seed": 6,
+    "strategy": "pressure",
+    "variant": "forest-2",
+    "outcome": "win",
+    "turns": 3,
+    "hpRemaining": 70
+  },
+  {
+    "seed": 6,
+    "strategy": "pressure",
+    "variant": "forest-3",
+    "outcome": "win",
+    "turns": 3,
+    "hpRemaining": 68
+  },
+  {
+    "seed": 6,
+    "strategy": "pressure",
+    "variant": "forest-4",
+    "outcome": "win",
+    "turns": 4,
+    "hpRemaining": 66
+  },
+  {
+    "seed": 6,
+    "strategy": "pressure",
+    "variant": "forest-5",
+    "outcome": "win",
+    "turns": 4,
+    "hpRemaining": 61
+  },
+  {
+    "seed": 6,
+    "strategy": "pressure",
+    "variant": "forest-6",
+    "outcome": "win",
+    "turns": 4,
+    "hpRemaining": 60
+  },
+  {
+    "seed": 6,
+    "strategy": "pressure",
+    "variant": "forest-7",
+    "outcome": "win",
+    "turns": 4,
+    "hpRemaining": 62
+  },
+  {
+    "seed": 6,
+    "strategy": "pressure",
+    "variant": "forest-8",
+    "outcome": "win",
+    "turns": 5,
+    "hpRemaining": 57
+  },
+  {
+    "seed": 6,
+    "strategy": "pressure",
+    "variant": "forest-9",
+    "outcome": "win",
+    "turns": 4,
+    "hpRemaining": 45
+  },
+  {
+    "seed": 6,
+    "strategy": "pressure",
+    "variant": "forest-10",
+    "outcome": "win",
+    "turns": 4,
+    "hpRemaining": 63
+  },
+  {
+    "seed": 6,
+    "strategy": "pressure",
+    "variant": "forest-11",
+    "outcome": "win",
+    "turns": 5,
+    "hpRemaining": 60
+  },
+  {
+    "seed": 6,
+    "strategy": "pressure",
+    "variant": "forest-12",
+    "outcome": "win",
+    "turns": 5,
+    "hpRemaining": 46
+  },
+  {
+    "seed": 7,
+    "strategy": "pressure",
+    "variant": "forest-1",
+    "outcome": "win",
+    "turns": 3,
+    "hpRemaining": 68
+  },
+  {
+    "seed": 7,
+    "strategy": "pressure",
+    "variant": "forest-2",
+    "outcome": "win",
+    "turns": 4,
+    "hpRemaining": 68
+  },
+  {
+    "seed": 7,
+    "strategy": "pressure",
+    "variant": "forest-3",
+    "outcome": "win",
+    "turns": 3,
+    "hpRemaining": 64
+  },
+  {
+    "seed": 7,
+    "strategy": "pressure",
+    "variant": "forest-4",
+    "outcome": "win",
+    "turns": 5,
+    "hpRemaining": 60
+  },
+  {
+    "seed": 7,
+    "strategy": "pressure",
+    "variant": "forest-5",
+    "outcome": "win",
+    "turns": 4,
+    "hpRemaining": 61
+  },
+  {
+    "seed": 7,
+    "strategy": "pressure",
+    "variant": "forest-6",
+    "outcome": "win",
+    "turns": 5,
+    "hpRemaining": 49
+  },
+  {
+    "seed": 7,
+    "strategy": "pressure",
+    "variant": "forest-7",
+    "outcome": "win",
+    "turns": 5,
+    "hpRemaining": 47
+  },
+  {
+    "seed": 7,
+    "strategy": "pressure",
+    "variant": "forest-8",
+    "outcome": "win",
+    "turns": 5,
+    "hpRemaining": 63
+  },
+  {
+    "seed": 7,
+    "strategy": "pressure",
+    "variant": "forest-9",
+    "outcome": "win",
+    "turns": 5,
+    "hpRemaining": 37
+  },
+  {
+    "seed": 7,
+    "strategy": "pressure",
+    "variant": "forest-10",
+    "outcome": "win",
+    "turns": 5,
+    "hpRemaining": 54
+  },
+  {
+    "seed": 7,
+    "strategy": "pressure",
+    "variant": "forest-11",
+    "outcome": "win",
+    "turns": 5,
+    "hpRemaining": 52
+  },
+  {
+    "seed": 7,
+    "strategy": "pressure",
+    "variant": "forest-12",
+    "outcome": "win",
+    "turns": 7,
+    "hpRemaining": 32
+  },
+  {
+    "seed": 8,
+    "strategy": "pressure",
+    "variant": "forest-1",
+    "outcome": "win",
+    "turns": 3,
+    "hpRemaining": 70
+  },
+  {
+    "seed": 8,
+    "strategy": "pressure",
+    "variant": "forest-2",
+    "outcome": "win",
+    "turns": 3,
+    "hpRemaining": 70
+  },
+  {
+    "seed": 8,
+    "strategy": "pressure",
+    "variant": "forest-3",
+    "outcome": "win",
+    "turns": 3,
+    "hpRemaining": 70
+  },
+  {
+    "seed": 8,
+    "strategy": "pressure",
+    "variant": "forest-4",
+    "outcome": "win",
+    "turns": 4,
+    "hpRemaining": 68
+  },
+  {
+    "seed": 8,
+    "strategy": "pressure",
+    "variant": "forest-5",
+    "outcome": "win",
+    "turns": 4,
+    "hpRemaining": 65
+  },
+  {
+    "seed": 8,
+    "strategy": "pressure",
+    "variant": "forest-6",
+    "outcome": "win",
+    "turns": 4,
+    "hpRemaining": 69
+  },
+  {
+    "seed": 8,
+    "strategy": "pressure",
+    "variant": "forest-7",
+    "outcome": "win",
+    "turns": 4,
+    "hpRemaining": 65
+  },
+  {
+    "seed": 8,
+    "strategy": "pressure",
+    "variant": "forest-8",
+    "outcome": "win",
+    "turns": 4,
+    "hpRemaining": 60
+  },
+  {
+    "seed": 8,
+    "strategy": "pressure",
+    "variant": "forest-9",
+    "outcome": "win",
+    "turns": 4,
+    "hpRemaining": 60
+  },
+  {
+    "seed": 8,
+    "strategy": "pressure",
+    "variant": "forest-10",
+    "outcome": "win",
+    "turns": 4,
+    "hpRemaining": 65
+  },
+  {
+    "seed": 8,
+    "strategy": "pressure",
+    "variant": "forest-11",
+    "outcome": "win",
+    "turns": 5,
+    "hpRemaining": 56
+  },
+  {
+    "seed": 8,
+    "strategy": "pressure",
+    "variant": "forest-12",
+    "outcome": "win",
+    "turns": 6,
+    "hpRemaining": 56
+  },
+  {
+    "seed": 9,
+    "strategy": "pressure",
+    "variant": "forest-1",
+    "outcome": "win",
+    "turns": 4,
+    "hpRemaining": 70
+  },
+  {
+    "seed": 9,
+    "strategy": "pressure",
+    "variant": "forest-2",
+    "outcome": "win",
+    "turns": 4,
+    "hpRemaining": 68
+  },
+  {
+    "seed": 9,
+    "strategy": "pressure",
+    "variant": "forest-3",
+    "outcome": "win",
+    "turns": 4,
+    "hpRemaining": 66
+  },
+  {
+    "seed": 9,
+    "strategy": "pressure",
+    "variant": "forest-4",
+    "outcome": "win",
+    "turns": 5,
+    "hpRemaining": 68
+  },
+  {
+    "seed": 9,
+    "strategy": "pressure",
+    "variant": "forest-5",
+    "outcome": "win",
+    "turns": 4,
+    "hpRemaining": 70
+  },
+  {
+    "seed": 9,
+    "strategy": "pressure",
+    "variant": "forest-6",
+    "outcome": "win",
+    "turns": 5,
+    "hpRemaining": 63
+  },
+  {
+    "seed": 9,
+    "strategy": "pressure",
+    "variant": "forest-7",
+    "outcome": "win",
+    "turns": 5,
+    "hpRemaining": 59
+  },
+  {
+    "seed": 9,
+    "strategy": "pressure",
+    "variant": "forest-8",
+    "outcome": "win",
+    "turns": 5,
+    "hpRemaining": 68
+  },
+  {
+    "seed": 9,
+    "strategy": "pressure",
+    "variant": "forest-9",
+    "outcome": "win",
+    "turns": 4,
+    "hpRemaining": 56
+  },
+  {
+    "seed": 9,
+    "strategy": "pressure",
+    "variant": "forest-10",
+    "outcome": "win",
+    "turns": 5,
+    "hpRemaining": 68
+  },
+  {
+    "seed": 9,
+    "strategy": "pressure",
+    "variant": "forest-11",
+    "outcome": "win",
+    "turns": 5,
+    "hpRemaining": 64
+  },
+  {
+    "seed": 9,
+    "strategy": "pressure",
+    "variant": "forest-12",
+    "outcome": "win",
+    "turns": 6,
+    "hpRemaining": 59
+  },
+  {
+    "seed": 10,
+    "strategy": "pressure",
+    "variant": "forest-1",
+    "outcome": "win",
+    "turns": 3,
+    "hpRemaining": 70
+  },
+  {
+    "seed": 10,
+    "strategy": "pressure",
+    "variant": "forest-2",
+    "outcome": "win",
+    "turns": 3,
+    "hpRemaining": 70
+  },
+  {
+    "seed": 10,
+    "strategy": "pressure",
+    "variant": "forest-3",
+    "outcome": "win",
+    "turns": 3,
+    "hpRemaining": 70
+  },
+  {
+    "seed": 10,
+    "strategy": "pressure",
+    "variant": "forest-4",
+    "outcome": "win",
+    "turns": 4,
+    "hpRemaining": 66
+  },
+  {
+    "seed": 10,
+    "strategy": "pressure",
+    "variant": "forest-5",
+    "outcome": "win",
+    "turns": 4,
+    "hpRemaining": 63
+  },
+  {
+    "seed": 10,
+    "strategy": "pressure",
+    "variant": "forest-6",
+    "outcome": "win",
+    "turns": 4,
+    "hpRemaining": 61
+  },
+  {
+    "seed": 10,
+    "strategy": "pressure",
+    "variant": "forest-7",
+    "outcome": "win",
+    "turns": 4,
+    "hpRemaining": 63
+  },
+  {
+    "seed": 10,
+    "strategy": "pressure",
+    "variant": "forest-8",
+    "outcome": "win",
+    "turns": 5,
+    "hpRemaining": 58
+  },
+  {
+    "seed": 10,
+    "strategy": "pressure",
+    "variant": "forest-9",
+    "outcome": "win",
+    "turns": 4,
+    "hpRemaining": 60
+  },
+  {
+    "seed": 10,
+    "strategy": "pressure",
+    "variant": "forest-10",
+    "outcome": "win",
+    "turns": 4,
+    "hpRemaining": 63
+  },
+  {
+    "seed": 10,
+    "strategy": "pressure",
+    "variant": "forest-11",
+    "outcome": "win",
+    "turns": 5,
+    "hpRemaining": 56
+  },
+  {
+    "seed": 10,
+    "strategy": "pressure",
+    "variant": "forest-12",
+    "outcome": "win",
+    "turns": 6,
+    "hpRemaining": 54
+  },
+  {
+    "seed": 11,
+    "strategy": "pressure",
+    "variant": "forest-1",
+    "outcome": "win",
+    "turns": 3,
+    "hpRemaining": 68
+  },
+  {
+    "seed": 11,
+    "strategy": "pressure",
+    "variant": "forest-2",
+    "outcome": "win",
+    "turns": 4,
+    "hpRemaining": 68
+  },
+  {
+    "seed": 11,
+    "strategy": "pressure",
+    "variant": "forest-3",
+    "outcome": "win",
+    "turns": 4,
+    "hpRemaining": 64
+  },
+  {
+    "seed": 11,
+    "strategy": "pressure",
+    "variant": "forest-4",
+    "outcome": "win",
+    "turns": 4,
+    "hpRemaining": 60
+  },
+  {
+    "seed": 11,
+    "strategy": "pressure",
+    "variant": "forest-5",
+    "outcome": "win",
+    "turns": 4,
+    "hpRemaining": 61
+  },
+  {
+    "seed": 11,
+    "strategy": "pressure",
+    "variant": "forest-6",
+    "outcome": "win",
+    "turns": 4,
+    "hpRemaining": 53
+  },
+  {
+    "seed": 11,
+    "strategy": "pressure",
+    "variant": "forest-7",
+    "outcome": "win",
+    "turns": 5,
+    "hpRemaining": 50
+  },
+  {
+    "seed": 11,
+    "strategy": "pressure",
+    "variant": "forest-8",
+    "outcome": "win",
+    "turns": 4,
+    "hpRemaining": 63
+  },
+  {
+    "seed": 11,
+    "strategy": "pressure",
+    "variant": "forest-9",
+    "outcome": "win",
+    "turns": 4,
+    "hpRemaining": 39
+  },
+  {
+    "seed": 11,
+    "strategy": "pressure",
+    "variant": "forest-10",
+    "outcome": "win",
+    "turns": 5,
+    "hpRemaining": 54
+  },
+  {
+    "seed": 11,
+    "strategy": "pressure",
+    "variant": "forest-11",
+    "outcome": "win",
+    "turns": 5,
+    "hpRemaining": 52
+  },
+  {
+    "seed": 11,
+    "strategy": "pressure",
+    "variant": "forest-12",
+    "outcome": "win",
+    "turns": 6,
+    "hpRemaining": 44
+  },
+  {
+    "seed": 12,
+    "strategy": "pressure",
+    "variant": "forest-1",
+    "outcome": "win",
+    "turns": 3,
+    "hpRemaining": 70
+  },
+  {
+    "seed": 12,
+    "strategy": "pressure",
+    "variant": "forest-2",
+    "outcome": "win",
+    "turns": 3,
+    "hpRemaining": 70
+  },
+  {
+    "seed": 12,
+    "strategy": "pressure",
+    "variant": "forest-3",
+    "outcome": "win",
+    "turns": 4,
+    "hpRemaining": 64
+  },
+  {
+    "seed": 12,
+    "strategy": "pressure",
+    "variant": "forest-4",
+    "outcome": "win",
+    "turns": 5,
+    "hpRemaining": 62
+  },
+  {
+    "seed": 12,
+    "strategy": "pressure",
+    "variant": "forest-5",
+    "outcome": "win",
+    "turns": 5,
+    "hpRemaining": 63
+  },
+  {
+    "seed": 12,
+    "strategy": "pressure",
+    "variant": "forest-6",
+    "outcome": "win",
+    "turns": 5,
+    "hpRemaining": 60
+  },
+  {
+    "seed": 12,
+    "strategy": "pressure",
+    "variant": "forest-7",
+    "outcome": "win",
+    "turns": 5,
+    "hpRemaining": 52
+  },
+  {
+    "seed": 12,
+    "strategy": "pressure",
+    "variant": "forest-8",
+    "outcome": "win",
+    "turns": 5,
+    "hpRemaining": 65
+  },
+  {
+    "seed": 12,
+    "strategy": "pressure",
+    "variant": "forest-9",
+    "outcome": "win",
+    "turns": 4,
+    "hpRemaining": 47
+  },
+  {
+    "seed": 12,
+    "strategy": "pressure",
+    "variant": "forest-10",
+    "outcome": "win",
+    "turns": 5,
+    "hpRemaining": 56
+  },
+  {
+    "seed": 12,
+    "strategy": "pressure",
+    "variant": "forest-11",
+    "outcome": "win",
+    "turns": 6,
+    "hpRemaining": 62
+  },
+  {
+    "seed": 12,
+    "strategy": "pressure",
+    "variant": "forest-12",
+    "outcome": "win",
+    "turns": 6,
+    "hpRemaining": 55
+  },
+  {
+    "seed": 1,
+    "strategy": "guard",
+    "variant": "forest-1",
+    "outcome": "win",
+    "turns": 4,
+    "hpRemaining": 72
+  },
+  {
+    "seed": 1,
+    "strategy": "guard",
+    "variant": "forest-2",
+    "outcome": "win",
+    "turns": 4,
+    "hpRemaining": 70
+  },
+  {
+    "seed": 1,
+    "strategy": "guard",
+    "variant": "forest-3",
+    "outcome": "win",
+    "turns": 4,
+    "hpRemaining": 70
+  },
+  {
+    "seed": 1,
+    "strategy": "guard",
+    "variant": "forest-4",
+    "outcome": "win",
+    "turns": 5,
+    "hpRemaining": 67
+  },
+  {
+    "seed": 1,
+    "strategy": "guard",
+    "variant": "forest-5",
+    "outcome": "win",
+    "turns": 5,
+    "hpRemaining": 70
+  },
+  {
+    "seed": 1,
+    "strategy": "guard",
+    "variant": "forest-6",
+    "outcome": "win",
+    "turns": 5,
+    "hpRemaining": 66
+  },
+  {
+    "seed": 1,
+    "strategy": "guard",
+    "variant": "forest-7",
+    "outcome": "win",
+    "turns": 6,
+    "hpRemaining": 59
+  },
+  {
+    "seed": 1,
+    "strategy": "guard",
+    "variant": "forest-8",
+    "outcome": "win",
+    "turns": 6,
+    "hpRemaining": 66
+  },
+  {
+    "seed": 1,
+    "strategy": "guard",
+    "variant": "forest-9",
+    "outcome": "win",
+    "turns": 5,
+    "hpRemaining": 71
+  },
+  {
+    "seed": 1,
+    "strategy": "guard",
+    "variant": "forest-10",
+    "outcome": "win",
+    "turns": 5,
+    "hpRemaining": 54
+  },
+  {
+    "seed": 1,
+    "strategy": "guard",
+    "variant": "forest-11",
+    "outcome": "win",
+    "turns": 6,
+    "hpRemaining": 69
+  },
+  {
+    "seed": 1,
+    "strategy": "guard",
+    "variant": "forest-12",
+    "outcome": "win",
+    "turns": 7,
+    "hpRemaining": 51
+  },
+  {
+    "seed": 2,
+    "strategy": "guard",
+    "variant": "forest-1",
+    "outcome": "win",
+    "turns": 3,
+    "hpRemaining": 70
+  },
+  {
+    "seed": 2,
+    "strategy": "guard",
+    "variant": "forest-2",
+    "outcome": "win",
+    "turns": 3,
+    "hpRemaining": 70
+  },
+  {
+    "seed": 2,
+    "strategy": "guard",
+    "variant": "forest-3",
+    "outcome": "win",
+    "turns": 3,
+    "hpRemaining": 70
+  },
+  {
+    "seed": 2,
+    "strategy": "guard",
+    "variant": "forest-4",
+    "outcome": "win",
+    "turns": 5,
+    "hpRemaining": 68
+  },
+  {
+    "seed": 2,
+    "strategy": "guard",
+    "variant": "forest-5",
+    "outcome": "win",
+    "turns": 4,
+    "hpRemaining": 67
+  },
+  {
+    "seed": 2,
+    "strategy": "guard",
+    "variant": "forest-6",
+    "outcome": "win",
+    "turns": 5,
+    "hpRemaining": 70
+  },
+  {
+    "seed": 2,
+    "strategy": "guard",
+    "variant": "forest-7",
+    "outcome": "win",
+    "turns": 4,
+    "hpRemaining": 70
+  },
+  {
+    "seed": 2,
+    "strategy": "guard",
+    "variant": "forest-8",
+    "outcome": "win",
+    "turns": 5,
+    "hpRemaining": 59
+  },
+  {
+    "seed": 2,
+    "strategy": "guard",
+    "variant": "forest-9",
+    "outcome": "win",
+    "turns": 4,
+    "hpRemaining": 70
+  },
+  {
+    "seed": 2,
+    "strategy": "guard",
+    "variant": "forest-10",
+    "outcome": "win",
+    "turns": 5,
+    "hpRemaining": 62
+  },
+  {
+    "seed": 2,
+    "strategy": "guard",
+    "variant": "forest-11",
+    "outcome": "win",
+    "turns": 5,
+    "hpRemaining": 67
+  },
+  {
+    "seed": 2,
+    "strategy": "guard",
+    "variant": "forest-12",
+    "outcome": "win",
+    "turns": 6,
+    "hpRemaining": 65
+  },
+  {
+    "seed": 3,
+    "strategy": "guard",
+    "variant": "forest-1",
+    "outcome": "win",
+    "turns": 4,
+    "hpRemaining": 70
+  },
+  {
+    "seed": 3,
+    "strategy": "guard",
+    "variant": "forest-2",
+    "outcome": "win",
+    "turns": 4,
+    "hpRemaining": 70
+  },
+  {
+    "seed": 3,
+    "strategy": "guard",
+    "variant": "forest-3",
+    "outcome": "win",
+    "turns": 4,
+    "hpRemaining": 70
+  },
+  {
+    "seed": 3,
+    "strategy": "guard",
+    "variant": "forest-4",
+    "outcome": "win",
+    "turns": 6,
+    "hpRemaining": 68
+  },
+  {
+    "seed": 3,
+    "strategy": "guard",
+    "variant": "forest-5",
+    "outcome": "win",
+    "turns": 5,
+    "hpRemaining": 68
+  },
+  {
+    "seed": 3,
+    "strategy": "guard",
+    "variant": "forest-6",
+    "outcome": "win",
+    "turns": 6,
+    "hpRemaining": 70
+  },
+  {
+    "seed": 3,
+    "strategy": "guard",
+    "variant": "forest-7",
+    "outcome": "win",
+    "turns": 5,
+    "hpRemaining": 66
+  },
+  {
+    "seed": 3,
+    "strategy": "guard",
+    "variant": "forest-8",
+    "outcome": "win",
+    "turns": 5,
+    "hpRemaining": 68
+  },
+  {
+    "seed": 3,
+    "strategy": "guard",
+    "variant": "forest-9",
+    "outcome": "win",
+    "turns": 5,
+    "hpRemaining": 68
+  },
+  {
+    "seed": 3,
+    "strategy": "guard",
+    "variant": "forest-10",
+    "outcome": "win",
+    "turns": 6,
+    "hpRemaining": 59
+  },
+  {
+    "seed": 3,
+    "strategy": "guard",
+    "variant": "forest-11",
+    "outcome": "win",
+    "turns": 6,
+    "hpRemaining": 65
+  },
+  {
+    "seed": 3,
+    "strategy": "guard",
+    "variant": "forest-12",
+    "outcome": "win",
+    "turns": 7,
+    "hpRemaining": 58
+  },
+  {
+    "seed": 4,
+    "strategy": "guard",
+    "variant": "forest-1",
+    "outcome": "win",
+    "turns": 3,
+    "hpRemaining": 70
+  },
+  {
+    "seed": 4,
+    "strategy": "guard",
+    "variant": "forest-2",
+    "outcome": "win",
+    "turns": 4,
+    "hpRemaining": 66
+  },
+  {
+    "seed": 4,
+    "strategy": "guard",
+    "variant": "forest-3",
+    "outcome": "win",
+    "turns": 4,
+    "hpRemaining": 64
+  },
+  {
+    "seed": 4,
+    "strategy": "guard",
+    "variant": "forest-4",
+    "outcome": "win",
+    "turns": 5,
+    "hpRemaining": 60
+  },
+  {
+    "seed": 4,
+    "strategy": "guard",
+    "variant": "forest-5",
+    "outcome": "win",
+    "turns": 4,
+    "hpRemaining": 63
+  },
+  {
+    "seed": 4,
+    "strategy": "guard",
+    "variant": "forest-6",
+    "outcome": "win",
+    "turns": 5,
+    "hpRemaining": 68
+  },
+  {
+    "seed": 4,
+    "strategy": "guard",
+    "variant": "forest-7",
+    "outcome": "win",
+    "turns": 5,
+    "hpRemaining": 53
+  },
+  {
+    "seed": 4,
+    "strategy": "guard",
+    "variant": "forest-8",
+    "outcome": "win",
+    "turns": 5,
+    "hpRemaining": 72
+  },
+  {
+    "seed": 4,
+    "strategy": "guard",
+    "variant": "forest-9",
+    "outcome": "win",
+    "turns": 5,
+    "hpRemaining": 64
+  },
+  {
+    "seed": 4,
+    "strategy": "guard",
+    "variant": "forest-10",
+    "outcome": "win",
+    "turns": 5,
+    "hpRemaining": 54
+  },
+  {
+    "seed": 4,
+    "strategy": "guard",
+    "variant": "forest-11",
+    "outcome": "win",
+    "turns": 5,
+    "hpRemaining": 64
+  },
+  {
+    "seed": 4,
+    "strategy": "guard",
+    "variant": "forest-12",
+    "outcome": "win",
+    "turns": 6,
+    "hpRemaining": 55
+  },
+  {
+    "seed": 5,
+    "strategy": "guard",
+    "variant": "forest-1",
+    "outcome": "win",
+    "turns": 3,
+    "hpRemaining": 70
+  },
+  {
+    "seed": 5,
+    "strategy": "guard",
+    "variant": "forest-2",
+    "outcome": "win",
+    "turns": 3,
+    "hpRemaining": 70
+  },
+  {
+    "seed": 5,
+    "strategy": "guard",
+    "variant": "forest-3",
+    "outcome": "win",
+    "turns": 3,
+    "hpRemaining": 70
+  },
+  {
+    "seed": 5,
+    "strategy": "guard",
+    "variant": "forest-4",
+    "outcome": "win",
+    "turns": 5,
+    "hpRemaining": 68
+  },
+  {
+    "seed": 5,
+    "strategy": "guard",
+    "variant": "forest-5",
+    "outcome": "win",
+    "turns": 5,
+    "hpRemaining": 59
+  },
+  {
+    "seed": 5,
+    "strategy": "guard",
+    "variant": "forest-6",
+    "outcome": "win",
+    "turns": 5,
+    "hpRemaining": 70
+  },
+  {
+    "seed": 5,
+    "strategy": "guard",
+    "variant": "forest-7",
+    "outcome": "win",
+    "turns": 5,
+    "hpRemaining": 70
+  },
+  {
+    "seed": 5,
+    "strategy": "guard",
+    "variant": "forest-8",
+    "outcome": "win",
+    "turns": 6,
+    "hpRemaining": 57
+  },
+  {
+    "seed": 5,
+    "strategy": "guard",
+    "variant": "forest-9",
+    "outcome": "win",
+    "turns": 5,
+    "hpRemaining": 70
+  },
+  {
+    "seed": 5,
+    "strategy": "guard",
+    "variant": "forest-10",
+    "outcome": "win",
+    "turns": 5,
+    "hpRemaining": 65
+  },
+  {
+    "seed": 5,
+    "strategy": "guard",
+    "variant": "forest-11",
+    "outcome": "win",
+    "turns": 6,
+    "hpRemaining": 65
+  },
+  {
+    "seed": 5,
+    "strategy": "guard",
+    "variant": "forest-12",
+    "outcome": "win",
+    "turns": 7,
+    "hpRemaining": 64
+  },
+  {
+    "seed": 6,
+    "strategy": "guard",
+    "variant": "forest-1",
+    "outcome": "win",
+    "turns": 4,
+    "hpRemaining": 70
+  },
+  {
+    "seed": 6,
+    "strategy": "guard",
+    "variant": "forest-2",
+    "outcome": "win",
+    "turns": 4,
+    "hpRemaining": 68
+  },
+  {
+    "seed": 6,
+    "strategy": "guard",
+    "variant": "forest-3",
+    "outcome": "win",
+    "turns": 4,
+    "hpRemaining": 68
+  },
+  {
+    "seed": 6,
+    "strategy": "guard",
+    "variant": "forest-4",
+    "outcome": "win",
+    "turns": 6,
+    "hpRemaining": 66
+  },
+  {
+    "seed": 6,
+    "strategy": "guard",
+    "variant": "forest-5",
+    "outcome": "win",
+    "turns": 5,
+    "hpRemaining": 72
+  },
+  {
+    "seed": 6,
+    "strategy": "guard",
+    "variant": "forest-6",
+    "outcome": "win",
+    "turns": 6,
+    "hpRemaining": 70
+  },
+  {
+    "seed": 6,
+    "strategy": "guard",
+    "variant": "forest-7",
+    "outcome": "win",
+    "turns": 5,
+    "hpRemaining": 53
+  },
+  {
+    "seed": 6,
+    "strategy": "guard",
+    "variant": "forest-8",
+    "outcome": "win",
+    "turns": 5,
+    "hpRemaining": 72
+  },
+  {
+    "seed": 6,
+    "strategy": "guard",
+    "variant": "forest-9",
+    "outcome": "win",
+    "turns": 5,
+    "hpRemaining": 70
+  },
+  {
+    "seed": 6,
+    "strategy": "guard",
+    "variant": "forest-10",
+    "outcome": "win",
+    "turns": 6,
+    "hpRemaining": 65
+  },
+  {
+    "seed": 6,
+    "strategy": "guard",
+    "variant": "forest-11",
+    "outcome": "win",
+    "turns": 6,
+    "hpRemaining": 68
+  },
+  {
+    "seed": 6,
+    "strategy": "guard",
+    "variant": "forest-12",
+    "outcome": "win",
+    "turns": 7,
+    "hpRemaining": 55
+  },
+  {
+    "seed": 7,
+    "strategy": "guard",
+    "variant": "forest-1",
+    "outcome": "win",
+    "turns": 4,
+    "hpRemaining": 66
+  },
+  {
+    "seed": 7,
+    "strategy": "guard",
+    "variant": "forest-2",
+    "outcome": "win",
+    "turns": 4,
+    "hpRemaining": 66
+  },
+  {
+    "seed": 7,
+    "strategy": "guard",
+    "variant": "forest-3",
+    "outcome": "win",
+    "turns": 5,
+    "hpRemaining": 64
+  },
+  {
+    "seed": 7,
+    "strategy": "guard",
+    "variant": "forest-4",
+    "outcome": "win",
+    "turns": 6,
+    "hpRemaining": 60
+  },
+  {
+    "seed": 7,
+    "strategy": "guard",
+    "variant": "forest-5",
+    "outcome": "win",
+    "turns": 5,
+    "hpRemaining": 63
+  },
+  {
+    "seed": 7,
+    "strategy": "guard",
+    "variant": "forest-6",
+    "outcome": "win",
+    "turns": 6,
+    "hpRemaining": 56
+  },
+  {
+    "seed": 7,
+    "strategy": "guard",
+    "variant": "forest-7",
+    "outcome": "win",
+    "turns": 6,
+    "hpRemaining": 47
+  },
+  {
+    "seed": 7,
+    "strategy": "guard",
+    "variant": "forest-8",
+    "outcome": "win",
+    "turns": 6,
+    "hpRemaining": 64
+  },
+  {
+    "seed": 7,
+    "strategy": "guard",
+    "variant": "forest-9",
+    "outcome": "win",
+    "turns": 6,
+    "hpRemaining": 67
+  },
+  {
+    "seed": 7,
+    "strategy": "guard",
+    "variant": "forest-10",
+    "outcome": "win",
+    "turns": 6,
+    "hpRemaining": 49
+  },
+  {
+    "seed": 7,
+    "strategy": "guard",
+    "variant": "forest-11",
+    "outcome": "win",
+    "turns": 7,
+    "hpRemaining": 65
+  },
+  {
+    "seed": 7,
+    "strategy": "guard",
+    "variant": "forest-12",
+    "outcome": "win",
+    "turns": 7,
+    "hpRemaining": 40
+  },
+  {
+    "seed": 8,
+    "strategy": "guard",
+    "variant": "forest-1",
+    "outcome": "win",
+    "turns": 3,
+    "hpRemaining": 70
+  },
+  {
+    "seed": 8,
+    "strategy": "guard",
+    "variant": "forest-2",
+    "outcome": "win",
+    "turns": 3,
+    "hpRemaining": 70
+  },
+  {
+    "seed": 8,
+    "strategy": "guard",
+    "variant": "forest-3",
+    "outcome": "win",
+    "turns": 3,
+    "hpRemaining": 70
+  },
+  {
+    "seed": 8,
+    "strategy": "guard",
+    "variant": "forest-4",
+    "outcome": "win",
+    "turns": 5,
+    "hpRemaining": 68
+  },
+  {
+    "seed": 8,
+    "strategy": "guard",
+    "variant": "forest-5",
+    "outcome": "win",
+    "turns": 4,
+    "hpRemaining": 70
+  },
+  {
+    "seed": 8,
+    "strategy": "guard",
+    "variant": "forest-6",
+    "outcome": "win",
+    "turns": 5,
+    "hpRemaining": 63
+  },
+  {
+    "seed": 8,
+    "strategy": "guard",
+    "variant": "forest-7",
+    "outcome": "win",
+    "turns": 4,
+    "hpRemaining": 59
+  },
+  {
+    "seed": 8,
+    "strategy": "guard",
+    "variant": "forest-8",
+    "outcome": "win",
+    "turns": 5,
+    "hpRemaining": 65
+  },
+  {
+    "seed": 8,
+    "strategy": "guard",
+    "variant": "forest-9",
+    "outcome": "win",
+    "turns": 5,
+    "hpRemaining": 58
+  },
+  {
+    "seed": 8,
+    "strategy": "guard",
+    "variant": "forest-10",
+    "outcome": "win",
+    "turns": 5,
+    "hpRemaining": 68
+  },
+  {
+    "seed": 8,
+    "strategy": "guard",
+    "variant": "forest-11",
+    "outcome": "win",
+    "turns": 5,
+    "hpRemaining": 56
+  },
+  {
+    "seed": 8,
+    "strategy": "guard",
+    "variant": "forest-12",
+    "outcome": "win",
+    "turns": 6,
+    "hpRemaining": 59
+  },
+  {
+    "seed": 9,
+    "strategy": "guard",
+    "variant": "forest-1",
+    "outcome": "win",
+    "turns": 4,
+    "hpRemaining": 70
+  },
+  {
+    "seed": 9,
+    "strategy": "guard",
+    "variant": "forest-2",
+    "outcome": "win",
+    "turns": 4,
+    "hpRemaining": 68
+  },
+  {
+    "seed": 9,
+    "strategy": "guard",
+    "variant": "forest-3",
+    "outcome": "win",
+    "turns": 4,
+    "hpRemaining": 66
+  },
+  {
+    "seed": 9,
+    "strategy": "guard",
+    "variant": "forest-4",
+    "outcome": "win",
+    "turns": 5,
+    "hpRemaining": 68
+  },
+  {
+    "seed": 9,
+    "strategy": "guard",
+    "variant": "forest-5",
+    "outcome": "win",
+    "turns": 4,
+    "hpRemaining": 70
+  },
+  {
+    "seed": 9,
+    "strategy": "guard",
+    "variant": "forest-6",
+    "outcome": "win",
+    "turns": 5,
+    "hpRemaining": 63
+  },
+  {
+    "seed": 9,
+    "strategy": "guard",
+    "variant": "forest-7",
+    "outcome": "win",
+    "turns": 5,
+    "hpRemaining": 57
+  },
+  {
+    "seed": 9,
+    "strategy": "guard",
+    "variant": "forest-8",
+    "outcome": "win",
+    "turns": 5,
+    "hpRemaining": 68
+  },
+  {
+    "seed": 9,
+    "strategy": "guard",
+    "variant": "forest-9",
+    "outcome": "win",
+    "turns": 5,
+    "hpRemaining": 56
+  },
+  {
+    "seed": 9,
+    "strategy": "guard",
+    "variant": "forest-10",
+    "outcome": "win",
+    "turns": 5,
+    "hpRemaining": 68
+  },
+  {
+    "seed": 9,
+    "strategy": "guard",
+    "variant": "forest-11",
+    "outcome": "win",
+    "turns": 6,
+    "hpRemaining": 64
+  },
+  {
+    "seed": 9,
+    "strategy": "guard",
+    "variant": "forest-12",
+    "outcome": "win",
+    "turns": 6,
+    "hpRemaining": 68
+  },
+  {
+    "seed": 10,
+    "strategy": "guard",
+    "variant": "forest-1",
+    "outcome": "win",
+    "turns": 3,
+    "hpRemaining": 70
+  },
+  {
+    "seed": 10,
+    "strategy": "guard",
+    "variant": "forest-2",
+    "outcome": "win",
+    "turns": 3,
+    "hpRemaining": 70
+  },
+  {
+    "seed": 10,
+    "strategy": "guard",
+    "variant": "forest-3",
+    "outcome": "win",
+    "turns": 3,
+    "hpRemaining": 70
+  },
+  {
+    "seed": 10,
+    "strategy": "guard",
+    "variant": "forest-4",
+    "outcome": "win",
+    "turns": 5,
+    "hpRemaining": 66
+  },
+  {
+    "seed": 10,
+    "strategy": "guard",
+    "variant": "forest-5",
+    "outcome": "win",
+    "turns": 4,
+    "hpRemaining": 63
+  },
+  {
+    "seed": 10,
+    "strategy": "guard",
+    "variant": "forest-6",
+    "outcome": "win",
+    "turns": 5,
+    "hpRemaining": 61
+  },
+  {
+    "seed": 10,
+    "strategy": "guard",
+    "variant": "forest-7",
+    "outcome": "win",
+    "turns": 4,
+    "hpRemaining": 63
+  },
+  {
+    "seed": 10,
+    "strategy": "guard",
+    "variant": "forest-8",
+    "outcome": "win",
+    "turns": 5,
+    "hpRemaining": 58
+  },
+  {
+    "seed": 10,
+    "strategy": "guard",
+    "variant": "forest-9",
+    "outcome": "win",
+    "turns": 4,
+    "hpRemaining": 60
+  },
+  {
+    "seed": 10,
+    "strategy": "guard",
+    "variant": "forest-10",
+    "outcome": "win",
+    "turns": 5,
+    "hpRemaining": 63
+  },
+  {
+    "seed": 10,
+    "strategy": "guard",
+    "variant": "forest-11",
+    "outcome": "win",
+    "turns": 5,
+    "hpRemaining": 56
+  },
+  {
+    "seed": 10,
+    "strategy": "guard",
+    "variant": "forest-12",
+    "outcome": "win",
+    "turns": 6,
+    "hpRemaining": 54
+  },
+  {
+    "seed": 11,
+    "strategy": "guard",
+    "variant": "forest-1",
+    "outcome": "win",
+    "turns": 4,
+    "hpRemaining": 70
+  },
+  {
+    "seed": 11,
+    "strategy": "guard",
+    "variant": "forest-2",
+    "outcome": "win",
+    "turns": 4,
+    "hpRemaining": 66
+  },
+  {
+    "seed": 11,
+    "strategy": "guard",
+    "variant": "forest-3",
+    "outcome": "win",
+    "turns": 4,
+    "hpRemaining": 64
+  },
+  {
+    "seed": 11,
+    "strategy": "guard",
+    "variant": "forest-4",
+    "outcome": "win",
+    "turns": 5,
+    "hpRemaining": 66
+  },
+  {
+    "seed": 11,
+    "strategy": "guard",
+    "variant": "forest-5",
+    "outcome": "win",
+    "turns": 4,
+    "hpRemaining": 68
+  },
+  {
+    "seed": 11,
+    "strategy": "guard",
+    "variant": "forest-6",
+    "outcome": "win",
+    "turns": 5,
+    "hpRemaining": 58
+  },
+  {
+    "seed": 11,
+    "strategy": "guard",
+    "variant": "forest-7",
+    "outcome": "win",
+    "turns": 5,
+    "hpRemaining": 57
+  },
+  {
+    "seed": 11,
+    "strategy": "guard",
+    "variant": "forest-8",
+    "outcome": "win",
+    "turns": 5,
+    "hpRemaining": 68
+  },
+  {
+    "seed": 11,
+    "strategy": "guard",
+    "variant": "forest-9",
+    "outcome": "win",
+    "turns": 5,
+    "hpRemaining": 46
+  },
+  {
+    "seed": 11,
+    "strategy": "guard",
+    "variant": "forest-10",
+    "outcome": "win",
+    "turns": 5,
+    "hpRemaining": 61
+  },
+  {
+    "seed": 11,
+    "strategy": "guard",
+    "variant": "forest-11",
+    "outcome": "win",
+    "turns": 5,
+    "hpRemaining": 56
+  },
+  {
+    "seed": 11,
+    "strategy": "guard",
+    "variant": "forest-12",
+    "outcome": "win",
+    "turns": 6,
+    "hpRemaining": 58
+  },
+  {
+    "seed": 12,
+    "strategy": "guard",
+    "variant": "forest-1",
+    "outcome": "win",
+    "turns": 4,
+    "hpRemaining": 68
+  },
+  {
+    "seed": 12,
+    "strategy": "guard",
+    "variant": "forest-2",
+    "outcome": "win",
+    "turns": 4,
+    "hpRemaining": 68
+  },
+  {
+    "seed": 12,
+    "strategy": "guard",
+    "variant": "forest-3",
+    "outcome": "win",
+    "turns": 4,
+    "hpRemaining": 66
+  },
+  {
+    "seed": 12,
+    "strategy": "guard",
+    "variant": "forest-4",
+    "outcome": "win",
+    "turns": 6,
+    "hpRemaining": 62
+  },
+  {
+    "seed": 12,
+    "strategy": "guard",
+    "variant": "forest-5",
+    "outcome": "win",
+    "turns": 5,
+    "hpRemaining": 65
+  },
+  {
+    "seed": 12,
+    "strategy": "guard",
+    "variant": "forest-6",
+    "outcome": "win",
+    "turns": 5,
+    "hpRemaining": 72
+  },
+  {
+    "seed": 12,
+    "strategy": "guard",
+    "variant": "forest-7",
+    "outcome": "win",
+    "turns": 6,
+    "hpRemaining": 64
+  },
+  {
+    "seed": 12,
+    "strategy": "guard",
+    "variant": "forest-8",
+    "outcome": "win",
+    "turns": 5,
+    "hpRemaining": 66
+  },
+  {
+    "seed": 12,
+    "strategy": "guard",
+    "variant": "forest-9",
+    "outcome": "win",
+    "turns": 5,
+    "hpRemaining": 56
+  },
+  {
+    "seed": 12,
+    "strategy": "guard",
+    "variant": "forest-10",
+    "outcome": "win",
+    "turns": 6,
+    "hpRemaining": 56
+  },
+  {
+    "seed": 12,
+    "strategy": "guard",
+    "variant": "forest-11",
+    "outcome": "win",
+    "turns": 7,
+    "hpRemaining": 72
+  },
+  {
+    "seed": 12,
+    "strategy": "guard",
+    "variant": "forest-12",
+    "outcome": "win",
+    "turns": 7,
+    "hpRemaining": 59
+  }
+]

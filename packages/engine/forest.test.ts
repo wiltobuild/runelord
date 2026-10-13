@@ -27,9 +27,9 @@ test('forest has twelve battles and a finite shop after every three with no excl
   for(const node of journey.nodes) {
    assert.ok(['forest','forest-heart'].includes(node.encounter.background));
    for(const e of [...node.encounter.enemies,...(node.encounter.reserves||[])]) {
-    assert.ok((FOREST_ENEMY_IDS as readonly string[]).includes(e.art));assert.equal(e.boss,undefined);
+    assert.ok((FOREST_ENEMY_IDS as readonly string[]).includes(e.art)||e.art==='forest-sovereign');assert.equal(e.boss,e.art==='forest-sovereign'?'forest-sovereign':undefined);
     assert.ok(!/fire|undead|suture|crucible|kiln|crownfire|hellhound|imp/i.test(e.art));
-    assert.ok(e.moves.every(m=>m.targeting&&m.kind!=='summon'));
+    assert.ok(e.moves.every(m=>m.targeting&&(m.kind!=='summon'||e.boss==='forest-sovereign')));
    }
   }
   assert.deepEqual(generateForestJourney(seed),journey);
@@ -70,7 +70,7 @@ test('forest intents preserve Defender and sweep counterplay with zero, one and 
 test('forest budgets escalate against earned upgrades without scaling to player build',()=>{
  const battles=generateForestJourney(29).nodes.filter(n=>n.kind!=='shop');
  const hp=(n:typeof battles[number])=>[...n.encounter.enemies,...n.encounter.reserves||[]].reduce((sum,e)=>sum+e.hp,0);
- assert.equal(hp(battles[0]),84);assert.ok(hp(battles[9])>hp(battles[0])*2);assert.equal(hp(battles[11]),320);
+ assert.equal(hp(battles[0]),84);assert.ok(hp(battles[9])>hp(battles[0])*2);assert.equal(hp(battles[11]),240);
  assert.ok(battles[11].encounter.enemies.some(e=>e.moves.some(m=>m.targeting==='sweep')));
  assert.deepEqual(restore(save(newInfernalRun(29))),newInfernalRun(29));
 });

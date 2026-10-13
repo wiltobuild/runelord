@@ -899,6 +899,9 @@ footer i {
   color: #ab703c;
   margin: 0 8px;
 }
+
+/* A failed clip must never paint a fallback over the previous animated body. */
+.hero-canvas.hero-load-error canvas { visibility: hidden; }
 .loading {
   height: 100vh;
   display: flex;
@@ -1339,3 +1342,35 @@ footer i {
   .overlay h2 { font-size: 30px; margin: 5px 0; }
   .overlay p { font-size: 11px; }
 }
+/* Runeblade resources preserve the Obsidian HUD's existing sockets. */
+.corpse-crystal { filter: hue-rotate(155deg) saturate(.65); }
+.corpse-crystal strong, .corpse-crystal > span { filter: hue-rotate(-155deg); }
+.corpse-crystal .corpse-glyph { position:absolute; font-size:54px; color:#b7e9fa; left:14px; top:3px; text-shadow:0 0 12px #65bade; }
+.corpse-cost-badge { position:absolute; z-index:2; bottom:5px; left:4px; right:4px; padding:4px 2px; border:1px solid #7dafc7; border-radius:3px; background:#102631f2; color:#d6f4ff; font-size:10px; font-weight:700; text-align:center; letter-spacing:.03em; pointer-events:none; }
+.corpse-payment-active { background:#133e51; border-color:#b8f0ff; box-shadow:0 0 9px #67cffb77; }
+.runeblade-plaque.chosen { border-color:#9cddf4; box-shadow:0 0 22px #76c9f033; }
+.runeblade-plaque .character-availability { color:#a7e7fa; }
+.battle-ui .corpse-crystal:after { background:linear-gradient(125deg,#d8f4ffaa 0 48%,#23567488 49%); }
+.battle-ui .corpse-crystal > .corpse-glyph { top:-4px; left:0; width:100%; font-size:50px; color:#c4efff; }
+.battle-ui .corpse-crystal { filter:none; }
+.battle-ui .corpse-crystal strong, .battle-ui .corpse-crystal > span { filter:none; }
+.battle-ui .corpse-crystal > span:not(.corpse-glyph) { color:#bde6f7; }
+
+/* Hellbound Legion: live progression and formation thresholds. */
+.legion-rank{display:flex;justify-content:center;gap:9px;color:#f0c782;font:600 10px/1.3 Georgia,serif;white-space:nowrap;text-shadow:0 1px 3px #000;margin:1px 0}
+.legion-status{position:absolute;top:132px;left:360px;z-index:80;display:flex;gap:14px;color:#ceb999;font:12px/1.4 Georgia,serif;pointer-events:none;text-shadow:0 2px 3px #000}
+.legion-status span{padding:3px 7px;background:#150e11c9;border-bottom:1px solid #67503c;border-radius:3px}.legion-status .ready{color:#ffe3a8;border-color:#efb765}.legion-status b{margin-left:5px}
+
+.legion-review-links{position:absolute;top:163px;left:360px;z-index:85;display:flex;gap:12px;font:12px Georgia,serif}.legion-review-links a{color:#eac58f;background:#170e16d9;padding:4px 7px;border-radius:3px}
+
+/* Thin crimson currents climb the silhouette; intensity builds mostly near rank ten. */
+.demonic-rank-aura { position:absolute; pointer-events:none; z-index:1; left:-5%; right:-5%; bottom:0; height:100%; opacity:var(--rank-aura-opacity); overflow:visible; }
+.demonic-rank-aura > i { position:absolute; bottom:0; height:28%; border-radius:65% 35% 60% 40%; background:linear-gradient(to top,transparent 0%,#8e001d 24%,#ff2547 76%,#ff795c 90%,transparent 100%); filter:drop-shadow(0 0 2px #ed1638); transform-origin:50% 100%; animation:demonic-energy-rise 3s linear infinite; will-change:transform,opacity; }
+@keyframes demonic-energy-rise {
+  0% {transform:translate(0,10%) scaleX(.65);opacity:0;}
+  18% {opacity:.8;}
+  52% {transform:translate(var(--wisp-drift),-170%) scaleX(1);opacity:1;}
+  82% {opacity:.45;}
+  100% {transform:translate(0,-345%) scaleX(.35);opacity:0;}
+}
+@media(prefers-reduced-motion:reduce) { .demonic-rank-aura > i {animation:none;transform:translateY(-90%);opacity:.3;} }

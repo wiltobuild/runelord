@@ -1,0 +1,13 @@
+
+> runelord@0.1.0 sim
+> tsx tools/sim/warlock.ts --deck=hellbound --runs=100
+
+{
+  "runs": 100,
+  "starterDeck": "hellbound",
+  "wins": 96,
+  "losses": 4,
+  "softLocks": 0,
+  "identicalReplays": 100,
+  "maxActions": 636
+}

@@ -1,0 +1,16 @@
+
+> runelord@0.1.0 sim
+> tsx tools/sim/warlock.ts
+
+C:\Users\wilsh\Projects\runelord\packages\engine\index.ts:754
+    if (s.phase !== "combat") throw Error("Combat has ended.");
+                                    ^
+
+Error: Combat has ended.
+    at dispatch (C:\Users\wilsh\Projects\runelord\packages\engine\index.ts:754:37)
+    at <anonymous> (C:\Users\wilsh\Projects\runelord\tools\sim\warlock.ts:37:11)
+    at ModuleJob.run (node:internal/modules/esm/module_job:439:25)
+    at async node:internal/modules/esm/loader:643:26
+    at async asyncRunEntryPointWithESMLoader (node:internal/modules/run_main:101:5)
+
+Node.js v24.18.0

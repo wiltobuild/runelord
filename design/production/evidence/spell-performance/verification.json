@@ -1,0 +1,14 @@
+{
+  "date": "2026-10-12",
+  "scope": "Existing procedural spell and summon VFX performance, forest spell frame transitions; no gameplay timing or authored creature frame changes",
+  "checkout": "runelord (active Vite server on port4320)",
+  "benchmark": {
+    "method": "Browser requestAnimationFrame deltas for6seconds while production SpellEffects renders8 staggered fire/conflagrate/summon/ward effects in1672x600 arena fixture. Same browser session/display and fixture before/after. Local rendering stress test, not guaranteed gameplay FPS across hardware.",
+    "before": {"fps":24.466,"frames":147,"p95FrameMs":133.2,"framesOver33ms":84},
+    "afterCold": {"fps":114.508,"frames":688,"p95FrameMs":8.4,"framesOver33ms":4},
+    "afterRepeat": {"fps":119.486,"frames":717,"p95FrameMs":8.4,"framesOver33ms":0}
+  },
+  "changes": ["Cache existing flame shapes and radial glows rather than rerasterizing blurred vector shapes per particle", "Cache summon floor glyph; animate rotation and particle positions at display refresh rate", "Use cached ember glows instead of76 live shadow blurs per summon frame", "Match canvas backing resolution to displayed HUD size", "Skip expired effects and stop idle RAF loops", "Blend forest spell image boundaries over at most70ms while preserving authored durations"],
+  "verification": ["npm run build passed including TypeScript", "Browser error log empty", "Fire trails and summon portal screenshot visually inspected", "All three forest spells screenshot visually inspected", "Original release/travel/damage timing unchanged"],
+  "screenshots": ["smooth-spells.png", "forest-spell-smoothing.png"]
+}

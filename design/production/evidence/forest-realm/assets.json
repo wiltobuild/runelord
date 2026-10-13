@@ -1,0 +1,232 @@
+{
+  "sourceRevision": "d00c303",
+  "status": "passed",
+  "actors": [
+    {
+      "id": "cairnback-hermit",
+      "frames": 24,
+      "encodedBytes": 1474446,
+      "decodedBytes": 19267584,
+      "states": [
+        "idle",
+        "attack",
+        "hit",
+        "wounded_idle",
+        "die",
+        "guard"
+      ],
+      "impactMs": 180
+    },
+    {
+      "id": "cairnwheel-witness",
+      "frames": 24,
+      "encodedBytes": 1069636,
+      "decodedBytes": 15335424,
+      "states": [
+        "idle",
+        "attack",
+        "hit",
+        "wounded_idle",
+        "die",
+        "spawn"
+      ],
+      "impactMs": 180
+    },
+    {
+      "id": "gallows-orchard",
+      "frames": 16,
+      "encodedBytes": 1196030,
+      "decodedBytes": 8548992,
+      "states": [
+        "idle",
+        "attack",
+        "hit",
+        "wounded_idle",
+        "die"
+      ],
+      "impactMs": 150
+    },
+    {
+      "id": "inkvein-adjudicator",
+      "frames": 16,
+      "encodedBytes": 1270714,
+      "decodedBytes": 11264000,
+      "states": [
+        "idle",
+        "attack",
+        "hit",
+        "wounded_idle",
+        "die"
+      ],
+      "impactMs": 90
+    },
+    {
+      "id": "ironfan-isopod",
+      "frames": 24,
+      "encodedBytes": 907214,
+      "decodedBytes": 19267584,
+      "states": [
+        "idle",
+        "attack",
+        "hit",
+        "wounded_idle",
+        "die",
+        "guard"
+      ],
+      "impactMs": 180
+    },
+    {
+      "id": "pleatcap-matriarch",
+      "frames": 16,
+      "encodedBytes": 1130586,
+      "decodedBytes": 8641664,
+      "states": [
+        "idle",
+        "attack",
+        "hit",
+        "wounded_idle",
+        "die",
+        "cast"
+      ],
+      "impactMs": 150
+    },
+    {
+      "id": "reedstep-ferryman",
+      "frames": 16,
+      "encodedBytes": 1224512,
+      "decodedBytes": 11264000,
+      "states": [
+        "idle",
+        "attack",
+        "hit",
+        "wounded_idle",
+        "die"
+      ],
+      "impactMs": 90
+    },
+    {
+      "id": "siltglass-colony",
+      "frames": 16,
+      "encodedBytes": 1014306,
+      "decodedBytes": 9577472,
+      "states": [
+        "idle",
+        "attack",
+        "hit",
+        "wounded_idle",
+        "die",
+        "guard"
+      ],
+      "impactMs": 150
+    },
+    {
+      "id": "spindleback-threadwarden",
+      "frames": 20,
+      "encodedBytes": 1690798,
+      "decodedBytes": 14080000,
+      "states": [
+        "idle",
+        "attack",
+        "hit",
+        "wounded_idle",
+        "die",
+        "cast"
+      ],
+      "impactMs": 90
+    },
+    {
+      "id": "tithe-mantis",
+      "frames": 20,
+      "encodedBytes": 1184720,
+      "decodedBytes": 16056320,
+      "states": [
+        "idle",
+        "attack",
+        "hit",
+        "wounded_idle",
+        "die"
+      ],
+      "impactMs": 180
+    },
+    {
+      "id": "briarjaw-ambusher",
+      "frames": 16,
+      "encodedBytes": 450260,
+      "decodedBytes": 8572160,
+      "states": [
+        "idle",
+        "attack",
+        "hit",
+        "wounded_idle",
+        "die"
+      ],
+      "impactMs": 150
+    },
+    {
+      "id": "tollbell-penitent",
+      "frames": 24,
+      "encodedBytes": 441414,
+      "decodedBytes": 9673728,
+      "states": [
+        "idle",
+        "attack",
+        "hit",
+        "wounded_idle",
+        "die",
+        "spawn"
+      ],
+      "impactMs": 180
+    }
+  ],
+  "audio": [
+    {
+      "id": "forest-explore",
+      "title": "Lanterns in the Hollow",
+      "format": 1,
+      "channels": 2,
+      "sampleRate": 48000,
+      "alignment": 6,
+      "bits": 24,
+      "samples": 4096000,
+      "duration": 85.33333333333333,
+      "loopStart": 0,
+      "loopEnd": 85.33333333333333,
+      "peakDbfs": -1.500001250761698,
+      "endpointDelta": [
+        0,
+        0
+      ],
+      "masterBytes": 24576112,
+      "runtimeBytes": 1548314,
+      "runtimeSha256": "d536fa455dca69e9908d6ffa1975b24ed42e7ed9283b48b91c46485cd682efc1",
+      "sha256": "9c7da4166d766b74d801e91d0047efea5cf0b7db3aed9eab2c43182bdbadc932"
+    },
+    {
+      "id": "forest-boss",
+      "title": "The Silent Conclave",
+      "format": 1,
+      "channels": 2,
+      "sampleRate": 48000,
+      "alignment": 6,
+      "bits": 24,
+      "samples": 3840000,
+      "duration": 80,
+      "loopStart": 0,
+      "loopEnd": 80,
+      "peakDbfs": -1.500001250761698,
+      "endpointDelta": [
+        0,
+        0
+      ],
+      "masterBytes": 23040112,
+      "runtimeBytes": 1583969,
+      "runtimeSha256": "bac90255a3b1fd64a53a113ab85dbdb3ad4dc09d2b3ed10f4e5e4e035389c008",
+      "sha256": "e788a64d74b74d43fff42b4cbeb760a72354f70135f92884ed1617bcb39f2d5c"
+    }
+  ],
+  "errors": [],
+  "limitations": [
+    "No new artwork approval implied. Existing sparse authored poses retain original detail variation.",
+    "Audio metadata/decoded sample checks do not replace listening. Independent in-game playback review is assigned to QA."
+  ]
+}

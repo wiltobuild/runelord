@@ -44,7 +44,7 @@ export class ScorePlayer {
       const response = await fetch(assetUrl(track.url));
       if (!response.ok) throw Error("Score unavailable");
       buffer = await this.ctx.decodeAudioData(await response.arrayBuffer());
-      if (INFERNAL_SCORES[id]) {
+      if (INFERNAL_SCORES[id] || id === "forest-explore" || id === "forest-boss") {
         // Vorbis can introduce tiny endpoint offsets after the master taper.
         const edge = Math.round(buffer.sampleRate * .004);
         for (let channel = 0; channel < buffer.numberOfChannels; channel++) {

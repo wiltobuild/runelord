@@ -1,0 +1,146 @@
+{
+  "schema": 1,
+  "id": "cinematic-summons32",
+  "status": "complete",
+  "outcome": "Create higher-quality right-facing Hellhound and Pit Brute animation packages with 32 authored whole-character frames each.",
+  "authorization": "User 2026-10-04 requests existing higher-quality start-menu demon summon designs, specifically battle-facing variants, animated with the 32-frame workflow. Exact source reuse is authorized by this request; gallery status remains unchanged.",
+  "contentIds": [
+    "summon-hellhound",
+    "summon-pit-brute"
+  ],
+  "owner": "root",
+  "integrationOwner": "root",
+  "reviewer": "runelord-rules-engineer (independent animation reviewer)",
+  "ownedPaths": [
+    "assets/characters/hellhound/animations/frames32-cinematic-r1",
+    "assets/characters/warlock-pit-brute/animations/frames32-cinematic-r1",
+    "design/production/packets/cinematic-summons32.json"
+  ],
+  "dependencies": [],
+  "exclusions": [
+    "Front-facing r6 menu variants",
+    "Runtime replacement or deployment of new animations",
+    "Changes to immutable source masters"
+  ],
+  "inputs": [
+    {
+      "path": "assets/cinematics/oath-intro/r3/hellhound.png",
+      "sha256": "f42e103c244b550e770f3a2d5bff02cc12d10f9532d545fe13ac5ea287c572f4"
+    },
+    {
+      "path": "assets/cinematics/oath-intro/r3/pit-brute.png",
+      "sha256": "0f8dc36570fd588701342dd9a89359bf1af59bf139fb2441ddf14f960b5a50b9"
+    }
+  ],
+  "animation": {
+    "method": "whole-character-frames",
+    "states": [
+      "idle",
+      "attack",
+      "hit",
+      "wounded_idle",
+      "spawn",
+      "die"
+    ],
+    "frameCounts": {
+      "idle": 4,
+      "attack": 8,
+      "hit": 4,
+      "wounded_idle": 4,
+      "spawn": 4,
+      "die": 8
+    },
+    "facing": "right",
+    "requiredStates": [
+      "idle",
+      "attack",
+      "hit",
+      "wounded_idle",
+      "spawn",
+      "die"
+    ]
+  },
+  "acceptance": [
+    {
+      "check": "Verify user-selected battle-facing source identities and hashes",
+      "status": "pass",
+      "evidence": [
+        {
+          "path": "assets/cinematics/oath-intro/r3/hellhound.png",
+          "sha256": "f42e103c244b550e770f3a2d5bff02cc12d10f9532d545fe13ac5ea287c572f4"
+        },
+        {
+          "path": "assets/cinematics/oath-intro/r3/pit-brute.png",
+          "sha256": "0f8dc36570fd588701342dd9a89359bf1af59bf139fb2441ddf14f960b5a50b9"
+        }
+      ]
+    },
+    {
+      "check": "32 transparent authored frames each, geometry/timing/terminal death manifests",
+      "status": "pass",
+      "evidence": [
+        {
+          "path": "assets/characters/hellhound/animations/frames32-cinematic-r1/animation.json",
+          "sha256": "2287cbe8c88fbb7c56315debd85253294f322385f073fe8bab3d00e4911d9b0d"
+        },
+        {
+          "path": "assets/characters/warlock-pit-brute/animations/frames32-cinematic-r1/animation.json",
+          "sha256": "f6d7ae56f4dbbaebfd9d4cd0ab8dc63fee2718e8809261db0961b1c005747c57"
+        }
+      ]
+    },
+    {
+      "check": "Independent full-frame and 96px review plus actual playback",
+      "status": "pass",
+      "evidence": [
+        {
+          "path": "design/production/evidence/cinematic-summons32/parent-playback.json",
+          "sha256": "1f2562fa146c2f0d6e660357be6b09ab41a9a3cc1165967bb0d0a2aac4f030cf"
+        },
+        {
+          "path": "design/production/evidence/cinematic-summons32/final-review.json",
+          "sha256": "98211857564197ab352883bb025d06626215e9ee9f529e1bfd61ba2cfd614a7f"
+        }
+      ]
+    },
+    {
+      "check": "Submit actual playable previews and key poses to canonical gallery",
+      "status": "pass",
+      "evidence": [
+        {
+          "path": "design/production/evidence/cinematic-summons32/gallery.json",
+          "sha256": "4ad0791ce74be20f5ec6112f47195f7b0bb1e426ce0af59d41f7935f43c4f3c6"
+        },
+        {
+          "path": "assets/approvals/inbox/hellhound-cinematic-32/repair-r2/motion-proof.mp4",
+          "sha256": "51b36bb3eb39b09b3ff67a821db57e1bf40148e25646195a51afe25452e8e94d"
+        },
+        {
+          "path": "assets/approvals/inbox/pit-brute-cinematic-32/r1/animation-review.gif",
+          "sha256": "60adbe6f337947a972fecdf6a658781b992196564cf376989526788e3ebb915d"
+        },
+        {
+          "path": "assets/approvals/inbox/hellhound-cinematic-32/repair-r2/contact-sheet.png",
+          "sha256": "618e179a54aed768fdd4af7072bb96343cf58ba9cd8e0e7f9901272206d342d7"
+        },
+        {
+          "path": "assets/approvals/inbox/pit-brute-cinematic-32/r1/contact-sheet.png",
+          "sha256": "25f43c361b04665c1cff8c9cbd18ae442e31efc2aca4d61c6fbaac2decb071f8"
+        }
+      ]
+    }
+  ],
+  "checkpoint": {
+    "completed": [
+      "Verified exact right-facing cinematic source masters",
+      "Generated and packed 32 authored transparent frames per creature",
+      "Repaired clipping, facing, and stray registration artifacts",
+      "Passed independent frame review and actual browser playback",
+      "Submitted playable previews and poses to canonical gallery",
+      "Prepared standalone downloadable asset package"
+    ],
+    "remaining": [],
+    "blockers": [],
+    "nextAction": "User gallery review; runtime integration is a separate task."
+  }
+}

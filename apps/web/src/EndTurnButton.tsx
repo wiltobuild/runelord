@@ -8,7 +8,6 @@ export function EndTurnButton({ busy, ending, disabled, turn, onClick }: {
       disabled={disabled} onClick={onClick} aria-busy={busy || ending}
       aria-label={ending ? "Resolving turn" : busy ? "Casting" : "End turn"}>
       <span className="end-turn-label">{ending ? "RESOLVING" : busy ? "CASTING" : "END TURN"}</span>
-      <span className="end-turn-runes" aria-hidden="true">◇ · ◈ · ◇</span>
     </button>
     <div className={`turn-embers ${ending ? "released" : ""}`} aria-hidden="true">
       {Array.from({length: 12}, (_, i) => <i key={i} style={{"--i": i, "--angle": `${i * 30}deg`} as CSSProperties} />)}

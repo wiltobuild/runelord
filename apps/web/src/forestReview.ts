@@ -19,7 +19,11 @@ export function forestReviewState(): State | null {
   state.phase = "map";
   state.room = 9;
   if (stage === "entry") return state;
-  const id = stage.startsWith("shop-") ? `forest-${stage}` : `forest-${Number(stage) || 1}`;
+  if (stage === "sovereign") {
+    state.maxHp = state.hp = 120; state.deckLevels = state.deck.map(()=>2);
+    state.inventory = ["healing-draught", "mana-potion"];
+  }
+  const id = stage === "sovereign" ? "forest-12" : stage.startsWith("shop-") ? `forest-${stage}` : `forest-${Number(stage) || 1}`;
   const index = state.journey.nodes.findIndex(node => node.id === id);
   if (index < 0) return state;
   state.journey.completed = state.journey.nodes.slice(0,index).map(node => node.id);

@@ -1,0 +1,127 @@
+{
+  "schema": 1,
+  "id": "gorthak-hd-ignivar-flight-2026-10-04",
+  "status": "complete",
+  "outcome": "High-detail Gorthak animation revision faithful to his approved master and an airborne Ignivar set using current imp wingbeat reference.",
+  "authorization": "User requested Gorthak animation quality repair and flying Igvar (Ignivar) using current imps as animation reference.",
+  "contentIds": [
+    "warlock-gorthak",
+    "warlock-ignivar"
+  ],
+  "owner": "animation-builders",
+  "integrationOwner": "root",
+  "reviewer": "independent-animation-qa",
+  "ownedPaths": [
+    "assets/characters/warlock-gorthak",
+    "assets/characters/warlock-ignivar",
+    "assets/approvals/inbox/warlock-gorthak",
+    "assets/approvals/inbox/warlock-ignivar",
+    "design/production/packets/gorthak-hd-ignivar-flight-2026-10-04.json",
+    "work/production/gorthak-hd-ignivar-flight-2026-10-04"
+  ],
+  "dependencies": [
+    "Approved masters and current imp flight reference"
+  ],
+  "exclusions": [
+    "No new variants",
+    "No automatic design approvals",
+    "No deployment",
+    "No invented gameplay integration for currently unmapped characters"
+  ],
+  "inputs": [
+    {
+      "path": "assets/approvals/inbox/warlock-gorthak/base-r1/warlock-gorthak-base-r1.png",
+      "sha256": "5e5700db391d6b020f31307d1af113102eb81f5d80575eef2c01777119f5c191",
+      "approval": {
+        "status": "Approved",
+        "at": "2026-10-02T22:20:49.176Z",
+        "evidenceId": "60fd264d-616b-4049-b781-ca8acf21506a",
+        "paths": [
+          "C:\\Users\\wilsh\\Projects\\runelord\\assets\\approvals\\inbox\\warlock-gorthak\\base-r1\\warlock-gorthak-base-r1.png"
+        ]
+      }
+    },
+    {
+      "path": "assets/approvals/inbox/warlock-ignivar/base-r1/warlock-ignivar-base-r1.png",
+      "sha256": "4a12ae1d443da8df804ae070efbb135342eed8b9a140d1137fff221ca5d27974",
+      "approval": {
+        "status": "Approved",
+        "at": "2026-10-02T22:20:56.989Z",
+        "evidenceId": "fc3fc045-9e89-468c-a0a7-36e445fcfb43",
+        "paths": [
+          "C:\\Users\\wilsh\\Projects\\runelord\\assets\\approvals\\inbox\\warlock-ignivar\\base-r1\\warlock-ignivar-base-r1.png"
+        ]
+      }
+    },
+    {
+      "path": "assets/characters/warlock-summons/animations/flight-r1/warlock-imp/animation.json",
+      "sha256": "da38329a3932331f617ad3f95675eb129f7e05abc8247846b9a05812e47adff9",
+      "approval": null
+    }
+  ],
+  "animation": {
+    "method": "whole-character-frames",
+    "requiredStates": [
+      "idle",
+      "act",
+      "hit",
+      "wounded_idle",
+      "die",
+      "spawn"
+    ]
+  },
+  "acceptance": [
+    {
+      "check": "Gorthak new native pose detail substantially exceeds original~195px silhouettes, faithful approved identity",
+      "status": "pass",
+      "evidence": [
+        {
+          "path": "work/production/gorthak-hd-ignivar-flight-2026-10-04/qa/final-review.json",
+          "sha256": "c9929aa1d286ebc0c9bf19ce469f1ee90800960689b0d5ad5ae72762e56c3e37"
+        }
+      ]
+    },
+    {
+      "check": "Ignivar sustained wingbeat flight, distinct combat states, wounded flight and terminal death",
+      "status": "pass",
+      "evidence": [
+        {
+          "path": "work/production/gorthak-hd-ignivar-flight-2026-10-04/qa/final-review.json",
+          "sha256": "c9929aa1d286ebc0c9bf19ce469f1ee90800960689b0d5ad5ae72762e56c3e37"
+        }
+      ]
+    },
+    {
+      "check": "Transparent geometry, timing, source registration and independent playback review",
+      "status": "pass",
+      "evidence": [
+        {
+          "path": "work/production/gorthak-hd-ignivar-flight-2026-10-04/qa/final-review.json",
+          "sha256": "c9929aa1d286ebc0c9bf19ce469f1ee90800960689b0d5ad5ae72762e56c3e37"
+        }
+      ]
+    },
+    {
+      "check": "New previews discoverable in gallery and left pending approval",
+      "status": "pass",
+      "evidence": [
+        {
+          "path": "work/production/gorthak-hd-ignivar-flight-2026-10-04/gallery-verification.json",
+          "sha256": "6766c8ae42e37316357679f3d317c9beee17589957aa1eba49e8d8ed3c8fcb40"
+        }
+      ]
+    }
+  ],
+  "checkpoint": {
+    "completed": [
+      "Generated native master-scale individual poses for both characters",
+      "Packed six states per character with transparent 1536px frames without artwork upscaling",
+      "Independent source and actual playback QA passed; repaired Gorthak wounded width discontinuity",
+      "Verified thirteen new state/combined previews in live gallery pending approval",
+      "User approved both delivered revisions in chat on 2026-10-05 and requested game integration"
+    ],
+    "remaining": [],
+    "blockers": [],
+    "nextAction": "Game integration tracked separately in runelord-tintfix-roguelike-main-push/design/production/packets/gorthak-ignivar-integration-2026-10-05.json"
+  }
+}

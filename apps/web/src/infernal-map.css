@@ -120,3 +120,10 @@
 @media(max-width:1100px){.infernal-atlas .atlas-title h1{font-size:26px}}
 @media(max-height:500px) and (orientation:landscape){.infernal-atlas .atlas-title{top:46%;height:31%}.infernal-atlas .atlas-title h1{font-size:clamp(17px,2.8vw,25px)}}
 @media(max-width:600px) and (orientation:portrait){.infernal-atlas .atlas-title{top:39%;height:22%}.infernal-atlas .atlas-title h1{font-size:20px}}
+/* Keep the selected location action above its artwork, at every map zoom. */
+.infernal-atlas .journey-node .atlas-node-label {
+  position:absolute;left:50%;bottom:calc(100% - 8px);transform:translateX(-50%);margin:0;z-index:5;
+}
+.infernal-atlas .journey-node.boss:has(.atlas-node-label) .atlas-location-flag {
+  bottom:calc(100% + 34px);
+}

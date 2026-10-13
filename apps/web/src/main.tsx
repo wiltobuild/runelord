@@ -1,3 +1,7 @@
+import {ARCTIC_REVIEW,arcticReviewState,arcticReviewAssets,arcticEncounter} from "./arcticReview";
+import { HELLBOUND_REVIEW, hellboundReviewState } from "./hellboundReview";
+import { cardArtwork } from "./cardPresentation";
+import { NeutralCard } from "./SoulforgeShop";
 import { infernalShopAppearance } from "../../../packages/engine/infernal";
 import { InfernalJourney } from "./InfernalJourney";
 import { ForestJourney } from "./ForestJourney";
@@ -10,14 +14,16 @@ import { createRoot } from "react-dom/client";
 import {
   cards,
   encounters,
-  starterDecks, cardTargetsUnit, items, type StarterDeckId,
-  type CardId,
+  starterDecks, runebladeSummons, cardTargetsUnit, items, type StarterDeckId,
+  isLegionKind, type CardId,
 } from "../../../packages/content/index";
 import {
-  newInfernalRun, activeEncounter, cardPower, canAddCard,
+  newInfernalRun, activeEncounter, cardEffectText, canAddCard,
+  usesSummonRules, warbandCapacity,
   dispatch,
   playable,
   manaCost,
+  cardPayment,
   intent,
   save,
   restore,
@@ -28,6 +34,8 @@ import {
 import { loadAssets, type Assets } from "./assets";
 import { Hero } from "./Hero";
 import { ActorSprite } from "./ActorSprite";
+import { summonDescription, summonPower, summonScorch } from "./summonDetails";
+import { LegionStatus } from "./LegionStatus";
 import { MinionDetails } from "./MinionDetails";
 import { LootReveal } from "./LootReveal";
 import { LootIcon } from "./LootIcon";
@@ -45,6 +53,7 @@ import { intentLabel } from "./intentLabel";
 import { layoutWarband, retreatGroundFormation, WARBAND_SPACE } from "./warbandLayout";
 import { packCrowdedWarband } from "./packedWarband";
 import "./hud.css";
+import "./runeblade-theme.css";
 import "./mobile.css";
 import { MobileShell } from "./MobileShell";
 const SAVE_KEY = "runelord-warlock-demo-v1";
@@ -75,6 +84,9 @@ function CardView({
   selected = false,
   cost,
   level = 0,
+  payment,
+  runebladeRules = 2,
+  summonRules = true,
 }: {
   id: CardId;
   assets: Assets;
@@ -83,30 +95,38 @@ function CardView({
   selected?: boolean;
   cost?: number;
   level?: number;
+  runebladeRules?: 1 | 2;
+  summonRules?: boolean;
+  payment?: {resource: "mana" | "corpses"; amount: number};
 }) {
   const c = cards[id];
-  const displayedCost = cost ?? (c.xCost ? "X" : c.cost);
+  const displayedCost = cost ?? (c.xCost ? "X" : Math.max(c.cost > 0 ? 1 : 0,c.cost-Math.floor(level/3)));
+  const effectText = cardEffectText(id,level,runebladeRules,summonRules);
+  const artwork = cardArtwork(assets,id,runebladeRules,summonRules);
+  const corpseSummon = id.startsWith("summon-") && id.slice(7) in runebladeSummons;
+  const costLabel = payment?.resource === "corpses" ? `${payment.amount} Corpses · Mana saved` : `${displayedCost} Mana${corpseSummon ? ` or ${displayedCost} Corpses` : ""}${c.cinders ? ` + ${c.cinders} Cinders` : ""}`;
   return (
     <button
       className={`card ${selected ? "selected" : ""}`}
       disabled={disabled}
       onClick={onClick}
-      aria-label={`${c.name}, ${displayedCost} Mana${c.cinders ? `, ${c.cinders} Cinders` : ""}. ${c.text}`}
+      aria-label={`${c.name}, ${costLabel}. ${effectText}`}
     >
-      {assets.cards[id] ? (
-        <img src={assets.cards[id]} alt="" draggable={false} />
-      ) : (
+      {artwork ? (
+        <img src={artwork} alt="" draggable={false} />
+      ) : id.startsWith("neutral-") ? <NeutralCard id={id} level={level}/> : (
         <div className="card-text">
           <span className="card-type">{c.rarity} · {c.type}</span><h3>{c.name}</h3>
-          <p>{c.text}</p><strong className="card-cost">{displayedCost} Mana{c.cinders ? ` + ${c.cinders} Cinders` : ""}</strong>
+          <p>{effectText}</p><strong className="card-cost">{displayedCost} Mana{c.cinders ? ` + ${c.cinders} Cinders` : ""}</strong>
         </div>
       )}
+      {corpseSummon && <span className={`corpse-cost-badge ${payment?.resource === "corpses" ? "corpse-payment-active" : ""}`}>{payment?.resource === "corpses" ? `${payment.amount} CORPSES` : `${displayedCost} MANA / CORPSES`}</span>}
       <span className="card-info">
         <strong>{c.name}{level > 0 ? ` · +${level}` : ""}</strong>
         <span>
-          {displayedCost} Mana{c.cinders ? ` + ${c.cinders} Cinders` : ""}
+          {costLabel}
         </span>
-        <span>{level > 0 ? `Level ${level} · ×${cardPower(level).toFixed(2)} primary power. Base: ` : ""}{c.text}</span>
+        <span>{effectText}</span>
       </span>
     </button>
   );
@@ -117,7 +137,7 @@ function App({ assets }: { assets: Assets }) {
   const [introStarted, setIntroStarted] = useState(false);
   const [starterDeck, setStarterDeck] = useState<StarterDeckId>("warband");
   const [saved, setSaved] = useState<State | null>(readSave),
-    [game, setState] = useState<State | null>(forestReviewState),
+    [game, setState] = useState<State | null>(()=>arcticReviewState()??hellboundReviewState()??forestReviewState()),
     [visual, setVisual] = useState<State | null>(null),
     [seed, setSeed] = useState(""),
     [selected, setSelected] = useState<CardInstance | null>(null),
@@ -131,9 +151,14 @@ function App({ assets }: { assets: Assets }) {
     [showDeck, setShowDeck] = useState(false),
     [log, setLog] = useState<string[]>([]),
     [dismiss, setDismiss] = useState<number | undefined>(),
+    [promotionRecipient, setPromotionRecipient] = useState<number | undefined>(),
     [musicError, setMusicError] = useState(false),
     [musicActive, setMusicActive] = useState(false);
   const state = visual ?? game;
+  const isRuneblade = state?.hero === "runeblade";
+  const runebladeRules = state?.runebladeRules ?? 1;
+  const summonRules = state ? usesSummonRules(state) : true;
+  const hasGravekeepersSeal = !!state?.relics.includes("gravekeepers-seal");
   const potionInventory = state?.inventory.filter(id => items[id].category === "potion") ?? [];
   const itemInventory = state?.inventory.filter(id => items[id].category === "item") ?? [];
   useEffect(() => {
@@ -168,7 +193,7 @@ function App({ assets }: { assets: Assets }) {
   const resolving = useRef(false);
   const room = state?.room ?? 0,
     phase = state?.phase,
-    encounter = state ? activeEncounter(state) : encounters[0],
+    encounter = state ? ARCTIC_REVIEW ? arcticEncounter : activeEncounter(state) : encounters[0],
     track = journeyScore(state);
   const animate = (name: string) => {
     setAnimation(name);
@@ -176,6 +201,7 @@ function App({ assets }: { assets: Assets }) {
   };
   const director = useBattleDirector(assets, animate, (view) =>
     setVisual((current) => (current ? { ...current, ...view } : null)),
+    state?.hero ?? "warlock",
   );
   const warbandUnits = state ? [...state.units, ...director.ghosts.filter(g => !state.units.some(u => u.id === g.id))] : [];
   const regularFormation = layoutWarband(warbandUnits, assets);
@@ -198,7 +224,7 @@ function App({ assets }: { assets: Assets }) {
     }
   }, [assets, track, musicActive]);
   useEffect(() => {
-    if (!game || forestReviewActive) return;
+    if (!game || ARCTIC_REVIEW || HELLBOUND_REVIEW || forestReviewActive) return;
     try {
       localStorage.setItem(SAVE_KEY, save(game));
       setSaved(game);
@@ -239,6 +265,7 @@ function App({ assets }: { assets: Assets }) {
       setState(next);
       setLog((l) => [...l, ...next.events.map((e) => e.message)].slice(-40));
       setSelected(null);
+      setPromotionRecipient(undefined);
       setDismiss(undefined);
       setMessage("");
       if (animated) await director.run(before, next, action);
@@ -254,26 +281,41 @@ function App({ assets }: { assets: Assets }) {
       resolving.current = false;
     }
   };
+  const chooseUnit = (id:number) => {
+    if (!state || !selected || busy) return;
+    if (selected.id !== 'blood-ascension') { void act({type:'play',uid:selected.uid,unit:id}); return; }
+    const unit=state.units.find(u=>u.id===id && u.hp>0);
+    if (!unit) return;
+    if (promotionRecipient === undefined) {
+      if (!isLegionKind(unit.kind)) { setMessage('Choose a Legion soldier to receive three promotions.'); return; }
+      setPromotionRecipient(id);
+      setMessage(`Blood Ascension: ${unit.name} will gain three ranks. Choose a DIFFERENT summon to sacrifice, or choose another card to cancel.`);
+      return;
+    }
+    if(id===promotionRecipient) {setMessage('Choose a different summon to sacrifice.');return;}
+    void act({type:'play',uid:selected.uid,unit:promotionRecipient,sacrifice:id});
+  };
   const chooseCard = (c: CardInstance) => {
     if (!state || busy) return;
+    setPromotionRecipient(undefined);
     if (!playable(state, c)) {
-      setMessage("You need more Mana or Cinders.");
+      setMessage("This card needs enough resources, a valid target and room in the Warband. Pair recruits need two free slots; Hellgate needs three Maledictors and can open once per turn.");
       return;
     }
     if (cardTargetsUnit(c.id)) {
       setSelected(c);
-      setMessage(`Choose a demon for ${cards[c.id].name}.`);
-    } else if ((cards[c.id].type === "Attack" || c.id === "void-gaze" || c.id === "corrupting-touch")) {
+      setMessage(`Choose ${["field-promotion","battlefield-commission","veteran-command","blood-ascension"].includes(c.id) ? "a Legion soldier" : isRuneblade ? "an undead ally" : "a demon"} for ${cards[c.id].name}.`);
+    } else if ((cards[c.id].type === "Attack" || c.id === "void-gaze" || c.id === "corrupting-touch" || c.id === "frozen-grasp")) {
       setSelected(c);
       setMessage(`Choose a target for ${cards[c.id].name}.`);
     } else if (
       c.id.startsWith("summon") &&
-      state.units.length === 5 &&
+      state.units.length >= warbandCapacity(state) &&
       dismiss === undefined
     ) {
       setSelected(c);
       setMessage(
-        "Warband full. Select a demon to dismiss, then play the summon.",
+        isRuneblade ? "Warband full. Select an undead ally to dismiss, then play the summon. Dismissal grants no Corpse." : "Warband full. Select a demon to dismiss, then play the summon.",
       );
     } else act({ type: "play", uid: c.uid, dismiss });
   };
@@ -285,6 +327,7 @@ function App({ assets }: { assets: Assets }) {
   return (
     <main
       className={state ? "battle-ui" : "title"}
+      data-hero={state?.hero ?? "warlock"}
       style={
         {
           "--scene": `url(${assets.images[!state ? "demon-throne" : encounter.background]})`,
@@ -293,7 +336,7 @@ function App({ assets }: { assets: Assets }) {
       }
     >
       {!state && <AnimatedBackground scene="demon-throne" />}
-      {state && <><AnimatedBackground scene={encounter.background} /><HudTemplate /></>}
+      {state && <><AnimatedBackground scene={encounter.background} /><HudTemplate hero={state.hero} /></>}
       <header className="topbar">
         <button
           className="wordmark"
@@ -310,7 +353,7 @@ function App({ assets }: { assets: Assets }) {
         </button>
         <div className="chapter">
           {state
-            ? state.journey ? `${state.journey.realm === "forest" ? "FOREST REALM" : "INFERNAL BIOME"} · ${encounter.name}` : `ENCOUNTER ${room + 1} OF ${encounters.length}`
+            ? state.journey ? `${ARCTIC_REVIEW ? "ARCTIC PREVIEW" : state.journey.realm === "forest" ? "FOREST REALM" : "INFERNAL BIOME"} · ${encounter.name}` : `ENCOUNTER ${room + 1} OF ${encounters.length}`
             : "A DECKBUILDING ROGUELIKE"}
         </div>
         <nav>
@@ -371,22 +414,22 @@ function App({ assets }: { assets: Assets }) {
               <strong>{state.gold}</strong>
               <label>GOLD</label>
             </div>
-            <div className="stat corruption">
-              <HudStatIcon kind="corruption" />
+            <div className="stat corruption" title={isRuneblade ? "Every friendly or enemy death grants 1 Corpse, regardless of cause." : undefined}>
+              <HudStatIcon kind={isRuneblade ? "corpses" : "corruption"} />
               <strong>
-                {state.demonTurns
+                {isRuneblade ? state.corpses : state.demonTurns
                   ? `${state.demonTurns} turns`
                   : state.corruption}
-                <small>{state.demonTurns ? "" : " / 10"}</small>
+                <small>{isRuneblade || state.demonTurns ? "" : " / 10"}</small>
               </strong>
-              <label>{state.demonTurns ? "DEMON FORM" : "CORRUPTION"}</label>
+              <label>{isRuneblade ? "CORPSES" : state.demonTurns ? "DEMON FORM" : "CORRUPTION"}</label>
             </div>
           </div>
           {Object.keys(state.powers).length > 0 && <button className="active-powers" onClick={() => setInspection("powers")}>Active powers <strong>{Object.keys(state.powers).length}</strong></button>}
           <div className="inventory" role="group" aria-label="Items and potions">
             <div role="group" aria-label="Items and relics">
               <span className="inventory-category item-category">ITEMS</span>
-              <InventorySlot x={HUD.items[0]} label="Brand of the Pit - inspect relic" image={assets.images.brand}
+              <InventorySlot x={HUD.items[0]} label={isRuneblade ? (hasGravekeepersSeal ? "Gravekeeper’s Seal — inspect starting relic" : "Corpse Harvest — inspect ability") : "Brand of the Pit - inspect relic"} image={isRuneblade ? (assets.images["item-gravekeepers-seal"] ?? assets.images["relic-gravekeepers-seal"] ?? assets.images.runeblade) : assets.images.brand}
                 onClick={() => { sfx.play("item-brand"); setInspection("brand"); }} />
               {HUD.items.slice(1).map((x, i) => {
                 const item = itemInventory[i];
@@ -409,6 +452,8 @@ function App({ assets }: { assets: Assets }) {
             {state.inventory.length > 0 && <button className="inventory-overflow" onClick={() => setInspection("items")}>All supplies ({itemInventory.length} items / {potionInventory.length + Number(state.potion)} potions)</button>}
           </div>
           <section className="battlefield" aria-label="Combat arena">
+            <LegionStatus state={state} />
+            {HELLBOUND_REVIEW && <nav className="legion-review-links" aria-label="Legion battle lab"><a href="/hellbound-review">Formation / reset</a><a href="/hellbound-review?group=bodyguards">Bodyguards</a><a href="/hellbound-review?group=hellgate">Three Maledictors</a><a href="/hellbound-review?group=ten">Ten summons</a></nav>}
             <div className="turn-tag">
               <span>
                 {phase === "combat"
@@ -431,8 +476,9 @@ function App({ assets }: { assets: Assets }) {
               data-actor="hero"
               className={`hero-position ${state.demonTurns ? "empowered" : ""}`}
             >
-              <GuardAura active={state.guard > 0 && state.hp > 0 && phase === "combat"} />
+              <GuardAura hero={state.hero} active={state.guard > 0 && state.hp > 0 && phase === "combat"} />
               <Hero
+                hero={state.hero}
                 assets={assets}
                 animation={animation}
                 sequence={sequence}
@@ -441,9 +487,9 @@ function App({ assets }: { assets: Assets }) {
                 maxHp={state.maxHp}
               />
               <div className="hero-label">
-                WARLOCK{" "}
+                {isRuneblade ? "RUNEBLADE" : "WARLOCK"}{" "}
                 <span>
-                  {state.demonTurns ? "ASCENDED" : "BRAND OF THE PIT"}
+                  {isRuneblade ? "LORD OF THE FALLEN" : state.demonTurns ? "ASCENDED" : "BRAND OF THE PIT"}
                 </span>
               </div>
             </div>
@@ -455,13 +501,14 @@ function App({ assets }: { assets: Assets }) {
                   return (
                   <button
                     key={u.id}
-                    className={`unit formation-unit ${stack ? "packed-unit" : ""} summon-${u.kind} ${slot.airborne ? "airborne" : ""} ${dismiss === u.id ? "chosen" : ""} ${u.hp <= 0 ? "unit-dying" : ""}`}
-                    style={{left: slot.x, top: slot.top, width: slot.width, zIndex: stack ? 10 - stack.ids.indexOf(u.id) : undefined, "--summon-world-unit": `${slot.worldUnit}px`, "--flight-drop": `${WARBAND_SPACE.ground - slot.root}px`, "--summon-lower-padding": `${Math.max(0, slot.bounds.bottom - slot.root - 50)}px`, "--death-duration": `${assets.actors[slot.art]?.states.die.duration ?? 740}ms`} as CSSProperties}
+                    className={`unit formation-unit ${isRuneblade ? "runeblade-unit" : ""} ${stack ? "packed-unit" : ""} summon-${u.kind} ${slot.airborne ? "airborne" : ""} ${dismiss === u.id ? "chosen" : ""} ${u.hp <= 0 ? "unit-dying" : ""}`}
+                    style={{left: slot.x, top: slot.top, width: slot.width, zIndex: slot.depth, "--summon-world-unit": `${slot.worldUnit}px`, "--summon-status-top": `${slot.root-slot.top+2}px`, "--flight-drop": `${WARBAND_SPACE.ground - slot.root}px`, "--summon-lower-padding": `${Math.max(0, slot.bounds.bottom - slot.root - 50)}px`, "--flight-landing-duration": `${assets.actors[slot.art]?.flightLandingMs ?? 290}ms`, "--death-duration": `${assets.actors[slot.art]?.states.die.duration ?? 740}ms`} as CSSProperties}
                     data-actor={`unit-${u.id}`}
                     disabled={busy || u.hp <= 0}
-                    title={`${u.name}: ${u.power + (state.demonTurns ? 2 : 0)} Power, ${u.upkeep} Upkeep. ${u.defender ? "Defender intercepts hero attacks." : ""}`}
+                    title={summonDescription(u, state)}
+                    aria-label={summonDescription(u, state)}
                     onClick={() => {
-                      if (selected && cardTargetsUnit(selected.id)) { void act({ type: "play", uid: selected.uid, unit: u.id }); return; }
+                      if (selected && cardTargetsUnit(selected.id)) { chooseUnit(u.id); return; }
                       setDismiss(u.id);
                       setMessage(
                         `${u.name} selected for dismissal if the Warband is full.`,
@@ -472,24 +519,23 @@ function App({ assets }: { assets: Assets }) {
                     <ActorSprite
                       assets={assets}
                       art={slot.art}
+                      animationSeed={u.id}
+                      promotionRank={u.promotionRank}
                       cue={director.cues[`unit-${u.id}`]}
                       hp={u.hp}
                       maxHp={u.maxHp}
                       name={u.name}
                       className="summon-model"
                     />
-                    {!stack && <MinionDetails name={u.name} hp={u.hp} maxHp={u.maxHp} guard={u.guard} defender={u.defender} power={u.power + (state.demonTurns ? 2 : 0) + (u.kind === "hellhound" ? 2 * state.units.filter(x => x.kind === "hellhound" && x.id !== u.id).length : 0)} scorch={u.kind === "imp" ? 1 : 0} />}
+                    {!stack && <MinionDetails promotionRank={u.promotionRank} armor={u.armor} rot={isRuneblade ? u.rot : undefined} name={u.name} hp={u.hp} maxHp={u.maxHp} guard={u.guard} defender={u.defender} power={summonPower(u, state)} scorch={summonScorch(u, state)} />}
                   </button>
                 ); })}
                 {packed?.groups.map(group => {
                   const members = group.ids.map(id => warbandUnits.find(u => u.id === id)!).filter(u => u.hp > 0);
                   if (!members.length) return null;
-                  const damage = members.map(u => u.power + (state.demonTurns ? 2 : 0) + (u.kind === "hellhound" ? 2 * (state.units.filter(x => x.kind === "hellhound").length - 1) : 0));
-                  const equal = damage.every(n => n === damage[0]);
-                  return <div key={group.kind} className="packed-status" style={{left:group.x+(group.width-240)/2-(group.airborne?0:groundRetreat.shift),top:group.top,width:240}}>
-                    <div>{members[0].name} · ⚔ {equal ? damage[0] : damage.join("+")} {equal && <b>×{members.length}</b>}{group.kind === "imp" ? " · ✦ 1" : ""}</div>
-                    {members.map((u,i)=><button key={u.id} disabled={busy} className={dismiss===u.id?"selected":""} aria-label={`${u.name} ${i+1}, ${u.hp} of ${u.maxHp} health, ${u.guard} Guard`} title={`${u.defender?"Defender · ":""}${u.guard} Guard · ${u.upkeep} Upkeep`} onClick={()=>{if(selected && cardTargetsUnit(selected.id)){void act({type:"play",uid:selected.uid,unit:u.id});return;}setDismiss(u.id);setMessage(`${u.name} selected for dismissal if the Warband is full.`);}}>
-                      <div className="hp-track" style={{height:Math.min(16,46/members.length)}}><i style={{width:`${u.hp/u.maxHp*100}%`}}/><span>{u.hp} / {u.maxHp}{u.guard ? ` · ⬡ ${u.guard}` : ""}</span></div>
+                  return <div key={group.kind} className="packed-status" style={{left:group.x-(group.airborne?0:groundRetreat.shift),top:group.top,width:group.width}}>
+                    {members.map((u,i)=><button key={u.id} disabled={busy} className={dismiss===u.id?"selected":""} aria-label={`${u.name} ${warbandUnits.filter(member=>member.kind===u.kind&&member.hp>0).findIndex(member=>member.id===u.id)+1}, ${u.hp} of ${u.maxHp} health, ${u.guard} Guard`} title={summonDescription(u,state)} onClick={()=>{if(selected && cardTargetsUnit(selected.id)){chooseUnit(u.id);return;}setDismiss(u.id);setMessage(`${u.name} selected for dismissal if the Warband is full.`);}}>
+                      <MinionDetails promotionRank={u.promotionRank} armor={u.armor} rot={isRuneblade ? u.rot : undefined} name={u.name} hp={u.hp} maxHp={u.maxHp} guard={u.guard} defender={u.defender} power={summonPower(u,state)} scorch={summonScorch(u,state)} />
                     </button>)}
                   </div>;
                 })}
@@ -499,12 +545,12 @@ function App({ assets }: { assets: Assets }) {
               {state.enemies.map((e) => {
                 const m = intent(state, e);
                 const enemyName = e.name;
-                const moveDescription = m.kind === "summon" ? "Summons a demon ally" : m.kind === "shield" ? `Gains ${m.guard ?? 0} Guard` : `${m.damage} damage. ${intentLabel(state, m.targeting)}`;
+                const moveDescription = m.kind === "summon" ? (e.boss === "forest-sovereign" ? "Raises up to 2 living roots" : "Summons a demon ally") : m.kind === "shield" ? `Gains ${m.guard ?? 0} Guard` : `${m.damage} damage. ${intentLabel(state, m.targeting)}`;
                 return (
                   <button
                     key={e.id}
                     data-actor={`enemy-${e.id}`}
-                    className={`enemy ${e.boss ? "demon-lord" : ""} ${e.summonedBy ? "boss-summon" : ""} ${state.focus === e.id ? "focused" : ""} ${e.hp <= 0 ? "fallen" : ""} ${selected && e.hp > 0 ? "targetable" : ""}`}
+                    className={`enemy ${e.boss ? "demon-lord" : ""} ${e.art === "forest-sovereign" ? "forest-sovereign" : ""} ${e.art === "sovereign-root" ? "living-root" : ""} ${e.summonedBy ? "boss-summon" : ""} ${state.focus === e.id ? "focused" : ""} ${e.hp <= 0 ? "fallen" : ""} ${selected && e.hp > 0 ? "targetable" : ""}`}
                     disabled={e.hp <= 0 || phase !== "combat" || busy || !!(selected && cardTargetsUnit(selected.id))}
                     onClick={() =>
                       selected
@@ -533,7 +579,7 @@ function App({ assets }: { assets: Assets }) {
                     />
                     <div className="enemy-status">
                       <EnemyName name={enemyName} />
-                      {e.boss && <span className="boss-phase">{e.bossPhase === 2 ? "PHASE II - ENRAGED" : "PHASE I - INFERNAL SOVEREIGN"}</span>}{e.summonedBy && <span className="boss-phase">SUMMONED DEMON</span>}
+                      {e.boss && <span className="boss-phase">{e.bossPhase === 2 ? "PHASE II - ENRAGED" : e.boss === "forest-sovereign" ? "PHASE I - FOREST SOVEREIGN" : "PHASE I - INFERNAL SOVEREIGN"}</span>}{e.summonedBy && <span className="boss-phase">{e.art === "sovereign-root" ? "LIVING ROOT" : "SUMMONED DEMON"}</span>}
                       <div className="hp-track">
                         <i style={{ width: `${(e.hp / e.maxHp) * 100}%` }} />
                         <span>
@@ -542,7 +588,7 @@ function App({ assets }: { assets: Assets }) {
                       </div>
                       <small>
                         {e.guard > 0 ? `${e.guard} Guard | ` : ""}{e.sapped ? `${e.sapped} Sapped · ` : ""}{e.exposed ? `${e.exposed} Exposed · ` : ""}
-                        {e.scorch ? `✦ ${e.scorch} Scorch` : " "}
+                        {e.scorch ? `✦ ${e.scorch} Scorch` : " "}{e.chill ? ` · ❄ ${e.chill} Chill` : ""}{e.frozen ? " · FROZEN" : ""}
                         {state.focus === e.id && e.hp > 0
                           ? " · Focus target"
                           : ""}
@@ -553,10 +599,10 @@ function App({ assets }: { assets: Assets }) {
               })}
             </div>
             {director.husks.map(husk => <img key={husk.id} src={husk.src} style={husk.style} className="fire-death-husk" alt="" aria-hidden="true" />)}
-            <SpellEffects effects={director.effects} />
+            <SpellEffects effects={director.effects} assets={assets} />
             <div className="damage-numbers" aria-hidden="true">
               {director.numbers.map((n) => (
-                <span key={n.id} style={{ left: n.point.x, top: n.point.y }}>
+                <span key={n.id} className={n.cause === "scorch" ? "scorch-number" : undefined} data-label={n.cause === "scorch" ? n.label : undefined} style={{ left: n.point.x, top: n.point.y }}>
                   {n.label}
                 </span>
               ))}
@@ -582,16 +628,16 @@ function App({ assets }: { assets: Assets }) {
             )}
           </div>
           <section className="hand-zone">
-            <ResourceMeters mana={state.mana} cinders={state.cinders} upkeep={state.units.filter(u => u.hp > 0).reduce((sum, u) => sum + u.upkeep, 0)} />
+            <ResourceMeters runebladeRules={runebladeRules} hero={state.hero} corpses={state.corpses} mana={state.mana} cinders={state.cinders} upkeep={state.units.filter(u => u.hp > 0).reduce((sum, u) => sum + u.upkeep, 0)} />
             <button className="pile draw-pile" aria-label={`Draw pile, ${state.draw.length} cards`} onClick={() => setInspection("draw")}><b>{state.draw.length}</b><span>Draw<br />pile</span></button>
             <button className="pile discard-pile" aria-label={`Discard pile, ${state.discard.length} cards`} onClick={() => setInspection("discard")}><b>{state.discard.length}</b><span>Discard</span></button>
             <div key={`${room}-${state.turn}`} className={`hand ${busy && game?.history.at(-1)?.type === "end" ? "hand-ending" : ""}`} aria-label="Your hand">
               {state.hand.map((c) => (
-                <CardView
+                <CardView summonRules={summonRules} runebladeRules={runebladeRules}
                   key={c.uid}
                   id={c.id}
-                  cost={manaCost(state, c)}
-                  level={c.level}
+                  level={c.level ?? 0}
+                  cost={manaCost(state, c)} payment={cardPayment(state,c)}
                   assets={assets}
                   disabled={busy || !playable(state, c)}
                   selected={selected?.uid === c.uid}
@@ -625,11 +671,11 @@ function App({ assets }: { assets: Assets }) {
                 <p>Choose one card to add to your deck. Offerings favor your starting pact.</p>
                 <div className="reward-cards">
                   {state.rewards.map((id) => (
-                    <CardView
+                    <CardView summonRules={summonRules} runebladeRules={runebladeRules}
                       key={id}
                       id={id}
                       assets={assets}
-                      disabled={!!state.journey && !canAddCard(state,id)}
+                      disabled={!canAddCard(state,id)}
                       onClick={() => act({ type: "reward", card: id })}
                     />
                   ))}
@@ -711,12 +757,12 @@ function App({ assets }: { assets: Assets }) {
         </span>
       </footer>}
       {inspection && inspection !== "items" && inspection !== "powers" && state && <div className="overlay" onClick={() => setInspection(null)}>
-        <section className={`help-panel inspection-panel ${inspection === "brand" ? "item-inspection" : "pile-inspection"}`} role="dialog" aria-modal="true" aria-label={inspection === "brand" ? "Brand of the Pit" : `${inspection} pile`} onClick={e => e.stopPropagation()}>
+        <section className={`help-panel inspection-panel ${inspection === "brand" ? "item-inspection" : "pile-inspection"}`} role="dialog" aria-modal="true" aria-label={inspection === "brand" ? (isRuneblade ? (hasGravekeepersSeal ? "Gravekeeper’s Seal" : "Corpse Harvest") : "Brand of the Pit") : `${inspection} pile`} onClick={e => e.stopPropagation()}>
           <button className="close" autoFocus onClick={() => setInspection(null)}>Close ×</button>
-          <div className="inspection-kicker">{inspection === "brand" ? "RELIC OF THE NINTH PIT" : "THE WARLOCK’S GRIMOIRE"}</div>
-          <h2>{inspection === "brand" ? "Brand of the Pit" : `${inspection === "draw" ? "Draw" : "Discard"} pile`}</h2>
-          {inspection === "brand" ? <><div className="relic-display"><img className="inspected-item" src={assets.images.brand} alt="Brand of the Pit" /></div><div className="relic-description"><p>Start combat with <strong>3 Cinders.</strong></p><p>Gain <strong>1 Cinder</strong> whenever you lose HP on your turn.</p></div><div className="relic-status"><span aria-hidden="true">◆</span> PASSIVE ITEM · ALWAYS ACTIVE</div></> : <div className="deck-grid">
-            {(inspection === "draw" ? [...state.draw].sort((a, b) => a.id.localeCompare(b.id)) : state.discard).map(c => <CardView key={c.uid} id={c.id} level={c.level} cost={manaCost(state,c)} assets={assets} />)}
+          <div className="inspection-kicker">{isRuneblade ? "THE RUNEBLADE’S CODEX" : inspection === "brand" ? "RELIC OF THE NINTH PIT" : "THE WARLOCK’S GRIMOIRE"}</div>
+          <h2>{inspection === "brand" ? (isRuneblade ? (hasGravekeepersSeal ? "Gravekeeper’s Seal" : "Corpse Harvest") : "Brand of the Pit") : `${inspection === "draw" ? "Draw" : "Discard"} pile`}</h2>
+          {inspection === "brand" && isRuneblade ? <><div className="relic-display"><img className="inspected-item" src={assets.images["item-gravekeepers-seal"] ?? assets.images["relic-gravekeepers-seal"] ?? assets.images.runeblade} alt="Gravekeeper’s Seal" /></div><h3>{hasGravekeepersSeal ? "Begin each combat with 1 additional Corpse." : "Death fuels your army."}</h3><p>Every friendly or enemy death grants 1 Corpse, regardless of how it died.{state.runebladeRules === 2 && " After victory, each surviving summon returns as 1 Corpse; this conversion is not a death."}</p><p>When Corpses cover a summon’s full Mana cost, casting it automatically spends that many Corpses instead. Otherwise, it spends Mana. Resources are never mixed.</p></> : inspection === "brand" ? <><div className="relic-display"><img className="inspected-item" src={assets.images.brand} alt="Brand of the Pit" /></div><div className="relic-description"><p>Start combat with <strong>3 Cinders.</strong></p><p>Gain <strong>1 Cinder</strong> whenever you lose HP on your turn.</p></div><div className="relic-status"><span aria-hidden="true">◆</span> PASSIVE ITEM · ALWAYS ACTIVE</div></> : <div className="deck-grid">
+            {(inspection === "draw" ? [...state.draw].sort((a, b) => a.id.localeCompare(b.id)) : state.discard).map(c => <CardView summonRules={summonRules} runebladeRules={runebladeRules} key={c.uid} id={c.id} level={c.level ?? 0} assets={assets} />)}
             {!state[inspection].length && <p>This pile is empty.</p>}
           </div>}
         </section>
@@ -755,13 +801,13 @@ function App({ assets }: { assets: Assets }) {
             <button className="close" onClick={() => setShowHelp(false)}>
               Close ×
             </button>
-            <div className="eyebrow">THE WARLOCK'S BARGAIN</div>
+            <div className="eyebrow">{isRuneblade ? "THE RUNEBLADE’S OATH" : "THE WARLOCK’S BARGAIN"}</div>
             <h2>Power has a price.</h2>
             <label className="effects-volume">Sound effects
               <input aria-label="Sound effects volume" type="range" min="0" max="1" step=".05" value={effectsVolume} onChange={e=>{const value=Number(e.target.value);setEffectsVolume(value);sfx.setVolume(value);}} />
               <button onClick={()=>{const value=effectsVolume?0:.6;setEffectsVolume(value);sfx.setVolume(value);}}>{effectsVolume ? "Mute effects" : "Enable effects"}</button>
             </label>
-            <div className="help-grid">
+            {isRuneblade ? <div className="help-grid"><article><h3>01 · Cast</h3><p>Draw 5 cards and gain 3 Mana each turn. Select attacks then their targets. Click summons and skills to cast them.</p></article><article><h3>02 · Raise</h3><p>Every summon can use Corpses. If you have Corpses equal to its current Mana cost, it automatically spends Corpses instead of Mana. Otherwise it spends Mana.</p></article><article><h3>03 · Harvest</h3><p>Every friendly or enemy death grants exactly 1 Corpse, regardless of cause. Corpses persist across battles.{state?.runebladeRules === 2 && " Victory converts each surviving summon into 1 Corpse."}{hasGravekeepersSeal && " Your Seal grants 1 additional Corpse at the start of combat."} Dismissing a healthy ally is not a death.</p></article><article><h3>04 · Command</h3><p>Your undead attack the focus target after your turn. Rot damages them after each attack and grows. Defenders protect you. Chill weakens enemy attacks; enough Chill freezes them. Heavy attacks shatter Frozen enemies.</p></article></div> : <div className="help-grid">
               <article>
                 <h3>01 · Cast</h3>
                 <p>
@@ -773,9 +819,9 @@ function App({ assets }: { assets: Assets }) {
               <article>
                 <h3>02 · Summon</h3>
                 <p>
-                  Demons attack the focus target, front to back, after your
+                  Demons act front to back after your
                   turn. Imps also act immediately. Cinders pay Upkeep; any
-                  shortfall costs HP. The front is the newest demon.
+                  shortfall costs HP. The front is the newest demon. {summonRules ? "Pit Brutes cleave every enemy; support demons use their own actions. Empower Demon transforms a lesser demon into its Arch-form. Only one of each Archdemon can be alive at a time." : "Pit Brutes strike the focus target and protect you with Defender."}
                 </p>
               </article>
               <article>
@@ -795,9 +841,10 @@ function App({ assets }: { assets: Assets }) {
                   represents this form in the demo.
                 </p>
               </article>
-            </div>
+            </div>}
+            {state?.starterDeck === "hellbound" && <div className="help-grid"><article><h3>Hellbound veterans</h3><p>Summons leave after each battle. Each promoted recruit saves its rank for the next summon of that kind; one summon consumes one saved rank. Each promotion adds 2 Power, 2 maximum HP, heals 2 HP and adds 1 Armor. Armor reduces every incoming hit; Guard is temporary.</p></article><article><h3>Formation payoffs</h3><p>Two Legionaries share hostile damage aimed at the Warlock, even attacks that ignore Defender. Health paid by your own cards is still yours to pay. Three Maledictors open a Hellgate at turn end, damaging and scorching all enemies and promoting every soldier, once per turn.</p></article><article><h3>Recruit carefully</h3><p>The Warband holds up to ten units in new runs. Muster the Legion and Pike Detail each need two empty slots. Blood Ascension sacrifices a chosen summon to promote another soldier three times. Saved ranks return on resummoning, including after death or sacrifice.</p></article></div>}
             <p className="muted">
-              Conquer the Infernal realm, then carry your deck and upgrades through twelve forest encounters, with a shop after every three battles. Choose from {Object.keys(cards).length} cards and three starting pacts. Your summoned demons use their original character artwork.
+              Conquer the Infernal realm, then carry your deck and upgrades through twelve forest encounters, with a shop after every three battles. Choose one of three starter decks for your character. Shops and battle rewards support your chosen hero.
               Enemy animations and spell impacts play in combat order.
             </p>
             <button className="primary" onClick={() => setShowHelp(false)}>
@@ -824,7 +871,7 @@ function App({ assets }: { assets: Assets }) {
                 if(groups[key]) groups[key].count++; else groups[key]={id,level,count:1};
                 return groups;
               },{})).map(({id,level,count}) => <div key={`${id}:${level}`}>
-                <CardView id={id} level={level} cost={Math.max(cards[id].cost>0?1:0,cards[id].cost-Math.floor(level/3))} assets={assets} />
+                <CardView summonRules={summonRules} runebladeRules={runebladeRules} id={id} level={level} cost={Math.max(cards[id].cost>0?1:0,cards[id].cost-Math.floor(level/3))} assets={assets} />
                 <span>× {count}{level>0?` · Level ${level}`:""}</span>
               </div>)}
             </div>
@@ -841,7 +888,13 @@ root.render(
   </div>,
 );
 loadAssets()
-  .then((assets) => root.render(<MobileShell><App assets={assets} /></MobileShell>))
+  .then(async (assets) => {
+    arcticReviewAssets(assets);
+    if (import.meta.env.DEV && location.pathname === "/runeblade-effects-review") { const {RunebladeEffectsReview}=await import("./RunebladeEffectsReview"); root.render(<RunebladeEffectsReview assets={assets}/>); } else if (import.meta.env.DEV && location.pathname === "/nature-shield-review") {
+      const { NatureShieldReview } = await import("./NatureShieldReview");
+      root.render(<NatureShieldReview />);
+    } else root.render(<MobileShell><App assets={assets} /></MobileShell>);
+  })
   .catch((e) =>
     root.render(
       <div className="loading">
@@ -849,4 +902,3 @@ loadAssets()
       </div>,
     ),
   );
-

@@ -1,0 +1,147 @@
+{
+  "schema": 1,
+  "id": "ice-monsters-20-2026-10-12",
+  "status": "complete",
+  "outcome": "A reviewable roster of 20 distinct ice monsters using existing artwork and 16 new base designs.",
+  "authorization": "User requested spawn Runelord agents, inspect new ice assets, fill roster to 20 unique monsters with varied archetypes using skills and past style examples.",
+  "contentIds": [
+    "frost-sovereign",
+    "dragon-frost-mammoth",
+    "dragon-rime-antler",
+    "abomination-rime-hauler",
+    "rimejaw-scavenger",
+    "shardstep-skitterer",
+    "whiteout-ray",
+    "mireice-gulper",
+    "coffinback-bastion",
+    "knellbound-mourner",
+    "rimehook-dredger",
+    "hollowmask-oracle",
+    "rimeblight-colony",
+    "shardlance-stalker",
+    "hoarveil-crone",
+    "iceclamp-bombardier",
+    "paleveil-moth",
+    "cairnfrost-ursine",
+    "splinterhost",
+    "avalanche-colossus"
+  ],
+  "owner": "runelord-producer",
+  "integrationOwner": "runelord-producer",
+  "reviewer": "ice_asset_audit and encounter_designer cross-review",
+  "ownedPaths": [
+    "assets/characters/*/base/ice-roster-r1/",
+    "assets/approvals/inbox/*/ice-roster-r1/",
+    "assets/characters/ice-roster-2026-10-12/",
+    "design/production/packets/ice-monsters-20-2026-10-12.json"
+  ],
+  "dependencies": [
+    "Built-in image generation",
+    "Approved Runelord gallery style references"
+  ],
+  "exclusions": [
+    "No game code integration",
+    "No animation or cosmetic variants",
+    "No self approval",
+    "Sovereign alternatives count once",
+    "Existing allied summons excluded except retained Rime Hauler concept with adaptation limitation"
+  ],
+  "inputs": [
+    {
+      "sha256": "adbd33fb14e91b761f355ffeb9966cb262aacca78429099ec09b0fab9faf84ef",
+      "path": "assets/heroes/references/runeblade/runeblade-base-r1.png"
+    }
+  ],
+  "animation": null,
+  "acceptance": [
+    {
+      "id": "count",
+      "description": "Exactly 20 distinct roster entries with actual art paths",
+      "status": "pass",
+      "evidence": [
+        {
+          "sha256": "a2a3aab6e2a4518c5946b1a62a18b08f397e2c8b37ea95806e92788d3c59e847",
+          "path": "assets/characters/ice-roster-2026-10-12/roster.json"
+        },
+        {
+          "sha256": "a7efc65e94aaedc49e84f72e9dce839578e3a20623f6e39e70c9147990ae838d",
+          "path": "assets/characters/ice-roster-2026-10-12/verification.json"
+        },
+        {
+          "sha256": "66d7f40b4385f5c48301bd608d6bd4feeccd794685d638cfb29908f43b147a68",
+          "path": "assets/characters/ice-roster-2026-10-12/encounter-cross-review.json"
+        },
+        {
+          "sha256": "7e96780e87aaaa9dc0d93a614ad29b36fee394d49f0f61ae97e4ba9831aac1d7",
+          "path": "assets/characters/ice-roster-2026-10-12/audit-cross-review.json"
+        }
+      ],
+      "check": "Exactly 20 distinct roster entries with actual art paths"
+    },
+    {
+      "id": "gallery",
+      "description": "All sixteen new masters appear in the canonical gallery",
+      "status": "pass",
+      "evidence": [
+        {
+          "sha256": "a2a3aab6e2a4518c5946b1a62a18b08f397e2c8b37ea95806e92788d3c59e847",
+          "path": "assets/characters/ice-roster-2026-10-12/roster.json"
+        },
+        {
+          "sha256": "a7efc65e94aaedc49e84f72e9dce839578e3a20623f6e39e70c9147990ae838d",
+          "path": "assets/characters/ice-roster-2026-10-12/verification.json"
+        },
+        {
+          "sha256": "66d7f40b4385f5c48301bd608d6bd4feeccd794685d638cfb29908f43b147a68",
+          "path": "assets/characters/ice-roster-2026-10-12/encounter-cross-review.json"
+        },
+        {
+          "sha256": "7e96780e87aaaa9dc0d93a614ad29b36fee394d49f0f61ae97e4ba9831aac1d7",
+          "path": "assets/characters/ice-roster-2026-10-12/audit-cross-review.json"
+        }
+      ],
+      "check": "All sixteen new masters appear in the canonical gallery"
+    },
+    {
+      "id": "style",
+      "description": "Actual approved references and full size/small size visual review",
+      "status": "pass",
+      "evidence": [
+        {
+          "sha256": "a2a3aab6e2a4518c5946b1a62a18b08f397e2c8b37ea95806e92788d3c59e847",
+          "path": "assets/characters/ice-roster-2026-10-12/roster.json"
+        },
+        {
+          "sha256": "a7efc65e94aaedc49e84f72e9dce839578e3a20623f6e39e70c9147990ae838d",
+          "path": "assets/characters/ice-roster-2026-10-12/verification.json"
+        },
+        {
+          "sha256": "66d7f40b4385f5c48301bd608d6bd4feeccd794685d638cfb29908f43b147a68",
+          "path": "assets/characters/ice-roster-2026-10-12/encounter-cross-review.json"
+        },
+        {
+          "sha256": "7e96780e87aaaa9dc0d93a614ad29b36fee394d49f0f61ae97e4ba9831aac1d7",
+          "path": "assets/characters/ice-roster-2026-10-12/audit-cross-review.json"
+        }
+      ],
+      "check": "Full size and small-scale design review performed; technical caveats retained separately, no runtime readiness claimed"
+    }
+  ],
+  "checkpoint": {
+    "completed": [
+      "20 unique roster identities, 4 retained + 16 new",
+      "All selected asset hashes verified in canonical gallery",
+      "User-requested Colossus texture revision saved",
+      "Cross-review and per-asset caveats retained"
+    ],
+    "remaining": [],
+    "blockers": [],
+    "nextAction": "User design review in canonical gallery; animation and runtime prep outside this artwork batch scope"
+  },
+  "limitations": [
+    "Sovereign final selection pending",
+    "Rime Hauler enemy-facing adaptation pending",
+    "Concept art only; no animation/runtime integration",
+    "Motion-safe padding and animation preparation remain"
+  ]
+}

@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "ice-detail-2026-10-13",
+  "status": "ready",
+  "outcome": "Seven ice monsters with moderate designed material detail between supplied clean and textured endpoints, preserving crisp silhouettes and smooth cel shading.",
+  "authorization": "User explicitly requested higher detail pass for Hollowmask, Splinterhost, Whiteout Ray, Cairnfrost Ursine, Paleveil, Iceclamp, Shardstep on 2026-10-13. Later user correction: texture went too far, looked blurry/AI-generated; tone back significantly especially edges. User then supplied clean and textured Hollowmask endpoints and specified somewhere between them.",
+  "contentIds": [
+    "hollowmask-oracle",
+    "splinterhost",
+    "whiteout-ray",
+    "cairnfrost-ursine",
+    "paleveil-moth",
+    "iceclamp-bombardier",
+    "shardstep-skitterer"
+  ],
+  "owner": "runelord-producer",
+  "integrationOwner": "runelord-producer",
+  "reviewer": "Parent independent visual review",
+  "ownedPaths": [
+    "assets/characters/*/base/ice-detail-r3-2026-10-13/",
+    "assets/characters/ice-detail-2026-10-13/",
+    "assets/approvals/inbox/*/ice-detail-r3-2026-10-13/"
+  ],
+  "dependencies": [],
+  "exclusions": [
+    "No animation or runtime integration",
+    "No changes to old bytes or approval decisions"
+  ],
+  "inputs": [
+    {
+      "path": "assets/characters/avalanche-colossus/base/ice-roster-r2/base.png",
+      "sha256": "c4c6ae8b6243ff2f2631cd84632dd4b0c45c8178704f75b2fbc2293f9f12b4d9"
+    },
+    {
+      "sha256": "5e13b63b16d89e0b6c1c79fb50d0220a356b1b87bf8592ee09b54d585eb146b9",
+      "path": "assets/characters/ice-detail-2026-10-13/references/user-clean-endpoint.png"
+    },
+    {
+      "sha256": "e8b7028c9f940eeba9208a7510a9c22e1ff8b7a14a0afd1e53e04decacdf636e",
+      "path": "assets/characters/ice-detail-2026-10-13/references/user-textured-endpoint.png"
+    }
+  ],
+  "animation": null,
+  "acceptance": [
+    {
+      "evidence": [],
+      "status": "pending",
+      "check": "All seven revised masters match requested detail and retain identity"
+    },
+    {
+      "evidence": [],
+      "status": "pending",
+      "check": "All seven exact hashes present in gallery"
+    }
+  ],
+  "checkpoint": {
+    "completed": [
+      "Read exact approved reference and current target hashes",
+      "Assigned seven revisions to existing agents"
+    ],
+    "nextAction": "Generate restrained crisp r3, superseding noisy texture r2",
+    "remaining": [
+      "Artwork revisions",
+      "Visual review",
+      "Gallery verification",
+      "Before-after deliverable"
+    ],
+    "blockers": []
+  }
+}

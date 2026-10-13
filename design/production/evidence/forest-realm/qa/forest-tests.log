@@ -1,0 +1,15 @@
+✔ forest has twelve battles and a finite shop after every three with no excluded monsters (21.3062ms)
+✔ infernal crown acknowledgement continues with every permanent gain intact, legacy still finishes (5.0017ms)
+✔ complete forest route reaches each encounter once, four shops, and wins only after final shop (26.4861ms)
+✔ forest intents preserve Defender and sweep counterplay with zero, one and five allies (9.5338ms)
+✔ forest budgets escalate against earned upgrades without scaling to player build (3.5135ms)
+✔ earned campaign history replays across realms and preserves forest stock and paid upgrades (487.0928ms)
+✔ complete earned campaign replays twelve forest victories and all four shops through final victory (588.8369ms)
+ℹ tests 7
+ℹ suites 0
+ℹ pass 7
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 1283.0315

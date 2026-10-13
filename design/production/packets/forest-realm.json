@@ -1,0 +1,141 @@
+{
+  "schema": 1,
+  "id": "forest-realm",
+  "status": "complete",
+  "outcome": "Continue from the Infernal Sovereign into twelve animated forest encounters, with four shops and persistent player progression.",
+  "authorization": "2026-10-04 user explicitly requested next 12 encounters, existing forest scenes and their own music, existing animated image roster excluding Standard and fire/undead, scaling and agents.",
+  "contentIds": [],
+  "owner": "runelord-producer",
+  "integrationOwner": "root",
+  "reviewer": "runelord-game-qa",
+  "ownedPaths": [
+    "packages/engine/forest.ts",
+    "packages/engine/index.ts",
+    "packages/engine/infernal.ts",
+    "apps/web/src/main.tsx",
+    "apps/web/src/ForestJourney.tsx",
+    "apps/web/src/forest-journey.css",
+    "apps/web/src/LootReveal.tsx",
+    "apps/web/src/SoulforgeShop.tsx",
+    "apps/web/src/music.ts",
+    "apps/web/src/AnimatedBackground.tsx",
+    "tools/import/assets.mjs",
+    "packages/assets/manifest.json"
+  ],
+  "dependencies": [],
+  "exclusions": [
+    "Suture Standard",
+    "Fire enemies",
+    "Undead enemies",
+    "New character or environment artwork",
+    "Deployment and commits"
+  ],
+  "inputs": [
+    {
+      "sha256": "c6aa16bc8539d1acbeb0a8f1335ab97620c72f55b49ede8f39123b5d0cb7156b",
+      "path": "packages/engine/forest.ts"
+    },
+    {
+      "sha256": "1847e47faadf8947510cffe88041ef5e5c6ab2138f2ee72f62ad029463cd2a0a",
+      "path": "packages/engine/index.ts"
+    },
+    {
+      "sha256": "b3c5543e19151e1d70f2a5bed2fd7fedcf53038f3ef6f97a281400d03b646b61",
+      "path": "packages/engine/infernal.ts"
+    },
+    {
+      "sha256": "540d49c57b0cceb86fc2d591e0195319c60bbc9ca1bc790bb65089f7170665a0",
+      "path": "apps/web/src/main.tsx"
+    },
+    {
+      "sha256": "02391637372003f0e093b1d1dec1fe514dd9025d621101337a359f284ca89b03",
+      "path": "apps/web/src/ForestJourney.tsx"
+    },
+    {
+      "sha256": "fee27723d1f9a35f22568f2631a08c156a02d07f338c2388bacf2c52a4d661ac",
+      "path": "apps/web/src/forest-journey.css"
+    },
+    {
+      "sha256": "844ae56f1b5dacc5fbcbc4bdb0006178097f5b4a5092d763b2d9af501111dd7b",
+      "path": "apps/web/src/LootReveal.tsx"
+    },
+    {
+      "sha256": "5cb68d03232bde151d3ccac706470af3eedad7bd73d50527fc4c16c75b3e9ad1",
+      "path": "apps/web/src/SoulforgeShop.tsx"
+    },
+    {
+      "sha256": "ed4b3f0dfa9de05b0eb9cd931ed2294bbdcedeac4cc1eaace1890302eeff04e7",
+      "path": "apps/web/src/music.ts"
+    },
+    {
+      "sha256": "e7c5a1da6c4fa8520408ef074ad75c771d5bf5cf8b4f70eddef8405de1e0492f",
+      "path": "apps/web/src/AnimatedBackground.tsx"
+    },
+    {
+      "sha256": "112ffb087b2fe86532cba154e270df8e4c0cc7413b44f519c287c335389801d2",
+      "path": "tools/import/assets.mjs"
+    },
+    {
+      "sha256": "244d32456b8238b45a59e8a160d99844b30ce241010f733a6f67bbda40728c2d",
+      "path": "packages/assets/manifest.json"
+    }
+  ],
+  "animation": null,
+  "acceptance": [
+    {
+      "check": "Twelve forest encounters and shop after each three",
+      "status": "pass",
+      "evidence": [
+        {
+          "sha256": "6f477ce9617bb56b2ea90619e642af81056c4044e4f864a1e2b932a444d5509a",
+          "path": "design/production/evidence/forest-realm/qa/report.md"
+        }
+      ]
+    },
+    {
+      "check": "Infernal transition and save replay preserve progression",
+      "status": "pass",
+      "evidence": [
+        {
+          "sha256": "6f477ce9617bb56b2ea90619e642af81056c4044e4f864a1e2b932a444d5509a",
+          "path": "design/production/evidence/forest-realm/qa/report.md"
+        }
+      ]
+    },
+    {
+      "check": "Existing animation and dedicated forest music resolve",
+      "status": "pass",
+      "evidence": [
+        {
+          "sha256": "40d603056295c0b32d021c7402ed904e7956ae8e0e6da53d85d1abe963a83df0",
+          "path": "design/production/evidence/forest-realm/assets.json"
+        }
+      ]
+    },
+    {
+      "check": "Independent gameplay and browser verification",
+      "status": "pass",
+      "evidence": [
+        {
+          "sha256": "6f477ce9617bb56b2ea90619e642af81056c4044e4f864a1e2b932a444d5509a",
+          "path": "design/production/evidence/forest-realm/qa/report.md"
+        }
+      ]
+    }
+  ],
+  "checkpoint": {
+    "completed": [
+      "12 forest encounters and four shops implemented",
+      "Existing animated roster and two forest scenes integrated",
+      "Dedicated forest scores integrated",
+      "Legal full campaign replay and balance simulations passed",
+      "Production build and seven forest tests passed",
+      "Independent engine and browser QA accepted",
+      "Forest shop fit repaired and independently rechecked at 1280x720 and 960x540",
+      "Source hashes, animation provenance, build, balance, replay and QA evidence retained"
+    ],
+    "remaining": [],
+    "blockers": [],
+    "nextAction": "User playtest of expanded demo; separate existing Infernal bridge-placement defect remains outside this slice."
+  }
+}

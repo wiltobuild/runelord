@@ -55,15 +55,15 @@ test('all9 encounters require card then loot acknowledgement and end with crowne
   assert.equal(s.phase,'won'); assert.equal(s.gold,585); assert.deepEqual(s.relics,['demon-lord-crown']);
 });
 test('deck composition stays curated, order is seeded, and repeat seeds reproduce deals',()=>{
-  for(const deck of starterDecks) {
-    assert.deepEqual(newRun(1,deck.id).deck,deck.cards);
+  for(const deck of starterDecks.filter(d=>d.hero!=='runeblade')) {
+    assert.deepEqual(newRun(1,deck.id,3,0,2,2).deck,deck.cards);
     assert.deepEqual(newRun(7,deck.id).hand,newRun(7,deck.id).hand);
     const hands=new Set(Array.from({length:50},(_,i)=>newRun(i+1,deck.id).hand.map(c=>c.id).join(',')));
     assert.ok(hands.size>20);
   }
 });
 test('seeded rewards are distinct, weighted toward chosen style, and retain off-style possibilities',()=>{
-  for(const deck of starterDecks) {
+  for(const deck of starterDecks.filter(d=>d.hero!=='runeblade')) {
     let themed=0,total=0,offStyle=0; const seen=new Set<string>();
     for(let seed=1;seed<=1000;seed++) {
       const s=newRun(seed,deck.id); const result=rollRewards(s);
@@ -71,7 +71,7 @@ test('seeded rewards are distinct, weighted toward chosen style, and retain off-
       for(const id of result) { total++; seen.add(id); if(cardAffinities[deck.id].includes(id)) themed++; else offStyle++; }
       assert.deepEqual(result,rollRewards(newRun(seed,deck.id)));
     }
-    assert.ok(themed/total>.55,`${deck.id}: ${themed/total}`); assert.ok(themed/total<.85); assert.ok(offStyle>0); assert.equal(seen.size,40);
+    assert.ok(themed/total>.55,`${deck.id}: ${themed/total}`); assert.ok(themed/total<.85); assert.ok(offStyle>0); assert.equal(seen.size,deck.id==='hellbound'?54:40);
   }
 });
 test('legacy schema2 prefix keeps historical rewards/deal and migrates safely into loot staging',()=>{

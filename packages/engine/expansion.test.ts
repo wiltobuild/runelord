@@ -48,9 +48,9 @@ for(const id of Object.keys(checks) as CardId[]) for(const upgraded of [false,tr
   checks[id]!(after,upgraded); assert.deepEqual(before,snapshot);
 });
 test('exactly30 additions, all3 distinct ten-card starter decks and9fire encounters', () => {
-  assert.equal(Object.keys(checks).length,30); assert.equal(implemented.length,44); assert.equal(encounters.length,9);
+  assert.equal(Object.keys(checks).length,30); assert.equal(implemented.length,69); assert.equal(encounters.length,9);
   assert.ok(encounters.every(e => ['forge','arena','demon-throne'].includes(e.background)));
-  for(const deck of starterDecks) { const s=newRun(1,deck.id); assert.deepEqual(s.deck,deck.cards); assert.equal(s.deck.length,10); assert.ok(s.deck.every(id=>implemented.some(implementedId=>implementedId===id))); }
+  for(const deck of starterDecks.filter(d=>d.hero!=='runeblade')) { const s=newRun(1,deck.id,3,0,2,2); assert.deepEqual(s.deck,deck.cards); assert.equal(s.deck.length,10); assert.ok(s.deck.every(id=>implemented.some(implementedId=>implementedId===id))); }
 });
 test('unit-targeted cards reject missing/invalid demons without spending resources', () => {
   for(const id of implemented.filter(cardTargetsUnit)) {
@@ -118,7 +118,7 @@ test('every loot item has a working effect and is consumed exactly once', () => 
   for(const item of Object.keys(expected) as ItemId[]) { const s=setup('firebolt'); s.inventory=[item]; const next=dispatch(s,{type:'item',item}); expected[item]!(next); assert.equal(next.inventory.length,0); assert.throws(()=>dispatch(next,{type:'item',item})); assert.deepEqual(s.inventory,[item]); }
 });
 test('new saves preserve selected deck and replay; legacy schema1 remains readable', () => {
-  for(const deck of starterDecks) { let s=newRun(84,deck.id); s=dispatch(s,{type:'end'}); assert.deepEqual(restore(save(s)),s); }
+  for(const deck of starterDecks.filter(d=>d.hero!=='runeblade')) { let s=newRun(84,deck.id); s=dispatch(s,{type:'end'}); assert.deepEqual(restore(save(s)),s); }
   const legacy=dispatch(newRun(99),{type:'end'}); const migrated=restore(JSON.stringify({schema:1,seed:99,actions:legacy.history})); assert.equal(migrated.hp,legacy.hp); assert.deepEqual(migrated.hand,legacy.hand); assert.equal(migrated.legacyActions,1); assert.deepEqual(restore(save(migrated)),migrated);
 });
 

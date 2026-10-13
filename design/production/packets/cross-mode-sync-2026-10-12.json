@@ -1,0 +1,109 @@
+{
+  "schema": 1,
+  "id": "cross-mode-sync-2026-10-12",
+  "status": "complete",
+  "outcome": "Reconcile completed shared gameplay, Runeblade and Warlock presentation into local Conquer and roguelike; deliver full uncommitted breakdown before commit.",
+  "authorization": "User: go through all chats and repo, update everything missing in both game versions, including Runeblade spells/cards/animation effects, and give a breakdown before committing.",
+  "contentIds": [
+    "runeblade",
+    "warlock",
+    "forest-sovereign",
+    "infernal-map"
+  ],
+  "owner": "root",
+  "integrationOwner": "root",
+  "reviewer": "independent_qa",
+  "ownedPaths": [
+    "apps/web",
+    "packages/content",
+    "packages/engine",
+    "packages/assets",
+    "tools/import",
+    "tools/release",
+    "tools/sim",
+    "design/production"
+  ],
+  "dependencies": [],
+  "exclusions": [
+    "No commit, push or deployment",
+    "No new art or gameplay for unfinished concepts",
+    "Do not publish historical authoring archive",
+    "Preserve mode-specific progression"
+  ],
+  "inputs": [
+    {
+      "path": "packages/assets/manifest.json",
+      "sha256": "d279b2d5fc558f425f62d311dd4d2513c7690114eb1c3a1654d7ac624a1ba01a"
+    },
+    {
+      "path": "packages/engine/index.ts",
+      "sha256": "bc6e12d78f5642c7e8466b68d1a835e432e4debd3642a1009bfa0c45c797490b"
+    }
+  ],
+  "animation": null,
+  "acceptance": [
+    {
+      "check": "Both production builds and full engine suites pass",
+      "status": "pass",
+      "evidence": [
+        {
+          "path": "design/production/evidence/cross-mode-sync/conquer-engine-tests.log",
+          "sha256": "4211cada4fe72df84be77664f174f83cbe07a0d885bba096e7bd4b6559c19248"
+        },
+        {
+          "path": "design/production/evidence/cross-mode-sync/demo-engine-tests.log",
+          "sha256": "ee3167ea93a3b401cad1b3ff7521a4d3e1e39ce40203a0d4c415a93c3532decf"
+        },
+        {
+          "path": "design/production/evidence/cross-mode-sync/conquer-build.log",
+          "sha256": "eee7169eefdea67725e0d3918b02054035dfbe906f50342b42e65380b50b388d"
+        },
+        {
+          "path": "design/production/evidence/cross-mode-sync/demo-build.log",
+          "sha256": "87fef627c173505bc40ae5d767a569d6c40a063ab970849247267fb78958fa6a"
+        }
+      ]
+    },
+    {
+      "check": "1000 seeded simulations per mode: no stalls and identical replays",
+      "status": "pass",
+      "evidence": [
+        {
+          "path": "design/production/evidence/cross-mode-sync/conquer-sim.log",
+          "sha256": "141ff4db3d4145b69c50b57ad299b36b6bc3270d5e2b4b3c31cdf4322c199c74"
+        },
+        {
+          "path": "design/production/evidence/cross-mode-sync/demo-sim.log",
+          "sha256": "1afb1dc6f1f8e1d71a43bc5f1635e431cfb989acbe2dcfbb990d9fa715c6fb5b"
+        }
+      ]
+    },
+    {
+      "check": "Independent browser smoke routes and active runtime asset inventory",
+      "status": "pass",
+      "evidence": [
+        {
+          "path": "design/production/evidence/cross-mode-sync/independent-qa.md",
+          "sha256": "5659182c9baa42089bd5e92f2588022cd55278cef3e03a48002845b5cc5ae6b5"
+        },
+        {
+          "path": "design/production/evidence/cross-mode-sync/runtime-inventory.json",
+          "sha256": "55f8ebb5591beb54ffbfc189427c195f0ab64585cb71da6b63bdf01a4af2d2f3"
+        }
+      ]
+    }
+  ],
+  "checkpoint": {
+    "completed": [
+      "Shared rules and visual updates reconciled",
+      "Asset inclusion rules and release checks",
+      "Independent browser review; Pit Brute text/legacy-face repair",
+      "525 gameplay tests and both builds pass",
+      "2000 seeded simulation runs pass with zero stalls and identical replay",
+      "Pre-commit breakdown and full Git-status inventories delivered"
+    ],
+    "remaining": [],
+    "blockers": [],
+    "nextAction": "User reviews pre-commit breakdown. Nothing staged, committed, pushed, or deployed."
+  }
+}

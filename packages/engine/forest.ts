@@ -1,3 +1,4 @@
+import { forestSovereign } from './forestSovereign';
 import type { EnemyDefinition, Move, Encounter } from '../content/index';
 import { generateInfernalJourney, type InfernalJourney, type InfernalNode } from './infernal';
 
@@ -35,7 +36,7 @@ const scripts:{name:string;roster:ForestEnemyId[];elite?:boolean;reserve?:Forest
  {name:'Wardens of the Heart',roster:['tithe-mantis','cairnwheel-witness','ironfan-isopod'],elite:true},
  {name:'Sovereign of the Living Orchard',roster:['gallows-orchard','pleatcap-matriarch','spindleback-threadwarden']},
 ];
-export function generateForestJourney(seed:number):InfernalJourney {
+export function generateForestJourney(seed:number,sovereign=true):InfernalJourney {
  const nodes:InfernalNode[]=[];
  const shops:InfernalJourney['shops']={};
  for(const [i,script] of scripts.entries()) {
@@ -45,9 +46,9 @@ export function generateForestJourney(seed:number):InfernalJourney {
    hp:boss?(index===0?190:65):Math.round((42+i*3)*(script.elite?1.18:1)),
    moves:kits[id].moves.map(m=>({...m,damage:m.damage?m.damage+Math.floor(i/4):0})),
   });
-  const encounter:Encounter={name:script.name,subtitle:`Thornroot Forest · Encounter ${number} of 12`,background:number<=6?'forest':'forest-heart',enemies:script.roster.map(enemy),reserves:script.reserve?[enemy(script.reserve,3)]:[]};
+  const encounter:Encounter={name:boss&&sovereign?'The Root-Crown Throne':script.name,subtitle:`Thornroot Forest · Encounter ${number} of 12`,background:number<=6?'forest':'forest-heart',enemies:boss&&sovereign?[structuredClone(forestSovereign)]:script.roster.map(enemy),reserves:script.reserve?[enemy(script.reserve,3)]:[]};
   const id=`forest-${number}`;
-  nodes.push({id,row:nodes.length,lane:0,kind:boss?'boss':script.elite?'elite':'combat',name:script.name,next:[number%3===0?`forest-shop-${number}`:`forest-${number+1}`],encounterIndex:9+i,encounter});
+  nodes.push({id,row:nodes.length,lane:0,kind:boss?'boss':script.elite?'elite':'combat',name:encounter.name,next:[number%3===0?`forest-shop-${number}`:`forest-${number+1}`],encounterIndex:9+i,encounter});
   if(number%3===0) {
    const shopId=`forest-shop-${number}`;
    // Independent salts ensure four finite stocks while sharing the shipped shop service rules.

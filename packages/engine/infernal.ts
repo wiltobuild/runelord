@@ -1,11 +1,12 @@
-import { encounters, implemented, neutralCards, cards, relicPool, type CardId, type ItemId, type Encounter } from '../content/index';
-import type { State } from './index';
+import {hellboundEffectText} from '../content/index';
+import { legacyImplemented, runebladeEffectText, cardsForHero, relicsForHero, type HeroId, encounters, implemented, neutralCards, cards, relicPool, type CardId, type ItemId, type Encounter } from '../content/index';
+import { eligibleCardReward, demonStats, type DemonKind, type State } from './index';
 import {INFERNAL_CIRCUIT_SLOTS} from './infernalTopology';
 export type InfernalNode = { id: string; row: number; lane: number; kind: 'combat'|'elite'|'shop'|'treasure'|'boss'; name: string; next: string[]; encounterIndex: number; encounter: Encounter };
 export type ShopRerollKind='buy'|'upgrade'|'remove';
 export type OwnedShopOffer={index:number;id:CardId;level:number;sold:boolean};
 export type ShopStock = { cards: {id:CardId;price:number;sold:boolean}[]; relics:{id:ItemId;price:number;sold:boolean}[]; upgrades:OwnedShopOffer[];removals:OwnedShopOffer[];rerolls:Record<ShopRerollKind,number>;servicesReady:boolean };
-export type InfernalJourney = { nodes: InfernalNode[]; current: string|null; completed:string[]; shops:Record<string,ShopStock>;shopRules:'legacy'|'soulforge' };
+export type InfernalJourney = { realm?: 'infernal'|'forest'; nodes: InfernalNode[]; current: string|null; completed:string[]; shops:Record<string,ShopStock>;shopRules:'legacy'|'soulforge' };
 export const cardPower = (level:number) => 1.2 ** Math.max(0,level);
 export const upgradeCost = (level:number) => 50 * 2 ** Math.max(0,level);
 export const cardLevel = (s:State,index:number) => s.deckLevels?.[index] || 0;
@@ -49,7 +50,8 @@ export function discoveredNodes(s:State):InfernalNode[] {
  return s.journey.nodes.filter(n=>visible.has(n.id));
 }
 export const activeEncounter = (s:State) => s.journey?.nodes.find(n=>n.id===s.journey?.current)?.encounter || encounters[s.room];
-const shopPool=[...new Set([...implemented.filter(id=>cards[id].rarity!=='Basic'),...neutralCards])];
+const warlockShopPool=[...new Set([...legacyImplemented.filter(id=>cards[id].rarity!=='Basic'),...neutralCards])];
+const shopPool=(s:State):readonly CardId[]=>[...cardsForHero(s.hero).filter(id=>cards[id].rarity!=='Basic'),...(s.hero==='runeblade'?[]:neutralCards)].filter(id=>eligibleCardReward(s,id));
 function sample<T extends string|number>(pool:readonly T[],seed:number,salt:string,previous:readonly T[]=[]):T[]{
  let rng=seed>>>0;for(const ch of salt)rng=Math.imul(rng^ch.charCodeAt(0),16777619)>>>0;
  const take=(input:T[])=>{const result:T[]=[];while(input.length){rng=(Math.imul(rng,1664525)+1013904223)>>>0;result.push(input.splice(Math.floor(rng/4294967296*input.length),1)[0]);}return result;};
@@ -66,20 +68,24 @@ export const currentShop = (s:State):ShopStock|undefined => {
 };
 export function prepareShop(s:State){const stock=currentShop(s);if(stock&&s.journey?.shopRules==='soulforge')s.journey.shops[s.journey.current!]={...stock,servicesReady:true};}
 export const shopRerollCost=(s:State,kind:ShopRerollKind)=>{const count=currentShop(s)?.rerolls[kind];const price=count===undefined||!Number.isSafeInteger(count)||count<0?Infinity:10*2**count;return Number.isSafeInteger(price)&&price>0?price:Infinity;};
-export const shopCanReroll=(s:State,kind:ShopRerollKind)=>s.phase==='shop'&&s.journey?.shopRules==='soulforge'&&s.gold>=shopRerollCost(s,kind)&&(kind==='buy'?shopPool.some(id=>canAddCard(s,id)):eligibleCopies(s,kind).length>0);
+export const shopCanReroll=(s:State,kind:ShopRerollKind)=>s.phase==='shop'&&s.journey?.shopRules==='soulforge'&&s.gold>=shopRerollCost(s,kind)&&(kind==='buy'?shopPool(s).some(id=>canAddCard(s,id)):eligibleCopies(s,kind).length>0);
 export function rerollShop(s:State,kind:ShopRerollKind){
  if(!(['buy','upgrade','remove'] as string[]).includes(kind))throw Error('Invalid reroll type.');
  if(s.journey?.shopRules!=='soulforge'||s.phase!=='shop')throw Error('Visit a Soulforge shop first.');
  if(!shopCanReroll(s,kind))throw Error('Not enough Gold or no eligible cards to reroll.');
  prepareShop(s);const stock=s.journey.shops[s.journey.current!]!;const price=shopRerollCost(s,kind),roll=stock.rerolls[kind]+1;
- if(kind==='buy')stock.cards=sample(shopPool.filter(id=>canAddCard(s,id)),s.seed,`${s.journey.current}:buy:${roll}`,stock.cards.map(o=>o.id)).map(id=>({id,price:cards[id].rarity==='Rare'?90:45,sold:false}));
+ if(kind==='buy')stock.cards=sample(shopPool(s).filter(id=>canAddCard(s,id)),s.seed,`${s.journey.current}:buy:${roll}`,stock.cards.map(o=>o.id)).map(id=>({id,price:cards[id].rarity==='Rare'?90:45,sold:false}));
  else{const key=kind==='upgrade'?'upgrades':'removals';stock[key]=copyOffers(s,kind,roll,stock[key].map(o=>o.index));}
  s.gold-=price;stock.rerolls[kind]=roll;
 }
 export function remapShopCopies(s:State,removed:number){for(const stock of Object.values(s.journey?.shops||{}))for(const key of ['upgrades','removals'] as const)for(const o of stock[key]){if(o.index===removed){o.sold=true;o.index=-1;}else if(o.index>removed)o.index--;}}
 export function refreshRemovalOffers(s:State){const stock=s.journey?.shops[s.journey.current||''];if(stock&&s.journey!.shopRules==='soulforge'&&stock.removals.length===0&&s.deck.length>10)stock.removals=copyOffers(s,'remove',stock.rerolls.remove);}
 /** Intrinsic effects only: relic, target and temporary battle modifiers are intentionally excluded. */
-export function cardEffectText(id:CardId,level=0):string {
+export function cardEffectText(id:CardId,level=0,runebladeRules:1|2=2,summonRules=true):string {
+ const legionText=hellboundEffectText(id,level);if(legionText)return legionText;
+ if(id==='summon-pit-brute'){const stats=demonStats['pit-brute'],power=summonRules?stats.power:10;return `Summon a Pit Brute: ${Math.round(stats.hp*cardPower(level))} HP, ${Math.round(power*cardPower(level))} damage. ${summonRules?'Cleave all enemies. ':''}Defender. Upkeep ${stats.upkeep}.`;}
+ const runebladeText=runebladeEffectText(id,level,runebladeRules);if(runebladeText)return runebladeText;
+ if(id.startsWith('summon-')&&id.slice(7) in demonStats&&!(id.slice(7) in {imp:1,hellhound:1,'pit-brute':1})){const stats=demonStats[id.slice(7) as DemonKind];return cards[id].text+` Stats at level ${level}: ${Math.round(stats.hp*cardPower(level))} HP, ${Math.round(stats.power*cardPower(level))} Power.`;}
  const v=(n:number)=>level?Math.max(n+level,Math.round(n*cardPower(level))):n;
  const summon=(name:string,hp:number,power:number,rest:string)=>`Summon ${name}: ${Math.round(hp*cardPower(level))} HP, ${Math.round(power*cardPower(level))} damage. ${rest}`;
  const effects:Partial<Record<CardId,string>>={
@@ -95,9 +101,9 @@ export function cardEffectText(id:CardId,level=0):string {
  'combust':`Consume all Scorch. Deal ${level?`max(Scorch × 2 + ${level}, round(Scorch × ${(2*cardPower(level)).toFixed(3)}))`:'Scorch × 2'} damage (0 if no Scorch). At 10 Scorch: ${level?Math.max(20+level,Math.round(20*cardPower(level))):20} damage.`, 'blood-price':`Lose 2 HP and gain 2 Corruption. Deal ${v(6)} damage twice. On kill gain 4 Corruption.`, 'wreathed-in-flame':`Gain ${v(5)} Guard plus half the total enemy Scorch, rounded down.`, 'dread-aura':`Whenever a demon attacks, apply ${v(1)} Scorch to its target.`, 'feast-of-embers':`Heal a demon for ${v(8)} HP and grant it ${v(3)} damage.`, 'abyssal-gaze':`Gain 2 Corruption. Draw ${v(1)} cards.`, 'infernal-transformation':`Enter Demon Form for ${v(3)} turns.`};
  return effects[id]??cards[id].text;
 }
-export function upgradePreview(s:State,index:number){const id=s.deck[index];if(!id)throw Error('Choose a card in your deck.');const level=cardLevel(s,index),mana=(l:number)=>Math.max(cards[id].cost>0?1:0,cards[id].cost-Math.floor(l/3));return {id,level,nextLevel:level+1,power:cardPower(level),nextPower:cardPower(level+1),cost:mana(level),nextCost:mana(level+1),text:cardEffectText(id,level),nextText:cardEffectText(id,level+1),price:upgradeCost(level)};}
+export function upgradePreview(s:State,index:number){const id=s.deck[index];if(!id)throw Error('Choose a card in your deck.');const level=cardLevel(s,index),mana=(l:number)=>Math.max(cards[id].cost>0?1:0,cards[id].cost-Math.floor(l/3));return {id,level,nextLevel:level+1,power:cardPower(level),nextPower:cardPower(level+1),cost:mana(level),nextCost:mana(level+1),text:cardEffectText(id,level,s.runebladeRules??1,s.summonRulesFrom!==undefined&&s.history.length>=s.summonRulesFrom),nextText:cardEffectText(id,level+1,s.runebladeRules??1,s.summonRulesFrom!==undefined&&s.history.length>=s.summonRulesFrom),price:upgradeCost(level)};}
 /** Shared service rows make shop/treasure counts identical on EVERY legal path; terrain and fights vary. */
-export function generateInfernalJourney(seed:number,legacy=false):InfernalJourney {
+export function generateInfernalJourney(seed:number,legacy=false,hero:HeroId='warlock',runebladeRules:1|2=2):InfernalJourney {
  let rng=(seed ^ 0x19fa831)>>>0;
  const rand=()=>{rng=(Math.imul(rng,1664525)+1013904223)>>>0;return rng/4294967296};
  const pick=<T>(a:readonly T[])=>a[Math.floor(rand()*a.length)];
@@ -124,11 +130,13 @@ export function generateInfernalJourney(seed:number,legacy=false):InfernalJourne
   nodes.push({id,row,lane,kind,name,next,encounterIndex,encounter});
   if(kind==='shop') {
    const choose=<T>(pool:readonly T[],count:number)=>{const a=[...pool],r:T[]=[];while(r.length<count&&a.length)r.push(a.splice(Math.floor(rand()*a.length),1)[0]);return r};
-   const legacyCards=[...choose(implemented.filter(id=>cards[id].rarity!=='Basic'),4),...choose(neutralCards,3)],relics=choose(relicPool,5);
-   shops[id]={cards:(legacy?legacyCards:sample(shopPool,seed,`${id}:buy:0`)).map(id=>({id,price:cards[id].rarity==='Rare'?90:45,sold:false})),relics:relics.map(id=>({id,price:120,sold:false})),upgrades:[],removals:[],rerolls:{buy:0,upgrade:0,remove:0},servicesReady:false};
+   const legacyCards=[...choose(legacyImplemented.filter(id=>cards[id].rarity!=='Basic'),4),...choose(neutralCards,3)],relics=choose(relicPool,5);
+   shops[id]={cards:(legacy?legacyCards:sample(warlockShopPool,seed,`${id}:buy:0`)).map(id=>({id,price:cards[id].rarity==='Rare'?90:45,sold:false})),relics:relics.map(id=>({id,price:120,sold:false})),upgrades:[],removals:[],rerolls:{buy:0,upgrade:0,remove:0},servicesReady:false};
   }
  }
- return {nodes,current:null,completed:[],shops,shopRules:legacy?'legacy':'soulforge'};
+ const journey:InfernalJourney={nodes,current:null,completed:[],shops,shopRules:legacy?'legacy':'soulforge'};
+ if(hero==='runeblade')configureHeroShops({hero,seed,journey,runebladeRules,history:[]} as unknown as State);
+ return journey;
 }
 
 /** Appearance never consumes the encounter RNG: existing saves keep routes and stock unchanged. */
@@ -143,4 +151,14 @@ export function infernalShopAppearance(seed:number,nodeId:string|null) {
  const merchant=(hash('merchant')%3+1) as 1|2|3;
  const shopId=({1:'cinder-vault',2:'chain-bazaar',3:'infernal-scriptorium'} as const)[shop];
  return {shop,merchant,shopId};
+}
+
+/** Configure hero/rules-specific stock after world generation without changing encounter or route RNG. */
+export function configureHeroShops(s:State) {
+ if(!s.journey || (s.hero!=='runeblade'&&s.summonRulesFrom===undefined))return;
+ for(const [node,stock] of Object.entries(s.journey.shops)) {
+  stock.cards=sample(shopPool(s),s.seed,`${node}:${s.hero}:buy:0`).map(id=>({id,price:cards[id].rarity==='Rare'?90:45,sold:false}));
+  const pool=relicsForHero(s.hero);
+  stock.relics=[...pool].sort((a,b)=>a.localeCompare(b)).filter((_,index)=>index!==((s.seed+node.length)%pool.length)).map(id=>({id,price:120,sold:false}));
+ }
 }

@@ -1,0 +1,12 @@
+{"seed":0,"outcome":"won","realm":"forest","node":"forest-shop-12","hp":51,"actions":470}
+{"seed":1,"outcome":"lost","realm":"forest","node":"forest-12","hp":0,"actions":507}
+{"seed":2,"outcome":"won","realm":"forest","node":"forest-shop-12","hp":52,"actions":466}
+{"seed":3,"outcome":"won","realm":"forest","node":"forest-shop-12","hp":44,"actions":509}
+{"seed":4,"outcome":"won","realm":"forest","node":"forest-shop-12","hp":35,"actions":478}
+{"seed":5,"outcome":"lost","realm":"forest","node":"forest-12","hp":0,"actions":450}
+{"seed":6,"outcome":"lost","realm":"forest","node":"forest-12","hp":0,"actions":458}
+{"seed":7,"outcome":"won","realm":"forest","node":"forest-shop-12","hp":29,"actions":491}
+{"seed":8,"outcome":"won","realm":"forest","node":"forest-shop-12","hp":43,"actions":476}
+{"seed":9,"outcome":"won","realm":"forest","node":"forest-shop-12","hp":61,"actions":460}
+{"seed":10,"outcome":"won","realm":"forest","node":"forest-shop-12","hp":61,"actions":474}
+{"seed":11,"outcome":"lost","realm":"forest","node":"forest-7","hp":0,"actions":340}
