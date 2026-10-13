@@ -111,7 +111,7 @@ export const legacyStarterDecks: { id: Exclude<StarterDeckId, "classic">; name: 
 ];
 export const modernWarlockDecks: {id:Exclude<StarterDeckId,"classic">;hero:HeroId;name:string;description:string;cards:CardId[]}[] = legacyStarterDecks.map(deck => ({...deck, hero:'warlock', description: deck.id==='warband' ? 'Empower lesser demons into Archdemons and command your army.' : deck.id==='fire' ? 'Ignivar feeds your fire spells and Imps into growing Scorch.' : 'Nightmaw fuels your pacts with Mana and cards.', cards: deck.cards.map((id,index):CardId => deck.id==='warband' && id==='firebolt' ? 'summon-pit-brute' : deck.id==='warband' && id==='ward-of-ash' ? 'empower-demon' : deck.id==='fire' && id==='ward-of-ash' ? 'summon-ignivar' : deck.id==='pact' && index===6 ? 'summon-nightmaw' : id)}));
 export const starterDecks=modernWarlockDecks.filter(d=>d.id!=='pact');
-starterDecks.push({id:'hellbound',hero:'warlock',name:'Hellbound Legion',description:'Recruit demonic soldiers, promote veterans, and build formations that survive between battles.',cards:[...hellboundStarter]});
+starterDecks.push({id:'hellbound',hero:'warlock',name:'Hellbound Legion',description:'Recruit demonic soldiers and promote veterans. Their earned ranks return when summoned again.',cards:[...hellboundStarter]});
 starterDecks.push(...runebladeDecks.map(d=>({...d,cards:[...d.cards]})));
 export const rewardSets: CardId[][] = [
   ["summon-hellhound", "immolate", "kindle"],
