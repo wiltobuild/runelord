@@ -1,0 +1,25 @@
+{
+  "input": {
+    "id": "empower-demon",
+    "prompt": "Use case: stylized-concept. Generate a full-bleed landscape 4:3 card ILLUSTRATION ONLY for Empower Demon. Reference is ONLY Runelord's serious angular 2D cel-shaded rendering and palette, never copy its frame or lettering. A vivid RED demonic summoning circle carved into cracked dark stone ground, seen in dramatic three-quarter perspective. Powerful crimson spell ribbons and jagged red energy surge UP out of the ground around a menacing horned demonic SILHOUETTE inside the circle; silhouette remains dark and mysterious with tiny hot eyes. Atmospheric ruined ritual chamber recedes behind, broken stone pillars, foreground stone shards levitating under magic. Strong readable spell-action composition, circle fully legible in lower half, silhouette central. Broad flat colors, hard-edged shadows, restrained graphic highlights. No card border, no lettering, no UI, no watermark, no blank background, no photographic textures.",
+    "source": "C:/Users/wilsh/.codex/generated_images/01a10ab7-ce2b-7cc0-b5ec-d49422b9ee3b/exec-15a274be-b61c-4758-aed0-42d423ea74a2.png"
+  },
+  "references": [
+    {
+      "file": "C:/Users/wilsh/.codex/skills/hd-card-creator/references/cards/warlock-summon-imp.png",
+      "sha256": "070283f1fb65b07531cec7b32c653ffc96a7adacde1c2ce4daca1f3b4ed78c9e",
+      "status": "Approved",
+      "evidenceId": "user-chat-2026-10-01-approve-existing-runelord",
+      "decision": {
+        "status": "Approved",
+        "at": "2026-10-02T03:44:25.533Z",
+        "evidenceId": "user-chat-2026-10-01-approve-existing-runelord",
+        "paths": [
+          "C:\\Users\\wilsh\\Projects\\runelord\\assets\\cards\\reference-samples\\warlock-summon-imp.png"
+        ]
+      }
+    }
+  ],
+  "authorization": "User requested full card art replacement and exact Empower Demon art reassignment to Gorthak on 2026-10-05",
+  "approval": "Pending approval"
+}

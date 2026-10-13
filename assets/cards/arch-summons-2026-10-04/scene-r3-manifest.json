@@ -1,0 +1,487 @@
+{
+  "cards": [
+    {
+      "row_identifier": "empower-demon",
+      "source_snapshot": {
+        "name": "Empower Demon",
+        "cost": "2 +2🔥",
+        "type": "Skill",
+        "rarity": "Uncommon",
+        "rules": "Transform a lesser demon into its Arch-form. Preserve buffs, position and remaining HP percentage. One living copy per Arch-form.",
+        "upgrade": "Costs 1 +2🔥"
+      },
+      "status": "pending_approval",
+      "current_revision": "scene-r3",
+      "output_path": "C:\\Users\\wilsh\\Projects\\runelord-tintfix-roguelike-main-push\\assets\\cards\\arch-summons-2026-10-04\\empower-demon\\scene-r3\\empower-demon-scene-r3.png",
+      "revision_directory": "C:\\Users\\wilsh\\Projects\\runelord-tintfix-roguelike-main-push\\assets\\cards\\arch-summons-2026-10-04\\empower-demon\\scene-r3",
+      "artwork_path": "C:\\Users\\wilsh\\Projects\\runelord-tintfix-roguelike-main-push\\assets\\cards\\arch-summons-2026-10-04\\empower-demon\\scene-r3\\illustration.png",
+      "prompt_path": "C:\\Users\\wilsh\\Projects\\runelord-tintfix-roguelike-main-push\\assets\\cards\\arch-summons-2026-10-04\\empower-demon\\scene-r3\\illustration-prompt.txt",
+      "verification": {
+        "artOnly": {
+          "width": 1024,
+          "height": 1536,
+          "protectedPixels": 925558,
+          "editablePixels": 647306,
+          "changedPixels": 0,
+          "passed": true
+        },
+        "immutableFrame": {
+          "width": 1024,
+          "height": 1536,
+          "protectedPixels": 602082,
+          "editablePixels": 970782,
+          "changedPixels": 0,
+          "passed": true
+        },
+        "template_sha256": "070283f1fb65b07531cec7b32c653ffc96a7adacde1c2ce4daca1f3b4ed78c9e",
+        "mask_sha256": "1196a968ebd565e155db12aacab4e5637f0a2f11444887a013f21ce6b83bd9e0",
+        "output_sha256": "a719d5b1067f1d5c6ce70dbed5497ae97e57ab415a49412ac06c2cf874de97e1",
+        "dimensions": [
+          1024,
+          1536
+        ],
+        "text": "Exact original pixels preserved",
+        "visual_inspection": "Passed: generated illustration and composed 256x384 card inspected; identity, scene, crop, text and frame checked"
+      },
+      "previous_revisions": [
+        {
+          "revision": "r1",
+          "output_path": "C:\\Users\\wilsh\\Projects\\runelord-tintfix-roguelike-main-push\\assets\\cards\\arch-summons-2026-10-04\\empower-demon\\r1\\empower-demon-r1.png",
+          "artwork_path": "C:\\Users\\wilsh\\Projects\\runelord-tintfix-roguelike-main-push\\assets\\cards\\arch-summons-2026-10-04\\empower-demon\\r1\\illustration.png"
+        }
+      ],
+      "references": [
+        {
+          "file": "C:/Users/wilsh/.codex/skills/hd-card-creator/references/cards/warlock-summon-imp.png",
+          "sha256": "070283f1fb65b07531cec7b32c653ffc96a7adacde1c2ce4daca1f3b4ed78c9e",
+          "status": "Approved",
+          "evidenceId": "user-chat-2026-10-01-approve-existing-runelord",
+          "decision": {
+            "status": "Approved",
+            "at": "2026-10-02T03:44:25.533Z",
+            "evidenceId": "user-chat-2026-10-01-approve-existing-runelord",
+            "paths": [
+              "C:\\Users\\wilsh\\Projects\\runelord\\assets\\cards\\reference-samples\\warlock-summon-imp.png"
+            ]
+          }
+        }
+      ],
+      "generation_mode": "built-in image_gen",
+      "gallery_verified": true
+    },
+    {
+      "row_identifier": "summon-ignivar",
+      "source_snapshot": {
+        "name": "Summon Ignivar",
+        "cost": "3",
+        "type": "Skill",
+        "rarity": "Rare",
+        "rules": "Summon Ignivar: 18 HP, 6 fire damage +1 Scorch. Your direct fire hits apply +4 Scorch. Each turn summon a free Imp if space. Unbound.",
+        "upgrade": "+20% HP and Power"
+      },
+      "status": "pending_approval",
+      "current_revision": "scene-r3",
+      "output_path": "C:\\Users\\wilsh\\Projects\\runelord-tintfix-roguelike-main-push\\assets\\cards\\arch-summons-2026-10-04\\summon-ignivar\\scene-r3\\summon-ignivar-scene-r3.png",
+      "revision_directory": "C:\\Users\\wilsh\\Projects\\runelord-tintfix-roguelike-main-push\\assets\\cards\\arch-summons-2026-10-04\\summon-ignivar\\scene-r3",
+      "artwork_path": "C:\\Users\\wilsh\\Projects\\runelord-tintfix-roguelike-main-push\\assets\\cards\\arch-summons-2026-10-04\\summon-ignivar\\scene-r3\\illustration.png",
+      "prompt_path": "C:\\Users\\wilsh\\Projects\\runelord-tintfix-roguelike-main-push\\assets\\cards\\arch-summons-2026-10-04\\summon-ignivar\\scene-r3\\illustration-prompt.txt",
+      "verification": {
+        "artOnly": {
+          "width": 1024,
+          "height": 1536,
+          "protectedPixels": 925558,
+          "editablePixels": 647306,
+          "changedPixels": 0,
+          "passed": true
+        },
+        "immutableFrame": {
+          "width": 1024,
+          "height": 1536,
+          "protectedPixels": 602082,
+          "editablePixels": 970782,
+          "changedPixels": 0,
+          "passed": true
+        },
+        "template_sha256": "070283f1fb65b07531cec7b32c653ffc96a7adacde1c2ce4daca1f3b4ed78c9e",
+        "mask_sha256": "1196a968ebd565e155db12aacab4e5637f0a2f11444887a013f21ce6b83bd9e0",
+        "output_sha256": "d49d3a5dccd578cd1f50c00dded6b56cdb92635987149d252f6b411bfc6c1cc5",
+        "dimensions": [
+          1024,
+          1536
+        ],
+        "text": "Exact original pixels preserved",
+        "visual_inspection": "Passed: generated illustration and composed 256x384 card inspected; identity, scene, crop, text and frame checked"
+      },
+      "previous_revisions": [
+        {
+          "revision": "r1",
+          "output_path": "C:\\Users\\wilsh\\Projects\\runelord-tintfix-roguelike-main-push\\assets\\cards\\arch-summons-2026-10-04\\summon-ignivar\\r1\\summon-ignivar-r1.png",
+          "artwork_path": "C:\\Users\\wilsh\\Projects\\runelord-tintfix-roguelike-main-push\\assets\\cards\\arch-summons-2026-10-04\\summon-ignivar\\r1\\illustration.png"
+        }
+      ],
+      "references": [
+        {
+          "file": "assets/cards/arch-summons-2026-10-04/summon-ignivar/r1/identity-source.png",
+          "sha256": "4a12ae1d443da8df804ae070efbb135342eed8b9a140d1137fff221ca5d27974",
+          "status": "Approved",
+          "evidenceId": "fc3fc045-9e89-468c-a0a7-36e445fcfb43",
+          "decision": {
+            "status": "Approved",
+            "at": "2026-10-02T22:20:56.989Z",
+            "evidenceId": "fc3fc045-9e89-468c-a0a7-36e445fcfb43",
+            "paths": [
+              "C:\\Users\\wilsh\\Projects\\runelord\\assets\\approvals\\inbox\\warlock-ignivar\\base-r1\\warlock-ignivar-base-r1.png"
+            ]
+          }
+        }
+      ],
+      "generation_mode": "built-in image_gen",
+      "gallery_verified": true
+    },
+    {
+      "row_identifier": "summon-cerberax",
+      "source_snapshot": {
+        "name": "Summon Cerberax",
+        "cost": "3",
+        "type": "Skill",
+        "rarity": "Rare",
+        "rules": "Summon Cerberax: 28 HP, 8 damage. Counts as a Hellhound. Incoming pack damage splits evenly before Guard. Each turn summon a free Hellhound if space. Unbound.",
+        "upgrade": "+20% HP and Power"
+      },
+      "status": "pending_approval",
+      "current_revision": "scene-r3",
+      "output_path": "C:\\Users\\wilsh\\Projects\\runelord-tintfix-roguelike-main-push\\assets\\cards\\arch-summons-2026-10-04\\summon-cerberax\\scene-r3\\summon-cerberax-scene-r3.png",
+      "revision_directory": "C:\\Users\\wilsh\\Projects\\runelord-tintfix-roguelike-main-push\\assets\\cards\\arch-summons-2026-10-04\\summon-cerberax\\scene-r3",
+      "artwork_path": "C:\\Users\\wilsh\\Projects\\runelord-tintfix-roguelike-main-push\\assets\\cards\\arch-summons-2026-10-04\\summon-cerberax\\scene-r3\\illustration.png",
+      "prompt_path": "C:\\Users\\wilsh\\Projects\\runelord-tintfix-roguelike-main-push\\assets\\cards\\arch-summons-2026-10-04\\summon-cerberax\\scene-r3\\illustration-prompt.txt",
+      "verification": {
+        "artOnly": {
+          "width": 1024,
+          "height": 1536,
+          "protectedPixels": 925558,
+          "editablePixels": 647306,
+          "changedPixels": 0,
+          "passed": true
+        },
+        "immutableFrame": {
+          "width": 1024,
+          "height": 1536,
+          "protectedPixels": 602082,
+          "editablePixels": 970782,
+          "changedPixels": 0,
+          "passed": true
+        },
+        "template_sha256": "070283f1fb65b07531cec7b32c653ffc96a7adacde1c2ce4daca1f3b4ed78c9e",
+        "mask_sha256": "1196a968ebd565e155db12aacab4e5637f0a2f11444887a013f21ce6b83bd9e0",
+        "output_sha256": "51eaea1c1d8296a9b2acbb161267657060174bfa17536da7e4ec77a8777a5457",
+        "dimensions": [
+          1024,
+          1536
+        ],
+        "text": "Exact original pixels preserved",
+        "visual_inspection": "Passed: generated illustration and composed 256x384 card inspected; identity, scene, crop, text and frame checked"
+      },
+      "previous_revisions": [
+        {
+          "revision": "r1",
+          "output_path": "C:\\Users\\wilsh\\Projects\\runelord-tintfix-roguelike-main-push\\assets\\cards\\arch-summons-2026-10-04\\summon-cerberax\\r1\\summon-cerberax-r1.png",
+          "artwork_path": "C:\\Users\\wilsh\\Projects\\runelord-tintfix-roguelike-main-push\\assets\\cards\\arch-summons-2026-10-04\\summon-cerberax\\r1\\illustration.png"
+        }
+      ],
+      "references": [
+        {
+          "file": "assets/cards/arch-summons-2026-10-04/summon-cerberax/r1/identity-source.png",
+          "sha256": "26af15e98a1304bd2a50dd8b9c64d6f989a2469ced5b225907e2d984bd7e71b9",
+          "status": "Approved",
+          "evidenceId": "42c17d14-62bc-45e7-ba2a-fe397c10c0f4",
+          "decision": {
+            "status": "Approved",
+            "at": "2026-10-02T22:20:49.176Z",
+            "evidenceId": "42c17d14-62bc-45e7-ba2a-fe397c10c0f4",
+            "paths": [
+              "C:\\Users\\wilsh\\Projects\\runelord\\assets\\approvals\\inbox\\warlock-cerberax\\base-r1\\warlock-cerberax-base-r1.png"
+            ]
+          }
+        }
+      ],
+      "generation_mode": "built-in image_gen",
+      "gallery_verified": true
+    },
+    {
+      "row_identifier": "summon-nightmaw",
+      "source_snapshot": {
+        "name": "Summon Nightmaw",
+        "cost": "3",
+        "type": "Skill",
+        "rarity": "Rare",
+        "rules": "Summon Nightmaw: 18 HP, Elusive. Apply 2 Sapped and 2 Exposed. Gain 1 Mana and draw 1 card on arrival and each turn. Unbound.",
+        "upgrade": "+20% HP"
+      },
+      "status": "pending_approval",
+      "current_revision": "scene-r3",
+      "output_path": "C:\\Users\\wilsh\\Projects\\runelord-tintfix-roguelike-main-push\\assets\\cards\\arch-summons-2026-10-04\\summon-nightmaw\\scene-r3\\summon-nightmaw-scene-r3.png",
+      "revision_directory": "C:\\Users\\wilsh\\Projects\\runelord-tintfix-roguelike-main-push\\assets\\cards\\arch-summons-2026-10-04\\summon-nightmaw\\scene-r3",
+      "artwork_path": "C:\\Users\\wilsh\\Projects\\runelord-tintfix-roguelike-main-push\\assets\\cards\\arch-summons-2026-10-04\\summon-nightmaw\\scene-r3\\illustration.png",
+      "prompt_path": "C:\\Users\\wilsh\\Projects\\runelord-tintfix-roguelike-main-push\\assets\\cards\\arch-summons-2026-10-04\\summon-nightmaw\\scene-r3\\illustration-prompt.txt",
+      "verification": {
+        "artOnly": {
+          "width": 1024,
+          "height": 1536,
+          "protectedPixels": 925558,
+          "editablePixels": 647306,
+          "changedPixels": 0,
+          "passed": true
+        },
+        "immutableFrame": {
+          "width": 1024,
+          "height": 1536,
+          "protectedPixels": 602082,
+          "editablePixels": 970782,
+          "changedPixels": 0,
+          "passed": true
+        },
+        "template_sha256": "070283f1fb65b07531cec7b32c653ffc96a7adacde1c2ce4daca1f3b4ed78c9e",
+        "mask_sha256": "1196a968ebd565e155db12aacab4e5637f0a2f11444887a013f21ce6b83bd9e0",
+        "output_sha256": "561858f945c8fac7838562680d8b8caa18c61034891d1a4b823df45ec5043324",
+        "dimensions": [
+          1024,
+          1536
+        ],
+        "text": "Exact original pixels preserved",
+        "visual_inspection": "Passed: generated illustration and composed 256x384 card inspected; identity, scene, crop, text and frame checked"
+      },
+      "previous_revisions": [
+        {
+          "revision": "r1",
+          "output_path": "C:\\Users\\wilsh\\Projects\\runelord-tintfix-roguelike-main-push\\assets\\cards\\arch-summons-2026-10-04\\summon-nightmaw\\r1\\summon-nightmaw-r1.png",
+          "artwork_path": "C:\\Users\\wilsh\\Projects\\runelord-tintfix-roguelike-main-push\\assets\\cards\\arch-summons-2026-10-04\\summon-nightmaw\\r1\\illustration.png"
+        }
+      ],
+      "references": [
+        {
+          "file": "assets/cards/arch-summons-2026-10-04/summon-nightmaw/r1/identity-source.png",
+          "sha256": "fd7aba1d6b0804573d9c1c476726c5321685c24dbc624cd638272054018fc30c",
+          "status": "Approved",
+          "evidenceId": "7895d2f9-60de-436c-b04e-70036e331ce6",
+          "decision": {
+            "status": "Approved",
+            "at": "2026-10-02T22:20:56.989Z",
+            "evidenceId": "7895d2f9-60de-436c-b04e-70036e331ce6",
+            "paths": [
+              "C:\\Users\\wilsh\\Projects\\runelord\\assets\\approvals\\inbox\\warlock-nightmaw\\base-r1\\warlock-nightmaw-base-r1.png"
+            ]
+          }
+        }
+      ],
+      "generation_mode": "built-in image_gen",
+      "gallery_verified": true
+    },
+    {
+      "row_identifier": "summon-gorthak",
+      "source_snapshot": {
+        "name": "Summon Gorthak",
+        "cost": "3",
+        "type": "Skill",
+        "rarity": "Rare",
+        "rules": "Summon Gorthak: 40 HP, 9 damage to all enemies, Defender. All allied minions gain +2 damage. New lesser summons become Pit Brutes. Unbound.",
+        "upgrade": "+20% HP and Power"
+      },
+      "status": "pending_approval",
+      "current_revision": "scene-r3",
+      "output_path": "C:\\Users\\wilsh\\Projects\\runelord-tintfix-roguelike-main-push\\assets\\cards\\arch-summons-2026-10-04\\summon-gorthak\\scene-r3\\summon-gorthak-scene-r3.png",
+      "revision_directory": "C:\\Users\\wilsh\\Projects\\runelord-tintfix-roguelike-main-push\\assets\\cards\\arch-summons-2026-10-04\\summon-gorthak\\scene-r3",
+      "artwork_path": "C:\\Users\\wilsh\\Projects\\runelord-tintfix-roguelike-main-push\\assets\\cards\\arch-summons-2026-10-04\\summon-gorthak\\scene-r3\\illustration.png",
+      "prompt_path": "C:\\Users\\wilsh\\Projects\\runelord-tintfix-roguelike-main-push\\assets\\cards\\arch-summons-2026-10-04\\summon-gorthak\\scene-r3\\illustration-prompt.txt",
+      "verification": {
+        "artOnly": {
+          "width": 1024,
+          "height": 1536,
+          "protectedPixels": 925558,
+          "editablePixels": 647306,
+          "changedPixels": 0,
+          "passed": true
+        },
+        "immutableFrame": {
+          "width": 1024,
+          "height": 1536,
+          "protectedPixels": 602082,
+          "editablePixels": 970782,
+          "changedPixels": 0,
+          "passed": true
+        },
+        "template_sha256": "070283f1fb65b07531cec7b32c653ffc96a7adacde1c2ce4daca1f3b4ed78c9e",
+        "mask_sha256": "1196a968ebd565e155db12aacab4e5637f0a2f11444887a013f21ce6b83bd9e0",
+        "output_sha256": "91991520215a61bcc63e03167c743f3cfe79abf07f5409d6c2649f00ff8c29e1",
+        "dimensions": [
+          1024,
+          1536
+        ],
+        "text": "Exact original pixels preserved",
+        "visual_inspection": "Passed: generated illustration and composed 256x384 card inspected; identity, scene, crop, text and frame checked"
+      },
+      "previous_revisions": [
+        {
+          "revision": "r1",
+          "output_path": "C:\\Users\\wilsh\\Projects\\runelord-tintfix-roguelike-main-push\\assets\\cards\\arch-summons-2026-10-04\\summon-gorthak\\r1\\summon-gorthak-r1.png",
+          "artwork_path": "C:\\Users\\wilsh\\Projects\\runelord-tintfix-roguelike-main-push\\assets\\cards\\arch-summons-2026-10-04\\summon-gorthak\\r1\\illustration.png"
+        }
+      ],
+      "references": [
+        {
+          "file": "assets/cards/arch-summons-2026-10-04/summon-gorthak/r1/identity-source.png",
+          "sha256": "5e5700db391d6b020f31307d1af113102eb81f5d80575eef2c01777119f5c191",
+          "status": "Approved",
+          "evidenceId": "60fd264d-616b-4049-b781-ca8acf21506a",
+          "decision": {
+            "status": "Approved",
+            "at": "2026-10-02T22:20:49.176Z",
+            "evidenceId": "60fd264d-616b-4049-b781-ca8acf21506a",
+            "paths": [
+              "C:\\Users\\wilsh\\Projects\\runelord\\assets\\approvals\\inbox\\warlock-gorthak\\base-r1\\warlock-gorthak-base-r1.png"
+            ]
+          }
+        }
+      ],
+      "generation_mode": "exact-art-reuse",
+      "gallery_verified": true
+    },
+    {
+      "row_identifier": "summon-hollow-saint",
+      "source_snapshot": {
+        "name": "Summon Hollow Saint",
+        "cost": "3",
+        "type": "Skill",
+        "rarity": "Rare",
+        "rules": "Summon the Hollow Saint: 20 HP. Drain 6 damage from all enemies; heal HP actually dealt. Unbound.",
+        "upgrade": "+20% HP and Power"
+      },
+      "status": "pending_approval",
+      "current_revision": "scene-r3",
+      "output_path": "C:\\Users\\wilsh\\Projects\\runelord-tintfix-roguelike-main-push\\assets\\cards\\arch-summons-2026-10-04\\summon-hollow-saint\\scene-r3\\summon-hollow-saint-scene-r3.png",
+      "revision_directory": "C:\\Users\\wilsh\\Projects\\runelord-tintfix-roguelike-main-push\\assets\\cards\\arch-summons-2026-10-04\\summon-hollow-saint\\scene-r3",
+      "artwork_path": "C:\\Users\\wilsh\\Projects\\runelord-tintfix-roguelike-main-push\\assets\\cards\\arch-summons-2026-10-04\\summon-hollow-saint\\scene-r3\\illustration.png",
+      "prompt_path": "C:\\Users\\wilsh\\Projects\\runelord-tintfix-roguelike-main-push\\assets\\cards\\arch-summons-2026-10-04\\summon-hollow-saint\\scene-r3\\illustration-prompt.txt",
+      "verification": {
+        "artOnly": {
+          "width": 1024,
+          "height": 1536,
+          "protectedPixels": 925558,
+          "editablePixels": 647306,
+          "changedPixels": 0,
+          "passed": true
+        },
+        "immutableFrame": {
+          "width": 1024,
+          "height": 1536,
+          "protectedPixels": 602082,
+          "editablePixels": 970782,
+          "changedPixels": 0,
+          "passed": true
+        },
+        "template_sha256": "070283f1fb65b07531cec7b32c653ffc96a7adacde1c2ce4daca1f3b4ed78c9e",
+        "mask_sha256": "1196a968ebd565e155db12aacab4e5637f0a2f11444887a013f21ce6b83bd9e0",
+        "output_sha256": "5246773aee0abe1f4e66c3c022b953bfe7f0f04303edb1b44858afa00a24837c",
+        "dimensions": [
+          1024,
+          1536
+        ],
+        "text": "Exact original pixels preserved",
+        "visual_inspection": "Passed: generated illustration and composed 256x384 card inspected; identity, scene, crop, text and frame checked"
+      },
+      "previous_revisions": [
+        {
+          "revision": "r1",
+          "output_path": "C:\\Users\\wilsh\\Projects\\runelord-tintfix-roguelike-main-push\\assets\\cards\\arch-summons-2026-10-04\\summon-hollow-saint\\r1\\summon-hollow-saint-r1.png",
+          "artwork_path": "C:\\Users\\wilsh\\Projects\\runelord-tintfix-roguelike-main-push\\assets\\cards\\arch-summons-2026-10-04\\summon-hollow-saint\\r1\\illustration.png"
+        }
+      ],
+      "references": [
+        {
+          "file": "assets/cards/arch-summons-2026-10-04/summon-hollow-saint/r1/identity-source.png",
+          "sha256": "20172f17c487fa330ac741df44440dbd1676d8d594ca4c0106cb58b701488716",
+          "status": "Approved",
+          "evidenceId": "ef516bf9-939b-48a6-8884-dbf956297195",
+          "decision": {
+            "status": "Approved",
+            "at": "2026-10-02T22:20:56.989Z",
+            "evidenceId": "ef516bf9-939b-48a6-8884-dbf956297195",
+            "paths": [
+              "C:\\Users\\wilsh\\Projects\\runelord\\assets\\approvals\\inbox\\warlock-hollow-saint\\base-r1\\warlock-hollow-saint-base-r1.png"
+            ]
+          }
+        }
+      ],
+      "generation_mode": "built-in image_gen",
+      "gallery_verified": true
+    },
+    {
+      "row_identifier": "summon-pyre-colossus",
+      "source_snapshot": {
+        "name": "Summon Pyre Colossus",
+        "cost": "3",
+        "type": "Skill",
+        "rarity": "Rare",
+        "rules": "Summon Pyre Colossus: 24 HP. Grant caster 6 Guard on arrival and each turn. Action: 2 Scorch to ALL enemies. Double caster Guard gains. Allied demon deaths have a 50% chance to summon a Pyre Warden if space. Unbound.",
+        "upgrade": "+20% HP"
+      },
+      "status": "pending_approval",
+      "current_revision": "scene-r3",
+      "output_path": "C:\\Users\\wilsh\\Projects\\runelord-tintfix-roguelike-main-push\\assets\\cards\\arch-summons-2026-10-04\\summon-pyre-colossus\\scene-r3\\summon-pyre-colossus-scene-r3.png",
+      "revision_directory": "C:\\Users\\wilsh\\Projects\\runelord-tintfix-roguelike-main-push\\assets\\cards\\arch-summons-2026-10-04\\summon-pyre-colossus\\scene-r3",
+      "artwork_path": "C:\\Users\\wilsh\\Projects\\runelord-tintfix-roguelike-main-push\\assets\\cards\\arch-summons-2026-10-04\\summon-pyre-colossus\\scene-r3\\illustration.png",
+      "prompt_path": "C:\\Users\\wilsh\\Projects\\runelord-tintfix-roguelike-main-push\\assets\\cards\\arch-summons-2026-10-04\\summon-pyre-colossus\\scene-r3\\illustration-prompt.txt",
+      "verification": {
+        "artOnly": {
+          "width": 1024,
+          "height": 1536,
+          "protectedPixels": 925558,
+          "editablePixels": 647306,
+          "changedPixels": 0,
+          "passed": true
+        },
+        "immutableFrame": {
+          "width": 1024,
+          "height": 1536,
+          "protectedPixels": 602082,
+          "editablePixels": 970782,
+          "changedPixels": 0,
+          "passed": true
+        },
+        "template_sha256": "070283f1fb65b07531cec7b32c653ffc96a7adacde1c2ce4daca1f3b4ed78c9e",
+        "mask_sha256": "1196a968ebd565e155db12aacab4e5637f0a2f11444887a013f21ce6b83bd9e0",
+        "output_sha256": "fa5e922e8a82edcbbdf478204499ca6777d973ef63bd9c3998590c8ee0984ef8",
+        "dimensions": [
+          1024,
+          1536
+        ],
+        "text": "Exact original pixels preserved",
+        "visual_inspection": "Passed: generated illustration and composed 256x384 card inspected; identity, scene, crop, text and frame checked"
+      },
+      "previous_revisions": [
+        {
+          "revision": "r1",
+          "output_path": "C:\\Users\\wilsh\\Projects\\runelord-tintfix-roguelike-main-push\\assets\\cards\\arch-summons-2026-10-04\\summon-pyre-colossus\\r1\\summon-pyre-colossus-r1.png",
+          "artwork_path": "C:\\Users\\wilsh\\Projects\\runelord-tintfix-roguelike-main-push\\assets\\cards\\arch-summons-2026-10-04\\summon-pyre-colossus\\r1\\illustration.png"
+        }
+      ],
+      "references": [
+        {
+          "file": "assets/cards/arch-summons-2026-10-04/summon-pyre-colossus/r1/identity-source.png",
+          "sha256": "78fa4cd7851441d7d2c03aba1377370fa76a96092d9e29ee05514b6264065b2e",
+          "status": "Approved",
+          "evidenceId": "2da2af18-be45-46f5-8b41-66a4923185b8",
+          "decision": {
+            "status": "Approved",
+            "at": "2026-10-02T22:20:56.989Z",
+            "evidenceId": "2da2af18-be45-46f5-8b41-66a4923185b8",
+            "paths": [
+              "C:\\Users\\wilsh\\Projects\\runelord\\assets\\approvals\\inbox\\warlock-pyre-colossus\\base-r1\\warlock-pyre-colossus-base-r1.png"
+            ]
+          }
+        }
+      ],
+      "generation_mode": "built-in image_gen",
+      "gallery_verified": true
+    }
+  ]
+}

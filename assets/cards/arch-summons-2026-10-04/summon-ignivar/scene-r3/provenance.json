@@ -1,0 +1,25 @@
+{
+  "input": {
+    "id": "summon-ignivar",
+    "prompt": "Use case: stylized-concept. Create ONLY a full-bleed landscape 4:3 fantasy card illustration. Image 1 is the exact creature identity: Ignivar, angular red winged horned demon, gold diamond chest core, claws and fiery eyes. Image 2 is rendering reference only, NO frame/text. Reimagine this creature in a dynamic scene swooping down above a fractured volcanic causeway, one claw drawing a curling trail of fire across the stone, wings spread dramatically, jagged infernal spires and lava chasm behind. Keep creature's red/black design recognizable, make it imposing and readable, wings within composition. A fully illustrated environment with depth and foreground rock, not a cutout on a plain backdrop. Runelord serious clean 2D cel shading, broad flat colors, crisp angular shapes and hard shadows, sparse highlights. No typography, frame, UI, watermark, realism, dense grain.",
+    "source": "C:/Users/wilsh/.codex/generated_images/01a10ab7-ce2b-7cc0-b5ec-d49422b9ee3b/exec-f9a6443c-ef29-4def-a995-0f10121951de.png"
+  },
+  "references": [
+    {
+      "file": "assets/cards/arch-summons-2026-10-04/summon-ignivar/r1/identity-source.png",
+      "sha256": "4a12ae1d443da8df804ae070efbb135342eed8b9a140d1137fff221ca5d27974",
+      "status": "Approved",
+      "evidenceId": "fc3fc045-9e89-468c-a0a7-36e445fcfb43",
+      "decision": {
+        "status": "Approved",
+        "at": "2026-10-02T22:20:56.989Z",
+        "evidenceId": "fc3fc045-9e89-468c-a0a7-36e445fcfb43",
+        "paths": [
+          "C:\\Users\\wilsh\\Projects\\runelord\\assets\\approvals\\inbox\\warlock-ignivar\\base-r1\\warlock-ignivar-base-r1.png"
+        ]
+      }
+    }
+  ],
+  "authorization": "User requested full card art replacement and exact Empower Demon art reassignment to Gorthak on 2026-10-05",
+  "approval": "Pending approval"
+}

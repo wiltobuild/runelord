@@ -1,0 +1,34 @@
+[
+  {
+    "region": "title",
+    "text": "Mass Exhumation",
+    "font_size": 56,
+    "lines": [
+      "Mass Exhumation"
+    ]
+  },
+  {
+    "region": "cost",
+    "text": "2",
+    "font_size": 104,
+    "lines": [
+      "2"
+    ]
+  },
+  {
+    "region": "type",
+    "text": "SKILL · RUNEBLADE",
+    "font_size": 32,
+    "lines": [
+      "SKILL · RUNEBLADE"
+    ]
+  },
+  {
+    "region": "rules",
+    "text": "Gain 4 Corpses.",
+    "font_size": 56,
+    "lines": [
+      "Gain 4 Corpses."
+    ]
+  }
+]

@@ -1,0 +1,194 @@
+{
+  "id": "abomination-rime-hauler",
+  "state": "idle",
+  "status": "idle_candidate_pending_user_review",
+  "method": "four generated whole-character poses, six-step forward/reverse playback",
+  "motion": "Heavy breathing with attached bell and hook sway",
+  "canvas": [
+    768,
+    704
+  ],
+  "anchor": [
+    384,
+    672
+  ],
+  "coordinateSystem": "pixels top-left, x right y down",
+  "frames": [
+    {
+      "file": "idle-00.png",
+      "sourceRectangle": [
+        0,
+        0,
+        599,
+        687
+      ],
+      "sourceAlphaBounds": [
+        0,
+        24,
+        599,
+        687
+      ],
+      "placement": [
+        84,
+        9
+      ],
+      "registrationTranslation": [
+        51,
+        12
+      ],
+      "contactAnchor": [
+        340,
+        672
+      ],
+      "size": [
+        768,
+        704
+      ]
+    },
+    {
+      "file": "idle-01.png",
+      "sourceRectangle": [
+        599,
+        0,
+        1145,
+        687
+      ],
+      "sourceAlphaBounds": [
+        0,
+        15,
+        534,
+        687
+      ],
+      "placement": [
+        117,
+        0
+      ],
+      "registrationTranslation": [
+        68,
+        12
+      ],
+      "contactAnchor": [
+        340,
+        672
+      ],
+      "size": [
+        768,
+        704
+      ]
+    },
+    {
+      "file": "idle-02.png",
+      "sourceRectangle": [
+        0,
+        687,
+        599,
+        1374
+      ],
+      "sourceAlphaBounds": [
+        23,
+        5,
+        599,
+        669
+      ],
+      "placement": [
+        96,
+        8
+      ],
+      "registrationTranslation": [
+        57,
+        8
+      ],
+      "contactAnchor": [
+        340,
+        672
+      ],
+      "size": [
+        768,
+        704
+      ]
+    },
+    {
+      "file": "idle-03.png",
+      "sourceRectangle": [
+        599,
+        687,
+        1145,
+        1374
+      ],
+      "sourceAlphaBounds": [
+        0,
+        0,
+        546,
+        671
+      ],
+      "placement": [
+        111,
+        1
+      ],
+      "registrationTranslation": [
+        51,
+        5
+      ],
+      "contactAnchor": [
+        340,
+        672
+      ],
+      "size": [
+        768,
+        704
+      ]
+    }
+  ],
+  "sequence": [
+    0,
+    1,
+    2,
+    3,
+    2,
+    1
+  ],
+  "frameDurationsMs": [
+    350,
+    350,
+    350,
+    350,
+    350,
+    350
+  ],
+  "durationMs": 2100,
+  "loop": true,
+  "atlas": {
+    "file": "atlas.png",
+    "columns": 2,
+    "rows": 2,
+    "cell": [
+      768,
+      704
+    ]
+  },
+  "sourceApproval": {
+    "id": "abomination-rime-hauler",
+    "name": "Rime Hauler",
+    "path": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\approvals\\inbox\\abomination-rime-hauler\\concept-r1\\abomination-rime-hauler-concept-r1.png",
+    "sha256": "405909560042c7e5ffbe43597440c8b9f3a1fcd8f1f751fa196943aaaf1321f6",
+    "decision": {
+      "status": "Approved",
+      "at": "2026-10-13T04:34:47.406Z",
+      "evidenceId": "f5381e45-023f-4d01-ae7a-5d9d07f945d1",
+      "paths": [
+        "C:\\Users\\wilsh\\Projects\\runelord\\assets\\approvals\\inbox\\abomination-rime-hauler\\concept-r1\\abomination-rime-hauler-concept-r1.png"
+      ]
+    }
+  },
+  "generation": "built-in image_gen",
+  "limitations": [
+    "Idle only; attack, hit, wounded_idle and die not produced.",
+    "Generated pose details require visual approval; no game integration performed.",
+    "Frame canvas is export padding; no resolution upscaling."
+  ],
+  "preview": "review.gif",
+  "qa": {
+    "independentReview": "assets/characters/ice-idle-2026-10-13/qa-root-r2.json",
+    "result": "registration and identity checks passed; continuous live playback not fully verified"
+  }
+}

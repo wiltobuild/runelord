@@ -1,0 +1,25 @@
+{
+  "input": {
+    "id": "summon-nightmaw",
+    "prompt": "Use case: stylized-concept. Full-bleed landscape 4:3 card illustration only. Image 1 exact Nightmaw identity: charcoal shadow wraith, jagged crimson horned head armor and shoulder plates, long claw hands, amber eye, lower body trailing into dark ribbons. Image 2 style only. Reimagine Nightmaw lunging out of a rippling shadow fissure in an abandoned gothic cloister at dusk. One claw reaches toward viewer, trailing black ribbons weave between broken stone arches; violet mist and a few red magical slashes lift from cracked floor. Cool moonlit background contrasts with red armor and eye. Deliberately illustrated setting, foreground debris, midground wraith, receding arches; threatening and elusive. Serious angular Runelord 2D cel shading, flat color regions, hard shadows, quiet surfaces. Preserve identity, no humanoid legs added. No border, lettering, UI, watermark, photoreal texture, blank backdrop.",
+    "source": "C:/Users/wilsh/.codex/generated_images/01a10ab7-ce2b-7cc0-b5ec-d49422b9ee3b/exec-3cb29110-9947-4d28-9d2f-974932cff5b9.png"
+  },
+  "references": [
+    {
+      "file": "assets/cards/arch-summons-2026-10-04/summon-nightmaw/r1/identity-source.png",
+      "sha256": "fd7aba1d6b0804573d9c1c476726c5321685c24dbc624cd638272054018fc30c",
+      "status": "Approved",
+      "evidenceId": "7895d2f9-60de-436c-b04e-70036e331ce6",
+      "decision": {
+        "status": "Approved",
+        "at": "2026-10-02T22:20:56.989Z",
+        "evidenceId": "7895d2f9-60de-436c-b04e-70036e331ce6",
+        "paths": [
+          "C:\\Users\\wilsh\\Projects\\runelord\\assets\\approvals\\inbox\\warlock-nightmaw\\base-r1\\warlock-nightmaw-base-r1.png"
+        ]
+      }
+    }
+  ],
+  "authorization": "User requested full card art replacement and exact Empower Demon art reassignment to Gorthak on 2026-10-05",
+  "approval": "Pending approval"
+}

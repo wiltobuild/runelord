@@ -1,0 +1,25 @@
+{
+  "input": {
+    "id": "summon-hollow-saint",
+    "prompt": "Use case: stylized-concept. Full-bleed landscape 4:3 card illustration ONLY. Reference 1 exact identity of The Hollow Saint: huge floating serpentine demonic leech with charcoal segmented tapering body, crimson blade fins, glowing ivory belly plates and a huge circular black maw surrounded by ivory thorn-crown teeth and scarlet inner teeth. Reference 2 style only. Dramatic scene of this creature coiling above a desecrated cathedral altar, maw angled toward the viewer, luminous ivory soul-energy streaming from cracked altar stones into its mouth. Faded red banners, broken arch windows and smoky burgundy depths, foreground broken ritual stones. Maintain unmistakable limbless serpentine identity and crown-shaped mouth, not a humanoid. Full environment with depth, dynamic S curve, broad clean flat-color cel shading and hard graphic shadows, serious Runelord style. No border, text, UI, watermark, photoreal texture or plain backdrop.",
+    "source": "C:/Users/wilsh/.codex/generated_images/01a10ab7-ce2b-7cc0-b5ec-d49422b9ee3b/exec-038d2534-882c-4675-b9ab-bfe3faf29beb.png"
+  },
+  "references": [
+    {
+      "file": "assets/cards/arch-summons-2026-10-04/summon-hollow-saint/r1/identity-source.png",
+      "sha256": "20172f17c487fa330ac741df44440dbd1676d8d594ca4c0106cb58b701488716",
+      "status": "Approved",
+      "evidenceId": "ef516bf9-939b-48a6-8884-dbf956297195",
+      "decision": {
+        "status": "Approved",
+        "at": "2026-10-02T22:20:56.989Z",
+        "evidenceId": "ef516bf9-939b-48a6-8884-dbf956297195",
+        "paths": [
+          "C:\\Users\\wilsh\\Projects\\runelord\\assets\\approvals\\inbox\\warlock-hollow-saint\\base-r1\\warlock-hollow-saint-base-r1.png"
+        ]
+      }
+    }
+  ],
+  "authorization": "User requested full card art replacement and exact Empower Demon art reassignment to Gorthak on 2026-10-05",
+  "approval": "Pending approval"
+}

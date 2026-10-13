@@ -1,0 +1,2704 @@
+{
+  "schema_version": 1,
+  "project_root": "C:\\Users\\wilsh\\Projects\\runelord",
+  "catalog_paths": [
+    "catalog/cards-runeblade.md",
+    "packages/content/hellbound.ts"
+  ],
+  "asset_root": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\cards",
+  "cards": [
+    {
+      "tracking_id": "proposal/runeblade-base-summons/frost-thrall",
+      "canonical_id": null,
+      "catalog_path": null,
+      "row_identifier": null,
+      "category": "Runeblade",
+      "variant": "base",
+      "source_snapshot": {
+        "name": "Frost Thrall",
+        "cost": "2",
+        "type": "Skill",
+        "rarity": "Proposed",
+        "rules": "Summon a Thrall.\n16 HP \u00b7 6 Power.\nHits apply 1 Chill.\nRot.",
+        "hp": 16,
+        "power": 6,
+        "mechanics_status": "Draft for user review; not implemented",
+        "summon": "frost-thrall"
+      },
+      "status": "pending_approval",
+      "current_revision": "r1",
+      "output_path": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\cards\\runeblade-base-summons-2026-10-05\\frost-thrall\\r1\\frost-thrall-card-r1.png",
+      "artwork_path": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\cards\\runeblade-base-summons-2026-10-05\\frost-thrall\\r1\\illustration.png",
+      "text_source_path": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\cards\\runeblade-base-summons-2026-10-05\\frost-thrall\\r1\\text-data.json",
+      "illustration_prompt_path": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\cards\\runeblade-base-summons-2026-10-05\\frost-thrall\\r1\\illustration-prompt.txt",
+      "reference_image_paths": [
+        "C:\\Users\\wilsh\\Projects\\runelord\\assets\\characters\\runeblade-base-summons\\selected-r1\\frost-thrall\\master.png",
+        "C:\\Users\\wilsh\\Documents\\Codex\\2026-10-01\\new-chat\\outputs\\runelord-cards\\templates\\runeblade-v1\\baseline.png"
+      ],
+      "reference_hashes": [
+        "32183e9e97d29d42b4f8674e8a9bb7e6dfe888fc871149f33405b3c8491be5e9",
+        "30cd5177cf360f80a6b90cfdafeaecb8fa561c98751414a6b5ba295df3744a3d"
+      ],
+      "verification": {
+        "dimensions": [
+          1024,
+          1536
+        ],
+        "changed_protected_pixels": 0,
+        "protected_pixel_count": 746854,
+        "template_sha256": "30cd5177cf360f80a6b90cfdafeaecb8fa561c98751414a6b5ba295df3744a3d",
+        "mask_sha256": "2f2b4c0292722178aaea3e0e12793646e4cb492212ccdfa5d90ee76d71e90aec",
+        "text_matches_authorized_proposal": true
+      },
+      "sha256": "7dc3aeedefdabec6311bc05e9af187cc04977e3c2ef362f5ecee9e24f7a18b56"
+    },
+    {
+      "tracking_id": "proposal/runeblade-base-summons/shattered-queen",
+      "canonical_id": null,
+      "catalog_path": null,
+      "row_identifier": null,
+      "category": "Runeblade",
+      "variant": "base",
+      "source_snapshot": {
+        "name": "Shattered Queen",
+        "cost": "3",
+        "type": "Skill",
+        "rarity": "Proposed",
+        "rules": "Summon a Thrall.\n12 HP \u00b7 3 Power.\nHits ALL enemies.\nHits apply 1 Chill.\nRot.",
+        "hp": 12,
+        "power": 3,
+        "mechanics_status": "Draft for user review; not implemented",
+        "summon": "shattered-queen"
+      },
+      "status": "pending_approval",
+      "current_revision": "r1",
+      "output_path": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\cards\\runeblade-base-summons-2026-10-05\\shattered-queen\\r1\\shattered-queen-card-r1.png",
+      "artwork_path": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\cards\\runeblade-base-summons-2026-10-05\\shattered-queen\\r1\\illustration.png",
+      "text_source_path": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\cards\\runeblade-base-summons-2026-10-05\\shattered-queen\\r1\\text-data.json",
+      "illustration_prompt_path": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\cards\\runeblade-base-summons-2026-10-05\\shattered-queen\\r1\\illustration-prompt.txt",
+      "reference_image_paths": [
+        "C:\\Users\\wilsh\\Projects\\runelord\\assets\\characters\\runeblade-base-summons\\selected-r1\\shattered-queen\\master.png",
+        "C:\\Users\\wilsh\\Documents\\Codex\\2026-10-01\\new-chat\\outputs\\runelord-cards\\templates\\runeblade-v1\\baseline.png"
+      ],
+      "reference_hashes": [
+        "a995d730c43a7cecf17710075938845da3a4d5b7330ec61de8ef87aa3daabdc1",
+        "30cd5177cf360f80a6b90cfdafeaecb8fa561c98751414a6b5ba295df3744a3d"
+      ],
+      "verification": {
+        "dimensions": [
+          1024,
+          1536
+        ],
+        "changed_protected_pixels": 0,
+        "protected_pixel_count": 746854,
+        "template_sha256": "30cd5177cf360f80a6b90cfdafeaecb8fa561c98751414a6b5ba295df3744a3d",
+        "mask_sha256": "2f2b4c0292722178aaea3e0e12793646e4cb492212ccdfa5d90ee76d71e90aec",
+        "text_matches_authorized_proposal": true
+      },
+      "sha256": "7f70de79f05117f833e0b3358c2add23268d1ac94f275a5d104d1c5815f8cbe8"
+    },
+    {
+      "tracking_id": "proposal/runeblade-base-summons/rime-seer",
+      "canonical_id": null,
+      "catalog_path": null,
+      "row_identifier": null,
+      "category": "Runeblade",
+      "variant": "base",
+      "source_snapshot": {
+        "name": "Rime Seer",
+        "cost": "2",
+        "type": "Skill",
+        "rarity": "Proposed",
+        "rules": "Summon a Thrall.\n10 HP \u00b7 4 Power.\nHits apply 2 Chill.\nRot.",
+        "hp": 10,
+        "power": 4,
+        "mechanics_status": "Draft for user review; not implemented",
+        "summon": "rime-seer"
+      },
+      "status": "pending_approval",
+      "current_revision": "r1",
+      "output_path": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\cards\\runeblade-base-summons-2026-10-05\\rime-seer\\r1\\rime-seer-card-r1.png",
+      "artwork_path": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\cards\\runeblade-base-summons-2026-10-05\\rime-seer\\r1\\illustration.png",
+      "text_source_path": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\cards\\runeblade-base-summons-2026-10-05\\rime-seer\\r1\\text-data.json",
+      "illustration_prompt_path": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\cards\\runeblade-base-summons-2026-10-05\\rime-seer\\r1\\illustration-prompt.txt",
+      "reference_image_paths": [
+        "C:\\Users\\wilsh\\Projects\\runelord\\assets\\characters\\runeblade-base-summons\\selected-r1\\rime-seer\\master.png",
+        "C:\\Users\\wilsh\\Documents\\Codex\\2026-10-01\\new-chat\\outputs\\runelord-cards\\templates\\runeblade-v1\\baseline.png"
+      ],
+      "reference_hashes": [
+        "ee7a6e63d64486e6b85159a04bb981f41c1ef51fb6d93eed01bc9c16117275c9",
+        "30cd5177cf360f80a6b90cfdafeaecb8fa561c98751414a6b5ba295df3744a3d"
+      ],
+      "verification": {
+        "dimensions": [
+          1024,
+          1536
+        ],
+        "changed_protected_pixels": 0,
+        "protected_pixel_count": 746854,
+        "template_sha256": "30cd5177cf360f80a6b90cfdafeaecb8fa561c98751414a6b5ba295df3744a3d",
+        "mask_sha256": "2f2b4c0292722178aaea3e0e12793646e4cb492212ccdfa5d90ee76d71e90aec",
+        "text_matches_authorized_proposal": true
+      },
+      "sha256": "f0818b2d8e24e38cd6d0b2d07a70cacd39be39232aafa0c7293627194ab7e64c"
+    },
+    {
+      "tracking_id": "proposal/runeblade-base-summons/rune-revenant",
+      "canonical_id": null,
+      "catalog_path": null,
+      "row_identifier": null,
+      "category": "Runeblade",
+      "variant": "base",
+      "source_snapshot": {
+        "name": "Rune Revenant",
+        "cost": "2",
+        "type": "Skill",
+        "rarity": "Proposed",
+        "rules": "Summon a Thrall.\n12 HP \u00b7 2 Power.\nAttacks hit 3 times.\nRot.",
+        "hp": 12,
+        "power": 2,
+        "mechanics_status": "Draft for user review; not implemented",
+        "summon": "rune-revenant"
+      },
+      "status": "pending_approval",
+      "current_revision": "r1",
+      "output_path": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\cards\\runeblade-base-summons-2026-10-05\\rune-revenant\\r1\\rune-revenant-card-r1.png",
+      "artwork_path": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\cards\\runeblade-base-summons-2026-10-05\\rune-revenant\\r1\\illustration.png",
+      "text_source_path": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\cards\\runeblade-base-summons-2026-10-05\\rune-revenant\\r1\\text-data.json",
+      "illustration_prompt_path": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\cards\\runeblade-base-summons-2026-10-05\\rune-revenant\\r1\\illustration-prompt.txt",
+      "reference_image_paths": [
+        "C:\\Users\\wilsh\\Projects\\runelord\\assets\\characters\\runeblade-base-summons\\selected-r1\\rune-revenant\\master.png",
+        "C:\\Users\\wilsh\\Documents\\Codex\\2026-10-01\\new-chat\\outputs\\runelord-cards\\templates\\runeblade-v1\\baseline.png"
+      ],
+      "reference_hashes": [
+        "afa9d76fe84274c9115cae94705c327d6300d1524f6fc2545030863f3fd8249a",
+        "30cd5177cf360f80a6b90cfdafeaecb8fa561c98751414a6b5ba295df3744a3d"
+      ],
+      "verification": {
+        "dimensions": [
+          1024,
+          1536
+        ],
+        "changed_protected_pixels": 0,
+        "protected_pixel_count": 746854,
+        "template_sha256": "30cd5177cf360f80a6b90cfdafeaecb8fa561c98751414a6b5ba295df3744a3d",
+        "mask_sha256": "2f2b4c0292722178aaea3e0e12793646e4cb492212ccdfa5d90ee76d71e90aec",
+        "text_matches_authorized_proposal": true
+      },
+      "sha256": "4ad18c3cefcb7e815ea9e3ee2649798235adcbf047e9207ae842aa677289fcd8"
+    },
+    {
+      "tracking_id": "proposal/runeblade-base-summons/bone-defender",
+      "canonical_id": null,
+      "catalog_path": null,
+      "row_identifier": null,
+      "category": "Runeblade",
+      "variant": "base",
+      "source_snapshot": {
+        "name": "Bone Defender",
+        "cost": "2",
+        "type": "Skill",
+        "rarity": "Proposed",
+        "rules": "Summon a Thrall.\n18 HP \u00b7 3 Power.\nDefender.\nRot.",
+        "hp": 18,
+        "power": 3,
+        "mechanics_status": "Draft for user review; not implemented",
+        "summon": "bone-defender"
+      },
+      "status": "pending_approval",
+      "current_revision": "r1",
+      "output_path": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\cards\\runeblade-base-summons-2026-10-05\\bone-defender\\r1\\bone-defender-card-r1.png",
+      "artwork_path": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\cards\\runeblade-base-summons-2026-10-05\\bone-defender\\r1\\illustration.png",
+      "text_source_path": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\cards\\runeblade-base-summons-2026-10-05\\bone-defender\\r1\\text-data.json",
+      "illustration_prompt_path": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\cards\\runeblade-base-summons-2026-10-05\\bone-defender\\r1\\illustration-prompt.txt",
+      "reference_image_paths": [
+        "C:\\Users\\wilsh\\Projects\\runelord\\assets\\characters\\runeblade-base-summons\\selected-r1\\bone-defender\\master.png",
+        "C:\\Users\\wilsh\\Documents\\Codex\\2026-10-01\\new-chat\\outputs\\runelord-cards\\templates\\runeblade-v1\\baseline.png"
+      ],
+      "reference_hashes": [
+        "917309154a8f7e2067a8f5ede95a3e53941872ae80d35982c8eb26c9b1caeaf9",
+        "30cd5177cf360f80a6b90cfdafeaecb8fa561c98751414a6b5ba295df3744a3d"
+      ],
+      "verification": {
+        "dimensions": [
+          1024,
+          1536
+        ],
+        "changed_protected_pixels": 0,
+        "protected_pixel_count": 746854,
+        "template_sha256": "30cd5177cf360f80a6b90cfdafeaecb8fa561c98751414a6b5ba295df3744a3d",
+        "mask_sha256": "2f2b4c0292722178aaea3e0e12793646e4cb492212ccdfa5d90ee76d71e90aec",
+        "text_matches_authorized_proposal": true
+      },
+      "sha256": "ad6bc995e93d34160d70c3c5b3535e097eeebe0c9c2dc753028607f9dc7bd4cf"
+    },
+    {
+      "tracking_id": "roguelike/runeblade/summon-frost-thrall",
+      "canonical_id": "summon-frost-thrall",
+      "catalog_path": "packages/content/runeblade.ts",
+      "row_identifier": "summon-frost-thrall",
+      "category": "Runeblade",
+      "variant": "base",
+      "source_snapshot": {
+        "id": "summon-frost-thrall",
+        "name": "Frost Thrall",
+        "cost": 2,
+        "type": "Summon",
+        "rarity": "Common",
+        "rules": "Summon Frost Thrall: 16 HP / 6 Power. Attacks apply 1 Chill. Rot starts at 1. Automatically spend Corpses equal to its Mana cost instead if available.",
+        "definitionRules": "Summon a 16 HP / 6 Power Thrall. Attacks apply 1 Chill.",
+        "displayRules": "Summon a Thrall. 16 HP / 6 Power.\nAttacks apply 1 Chill.\nRot starts at 1.\nIf you have 2 Corpses, spend them instead of Mana.",
+        "authoritativeSource": "packages/content/runeblade.ts",
+        "engine_source_sha256": "1c64e6e43d4d829bdcb4472c50dbc850f0dbf9065ee2a9fa99e332c22bb20858"
+      },
+      "status": "pending_approval",
+      "current_revision": "demo-r1",
+      "output_path": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\cards\\runeblade-demo-2026-10-06\\summon-frost-thrall\\r1\\summon-frost-thrall-card-r1.png",
+      "sha256": "1051196c2ae5842eae94edce185cd3bf5961bd494acfff8485e8aa04945487e8",
+      "dimensions": [
+        1024,
+        1536
+      ],
+      "artwork_path": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\cards\\runeblade-demo-2026-10-06\\summon-frost-thrall\\r1\\illustration.png",
+      "text_source_path": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\cards\\runeblade-demo-2026-10-06\\summon-frost-thrall\\r1\\text-data.json",
+      "illustration_prompt_path": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\cards\\runeblade-demo-2026-10-06\\summon-frost-thrall\\r1\\illustration-brief.txt",
+      "reference_image_paths": [
+        "C:\\Users\\wilsh\\Projects\\runelord\\assets\\cards\\runeblade-base-summons-2026-10-05\\frost-thrall\\r1\\illustration.png",
+        "C:\\Users\\wilsh\\Projects\\runelord\\assets\\cards\\runeblade-demo-2026-10-06\\template-v2\\baseline.png"
+      ],
+      "reference_hashes": [
+        "fec16be77e11a8953bd15cb006c59e15cb8ff68788a98a722da7fb4f49c53761",
+        "30cd5177cf360f80a6b90cfdafeaecb8fa561c98751414a6b5ba295df3744a3d"
+      ],
+      "source_art_decision": {
+        "status": "Pending approval"
+      },
+      "template_path": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\cards\\runeblade-demo-2026-10-06\\template-v2\\baseline.png",
+      "template_hash": "30cd5177cf360f80a6b90cfdafeaecb8fa561c98751414a6b5ba295df3744a3d",
+      "editable_mask_path": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\cards\\runeblade-demo-2026-10-06\\template-v2\\mask-union.png",
+      "editable_mask_version": "runeblade-demo-v2",
+      "mask_hash": "c2226e7427a2afc7c7236fda02c6078fc27e31bb32a0f8386de502ce89d672da",
+      "verification": {
+        "dimensions": [
+          1024,
+          1536
+        ],
+        "protected_pixel_count": 621701,
+        "changed_protected_pixels": 0,
+        "protected_alpha_identical": true,
+        "template_sha256": "30cd5177cf360f80a6b90cfdafeaecb8fa561c98751414a6b5ba295df3744a3d",
+        "mask_sha256": "c2226e7427a2afc7c7236fda02c6078fc27e31bb32a0f8386de502ce89d672da",
+        "editable_mask_version": "runeblade-demo-v2",
+        "text_min_rules_px": 44,
+        "text_matches_engine_semantics": true,
+        "automatic_corpse_cost_visible": true
+      },
+      "generation_method": "Technical recomposition of existing artwork; exact immutable card frame",
+      "integration_authorization": "User requested playable Runeblade roguelike demo, secondary Corpse resource and cards on 2026-10-06."
+    },
+    {
+      "tracking_id": "roguelike/runeblade/summon-shattered-queen",
+      "canonical_id": "summon-shattered-queen",
+      "catalog_path": "packages/content/runeblade.ts",
+      "row_identifier": "summon-shattered-queen",
+      "category": "Runeblade",
+      "variant": "base",
+      "source_snapshot": {
+        "id": "summon-shattered-queen",
+        "name": "Shattered Queen",
+        "cost": 3,
+        "type": "Summon",
+        "rarity": "Rare",
+        "rules": "Summon Shattered Queen: 12 HP / 3 Power. Attacks hit ALL enemies and apply 1 Chill. Rot starts at 1. Automatically spend Corpses equal to its Mana cost instead if available.",
+        "definitionRules": "Summon a 12 HP / 3 Power Thrall. Attacks hit ALL enemies and apply 1 Chill.",
+        "displayRules": "Summon a Thrall. 12 HP / 3 Power.\nAttacks hit ALL enemies and apply 1 Chill.\nRot starts at 1.\nIf you have 3 Corpses, spend them instead of Mana.",
+        "authoritativeSource": "packages/content/runeblade.ts",
+        "engine_source_sha256": "1c64e6e43d4d829bdcb4472c50dbc850f0dbf9065ee2a9fa99e332c22bb20858"
+      },
+      "status": "pending_approval",
+      "current_revision": "demo-r1",
+      "output_path": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\cards\\runeblade-demo-2026-10-06\\summon-shattered-queen\\r1\\summon-shattered-queen-card-r1.png",
+      "sha256": "ff28ef1361e72cb6e98d5a87bfe92273282c205ce7eec6416ec10ee08a971536",
+      "dimensions": [
+        1024,
+        1536
+      ],
+      "artwork_path": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\cards\\runeblade-demo-2026-10-06\\summon-shattered-queen\\r1\\illustration.png",
+      "text_source_path": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\cards\\runeblade-demo-2026-10-06\\summon-shattered-queen\\r1\\text-data.json",
+      "illustration_prompt_path": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\cards\\runeblade-demo-2026-10-06\\summon-shattered-queen\\r1\\illustration-brief.txt",
+      "reference_image_paths": [
+        "C:\\Users\\wilsh\\Projects\\runelord\\assets\\cards\\runeblade-base-summons-2026-10-05\\shattered-queen\\r1\\illustration.png",
+        "C:\\Users\\wilsh\\Projects\\runelord\\assets\\cards\\runeblade-demo-2026-10-06\\template-v2\\baseline.png"
+      ],
+      "reference_hashes": [
+        "8f2c75fa0da29c8bd0e512ac8fc630d217e8b34d9f7c267f25f2364e3b57927a",
+        "30cd5177cf360f80a6b90cfdafeaecb8fa561c98751414a6b5ba295df3744a3d"
+      ],
+      "source_art_decision": {
+        "status": "Pending approval"
+      },
+      "template_path": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\cards\\runeblade-demo-2026-10-06\\template-v2\\baseline.png",
+      "template_hash": "30cd5177cf360f80a6b90cfdafeaecb8fa561c98751414a6b5ba295df3744a3d",
+      "editable_mask_path": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\cards\\runeblade-demo-2026-10-06\\template-v2\\mask-union.png",
+      "editable_mask_version": "runeblade-demo-v2",
+      "mask_hash": "c2226e7427a2afc7c7236fda02c6078fc27e31bb32a0f8386de502ce89d672da",
+      "verification": {
+        "dimensions": [
+          1024,
+          1536
+        ],
+        "protected_pixel_count": 621701,
+        "changed_protected_pixels": 0,
+        "protected_alpha_identical": true,
+        "template_sha256": "30cd5177cf360f80a6b90cfdafeaecb8fa561c98751414a6b5ba295df3744a3d",
+        "mask_sha256": "c2226e7427a2afc7c7236fda02c6078fc27e31bb32a0f8386de502ce89d672da",
+        "editable_mask_version": "runeblade-demo-v2",
+        "text_min_rules_px": 40,
+        "text_matches_engine_semantics": true,
+        "automatic_corpse_cost_visible": true
+      },
+      "generation_method": "Technical recomposition of existing artwork; exact immutable card frame",
+      "integration_authorization": "User requested playable Runeblade roguelike demo, secondary Corpse resource and cards on 2026-10-06."
+    },
+    {
+      "tracking_id": "roguelike/runeblade/summon-rime-seer",
+      "canonical_id": "summon-rime-seer",
+      "catalog_path": "packages/content/runeblade.ts",
+      "row_identifier": "summon-rime-seer",
+      "category": "Runeblade",
+      "variant": "base",
+      "source_snapshot": {
+        "id": "summon-rime-seer",
+        "name": "Rime Seer",
+        "cost": 2,
+        "type": "Summon",
+        "rarity": "Common",
+        "rules": "Summon Rime Seer: 10 HP / 4 Power. Attacks apply 3 Chill. Rot starts at 1. Automatically spend Corpses equal to its Mana cost instead if available.",
+        "definitionRules": "Summon a 10 HP / 4 Power Thrall. Attacks apply 3 Chill.",
+        "displayRules": "Summon a Thrall. 10 HP / 4 Power.\nAttacks apply 3 Chill.\nRot starts at 1.\nIf you have 2 Corpses, spend them instead of Mana.",
+        "authoritativeSource": "packages/content/runeblade.ts",
+        "engine_source_sha256": "1c64e6e43d4d829bdcb4472c50dbc850f0dbf9065ee2a9fa99e332c22bb20858"
+      },
+      "status": "pending_approval",
+      "current_revision": "demo-r1",
+      "output_path": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\cards\\runeblade-demo-2026-10-06\\summon-rime-seer\\r1\\summon-rime-seer-card-r1.png",
+      "sha256": "7a2205f1feac761fb41f57b703db509fcfd564522a27a0c527f4827ce74f007d",
+      "dimensions": [
+        1024,
+        1536
+      ],
+      "artwork_path": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\cards\\runeblade-demo-2026-10-06\\summon-rime-seer\\r1\\illustration.png",
+      "text_source_path": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\cards\\runeblade-demo-2026-10-06\\summon-rime-seer\\r1\\text-data.json",
+      "illustration_prompt_path": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\cards\\runeblade-demo-2026-10-06\\summon-rime-seer\\r1\\illustration-brief.txt",
+      "reference_image_paths": [
+        "C:\\Users\\wilsh\\Projects\\runelord\\assets\\cards\\runeblade-base-summons-2026-10-05\\rime-seer\\r1\\illustration.png",
+        "C:\\Users\\wilsh\\Projects\\runelord\\assets\\cards\\runeblade-demo-2026-10-06\\template-v2\\baseline.png"
+      ],
+      "reference_hashes": [
+        "53e23b8ab1649638257e3d410955555236be92d8261a357842638e8840d0ac36",
+        "30cd5177cf360f80a6b90cfdafeaecb8fa561c98751414a6b5ba295df3744a3d"
+      ],
+      "source_art_decision": {
+        "status": "Pending approval"
+      },
+      "template_path": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\cards\\runeblade-demo-2026-10-06\\template-v2\\baseline.png",
+      "template_hash": "30cd5177cf360f80a6b90cfdafeaecb8fa561c98751414a6b5ba295df3744a3d",
+      "editable_mask_path": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\cards\\runeblade-demo-2026-10-06\\template-v2\\mask-union.png",
+      "editable_mask_version": "runeblade-demo-v2",
+      "mask_hash": "c2226e7427a2afc7c7236fda02c6078fc27e31bb32a0f8386de502ce89d672da",
+      "verification": {
+        "dimensions": [
+          1024,
+          1536
+        ],
+        "protected_pixel_count": 621701,
+        "changed_protected_pixels": 0,
+        "protected_alpha_identical": true,
+        "template_sha256": "30cd5177cf360f80a6b90cfdafeaecb8fa561c98751414a6b5ba295df3744a3d",
+        "mask_sha256": "c2226e7427a2afc7c7236fda02c6078fc27e31bb32a0f8386de502ce89d672da",
+        "editable_mask_version": "runeblade-demo-v2",
+        "text_min_rules_px": 44,
+        "text_matches_engine_semantics": true,
+        "automatic_corpse_cost_visible": true
+      },
+      "generation_method": "Technical recomposition of existing artwork; exact immutable card frame",
+      "integration_authorization": "User requested playable Runeblade roguelike demo, secondary Corpse resource and cards on 2026-10-06."
+    },
+    {
+      "tracking_id": "roguelike/runeblade/summon-rune-revenant",
+      "canonical_id": "summon-rune-revenant",
+      "catalog_path": "packages/content/runeblade.ts",
+      "row_identifier": "summon-rune-revenant",
+      "category": "Runeblade",
+      "variant": "base",
+      "source_snapshot": {
+        "id": "summon-rune-revenant",
+        "name": "Rune Revenant",
+        "cost": 2,
+        "type": "Summon",
+        "rarity": "Uncommon",
+        "rules": "Summon Rune Revenant: 14 HP / 3 Power. Attacks strike twice. Rot starts at 1. Automatically spend Corpses equal to its Mana cost instead if available.",
+        "definitionRules": "Summon a 14 HP / 3 Power Thrall. Attacks strike twice.",
+        "displayRules": "Summon a Thrall. 14 HP / 3 Power.\nAttacks strike twice.\nRot starts at 1.\nIf you have 2 Corpses, spend them instead of Mana.",
+        "authoritativeSource": "packages/content/runeblade.ts",
+        "engine_source_sha256": "1c64e6e43d4d829bdcb4472c50dbc850f0dbf9065ee2a9fa99e332c22bb20858"
+      },
+      "status": "pending_approval",
+      "current_revision": "demo-r1",
+      "output_path": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\cards\\runeblade-demo-2026-10-06\\summon-rune-revenant\\r1\\summon-rune-revenant-card-r1.png",
+      "sha256": "0f710a9ca23fd25e077c6989d56358d90310d431810e37329cfbe74c227d63e5",
+      "dimensions": [
+        1024,
+        1536
+      ],
+      "artwork_path": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\cards\\runeblade-demo-2026-10-06\\summon-rune-revenant\\r1\\illustration.png",
+      "text_source_path": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\cards\\runeblade-demo-2026-10-06\\summon-rune-revenant\\r1\\text-data.json",
+      "illustration_prompt_path": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\cards\\runeblade-demo-2026-10-06\\summon-rune-revenant\\r1\\illustration-brief.txt",
+      "reference_image_paths": [
+        "C:\\Users\\wilsh\\Projects\\runelord\\assets\\cards\\runeblade-base-summons-2026-10-05\\rune-revenant\\r1\\illustration.png",
+        "C:\\Users\\wilsh\\Projects\\runelord\\assets\\cards\\runeblade-demo-2026-10-06\\template-v2\\baseline.png"
+      ],
+      "reference_hashes": [
+        "a17f9758845fc6a8d51750287af2ff5265714e1c15a827597772e7dd5f4f1a5b",
+        "30cd5177cf360f80a6b90cfdafeaecb8fa561c98751414a6b5ba295df3744a3d"
+      ],
+      "source_art_decision": {
+        "status": "Pending approval"
+      },
+      "template_path": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\cards\\runeblade-demo-2026-10-06\\template-v2\\baseline.png",
+      "template_hash": "30cd5177cf360f80a6b90cfdafeaecb8fa561c98751414a6b5ba295df3744a3d",
+      "editable_mask_path": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\cards\\runeblade-demo-2026-10-06\\template-v2\\mask-union.png",
+      "editable_mask_version": "runeblade-demo-v2",
+      "mask_hash": "c2226e7427a2afc7c7236fda02c6078fc27e31bb32a0f8386de502ce89d672da",
+      "verification": {
+        "dimensions": [
+          1024,
+          1536
+        ],
+        "protected_pixel_count": 621701,
+        "changed_protected_pixels": 0,
+        "protected_alpha_identical": true,
+        "template_sha256": "30cd5177cf360f80a6b90cfdafeaecb8fa561c98751414a6b5ba295df3744a3d",
+        "mask_sha256": "c2226e7427a2afc7c7236fda02c6078fc27e31bb32a0f8386de502ce89d672da",
+        "editable_mask_version": "runeblade-demo-v2",
+        "text_min_rules_px": 44,
+        "text_matches_engine_semantics": true,
+        "automatic_corpse_cost_visible": true
+      },
+      "generation_method": "Technical recomposition of existing artwork; exact immutable card frame",
+      "integration_authorization": "User requested playable Runeblade roguelike demo, secondary Corpse resource and cards on 2026-10-06."
+    },
+    {
+      "tracking_id": "roguelike/runeblade/summon-bone-defender",
+      "canonical_id": "summon-bone-defender",
+      "catalog_path": "packages/content/runeblade.ts",
+      "row_identifier": "summon-bone-defender",
+      "category": "Runeblade",
+      "variant": "base",
+      "source_snapshot": {
+        "id": "summon-bone-defender",
+        "name": "Bone Defender",
+        "cost": 2,
+        "type": "Summon",
+        "rarity": "Common",
+        "rules": "Summon Bone Defender: 18 HP / 3 Power. Defender. Rot starts at 1. Automatically spend Corpses equal to its Mana cost instead if available.",
+        "definitionRules": "Summon an 18 HP / 3 Power Thrall with Defender.",
+        "displayRules": "Summon a Thrall. 18 HP / 3 Power.\nDefender.\nRot starts at 1.\nIf you have 2 Corpses, spend them instead of Mana.",
+        "authoritativeSource": "packages/content/runeblade.ts",
+        "engine_source_sha256": "1c64e6e43d4d829bdcb4472c50dbc850f0dbf9065ee2a9fa99e332c22bb20858"
+      },
+      "status": "pending_approval",
+      "current_revision": "demo-r1",
+      "output_path": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\cards\\runeblade-demo-2026-10-06\\summon-bone-defender\\r1\\summon-bone-defender-card-r1.png",
+      "sha256": "e5544532fcd921f8c1ab1d75f2846483d8dea4bc4cff59033f1cc706bfa77b6a",
+      "dimensions": [
+        1024,
+        1536
+      ],
+      "artwork_path": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\cards\\runeblade-demo-2026-10-06\\summon-bone-defender\\r1\\illustration.png",
+      "text_source_path": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\cards\\runeblade-demo-2026-10-06\\summon-bone-defender\\r1\\text-data.json",
+      "illustration_prompt_path": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\cards\\runeblade-demo-2026-10-06\\summon-bone-defender\\r1\\illustration-brief.txt",
+      "reference_image_paths": [
+        "C:\\Users\\wilsh\\Projects\\runelord\\assets\\cards\\runeblade-base-summons-2026-10-05\\bone-defender\\r1\\illustration.png",
+        "C:\\Users\\wilsh\\Projects\\runelord\\assets\\cards\\runeblade-demo-2026-10-06\\template-v2\\baseline.png"
+      ],
+      "reference_hashes": [
+        "59545d039febfe705594697d5e1d14a5aa2ffbce76d691e2554be53f9e57add0",
+        "30cd5177cf360f80a6b90cfdafeaecb8fa561c98751414a6b5ba295df3744a3d"
+      ],
+      "source_art_decision": {
+        "status": "Pending approval"
+      },
+      "template_path": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\cards\\runeblade-demo-2026-10-06\\template-v2\\baseline.png",
+      "template_hash": "30cd5177cf360f80a6b90cfdafeaecb8fa561c98751414a6b5ba295df3744a3d",
+      "editable_mask_path": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\cards\\runeblade-demo-2026-10-06\\template-v2\\mask-union.png",
+      "editable_mask_version": "runeblade-demo-v2",
+      "mask_hash": "c2226e7427a2afc7c7236fda02c6078fc27e31bb32a0f8386de502ce89d672da",
+      "verification": {
+        "dimensions": [
+          1024,
+          1536
+        ],
+        "protected_pixel_count": 621701,
+        "changed_protected_pixels": 0,
+        "protected_alpha_identical": true,
+        "template_sha256": "30cd5177cf360f80a6b90cfdafeaecb8fa561c98751414a6b5ba295df3744a3d",
+        "mask_sha256": "c2226e7427a2afc7c7236fda02c6078fc27e31bb32a0f8386de502ce89d672da",
+        "editable_mask_version": "runeblade-demo-v2",
+        "text_min_rules_px": 44,
+        "text_matches_engine_semantics": true,
+        "automatic_corpse_cost_visible": true
+      },
+      "generation_method": "Technical recomposition of existing artwork; exact immutable card frame",
+      "integration_authorization": "User requested playable Runeblade roguelike demo, secondary Corpse resource and cards on 2026-10-06."
+    },
+    {
+      "tracking_id": "roguelike/runeblade/hew",
+      "canonical_id": "hew",
+      "catalog_path": "packages/content/runeblade.ts",
+      "row_identifier": "hew",
+      "category": "Runeblade",
+      "variant": "base",
+      "source_snapshot": {
+        "id": "hew",
+        "name": "Hew",
+        "cost": 1,
+        "type": "Attack",
+        "rarity": "Basic",
+        "rules": "Deal 6 damage.",
+        "definitionRules": "Deal 6 damage.",
+        "displayRules": "Deal 6 damage.",
+        "authoritativeSource": "packages/content/runeblade.ts",
+        "engine_source_sha256": "1c64e6e43d4d829bdcb4472c50dbc850f0dbf9065ee2a9fa99e332c22bb20858"
+      },
+      "status": "pending_approval",
+      "current_revision": "demo-r1",
+      "output_path": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\cards\\runeblade-demo-2026-10-06\\hew\\r1\\hew-card-r1.png",
+      "sha256": "4ed33d72435aca0f35055196fe28434ae4081ec60b81631d30a6a3c11bc29a13",
+      "dimensions": [
+        1024,
+        1536
+      ],
+      "artwork_path": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\cards\\runeblade-demo-2026-10-06\\hew\\r1\\illustration.png",
+      "text_source_path": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\cards\\runeblade-demo-2026-10-06\\hew\\r1\\text-data.json",
+      "illustration_prompt_path": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\cards\\runeblade-demo-2026-10-06\\hew\\r1\\illustration-brief.txt",
+      "reference_image_paths": [
+        "C:\\Users\\wilsh\\Projects\\runelord\\assets\\approvals\\inbox\\runeblade-sweeping-hew\\r1\\sweeping-hew-r1.png",
+        "C:\\Users\\wilsh\\Projects\\runelord\\assets\\cards\\runeblade-demo-2026-10-06\\template-v2\\baseline.png"
+      ],
+      "reference_hashes": [
+        "ce7841ac3f57914d0df37a066f5b9d731de3efb56e9455a931b557bd1f9fc525",
+        "30cd5177cf360f80a6b90cfdafeaecb8fa561c98751414a6b5ba295df3744a3d"
+      ],
+      "source_art_decision": {
+        "status": "Approved",
+        "at": "2026-10-02T22:21:50.394Z",
+        "evidenceId": "f4c752bc-c2a6-4e82-901d-a1d65fa8580e",
+        "paths": [
+          "C:\\Users\\wilsh\\Projects\\runelord\\assets\\approvals\\inbox\\runeblade-sweeping-hew\\r1\\sweeping-hew-r1.png"
+        ]
+      },
+      "template_path": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\cards\\runeblade-demo-2026-10-06\\template-v2\\baseline.png",
+      "template_hash": "30cd5177cf360f80a6b90cfdafeaecb8fa561c98751414a6b5ba295df3744a3d",
+      "editable_mask_path": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\cards\\runeblade-demo-2026-10-06\\template-v2\\mask-union.png",
+      "editable_mask_version": "runeblade-demo-v2",
+      "mask_hash": "c2226e7427a2afc7c7236fda02c6078fc27e31bb32a0f8386de502ce89d672da",
+      "verification": {
+        "dimensions": [
+          1024,
+          1536
+        ],
+        "protected_pixel_count": 621701,
+        "changed_protected_pixels": 0,
+        "protected_alpha_identical": true,
+        "template_sha256": "30cd5177cf360f80a6b90cfdafeaecb8fa561c98751414a6b5ba295df3744a3d",
+        "mask_sha256": "c2226e7427a2afc7c7236fda02c6078fc27e31bb32a0f8386de502ce89d672da",
+        "editable_mask_version": "runeblade-demo-v2",
+        "text_min_rules_px": 56,
+        "text_matches_engine_semantics": true,
+        "automatic_corpse_cost_visible": false
+      },
+      "generation_method": "Technical recomposition of existing artwork; exact immutable card frame",
+      "integration_authorization": "User requested playable Runeblade roguelike demo, secondary Corpse resource and cards on 2026-10-06."
+    },
+    {
+      "tracking_id": "roguelike/runeblade/brace",
+      "canonical_id": "brace",
+      "catalog_path": "packages/content/runeblade.ts",
+      "row_identifier": "brace",
+      "category": "Runeblade",
+      "variant": "base",
+      "source_snapshot": {
+        "id": "brace",
+        "name": "Brace",
+        "cost": 1,
+        "type": "Skill",
+        "rarity": "Basic",
+        "rules": "Gain 5 Guard.",
+        "definitionRules": "Gain 5 Guard.",
+        "displayRules": "Gain 5 Guard.",
+        "authoritativeSource": "packages/content/runeblade.ts",
+        "engine_source_sha256": "1c64e6e43d4d829bdcb4472c50dbc850f0dbf9065ee2a9fa99e332c22bb20858"
+      },
+      "status": "pending_approval",
+      "current_revision": "demo-r1",
+      "output_path": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\cards\\runeblade-demo-2026-10-06\\brace\\r1\\brace-card-r1.png",
+      "sha256": "ab19cde3a7395eec04d0748a8b39aee087f7876f0646ebfe003b77e76cb52a83",
+      "dimensions": [
+        1024,
+        1536
+      ],
+      "artwork_path": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\cards\\runeblade-demo-2026-10-06\\brace\\r1\\illustration.png",
+      "text_source_path": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\cards\\runeblade-demo-2026-10-06\\brace\\r1\\text-data.json",
+      "illustration_prompt_path": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\cards\\runeblade-demo-2026-10-06\\brace\\r1\\illustration-brief.txt",
+      "reference_image_paths": [
+        "C:\\Users\\wilsh\\Projects\\runelord\\assets\\approvals\\inbox\\runeblade-bone-ward\\r1\\bone-ward-r1.png",
+        "C:\\Users\\wilsh\\Projects\\runelord\\assets\\cards\\runeblade-demo-2026-10-06\\template-v2\\baseline.png"
+      ],
+      "reference_hashes": [
+        "9f4e08910972fc021c8420c44a35071be491e4777bee593774c7b5207716a81c",
+        "30cd5177cf360f80a6b90cfdafeaecb8fa561c98751414a6b5ba295df3744a3d"
+      ],
+      "source_art_decision": {
+        "status": "Approved",
+        "at": "2026-10-02T22:21:33.035Z",
+        "evidenceId": "23e35edd-a365-4ac6-abf0-b0f4133535f0",
+        "paths": [
+          "C:\\Users\\wilsh\\Projects\\runelord\\assets\\approvals\\inbox\\runeblade-bone-ward\\r1\\bone-ward-r1.png"
+        ]
+      },
+      "template_path": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\cards\\runeblade-demo-2026-10-06\\template-v2\\baseline.png",
+      "template_hash": "30cd5177cf360f80a6b90cfdafeaecb8fa561c98751414a6b5ba295df3744a3d",
+      "editable_mask_path": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\cards\\runeblade-demo-2026-10-06\\template-v2\\mask-union.png",
+      "editable_mask_version": "runeblade-demo-v2",
+      "mask_hash": "c2226e7427a2afc7c7236fda02c6078fc27e31bb32a0f8386de502ce89d672da",
+      "verification": {
+        "dimensions": [
+          1024,
+          1536
+        ],
+        "protected_pixel_count": 621701,
+        "changed_protected_pixels": 0,
+        "protected_alpha_identical": true,
+        "template_sha256": "30cd5177cf360f80a6b90cfdafeaecb8fa561c98751414a6b5ba295df3744a3d",
+        "mask_sha256": "c2226e7427a2afc7c7236fda02c6078fc27e31bb32a0f8386de502ce89d672da",
+        "editable_mask_version": "runeblade-demo-v2",
+        "text_min_rules_px": 56,
+        "text_matches_engine_semantics": true,
+        "automatic_corpse_cost_visible": false
+      },
+      "generation_method": "Technical recomposition of existing artwork; exact immutable card frame",
+      "integration_authorization": "User requested playable Runeblade roguelike demo, secondary Corpse resource and cards on 2026-10-06."
+    },
+    {
+      "tracking_id": "roguelike/runeblade/frostbite",
+      "canonical_id": "frostbite",
+      "catalog_path": "packages/content/runeblade.ts",
+      "row_identifier": "frostbite",
+      "category": "Runeblade",
+      "variant": "base",
+      "source_snapshot": {
+        "id": "frostbite",
+        "name": "Frostbite",
+        "cost": 2,
+        "type": "Attack",
+        "rarity": "Basic",
+        "rules": "Heavy. Deal 8 damage. Apply 3 Chill.",
+        "definitionRules": "Heavy. Deal 8 damage. Apply 3 Chill.",
+        "displayRules": "Heavy. Deal 8 damage. Apply 3 Chill.",
+        "authoritativeSource": "packages/content/runeblade.ts",
+        "engine_source_sha256": "1c64e6e43d4d829bdcb4472c50dbc850f0dbf9065ee2a9fa99e332c22bb20858"
+      },
+      "status": "pending_approval",
+      "current_revision": "demo-r1",
+      "output_path": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\cards\\runeblade-demo-2026-10-06\\frostbite\\r1\\frostbite-card-r1.png",
+      "sha256": "245758bd378e0e7013760bb14d2ea64da974477fd820d43e44e136d986ada56f",
+      "dimensions": [
+        1024,
+        1536
+      ],
+      "artwork_path": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\cards\\runeblade-demo-2026-10-06\\frostbite\\r1\\illustration.png",
+      "text_source_path": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\cards\\runeblade-demo-2026-10-06\\frostbite\\r1\\text-data.json",
+      "illustration_prompt_path": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\cards\\runeblade-demo-2026-10-06\\frostbite\\r1\\illustration-brief.txt",
+      "reference_image_paths": [
+        "C:\\Users\\wilsh\\Projects\\runelord\\assets\\approvals\\inbox\\runeblade-winter-s-bite\\r1\\winter-s-bite-r1.png",
+        "C:\\Users\\wilsh\\Projects\\runelord\\assets\\cards\\runeblade-demo-2026-10-06\\template-v2\\baseline.png"
+      ],
+      "reference_hashes": [
+        "4e95babffa9e3a9551c85c48632f9e943d8e75d65d0ef6964f04f56cab8a7499",
+        "30cd5177cf360f80a6b90cfdafeaecb8fa561c98751414a6b5ba295df3744a3d"
+      ],
+      "source_art_decision": {
+        "status": "Approved",
+        "at": "2026-10-02T22:21:55.460Z",
+        "evidenceId": "78cdc1ba-4cbe-4fc0-bff3-18381eb5b0ec",
+        "paths": [
+          "C:\\Users\\wilsh\\Projects\\runelord\\assets\\approvals\\inbox\\runeblade-winter-s-bite\\r1\\winter-s-bite-r1.png"
+        ]
+      },
+      "template_path": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\cards\\runeblade-demo-2026-10-06\\template-v2\\baseline.png",
+      "template_hash": "30cd5177cf360f80a6b90cfdafeaecb8fa561c98751414a6b5ba295df3744a3d",
+      "editable_mask_path": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\cards\\runeblade-demo-2026-10-06\\template-v2\\mask-union.png",
+      "editable_mask_version": "runeblade-demo-v2",
+      "mask_hash": "c2226e7427a2afc7c7236fda02c6078fc27e31bb32a0f8386de502ce89d672da",
+      "verification": {
+        "dimensions": [
+          1024,
+          1536
+        ],
+        "protected_pixel_count": 621701,
+        "changed_protected_pixels": 0,
+        "protected_alpha_identical": true,
+        "template_sha256": "30cd5177cf360f80a6b90cfdafeaecb8fa561c98751414a6b5ba295df3744a3d",
+        "mask_sha256": "c2226e7427a2afc7c7236fda02c6078fc27e31bb32a0f8386de502ce89d672da",
+        "editable_mask_version": "runeblade-demo-v2",
+        "text_min_rules_px": 56,
+        "text_matches_engine_semantics": true,
+        "automatic_corpse_cost_visible": false
+      },
+      "generation_method": "Technical recomposition of existing artwork; exact immutable card frame",
+      "integration_authorization": "User requested playable Runeblade roguelike demo, secondary Corpse resource and cards on 2026-10-06."
+    },
+    {
+      "tracking_id": "roguelike/runeblade/rimecleave",
+      "canonical_id": "rimecleave",
+      "catalog_path": "packages/content/runeblade.ts",
+      "row_identifier": "rimecleave",
+      "category": "Runeblade",
+      "variant": "base",
+      "source_snapshot": {
+        "id": "rimecleave",
+        "name": "Rimecleave",
+        "cost": 1,
+        "type": "Attack",
+        "rarity": "Common",
+        "rules": "Deal 5 damage and apply 1 Chill to ALL enemies.",
+        "definitionRules": "Deal 5 damage and apply 1 Chill to ALL enemies.",
+        "displayRules": "Deal 5 damage and apply 1 Chill to ALL enemies.",
+        "authoritativeSource": "packages/content/runeblade.ts",
+        "engine_source_sha256": "1c64e6e43d4d829bdcb4472c50dbc850f0dbf9065ee2a9fa99e332c22bb20858"
+      },
+      "status": "pending_approval",
+      "current_revision": "demo-r1",
+      "output_path": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\cards\\runeblade-demo-2026-10-06\\rimecleave\\r1\\rimecleave-card-r1.png",
+      "sha256": "e049127d5db00ea31e4f956f6acca3a95115cba2f003b7a651b501ddbcb015e2",
+      "dimensions": [
+        1024,
+        1536
+      ],
+      "artwork_path": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\cards\\runeblade-demo-2026-10-06\\rimecleave\\r1\\illustration.png",
+      "text_source_path": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\cards\\runeblade-demo-2026-10-06\\rimecleave\\r1\\text-data.json",
+      "illustration_prompt_path": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\cards\\runeblade-demo-2026-10-06\\rimecleave\\r1\\illustration-brief.txt",
+      "reference_image_paths": [
+        "C:\\Users\\wilsh\\Projects\\runelord\\assets\\approvals\\inbox\\runeblade-glacial-rampage\\r1\\glacial-rampage-r1.png",
+        "C:\\Users\\wilsh\\Projects\\runelord\\assets\\cards\\runeblade-demo-2026-10-06\\template-v2\\baseline.png"
+      ],
+      "reference_hashes": [
+        "c168d2118f53eafde7ad36954550e0ce6d7e3b3273707e7a1a37eda68a4e0122",
+        "30cd5177cf360f80a6b90cfdafeaecb8fa561c98751414a6b5ba295df3744a3d"
+      ],
+      "source_art_decision": {
+        "status": "Approved",
+        "at": "2026-10-02T22:21:43.288Z",
+        "evidenceId": "bf83d66a-0a5b-49e8-8043-99df7390647d",
+        "paths": [
+          "C:\\Users\\wilsh\\Projects\\runelord\\assets\\approvals\\inbox\\runeblade-glacial-rampage\\r1\\glacial-rampage-r1.png"
+        ]
+      },
+      "template_path": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\cards\\runeblade-demo-2026-10-06\\template-v2\\baseline.png",
+      "template_hash": "30cd5177cf360f80a6b90cfdafeaecb8fa561c98751414a6b5ba295df3744a3d",
+      "editable_mask_path": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\cards\\runeblade-demo-2026-10-06\\template-v2\\mask-union.png",
+      "editable_mask_version": "runeblade-demo-v2",
+      "mask_hash": "c2226e7427a2afc7c7236fda02c6078fc27e31bb32a0f8386de502ce89d672da",
+      "verification": {
+        "dimensions": [
+          1024,
+          1536
+        ],
+        "protected_pixel_count": 621701,
+        "changed_protected_pixels": 0,
+        "protected_alpha_identical": true,
+        "template_sha256": "30cd5177cf360f80a6b90cfdafeaecb8fa561c98751414a6b5ba295df3744a3d",
+        "mask_sha256": "c2226e7427a2afc7c7236fda02c6078fc27e31bb32a0f8386de502ce89d672da",
+        "editable_mask_version": "runeblade-demo-v2",
+        "text_min_rules_px": 56,
+        "text_matches_engine_semantics": true,
+        "automatic_corpse_cost_visible": false
+      },
+      "generation_method": "Technical recomposition of existing artwork; exact immutable card frame",
+      "integration_authorization": "User requested playable Runeblade roguelike demo, secondary Corpse resource and cards on 2026-10-06."
+    },
+    {
+      "tracking_id": "roguelike/runeblade/glacial-ward",
+      "canonical_id": "glacial-ward",
+      "catalog_path": "packages/content/runeblade.ts",
+      "row_identifier": "glacial-ward",
+      "category": "Runeblade",
+      "variant": "base",
+      "source_snapshot": {
+        "id": "glacial-ward",
+        "name": "Glacial Ward",
+        "cost": 1,
+        "type": "Skill",
+        "rarity": "Common",
+        "rules": "Gain 8 Guard. Draw 1 card.",
+        "definitionRules": "Gain 8 Guard. Draw 1 card.",
+        "displayRules": "Gain 8 Guard. Draw 1 card.",
+        "authoritativeSource": "packages/content/runeblade.ts",
+        "engine_source_sha256": "1c64e6e43d4d829bdcb4472c50dbc850f0dbf9065ee2a9fa99e332c22bb20858"
+      },
+      "status": "pending_approval",
+      "current_revision": "demo-r1",
+      "output_path": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\cards\\runeblade-demo-2026-10-06\\glacial-ward\\r1\\glacial-ward-card-r1.png",
+      "sha256": "63c307efddd9464c9947c29ae88986c45b5fbe563c1b8b6769a95f7b3c9e65a3",
+      "dimensions": [
+        1024,
+        1536
+      ],
+      "artwork_path": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\cards\\runeblade-demo-2026-10-06\\glacial-ward\\r1\\illustration.png",
+      "text_source_path": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\cards\\runeblade-demo-2026-10-06\\glacial-ward\\r1\\text-data.json",
+      "illustration_prompt_path": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\cards\\runeblade-demo-2026-10-06\\glacial-ward\\r1\\illustration-brief.txt",
+      "reference_image_paths": [
+        "C:\\Users\\wilsh\\Projects\\runelord\\assets\\approvals\\inbox\\runeblade-rime-barrier\\r1\\rime-barrier-r1.png",
+        "C:\\Users\\wilsh\\Projects\\runelord\\assets\\cards\\runeblade-demo-2026-10-06\\template-v2\\baseline.png"
+      ],
+      "reference_hashes": [
+        "c00708acfaabaac8162804f1a73f0f556267679cbf5e1c5a70d15a7bd793cd00",
+        "30cd5177cf360f80a6b90cfdafeaecb8fa561c98751414a6b5ba295df3744a3d"
+      ],
+      "source_art_decision": {
+        "status": "Approved",
+        "at": "2026-10-02T22:21:50.394Z",
+        "evidenceId": "810f1ff5-6d35-41a7-b4f5-228e11da4b2a",
+        "paths": [
+          "C:\\Users\\wilsh\\Projects\\runelord\\assets\\approvals\\inbox\\runeblade-rime-barrier\\r1\\rime-barrier-r1.png"
+        ]
+      },
+      "template_path": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\cards\\runeblade-demo-2026-10-06\\template-v2\\baseline.png",
+      "template_hash": "30cd5177cf360f80a6b90cfdafeaecb8fa561c98751414a6b5ba295df3744a3d",
+      "editable_mask_path": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\cards\\runeblade-demo-2026-10-06\\template-v2\\mask-union.png",
+      "editable_mask_version": "runeblade-demo-v2",
+      "mask_hash": "c2226e7427a2afc7c7236fda02c6078fc27e31bb32a0f8386de502ce89d672da",
+      "verification": {
+        "dimensions": [
+          1024,
+          1536
+        ],
+        "protected_pixel_count": 621701,
+        "changed_protected_pixels": 0,
+        "protected_alpha_identical": true,
+        "template_sha256": "30cd5177cf360f80a6b90cfdafeaecb8fa561c98751414a6b5ba295df3744a3d",
+        "mask_sha256": "c2226e7427a2afc7c7236fda02c6078fc27e31bb32a0f8386de502ce89d672da",
+        "editable_mask_version": "runeblade-demo-v2",
+        "text_min_rules_px": 56,
+        "text_matches_engine_semantics": true,
+        "automatic_corpse_cost_visible": false
+      },
+      "generation_method": "Technical recomposition of existing artwork; exact immutable card frame",
+      "integration_authorization": "User requested playable Runeblade roguelike demo, secondary Corpse resource and cards on 2026-10-06."
+    },
+    {
+      "tracking_id": "roguelike/runeblade/frozen-grasp",
+      "canonical_id": "frozen-grasp",
+      "catalog_path": "packages/content/runeblade.ts",
+      "row_identifier": "frozen-grasp",
+      "category": "Runeblade",
+      "variant": "base",
+      "source_snapshot": {
+        "id": "frozen-grasp",
+        "name": "Frozen Grasp",
+        "cost": 0,
+        "type": "Skill",
+        "rarity": "Common",
+        "rules": "Apply 3 Chill.",
+        "definitionRules": "Apply 3 Chill.",
+        "displayRules": "Apply 3 Chill.",
+        "authoritativeSource": "packages/content/runeblade.ts",
+        "engine_source_sha256": "1c64e6e43d4d829bdcb4472c50dbc850f0dbf9065ee2a9fa99e332c22bb20858"
+      },
+      "status": "pending_approval",
+      "current_revision": "demo-r1",
+      "output_path": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\cards\\runeblade-demo-2026-10-06\\frozen-grasp\\r1\\frozen-grasp-card-r1.png",
+      "sha256": "0c6e8b3f1a140a6b588e58f0e6ce5f3644a7a6694336e9bd0405b8dd7b38adf4",
+      "dimensions": [
+        1024,
+        1536
+      ],
+      "artwork_path": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\cards\\runeblade-demo-2026-10-06\\frozen-grasp\\r1\\illustration.png",
+      "text_source_path": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\cards\\runeblade-demo-2026-10-06\\frozen-grasp\\r1\\text-data.json",
+      "illustration_prompt_path": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\cards\\runeblade-demo-2026-10-06\\frozen-grasp\\r1\\illustration-brief.txt",
+      "reference_image_paths": [
+        "C:\\Users\\wilsh\\Projects\\runelord\\assets\\approvals\\inbox\\runeblade-bitter-wind\\r1\\bitter-wind-r1.png",
+        "C:\\Users\\wilsh\\Projects\\runelord\\assets\\cards\\runeblade-demo-2026-10-06\\template-v2\\baseline.png"
+      ],
+      "reference_hashes": [
+        "beab7bbcf50b33e0a3c65e12af740469f2461a598d0c87e0c55ede0000ffa05e",
+        "30cd5177cf360f80a6b90cfdafeaecb8fa561c98751414a6b5ba295df3744a3d"
+      ],
+      "source_art_decision": {
+        "status": "Approved",
+        "at": "2026-10-02T22:21:33.035Z",
+        "evidenceId": "8de55edc-e94d-43b1-af09-278f68c63099",
+        "paths": [
+          "C:\\Users\\wilsh\\Projects\\runelord\\assets\\approvals\\inbox\\runeblade-bitter-wind\\r1\\bitter-wind-r1.png"
+        ]
+      },
+      "template_path": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\cards\\runeblade-demo-2026-10-06\\template-v2\\baseline.png",
+      "template_hash": "30cd5177cf360f80a6b90cfdafeaecb8fa561c98751414a6b5ba295df3744a3d",
+      "editable_mask_path": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\cards\\runeblade-demo-2026-10-06\\template-v2\\mask-union.png",
+      "editable_mask_version": "runeblade-demo-v2",
+      "mask_hash": "c2226e7427a2afc7c7236fda02c6078fc27e31bb32a0f8386de502ce89d672da",
+      "verification": {
+        "dimensions": [
+          1024,
+          1536
+        ],
+        "protected_pixel_count": 621701,
+        "changed_protected_pixels": 0,
+        "protected_alpha_identical": true,
+        "template_sha256": "30cd5177cf360f80a6b90cfdafeaecb8fa561c98751414a6b5ba295df3744a3d",
+        "mask_sha256": "c2226e7427a2afc7c7236fda02c6078fc27e31bb32a0f8386de502ce89d672da",
+        "editable_mask_version": "runeblade-demo-v2",
+        "text_min_rules_px": 56,
+        "text_matches_engine_semantics": true,
+        "automatic_corpse_cost_visible": false
+      },
+      "generation_method": "Technical recomposition of existing artwork; exact immutable card frame",
+      "integration_authorization": "User requested playable Runeblade roguelike demo, secondary Corpse resource and cards on 2026-10-06."
+    },
+    {
+      "tracking_id": "roguelike/runeblade/command-the-dead",
+      "canonical_id": "command-the-dead",
+      "catalog_path": "packages/content/runeblade.ts",
+      "row_identifier": "command-the-dead",
+      "category": "Runeblade",
+      "variant": "base",
+      "source_snapshot": {
+        "id": "command-the-dead",
+        "name": "Command the Dead",
+        "cost": 0,
+        "type": "Skill",
+        "rarity": "Common",
+        "rules": "All Thralls attack now. Rot triggers.",
+        "definitionRules": "All Thralls attack now. Their Rot also triggers.",
+        "displayRules": "All Thralls attack now. Rot triggers.",
+        "authoritativeSource": "packages/content/runeblade.ts",
+        "engine_source_sha256": "1c64e6e43d4d829bdcb4472c50dbc850f0dbf9065ee2a9fa99e332c22bb20858"
+      },
+      "status": "pending_approval",
+      "current_revision": "demo-r1",
+      "output_path": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\cards\\runeblade-demo-2026-10-06\\command-the-dead\\r1\\command-the-dead-card-r1.png",
+      "sha256": "0aa03e62ae9998b60e7426537c4ecc635191499e8cb32aeca0b4c20bfd15122a",
+      "dimensions": [
+        1024,
+        1536
+      ],
+      "artwork_path": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\cards\\runeblade-demo-2026-10-06\\command-the-dead\\r1\\illustration.png",
+      "text_source_path": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\cards\\runeblade-demo-2026-10-06\\command-the-dead\\r1\\text-data.json",
+      "illustration_prompt_path": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\cards\\runeblade-demo-2026-10-06\\command-the-dead\\r1\\illustration-brief.txt",
+      "reference_image_paths": [
+        "C:\\Users\\wilsh\\Projects\\runelord\\assets\\approvals\\inbox\\runeblade-grim-muster\\r1\\grim-muster-r1.png",
+        "C:\\Users\\wilsh\\Projects\\runelord\\assets\\cards\\runeblade-demo-2026-10-06\\template-v2\\baseline.png"
+      ],
+      "reference_hashes": [
+        "542e27fa27d057d17cd81fa7bfe3e53c0a2dbff988668fbf5d09ef13f202a0ca",
+        "30cd5177cf360f80a6b90cfdafeaecb8fa561c98751414a6b5ba295df3744a3d"
+      ],
+      "source_art_decision": {
+        "status": "Approved",
+        "at": "2026-10-02T22:21:43.288Z",
+        "evidenceId": "92492269-0922-4835-a5fe-2da4606ff2c9",
+        "paths": [
+          "C:\\Users\\wilsh\\Projects\\runelord\\assets\\approvals\\inbox\\runeblade-grim-muster\\r1\\grim-muster-r1.png"
+        ]
+      },
+      "template_path": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\cards\\runeblade-demo-2026-10-06\\template-v2\\baseline.png",
+      "template_hash": "30cd5177cf360f80a6b90cfdafeaecb8fa561c98751414a6b5ba295df3744a3d",
+      "editable_mask_path": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\cards\\runeblade-demo-2026-10-06\\template-v2\\mask-union.png",
+      "editable_mask_version": "runeblade-demo-v2",
+      "mask_hash": "c2226e7427a2afc7c7236fda02c6078fc27e31bb32a0f8386de502ce89d672da",
+      "verification": {
+        "dimensions": [
+          1024,
+          1536
+        ],
+        "protected_pixel_count": 621701,
+        "changed_protected_pixels": 0,
+        "protected_alpha_identical": true,
+        "template_sha256": "30cd5177cf360f80a6b90cfdafeaecb8fa561c98751414a6b5ba295df3744a3d",
+        "mask_sha256": "c2226e7427a2afc7c7236fda02c6078fc27e31bb32a0f8386de502ce89d672da",
+        "editable_mask_version": "runeblade-demo-v2",
+        "text_min_rules_px": 56,
+        "text_matches_engine_semantics": true,
+        "automatic_corpse_cost_visible": false
+      },
+      "generation_method": "Technical recomposition of existing artwork; exact immutable card frame",
+      "integration_authorization": "User requested playable Runeblade roguelike demo, secondary Corpse resource and cards on 2026-10-06."
+    },
+    {
+      "tracking_id": "roguelike/runeblade/bone-ward",
+      "canonical_id": "bone-ward",
+      "catalog_path": "packages/content/runeblade.ts",
+      "row_identifier": "bone-ward",
+      "category": "Runeblade",
+      "variant": "base",
+      "source_snapshot": {
+        "id": "bone-ward",
+        "name": "Bone Ward",
+        "cost": 1,
+        "type": "Skill",
+        "rarity": "Common",
+        "rules": "Gain 4 Guard for each Thrall (minimum 4).",
+        "definitionRules": "Gain 4 Guard for each Thrall you control (minimum 4).",
+        "displayRules": "Gain 4 Guard for each Thrall (minimum 4).",
+        "authoritativeSource": "packages/content/runeblade.ts",
+        "engine_source_sha256": "1c64e6e43d4d829bdcb4472c50dbc850f0dbf9065ee2a9fa99e332c22bb20858"
+      },
+      "status": "pending_approval",
+      "current_revision": "demo-r1",
+      "output_path": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\cards\\runeblade-demo-2026-10-06\\bone-ward\\r1\\bone-ward-card-r1.png",
+      "sha256": "8972a77a39f988f36f39e8455e8c00d15bc9de8b15879439945b01d1e2697abb",
+      "dimensions": [
+        1024,
+        1536
+      ],
+      "artwork_path": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\cards\\runeblade-demo-2026-10-06\\bone-ward\\r1\\illustration.png",
+      "text_source_path": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\cards\\runeblade-demo-2026-10-06\\bone-ward\\r1\\text-data.json",
+      "illustration_prompt_path": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\cards\\runeblade-demo-2026-10-06\\bone-ward\\r1\\illustration-brief.txt",
+      "reference_image_paths": [
+        "C:\\Users\\wilsh\\Projects\\runelord\\assets\\approvals\\inbox\\runeblade-bone-ward\\r1\\bone-ward-r1.png",
+        "C:\\Users\\wilsh\\Projects\\runelord\\assets\\cards\\runeblade-demo-2026-10-06\\template-v2\\baseline.png"
+      ],
+      "reference_hashes": [
+        "9f4e08910972fc021c8420c44a35071be491e4777bee593774c7b5207716a81c",
+        "30cd5177cf360f80a6b90cfdafeaecb8fa561c98751414a6b5ba295df3744a3d"
+      ],
+      "source_art_decision": {
+        "status": "Approved",
+        "at": "2026-10-02T22:21:33.035Z",
+        "evidenceId": "23e35edd-a365-4ac6-abf0-b0f4133535f0",
+        "paths": [
+          "C:\\Users\\wilsh\\Projects\\runelord\\assets\\approvals\\inbox\\runeblade-bone-ward\\r1\\bone-ward-r1.png"
+        ]
+      },
+      "template_path": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\cards\\runeblade-demo-2026-10-06\\template-v2\\baseline.png",
+      "template_hash": "30cd5177cf360f80a6b90cfdafeaecb8fa561c98751414a6b5ba295df3744a3d",
+      "editable_mask_path": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\cards\\runeblade-demo-2026-10-06\\template-v2\\mask-union.png",
+      "editable_mask_version": "runeblade-demo-v2",
+      "mask_hash": "c2226e7427a2afc7c7236fda02c6078fc27e31bb32a0f8386de502ce89d672da",
+      "verification": {
+        "dimensions": [
+          1024,
+          1536
+        ],
+        "protected_pixel_count": 621701,
+        "changed_protected_pixels": 0,
+        "protected_alpha_identical": true,
+        "template_sha256": "30cd5177cf360f80a6b90cfdafeaecb8fa561c98751414a6b5ba295df3744a3d",
+        "mask_sha256": "c2226e7427a2afc7c7236fda02c6078fc27e31bb32a0f8386de502ce89d672da",
+        "editable_mask_version": "runeblade-demo-v2",
+        "text_min_rules_px": 56,
+        "text_matches_engine_semantics": true,
+        "automatic_corpse_cost_visible": false
+      },
+      "generation_method": "Technical recomposition of existing artwork; exact immutable card frame",
+      "integration_authorization": "User requested playable Runeblade roguelike demo, secondary Corpse resource and cards on 2026-10-06."
+    },
+    {
+      "tracking_id": "roguelike/runeblade/hoarfrost-edge",
+      "canonical_id": "hoarfrost-edge",
+      "catalog_path": "packages/content/runeblade.ts",
+      "row_identifier": "hoarfrost-edge",
+      "category": "Runeblade",
+      "variant": "base",
+      "source_snapshot": {
+        "id": "hoarfrost-edge",
+        "name": "Hoarfrost Edge",
+        "cost": 1,
+        "type": "Attack",
+        "rarity": "Common",
+        "rules": "Deal 4 damage twice. Each hit applies 1 Chill.",
+        "definitionRules": "Deal 4 damage twice. Each hit applies 1 Chill.",
+        "displayRules": "Deal 4 damage twice. Each hit applies 1 Chill.",
+        "authoritativeSource": "packages/content/runeblade.ts",
+        "engine_source_sha256": "1c64e6e43d4d829bdcb4472c50dbc850f0dbf9065ee2a9fa99e332c22bb20858"
+      },
+      "status": "pending_approval",
+      "current_revision": "demo-r1",
+      "output_path": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\cards\\runeblade-demo-2026-10-06\\hoarfrost-edge\\r1\\hoarfrost-edge-card-r1.png",
+      "sha256": "4d2277314f5ab402bd16ed4090971cc951d4e14c2ed90a61205cef4fb027f6bc",
+      "dimensions": [
+        1024,
+        1536
+      ],
+      "artwork_path": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\cards\\runeblade-demo-2026-10-06\\hoarfrost-edge\\r1\\illustration.png",
+      "text_source_path": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\cards\\runeblade-demo-2026-10-06\\hoarfrost-edge\\r1\\text-data.json",
+      "illustration_prompt_path": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\cards\\runeblade-demo-2026-10-06\\hoarfrost-edge\\r1\\illustration-brief.txt",
+      "reference_image_paths": [
+        "C:\\Users\\wilsh\\Projects\\runelord\\assets\\approvals\\inbox\\runeblade-hoarfrost-edge\\r1\\hoarfrost-edge-r1.png",
+        "C:\\Users\\wilsh\\Projects\\runelord\\assets\\cards\\runeblade-demo-2026-10-06\\template-v2\\baseline.png"
+      ],
+      "reference_hashes": [
+        "6f03989739b4f35032ab67104bdfbc48f960dcf55b635166c2b62618fcd78283",
+        "30cd5177cf360f80a6b90cfdafeaecb8fa561c98751414a6b5ba295df3744a3d"
+      ],
+      "source_art_decision": {
+        "status": "Approved",
+        "at": "2026-10-02T22:21:43.288Z",
+        "evidenceId": "3fab9d19-671d-4184-a56e-ead4c9d4e072",
+        "paths": [
+          "C:\\Users\\wilsh\\Projects\\runelord\\assets\\approvals\\inbox\\runeblade-hoarfrost-edge\\r1\\hoarfrost-edge-r1.png"
+        ]
+      },
+      "template_path": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\cards\\runeblade-demo-2026-10-06\\template-v2\\baseline.png",
+      "template_hash": "30cd5177cf360f80a6b90cfdafeaecb8fa561c98751414a6b5ba295df3744a3d",
+      "editable_mask_path": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\cards\\runeblade-demo-2026-10-06\\template-v2\\mask-union.png",
+      "editable_mask_version": "runeblade-demo-v2",
+      "mask_hash": "c2226e7427a2afc7c7236fda02c6078fc27e31bb32a0f8386de502ce89d672da",
+      "verification": {
+        "dimensions": [
+          1024,
+          1536
+        ],
+        "protected_pixel_count": 621701,
+        "changed_protected_pixels": 0,
+        "protected_alpha_identical": true,
+        "template_sha256": "30cd5177cf360f80a6b90cfdafeaecb8fa561c98751414a6b5ba295df3744a3d",
+        "mask_sha256": "c2226e7427a2afc7c7236fda02c6078fc27e31bb32a0f8386de502ce89d672da",
+        "editable_mask_version": "runeblade-demo-v2",
+        "text_min_rules_px": 56,
+        "text_matches_engine_semantics": true,
+        "automatic_corpse_cost_visible": false
+      },
+      "generation_method": "Technical recomposition of existing artwork; exact immutable card frame",
+      "integration_authorization": "User requested playable Runeblade roguelike demo, secondary Corpse resource and cards on 2026-10-06."
+    },
+    {
+      "tracking_id": "roguelike/runeblade/unholy-vigor",
+      "canonical_id": "unholy-vigor",
+      "catalog_path": "packages/content/runeblade.ts",
+      "row_identifier": "unholy-vigor",
+      "category": "Runeblade",
+      "variant": "base",
+      "source_snapshot": {
+        "id": "unholy-vigor",
+        "name": "Unholy Vigor",
+        "cost": 1,
+        "type": "Power",
+        "rarity": "Uncommon",
+        "rules": "Your Thralls gain +2 Power, including future summons.",
+        "definitionRules": "Your Thralls gain +2 Power, including future summons.",
+        "displayRules": "Your Thralls gain +2 Power, including future summons.",
+        "authoritativeSource": "packages/content/runeblade.ts",
+        "engine_source_sha256": "1c64e6e43d4d829bdcb4472c50dbc850f0dbf9065ee2a9fa99e332c22bb20858"
+      },
+      "status": "pending_approval",
+      "current_revision": "demo-r1",
+      "output_path": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\cards\\runeblade-demo-2026-10-06\\unholy-vigor\\r1\\unholy-vigor-card-r1.png",
+      "sha256": "ab03352d1332b521ef5cef704e88d144d846a605b15e878509d6c29d62124278",
+      "dimensions": [
+        1024,
+        1536
+      ],
+      "artwork_path": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\cards\\runeblade-demo-2026-10-06\\unholy-vigor\\r1\\illustration.png",
+      "text_source_path": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\cards\\runeblade-demo-2026-10-06\\unholy-vigor\\r1\\text-data.json",
+      "illustration_prompt_path": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\cards\\runeblade-demo-2026-10-06\\unholy-vigor\\r1\\illustration-brief.txt",
+      "reference_image_paths": [
+        "C:\\Users\\wilsh\\Projects\\runelord\\assets\\approvals\\inbox\\runeblade-unholy-vigor\\r1\\unholy-vigor-r1.png",
+        "C:\\Users\\wilsh\\Projects\\runelord\\assets\\cards\\runeblade-demo-2026-10-06\\template-v2\\baseline.png"
+      ],
+      "reference_hashes": [
+        "a1438ba3e2f2a534a1f5489acc505dba1dbe390909a019d41cae17ed9f738492",
+        "30cd5177cf360f80a6b90cfdafeaecb8fa561c98751414a6b5ba295df3744a3d"
+      ],
+      "source_art_decision": {
+        "status": "Approved",
+        "at": "2026-10-02T22:21:55.460Z",
+        "evidenceId": "e0818a9a-b073-456a-a71f-e9e5974488ae",
+        "paths": [
+          "C:\\Users\\wilsh\\Projects\\runelord\\assets\\approvals\\inbox\\runeblade-unholy-vigor\\r1\\unholy-vigor-r1.png"
+        ]
+      },
+      "template_path": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\cards\\runeblade-demo-2026-10-06\\template-v2\\baseline.png",
+      "template_hash": "30cd5177cf360f80a6b90cfdafeaecb8fa561c98751414a6b5ba295df3744a3d",
+      "editable_mask_path": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\cards\\runeblade-demo-2026-10-06\\template-v2\\mask-union.png",
+      "editable_mask_version": "runeblade-demo-v2",
+      "mask_hash": "c2226e7427a2afc7c7236fda02c6078fc27e31bb32a0f8386de502ce89d672da",
+      "verification": {
+        "dimensions": [
+          1024,
+          1536
+        ],
+        "protected_pixel_count": 621701,
+        "changed_protected_pixels": 0,
+        "protected_alpha_identical": true,
+        "template_sha256": "30cd5177cf360f80a6b90cfdafeaecb8fa561c98751414a6b5ba295df3744a3d",
+        "mask_sha256": "c2226e7427a2afc7c7236fda02c6078fc27e31bb32a0f8386de502ce89d672da",
+        "editable_mask_version": "runeblade-demo-v2",
+        "text_min_rules_px": 56,
+        "text_matches_engine_semantics": true,
+        "automatic_corpse_cost_visible": false
+      },
+      "generation_method": "Technical recomposition of existing artwork; exact immutable card frame",
+      "integration_authorization": "User requested playable Runeblade roguelike demo, secondary Corpse resource and cards on 2026-10-06."
+    },
+    {
+      "tracking_id": "roguelike/runeblade/frost-nova",
+      "canonical_id": "frost-nova",
+      "catalog_path": "packages/content/runeblade.ts",
+      "row_identifier": "frost-nova",
+      "category": "Runeblade",
+      "variant": "base",
+      "source_snapshot": {
+        "id": "frost-nova",
+        "name": "Frost Nova",
+        "cost": 2,
+        "type": "Skill",
+        "rarity": "Uncommon",
+        "rules": "Apply 4 Chill to ALL enemies. Gain 6 Guard.",
+        "definitionRules": "Apply 4 Chill to ALL enemies. Gain 6 Guard.",
+        "displayRules": "Apply 4 Chill to ALL enemies. Gain 6 Guard.",
+        "authoritativeSource": "packages/content/runeblade.ts",
+        "engine_source_sha256": "1c64e6e43d4d829bdcb4472c50dbc850f0dbf9065ee2a9fa99e332c22bb20858"
+      },
+      "status": "pending_approval",
+      "current_revision": "demo-r1",
+      "output_path": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\cards\\runeblade-demo-2026-10-06\\frost-nova\\r1\\frost-nova-card-r1.png",
+      "sha256": "76e77c4e3e20dddf330d12ac2c57905fe9ed093388934710ad9fa30eb6990666",
+      "dimensions": [
+        1024,
+        1536
+      ],
+      "artwork_path": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\cards\\runeblade-demo-2026-10-06\\frost-nova\\r1\\illustration.png",
+      "text_source_path": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\cards\\runeblade-demo-2026-10-06\\frost-nova\\r1\\text-data.json",
+      "illustration_prompt_path": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\cards\\runeblade-demo-2026-10-06\\frost-nova\\r1\\illustration-brief.txt",
+      "reference_image_paths": [
+        "C:\\Users\\wilsh\\Projects\\runelord\\assets\\approvals\\inbox\\runeblade-frost-nova\\r1\\frost-nova-r1.png",
+        "C:\\Users\\wilsh\\Projects\\runelord\\assets\\cards\\runeblade-demo-2026-10-06\\template-v2\\baseline.png"
+      ],
+      "reference_hashes": [
+        "07a506450d6ee57f728d64777dd97a172f3cb7e9186b17d98a6f0333458c8262",
+        "30cd5177cf360f80a6b90cfdafeaecb8fa561c98751414a6b5ba295df3744a3d"
+      ],
+      "source_art_decision": {
+        "status": "Approved",
+        "at": "2026-10-02T22:21:43.288Z",
+        "evidenceId": "3a30584b-5668-4cd6-b838-409c58738605",
+        "paths": [
+          "C:\\Users\\wilsh\\Projects\\runelord\\assets\\approvals\\inbox\\runeblade-frost-nova\\r1\\frost-nova-r1.png"
+        ]
+      },
+      "template_path": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\cards\\runeblade-demo-2026-10-06\\template-v2\\baseline.png",
+      "template_hash": "30cd5177cf360f80a6b90cfdafeaecb8fa561c98751414a6b5ba295df3744a3d",
+      "editable_mask_path": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\cards\\runeblade-demo-2026-10-06\\template-v2\\mask-union.png",
+      "editable_mask_version": "runeblade-demo-v2",
+      "mask_hash": "c2226e7427a2afc7c7236fda02c6078fc27e31bb32a0f8386de502ce89d672da",
+      "verification": {
+        "dimensions": [
+          1024,
+          1536
+        ],
+        "protected_pixel_count": 621701,
+        "changed_protected_pixels": 0,
+        "protected_alpha_identical": true,
+        "template_sha256": "30cd5177cf360f80a6b90cfdafeaecb8fa561c98751414a6b5ba295df3744a3d",
+        "mask_sha256": "c2226e7427a2afc7c7236fda02c6078fc27e31bb32a0f8386de502ce89d672da",
+        "editable_mask_version": "runeblade-demo-v2",
+        "text_min_rules_px": 56,
+        "text_matches_engine_semantics": true,
+        "automatic_corpse_cost_visible": false
+      },
+      "generation_method": "Technical recomposition of existing artwork; exact immutable card frame",
+      "integration_authorization": "User requested playable Runeblade roguelike demo, secondary Corpse resource and cards on 2026-10-06."
+    },
+    {
+      "tracking_id": "roguelike/runeblade/soulfrost-blade",
+      "canonical_id": "soulfrost-blade",
+      "catalog_path": "packages/content/runeblade.ts",
+      "row_identifier": "soulfrost-blade",
+      "category": "Runeblade",
+      "variant": "base",
+      "source_snapshot": {
+        "id": "soulfrost-blade",
+        "name": "Soulfrost Blade",
+        "cost": 1,
+        "type": "Attack",
+        "rarity": "Uncommon",
+        "rules": "Deal 6 damage plus 2 for each Chill on the enemy.",
+        "definitionRules": "Deal 6 damage plus 2 for each Chill on the enemy.",
+        "displayRules": "Deal 6 damage plus 2 for each Chill on the enemy.",
+        "authoritativeSource": "packages/content/runeblade.ts",
+        "engine_source_sha256": "1c64e6e43d4d829bdcb4472c50dbc850f0dbf9065ee2a9fa99e332c22bb20858"
+      },
+      "status": "pending_approval",
+      "current_revision": "demo-r1",
+      "output_path": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\cards\\runeblade-demo-2026-10-06\\soulfrost-blade\\r1\\soulfrost-blade-card-r1.png",
+      "sha256": "ec8f615795b6ff5e0f9a3d9f2642eb5a436ec15432d9ca421b143044ae555bef",
+      "dimensions": [
+        1024,
+        1536
+      ],
+      "artwork_path": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\cards\\runeblade-demo-2026-10-06\\soulfrost-blade\\r1\\illustration.png",
+      "text_source_path": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\cards\\runeblade-demo-2026-10-06\\soulfrost-blade\\r1\\text-data.json",
+      "illustration_prompt_path": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\cards\\runeblade-demo-2026-10-06\\soulfrost-blade\\r1\\illustration-brief.txt",
+      "reference_image_paths": [
+        "C:\\Users\\wilsh\\Projects\\runelord\\assets\\approvals\\inbox\\runeblade-soulfrost-blade\\r1\\soulfrost-blade-r1.png",
+        "C:\\Users\\wilsh\\Projects\\runelord\\assets\\cards\\runeblade-demo-2026-10-06\\template-v2\\baseline.png"
+      ],
+      "reference_hashes": [
+        "a1e810d4677ad6a8c4945d1bc41a313f906b19bc899bbcd51d90933a8da86fd8",
+        "30cd5177cf360f80a6b90cfdafeaecb8fa561c98751414a6b5ba295df3744a3d"
+      ],
+      "source_art_decision": {
+        "status": "Approved",
+        "at": "2026-10-02T22:21:50.394Z",
+        "evidenceId": "ef7174b5-67a7-45d2-8637-f1fc0d8a6feb",
+        "paths": [
+          "C:\\Users\\wilsh\\Projects\\runelord\\assets\\approvals\\inbox\\runeblade-soulfrost-blade\\r1\\soulfrost-blade-r1.png"
+        ]
+      },
+      "template_path": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\cards\\runeblade-demo-2026-10-06\\template-v2\\baseline.png",
+      "template_hash": "30cd5177cf360f80a6b90cfdafeaecb8fa561c98751414a6b5ba295df3744a3d",
+      "editable_mask_path": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\cards\\runeblade-demo-2026-10-06\\template-v2\\mask-union.png",
+      "editable_mask_version": "runeblade-demo-v2",
+      "mask_hash": "c2226e7427a2afc7c7236fda02c6078fc27e31bb32a0f8386de502ce89d672da",
+      "verification": {
+        "dimensions": [
+          1024,
+          1536
+        ],
+        "protected_pixel_count": 621701,
+        "changed_protected_pixels": 0,
+        "protected_alpha_identical": true,
+        "template_sha256": "30cd5177cf360f80a6b90cfdafeaecb8fa561c98751414a6b5ba295df3744a3d",
+        "mask_sha256": "c2226e7427a2afc7c7236fda02c6078fc27e31bb32a0f8386de502ce89d672da",
+        "editable_mask_version": "runeblade-demo-v2",
+        "text_min_rules_px": 56,
+        "text_matches_engine_semantics": true,
+        "automatic_corpse_cost_visible": false
+      },
+      "generation_method": "Technical recomposition of existing artwork; exact immutable card frame",
+      "integration_authorization": "User requested playable Runeblade roguelike demo, secondary Corpse resource and cards on 2026-10-06."
+    },
+    {
+      "tracking_id": "roguelike/runeblade/dark-tithe",
+      "canonical_id": "dark-tithe",
+      "catalog_path": "packages/content/runeblade.ts",
+      "row_identifier": "dark-tithe",
+      "category": "Runeblade",
+      "variant": "base",
+      "source_snapshot": {
+        "id": "dark-tithe",
+        "name": "Dark Tithe",
+        "cost": 0,
+        "type": "Skill",
+        "rarity": "Uncommon",
+        "rules": "Sacrifice a Thrall. Gain 2 Mana. Draw 1 card(s).",
+        "definitionRules": "Sacrifice a Thrall. Gain 2 Mana. Draw 1 card.",
+        "displayRules": "Sacrifice a Thrall. Gain 2 Mana. Draw 1 card.",
+        "authoritativeSource": "packages/content/runeblade.ts",
+        "engine_source_sha256": "1c64e6e43d4d829bdcb4472c50dbc850f0dbf9065ee2a9fa99e332c22bb20858"
+      },
+      "status": "pending_approval",
+      "current_revision": "demo-r1",
+      "output_path": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\cards\\runeblade-demo-2026-10-06\\dark-tithe\\r1\\dark-tithe-card-r1.png",
+      "sha256": "bca4d5c50a6d0b60e63a38cd741d8dd10b18140a83eb53956bae619ee1875c4e",
+      "dimensions": [
+        1024,
+        1536
+      ],
+      "artwork_path": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\cards\\runeblade-demo-2026-10-06\\dark-tithe\\r1\\illustration.png",
+      "text_source_path": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\cards\\runeblade-demo-2026-10-06\\dark-tithe\\r1\\text-data.json",
+      "illustration_prompt_path": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\cards\\runeblade-demo-2026-10-06\\dark-tithe\\r1\\illustration-brief.txt",
+      "reference_image_paths": [
+        "C:\\Users\\wilsh\\Projects\\runelord\\assets\\approvals\\inbox\\runeblade-dark-tithe\\r1\\dark-tithe-r1.png",
+        "C:\\Users\\wilsh\\Projects\\runelord\\assets\\cards\\runeblade-demo-2026-10-06\\template-v2\\baseline.png"
+      ],
+      "reference_hashes": [
+        "5573b1ae62de7046fe557d55e29245643305dc9751b756e9c0dd523ee2dac3c4",
+        "30cd5177cf360f80a6b90cfdafeaecb8fa561c98751414a6b5ba295df3744a3d"
+      ],
+      "source_art_decision": {
+        "status": "Approved",
+        "at": "2026-10-02T22:21:33.035Z",
+        "evidenceId": "7877c7a7-189d-4766-88d5-3829963a0716",
+        "paths": [
+          "C:\\Users\\wilsh\\Projects\\runelord\\assets\\approvals\\inbox\\runeblade-dark-tithe\\r1\\dark-tithe-r1.png"
+        ]
+      },
+      "template_path": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\cards\\runeblade-demo-2026-10-06\\template-v2\\baseline.png",
+      "template_hash": "30cd5177cf360f80a6b90cfdafeaecb8fa561c98751414a6b5ba295df3744a3d",
+      "editable_mask_path": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\cards\\runeblade-demo-2026-10-06\\template-v2\\mask-union.png",
+      "editable_mask_version": "runeblade-demo-v2",
+      "mask_hash": "c2226e7427a2afc7c7236fda02c6078fc27e31bb32a0f8386de502ce89d672da",
+      "verification": {
+        "dimensions": [
+          1024,
+          1536
+        ],
+        "protected_pixel_count": 621701,
+        "changed_protected_pixels": 0,
+        "protected_alpha_identical": true,
+        "template_sha256": "30cd5177cf360f80a6b90cfdafeaecb8fa561c98751414a6b5ba295df3744a3d",
+        "mask_sha256": "c2226e7427a2afc7c7236fda02c6078fc27e31bb32a0f8386de502ce89d672da",
+        "editable_mask_version": "runeblade-demo-v2",
+        "text_min_rules_px": 56,
+        "text_matches_engine_semantics": true,
+        "automatic_corpse_cost_visible": false
+      },
+      "generation_method": "Technical recomposition of existing artwork; exact immutable card frame",
+      "integration_authorization": "User requested playable Runeblade roguelike demo, secondary Corpse resource and cards on 2026-10-06."
+    },
+    {
+      "tracking_id": "roguelike/runeblade/rally-the-fallen",
+      "canonical_id": "rally-the-fallen",
+      "catalog_path": "packages/content/runeblade.ts",
+      "row_identifier": "rally-the-fallen",
+      "category": "Runeblade",
+      "variant": "base",
+      "source_snapshot": {
+        "id": "rally-the-fallen",
+        "name": "Rally the Fallen",
+        "cost": 1,
+        "type": "Skill",
+        "rarity": "Uncommon",
+        "rules": "All Thralls heal 6 HP and reset Rot to 0.",
+        "definitionRules": "All Thralls heal 6 HP and reset Rot to 0.",
+        "displayRules": "All Thralls heal 6 HP and reset Rot to 0.",
+        "authoritativeSource": "packages/content/runeblade.ts",
+        "engine_source_sha256": "1c64e6e43d4d829bdcb4472c50dbc850f0dbf9065ee2a9fa99e332c22bb20858"
+      },
+      "status": "pending_approval",
+      "current_revision": "demo-r1",
+      "output_path": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\cards\\runeblade-demo-2026-10-06\\rally-the-fallen\\r1\\rally-the-fallen-card-r1.png",
+      "sha256": "e4b196d8b2da0232b1367a5e23c0bf823988bfdb78071dfce6c51c9feb427fec",
+      "dimensions": [
+        1024,
+        1536
+      ],
+      "artwork_path": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\cards\\runeblade-demo-2026-10-06\\rally-the-fallen\\r1\\illustration.png",
+      "text_source_path": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\cards\\runeblade-demo-2026-10-06\\rally-the-fallen\\r1\\text-data.json",
+      "illustration_prompt_path": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\cards\\runeblade-demo-2026-10-06\\rally-the-fallen\\r1\\illustration-brief.txt",
+      "reference_image_paths": [
+        "C:\\Users\\wilsh\\Projects\\runelord\\assets\\approvals\\inbox\\runeblade-rally-the-fallen\\r1\\rally-the-fallen-r1.png",
+        "C:\\Users\\wilsh\\Projects\\runelord\\assets\\cards\\runeblade-demo-2026-10-06\\template-v2\\baseline.png"
+      ],
+      "reference_hashes": [
+        "18b92e99003ff85682153fd3638567317b4af6bb9d6ab513fa9fe7c407fad906",
+        "30cd5177cf360f80a6b90cfdafeaecb8fa561c98751414a6b5ba295df3744a3d"
+      ],
+      "source_art_decision": {
+        "status": "Approved",
+        "at": "2026-10-02T22:21:50.394Z",
+        "evidenceId": "8c83e109-11fa-4f0d-9a0a-88785863068f",
+        "paths": [
+          "C:\\Users\\wilsh\\Projects\\runelord\\assets\\approvals\\inbox\\runeblade-rally-the-fallen\\r1\\rally-the-fallen-r1.png"
+        ]
+      },
+      "template_path": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\cards\\runeblade-demo-2026-10-06\\template-v2\\baseline.png",
+      "template_hash": "30cd5177cf360f80a6b90cfdafeaecb8fa561c98751414a6b5ba295df3744a3d",
+      "editable_mask_path": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\cards\\runeblade-demo-2026-10-06\\template-v2\\mask-union.png",
+      "editable_mask_version": "runeblade-demo-v2",
+      "mask_hash": "c2226e7427a2afc7c7236fda02c6078fc27e31bb32a0f8386de502ce89d672da",
+      "verification": {
+        "dimensions": [
+          1024,
+          1536
+        ],
+        "protected_pixel_count": 621701,
+        "changed_protected_pixels": 0,
+        "protected_alpha_identical": true,
+        "template_sha256": "30cd5177cf360f80a6b90cfdafeaecb8fa561c98751414a6b5ba295df3744a3d",
+        "mask_sha256": "c2226e7427a2afc7c7236fda02c6078fc27e31bb32a0f8386de502ce89d672da",
+        "editable_mask_version": "runeblade-demo-v2",
+        "text_min_rules_px": 56,
+        "text_matches_engine_semantics": true,
+        "automatic_corpse_cost_visible": false
+      },
+      "generation_method": "Technical recomposition of existing artwork; exact immutable card frame",
+      "integration_authorization": "User requested playable Runeblade roguelike demo, secondary Corpse resource and cards on 2026-10-06."
+    },
+    {
+      "tracking_id": "roguelike/runeblade/sweeping-hew",
+      "canonical_id": "sweeping-hew",
+      "catalog_path": "packages/content/runeblade.ts",
+      "row_identifier": "sweeping-hew",
+      "category": "Runeblade",
+      "variant": "base",
+      "source_snapshot": {
+        "id": "sweeping-hew",
+        "name": "Sweeping Hew",
+        "cost": 2,
+        "type": "Attack",
+        "rarity": "Uncommon",
+        "rules": "Heavy. Deal 10 damage to ALL enemies.",
+        "definitionRules": "Heavy. Deal 10 damage to ALL enemies.",
+        "displayRules": "Heavy. Deal 10 damage to ALL enemies.",
+        "authoritativeSource": "packages/content/runeblade.ts",
+        "engine_source_sha256": "1c64e6e43d4d829bdcb4472c50dbc850f0dbf9065ee2a9fa99e332c22bb20858"
+      },
+      "status": "pending_approval",
+      "current_revision": "demo-r1",
+      "output_path": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\cards\\runeblade-demo-2026-10-06\\sweeping-hew\\r1\\sweeping-hew-card-r1.png",
+      "sha256": "a498bb72e2e3050c18840ec2a5c67c59daac5c3fa4146d425d9e1496a986e0fc",
+      "dimensions": [
+        1024,
+        1536
+      ],
+      "artwork_path": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\cards\\runeblade-demo-2026-10-06\\sweeping-hew\\r1\\illustration.png",
+      "text_source_path": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\cards\\runeblade-demo-2026-10-06\\sweeping-hew\\r1\\text-data.json",
+      "illustration_prompt_path": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\cards\\runeblade-demo-2026-10-06\\sweeping-hew\\r1\\illustration-brief.txt",
+      "reference_image_paths": [
+        "C:\\Users\\wilsh\\Projects\\runelord\\assets\\approvals\\inbox\\runeblade-sweeping-hew\\r1\\sweeping-hew-r1.png",
+        "C:\\Users\\wilsh\\Projects\\runelord\\assets\\cards\\runeblade-demo-2026-10-06\\template-v2\\baseline.png"
+      ],
+      "reference_hashes": [
+        "ce7841ac3f57914d0df37a066f5b9d731de3efb56e9455a931b557bd1f9fc525",
+        "30cd5177cf360f80a6b90cfdafeaecb8fa561c98751414a6b5ba295df3744a3d"
+      ],
+      "source_art_decision": {
+        "status": "Approved",
+        "at": "2026-10-02T22:21:50.394Z",
+        "evidenceId": "f4c752bc-c2a6-4e82-901d-a1d65fa8580e",
+        "paths": [
+          "C:\\Users\\wilsh\\Projects\\runelord\\assets\\approvals\\inbox\\runeblade-sweeping-hew\\r1\\sweeping-hew-r1.png"
+        ]
+      },
+      "template_path": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\cards\\runeblade-demo-2026-10-06\\template-v2\\baseline.png",
+      "template_hash": "30cd5177cf360f80a6b90cfdafeaecb8fa561c98751414a6b5ba295df3744a3d",
+      "editable_mask_path": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\cards\\runeblade-demo-2026-10-06\\template-v2\\mask-union.png",
+      "editable_mask_version": "runeblade-demo-v2",
+      "mask_hash": "c2226e7427a2afc7c7236fda02c6078fc27e31bb32a0f8386de502ce89d672da",
+      "verification": {
+        "dimensions": [
+          1024,
+          1536
+        ],
+        "protected_pixel_count": 621701,
+        "changed_protected_pixels": 0,
+        "protected_alpha_identical": true,
+        "template_sha256": "30cd5177cf360f80a6b90cfdafeaecb8fa561c98751414a6b5ba295df3744a3d",
+        "mask_sha256": "c2226e7427a2afc7c7236fda02c6078fc27e31bb32a0f8386de502ce89d672da",
+        "editable_mask_version": "runeblade-demo-v2",
+        "text_min_rules_px": 56,
+        "text_matches_engine_semantics": true,
+        "automatic_corpse_cost_visible": false
+      },
+      "generation_method": "Technical recomposition of existing artwork; exact immutable card frame",
+      "integration_authorization": "User requested playable Runeblade roguelike demo, secondary Corpse resource and cards on 2026-10-06."
+    },
+    {
+      "tracking_id": "roguelike/runeblade/permafrost-aura",
+      "canonical_id": "permafrost-aura",
+      "catalog_path": "packages/content/runeblade.ts",
+      "row_identifier": "permafrost-aura",
+      "category": "Runeblade",
+      "variant": "base",
+      "source_snapshot": {
+        "id": "permafrost-aura",
+        "name": "Permafrost Aura",
+        "cost": 1,
+        "type": "Power",
+        "rarity": "Uncommon",
+        "rules": "At the start of your turn, apply 2 Chill to ALL enemies.",
+        "definitionRules": "At the start of your turn, apply 2 Chill to ALL enemies.",
+        "displayRules": "At the start of your turn, apply 2 Chill to ALL enemies.",
+        "authoritativeSource": "packages/content/runeblade.ts",
+        "engine_source_sha256": "1c64e6e43d4d829bdcb4472c50dbc850f0dbf9065ee2a9fa99e332c22bb20858"
+      },
+      "status": "pending_approval",
+      "current_revision": "demo-r1",
+      "output_path": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\cards\\runeblade-demo-2026-10-06\\permafrost-aura\\r1\\permafrost-aura-card-r1.png",
+      "sha256": "480c1465e8ff4c158aa46c7410ffd701dddc228f69d5923464a3d5f956cb8159",
+      "dimensions": [
+        1024,
+        1536
+      ],
+      "artwork_path": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\cards\\runeblade-demo-2026-10-06\\permafrost-aura\\r1\\illustration.png",
+      "text_source_path": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\cards\\runeblade-demo-2026-10-06\\permafrost-aura\\r1\\text-data.json",
+      "illustration_prompt_path": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\cards\\runeblade-demo-2026-10-06\\permafrost-aura\\r1\\illustration-brief.txt",
+      "reference_image_paths": [
+        "C:\\Users\\wilsh\\Projects\\runelord\\assets\\approvals\\inbox\\runeblade-permafrost-aura\\r1\\permafrost-aura-r1.png",
+        "C:\\Users\\wilsh\\Projects\\runelord\\assets\\cards\\runeblade-demo-2026-10-06\\template-v2\\baseline.png"
+      ],
+      "reference_hashes": [
+        "e3762f0d32cf4a01aecc6d0a582fc85fc2225f8ba7407068afbd33055c3886e2",
+        "30cd5177cf360f80a6b90cfdafeaecb8fa561c98751414a6b5ba295df3744a3d"
+      ],
+      "source_art_decision": {
+        "status": "Approved",
+        "at": "2026-10-02T22:21:50.394Z",
+        "evidenceId": "b4160013-1f28-4281-bdc4-4059ff1538d2",
+        "paths": [
+          "C:\\Users\\wilsh\\Projects\\runelord\\assets\\approvals\\inbox\\runeblade-permafrost-aura\\r1\\permafrost-aura-r1.png"
+        ]
+      },
+      "template_path": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\cards\\runeblade-demo-2026-10-06\\template-v2\\baseline.png",
+      "template_hash": "30cd5177cf360f80a6b90cfdafeaecb8fa561c98751414a6b5ba295df3744a3d",
+      "editable_mask_path": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\cards\\runeblade-demo-2026-10-06\\template-v2\\mask-union.png",
+      "editable_mask_version": "runeblade-demo-v2",
+      "mask_hash": "c2226e7427a2afc7c7236fda02c6078fc27e31bb32a0f8386de502ce89d672da",
+      "verification": {
+        "dimensions": [
+          1024,
+          1536
+        ],
+        "protected_pixel_count": 621701,
+        "changed_protected_pixels": 0,
+        "protected_alpha_identical": true,
+        "template_sha256": "30cd5177cf360f80a6b90cfdafeaecb8fa561c98751414a6b5ba295df3744a3d",
+        "mask_sha256": "c2226e7427a2afc7c7236fda02c6078fc27e31bb32a0f8386de502ce89d672da",
+        "editable_mask_version": "runeblade-demo-v2",
+        "text_min_rules_px": 56,
+        "text_matches_engine_semantics": true,
+        "automatic_corpse_cost_visible": false
+      },
+      "generation_method": "Technical recomposition of existing artwork; exact immutable card frame",
+      "integration_authorization": "User requested playable Runeblade roguelike demo, secondary Corpse resource and cards on 2026-10-06."
+    },
+    {
+      "tracking_id": "roguelike/runeblade/glacier-wall",
+      "canonical_id": "glacier-wall",
+      "catalog_path": "packages/content/runeblade.ts",
+      "row_identifier": "glacier-wall",
+      "category": "Runeblade",
+      "variant": "base",
+      "source_snapshot": {
+        "id": "glacier-wall",
+        "name": "Glacier Wall",
+        "cost": 2,
+        "type": "Skill",
+        "rarity": "Rare",
+        "rules": "Gain 30 Guard. Consume.",
+        "definitionRules": "Gain 30 Guard. Consume.",
+        "displayRules": "Gain 30 Guard. Consume.",
+        "authoritativeSource": "packages/content/runeblade.ts",
+        "engine_source_sha256": "1c64e6e43d4d829bdcb4472c50dbc850f0dbf9065ee2a9fa99e332c22bb20858"
+      },
+      "status": "pending_approval",
+      "current_revision": "demo-r1",
+      "output_path": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\cards\\runeblade-demo-2026-10-06\\glacier-wall\\r1\\glacier-wall-card-r1.png",
+      "sha256": "55be8cd19ccb7339457f6f6f70058f83448fd99bc6607eda7759b7c04bb8a3a9",
+      "dimensions": [
+        1024,
+        1536
+      ],
+      "artwork_path": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\cards\\runeblade-demo-2026-10-06\\glacier-wall\\r1\\illustration.png",
+      "text_source_path": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\cards\\runeblade-demo-2026-10-06\\glacier-wall\\r1\\text-data.json",
+      "illustration_prompt_path": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\cards\\runeblade-demo-2026-10-06\\glacier-wall\\r1\\illustration-brief.txt",
+      "reference_image_paths": [
+        "C:\\Users\\wilsh\\Projects\\runelord\\assets\\approvals\\inbox\\runeblade-frostbound-plate\\r1\\frostbound-plate-r1.png",
+        "C:\\Users\\wilsh\\Projects\\runelord\\assets\\cards\\runeblade-demo-2026-10-06\\template-v2\\baseline.png"
+      ],
+      "reference_hashes": [
+        "26b9d3b0060d516b92bdf76746200ab515112cb277b26e916db7900b5033b530",
+        "30cd5177cf360f80a6b90cfdafeaecb8fa561c98751414a6b5ba295df3744a3d"
+      ],
+      "source_art_decision": {
+        "status": "Approved",
+        "at": "2026-10-02T22:21:43.288Z",
+        "evidenceId": "f1848cc2-e145-45db-956f-7977391ff2ff",
+        "paths": [
+          "C:\\Users\\wilsh\\Projects\\runelord\\assets\\approvals\\inbox\\runeblade-frostbound-plate\\r1\\frostbound-plate-r1.png"
+        ]
+      },
+      "template_path": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\cards\\runeblade-demo-2026-10-06\\template-v2\\baseline.png",
+      "template_hash": "30cd5177cf360f80a6b90cfdafeaecb8fa561c98751414a6b5ba295df3744a3d",
+      "editable_mask_path": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\cards\\runeblade-demo-2026-10-06\\template-v2\\mask-union.png",
+      "editable_mask_version": "runeblade-demo-v2",
+      "mask_hash": "c2226e7427a2afc7c7236fda02c6078fc27e31bb32a0f8386de502ce89d672da",
+      "verification": {
+        "dimensions": [
+          1024,
+          1536
+        ],
+        "protected_pixel_count": 621701,
+        "changed_protected_pixels": 0,
+        "protected_alpha_identical": true,
+        "template_sha256": "30cd5177cf360f80a6b90cfdafeaecb8fa561c98751414a6b5ba295df3744a3d",
+        "mask_sha256": "c2226e7427a2afc7c7236fda02c6078fc27e31bb32a0f8386de502ce89d672da",
+        "editable_mask_version": "runeblade-demo-v2",
+        "text_min_rules_px": 56,
+        "text_matches_engine_semantics": true,
+        "automatic_corpse_cost_visible": false
+      },
+      "generation_method": "Technical recomposition of existing artwork; exact immutable card frame",
+      "integration_authorization": "User requested playable Runeblade roguelike demo, secondary Corpse resource and cards on 2026-10-06."
+    },
+    {
+      "canonical_id": "summon-iron-legionary",
+      "tracking_id": "summon-iron-legionary",
+      "category": "warlock",
+      "variant": "base",
+      "source_snapshot": {
+        "id": "summon-iron-legionary",
+        "name": "Iron Legionary",
+        "cost": "2",
+        "type": "Summon",
+        "rarity": "Common",
+        "rules": "Summon an Iron Legionary (18 HP, 4 Power). With 2+ Legionaries, split all hostile damage intended for the Warlock between them, before his Guard. Earned ranks return when summoned again."
+      },
+      "status": "pending_approval",
+      "current_revision": "r3",
+      "output_path": "assets/cards/infernal-soldiers-2026-10-13/summon-iron-legionary/r3/summon-iron-legionary-r3.png",
+      "artwork_path": "assets/cards/infernal-soldiers-2026-10-13/summon-iron-legionary/r3/illustration.png",
+      "verification": {
+        "width": 1024,
+        "height": 1536,
+        "protectedPixels": 602082,
+        "editablePixels": 970782,
+        "changedPixels": 0,
+        "passed": true,
+        "files": [
+          {
+            "path": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\cards\\hellbound-legion-r1\\template\\baseline.png",
+            "sha256": "070283f1fb65b07531cec7b32c653ffc96a7adacde1c2ce4daca1f3b4ed78c9e"
+          },
+          {
+            "path": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\cards\\infernal-soldiers-2026-10-13\\summon-iron-legionary\\r3\\summon-iron-legionary-r3.png",
+            "sha256": "d8d47e5e4e8be6df0b89db090490ce028ecba191ec240fb4c1d70d5229e1bbce"
+          },
+          {
+            "path": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\cards\\hellbound-legion-r1\\template\\mask-union.png",
+            "sha256": "13e010f0e4f661af03596d83a5ec22823b700c6d352085acd7df8029ceba23f5"
+          }
+        ],
+        "text_matches_live_content": true,
+        "changed_outside_art_mask": 0,
+        "output_sha256": "d8d47e5e4e8be6df0b89db090490ce028ecba191ec240fb4c1d70d5229e1bbce",
+        "dimensions": [
+          1024,
+          1536
+        ],
+        "changed_protected_pixels": 0,
+        "protected_pixels": 602082,
+        "template_sha256": "070283f1fb65b07531cec7b32c653ffc96a7adacde1c2ce4daca1f3b4ed78c9e"
+      },
+      "source": {
+        "path": "C:\\Users\\wilsh\\Projects\\runelord-remote-assets-2026-10-12\\new assets\\summons\\assets\\iron-legionary-idle-r1\\idle-master.png",
+        "sha256": "ce275841a9be910809045fcb4d5c02c6eed9b09b3a15f29fafaabc1f4954ea31",
+        "gallery": null,
+        "authorization": "User approved six-summon preview and requested Hellbound Legion cards; integration authorized, new cards pending review"
+      },
+      "prior_revisions": [
+        {
+          "revision": "r1",
+          "path": "assets/cards/hellbound-legion-r1/summon-iron-legionary/r1/summon-iron-legionary-r1.png",
+          "sha256": "6c6a81d5bb8e63a8fbf117ff817f7649fca89b01386f2f10860c46ca0eb48980",
+          "status": "stale",
+          "reason": "User revised promotion inheritance and summon lifetime rules."
+        },
+        {
+          "revision": "r2",
+          "path": "assets/cards/hellbound-legion-r1/summon-iron-legionary/r2/summon-iron-legionary-r2.png",
+          "sha256": "b4a2fe3508793ab6a9d6d24ab5cc39a46c63b1ea7baf292b16a0406ed01f773e",
+          "gallery": null,
+          "reason": "New scene illustration requested by user"
+        }
+      ],
+      "illustration_prompt_path": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\cards\\infernal-soldiers-2026-10-13\\summon-iron-legionary\\r3\\illustration-prompt.txt",
+      "reference_image_paths": [
+        "C:/Users/wilsh/Projects/runelord/assets/cards/hellbound-legion-r1/template/baseline.png",
+        "C:/Users/wilsh/Projects/runelord/assets/cards/hellbound-legion-r1/summon-iron-legionary/r2/identity-source.png"
+      ],
+      "template_path": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\cards\\hellbound-legion-r1\\template\\baseline.png",
+      "editable_mask_path": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\cards\\hellbound-legion-r1\\template\\mask-union.png",
+      "integration_status": "implemented; user requested implement them on their cards",
+      "runtime": "game-assets/cards/summon-iron-legionary.webp",
+      "runtime_url": "/game-assets/cards/summon-iron-legionary.webp?v=d8d47e5e4e8b"
+    },
+    {
+      "canonical_id": "summon-ash-pikeman",
+      "tracking_id": "summon-ash-pikeman",
+      "category": "warlock",
+      "variant": "base",
+      "source_snapshot": {
+        "id": "summon-ash-pikeman",
+        "name": "Ash Pikeman",
+        "cost": "1",
+        "type": "Summon",
+        "rarity": "Common",
+        "rules": "Summon an Ash Pikeman (12 HP, 5 Power). +2 attack damage for each other Ash Pikeman. Earned ranks return when summoned again."
+      },
+      "status": "pending_approval",
+      "current_revision": "r3",
+      "output_path": "assets/cards/infernal-soldiers-2026-10-13/summon-ash-pikeman/r3/summon-ash-pikeman-r3.png",
+      "artwork_path": "assets/cards/infernal-soldiers-2026-10-13/summon-ash-pikeman/r3/illustration.png",
+      "verification": {
+        "width": 1024,
+        "height": 1536,
+        "protectedPixels": 602082,
+        "editablePixels": 970782,
+        "changedPixels": 0,
+        "passed": true,
+        "files": [
+          {
+            "path": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\cards\\hellbound-legion-r1\\template\\baseline.png",
+            "sha256": "070283f1fb65b07531cec7b32c653ffc96a7adacde1c2ce4daca1f3b4ed78c9e"
+          },
+          {
+            "path": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\cards\\infernal-soldiers-2026-10-13\\summon-ash-pikeman\\r3\\summon-ash-pikeman-r3.png",
+            "sha256": "ca96952a111a621f5e83346226ecc22edc3af9b6db94cffbce9d3c9916b3e0c4"
+          },
+          {
+            "path": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\cards\\hellbound-legion-r1\\template\\mask-union.png",
+            "sha256": "13e010f0e4f661af03596d83a5ec22823b700c6d352085acd7df8029ceba23f5"
+          }
+        ],
+        "text_matches_live_content": true,
+        "changed_outside_art_mask": 0,
+        "output_sha256": "ca96952a111a621f5e83346226ecc22edc3af9b6db94cffbce9d3c9916b3e0c4",
+        "dimensions": [
+          1024,
+          1536
+        ],
+        "changed_protected_pixels": 0,
+        "protected_pixels": 602082,
+        "template_sha256": "070283f1fb65b07531cec7b32c653ffc96a7adacde1c2ce4daca1f3b4ed78c9e"
+      },
+      "source": {
+        "path": "C:\\Users\\wilsh\\Projects\\runelord-remote-assets-2026-10-12\\new assets\\summons\\assets\\ash-pikeman-idle-r1\\registered.png",
+        "sha256": "46caae3e889fba6a9af5736ae085069ea63c8aec0e7928876cc56e16c2c2d4c1",
+        "gallery": null,
+        "authorization": "User approved six-summon preview and requested Hellbound Legion cards; integration authorized, new cards pending review"
+      },
+      "prior_revisions": [
+        {
+          "revision": "r1",
+          "path": "assets/cards/hellbound-legion-r1/summon-ash-pikeman/r1/summon-ash-pikeman-r1.png",
+          "sha256": "cf48adc10293166aa5a75988f1ac7c1af9a8d7653ae96526e58693b0e0132548",
+          "status": "stale",
+          "reason": "User revised promotion inheritance and summon lifetime rules."
+        },
+        {
+          "revision": "r2",
+          "path": "assets/cards/hellbound-legion-r1/summon-ash-pikeman/r2/summon-ash-pikeman-r2.png",
+          "sha256": "2f1dc77fcd6d4702e22cbea7a69ffca8cda9b72ec604550d0926066594494269",
+          "gallery": null,
+          "reason": "New scene illustration requested by user"
+        }
+      ],
+      "illustration_prompt_path": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\cards\\infernal-soldiers-2026-10-13\\summon-ash-pikeman\\r3\\illustration-prompt.txt",
+      "reference_image_paths": [
+        "C:/Users/wilsh/Projects/runelord/assets/cards/hellbound-legion-r1/template/baseline.png",
+        "C:/Users/wilsh/Projects/runelord/assets/cards/hellbound-legion-r1/summon-ash-pikeman/r2/identity-source.png"
+      ],
+      "template_path": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\cards\\hellbound-legion-r1\\template\\baseline.png",
+      "editable_mask_path": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\cards\\hellbound-legion-r1\\template\\mask-union.png",
+      "integration_status": "implemented; user requested implement them on their cards",
+      "runtime": "game-assets/cards/summon-ash-pikeman.webp",
+      "runtime_url": "/game-assets/cards/summon-ash-pikeman.webp?v=ca96952a111a"
+    },
+    {
+      "canonical_id": "summon-ironhorn-bulwark",
+      "tracking_id": "summon-ironhorn-bulwark",
+      "category": "warlock",
+      "variant": "base",
+      "source_snapshot": {
+        "id": "summon-ironhorn-bulwark",
+        "name": "Ironhorn Bulwark",
+        "cost": "2",
+        "type": "Summon",
+        "rarity": "Uncommon",
+        "rules": "Summon an Ironhorn Bulwark (28 HP, 2 Power). Defender. At turn start, give all soldiers 3 Guard. Earned ranks return when summoned again."
+      },
+      "status": "pending_approval",
+      "current_revision": "r3",
+      "output_path": "assets/cards/infernal-soldiers-2026-10-13/summon-ironhorn-bulwark/r3/summon-ironhorn-bulwark-r3.png",
+      "artwork_path": "assets/cards/infernal-soldiers-2026-10-13/summon-ironhorn-bulwark/r3/illustration.png",
+      "verification": {
+        "width": 1024,
+        "height": 1536,
+        "protectedPixels": 602082,
+        "editablePixels": 970782,
+        "changedPixels": 0,
+        "passed": true,
+        "files": [
+          {
+            "path": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\cards\\hellbound-legion-r1\\template\\baseline.png",
+            "sha256": "070283f1fb65b07531cec7b32c653ffc96a7adacde1c2ce4daca1f3b4ed78c9e"
+          },
+          {
+            "path": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\cards\\infernal-soldiers-2026-10-13\\summon-ironhorn-bulwark\\r3\\summon-ironhorn-bulwark-r3.png",
+            "sha256": "5f1a7fbf60feee244bf5b3f557cb0f9542deeba79187c32dd158d4536e80fcb0"
+          },
+          {
+            "path": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\cards\\hellbound-legion-r1\\template\\mask-union.png",
+            "sha256": "13e010f0e4f661af03596d83a5ec22823b700c6d352085acd7df8029ceba23f5"
+          }
+        ],
+        "text_matches_live_content": true,
+        "changed_outside_art_mask": 0,
+        "output_sha256": "5f1a7fbf60feee244bf5b3f557cb0f9542deeba79187c32dd158d4536e80fcb0",
+        "dimensions": [
+          1024,
+          1536
+        ],
+        "changed_protected_pixels": 0,
+        "protected_pixels": 602082,
+        "template_sha256": "070283f1fb65b07531cec7b32c653ffc96a7adacde1c2ce4daca1f3b4ed78c9e"
+      },
+      "source": {
+        "path": "C:\\Users\\wilsh\\Projects\\runelord-remote-assets-2026-10-12\\new assets\\summons\\assets\\ironhorn-bulwark-source-r3\\ironhorn-bulwark.png",
+        "sha256": "325d0d9c82b4dd33de8facc61a3895123edc069b4f7a011018b0d7e61caacf7d",
+        "gallery": null,
+        "authorization": "User approved six-summon preview and requested Hellbound Legion cards; integration authorized, new cards pending review"
+      },
+      "prior_revisions": [
+        {
+          "revision": "r1",
+          "path": "assets/cards/hellbound-legion-r1/summon-ironhorn-bulwark/r1/summon-ironhorn-bulwark-r1.png",
+          "sha256": "dc753b0f0fb53cf49420b4005d82632e5c1ca0275af14fa823a1a077e54523cc",
+          "status": "stale",
+          "reason": "User revised promotion inheritance and summon lifetime rules."
+        },
+        {
+          "revision": "r2",
+          "path": "assets/cards/hellbound-legion-r1/summon-ironhorn-bulwark/r2/summon-ironhorn-bulwark-r2.png",
+          "sha256": "55de411aec5d2c9a29f3aeeffb436e18aed0ad93b29c742c59a7ea9158d8318c",
+          "gallery": null,
+          "reason": "New scene illustration requested by user"
+        }
+      ],
+      "illustration_prompt_path": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\cards\\infernal-soldiers-2026-10-13\\summon-ironhorn-bulwark\\r3\\illustration-prompt.txt",
+      "reference_image_paths": [
+        "C:/Users/wilsh/Projects/runelord/assets/cards/hellbound-legion-r1/template/baseline.png",
+        "C:/Users/wilsh/Projects/runelord/assets/cards/hellbound-legion-r1/summon-ironhorn-bulwark/r2/identity-source.png"
+      ],
+      "template_path": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\cards\\hellbound-legion-r1\\template\\baseline.png",
+      "editable_mask_path": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\cards\\hellbound-legion-r1\\template\\mask-union.png",
+      "integration_status": "implemented; user requested implement them on their cards",
+      "runtime": "game-assets/cards/summon-ironhorn-bulwark.webp",
+      "runtime_url": "/game-assets/cards/summon-ironhorn-bulwark.webp?v=5f1a7fbf60fe"
+    },
+    {
+      "canonical_id": "summon-maledictor",
+      "tracking_id": "summon-maledictor",
+      "category": "warlock",
+      "variant": "base",
+      "source_snapshot": {
+        "id": "summon-maledictor",
+        "name": "Maledictor",
+        "cost": "2",
+        "type": "Summon",
+        "rarity": "Uncommon",
+        "rules": "Summon a Maledictor (14 HP, 3 Power). Attacks apply 2 Scorch. With 3 Maledictors, open a Hellgate at turn end: 6 damage and 2 Scorch to all enemies; promote all soldiers. Once per turn. Earned ranks return when summoned again."
+      },
+      "status": "pending_approval",
+      "current_revision": "r3",
+      "output_path": "assets/cards/infernal-soldiers-2026-10-13/summon-maledictor/r3/summon-maledictor-r3.png",
+      "artwork_path": "assets/cards/infernal-soldiers-2026-10-13/summon-maledictor/r3/illustration.png",
+      "verification": {
+        "width": 1024,
+        "height": 1536,
+        "protectedPixels": 602082,
+        "editablePixels": 970782,
+        "changedPixels": 0,
+        "passed": true,
+        "files": [
+          {
+            "path": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\cards\\hellbound-legion-r1\\template\\baseline.png",
+            "sha256": "070283f1fb65b07531cec7b32c653ffc96a7adacde1c2ce4daca1f3b4ed78c9e"
+          },
+          {
+            "path": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\cards\\infernal-soldiers-2026-10-13\\summon-maledictor\\r3\\summon-maledictor-r3.png",
+            "sha256": "c0060a69849ca7d09a51f0a8e20a3dbbcbb06485e0591ae2291911a2f1819a5b"
+          },
+          {
+            "path": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\cards\\hellbound-legion-r1\\template\\mask-union.png",
+            "sha256": "13e010f0e4f661af03596d83a5ec22823b700c6d352085acd7df8029ceba23f5"
+          }
+        ],
+        "text_matches_live_content": true,
+        "changed_outside_art_mask": 0,
+        "output_sha256": "c0060a69849ca7d09a51f0a8e20a3dbbcbb06485e0591ae2291911a2f1819a5b",
+        "dimensions": [
+          1024,
+          1536
+        ],
+        "changed_protected_pixels": 0,
+        "protected_pixels": 602082,
+        "template_sha256": "070283f1fb65b07531cec7b32c653ffc96a7adacde1c2ce4daca1f3b4ed78c9e"
+      },
+      "source": {
+        "path": "C:\\Users\\wilsh\\Projects\\runelord-remote-assets-2026-10-12\\new assets\\summons\\assets\\maledictor-idle-r1\\idle-master.png",
+        "sha256": "6b36a02c4b0a4902daeecac505758438e3b0d20f48621dde4633be3263c198d7",
+        "gallery": null,
+        "authorization": "User approved six-summon preview and requested Hellbound Legion cards; integration authorized, new cards pending review"
+      },
+      "prior_revisions": [
+        {
+          "revision": "r1",
+          "path": "assets/cards/hellbound-legion-r1/summon-maledictor/r1/summon-maledictor-r1.png",
+          "sha256": "329a43d05105cad145492de12974a0c03de10b4fcc236ce5e584f5f5bbd5af4b",
+          "status": "stale",
+          "reason": "User revised promotion inheritance and summon lifetime rules."
+        },
+        {
+          "revision": "r2",
+          "path": "assets/cards/hellbound-legion-r1/summon-maledictor/r2/summon-maledictor-r2.png",
+          "sha256": "03666206a13f32d386e5f836925738491e1fb88eb83959d5744329be84252169",
+          "gallery": null,
+          "reason": "New scene illustration requested by user"
+        }
+      ],
+      "illustration_prompt_path": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\cards\\infernal-soldiers-2026-10-13\\summon-maledictor\\r3\\illustration-prompt.txt",
+      "reference_image_paths": [
+        "C:/Users/wilsh/Projects/runelord/assets/cards/hellbound-legion-r1/template/baseline.png",
+        "C:/Users/wilsh/Projects/runelord/assets/cards/hellbound-legion-r1/summon-maledictor/r2/identity-source.png"
+      ],
+      "template_path": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\cards\\hellbound-legion-r1\\template\\baseline.png",
+      "editable_mask_path": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\cards\\hellbound-legion-r1\\template\\mask-union.png",
+      "integration_status": "implemented; user requested implement them on their cards",
+      "runtime": "game-assets/cards/summon-maledictor.webp",
+      "runtime_url": "/game-assets/cards/summon-maledictor.webp?v=c0060a69849c"
+    },
+    {
+      "canonical_id": "summon-dread-vanguard",
+      "tracking_id": "summon-dread-vanguard",
+      "category": "warlock",
+      "variant": "base",
+      "source_snapshot": {
+        "id": "summon-dread-vanguard",
+        "name": "Dread Vanguard",
+        "cost": "3",
+        "type": "Summon",
+        "rarity": "Rare",
+        "rules": "Summon a Dread Vanguard (24 HP, 7 Power). Cleave all enemies. Its first kill each turn promotes it. Earned ranks return when summoned again."
+      },
+      "status": "pending_approval",
+      "current_revision": "r3",
+      "output_path": "assets/cards/infernal-soldiers-2026-10-13/summon-dread-vanguard/r3/summon-dread-vanguard-r3.png",
+      "artwork_path": "assets/cards/infernal-soldiers-2026-10-13/summon-dread-vanguard/r3/illustration.png",
+      "verification": {
+        "width": 1024,
+        "height": 1536,
+        "protectedPixels": 602082,
+        "editablePixels": 970782,
+        "changedPixels": 0,
+        "passed": true,
+        "files": [
+          {
+            "path": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\cards\\hellbound-legion-r1\\template\\baseline.png",
+            "sha256": "070283f1fb65b07531cec7b32c653ffc96a7adacde1c2ce4daca1f3b4ed78c9e"
+          },
+          {
+            "path": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\cards\\infernal-soldiers-2026-10-13\\summon-dread-vanguard\\r3\\summon-dread-vanguard-r3.png",
+            "sha256": "76fbbcaa0f7b0dd73b3ae784f8557bcdafa56b2e0d05de614b8a6a94d51b1ee1"
+          },
+          {
+            "path": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\cards\\hellbound-legion-r1\\template\\mask-union.png",
+            "sha256": "13e010f0e4f661af03596d83a5ec22823b700c6d352085acd7df8029ceba23f5"
+          }
+        ],
+        "text_matches_live_content": true,
+        "changed_outside_art_mask": 0,
+        "output_sha256": "76fbbcaa0f7b0dd73b3ae784f8557bcdafa56b2e0d05de614b8a6a94d51b1ee1",
+        "dimensions": [
+          1024,
+          1536
+        ],
+        "changed_protected_pixels": 0,
+        "protected_pixels": 602082,
+        "template_sha256": "070283f1fb65b07531cec7b32c653ffc96a7adacde1c2ce4daca1f3b4ed78c9e"
+      },
+      "source": {
+        "path": "C:\\Users\\wilsh\\Projects\\runelord-remote-assets-2026-10-12\\new assets\\summons\\assets\\dread-vanguard-idle-r5\\battle-stance-source.png",
+        "sha256": "9359a3645d623d279e1d65fc78a23fc9e23685c0b4e102abd25a3858383898ca",
+        "gallery": null,
+        "authorization": "User approved six-summon preview and requested Hellbound Legion cards; integration authorized, new cards pending review"
+      },
+      "prior_revisions": [
+        {
+          "revision": "r1",
+          "path": "assets/cards/hellbound-legion-r1/summon-dread-vanguard/r1/summon-dread-vanguard-r1.png",
+          "sha256": "2c6beeec018dbedc9b6ba9b5adc849a7ed420bb3e0b6ccbeaf95d84fdab5b21e",
+          "status": "stale",
+          "reason": "User revised promotion inheritance and summon lifetime rules."
+        },
+        {
+          "revision": "r2",
+          "path": "assets/cards/hellbound-legion-r1/summon-dread-vanguard/r2/summon-dread-vanguard-r2.png",
+          "sha256": "26d14cba09e1272cb1118807a7b9b0457894ee6e73505f4c2a866a06a2c23c1a",
+          "gallery": null,
+          "reason": "New scene illustration requested by user"
+        }
+      ],
+      "illustration_prompt_path": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\cards\\infernal-soldiers-2026-10-13\\summon-dread-vanguard\\r3\\illustration-prompt.txt",
+      "reference_image_paths": [
+        "C:/Users/wilsh/Projects/runelord/assets/cards/hellbound-legion-r1/template/baseline.png",
+        "C:/Users/wilsh/Projects/runelord/assets/cards/hellbound-legion-r1/summon-dread-vanguard/r2/identity-source.png"
+      ],
+      "template_path": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\cards\\hellbound-legion-r1\\template\\baseline.png",
+      "editable_mask_path": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\cards\\hellbound-legion-r1\\template\\mask-union.png",
+      "integration_status": "implemented; user requested implement them on their cards",
+      "runtime": "game-assets/cards/summon-dread-vanguard.webp",
+      "runtime_url": "/game-assets/cards/summon-dread-vanguard.webp?v=76fbbcaa0f7b"
+    },
+    {
+      "canonical_id": "muster-legion",
+      "tracking_id": "muster-legion",
+      "category": "warlock",
+      "variant": "base",
+      "source_snapshot": {
+        "id": "muster-legion",
+        "name": "Muster the Legion",
+        "cost": "3",
+        "type": "Summon",
+        "rarity": "Common",
+        "rules": "Summon 2 Iron Legionaries (18 HP, 4 Power each). Requires 2 empty Warband slots. Earned ranks return when summoned again."
+      },
+      "status": "pending_approval",
+      "current_revision": "r3",
+      "output_path": "assets/cards/infernal-soldiers-2026-10-13/muster-legion/r3/muster-legion-r3.png",
+      "artwork_path": "assets/cards/infernal-soldiers-2026-10-13/muster-legion/r3/illustration.png",
+      "verification": {
+        "width": 1024,
+        "height": 1536,
+        "protectedPixels": 602082,
+        "editablePixels": 970782,
+        "changedPixels": 0,
+        "passed": true,
+        "files": [
+          {
+            "path": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\cards\\hellbound-legion-r1\\template\\baseline.png",
+            "sha256": "070283f1fb65b07531cec7b32c653ffc96a7adacde1c2ce4daca1f3b4ed78c9e"
+          },
+          {
+            "path": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\cards\\infernal-soldiers-2026-10-13\\muster-legion\\r3\\muster-legion-r3.png",
+            "sha256": "909a986e4cb4956289cd19fec9368971507cd49b6a3a2c0d3c871519be94c317"
+          },
+          {
+            "path": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\cards\\hellbound-legion-r1\\template\\mask-union.png",
+            "sha256": "13e010f0e4f661af03596d83a5ec22823b700c6d352085acd7df8029ceba23f5"
+          }
+        ],
+        "text_matches_live_content": true,
+        "changed_outside_art_mask": 0,
+        "output_sha256": "909a986e4cb4956289cd19fec9368971507cd49b6a3a2c0d3c871519be94c317",
+        "dimensions": [
+          1024,
+          1536
+        ],
+        "changed_protected_pixels": 0,
+        "protected_pixels": 602082,
+        "template_sha256": "070283f1fb65b07531cec7b32c653ffc96a7adacde1c2ce4daca1f3b4ed78c9e"
+      },
+      "source": {
+        "path": "C:\\Users\\wilsh\\Projects\\runelord-remote-assets-2026-10-12\\new assets\\summons\\assets\\iron-legionary-idle-r1\\idle-master.png",
+        "sha256": "ce275841a9be910809045fcb4d5c02c6eed9b09b3a15f29fafaabc1f4954ea31",
+        "gallery": null,
+        "authorization": "User approved six-summon preview and requested Hellbound Legion cards; integration authorized, new cards pending review"
+      },
+      "prior_revisions": [
+        {
+          "revision": "r1",
+          "path": "assets/cards/hellbound-legion-r1/muster-legion/r1/muster-legion-r1.png",
+          "sha256": "f3386c545033cfe4b5226f2c2f42651da70c33949fe12914a063ef63c64cb6df",
+          "status": "stale",
+          "reason": "User revised promotion inheritance and summon lifetime rules."
+        },
+        {
+          "revision": "r2",
+          "path": "assets/cards/hellbound-legion-r1/muster-legion/r2/muster-legion-r2.png",
+          "sha256": "2aa14fc8b4c01efa869f375bc9217afd2fdfbec8ca37eaa6f1098cae96d30828",
+          "gallery": null,
+          "reason": "New scene illustration requested by user"
+        }
+      ],
+      "illustration_prompt_path": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\cards\\infernal-soldiers-2026-10-13\\muster-legion\\r3\\illustration-prompt.txt",
+      "reference_image_paths": [
+        "C:/Users/wilsh/Projects/runelord/assets/cards/hellbound-legion-r1/template/baseline.png",
+        "C:/Users/wilsh/Projects/runelord/assets/cards/hellbound-legion-r1/summon-iron-legionary/r2/identity-source.png"
+      ],
+      "template_path": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\cards\\hellbound-legion-r1\\template\\baseline.png",
+      "editable_mask_path": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\cards\\hellbound-legion-r1\\template\\mask-union.png",
+      "integration_status": "implemented; user requested implement them on their cards",
+      "runtime": "game-assets/cards/muster-legion.webp",
+      "runtime_url": "/game-assets/cards/muster-legion.webp?v=909a986e4cb4"
+    },
+    {
+      "canonical_id": "pike-detail",
+      "tracking_id": "pike-detail",
+      "category": "warlock",
+      "variant": "base",
+      "source_snapshot": {
+        "id": "pike-detail",
+        "name": "Pike Detail",
+        "cost": "2",
+        "type": "Summon",
+        "rarity": "Common",
+        "rules": "Summon 2 Ash Pikemen (12 HP, 5 Power each). Requires 2 empty Warband slots. Earned ranks return when summoned again."
+      },
+      "status": "pending_approval",
+      "current_revision": "r3",
+      "output_path": "assets/cards/infernal-soldiers-2026-10-13/pike-detail/r3/pike-detail-r3.png",
+      "artwork_path": "assets/cards/infernal-soldiers-2026-10-13/pike-detail/r3/illustration.png",
+      "verification": {
+        "width": 1024,
+        "height": 1536,
+        "protectedPixels": 602082,
+        "editablePixels": 970782,
+        "changedPixels": 0,
+        "passed": true,
+        "files": [
+          {
+            "path": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\cards\\hellbound-legion-r1\\template\\baseline.png",
+            "sha256": "070283f1fb65b07531cec7b32c653ffc96a7adacde1c2ce4daca1f3b4ed78c9e"
+          },
+          {
+            "path": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\cards\\infernal-soldiers-2026-10-13\\pike-detail\\r3\\pike-detail-r3.png",
+            "sha256": "41fa064ca5b519d999289d6cd2278501f8ae97533d63ae2cfa02d835e28eff6a"
+          },
+          {
+            "path": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\cards\\hellbound-legion-r1\\template\\mask-union.png",
+            "sha256": "13e010f0e4f661af03596d83a5ec22823b700c6d352085acd7df8029ceba23f5"
+          }
+        ],
+        "text_matches_live_content": true,
+        "changed_outside_art_mask": 0,
+        "output_sha256": "41fa064ca5b519d999289d6cd2278501f8ae97533d63ae2cfa02d835e28eff6a",
+        "dimensions": [
+          1024,
+          1536
+        ],
+        "changed_protected_pixels": 0,
+        "protected_pixels": 602082,
+        "template_sha256": "070283f1fb65b07531cec7b32c653ffc96a7adacde1c2ce4daca1f3b4ed78c9e"
+      },
+      "source": {
+        "path": "C:\\Users\\wilsh\\Projects\\runelord-remote-assets-2026-10-12\\new assets\\summons\\assets\\ash-pikeman-idle-r1\\registered.png",
+        "sha256": "46caae3e889fba6a9af5736ae085069ea63c8aec0e7928876cc56e16c2c2d4c1",
+        "gallery": null,
+        "authorization": "User approved six-summon preview and requested Hellbound Legion cards; integration authorized, new cards pending review"
+      },
+      "prior_revisions": [
+        {
+          "revision": "r1",
+          "path": "assets/cards/hellbound-legion-r1/pike-detail/r1/pike-detail-r1.png",
+          "sha256": "2fe61cae87f2bc2e54232fc2fdfa5584dc2d6d9e9e4615a4b0267345cc0694a8",
+          "status": "stale",
+          "reason": "User revised promotion inheritance and summon lifetime rules."
+        },
+        {
+          "revision": "r2",
+          "path": "assets/cards/hellbound-legion-r1/pike-detail/r2/pike-detail-r2.png",
+          "sha256": "4854dfae8e3acb6a4c2000965df9a1c7378cd0c1f317e590590aac94c90f0824",
+          "gallery": null,
+          "reason": "New scene illustration requested by user"
+        }
+      ],
+      "illustration_prompt_path": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\cards\\infernal-soldiers-2026-10-13\\pike-detail\\r3\\illustration-prompt.txt",
+      "reference_image_paths": [
+        "C:/Users/wilsh/Projects/runelord/assets/cards/hellbound-legion-r1/template/baseline.png",
+        "C:/Users/wilsh/Projects/runelord/assets/cards/hellbound-legion-r1/summon-ash-pikeman/r2/identity-source.png"
+      ],
+      "template_path": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\cards\\hellbound-legion-r1\\template\\baseline.png",
+      "editable_mask_path": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\cards\\hellbound-legion-r1\\template\\mask-union.png",
+      "integration_status": "implemented; user requested implement them on their cards",
+      "runtime": "game-assets/cards/pike-detail.webp",
+      "runtime_url": "/game-assets/cards/pike-detail.webp?v=41fa064ca5b5"
+    },
+    {
+      "canonical_id": "field-promotion",
+      "tracking_id": "field-promotion",
+      "category": "warlock",
+      "variant": "base",
+      "source_snapshot": {
+        "id": "field-promotion",
+        "name": "Field Promotion",
+        "cost": "1",
+        "type": "Skill",
+        "rarity": "Common",
+        "rules": "Promote a soldier: permanently gain +2 Power, +2 maximum HP, heal 2 HP, and +1 Armor. Earned ranks are saved for the next summon."
+      },
+      "status": "pending_approval",
+      "current_revision": "r2",
+      "output_path": "assets/cards/hellbound-legion-r1/field-promotion/r2/field-promotion-r2.png",
+      "artwork_path": "assets/cards/hellbound-legion-r1/field-promotion/r2/illustration.png",
+      "runtime": "game-assets/cards/field-promotion.webp",
+      "verification": {
+        "dimensions": [
+          1024,
+          1536
+        ],
+        "protected_pixels": 602082,
+        "changed_protected_pixels": 0,
+        "template_sha256": "070283f1fb65b07531cec7b32c653ffc96a7adacde1c2ce4daca1f3b4ed78c9e",
+        "mask_sha256": "13e010f0e4f661af03596d83a5ec22823b700c6d352085acd7df8029ceba23f5",
+        "output_sha256": "23ff06c2d80535bb910c5aacc699dc4056e74119bc574ddf92e7d9dff1d1e6ff",
+        "mask_version": "warlock-v1",
+        "text_matches_live_content": true
+      },
+      "source": {
+        "path": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\cards\\hellbound-legion-r1\\generated\\field-promotion.png",
+        "sha256": "f92dbf066383da018b786e8d996929e6aec48b33e5d68dcec32d037097e31381",
+        "gallery": null,
+        "authorization": "User approved six-summon preview and requested Hellbound Legion cards; integration authorized, new cards pending review"
+      },
+      "prior_revisions": [
+        {
+          "revision": "r1",
+          "path": "assets/cards/hellbound-legion-r1/field-promotion/r1/field-promotion-r1.png",
+          "sha256": "bfa0da881cd98bae7690c41c73c690d03a267d43e2dd67f76786c127ba197a01",
+          "status": "stale",
+          "reason": "User revised promotion inheritance and summon lifetime rules."
+        }
+      ],
+      "gallery_decision": null
+    },
+    {
+      "canonical_id": "blood-ascension",
+      "tracking_id": "blood-ascension",
+      "category": "warlock",
+      "variant": "base",
+      "source_snapshot": {
+        "id": "blood-ascension",
+        "name": "Blood Ascension",
+        "cost": "2",
+        "type": "Skill",
+        "rarity": "Uncommon",
+        "rules": "Choose a soldier and sacrifice another summon. Promote the soldier 3 times."
+      },
+      "status": "pending_approval",
+      "current_revision": "r3",
+      "output_path": "assets/cards/infernal-soldiers-2026-10-13/blood-ascension/r3/blood-ascension-r3.png",
+      "artwork_path": "assets/cards/infernal-soldiers-2026-10-13/blood-ascension/r3/illustration.png",
+      "verification": {
+        "width": 1024,
+        "height": 1536,
+        "protectedPixels": 602082,
+        "editablePixels": 970782,
+        "changedPixels": 0,
+        "passed": true,
+        "files": [
+          {
+            "path": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\cards\\hellbound-legion-r1\\template\\baseline.png",
+            "sha256": "070283f1fb65b07531cec7b32c653ffc96a7adacde1c2ce4daca1f3b4ed78c9e"
+          },
+          {
+            "path": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\cards\\infernal-soldiers-2026-10-13\\blood-ascension\\r3\\blood-ascension-r3.png",
+            "sha256": "1f35d841037123333e90f3f6653a9b32a5a5e1234de91031acea84e21461135d"
+          },
+          {
+            "path": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\cards\\hellbound-legion-r1\\template\\mask-union.png",
+            "sha256": "13e010f0e4f661af03596d83a5ec22823b700c6d352085acd7df8029ceba23f5"
+          }
+        ],
+        "text_matches_live_content": true,
+        "changed_outside_art_mask": 0,
+        "output_sha256": "1f35d841037123333e90f3f6653a9b32a5a5e1234de91031acea84e21461135d",
+        "dimensions": [
+          1024,
+          1536
+        ],
+        "changed_protected_pixels": 0,
+        "protected_pixels": 602082,
+        "template_sha256": "070283f1fb65b07531cec7b32c653ffc96a7adacde1c2ce4daca1f3b4ed78c9e"
+      },
+      "source": {
+        "path": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\cards\\hellbound-legion-r1\\generated\\blood-ascension.png",
+        "sha256": "1961a8df7fb7931f8ac678fae7aa58120c94bbba6af1ce206909462d6e51f3e0",
+        "gallery": {
+          "status": "Approved",
+          "at": "2026-10-02T22:22:04.893Z",
+          "evidenceId": "f1a648ab-a51d-4f0a-b788-0acf7a7b1b1b",
+          "paths": [
+            "C:\\Users\\wilsh\\Projects\\runelord\\assets\\cards\\warlock-2026-10-02\\bloodbound-covenant\\r1\\illustration.png"
+          ]
+        },
+        "authorization": "User approved six-summon preview and requested Hellbound Legion cards; integration authorized, new cards pending review"
+      },
+      "illustration_prompt_path": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\cards\\infernal-soldiers-2026-10-13\\blood-ascension\\r3\\illustration-prompt.txt",
+      "reference_image_paths": [
+        "C:/Users/wilsh/Projects/runelord/assets/cards/hellbound-legion-r1/template/baseline.png",
+        "C:/Users/wilsh/Projects/runelord/assets/cards/hellbound-legion-r1/summon-iron-legionary/r2/identity-source.png"
+      ],
+      "template_path": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\cards\\hellbound-legion-r1\\template\\baseline.png",
+      "editable_mask_path": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\cards\\hellbound-legion-r1\\template\\mask-union.png",
+      "prior_revisions": [
+        {
+          "revision": "r1",
+          "path": "assets/cards/hellbound-legion-r1/blood-ascension/r1/blood-ascension-r1.png",
+          "sha256": "fd03e3122ab865e3c11084bac67dbb87f40dc4991d28d18bf74400593ad1b9a4",
+          "gallery": null,
+          "reason": "New scene illustration requested by user"
+        }
+      ],
+      "integration_status": "implemented; user requested implement them on their cards",
+      "runtime": "game-assets/cards/blood-ascension.webp",
+      "runtime_url": "/game-assets/cards/blood-ascension.webp?v=1f35d8410371"
+    },
+    {
+      "canonical_id": "battlefield-commission",
+      "tracking_id": "battlefield-commission",
+      "category": "warlock",
+      "variant": "base",
+      "source_snapshot": {
+        "id": "battlefield-commission",
+        "name": "Battlefield Commission",
+        "cost": "2",
+        "type": "Skill",
+        "rarity": "Uncommon",
+        "rules": "Promote a soldier twice. Heal it 6 HP."
+      },
+      "status": "pending_approval",
+      "current_revision": "r1",
+      "output_path": "assets/cards/hellbound-legion-r1/battlefield-commission/r1/battlefield-commission-r1.png",
+      "artwork_path": "assets/cards/hellbound-legion-r1/battlefield-commission/r1/illustration.png",
+      "runtime": "game-assets/cards/battlefield-commission.webp",
+      "verification": {
+        "dimensions": [
+          1024,
+          1536
+        ],
+        "protected_pixels": 602082,
+        "changed_protected_pixels": 0,
+        "template_sha256": "070283f1fb65b07531cec7b32c653ffc96a7adacde1c2ce4daca1f3b4ed78c9e",
+        "mask_sha256": "13e010f0e4f661af03596d83a5ec22823b700c6d352085acd7df8029ceba23f5",
+        "output_sha256": "085074d6b5b96e2c88e47412215dc9fcb86fd987d52951efbef562a6c7d007b7",
+        "mask_version": "warlock-v1",
+        "text_matches_live_content": true
+      },
+      "source": {
+        "path": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\cards\\hellbound-legion-r1\\generated\\battlefield-commission.png",
+        "sha256": "32b5886ca9ea3c91eaffceb3296a4cbebf004edc89e64a7607586288d16a02a7",
+        "gallery": null,
+        "authorization": "User approved six-summon preview and requested Hellbound Legion cards; integration authorized, new cards pending review"
+      },
+      "gallery_decision": null
+    },
+    {
+      "canonical_id": "rally-legion",
+      "tracking_id": "rally-legion",
+      "category": "warlock",
+      "variant": "base",
+      "source_snapshot": {
+        "id": "rally-legion",
+        "name": "Rally the Legion",
+        "cost": "1",
+        "type": "Skill",
+        "rarity": "Common",
+        "rules": "Heal all soldiers 5 HP and give them 5 Guard."
+      },
+      "status": "pending_approval",
+      "current_revision": "r1",
+      "output_path": "assets/cards/hellbound-legion-r1/rally-legion/r1/rally-legion-r1.png",
+      "artwork_path": "assets/cards/hellbound-legion-r1/rally-legion/r1/illustration.png",
+      "runtime": "game-assets/cards/rally-legion.webp",
+      "verification": {
+        "dimensions": [
+          1024,
+          1536
+        ],
+        "protected_pixels": 602082,
+        "changed_protected_pixels": 0,
+        "template_sha256": "070283f1fb65b07531cec7b32c653ffc96a7adacde1c2ce4daca1f3b4ed78c9e",
+        "mask_sha256": "13e010f0e4f661af03596d83a5ec22823b700c6d352085acd7df8029ceba23f5",
+        "output_sha256": "973f0c997650a187c456d430ddb24a37d70d7017be6b4dc56ba7045709214266",
+        "mask_version": "warlock-v1",
+        "text_matches_live_content": true
+      },
+      "source": {
+        "path": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\cards\\hellbound-legion-r1\\generated\\rally-legion.png",
+        "sha256": "b9570fbab8662518a244993990c58d1b7eeb063ff8f656c4f489822162e3cb80",
+        "gallery": null,
+        "authorization": "User approved six-summon preview and requested Hellbound Legion cards; integration authorized, new cards pending review"
+      },
+      "gallery_decision": null
+    },
+    {
+      "canonical_id": "infernal-logistics",
+      "tracking_id": "infernal-logistics",
+      "category": "warlock",
+      "variant": "base",
+      "source_snapshot": {
+        "id": "infernal-logistics",
+        "name": "Infernal Logistics",
+        "cost": "1",
+        "type": "Skill",
+        "rarity": "Common",
+        "rules": "Draw 2 cards. If you control 2 or more soldiers, gain 2 Cinders."
+      },
+      "status": "pending_approval",
+      "current_revision": "r1",
+      "output_path": "assets/cards/hellbound-legion-r1/infernal-logistics/r1/infernal-logistics-r1.png",
+      "artwork_path": "assets/cards/hellbound-legion-r1/infernal-logistics/r1/illustration.png",
+      "runtime": "game-assets/cards/infernal-logistics.webp",
+      "verification": {
+        "dimensions": [
+          1024,
+          1536
+        ],
+        "protected_pixels": 602082,
+        "changed_protected_pixels": 0,
+        "template_sha256": "070283f1fb65b07531cec7b32c653ffc96a7adacde1c2ce4daca1f3b4ed78c9e",
+        "mask_sha256": "13e010f0e4f661af03596d83a5ec22823b700c6d352085acd7df8029ceba23f5",
+        "output_sha256": "74645101c683a4cce7adb5d4cf6396e6e52e45bf5492cde12457a259dc2337f7",
+        "mask_version": "warlock-v1",
+        "text_matches_live_content": true
+      },
+      "source": {
+        "path": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\cards\\hellbound-legion-r1\\generated\\infernal-logistics.png",
+        "sha256": "e7c3f7e56e45dc75bf611a6a72a3b8da62eb6ec3127a09865a0b301374011a1b",
+        "gallery": null,
+        "authorization": "User approved six-summon preview and requested Hellbound Legion cards; integration authorized, new cards pending review"
+      },
+      "gallery_decision": null
+    },
+    {
+      "canonical_id": "hold-the-line",
+      "tracking_id": "hold-the-line",
+      "category": "warlock",
+      "variant": "base",
+      "source_snapshot": {
+        "id": "hold-the-line",
+        "name": "Hold the Line",
+        "cost": "1",
+        "type": "Skill",
+        "rarity": "Uncommon",
+        "rules": "Gain 8 Guard. All soldiers gain 5 Guard."
+      },
+      "status": "pending_approval",
+      "current_revision": "r1",
+      "output_path": "assets/cards/hellbound-legion-r1/hold-the-line/r1/hold-the-line-r1.png",
+      "artwork_path": "assets/cards/hellbound-legion-r1/hold-the-line/r1/illustration.png",
+      "runtime": "game-assets/cards/hold-the-line.webp",
+      "verification": {
+        "dimensions": [
+          1024,
+          1536
+        ],
+        "protected_pixels": 602082,
+        "changed_protected_pixels": 0,
+        "template_sha256": "070283f1fb65b07531cec7b32c653ffc96a7adacde1c2ce4daca1f3b4ed78c9e",
+        "mask_sha256": "13e010f0e4f661af03596d83a5ec22823b700c6d352085acd7df8029ceba23f5",
+        "output_sha256": "1a71fda65403418d6b341654c6c5ccebf16001e00d066a395f97a0c24986d631",
+        "mask_version": "warlock-v1",
+        "text_matches_live_content": true
+      },
+      "source": {
+        "path": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\cards\\hellbound-legion-r1\\generated\\hold-the-line.png",
+        "sha256": "726d8d91dc18c48d06878f24ca16fca450ee0295df9899e56f297305397b37d6",
+        "gallery": null,
+        "authorization": "User approved six-summon preview and requested Hellbound Legion cards; integration authorized, new cards pending review"
+      },
+      "gallery_decision": null
+    },
+    {
+      "canonical_id": "hellgate-rite",
+      "tracking_id": "hellgate-rite",
+      "category": "warlock",
+      "variant": "base",
+      "source_snapshot": {
+        "id": "hellgate-rite",
+        "name": "Hellgate Rite",
+        "cost": "2",
+        "type": "Skill",
+        "rarity": "Rare",
+        "rules": "Requires 3 Maledictors. Open the Hellgate now, then draw 2 cards. Only one Hellgate per turn."
+      },
+      "status": "pending_approval",
+      "current_revision": "r1",
+      "output_path": "assets/cards/hellbound-legion-r1/hellgate-rite/r1/hellgate-rite-r1.png",
+      "artwork_path": "assets/cards/hellbound-legion-r1/hellgate-rite/r1/illustration.png",
+      "runtime": "game-assets/cards/hellgate-rite.webp",
+      "verification": {
+        "dimensions": [
+          1024,
+          1536
+        ],
+        "protected_pixels": 602082,
+        "changed_protected_pixels": 0,
+        "template_sha256": "070283f1fb65b07531cec7b32c653ffc96a7adacde1c2ce4daca1f3b4ed78c9e",
+        "mask_sha256": "13e010f0e4f661af03596d83a5ec22823b700c6d352085acd7df8029ceba23f5",
+        "output_sha256": "f3e24c2e51281f6ff83a9555d6c821f1cd18635025802caf671e1c27815902db",
+        "mask_version": "warlock-v1",
+        "text_matches_live_content": true
+      },
+      "source": {
+        "path": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\cards\\hellbound-legion-r1\\generated\\hellgate-rite.png",
+        "sha256": "81d293857e143313dd0060dbc664bfa72c3a418d5758b5c4de0020cebe04f214",
+        "gallery": null,
+        "authorization": "User approved six-summon preview and requested Hellbound Legion cards; integration authorized, new cards pending review"
+      },
+      "gallery_decision": null
+    },
+    {
+      "canonical_id": "veteran-command",
+      "tracking_id": "veteran-command",
+      "category": "warlock",
+      "variant": "base",
+      "source_snapshot": {
+        "id": "veteran-command",
+        "name": "Veteran's Command",
+        "cost": "2",
+        "type": "Skill",
+        "rarity": "Uncommon",
+        "rules": "A soldier attacks. If it has been promoted, it attacks again."
+      },
+      "status": "pending_approval",
+      "current_revision": "r1",
+      "output_path": "assets/cards/hellbound-legion-r1/veteran-command/r1/veteran-command-r1.png",
+      "artwork_path": "assets/cards/hellbound-legion-r1/veteran-command/r1/illustration.png",
+      "runtime": "game-assets/cards/veteran-command.webp",
+      "verification": {
+        "dimensions": [
+          1024,
+          1536
+        ],
+        "protected_pixels": 602082,
+        "changed_protected_pixels": 0,
+        "template_sha256": "070283f1fb65b07531cec7b32c653ffc96a7adacde1c2ce4daca1f3b4ed78c9e",
+        "mask_sha256": "13e010f0e4f661af03596d83a5ec22823b700c6d352085acd7df8029ceba23f5",
+        "output_sha256": "0c7534c67563fe3f304dd3adcc0324aeaf2be6c7adefbbe2b2c47f8f50c1bb80",
+        "mask_version": "warlock-v1",
+        "text_matches_live_content": true
+      },
+      "source": {
+        "path": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\cards\\hellbound-legion-r1\\generated\\veteran-command.png",
+        "sha256": "aeac8877eaf484b1daf4df0c939d85225052d043da1de70d92ee9f9f9f9edc01",
+        "gallery": null,
+        "authorization": "User approved six-summon preview and requested Hellbound Legion cards; integration authorized, new cards pending review"
+      },
+      "gallery_decision": null
+    }
+  ],
+  "active_batch": null,
+  "inventory_note": "Prior project inventory file absent at continuation; this index records this batch only. Existing card assets remain untouched; historical inventory may exist in earlier chat outputs.",
+  "runeblade_base_summons_batch": {
+    "manifest": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\cards\\runeblade-base-summons-2026-10-05\\manifest.json",
+    "status": "awaiting_approval"
+  },
+  "runeblade_demo_batch": {
+    "manifest": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\cards\\runeblade-demo-2026-10-06\\manifest.json",
+    "status": "awaiting_approval",
+    "count": 22
+  },
+  "hellbound_batch": {
+    "manifest": "assets/cards/hellbound-legion-r1/manifest.json",
+    "status": "awaiting_approval",
+    "card_ids": [
+      "summon-iron-legionary",
+      "summon-ash-pikeman",
+      "summon-ironhorn-bulwark",
+      "summon-maledictor",
+      "summon-dread-vanguard",
+      "muster-legion",
+      "pike-detail",
+      "field-promotion",
+      "battlefield-commission",
+      "rally-legion",
+      "infernal-logistics",
+      "hold-the-line",
+      "hellgate-rite",
+      "veteran-command"
+    ]
+  },
+  "infernal_soldiers_batch": {
+    "manifest": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\cards\\infernal-soldiers-2026-10-13\\manifest.json",
+    "status": "awaiting_approval",
+    "new_art_count": 8,
+    "cards_reviewed": 15
+  }
+}

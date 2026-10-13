@@ -1,0 +1,8 @@
+{
+  "id": "summon-ash-pikeman",
+  "name": "Ash Pikeman",
+  "cost": "1",
+  "type": "Summon",
+  "rarity": "Common",
+  "rules": "Summon an Ash Pikeman (12 HP, 5 Power). +2 attack damage for each other Ash Pikeman. Persists until destroyed."
+}

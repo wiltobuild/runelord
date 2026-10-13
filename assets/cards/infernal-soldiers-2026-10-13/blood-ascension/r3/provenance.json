@@ -1,0 +1,28 @@
+{
+  "tool": "built-in image_gen",
+  "prompt": "Use case: stylized-concept. Create ONE standalone landscape 4:3 illustration for a Runelord fantasy card. Input 1 is approved Warlock palette and 2D cel-shading reference ONLY, ignore its frame and lettering. Input 2 is exact soldier identity/equipment reference, use a NEW scene and dynamic pose, simplify surface noise into clean designed cel planes. Serious detailed 2D cel shading, broad flat color fields, strong hard-edged shadows, sparse graphic highlights, bold silhouettes, controlled charcoal/oxblood/ember palette. NO frame, border, text, letters, numbers, UI, watermark. No photorealism, gradients, paint texture, PBR metal, tiny scratches, cute expressions. An Iron Legionary is empowered by a sacrifice: dominant red horned armored soldier braces at center-right, three large fiery angular chevrons ignite above his breastplate while a small clearly separate summoned imp at left dissolves into a ribbon of orange magical embers flowing into the soldier. No gore. The soldier retains his black tower shield and broad sword, exact stern face and swept horns. Close dramatic composition inside a dark ritual chamber, restrained glowing red floor sigil, large quiet shadow shapes. Emphasize visibly receiving power, not merely posing.",
+  "references": [
+    {
+      "path": "C:/Users/wilsh/Projects/runelord/assets/cards/hellbound-legion-r1/template/baseline.png",
+      "sha256": "070283f1fb65b07531cec7b32c653ffc96a7adacde1c2ce4daca1f3b4ed78c9e",
+      "gallery": {
+        "status": "Approved",
+        "at": "2026-10-02T03:44:25.533Z",
+        "evidenceId": "user-chat-2026-10-01-approve-existing-runelord",
+        "paths": [
+          "C:\\Users\\wilsh\\Projects\\runelord\\assets\\cards\\reference-samples\\warlock-summon-imp.png"
+        ]
+      }
+    },
+    {
+      "path": "C:/Users/wilsh/Projects/runelord/assets/cards/hellbound-legion-r1/summon-iron-legionary/r2/identity-source.png",
+      "sha256": "ce275841a9be910809045fcb4d5c02c6eed9b09b3a15f29fafaabc1f4954ea31",
+      "gallery": null
+    }
+  ],
+  "generated_source": "C:\\Users\\wilsh\\.codex\\generated_images\\01a133b3-b9c0-7692-b98c-37d6166e8665\\exec-afb1d9f0-071b-402c-9be8-da39be6c522e.png",
+  "generated_sha256": "801105437053695c1f407149db4bb4f86bdbe2f78d25906d24a080508f20ac42",
+  "identity_approval_context": "User approved six-summon preview and requested Hellbound Legion cards; integration authorized, new cards pending review",
+  "template": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\cards\\hellbound-legion-r1\\template",
+  "previous_card": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\cards\\hellbound-legion-r1\\blood-ascension\\r1\\blood-ascension-r1.png"
+}

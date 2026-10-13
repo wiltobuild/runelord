@@ -1,0 +1,12 @@
+{
+  "id": "exhume",
+  "name": "Exhume",
+  "cost": 1,
+  "type": "Skill",
+  "rarity": "Common",
+  "definitionRules": "Gain 2 Corpses.",
+  "rules": "Gain 2 Corpses.",
+  "displayRules": "Gain 2 Corpses.",
+  "authoritativeSource": "packages/content/runeblade.ts",
+  "engine_source_sha256": "d8f74805b64c4257cf9f049da7490bfc8406d006277e39a8d89f90d1cf869f21"
+}

@@ -1,0 +1,8 @@
+{
+  "id": "summon-iron-legionary",
+  "name": "Iron Legionary",
+  "cost": "2",
+  "type": "Summon",
+  "rarity": "Common",
+  "rules": "Summon an Iron Legionary (18 HP, 4 Power). With 2+ Legionaries, split all hostile damage intended for the Warlock between them, before his Guard. Earned ranks return when summoned again."
+}

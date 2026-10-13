@@ -1,0 +1,37 @@
+[
+  {
+    "region": "title",
+    "text": "Bone Defender",
+    "font_size": 67,
+    "lines": [
+      "Bone Defender"
+    ]
+  },
+  {
+    "region": "cost",
+    "text": "2",
+    "font_size": 104,
+    "lines": [
+      "2"
+    ]
+  },
+  {
+    "region": "type",
+    "text": "SKILL · RUNEBLADE",
+    "font_size": 35,
+    "lines": [
+      "SKILL · RUNEBLADE"
+    ]
+  },
+  {
+    "region": "rules",
+    "text": "Summon a Thrall.\n18 HP · 3 Power.\nDefender.\nRot.",
+    "font_size": 45,
+    "lines": [
+      "Summon a Thrall.",
+      "18 HP · 3 Power.",
+      "Defender.",
+      "Rot."
+    ]
+  }
+]

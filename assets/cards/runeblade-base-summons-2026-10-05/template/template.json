@@ -1,0 +1,10 @@
+{
+  "version": "runeblade-v1",
+  "source": "C:\\Users\\wilsh\\.codex\\skills\\hd-card-creator\\references\\cards\\runeblade-frostbite-master.png",
+  "source_sha256": "a42f03188bd17c21bda285748ca31c279e7a7062cd558276a7f1868dd831f642",
+  "baseline_sha256": "30cd5177cf360f80a6b90cfdafeaecb8fa561c98751414a6b5ba295df3744a3d",
+  "mask_sha256": "2f2b4c0292722178aaea3e0e12793646e4cb492212ccdfa5d90ee76d71e90aec",
+  "protected_pixels": 746854,
+  "font_note": "Georgia Bold selected as a close available serif match; original raster font identity is unknown.",
+  "rarity_note": "Category gem preserved as ornament; rarity in metadata."
+}

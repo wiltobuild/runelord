@@ -1,0 +1,12 @@
+{
+  "id": "rally-the-fallen",
+  "name": "Rally the Fallen",
+  "cost": 1,
+  "type": "Skill",
+  "rarity": "Uncommon",
+  "definitionRules": "All Thralls heal 8 HP and reset Rot to 0.",
+  "rules": "All Thralls heal 8 HP and reset Rot to 0.",
+  "displayRules": "All Thralls heal 8 HP and reset Rot to 0.",
+  "authoritativeSource": "packages/content/runeblade.ts",
+  "engine_source_sha256": "d8f74805b64c4257cf9f049da7490bfc8406d006277e39a8d89f90d1cf869f21"
+}

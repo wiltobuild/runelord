@@ -1,0 +1,8 @@
+{
+  "id": "hold-the-line",
+  "name": "Hold the Line",
+  "cost": "1",
+  "type": "Skill",
+  "rarity": "Uncommon",
+  "rules": "Gain 8 Guard. All soldiers gain 5 Guard."
+}

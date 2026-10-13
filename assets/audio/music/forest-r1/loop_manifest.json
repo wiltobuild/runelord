@@ -1,0 +1,59 @@
+[
+  {
+    "slug": "04_lanterns_in_the_hollow",
+    "title": "Lanterns in the Hollow",
+    "description": "Eerie forest exploration with interwoven harp, piano, flute and soft strings.",
+    "bpm": 90,
+    "bars": 32,
+    "meter": "4/4",
+    "duration_seconds": 85.33333333333333,
+    "sample_rate": 48000,
+    "loop_start_sample": 0,
+    "loop_end_sample_exclusive": 4096000,
+    "verification": {
+      "stem_reconstruction_error_24bit_units": 2,
+      "endpoint_delta_24bit_units": 0,
+      "no_clipping": true,
+      "peak_dbfs": -1.5,
+      "rms_dbfs": -15.61
+    }
+  },
+  {
+    "slug": "05_ironbound_heart",
+    "title": "Ironbound Heart",
+    "description": "Runeforge combat: syncopated piano, hammered low strings, brass and metallic accents.",
+    "bpm": 128,
+    "bars": 48,
+    "meter": "4/4",
+    "duration_seconds": 90.0,
+    "sample_rate": 48000,
+    "loop_start_sample": 0,
+    "loop_end_sample_exclusive": 4320000,
+    "verification": {
+      "stem_reconstruction_error_24bit_units": 2,
+      "endpoint_delta_24bit_units": 0,
+      "no_clipping": true,
+      "peak_dbfs": -1.5,
+      "rms_dbfs": -18.41
+    }
+  },
+  {
+    "slug": "06_the_silent_conclave",
+    "title": "The Silent Conclave",
+    "description": "Dark ritual: low choir, tolling bells, organ, cello and a slowly rising string lament.",
+    "bpm": 72,
+    "bars": 32,
+    "meter": "3/4",
+    "duration_seconds": 80.0,
+    "sample_rate": 48000,
+    "loop_start_sample": 0,
+    "loop_end_sample_exclusive": 3840000,
+    "verification": {
+      "stem_reconstruction_error_24bit_units": 2,
+      "endpoint_delta_24bit_units": 0,
+      "no_clipping": true,
+      "peak_dbfs": -1.5,
+      "rms_dbfs": -16.98
+    }
+  }
+]

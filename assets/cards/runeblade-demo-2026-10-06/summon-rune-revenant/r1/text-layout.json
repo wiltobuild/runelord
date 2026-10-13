@@ -1,0 +1,38 @@
+[
+  {
+    "region": "title",
+    "text": "Rune Revenant",
+    "font_size": 65,
+    "lines": [
+      "Rune Revenant"
+    ]
+  },
+  {
+    "region": "cost",
+    "text": "2",
+    "font_size": 104,
+    "lines": [
+      "2"
+    ]
+  },
+  {
+    "region": "type",
+    "text": "SUMMON · RUNEBLADE",
+    "font_size": 32,
+    "lines": [
+      "SUMMON · RUNEBLADE"
+    ]
+  },
+  {
+    "region": "rules",
+    "text": "Summon a Thrall. 14 HP / 3 Power.\nAttacks strike twice.\nRot starts at 1.\nIf you have 2 Corpses, spend them instead of Mana.",
+    "font_size": 44,
+    "lines": [
+      "Summon a Thrall. 14 HP / 3 Power.",
+      "Attacks strike twice.",
+      "Rot starts at 1.",
+      "If you have 2 Corpses, spend them",
+      "instead of Mana."
+    ]
+  }
+]

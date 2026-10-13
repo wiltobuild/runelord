@@ -1,0 +1,8 @@
+{
+  "id": "infernal-logistics",
+  "name": "Infernal Logistics",
+  "cost": "1",
+  "type": "Skill",
+  "rarity": "Common",
+  "rules": "Draw 2 cards. If you control 2 or more soldiers, gain 2 Cinders."
+}

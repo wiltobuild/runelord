@@ -1,0 +1,27 @@
+{
+  "artOnly": {
+    "width": 1024,
+    "height": 1536,
+    "protectedPixels": 925558,
+    "editablePixels": 647306,
+    "changedPixels": 0,
+    "passed": true
+  },
+  "immutableFrame": {
+    "width": 1024,
+    "height": 1536,
+    "protectedPixels": 602082,
+    "editablePixels": 970782,
+    "changedPixels": 0,
+    "passed": true
+  },
+  "template_sha256": "070283f1fb65b07531cec7b32c653ffc96a7adacde1c2ce4daca1f3b4ed78c9e",
+  "mask_sha256": "1196a968ebd565e155db12aacab4e5637f0a2f11444887a013f21ce6b83bd9e0",
+  "output_sha256": "5246773aee0abe1f4e66c3c022b953bfe7f0f04303edb1b44858afa00a24837c",
+  "dimensions": [
+    1024,
+    1536
+  ],
+  "text": "Exact original pixels preserved",
+  "visual_inspection": "Passed: generated illustration and composed 256x384 card inspected; identity, scene, crop, text and frame checked"
+}

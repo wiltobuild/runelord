@@ -1,0 +1,8 @@
+{
+  "name": "Summon Hollow Saint",
+  "cost": "3",
+  "type": "Skill",
+  "rarity": "Rare",
+  "rules": "Summon the Hollow Saint: 20 HP. Drain 6 damage from all enemies; heal HP actually dealt. Unbound.",
+  "upgrade": "+20% HP and Power"
+}

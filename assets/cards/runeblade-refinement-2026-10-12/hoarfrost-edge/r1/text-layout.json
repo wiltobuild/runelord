@@ -1,0 +1,35 @@
+[
+  {
+    "region": "title",
+    "text": "Hoarfrost Edge",
+    "font_size": 65,
+    "lines": [
+      "Hoarfrost Edge"
+    ]
+  },
+  {
+    "region": "cost",
+    "text": "1",
+    "font_size": 120,
+    "lines": [
+      "1"
+    ]
+  },
+  {
+    "region": "type",
+    "text": "ATTACK · RUNEBLADE",
+    "font_size": 32,
+    "lines": [
+      "ATTACK · RUNEBLADE"
+    ]
+  },
+  {
+    "region": "rules",
+    "text": "Deal 4 damage twice. Each hit applies 1 Chill.",
+    "font_size": 56,
+    "lines": [
+      "Deal 4 damage twice. Each",
+      "hit applies 1 Chill."
+    ]
+  }
+]

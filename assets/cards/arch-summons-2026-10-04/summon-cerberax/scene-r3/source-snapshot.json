@@ -1,0 +1,8 @@
+{
+  "name": "Summon Cerberax",
+  "cost": "3",
+  "type": "Skill",
+  "rarity": "Rare",
+  "rules": "Summon Cerberax: 28 HP, 8 damage. Counts as a Hellhound. Incoming pack damage splits evenly before Guard. Each turn summon a free Hellhound if space. Unbound.",
+  "upgrade": "+20% HP and Power"
+}

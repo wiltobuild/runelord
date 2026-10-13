@@ -1,0 +1,28 @@
+{
+  "tool": "built-in image_gen",
+  "prompt": "Use case: stylized-concept. Create ONE standalone landscape 4:3 illustration for a Runelord fantasy card. Input 1 is approved Warlock palette and 2D cel-shading reference ONLY, ignore its frame and lettering. Input 2 is exact soldier identity/equipment reference, use a NEW scene and dynamic pose, simplify surface noise into clean designed cel planes. Serious detailed 2D cel shading, broad flat color fields, strong hard-edged shadows, sparse graphic highlights, bold silhouettes, controlled charcoal/oxblood/ember palette. NO frame, border, text, letters, numbers, UI, watermark. No photorealism, gradients, paint texture, PBR metal, tiny scratches, cute expressions. Exactly TWO Ash Pikemen fight in a coordinated formation: nearer left soldier braces one long pike horizontally toward the right, farther right soldier holds his own pike diagonally upward, two continuous shafts and two spearheads clearly separate. Both exact red horned demons in sleeveless charcoal armor with crimson tabards. Strong readable knee-up two-person composition on a narrow basalt bridge, cool ash haze, restrained orange rune accents. No cloned identical poses.",
+  "references": [
+    {
+      "path": "C:/Users/wilsh/Projects/runelord/assets/cards/hellbound-legion-r1/template/baseline.png",
+      "sha256": "070283f1fb65b07531cec7b32c653ffc96a7adacde1c2ce4daca1f3b4ed78c9e",
+      "gallery": {
+        "status": "Approved",
+        "at": "2026-10-02T03:44:25.533Z",
+        "evidenceId": "user-chat-2026-10-01-approve-existing-runelord",
+        "paths": [
+          "C:\\Users\\wilsh\\Projects\\runelord\\assets\\cards\\reference-samples\\warlock-summon-imp.png"
+        ]
+      }
+    },
+    {
+      "path": "C:/Users/wilsh/Projects/runelord/assets/cards/hellbound-legion-r1/summon-ash-pikeman/r2/identity-source.png",
+      "sha256": "46caae3e889fba6a9af5736ae085069ea63c8aec0e7928876cc56e16c2c2d4c1",
+      "gallery": null
+    }
+  ],
+  "generated_source": "C:\\Users\\wilsh\\.codex\\generated_images\\01a133b3-b9c0-7692-b98c-37d6166e8665\\exec-ed756839-a509-475b-9baa-c64a0541a457.png",
+  "generated_sha256": "2f4123a331a695a1963d8f3e91462ae973ee5573d5b71dfe47c8fcf3fa6f5f00",
+  "identity_approval_context": "User approved six-summon preview and requested Hellbound Legion cards; integration authorized, new cards pending review",
+  "template": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\cards\\hellbound-legion-r1\\template",
+  "previous_card": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\cards\\hellbound-legion-r1\\pike-detail\\r2\\pike-detail-r2.png"
+}

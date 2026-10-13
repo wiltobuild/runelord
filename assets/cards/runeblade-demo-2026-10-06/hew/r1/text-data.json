@@ -1,0 +1,12 @@
+{
+  "id": "hew",
+  "name": "Hew",
+  "cost": 1,
+  "type": "Attack",
+  "rarity": "Basic",
+  "rules": "Deal 6 damage.",
+  "definitionRules": "Deal 6 damage.",
+  "displayRules": "Deal 6 damage.",
+  "authoritativeSource": "packages/content/runeblade.ts",
+  "engine_source_sha256": "1c64e6e43d4d829bdcb4472c50dbc850f0dbf9065ee2a9fa99e332c22bb20858"
+}

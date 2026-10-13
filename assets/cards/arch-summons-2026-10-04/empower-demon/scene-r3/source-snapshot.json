@@ -1,0 +1,8 @@
+{
+  "name": "Empower Demon",
+  "cost": "2 +2🔥",
+  "type": "Skill",
+  "rarity": "Uncommon",
+  "rules": "Transform a lesser demon into its Arch-form. Preserve buffs, position and remaining HP percentage. One living copy per Arch-form.",
+  "upgrade": "Costs 1 +2🔥"
+}

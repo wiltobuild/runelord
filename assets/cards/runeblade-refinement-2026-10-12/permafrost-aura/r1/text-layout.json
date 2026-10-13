@@ -1,0 +1,36 @@
+[
+  {
+    "region": "title",
+    "text": "Permafrost Aura",
+    "font_size": 59,
+    "lines": [
+      "Permafrost Aura"
+    ]
+  },
+  {
+    "region": "cost",
+    "text": "1",
+    "font_size": 120,
+    "lines": [
+      "1"
+    ]
+  },
+  {
+    "region": "type",
+    "text": "POWER · RUNEBLADE",
+    "font_size": 32,
+    "lines": [
+      "POWER · RUNEBLADE"
+    ]
+  },
+  {
+    "region": "rules",
+    "text": "At the start of your turn, apply 2 Chill to ALL enemies.",
+    "font_size": 56,
+    "lines": [
+      "At the start of your turn,",
+      "apply 2 Chill to ALL",
+      "enemies."
+    ]
+  }
+]

@@ -1,0 +1,45 @@
+{
+  "tracking_id": "proposal/runeblade-base-summons/frost-thrall",
+  "canonical_id": null,
+  "catalog_path": null,
+  "row_identifier": null,
+  "category": "Runeblade",
+  "variant": "base",
+  "source_snapshot": {
+    "name": "Frost Thrall",
+    "cost": "2",
+    "type": "Skill",
+    "rarity": "Proposed",
+    "rules": "Summon a Thrall.\n16 HP · 6 Power.\nHits apply 1 Chill.\nRot.",
+    "hp": 16,
+    "power": 6,
+    "mechanics_status": "Draft for user review; not implemented",
+    "summon": "frost-thrall"
+  },
+  "status": "pending_approval",
+  "current_revision": "r1",
+  "output_path": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\cards\\runeblade-base-summons-2026-10-05\\frost-thrall\\r1\\frost-thrall-card-r1.png",
+  "artwork_path": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\cards\\runeblade-base-summons-2026-10-05\\frost-thrall\\r1\\illustration.png",
+  "text_source_path": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\cards\\runeblade-base-summons-2026-10-05\\frost-thrall\\r1\\text-data.json",
+  "illustration_prompt_path": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\cards\\runeblade-base-summons-2026-10-05\\frost-thrall\\r1\\illustration-prompt.txt",
+  "reference_image_paths": [
+    "C:\\Users\\wilsh\\Projects\\runelord\\assets\\characters\\runeblade-base-summons\\selected-r1\\frost-thrall\\master.png",
+    "C:\\Users\\wilsh\\Documents\\Codex\\2026-10-01\\new-chat\\outputs\\runelord-cards\\templates\\runeblade-v1\\baseline.png"
+  ],
+  "reference_hashes": [
+    "32183e9e97d29d42b4f8674e8a9bb7e6dfe888fc871149f33405b3c8491be5e9",
+    "30cd5177cf360f80a6b90cfdafeaecb8fa561c98751414a6b5ba295df3744a3d"
+  ],
+  "verification": {
+    "dimensions": [
+      1024,
+      1536
+    ],
+    "changed_protected_pixels": 0,
+    "protected_pixel_count": 746854,
+    "template_sha256": "30cd5177cf360f80a6b90cfdafeaecb8fa561c98751414a6b5ba295df3744a3d",
+    "mask_sha256": "2f2b4c0292722178aaea3e0e12793646e4cb492212ccdfa5d90ee76d71e90aec",
+    "text_matches_authorized_proposal": true
+  },
+  "sha256": "7dc3aeedefdabec6311bc05e9af187cc04977e3c2ef362f5ecee9e24f7a18b56"
+}

@@ -1,0 +1,6 @@
+[
+  {
+    "prompt": "FOUR full-body animation poses in a 2x2 sprite sheet with transparent alpha. Supplied approved Rime Hauler abomination is exact identity/style. Preserve right-facing direction, asymmetric three arms including small belly arm HOLDING BELL, large left-view hand with chain hook, right-view hanging fist, stitched pale bluish-gray flesh, ice crystals, blue ragged scarf/skirt, metal jaw plate, snowy short hair. Exactly same identity, gear and shape in all four. Create subtle breathing/weight-settle idle: rest hunched, slight chest inhale, peak lifted shoulder/chest, gentle settle; tiny dangling hook and bell sway attached to correct hands. Feet firmly planted, same camera and body scale. All four COMPLETE silhouettes fit well inside their quadrants, with very large transparent gutters between them; no overlapping neighbors, no cut off crystals/hook/feet. Match serious cel-shaded graphic 2D rendering and approved detail density exactly. No new anatomy, no background/fog/ground shadows, no words or labels. This is idle only, not attack. Moderate pose changes, not identical copies.",
+    "method": "built-in image_gen"
+  }
+]

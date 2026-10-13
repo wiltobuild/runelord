@@ -1,0 +1,45 @@
+{
+  "tracking_id": "proposal/runeblade-base-summons/shattered-queen",
+  "canonical_id": null,
+  "catalog_path": null,
+  "row_identifier": null,
+  "category": "Runeblade",
+  "variant": "base",
+  "source_snapshot": {
+    "name": "Shattered Queen",
+    "cost": "3",
+    "type": "Skill",
+    "rarity": "Proposed",
+    "rules": "Summon a Thrall.\n12 HP · 3 Power.\nHits ALL enemies.\nHits apply 1 Chill.\nRot.",
+    "hp": 12,
+    "power": 3,
+    "mechanics_status": "Draft for user review; not implemented",
+    "summon": "shattered-queen"
+  },
+  "status": "pending_approval",
+  "current_revision": "r1",
+  "output_path": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\cards\\runeblade-base-summons-2026-10-05\\shattered-queen\\r1\\shattered-queen-card-r1.png",
+  "artwork_path": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\cards\\runeblade-base-summons-2026-10-05\\shattered-queen\\r1\\illustration.png",
+  "text_source_path": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\cards\\runeblade-base-summons-2026-10-05\\shattered-queen\\r1\\text-data.json",
+  "illustration_prompt_path": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\cards\\runeblade-base-summons-2026-10-05\\shattered-queen\\r1\\illustration-prompt.txt",
+  "reference_image_paths": [
+    "C:\\Users\\wilsh\\Projects\\runelord\\assets\\characters\\runeblade-base-summons\\selected-r1\\shattered-queen\\master.png",
+    "C:\\Users\\wilsh\\Documents\\Codex\\2026-10-01\\new-chat\\outputs\\runelord-cards\\templates\\runeblade-v1\\baseline.png"
+  ],
+  "reference_hashes": [
+    "a995d730c43a7cecf17710075938845da3a4d5b7330ec61de8ef87aa3daabdc1",
+    "30cd5177cf360f80a6b90cfdafeaecb8fa561c98751414a6b5ba295df3744a3d"
+  ],
+  "verification": {
+    "dimensions": [
+      1024,
+      1536
+    ],
+    "changed_protected_pixels": 0,
+    "protected_pixel_count": 746854,
+    "template_sha256": "30cd5177cf360f80a6b90cfdafeaecb8fa561c98751414a6b5ba295df3744a3d",
+    "mask_sha256": "2f2b4c0292722178aaea3e0e12793646e4cb492212ccdfa5d90ee76d71e90aec",
+    "text_matches_authorized_proposal": true
+  },
+  "sha256": "7f70de79f05117f833e0b3358c2add23268d1ac94f275a5d104d1c5815f8cbe8"
+}

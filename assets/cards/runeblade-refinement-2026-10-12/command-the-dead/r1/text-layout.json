@@ -1,0 +1,35 @@
+[
+  {
+    "region": "title",
+    "text": "Command the Dead",
+    "font_size": 51,
+    "lines": [
+      "Command the Dead"
+    ]
+  },
+  {
+    "region": "cost",
+    "text": "0",
+    "font_size": 93,
+    "lines": [
+      "0"
+    ]
+  },
+  {
+    "region": "type",
+    "text": "SKILL · RUNEBLADE",
+    "font_size": 32,
+    "lines": [
+      "SKILL · RUNEBLADE"
+    ]
+  },
+  {
+    "region": "rules",
+    "text": "All Thralls attack now. Rot triggers.",
+    "font_size": 56,
+    "lines": [
+      "All Thralls attack now. Rot",
+      "triggers."
+    ]
+  }
+]

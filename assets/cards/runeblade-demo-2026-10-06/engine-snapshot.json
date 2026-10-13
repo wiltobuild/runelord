@@ -1,0 +1,200 @@
+[
+  {
+    "id": "summon-frost-thrall",
+    "name": "Frost Thrall",
+    "cost": 2,
+    "type": "Summon",
+    "rarity": "Common",
+    "rules": "Summon Frost Thrall: 16 HP / 6 Power. Attacks apply 1 Chill. Rot starts at 1. Automatically spend Corpses equal to its Mana cost instead if available.",
+    "definitionRules": "Summon a 16 HP / 6 Power Thrall. Attacks apply 1 Chill."
+  },
+  {
+    "id": "summon-shattered-queen",
+    "name": "Shattered Queen",
+    "cost": 3,
+    "type": "Summon",
+    "rarity": "Rare",
+    "rules": "Summon Shattered Queen: 12 HP / 3 Power. Attacks hit ALL enemies and apply 1 Chill. Rot starts at 1. Automatically spend Corpses equal to its Mana cost instead if available.",
+    "definitionRules": "Summon a 12 HP / 3 Power Thrall. Attacks hit ALL enemies and apply 1 Chill."
+  },
+  {
+    "id": "summon-rime-seer",
+    "name": "Rime Seer",
+    "cost": 2,
+    "type": "Summon",
+    "rarity": "Common",
+    "rules": "Summon Rime Seer: 10 HP / 4 Power. Attacks apply 3 Chill. Rot starts at 1. Automatically spend Corpses equal to its Mana cost instead if available.",
+    "definitionRules": "Summon a 10 HP / 4 Power Thrall. Attacks apply 3 Chill."
+  },
+  {
+    "id": "summon-rune-revenant",
+    "name": "Rune Revenant",
+    "cost": 2,
+    "type": "Summon",
+    "rarity": "Uncommon",
+    "rules": "Summon Rune Revenant: 14 HP / 3 Power. Attacks strike twice. Rot starts at 1. Automatically spend Corpses equal to its Mana cost instead if available.",
+    "definitionRules": "Summon a 14 HP / 3 Power Thrall. Attacks strike twice."
+  },
+  {
+    "id": "summon-bone-defender",
+    "name": "Bone Defender",
+    "cost": 2,
+    "type": "Summon",
+    "rarity": "Common",
+    "rules": "Summon Bone Defender: 18 HP / 3 Power. Defender. Rot starts at 1. Automatically spend Corpses equal to its Mana cost instead if available.",
+    "definitionRules": "Summon an 18 HP / 3 Power Thrall with Defender."
+  },
+  {
+    "id": "hew",
+    "name": "Hew",
+    "cost": 1,
+    "type": "Attack",
+    "rarity": "Basic",
+    "rules": "Deal 6 damage.",
+    "definitionRules": "Deal 6 damage."
+  },
+  {
+    "id": "brace",
+    "name": "Brace",
+    "cost": 1,
+    "type": "Skill",
+    "rarity": "Basic",
+    "rules": "Gain 5 Guard.",
+    "definitionRules": "Gain 5 Guard."
+  },
+  {
+    "id": "frostbite",
+    "name": "Frostbite",
+    "cost": 2,
+    "type": "Attack",
+    "rarity": "Basic",
+    "rules": "Heavy. Deal 8 damage. Apply 3 Chill.",
+    "definitionRules": "Heavy. Deal 8 damage. Apply 3 Chill."
+  },
+  {
+    "id": "rimecleave",
+    "name": "Rimecleave",
+    "cost": 1,
+    "type": "Attack",
+    "rarity": "Common",
+    "rules": "Deal 5 damage and apply 1 Chill to ALL enemies.",
+    "definitionRules": "Deal 5 damage and apply 1 Chill to ALL enemies."
+  },
+  {
+    "id": "glacial-ward",
+    "name": "Glacial Ward",
+    "cost": 1,
+    "type": "Skill",
+    "rarity": "Common",
+    "rules": "Gain 8 Guard. Draw 1 card.",
+    "definitionRules": "Gain 8 Guard. Draw 1 card."
+  },
+  {
+    "id": "frozen-grasp",
+    "name": "Frozen Grasp",
+    "cost": 0,
+    "type": "Skill",
+    "rarity": "Common",
+    "rules": "Apply 3 Chill.",
+    "definitionRules": "Apply 3 Chill."
+  },
+  {
+    "id": "command-the-dead",
+    "name": "Command the Dead",
+    "cost": 0,
+    "type": "Skill",
+    "rarity": "Common",
+    "rules": "All Thralls attack now. Rot triggers.",
+    "definitionRules": "All Thralls attack now. Their Rot also triggers."
+  },
+  {
+    "id": "bone-ward",
+    "name": "Bone Ward",
+    "cost": 1,
+    "type": "Skill",
+    "rarity": "Common",
+    "rules": "Gain 4 Guard for each Thrall (minimum 4).",
+    "definitionRules": "Gain 4 Guard for each Thrall you control (minimum 4)."
+  },
+  {
+    "id": "hoarfrost-edge",
+    "name": "Hoarfrost Edge",
+    "cost": 1,
+    "type": "Attack",
+    "rarity": "Common",
+    "rules": "Deal 4 damage twice. Each hit applies 1 Chill.",
+    "definitionRules": "Deal 4 damage twice. Each hit applies 1 Chill."
+  },
+  {
+    "id": "unholy-vigor",
+    "name": "Unholy Vigor",
+    "cost": 1,
+    "type": "Power",
+    "rarity": "Uncommon",
+    "rules": "Your Thralls gain +2 Power, including future summons.",
+    "definitionRules": "Your Thralls gain +2 Power, including future summons."
+  },
+  {
+    "id": "frost-nova",
+    "name": "Frost Nova",
+    "cost": 2,
+    "type": "Skill",
+    "rarity": "Uncommon",
+    "rules": "Apply 4 Chill to ALL enemies. Gain 6 Guard.",
+    "definitionRules": "Apply 4 Chill to ALL enemies. Gain 6 Guard."
+  },
+  {
+    "id": "soulfrost-blade",
+    "name": "Soulfrost Blade",
+    "cost": 1,
+    "type": "Attack",
+    "rarity": "Uncommon",
+    "rules": "Deal 6 damage plus 2 for each Chill on the enemy.",
+    "definitionRules": "Deal 6 damage plus 2 for each Chill on the enemy."
+  },
+  {
+    "id": "dark-tithe",
+    "name": "Dark Tithe",
+    "cost": 0,
+    "type": "Skill",
+    "rarity": "Uncommon",
+    "rules": "Sacrifice a Thrall. Gain 2 Mana. Draw 1 card(s).",
+    "definitionRules": "Sacrifice a Thrall. Gain 2 Mana. Draw 1 card."
+  },
+  {
+    "id": "rally-the-fallen",
+    "name": "Rally the Fallen",
+    "cost": 1,
+    "type": "Skill",
+    "rarity": "Uncommon",
+    "rules": "All Thralls heal 6 HP and reset Rot to 0.",
+    "definitionRules": "All Thralls heal 6 HP and reset Rot to 0."
+  },
+  {
+    "id": "sweeping-hew",
+    "name": "Sweeping Hew",
+    "cost": 2,
+    "type": "Attack",
+    "rarity": "Uncommon",
+    "rules": "Heavy. Deal 10 damage to ALL enemies.",
+    "definitionRules": "Heavy. Deal 10 damage to ALL enemies."
+  },
+  {
+    "id": "permafrost-aura",
+    "name": "Permafrost Aura",
+    "cost": 1,
+    "type": "Power",
+    "rarity": "Uncommon",
+    "rules": "At the start of your turn, apply 2 Chill to ALL enemies.",
+    "definitionRules": "At the start of your turn, apply 2 Chill to ALL enemies."
+  },
+  {
+    "id": "glacier-wall",
+    "name": "Glacier Wall",
+    "cost": 2,
+    "type": "Skill",
+    "rarity": "Rare",
+    "rules": "Gain 30 Guard. Consume.",
+    "definitionRules": "Gain 30 Guard. Consume."
+  }
+]

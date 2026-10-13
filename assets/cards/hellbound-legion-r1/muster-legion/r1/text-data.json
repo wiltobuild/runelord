@@ -1,0 +1,8 @@
+{
+  "id": "muster-legion",
+  "name": "Muster the Legion",
+  "cost": "3",
+  "type": "Summon",
+  "rarity": "Common",
+  "rules": "Summon 2 Iron Legionaries (18 HP, 4 Power each). Requires 2 empty Warband slots. Persists until destroyed."
+}

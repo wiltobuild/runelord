@@ -1,0 +1,8 @@
+{
+  "name": "Summon Nightmaw",
+  "cost": "3",
+  "type": "Skill",
+  "rarity": "Rare",
+  "rules": "Summon Nightmaw: 18 HP, Elusive. Apply 2 Sapped and 2 Exposed. Gain 1 Mana and draw 1 card on arrival and each turn. Unbound.",
+  "upgrade": "+20% HP"
+}

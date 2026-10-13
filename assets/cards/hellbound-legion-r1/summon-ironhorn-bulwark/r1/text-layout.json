@@ -1,0 +1,38 @@
+[
+  {
+    "region": "title",
+    "text": "Ironhorn Bulwark",
+    "lines": [
+      "Ironhorn Bulwark"
+    ],
+    "font_size": 62
+  },
+  {
+    "region": "cost",
+    "text": "2",
+    "lines": [
+      "2"
+    ],
+    "font_size": 110
+  },
+  {
+    "region": "type",
+    "text": "SUMMON · WARLOCK",
+    "lines": [
+      "SUMMON · WARLOCK"
+    ],
+    "font_size": 34
+  },
+  {
+    "region": "rules",
+    "text": "Summon an Ironhorn Bulwark (28 HP, 2 Power). Defender. At turn start, give all soldiers 3 Guard. Persists until destroyed.",
+    "lines": [
+      "Summon an Ironhorn Bulwark",
+      "(28 HP, 2 Power). Defender. At",
+      "turn start, give all soldiers 3",
+      "Guard. Persists until",
+      "destroyed."
+    ],
+    "font_size": 49
+  }
+]

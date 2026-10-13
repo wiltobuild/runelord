@@ -1,0 +1,12 @@
+{
+  "id": "rimecleave",
+  "name": "Rimecleave",
+  "cost": 1,
+  "type": "Attack",
+  "rarity": "Common",
+  "rules": "Deal 5 damage and apply 1 Chill to ALL enemies.",
+  "definitionRules": "Deal 5 damage and apply 1 Chill to ALL enemies.",
+  "displayRules": "Deal 5 damage and apply 1 Chill to ALL enemies.",
+  "authoritativeSource": "packages/content/runeblade.ts",
+  "engine_source_sha256": "1c64e6e43d4d829bdcb4472c50dbc850f0dbf9065ee2a9fa99e332c22bb20858"
+}

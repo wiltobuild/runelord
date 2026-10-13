@@ -1,0 +1,31 @@
+{
+  "date": "2026-10-06",
+  "count": 22,
+  "subjects": [
+    "runeblade-demo-summon-frost-thrall",
+    "runeblade-demo-summon-shattered-queen",
+    "runeblade-demo-summon-rime-seer",
+    "runeblade-demo-summon-rune-revenant",
+    "runeblade-demo-summon-bone-defender",
+    "runeblade-demo-hew",
+    "runeblade-demo-brace",
+    "runeblade-demo-frostbite",
+    "runeblade-demo-rimecleave",
+    "runeblade-demo-glacial-ward",
+    "runeblade-demo-frozen-grasp",
+    "runeblade-demo-command-the-dead",
+    "runeblade-demo-bone-ward",
+    "runeblade-demo-hoarfrost-edge",
+    "runeblade-demo-unholy-vigor",
+    "runeblade-demo-frost-nova",
+    "runeblade-demo-soulfrost-blade",
+    "runeblade-demo-dark-tithe",
+    "runeblade-demo-rally-the-fallen",
+    "runeblade-demo-sweeping-hew",
+    "runeblade-demo-permafrost-aura",
+    "runeblade-demo-glacier-wall"
+  ],
+  "revision": "demo-r1",
+  "galleryApiVerified": true,
+  "galleryEntries": 50
+}

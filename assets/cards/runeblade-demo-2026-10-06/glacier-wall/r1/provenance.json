@@ -1,0 +1,69 @@
+{
+  "tracking_id": "roguelike/runeblade/glacier-wall",
+  "canonical_id": "glacier-wall",
+  "catalog_path": "packages/content/runeblade.ts",
+  "row_identifier": "glacier-wall",
+  "category": "Runeblade",
+  "variant": "base",
+  "source_snapshot": {
+    "id": "glacier-wall",
+    "name": "Glacier Wall",
+    "cost": 2,
+    "type": "Skill",
+    "rarity": "Rare",
+    "rules": "Gain 30 Guard. Consume.",
+    "definitionRules": "Gain 30 Guard. Consume.",
+    "displayRules": "Gain 30 Guard. Consume.",
+    "authoritativeSource": "packages/content/runeblade.ts",
+    "engine_source_sha256": "1c64e6e43d4d829bdcb4472c50dbc850f0dbf9065ee2a9fa99e332c22bb20858"
+  },
+  "status": "pending_approval",
+  "current_revision": "demo-r1",
+  "output_path": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\cards\\runeblade-demo-2026-10-06\\glacier-wall\\r1\\glacier-wall-card-r1.png",
+  "sha256": "55be8cd19ccb7339457f6f6f70058f83448fd99bc6607eda7759b7c04bb8a3a9",
+  "dimensions": [
+    1024,
+    1536
+  ],
+  "artwork_path": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\cards\\runeblade-demo-2026-10-06\\glacier-wall\\r1\\illustration.png",
+  "text_source_path": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\cards\\runeblade-demo-2026-10-06\\glacier-wall\\r1\\text-data.json",
+  "illustration_prompt_path": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\cards\\runeblade-demo-2026-10-06\\glacier-wall\\r1\\illustration-brief.txt",
+  "reference_image_paths": [
+    "C:\\Users\\wilsh\\Projects\\runelord\\assets\\approvals\\inbox\\runeblade-frostbound-plate\\r1\\frostbound-plate-r1.png",
+    "C:\\Users\\wilsh\\Projects\\runelord\\assets\\cards\\runeblade-demo-2026-10-06\\template-v2\\baseline.png"
+  ],
+  "reference_hashes": [
+    "26b9d3b0060d516b92bdf76746200ab515112cb277b26e916db7900b5033b530",
+    "30cd5177cf360f80a6b90cfdafeaecb8fa561c98751414a6b5ba295df3744a3d"
+  ],
+  "source_art_decision": {
+    "status": "Approved",
+    "at": "2026-10-02T22:21:43.288Z",
+    "evidenceId": "f1848cc2-e145-45db-956f-7977391ff2ff",
+    "paths": [
+      "C:\\Users\\wilsh\\Projects\\runelord\\assets\\approvals\\inbox\\runeblade-frostbound-plate\\r1\\frostbound-plate-r1.png"
+    ]
+  },
+  "template_path": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\cards\\runeblade-demo-2026-10-06\\template-v2\\baseline.png",
+  "template_hash": "30cd5177cf360f80a6b90cfdafeaecb8fa561c98751414a6b5ba295df3744a3d",
+  "editable_mask_path": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\cards\\runeblade-demo-2026-10-06\\template-v2\\mask-union.png",
+  "editable_mask_version": "runeblade-demo-v2",
+  "mask_hash": "c2226e7427a2afc7c7236fda02c6078fc27e31bb32a0f8386de502ce89d672da",
+  "verification": {
+    "dimensions": [
+      1024,
+      1536
+    ],
+    "protected_pixel_count": 621701,
+    "changed_protected_pixels": 0,
+    "protected_alpha_identical": true,
+    "template_sha256": "30cd5177cf360f80a6b90cfdafeaecb8fa561c98751414a6b5ba295df3744a3d",
+    "mask_sha256": "c2226e7427a2afc7c7236fda02c6078fc27e31bb32a0f8386de502ce89d672da",
+    "editable_mask_version": "runeblade-demo-v2",
+    "text_min_rules_px": 56,
+    "text_matches_engine_semantics": true,
+    "automatic_corpse_cost_visible": false
+  },
+  "generation_method": "Technical recomposition of existing artwork; exact immutable card frame",
+  "integration_authorization": "User requested playable Runeblade roguelike demo, secondary Corpse resource and cards on 2026-10-06."
+}

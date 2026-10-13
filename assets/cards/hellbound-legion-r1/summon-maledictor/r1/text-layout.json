@@ -1,0 +1,39 @@
+[
+  {
+    "region": "title",
+    "text": "Maledictor",
+    "lines": [
+      "Maledictor"
+    ],
+    "font_size": 94
+  },
+  {
+    "region": "cost",
+    "text": "2",
+    "lines": [
+      "2"
+    ],
+    "font_size": 110
+  },
+  {
+    "region": "type",
+    "text": "SUMMON · WARLOCK",
+    "lines": [
+      "SUMMON · WARLOCK"
+    ],
+    "font_size": 34
+  },
+  {
+    "region": "rules",
+    "text": "Summon a Maledictor (14 HP, 3 Power). Attacks apply 2 Scorch. With 3 Maledictors, open a Hellgate at turn end: 6 damage and 2 Scorch to all enemies; promote all soldiers. Once per turn. Persists until destroyed.",
+    "lines": [
+      "Summon a Maledictor (14 HP, 3 Power).",
+      "Attacks apply 2 Scorch. With 3",
+      "Maledictors, open a Hellgate at turn end:",
+      "6 damage and 2 Scorch to all enemies;",
+      "promote all soldiers. Once per turn.",
+      "Persists until destroyed."
+    ],
+    "font_size": 37
+  }
+]

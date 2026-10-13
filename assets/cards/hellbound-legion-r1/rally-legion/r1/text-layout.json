@@ -1,0 +1,35 @@
+[
+  {
+    "region": "title",
+    "text": "Rally the Legion",
+    "lines": [
+      "Rally the Legion"
+    ],
+    "font_size": 71
+  },
+  {
+    "region": "cost",
+    "text": "1",
+    "lines": [
+      "1"
+    ],
+    "font_size": 110
+  },
+  {
+    "region": "type",
+    "text": "SKILL · WARLOCK",
+    "lines": [
+      "SKILL · WARLOCK"
+    ],
+    "font_size": 35
+  },
+  {
+    "region": "rules",
+    "text": "Heal all soldiers 5 HP and give them 5 Guard.",
+    "lines": [
+      "Heal all soldiers 5 HP and",
+      "give them 5 Guard."
+    ],
+    "font_size": 54
+  }
+]

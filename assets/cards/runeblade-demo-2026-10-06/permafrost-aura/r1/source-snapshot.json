@@ -1,0 +1,12 @@
+{
+  "id": "permafrost-aura",
+  "name": "Permafrost Aura",
+  "cost": 1,
+  "type": "Power",
+  "rarity": "Uncommon",
+  "rules": "At the start of your turn, apply 2 Chill to ALL enemies.",
+  "definitionRules": "At the start of your turn, apply 2 Chill to ALL enemies.",
+  "displayRules": "At the start of your turn, apply 2 Chill to ALL enemies.",
+  "authoritativeSource": "packages/content/runeblade.ts",
+  "engine_source_sha256": "1c64e6e43d4d829bdcb4472c50dbc850f0dbf9065ee2a9fa99e332c22bb20858"
+}

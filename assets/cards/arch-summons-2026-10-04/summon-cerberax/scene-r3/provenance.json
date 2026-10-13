@@ -1,0 +1,25 @@
+{
+  "input": {
+    "id": "summon-cerberax",
+    "prompt": "Use case: stylized-concept. Full-bleed landscape 4:3 card ILLUSTRATION ONLY. Reference 1 is exact identity: Cerberax, THREE-headed armored red and charcoal hellhound with fiery mouths, angular spikes, four legs and curling barbed tail. Reference 2 rendering only. Show Cerberax charging through a shattered infernal fortress gate, three clearly separated heads snarling forward, heavy claws scattering stone and sparks on a basalt bridge, receding gate and hanging chains behind, orange firelight against cool dark stone. Dynamic low viewpoint, convincing creature weight and environment, not a posed cutout. Preserve all three heads and canine quadruped anatomy. Serious Runelord 2D cel shading, broad colors, crisp graphic shadows, sparse highlights, readable large shapes. No border, text, UI, watermark, photorealism, blank backdrop.",
+    "source": "C:/Users/wilsh/.codex/generated_images/01a10ab7-ce2b-7cc0-b5ec-d49422b9ee3b/exec-af95acf1-0674-4a91-8a1d-0f3af05de2f4.png"
+  },
+  "references": [
+    {
+      "file": "assets/cards/arch-summons-2026-10-04/summon-cerberax/r1/identity-source.png",
+      "sha256": "26af15e98a1304bd2a50dd8b9c64d6f989a2469ced5b225907e2d984bd7e71b9",
+      "status": "Approved",
+      "evidenceId": "42c17d14-62bc-45e7-ba2a-fe397c10c0f4",
+      "decision": {
+        "status": "Approved",
+        "at": "2026-10-02T22:20:49.176Z",
+        "evidenceId": "42c17d14-62bc-45e7-ba2a-fe397c10c0f4",
+        "paths": [
+          "C:\\Users\\wilsh\\Projects\\runelord\\assets\\approvals\\inbox\\warlock-cerberax\\base-r1\\warlock-cerberax-base-r1.png"
+        ]
+      }
+    }
+  ],
+  "authorization": "User requested full card art replacement and exact Empower Demon art reassignment to Gorthak on 2026-10-05",
+  "approval": "Pending approval"
+}

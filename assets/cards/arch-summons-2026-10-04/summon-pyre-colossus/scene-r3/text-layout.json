@@ -1,0 +1,40 @@
+[
+  {
+    "region": "title",
+    "text": "Summon Pyre Colossus",
+    "lines": [
+      "Summon Pyre Colossus"
+    ],
+    "font_size": 49
+  },
+  {
+    "region": "cost",
+    "text": "3",
+    "lines": [
+      "3"
+    ],
+    "font_size": 110
+  },
+  {
+    "region": "type",
+    "text": "SKILL · WARLOCK",
+    "lines": [
+      "SKILL · WARLOCK"
+    ],
+    "font_size": 35
+  },
+  {
+    "region": "rules",
+    "text": "Summon Pyre Colossus: 24 HP. Grant caster 6 Guard on arrival and each turn. Action: 2 Scorch to ALL enemies. Double caster Guard gains. Allied demon deaths have a 50% chance to summon a Pyre Warden if space. Unbound.",
+    "lines": [
+      "Summon Pyre Colossus: 24 HP.",
+      "Grant caster 6 Guard on arrival and each turn.",
+      "Action: 2 Scorch to ALL enemies.",
+      "Double caster Guard gains.",
+      "Allied demon deaths have a 50% chance to",
+      "summon a Pyre Warden if space.",
+      "Unbound."
+    ],
+    "font_size": 32
+  }
+]

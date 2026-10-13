@@ -1,0 +1,11 @@
+{
+  "dimensions": [
+    1024,
+    1536
+  ],
+  "changed_protected_pixels": 0,
+  "protected_pixel_count": 746854,
+  "template_sha256": "30cd5177cf360f80a6b90cfdafeaecb8fa561c98751414a6b5ba295df3744a3d",
+  "mask_sha256": "2f2b4c0292722178aaea3e0e12793646e4cb492212ccdfa5d90ee76d71e90aec",
+  "text_matches_authorized_proposal": true
+}

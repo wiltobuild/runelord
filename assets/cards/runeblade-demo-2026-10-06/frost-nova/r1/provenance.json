@@ -1,0 +1,69 @@
+{
+  "tracking_id": "roguelike/runeblade/frost-nova",
+  "canonical_id": "frost-nova",
+  "catalog_path": "packages/content/runeblade.ts",
+  "row_identifier": "frost-nova",
+  "category": "Runeblade",
+  "variant": "base",
+  "source_snapshot": {
+    "id": "frost-nova",
+    "name": "Frost Nova",
+    "cost": 2,
+    "type": "Skill",
+    "rarity": "Uncommon",
+    "rules": "Apply 4 Chill to ALL enemies. Gain 6 Guard.",
+    "definitionRules": "Apply 4 Chill to ALL enemies. Gain 6 Guard.",
+    "displayRules": "Apply 4 Chill to ALL enemies. Gain 6 Guard.",
+    "authoritativeSource": "packages/content/runeblade.ts",
+    "engine_source_sha256": "1c64e6e43d4d829bdcb4472c50dbc850f0dbf9065ee2a9fa99e332c22bb20858"
+  },
+  "status": "pending_approval",
+  "current_revision": "demo-r1",
+  "output_path": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\cards\\runeblade-demo-2026-10-06\\frost-nova\\r1\\frost-nova-card-r1.png",
+  "sha256": "76e77c4e3e20dddf330d12ac2c57905fe9ed093388934710ad9fa30eb6990666",
+  "dimensions": [
+    1024,
+    1536
+  ],
+  "artwork_path": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\cards\\runeblade-demo-2026-10-06\\frost-nova\\r1\\illustration.png",
+  "text_source_path": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\cards\\runeblade-demo-2026-10-06\\frost-nova\\r1\\text-data.json",
+  "illustration_prompt_path": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\cards\\runeblade-demo-2026-10-06\\frost-nova\\r1\\illustration-brief.txt",
+  "reference_image_paths": [
+    "C:\\Users\\wilsh\\Projects\\runelord\\assets\\approvals\\inbox\\runeblade-frost-nova\\r1\\frost-nova-r1.png",
+    "C:\\Users\\wilsh\\Projects\\runelord\\assets\\cards\\runeblade-demo-2026-10-06\\template-v2\\baseline.png"
+  ],
+  "reference_hashes": [
+    "07a506450d6ee57f728d64777dd97a172f3cb7e9186b17d98a6f0333458c8262",
+    "30cd5177cf360f80a6b90cfdafeaecb8fa561c98751414a6b5ba295df3744a3d"
+  ],
+  "source_art_decision": {
+    "status": "Approved",
+    "at": "2026-10-02T22:21:43.288Z",
+    "evidenceId": "3a30584b-5668-4cd6-b838-409c58738605",
+    "paths": [
+      "C:\\Users\\wilsh\\Projects\\runelord\\assets\\approvals\\inbox\\runeblade-frost-nova\\r1\\frost-nova-r1.png"
+    ]
+  },
+  "template_path": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\cards\\runeblade-demo-2026-10-06\\template-v2\\baseline.png",
+  "template_hash": "30cd5177cf360f80a6b90cfdafeaecb8fa561c98751414a6b5ba295df3744a3d",
+  "editable_mask_path": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\cards\\runeblade-demo-2026-10-06\\template-v2\\mask-union.png",
+  "editable_mask_version": "runeblade-demo-v2",
+  "mask_hash": "c2226e7427a2afc7c7236fda02c6078fc27e31bb32a0f8386de502ce89d672da",
+  "verification": {
+    "dimensions": [
+      1024,
+      1536
+    ],
+    "protected_pixel_count": 621701,
+    "changed_protected_pixels": 0,
+    "protected_alpha_identical": true,
+    "template_sha256": "30cd5177cf360f80a6b90cfdafeaecb8fa561c98751414a6b5ba295df3744a3d",
+    "mask_sha256": "c2226e7427a2afc7c7236fda02c6078fc27e31bb32a0f8386de502ce89d672da",
+    "editable_mask_version": "runeblade-demo-v2",
+    "text_min_rules_px": 56,
+    "text_matches_engine_semantics": true,
+    "automatic_corpse_cost_visible": false
+  },
+  "generation_method": "Technical recomposition of existing artwork; exact immutable card frame",
+  "integration_authorization": "User requested playable Runeblade roguelike demo, secondary Corpse resource and cards on 2026-10-06."
+}

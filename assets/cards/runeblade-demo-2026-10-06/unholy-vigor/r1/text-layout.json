@@ -1,0 +1,36 @@
+[
+  {
+    "region": "title",
+    "text": "Unholy Vigor",
+    "font_size": 75,
+    "lines": [
+      "Unholy Vigor"
+    ]
+  },
+  {
+    "region": "cost",
+    "text": "1",
+    "font_size": 120,
+    "lines": [
+      "1"
+    ]
+  },
+  {
+    "region": "type",
+    "text": "POWER · RUNEBLADE",
+    "font_size": 32,
+    "lines": [
+      "POWER · RUNEBLADE"
+    ]
+  },
+  {
+    "region": "rules",
+    "text": "Your Thralls gain +2 Power, including future summons.",
+    "font_size": 56,
+    "lines": [
+      "Your Thralls gain +2",
+      "Power, including future",
+      "summons."
+    ]
+  }
+]

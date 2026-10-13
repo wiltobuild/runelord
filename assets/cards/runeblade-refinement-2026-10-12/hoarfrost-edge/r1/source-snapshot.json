@@ -1,0 +1,12 @@
+{
+  "id": "hoarfrost-edge",
+  "name": "Hoarfrost Edge",
+  "cost": 1,
+  "type": "Attack",
+  "rarity": "Common",
+  "definitionRules": "Deal 4 damage twice. Each hit applies 1 Chill.",
+  "rules": "Deal 4 damage twice. Each hit applies 1 Chill.",
+  "displayRules": "Deal 4 damage twice. Each hit applies 1 Chill.",
+  "authoritativeSource": "packages/content/runeblade.ts",
+  "engine_source_sha256": "d8f74805b64c4257cf9f049da7490bfc8406d006277e39a8d89f90d1cf869f21"
+}

@@ -1,0 +1,35 @@
+[
+  {
+    "region": "title",
+    "text": "Bone Ward",
+    "font_size": 89,
+    "lines": [
+      "Bone Ward"
+    ]
+  },
+  {
+    "region": "cost",
+    "text": "1",
+    "font_size": 120,
+    "lines": [
+      "1"
+    ]
+  },
+  {
+    "region": "type",
+    "text": "SKILL · RUNEBLADE",
+    "font_size": 32,
+    "lines": [
+      "SKILL · RUNEBLADE"
+    ]
+  },
+  {
+    "region": "rules",
+    "text": "Gain 4 Guard for each Thrall (minimum 4).",
+    "font_size": 56,
+    "lines": [
+      "Gain 4 Guard for each",
+      "Thrall (minimum 4)."
+    ]
+  }
+]

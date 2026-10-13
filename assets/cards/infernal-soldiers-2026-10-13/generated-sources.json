@@ -1,0 +1,74 @@
+[
+  {
+    "id": "summon-iron-legionary",
+    "prompt": "Use case: stylized-concept. Create ONE standalone landscape 4:3 illustration for a Runelord fantasy card. Input 1 is approved Warlock palette and 2D cel-shading reference ONLY, ignore its frame and lettering. Input 2 is exact soldier identity/equipment reference, use a NEW scene and dynamic pose, simplify surface noise into clean designed cel planes. Serious detailed 2D cel shading, broad flat color fields, strong hard-edged shadows, sparse graphic highlights, bold silhouettes, controlled charcoal/oxblood/ember palette. NO frame, border, text, letters, numbers, UI, watermark. No photorealism, gradients, paint texture, PBR metal, tiny scratches, cute expressions. One Iron Legionary charges forward through a broken basalt arch, tower shield thrust toward the viewer absorbing a blazing impact and broad rune sword held ready to counter. Powerful waist-up three-quarter close composition, stern red demon face visible, charcoal armor and crimson cloth. Frame the horns, shield and sword inside image with clear margins. Angular ash-gray fortress behind, restrained amber sparks, no summoning circle.",
+    "refs": [
+      "C:/Users/wilsh/Projects/runelord/assets/cards/hellbound-legion-r1/template/baseline.png",
+      "C:/Users/wilsh/Projects/runelord/assets/cards/hellbound-legion-r1/summon-iron-legionary/r2/identity-source.png"
+    ],
+    "generated_path": "C:\\Users\\wilsh\\.codex\\generated_images\\01a133b3-b9c0-7692-b98c-37d6166e8665\\exec-37ad16aa-e622-4508-adea-febd11338863.png"
+  },
+  {
+    "id": "summon-ash-pikeman",
+    "prompt": "Use case: stylized-concept. Create ONE standalone landscape 4:3 illustration for a Runelord fantasy card. Input 1 is approved Warlock palette and 2D cel-shading reference ONLY, ignore its frame and lettering. Input 2 is exact soldier identity/equipment reference, use a NEW scene and dynamic pose, simplify surface noise into clean designed cel planes. Serious detailed 2D cel shading, broad flat color fields, strong hard-edged shadows, sparse graphic highlights, bold silhouettes, controlled charcoal/oxblood/ember palette. NO frame, border, text, letters, numbers, UI, watermark. No photorealism, gradients, paint texture, PBR metal, tiny scratches, cute expressions. One Ash Pikeman lunges across an ash-covered battlefield, both hands correctly gripping ONE long continuous pike, glowing spearhead sweeping toward the right foreground. Athletic red demon with black swept horns, sleeveless black segmented armor, crimson split tabard. Dynamic three-quarter knee-up composition; head and spearhead fully visible; cool gray smoke and broken ramparts, restrained orange ember blade.",
+    "refs": [
+      "C:/Users/wilsh/Projects/runelord/assets/cards/hellbound-legion-r1/template/baseline.png",
+      "C:/Users/wilsh/Projects/runelord/assets/cards/hellbound-legion-r1/summon-ash-pikeman/r2/identity-source.png"
+    ],
+    "generated_path": "C:\\Users\\wilsh\\.codex\\generated_images\\01a133b3-b9c0-7692-b98c-37d6166e8665\\exec-b6617d49-acc3-4143-af2d-a59baeb852a5.png"
+  },
+  {
+    "id": "summon-ironhorn-bulwark",
+    "prompt": "Use case: stylized-concept. Create ONE standalone landscape 4:3 illustration for a Runelord fantasy card. Input 1 is approved Warlock palette and 2D cel-shading reference ONLY, ignore its frame and lettering. Input 2 is exact soldier identity/equipment reference, use a NEW scene and dynamic pose, simplify surface noise into clean designed cel planes. Serious detailed 2D cel shading, broad flat color fields, strong hard-edged shadows, sparse graphic highlights, bold silhouettes, controlled charcoal/oxblood/ember palette. NO frame, border, text, letters, numbers, UI, watermark. No photorealism, gradients, paint texture, PBR metal, tiny scratches, cute expressions. A massive Ironhorn Bulwark plants his huge black angular tower shield into cracked basalt as a broad translucent amber protective arc unfurls behind him. Low angle three-quarter close composition; enormous curled ram horns and bare red muscular torso clearly recognizable, his short heavy mace in the other hand. Ash-gray fortress steps, quiet background. Shield is the dominant foreground shape; no additional soldiers.",
+    "refs": [
+      "C:/Users/wilsh/Projects/runelord/assets/cards/hellbound-legion-r1/template/baseline.png",
+      "C:/Users/wilsh/Projects/runelord/assets/cards/hellbound-legion-r1/summon-ironhorn-bulwark/r2/identity-source.png"
+    ],
+    "generated_path": "C:\\Users\\wilsh\\.codex\\generated_images\\01a133b3-b9c0-7692-b98c-37d6166e8665\\exec-7c04e719-6526-4f3a-b206-89b0a21be039.png"
+  },
+  {
+    "id": "summon-maledictor",
+    "prompt": "Use case: stylized-concept. Create ONE standalone landscape 4:3 illustration for a Runelord fantasy card. Input 1 is approved Warlock palette and 2D cel-shading reference ONLY, ignore its frame and lettering. Input 2 is exact soldier identity/equipment reference, use a NEW scene and dynamic pose, simplify surface noise into clean designed cel planes. Serious detailed 2D cel shading, broad flat color fields, strong hard-edged shadows, sparse graphic highlights, bold silhouettes, controlled charcoal/oxblood/ember palette. NO frame, border, text, letters, numbers, UI, watermark. No photorealism, gradients, paint texture, PBR metal, tiny scratches, cute expressions. A stern Maledictor conducts a scorching incantation from a basalt balcony. Three-quarter waist-up close view of the exact red horned armored demonic caster, ONE staff gripped upright in one hand and the other hand extended shaping a compact angular orange flame. Long crimson robe, black jagged shoulder armor. Deep oxblood smoke and pale ash sky, distant hellgate arch silhouette. Face and staff crown unobscured.",
+    "refs": [
+      "C:/Users/wilsh/Projects/runelord/assets/cards/hellbound-legion-r1/template/baseline.png",
+      "C:/Users/wilsh/Projects/runelord/assets/cards/hellbound-legion-r1/summon-maledictor/r2/identity-source.png"
+    ],
+    "generated_path": "C:\\Users\\wilsh\\.codex\\generated_images\\01a133b3-b9c0-7692-b98c-37d6166e8665\\exec-ff5e7b04-190b-4766-9737-dae248e13624.png"
+  },
+  {
+    "id": "summon-dread-vanguard",
+    "prompt": "Use case: stylized-concept. Create ONE standalone landscape 4:3 illustration for a Runelord fantasy card. Input 1 is approved Warlock palette and 2D cel-shading reference ONLY, ignore its frame and lettering. Input 2 is exact soldier identity/equipment reference, use a NEW scene and dynamic pose, simplify surface noise into clean designed cel planes. Serious detailed 2D cel shading, broad flat color fields, strong hard-edged shadows, sparse graphic highlights, bold silhouettes, controlled charcoal/oxblood/ember palette. NO frame, border, text, letters, numbers, UI, watermark. No photorealism, gradients, paint texture, PBR metal, tiny scratches, cute expressions. A Dread Vanguard executes a mighty two-handed sweeping cleave with ONE huge flaming greatsword across the lower foreground. Low-angle knee-up dynamic composition with exact enclosed horned black helmet, angular black heavy plate, crimson long tabard. Two hands correctly grasp one hilt; one continuous broad blade with a graphic orange fire edge. Black basalt battlefield, distant ruined silhouettes, strong graphic motion arc, no extra weapons.",
+    "refs": [
+      "C:/Users/wilsh/Projects/runelord/assets/cards/hellbound-legion-r1/template/baseline.png",
+      "C:/Users/wilsh/Projects/runelord/assets/cards/hellbound-legion-r1/summon-dread-vanguard/r2/identity-source.png"
+    ],
+    "generated_path": "C:\\Users\\wilsh\\.codex\\generated_images\\01a133b3-b9c0-7692-b98c-37d6166e8665\\exec-d20d339e-359c-40d5-ad5b-0201ff81e74f.png"
+  },
+  {
+    "id": "muster-legion",
+    "prompt": "Use case: stylized-concept. Create ONE standalone landscape 4:3 illustration for a Runelord fantasy card. Input 1 is approved Warlock palette and 2D cel-shading reference ONLY, ignore its frame and lettering. Input 2 is exact soldier identity/equipment reference, use a NEW scene and dynamic pose, simplify surface noise into clean designed cel planes. Serious detailed 2D cel shading, broad flat color fields, strong hard-edged shadows, sparse graphic highlights, bold silhouettes, controlled charcoal/oxblood/ember palette. NO frame, border, text, letters, numbers, UI, watermark. No photorealism, gradients, paint texture, PBR metal, tiny scratches, cute expressions. Exactly TWO Iron Legionaries advance side by side out of a fortress gate, each with their own broad rune sword and tall black angular tower shield. One nearer on the left bracing his shield, the other a step back on the right sword raised at shoulder level. Clearly separate bodies and weapons, purposeful complementary poses, red demon faces and swept black horns. Oxblood banner in background, pale ash sky. Knee-up group composition with large readable silhouettes; no cloned identical poses, no summoning circles.",
+    "refs": [
+      "C:/Users/wilsh/Projects/runelord/assets/cards/hellbound-legion-r1/template/baseline.png",
+      "C:/Users/wilsh/Projects/runelord/assets/cards/hellbound-legion-r1/summon-iron-legionary/r2/identity-source.png"
+    ],
+    "generated_path": "C:\\Users\\wilsh\\.codex\\generated_images\\01a133b3-b9c0-7692-b98c-37d6166e8665\\exec-3a460c3c-bc0c-44e8-8022-d9a5596dcf74.png"
+  },
+  {
+    "id": "pike-detail",
+    "prompt": "Use case: stylized-concept. Create ONE standalone landscape 4:3 illustration for a Runelord fantasy card. Input 1 is approved Warlock palette and 2D cel-shading reference ONLY, ignore its frame and lettering. Input 2 is exact soldier identity/equipment reference, use a NEW scene and dynamic pose, simplify surface noise into clean designed cel planes. Serious detailed 2D cel shading, broad flat color fields, strong hard-edged shadows, sparse graphic highlights, bold silhouettes, controlled charcoal/oxblood/ember palette. NO frame, border, text, letters, numbers, UI, watermark. No photorealism, gradients, paint texture, PBR metal, tiny scratches, cute expressions. Exactly TWO Ash Pikemen fight in a coordinated formation: nearer left soldier braces one long pike horizontally toward the right, farther right soldier holds his own pike diagonally upward, two continuous shafts and two spearheads clearly separate. Both exact red horned demons in sleeveless charcoal armor with crimson tabards. Strong readable knee-up two-person composition on a narrow basalt bridge, cool ash haze, restrained orange rune accents. No cloned identical poses.",
+    "refs": [
+      "C:/Users/wilsh/Projects/runelord/assets/cards/hellbound-legion-r1/template/baseline.png",
+      "C:/Users/wilsh/Projects/runelord/assets/cards/hellbound-legion-r1/summon-ash-pikeman/r2/identity-source.png"
+    ],
+    "generated_path": "C:\\Users\\wilsh\\.codex\\generated_images\\01a133b3-b9c0-7692-b98c-37d6166e8665\\exec-ed756839-a509-475b-9baa-c64a0541a457.png"
+  },
+  {
+    "id": "blood-ascension",
+    "prompt": "Use case: stylized-concept. Create ONE standalone landscape 4:3 illustration for a Runelord fantasy card. Input 1 is approved Warlock palette and 2D cel-shading reference ONLY, ignore its frame and lettering. Input 2 is exact soldier identity/equipment reference, use a NEW scene and dynamic pose, simplify surface noise into clean designed cel planes. Serious detailed 2D cel shading, broad flat color fields, strong hard-edged shadows, sparse graphic highlights, bold silhouettes, controlled charcoal/oxblood/ember palette. NO frame, border, text, letters, numbers, UI, watermark. No photorealism, gradients, paint texture, PBR metal, tiny scratches, cute expressions. An Iron Legionary is empowered by a sacrifice: dominant red horned armored soldier braces at center-right, three large fiery angular chevrons ignite above his breastplate while a small clearly separate summoned imp at left dissolves into a ribbon of orange magical embers flowing into the soldier. No gore. The soldier retains his black tower shield and broad sword, exact stern face and swept horns. Close dramatic composition inside a dark ritual chamber, restrained glowing red floor sigil, large quiet shadow shapes. Emphasize visibly receiving power, not merely posing.",
+    "refs": [
+      "C:/Users/wilsh/Projects/runelord/assets/cards/hellbound-legion-r1/template/baseline.png",
+      "C:/Users/wilsh/Projects/runelord/assets/cards/hellbound-legion-r1/summon-iron-legionary/r2/identity-source.png"
+    ],
+    "generated_path": "C:\\Users\\wilsh\\.codex\\generated_images\\01a133b3-b9c0-7692-b98c-37d6166e8665\\exec-afb1d9f0-071b-402c-9be8-da39be6c522e.png"
+  }
+]

@@ -1,0 +1,12 @@
+{
+  "id": "frost-nova",
+  "name": "Frost Nova",
+  "cost": 2,
+  "type": "Skill",
+  "rarity": "Uncommon",
+  "rules": "Apply 4 Chill to ALL enemies. Gain 6 Guard.",
+  "definitionRules": "Apply 4 Chill to ALL enemies. Gain 6 Guard.",
+  "displayRules": "Apply 4 Chill to ALL enemies. Gain 6 Guard.",
+  "authoritativeSource": "packages/content/runeblade.ts",
+  "engine_source_sha256": "1c64e6e43d4d829bdcb4472c50dbc850f0dbf9065ee2a9fa99e332c22bb20858"
+}

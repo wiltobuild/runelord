@@ -1,0 +1,11 @@
+{
+  "name": "Shattered Queen",
+  "cost": "3",
+  "type": "Skill",
+  "rarity": "Proposed",
+  "rules": "Summon a Thrall.\n12 HP · 3 Power.\nHits ALL enemies.\nHits apply 1 Chill.\nRot.",
+  "hp": 12,
+  "power": 3,
+  "mechanics_status": "Draft for user review; not implemented",
+  "summon": "shattered-queen"
+}

@@ -1,0 +1,25 @@
+{
+  "input": {
+    "id": "summon-gorthak",
+    "prompt": "Reuse exact Empower Demon r1 illustration as requested by user for Pit Brute Archdemon (Gorthak).",
+    "source": "C:/Users/wilsh/Projects/runelord-tintfix-roguelike-main-push/assets/cards/arch-summons-2026-10-04/empower-demon/r1/illustration.png"
+  },
+  "references": [
+    {
+      "file": "assets/cards/arch-summons-2026-10-04/summon-gorthak/r1/identity-source.png",
+      "sha256": "5e5700db391d6b020f31307d1af113102eb81f5d80575eef2c01777119f5c191",
+      "status": "Approved",
+      "evidenceId": "60fd264d-616b-4049-b781-ca8acf21506a",
+      "decision": {
+        "status": "Approved",
+        "at": "2026-10-02T22:20:49.176Z",
+        "evidenceId": "60fd264d-616b-4049-b781-ca8acf21506a",
+        "paths": [
+          "C:\\Users\\wilsh\\Projects\\runelord\\assets\\approvals\\inbox\\warlock-gorthak\\base-r1\\warlock-gorthak-base-r1.png"
+        ]
+      }
+    }
+  ],
+  "authorization": "User requested full card art replacement and exact Empower Demon art reassignment to Gorthak on 2026-10-05",
+  "approval": "Pending approval"
+}

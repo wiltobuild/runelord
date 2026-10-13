@@ -1,0 +1,8 @@
+{
+  "name": "Summon Pyre Warden",
+  "cost": "2 +1🔥",
+  "type": "Skill",
+  "rarity": "Uncommon",
+  "rules": "Summon a Pyre Warden: 12 HP. Grant caster 6 Guard on arrival and each turn. Action: 1 Scorch to ALL enemies. Upkeep 1.",
+  "upgrade": "Costs 1 +1🔥"
+}

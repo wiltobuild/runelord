@@ -1,0 +1,218 @@
+[
+  {
+    "id": "summon-frost-thrall",
+    "name": "Frost Thrall",
+    "cost": 2,
+    "type": "Summon",
+    "rarity": "Common",
+    "definitionRules": "Summon a 20 HP / 7 Power Thrall. Attacks apply 1 Chill.",
+    "rules": "Summon Frost Thrall: 20 HP / 7 Power. Attacks apply 1 Chill. Rot starts at 1. Automatically spend Corpses equal to its Mana cost instead if available."
+  },
+  {
+    "id": "summon-shattered-queen",
+    "name": "Shattered Queen",
+    "cost": 3,
+    "type": "Summon",
+    "rarity": "Rare",
+    "definitionRules": "Summon a 15 HP / 4 Power Thrall. Attacks hit ALL enemies and apply 1 Chill.",
+    "rules": "Summon Shattered Queen: 15 HP / 4 Power. Attacks hit ALL enemies and apply 1 Chill. Rot starts at 1. Automatically spend Corpses equal to its Mana cost instead if available."
+  },
+  {
+    "id": "summon-rime-seer",
+    "name": "Rime Seer",
+    "cost": 2,
+    "type": "Summon",
+    "rarity": "Common",
+    "definitionRules": "Summon a 13 HP / 5 Power Thrall. Attacks apply 3 Chill.",
+    "rules": "Summon Rime Seer: 13 HP / 5 Power. Attacks apply 3 Chill. Rot starts at 1. Automatically spend Corpses equal to its Mana cost instead if available."
+  },
+  {
+    "id": "summon-rune-revenant",
+    "name": "Rune Revenant",
+    "cost": 2,
+    "type": "Summon",
+    "rarity": "Uncommon",
+    "definitionRules": "Summon a 18 HP / 4 Power Thrall. Attacks strike twice.",
+    "rules": "Summon Rune Revenant: 18 HP / 4 Power. Attacks strike twice. Rot starts at 1. Automatically spend Corpses equal to its Mana cost instead if available."
+  },
+  {
+    "id": "summon-bone-defender",
+    "name": "Bone Defender",
+    "cost": 2,
+    "type": "Summon",
+    "rarity": "Common",
+    "definitionRules": "Summon an 23 HP / 4 Power Thrall with Defender.",
+    "rules": "Summon Bone Defender: 23 HP / 4 Power. Defender. Rot starts at 1. Automatically spend Corpses equal to its Mana cost instead if available."
+  },
+  {
+    "id": "exhume",
+    "name": "Exhume",
+    "cost": 1,
+    "type": "Skill",
+    "rarity": "Common",
+    "definitionRules": "Gain 2 Corpses.",
+    "rules": "Gain 2 Corpses."
+  },
+  {
+    "id": "mass-exhumation",
+    "name": "Mass Exhumation",
+    "cost": 2,
+    "type": "Skill",
+    "rarity": "Uncommon",
+    "definitionRules": "Gain 4 Corpses.",
+    "rules": "Gain 4 Corpses."
+  },
+  {
+    "id": "hew",
+    "name": "Hew",
+    "cost": 1,
+    "type": "Attack",
+    "rarity": "Basic",
+    "definitionRules": "Deal 8 damage.",
+    "rules": "Deal 8 damage."
+  },
+  {
+    "id": "brace",
+    "name": "Brace",
+    "cost": 1,
+    "type": "Skill",
+    "rarity": "Basic",
+    "definitionRules": "Gain 6 Guard.",
+    "rules": "Gain 6 Guard."
+  },
+  {
+    "id": "frostbite",
+    "name": "Frostbite",
+    "cost": 2,
+    "type": "Attack",
+    "rarity": "Basic",
+    "definitionRules": "Heavy. Deal 10 damage. Apply 3 Chill.",
+    "rules": "Heavy. Deal 10 damage. Apply 3 Chill."
+  },
+  {
+    "id": "rimecleave",
+    "name": "Rimecleave",
+    "cost": 1,
+    "type": "Attack",
+    "rarity": "Common",
+    "definitionRules": "Deal 6 damage and apply 1 Chill to ALL enemies.",
+    "rules": "Deal 6 damage and apply 1 Chill to ALL enemies."
+  },
+  {
+    "id": "glacial-ward",
+    "name": "Glacial Ward",
+    "cost": 1,
+    "type": "Skill",
+    "rarity": "Common",
+    "definitionRules": "Gain 8 Guard. Draw 1 card.",
+    "rules": "Gain 8 Guard. Draw 1 card."
+  },
+  {
+    "id": "frozen-grasp",
+    "name": "Frozen Grasp",
+    "cost": 0,
+    "type": "Skill",
+    "rarity": "Common",
+    "definitionRules": "Apply 3 Chill.",
+    "rules": "Apply 3 Chill."
+  },
+  {
+    "id": "command-the-dead",
+    "name": "Command the Dead",
+    "cost": 0,
+    "type": "Skill",
+    "rarity": "Common",
+    "definitionRules": "All Thralls attack now. Their Rot also triggers.",
+    "rules": "All Thralls attack now. Rot triggers."
+  },
+  {
+    "id": "bone-ward",
+    "name": "Bone Ward",
+    "cost": 1,
+    "type": "Skill",
+    "rarity": "Common",
+    "definitionRules": "Gain 5 Guard for each Thrall you control (minimum 5).",
+    "rules": "Gain 5 Guard for each Thrall (minimum 5)."
+  },
+  {
+    "id": "hoarfrost-edge",
+    "name": "Hoarfrost Edge",
+    "cost": 1,
+    "type": "Attack",
+    "rarity": "Common",
+    "definitionRules": "Deal 4 damage twice. Each hit applies 1 Chill.",
+    "rules": "Deal 4 damage twice. Each hit applies 1 Chill."
+  },
+  {
+    "id": "unholy-vigor",
+    "name": "Unholy Vigor",
+    "cost": 1,
+    "type": "Power",
+    "rarity": "Uncommon",
+    "definitionRules": "Your Thralls gain +2 Power, including future summons.",
+    "rules": "Your Thralls gain +2 Power, including future summons."
+  },
+  {
+    "id": "frost-nova",
+    "name": "Frost Nova",
+    "cost": 2,
+    "type": "Skill",
+    "rarity": "Uncommon",
+    "definitionRules": "Apply 4 Chill to ALL enemies. Gain 6 Guard.",
+    "rules": "Apply 4 Chill to ALL enemies. Gain 6 Guard."
+  },
+  {
+    "id": "soulfrost-blade",
+    "name": "Soulfrost Blade",
+    "cost": 1,
+    "type": "Attack",
+    "rarity": "Uncommon",
+    "definitionRules": "Deal 6 damage plus 2 for each Chill on the enemy.",
+    "rules": "Deal 6 damage plus 2 for each Chill on the enemy."
+  },
+  {
+    "id": "dark-tithe",
+    "name": "Dark Tithe",
+    "cost": 0,
+    "type": "Skill",
+    "rarity": "Uncommon",
+    "definitionRules": "Sacrifice a Thrall. Gain 2 Mana. Draw 1 card.",
+    "rules": "Sacrifice a Thrall. Gain 2 Mana. Draw 1 card(s)."
+  },
+  {
+    "id": "rally-the-fallen",
+    "name": "Rally the Fallen",
+    "cost": 1,
+    "type": "Skill",
+    "rarity": "Uncommon",
+    "definitionRules": "All Thralls heal 8 HP and reset Rot to 0.",
+    "rules": "All Thralls heal 8 HP and reset Rot to 0."
+  },
+  {
+    "id": "sweeping-hew",
+    "name": "Sweeping Hew",
+    "cost": 2,
+    "type": "Attack",
+    "rarity": "Uncommon",
+    "definitionRules": "Heavy. Deal 12 damage to ALL enemies.",
+    "rules": "Heavy. Deal 12 damage to ALL enemies."
+  },
+  {
+    "id": "permafrost-aura",
+    "name": "Permafrost Aura",
+    "cost": 1,
+    "type": "Power",
+    "rarity": "Uncommon",
+    "definitionRules": "At the start of your turn, apply 2 Chill to ALL enemies.",
+    "rules": "At the start of your turn, apply 2 Chill to ALL enemies."
+  },
+  {
+    "id": "glacier-wall",
+    "name": "Glacier Wall",
+    "cost": 2,
+    "type": "Skill",
+    "rarity": "Rare",
+    "definitionRules": "Gain 30 Guard. Consume.",
+    "rules": "Gain 30 Guard. Consume."
+  }
+]

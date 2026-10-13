@@ -1,0 +1,37 @@
+[
+  {
+    "region": "title",
+    "text": "Frost Thrall",
+    "font_size": 84,
+    "lines": [
+      "Frost Thrall"
+    ]
+  },
+  {
+    "region": "cost",
+    "text": "2",
+    "font_size": 104,
+    "lines": [
+      "2"
+    ]
+  },
+  {
+    "region": "type",
+    "text": "SKILL · RUNEBLADE",
+    "font_size": 35,
+    "lines": [
+      "SKILL · RUNEBLADE"
+    ]
+  },
+  {
+    "region": "rules",
+    "text": "Summon a Thrall.\n16 HP · 6 Power.\nHits apply 1 Chill.\nRot.",
+    "font_size": 45,
+    "lines": [
+      "Summon a Thrall.",
+      "16 HP · 6 Power.",
+      "Hits apply 1 Chill.",
+      "Rot."
+    ]
+  }
+]

@@ -1,0 +1,12 @@
+{
+  "id": "frostbite",
+  "name": "Frostbite",
+  "cost": 2,
+  "type": "Attack",
+  "rarity": "Basic",
+  "rules": "Heavy. Deal 8 damage. Apply 3 Chill.",
+  "definitionRules": "Heavy. Deal 8 damage. Apply 3 Chill.",
+  "displayRules": "Heavy. Deal 8 damage. Apply 3 Chill.",
+  "authoritativeSource": "packages/content/runeblade.ts",
+  "engine_source_sha256": "1c64e6e43d4d829bdcb4472c50dbc850f0dbf9065ee2a9fa99e332c22bb20858"
+}

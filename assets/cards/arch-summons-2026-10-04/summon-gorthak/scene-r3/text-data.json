@@ -1,0 +1,8 @@
+{
+  "name": "Summon Gorthak",
+  "cost": "3",
+  "type": "Skill",
+  "rarity": "Rare",
+  "rules": "Summon Gorthak: 40 HP, 9 damage to all enemies, Defender. All allied minions gain +2 damage. New lesser summons become Pit Brutes. Unbound.",
+  "upgrade": "+20% HP and Power"
+}

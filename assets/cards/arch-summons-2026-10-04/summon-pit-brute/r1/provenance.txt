@@ -1,0 +1,4 @@
+Existing artwork reused by deterministic composition. Source: C:\Users\wilsh\Projects\runelord-tintfix-roguelike-main-push\assets\cards\warlock-2026-10-02\summon-pit-brute\r1\illustration.png
+SHA256: 2b6a438ac5f61c32dabe2af3ca6c56c9f0e9d33318fad984549e6a96dbe7ac33
+Approval: Approved
+New card integration authorized by user; approval ledger unchanged.

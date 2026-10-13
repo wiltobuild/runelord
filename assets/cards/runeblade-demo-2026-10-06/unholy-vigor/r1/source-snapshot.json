@@ -1,0 +1,12 @@
+{
+  "id": "unholy-vigor",
+  "name": "Unholy Vigor",
+  "cost": 1,
+  "type": "Power",
+  "rarity": "Uncommon",
+  "rules": "Your Thralls gain +2 Power, including future summons.",
+  "definitionRules": "Your Thralls gain +2 Power, including future summons.",
+  "displayRules": "Your Thralls gain +2 Power, including future summons.",
+  "authoritativeSource": "packages/content/runeblade.ts",
+  "engine_source_sha256": "1c64e6e43d4d829bdcb4472c50dbc850f0dbf9065ee2a9fa99e332c22bb20858"
+}

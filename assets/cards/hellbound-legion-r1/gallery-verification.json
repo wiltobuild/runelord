@@ -1,0 +1,86 @@
+[
+  {
+    "id": "summon-iron-legionary",
+    "sha256": "6c6a81d5bb8e63a8fbf117ff817f7649fca89b01386f2f10860c46ca0eb48980",
+    "url": "http://localhost:4317/asset/225b7a97618b73732ec28594",
+    "status": "Pending approval"
+  },
+  {
+    "id": "summon-ash-pikeman",
+    "sha256": "cf48adc10293166aa5a75988f1ac7c1af9a8d7653ae96526e58693b0e0132548",
+    "url": "http://localhost:4317/asset/9b12aae3c8abeb3ef81052af",
+    "status": "Pending approval"
+  },
+  {
+    "id": "summon-ironhorn-bulwark",
+    "sha256": "dc753b0f0fb53cf49420b4005d82632e5c1ca0275af14fa823a1a077e54523cc",
+    "url": "http://localhost:4317/asset/8c335908efc60535d9fe0be5",
+    "status": "Pending approval"
+  },
+  {
+    "id": "summon-maledictor",
+    "sha256": "329a43d05105cad145492de12974a0c03de10b4fcc236ce5e584f5f5bbd5af4b",
+    "url": "http://localhost:4317/asset/987892657ab87612f76d3b8e",
+    "status": "Pending approval"
+  },
+  {
+    "id": "summon-dread-vanguard",
+    "sha256": "2c6beeec018dbedc9b6ba9b5adc849a7ed420bb3e0b6ccbeaf95d84fdab5b21e",
+    "url": "http://localhost:4317/asset/2691c183d05081e4b56009bd",
+    "status": "Pending approval"
+  },
+  {
+    "id": "muster-legion",
+    "sha256": "f3386c545033cfe4b5226f2c2f42651da70c33949fe12914a063ef63c64cb6df",
+    "url": "http://localhost:4317/asset/d4542a50c2f394d681e705a2",
+    "status": "Pending approval"
+  },
+  {
+    "id": "pike-detail",
+    "sha256": "2fe61cae87f2bc2e54232fc2fdfa5584dc2d6d9e9e4615a4b0267345cc0694a8",
+    "url": "http://localhost:4317/asset/6f8e3ed335cc0da182d578ec",
+    "status": "Pending approval"
+  },
+  {
+    "id": "field-promotion",
+    "sha256": "bfa0da881cd98bae7690c41c73c690d03a267d43e2dd67f76786c127ba197a01",
+    "url": "http://localhost:4317/asset/1f83fb559b11e20cd03b770a",
+    "status": "Pending approval"
+  },
+  {
+    "id": "battlefield-commission",
+    "sha256": "085074d6b5b96e2c88e47412215dc9fcb86fd987d52951efbef562a6c7d007b7",
+    "url": "http://localhost:4317/asset/718499c4c20675ecd1b061b2",
+    "status": "Pending approval"
+  },
+  {
+    "id": "rally-legion",
+    "sha256": "973f0c997650a187c456d430ddb24a37d70d7017be6b4dc56ba7045709214266",
+    "url": "http://localhost:4317/asset/5b07cd9b75014cd4e2dd63c0",
+    "status": "Pending approval"
+  },
+  {
+    "id": "infernal-logistics",
+    "sha256": "74645101c683a4cce7adb5d4cf6396e6e52e45bf5492cde12457a259dc2337f7",
+    "url": "http://localhost:4317/asset/66cfbebb810a41473f54e4ee",
+    "status": "Pending approval"
+  },
+  {
+    "id": "hold-the-line",
+    "sha256": "1a71fda65403418d6b341654c6c5ccebf16001e00d066a395f97a0c24986d631",
+    "url": "http://localhost:4317/asset/239cee2c950d93f9ac95f687",
+    "status": "Pending approval"
+  },
+  {
+    "id": "hellgate-rite",
+    "sha256": "f3e24c2e51281f6ff83a9555d6c821f1cd18635025802caf671e1c27815902db",
+    "url": "http://localhost:4317/asset/feae2331e4f3e9c4ce6cd09c",
+    "status": "Pending approval"
+  },
+  {
+    "id": "veteran-command",
+    "sha256": "0c7534c67563fe3f304dd3adcc0324aeaf2be6c7adefbbe2b2c47f8f50c1bb80",
+    "url": "http://localhost:4317/asset/cdadbf7cd9e05a93ca57b367",
+    "status": "Pending approval"
+  }
+]

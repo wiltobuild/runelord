@@ -1,0 +1,64 @@
+{
+  "tracking_id": "roguelike/runeblade/summon-frost-thrall",
+  "canonical_id": "summon-frost-thrall",
+  "catalog_path": "packages/content/runeblade.ts",
+  "row_identifier": "summon-frost-thrall",
+  "category": "Runeblade",
+  "variant": "base",
+  "source_snapshot": {
+    "id": "summon-frost-thrall",
+    "name": "Frost Thrall",
+    "cost": 2,
+    "type": "Summon",
+    "rarity": "Common",
+    "rules": "Summon Frost Thrall: 16 HP / 6 Power. Attacks apply 1 Chill. Rot starts at 1. Automatically spend Corpses equal to its Mana cost instead if available.",
+    "definitionRules": "Summon a 16 HP / 6 Power Thrall. Attacks apply 1 Chill.",
+    "displayRules": "Summon a Thrall. 16 HP / 6 Power.\nAttacks apply 1 Chill.\nRot starts at 1.\nIf you have 2 Corpses, spend them instead of Mana.",
+    "authoritativeSource": "packages/content/runeblade.ts",
+    "engine_source_sha256": "1c64e6e43d4d829bdcb4472c50dbc850f0dbf9065ee2a9fa99e332c22bb20858"
+  },
+  "status": "pending_approval",
+  "current_revision": "demo-r1",
+  "output_path": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\cards\\runeblade-demo-2026-10-06\\summon-frost-thrall\\r1\\summon-frost-thrall-card-r1.png",
+  "sha256": "1051196c2ae5842eae94edce185cd3bf5961bd494acfff8485e8aa04945487e8",
+  "dimensions": [
+    1024,
+    1536
+  ],
+  "artwork_path": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\cards\\runeblade-demo-2026-10-06\\summon-frost-thrall\\r1\\illustration.png",
+  "text_source_path": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\cards\\runeblade-demo-2026-10-06\\summon-frost-thrall\\r1\\text-data.json",
+  "illustration_prompt_path": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\cards\\runeblade-demo-2026-10-06\\summon-frost-thrall\\r1\\illustration-brief.txt",
+  "reference_image_paths": [
+    "C:\\Users\\wilsh\\Projects\\runelord\\assets\\cards\\runeblade-base-summons-2026-10-05\\frost-thrall\\r1\\illustration.png",
+    "C:\\Users\\wilsh\\Projects\\runelord\\assets\\cards\\runeblade-demo-2026-10-06\\template-v2\\baseline.png"
+  ],
+  "reference_hashes": [
+    "fec16be77e11a8953bd15cb006c59e15cb8ff68788a98a722da7fb4f49c53761",
+    "30cd5177cf360f80a6b90cfdafeaecb8fa561c98751414a6b5ba295df3744a3d"
+  ],
+  "source_art_decision": {
+    "status": "Pending approval"
+  },
+  "template_path": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\cards\\runeblade-demo-2026-10-06\\template-v2\\baseline.png",
+  "template_hash": "30cd5177cf360f80a6b90cfdafeaecb8fa561c98751414a6b5ba295df3744a3d",
+  "editable_mask_path": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\cards\\runeblade-demo-2026-10-06\\template-v2\\mask-union.png",
+  "editable_mask_version": "runeblade-demo-v2",
+  "mask_hash": "c2226e7427a2afc7c7236fda02c6078fc27e31bb32a0f8386de502ce89d672da",
+  "verification": {
+    "dimensions": [
+      1024,
+      1536
+    ],
+    "protected_pixel_count": 621701,
+    "changed_protected_pixels": 0,
+    "protected_alpha_identical": true,
+    "template_sha256": "30cd5177cf360f80a6b90cfdafeaecb8fa561c98751414a6b5ba295df3744a3d",
+    "mask_sha256": "c2226e7427a2afc7c7236fda02c6078fc27e31bb32a0f8386de502ce89d672da",
+    "editable_mask_version": "runeblade-demo-v2",
+    "text_min_rules_px": 44,
+    "text_matches_engine_semantics": true,
+    "automatic_corpse_cost_visible": true
+  },
+  "generation_method": "Technical recomposition of existing artwork; exact immutable card frame",
+  "integration_authorization": "User requested playable Runeblade roguelike demo, secondary Corpse resource and cards on 2026-10-06."
+}

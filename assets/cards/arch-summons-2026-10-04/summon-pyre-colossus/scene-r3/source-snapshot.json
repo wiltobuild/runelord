@@ -1,0 +1,8 @@
+{
+  "name": "Summon Pyre Colossus",
+  "cost": "3",
+  "type": "Skill",
+  "rarity": "Rare",
+  "rules": "Summon Pyre Colossus: 24 HP. Grant caster 6 Guard on arrival and each turn. Action: 2 Scorch to ALL enemies. Double caster Guard gains. Allied demon deaths have a 50% chance to summon a Pyre Warden if space. Unbound.",
+  "upgrade": "+20% HP"
+}

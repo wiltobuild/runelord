@@ -1,0 +1,8 @@
+{
+  "name": "Summon Ignivar",
+  "cost": "3",
+  "type": "Skill",
+  "rarity": "Rare",
+  "rules": "Summon Ignivar: 18 HP, 6 fire damage +1 Scorch. Your direct fire hits apply +4 Scorch. Each turn summon a free Imp if space. Unbound.",
+  "upgrade": "+20% HP and Power"
+}

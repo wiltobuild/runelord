@@ -1,0 +1,45 @@
+{
+  "tracking_id": "proposal/runeblade-base-summons/rune-revenant",
+  "canonical_id": null,
+  "catalog_path": null,
+  "row_identifier": null,
+  "category": "Runeblade",
+  "variant": "base",
+  "source_snapshot": {
+    "name": "Rune Revenant",
+    "cost": "2",
+    "type": "Skill",
+    "rarity": "Proposed",
+    "rules": "Summon a Thrall.\n12 HP · 2 Power.\nAttacks hit 3 times.\nRot.",
+    "hp": 12,
+    "power": 2,
+    "mechanics_status": "Draft for user review; not implemented",
+    "summon": "rune-revenant"
+  },
+  "status": "pending_approval",
+  "current_revision": "r1",
+  "output_path": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\cards\\runeblade-base-summons-2026-10-05\\rune-revenant\\r1\\rune-revenant-card-r1.png",
+  "artwork_path": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\cards\\runeblade-base-summons-2026-10-05\\rune-revenant\\r1\\illustration.png",
+  "text_source_path": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\cards\\runeblade-base-summons-2026-10-05\\rune-revenant\\r1\\text-data.json",
+  "illustration_prompt_path": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\cards\\runeblade-base-summons-2026-10-05\\rune-revenant\\r1\\illustration-prompt.txt",
+  "reference_image_paths": [
+    "C:\\Users\\wilsh\\Projects\\runelord\\assets\\characters\\runeblade-base-summons\\selected-r1\\rune-revenant\\master.png",
+    "C:\\Users\\wilsh\\Documents\\Codex\\2026-10-01\\new-chat\\outputs\\runelord-cards\\templates\\runeblade-v1\\baseline.png"
+  ],
+  "reference_hashes": [
+    "afa9d76fe84274c9115cae94705c327d6300d1524f6fc2545030863f3fd8249a",
+    "30cd5177cf360f80a6b90cfdafeaecb8fa561c98751414a6b5ba295df3744a3d"
+  ],
+  "verification": {
+    "dimensions": [
+      1024,
+      1536
+    ],
+    "changed_protected_pixels": 0,
+    "protected_pixel_count": 746854,
+    "template_sha256": "30cd5177cf360f80a6b90cfdafeaecb8fa561c98751414a6b5ba295df3744a3d",
+    "mask_sha256": "2f2b4c0292722178aaea3e0e12793646e4cb492212ccdfa5d90ee76d71e90aec",
+    "text_matches_authorized_proposal": true
+  },
+  "sha256": "4ad18c3cefcb7e815ea9e3ee2649798235adcbf047e9207ae842aa677289fcd8"
+}

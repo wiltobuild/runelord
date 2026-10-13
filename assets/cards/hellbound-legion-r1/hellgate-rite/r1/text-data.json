@@ -1,0 +1,8 @@
+{
+  "id": "hellgate-rite",
+  "name": "Hellgate Rite",
+  "cost": "2",
+  "type": "Skill",
+  "rarity": "Rare",
+  "rules": "Requires 3 Maledictors. Open the Hellgate now, then draw 2 cards. Only one Hellgate per turn."
+}

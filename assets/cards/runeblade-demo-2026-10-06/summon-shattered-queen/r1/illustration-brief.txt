@@ -1,0 +1,1 @@
+Reuse the existing Runeblade artwork at assets\cards\runeblade-base-summons-2026-10-05\shattered-queen\r1\illustration.png. Existing fresh summon illustration; uniform fit into art window. New mechanics text from packages/content/runeblade.ts. No AI generation or repainting performed.

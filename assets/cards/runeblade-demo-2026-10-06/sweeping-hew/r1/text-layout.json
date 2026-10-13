@@ -1,0 +1,35 @@
+[
+  {
+    "region": "title",
+    "text": "Sweeping Hew",
+    "font_size": 68,
+    "lines": [
+      "Sweeping Hew"
+    ]
+  },
+  {
+    "region": "cost",
+    "text": "2",
+    "font_size": 104,
+    "lines": [
+      "2"
+    ]
+  },
+  {
+    "region": "type",
+    "text": "ATTACK · RUNEBLADE",
+    "font_size": 32,
+    "lines": [
+      "ATTACK · RUNEBLADE"
+    ]
+  },
+  {
+    "region": "rules",
+    "text": "Heavy. Deal 10 damage to ALL enemies.",
+    "font_size": 56,
+    "lines": [
+      "Heavy. Deal 10 damage to",
+      "ALL enemies."
+    ]
+  }
+]

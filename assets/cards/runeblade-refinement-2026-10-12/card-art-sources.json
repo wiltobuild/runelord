@@ -1,0 +1,192 @@
+{
+  "hew": {
+    "source": "assets/approvals/inbox/runeblade-sweeping-hew/r1/sweeping-hew-r1.png",
+    "extract": {
+      "left": 57,
+      "top": 225,
+      "width": 911,
+      "height": 701
+    },
+    "note": "existing Runeblade scene adapted to new rules/title"
+  },
+  "brace": {
+    "source": "assets/approvals/inbox/runeblade-bone-ward/r1/bone-ward-r1.png",
+    "extract": {
+      "left": 57,
+      "top": 225,
+      "width": 911,
+      "height": 701
+    },
+    "note": "existing Runeblade scene adapted to new rules/title"
+  },
+  "frostbite": {
+    "source": "assets/approvals/inbox/runeblade-winter-s-bite/r1/winter-s-bite-r1.png",
+    "extract": {
+      "left": 57,
+      "top": 225,
+      "width": 911,
+      "height": 701
+    },
+    "note": "existing Runeblade scene adapted to new rules/title"
+  },
+  "rimecleave": {
+    "source": "assets/approvals/inbox/runeblade-glacial-rampage/r1/glacial-rampage-r1.png",
+    "extract": {
+      "left": 57,
+      "top": 225,
+      "width": 911,
+      "height": 701
+    },
+    "note": "existing Runeblade scene adapted to new rules/title"
+  },
+  "glacial-ward": {
+    "source": "assets/approvals/inbox/runeblade-rime-barrier/r1/rime-barrier-r1.png",
+    "extract": {
+      "left": 57,
+      "top": 225,
+      "width": 911,
+      "height": 701
+    },
+    "note": "existing Runeblade scene adapted to new rules/title"
+  },
+  "frozen-grasp": {
+    "source": "assets/approvals/inbox/runeblade-bitter-wind/r1/bitter-wind-r1.png",
+    "extract": {
+      "left": 57,
+      "top": 225,
+      "width": 911,
+      "height": 701
+    },
+    "note": "existing Runeblade scene adapted to new rules/title"
+  },
+  "command-the-dead": {
+    "source": "assets/approvals/inbox/runeblade-grim-muster/r1/grim-muster-r1.png",
+    "extract": {
+      "left": 57,
+      "top": 225,
+      "width": 911,
+      "height": 701
+    },
+    "note": "existing Runeblade scene adapted to new rules/title"
+  },
+  "bone-ward": {
+    "source": "assets/approvals/inbox/runeblade-bone-ward/r1/bone-ward-r1.png",
+    "extract": {
+      "left": 57,
+      "top": 225,
+      "width": 911,
+      "height": 701
+    },
+    "note": "same spell artwork"
+  },
+  "hoarfrost-edge": {
+    "source": "assets/approvals/inbox/runeblade-hoarfrost-edge/r1/hoarfrost-edge-r1.png",
+    "extract": {
+      "left": 57,
+      "top": 225,
+      "width": 911,
+      "height": 701
+    },
+    "note": "same spell artwork"
+  },
+  "unholy-vigor": {
+    "source": "assets/approvals/inbox/runeblade-unholy-vigor/r1/unholy-vigor-r1.png",
+    "extract": {
+      "left": 57,
+      "top": 225,
+      "width": 911,
+      "height": 701
+    },
+    "note": "same spell artwork"
+  },
+  "frost-nova": {
+    "source": "assets/approvals/inbox/runeblade-frost-nova/r1/frost-nova-r1.png",
+    "extract": {
+      "left": 57,
+      "top": 225,
+      "width": 911,
+      "height": 701
+    },
+    "note": "same spell artwork"
+  },
+  "soulfrost-blade": {
+    "source": "assets/approvals/inbox/runeblade-soulfrost-blade/r1/soulfrost-blade-r1.png",
+    "extract": {
+      "left": 57,
+      "top": 225,
+      "width": 911,
+      "height": 701
+    },
+    "note": "same spell artwork"
+  },
+  "dark-tithe": {
+    "source": "assets/approvals/inbox/runeblade-dark-tithe/r1/dark-tithe-r1.png",
+    "extract": {
+      "left": 57,
+      "top": 225,
+      "width": 911,
+      "height": 701
+    },
+    "note": "same spell artwork"
+  },
+  "rally-the-fallen": {
+    "source": "assets/approvals/inbox/runeblade-rally-the-fallen/r1/rally-the-fallen-r1.png",
+    "extract": {
+      "left": 57,
+      "top": 225,
+      "width": 911,
+      "height": 701
+    },
+    "note": "same spell artwork"
+  },
+  "sweeping-hew": {
+    "source": "assets/approvals/inbox/runeblade-sweeping-hew/r1/sweeping-hew-r1.png",
+    "extract": {
+      "left": 57,
+      "top": 225,
+      "width": 911,
+      "height": 701
+    },
+    "note": "same spell artwork"
+  },
+  "permafrost-aura": {
+    "source": "assets/approvals/inbox/runeblade-permafrost-aura/r1/permafrost-aura-r1.png",
+    "extract": {
+      "left": 57,
+      "top": 225,
+      "width": 911,
+      "height": 701
+    },
+    "note": "same spell artwork"
+  },
+  "glacier-wall": {
+    "source": "assets/approvals/inbox/runeblade-frostbound-plate/r1/frostbound-plate-r1.png",
+    "extract": {
+      "left": 57,
+      "top": 225,
+      "width": 911,
+      "height": 701
+    },
+    "note": "existing Runeblade scene adapted to new rules/title"
+  },
+  "exhume": {
+    "source": "C:\\Users\\wilsh\\Projects\\runelord-roguelike-pages-recovery\\assets\\cards\\runeblade-refinement-2026-10-12\\exhume\\generated-illustration.png",
+    "extract": {
+      "left": 0,
+      "top": 0,
+      "width": 1448,
+      "height": 1086
+    },
+    "note": "New built-in imagegen illustration for corpse generation; style reference dark-tithe/r1/illustration.png."
+  },
+  "mass-exhumation": {
+    "source": "C:\\Users\\wilsh\\Projects\\runelord-roguelike-pages-recovery\\assets\\cards\\runeblade-refinement-2026-10-12\\mass-exhumation\\generated-illustration.png",
+    "extract": {
+      "left": 0,
+      "top": 0,
+      "width": 1448,
+      "height": 1086
+    },
+    "note": "New built-in imagegen illustration for corpse generation; style reference dark-tithe/r1/illustration.png."
+  }
+}

@@ -1,0 +1,37 @@
+[
+  {
+    "region": "title",
+    "text": "Hellgate Rite",
+    "lines": [
+      "Hellgate Rite"
+    ],
+    "font_size": 89
+  },
+  {
+    "region": "cost",
+    "text": "2",
+    "lines": [
+      "2"
+    ],
+    "font_size": 110
+  },
+  {
+    "region": "type",
+    "text": "SKILL · WARLOCK",
+    "lines": [
+      "SKILL · WARLOCK"
+    ],
+    "font_size": 35
+  },
+  {
+    "region": "rules",
+    "text": "Requires 3 Maledictors. Open the Hellgate now, then draw 2 cards. Only one Hellgate per turn.",
+    "lines": [
+      "Requires 3 Maledictors.",
+      "Open the Hellgate now,",
+      "then draw 2 cards. Only one",
+      "Hellgate per turn."
+    ],
+    "font_size": 54
+  }
+]

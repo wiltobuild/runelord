@@ -1,0 +1,12 @@
+{
+  "id": "summon-bone-defender",
+  "name": "Bone Defender",
+  "cost": 2,
+  "type": "Summon",
+  "rarity": "Common",
+  "rules": "Summon Bone Defender: 18 HP / 3 Power. Defender. Rot starts at 1. Automatically spend Corpses equal to its Mana cost instead if available.",
+  "definitionRules": "Summon an 18 HP / 3 Power Thrall with Defender.",
+  "displayRules": "Summon a Thrall. 18 HP / 3 Power.\nDefender.\nRot starts at 1.\nIf you have 2 Corpses, spend them instead of Mana.",
+  "authoritativeSource": "packages/content/runeblade.ts",
+  "engine_source_sha256": "1c64e6e43d4d829bdcb4472c50dbc850f0dbf9065ee2a9fa99e332c22bb20858"
+}

@@ -1,0 +1,11 @@
+{
+  "name": "Bone Defender",
+  "cost": "2",
+  "type": "Skill",
+  "rarity": "Proposed",
+  "rules": "Summon a Thrall.\n18 HP · 3 Power.\nDefender.\nRot.",
+  "hp": 18,
+  "power": 3,
+  "mechanics_status": "Draft for user review; not implemented",
+  "summon": "bone-defender"
+}

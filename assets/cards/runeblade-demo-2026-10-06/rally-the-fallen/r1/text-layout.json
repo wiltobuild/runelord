@@ -1,0 +1,35 @@
+[
+  {
+    "region": "title",
+    "text": "Rally the Fallen",
+    "font_size": 64,
+    "lines": [
+      "Rally the Fallen"
+    ]
+  },
+  {
+    "region": "cost",
+    "text": "1",
+    "font_size": 120,
+    "lines": [
+      "1"
+    ]
+  },
+  {
+    "region": "type",
+    "text": "SKILL · RUNEBLADE",
+    "font_size": 32,
+    "lines": [
+      "SKILL · RUNEBLADE"
+    ]
+  },
+  {
+    "region": "rules",
+    "text": "All Thralls heal 6 HP and reset Rot to 0.",
+    "font_size": 56,
+    "lines": [
+      "All Thralls heal 6 HP and",
+      "reset Rot to 0."
+    ]
+  }
+]

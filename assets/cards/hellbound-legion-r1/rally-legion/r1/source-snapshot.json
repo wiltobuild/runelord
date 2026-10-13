@@ -1,0 +1,8 @@
+{
+  "id": "rally-legion",
+  "name": "Rally the Legion",
+  "cost": "1",
+  "type": "Skill",
+  "rarity": "Common",
+  "rules": "Heal all soldiers 5 HP and give them 5 Guard."
+}

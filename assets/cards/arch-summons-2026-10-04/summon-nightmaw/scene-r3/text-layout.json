@@ -1,0 +1,38 @@
+[
+  {
+    "region": "title",
+    "text": "Summon Nightmaw",
+    "lines": [
+      "Summon Nightmaw"
+    ],
+    "font_size": 57
+  },
+  {
+    "region": "cost",
+    "text": "3",
+    "lines": [
+      "3"
+    ],
+    "font_size": 110
+  },
+  {
+    "region": "type",
+    "text": "SKILL · WARLOCK",
+    "lines": [
+      "SKILL · WARLOCK"
+    ],
+    "font_size": 35
+  },
+  {
+    "region": "rules",
+    "text": "Summon Nightmaw: 18 HP, Elusive. Apply 2 Sapped and 2 Exposed. Gain 1 Mana and draw 1 card on arrival and each turn. Unbound.",
+    "lines": [
+      "Summon Nightmaw: 18 HP, Elusive.",
+      "Apply 2 Sapped and 2 Exposed.",
+      "Gain 1 Mana and draw 1 card on",
+      "arrival and each turn.",
+      "Unbound."
+    ],
+    "font_size": 42
+  }
+]

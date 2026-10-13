@@ -1,0 +1,37 @@
+[
+  {
+    "region": "title",
+    "text": "Rune Revenant",
+    "font_size": 65,
+    "lines": [
+      "Rune Revenant"
+    ]
+  },
+  {
+    "region": "cost",
+    "text": "2",
+    "font_size": 104,
+    "lines": [
+      "2"
+    ]
+  },
+  {
+    "region": "type",
+    "text": "SKILL · RUNEBLADE",
+    "font_size": 35,
+    "lines": [
+      "SKILL · RUNEBLADE"
+    ]
+  },
+  {
+    "region": "rules",
+    "text": "Summon a Thrall.\n12 HP · 2 Power.\nAttacks hit 3 times.\nRot.",
+    "font_size": 41,
+    "lines": [
+      "Summon a Thrall.",
+      "12 HP · 2 Power.",
+      "Attacks hit 3 times.",
+      "Rot."
+    ]
+  }
+]

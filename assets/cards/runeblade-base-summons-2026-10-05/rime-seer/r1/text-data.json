@@ -1,0 +1,11 @@
+{
+  "name": "Rime Seer",
+  "cost": "2",
+  "type": "Skill",
+  "rarity": "Proposed",
+  "rules": "Summon a Thrall.\n10 HP · 4 Power.\nHits apply 2 Chill.\nRot.",
+  "hp": 10,
+  "power": 4,
+  "mechanics_status": "Draft for user review; not implemented",
+  "summon": "rime-seer"
+}

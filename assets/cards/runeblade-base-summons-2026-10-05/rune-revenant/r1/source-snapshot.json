@@ -1,0 +1,11 @@
+{
+  "name": "Rune Revenant",
+  "cost": "2",
+  "type": "Skill",
+  "rarity": "Proposed",
+  "rules": "Summon a Thrall.\n12 HP · 2 Power.\nAttacks hit 3 times.\nRot.",
+  "hp": 12,
+  "power": 2,
+  "mechanics_status": "Draft for user review; not implemented",
+  "summon": "rune-revenant"
+}

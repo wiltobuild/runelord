@@ -1,0 +1,72 @@
+{
+  "battlefield-commission": {
+    "tool": "builtin image_gen",
+    "prompt": "Create ONE standalone landscape 4:3 Runelord card illustration for battlefield-commission. NO text, letters, numbers, card frame, UI or border. First reference is cel-shaded illustration style and oxblood/ember palette ONLY; ignore card layout. Second reference is exact demonic soldier identity: red skin, swept black horns, black angular plate, broad sword/tower shield. Serious detailed 2D cel shading, broad flat colors, graphic hard shadows, sparse bright highlights, no photorealism or painterly texture. A mighty red demonic officer raises its sword while two fiery chevrons brand its breastplate and its damaged black armor is magically reforged. Dynamic close composition of one clearly defined soldier receiving a double promotion; heal/reinforce action.",
+    "reference_paths": [
+      "C:/Users/wilsh/.codex/skills/hd-card-creator/references/cards/warlock-summon-imp.png",
+      "C:/Users/wilsh/Projects/runelord-remote-assets-2026-10-12/new assets/summons/assets/iron-legionary-idle-r1/idle-master.png"
+    ]
+  },
+  "rally-legion": {
+    "tool": "builtin image_gen",
+    "prompt": "Create ONE standalone landscape 4:3 Runelord card illustration for rally-legion. NO text, letters, numbers, card frame, UI or border. First reference is cel-shaded illustration style and oxblood/ember palette ONLY; ignore card layout. Second reference is exact demonic soldier identity: red skin, swept black horns, black angular plate, broad sword/tower shield. Serious detailed 2D cel shading, broad flat colors, graphic hard shadows, sparse bright highlights, no photorealism or painterly texture. Three distinct red demonic soldiers regroup shoulder to shoulder around a tall crimson banner. Warm orange magical ribbons repair the left soldier's cracked armor and surround all three with a protective translucent shield arc. Wide group composition with clear single silhouettes.",
+    "reference_paths": [
+      "C:/Users/wilsh/.codex/skills/hd-card-creator/references/cards/warlock-summon-imp.png",
+      "C:/Users/wilsh/Projects/runelord-remote-assets-2026-10-12/new assets/summons/assets/iron-legionary-idle-r1/idle-master.png"
+    ]
+  },
+  "infernal-logistics": {
+    "tool": "builtin image_gen",
+    "prompt": "Create ONE standalone landscape 4:3 Runelord card illustration for infernal-logistics. NO text, letters, numbers, card frame, UI or border. First reference is cel-shaded illustration style and oxblood/ember palette ONLY; ignore card layout. Second reference is exact demonic soldier identity: red skin, swept black horns, black angular plate, broad sword/tower shield. Serious detailed 2D cel shading, broad flat colors, graphic hard shadows, sparse bright highlights, no photorealism or painterly texture. A demonic quartermaster's black armored clawed hands open an iron-bound supply chest containing two orange burning cinder crystals and a neat bundle of rolled battle orders. Strong still-life composition, dark hell fortress staging area, no letters on orders.",
+    "reference_paths": [
+      "C:/Users/wilsh/.codex/skills/hd-card-creator/references/cards/warlock-summon-imp.png",
+      "C:/Users/wilsh/Projects/runelord-remote-assets-2026-10-12/new assets/summons/assets/iron-legionary-idle-r1/idle-master.png"
+    ]
+  },
+  "hold-the-line": {
+    "tool": "builtin image_gen",
+    "prompt": "Create ONE standalone landscape 4:3 Runelord card illustration for hold-the-line. NO text, letters, numbers, card frame, UI or border. First reference is cel-shaded illustration style and oxblood/ember palette ONLY; ignore card layout. Second reference is exact demonic soldier identity: red skin, swept black horns, black angular plate, broad sword/tower shield. Serious detailed 2D cel shading, broad flat colors, graphic hard shadows, sparse bright highlights, no photorealism or painterly texture. Two exact Iron Legionary soldiers lock their enormous black angular tower shields together to block an incoming fiery projectile. A hooded crimson warlock stands protected behind them. Strong frontline formation, tall shields dominate lower foreground.",
+    "reference_paths": [
+      "C:/Users/wilsh/.codex/skills/hd-card-creator/references/cards/warlock-summon-imp.png",
+      "C:/Users/wilsh/Projects/runelord-remote-assets-2026-10-12/new assets/summons/assets/iron-legionary-idle-r1/idle-master.png"
+    ]
+  },
+  "hellgate-rite": {
+    "tool": "builtin image_gen",
+    "prompt": "Create ONE standalone landscape 4:3 Runelord card illustration for hellgate-rite. NO text, letters, numbers, card frame, UI or border. First reference is cel-shaded illustration style and oxblood/ember palette ONLY; ignore card layout. Second reference is exact demonic soldier identity: red skin, swept black horns, black angular plate, broad sword/tower shield. Serious detailed 2D cel shading, broad flat colors, graphic hard shadows, sparse bright highlights, no photorealism or painterly texture. Exactly THREE red-skinned horned demonic Maledictor sorcerer soldiers in black angular plate and ragged crimson robes, each bearing a tall black staff with orange crystal, stand in a triangular covenant raising their staffs to open one enormous glowing orange Hellgate arch. Clearly countable three figures, glowing circle leads eye to central portal.",
+    "reference_paths": [
+      "C:/Users/wilsh/.codex/skills/hd-card-creator/references/cards/warlock-summon-imp.png",
+      "C:/Users/wilsh/Projects/runelord-remote-assets-2026-10-12/new assets/summons/assets/iron-legionary-idle-r1/idle-master.png"
+    ]
+  },
+  "veteran-command": {
+    "tool": "builtin image_gen",
+    "prompt": "Create ONE standalone landscape 4:3 Runelord card illustration for veteran-command. NO text, letters, numbers, card frame, UI or border. First reference is cel-shaded illustration style and oxblood/ember palette ONLY; ignore card layout. Second reference is exact demonic soldier identity: red skin, swept black horns, black angular plate, broad sword/tower shield. Serious detailed 2D cel shading, broad flat colors, graphic hard shadows, sparse bright highlights, no photorealism or painterly texture. A red-skinned horned veteran Iron Legionary bearing a glowing single chevron on its breastplate swings its broad sword in one dynamic diagonal attack. Two luminous orange sword trails suggest a double strike without duplicating body or limbs. Commander hand silhouette points forward in foreground.",
+    "reference_paths": [
+      "C:/Users/wilsh/.codex/skills/hd-card-creator/references/cards/warlock-summon-imp.png",
+      "C:/Users/wilsh/Projects/runelord-remote-assets-2026-10-12/new assets/summons/assets/iron-legionary-idle-r1/idle-master.png"
+    ]
+  },
+  "field-promotion": {
+    "tool": "builtin image_gen",
+    "prompt": "Create one standalone landscape 4:3 fantasy card illustration for Runelord, Field Promotion. NO text, letters, border, card frame, numbers, UI. The first reference is illustration style/palette ONLY; ignore its card frame. The second is exact demon soldier identity: red-skinned horned Iron Legionary in black angular plate, tower shield and broad sword. Show this soldier kneeling proudly while an off-screen warlock's armored hand grants a molten orange chevron-shaped magical sigil onto its breastplate. Strong clear composition, serious detailed cel-shaded 2D, broad flat colors, hard shadows, restrained highlights, quiet dark infernal fortress backdrop. Keep character identity, anatomical hands, no duplicate limbs. Hot orange promotion flame contrasted with oxblood and black armor. This is artwork only to be placed inside an immutable existing frame.",
+    "reference_paths": [
+      "C:/Users/wilsh/.codex/skills/hd-card-creator/references/cards/warlock-summon-imp.png",
+      "C:/Users/wilsh/Projects/runelord-remote-assets-2026-10-12/new assets/summons/assets/iron-legionary-idle-r1/idle-master.png"
+    ]
+  },
+  "backdrop": {
+    "tool": "builtin image_gen",
+    "prompt": "Standalone landscape 4:3 backdrop ONLY for Runelord Hellbound Legion summon card illustrations. Empty broad black basalt parade ground in an infernal fortress, one glowing orange summon circle centered on lower ground, oxblood fortress towers at sides and distant angular ember sky. NO characters, creatures, weapons, text, letters, frame, border, UI. Serious detailed 2D cel shading, crisp broad flat shadow shapes, sparse molten highlights. Quiet central dark backdrop to composite the approved red demon soldier masters over. First reference is illustration rendering and palette only, ignore card frame.",
+    "reference_paths": [
+      "C:/Users/wilsh/.codex/skills/hd-card-creator/references/cards/warlock-summon-imp.png"
+    ]
+  },
+  "blood-ascension": {
+    "tool": "Existing approved illustration reused without edits",
+    "prompt": "Reuse approved Bloodbound Covenant illustration of a demon ascending through an infernal ritual seal. No new raster generation or editing. New card composition and rules pending gallery review.",
+    "source": "assets/cards/warlock-2026-10-02/bloodbound-covenant/r1/illustration.png",
+    "sha256": "1961a8df7fb7931f8ac678fae7aa58120c94bbba6af1ce206909462d6e51f3e0",
+    "approvalEvidenceId": "f1a648ab-a51d-4f0a-b788-0acf7a7b1b1b"
+  }
+}

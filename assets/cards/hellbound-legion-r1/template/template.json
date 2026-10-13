@@ -1,0 +1,9 @@
+{
+  "version": "warlock-v1",
+  "source": "C:\\Users\\wilsh\\.codex\\skills\\hd-card-creator\\references\\cards\\warlock-summon-imp.png",
+  "source_sha256": "070283f1fb65b07531cec7b32c653ffc96a7adacde1c2ce4daca1f3b4ed78c9e",
+  "mask_sha256": "13e010f0e4f661af03596d83a5ec22823b700c6d352085acd7df8029ceba23f5",
+  "protected_pixels": 602082,
+  "font_note": "Georgia Bold is an available serif match, original raster font unidentified.",
+  "rarity_note": "Original gem remains ornament; rarity saved in metadata."
+}

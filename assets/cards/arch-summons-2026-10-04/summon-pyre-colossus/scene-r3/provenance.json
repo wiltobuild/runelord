@@ -1,0 +1,25 @@
+{
+  "input": {
+    "id": "summon-pyre-colossus",
+    "prompt": "Use case: stylized-concept. Full-bleed landscape 4:3 fantasy card illustration ONLY. Image 1 exact Pyre Colossus identity: massive charcoal obsidian armored infernal guardian, horned helmet, orange furnace chest, lava seams, enormous shield with orange diamond and heavy claw gauntlet. Image 2 style reference only. Reimagine towering colossus bracing its huge shield in a ruined volcanic citadel courtyard while a semicircular wall of jagged protective fire erupts from the ground ahead of it. Low viewpoint communicates immense scale; cracked steps, toppled columns and ash-dark fortress walls recede in background, molten channels cross foreground. Distinguish shield, fiery chest and helmet clearly. Complete dramatic action scene, not character on a flat background. Match serious Runelord 2D cel shading, angular broad planes, hard-edged shadows, controlled highlights, no photoreal metal or grain. No frame, text, UI or watermark.",
+    "source": "C:/Users/wilsh/.codex/generated_images/01a10ab7-ce2b-7cc0-b5ec-d49422b9ee3b/exec-60d27aa8-0c66-4d50-9f73-03eb883a5da5.png"
+  },
+  "references": [
+    {
+      "file": "assets/cards/arch-summons-2026-10-04/summon-pyre-colossus/r1/identity-source.png",
+      "sha256": "78fa4cd7851441d7d2c03aba1377370fa76a96092d9e29ee05514b6264065b2e",
+      "status": "Approved",
+      "evidenceId": "2da2af18-be45-46f5-8b41-66a4923185b8",
+      "decision": {
+        "status": "Approved",
+        "at": "2026-10-02T22:20:56.989Z",
+        "evidenceId": "2da2af18-be45-46f5-8b41-66a4923185b8",
+        "paths": [
+          "C:\\Users\\wilsh\\Projects\\runelord\\assets\\approvals\\inbox\\warlock-pyre-colossus\\base-r1\\warlock-pyre-colossus-base-r1.png"
+        ]
+      }
+    }
+  ],
+  "authorization": "User requested full card art replacement and exact Empower Demon art reassignment to Gorthak on 2026-10-05",
+  "approval": "Pending approval"
+}

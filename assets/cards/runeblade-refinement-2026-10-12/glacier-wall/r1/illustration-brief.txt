@@ -1,0 +1,1 @@
+Reuse the existing Runeblade artwork at C:\Users\wilsh\Projects\runelord\assets\approvals\inbox\runeblade-frostbound-plate\r1\frostbound-plate-r1.png. Extract existing illustration window only; old title and rules excluded. existing Runeblade scene adapted to new rules/title New mechanics text from packages/content/runeblade.ts. No AI generation or repainting performed.

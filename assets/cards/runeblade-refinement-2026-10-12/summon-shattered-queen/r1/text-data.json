@@ -1,0 +1,12 @@
+{
+  "id": "summon-shattered-queen",
+  "name": "Shattered Queen",
+  "cost": 3,
+  "type": "Summon",
+  "rarity": "Rare",
+  "definitionRules": "Summon a 15 HP / 4 Power Thrall. Attacks hit ALL enemies and apply 1 Chill.",
+  "rules": "Summon Shattered Queen: 15 HP / 4 Power. Attacks hit ALL enemies and apply 1 Chill. Rot starts at 1. Automatically spend Corpses equal to its Mana cost instead if available.",
+  "displayRules": "Summon a Thrall. 15 HP / 4 Power.\nAttacks hit ALL enemies and apply 1 Chill.\nRot starts at 1.\nIf you have 3 Corpses, spend them instead of Mana.",
+  "authoritativeSource": "packages/content/runeblade.ts",
+  "engine_source_sha256": "d8f74805b64c4257cf9f049da7490bfc8406d006277e39a8d89f90d1cf869f21"
+}

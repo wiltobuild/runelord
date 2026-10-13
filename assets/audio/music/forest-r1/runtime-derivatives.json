@@ -1,0 +1,37 @@
+{
+  "encoder": "ffmpeg/libvorbis",
+  "records": [
+    {
+      "source": "assets/audio/music/forest-r1/04_lanterns_in_the_hollow/04_lanterns_in_the_hollow.wav",
+      "sourceSha256": "9c7da4166d766b74d801e91d0047efea5cf0b7db3aed9eab2c43182bdbadc932",
+      "output": "assets/audio/music/forest-r1/04_lanterns_in_the_hollow/04_lanterns_in_the_hollow.ogg",
+      "outputSha256": "d536fa455dca69e9908d6ffa1975b24ed42e7ed9283b48b91c46485cd682efc1",
+      "settings": [
+        "-c:a",
+        "libvorbis",
+        "-q:a",
+        "6",
+        "-map_metadata",
+        "-1"
+      ],
+      "encodedBytes": 1548314,
+      "playback": "Original sample-count loop bounds; ScorePlayer tapers decoded endpoints by 4ms."
+    },
+    {
+      "source": "assets/audio/music/forest-r1/06_the_silent_conclave/06_the_silent_conclave.wav",
+      "sourceSha256": "e788a64d74b74d43fff42b4cbeb760a72354f70135f92884ed1617bcb39f2d5c",
+      "output": "assets/audio/music/forest-r1/06_the_silent_conclave/06_the_silent_conclave.ogg",
+      "outputSha256": "bac90255a3b1fd64a53a113ab85dbdb3ad4dc09d2b3ed10f4e5e4e035389c008",
+      "settings": [
+        "-c:a",
+        "libvorbis",
+        "-q:a",
+        "6",
+        "-map_metadata",
+        "-1"
+      ],
+      "encodedBytes": 1583969,
+      "playback": "Original sample-count loop bounds; ScorePlayer tapers decoded endpoints by 4ms."
+    }
+  ]
+}
