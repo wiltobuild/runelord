@@ -12,7 +12,7 @@ function* urls(value) {
 }
 test('every selected runtime asset ships with the game',()=>{
   const {provenance,integration,...runtime}=manifest;
-  for(const url of new Set(urls(runtime))) assert.ok(existsSync(path.join(root,'apps/web/public',url)),`Missing runtime file: ${url}`);
+  for(const url of new Set(urls(runtime))) assert.ok(existsSync(path.join(root,'apps/web/public',url.split(/[?#]/)[0])),`Missing runtime file: ${url}`);
 });
 test('both cinematic summons retain all 32 authored frames and reveal metadata',()=>{
   for(const [id,revision] of [['hellhound','cinematic32-repair-r2'],['pit-brute','cinematic32-r1']]) {

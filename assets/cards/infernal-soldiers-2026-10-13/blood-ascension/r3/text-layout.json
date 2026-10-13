@@ -1,0 +1,37 @@
+[
+  {
+    "region": "title",
+    "text": "Blood Ascension",
+    "lines": [
+      "Blood Ascension"
+    ],
+    "font_size": 69
+  },
+  {
+    "region": "cost",
+    "text": "2",
+    "lines": [
+      "2"
+    ],
+    "font_size": 110
+  },
+  {
+    "region": "type",
+    "text": "SKILL · WARLOCK",
+    "lines": [
+      "SKILL · WARLOCK"
+    ],
+    "font_size": 35
+  },
+  {
+    "region": "rules",
+    "text": "Choose a soldier and sacrifice another summon. Promote the soldier 3 times.",
+    "lines": [
+      "Choose a soldier and",
+      "sacrifice another summon.",
+      "Promote the soldier 3",
+      "times."
+    ],
+    "font_size": 54
+  }
+]

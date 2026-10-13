@@ -1,0 +1,28 @@
+{
+  "tool": "built-in image_gen",
+  "prompt": "Use case: stylized-concept. Create ONE standalone landscape 4:3 illustration for a Runelord fantasy card. Input 1 is approved Warlock palette and 2D cel-shading reference ONLY, ignore its frame and lettering. Input 2 is exact soldier identity/equipment reference, use a NEW scene and dynamic pose, simplify surface noise into clean designed cel planes. Serious detailed 2D cel shading, broad flat color fields, strong hard-edged shadows, sparse graphic highlights, bold silhouettes, controlled charcoal/oxblood/ember palette. NO frame, border, text, letters, numbers, UI, watermark. No photorealism, gradients, paint texture, PBR metal, tiny scratches, cute expressions. A stern Maledictor conducts a scorching incantation from a basalt balcony. Three-quarter waist-up close view of the exact red horned armored demonic caster, ONE staff gripped upright in one hand and the other hand extended shaping a compact angular orange flame. Long crimson robe, black jagged shoulder armor. Deep oxblood smoke and pale ash sky, distant hellgate arch silhouette. Face and staff crown unobscured.",
+  "references": [
+    {
+      "path": "C:/Users/wilsh/Projects/runelord/assets/cards/hellbound-legion-r1/template/baseline.png",
+      "sha256": "070283f1fb65b07531cec7b32c653ffc96a7adacde1c2ce4daca1f3b4ed78c9e",
+      "gallery": {
+        "status": "Approved",
+        "at": "2026-10-02T03:44:25.533Z",
+        "evidenceId": "user-chat-2026-10-01-approve-existing-runelord",
+        "paths": [
+          "C:\\Users\\wilsh\\Projects\\runelord\\assets\\cards\\reference-samples\\warlock-summon-imp.png"
+        ]
+      }
+    },
+    {
+      "path": "C:/Users/wilsh/Projects/runelord/assets/cards/hellbound-legion-r1/summon-maledictor/r2/identity-source.png",
+      "sha256": "6b36a02c4b0a4902daeecac505758438e3b0d20f48621dde4633be3263c198d7",
+      "gallery": null
+    }
+  ],
+  "generated_source": "C:\\Users\\wilsh\\.codex\\generated_images\\01a133b3-b9c0-7692-b98c-37d6166e8665\\exec-ff5e7b04-190b-4766-9737-dae248e13624.png",
+  "generated_sha256": "dd62be1efe498f952f602f90d547c211aa1eeb31b9aae20a1024b3c83a965528",
+  "identity_approval_context": "User approved six-summon preview and requested Hellbound Legion cards; integration authorized, new cards pending review",
+  "template": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\cards\\hellbound-legion-r1\\template",
+  "previous_card": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\cards\\hellbound-legion-r1\\summon-maledictor\\r2\\summon-maledictor-r2.png"
+}

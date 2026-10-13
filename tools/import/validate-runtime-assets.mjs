@@ -11,7 +11,7 @@ function collect(value) {
 }
 collect(manifest);
 const missing = [...paths].filter(url => {
-  const path = resolve(publicRoot, url.slice(1));
+  const path = resolve(publicRoot, url.split(/[?#]/)[0].slice(1));
   return relative(publicRoot, path).startsWith('..') || !existsSync(path) || !statSync(path).isFile();
 });
 if (missing.length) {

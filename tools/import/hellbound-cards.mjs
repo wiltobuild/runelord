@@ -5,7 +5,7 @@ import sharp from 'sharp';
 import {pathToFileURL} from 'node:url';
 const hash=p=>crypto.createHash('sha256').update(fs.readFileSync(p)).digest('hex');
 export async function integrateHellboundCards(manifest){
- const inventory=JSON.parse(fs.readFileSync('assets/cards/hellbound-legion-r1/manifest.json','utf8'));
+ const inventory=JSON.parse(fs.readFileSync('assets/cards/infernal-soldiers-2026-10-13/manifest.json','utf8'));
  const ledger=JSON.parse(fs.readFileSync('assets/approvals/decisions.json','utf8'));
  manifest.cards??={};manifest.provenance??=[];
  for(const card of inventory.cards){
@@ -15,7 +15,7 @@ export async function integrateHellboundCards(manifest){
   const output=`cards/${card.canonical_id}.webp`,dest=`apps/web/public/game-assets/${output}`;
   fs.mkdirSync(path.dirname(dest),{recursive:true});
   await sharp(source).resize(512,768).webp({lossless:true,effort:6}).toFile(dest);
-  manifest.cards[card.canonical_id]=`/game-assets/${output}`;
+  manifest.cards[card.canonical_id]=`/game-assets/${output}?v=${sha256.slice(0,12)}`;
   manifest.provenance=manifest.provenance.filter(p=>p.output!==output);
   manifest.provenance.push({source,sha256,output,outputSha256:hash(dest),status:decision?.status??'Pending approval',evidenceId:decision?.evidenceId??null,authorization:'User requested creation and game integration of Hellbound Legion summon and utility cards. New card art remains pending gallery approval.',transform:{width:512,height:768,format:'webp',lossless:true},template:card.verification.template_sha256,changedProtectedPixels:0});
  }

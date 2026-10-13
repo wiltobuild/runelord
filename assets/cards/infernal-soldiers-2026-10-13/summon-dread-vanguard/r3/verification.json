@@ -1,0 +1,32 @@
+{
+  "width": 1024,
+  "height": 1536,
+  "protectedPixels": 602082,
+  "editablePixels": 970782,
+  "changedPixels": 0,
+  "passed": true,
+  "files": [
+    {
+      "path": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\cards\\hellbound-legion-r1\\template\\baseline.png",
+      "sha256": "070283f1fb65b07531cec7b32c653ffc96a7adacde1c2ce4daca1f3b4ed78c9e"
+    },
+    {
+      "path": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\cards\\infernal-soldiers-2026-10-13\\summon-dread-vanguard\\r3\\summon-dread-vanguard-r3.png",
+      "sha256": "76fbbcaa0f7b0dd73b3ae784f8557bcdafa56b2e0d05de614b8a6a94d51b1ee1"
+    },
+    {
+      "path": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\cards\\hellbound-legion-r1\\template\\mask-union.png",
+      "sha256": "13e010f0e4f661af03596d83a5ec22823b700c6d352085acd7df8029ceba23f5"
+    }
+  ],
+  "text_matches_live_content": true,
+  "changed_outside_art_mask": 0,
+  "output_sha256": "76fbbcaa0f7b0dd73b3ae784f8557bcdafa56b2e0d05de614b8a6a94d51b1ee1",
+  "dimensions": [
+    1024,
+    1536
+  ],
+  "changed_protected_pixels": 0,
+  "protected_pixels": 602082,
+  "template_sha256": "070283f1fb65b07531cec7b32c653ffc96a7adacde1c2ce4daca1f3b4ed78c9e"
+}

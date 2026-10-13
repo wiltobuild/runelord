@@ -1,0 +1,8 @@
+{
+  "id": "summon-ironhorn-bulwark",
+  "name": "Ironhorn Bulwark",
+  "cost": "2",
+  "type": "Summon",
+  "rarity": "Uncommon",
+  "rules": "Summon an Ironhorn Bulwark (28 HP, 2 Power). Defender. At turn start, give all soldiers 3 Guard. Earned ranks return when summoned again."
+}

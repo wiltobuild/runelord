@@ -1,0 +1,8 @@
+{
+  "id": "summon-dread-vanguard",
+  "name": "Dread Vanguard",
+  "cost": "3",
+  "type": "Summon",
+  "rarity": "Rare",
+  "rules": "Summon a Dread Vanguard (24 HP, 7 Power). Cleave all enemies. Its first kill each turn promotes it. Earned ranks return when summoned again."
+}

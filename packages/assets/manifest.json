@@ -195,21 +195,21 @@
     "glacier-wall": "/game-assets/runeblade/cards-r2/glacier-wall.webp",
     "exhume": "/game-assets/runeblade/cards-r2/exhume.webp",
     "mass-exhumation": "/game-assets/runeblade/cards-r2/mass-exhumation.webp",
-    "summon-iron-legionary": "/game-assets/cards/summon-iron-legionary.webp",
-    "summon-ash-pikeman": "/game-assets/cards/summon-ash-pikeman.webp",
-    "summon-ironhorn-bulwark": "/game-assets/cards/summon-ironhorn-bulwark.webp",
-    "summon-maledictor": "/game-assets/cards/summon-maledictor.webp",
-    "summon-dread-vanguard": "/game-assets/cards/summon-dread-vanguard.webp",
-    "muster-legion": "/game-assets/cards/muster-legion.webp",
-    "pike-detail": "/game-assets/cards/pike-detail.webp",
-    "field-promotion": "/game-assets/cards/field-promotion.webp",
-    "battlefield-commission": "/game-assets/cards/battlefield-commission.webp",
-    "rally-legion": "/game-assets/cards/rally-legion.webp",
-    "infernal-logistics": "/game-assets/cards/infernal-logistics.webp",
-    "hold-the-line": "/game-assets/cards/hold-the-line.webp",
-    "hellgate-rite": "/game-assets/cards/hellgate-rite.webp",
-    "veteran-command": "/game-assets/cards/veteran-command.webp",
-    "blood-ascension": "/game-assets/cards/blood-ascension.webp"
+    "summon-iron-legionary": "/game-assets/cards/summon-iron-legionary.webp?v=d8d47e5e4e8b",
+    "summon-ash-pikeman": "/game-assets/cards/summon-ash-pikeman.webp?v=ca96952a111a",
+    "summon-ironhorn-bulwark": "/game-assets/cards/summon-ironhorn-bulwark.webp?v=5f1a7fbf60fe",
+    "summon-maledictor": "/game-assets/cards/summon-maledictor.webp?v=c0060a69849c",
+    "summon-dread-vanguard": "/game-assets/cards/summon-dread-vanguard.webp?v=76fbbcaa0f7b",
+    "muster-legion": "/game-assets/cards/muster-legion.webp?v=909a986e4cb4",
+    "pike-detail": "/game-assets/cards/pike-detail.webp?v=41fa064ca5b5",
+    "field-promotion": "/game-assets/cards/field-promotion.webp?v=23ff06c2d805",
+    "battlefield-commission": "/game-assets/cards/battlefield-commission.webp?v=085074d6b5b9",
+    "rally-legion": "/game-assets/cards/rally-legion.webp?v=973f0c997650",
+    "infernal-logistics": "/game-assets/cards/infernal-logistics.webp?v=74645101c683",
+    "hold-the-line": "/game-assets/cards/hold-the-line.webp?v=1a71fda65403",
+    "hellgate-rite": "/game-assets/cards/hellgate-rite.webp?v=f3e24c2e5128",
+    "veteran-command": "/game-assets/cards/veteran-command.webp?v=0c7534c67563",
+    "blood-ascension": "/game-assets/cards/blood-ascension.webp?v=1f35d8410371"
   },
   "animations": {
     "idle": {
@@ -37409,10 +37409,10 @@
       }
     },
     {
-      "source": "assets/cards/hellbound-legion-r1/summon-iron-legionary/r2/summon-iron-legionary-r2.png",
-      "sha256": "b4a2fe3508793ab6a9d6d24ab5cc39a46c63b1ea7baf292b16a0406ed01f773e",
+      "source": "assets/cards/infernal-soldiers-2026-10-13/summon-iron-legionary/r3/summon-iron-legionary-r3.png",
+      "sha256": "d8d47e5e4e8be6df0b89db090490ce028ecba191ec240fb4c1d70d5229e1bbce",
       "output": "cards/summon-iron-legionary.webp",
-      "outputSha256": "50d4458ef399a02eae94593fd7c4f272a5e96185970add8a68ae832f9d4555c6",
+      "outputSha256": "f76f75cc7edcc31bc4826b83c7e1048fe7a0e03861300f2f2336b3c20fb12da2",
       "status": "Pending approval",
       "evidenceId": null,
       "authorization": "User requested creation and game integration of Hellbound Legion summon and utility cards. New card art remains pending gallery approval.",
@@ -37426,10 +37426,10 @@
       "changedProtectedPixels": 0
     },
     {
-      "source": "assets/cards/hellbound-legion-r1/summon-ash-pikeman/r2/summon-ash-pikeman-r2.png",
-      "sha256": "2f1dc77fcd6d4702e22cbea7a69ffca8cda9b72ec604550d0926066594494269",
+      "source": "assets/cards/infernal-soldiers-2026-10-13/summon-ash-pikeman/r3/summon-ash-pikeman-r3.png",
+      "sha256": "ca96952a111a621f5e83346226ecc22edc3af9b6db94cffbce9d3c9916b3e0c4",
       "output": "cards/summon-ash-pikeman.webp",
-      "outputSha256": "c3737ce44d2096bcbc6e81751c065d63c259fb524cca133b805d16a1695c0089",
+      "outputSha256": "e137cc0102a661799294520684daf4ee14904970cf4492472d0985807e427a54",
       "status": "Pending approval",
       "evidenceId": null,
       "authorization": "User requested creation and game integration of Hellbound Legion summon and utility cards. New card art remains pending gallery approval.",
@@ -37443,10 +37443,10 @@
       "changedProtectedPixels": 0
     },
     {
-      "source": "assets/cards/hellbound-legion-r1/summon-ironhorn-bulwark/r2/summon-ironhorn-bulwark-r2.png",
-      "sha256": "55de411aec5d2c9a29f3aeeffb436e18aed0ad93b29c742c59a7ea9158d8318c",
+      "source": "assets/cards/infernal-soldiers-2026-10-13/summon-ironhorn-bulwark/r3/summon-ironhorn-bulwark-r3.png",
+      "sha256": "5f1a7fbf60feee244bf5b3f557cb0f9542deeba79187c32dd158d4536e80fcb0",
       "output": "cards/summon-ironhorn-bulwark.webp",
-      "outputSha256": "b2661739ef7dd30523f40f5711cd87f7374c4885a459544ff1161bae2abbcaa9",
+      "outputSha256": "51e5d1932e91d2d0fe66cf87fb8a30f87aa4f5e1ba10cf6e1eccc6581a4dc26c",
       "status": "Pending approval",
       "evidenceId": null,
       "authorization": "User requested creation and game integration of Hellbound Legion summon and utility cards. New card art remains pending gallery approval.",
@@ -37460,10 +37460,10 @@
       "changedProtectedPixels": 0
     },
     {
-      "source": "assets/cards/hellbound-legion-r1/summon-maledictor/r2/summon-maledictor-r2.png",
-      "sha256": "03666206a13f32d386e5f836925738491e1fb88eb83959d5744329be84252169",
+      "source": "assets/cards/infernal-soldiers-2026-10-13/summon-maledictor/r3/summon-maledictor-r3.png",
+      "sha256": "c0060a69849ca7d09a51f0a8e20a3dbbcbb06485e0591ae2291911a2f1819a5b",
       "output": "cards/summon-maledictor.webp",
-      "outputSha256": "953f4fcad834a15e86168e64ba78f0434e85edd488dbc038cfa29bdb0da003c9",
+      "outputSha256": "c3f64a9bd5daf21be7d289a2c32b8fafd0135cf16ceda4fc38cbe95c3c68b36e",
       "status": "Pending approval",
       "evidenceId": null,
       "authorization": "User requested creation and game integration of Hellbound Legion summon and utility cards. New card art remains pending gallery approval.",
@@ -37477,10 +37477,10 @@
       "changedProtectedPixels": 0
     },
     {
-      "source": "assets/cards/hellbound-legion-r1/summon-dread-vanguard/r2/summon-dread-vanguard-r2.png",
-      "sha256": "26d14cba09e1272cb1118807a7b9b0457894ee6e73505f4c2a866a06a2c23c1a",
+      "source": "assets/cards/infernal-soldiers-2026-10-13/summon-dread-vanguard/r3/summon-dread-vanguard-r3.png",
+      "sha256": "76fbbcaa0f7b0dd73b3ae784f8557bcdafa56b2e0d05de614b8a6a94d51b1ee1",
       "output": "cards/summon-dread-vanguard.webp",
-      "outputSha256": "6c945c19a96b8f04a2efb154699238431d129167d4213431671711b1bb9b6f81",
+      "outputSha256": "17642935d4e8fcbfd4d235081e804dc2adaca770e2bfb146f5eed09d2b33012d",
       "status": "Pending approval",
       "evidenceId": null,
       "authorization": "User requested creation and game integration of Hellbound Legion summon and utility cards. New card art remains pending gallery approval.",
@@ -37494,10 +37494,10 @@
       "changedProtectedPixels": 0
     },
     {
-      "source": "assets/cards/hellbound-legion-r1/muster-legion/r2/muster-legion-r2.png",
-      "sha256": "2aa14fc8b4c01efa869f375bc9217afd2fdfbec8ca37eaa6f1098cae96d30828",
+      "source": "assets/cards/infernal-soldiers-2026-10-13/muster-legion/r3/muster-legion-r3.png",
+      "sha256": "909a986e4cb4956289cd19fec9368971507cd49b6a3a2c0d3c871519be94c317",
       "output": "cards/muster-legion.webp",
-      "outputSha256": "bd97b5c6970ddbff0701d2ef4effb357e09efb845e3fd1d828bb0a5a5431a37d",
+      "outputSha256": "99315b968c9d20a8fae4f45b2779a012f80d1c4dcba9d7e41996019059e257c3",
       "status": "Pending approval",
       "evidenceId": null,
       "authorization": "User requested creation and game integration of Hellbound Legion summon and utility cards. New card art remains pending gallery approval.",
@@ -37511,10 +37511,10 @@
       "changedProtectedPixels": 0
     },
     {
-      "source": "assets/cards/hellbound-legion-r1/pike-detail/r2/pike-detail-r2.png",
-      "sha256": "4854dfae8e3acb6a4c2000965df9a1c7378cd0c1f317e590590aac94c90f0824",
+      "source": "assets/cards/infernal-soldiers-2026-10-13/pike-detail/r3/pike-detail-r3.png",
+      "sha256": "41fa064ca5b519d999289d6cd2278501f8ae97533d63ae2cfa02d835e28eff6a",
       "output": "cards/pike-detail.webp",
-      "outputSha256": "0b17108f0223be791d3ba3acb3faa0bfaa7bf6490b5b5fdce10bf0a4dccbc678",
+      "outputSha256": "886e911414d2cf357e3956e34451fcc6562c0f890a67d8750d021c3d8a8e8adc",
       "status": "Pending approval",
       "evidenceId": null,
       "authorization": "User requested creation and game integration of Hellbound Legion summon and utility cards. New card art remains pending gallery approval.",
@@ -37545,10 +37545,10 @@
       "changedProtectedPixels": 0
     },
     {
-      "source": "assets/cards/hellbound-legion-r1/blood-ascension/r1/blood-ascension-r1.png",
-      "sha256": "fd03e3122ab865e3c11084bac67dbb87f40dc4991d28d18bf74400593ad1b9a4",
+      "source": "assets/cards/infernal-soldiers-2026-10-13/blood-ascension/r3/blood-ascension-r3.png",
+      "sha256": "1f35d841037123333e90f3f6653a9b32a5a5e1234de91031acea84e21461135d",
       "output": "cards/blood-ascension.webp",
-      "outputSha256": "8048295632ca6b06ba696710a3fa1f395b568dcadcd91b093ea7deb8b7f23489",
+      "outputSha256": "780cf4a20c0e6bb5f45ff766ac0bb9478d65dd356e0cef3ee815b78bf0ee022a",
       "status": "Pending approval",
       "evidenceId": null,
       "authorization": "User requested creation and game integration of Hellbound Legion summon and utility cards. New card art remains pending gallery approval.",

@@ -1,0 +1,75 @@
+{
+  "errors": [],
+  "visibleCardImages": [
+    {
+      "src": "http://localhost:4320/game-assets/cards/field-promotion.webp?v=23ff06c2d805",
+      "loaded": true
+    },
+    {
+      "src": "http://localhost:4320/game-assets/cards/blood-ascension.webp?v=1f35d8410371",
+      "loaded": true
+    },
+    {
+      "src": "http://localhost:4320/game-assets/cards/veteran-command.webp?v=0c7534c67563",
+      "loaded": true
+    },
+    {
+      "src": "http://localhost:4320/game-assets/cards/summon-iron-legionary.webp?v=d8d47e5e4e8b",
+      "loaded": true
+    },
+    {
+      "src": "http://localhost:4320/game-assets/cards/rally-legion.webp?v=973f0c997650",
+      "loaded": true
+    }
+  ],
+  "runtime": [
+    {
+      "id": "summon-iron-legionary",
+      "url": "/game-assets/cards/summon-iron-legionary.webp?v=d8d47e5e4e8b",
+      "status": 200,
+      "bytes": 449854
+    },
+    {
+      "id": "summon-ash-pikeman",
+      "url": "/game-assets/cards/summon-ash-pikeman.webp?v=ca96952a111a",
+      "status": 200,
+      "bytes": 413890
+    },
+    {
+      "id": "summon-ironhorn-bulwark",
+      "url": "/game-assets/cards/summon-ironhorn-bulwark.webp?v=5f1a7fbf60fe",
+      "status": 200,
+      "bytes": 435626
+    },
+    {
+      "id": "summon-maledictor",
+      "url": "/game-assets/cards/summon-maledictor.webp?v=c0060a69849c",
+      "status": 200,
+      "bytes": 430198
+    },
+    {
+      "id": "summon-dread-vanguard",
+      "url": "/game-assets/cards/summon-dread-vanguard.webp?v=76fbbcaa0f7b",
+      "status": 200,
+      "bytes": 447006
+    },
+    {
+      "id": "muster-legion",
+      "url": "/game-assets/cards/muster-legion.webp?v=909a986e4cb4",
+      "status": 200,
+      "bytes": 419898
+    },
+    {
+      "id": "pike-detail",
+      "url": "/game-assets/cards/pike-detail.webp?v=41fa064ca5b5",
+      "status": 200,
+      "bytes": 399340
+    },
+    {
+      "id": "blood-ascension",
+      "url": "/game-assets/cards/blood-ascension.webp?v=1f35d8410371",
+      "status": 200,
+      "bytes": 411100
+    }
+  ]
+}
