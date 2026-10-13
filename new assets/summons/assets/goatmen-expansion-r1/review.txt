@@ -1,0 +1,7 @@
+Three additional members of the approved goatman family, each generated separately with both actual approved goatman images supplied as references.
+
+Ironhorn Bulwark: shield guardian; tightly curled ram horns, tower shield, short cudgel, low broad stance.
+Gorehook Stalker: polearm hunter; straight swept horns, torn ear, continuous two-hand glaive, crouching diagonal silhouette.
+Ashbone Elder: sacrificial shaman; aged stoop, broken horn, long white beard, bone-fork staff and offering bowl.
+
+All three are submitted as pending Characters / sample-r1. The three-column review board is technical compositing only; source images were preserved. Full-size outputs and board inspected by creator for family consistency, anatomy, grips and readability. No independent QA or design approval is claimed. Source PNGs are tightly framed, especially the guardian mace near the left border; runtime crop/padding and alpha cleanup remain future production tasks. These are concept samples, not runtime assets. No game or shared code edits.

@@ -1,0 +1,97 @@
+{
+  "frame_count": 8,
+  "canvas": [
+    800,
+    1056
+  ],
+  "duration_ms": 1280,
+  "loop": true,
+  "source": "C:\\Users\\Wil\\Documents\\Codex\\2026-10-09\\sp-2\\outputs\\ironhorn-bulwark-source-r3\\ironhorn-bulwark.png",
+  "source_sha256": "325d0d9c82b4dd33de8facc61a3895123edc069b4f7a011018b0d7e61caacf7d",
+  "source_scale": 0.676416819012797,
+  "offset": [
+    30,
+    43
+  ],
+  "fixed_feet_y": 900,
+  "method": "Technical subtle mesh-deformation idle using existing whole character artwork; continuous periodic breathing, tiny hand-equipment following, restrained existing-emission intensity. Not newly drawn or articulated character frames. No body scaling or lunging.",
+  "limits": {
+    "max_body_lift_px": 2.5,
+    "max_body_sway_px": 0.6,
+    "shield_follow_px": [
+      0.45,
+      0.65
+    ],
+    "cudgel_follow_px": [
+      0.55,
+      0.8
+    ]
+  },
+  "frames": [
+    {
+      "file": "frames/frame-00.png",
+      "duration_ms": 160,
+      "phase": 0.0,
+      "emission_multiplier": 1.031153467384692,
+      "body_lift_px": -0.0,
+      "body_sway_px": 0.0
+    },
+    {
+      "file": "frames/frame-01.png",
+      "duration_ms": 160,
+      "phase": 0.125,
+      "emission_multiplier": 1.0991319060248586,
+      "body_lift_px": -1.7677669529663689,
+      "body_sway_px": 0.4242640687119285
+    },
+    {
+      "file": "frames/frame-02.png",
+      "duration_ms": 160,
+      "phase": 0.25,
+      "emission_multiplier": 1.0736848795202307,
+      "body_lift_px": -2.5,
+      "body_sway_px": 0.6
+    },
+    {
+      "file": "frames/frame-03.png",
+      "duration_ms": 160,
+      "phase": 0.375,
+      "emission_multiplier": 1.0050742499344794,
+      "body_lift_px": -1.7677669529663689,
+      "body_sway_px": 0.4242640687119285
+    },
+    {
+      "file": "frames/frame-04.png",
+      "duration_ms": 160,
+      "phase": 0.5,
+      "emission_multiplier": 0.968846532615308,
+      "body_lift_px": -3.061616997868383e-16,
+      "body_sway_px": 7.347880794884119e-17
+    },
+    {
+      "file": "frames/frame-05.png",
+      "duration_ms": 160,
+      "phase": 0.625,
+      "emission_multiplier": 0.9508680939751414,
+      "body_lift_px": 1.7677669529663687,
+      "body_sway_px": -0.42426406871192845
+    },
+    {
+      "file": "frames/frame-06.png",
+      "duration_ms": 160,
+      "phase": 0.75,
+      "emission_multiplier": 0.9263151204797692,
+      "body_lift_px": 2.5,
+      "body_sway_px": -0.6
+    },
+    {
+      "file": "frames/frame-07.png",
+      "duration_ms": 160,
+      "phase": 0.875,
+      "emission_multiplier": 0.9449257500655207,
+      "body_lift_px": 1.7677669529663693,
+      "body_sway_px": -0.4242640687119286
+    }
+  ],
+  "approval": "Pending exact-hash review; source explicitly selected by user; no ledger entry at export"
+}

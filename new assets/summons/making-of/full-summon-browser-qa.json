@@ -1,0 +1,255 @@
+{
+  "checks": [
+    {
+      "state": "idle",
+      "active": [
+        {
+          "state": "idle",
+          "frame": "3"
+        },
+        {
+          "state": "idle",
+          "frame": "3"
+        },
+        {
+          "state": "idle",
+          "frame": "3"
+        },
+        {
+          "state": "idle",
+          "frame": "3"
+        }
+      ],
+      "ended": [
+        {
+          "state": "idle",
+          "frame": "7"
+        },
+        {
+          "state": "idle",
+          "frame": "0"
+        },
+        {
+          "state": "idle",
+          "frame": "7"
+        },
+        {
+          "state": "idle",
+          "frame": "0"
+        }
+      ]
+    },
+    {
+      "state": "attack",
+      "active": [
+        {
+          "state": "attack",
+          "frame": "7"
+        },
+        {
+          "state": "idle",
+          "frame": "0"
+        },
+        {
+          "state": "idle",
+          "frame": "0"
+        },
+        {
+          "state": "idle",
+          "frame": "0"
+        }
+      ],
+      "ended": [
+        {
+          "state": "idle",
+          "frame": "3"
+        },
+        {
+          "state": "idle",
+          "frame": "5"
+        },
+        {
+          "state": "idle",
+          "frame": "4"
+        },
+        {
+          "state": "idle",
+          "frame": "5"
+        }
+      ]
+    },
+    {
+      "state": "hit",
+      "active": [
+        {
+          "state": "idle",
+          "frame": "1"
+        },
+        {
+          "state": "idle",
+          "frame": "1"
+        },
+        {
+          "state": "idle",
+          "frame": "1"
+        },
+        {
+          "state": "idle",
+          "frame": "0"
+        }
+      ],
+      "ended": [
+        {
+          "state": "idle",
+          "frame": "5"
+        },
+        {
+          "state": "idle",
+          "frame": "6"
+        },
+        {
+          "state": "idle",
+          "frame": "5"
+        },
+        {
+          "state": "idle",
+          "frame": "6"
+        }
+      ]
+    },
+    {
+      "state": "wounded_idle",
+      "active": [
+        {
+          "state": "wounded_idle",
+          "frame": "3"
+        },
+        {
+          "state": "wounded_idle",
+          "frame": "0"
+        },
+        {
+          "state": "wounded_idle",
+          "frame": "1"
+        },
+        {
+          "state": "wounded_idle",
+          "frame": "3"
+        }
+      ],
+      "ended": [
+        {
+          "state": "wounded_idle",
+          "frame": "7"
+        },
+        {
+          "state": "wounded_idle",
+          "frame": "0"
+        },
+        {
+          "state": "wounded_idle",
+          "frame": "3"
+        },
+        {
+          "state": "wounded_idle",
+          "frame": "7"
+        }
+      ]
+    },
+    {
+      "state": "spawn",
+      "active": [
+        {
+          "state": "spawn",
+          "frame": "4"
+        },
+        {
+          "state": "spawn",
+          "frame": "4"
+        },
+        {
+          "state": "idle",
+          "frame": "0"
+        },
+        {
+          "state": "spawn",
+          "frame": "4"
+        }
+      ],
+      "ended": [
+        {
+          "state": "idle",
+          "frame": "3"
+        },
+        {
+          "state": "idle",
+          "frame": "4"
+        },
+        {
+          "state": "idle",
+          "frame": "4"
+        },
+        {
+          "state": "idle",
+          "frame": "5"
+        }
+      ]
+    },
+    {
+      "state": "die",
+      "active": [
+        {
+          "state": "die",
+          "frame": "4"
+        },
+        {
+          "state": "die",
+          "frame": "3"
+        },
+        {
+          "state": "die",
+          "frame": "3"
+        },
+        {
+          "state": "die",
+          "frame": "3"
+        }
+      ],
+      "ended": [
+        {
+          "state": "die",
+          "frame": "4"
+        },
+        {
+          "state": "die",
+          "frame": "4"
+        },
+        {
+          "state": "die",
+          "frame": "4"
+        },
+        {
+          "state": "die",
+          "frame": "3"
+        }
+      ]
+    },
+    {
+      "arena": "maledictor",
+      "namePresent": true
+    },
+    {
+      "arena": "ironhorn-bulwark",
+      "namePresent": true
+    },
+    {
+      "arena": "iron-legionary",
+      "namePresent": true
+    },
+    {
+      "arena": "ash-pikeman",
+      "namePresent": true
+    }
+  ],
+  "errors": []
+}

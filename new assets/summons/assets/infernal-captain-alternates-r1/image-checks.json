@@ -1,0 +1,38 @@
+[
+  {
+    "file": "obsidian-marshal.png",
+    "mode": "RGBA",
+    "size": [
+      1024,
+      1536
+    ],
+    "alpha_extrema": [
+      0,
+      254
+    ]
+  },
+  {
+    "file": "dread-vanguard.png",
+    "mode": "RGBA",
+    "size": [
+      1024,
+      1536
+    ],
+    "alpha_extrema": [
+      0,
+      254
+    ]
+  },
+  {
+    "file": "hellforge-commandant.png",
+    "mode": "RGBA",
+    "size": [
+      1024,
+      1536
+    ],
+    "alpha_extrema": [
+      0,
+      254
+    ]
+  }
+]

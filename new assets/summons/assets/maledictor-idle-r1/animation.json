@@ -1,0 +1,74 @@
+{
+  "frame_count": 8,
+  "duration_ms": 1440,
+  "canvas": [
+    720,
+    1024
+  ],
+  "source": "C:\\Users\\Wil\\Documents\\Codex\\2026-10-09\\sp-2\\outputs\\demon-family-expansion-r1\\maledictor.png",
+  "source_sha256": "f34faa1afc5f2e386c71c6085857b42786f99253e5b5ffaf92e43d6f409ff2e2",
+  "method": "Technical subtle breathing deformation of preserved master, maximum 2.8px lift. Staff sway anchored low. Separate crystal/rune intensity patterns; four distinct generated hand-fire shapes repeated across eight frames. Source transparency retained; animation review export, not yet runtime-integrated.",
+  "flame_source": "C:\\Users\\Wil\\Documents\\Codex\\2026-10-09\\sp-2\\outputs\\maledictor-idle-r1\\flame-source.png",
+  "frames": [
+    {
+      "file": "frames/frame-00.png",
+      "duration_ms": 180,
+      "fire_phase": 0,
+      "rune_power": 0.95,
+      "crystal_power": 0.74
+    },
+    {
+      "file": "frames/frame-01.png",
+      "duration_ms": 180,
+      "fire_phase": 1,
+      "rune_power": 0.7,
+      "crystal_power": 1
+    },
+    {
+      "file": "frames/frame-02.png",
+      "duration_ms": 180,
+      "fire_phase": 2,
+      "rune_power": 1,
+      "crystal_power": 0.82
+    },
+    {
+      "file": "frames/frame-03.png",
+      "duration_ms": 180,
+      "fire_phase": 3,
+      "rune_power": 0.79,
+      "crystal_power": 0.94
+    },
+    {
+      "file": "frames/frame-04.png",
+      "duration_ms": 180,
+      "fire_phase": 0,
+      "rune_power": 0.93,
+      "crystal_power": 0.68
+    },
+    {
+      "file": "frames/frame-05.png",
+      "duration_ms": 180,
+      "fire_phase": 1,
+      "rune_power": 0.73,
+      "crystal_power": 0.9
+    },
+    {
+      "file": "frames/frame-06.png",
+      "duration_ms": 180,
+      "fire_phase": 2,
+      "rune_power": 1,
+      "crystal_power": 1
+    },
+    {
+      "file": "frames/frame-07.png",
+      "duration_ms": 180,
+      "fire_phase": 3,
+      "rune_power": 0.84,
+      "crystal_power": 0.8
+    }
+  ],
+  "checks": {
+    "fixed_feet": true,
+    "unique_frames": 8
+  }
+}

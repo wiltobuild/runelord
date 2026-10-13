@@ -1,0 +1,79 @@
+{
+  "source": "C:\\Users\\Wil\\Documents\\Codex\\2026-10-09\\sp-2\\outputs\\demon-soldier-samples-r2\\ash-pikeman-r2.png",
+  "source_sha256": "b846974c9c97f3f463b24782fe398d435f2566c00e852acee7c882215d28de53",
+  "source_ledger_decision": null,
+  "frame_count": 8,
+  "canvas": [
+    720,
+    1024
+  ],
+  "duration_ms": 1280,
+  "loop": true,
+  "method": "Source artwork registered once with padding; continuous tiny upper-body breathing and sway easing to zero above feet, spear follows restrained upper movement. Only existing spear runes modulate. No per-frame scaling.",
+  "qa": {
+    "feet_identical": true,
+    "edge_clipping": false,
+    "png_count": 8,
+    "gif_frames": 8,
+    "webp_frames": 8,
+    "periodic_motion": "8 evenly spaced sine phases; wrap displacement no greater than adjacent step"
+  },
+  "frames": [
+    {
+      "file": "frames/frame-00.png",
+      "duration_ms": 160,
+      "upper_sway_px": 0.0,
+      "breathing_lift_px": 0.0,
+      "rune_intensity": 0.9389418342308651
+    },
+    {
+      "file": "frames/frame-01.png",
+      "duration_ms": 160,
+      "upper_sway_px": 0.5656854249492381,
+      "breathing_lift_px": 1.4142135623730951,
+      "rune_intensity": 0.9926648825310733
+    },
+    {
+      "file": "frames/frame-02.png",
+      "duration_ms": 160,
+      "upper_sway_px": 0.8,
+      "breathing_lift_px": 2.0,
+      "rune_intensity": 0.9921060994002886
+    },
+    {
+      "file": "frames/frame-03.png",
+      "duration_ms": 160,
+      "upper_sway_px": 0.5656854249492381,
+      "breathing_lift_px": 1.4142135623730951,
+      "rune_intensity": 0.9375928124180991
+    },
+    {
+      "file": "frames/frame-04.png",
+      "duration_ms": 160,
+      "upper_sway_px": 9.797174393178826e-17,
+      "breathing_lift_px": 2.4492935982947064e-16,
+      "rune_intensity": 0.861058165769135
+    },
+    {
+      "file": "frames/frame-05.png",
+      "duration_ms": 160,
+      "upper_sway_px": -0.565685424949238,
+      "breathing_lift_px": -1.414213562373095,
+      "rune_intensity": 0.8073351174689267
+    },
+    {
+      "file": "frames/frame-06.png",
+      "duration_ms": 160,
+      "upper_sway_px": -0.8,
+      "breathing_lift_px": -2.0,
+      "rune_intensity": 0.8078939005997116
+    },
+    {
+      "file": "frames/frame-07.png",
+      "duration_ms": 160,
+      "upper_sway_px": -0.5656854249492381,
+      "breathing_lift_px": -1.4142135623730954,
+      "rune_intensity": 0.8624071875819009
+    }
+  ]
+}

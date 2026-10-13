@@ -1,0 +1,7 @@
+{
+  "tool": "image_gen",
+  "prompt": "Use case: identity-preserve. Create animation pose sheet of EXACT referenced Dread Vanguard demon captain. Reference image is identity/style master. Transparent background. 2x2 grid, four fully separated WHOLE CHARACTER sequential poses left-to-right top-to-bottom for summon arrival: 1 materialized low one-knee kneel, head bowed, both hands hold familiar sword; 2 rising halfway from kneel lifting sword; 3 fully rising into broad ready guard with sword diagonal upward to viewer right; 4 settled familiar master battle guard. All four same camera, same anatomical scale, same helmet size; NO per-cell zoom. Serious angular 2D cel shaded dark charcoal black armor with sharp silver edges, two swept horn helmet, red cloth, same huge two-hand sword red runes orange yellow moving flame edge. Modest ember sparks around boots in first two poses, no enormous effects obscuring body. ALL weapons and feet inside each cell with 8% transparent margins. No labels, no grid lines, no scene, no redesign. Keep armor dark. Cells square and sufficiently wide. Output square sheet.",
+  "reference": "C:/Users/Wil/Documents/Codex/2026-10-09/sp-2/outputs/dread-vanguard-idle-r5/battle-stance.png",
+  "reference_sha256": "9359a3645d623d279e1d65fc78a23fc9e23685c0b4e102abd25a3858383898ca",
+  "approval": "Pending approval"
+}

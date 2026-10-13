@@ -1,0 +1,71 @@
+{
+  "gif_frames": 8,
+  "webp_frames": 8,
+  "planted_feet_exact_pixels": true,
+  "alpha16_border_clipping": [
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false
+  ],
+  "alpha16_bounds": [
+    [
+      31,
+      54,
+      769,
+      1004
+    ],
+    [
+      32,
+      52,
+      770,
+      1004
+    ],
+    [
+      32,
+      51,
+      770,
+      1004
+    ],
+    [
+      32,
+      52,
+      769,
+      1004
+    ],
+    [
+      32,
+      54,
+      769,
+      1004
+    ],
+    [
+      31,
+      56,
+      768,
+      1004
+    ],
+    [
+      31,
+      56,
+      768,
+      1004
+    ],
+    [
+      31,
+      56,
+      768,
+      1004
+    ]
+  ],
+  "periodic_transform_endpoint_error": 6.123233995736766E-16,
+  "last_to_first_is_one_regular_phase_step": true,
+  "static_self_review_required": false,
+  "runtime_integration": false,
+  "static_self_review": "Eight-frame contact inspected: coherent identity, equipment attachments, steady body proportions, no obvious new seam. Timing judged by periodic controls, not watched live by this worker.",
+  "gallery": "GIF and contact sheet submitted Pending approval / ironhorn-bulwark-idle / subtle-r1."
+}

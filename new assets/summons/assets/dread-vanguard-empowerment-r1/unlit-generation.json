@@ -1,0 +1,22 @@
+{
+  "tool": "built-in image_gen",
+  "status": "Pending approval",
+  "source": {
+    "path": "C:/Users/Wil/Documents/Codex/2026-10-09/sp-2/outputs/dread-vanguard-idle-r3/battle-stance.png",
+    "sha256": "9359a3645d623d279e1d65fc78a23fc9e23685c0b4e102abd25a3858383898ca",
+    "ledgerDecision": null
+  },
+  "prompt": "EDIT this exact Dread Vanguard battle-stance image. Produce its UNEMPOWERED / UNLIT version. This is a precise local effect removal, NOT a new character or pose.\nABSOLUTE INVARIANTS: same canvas 720x1024, identical framing, same character size and placement, identical pose/proportions/silhouette, helmet horns and face, all charcoal armor plates and red cloth, same hands and two-hand grip, SAME sword geometry, length, angle and blade position. Do not brighten metal, enlarge or shrink body, move limbs or recenter. Preserve angular refined Runelord cel-shaded details.\nREMOVE ALL orange/yellow flames around the sword completely. Remove every fire tongue, ember particle, fire halo/bloom and edge fire. Reveal clean transparent empty space where flames were. Sword becomes cold dark charcoal forged metal, runes remain as DARK engraved shapes, entirely unlit with no orange/yellow/red emission from blade or guard. Keep blade's actual solid metal outline intact and unchanged. Chest and bracer accents become deep dark-red unlit inlays, no halo. Eyes remain very small demonic amber/red slits without flame and without broad bloom. Nothing else changes. Genuine transparent background, no background color, vignette, cast shadow, labels or border. Exact same pose and registration as source is essential for matching animation layers.",
+  "output": "unlit-master.png",
+  "nativeDimensions": [
+    1052,
+    1495
+  ],
+  "notes": "Tool returned native1052x1495 despite720x1024 canvas request; preserve this original and derive both matched states from same normalized master. Same overall pose but not pixel-identical edit. Flames removed; runes remain dark red engraved accents; eyes retain small glow.",
+  "checks": {
+    "alpha": "RGBA 0..255",
+    "flamesRemoved": true,
+    "fullCharacterVisible": true,
+    "poseIdentity": "visually retained; no guarantee exact registration"
+  }
+}

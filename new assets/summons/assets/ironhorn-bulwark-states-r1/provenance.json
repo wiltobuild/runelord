@@ -1,0 +1,28 @@
+{
+  "tool": "built-in imagegen",
+  "reference": "C:\\Users\\Wil\\Documents\\Codex\\2026-10-09\\sp-2\\outputs\\ironhorn-bulwark-source-r3\\ironhorn-bulwark.png",
+  "reference_sha256": "325d0d9c82b4dd33de8facc61a3895123edc069b4f7a011018b0d7e61caacf7d",
+  "ledger_decision": null,
+  "authorization": "User approved corrected Bulwark source and breathing idle in conversation; requested full animation poses.",
+  "source_prompts": "generation-prompts.json",
+  "generated_sheets": {
+    "attack": {
+      "path": "attack-source.png",
+      "sha256": "09e113fb5f491b6f045b27e4268f6fa3ab1987c3a1aabe9143983ea179bb9619"
+    },
+    "reaction": {
+      "path": "reaction-source.png",
+      "sha256": "55de062795da88694bf25b4463495bdc94ef9a8e3328b479354036d445b4793b"
+    },
+    "spawn": {
+      "path": "spawn-source.png",
+      "sha256": "6aefbb54ce1387aafaa4ebf3b088e2c0d6aafec3bab7657b5b9c55932ecaec5c"
+    },
+    "death": {
+      "path": "death-source.png",
+      "sha256": "cee02f2325f17d9249b14369a798f771fd6afd498faf4465517d22f32fd12584"
+    }
+  },
+  "export_script": "../../work/export_bulwark_states.py",
+  "review_note": "Static source and contact-sheet inspection; final playback review delegated to parent. Attack mace has 7px source top margin; terminal horns have 2px source right margin, no visible truncation. Authored art varies somewhat in shield width versus master."
+}

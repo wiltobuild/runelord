@@ -1,0 +1,40 @@
+{
+  "scope": "Independent static source/contact and exported-frame checks. Not real-time playback certification.",
+  "blocking_findings": [],
+  "assets": {
+    "maledictor": {
+      "idle_exact_all_8": false,
+      "clipped_frame_edges": [],
+      "exported_frame_count": 38,
+      "death_loop": false,
+      "death_events": [
+        {
+          "name": "terminal",
+          "time_ms": 580
+        }
+      ],
+      "visual": "No obvious neighbor fragments or detached weapons; terminal frame visibly collapsed. Identity and equipment readable.",
+      "notes": [
+        "Action poses have a broader torso/head impression than the slender accepted idle; noticeable shape drift, not an extracted-neighbor or clipping defect.",
+        "Byte-level idle differences are RGB beneath zero alpha only (frame01:991 pixels,0 visible differences,0 alpha differences); composition preserved visible artwork but not invisible RGB bytes."
+      ],
+      "idle_visible_rgba_preserved": true
+    },
+    "iron-legionary": {
+      "idle_exact_all_8": true,
+      "clipped_frame_edges": [],
+      "exported_frame_count": 29,
+      "death_loop": false,
+      "death_events": [
+        {
+          "name": "terminal",
+          "time_ms": 690
+        }
+      ],
+      "visual": "No obvious neighbor fragments or detached weapons; terminal frame visibly collapsed. Identity and equipment readable.",
+      "notes": [
+        "Sparse attack keyframes jump from overhead anticipation to downward follow-through; readable action but no continuous swing in-betweens."
+      ]
+    }
+  }
+}

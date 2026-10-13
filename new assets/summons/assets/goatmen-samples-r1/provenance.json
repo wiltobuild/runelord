@@ -1,0 +1,41 @@
+{
+  "schema_version": 1,
+  "tool": "built-in image_gen",
+  "mode": "stylized-concept; actual reference images",
+  "user_scope": "Two new goatman demon samples; no runtime integration",
+  "approval": "Pending approval",
+  "references": [
+    {
+      "path": "C:/Users/Wil/Documents/Codex/2026-10-09/sp-2/outputs/pit-brute-horns-r4.png",
+      "sha256": "5782e94f90ab840c215058078d0257f7ec53364a29673a7154862a83d1ad513b",
+      "ledger_status": null,
+      "note": "Explicitly selected current reference by task coordinator; no exact-hash decision in inspected ledger"
+    },
+    {
+      "path": "C:/Users/Wil/Documents/Codex/2026-10-09/i-x20/runelord/assets/heroes/animations/abyssal-seraph/frames32-r2/source/master.png",
+      "sha256": "8cbd77e13301c7b34f72a1560e8e537bcbc5eb593b46b66340c3896ee0856aec",
+      "ledger_status": null,
+      "note": "Explicitly selected current reference by task coordinator; no exact-hash decision in inspected ledger"
+    }
+  ],
+  "concepts": [
+    {
+      "name": "Cinderhorn Reaver",
+      "file": "cinderhorn-reaver.png",
+      "source": "C:/Users/Wil/.codex/generated_images/01a11efa-7397-7560-9504-70188201352c/exec-d101e2d0-de8f-4b3e-be77-5b433f20fc8f.png",
+      "prompt": "Use case: stylized-concept. Create ONE original full-body GOATMAN DEMON summon concept for Runelord, isolated on genuine transparent background, no text. Input image 1 (armored red brute) and input image 2 (hooded abyssal seraph) are STYLE/FINISH REFERENCES ONLY. Match their serious refined 2D illustration: clear dark outlines, broad angular cel-shaded anatomy, sharp controlled planes, restrained crisp highlights, dark crimson and charcoal palette. Do not copy either character or combine their anatomy/equipment. Subject: a vicious ram-headed oathbreaker called the Cinderhorn Reaver. Clearly a demonic upright humanoid goatman, NOT a red animal. Strong compact bare humanoid torso, massive forward-curling black ram horns framing a long angular goat face with yellow slit eyes, one jagged dark beard, two pointed ears, cloven hooves on bent powerful digitigrade legs. Pose: wide low stalking stance, one shoulder forward, one hand holding a single heavy hooked black-iron cleaver low at his side, other clawed hand open and ready. Distinct silhouette dominated by curled horns and hooved legs, NOT a powerlifter brute. Crimson skin; sparse coarse charcoal fur only as two large simplified masses on lower legs, not individually drawn hair. Plain charcoal waist wrap and simple broad iron wrist bands; no shoulder armor, no breastplate, no jewel, no cape, no bat wings, no imp head, no realistic fur, no dense ornaments. Large readable face/hands/hooves, threatening purposeful expression. Whole character three-quarter front view fills about 82% of canvas with generous clearance around horns/weapon/feet. One clean concept, not a sheet. No ground, no fog, no aura, no background glow. Broad quiet surfaces, avoid painterly blending or realistic anatomy. The rendering and outline refinement should look as if made by the same artist as both supplied references.",
+      "distinction": "Broad ram-headed melee goatman, massive curled horns, cleaver, bare torso, black lower-leg fur.",
+      "sha256": "e550c53f180dc516a6529169919b71483c07e133eba5c8362c2343a67938464e"
+    },
+    {
+      "name": "Blackhorn Cantor",
+      "file": "blackhorn-cantor.png",
+      "source": "C:/Users/Wil/.codex/generated_images/01a11efa-7397-7560-9504-70188201352c/exec-49ee8bd8-2555-4836-a641-1afa26db00ab.png",
+      "prompt": "Use case: stylized-concept. ONE original full-body GOATMAN DEMON occultist sample for Runelord, genuine transparent background, no text. Input images 1 and 2 are actual STYLE/FINISH REFERENCES ONLY: refined serious dark-fantasy 2D illustration, dark contours, angular cel shading with broad restrained planes, crisp graphic edges and selective material highlights. Match their exact drawing sophistication. Never copy their characters, clothing design, wings or combine their body parts. Subject: the Blackhorn Cantor, a sinister upright goatman demon who chants curses. Distinct long narrow GOAT FACE, sharply defined muzzle, short forked beard, pointed ears, two exceptionally long swept-back black ibex horns forming a high open V, gold slit eyes. Lean compact humanoid chest and long forearms, large expressive claw hands, bent goat-like digitigrade legs with unmistakable cloven hooves. Deep burgundy skin with a single broad ash-gray facial blaze; lower legs have a simplified black fur silhouette. Quiet ceremonial attitude rather than charging combat: standing balanced with one hoof forward, head slightly bowed toward viewer, one palm facing out in a curse sign and other hand held at chest. A SMALL angular orange rune floats just above the outstretched palm. A plain dark-red sleeveless short ritual tabard falls to mid thigh over a charcoal waist wrap, secured by one broad unornamented belt. Keep chest and arms partially visible, no long robes, no staff, no hood, no mask, no wing, no weapons, no jewelry, no armor. Different species/caste from ram-headed fighters: tall swept horns instead of curled ram horns; narrow goat face, ash facial blaze, lean limbs, calm priestlike posture. Give it a cold stern demonic expression, not a forest satyr or kindly wizard. Whole body three-quarter front view with complete horns and feet within canvas, generous transparent margin. Large readable silhouette for game display at 96px. Broad quiet surfaces; avoid realistic anatomy, soft painterly shading, intricate fur strands, dense fabric folds, noisy details, cute cartoon proportions. Single character, no ground/background/glow cloud.",
+      "distinction": "Lean ritual goatman, wide swept ibex horns, white facial blaze, raised spell hand, short crimson tabard.",
+      "sha256": "744204203b0204cd797a2735f8f908197d72816cf6fc832de7adc3a54b17eb5e"
+    }
+  ],
+  "gallery": "http://localhost:4317",
+  "gallery_status": "Both submitted as Characters / sample-r1 / Pending approval; exact submit helper result confirmed"
+}

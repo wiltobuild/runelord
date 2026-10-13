@@ -1,0 +1,42 @@
+{
+  "state": "cast",
+  "canvas": [
+    2000,
+    1200
+  ],
+  "anchor": [
+    1000,
+    1080
+  ],
+  "duration": 880,
+  "loop": false,
+  "impact": 320,
+  "events": [],
+  "frames": [
+    {
+      "time": 0,
+      "file": "frames/frame-00.png",
+      "duration_ms": 100
+    },
+    {
+      "time": 100,
+      "file": "frames/frame-01.png",
+      "duration_ms": 220
+    },
+    {
+      "time": 320,
+      "file": "frames/frame-02.png",
+      "duration_ms": 260
+    },
+    {
+      "time": 580,
+      "file": "frames/frame-03.png",
+      "duration_ms": 140
+    },
+    {
+      "time": 720,
+      "file": "frames/frame-04.png",
+      "duration_ms": 160
+    }
+  ]
+}

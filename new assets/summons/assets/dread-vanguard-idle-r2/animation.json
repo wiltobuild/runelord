@@ -1,0 +1,30 @@
+{
+  "frame_count": 8,
+  "duration_ms": 1280,
+  "canvas": [
+    720,
+    1024
+  ],
+  "loop": true,
+  "method": "Four drawn guard/breathing poses, fixed sheet scale and placement, eight fire-intensity frames; ping-pong body pose order",
+  "pose_order": [
+    0,
+    1,
+    2,
+    3,
+    3,
+    2,
+    1,
+    0
+  ],
+  "fire_intensity": [
+    1,
+    0.78,
+    1.12,
+    0.86,
+    1.15,
+    0.92,
+    0.76,
+    1.06
+  ]
+}

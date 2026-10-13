@@ -1,0 +1,25 @@
+{
+  "revision": "imp-states-r1",
+  "technical_checks": {
+    "canvas": [
+      560,
+      520
+    ],
+    "frame_slots": 39,
+    "visible_alpha_clipping": "pass, threshold16",
+    "approved_idle_bytes_preserved": true,
+    "browser_buttons": [
+      "spawn",
+      "attack",
+      "hit",
+      "wounded_idle",
+      "die"
+    ],
+    "one_shot_finish": "pass",
+    "death_hold_and_replay": "pass",
+    "wounded_loop": "pass",
+    "browser_errors": [],
+    "failed_requests": []
+  },
+  "scope": "Isolated local manifest override; no production manifest changes. Visual design remains pending user review."
+}

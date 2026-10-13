@@ -1,0 +1,50 @@
+{
+  "state": "block",
+  "canvas": [
+    1200,
+    1100
+  ],
+  "anchor": [
+    600,
+    1020
+  ],
+  "frame_count": 6,
+  "duration": 650,
+  "duration_ms": 650,
+  "loop": false,
+  "impact": null,
+  "frames": [
+    {
+      "time": 0,
+      "file": "frames/frame-00.png",
+      "duration_ms": 60
+    },
+    {
+      "time": 60,
+      "file": "frames/frame-01.png",
+      "duration_ms": 80
+    },
+    {
+      "time": 140,
+      "file": "frames/frame-02.png",
+      "duration_ms": 130
+    },
+    {
+      "time": 270,
+      "file": "frames/frame-03.png",
+      "duration_ms": 130
+    },
+    {
+      "time": 400,
+      "file": "frames/frame-04.png",
+      "duration_ms": 100
+    },
+    {
+      "time": 500,
+      "file": "frames/frame-05.png",
+      "duration_ms": 150
+    }
+  ],
+  "method": "Authored raised two-handed sword block and release poses; independent curling sword fire; exact approved idle endpoint.",
+  "preview_note": "GIF loops for inspection; runtime loop flag is authoritative."
+}

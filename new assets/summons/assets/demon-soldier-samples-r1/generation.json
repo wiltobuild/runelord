@@ -1,0 +1,36 @@
+{
+  "tool": "built-in image_gen",
+  "status": "Pending approval",
+  "references": [
+    {
+      "path": "C:/Users/Wil/Documents/Codex/2026-10-09/sp-2/outputs/pit-brute-horns-r4.png",
+      "sha256": "5782e94f90ab840c215058078d0257f7ec53364a29673a7154862a83d1ad513b",
+      "ledgerDecision": null,
+      "referenceAuthority": "Current user-selected visual style from conversation"
+    },
+    {
+      "path": "C:/Users/Wil/Documents/Codex/2026-10-09/sp-2/outputs/imp-flying-r4.png",
+      "sha256": "cbfb9581a056a5a3b7842613baa9060cf580a4e4fc8eb64fe7ee84dea2120dd1",
+      "ledgerDecision": null,
+      "referenceAuthority": "Current user-selected visual style from conversation"
+    },
+    {
+      "path": "C:/Users/Wil/Documents/Codex/2026-10-09/i-x20/runelord/assets/heroes/animations/abyssal-seraph/frames32-r2/source/master.png",
+      "sha256": "8cbd77e13301c7b34f72a1560e8e537bcbc5eb593b46b66340c3896ee0856aec",
+      "ledgerDecision": null,
+      "referenceAuthority": "Current user-selected visual style from conversation"
+    }
+  ],
+  "concepts": [
+    {
+      "file": "iron-legionary-r1.png",
+      "identity": "Disciplined sword and shield devil infantry",
+      "prompt": "Use case: stylized-concept. Create ONE original standard demon footsoldier concept for Runelord, full body standalone game character on actual transparent background. Input images are STYLE REFERENCES ONLY: 1 Pit Brute shows red skin/charcoal armor material; 2 Imp shows angular demonic facial planes; 3 Abyssal Seraph shows intended refined cel-shaded finish. Do not combine or copy their identities. \nSubject: a disciplined infernal LEGIONARY, athletic humanlike adult proportions, clearly smaller and leaner than the Pit Brute, upright soldier stance in three-quarter view facing right. Distinct long severe humanoid devil face with narrow golden eyes and a closed stern mouth, two short swept-back black horns emerging above temples, pointed ears. Red skin. Grounded armored boots, no wings, no goat legs, no animal muzzle. Simple practical charcoal cuirass with segmented waist plates, modest square pauldrons, articulated bracers and greaves, sparse silver edge wear, muted oxblood cloth under armor. Tall narrow hexagonal iron shield held in left hand slightly forward, clear graphic single diagonal crimson stripe. Short broad straight sword held low in right hand, blade visible. Shield silhouette and disciplined military posture define him, not giant muscles/spikes. \nStyle match: serious high-quality 2D angular cel-shaded painted-cutout illustration exactly at the visual finish of the supplied characters, hard-edged geometric shadow planes, broad quiet dark surfaces, controlled highlight facets, selective bevels and sparse large wear marks. Red, charcoal, muted steel, tiny amber eyes. Refined convincing anatomy without photorealism. Whole figure, horns, sword and boots comfortably within canvas. No ground shadow, no background scenery, no text, no card, no multi-character sheet. Avoid photoreal/PBR, painterly blur, excessive texture noise, cute or chibi, huge brute shoulders, Imp face, ornament overloaded armor."
+    },
+    {
+      "file": "ash-pikeman-r1.png",
+      "identity": "Lean two-handed spear devil soldier",
+      "prompt": "Use case: stylized-concept. Produce ONE original standard demon SPEAR SOLDIER concept, entire full-body sprite on TRANSPARENT BACKGROUND with genuine alpha and absolutely no aura, scenery or vignette. References are ONLY rendering/style references: image1 armor and red skin finish, image2 facial planes, image3 angular polished hard-edge cel shading (DO NOT COPY ITS BACKGROUND). Distinct new identity, no existing character mashup.\nA lean tall infernal pikeman, long-limbed adult humanoid devil, red skin, narrow angular cheekbones, sharp chin, two straight short black horns rising from brow, small pointed ears and intent yellow eyes. Serious disciplined face, closed mouth. Soldier wears lighter practical charcoal segmented armor: low close-fitting shoulder plates, a fitted leather-backed breastplate with one simple broad steel ridge, knee guards, bracers, boots. Exposed red upper arms distinguish him from heavy footsoldiers. Sparse muted steel bevels, a short dark oxblood waist cloth. No wings, no giant muscles, no goat/animal anatomy, no skull decorations or ornate jewels.\nPrimary silhouette is a long straight SPEAR with dark metal diamond blade and one small backward hook, held in BOTH hands in a prepared diagonal guard, pole safely within canvas, natural convincing grip and joined wrist anatomy. Staggered grounded military stance three-quarter right, long legs and lean torso, no aggressive beast crouch. Weapon and horns are fully visible with generous margins.\nSerious angular 2D Runelord cel shading, broad flat color blocks and sharp geometric shadow facets, modest selective texture, clean deliberate shapes, convincing stylized adult proportions. Red, charcoal, worn muted steel, tiny amber eyes. Comparable finish/detail to Abyssal Seraph reference, but quieter soldier equipment, not a boss. No text, no border, no ground plane or cast shadow, no glow clouds. One character, transparent cutout."
+    }
+  ]
+}

@@ -1,0 +1,38 @@
+[
+  {
+    "file": "infernal-captain-r2.png",
+    "mode": "RGBA",
+    "size": [
+      1024,
+      1536
+    ],
+    "alpha_extrema": [
+      0,
+      254
+    ]
+  },
+  {
+    "file": "ember-ritualist.png",
+    "mode": "RGBA",
+    "size": [
+      1024,
+      1536
+    ],
+    "alpha_extrema": [
+      0,
+      254
+    ]
+  },
+  {
+    "file": "hex-votary.png",
+    "mode": "RGBA",
+    "size": [
+      1024,
+      1536
+    ],
+    "alpha_extrema": [
+      0,
+      254
+    ]
+  }
+]

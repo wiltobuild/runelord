@@ -1,0 +1,69 @@
+{
+  "gif_frames": 8,
+  "webp_frames": 8,
+  "planted_feet_exact_pixels": true,
+  "alpha16_border_clipping": [
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false
+  ],
+  "alpha16_bounds": [
+    [
+      32,
+      54,
+      769,
+      1004
+    ],
+    [
+      32,
+      52,
+      769,
+      1004
+    ],
+    [
+      32,
+      51,
+      769,
+      1004
+    ],
+    [
+      32,
+      52,
+      769,
+      1004
+    ],
+    [
+      32,
+      54,
+      769,
+      1004
+    ],
+    [
+      32,
+      56,
+      768,
+      1004
+    ],
+    [
+      32,
+      56,
+      768,
+      1004
+    ],
+    [
+      32,
+      56,
+      768,
+      1004
+    ]
+  ],
+  "periodic_transform_endpoint_error": 6.123233995736766e-16,
+  "last_to_first_is_one_regular_phase_step": true,
+  "static_self_review_required": true,
+  "runtime_integration": false
+}

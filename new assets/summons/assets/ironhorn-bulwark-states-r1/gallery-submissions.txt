@@ -1,0 +1,78 @@
+{
+  "path": "C:\\Users\\Wil\\Documents\\Codex\\2026-10-09\\i-x20\\runelord\\assets\\approvals\\inbox\\ironhorn-bulwark-states\\r1\\all-states.gif",
+  "sha256": "797c67ae472cb0f605f6c5d84d8b3771699714b522cbc0f53e38616d47e0122e",
+  "status": "Pending approval",
+  "gallery": "http://localhost:4317"
+}
+{
+  "path": "C:\\Users\\Wil\\Documents\\Codex\\2026-10-09\\i-x20\\runelord\\assets\\approvals\\inbox\\ironhorn-bulwark-idle\\states-r1\\contact-sheet.png",
+  "sha256": "5d9775ccf44d4dc4af58f351c7bde91a5021a67af3a09d92768fe06fb7a1fc7f",
+  "status": "Pending approval",
+  "gallery": "http://localhost:4317"
+}
+{
+  "path": "C:\\Users\\Wil\\Documents\\Codex\\2026-10-09\\i-x20\\runelord\\assets\\approvals\\inbox\\ironhorn-bulwark-idle\\states-r1\\preview.gif",
+  "sha256": "43c845469e5a741a67e2771b7688240026bf24ddb0dd6850fe1c57613c48d696",
+  "status": "Pending approval",
+  "gallery": "http://localhost:4317"
+}
+{
+  "path": "C:\\Users\\Wil\\Documents\\Codex\\2026-10-09\\i-x20\\runelord\\assets\\approvals\\inbox\\ironhorn-bulwark-attack\\states-r1\\contact-sheet.png",
+  "sha256": "6c022a198db3ae903c1a259ae46880dfe36f21890a004a8c9e1cb3c5420ef6d5",
+  "status": "Pending approval",
+  "gallery": "http://localhost:4317"
+}
+{
+  "path": "C:\\Users\\Wil\\Documents\\Codex\\2026-10-09\\i-x20\\runelord\\assets\\approvals\\inbox\\ironhorn-bulwark-attack\\states-r1\\preview.gif",
+  "sha256": "ec992cb7e175238151b299cce869ec7c6e740c3f1161c9913f0d57cbeaf5a7e9",
+  "status": "Pending approval",
+  "gallery": "http://localhost:4317"
+}
+{
+  "path": "C:\\Users\\Wil\\Documents\\Codex\\2026-10-09\\i-x20\\runelord\\assets\\approvals\\inbox\\ironhorn-bulwark-hit\\states-r1\\contact-sheet.png",
+  "sha256": "89796eb1141e086c7890299989fac2de75b1f47592835a8832b8815edf9490c1",
+  "status": "Pending approval",
+  "gallery": "http://localhost:4317"
+}
+{
+  "path": "C:\\Users\\Wil\\Documents\\Codex\\2026-10-09\\i-x20\\runelord\\assets\\approvals\\inbox\\ironhorn-bulwark-hit\\states-r1\\preview.gif",
+  "sha256": "0385b31f2b564929e9d0be3067a450d15bb62f42543332e06ccd1e3e76708027",
+  "status": "Pending approval",
+  "gallery": "http://localhost:4317"
+}
+{
+  "path": "C:\\Users\\Wil\\Documents\\Codex\\2026-10-09\\i-x20\\runelord\\assets\\approvals\\inbox\\ironhorn-bulwark-wounded_idle\\states-r1\\contact-sheet.png",
+  "sha256": "ecb0298095984809176bc81379d1c8f33869ebfa301cda952b0aea7b1bffc8b4",
+  "status": "Pending approval",
+  "gallery": "http://localhost:4317"
+}
+{
+  "path": "C:\\Users\\Wil\\Documents\\Codex\\2026-10-09\\i-x20\\runelord\\assets\\approvals\\inbox\\ironhorn-bulwark-wounded_idle\\states-r1\\preview.gif",
+  "sha256": "c23645b4416914f3ed48573cc7de42bc2c85e03cdd18b4b032f4102649c15885",
+  "status": "Pending approval",
+  "gallery": "http://localhost:4317"
+}
+{
+  "path": "C:\\Users\\Wil\\Documents\\Codex\\2026-10-09\\i-x20\\runelord\\assets\\approvals\\inbox\\ironhorn-bulwark-spawn\\states-r1\\contact-sheet.png",
+  "sha256": "9d24f8bfd311ddf3d580e2d5e1f9560f9a7ed35dd28b915940f55125f41e72c1",
+  "status": "Pending approval",
+  "gallery": "http://localhost:4317"
+}
+{
+  "path": "C:\\Users\\Wil\\Documents\\Codex\\2026-10-09\\i-x20\\runelord\\assets\\approvals\\inbox\\ironhorn-bulwark-spawn\\states-r1\\preview.gif",
+  "sha256": "a5d48e3ccf7caca84e1aa4d17c755402981bb696c1dcaa22be557ce9fdce57ad",
+  "status": "Pending approval",
+  "gallery": "http://localhost:4317"
+}
+{
+  "path": "C:\\Users\\Wil\\Documents\\Codex\\2026-10-09\\i-x20\\runelord\\assets\\approvals\\inbox\\ironhorn-bulwark-die\\states-r1\\contact-sheet.png",
+  "sha256": "456d8d748bbde51b5179e0c425cb41822f147507e4f9c34dad8aa125eb3af7b7",
+  "status": "Pending approval",
+  "gallery": "http://localhost:4317"
+}
+{
+  "path": "C:\\Users\\Wil\\Documents\\Codex\\2026-10-09\\i-x20\\runelord\\assets\\approvals\\inbox\\ironhorn-bulwark-die\\states-r1\\preview.gif",
+  "sha256": "ac5f95593c89e2dffd39b8931e53869b346f3ad9e35d781de61e32322467a878",
+  "status": "Pending approval",
+  "gallery": "http://localhost:4317"
+}

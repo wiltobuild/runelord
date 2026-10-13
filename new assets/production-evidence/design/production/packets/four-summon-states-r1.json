@@ -1,0 +1,111 @@
+{
+  "schema": 1,
+  "id": "four-summon-states-r1",
+  "status": "ready",
+  "outcome": "Review full Maledictor, Ironhorn Bulwark, Iron Legionary and Ash Pikeman summon animation sets with accepted breathing idle preserved.",
+  "authorization": "User: ok give them the rest of their full summon animations, use the breathing for their idle.",
+  "contentIds": [
+    "maledictor",
+    "ironhorn-bulwark",
+    "iron-legionary",
+    "ash-pikeman"
+  ],
+  "owner": "runelord-technical-artist",
+  "integrationOwner": "runelord-technical-artist",
+  "reviewer": "runelord-art-director",
+  "ownedPaths": [
+    "design/production/packets/four-summon-states-r1.json",
+    "work/production/four-summon-states-r1"
+  ],
+  "dependencies": [],
+  "exclusions": [
+    "New summon rules, balance or acquisition",
+    "Production deployment; arena previews use existing Pit Brute slot"
+  ],
+  "inputs": [
+    {
+      "path": "assets/approvals/inbox/maledictor/idle-r1/idle.gif",
+      "sha256": "11cf945b07ddd27d9be665579ac9b6166386e6c9602c1b188b49769c7807c1ad"
+    },
+    {
+      "path": "assets/approvals/inbox/ironhorn-bulwark-idle/subtle-r3/idle.gif",
+      "sha256": "0b22ccecd1580e720b756028550a0e6c6c1067f35c8456ff020c363db4e6ccf3"
+    },
+    {
+      "path": "assets/approvals/inbox/iron-legionary/idle-r3/idle.gif",
+      "sha256": "a8739342be59118f283f3059b532c026e41843bd110bbd014b8b7ae00162b3b8"
+    },
+    {
+      "path": "assets/approvals/inbox/ash-pikeman/idle-r1/idle.gif",
+      "sha256": "021ceeeb82e3cd3c8bb6f87b1b4c54a0460da6c1a9532a03051a3f3513c43505"
+    }
+  ],
+  "animation": {
+    "method": "whole-character-frames",
+    "requiredStates": [
+      "idle",
+      "attack",
+      "hit",
+      "wounded_idle",
+      "spawn",
+      "die"
+    ]
+  },
+  "acceptance": [
+    {
+      "check": "Accepted breathing idle preserved exactly with fixed canvas padding",
+      "status": "pass",
+      "evidence": [
+        {
+          "path": "work/production/four-summon-states-r1/melee-full-independent-qa.json",
+          "sha256": "504e158d3b6d41312b356b032facf486b2c99de204bdcc4e7fe702def27d0aa3"
+        },
+        {
+          "path": "work/production/four-summon-states-r1/maledictor-final-verification.json",
+          "sha256": "6f6c13e8eec5639514be9ed88bd9d0d08697c2f977d85bf6cba0675d4a404a5a"
+        }
+      ]
+    },
+    {
+      "check": "Actions return to idle, death holds terminal, four arena previews load without browser errors",
+      "status": "pass",
+      "evidence": [
+        {
+          "path": "work/production/four-summon-states-r1/full-summon-browser-qa.json",
+          "sha256": "d8361839d72f3ded0c89f8b917d946320f200794d96f7460cb9074b67297dab9"
+        }
+      ]
+    },
+    {
+      "check": "Independent visual review for clipping, strays, attachments and gross scale consistency",
+      "status": "pass",
+      "evidence": [
+        {
+          "path": "work/production/four-summon-states-r1/maledictor-full-independent-qa.json",
+          "sha256": "4298e4741c55928a41a1315371cc4ce972f61124f6f6d0ceb6bcfab26e250291"
+        },
+        {
+          "path": "work/production/four-summon-states-r1/melee-full-independent-qa.json",
+          "sha256": "504e158d3b6d41312b356b032facf486b2c99de204bdcc4e7fe702def27d0aa3"
+        }
+      ]
+    }
+  ],
+  "checkpoint": {
+    "completed": [
+      "Four full state bundles exported with authored actions and unchanged idle pixels",
+      "State controls and one-shot/terminal behavior verified in local browser",
+      "Four local arena previews show named summons",
+      "Independent static QA complete; minor authored shape variation noted",
+      "All new state previews submitted pending user review"
+    ],
+    "remaining": [],
+    "blockers": [],
+    "nextAction": "User reviews full state animations at http://127.0.0.1:4321/summon-animation-review"
+  },
+  "limitations": [
+    "Sparse authored action keyposes, not high-frame-rate inbetweened animation.",
+    "Minor authored shape variation noted in Maledictor torso and Bulwark shield.",
+    "Independent Maledictor report predates invisible-RGB preservation correction; final verification confirms exact RGBA."
+  ]
+}

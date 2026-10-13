@@ -1,0 +1,7 @@
+{
+  "tool": "image_gen",
+  "prompt": "Use case: identity-preserve. Create animation pose sheet of EXACT referenced Dread Vanguard demon captain. Reference is identity/style master. Transparent background. 2x2 grid, four fully separated WHOLE CHARACTER sequential DEATH poses left-to-right top-to-bottom: 1 wounded backward stagger sword lowered diagonally, 2 slumps onto one knee helmet drooping sword tip on ground, 3 falls to side with body nearly horizontal bracing one hand and dropped sword beside him, 4 final motionless curled side-lying armored corpse with helmet and horns still intact, blade laid beside corpse, completely extinguished sword and eyes. Non-graphic no wounds gore. All four same camera, same anatomical scale and helmet size; NO per-cell zoom. Serious angular 2D cel shading dark charcoal black armor sharp silver edges, two swept horns helmet, red cloth, same huge two-hand sword familiar runes. Fire strongest first frame, almost extinguished in frame3, none last. ALL weapons and feet inside cells with WIDE transparent margins. Horizontal collapsed poses should fit inside cells by bent knees and blade laid diagonally next to body; do not crop. No labels, no grid lines, no scene, no redesign. Use square sheet.",
+  "reference": "C:/Users/Wil/Documents/Codex/2026-10-09/sp-2/outputs/dread-vanguard-idle-r5/battle-stance.png",
+  "reference_sha256": "9359a3645d623d279e1d65fc78a23fc9e23685c0b4e102abd25a3858383898ca",
+  "approval": "Pending approval"
+}

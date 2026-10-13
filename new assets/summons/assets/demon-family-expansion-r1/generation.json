@@ -1,0 +1,33 @@
+{
+  "tool": "built-in image_gen",
+  "status": "Pending approval",
+  "request": "Captain demon soldier and caster demon soldier concepts",
+  "references": [
+    {
+      "path": "C:/Users/Wil/Documents/Codex/2026-10-09/sp-2/outputs/demon-soldier-samples-r2/iron-legionary-r2.png",
+      "sha256": "df9d38597d30f265ebfc188e8273d237480edc9a02f30af03ead55f612045bc9",
+      "ledgerDecision": null,
+      "authority": "Current user selected/approved demon family in chat"
+    },
+    {
+      "path": "C:/Users/Wil/Documents/Codex/2026-10-09/sp-2/outputs/demon-soldier-samples-r2/ash-pikeman-r2.png",
+      "sha256": "b846974c9c97f3f463b24782fe398d435f2566c00e852acee7c882215d28de53",
+      "ledgerDecision": null,
+      "authority": "Current user selected/approved demon family in chat"
+    }
+  ],
+  "prompts": [
+    {
+      "file": "infernal-captain.png",
+      "prompt": "Create ONE new full-body demon soldier concept from the SAME military family as the two supplied references. References define species, aggressive blackened hooked armor, proportions, red/charcoal palette and serious refined angular 2D Runelord cel shading. Match their finish, NOT photorealistic, not cute, not painterly. Broad graphic shadow planes, crisp selected steel edge facets, sparse texture; clean legible silhouette. Red humanoid devil, pointed ears, black horns, amber eyes, normal adult proportions. All limbs, equipment, horns and feet fully inside canvas with margins. Actual transparent background and no backdrop/vignette, no ground shadow, no text or card. One character only, no reference lineup. SUBJECT: INFERNAL CAPTAIN, recognizable officer above these infantry, not a giant boss. Stern mature devil face with one healed brow scar; swept-back ridged horns. Wider commanding stance facing three-quarter right. Heavy overlapping fang-shaped charcoal plate cuirass, jagged asymmetrical shoulder armor, hooked gauntlets and greaves. A short dark oxblood half-cloak from one shoulder and a small blunt iron command crest behind collar establish rank, no royal gold ornament. Right hand holds a long vicious black iron officer's saber low beside him, blade clearly visible etched with four large glowing orange-red demonic runes; left gauntleted hand gives a sharp forward command gesture. No shield so command pose reads distinctly. Moderate physical build, decisive expression, disciplined officer of infernal footsoldiers."
+    },
+    {
+      "file": "infernal-battlemage.png",
+      "prompt": "Create ONE new full-body demon soldier concept from the SAME military family as the two supplied references. References define species, aggressive blackened hooked armor, proportions, red/charcoal palette and serious refined angular 2D Runelord cel shading. Match their finish, NOT photorealistic, not cute, not painterly. Broad graphic shadow planes, crisp selected steel edge facets, sparse texture; clean legible silhouette. Red humanoid devil, pointed ears, black horns, amber eyes, normal adult proportions. All limbs, equipment, horns and feet fully inside canvas with margins. Actual transparent background and no backdrop/vignette, no ground shadow, no text or card. One character only, no reference lineup. SUBJECT: INFERNAL BATTLEMAGE, frontline combat caster with athletic sturdy build, aggressively armored legs and shoulders, close-fitting ribbed fang-plate cuirass, short split oxblood military tabard, no long robes or wizard hat. Distinct angular long face and two short forward-curving black brow horns. Grounded braced three-quarter combat stance. One forearm is enclosed in a massive black iron spellcasting gauntlet with three large embedded glowing orange-red rune glyphs; that hand aimed outward and conjuring ONE compact tightly controlled faceted ember orb just above the palm. Other hand grips a short brutal rune-etched war baton at hip, hook-shaped metal head, clearly readable physical focus. Soldier first, fire artillery specialist second. Magic remains compact, never hides hand/anatomy. Armor belongs unmistakably to these demon infantry but caster silhouette defined by the enlarged casting gauntlet."
+    },
+    {
+      "file": "maledictor.png",
+      "prompt": "Create ONE new full-body demon soldier concept from the SAME military family as the two supplied references. References define species, aggressive blackened hooked armor, proportions, red/charcoal palette and serious refined angular 2D Runelord cel shading. Match their finish, NOT photorealistic, not cute, not painterly. Broad graphic shadow planes, crisp selected steel edge facets, sparse texture; clean legible silhouette. Red humanoid devil, pointed ears, black horns, amber eyes, normal adult proportions. All limbs, equipment, horns and feet fully inside canvas with margins. Actual transparent background and no backdrop/vignette, no ground shadow, no text or card. One character only, no reference lineup. SUBJECT: MALEDICTOR, a lean disciplined demon curse-channeler serving in the same infernal army. Upright narrow imposing posture, sharply tapered devil face, long swept-back horns, steady amber eyes. Close-fitting angular blackened cuirass with high pointed collar, hooked narrow pauldrons, bracers, armored boots and knee guards; short tattered oxblood split military tabard over visible trousered legs, no long flowing robes. Holds a tall BLACK IRON HEX-STANDARD vertically beside the body in one hand: a forked angular hooked metal head enclosing one small levitating orange-red diamond ember, 3 large glowing demonic rune glyphs etched on broad surfaces below fork. Other hand at chest height makes a precise curse gesture, tiny angular orange sigil between fingertips. Focus acts as battlefield communication/curse standard, distinct from spear and fire battlemage. Keep sparse purposeful military details, substantial quiet surfaces and controlled localized glow. No shield/sword, no oversized fireballs."
+    }
+  ]
+}

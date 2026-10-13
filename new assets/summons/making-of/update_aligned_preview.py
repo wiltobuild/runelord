@@ -1,0 +1,2 @@
+from pathlib import Path
+p=Path('work/imp-preview.config.mjs');s=p.read_text();s=s.replace("'C:/Users/Wil/Documents/Codex/2026-10-09/sp-2/outputs/dread-vanguard-empowerment-r1/'+parts[2]+'/frames/'+parts[3]", "(parts[2]==='empowered'?'C:/Users/Wil/Documents/Codex/2026-10-09/sp-2/outputs/dread-vanguard-aligned-fire-r1/frames/':'C:/Users/Wil/Documents/Codex/2026-10-09/sp-2/outputs/dread-vanguard-empowerment-r1/unlit/frames/')+parts[3]");p.write_text(s)

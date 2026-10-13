@@ -1,0 +1,38 @@
+[
+  {
+    "file": "infernal-captain.png",
+    "mode": "RGBA",
+    "size": [
+      1024,
+      1536
+    ],
+    "alpha_extrema": [
+      0,
+      254
+    ]
+  },
+  {
+    "file": "infernal-battlemage.png",
+    "mode": "RGBA",
+    "size": [
+      1024,
+      1536
+    ],
+    "alpha_extrema": [
+      0,
+      254
+    ]
+  },
+  {
+    "file": "maledictor.png",
+    "mode": "RGBA",
+    "size": [
+      1024,
+      1536
+    ],
+    "alpha_extrema": [
+      0,
+      254
+    ]
+  }
+]

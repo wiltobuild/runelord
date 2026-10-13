@@ -1,0 +1,393 @@
+{
+  "schema": 1,
+  "name": "Maledictor",
+  "canvas": [
+    1280,
+    1100
+  ],
+  "size": [
+    1280,
+    1100
+  ],
+  "anchor": [
+    640,
+    1038
+  ],
+  "idle_offset": [
+    280,
+    48
+  ],
+  "reference_visible_height_px": 950,
+  "layout_bounds_px": [
+    360,
+    78,
+    900,
+    1040
+  ],
+  "method": "Authored whole-character action keyposes; accepted eight-frame breathing idle padded without scaling; common1.78 action sheet scale. One-shot cast/hit/spawn; terminal collapsed death.",
+  "states": {
+    "idle": {
+      "frames": [
+        {
+          "time": 0,
+          "src": "idle/frame-00.png",
+          "duration_ms": 180
+        },
+        {
+          "time": 180,
+          "src": "idle/frame-01.png",
+          "duration_ms": 180
+        },
+        {
+          "time": 360,
+          "src": "idle/frame-02.png",
+          "duration_ms": 180
+        },
+        {
+          "time": 540,
+          "src": "idle/frame-03.png",
+          "duration_ms": 180
+        },
+        {
+          "time": 720,
+          "src": "idle/frame-04.png",
+          "duration_ms": 180
+        },
+        {
+          "time": 900,
+          "src": "idle/frame-05.png",
+          "duration_ms": 180
+        },
+        {
+          "time": 1080,
+          "src": "idle/frame-06.png",
+          "duration_ms": 180
+        },
+        {
+          "time": 1260,
+          "src": "idle/frame-07.png",
+          "duration_ms": 180
+        }
+      ],
+      "duration": 1440,
+      "loop": true,
+      "impact": null,
+      "events": []
+    },
+    "cast": {
+      "frames": [
+        {
+          "time": 0,
+          "src": "cast/frame-00.png",
+          "duration_ms": 100
+        },
+        {
+          "time": 100,
+          "src": "cast/frame-01.png",
+          "duration_ms": 140
+        },
+        {
+          "time": 240,
+          "src": "cast/frame-02.png",
+          "duration_ms": 110
+        },
+        {
+          "time": 350,
+          "src": "cast/frame-03.png",
+          "duration_ms": 100
+        },
+        {
+          "time": 450,
+          "src": "cast/frame-04.png",
+          "duration_ms": 110
+        },
+        {
+          "time": 560,
+          "src": "cast/frame-05.png",
+          "duration_ms": 150
+        },
+        {
+          "time": 710,
+          "src": "cast/frame-06.png",
+          "duration_ms": 100
+        },
+        {
+          "time": 810,
+          "src": "cast/frame-07.png",
+          "duration_ms": 90
+        }
+      ],
+      "duration": 900,
+      "loop": false,
+      "impact": 350,
+      "events": [
+        {
+          "name": "release",
+          "time_ms": 350
+        }
+      ]
+    },
+    "hit": {
+      "frames": [
+        {
+          "time": 0,
+          "src": "hit/frame-00.png",
+          "duration_ms": 60
+        },
+        {
+          "time": 60,
+          "src": "hit/frame-01.png",
+          "duration_ms": 100
+        },
+        {
+          "time": 160,
+          "src": "hit/frame-02.png",
+          "duration_ms": 120
+        },
+        {
+          "time": 280,
+          "src": "hit/frame-03.png",
+          "duration_ms": 150
+        }
+      ],
+      "duration": 430,
+      "loop": false,
+      "impact": null,
+      "events": []
+    },
+    "wounded_idle": {
+      "frames": [
+        {
+          "time": 0,
+          "src": "wounded_idle/frame-00.png",
+          "duration_ms": 180
+        },
+        {
+          "time": 180,
+          "src": "wounded_idle/frame-01.png",
+          "duration_ms": 180
+        },
+        {
+          "time": 360,
+          "src": "wounded_idle/frame-02.png",
+          "duration_ms": 180
+        },
+        {
+          "time": 540,
+          "src": "wounded_idle/frame-03.png",
+          "duration_ms": 180
+        },
+        {
+          "time": 720,
+          "src": "wounded_idle/frame-04.png",
+          "duration_ms": 180
+        },
+        {
+          "time": 900,
+          "src": "wounded_idle/frame-05.png",
+          "duration_ms": 180
+        },
+        {
+          "time": 1080,
+          "src": "wounded_idle/frame-06.png",
+          "duration_ms": 180
+        },
+        {
+          "time": 1260,
+          "src": "wounded_idle/frame-07.png",
+          "duration_ms": 180
+        }
+      ],
+      "duration": 1440,
+      "loop": true,
+      "impact": null,
+      "events": []
+    },
+    "spawn": {
+      "frames": [
+        {
+          "time": 0,
+          "src": "spawn/frame-00.png",
+          "duration_ms": 100
+        },
+        {
+          "time": 100,
+          "src": "spawn/frame-01.png",
+          "duration_ms": 130
+        },
+        {
+          "time": 230,
+          "src": "spawn/frame-02.png",
+          "duration_ms": 170
+        },
+        {
+          "time": 400,
+          "src": "spawn/frame-03.png",
+          "duration_ms": 180
+        },
+        {
+          "time": 580,
+          "src": "spawn/frame-04.png",
+          "duration_ms": 160
+        }
+      ],
+      "duration": 740,
+      "loop": false,
+      "impact": null,
+      "events": []
+    },
+    "die": {
+      "frames": [
+        {
+          "time": 0,
+          "src": "die/frame-00.png",
+          "duration_ms": 80
+        },
+        {
+          "time": 80,
+          "src": "die/frame-01.png",
+          "duration_ms": 140
+        },
+        {
+          "time": 220,
+          "src": "die/frame-02.png",
+          "duration_ms": 190
+        },
+        {
+          "time": 410,
+          "src": "die/frame-03.png",
+          "duration_ms": 170
+        },
+        {
+          "time": 580,
+          "src": "die/frame-04.png",
+          "duration_ms": 700
+        }
+      ],
+      "duration": 1280,
+      "loop": false,
+      "impact": null,
+      "events": [
+        {
+          "name": "terminal",
+          "time_ms": 580
+        }
+      ]
+    },
+    "attack": {
+      "frames": [
+        {
+          "time": 0,
+          "src": "cast/frame-00.png",
+          "duration_ms": 100
+        },
+        {
+          "time": 100,
+          "src": "cast/frame-01.png",
+          "duration_ms": 140
+        },
+        {
+          "time": 240,
+          "src": "cast/frame-02.png",
+          "duration_ms": 110
+        },
+        {
+          "time": 350,
+          "src": "cast/frame-03.png",
+          "duration_ms": 100
+        },
+        {
+          "time": 450,
+          "src": "cast/frame-04.png",
+          "duration_ms": 110
+        },
+        {
+          "time": 560,
+          "src": "cast/frame-05.png",
+          "duration_ms": 150
+        },
+        {
+          "time": 710,
+          "src": "cast/frame-06.png",
+          "duration_ms": 100
+        },
+        {
+          "time": 810,
+          "src": "cast/frame-07.png",
+          "duration_ms": 90
+        }
+      ],
+      "duration": 900,
+      "loop": false,
+      "impact": 350,
+      "events": [
+        {
+          "name": "release",
+          "time_ms": 350
+        }
+      ],
+      "sourceState": "cast"
+    },
+    "act": {
+      "frames": [
+        {
+          "time": 0,
+          "src": "cast/frame-00.png",
+          "duration_ms": 100
+        },
+        {
+          "time": 100,
+          "src": "cast/frame-01.png",
+          "duration_ms": 140
+        },
+        {
+          "time": 240,
+          "src": "cast/frame-02.png",
+          "duration_ms": 110
+        },
+        {
+          "time": 350,
+          "src": "cast/frame-03.png",
+          "duration_ms": 100
+        },
+        {
+          "time": 450,
+          "src": "cast/frame-04.png",
+          "duration_ms": 110
+        },
+        {
+          "time": 560,
+          "src": "cast/frame-05.png",
+          "duration_ms": 150
+        },
+        {
+          "time": 710,
+          "src": "cast/frame-06.png",
+          "duration_ms": 100
+        },
+        {
+          "time": 810,
+          "src": "cast/frame-07.png",
+          "duration_ms": 90
+        }
+      ],
+      "duration": 900,
+      "loop": false,
+      "impact": 350,
+      "events": [
+        {
+          "name": "release",
+          "time_ms": 350
+        }
+      ],
+      "sourceState": "cast"
+    }
+  },
+  "source": {
+    "path": "action-source.png",
+    "sha256": "da9c90e3653ac0ea665c6014019eca8e451a6c318398005a8fba94f7a7cfdd51"
+  },
+  "qa": {
+    "status": "self-check"
+  }
+}

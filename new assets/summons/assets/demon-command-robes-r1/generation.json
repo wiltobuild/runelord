@@ -1,0 +1,36 @@
+{
+  "tool": "built-in image_gen",
+  "status": "Pending approval",
+  "request": "Captain remove left shoulder/head back ornament; elite armor and helmet; two new robe-only demon casters; preserve Maledictor",
+  "references": [
+    {
+      "path": "../demon-family-expansion-r1/infernal-captain.png",
+      "sha256": "b44aae94f4f36e2b2122a1cf9b4d34dcfd67add76e6e18959e2eab967f605825",
+      "role": "Captain edit target"
+    },
+    {
+      "path": "C:/Users/Wil/Documents/Codex/2026-10-09/sp-2/outputs/demon-soldier-samples-r2/iron-legionary-r2.png",
+      "sha256": "df9d38597d30f265ebfc188e8273d237480edc9a02f30af03ead55f612045bc9",
+      "role": "User-selected family style reference"
+    },
+    {
+      "path": "C:/Users/Wil/Documents/Codex/2026-10-09/sp-2/outputs/demon-soldier-samples-r2/ash-pikeman-r2.png",
+      "sha256": "b846974c9c97f3f463b24782fe398d435f2566c00e852acee7c882215d28de53",
+      "role": "User-selected family style reference"
+    }
+  ],
+  "prompts": [
+    {
+      "file": "infernal-captain-r2.png",
+      "prompt": "EDIT image 1, the existing Infernal Captain. Image 2 is same-family ordinary infantry for rank comparison ONLY. Required user revisions: remove the vertical spike/banner/ornament rising behind the viewer-left shoulder beside the head ENTIRELY; leave clean negative space between helmet/head and left shoulder except normal collar. Make captain visibly ELITE through upgraded ARMOR and a HELMET, not merely the cloak. Preserve adult humanoid proportions, red devil identity, command-pointing gesture, sword/runes and full body stance, same serious angular 2D Runelord cel-shaded finish. Add a formidable dark closed demonic command HELMET: fitted angular brow, cheekguards and severe mask with narrow glowing amber eye slits; actual two black horns integrate through helmet sides, no extra crest behind shoulder. Elite armor is heavy layered blackened fang plates, substantial dramatic asymmetrical hooked pauldrons, overlapping ribbed cuirass with one clear central infernal insignia, stronger gauntlets and leg armor. Richer intentional construction than infantry, sparse muted ember-red inlays and dark steel facets, no gold ceremonial knight look, no forest of random spikes. A short torn oxblood cape may remain but armor/helmet must communicate rank alone. Sword has large orange-red engraved runes. No new secondary weapons. Keep all horns, boots, hand and blade inside canvas; actual transparent background, no vignette or backdrop, no text. Preserve clear refined graphic shading, avoid painterly texture noise. Important: purposeful bespoke elite silhouette, not more spike clutter. Helmet accommodates original horns as one coherent head silhouette. Remove back ornament without substituting another ornament."
+    },
+    {
+      "file": "ember-ritualist.png",
+      "prompt": "Create ONE NEW full-body demonic soldier CASTER wearing ONLY DEMONIC ROBES, absolutely NO ARMOR of any sort: no cuirass, pauldrons, greaves, gauntlets, metal collar or plated boots. Supplied demon soldier images are reference ONLY for species, angular 2D Runelord finish, red/charcoal palette, serious vibe and infernal rune treatment; DO NOT copy their armor. Character: a hooded ritual fire caster of that demon army, stern red humanoid devil, narrow amber eyes, pointed ears, black horns piercing a deep sharply peaked cloth hood. Lean silhouette, forward casting stance. Layered CHARCOAL CLOTH robe with jagged split flame-shaped hems, broad oxblood inner panels, sharply folded long sleeves, tied cloth waist sash; bare clawed red hands and simple dark leather footwraps visible under robe. Material reads unmistakably FABRIC through broad crisp angular folds, never metal. Demonic identity from harsh hood silhouette, horn openings, tattered pointed cloth cuts and 3 large glowing orange-red rune stitches down one fabric panel. Both bare hands cup one compact faceted infernal ember between them at chest height. No staff, no armor, no huge spell cloud. Serious refined crisp angular cel shading, broad hard shadow facets, quiet surfaces, tiny controlled rune glow. Full figure transparent cutout, generous margins, no ground shadow, backdrop, text or border."
+    },
+    {
+      "file": "hex-votary.png",
+      "prompt": "Create ONE NEW full-body demonic soldier HEX CASTER wearing ONLY layered DEMONIC ROBES. Absolutely no armor plates, pauldrons, cuirass, greaves, metal collar, armored gloves or metal boots. References define red humanoid devil species and serious refined angular 2D Runelord finish ONLY; do not copy armor. Distinct from hooded fire caster: NO HOOD, bare severe long red devil face, tall swept-back black horns, amber eyes, straight upright narrow silhouette. Wears layered BLACK FABRIC vestments with an exaggerated high folded CLOTH collar, oxblood asymmetric shoulder drape made solely from heavy cloth, tightly pleated waist sash, long split robe with dagger-shaped fabric hems, one long hanging sleeve and other sleeve rolled back to bare clawed hand. Large dark cloth folds and sharply cut hems read demonic rather than decorative wizard robes. Simple leather footwraps glimpse beneath robe. One bare hand holds a tall dark twisted WOOD ritual staff ending in a fork-shaped black iron focus with a small suspended red angular sigil; three large orange-red demonic glyphs etched on the focus. Other bare hand held out making precise curse gesture. No extra floating objects. Matching red/charcoal colors, clean purposeful angular cel shading, selective crisp facets, quiet broad robe surfaces, controlled localized glow. Full figure and entire staff visible, transparent background, no scenery/vignette/text/border."
+    }
+  ]
+}

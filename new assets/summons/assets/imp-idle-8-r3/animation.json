@@ -1,0 +1,110 @@
+{
+  "frame_count": 8,
+  "canvas": [
+    560,
+    520
+  ],
+  "loop": true,
+  "duration_ms": 960,
+  "base_revision": "imp-idle-8-r2",
+  "method": "Existing wing-only animation plus a rigid 5px vertical bob, 1.5px lateral drift, and 0.7 degree sway. Body is never rescaled or redrawn.",
+  "frames": [
+    {
+      "file": "frames/frame-00.png",
+      "duration_ms": 120,
+      "rotation_degrees": 0.0,
+      "translation_px": [
+        0.0,
+        5.0
+      ],
+      "scale": 1.0
+    },
+    {
+      "file": "frames/frame-01.png",
+      "duration_ms": 120,
+      "rotation_degrees": 0.4949747468305833,
+      "translation_px": [
+        1.0606601717798214,
+        3.5355339059327378
+      ],
+      "scale": 1.0
+    },
+    {
+      "file": "frames/frame-02.png",
+      "duration_ms": 120,
+      "rotation_degrees": 0.7,
+      "translation_px": [
+        1.5,
+        3.061616997868383e-16
+      ],
+      "scale": 1.0
+    },
+    {
+      "file": "frames/frame-03.png",
+      "duration_ms": 120,
+      "rotation_degrees": 0.4949747468305833,
+      "translation_px": [
+        1.0606601717798214,
+        -3.5355339059327373
+      ],
+      "scale": 1.0
+    },
+    {
+      "file": "frames/frame-04.png",
+      "duration_ms": 120,
+      "rotation_degrees": 8.572527594031472e-17,
+      "translation_px": [
+        1.8369701987210297e-16,
+        -5.0
+      ],
+      "scale": 1.0
+    },
+    {
+      "file": "frames/frame-05.png",
+      "duration_ms": 120,
+      "rotation_degrees": -0.4949747468305832,
+      "translation_px": [
+        -1.0606601717798212,
+        -3.5355339059327386
+      ],
+      "scale": 1.0
+    },
+    {
+      "file": "frames/frame-06.png",
+      "duration_ms": 120,
+      "rotation_degrees": -0.7,
+      "translation_px": [
+        -1.5,
+        -9.184850993605148e-16
+      ],
+      "scale": 1.0
+    },
+    {
+      "file": "frames/frame-07.png",
+      "duration_ms": 120,
+      "rotation_degrees": -0.49497474683058335,
+      "translation_px": [
+        -1.0606601717798214,
+        3.535533905932737
+      ],
+      "scale": 1.0
+    }
+  ],
+  "base_hashes": {
+    "animation.json": "550183c4d822fb77f7f1df313755486e3763200e6052458486f65b23b7761985",
+    "body-layer.png": "b353d3ae3d0b4d4975142a7b69b59c0e74a1bf4a242735143f0f35d3687aac2f",
+    "body-source.png": "43312b7ad95ca15979e509dd72cba95e10663aa87d86f8695a68b18acdac5c34",
+    "contact-sheet.png": "7e71f4db5926abb1cffc161f465f8ea567d51898c4c09b856d302e47cd1c04d0",
+    "imp-idle.gif": "d21dad825ae99a8dac49d7e71af07480679b79ac0b4fe6abace8183113b208f2",
+    "imp-idle.webp": "d63dfd26360d12e222e7aaf997109b70ba5b7139041019393495be4b667d52d4",
+    "wings-source.png": "f92654e9e8039af0f7103a310f935a2719837068d17851016158e65700e33c1e",
+    "frames\\frame-00.png": "dd7fb8bda63947c58879e0de01a43a0c5a351cafc0406d2ca10c94f15eab98df",
+    "frames\\frame-01.png": "d0d9c5cb617c8088128f01228f09a3774d02dd3b5b0e3f43d148e4689bbecc62",
+    "frames\\frame-02.png": "b4b97431063223afd06b4535854ffca14b29691dd59e02d939e3077b09f5db9b",
+    "frames\\frame-03.png": "08fdcb98f10619ae775b197952dd4cf48339d8f876fc502aaf27f4ff16bceb0c",
+    "frames\\frame-04.png": "e566c0e4e5ea1d0b11aaca3e4dee2f0bea5e8e187fd97d75cc3a01564b559307",
+    "frames\\frame-05.png": "98797c790648a39da098e8d7afcbb99587df57e5f297cd9b5715d1cb82e4c05c",
+    "frames\\frame-06.png": "436f2081e63ae7f71b5194a22036d10530ae7f08b7c7481640d8de3c8d70a569",
+    "frames\\frame-07.png": "e9f2feebd70acdc51bfdecf8607aea2ea29c280e076b34be4b8a46d437bd4798"
+  }
+}

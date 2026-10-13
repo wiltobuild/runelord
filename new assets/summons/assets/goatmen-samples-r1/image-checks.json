@@ -1,0 +1,18 @@
+[
+  {
+    "name": "cinderhorn-reaver",
+    "width": 1094,
+    "height": 1438,
+    "transparent": 770482,
+    "partial": 800845,
+    "opaque": 1845
+  },
+  {
+    "name": "blackhorn-cantor",
+    "width": 1024,
+    "height": 1536,
+    "transparent": 1054794,
+    "partial": 518070,
+    "opaque": 0
+  }
+]

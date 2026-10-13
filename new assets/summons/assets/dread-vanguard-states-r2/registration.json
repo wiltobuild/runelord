@@ -1,0 +1,32 @@
+{
+  "method": "Offline anatomical-scale corrections around fixed floor anchor; no runtime per-frame auto-fitting. Death body contact separately registered from dropped sword.",
+  "corrections": [
+    {
+      "state": "die",
+      "frame": 0,
+      "scale": 1
+    },
+    {
+      "state": "die",
+      "frame": 1,
+      "scale": 0.9
+    },
+    {
+      "state": "die",
+      "frame": 2,
+      "scale": 0.9
+    },
+    {
+      "state": "die",
+      "frame": 3,
+      "scale": 0.82,
+      "body_ground_shift": 97
+    },
+    {
+      "state": "die",
+      "frame": 4,
+      "scale": 0.82,
+      "body_ground_shift": 149
+    }
+  ]
+}

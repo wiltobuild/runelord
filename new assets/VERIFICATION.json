@@ -1,0 +1,23 @@
+{
+  "status": "pass",
+  "checks": {
+    "copied_hashes_verified": 1578,
+    "files": 1588,
+    "bytes": 1341294504,
+    "document_links_verified": 195,
+    "json_parsed": 259,
+    "images_readable": 1193,
+    "zip_archives_verified": 11
+  },
+  "errors": [],
+  "scope": "Archive integrity only. Historical animation and browser QA preserved; not rerun as game acceptance.",
+  "manifest_note": "file-manifest.json covers copied source files. Newly authored documentation and this report are not source copies.",
+  "git_index": {
+    "index_matches_archived_bytes": true,
+    "indexed_files": 1590,
+    "only_new_folder_additions": true,
+    "errors": []
+  },
+  "final_archive_file_count": 1590,
+  "checks_note": "Integrity check counts exclude the subsequently written verification report and archive .gitattributes."
+}

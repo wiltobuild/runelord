@@ -1,0 +1,55 @@
+{
+  "schema_version": 1,
+  "tool": "built-in image_gen",
+  "mode": "edits of exact individual r1 images",
+  "authorization": "User requested demonic Bulwark shield and weapon; sinister hooded Elder; glowing demonic blade runes for Stalker. Preserve all earlier versions.",
+  "concepts": [
+    {
+      "name": "Ironhorn Bulwark",
+      "file": "ironhorn-bulwark.png",
+      "role": "Infernal shield and cudgel",
+      "reference": "C:/Users/Wil/Documents/Codex/2026-10-09/sp-2/outputs/goatmen-expansion-r1/ironhorn-bulwark.png",
+      "reference_sha256": "5b4cd8ebf36b121479d7e76896f22b5ff65ec842579951a68e55833cff5d52fa",
+      "source": "C:/Users/Wil/.codex/generated_images/01a11efa-7397-7560-9504-70188201352c/exec-83a8f32d-a3a5-403f-a378-a39d7b76e1d5.png",
+      "prompt": "EDIT the supplied Ironhorn Bulwark image. Preserve this exact goatman, face, curled horns, red anatomy, beard, pose, proportions, hands, wrist armor, belt, waistcloth, furry legs and hooves, palette and serious refined angular 2D cel-shading. Change ONLY his shield and cudgel to look unmistakably demonic and infernally forged. Shield: replace the plain rectangular plate with a large dark-iron infernal shield of the same defensive size and position, aggressive hooked outline, two swept horn-like upper corners, pointed lower tip, broad raised rib-like diagonal ridges across its face, small controlled ember-red recessed seams. Bold readable forged shapes, not elaborate miniature decoration. Eliminate the plain painted stripe. Cudgel: same hand/grip and short handle orientation, but replace simple geometric spike head with an infernal crushing head: interlocking hooked black-iron fangs/ribs enclosing a narrow glowing red core, menacing silhouette, heavy solid weapon. Both pieces use the existing angular iron material and crisp highlights. Keep other design unchanged; do not replace character or add armor/body parts. Full body fully in frame, preserve transparent background, no scenery, no text, no smoke or aura. Ensure weapon tips and shield hooks aren't cropped. One edited character only.",
+      "sha256": "6851c26491293a0522b68385327e2fe76f06aa2422e63f0abe2dad497444ccb0",
+      "dimensions": [
+        1094,
+        1438
+      ],
+      "alpha": true
+    },
+    {
+      "name": "Gorehook Stalker",
+      "file": "gorehook-stalker.png",
+      "role": "Demonic runes on glaive",
+      "reference": "C:/Users/Wil/Documents/Codex/2026-10-09/sp-2/outputs/goatmen-expansion-r1/gorehook-stalker.png",
+      "reference_sha256": "9e92d293cc6865d3f91abb190db92199912b9a8cff96ba0f46b81702ba0246ec",
+      "source": "C:/Users/Wil/.codex/generated_images/01a11efa-7397-7560-9504-70188201352c/exec-329ba68a-a41d-4aed-87fd-1945e5f0f0b1.png",
+      "prompt": "PRECISE LOCAL EDIT to supplied Gorehook Stalker image. Change ONLY the flat dark-iron surface of the large hooked glaive BLADE at upper right: add 4-5 large angular DEMONIC RUNES engraved into the blade, glowing bright ember orange-red from within the grooves. Runes follow the long blade surface, with crisp sharp glyph shapes and subtle local reflected ember light on nearby metal. Glyphs should be infernal abstract marks, not readable human words. KEEP THE SAME blade silhouette, edges, crescent hook, metal texture and blade mounting; do not redesign weapon. KEEP EVERYTHING ELSE EXACTLY: character face/expression/horns/ears, torso, arm position, hands and grips, lower weapon shaft, shoulder armor, belt/cloth, legs/fur/hooves, stance, proportions, framing, dark contours, refined angular cel shading and palette. No body runes, no extra glow anywhere else, no extra effects, no smoke. Preserve genuine transparent background. One same full-body image with this requested blade engraving only.",
+      "sha256": "c05eeb9ce21d8ea7ae47a20d47bd14f140e9075b950f6c0ab3ba42d840bdb806",
+      "dimensions": [
+        1094,
+        1438
+      ],
+      "alpha": true
+    },
+    {
+      "name": "Ashbone Elder",
+      "file": "ashbone-elder.png",
+      "role": "Sinister hooded ritualist",
+      "reference": "C:/Users/Wil/Documents/Codex/2026-10-09/sp-2/outputs/goatmen-expansion-r1/ashbone-elder.png",
+      "reference_sha256": "c01c3bdd853f8c2ccfd2befb5459ec05a929903d8fd35b9dfe3d7f097a576ea8",
+      "source": "C:/Users/Wil/.codex/generated_images/01a11efa-7397-7560-9504-70188201352c/exec-49b0e0b8-24fb-4c14-84c1-675ecec62863.png",
+      "prompt": "EDIT supplied Ashbone Elder goatman. User wants him wearing a HOOD and looking MORE SINISTER AND FORMIDABLE. Preserve his existing goatman identity: red goat face and long muzzle, yellow eyes, uneven curled black horns with one broken tip, LONG ash-white forked beard, digitigrade furry legs and cloven hooves, long bone-fork crystal staff, offering bowl, two bone pendants. Preserve same refined serious angular 2D cel-shading, outlines, palette, viewpoint and general pose. Add a deep oversized CHARCOAL HOOD drawn up over his skull, with tailored openings allowing his horns to emerge naturally. Hood must frame his face clearly, casting a hard dark angular shadow over forehead/upper face while the narrow intense ember-yellow eyes glare out. Broaden the existing shoulder shawl into a looming angular hooded mantle, a sinister ceremonial silhouette without busy decoration. The beard must spill fully from the hood, goat muzzle still readable. Give face a harsher threatening glare, slightly lowered chin; make presence commanding and dangerous rather than frail or kindly. Keep staff, hands, bowl, leg pose and clothing below waist unchanged. No new weapons, no wings, no skull mask, no extra horns, no skeleton identity, no body redesign. Limited warm glow from existing bowl/crystal only; no surrounding fog. Entire figure, staff, horns and hooves in frame, preserve transparent background, no text or scenery. One edited character.",
+      "sha256": "dfa114344f7620c52caf10756b4b49755f4c53fa0171364235042b54d1781be4",
+      "dimensions": [
+        1024,
+        1536
+      ],
+      "alpha": true
+    }
+  ],
+  "gallery_status": "All three submitted via style-gallery/submit.mjs as Characters / sample-r2 / Pending approval. Earlier r1 originals preserved; no decisions changed.",
+  "review": "Creator inspected all three full renders and labeled board. Requested changes visible; core goatman identities, poses and style remain visually consistent. Preservation is visual, not pixel-identical certification. Concept artwork only; no runtime integration or independent QA claimed."
+}
