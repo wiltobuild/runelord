@@ -1,0 +1,35 @@
+[
+  {
+    "region": "title",
+    "text": "Hold the Line",
+    "lines": [
+      "Hold the Line"
+    ],
+    "font_size": 84
+  },
+  {
+    "region": "cost",
+    "text": "1",
+    "lines": [
+      "1"
+    ],
+    "font_size": 110
+  },
+  {
+    "region": "type",
+    "text": "SKILL · WARLOCK",
+    "lines": [
+      "SKILL · WARLOCK"
+    ],
+    "font_size": 35
+  },
+  {
+    "region": "rules",
+    "text": "Gain 8 Guard. All soldiers gain 5 Guard.",
+    "lines": [
+      "Gain 8 Guard. All soldiers",
+      "gain 5 Guard."
+    ],
+    "font_size": 54
+  }
+]

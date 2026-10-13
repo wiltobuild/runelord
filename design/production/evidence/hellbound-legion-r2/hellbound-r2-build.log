@@ -1,0 +1,30 @@
+
+> runelord@0.1.0 build
+> npm run check:assets && tsc --noEmit && vite build --config apps/web/vite.config.ts
+
+
+> runelord@0.1.0 check:assets
+> node tools/import/validate-runtime-assets.mjs
+
+Verified all 1378 runtime manifest assets.
+vite v7.3.6 building client environment for production...
+transforming...
+✓ 821 modules transformed.
+rendering chunks...
+computing gzip size...
+../../dist/index.html                                 0.65 kB │ gzip:   0.39 kB
+../../dist/assets/metal-mania-regular-Ch2tiLTQ.ttf  254.57 kB
+../../dist/assets/index-C0-o99EU.css                123.15 kB │ gzip:  27.26 kB
+../../dist/assets/CanvasPool-DZ3bD2dh.js              1.89 kB │ gzip:   0.83 kB
+../../dist/assets/Filter-RxmuzIeS.js                  2.60 kB │ gzip:   1.02 kB
+../../dist/assets/canvasUtils-Bzvq1wzg.js             5.71 kB │ gzip:   1.80 kB
+../../dist/assets/getTexelRangeRects-De4I85-a.js     11.40 kB │ gzip:   2.99 kB
+../../dist/assets/webworkerAll-BO62-2Vf.js           15.50 kB │ gzip:   4.89 kB
+../../dist/assets/CanvasRenderer-B-V4BWg5.js         27.50 kB │ gzip:   8.15 kB
+../../dist/assets/BitmapFont-LycRnZJS.js             33.82 kB │ gzip:  11.44 kB
+../../dist/assets/browserAll-FmqQ0KJU.js             44.00 kB │ gzip:  11.43 kB
+../../dist/assets/RenderTargetSystem-BHAQ2ODi.js     54.07 kB │ gzip:  14.83 kB
+../../dist/assets/WebGPURenderer-D50Aom-m.js         55.92 kB │ gzip:  15.99 kB
+../../dist/assets/WebGLRenderer-BiYn66UJ.js          73.67 kB │ gzip:  20.16 kB
+../../dist/assets/index-CSM1P0WW.js                 743.02 kB │ gzip: 239.80 kB
+✓ built in 8.35s

@@ -1,0 +1,124 @@
+{
+  "schema": 1,
+  "id": "hellbound-legion",
+  "status": "complete",
+  "outcome": "Play Hellbound Legion in both modes with persistent promoted soldiers, new cards, pair recruits, bodyguards and Hellgate synergies, using accepted summon designs.",
+  "authorization": "User approved six-summon preview, requested Vanguard larger than Legionary, smaller Imp, swapped Legionary/Pikeman stacking, new Hellbound Legion build replacing sacrifice starter and all related card/mechanics work. Earlier instruction still requires breakdown before commit.",
+  "contentIds": [
+    "hellbound",
+    "iron-legionary",
+    "ash-pikeman",
+    "ironhorn-bulwark",
+    "maledictor",
+    "dread-vanguard"
+  ],
+  "owner": "hellbound_rules",
+  "integrationOwner": "root",
+  "reviewer": "hellbound_qa",
+  "ownedPaths": [
+    "packages/content",
+    "packages/engine",
+    "apps/web/src",
+    "tools/import",
+    "assets/cards/hellbound-legion-r1",
+    "assets/characters/hellbound-legion"
+  ],
+  "dependencies": [],
+  "exclusions": [
+    "Commit, push or deploy",
+    "Rewrite exact-hash gallery decisions",
+    "Retroactively replace existing pact saves"
+  ],
+  "inputs": [
+    {
+      "path": "packages/content/hellbound.ts",
+      "sha256": "b3ea2e58fa2f8a0e8458defe673f435bd7ad5a2712d635304a1d9afb1515e29b"
+    },
+    {
+      "path": "packages/engine/index.ts",
+      "sha256": "e7a6b634d49a2022f7bf69234b66e2aa11b1f3d52fc4ca43191b028eb599a648"
+    },
+    {
+      "path": "apps/web/public/game-assets/manifest.json",
+      "sha256": "2a4de0a9e073641fecb90f7fc4b4b668ea79ae51719c4f8de2a54f172e07db75"
+    }
+  ],
+  "animation": {
+    "method": "whole-character-frames",
+    "requiredStates": [
+      "idle",
+      "attack",
+      "cast",
+      "hit",
+      "wounded_idle",
+      "spawn",
+      "die"
+    ]
+  },
+  "acceptance": [
+    {
+      "id": "rules",
+      "status": "pass",
+      "evidence": [
+        {
+          "path": "design/production/evidence/hellbound-legion/hellbound-engine-tests.log",
+          "sha256": "306869ba9750c6ae78b342339d35c8900817d496713666bc6af1c32bd0336692"
+        },
+        {
+          "path": "design/production/evidence/hellbound-legion/hellbound-sim.log",
+          "sha256": "506198ed9c18e28d0024161a050494be7fa0415e4ff8273f1ea8e5988a49e2d0"
+        }
+      ],
+      "check": "Promotion persistence, death reset, pair summoning and both synergies verified"
+    },
+    {
+      "id": "presentation",
+      "status": "pass",
+      "evidence": [
+        {
+          "path": "design/production/evidence/hellbound-legion/hellbound-build.log",
+          "sha256": "123cffe4dc5e5264c7cb7a52276a71749e196fafce989daaff0f281783a6dc1c"
+        },
+        {
+          "path": "design/production/evidence/hellbound-legion/battle-preview.jpg",
+          "sha256": "5ff7da65fbb7d74ef21599f0b016dcda3794cca0592bdf5529dbefdb9600638c"
+        }
+      ],
+      "check": "Both modes expose new starter/cards; correct sizes/formation and VFX"
+    },
+    {
+      "id": "cards",
+      "status": "pass",
+      "evidence": [
+        {
+          "path": "assets/cards/hellbound-legion-r1/manifest.json",
+          "sha256": "f6d60a80cbff550f3a8801a9cc44a0745e85fe974a15d6c31fb52f6a1b0a8c54"
+        },
+        {
+          "path": "assets/cards/hellbound-legion-r1/gallery-verification.json",
+          "sha256": "20d55b26e57db7ecd99c9bc05c84664628c535834dda928207cb8d57cc058439"
+        }
+      ],
+      "check": "14 cards assembled and submitted with protected template verification"
+    },
+    {
+      "id": "independent-qa",
+      "status": "pass",
+      "evidence": [
+        {
+          "path": "design/production/evidence/hellbound-legion/independent-qa.md",
+          "sha256": "039f1ffd759bff71fbb46a641541cc856a379f37e21809ce52480c378f9f894e"
+        }
+      ],
+      "check": "Separate reviewer checks gameplay and cross-mode integration"
+    }
+  ],
+  "checkpoint": {
+    "completed": [
+      "Rules, cards, runtime assets, presentation and independent QA in both modes"
+    ],
+    "remaining": [],
+    "blockers": [],
+    "nextAction": "User playtest and card-art review; balance remains provisional. No commit, push or deployment performed."
+  }
+}

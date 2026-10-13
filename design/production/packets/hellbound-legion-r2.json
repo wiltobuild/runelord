@@ -1,0 +1,132 @@
+{
+  "schema": 1,
+  "id": "hellbound-legion-r2",
+  "status": "complete",
+  "outcome": "Ten summons, banked individual recruit ranks, chosen sacrifice promotion, adaptive spacing and rank-scaled crimson aura in both modes.",
+  "authorization": "User requested demonic promotion/aura, less crowding, capacity10, sacrifice for stronger promotion, and saved promotion on resummon instead of surviving units between battles.",
+  "contentIds": [
+    "hellbound",
+    "iron-legionary",
+    "ash-pikeman",
+    "ironhorn-bulwark",
+    "maledictor",
+    "dread-vanguard"
+  ],
+  "owner": "hellbound_rules",
+  "integrationOwner": "root",
+  "reviewer": "hellbound_qa",
+  "ownedPaths": [
+    "packages/content",
+    "packages/engine",
+    "apps/web/src",
+    "tools/import",
+    "assets/cards/hellbound-legion-r1",
+    "assets/characters/hellbound-legion"
+  ],
+  "dependencies": [],
+  "exclusions": [
+    "Commit, push or deploy",
+    "Rewrite exact-hash gallery decisions",
+    "Retroactively replace existing pact saves"
+  ],
+  "inputs": [
+    {
+      "path": "packages/content/hellbound.ts",
+      "sha256": "3568c185ecd47f404d83b87e3dc79c6a09606eae763584b2c1d4a00d7719ae43"
+    },
+    {
+      "path": "packages/engine/index.ts",
+      "sha256": "30003f534de2295093c296f38b237d317f7e657bb383714cb8932340d3bf9088"
+    },
+    {
+      "path": "apps/web/src/hellboundEffects.ts",
+      "sha256": "8728ac06c8fcfe210f47e17478530703b5910d9da8d6c4fefc287e850c24dee4"
+    },
+    {
+      "path": "apps/web/src/ActorSprite.tsx",
+      "sha256": "91cd6b0d02142c1e6a520f953cf208d25a7f6ca6bbaa493c6f33d987ce285203"
+    },
+    {
+      "path": "apps/web/src/warbandLayout.ts",
+      "sha256": "80c52a630f3532ff95d197314bd27090a10d782dcaeba61eee17a0d3a42e6292"
+    },
+    {
+      "path": "apps/web/public/game-assets/manifest.json",
+      "sha256": "a51fc6dc33735bc0e1adb6a840515d68a6e539f05be5b7f5f8839efacc1582cf"
+    }
+  ],
+  "animation": {
+    "method": "whole-character-frames",
+    "requiredStates": [
+      "idle",
+      "attack",
+      "cast",
+      "hit",
+      "wounded_idle",
+      "spawn",
+      "die"
+    ]
+  },
+  "acceptance": [
+    {
+      "check": "Deterministic capacity, rank banking and sacrifice rules",
+      "status": "pass",
+      "evidence": [
+        {
+          "path": "design/production/evidence/hellbound-legion-r2/hellbound-r2-engine-tests.log",
+          "sha256": "d94b120604a86d429b491a002832f495cc807445aa9bf381c0584333e1f10ce2"
+        },
+        {
+          "path": "design/production/evidence/hellbound-legion-r2/hellbound-r2-sim.log",
+          "sha256": "0af517025f8f98b3f6d1120e721deefdf478baf9bec31c94af53119c2bfbc72e"
+        }
+      ]
+    },
+    {
+      "check": "Ten-unit presentation and crimson aura",
+      "status": "pass",
+      "evidence": [
+        {
+          "path": "design/production/evidence/hellbound-legion-r2/hellbound-r2-build.log",
+          "sha256": "a0d3670782554d6fb912a2a739bf790b310782a97796a1d6f1f1ad27fa30ced5"
+        },
+        {
+          "path": "design/production/evidence/hellbound-legion-r2/hellbound-r2-layout.log",
+          "sha256": "0c67cf0f4cd0bfee295c105f018fdd4ccc2016905ab97446466f972ff6d84b6b"
+        },
+        {
+          "path": "design/production/evidence/hellbound-legion-r2/browser-review.md",
+          "sha256": "9bfd20ef5c549eb9fab2bbe891d86d0a863fdc5b040c9b29678c4921a6a6c561"
+        }
+      ]
+    },
+    {
+      "check": "Updated card faces match rules",
+      "status": "pass",
+      "evidence": [
+        {
+          "path": "design/production/evidence/hellbound-legion-r2/card-verification.json",
+          "sha256": "2d113380939091c3a71342a12800e453662f80141f9804d9bd3c2bb8808d7c0f"
+        }
+      ]
+    },
+    {
+      "check": "Independent behavior and browser QA",
+      "status": "pass",
+      "evidence": [
+        {
+          "path": "design/production/evidence/hellbound-legion-r2/independent-qa.md",
+          "sha256": "f290ab51a8b0b8087d82813d7a6e2d6be0671f76e48d82aa16cf1be4822471c6"
+        }
+      ]
+    }
+  ],
+  "checkpoint": {
+    "completed": [
+      "Both modes implemented, built and checked; 15cards integrated and9new/revised submissions verified"
+    ],
+    "remaining": [],
+    "blockers": [],
+    "nextAction": "User playtest and card-art review. No commit, push or deployment."
+  }
+}

@@ -1,0 +1,39 @@
+[
+  {
+    "region": "title",
+    "text": "Shattered Queen",
+    "font_size": 60,
+    "lines": [
+      "Shattered Queen"
+    ]
+  },
+  {
+    "region": "cost",
+    "text": "3",
+    "font_size": 104,
+    "lines": [
+      "3"
+    ]
+  },
+  {
+    "region": "type",
+    "text": "SUMMON · RUNEBLADE",
+    "font_size": 32,
+    "lines": [
+      "SUMMON · RUNEBLADE"
+    ]
+  },
+  {
+    "region": "rules",
+    "text": "Summon a Thrall. 15 HP / 4 Power.\nAttacks hit ALL enemies and apply 1 Chill.\nRot starts at 1.\nIf you have 3 Corpses, spend them instead of Mana.",
+    "font_size": 40,
+    "lines": [
+      "Summon a Thrall. 15 HP / 4 Power.",
+      "Attacks hit ALL enemies and apply 1",
+      "Chill.",
+      "Rot starts at 1.",
+      "If you have 3 Corpses, spend them",
+      "instead of Mana."
+    ]
+  }
+]

@@ -1,0 +1,35 @@
+[
+  {
+    "region": "title",
+    "text": "Frostbite",
+    "font_size": 100,
+    "lines": [
+      "Frostbite"
+    ]
+  },
+  {
+    "region": "cost",
+    "text": "2",
+    "font_size": 104,
+    "lines": [
+      "2"
+    ]
+  },
+  {
+    "region": "type",
+    "text": "ATTACK · RUNEBLADE",
+    "font_size": 32,
+    "lines": [
+      "ATTACK · RUNEBLADE"
+    ]
+  },
+  {
+    "region": "rules",
+    "text": "Heavy. Deal 10 damage. Apply 3 Chill.",
+    "font_size": 56,
+    "lines": [
+      "Heavy. Deal 10 damage.",
+      "Apply 3 Chill."
+    ]
+  }
+]

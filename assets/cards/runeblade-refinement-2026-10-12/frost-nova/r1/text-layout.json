@@ -1,0 +1,35 @@
+[
+  {
+    "region": "title",
+    "text": "Frost Nova",
+    "font_size": 92,
+    "lines": [
+      "Frost Nova"
+    ]
+  },
+  {
+    "region": "cost",
+    "text": "2",
+    "font_size": 104,
+    "lines": [
+      "2"
+    ]
+  },
+  {
+    "region": "type",
+    "text": "SKILL · RUNEBLADE",
+    "font_size": 32,
+    "lines": [
+      "SKILL · RUNEBLADE"
+    ]
+  },
+  {
+    "region": "rules",
+    "text": "Apply 4 Chill to ALL enemies. Gain 6 Guard.",
+    "font_size": 56,
+    "lines": [
+      "Apply 4 Chill to ALL",
+      "enemies. Gain 6 Guard."
+    ]
+  }
+]

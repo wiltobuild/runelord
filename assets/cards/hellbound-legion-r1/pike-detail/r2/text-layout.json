@@ -1,0 +1,38 @@
+[
+  {
+    "region": "title",
+    "text": "Pike Detail",
+    "lines": [
+      "Pike Detail"
+    ],
+    "font_size": 94
+  },
+  {
+    "region": "cost",
+    "text": "2",
+    "lines": [
+      "2"
+    ],
+    "font_size": 110
+  },
+  {
+    "region": "type",
+    "text": "SUMMON · WARLOCK",
+    "lines": [
+      "SUMMON · WARLOCK"
+    ],
+    "font_size": 34
+  },
+  {
+    "region": "rules",
+    "text": "Summon 2 Ash Pikemen (12 HP, 5 Power each). Requires 2 empty Warband slots. Earned ranks return when summoned again.",
+    "lines": [
+      "Summon 2 Ash Pikemen (12",
+      "HP, 5 Power each). Requires 2",
+      "empty Warband slots. Earned",
+      "ranks return when summoned",
+      "again."
+    ],
+    "font_size": 48
+  }
+]

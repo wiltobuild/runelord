@@ -1,0 +1,15 @@
+{
+  "dimensions": [
+    1024,
+    1536
+  ],
+  "protected_pixel_count": 621701,
+  "changed_protected_pixels": 0,
+  "protected_alpha_identical": true,
+  "template_sha256": "30cd5177cf360f80a6b90cfdafeaecb8fa561c98751414a6b5ba295df3744a3d",
+  "mask_sha256": "c2226e7427a2afc7c7236fda02c6078fc27e31bb32a0f8386de502ce89d672da",
+  "editable_mask_version": "runeblade-demo-v2",
+  "text_min_rules_px": 40,
+  "text_matches_engine_semantics": true,
+  "automatic_corpse_cost_visible": true
+}

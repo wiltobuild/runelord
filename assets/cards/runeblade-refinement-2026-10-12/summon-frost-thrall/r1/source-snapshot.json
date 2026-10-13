@@ -1,0 +1,12 @@
+{
+  "id": "summon-frost-thrall",
+  "name": "Frost Thrall",
+  "cost": 2,
+  "type": "Summon",
+  "rarity": "Common",
+  "definitionRules": "Summon a 20 HP / 7 Power Thrall. Attacks apply 1 Chill.",
+  "rules": "Summon Frost Thrall: 20 HP / 7 Power. Attacks apply 1 Chill. Rot starts at 1. Automatically spend Corpses equal to its Mana cost instead if available.",
+  "displayRules": "Summon a Thrall. 20 HP / 7 Power.\nAttacks apply 1 Chill.\nRot starts at 1.\nIf you have 2 Corpses, spend them instead of Mana.",
+  "authoritativeSource": "packages/content/runeblade.ts",
+  "engine_source_sha256": "d8f74805b64c4257cf9f049da7490bfc8406d006277e39a8d89f90d1cf869f21"
+}

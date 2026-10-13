@@ -1,0 +1,36 @@
+[
+  {
+    "region": "title",
+    "text": "Veteran's Command",
+    "lines": [
+      "Veteran's Command"
+    ],
+    "font_size": 56
+  },
+  {
+    "region": "cost",
+    "text": "2",
+    "lines": [
+      "2"
+    ],
+    "font_size": 110
+  },
+  {
+    "region": "type",
+    "text": "SKILL · WARLOCK",
+    "lines": [
+      "SKILL · WARLOCK"
+    ],
+    "font_size": 35
+  },
+  {
+    "region": "rules",
+    "text": "A soldier attacks. If it has been promoted, it attacks again.",
+    "lines": [
+      "A soldier attacks. If it has",
+      "been promoted, it attacks",
+      "again."
+    ],
+    "font_size": 54
+  }
+]

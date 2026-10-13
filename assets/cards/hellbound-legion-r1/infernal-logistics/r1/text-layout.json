@@ -1,0 +1,36 @@
+[
+  {
+    "region": "title",
+    "text": "Infernal Logistics",
+    "lines": [
+      "Infernal Logistics"
+    ],
+    "font_size": 65
+  },
+  {
+    "region": "cost",
+    "text": "1",
+    "lines": [
+      "1"
+    ],
+    "font_size": 110
+  },
+  {
+    "region": "type",
+    "text": "SKILL · WARLOCK",
+    "lines": [
+      "SKILL · WARLOCK"
+    ],
+    "font_size": 35
+  },
+  {
+    "region": "rules",
+    "text": "Draw 2 cards. If you control 2 or more soldiers, gain 2 Cinders.",
+    "lines": [
+      "Draw 2 cards. If you control",
+      "2 or more soldiers, gain 2",
+      "Cinders."
+    ],
+    "font_size": 54
+  }
+]

@@ -1,0 +1,83 @@
+{
+  "schema": 1,
+  "id": "runeblade-pages-correction",
+  "status": "complete",
+  "outcome": "Runeblade playable in the actual fixed-route GitHub Pages roguelike, preserving the deployed demo encounter and shop flow.",
+  "authorization": "User explicitly corrected the wrong conquer-mode target and requested continuation of the GitHub Pages demo implementation.",
+  "contentIds": [
+    "runeblade",
+    "gravehost",
+    "rimebound",
+    "runewarden"
+  ],
+  "owner": "root",
+  "integrationOwner": "root",
+  "reviewer": "verify_demo_port",
+  "ownedPaths": [
+    "apps/web",
+    "packages/engine",
+    "packages/content/runeblade.ts",
+    "packages/content/index.ts",
+    "packages/assets/manifest.json",
+    "tools/import/runeblade-assets.mjs",
+    "tools/import/runeblade-books.mjs"
+  ],
+  "dependencies": [],
+  "exclusions": [
+    "Conquer-mode campaign systems",
+    "Unrelated pre-existing warlock-catalog changes",
+    "Commit/push/deployment"
+  ],
+  "inputs": [
+    {
+      "path": "design/runeblade-roguelike-demo.md",
+      "sha256": "b169cd72d7167b74d22c72a886e6244ee1cf4c8c33e7c457517317f67820f888"
+    }
+  ],
+  "animation": null,
+  "acceptance": [
+    {
+      "check": "Independent full-route engine audit, class shops, corpse accounting and replay",
+      "status": "pass",
+      "evidence": [
+        {
+          "path": "work/production/runeblade-pages/independent-qa.json",
+          "sha256": "f9aec6f5cb843794b55486c21e5808331ba93307c2a9ac7a1527392590a9692d"
+        }
+      ]
+    },
+    {
+      "check": "Browser confirms fixed-demo encounter and Runeblade presentation",
+      "status": "pass",
+      "evidence": [
+        {
+          "path": "work/production/runeblade-pages/browser-review.json",
+          "sha256": "37fd8bfc5bc7f20548aa184ab8aab354f0527dcf233ac1d77265648837022aff"
+        }
+      ]
+    },
+    {
+      "check": "Final Pages-base production build and runtime asset validation",
+      "status": "pass",
+      "evidence": [
+        {
+          "path": "work/production/runeblade-pages/final-pages-build.log",
+          "sha256": "686907c482a721922a8e2bee1480f054404e4231a5c4f7154ef79a29a429e974"
+        }
+      ]
+    }
+  ],
+  "checkpoint": {
+    "completed": [
+      "Selective source port onto origin/main be1dc8c checkout",
+      "22 cards, 5 summons, 3 starter books/decks, 6 relics",
+      "240 engine tests and 11 formation tests",
+      "36 full legal-action demo runs",
+      "Browser fixed-route verification",
+      "Final Pages build"
+    ],
+    "remaining": [],
+    "blockers": [],
+    "nextAction": "Review corrected local demo on port 4321. Publication remains separate."
+  }
+}

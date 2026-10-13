@@ -1,0 +1,38 @@
+[
+  {
+    "region": "title",
+    "text": "Iron Legionary",
+    "lines": [
+      "Iron Legionary"
+    ],
+    "font_size": 76
+  },
+  {
+    "region": "cost",
+    "text": "2",
+    "lines": [
+      "2"
+    ],
+    "font_size": 110
+  },
+  {
+    "region": "type",
+    "text": "SUMMON · WARLOCK",
+    "lines": [
+      "SUMMON · WARLOCK"
+    ],
+    "font_size": 34
+  },
+  {
+    "region": "rules",
+    "text": "Summon an Iron Legionary (18 HP, 4 Power). With 2+ Legionaries, split all hostile damage intended for the Warlock between them, before his Guard. Persists until destroyed.",
+    "lines": [
+      "Summon an Iron Legionary (18 HP,",
+      "4 Power). With 2+ Legionaries,",
+      "split all hostile damage intended for",
+      "the Warlock between them, before",
+      "his Guard. Persists until destroyed."
+    ],
+    "font_size": 42
+  }
+]

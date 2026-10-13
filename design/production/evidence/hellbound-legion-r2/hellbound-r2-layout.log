@@ -1,0 +1,28 @@
+✔ Legion formation preserves approved order with Pikeman and Legionary swapped (2.0922ms)
+✔ three Maledictors retain fixed model scale and independently readable controls (0.4468ms)
+✔ sparse Legion soldiers spread naturally before overlap is necessary (0.2755ms)
+✔ one through ten soldiers and Imps retain scale, bounded lanes and unique controls (2.4764ms)
+✔ ten soldiers compact spacing only, compared with a sparse pair (0.2925ms)
+✔ adding Gorthak-converted Imp preserves every existing model size (3.3926ms)
+✔ crowded arch families put foreground members farther from the enemy (0.8423ms)
+✔ three hellhounds form their own stack behind Cerberax when kind groups fit (0.4149ms)
+✔ same-kind units and arch relatives spread out when the row has room (0.4252ms)
+✔ Gloomstalker shares the flying row with Nightmaw and frees ground space (0.2827ms)
+✔ unique crowded units and death ghosts never trigger scaling (1.3615ms)
+✔ crowded unrelated large demons stay behind short units and use the rear reserve (0.3024ms)
+✔ arch demons and three hellhounds use rear space without collapsing stagger (0.9411ms)
+✔ hellhounds pack tighter to leave Cerberax clear of Pyre Colossus (0.3517ms)
+✔ four hellhounds flank Cerberax in a stable centered pack (0.6214ms)
+✔ Runeblade summons retain finite intrinsic geometry in solo and crowded formations (1.7257ms)
+✔ Runeblade scale never changes across 1–5 allies, duplicates, and lingering death ghosts (4.7483ms)
+✔ Runeblade Queen hovers at full authored scale without pushing ground allies into the sky (0.3194ms)
+✔ ten mixed ground summons fit within the available rear reserve at full scale (0.5984ms)
+✔ ten Runeblade allies keep individual readable controls in two rows (0.3234ms)
+ℹ tests 20
+ℹ suites 0
+ℹ pass 20
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 313.5376

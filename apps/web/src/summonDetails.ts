@@ -1,6 +1,16 @@
-import { unitPower, unitScorch, type State, type Unit } from "../../../packages/engine/index";
+import { usesSummonRules, unitPower, unitScorch, type State, type Unit } from "../../../packages/engine/index";
 
 export const summonTraits: Record<string, string> = {
+  "iron-legionary": "Bodyguard oath: two living Legionaries share all hostile damage aimed at the Warlock.",
+  "ash-pikeman": "Pike formation: +2 damage per other living Ash Pikeman.",
+  "ironhorn-bulwark": "Defender. At the start of your turn, gives every soldier 3 Guard.",
+  "maledictor": "Hits apply 2 Scorch. Three living Maledictors open a Hellgate at end turn: 6 damage and 2 Scorch to all enemies, then promote all soldiers. Once per turn.",
+  "dread-vanguard": "Cleave: attacks every enemy. Its first kill each turn promotes it once.",
+  "frost-thrall": "Hits apply 1 Chill.",
+  "shattered-queen": "Attacks every enemy and applies 1 Chill.",
+  "rime-seer": "Hits apply 3 Chill.",
+  "rune-revenant": "Attacks twice.",
+  "bone-defender": "Defender: intercepts attacks aimed at the caster.",
   imp: "Swift: attacks on arrival. Each firebolt applies 1 Scorch.",
   hellhound: "Pack: +2 damage per other Hellhound or Cerberax.",
   "pit-brute": "Cleave: attacks every enemy. Defender: intercepts attacks aimed at the caster.",
@@ -21,5 +31,6 @@ export function summonScorch(unit: Unit, state: State) {
   return unitScorch(state, unit);
 }
 export function summonDescription(unit: Unit, state: State) {
-  return `${unit.name}: ${summonPower(unit, state)} damage, ${unit.upkeep} Upkeep. ${summonTraits[unit.kind] ?? ""}`;
+  const traits=unit.kind==="pit-brute"&&!usesSummonRules(state) ? "Strikes the focus target. Defender: intercepts attacks aimed at the caster." : summonTraits[unit.kind] ?? "";
+  return `${unit.name}: ${summonPower(unit, state)} damage, ${unit.rot !== undefined ? `Rot ${unit.rot}` : `${unit.upkeep} Upkeep`}. ${unit.promotionRank !== undefined ? `Rank ${unit.promotionRank}, ${unit.armor ?? 0} Armor. Rank is saved for this recruit’s next summon. ` : ""}${traits}`;
 }

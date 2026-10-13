@@ -71,7 +71,7 @@ test('seeded rewards are distinct, weighted toward chosen style, and retain off-
       for(const id of result) { total++; seen.add(id); if(cardAffinities[deck.id].includes(id)) themed++; else offStyle++; }
       assert.deepEqual(result,rollRewards(newRun(seed,deck.id)));
     }
-    assert.ok(themed/total>.55,`${deck.id}: ${themed/total}`); assert.ok(themed/total<.85); assert.ok(offStyle>0); assert.equal(seen.size,40);
+    assert.ok(themed/total>.55,`${deck.id}: ${themed/total}`); assert.ok(themed/total<.85); assert.ok(offStyle>0); assert.equal(seen.size,deck.id==='hellbound'?54:40);
   }
 });
 test('legacy schema2 prefix keeps historical rewards/deal and migrates safely into loot staging',()=>{

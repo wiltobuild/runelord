@@ -1,0 +1,4 @@
+Existing artwork reused by deterministic composition. Source: C:\Users\wilsh\Projects\runelord-tintfix-roguelike-main-push\assets\cards\warlock-2026-10-02\summon-pyre-warden\r1\illustration.png
+SHA256: 24f188083494fe9512f1146576ff47ad8a16ae037b2e2668fe4bdb33b1bab2eb
+Approval: Approved
+New card integration authorized by user; approval ledger unchanged.

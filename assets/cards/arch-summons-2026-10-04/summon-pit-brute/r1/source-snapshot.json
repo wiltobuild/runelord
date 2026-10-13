@@ -1,0 +1,8 @@
+{
+  "name": "Summon Pit Brute",
+  "cost": "2 +2🔥",
+  "type": "Skill",
+  "rarity": "Uncommon",
+  "rules": "Summon a Pit Brute: 26 HP, 7 damage to ALL enemies. Defender. Upkeep 2.",
+  "upgrade": "It has +10 Max HP"
+}

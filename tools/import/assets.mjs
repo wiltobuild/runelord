@@ -329,6 +329,8 @@ for (const [id, kind] of [["boss-imp", "imp"], ["boss-hellhound", "hellhound"]])
 }
 await integrateCinematicSummons(manifest);
 await integrateArchSummons(manifest);
+// Preserve the original printed rules for pre-expansion saves.
+manifest.legacyWarlockCards = {"summon-pit-brute": await pack("assets/cards/warlock-2026-10-02/summon-pit-brute/r1/summon-pit-brute-r1.png", "cards-legacy/summon-pit-brute.webp", 600)};
 const musicRoot = process.env.RUNELORD_MUSIC_ROOT || "assets/audio/music";
 const tracks = JSON.parse(
   fs.readFileSync(path.join(musicRoot, "loop_manifest.json"), "utf8"),
@@ -375,6 +377,12 @@ for (const [id, slug] of [["forest-explore", "04_lanterns_in_the_hollow"], ["for
   manifest.provenance.push({ source, sha256: hash(source), output, outputSha256: hash(path.join(out, output)), master: derivative.source, masterSha256: derivative.sourceSha256, transform: derivative.settings, status: "Existing Runelord score; user-requested forest integration" });
 }
 integrateForestSovereign(manifest);
+const { integrateRuneblade } = await import('./runeblade-assets.mjs');
+await integrateRuneblade(manifest);
+const { integrateHellbound } = await import('./hellbound-assets.mjs');
+await integrateHellbound(manifest);
+const { integrateHellboundCards } = await import('./hellbound-cards.mjs');
+await integrateHellboundCards(manifest);
 fs.mkdirSync("packages/assets", { recursive: true });
 fs.writeFileSync(
   "packages/assets/manifest.json",

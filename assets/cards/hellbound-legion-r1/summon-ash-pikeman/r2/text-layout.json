@@ -1,0 +1,38 @@
+[
+  {
+    "region": "title",
+    "text": "Ash Pikeman",
+    "lines": [
+      "Ash Pikeman"
+    ],
+    "font_size": 87
+  },
+  {
+    "region": "cost",
+    "text": "1",
+    "lines": [
+      "1"
+    ],
+    "font_size": 110
+  },
+  {
+    "region": "type",
+    "text": "SUMMON · WARLOCK",
+    "lines": [
+      "SUMMON · WARLOCK"
+    ],
+    "font_size": 34
+  },
+  {
+    "region": "rules",
+    "text": "Summon an Ash Pikeman (12 HP, 5 Power). +2 attack damage for each other Ash Pikeman. Earned ranks return when summoned again.",
+    "lines": [
+      "Summon an Ash Pikeman (12",
+      "HP, 5 Power). +2 attack",
+      "damage for each other Ash",
+      "Pikeman. Earned ranks return",
+      "when summoned again."
+    ],
+    "font_size": 48
+  }
+]

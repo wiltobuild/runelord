@@ -118,3 +118,70 @@ test('four hellhounds flank Cerberax in a stable centered pack',()=>{
   assert.equal(first.slots.get(unit.id)!.worldUnit,measureSummon(unit,assets).worldUnit);
  }
 });
+
+
+test('Runeblade summons retain finite intrinsic geometry in solo and crowded formations',()=>{
+ const kinds=['frost-thrall','shattered-queen','rime-seer','rune-revenant','bone-defender'];
+ const rosters=[...kinds.map(kind=>[kind]),kinds,[...kinds,...kinds]];
+ for(const roster of rosters){
+  const units=roster.map((kind,id)=>({kind,id})),layout=arrangeWarband(units,assets);
+  const retreat=retreatGroundFormation(layout.slots,assets);
+  assert.ok(Number.isFinite(retreat.shift));assert.equal(layout.slots.size,units.length);
+  for(const unit of units){const slot=layout.slots.get(unit.id)!;assert.ok(assets.actors[slot.art]);
+   for(const value of [slot.x,slot.top,slot.width,slot.root,slot.worldUnit,...Object.values(slot.bounds)])assert.ok(Number.isFinite(value));
+   assert.equal(slot.worldUnit,200);
+  }
+ }
+});
+
+
+test('Runeblade scale never changes across 1–5 allies, duplicates, and lingering death ghosts',()=>{
+ const kinds=['frost-thrall','shattered-queen','rime-seer','rune-revenant','bone-defender'];
+ for(const kind of kinds){
+  const solo=measureSummon({id:100,kind},assets);
+  for(let count=1;count<=5;count++){
+   const units=[{id:100,kind},...Array.from({length:count-1},(_,i)=>({id:i,kind:kinds[i]}))];
+   for(const roster of [units,[...units,{id:999,kind}]]){
+    const layout=arrangeWarband(roster,assets),reversed=arrangeWarband([...roster].reverse(),assets);
+    const member=layout.slots.get(100)!;
+    assert.equal(member.worldUnit,solo.worldUnit);assert.equal(member.width,solo.width);
+    assert.equal(member.root-member.top,solo.upper);
+    for(const unit of roster)assert.deepEqual(layout.slots.get(unit.id),reversed.slots.get(unit.id));
+    assert.equal(retreatGroundFormation(layout.slots,assets).shift,0);
+    assert.equal(layout.groups.length,roster.length);
+    const labels=[...layout.groups].sort((a,b)=>a.x-b.x);
+    for(let i=1;i<labels.length;i++)assert.ok(labels[i].x>=labels[i-1].x+labels[i-1].width-.001);
+    for(const label of labels){assert.equal(label.ids.length,1);assert.ok(label.width>=640/6);assert.equal(label.top,386);}
+   }
+  }
+ }
+});
+
+test('Runeblade Queen hovers at full authored scale without pushing ground allies into the sky',()=>{
+ const units=['shattered-queen','rime-seer','rune-revenant','frost-thrall','bone-defender'].map((kind,id)=>({kind,id}));
+ const {slots}=arrangeWarband(units,assets),queen=slots.get(0)!;
+ assert.equal(queen.airborne,true);assert.equal(queen.worldUnit,200);assert.equal(queen.root,300);
+ for(const id of [1,2,3,4]){assert.equal(slots.get(id)!.airborne,false);assert.ok(slots.get(id)!.root>=349);assert.ok(slots.get(id)!.depth>queen.depth);}
+});
+
+
+test('ten mixed ground summons fit within the available rear reserve at full scale',()=>{
+ const units=['gorthak','cerberax','pyre-colossus','pit-brute','pyre-warden','hellhound','iron-legionary','dread-vanguard','maledictor','ash-pikeman'].map((kind,id)=>({kind,id}));
+ const {slots,groups}=arrangeWarband(units,assets);
+ assert.equal(slots.size,10);assert.equal(groups.length,10);
+ for(const u of units){const slot=slots.get(u.id)!;
+  assert.equal(slot.worldUnit,measureSummon(u,assets).worldUnit);
+  assert.ok(slot.bounds.left>=-240.01&&slot.bounds.right<=700.01);
+  assert.ok(slot.root>=318&&slot.root<=324);
+  assert.equal(groups.filter(g=>g.ids.includes(u.id)).length,1);
+ }
+ for(const [i,g] of groups.entries())for(const other of groups.slice(i+1))if(g.top===other.top)assert.ok(g.x+g.width<=other.x+.001||other.x+other.width<=g.x+.001);
+});
+
+
+test('ten Runeblade allies keep individual readable controls in two rows',()=>{
+ const kinds=['rime-seer','rune-revenant','frost-thrall','bone-defender','shattered-queen'];
+ const {groups}=arrangeWarband(Array.from({length:10},(_,id)=>({id,kind:kinds[id%5]})),assets);
+ assert.equal(groups.length,10);assert.ok(groups.every(g=>g.width===128&&g.ids.length===1));
+ assert.deepEqual([...new Set(groups.map(g=>g.top))],[334,386]);
+});

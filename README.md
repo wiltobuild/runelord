@@ -31,12 +31,12 @@ This library is built to support a game rather than a single presentation page. 
 
 ## Four heroes, four complete class identities
 
-The Warlock is playable now. The other three hero classes are visible in character selection as **Coming Soon**, with finished 70-card class decks in the catalog and completed hero asset packages and selection presentation already in the library. Their battle implementations are the next major gameplay expansion after the remaining roguelike biomes.
+The local working builds now support **Warlock and Runeblade** in both modes. Runeblade has three starter decks, five animated undead summons, 24 playable cards, corpse economy, relics, and an ice-themed HUD. Runesmith and Ranger remain character-selection previews with catalog decks and art; their gameplay is still planned. Local changes do not become live until a release is committed and deployed.
 
 | Hero | Combat fantasy | Warband | Deck identity | Current state |
 |---|---|---|---|---|
 | **Warlock — Cinder-Sworn of the Ninth Pit** | Burn the battlefield, bargain with blood, then become the monster. | Demons | Scorch, Cinders, Corruption, sacrifice, Demon Form | **Playable now** |
-| **Runeblade — Oathsworn of the Long Winter** | A frost-armored executioner who turns the fallen into an army. | Thralls | Chill, Freeze, Shatter, Corpses, Raise, Rot | Coming soon to gameplay; deck and hero assets complete |
+| **Runeblade — Oathsworn of the Long Winter** | A frost-armored executioner who turns the fallen into an army. | Thralls | Chill, Freeze, Shatter, Corpses, Raise, Rot | Playable in the current local builds; frost spells, Corpses and undead summons |
 | **Runesmith — Thane of the Deep Forge** | A lightning-forge commander who floods the board with machines and steps into a war mech. | Constructs + Thunderhulk | Charge, Overcharge, Volts, Scrap, Arc, Mech Up | Coming soon to gameplay; deck and hero assets complete |
 | **Ranger — Warden of the Thornwood** | A relentless hunter whose companions become a permanent fighting pack. | Tamed companions | Mark, Snare, Venom, Arrows, Tame, Bond | Coming soon to gameplay; deck and hero assets complete |
 

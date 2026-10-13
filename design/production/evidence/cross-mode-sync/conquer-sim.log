@@ -1,0 +1,13 @@
+
+> runelord@0.1.0 sim
+> tsx tools/sim/warlock.ts
+
+{
+  "runs": 1000,
+  "starterDeck": "warband",
+  "wins": 8,
+  "losses": 992,
+  "softLocks": 0,
+  "identicalReplays": 1000,
+  "maxActions": 731
+}

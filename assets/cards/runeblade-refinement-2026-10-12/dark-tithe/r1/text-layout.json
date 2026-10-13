@@ -1,0 +1,35 @@
+[
+  {
+    "region": "title",
+    "text": "Dark Tithe",
+    "font_size": 94,
+    "lines": [
+      "Dark Tithe"
+    ]
+  },
+  {
+    "region": "cost",
+    "text": "0",
+    "font_size": 93,
+    "lines": [
+      "0"
+    ]
+  },
+  {
+    "region": "type",
+    "text": "SKILL · RUNEBLADE",
+    "font_size": 32,
+    "lines": [
+      "SKILL · RUNEBLADE"
+    ]
+  },
+  {
+    "region": "rules",
+    "text": "Sacrifice a Thrall. Gain 2 Mana. Draw 1 card.",
+    "font_size": 56,
+    "lines": [
+      "Sacrifice a Thrall. Gain 2",
+      "Mana. Draw 1 card."
+    ]
+  }
+]

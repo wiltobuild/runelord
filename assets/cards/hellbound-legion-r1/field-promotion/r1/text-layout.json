@@ -1,0 +1,37 @@
+[
+  {
+    "region": "title",
+    "text": "Field Promotion",
+    "lines": [
+      "Field Promotion"
+    ],
+    "font_size": 70
+  },
+  {
+    "region": "cost",
+    "text": "1",
+    "lines": [
+      "1"
+    ],
+    "font_size": 110
+  },
+  {
+    "region": "type",
+    "text": "SKILL · WARLOCK",
+    "lines": [
+      "SKILL · WARLOCK"
+    ],
+    "font_size": 35
+  },
+  {
+    "region": "rules",
+    "text": "Promote a soldier: permanently gain +2 Power, +2 maximum HP, heal 2 HP, and +1 Armor until destroyed.",
+    "lines": [
+      "Promote a soldier:",
+      "permanently gain +2 Power,",
+      "+2 maximum HP, heal 2 HP,",
+      "and +1 Armor until destroyed."
+    ],
+    "font_size": 50
+  }
+]

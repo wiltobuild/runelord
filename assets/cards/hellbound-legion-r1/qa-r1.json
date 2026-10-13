@@ -1,0 +1,79 @@
+{
+  "cards": [
+    {
+      "id": "summon-iron-legionary",
+      "runtimeSha256": "4b8236d9633f288d52a1bc1099ead0d7e33c2d4d5c865b4e1a83d5834fce2227",
+      "matchedBothVersions": true
+    },
+    {
+      "id": "summon-ash-pikeman",
+      "runtimeSha256": "449a8da589fca38f87b4b1ebe6d81cbcde3e9b2f559dbb91f0062126f9bc3f97",
+      "matchedBothVersions": true
+    },
+    {
+      "id": "summon-ironhorn-bulwark",
+      "runtimeSha256": "0979940e629fed7fb18ebbfefe7d5a4bddf735874721a7fca1595e9bdc860b30",
+      "matchedBothVersions": true
+    },
+    {
+      "id": "summon-maledictor",
+      "runtimeSha256": "59fcd4d4846de28dea4ee5d907b182cb8ab4c30682a2dd281e33542d0dd13224",
+      "matchedBothVersions": true
+    },
+    {
+      "id": "summon-dread-vanguard",
+      "runtimeSha256": "b41e127e4343c4806c205fac292ac7c62a3ae53ea218aa740a2f952a04623895",
+      "matchedBothVersions": true
+    },
+    {
+      "id": "muster-legion",
+      "runtimeSha256": "a4a904ad26251cbaec77eb8cb85932dd83246e17ece992c32d89266397149a50",
+      "matchedBothVersions": true
+    },
+    {
+      "id": "pike-detail",
+      "runtimeSha256": "f7351d7c3f9fc9076fa9ce8a27e199f63f8e87328bb18ad7b13bf7d638c468cb",
+      "matchedBothVersions": true
+    },
+    {
+      "id": "field-promotion",
+      "runtimeSha256": "48fc2037c1c1dcdce57019e5996cb03041858fa32a6fec6281ef75ffb765c0f1",
+      "matchedBothVersions": true
+    },
+    {
+      "id": "battlefield-commission",
+      "runtimeSha256": "fd181c3d68f6440d381c76b5308950a815de5ff447b81c1f0db82e177e2d3449",
+      "matchedBothVersions": true
+    },
+    {
+      "id": "rally-legion",
+      "runtimeSha256": "d380eca2da7381277f62b342f78576ed3efd4a65be1d3d8a0ca5e5af56802da4",
+      "matchedBothVersions": true
+    },
+    {
+      "id": "infernal-logistics",
+      "runtimeSha256": "b807b84aebfc2e321041611c981652697bbfea39bc9dcff72ffd50098c3eed63",
+      "matchedBothVersions": true
+    },
+    {
+      "id": "hold-the-line",
+      "runtimeSha256": "1d26df214b3dc21a9bac1289ece6d2a9d6af6fae8616ba28283ff0d5d9e14708",
+      "matchedBothVersions": true
+    },
+    {
+      "id": "hellgate-rite",
+      "runtimeSha256": "2096348e87665fcb8bf0e81dd87b88eadbd5400cd377c7210df32cb0962ed255",
+      "matchedBothVersions": true
+    },
+    {
+      "id": "veteran-command",
+      "runtimeSha256": "10d0ccbec14395792da08ebed37d68d902de20f64a6194028ce5ef0cdf6cb565",
+      "matchedBothVersions": true
+    }
+  ],
+  "protectedPixelChecks": 14,
+  "changedProtectedPixels": 0,
+  "gallerySubmissions": 14,
+  "approvalStatus": "Pending approval",
+  "liveTextParity": 14
+}

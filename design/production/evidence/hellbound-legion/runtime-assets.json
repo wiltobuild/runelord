@@ -1,0 +1,248 @@
+[
+  {
+    "kind": "imp",
+    "revision": "hellbound-r1 (imp-states-r1)",
+    "manifest": {
+      "path": "assets/characters/hellbound-legion/imp/r1/animation.json",
+      "sha256": "adede4c0c6a99854e649f28f8beadc726d1e6cf61e61f4f2a6f678aae20f63f0"
+    },
+    "sourceLock": {
+      "path": "assets/characters/hellbound-legion/imp/r1/source-lock.json",
+      "sha256": "c42ecdf19828c5ef4947928e8fcd8bd45cb72dcd8668cafbe6b46e74db7330a1"
+    },
+    "authorization": "User approved the six-summon battle preview and requested Hellbound Legion integration, with Vanguard 15% taller than Legionary and Imp about 10% taller than the former flight model. Approval ledger statuses are preserved.",
+    "encodedBytes": 1052124,
+    "decodedBytes": 21385728,
+    "frameCount": 39,
+    "sourceFramesTouchingEdge": 0,
+    "geometry": {
+      "coordinate_system": "pixels; top-left; x right, y down",
+      "facing": "right",
+      "canvas_px": [
+        384,
+        357
+      ],
+      "root_px": [
+        205.71428571428572,
+        325.7142857142857
+      ],
+      "source_pixels_per_world_unit": 472.23959713755636,
+      "reference_visible_height_px": 296.22857142857146,
+      "standing_height_world": 0.6272844827586207,
+      "layout_bounds_px": [
+        15.085714285714285,
+        29.485714285714288,
+        319.54285714285714,
+        322.9714285714286
+      ],
+      "root_motion": "authored fixed canvas and source anchor, uniformly scaled; layout bounds use idle silhouette",
+      "mirror_safe": false
+    },
+    "limitations": "Preserves approved preview source poses and timings; sparse authored clips are not newly generated high-frame-count animation."
+  },
+  {
+    "kind": "dread-vanguard",
+    "revision": "hellbound-r1 (dread-vanguard-states-r2/runtime)",
+    "manifest": {
+      "path": "assets/characters/hellbound-legion/dread-vanguard/r1/animation.json",
+      "sha256": "49c22cd1dc23b73b39f8d1edf5491e0312f22d98a66b8895e80e0609253e620f"
+    },
+    "sourceLock": {
+      "path": "assets/characters/hellbound-legion/dread-vanguard/r1/source-lock.json",
+      "sha256": "0315fa5bdfef8339ffe7967e755feec83bc62667a63b1b5e5d6857ceb9bd0ac9"
+    },
+    "authorization": "User approved the six-summon battle preview and requested Hellbound Legion integration, with Vanguard 15% taller than Legionary and Imp about 10% taller than the former flight model. Approval ledger statuses are preserved.",
+    "encodedBytes": 1917386,
+    "decodedBytes": 69393408,
+    "frameCount": 49,
+    "sourceFramesTouchingEdge": 0,
+    "geometry": {
+      "coordinate_system": "pixels; top-left; x right, y down",
+      "facing": "right",
+      "canvas_px": [
+        768,
+        461
+      ],
+      "root_px": [
+        384,
+        414.72
+      ],
+      "source_pixels_per_world_unit": 294.79751552795034,
+      "reference_visible_height_px": 355.968,
+      "standing_height_world": 1.2075,
+      "layout_bounds_px": [
+        269.568,
+        58.752,
+        506.49600000000004,
+        414.72
+      ],
+      "root_motion": "authored fixed canvas and source anchor, uniformly scaled; layout bounds use idle silhouette",
+      "mirror_safe": false
+    },
+    "limitations": "Preserves approved preview source poses and timings; sparse authored clips are not newly generated high-frame-count animation."
+  },
+  {
+    "kind": "maledictor",
+    "revision": "hellbound-r1 (maledictor-states-r1)",
+    "manifest": {
+      "path": "assets/characters/hellbound-legion/maledictor/r1/animation.json",
+      "sha256": "26ccefa4628fb1a299d3ffc46a35839ab1a15dd341432e797a56f4c7b5d015d1"
+    },
+    "sourceLock": {
+      "path": "assets/characters/hellbound-legion/maledictor/r1/source-lock.json",
+      "sha256": "bb51c2e7350b2ba1e91f5432bc2f41b3dd60d80fde727cf1f2ba6a690d9ad068"
+    },
+    "authorization": "User approved the six-summon battle preview and requested Hellbound Legion integration, with Vanguard 15% taller than Legionary and Imp about 10% taller than the former flight model. Approval ledger statuses are preserved.",
+    "encodedBytes": 1909386,
+    "decodedBytes": 53504000,
+    "frameCount": 38,
+    "sourceFramesTouchingEdge": 0,
+    "geometry": {
+      "coordinate_system": "pixels; top-left; x right, y down",
+      "facing": "right",
+      "canvas_px": [
+        640,
+        550
+      ],
+      "root_px": [
+        320,
+        519
+      ],
+      "source_pixels_per_world_unit": 454.2857142857143,
+      "reference_visible_height_px": 477,
+      "standing_height_world": 1.05,
+      "layout_bounds_px": [
+        199.5,
+        42,
+        446,
+        519
+      ],
+      "root_motion": "authored fixed canvas and source anchor, uniformly scaled; layout bounds use idle silhouette",
+      "mirror_safe": false
+    },
+    "limitations": "Preserves approved preview source poses and timings; sparse authored clips are not newly generated high-frame-count animation."
+  },
+  {
+    "kind": "iron-legionary",
+    "revision": "hellbound-r1 (iron-legionary-states-r1)",
+    "manifest": {
+      "path": "assets/characters/hellbound-legion/iron-legionary/r1/animation.json",
+      "sha256": "23572a1ade41680e0f3e1abcab7f00d68f75ae7cb1c5cd023d49e826dcfe371c"
+    },
+    "sourceLock": {
+      "path": "assets/characters/hellbound-legion/iron-legionary/r1/source-lock.json",
+      "sha256": "2e88756410f1fbf6abb7574e93e855f727f5a24a00b9730a538c556bbb4a963a"
+    },
+    "authorization": "User approved the six-summon battle preview and requested Hellbound Legion integration, with Vanguard 15% taller than Legionary and Imp about 10% taller than the former flight model. Approval ledger statuses are preserved.",
+    "encodedBytes": 1702910,
+    "decodedBytes": 40832000,
+    "frameCount": 29,
+    "sourceFramesTouchingEdge": 0,
+    "geometry": {
+      "coordinate_system": "pixels; top-left; x right, y down",
+      "facing": "right",
+      "canvas_px": [
+        640,
+        550
+      ],
+      "root_px": [
+        320,
+        515
+      ],
+      "source_pixels_per_world_unit": 449.04761904761904,
+      "reference_visible_height_px": 471.5,
+      "standing_height_world": 1.05,
+      "layout_bounds_px": [
+        181.5,
+        43.5,
+        478,
+        511
+      ],
+      "root_motion": "authored fixed canvas and source anchor, uniformly scaled; layout bounds use idle silhouette",
+      "mirror_safe": false
+    },
+    "limitations": "Preserves approved preview source poses and timings; sparse authored clips are not newly generated high-frame-count animation."
+  },
+  {
+    "kind": "ironhorn-bulwark",
+    "revision": "hellbound-r1 (ironhorn-bulwark-states-r1)",
+    "manifest": {
+      "path": "assets/characters/hellbound-legion/ironhorn-bulwark/r1/animation.json",
+      "sha256": "adc4bfe72cb318fd3e9c6f6c983968dc8829928577950f319bdb140846146143"
+    },
+    "sourceLock": {
+      "path": "assets/characters/hellbound-legion/ironhorn-bulwark/r1/source-lock.json",
+      "sha256": "c932a50f3380423afc9e7241bee2a11eae5d12535c8e9e9865b6379033712b2c"
+    },
+    "authorization": "User approved the six-summon battle preview and requested Hellbound Legion integration, with Vanguard 15% taller than Legionary and Imp about 10% taller than the former flight model. Approval ledger statuses are preserved.",
+    "encodedBytes": 1475050,
+    "decodedBytes": 39352320,
+    "frameCount": 28,
+    "sourceFramesTouchingEdge": 0,
+    "geometry": {
+      "coordinate_system": "pixels; top-left; x right, y down",
+      "facing": "right",
+      "canvas_px": [
+        640,
+        549
+      ],
+      "root_px": [
+        320,
+        504.68571428571425
+      ],
+      "source_pixels_per_world_unit": 413.6054421768707,
+      "reference_visible_height_px": 434.2857142857143,
+      "standing_height_world": 1.05,
+      "layout_bounds_px": [
+        154.5142857142857,
+        70.39999999999999,
+        489.1428571428571,
+        505.59999999999997
+      ],
+      "root_motion": "authored fixed canvas and source anchor, uniformly scaled; layout bounds use idle silhouette",
+      "mirror_safe": false
+    },
+    "limitations": "Preserves approved preview source poses and timings; sparse authored clips are not newly generated high-frame-count animation."
+  },
+  {
+    "kind": "ash-pikeman",
+    "revision": "hellbound-r1 (ash-pikeman-states-r1)",
+    "manifest": {
+      "path": "assets/characters/hellbound-legion/ash-pikeman/r1/animation.json",
+      "sha256": "2ff52d2da39af25f4adda2f249323ed76c04dfb076ec70955b7fcad05a874840"
+    },
+    "sourceLock": {
+      "path": "assets/characters/hellbound-legion/ash-pikeman/r1/source-lock.json",
+      "sha256": "6818eb55a30cc2b242d08de91f68039a246ffef78b91ad865b3d7df783aaec20"
+    },
+    "authorization": "User approved the six-summon battle preview and requested Hellbound Legion integration, with Vanguard 15% taller than Legionary and Imp about 10% taller than the former flight model. Approval ledger statuses are preserved.",
+    "encodedBytes": 1390186,
+    "decodedBytes": 50595840,
+    "frameCount": 36,
+    "sourceFramesTouchingEdge": 0,
+    "geometry": {
+      "coordinate_system": "pixels; top-left; x right, y down",
+      "facing": "right",
+      "canvas_px": [
+        640,
+        549
+      ],
+      "root_px": [
+        320,
+        499.65714285714284
+      ],
+      "source_pixels_per_world_unit": 400.97959183673464,
+      "reference_visible_height_px": 421.0285714285714,
+      "standing_height_world": 1.05,
+      "layout_bounds_px": [
+        184.22857142857143,
+        78.62857142857142,
+        459.88571428571424,
+        498.74285714285713
+      ],
+      "root_motion": "authored fixed canvas and source anchor, uniformly scaled; layout bounds use idle silhouette",
+      "mirror_safe": false
+    },
+    "limitations": "Preserves approved preview source poses and timings; sparse authored clips are not newly generated high-frame-count animation."
+  }
+]

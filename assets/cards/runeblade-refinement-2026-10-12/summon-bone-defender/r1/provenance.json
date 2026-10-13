@@ -1,0 +1,64 @@
+{
+  "tracking_id": "roguelike/runeblade/summon-bone-defender",
+  "canonical_id": "summon-bone-defender",
+  "catalog_path": "packages/content/runeblade.ts",
+  "row_identifier": "summon-bone-defender",
+  "category": "Runeblade",
+  "variant": "base",
+  "source_snapshot": {
+    "id": "summon-bone-defender",
+    "name": "Bone Defender",
+    "cost": 2,
+    "type": "Summon",
+    "rarity": "Common",
+    "definitionRules": "Summon an 23 HP / 4 Power Thrall with Defender.",
+    "rules": "Summon Bone Defender: 23 HP / 4 Power. Defender. Rot starts at 1. Automatically spend Corpses equal to its Mana cost instead if available.",
+    "displayRules": "Summon a Thrall. 23 HP / 4 Power.\nDefender.\nRot starts at 1.\nIf you have 2 Corpses, spend them instead of Mana.",
+    "authoritativeSource": "packages/content/runeblade.ts",
+    "engine_source_sha256": "d8f74805b64c4257cf9f049da7490bfc8406d006277e39a8d89f90d1cf869f21"
+  },
+  "status": "pending_approval",
+  "current_revision": "demo-r1",
+  "output_path": "C:\\Users\\wilsh\\Projects\\runelord-roguelike-pages-recovery\\assets\\cards\\runeblade-refinement-2026-10-12\\summon-bone-defender\\r1\\summon-bone-defender-card-r1.png",
+  "sha256": "4504ae490f05dda1013ffa255e1ade3488ec5f91b99eaf921a485ff030ba2456",
+  "dimensions": [
+    1024,
+    1536
+  ],
+  "artwork_path": "C:\\Users\\wilsh\\Projects\\runelord-roguelike-pages-recovery\\assets\\cards\\runeblade-refinement-2026-10-12\\summon-bone-defender\\r1\\illustration.png",
+  "text_source_path": "C:\\Users\\wilsh\\Projects\\runelord-roguelike-pages-recovery\\assets\\cards\\runeblade-refinement-2026-10-12\\summon-bone-defender\\r1\\text-data.json",
+  "illustration_prompt_path": "C:\\Users\\wilsh\\Projects\\runelord-roguelike-pages-recovery\\assets\\cards\\runeblade-refinement-2026-10-12\\summon-bone-defender\\r1\\illustration-brief.txt",
+  "reference_image_paths": [
+    "C:\\Users\\wilsh\\Projects\\runelord\\assets\\cards\\runeblade-base-summons-2026-10-05\\bone-defender\\r1\\illustration.png",
+    "C:\\Users\\wilsh\\Projects\\runelord-roguelike-pages-recovery\\assets\\cards\\runeblade-refinement-2026-10-12\\template-v2\\baseline.png"
+  ],
+  "reference_hashes": [
+    "59545d039febfe705594697d5e1d14a5aa2ffbce76d691e2554be53f9e57add0",
+    "30cd5177cf360f80a6b90cfdafeaecb8fa561c98751414a6b5ba295df3744a3d"
+  ],
+  "source_art_decision": {
+    "status": "Pending approval"
+  },
+  "template_path": "C:\\Users\\wilsh\\Projects\\runelord-roguelike-pages-recovery\\assets\\cards\\runeblade-refinement-2026-10-12\\template-v2\\baseline.png",
+  "template_hash": "30cd5177cf360f80a6b90cfdafeaecb8fa561c98751414a6b5ba295df3744a3d",
+  "editable_mask_path": "C:\\Users\\wilsh\\Projects\\runelord-roguelike-pages-recovery\\assets\\cards\\runeblade-refinement-2026-10-12\\template-v2\\mask-union.png",
+  "editable_mask_version": "runeblade-demo-v2",
+  "mask_hash": "c2226e7427a2afc7c7236fda02c6078fc27e31bb32a0f8386de502ce89d672da",
+  "verification": {
+    "dimensions": [
+      1024,
+      1536
+    ],
+    "protected_pixel_count": 621701,
+    "changed_protected_pixels": 0,
+    "protected_alpha_identical": true,
+    "template_sha256": "30cd5177cf360f80a6b90cfdafeaecb8fa561c98751414a6b5ba295df3744a3d",
+    "mask_sha256": "c2226e7427a2afc7c7236fda02c6078fc27e31bb32a0f8386de502ce89d672da",
+    "editable_mask_version": "runeblade-demo-v2",
+    "text_min_rules_px": 43,
+    "text_matches_engine_semantics": true,
+    "automatic_corpse_cost_visible": true
+  },
+  "generation_method": "Technical recomposition of existing artwork; exact immutable card frame",
+  "integration_authorization": "User requested playable Runeblade roguelike demo, secondary Corpse resource and cards on 2026-10-06."
+}

@@ -1,0 +1,863 @@
+﻿status,path,category,bytes
+ M,.gitignore,"Documentation, tooling and configuration",788
+ M,README.md,"Documentation, tooling and configuration",11134
+ M,apps/web/index.html,"Documentation, tooling and configuration",537
+ M,apps/web/public/game-assets/manifest.json,"Runtime art, audio and public assets",191773
+ M,apps/web/src/ActorSprite.tsx,"Gameplay, presentation and tests",13393
+ M,apps/web/src/GuardAura.tsx,"Gameplay, presentation and tests",3005
+ M,apps/web/src/Hero.tsx,"Gameplay, presentation and tests",5942
+ M,apps/web/src/HudTemplate.tsx,"Gameplay, presentation and tests",6116
+ M,apps/web/src/MinionDetails.tsx,"Gameplay, presentation and tests",1384
+ M,apps/web/src/OpeningScreen.tsx,"Gameplay, presentation and tests",8789
+ M,apps/web/src/ResourceMeters.tsx,"Gameplay, presentation and tests",2478
+ M,apps/web/src/SoulforgeShop.tsx,"Gameplay, presentation and tests",11533
+ M,apps/web/src/SpellEffects.tsx,"Gameplay, presentation and tests",16150
+ M,apps/web/src/assets.ts,"Gameplay, presentation and tests",1738
+ M,apps/web/src/forestSpellRenderer.ts,"Gameplay, presentation and tests",2309
+ M,apps/web/src/hud.css,"Gameplay, presentation and tests",45105
+ M,apps/web/src/intentLabel.ts,"Gameplay, presentation and tests",1075
+ M,apps/web/src/main.tsx,"Gameplay, presentation and tests",49393
+ M,apps/web/src/music.ts,"Gameplay, presentation and tests",3840
+ M,apps/web/src/style.css,"Gameplay, presentation and tests",30395
+ M,apps/web/src/summonDetails.ts,"Gameplay, presentation and tests",2401
+ M,apps/web/src/summonEffect.ts,"Gameplay, presentation and tests",7247
+ M,apps/web/src/useBattleDirector.ts,"Gameplay, presentation and tests",38024
+ M,apps/web/src/warbandLayout.test.ts,"Gameplay, presentation and tests",9406
+ M,apps/web/src/warbandLayout.ts,"Gameplay, presentation and tests",10821
+ M,assets/heroes/animations/runeblade/frames32-r2/manifest.json,Character source art and animation studies,32302
+ M,design/warlock-demo.md,"Documentation, tooling and configuration",4698
+ M,package.json,"Documentation, tooling and configuration",1441
+ M,packages/assets/manifest.json,Runtime asset provenance manifest,1312005
+ M,packages/content/index.ts,"Gameplay, presentation and tests",14724
+ M,packages/content/warlock-catalog.json,"Gameplay, presentation and tests",19529
+ M,packages/engine/index.ts,"Gameplay, presentation and tests",54121
+ M,packages/engine/shop.ts,"Gameplay, presentation and tests",12024
+ M,packages/engine/soulforge.test.ts,"Gameplay, presentation and tests",11237
+ M,tools/import/assets.mjs,"Documentation, tooling and configuration",24093
+??,apps/web/public/game-assets/cards-legacy/summon-pit-brute.webp,"Runtime art, audio and public assets",96392
+??,apps/web/public/game-assets/runeblade/animation-r1/bone-defender/attack-00.webp,"Runtime art, audio and public assets",41108
+??,apps/web/public/game-assets/runeblade/animation-r1/bone-defender/attack-01.webp,"Runtime art, audio and public assets",41738
+??,apps/web/public/game-assets/runeblade/animation-r1/bone-defender/attack-02.webp,"Runtime art, audio and public assets",42378
+??,apps/web/public/game-assets/runeblade/animation-r1/bone-defender/attack-03.webp,"Runtime art, audio and public assets",44562
+??,apps/web/public/game-assets/runeblade/animation-r1/bone-defender/attack-04.webp,"Runtime art, audio and public assets",36172
+??,apps/web/public/game-assets/runeblade/animation-r1/bone-defender/attack-05.webp,"Runtime art, audio and public assets",41536
+??,apps/web/public/game-assets/runeblade/animation-r1/bone-defender/cast-00.webp,"Runtime art, audio and public assets",39660
+??,apps/web/public/game-assets/runeblade/animation-r1/bone-defender/cast-01.webp,"Runtime art, audio and public assets",31732
+??,apps/web/public/game-assets/runeblade/animation-r1/bone-defender/cast-02.webp,"Runtime art, audio and public assets",41742
+??,apps/web/public/game-assets/runeblade/animation-r1/bone-defender/cast-03.webp,"Runtime art, audio and public assets",37768
+??,apps/web/public/game-assets/runeblade/animation-r1/bone-defender/die-00.webp,"Runtime art, audio and public assets",38642
+??,apps/web/public/game-assets/runeblade/animation-r1/bone-defender/die-01.webp,"Runtime art, audio and public assets",37560
+??,apps/web/public/game-assets/runeblade/animation-r1/bone-defender/die-02.webp,"Runtime art, audio and public assets",28632
+??,apps/web/public/game-assets/runeblade/animation-r1/bone-defender/die-03.webp,"Runtime art, audio and public assets",24900
+??,apps/web/public/game-assets/runeblade/animation-r1/bone-defender/die-04.webp,"Runtime art, audio and public assets",22846
+??,apps/web/public/game-assets/runeblade/animation-r1/bone-defender/die-05.webp,"Runtime art, audio and public assets",21258
+??,apps/web/public/game-assets/runeblade/animation-r1/bone-defender/hit-00.webp,"Runtime art, audio and public assets",37838
+??,apps/web/public/game-assets/runeblade/animation-r1/bone-defender/hit-01.webp,"Runtime art, audio and public assets",35484
+??,apps/web/public/game-assets/runeblade/animation-r1/bone-defender/hit-02.webp,"Runtime art, audio and public assets",33896
+??,apps/web/public/game-assets/runeblade/animation-r1/bone-defender/hit-03.webp,"Runtime art, audio and public assets",37014
+??,apps/web/public/game-assets/runeblade/animation-r1/bone-defender/idle-00.webp,"Runtime art, audio and public assets",36896
+??,apps/web/public/game-assets/runeblade/animation-r1/bone-defender/idle-01.webp,"Runtime art, audio and public assets",36462
+??,apps/web/public/game-assets/runeblade/animation-r1/bone-defender/idle-02.webp,"Runtime art, audio and public assets",36710
+??,apps/web/public/game-assets/runeblade/animation-r1/bone-defender/idle-03.webp,"Runtime art, audio and public assets",37254
+??,apps/web/public/game-assets/runeblade/animation-r1/bone-defender/idle-04.webp,"Runtime art, audio and public assets",37390
+??,apps/web/public/game-assets/runeblade/animation-r1/bone-defender/idle-05.webp,"Runtime art, audio and public assets",37414
+??,apps/web/public/game-assets/runeblade/animation-r1/bone-defender/idle-06.webp,"Runtime art, audio and public assets",35416
+??,apps/web/public/game-assets/runeblade/animation-r1/bone-defender/idle-07.webp,"Runtime art, audio and public assets",36876
+??,apps/web/public/game-assets/runeblade/animation-r1/bone-defender/wounded_idle-00.webp,"Runtime art, audio and public assets",44500
+??,apps/web/public/game-assets/runeblade/animation-r1/bone-defender/wounded_idle-01.webp,"Runtime art, audio and public assets",46270
+??,apps/web/public/game-assets/runeblade/animation-r1/bone-defender/wounded_idle-02.webp,"Runtime art, audio and public assets",47744
+??,apps/web/public/game-assets/runeblade/animation-r1/bone-defender/wounded_idle-03.webp,"Runtime art, audio and public assets",44188
+??,apps/web/public/game-assets/runeblade/animation-r2/frost-thrall/attack-00.webp,"Runtime art, audio and public assets",32904
+??,apps/web/public/game-assets/runeblade/animation-r2/frost-thrall/attack-01.webp,"Runtime art, audio and public assets",32098
+??,apps/web/public/game-assets/runeblade/animation-r2/frost-thrall/attack-02.webp,"Runtime art, audio and public assets",29386
+??,apps/web/public/game-assets/runeblade/animation-r2/frost-thrall/attack-03.webp,"Runtime art, audio and public assets",34446
+??,apps/web/public/game-assets/runeblade/animation-r2/frost-thrall/attack-04.webp,"Runtime art, audio and public assets",34260
+??,apps/web/public/game-assets/runeblade/animation-r2/frost-thrall/attack-05.webp,"Runtime art, audio and public assets",32510
+??,apps/web/public/game-assets/runeblade/animation-r2/frost-thrall/cast-00.webp,"Runtime art, audio and public assets",32074
+??,apps/web/public/game-assets/runeblade/animation-r2/frost-thrall/cast-01.webp,"Runtime art, audio and public assets",29954
+??,apps/web/public/game-assets/runeblade/animation-r2/frost-thrall/cast-02.webp,"Runtime art, audio and public assets",30656
+??,apps/web/public/game-assets/runeblade/animation-r2/frost-thrall/cast-03.webp,"Runtime art, audio and public assets",30526
+??,apps/web/public/game-assets/runeblade/animation-r2/frost-thrall/die-00.webp,"Runtime art, audio and public assets",31914
+??,apps/web/public/game-assets/runeblade/animation-r2/frost-thrall/die-01.webp,"Runtime art, audio and public assets",28226
+??,apps/web/public/game-assets/runeblade/animation-r2/frost-thrall/die-02.webp,"Runtime art, audio and public assets",23420
+??,apps/web/public/game-assets/runeblade/animation-r2/frost-thrall/die-03.webp,"Runtime art, audio and public assets",23306
+??,apps/web/public/game-assets/runeblade/animation-r2/frost-thrall/die-04.webp,"Runtime art, audio and public assets",18354
+??,apps/web/public/game-assets/runeblade/animation-r2/frost-thrall/die-05.webp,"Runtime art, audio and public assets",18816
+??,apps/web/public/game-assets/runeblade/animation-r2/frost-thrall/hit-00.webp,"Runtime art, audio and public assets",31168
+??,apps/web/public/game-assets/runeblade/animation-r2/frost-thrall/hit-01.webp,"Runtime art, audio and public assets",25628
+??,apps/web/public/game-assets/runeblade/animation-r2/frost-thrall/hit-02.webp,"Runtime art, audio and public assets",27958
+??,apps/web/public/game-assets/runeblade/animation-r2/frost-thrall/hit-03.webp,"Runtime art, audio and public assets",30126
+??,apps/web/public/game-assets/runeblade/animation-r2/frost-thrall/idle-00.webp,"Runtime art, audio and public assets",33410
+??,apps/web/public/game-assets/runeblade/animation-r2/frost-thrall/idle-01.webp,"Runtime art, audio and public assets",33224
+??,apps/web/public/game-assets/runeblade/animation-r2/frost-thrall/idle-02.webp,"Runtime art, audio and public assets",34052
+??,apps/web/public/game-assets/runeblade/animation-r2/frost-thrall/idle-03.webp,"Runtime art, audio and public assets",33020
+??,apps/web/public/game-assets/runeblade/animation-r2/frost-thrall/idle-04.webp,"Runtime art, audio and public assets",32866
+??,apps/web/public/game-assets/runeblade/animation-r2/frost-thrall/idle-05.webp,"Runtime art, audio and public assets",32888
+??,apps/web/public/game-assets/runeblade/animation-r2/frost-thrall/idle-06.webp,"Runtime art, audio and public assets",33286
+??,apps/web/public/game-assets/runeblade/animation-r2/frost-thrall/idle-07.webp,"Runtime art, audio and public assets",32780
+??,apps/web/public/game-assets/runeblade/animation-r2/frost-thrall/wounded_idle-00.webp,"Runtime art, audio and public assets",28694
+??,apps/web/public/game-assets/runeblade/animation-r2/frost-thrall/wounded_idle-01.webp,"Runtime art, audio and public assets",29666
+??,apps/web/public/game-assets/runeblade/animation-r2/frost-thrall/wounded_idle-02.webp,"Runtime art, audio and public assets",29676
+??,apps/web/public/game-assets/runeblade/animation-r2/frost-thrall/wounded_idle-03.webp,"Runtime art, audio and public assets",28642
+??,apps/web/public/game-assets/runeblade/animation-r2/rime-seer/attack-00.webp,"Runtime art, audio and public assets",42754
+??,apps/web/public/game-assets/runeblade/animation-r2/rime-seer/attack-01.webp,"Runtime art, audio and public assets",44294
+??,apps/web/public/game-assets/runeblade/animation-r2/rime-seer/attack-02.webp,"Runtime art, audio and public assets",44608
+??,apps/web/public/game-assets/runeblade/animation-r2/rime-seer/attack-03.webp,"Runtime art, audio and public assets",46362
+??,apps/web/public/game-assets/runeblade/animation-r2/rime-seer/attack-04.webp,"Runtime art, audio and public assets",44042
+??,apps/web/public/game-assets/runeblade/animation-r2/rime-seer/attack-05.webp,"Runtime art, audio and public assets",41764
+??,apps/web/public/game-assets/runeblade/animation-r2/rime-seer/cast-00.webp,"Runtime art, audio and public assets",37796
+??,apps/web/public/game-assets/runeblade/animation-r2/rime-seer/cast-01.webp,"Runtime art, audio and public assets",42790
+??,apps/web/public/game-assets/runeblade/animation-r2/rime-seer/cast-02.webp,"Runtime art, audio and public assets",45414
+??,apps/web/public/game-assets/runeblade/animation-r2/rime-seer/cast-03.webp,"Runtime art, audio and public assets",37950
+??,apps/web/public/game-assets/runeblade/animation-r2/rime-seer/die-00.webp,"Runtime art, audio and public assets",35328
+??,apps/web/public/game-assets/runeblade/animation-r2/rime-seer/die-01.webp,"Runtime art, audio and public assets",33338
+??,apps/web/public/game-assets/runeblade/animation-r2/rime-seer/die-02.webp,"Runtime art, audio and public assets",32568
+??,apps/web/public/game-assets/runeblade/animation-r2/rime-seer/die-03.webp,"Runtime art, audio and public assets",21384
+??,apps/web/public/game-assets/runeblade/animation-r2/rime-seer/die-04.webp,"Runtime art, audio and public assets",18532
+??,apps/web/public/game-assets/runeblade/animation-r2/rime-seer/die-05.webp,"Runtime art, audio and public assets",16614
+??,apps/web/public/game-assets/runeblade/animation-r2/rime-seer/hit-00.webp,"Runtime art, audio and public assets",40382
+??,apps/web/public/game-assets/runeblade/animation-r2/rime-seer/hit-01.webp,"Runtime art, audio and public assets",35038
+??,apps/web/public/game-assets/runeblade/animation-r2/rime-seer/hit-02.webp,"Runtime art, audio and public assets",35200
+??,apps/web/public/game-assets/runeblade/animation-r2/rime-seer/hit-03.webp,"Runtime art, audio and public assets",39360
+??,apps/web/public/game-assets/runeblade/animation-r2/rime-seer/idle-00.webp,"Runtime art, audio and public assets",39254
+??,apps/web/public/game-assets/runeblade/animation-r2/rime-seer/idle-01.webp,"Runtime art, audio and public assets",39742
+??,apps/web/public/game-assets/runeblade/animation-r2/rime-seer/idle-02.webp,"Runtime art, audio and public assets",40158
+??,apps/web/public/game-assets/runeblade/animation-r2/rime-seer/idle-03.webp,"Runtime art, audio and public assets",40284
+??,apps/web/public/game-assets/runeblade/animation-r2/rime-seer/idle-04.webp,"Runtime art, audio and public assets",39354
+??,apps/web/public/game-assets/runeblade/animation-r2/rime-seer/idle-05.webp,"Runtime art, audio and public assets",40610
+??,apps/web/public/game-assets/runeblade/animation-r2/rime-seer/idle-06.webp,"Runtime art, audio and public assets",40852
+??,apps/web/public/game-assets/runeblade/animation-r2/rime-seer/idle-07.webp,"Runtime art, audio and public assets",39864
+??,apps/web/public/game-assets/runeblade/animation-r2/rime-seer/wounded_idle-00.webp,"Runtime art, audio and public assets",35776
+??,apps/web/public/game-assets/runeblade/animation-r2/rime-seer/wounded_idle-01.webp,"Runtime art, audio and public assets",36466
+??,apps/web/public/game-assets/runeblade/animation-r2/rime-seer/wounded_idle-02.webp,"Runtime art, audio and public assets",34260
+??,apps/web/public/game-assets/runeblade/animation-r2/rime-seer/wounded_idle-03.webp,"Runtime art, audio and public assets",35258
+??,apps/web/public/game-assets/runeblade/animation-r2/rune-revenant/attack-00.webp,"Runtime art, audio and public assets",39894
+??,apps/web/public/game-assets/runeblade/animation-r2/rune-revenant/attack-01.webp,"Runtime art, audio and public assets",36490
+??,apps/web/public/game-assets/runeblade/animation-r2/rune-revenant/attack-02.webp,"Runtime art, audio and public assets",42796
+??,apps/web/public/game-assets/runeblade/animation-r2/rune-revenant/attack-03.webp,"Runtime art, audio and public assets",42332
+??,apps/web/public/game-assets/runeblade/animation-r2/rune-revenant/attack-04.webp,"Runtime art, audio and public assets",40558
+??,apps/web/public/game-assets/runeblade/animation-r2/rune-revenant/attack-05.webp,"Runtime art, audio and public assets",40148
+??,apps/web/public/game-assets/runeblade/animation-r2/rune-revenant/cast-00.webp,"Runtime art, audio and public assets",33920
+??,apps/web/public/game-assets/runeblade/animation-r2/rune-revenant/cast-01.webp,"Runtime art, audio and public assets",39244
+??,apps/web/public/game-assets/runeblade/animation-r2/rune-revenant/cast-02.webp,"Runtime art, audio and public assets",47444
+??,apps/web/public/game-assets/runeblade/animation-r2/rune-revenant/cast-03.webp,"Runtime art, audio and public assets",36670
+??,apps/web/public/game-assets/runeblade/animation-r2/rune-revenant/die-00.webp,"Runtime art, audio and public assets",37760
+??,apps/web/public/game-assets/runeblade/animation-r2/rune-revenant/die-01.webp,"Runtime art, audio and public assets",31940
+??,apps/web/public/game-assets/runeblade/animation-r2/rune-revenant/die-02.webp,"Runtime art, audio and public assets",30894
+??,apps/web/public/game-assets/runeblade/animation-r2/rune-revenant/die-03.webp,"Runtime art, audio and public assets",20942
+??,apps/web/public/game-assets/runeblade/animation-r2/rune-revenant/die-04.webp,"Runtime art, audio and public assets",19650
+??,apps/web/public/game-assets/runeblade/animation-r2/rune-revenant/die-05.webp,"Runtime art, audio and public assets",18018
+??,apps/web/public/game-assets/runeblade/animation-r2/rune-revenant/hit-00.webp,"Runtime art, audio and public assets",36072
+??,apps/web/public/game-assets/runeblade/animation-r2/rune-revenant/hit-01.webp,"Runtime art, audio and public assets",36130
+??,apps/web/public/game-assets/runeblade/animation-r2/rune-revenant/hit-02.webp,"Runtime art, audio and public assets",33502
+??,apps/web/public/game-assets/runeblade/animation-r2/rune-revenant/hit-03.webp,"Runtime art, audio and public assets",33222
+??,apps/web/public/game-assets/runeblade/animation-r2/rune-revenant/idle-00.webp,"Runtime art, audio and public assets",35876
+??,apps/web/public/game-assets/runeblade/animation-r2/rune-revenant/idle-01.webp,"Runtime art, audio and public assets",35500
+??,apps/web/public/game-assets/runeblade/animation-r2/rune-revenant/idle-02.webp,"Runtime art, audio and public assets",34200
+??,apps/web/public/game-assets/runeblade/animation-r2/rune-revenant/idle-03.webp,"Runtime art, audio and public assets",35150
+??,apps/web/public/game-assets/runeblade/animation-r2/rune-revenant/idle-04.webp,"Runtime art, audio and public assets",35736
+??,apps/web/public/game-assets/runeblade/animation-r2/rune-revenant/idle-05.webp,"Runtime art, audio and public assets",35082
+??,apps/web/public/game-assets/runeblade/animation-r2/rune-revenant/idle-06.webp,"Runtime art, audio and public assets",34678
+??,apps/web/public/game-assets/runeblade/animation-r2/rune-revenant/idle-07.webp,"Runtime art, audio and public assets",35364
+??,apps/web/public/game-assets/runeblade/animation-r2/rune-revenant/wounded_idle-00.webp,"Runtime art, audio and public assets",42838
+??,apps/web/public/game-assets/runeblade/animation-r2/rune-revenant/wounded_idle-01.webp,"Runtime art, audio and public assets",46546
+??,apps/web/public/game-assets/runeblade/animation-r2/rune-revenant/wounded_idle-02.webp,"Runtime art, audio and public assets",48702
+??,apps/web/public/game-assets/runeblade/animation-r2/rune-revenant/wounded_idle-03.webp,"Runtime art, audio and public assets",43466
+??,apps/web/public/game-assets/runeblade/animation-r2/shattered-queen/attack-00.webp,"Runtime art, audio and public assets",45936
+??,apps/web/public/game-assets/runeblade/animation-r2/shattered-queen/attack-01.webp,"Runtime art, audio and public assets",48196
+??,apps/web/public/game-assets/runeblade/animation-r2/shattered-queen/attack-02.webp,"Runtime art, audio and public assets",66284
+??,apps/web/public/game-assets/runeblade/animation-r2/shattered-queen/attack-03.webp,"Runtime art, audio and public assets",65266
+??,apps/web/public/game-assets/runeblade/animation-r2/shattered-queen/attack-04.webp,"Runtime art, audio and public assets",51928
+??,apps/web/public/game-assets/runeblade/animation-r2/shattered-queen/attack-05.webp,"Runtime art, audio and public assets",46978
+??,apps/web/public/game-assets/runeblade/animation-r2/shattered-queen/cast-00.webp,"Runtime art, audio and public assets",40562
+??,apps/web/public/game-assets/runeblade/animation-r2/shattered-queen/cast-01.webp,"Runtime art, audio and public assets",40702
+??,apps/web/public/game-assets/runeblade/animation-r2/shattered-queen/cast-02.webp,"Runtime art, audio and public assets",43060
+??,apps/web/public/game-assets/runeblade/animation-r2/shattered-queen/cast-03.webp,"Runtime art, audio and public assets",42562
+??,apps/web/public/game-assets/runeblade/animation-r2/shattered-queen/die-00.webp,"Runtime art, audio and public assets",56688
+??,apps/web/public/game-assets/runeblade/animation-r2/shattered-queen/die-01.webp,"Runtime art, audio and public assets",49960
+??,apps/web/public/game-assets/runeblade/animation-r2/shattered-queen/die-02.webp,"Runtime art, audio and public assets",48270
+??,apps/web/public/game-assets/runeblade/animation-r2/shattered-queen/die-03.webp,"Runtime art, audio and public assets",47520
+??,apps/web/public/game-assets/runeblade/animation-r2/shattered-queen/die-04.webp,"Runtime art, audio and public assets",33620
+??,apps/web/public/game-assets/runeblade/animation-r2/shattered-queen/die-05.webp,"Runtime art, audio and public assets",5878
+??,apps/web/public/game-assets/runeblade/animation-r2/shattered-queen/hit-00.webp,"Runtime art, audio and public assets",46556
+??,apps/web/public/game-assets/runeblade/animation-r2/shattered-queen/hit-01.webp,"Runtime art, audio and public assets",47522
+??,apps/web/public/game-assets/runeblade/animation-r2/shattered-queen/hit-02.webp,"Runtime art, audio and public assets",48758
+??,apps/web/public/game-assets/runeblade/animation-r2/shattered-queen/hit-03.webp,"Runtime art, audio and public assets",43098
+??,apps/web/public/game-assets/runeblade/animation-r2/shattered-queen/idle-00.webp,"Runtime art, audio and public assets",43418
+??,apps/web/public/game-assets/runeblade/animation-r2/shattered-queen/idle-01.webp,"Runtime art, audio and public assets",42916
+??,apps/web/public/game-assets/runeblade/animation-r2/shattered-queen/idle-02.webp,"Runtime art, audio and public assets",44444
+??,apps/web/public/game-assets/runeblade/animation-r2/shattered-queen/idle-03.webp,"Runtime art, audio and public assets",43370
+??,apps/web/public/game-assets/runeblade/animation-r2/shattered-queen/idle-04.webp,"Runtime art, audio and public assets",43166
+??,apps/web/public/game-assets/runeblade/animation-r2/shattered-queen/idle-05.webp,"Runtime art, audio and public assets",42768
+??,apps/web/public/game-assets/runeblade/animation-r2/shattered-queen/idle-06.webp,"Runtime art, audio and public assets",42436
+??,apps/web/public/game-assets/runeblade/animation-r2/shattered-queen/idle-07.webp,"Runtime art, audio and public assets",42574
+??,apps/web/public/game-assets/runeblade/animation-r2/shattered-queen/wounded_idle-00.webp,"Runtime art, audio and public assets",41724
+??,apps/web/public/game-assets/runeblade/animation-r2/shattered-queen/wounded_idle-01.webp,"Runtime art, audio and public assets",46146
+??,apps/web/public/game-assets/runeblade/animation-r2/shattered-queen/wounded_idle-02.webp,"Runtime art, audio and public assets",46140
+??,apps/web/public/game-assets/runeblade/animation-r2/shattered-queen/wounded_idle-03.webp,"Runtime art, audio and public assets",41676
+??,apps/web/public/game-assets/runeblade/cards-legacy/bone-ward.webp,"Runtime art, audio and public assets",135522
+??,apps/web/public/game-assets/runeblade/cards-legacy/brace.webp,"Runtime art, audio and public assets",126100
+??,apps/web/public/game-assets/runeblade/cards-legacy/command-the-dead.webp,"Runtime art, audio and public assets",129874
+??,apps/web/public/game-assets/runeblade/cards-legacy/dark-tithe.webp,"Runtime art, audio and public assets",138382
+??,apps/web/public/game-assets/runeblade/cards-legacy/frost-nova.webp,"Runtime art, audio and public assets",150262
+??,apps/web/public/game-assets/runeblade/cards-legacy/frostbite.webp,"Runtime art, audio and public assets",124060
+??,apps/web/public/game-assets/runeblade/cards-legacy/frozen-grasp.webp,"Runtime art, audio and public assets",132866
+??,apps/web/public/game-assets/runeblade/cards-legacy/glacial-ward.webp,"Runtime art, audio and public assets",130660
+??,apps/web/public/game-assets/runeblade/cards-legacy/glacier-wall.webp,"Runtime art, audio and public assets",122912
+??,apps/web/public/game-assets/runeblade/cards-legacy/hew.webp,"Runtime art, audio and public assets",133582
+??,apps/web/public/game-assets/runeblade/cards-legacy/hoarfrost-edge.webp,"Runtime art, audio and public assets",134598
+??,apps/web/public/game-assets/runeblade/cards-legacy/permafrost-aura.webp,"Runtime art, audio and public assets",143392
+??,apps/web/public/game-assets/runeblade/cards-legacy/rally-the-fallen.webp,"Runtime art, audio and public assets",146136
+??,apps/web/public/game-assets/runeblade/cards-legacy/rimecleave.webp,"Runtime art, audio and public assets",133696
+??,apps/web/public/game-assets/runeblade/cards-legacy/soulfrost-blade.webp,"Runtime art, audio and public assets",136752
+??,apps/web/public/game-assets/runeblade/cards-legacy/summon-bone-defender.webp,"Runtime art, audio and public assets",172778
+??,apps/web/public/game-assets/runeblade/cards-legacy/summon-frost-thrall.webp,"Runtime art, audio and public assets",164338
+??,apps/web/public/game-assets/runeblade/cards-legacy/summon-rime-seer.webp,"Runtime art, audio and public assets",172130
+??,apps/web/public/game-assets/runeblade/cards-legacy/summon-rune-revenant.webp,"Runtime art, audio and public assets",172410
+??,apps/web/public/game-assets/runeblade/cards-legacy/summon-shattered-queen.webp,"Runtime art, audio and public assets",169798
+??,apps/web/public/game-assets/runeblade/cards-legacy/sweeping-hew.webp,"Runtime art, audio and public assets",141808
+??,apps/web/public/game-assets/runeblade/cards-legacy/unholy-vigor.webp,"Runtime art, audio and public assets",149610
+??,apps/web/public/game-assets/runeblade/cards-r2/bone-ward.webp,"Runtime art, audio and public assets",135826
+??,apps/web/public/game-assets/runeblade/cards-r2/brace.webp,"Runtime art, audio and public assets",126102
+??,apps/web/public/game-assets/runeblade/cards-r2/command-the-dead.webp,"Runtime art, audio and public assets",129874
+??,apps/web/public/game-assets/runeblade/cards-r2/dark-tithe.webp,"Runtime art, audio and public assets",138382
+??,apps/web/public/game-assets/runeblade/cards-r2/exhume.webp,"Runtime art, audio and public assets",138014
+??,apps/web/public/game-assets/runeblade/cards-r2/frost-nova.webp,"Runtime art, audio and public assets",150262
+??,apps/web/public/game-assets/runeblade/cards-r2/frostbite.webp,"Runtime art, audio and public assets",124214
+??,apps/web/public/game-assets/runeblade/cards-r2/frozen-grasp.webp,"Runtime art, audio and public assets",132866
+??,apps/web/public/game-assets/runeblade/cards-r2/glacial-ward.webp,"Runtime art, audio and public assets",130660
+??,apps/web/public/game-assets/runeblade/cards-r2/glacier-wall.webp,"Runtime art, audio and public assets",122912
+??,apps/web/public/game-assets/runeblade/cards-r2/hew.webp,"Runtime art, audio and public assets",133692
+??,apps/web/public/game-assets/runeblade/cards-r2/hoarfrost-edge.webp,"Runtime art, audio and public assets",134598
+??,apps/web/public/game-assets/runeblade/cards-r2/mass-exhumation.webp,"Runtime art, audio and public assets",146122
+??,apps/web/public/game-assets/runeblade/cards-r2/permafrost-aura.webp,"Runtime art, audio and public assets",143392
+??,apps/web/public/game-assets/runeblade/cards-r2/rally-the-fallen.webp,"Runtime art, audio and public assets",146590
+??,apps/web/public/game-assets/runeblade/cards-r2/rimecleave.webp,"Runtime art, audio and public assets",133634
+??,apps/web/public/game-assets/runeblade/cards-r2/soulfrost-blade.webp,"Runtime art, audio and public assets",136752
+??,apps/web/public/game-assets/runeblade/cards-r2/summon-bone-defender.webp,"Runtime art, audio and public assets",169844
+??,apps/web/public/game-assets/runeblade/cards-r2/summon-frost-thrall.webp,"Runtime art, audio and public assets",163742
+??,apps/web/public/game-assets/runeblade/cards-r2/summon-rime-seer.webp,"Runtime art, audio and public assets",172004
+??,apps/web/public/game-assets/runeblade/cards-r2/summon-rune-revenant.webp,"Runtime art, audio and public assets",174578
+??,apps/web/public/game-assets/runeblade/cards-r2/summon-shattered-queen.webp,"Runtime art, audio and public assets",169742
+??,apps/web/public/game-assets/runeblade/cards-r2/sweeping-hew.webp,"Runtime art, audio and public assets",141678
+??,apps/web/public/game-assets/runeblade/cards-r2/unholy-vigor.webp,"Runtime art, audio and public assets",149610
+??,apps/web/public/game-assets/runeblade/cards/bone-ward.webp,"Runtime art, audio and public assets",135826
+??,apps/web/public/game-assets/runeblade/cards/brace.webp,"Runtime art, audio and public assets",126102
+??,apps/web/public/game-assets/runeblade/cards/command-the-dead.webp,"Runtime art, audio and public assets",129874
+??,apps/web/public/game-assets/runeblade/cards/dark-tithe.webp,"Runtime art, audio and public assets",138382
+??,apps/web/public/game-assets/runeblade/cards/exhume.webp,"Runtime art, audio and public assets",138014
+??,apps/web/public/game-assets/runeblade/cards/frost-nova.webp,"Runtime art, audio and public assets",150262
+??,apps/web/public/game-assets/runeblade/cards/frostbite.webp,"Runtime art, audio and public assets",124214
+??,apps/web/public/game-assets/runeblade/cards/frozen-grasp.webp,"Runtime art, audio and public assets",132866
+??,apps/web/public/game-assets/runeblade/cards/glacial-ward.webp,"Runtime art, audio and public assets",130660
+??,apps/web/public/game-assets/runeblade/cards/glacier-wall.webp,"Runtime art, audio and public assets",122912
+??,apps/web/public/game-assets/runeblade/cards/hew.webp,"Runtime art, audio and public assets",133692
+??,apps/web/public/game-assets/runeblade/cards/hoarfrost-edge.webp,"Runtime art, audio and public assets",134598
+??,apps/web/public/game-assets/runeblade/cards/mass-exhumation.webp,"Runtime art, audio and public assets",146122
+??,apps/web/public/game-assets/runeblade/cards/permafrost-aura.webp,"Runtime art, audio and public assets",143392
+??,apps/web/public/game-assets/runeblade/cards/rally-the-fallen.webp,"Runtime art, audio and public assets",146590
+??,apps/web/public/game-assets/runeblade/cards/rimecleave.webp,"Runtime art, audio and public assets",133634
+??,apps/web/public/game-assets/runeblade/cards/soulfrost-blade.webp,"Runtime art, audio and public assets",136752
+??,apps/web/public/game-assets/runeblade/cards/summon-bone-defender.webp,"Runtime art, audio and public assets",169844
+??,apps/web/public/game-assets/runeblade/cards/summon-frost-thrall.webp,"Runtime art, audio and public assets",163742
+??,apps/web/public/game-assets/runeblade/cards/summon-rime-seer.webp,"Runtime art, audio and public assets",172004
+??,apps/web/public/game-assets/runeblade/cards/summon-rune-revenant.webp,"Runtime art, audio and public assets",174578
+??,apps/web/public/game-assets/runeblade/cards/summon-shattered-queen.webp,"Runtime art, audio and public assets",169742
+??,apps/web/public/game-assets/runeblade/cards/sweeping-hew.webp,"Runtime art, audio and public assets",141678
+??,apps/web/public/game-assets/runeblade/cards/unholy-vigor.webp,"Runtime art, audio and public assets",149610
+??,apps/web/public/game-assets/runeblade/hero-frames32-r2/attack-00.webp,"Runtime art, audio and public assets",52762
+??,apps/web/public/game-assets/runeblade/hero-frames32-r2/attack-01.webp,"Runtime art, audio and public assets",50768
+??,apps/web/public/game-assets/runeblade/hero-frames32-r2/attack-02.webp,"Runtime art, audio and public assets",54624
+??,apps/web/public/game-assets/runeblade/hero-frames32-r2/attack-03.webp,"Runtime art, audio and public assets",51144
+??,apps/web/public/game-assets/runeblade/hero-frames32-r2/attack-04.webp,"Runtime art, audio and public assets",48342
+??,apps/web/public/game-assets/runeblade/hero-frames32-r2/attack-05.webp,"Runtime art, audio and public assets",50568
+??,apps/web/public/game-assets/runeblade/hero-frames32-r2/attack-06.webp,"Runtime art, audio and public assets",49980
+??,apps/web/public/game-assets/runeblade/hero-frames32-r2/attack-07.webp,"Runtime art, audio and public assets",50360
+??,apps/web/public/game-assets/runeblade/hero-frames32-r2/cast-00.webp,"Runtime art, audio and public assets",49596
+??,apps/web/public/game-assets/runeblade/hero-frames32-r2/cast-01.webp,"Runtime art, audio and public assets",51334
+??,apps/web/public/game-assets/runeblade/hero-frames32-r2/cast-02.webp,"Runtime art, audio and public assets",52360
+??,apps/web/public/game-assets/runeblade/hero-frames32-r2/cast-03.webp,"Runtime art, audio and public assets",55780
+??,apps/web/public/game-assets/runeblade/hero-frames32-r2/cast-04.webp,"Runtime art, audio and public assets",56054
+??,apps/web/public/game-assets/runeblade/hero-frames32-r2/cast-05.webp,"Runtime art, audio and public assets",55152
+??,apps/web/public/game-assets/runeblade/hero-frames32-r2/cast-06.webp,"Runtime art, audio and public assets",55106
+??,apps/web/public/game-assets/runeblade/hero-frames32-r2/cast-07.webp,"Runtime art, audio and public assets",52836
+??,apps/web/public/game-assets/runeblade/hero-frames32-r2/die-00.webp,"Runtime art, audio and public assets",45552
+??,apps/web/public/game-assets/runeblade/hero-frames32-r2/die-01.webp,"Runtime art, audio and public assets",35920
+??,apps/web/public/game-assets/runeblade/hero-frames32-r2/die-02.webp,"Runtime art, audio and public assets",32626
+??,apps/web/public/game-assets/runeblade/hero-frames32-r2/die-03.webp,"Runtime art, audio and public assets",32802
+??,apps/web/public/game-assets/runeblade/hero-frames32-r2/hit-00.webp,"Runtime art, audio and public assets",49692
+??,apps/web/public/game-assets/runeblade/hero-frames32-r2/hit-01.webp,"Runtime art, audio and public assets",49586
+??,apps/web/public/game-assets/runeblade/hero-frames32-r2/hit-02.webp,"Runtime art, audio and public assets",48778
+??,apps/web/public/game-assets/runeblade/hero-frames32-r2/hit-03.webp,"Runtime art, audio and public assets",51836
+??,apps/web/public/game-assets/runeblade/hero-frames32-r2/idle-00.webp,"Runtime art, audio and public assets",52580
+??,apps/web/public/game-assets/runeblade/hero-frames32-r2/idle-01.webp,"Runtime art, audio and public assets",51582
+??,apps/web/public/game-assets/runeblade/hero-frames32-r2/idle-02.webp,"Runtime art, audio and public assets",52460
+??,apps/web/public/game-assets/runeblade/hero-frames32-r2/idle-03.webp,"Runtime art, audio and public assets",51588
+??,apps/web/public/game-assets/runeblade/hero-frames32-r2/wounded_idle-00.webp,"Runtime art, audio and public assets",45876
+??,apps/web/public/game-assets/runeblade/hero-frames32-r2/wounded_idle-01.webp,"Runtime art, audio and public assets",43786
+??,apps/web/public/game-assets/runeblade/hero-frames32-r2/wounded_idle-02.webp,"Runtime art, audio and public assets",47750
+??,apps/web/public/game-assets/runeblade/hero-frames32-r2/wounded_idle-03.webp,"Runtime art, audio and public assets",46554
+??,apps/web/public/opening-assets/runeblade-items/crown-of-rime-128.webp,"Runtime art, audio and public assets",9980
+??,apps/web/public/opening-assets/runeblade-items/crown-of-rime.webp,"Runtime art, audio and public assets",25564
+??,apps/web/public/opening-assets/runeblade-items/gravebound-sigil-128.webp,"Runtime art, audio and public assets",8284
+??,apps/web/public/opening-assets/runeblade-items/gravebound-sigil.webp,"Runtime art, audio and public assets",21278
+??,apps/web/public/opening-assets/runeblade-items/gravekeepers-seal-128.webp,"Runtime art, audio and public assets",6152
+??,apps/web/public/opening-assets/runeblade-items/gravekeepers-seal.webp,"Runtime art, audio and public assets",14596
+??,apps/web/public/opening-assets/runeblade-items/gravewardens-bell-128.webp,"Runtime art, audio and public assets",6434
+??,apps/web/public/opening-assets/runeblade-items/gravewardens-bell.webp,"Runtime art, audio and public assets",15966
+??,apps/web/public/opening-assets/runeblade-items/hoarfrost-whetstone-128.webp,"Runtime art, audio and public assets",6742
+??,apps/web/public/opening-assets/runeblade-items/hoarfrost-whetstone.webp,"Runtime art, audio and public assets",16598
+??,apps/web/public/opening-assets/runeblade-items/icebound-phylactery-128.webp,"Runtime art, audio and public assets",7778
+??,apps/web/public/opening-assets/runeblade-items/icebound-phylactery.webp,"Runtime art, audio and public assets",19978
+??,apps/web/public/opening-assets/runeblade-items/suture-standard-128.webp,"Runtime art, audio and public assets",5258
+??,apps/web/public/opening-assets/runeblade-items/suture-standard.webp,"Runtime art, audio and public assets",12430
+??,apps/web/public/opening-assets/tome-gravehost.webp,"Runtime art, audio and public assets",104196
+??,apps/web/public/opening-assets/tome-rimebound.webp,"Runtime art, audio and public assets",122732
+??,apps/web/public/opening-assets/tome-runewarden.webp,"Runtime art, audio and public assets",98058
+??,apps/web/src/RunebladeEffectsReview.tsx,"Gameplay, presentation and tests",3725
+??,apps/web/src/cardPresentation.test.ts,"Gameplay, presentation and tests",2080
+??,apps/web/src/cardPresentation.ts,"Gameplay, presentation and tests",507
+??,apps/web/src/effectTextures.ts,"Gameplay, presentation and tests",668
+??,apps/web/src/runeblade-theme.css,"Gameplay, presentation and tests",4101
+??,apps/web/src/runebladeSpellEffects.ts,"Gameplay, presentation and tests",7677
+??,apps/web/src/runebladeSummonTiming.test.ts,"Gameplay, presentation and tests",3121
+??,apps/web/src/runebladeSummonTiming.ts,"Gameplay, presentation and tests",1894
+??,assets/cards/arch-summons-2026-10-04/empower-demon/scene-r3/empower-demon-scene-r3.png,Card masters and production files,2467902
+??,assets/cards/arch-summons-2026-10-04/manifest.json,Card masters and production files,27239
+??,assets/cards/arch-summons-2026-10-04/summon-cerberax/scene-r3/summon-cerberax-scene-r3.png,Card masters and production files,2652651
+??,assets/cards/arch-summons-2026-10-04/summon-gorthak/scene-r3/summon-gorthak-scene-r3.png,Card masters and production files,2391612
+??,assets/cards/arch-summons-2026-10-04/summon-hollow-saint/scene-r3/summon-hollow-saint-scene-r3.png,Card masters and production files,2553838
+??,assets/cards/arch-summons-2026-10-04/summon-ignivar/scene-r3/summon-ignivar-scene-r3.png,Card masters and production files,2540927
+??,assets/cards/arch-summons-2026-10-04/summon-nightmaw/scene-r3/summon-nightmaw-scene-r3.png,Card masters and production files,2277760
+??,assets/cards/arch-summons-2026-10-04/summon-pit-brute/r1/art-layer.png,Card masters and production files,890352
+??,assets/cards/arch-summons-2026-10-04/summon-pit-brute/r1/identity-source.png,Card masters and production files,1582434
+??,assets/cards/arch-summons-2026-10-04/summon-pit-brute/r1/illustration-prompt.txt,Card masters and production files,356
+??,assets/cards/arch-summons-2026-10-04/summon-pit-brute/r1/illustration.png,Card masters and production files,1813542
+??,assets/cards/arch-summons-2026-10-04/summon-pit-brute/r1/provenance.txt,Card masters and production files,356
+??,assets/cards/arch-summons-2026-10-04/summon-pit-brute/r1/source-composition.png,Card masters and production files,1813542
+??,assets/cards/arch-summons-2026-10-04/summon-pit-brute/r1/source-snapshot.json,Card masters and production files,224
+??,assets/cards/arch-summons-2026-10-04/summon-pit-brute/r1/summon-pit-brute-r1.png,Card masters and production files,1600932
+??,assets/cards/arch-summons-2026-10-04/summon-pit-brute/r1/text-data.json,Card masters and production files,224
+??,assets/cards/arch-summons-2026-10-04/summon-pit-brute/r1/text-layer.png,Card masters and production files,44203
+??,assets/cards/arch-summons-2026-10-04/summon-pit-brute/r1/text-layout.json,Card masters and production files,728
+??,assets/cards/arch-summons-2026-10-04/summon-pit-brute/r1/verification.json,Card masters and production files,507
+??,assets/cards/arch-summons-2026-10-04/summon-pyre-colossus/scene-r3/summon-pyre-colossus-scene-r3.png,Card masters and production files,2669406
+??,assets/cards/arch-summons-2026-10-04/summon-pyre-warden/r1/art-layer.png,Card masters and production files,925934
+??,assets/cards/arch-summons-2026-10-04/summon-pyre-warden/r1/identity-source.png,Card masters and production files,1628700
+??,assets/cards/arch-summons-2026-10-04/summon-pyre-warden/r1/illustration-prompt.txt,Card masters and production files,358
+??,assets/cards/arch-summons-2026-10-04/summon-pyre-warden/r1/illustration.png,Card masters and production files,1878575
+??,assets/cards/arch-summons-2026-10-04/summon-pyre-warden/r1/provenance.txt,Card masters and production files,358
+??,assets/cards/arch-summons-2026-10-04/summon-pyre-warden/r1/source-composition.png,Card masters and production files,1878575
+??,assets/cards/arch-summons-2026-10-04/summon-pyre-warden/r1/source-snapshot.json,Card masters and production files,270
+??,assets/cards/arch-summons-2026-10-04/summon-pyre-warden/r1/summon-pyre-warden-r1.png,Card masters and production files,1653681
+??,assets/cards/arch-summons-2026-10-04/summon-pyre-warden/r1/text-data.json,Card masters and production files,270
+??,assets/cards/arch-summons-2026-10-04/summon-pyre-warden/r1/text-layer.png,Card masters and production files,50207
+??,assets/cards/arch-summons-2026-10-04/summon-pyre-warden/r1/text-layout.json,Card masters and production files,836
+??,assets/cards/arch-summons-2026-10-04/summon-pyre-warden/r1/verification.json,Card masters and production files,507
+??,assets/cards/runeblade-demo-2026-10-06/bone-ward/r1/bone-ward-card-r1.png,Card masters and production files,1788396
+??,assets/cards/runeblade-demo-2026-10-06/brace/r1/brace-card-r1.png,Card masters and production files,1774248
+??,assets/cards/runeblade-demo-2026-10-06/command-the-dead/r1/command-the-dead-card-r1.png,Card masters and production files,1804229
+??,assets/cards/runeblade-demo-2026-10-06/dark-tithe/r1/dark-tithe-card-r1.png,Card masters and production files,1888366
+??,assets/cards/runeblade-demo-2026-10-06/frost-nova/r1/frost-nova-card-r1.png,Card masters and production files,1968175
+??,assets/cards/runeblade-demo-2026-10-06/frostbite/r1/frostbite-card-r1.png,Card masters and production files,1752971
+??,assets/cards/runeblade-demo-2026-10-06/frozen-grasp/r1/frozen-grasp-card-r1.png,Card masters and production files,1841905
+??,assets/cards/runeblade-demo-2026-10-06/glacial-ward/r1/glacial-ward-card-r1.png,Card masters and production files,1799734
+??,assets/cards/runeblade-demo-2026-10-06/glacier-wall/r1/glacier-wall-card-r1.png,Card masters and production files,1766264
+??,assets/cards/runeblade-demo-2026-10-06/hew/r1/hew-card-r1.png,Card masters and production files,1890975
+??,assets/cards/runeblade-demo-2026-10-06/hoarfrost-edge/r1/hoarfrost-edge-card-r1.png,Card masters and production files,1791241
+??,assets/cards/runeblade-demo-2026-10-06/permafrost-aura/r1/permafrost-aura-card-r1.png,Card masters and production files,1831713
+??,assets/cards/runeblade-demo-2026-10-06/rally-the-fallen/r1/rally-the-fallen-card-r1.png,Card masters and production files,1921050
+??,assets/cards/runeblade-demo-2026-10-06/rimecleave/r1/rimecleave-card-r1.png,Card masters and production files,1819258
+??,assets/cards/runeblade-demo-2026-10-06/soulfrost-blade/r1/soulfrost-blade-card-r1.png,Card masters and production files,1800480
+??,assets/cards/runeblade-demo-2026-10-06/summon-bone-defender/r1/summon-bone-defender-card-r1.png,Card masters and production files,2127276
+??,assets/cards/runeblade-demo-2026-10-06/summon-frost-thrall/r1/summon-frost-thrall-card-r1.png,Card masters and production files,2076600
+??,assets/cards/runeblade-demo-2026-10-06/summon-rime-seer/r1/summon-rime-seer-card-r1.png,Card masters and production files,2072018
+??,assets/cards/runeblade-demo-2026-10-06/summon-rune-revenant/r1/summon-rune-revenant-card-r1.png,Card masters and production files,2115235
+??,assets/cards/runeblade-demo-2026-10-06/summon-shattered-queen/r1/summon-shattered-queen-card-r1.png,Card masters and production files,2107008
+??,assets/cards/runeblade-demo-2026-10-06/sweeping-hew/r1/sweeping-hew-card-r1.png,Card masters and production files,1907981
+??,assets/cards/runeblade-demo-2026-10-06/unholy-vigor/r1/unholy-vigor-card-r1.png,Card masters and production files,1954515
+??,assets/cards/runeblade-demo-runtime-inputs.json,Card masters and production files,2850
+??,assets/cards/runeblade-refinement-2026-10-12/bone-ward/r1/art-layer.png,Card masters and production files,944384
+??,assets/cards/runeblade-refinement-2026-10-12/bone-ward/r1/bone-ward-card-r1.png,Card masters and production files,1789559
+??,assets/cards/runeblade-refinement-2026-10-12/bone-ward/r1/illustration-brief.txt,Card masters and production files,325
+??,assets/cards/runeblade-refinement-2026-10-12/bone-ward/r1/illustration.png,Card masters and production files,924853
+??,assets/cards/runeblade-refinement-2026-10-12/bone-ward/r1/provenance.json,Card masters and production files,3700
+??,assets/cards/runeblade-refinement-2026-10-12/bone-ward/r1/source-snapshot.json,Card masters and production files,460
+??,assets/cards/runeblade-refinement-2026-10-12/bone-ward/r1/text-data.json,Card masters and production files,460
+??,assets/cards/runeblade-refinement-2026-10-12/bone-ward/r1/text-layer.png,Card masters and production files,34237
+??,assets/cards/runeblade-refinement-2026-10-12/bone-ward/r1/text-layout.json,Card masters and production files,578
+??,assets/cards/runeblade-refinement-2026-10-12/bone-ward/r1/verification.json,Card masters and production files,495
+??,assets/cards/runeblade-refinement-2026-10-12/brace/r1/art-layer.png,Card masters and production files,944384
+??,assets/cards/runeblade-refinement-2026-10-12/brace/r1/brace-card-r1.png,Card masters and production files,1774453
+??,assets/cards/runeblade-refinement-2026-10-12/brace/r1/illustration-brief.txt,Card masters and production files,358
+??,assets/cards/runeblade-refinement-2026-10-12/brace/r1/illustration.png,Card masters and production files,924853
+??,assets/cards/runeblade-refinement-2026-10-12/brace/r1/provenance.json,Card masters and production files,3563
+??,assets/cards/runeblade-refinement-2026-10-12/brace/r1/source-snapshot.json,Card masters and production files,355
+??,assets/cards/runeblade-refinement-2026-10-12/brace/r1/text-data.json,Card masters and production files,355
+??,assets/cards/runeblade-refinement-2026-10-12/brace/r1/text-layer.png,Card masters and production files,22244
+??,assets/cards/runeblade-refinement-2026-10-12/brace/r1/text-layout.json,Card masters and production files,505
+??,assets/cards/runeblade-refinement-2026-10-12/brace/r1/verification.json,Card masters and production files,495
+??,assets/cards/runeblade-refinement-2026-10-12/card-art-sources.json,Card masters and production files,5429
+??,assets/cards/runeblade-refinement-2026-10-12/command-the-dead/r1/art-layer.png,Card masters and production files,961931
+??,assets/cards/runeblade-refinement-2026-10-12/command-the-dead/r1/command-the-dead-card-r1.png,Card masters and production files,1804229
+??,assets/cards/runeblade-refinement-2026-10-12/command-the-dead/r1/illustration-brief.txt,Card masters and production files,362
+??,assets/cards/runeblade-refinement-2026-10-12/command-the-dead/r1/illustration.png,Card masters and production files,942198
+??,assets/cards/runeblade-refinement-2026-10-12/command-the-dead/r1/provenance.json,Card masters and production files,3765
+??,assets/cards/runeblade-refinement-2026-10-12/command-the-dead/r1/source-snapshot.json,Card masters and production files,461
+??,assets/cards/runeblade-refinement-2026-10-12/command-the-dead/r1/text-data.json,Card masters and production files,461
+??,assets/cards/runeblade-refinement-2026-10-12/command-the-dead/r1/text-layer.png,Card masters and production files,29994
+??,assets/cards/runeblade-refinement-2026-10-12/command-the-dead/r1/text-layout.json,Card masters and production files,583
+??,assets/cards/runeblade-refinement-2026-10-12/command-the-dead/r1/verification.json,Card masters and production files,495
+??,assets/cards/runeblade-refinement-2026-10-12/compose.py,Card masters and production files,8440
+??,assets/cards/runeblade-refinement-2026-10-12/dark-tithe/r1/art-layer.png,Card masters and production files,1030048
+??,assets/cards/runeblade-refinement-2026-10-12/dark-tithe/r1/dark-tithe-card-r1.png,Card masters and production files,1888366
+??,assets/cards/runeblade-refinement-2026-10-12/dark-tithe/r1/illustration-brief.txt,Card masters and production files,327
+??,assets/cards/runeblade-refinement-2026-10-12/dark-tithe/r1/illustration.png,Card masters and production files,1006677
+??,assets/cards/runeblade-refinement-2026-10-12/dark-tithe/r1/provenance.json,Card masters and production files,3719
+??,assets/cards/runeblade-refinement-2026-10-12/dark-tithe/r1/source-snapshot.json,Card masters and production files,467
+??,assets/cards/runeblade-refinement-2026-10-12/dark-tithe/r1/text-data.json,Card masters and production files,467
+??,assets/cards/runeblade-refinement-2026-10-12/dark-tithe/r1/text-layer.png,Card masters and production files,33513
+??,assets/cards/runeblade-refinement-2026-10-12/dark-tithe/r1/text-layout.json,Card masters and production files,587
+??,assets/cards/runeblade-refinement-2026-10-12/dark-tithe/r1/verification.json,Card masters and production files,495
+??,assets/cards/runeblade-refinement-2026-10-12/engine-snapshot.json,Card masters and production files,6391
+??,assets/cards/runeblade-refinement-2026-10-12/exhume/generated-illustration.png,Card masters and production files,2127906
+??,assets/cards/runeblade-refinement-2026-10-12/exhume/generation-prompt.txt,Card masters and production files,481
+??,assets/cards/runeblade-refinement-2026-10-12/exhume/r1/art-layer.png,Card masters and production files,1100483
+??,assets/cards/runeblade-refinement-2026-10-12/exhume/r1/exhume-card-r1.png,Card masters and production files,1948873
+??,assets/cards/runeblade-refinement-2026-10-12/exhume/r1/illustration-brief.txt,Card masters and production files,453
+??,assets/cards/runeblade-refinement-2026-10-12/exhume/r1/illustration.png,Card masters and production files,2328459
+??,assets/cards/runeblade-refinement-2026-10-12/exhume/r1/provenance.json,Card masters and production files,3329
+??,assets/cards/runeblade-refinement-2026-10-12/exhume/r1/source-snapshot.json,Card masters and production files,364
+??,assets/cards/runeblade-refinement-2026-10-12/exhume/r1/text-data.json,Card masters and production files,364
+??,assets/cards/runeblade-refinement-2026-10-12/exhume/r1/text-layer.png,Card masters and production files,24698
+??,assets/cards/runeblade-refinement-2026-10-12/exhume/r1/text-layout.json,Card masters and production files,511
+??,assets/cards/runeblade-refinement-2026-10-12/exhume/r1/verification.json,Card masters and production files,495
+??,assets/cards/runeblade-refinement-2026-10-12/frost-nova/r1/art-layer.png,Card masters and production files,1118790
+??,assets/cards/runeblade-refinement-2026-10-12/frost-nova/r1/frost-nova-card-r1.png,Card masters and production files,1968175
+??,assets/cards/runeblade-refinement-2026-10-12/frost-nova/r1/illustration-brief.txt,Card masters and production files,327
+??,assets/cards/runeblade-refinement-2026-10-12/frost-nova/r1/illustration.png,Card masters and production files,1096353
+??,assets/cards/runeblade-refinement-2026-10-12/frost-nova/r1/provenance.json,Card masters and production files,3710
+??,assets/cards/runeblade-refinement-2026-10-12/frost-nova/r1/source-snapshot.json,Card masters and production files,458
+??,assets/cards/runeblade-refinement-2026-10-12/frost-nova/r1/text-data.json,Card masters and production files,458
+??,assets/cards/runeblade-refinement-2026-10-12/frost-nova/r1/text-layer.png,Card masters and production files,33680
+??,assets/cards/runeblade-refinement-2026-10-12/frost-nova/r1/text-layout.json,Card masters and production files,584
+??,assets/cards/runeblade-refinement-2026-10-12/frost-nova/r1/verification.json,Card masters and production files,495
+??,assets/cards/runeblade-refinement-2026-10-12/frostbite/r1/art-layer.png,Card masters and production files,908133
+??,assets/cards/runeblade-refinement-2026-10-12/frostbite/r1/frostbite-card-r1.png,Card masters and production files,1752919
+??,assets/cards/runeblade-refinement-2026-10-12/frostbite/r1/illustration-brief.txt,Card masters and production files,366
+??,assets/cards/runeblade-refinement-2026-10-12/frostbite/r1/illustration.png,Card masters and production files,888413
+??,assets/cards/runeblade-refinement-2026-10-12/frostbite/r1/provenance.json,Card masters and production files,3692
+??,assets/cards/runeblade-refinement-2026-10-12/frostbite/r1/source-snapshot.json,Card masters and production files,436
+??,assets/cards/runeblade-refinement-2026-10-12/frostbite/r1/text-data.json,Card masters and production files,436
+??,assets/cards/runeblade-refinement-2026-10-12/frostbite/r1/text-layer.png,Card masters and production files,33656
+??,assets/cards/runeblade-refinement-2026-10-12/frostbite/r1/text-layout.json,Card masters and production files,573
+??,assets/cards/runeblade-refinement-2026-10-12/frostbite/r1/verification.json,Card masters and production files,495
+??,assets/cards/runeblade-refinement-2026-10-12/frozen-grasp/r1/art-layer.png,Card masters and production files,993954
+??,assets/cards/runeblade-refinement-2026-10-12/frozen-grasp/r1/frozen-grasp-card-r1.png,Card masters and production files,1841905
+??,assets/cards/runeblade-refinement-2026-10-12/frozen-grasp/r1/illustration-brief.txt,Card masters and production files,362
+??,assets/cards/runeblade-refinement-2026-10-12/frozen-grasp/r1/illustration.png,Card masters and production files,971854
+??,assets/cards/runeblade-refinement-2026-10-12/frozen-grasp/r1/provenance.json,Card masters and production files,3645
+??,assets/cards/runeblade-refinement-2026-10-12/frozen-grasp/r1/source-snapshot.json,Card masters and production files,373
+??,assets/cards/runeblade-refinement-2026-10-12/frozen-grasp/r1/text-data.json,Card masters and production files,373
+??,assets/cards/runeblade-refinement-2026-10-12/frozen-grasp/r1/text-layer.png,Card masters and production files,25954
+??,assets/cards/runeblade-refinement-2026-10-12/frozen-grasp/r1/text-layout.json,Card masters and production files,519
+??,assets/cards/runeblade-refinement-2026-10-12/frozen-grasp/r1/verification.json,Card masters and production files,495
+??,assets/cards/runeblade-refinement-2026-10-12/glacial-ward/r1/art-layer.png,Card masters and production files,959215
+??,assets/cards/runeblade-refinement-2026-10-12/glacial-ward/r1/glacial-ward-card-r1.png,Card masters and production files,1799734
+??,assets/cards/runeblade-refinement-2026-10-12/glacial-ward/r1/illustration-brief.txt,Card masters and production files,364
+??,assets/cards/runeblade-refinement-2026-10-12/glacial-ward/r1/illustration.png,Card masters and production files,941955
+??,assets/cards/runeblade-refinement-2026-10-12/glacial-ward/r1/provenance.json,Card masters and production files,3685
+??,assets/cards/runeblade-refinement-2026-10-12/glacial-ward/r1/source-snapshot.json,Card masters and production files,409
+??,assets/cards/runeblade-refinement-2026-10-12/glacial-ward/r1/text-data.json,Card masters and production files,409
+??,assets/cards/runeblade-refinement-2026-10-12/glacial-ward/r1/text-layer.png,Card masters and production files,26723
+??,assets/cards/runeblade-refinement-2026-10-12/glacial-ward/r1/text-layout.json,Card masters and production files,544
+??,assets/cards/runeblade-refinement-2026-10-12/glacial-ward/r1/verification.json,Card masters and production files,495
+??,assets/cards/runeblade-refinement-2026-10-12/glacier-wall/r1/art-layer.png,Card masters and production files,924655
+??,assets/cards/runeblade-refinement-2026-10-12/glacier-wall/r1/glacier-wall-card-r1.png,Card masters and production files,1766264
+??,assets/cards/runeblade-refinement-2026-10-12/glacier-wall/r1/illustration-brief.txt,Card masters and production files,372
+??,assets/cards/runeblade-refinement-2026-10-12/glacier-wall/r1/illustration.png,Card masters and production files,903000
+??,assets/cards/runeblade-refinement-2026-10-12/glacier-wall/r1/provenance.json,Card masters and production files,3690
+??,assets/cards/runeblade-refinement-2026-10-12/glacier-wall/r1/source-snapshot.json,Card masters and production files,398
+??,assets/cards/runeblade-refinement-2026-10-12/glacier-wall/r1/text-data.json,Card masters and production files,398
+??,assets/cards/runeblade-refinement-2026-10-12/glacier-wall/r1/text-layer.png,Card masters and production files,29280
+??,assets/cards/runeblade-refinement-2026-10-12/glacier-wall/r1/text-layout.json,Card masters and production files,538
+??,assets/cards/runeblade-refinement-2026-10-12/glacier-wall/r1/verification.json,Card masters and production files,495
+??,assets/cards/runeblade-refinement-2026-10-12/hew/r1/art-layer.png,Card masters and production files,1054126
+??,assets/cards/runeblade-refinement-2026-10-12/hew/r1/hew-card-r1.png,Card masters and production files,1891154
+??,assets/cards/runeblade-refinement-2026-10-12/hew/r1/illustration-brief.txt,Card masters and production files,364
+??,assets/cards/runeblade-refinement-2026-10-12/hew/r1/illustration.png,Card masters and production files,1033552
+??,assets/cards/runeblade-refinement-2026-10-12/hew/r1/provenance.json,Card masters and production files,3559
+??,assets/cards/runeblade-refinement-2026-10-12/hew/r1/source-snapshot.json,Card masters and production files,355
+??,assets/cards/runeblade-refinement-2026-10-12/hew/r1/text-data.json,Card masters and production files,355
+??,assets/cards/runeblade-refinement-2026-10-12/hew/r1/text-layer.png,Card masters and production files,21244
+??,assets/cards/runeblade-refinement-2026-10-12/hew/r1/text-layout.json,Card masters and production files,505
+??,assets/cards/runeblade-refinement-2026-10-12/hew/r1/verification.json,Card masters and production files,495
+??,assets/cards/runeblade-refinement-2026-10-12/hoarfrost-edge/r1/art-layer.png,Card masters and production files,941988
+??,assets/cards/runeblade-refinement-2026-10-12/hoarfrost-edge/r1/hoarfrost-edge-card-r1.png,Card masters and production files,1791241
+??,assets/cards/runeblade-refinement-2026-10-12/hoarfrost-edge/r1/illustration-brief.txt,Card masters and production files,335
+??,assets/cards/runeblade-refinement-2026-10-12/hoarfrost-edge/r1/illustration.png,Card masters and production files,923163
+??,assets/cards/runeblade-refinement-2026-10-12/hoarfrost-edge/r1/provenance.json,Card masters and production files,3774
+??,assets/cards/runeblade-refinement-2026-10-12/hoarfrost-edge/r1/source-snapshot.json,Card masters and production files,474
+??,assets/cards/runeblade-refinement-2026-10-12/hoarfrost-edge/r1/text-data.json,Card masters and production files,474
+??,assets/cards/runeblade-refinement-2026-10-12/hoarfrost-edge/r1/text-layer.png,Card masters and production files,33850
+??,assets/cards/runeblade-refinement-2026-10-12/hoarfrost-edge/r1/text-layout.json,Card masters and production files,600
+??,assets/cards/runeblade-refinement-2026-10-12/hoarfrost-edge/r1/verification.json,Card masters and production files,495
+??,assets/cards/runeblade-refinement-2026-10-12/manifest.json,Card masters and production files,94235
+??,assets/cards/runeblade-refinement-2026-10-12/mass-exhumation/generated-illustration.png,Card masters and production files,2144441
+??,assets/cards/runeblade-refinement-2026-10-12/mass-exhumation/generation-prompt.txt,Card masters and production files,501
+??,assets/cards/runeblade-refinement-2026-10-12/mass-exhumation/r1/art-layer.png,Card masters and production files,1121885
+??,assets/cards/runeblade-refinement-2026-10-12/mass-exhumation/r1/illustration-brief.txt,Card masters and production files,462
+??,assets/cards/runeblade-refinement-2026-10-12/mass-exhumation/r1/illustration.png,Card masters and production files,2373882
+??,assets/cards/runeblade-refinement-2026-10-12/mass-exhumation/r1/mass-exhumation-card-r1.png,Card masters and production files,1971777
+??,assets/cards/runeblade-refinement-2026-10-12/mass-exhumation/r1/provenance.json,Card masters and production files,3430
+??,assets/cards/runeblade-refinement-2026-10-12/mass-exhumation/r1/source-snapshot.json,Card masters and production files,384
+??,assets/cards/runeblade-refinement-2026-10-12/mass-exhumation/r1/text-data.json,Card masters and production files,384
+??,assets/cards/runeblade-refinement-2026-10-12/mass-exhumation/r1/text-layer.png,Card masters and production files,25863
+??,assets/cards/runeblade-refinement-2026-10-12/mass-exhumation/r1/text-layout.json,Card masters and production files,528
+??,assets/cards/runeblade-refinement-2026-10-12/mass-exhumation/r1/verification.json,Card masters and production files,495
+??,assets/cards/runeblade-refinement-2026-10-12/overview.png,Card masters and production files,2814277
+??,assets/cards/runeblade-refinement-2026-10-12/permafrost-aura/r1/art-layer.png,Card masters and production files,976618
+??,assets/cards/runeblade-refinement-2026-10-12/permafrost-aura/r1/illustration-brief.txt,Card masters and production files,337
+??,assets/cards/runeblade-refinement-2026-10-12/permafrost-aura/r1/illustration.png,Card masters and production files,956357
+??,assets/cards/runeblade-refinement-2026-10-12/permafrost-aura/r1/permafrost-aura-card-r1.png,Card masters and production files,1831713
+??,assets/cards/runeblade-refinement-2026-10-12/permafrost-aura/r1/provenance.json,Card masters and production files,3819
+??,assets/cards/runeblade-refinement-2026-10-12/permafrost-aura/r1/source-snapshot.json,Card masters and production files,507
+??,assets/cards/runeblade-refinement-2026-10-12/permafrost-aura/r1/text-data.json,Card masters and production files,507
+??,assets/cards/runeblade-refinement-2026-10-12/permafrost-aura/r1/text-layer.png,Card masters and production files,36279
+??,assets/cards/runeblade-refinement-2026-10-12/permafrost-aura/r1/text-layout.json,Card masters and production files,630
+??,assets/cards/runeblade-refinement-2026-10-12/permafrost-aura/r1/verification.json,Card masters and production files,495
+??,assets/cards/runeblade-refinement-2026-10-12/rally-the-fallen/r1/art-layer.png,Card masters and production files,1073403
+??,assets/cards/runeblade-refinement-2026-10-12/rally-the-fallen/r1/illustration-brief.txt,Card masters and production files,339
+??,assets/cards/runeblade-refinement-2026-10-12/rally-the-fallen/r1/illustration.png,Card masters and production files,1052605
+??,assets/cards/runeblade-refinement-2026-10-12/rally-the-fallen/r1/provenance.json,Card masters and production files,3788
+??,assets/cards/runeblade-refinement-2026-10-12/rally-the-fallen/r1/rally-the-fallen-card-r1.png,Card masters and production files,1921183
+??,assets/cards/runeblade-refinement-2026-10-12/rally-the-fallen/r1/source-snapshot.json,Card masters and production files,464
+??,assets/cards/runeblade-refinement-2026-10-12/rally-the-fallen/r1/text-data.json,Card masters and production files,464
+??,assets/cards/runeblade-refinement-2026-10-12/rally-the-fallen/r1/text-layer.png,Card masters and production files,29333
+??,assets/cards/runeblade-refinement-2026-10-12/rally-the-fallen/r1/text-layout.json,Card masters and production files,592
+??,assets/cards/runeblade-refinement-2026-10-12/rally-the-fallen/r1/verification.json,Card masters and production files,495
+??,assets/cards/runeblade-refinement-2026-10-12/review-1.jpg,Card masters and production files,764164
+??,assets/cards/runeblade-refinement-2026-10-12/review-2.jpg,Card masters and production files,673495
+??,assets/cards/runeblade-refinement-2026-10-12/review-3.jpg,Card masters and production files,619529
+??,assets/cards/runeblade-refinement-2026-10-12/review-4.jpg,Card masters and production files,630850
+??,assets/cards/runeblade-refinement-2026-10-12/review-5.jpg,Card masters and production files,679451
+??,assets/cards/runeblade-refinement-2026-10-12/review-6.jpg,Card masters and production files,650218
+??,assets/cards/runeblade-refinement-2026-10-12/rimecleave/r1/art-layer.png,Card masters and production files,968623
+??,assets/cards/runeblade-refinement-2026-10-12/rimecleave/r1/illustration-brief.txt,Card masters and production files,370
+??,assets/cards/runeblade-refinement-2026-10-12/rimecleave/r1/illustration.png,Card masters and production files,950528
+??,assets/cards/runeblade-refinement-2026-10-12/rimecleave/r1/provenance.json,Card masters and production files,3741
+??,assets/cards/runeblade-refinement-2026-10-12/rimecleave/r1/rimecleave-card-r1.png,Card masters and production files,1819241
+??,assets/cards/runeblade-refinement-2026-10-12/rimecleave/r1/source-snapshot.json,Card masters and production files,469
+??,assets/cards/runeblade-refinement-2026-10-12/rimecleave/r1/text-data.json,Card masters and production files,469
+??,assets/cards/runeblade-refinement-2026-10-12/rimecleave/r1/text-layer.png,Card masters and production files,33872
+??,assets/cards/runeblade-refinement-2026-10-12/rimecleave/r1/text-layout.json,Card masters and production files,594
+??,assets/cards/runeblade-refinement-2026-10-12/rimecleave/r1/verification.json,Card masters and production files,495
+??,assets/cards/runeblade-refinement-2026-10-12/soulfrost-blade/r1/art-layer.png,Card masters and production files,952096
+??,assets/cards/runeblade-refinement-2026-10-12/soulfrost-blade/r1/illustration-brief.txt,Card masters and production files,337
+??,assets/cards/runeblade-refinement-2026-10-12/soulfrost-blade/r1/illustration.png,Card masters and production files,931208
+??,assets/cards/runeblade-refinement-2026-10-12/soulfrost-blade/r1/provenance.json,Card masters and production files,3799
+??,assets/cards/runeblade-refinement-2026-10-12/soulfrost-blade/r1/soulfrost-blade-card-r1.png,Card masters and production files,1800480
+??,assets/cards/runeblade-refinement-2026-10-12/soulfrost-blade/r1/source-snapshot.json,Card masters and production files,487
+??,assets/cards/runeblade-refinement-2026-10-12/soulfrost-blade/r1/text-data.json,Card masters and production files,487
+??,assets/cards/runeblade-refinement-2026-10-12/soulfrost-blade/r1/text-layer.png,Card masters and production files,36439
+??,assets/cards/runeblade-refinement-2026-10-12/soulfrost-blade/r1/text-layout.json,Card masters and production files,608
+??,assets/cards/runeblade-refinement-2026-10-12/soulfrost-blade/r1/verification.json,Card masters and production files,495
+??,assets/cards/runeblade-refinement-2026-10-12/submit.mjs,Card masters and production files,1676
+??,assets/cards/runeblade-refinement-2026-10-12/summon-bone-defender/r1/art-layer.png,Card masters and production files,1247022
+??,assets/cards/runeblade-refinement-2026-10-12/summon-bone-defender/r1/illustration-brief.txt,Card masters and production files,316
+??,assets/cards/runeblade-refinement-2026-10-12/summon-bone-defender/r1/illustration.png,Card masters and production files,2656064
+??,assets/cards/runeblade-refinement-2026-10-12/summon-bone-defender/r1/provenance.json,Card masters and production files,3756
+??,assets/cards/runeblade-refinement-2026-10-12/summon-bone-defender/r1/source-snapshot.json,Card masters and production files,640
+??,assets/cards/runeblade-refinement-2026-10-12/summon-bone-defender/r1/summon-bone-defender-card-r1.png,Card masters and production files,2127059
+??,assets/cards/runeblade-refinement-2026-10-12/summon-bone-defender/r1/text-data.json,Card masters and production files,640
+??,assets/cards/runeblade-refinement-2026-10-12/summon-bone-defender/r1/text-layer.png,Card masters and production files,46553
+??,assets/cards/runeblade-refinement-2026-10-12/summon-bone-defender/r1/text-layout.json,Card masters and production files,761
+??,assets/cards/runeblade-refinement-2026-10-12/summon-bone-defender/r1/verification.json,Card masters and production files,494
+??,assets/cards/runeblade-refinement-2026-10-12/summon-frost-thrall/r1/art-layer.png,Card masters and production files,1194316
+??,assets/cards/runeblade-refinement-2026-10-12/summon-frost-thrall/r1/illustration-brief.txt,Card masters and production files,315
+??,assets/cards/runeblade-refinement-2026-10-12/summon-frost-thrall/r1/illustration.png,Card masters and production files,2586197
+??,assets/cards/runeblade-refinement-2026-10-12/summon-frost-thrall/r1/provenance.json,Card masters and production files,3778
+??,assets/cards/runeblade-refinement-2026-10-12/summon-frost-thrall/r1/source-snapshot.json,Card masters and production files,671
+??,assets/cards/runeblade-refinement-2026-10-12/summon-frost-thrall/r1/summon-frost-thrall-card-r1.png,Card masters and production files,2076523
+??,assets/cards/runeblade-refinement-2026-10-12/summon-frost-thrall/r1/text-data.json,Card masters and production files,671
+??,assets/cards/runeblade-refinement-2026-10-12/summon-frost-thrall/r1/text-layer.png,Card masters and production files,50061
+??,assets/cards/runeblade-refinement-2026-10-12/summon-frost-thrall/r1/text-layout.json,Card masters and production files,785
+??,assets/cards/runeblade-refinement-2026-10-12/summon-frost-thrall/r1/verification.json,Card masters and production files,494
+??,assets/cards/runeblade-refinement-2026-10-12/summon-rime-seer/r1/art-layer.png,Card masters and production files,1185065
+??,assets/cards/runeblade-refinement-2026-10-12/summon-rime-seer/r1/illustration-brief.txt,Card masters and production files,312
+??,assets/cards/runeblade-refinement-2026-10-12/summon-rime-seer/r1/illustration.png,Card masters and production files,2516547
+??,assets/cards/runeblade-refinement-2026-10-12/summon-rime-seer/r1/provenance.json,Card masters and production files,3742
+??,assets/cards/runeblade-refinement-2026-10-12/summon-rime-seer/r1/source-snapshot.json,Card masters and production files,662
+??,assets/cards/runeblade-refinement-2026-10-12/summon-rime-seer/r1/summon-rime-seer-card-r1.png,Card masters and production files,2072920
+??,assets/cards/runeblade-refinement-2026-10-12/summon-rime-seer/r1/text-data.json,Card masters and production files,662
+??,assets/cards/runeblade-refinement-2026-10-12/summon-rime-seer/r1/text-layer.png,Card masters and production files,51655
+??,assets/cards/runeblade-refinement-2026-10-12/summon-rime-seer/r1/text-layout.json,Card masters and production files,779
+??,assets/cards/runeblade-refinement-2026-10-12/summon-rime-seer/r1/verification.json,Card masters and production files,494
+??,assets/cards/runeblade-refinement-2026-10-12/summon-rune-revenant/r1/art-layer.png,Card masters and production files,1233261
+??,assets/cards/runeblade-refinement-2026-10-12/summon-rune-revenant/r1/illustration-brief.txt,Card masters and production files,316
+??,assets/cards/runeblade-refinement-2026-10-12/summon-rune-revenant/r1/illustration.png,Card masters and production files,2615813
+??,assets/cards/runeblade-refinement-2026-10-12/summon-rune-revenant/r1/provenance.json,Card masters and production files,3789
+??,assets/cards/runeblade-refinement-2026-10-12/summon-rune-revenant/r1/source-snapshot.json,Card masters and production files,673
+??,assets/cards/runeblade-refinement-2026-10-12/summon-rune-revenant/r1/summon-rune-revenant-card-r1.png,Card masters and production files,2114998
+??,assets/cards/runeblade-refinement-2026-10-12/summon-rune-revenant/r1/text-data.json,Card masters and production files,673
+??,assets/cards/runeblade-refinement-2026-10-12/summon-rune-revenant/r1/text-layer.png,Card masters and production files,48103
+??,assets/cards/runeblade-refinement-2026-10-12/summon-rune-revenant/r1/text-layout.json,Card masters and production files,785
+??,assets/cards/runeblade-refinement-2026-10-12/summon-rune-revenant/r1/verification.json,Card masters and production files,494
+??,assets/cards/runeblade-refinement-2026-10-12/summon-shattered-queen/r1/art-layer.png,Card masters and production files,1215226
+??,assets/cards/runeblade-refinement-2026-10-12/summon-shattered-queen/r1/illustration-brief.txt,Card masters and production files,318
+??,assets/cards/runeblade-refinement-2026-10-12/summon-shattered-queen/r1/illustration.png,Card masters and production files,2630879
+??,assets/cards/runeblade-refinement-2026-10-12/summon-shattered-queen/r1/provenance.json,Card masters and production files,3872
+??,assets/cards/runeblade-refinement-2026-10-12/summon-shattered-queen/r1/source-snapshot.json,Card masters and production files,738
+??,assets/cards/runeblade-refinement-2026-10-12/summon-shattered-queen/r1/summon-shattered-queen-card-r1.png,Card masters and production files,2106449
+??,assets/cards/runeblade-refinement-2026-10-12/summon-shattered-queen/r1/text-data.json,Card masters and production files,738
+??,assets/cards/runeblade-refinement-2026-10-12/summon-shattered-queen/r1/text-layer.png,Card masters and production files,51943
+??,assets/cards/runeblade-refinement-2026-10-12/summon-shattered-queen/r1/text-layout.json,Card masters and production files,841
+??,assets/cards/runeblade-refinement-2026-10-12/summon-shattered-queen/r1/verification.json,Card masters and production files,494
+??,assets/cards/runeblade-refinement-2026-10-12/sweeping-hew/r1/art-layer.png,Card masters and production files,1054126
+??,assets/cards/runeblade-refinement-2026-10-12/sweeping-hew/r1/illustration-brief.txt,Card masters and production files,331
+??,assets/cards/runeblade-refinement-2026-10-12/sweeping-hew/r1/illustration.png,Card masters and production files,1033552
+??,assets/cards/runeblade-refinement-2026-10-12/sweeping-hew/r1/provenance.json,Card masters and production files,3721
+??,assets/cards/runeblade-refinement-2026-10-12/sweeping-hew/r1/source-snapshot.json,Card masters and production files,445
+??,assets/cards/runeblade-refinement-2026-10-12/sweeping-hew/r1/sweeping-hew-card-r1.png,Card masters and production files,1908090
+??,assets/cards/runeblade-refinement-2026-10-12/sweeping-hew/r1/text-data.json,Card masters and production files,445
+??,assets/cards/runeblade-refinement-2026-10-12/sweeping-hew/r1/text-layer.png,Card masters and production files,32602
+??,assets/cards/runeblade-refinement-2026-10-12/sweeping-hew/r1/text-layout.json,Card masters and production files,578
+??,assets/cards/runeblade-refinement-2026-10-12/sweeping-hew/r1/verification.json,Card masters and production files,495
+??,assets/cards/runeblade-refinement-2026-10-12/template-v2/Georgia-Bold.ttf,Card masters and production files,207476
+??,assets/cards/runeblade-refinement-2026-10-12/template-v2/baseline.png,Card masters and production files,1823786
+??,assets/cards/runeblade-refinement-2026-10-12/template-v2/clean-panels.png,Card masters and production files,1616170
+??,assets/cards/runeblade-refinement-2026-10-12/template-v2/fixed-frame.png,Card masters and production files,1786005
+??,assets/cards/runeblade-refinement-2026-10-12/template-v2/mask-art.png,Card masters and production files,3433
+??,assets/cards/runeblade-refinement-2026-10-12/template-v2/mask-cost.png,Card masters and production files,1827
+??,assets/cards/runeblade-refinement-2026-10-12/template-v2/mask-review.png,Card masters and production files,1792866
+??,assets/cards/runeblade-refinement-2026-10-12/template-v2/mask-rules.png,Card masters and production files,2174
+??,assets/cards/runeblade-refinement-2026-10-12/template-v2/mask-title.png,Card masters and production files,1846
+??,assets/cards/runeblade-refinement-2026-10-12/template-v2/mask-type.png,Card masters and production files,1713
+??,assets/cards/runeblade-refinement-2026-10-12/template-v2/mask-union.png,Card masters and production files,4354
+??,assets/cards/runeblade-refinement-2026-10-12/template-v2/template.json,Card masters and production files,1108
+??,assets/cards/runeblade-refinement-2026-10-12/unholy-vigor/r1/art-layer.png,Card masters and production files,1097482
+??,assets/cards/runeblade-refinement-2026-10-12/unholy-vigor/r1/illustration-brief.txt,Card masters and production files,331
+??,assets/cards/runeblade-refinement-2026-10-12/unholy-vigor/r1/illustration.png,Card masters and production files,1079377
+??,assets/cards/runeblade-refinement-2026-10-12/unholy-vigor/r1/provenance.json,Card masters and production files,3768
+??,assets/cards/runeblade-refinement-2026-10-12/unholy-vigor/r1/source-snapshot.json,Card masters and production files,492
+??,assets/cards/runeblade-refinement-2026-10-12/unholy-vigor/r1/text-data.json,Card masters and production files,492
+??,assets/cards/runeblade-refinement-2026-10-12/unholy-vigor/r1/text-layer.png,Card masters and production files,38195
+??,assets/cards/runeblade-refinement-2026-10-12/unholy-vigor/r1/text-layout.json,Card masters and production files,618
+??,assets/cards/runeblade-refinement-2026-10-12/unholy-vigor/r1/unholy-vigor-card-r1.png,Card masters and production files,1954515
+??,assets/cards/runeblade-refinement-2026-10-12/unholy-vigor/r1/verification.json,Card masters and production files,495
+??,assets/characters/runeblade-base-summons/animation-r1/bone-defender/frames/attack-00.png,Character source art and animation studies,336162
+??,assets/characters/runeblade-base-summons/animation-r1/bone-defender/frames/attack-01.png,Character source art and animation studies,327378
+??,assets/characters/runeblade-base-summons/animation-r1/bone-defender/frames/attack-02.png,Character source art and animation studies,333253
+??,assets/characters/runeblade-base-summons/animation-r1/bone-defender/frames/attack-03.png,Character source art and animation studies,339484
+??,assets/characters/runeblade-base-summons/animation-r1/bone-defender/frames/attack-04.png,Character source art and animation studies,300058
+??,assets/characters/runeblade-base-summons/animation-r1/bone-defender/frames/attack-05.png,Character source art and animation studies,336483
+??,assets/characters/runeblade-base-summons/animation-r1/bone-defender/frames/cast-00.png,Character source art and animation studies,331997
+??,assets/characters/runeblade-base-summons/animation-r1/bone-defender/frames/cast-01.png,Character source art and animation studies,276585
+??,assets/characters/runeblade-base-summons/animation-r1/bone-defender/frames/cast-02.png,Character source art and animation studies,329575
+??,assets/characters/runeblade-base-summons/animation-r1/bone-defender/frames/cast-03.png,Character source art and animation studies,314112
+??,assets/characters/runeblade-base-summons/animation-r1/bone-defender/frames/die-00.png,Character source art and animation studies,301496
+??,assets/characters/runeblade-base-summons/animation-r1/bone-defender/frames/die-01.png,Character source art and animation studies,289282
+??,assets/characters/runeblade-base-summons/animation-r1/bone-defender/frames/die-02.png,Character source art and animation studies,227583
+??,assets/characters/runeblade-base-summons/animation-r1/bone-defender/frames/die-03.png,Character source art and animation studies,184913
+??,assets/characters/runeblade-base-summons/animation-r1/bone-defender/frames/die-04.png,Character source art and animation studies,158001
+??,assets/characters/runeblade-base-summons/animation-r1/bone-defender/frames/die-05.png,Character source art and animation studies,141807
+??,assets/characters/runeblade-base-summons/animation-r1/bone-defender/frames/hit-00.png,Character source art and animation studies,315489
+??,assets/characters/runeblade-base-summons/animation-r1/bone-defender/frames/hit-01.png,Character source art and animation studies,300596
+??,assets/characters/runeblade-base-summons/animation-r1/bone-defender/frames/hit-02.png,Character source art and animation studies,295248
+??,assets/characters/runeblade-base-summons/animation-r1/bone-defender/frames/hit-03.png,Character source art and animation studies,312127
+??,assets/characters/runeblade-base-summons/animation-r1/bone-defender/frames/idle-00.png,Character source art and animation studies,292088
+??,assets/characters/runeblade-base-summons/animation-r1/bone-defender/frames/idle-01.png,Character source art and animation studies,292063
+??,assets/characters/runeblade-base-summons/animation-r1/bone-defender/frames/idle-02.png,Character source art and animation studies,293321
+??,assets/characters/runeblade-base-summons/animation-r1/bone-defender/frames/idle-03.png,Character source art and animation studies,296711
+??,assets/characters/runeblade-base-summons/animation-r1/bone-defender/frames/idle-04.png,Character source art and animation studies,297271
+??,assets/characters/runeblade-base-summons/animation-r1/bone-defender/frames/idle-05.png,Character source art and animation studies,297441
+??,assets/characters/runeblade-base-summons/animation-r1/bone-defender/frames/idle-06.png,Character source art and animation studies,284777
+??,assets/characters/runeblade-base-summons/animation-r1/bone-defender/frames/idle-07.png,Character source art and animation studies,292652
+??,assets/characters/runeblade-base-summons/animation-r1/bone-defender/frames/wounded_idle-00.png,Character source art and animation studies,384636
+??,assets/characters/runeblade-base-summons/animation-r1/bone-defender/frames/wounded_idle-01.png,Character source art and animation studies,397123
+??,assets/characters/runeblade-base-summons/animation-r1/bone-defender/frames/wounded_idle-02.png,Character source art and animation studies,403080
+??,assets/characters/runeblade-base-summons/animation-r1/bone-defender/frames/wounded_idle-03.png,Character source art and animation studies,377905
+??,assets/characters/runeblade-base-summons/animation-r1/bone-defender/manifest.json,Character source art and animation studies,29169
+??,assets/characters/runeblade-base-summons/animation-r2/frost-thrall/frames/attack-00.png,Character source art and animation studies,242016
+??,assets/characters/runeblade-base-summons/animation-r2/frost-thrall/frames/attack-01.png,Character source art and animation studies,230928
+??,assets/characters/runeblade-base-summons/animation-r2/frost-thrall/frames/attack-02.png,Character source art and animation studies,210651
+??,assets/characters/runeblade-base-summons/animation-r2/frost-thrall/frames/attack-03.png,Character source art and animation studies,249780
+??,assets/characters/runeblade-base-summons/animation-r2/frost-thrall/frames/attack-04.png,Character source art and animation studies,249335
+??,assets/characters/runeblade-base-summons/animation-r2/frost-thrall/frames/attack-05.png,Character source art and animation studies,239394
+??,assets/characters/runeblade-base-summons/animation-r2/frost-thrall/frames/cast-00.png,Character source art and animation studies,242233
+??,assets/characters/runeblade-base-summons/animation-r2/frost-thrall/frames/cast-01.png,Character source art and animation studies,222630
+??,assets/characters/runeblade-base-summons/animation-r2/frost-thrall/frames/cast-02.png,Character source art and animation studies,226893
+??,assets/characters/runeblade-base-summons/animation-r2/frost-thrall/frames/cast-03.png,Character source art and animation studies,229005
+??,assets/characters/runeblade-base-summons/animation-r2/frost-thrall/frames/die-00.png,Character source art and animation studies,235359
+??,assets/characters/runeblade-base-summons/animation-r2/frost-thrall/frames/die-01.png,Character source art and animation studies,210833
+??,assets/characters/runeblade-base-summons/animation-r2/frost-thrall/frames/die-02.png,Character source art and animation studies,179103
+??,assets/characters/runeblade-base-summons/animation-r2/frost-thrall/frames/die-03.png,Character source art and animation studies,166269
+??,assets/characters/runeblade-base-summons/animation-r2/frost-thrall/frames/die-04.png,Character source art and animation studies,127265
+??,assets/characters/runeblade-base-summons/animation-r2/frost-thrall/frames/die-05.png,Character source art and animation studies,126295
+??,assets/characters/runeblade-base-summons/animation-r2/frost-thrall/frames/hit-00.png,Character source art and animation studies,230659
+??,assets/characters/runeblade-base-summons/animation-r2/frost-thrall/frames/hit-01.png,Character source art and animation studies,190231
+??,assets/characters/runeblade-base-summons/animation-r2/frost-thrall/frames/hit-02.png,Character source art and animation studies,202303
+??,assets/characters/runeblade-base-summons/animation-r2/frost-thrall/frames/hit-03.png,Character source art and animation studies,225244
+??,assets/characters/runeblade-base-summons/animation-r2/frost-thrall/frames/idle-00.png,Character source art and animation studies,242556
+??,assets/characters/runeblade-base-summons/animation-r2/frost-thrall/frames/idle-01.png,Character source art and animation studies,245067
+??,assets/characters/runeblade-base-summons/animation-r2/frost-thrall/frames/idle-02.png,Character source art and animation studies,251112
+??,assets/characters/runeblade-base-summons/animation-r2/frost-thrall/frames/idle-03.png,Character source art and animation studies,243873
+??,assets/characters/runeblade-base-summons/animation-r2/frost-thrall/frames/idle-04.png,Character source art and animation studies,240627
+??,assets/characters/runeblade-base-summons/animation-r2/frost-thrall/frames/idle-05.png,Character source art and animation studies,242871
+??,assets/characters/runeblade-base-summons/animation-r2/frost-thrall/frames/idle-06.png,Character source art and animation studies,244620
+??,assets/characters/runeblade-base-summons/animation-r2/frost-thrall/frames/idle-07.png,Character source art and animation studies,240325
+??,assets/characters/runeblade-base-summons/animation-r2/frost-thrall/frames/wounded_idle-00.png,Character source art and animation studies,219223
+??,assets/characters/runeblade-base-summons/animation-r2/frost-thrall/frames/wounded_idle-01.png,Character source art and animation studies,225545
+??,assets/characters/runeblade-base-summons/animation-r2/frost-thrall/frames/wounded_idle-02.png,Character source art and animation studies,228062
+??,assets/characters/runeblade-base-summons/animation-r2/frost-thrall/frames/wounded_idle-03.png,Character source art and animation studies,218581
+??,assets/characters/runeblade-base-summons/animation-r2/frost-thrall/manifest.json,Character source art and animation studies,29293
+??,assets/characters/runeblade-base-summons/animation-r2/rime-seer/frames/attack-00.png,Character source art and animation studies,259501
+??,assets/characters/runeblade-base-summons/animation-r2/rime-seer/frames/attack-01.png,Character source art and animation studies,267951
+??,assets/characters/runeblade-base-summons/animation-r2/rime-seer/frames/attack-02.png,Character source art and animation studies,272334
+??,assets/characters/runeblade-base-summons/animation-r2/rime-seer/frames/attack-03.png,Character source art and animation studies,276726
+??,assets/characters/runeblade-base-summons/animation-r2/rime-seer/frames/attack-04.png,Character source art and animation studies,260566
+??,assets/characters/runeblade-base-summons/animation-r2/rime-seer/frames/attack-05.png,Character source art and animation studies,251641
+??,assets/characters/runeblade-base-summons/animation-r2/rime-seer/frames/cast-00.png,Character source art and animation studies,247296
+??,assets/characters/runeblade-base-summons/animation-r2/rime-seer/frames/cast-01.png,Character source art and animation studies,273926
+??,assets/characters/runeblade-base-summons/animation-r2/rime-seer/frames/cast-02.png,Character source art and animation studies,296790
+??,assets/characters/runeblade-base-summons/animation-r2/rime-seer/frames/cast-03.png,Character source art and animation studies,248877
+??,assets/characters/runeblade-base-summons/animation-r2/rime-seer/frames/die-00.png,Character source art and animation studies,224504
+??,assets/characters/runeblade-base-summons/animation-r2/rime-seer/frames/die-01.png,Character source art and animation studies,208262
+??,assets/characters/runeblade-base-summons/animation-r2/rime-seer/frames/die-02.png,Character source art and animation studies,198926
+??,assets/characters/runeblade-base-summons/animation-r2/rime-seer/frames/die-03.png,Character source art and animation studies,130801
+??,assets/characters/runeblade-base-summons/animation-r2/rime-seer/frames/die-04.png,Character source art and animation studies,112166
+??,assets/characters/runeblade-base-summons/animation-r2/rime-seer/frames/die-05.png,Character source art and animation studies,102213
+??,assets/characters/runeblade-base-summons/animation-r2/rime-seer/frames/hit-00.png,Character source art and animation studies,260066
+??,assets/characters/runeblade-base-summons/animation-r2/rime-seer/frames/hit-01.png,Character source art and animation studies,227443
+??,assets/characters/runeblade-base-summons/animation-r2/rime-seer/frames/hit-02.png,Character source art and animation studies,233738
+??,assets/characters/runeblade-base-summons/animation-r2/rime-seer/frames/hit-03.png,Character source art and animation studies,254756
+??,assets/characters/runeblade-base-summons/animation-r2/rime-seer/frames/idle-00.png,Character source art and animation studies,239133
+??,assets/characters/runeblade-base-summons/animation-r2/rime-seer/frames/idle-01.png,Character source art and animation studies,244960
+??,assets/characters/runeblade-base-summons/animation-r2/rime-seer/frames/idle-02.png,Character source art and animation studies,245484
+??,assets/characters/runeblade-base-summons/animation-r2/rime-seer/frames/idle-03.png,Character source art and animation studies,246071
+??,assets/characters/runeblade-base-summons/animation-r2/rime-seer/frames/idle-04.png,Character source art and animation studies,243232
+??,assets/characters/runeblade-base-summons/animation-r2/rime-seer/frames/idle-05.png,Character source art and animation studies,247493
+??,assets/characters/runeblade-base-summons/animation-r2/rime-seer/frames/idle-06.png,Character source art and animation studies,247859
+??,assets/characters/runeblade-base-summons/animation-r2/rime-seer/frames/idle-07.png,Character source art and animation studies,244873
+??,assets/characters/runeblade-base-summons/animation-r2/rime-seer/frames/wounded_idle-00.png,Character source art and animation studies,232360
+??,assets/characters/runeblade-base-summons/animation-r2/rime-seer/frames/wounded_idle-01.png,Character source art and animation studies,236209
+??,assets/characters/runeblade-base-summons/animation-r2/rime-seer/frames/wounded_idle-02.png,Character source art and animation studies,221982
+??,assets/characters/runeblade-base-summons/animation-r2/rime-seer/frames/wounded_idle-03.png,Character source art and animation studies,228116
+??,assets/characters/runeblade-base-summons/animation-r2/rime-seer/manifest.json,Character source art and animation studies,29104
+??,assets/characters/runeblade-base-summons/animation-r2/rune-revenant/frames/attack-00.png,Character source art and animation studies,285761
+??,assets/characters/runeblade-base-summons/animation-r2/rune-revenant/frames/attack-01.png,Character source art and animation studies,269070
+??,assets/characters/runeblade-base-summons/animation-r2/rune-revenant/frames/attack-02.png,Character source art and animation studies,294321
+??,assets/characters/runeblade-base-summons/animation-r2/rune-revenant/frames/attack-03.png,Character source art and animation studies,292366
+??,assets/characters/runeblade-base-summons/animation-r2/rune-revenant/frames/attack-04.png,Character source art and animation studies,281653
+??,assets/characters/runeblade-base-summons/animation-r2/rune-revenant/frames/attack-05.png,Character source art and animation studies,284585
+??,assets/characters/runeblade-base-summons/animation-r2/rune-revenant/frames/cast-00.png,Character source art and animation studies,243769
+??,assets/characters/runeblade-base-summons/animation-r2/rune-revenant/frames/cast-01.png,Character source art and animation studies,269018
+??,assets/characters/runeblade-base-summons/animation-r2/rune-revenant/frames/cast-02.png,Character source art and animation studies,320644
+??,assets/characters/runeblade-base-summons/animation-r2/rune-revenant/frames/cast-03.png,Character source art and animation studies,256374
+??,assets/characters/runeblade-base-summons/animation-r2/rune-revenant/frames/die-00.png,Character source art and animation studies,265999
+??,assets/characters/runeblade-base-summons/animation-r2/rune-revenant/frames/die-01.png,Character source art and animation studies,227878
+??,assets/characters/runeblade-base-summons/animation-r2/rune-revenant/frames/die-02.png,Character source art and animation studies,208472
+??,assets/characters/runeblade-base-summons/animation-r2/rune-revenant/frames/die-03.png,Character source art and animation studies,148456
+??,assets/characters/runeblade-base-summons/animation-r2/rune-revenant/frames/die-04.png,Character source art and animation studies,134638
+??,assets/characters/runeblade-base-summons/animation-r2/rune-revenant/frames/die-05.png,Character source art and animation studies,119216
+??,assets/characters/runeblade-base-summons/animation-r2/rune-revenant/frames/hit-00.png,Character source art and animation studies,256372
+??,assets/characters/runeblade-base-summons/animation-r2/rune-revenant/frames/hit-01.png,Character source art and animation studies,262852
+??,assets/characters/runeblade-base-summons/animation-r2/rune-revenant/frames/hit-02.png,Character source art and animation studies,248387
+??,assets/characters/runeblade-base-summons/animation-r2/rune-revenant/frames/hit-03.png,Character source art and animation studies,235061
+??,assets/characters/runeblade-base-summons/animation-r2/rune-revenant/frames/idle-00.png,Character source art and animation studies,247093
+??,assets/characters/runeblade-base-summons/animation-r2/rune-revenant/frames/idle-01.png,Character source art and animation studies,245885
+??,assets/characters/runeblade-base-summons/animation-r2/rune-revenant/frames/idle-02.png,Character source art and animation studies,238469
+??,assets/characters/runeblade-base-summons/animation-r2/rune-revenant/frames/idle-03.png,Character source art and animation studies,241734
+??,assets/characters/runeblade-base-summons/animation-r2/rune-revenant/frames/idle-04.png,Character source art and animation studies,247151
+??,assets/characters/runeblade-base-summons/animation-r2/rune-revenant/frames/idle-05.png,Character source art and animation studies,243915
+??,assets/characters/runeblade-base-summons/animation-r2/rune-revenant/frames/idle-06.png,Character source art and animation studies,242436
+??,assets/characters/runeblade-base-summons/animation-r2/rune-revenant/frames/idle-07.png,Character source art and animation studies,244908
+??,assets/characters/runeblade-base-summons/animation-r2/rune-revenant/frames/wounded_idle-00.png,Character source art and animation studies,328773
+??,assets/characters/runeblade-base-summons/animation-r2/rune-revenant/frames/wounded_idle-01.png,Character source art and animation studies,346796
+??,assets/characters/runeblade-base-summons/animation-r2/rune-revenant/frames/wounded_idle-02.png,Character source art and animation studies,354139
+??,assets/characters/runeblade-base-summons/animation-r2/rune-revenant/frames/wounded_idle-03.png,Character source art and animation studies,331473
+??,assets/characters/runeblade-base-summons/animation-r2/rune-revenant/manifest.json,Character source art and animation studies,29240
+??,assets/characters/runeblade-base-summons/animation-r2/shattered-queen/frames/attack-00.png,Character source art and animation studies,305573
+??,assets/characters/runeblade-base-summons/animation-r2/shattered-queen/frames/attack-01.png,Character source art and animation studies,325555
+??,assets/characters/runeblade-base-summons/animation-r2/shattered-queen/frames/attack-02.png,Character source art and animation studies,416830
+??,assets/characters/runeblade-base-summons/animation-r2/shattered-queen/frames/attack-03.png,Character source art and animation studies,406871
+??,assets/characters/runeblade-base-summons/animation-r2/shattered-queen/frames/attack-04.png,Character source art and animation studies,332549
+??,assets/characters/runeblade-base-summons/animation-r2/shattered-queen/frames/attack-05.png,Character source art and animation studies,308537
+??,assets/characters/runeblade-base-summons/animation-r2/shattered-queen/frames/cast-00.png,Character source art and animation studies,297802
+??,assets/characters/runeblade-base-summons/animation-r2/shattered-queen/frames/cast-01.png,Character source art and animation studies,295283
+??,assets/characters/runeblade-base-summons/animation-r2/shattered-queen/frames/cast-02.png,Character source art and animation studies,300323
+??,assets/characters/runeblade-base-summons/animation-r2/shattered-queen/frames/cast-03.png,Character source art and animation studies,294770
+??,assets/characters/runeblade-base-summons/animation-r2/shattered-queen/frames/die-00.png,Character source art and animation studies,393739
+??,assets/characters/runeblade-base-summons/animation-r2/shattered-queen/frames/die-01.png,Character source art and animation studies,345218
+??,assets/characters/runeblade-base-summons/animation-r2/shattered-queen/frames/die-02.png,Character source art and animation studies,299765
+??,assets/characters/runeblade-base-summons/animation-r2/shattered-queen/frames/die-03.png,Character source art and animation studies,272757
+??,assets/characters/runeblade-base-summons/animation-r2/shattered-queen/frames/die-04.png,Character source art and animation studies,191730
+??,assets/characters/runeblade-base-summons/animation-r2/shattered-queen/frames/die-05.png,Character source art and animation studies,36802
+??,assets/characters/runeblade-base-summons/animation-r2/shattered-queen/frames/hit-00.png,Character source art and animation studies,296474
+??,assets/characters/runeblade-base-summons/animation-r2/shattered-queen/frames/hit-01.png,Character source art and animation studies,297589
+??,assets/characters/runeblade-base-summons/animation-r2/shattered-queen/frames/hit-02.png,Character source art and animation studies,301912
+??,assets/characters/runeblade-base-summons/animation-r2/shattered-queen/frames/hit-03.png,Character source art and animation studies,275042
+??,assets/characters/runeblade-base-summons/animation-r2/shattered-queen/frames/idle-00.png,Character source art and animation studies,291934
+??,assets/characters/runeblade-base-summons/animation-r2/shattered-queen/frames/idle-01.png,Character source art and animation studies,292788
+??,assets/characters/runeblade-base-summons/animation-r2/shattered-queen/frames/idle-02.png,Character source art and animation studies,301475
+??,assets/characters/runeblade-base-summons/animation-r2/shattered-queen/frames/idle-03.png,Character source art and animation studies,291309
+??,assets/characters/runeblade-base-summons/animation-r2/shattered-queen/frames/idle-04.png,Character source art and animation studies,289715
+??,assets/characters/runeblade-base-summons/animation-r2/shattered-queen/frames/idle-05.png,Character source art and animation studies,287424
+??,assets/characters/runeblade-base-summons/animation-r2/shattered-queen/frames/idle-06.png,Character source art and animation studies,287375
+??,assets/characters/runeblade-base-summons/animation-r2/shattered-queen/frames/idle-07.png,Character source art and animation studies,289831
+??,assets/characters/runeblade-base-summons/animation-r2/shattered-queen/frames/wounded_idle-00.png,Character source art and animation studies,277420
+??,assets/characters/runeblade-base-summons/animation-r2/shattered-queen/frames/wounded_idle-01.png,Character source art and animation studies,301599
+??,assets/characters/runeblade-base-summons/animation-r2/shattered-queen/frames/wounded_idle-02.png,Character source art and animation studies,306289
+??,assets/characters/runeblade-base-summons/animation-r2/shattered-queen/frames/wounded_idle-03.png,Character source art and animation studies,278176
+??,assets/characters/runeblade-base-summons/animation-r2/shattered-queen/manifest.json,Character source art and animation studies,29221
+??,assets/objects/crown-of-rime/r1/manifest.json,"Other art, objects, environments and music sources",3344
+??,assets/objects/crown-of-rime/r1/prompt.txt,"Other art, objects, environments and music sources",952
+??,assets/objects/crown-of-rime/r1/source.png,"Other art, objects, environments and music sources",1056586
+??,assets/objects/gravebound-sigil/r1/manifest.json,"Other art, objects, environments and music sources",3345
+??,assets/objects/gravebound-sigil/r1/prompt.txt,"Other art, objects, environments and music sources",932
+??,assets/objects/gravebound-sigil/r1/source.png,"Other art, objects, environments and music sources",1073316
+??,assets/objects/gravekeepers-seal/r1/manifest.json,"Other art, objects, environments and music sources",3339
+??,assets/objects/gravekeepers-seal/r1/prompt.txt,"Other art, objects, environments and music sources",918
+??,assets/objects/gravekeepers-seal/r1/source.png,"Other art, objects, environments and music sources",672567
+??,assets/objects/gravewardens-bell/r1/manifest.json,"Other art, objects, environments and music sources",3358
+??,assets/objects/gravewardens-bell/r1/prompt.txt,"Other art, objects, environments and music sources",937
+??,assets/objects/gravewardens-bell/r1/source.png,"Other art, objects, environments and music sources",735402
+??,assets/objects/hoarfrost-whetstone/r1/manifest.json,"Other art, objects, environments and music sources",3359
+??,assets/objects/hoarfrost-whetstone/r1/prompt.txt,"Other art, objects, environments and music sources",925
+??,assets/objects/hoarfrost-whetstone/r1/source.png,"Other art, objects, environments and music sources",924704
+??,assets/objects/icebound-phylactery/r1/manifest.json,"Other art, objects, environments and music sources",3337
+??,assets/objects/icebound-phylactery/r1/prompt.txt,"Other art, objects, environments and music sources",903
+??,assets/objects/icebound-phylactery/r1/source.png,"Other art, objects, environments and music sources",973219
+??,assets/objects/runeblade-items-r1-jobs.json,"Other art, objects, environments and music sources",8186
+??,assets/objects/runeblade-items-r1-report.json,"Other art, objects, environments and music sources",24383
+??,assets/objects/runeblade-items-r1-review.png,"Other art, objects, environments and music sources",269856
+??,assets/objects/suture-standard/r1/manifest.json,"Other art, objects, environments and music sources",3367
+??,assets/objects/suture-standard/r1/prompt.txt,"Other art, objects, environments and music sources",961
+??,assets/objects/suture-standard/r1/source.png,"Other art, objects, environments and music sources",450270
+??,assets/objects/tome-gravehost/r1/manifest.json,"Other art, objects, environments and music sources",712
+??,assets/objects/tome-gravehost/r1/prompt.txt,"Other art, objects, environments and music sources",963
+??,assets/objects/tome-gravehost/r1/source.png,"Other art, objects, environments and music sources",1694272
+??,assets/objects/tome-rimebound/r1/manifest.json,"Other art, objects, environments and music sources",712
+??,assets/objects/tome-rimebound/r1/prompt.txt,"Other art, objects, environments and music sources",967
+??,assets/objects/tome-rimebound/r1/source.png,"Other art, objects, environments and music sources",1849508
+??,assets/objects/tome-runewarden/r1/manifest.json,"Other art, objects, environments and music sources",716
+??,assets/objects/tome-runewarden/r1/prompt.txt,"Other art, objects, environments and music sources",983
+??,assets/objects/tome-runewarden/r1/source.png,"Other art, objects, environments and music sources",1582138
+??,design/production/packets/runeblade-ice-effects.json,"Documentation, tooling and configuration",989
+??,design/production/packets/runeblade-pages-correction.json,"Documentation, tooling and configuration",2626
+??,design/production/packets/runeblade-refinement.json,"Documentation, tooling and configuration",2977
+??,design/runeblade-roguelike-demo.md,"Documentation, tooling and configuration",2577
+??,packages/content/runeblade.ts,"Gameplay, presentation and tests",7078
+??,packages/engine/runeblade-balance.test.ts,"Gameplay, presentation and tests",5290
+??,packages/engine/runeblade-pages-independent.test.ts,"Gameplay, presentation and tests",3793
+??,packages/engine/runeblade.test.ts,"Gameplay, presentation and tests",11298
+??,packages/engine/shared-card-text.test.ts,"Gameplay, presentation and tests",879
+??,tools/import/runeblade-assets.mjs,"Documentation, tooling and configuration",7471
+??,tools/import/runeblade-books.mjs,"Documentation, tooling and configuration",1319
+??,tools/import/runeblade-items.mjs,"Documentation, tooling and configuration",3644
+??,tools/release/shared-game-assets.test.mjs,"Documentation, tooling and configuration",3008
+??,work/cross-mode-build-final.log,"Scratch work, captures and handoff archives",1976
+??,work/cross-mode-build.log,"Scratch work, captures and handoff archives",1976
+??,work/cross-mode-engine-tests-final.log,"Scratch work, captures and handoff archives",20769
+??,work/cross-mode-engine-tests.log,"Scratch work, captures and handoff archives",20643
+??,work/cross-mode-sim-final.log,"Scratch work, captures and handoff archives",54

@@ -1,0 +1,12 @@
+{
+  "id": "bone-ward",
+  "name": "Bone Ward",
+  "cost": 1,
+  "type": "Skill",
+  "rarity": "Common",
+  "definitionRules": "Gain 5 Guard for each Thrall you control (minimum 5).",
+  "rules": "Gain 5 Guard for each Thrall (minimum 5).",
+  "displayRules": "Gain 5 Guard for each Thrall (minimum 5).",
+  "authoritativeSource": "packages/content/runeblade.ts",
+  "engine_source_sha256": "d8f74805b64c4257cf9f049da7490bfc8406d006277e39a8d89f90d1cf869f21"
+}

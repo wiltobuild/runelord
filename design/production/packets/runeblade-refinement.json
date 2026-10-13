@@ -1,0 +1,89 @@
+{
+  "schema": 1,
+  "id": "runeblade-refinement",
+  "status": "complete",
+  "outcome": "Runeblade corpse economy, stronger summons/spells, starter relic, seven relic icons and same-layout ice HUD in the actual Pages roguelike.",
+  "authorization": "User requested starting item +1Corpse per combat, survivors converted to persistent Corpses, buffs, 1Mana2Corpses and2Mana4Corpses cards, shop artwork and ice UI preserving layout.",
+  "contentIds": [
+    "runeblade",
+    "gravekeepers-seal",
+    "exhume",
+    "mass-exhumation"
+  ],
+  "owner": "root",
+  "integrationOwner": "root",
+  "reviewer": "verify_demo_port",
+  "ownedPaths": [
+    "packages/content",
+    "packages/engine",
+    "apps/web",
+    "assets/cards/runeblade-refinement-2026-10-12",
+    "assets/objects",
+    "tools/import/runeblade-assets.mjs"
+  ],
+  "dependencies": [],
+  "exclusions": [
+    "Conquer-mode",
+    "Publication",
+    "Self-approval of artwork"
+  ],
+  "inputs": [
+    {
+      "path": "design/runeblade-roguelike-demo.md",
+      "sha256": "777a8eece5fbaf08f1756695d0c36744d5a0432130c48f999ab25aab296401f8"
+    }
+  ],
+  "animation": null,
+  "acceptance": [
+    {
+      "check": "250 full-suite tests including36legal fullruns, plus focused legacy repair",
+      "status": "pass",
+      "evidence": [
+        {
+          "path": "work/production/runeblade-pages-correction/engine/balance-full-tests.log",
+          "sha256": "6b5cf0213e7d5a9741554efdce8c8f5e9c3aba8613f5ef687a0a7ba289674c81"
+        },
+        {
+          "path": "work/production/runeblade-refinement/independent-review.txt",
+          "sha256": "0740b46f7849a2a4c9a03312e637632e1f836cef2cded50380d58fe7da3ea92b"
+        }
+      ]
+    },
+    {
+      "check": "24 exact-frame cardfaces and7transparent relic illustrations",
+      "status": "pass",
+      "evidence": [
+        {
+          "path": "assets/cards/runeblade-refinement-2026-10-12/manifest.json",
+          "sha256": "6c1d9fe8534976f12006cda0e76b8d46545e442db5a41e2942ab7ba3a8f94a4f"
+        },
+        {
+          "path": "assets/objects/runeblade-items-r1-report.json",
+          "sha256": "e897c34b12eee68a4e458a63730ccae26bf0cc036a68ce1935cc0ce2d15bb253"
+        }
+      ]
+    },
+    {
+      "check": "Final Pages-path build",
+      "status": "pass",
+      "evidence": [
+        {
+          "path": "work/production/runeblade-pages/refinement-pages-build.log",
+          "sha256": "91c34f6e73203df99a0bfea6880312b52e98703e6324e8140aa72b1ebf75d3c2"
+        }
+      ]
+    }
+  ],
+  "checkpoint": {
+    "completed": [
+      "Mechanics and replay versioning",
+      "Legacy presentation repair independently verified",
+      "Newcardart and itemicons gallerysubmitted",
+      "Same-layout ice skin visually inspected in combat",
+      "Pages-base build and runtime asset validation"
+    ],
+    "remaining": [],
+    "blockers": [],
+    "nextAction": "Start a new Runeblade run to review the revised balance; older saves retain previous rules. No deployment performed."
+  }
+}

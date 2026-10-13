@@ -3,7 +3,6 @@ dist/
 .DS_Store
 Thumbs.db
 .env*
-apps/web/public/game-assets/
 /work/production/
 assets/cards/warlock-2026-10-02/__pycache__/
 assets/heroes/animations/base-set-2026-10-02-r1/
@@ -17,3 +16,34 @@ assets/heroes/animations/warlock/r4/
 assets/heroes/references/ranger/
 assets/heroes/references/runeblade/
 assets/heroes/references/runesmith/
+
+# Ship selected runtime revisions; leave unrelated generated previews local.
+apps/web/public/game-assets/**
+!apps/web/public/game-assets/**/
+!apps/web/public/game-assets/runeblade/**
+!apps/web/public/game-assets/cards-legacy/summon-pit-brute.webp
+
+# Hellbound Legion runtime derivatives
+!apps/web/public/game-assets/summons/imp/hellbound-r1/**
+!apps/web/public/game-assets/summons/dread-vanguard/hellbound-r1/**
+!apps/web/public/game-assets/summons/maledictor/hellbound-r1/**
+!apps/web/public/game-assets/summons/iron-legionary/hellbound-r1/**
+!apps/web/public/game-assets/summons/ironhorn-bulwark/hellbound-r1/**
+!apps/web/public/game-assets/summons/ash-pikeman/hellbound-r1/**
+
+!apps/web/public/game-assets/cards/summon-iron-legionary.webp
+!apps/web/public/game-assets/cards/summon-ash-pikeman.webp
+!apps/web/public/game-assets/cards/summon-ironhorn-bulwark.webp
+!apps/web/public/game-assets/cards/summon-maledictor.webp
+!apps/web/public/game-assets/cards/summon-dread-vanguard.webp
+!apps/web/public/game-assets/cards/muster-legion.webp
+!apps/web/public/game-assets/cards/pike-detail.webp
+!apps/web/public/game-assets/cards/field-promotion.webp
+!apps/web/public/game-assets/cards/battlefield-commission.webp
+!apps/web/public/game-assets/cards/rally-legion.webp
+!apps/web/public/game-assets/cards/infernal-logistics.webp
+!apps/web/public/game-assets/cards/hold-the-line.webp
+!apps/web/public/game-assets/cards/hellgate-rite.webp
+!apps/web/public/game-assets/cards/veteran-command.webp
+
+!apps/web/public/game-assets/cards/blood-ascension.webp

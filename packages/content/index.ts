@@ -1,3 +1,7 @@
+import { hellboundDefinitions, hellboundImplemented, hellboundEffectText, hellboundStarter, legionTargetCards } from './hellbound';
+export * from './hellbound';
+import { runebladeDefinitions, runebladeImplemented, runebladeDecks, runebladeRelicPool, runebladeEffectText, type RunebladeCardId, type HeroId } from "./runeblade";
+export * from "./runeblade";
 import catalog from "./warlock-catalog.json";
 export const legacyImplemented = [
   "firebolt",
@@ -47,9 +51,9 @@ export const legacyImplemented = [
 ] as const;
 export const summonExpansion = ['summon-gloomstalker','summon-soul-leech','summon-pyre-warden','empower-demon','summon-ignivar','summon-cerberax','summon-nightmaw','summon-hollow-saint','summon-pyre-colossus','summon-gorthak'] as const;
 export const archCards = ['summon-ignivar','summon-cerberax','summon-nightmaw','summon-hollow-saint','summon-pyre-colossus','summon-gorthak'] as const;
-export const implemented = [...legacyImplemented,...summonExpansion] as const;
+export const implemented = [...legacyImplemented,...summonExpansion,...hellboundImplemented] as const;
 export const neutralCards = ["neutral-strike", "neutral-bulwark", "neutral-insight", "neutral-renewal"] as const;
-export type CardId = (typeof implemented)[number] | (typeof neutralCards)[number];
+export type CardId = RunebladeCardId | (typeof implemented)[number] | (typeof neutralCards)[number];
 export type Card = {
   id: CardId;
   name: string;
@@ -62,6 +66,8 @@ export type Card = {
 };
 export const cards = implemented.reduce(
   (result, id) => {
+    const custom=hellboundDefinitions.find(row=>row[0]===id);
+    if(custom){result[id]={id,name:custom[1],cost:custom[2],type:custom[3],rarity:custom[4],text:hellboundEffectText(id)!,xCost:false,cinders:0};return result;}
     const c = catalog.find((c) => c.id === id)!;
     result[id] = {
       ...c,
@@ -80,6 +86,10 @@ Object.assign(cards, {
  "neutral-insight": {id:"neutral-insight",name:"Battle Insight",cost:1,xCost:false,cinders:0,type:"Skill",rarity:"Uncommon",text:"Draw 2 cards. Gain 3 Guard."},
  "neutral-renewal": {id:"neutral-renewal",name:"Second Wind",cost:2,xCost:false,cinders:0,type:"Skill",rarity:"Rare",text:"Restore 6 HP. Gain 6 Guard."},
 });
+for (const [id,name,cost,type,rarity,text] of runebladeDefinitions) cards[id]={id,name,cost,type,rarity,text:runebladeEffectText(id) || text,xCost:false,cinders:0};
+export const heroForDeck = (deck:StarterDeckId):HeroId => runebladeDecks.some(d=>d.id===deck)?'runeblade':'warlock';
+export const cardsForHero = (hero:HeroId='warlock'):readonly CardId[] => hero==='runeblade'?runebladeImplemented:implemented;
+export const relicsForHero = (hero:HeroId='warlock'):readonly ItemId[] => hero==='runeblade'?runebladeRelicPool:relicPool;
 export const relicPool = ["ember-heart", "iron-sigil", "warband-fang", "cinder-charm", "blood-ruby", "scholar-seal"] as const;
 export const starter: CardId[] = [
   "firebolt",
@@ -93,20 +103,30 @@ export const starter: CardId[] = [
   "summon-imp",
   "blood-pact",
 ];
-export type StarterDeckId = "classic" | "fire" | "warband" | "pact";
+export type StarterDeckId = "classic" | "fire" | "warband" | "pact" | "hellbound" | "gravehost" | "rimebound" | "runewarden";
 export const legacyStarterDecks: { id: Exclude<StarterDeckId, "classic">; name: string; description: string; cards: CardId[] }[] = [
   { id: "fire", name: "Hellfire Adept", description: "Build Scorch, spread the blaze, then detonate it.", cards: ["firebolt", "firebolt", "immolate", "smoldering-brand", "chain-of-flame", "combust", "ward-of-ash", "ashen-ward", "kindle", "blood-pact"] },
   { id: "warband", name: "Master of Demons", description: "Summon a warband, strengthen it and command extra attacks.", cards: ["summon-imp", "summon-imp", "summon-hellhound", "hellish-command", "infernal-whip", "firebolt", "sinister-veil", "ward-of-ash", "kindle", "feed-the-pit"] },
   { id: "pact", name: "Blood Covenant", description: "Trade health for power, protect yourself and ascend into Demon Form.", cards: ["firebolt", "ritual-cut", "blood-price", "blood-pact", "dark-bargain", "abyssal-gaze", "ward-of-ash", "ward-of-ash", "cinder-shield", "summon-imp"] },
 ];
-export const starterDecks = legacyStarterDecks.map(deck => ({...deck, description: deck.id==='warband' ? 'Empower lesser demons into Archdemons and command your army.' : deck.id==='fire' ? 'Ignivar feeds your fire spells and Imps into growing Scorch.' : 'Nightmaw fuels your pacts with Mana and cards.', cards: deck.cards.map((id,index):CardId => deck.id==='warband' && id==='firebolt' ? 'summon-pit-brute' : deck.id==='warband' && id==='ward-of-ash' ? 'empower-demon' : deck.id==='fire' && id==='ward-of-ash' ? 'summon-ignivar' : deck.id==='pact' && index===6 ? 'summon-nightmaw' : id)}));
+export const modernWarlockDecks: {id:Exclude<StarterDeckId,"classic">;hero:HeroId;name:string;description:string;cards:CardId[]}[] = legacyStarterDecks.map(deck => ({...deck, hero:'warlock', description: deck.id==='warband' ? 'Empower lesser demons into Archdemons and command your army.' : deck.id==='fire' ? 'Ignivar feeds your fire spells and Imps into growing Scorch.' : 'Nightmaw fuels your pacts with Mana and cards.', cards: deck.cards.map((id,index):CardId => deck.id==='warband' && id==='firebolt' ? 'summon-pit-brute' : deck.id==='warband' && id==='ward-of-ash' ? 'empower-demon' : deck.id==='fire' && id==='ward-of-ash' ? 'summon-ignivar' : deck.id==='pact' && index===6 ? 'summon-nightmaw' : id)}));
+export const starterDecks=modernWarlockDecks.filter(d=>d.id!=='pact');
+starterDecks.push({id:'hellbound',hero:'warlock',name:'Hellbound Legion',description:'Recruit demonic soldiers, promote veterans, and build formations that survive between battles.',cards:[...hellboundStarter]});
+starterDecks.push(...runebladeDecks.map(d=>({...d,cards:[...d.cards]})));
 export const rewardSets: CardId[][] = [
   ["summon-hellhound", "immolate", "kindle"],
   ["summon-pit-brute", "conflagrate", "ashen-ward"],
 ];
-export const cardTargetsUnit = (id: CardId) => ["empower-demon", "hellish-command", "fiendish-feast", "sacrificial-rite", "feast-of-embers"].includes(id);
-export type ItemId = (typeof relicPool)[number] | "healing-draught" | "mana-potion" | "barkskin-tonic" | "shrapnel-jar" | "banner-draught" | "bonesetters-salve" | "warhorn-oil" | "demon-lord-crown";
+export const cardTargetsUnit = (id: CardId) => [...legionTargetCards, "dark-tithe", "empower-demon", "hellish-command", "fiendish-feast", "sacrificial-rite", "feast-of-embers"].includes(id);
+export type ItemId = "gravekeepers-seal" | (typeof runebladeRelicPool)[number] | (typeof relicPool)[number] | "healing-draught" | "mana-potion" | "barkskin-tonic" | "shrapnel-jar" | "banner-draught" | "bonesetters-salve" | "warhorn-oil" | "demon-lord-crown";
 export const items: Record<ItemId, { name: string; text: string; category: "potion" | "item" | "relic"; passive?: boolean }> = {
+  "gravekeepers-seal": {category:"relic",passive:true,name:"Gravekeeper's Seal",text:"Begin each combat with 1 additional Corpse."},
+  "gravebound-sigil": {category:"relic",passive:true,name:"Gravebound Sigil",text:"Begin each combat with 2 additional Corpses."},
+  "hoarfrost-whetstone": {category:"relic",passive:true,name:"Hoarfrost Whetstone",text:"Your Attack cards deal 2 additional damage."},
+  "suture-standard": {category:"relic",passive:true,name:"Suture Standard",text:"New Thralls gain 4 maximum HP and 1 Power."},
+  "icebound-phylactery": {category:"relic",passive:true,name:"Icebound Phylactery",text:"Begin every turn with 4 Guard."},
+  "gravewardens-bell": {category:"relic",passive:true,name:"Gravewarden's Bell",text:"Whenever a friendly unit dies, restore 2 HP."},
+  "crown-of-rime": {category:"relic",passive:true,name:"Crown of Rime",text:"At combat start, apply 3 Chill to every enemy."},
   "ember-heart": {category:"relic",passive:true,name:"Ember Heart",text:"At combat start, restore 5 HP."},
   "iron-sigil": {category:"relic",passive:true,name:"Iron Sigil",text:"Begin every turn with 3 Guard."},
   "warband-fang": {category:"relic",passive:true,name:"Warband Fang",text:"Summoned demons gain 2 Power."},
@@ -123,6 +143,10 @@ export const items: Record<ItemId, { name: string; text: string; category: "poti
   "demon-lord-crown": { category: "relic", passive: true, name: "Crown of the Infernal Sovereign", text: "Victory trophy. At the start of combat, gain 5 Guard and 1 Mana. This relic is kept and is never consumed." },
 };
 export const cardAffinities: Record<Exclude<StarterDeckId, "classic">, readonly CardId[]> = {
+  hellbound:[...hellboundImplemented],
+  gravehost:[...runebladeDecks[0].cards],
+  rimebound:[...runebladeDecks[1].cards],
+  runewarden:[...runebladeDecks[2].cards],
   fire: ["firebolt", "immolate", "searing-lash", "conflagrate", "ashen-ward", "kindle", "chain-of-flame", "smoldering-brand", "hellfire", "fire-and-brimstone", "ember-storm", "pyroclasm", "combust", "wreathed-in-flame"],
   warband: ["empower-demon", "summon-gloomstalker", "summon-soul-leech", "summon-pyre-warden", "summon-imp", "summon-hellhound", "summon-pit-brute", "hellish-command", "sinister-veil", "fiendish-feast", "infernal-whip", "masters-of-the-pit", "burning-soul", "demonic-resilience", "sacrificial-rite", "unholy-frenzy", "dread-aura", "feast-of-embers"],
   pact: ["blood-pact", "feed-the-pit", "ritual-cut", "dark-bargain", "burning-hatred", "cinder-shield", "infernal-pact", "corrupting-touch", "shadowflame-barrier", "void-gaze", "rend-flesh", "blood-price", "abyssal-gaze", "infernal-transformation"],

@@ -1,0 +1,12 @@
+{
+  "id": "summon-rune-revenant",
+  "name": "Rune Revenant",
+  "cost": 2,
+  "type": "Summon",
+  "rarity": "Uncommon",
+  "definitionRules": "Summon a 18 HP / 4 Power Thrall. Attacks strike twice.",
+  "rules": "Summon Rune Revenant: 18 HP / 4 Power. Attacks strike twice. Rot starts at 1. Automatically spend Corpses equal to its Mana cost instead if available.",
+  "displayRules": "Summon a Thrall. 18 HP / 4 Power.\nAttacks strike twice.\nRot starts at 1.\nIf you have 2 Corpses, spend them instead of Mana.",
+  "authoritativeSource": "packages/content/runeblade.ts",
+  "engine_source_sha256": "d8f74805b64c4257cf9f049da7490bfc8406d006277e39a8d89f90d1cf869f21"
+}

@@ -1,0 +1,35 @@
+[
+  {
+    "region": "title",
+    "text": "Battlefield Commission",
+    "lines": [
+      "Battlefield Commission"
+    ],
+    "font_size": 49
+  },
+  {
+    "region": "cost",
+    "text": "2",
+    "lines": [
+      "2"
+    ],
+    "font_size": 110
+  },
+  {
+    "region": "type",
+    "text": "SKILL · WARLOCK",
+    "lines": [
+      "SKILL · WARLOCK"
+    ],
+    "font_size": 35
+  },
+  {
+    "region": "rules",
+    "text": "Promote a soldier twice. Heal it 6 HP.",
+    "lines": [
+      "Promote a soldier twice.",
+      "Heal it 6 HP."
+    ],
+    "font_size": 54
+  }
+]

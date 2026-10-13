@@ -1,0 +1,64 @@
+{
+  "tracking_id": "roguelike/runeblade/summon-rune-revenant",
+  "canonical_id": "summon-rune-revenant",
+  "catalog_path": "packages/content/runeblade.ts",
+  "row_identifier": "summon-rune-revenant",
+  "category": "Runeblade",
+  "variant": "base",
+  "source_snapshot": {
+    "id": "summon-rune-revenant",
+    "name": "Rune Revenant",
+    "cost": 2,
+    "type": "Summon",
+    "rarity": "Uncommon",
+    "definitionRules": "Summon a 18 HP / 4 Power Thrall. Attacks strike twice.",
+    "rules": "Summon Rune Revenant: 18 HP / 4 Power. Attacks strike twice. Rot starts at 1. Automatically spend Corpses equal to its Mana cost instead if available.",
+    "displayRules": "Summon a Thrall. 18 HP / 4 Power.\nAttacks strike twice.\nRot starts at 1.\nIf you have 2 Corpses, spend them instead of Mana.",
+    "authoritativeSource": "packages/content/runeblade.ts",
+    "engine_source_sha256": "d8f74805b64c4257cf9f049da7490bfc8406d006277e39a8d89f90d1cf869f21"
+  },
+  "status": "pending_approval",
+  "current_revision": "demo-r1",
+  "output_path": "C:\\Users\\wilsh\\Projects\\runelord-roguelike-pages-recovery\\assets\\cards\\runeblade-refinement-2026-10-12\\summon-rune-revenant\\r1\\summon-rune-revenant-card-r1.png",
+  "sha256": "a3a0261a2f606465e9824345c4b71c4a964445ff10082b53d44830eb566bf31b",
+  "dimensions": [
+    1024,
+    1536
+  ],
+  "artwork_path": "C:\\Users\\wilsh\\Projects\\runelord-roguelike-pages-recovery\\assets\\cards\\runeblade-refinement-2026-10-12\\summon-rune-revenant\\r1\\illustration.png",
+  "text_source_path": "C:\\Users\\wilsh\\Projects\\runelord-roguelike-pages-recovery\\assets\\cards\\runeblade-refinement-2026-10-12\\summon-rune-revenant\\r1\\text-data.json",
+  "illustration_prompt_path": "C:\\Users\\wilsh\\Projects\\runelord-roguelike-pages-recovery\\assets\\cards\\runeblade-refinement-2026-10-12\\summon-rune-revenant\\r1\\illustration-brief.txt",
+  "reference_image_paths": [
+    "C:\\Users\\wilsh\\Projects\\runelord\\assets\\cards\\runeblade-base-summons-2026-10-05\\rune-revenant\\r1\\illustration.png",
+    "C:\\Users\\wilsh\\Projects\\runelord-roguelike-pages-recovery\\assets\\cards\\runeblade-refinement-2026-10-12\\template-v2\\baseline.png"
+  ],
+  "reference_hashes": [
+    "a17f9758845fc6a8d51750287af2ff5265714e1c15a827597772e7dd5f4f1a5b",
+    "30cd5177cf360f80a6b90cfdafeaecb8fa561c98751414a6b5ba295df3744a3d"
+  ],
+  "source_art_decision": {
+    "status": "Pending approval"
+  },
+  "template_path": "C:\\Users\\wilsh\\Projects\\runelord-roguelike-pages-recovery\\assets\\cards\\runeblade-refinement-2026-10-12\\template-v2\\baseline.png",
+  "template_hash": "30cd5177cf360f80a6b90cfdafeaecb8fa561c98751414a6b5ba295df3744a3d",
+  "editable_mask_path": "C:\\Users\\wilsh\\Projects\\runelord-roguelike-pages-recovery\\assets\\cards\\runeblade-refinement-2026-10-12\\template-v2\\mask-union.png",
+  "editable_mask_version": "runeblade-demo-v2",
+  "mask_hash": "c2226e7427a2afc7c7236fda02c6078fc27e31bb32a0f8386de502ce89d672da",
+  "verification": {
+    "dimensions": [
+      1024,
+      1536
+    ],
+    "protected_pixel_count": 621701,
+    "changed_protected_pixels": 0,
+    "protected_alpha_identical": true,
+    "template_sha256": "30cd5177cf360f80a6b90cfdafeaecb8fa561c98751414a6b5ba295df3744a3d",
+    "mask_sha256": "c2226e7427a2afc7c7236fda02c6078fc27e31bb32a0f8386de502ce89d672da",
+    "editable_mask_version": "runeblade-demo-v2",
+    "text_min_rules_px": 44,
+    "text_matches_engine_semantics": true,
+    "automatic_corpse_cost_visible": true
+  },
+  "generation_method": "Technical recomposition of existing artwork; exact immutable card frame",
+  "integration_authorization": "User requested playable Runeblade roguelike demo, secondary Corpse resource and cards on 2026-10-06."
+}

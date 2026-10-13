@@ -1,0 +1,38 @@
+[
+  {
+    "region": "title",
+    "text": "Dread Vanguard",
+    "lines": [
+      "Dread Vanguard"
+    ],
+    "font_size": 70
+  },
+  {
+    "region": "cost",
+    "text": "3",
+    "lines": [
+      "3"
+    ],
+    "font_size": 110
+  },
+  {
+    "region": "type",
+    "text": "SUMMON · WARLOCK",
+    "lines": [
+      "SUMMON · WARLOCK"
+    ],
+    "font_size": 34
+  },
+  {
+    "region": "rules",
+    "text": "Summon a Dread Vanguard (24 HP, 7 Power). Cleave all enemies. Its first kill each turn promotes it. Persists until destroyed.",
+    "lines": [
+      "Summon a Dread Vanguard (24",
+      "HP, 7 Power). Cleave all",
+      "enemies. Its first kill each turn",
+      "promotes it. Persists until",
+      "destroyed."
+    ],
+    "font_size": 46
+  }
+]

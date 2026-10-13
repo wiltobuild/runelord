@@ -48,7 +48,7 @@ for(const id of Object.keys(checks) as CardId[]) for(const upgraded of [false,tr
   checks[id]!(after,upgraded); assert.deepEqual(before,snapshot);
 });
 test('exactly30 additions, all3 distinct ten-card starter decks and9fire encounters', () => {
-  assert.equal(Object.keys(checks).length,30); assert.equal(implemented.length,54); assert.equal(encounters.length,9);
+  assert.equal(Object.keys(checks).length,30); assert.equal(implemented.length,69); assert.equal(encounters.length,9);
   assert.ok(encounters.every(e => ['forge','arena','demon-throne'].includes(e.background)));
   for(const deck of starterDecks) { const s=newRun(1,deck.id); assert.deepEqual(s.deck,deck.cards); assert.equal(s.deck.length,10); assert.ok(s.deck.every(id=>(implemented as readonly string[]).includes(id))); }
 });

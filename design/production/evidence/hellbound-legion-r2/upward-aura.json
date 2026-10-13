@@ -1,0 +1,33 @@
+{
+  "change": "Replace broad glow with staggered upward crimson energy streams. Intensity ramps quadratically toward rank10; no sprite drop-shadow or static ground aura.",
+  "ranks": [
+    1,
+    4,
+    7,
+    10
+  ],
+  "opacities": [
+    0.0758,
+    0.1628,
+    0.3542,
+    0.65
+  ],
+  "streamCounts": [
+    3,
+    6,
+    9,
+    12
+  ],
+  "checks": [
+    "Both TypeScript checks passed",
+    "Browser compared four ranks; sampled transforms changed across observations, demonic-energy-rise active",
+    "Reduced-motion uses faint stationary currents instead of movement"
+  ],
+  "files": {
+    "apps/web/src/ActorSprite.tsx": "32af9c6e3659e81f8068453d1b190265e7562c5702a0610a8f3b0198af5dfc71",
+    "apps/web/src/style.css": "c547d4b47ddb861de3f198f923361c70d4ce2e69bdc615a894858252e44e7907",
+    "apps/web/src/hellboundReview.ts": "12df63f9934b26ecdad5f42dfb80146f8b9ff8faccc767e07312f252966523ba"
+  },
+  "preview": "http://127.0.0.1:4342/hellbound-review?group=aura",
+  "commit": "Not committed"
+}

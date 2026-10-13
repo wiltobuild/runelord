@@ -1,4 +1,7 @@
+import { drawHellboundEffect } from "./hellboundEffects";
+import { glowTexture } from "./effectTextures";
 import { drawDemonSpell } from "./demonSpellEffects";
+import { drawRunebladeSpell, drawRunebladeSummon } from './runebladeSpellEffects';
 import type { Assets } from "./assets";
 import {drawForestSpell} from "./forestSpellRenderer";
 import { drawWard } from "./wardEffect";
@@ -6,7 +9,7 @@ import { drawNatureWard } from "./natureWardEffect";
 import { drawSummon } from './summonEffect';
 import { useEffect, useRef } from "react";
 export type Point = { x: number; y: number; width?: number; height?: number };
-export type SpellKind = "rootwake" | "verdant_cyclone" | "crownfall" 
+export type SpellKind = "rootwake" | "verdant_cyclone" | "crownfall" | "frost" | "frost-slash"
   | "flaming-arrow"
   | "crossbow-bolt"
   | "demon-bolt"
@@ -26,7 +29,7 @@ export type SpellKind = "rootwake" | "verdant_cyclone" | "crownfall"
   | "ember-feast"
   | "impact"
   | "scorch"
-  | "ascend";
+  | "ascend" | "promotion" | "hellgate";
 export type SpellEffect = {
   id: number;
   kind: SpellKind;
@@ -39,6 +42,7 @@ export type SpellEffect = {
   scale?: number;
   height?: number;
   targetActor?: string;
+  frost?: boolean;
 };
 const clamp = (n: number) => Math.max(0, Math.min(1, n));
 const ease = (n: number) => 1 - Math.pow(1 - clamp(n), 3);
@@ -56,14 +60,7 @@ function glow(
 ) {
   c.save();
   c.globalAlpha = clamp(alpha);
-  const g = c.createRadialGradient(x, y, 0, x, y, r);
-  g.addColorStop(0, color);
-  g.addColorStop(0.25, color + "bb");
-  g.addColorStop(1, color + "00");
-  c.fillStyle = g;
-  c.beginPath();
-  c.arc(x, y, r, 0, Math.PI * 2);
-  c.fill();
+  if(r>0)c.drawImage(glowTexture(color),x-r,y-r,r*2,r*2);
   c.restore();
 }
 function rune(
@@ -108,7 +105,7 @@ function rune(
   c.stroke();
   c.restore();
 }
-function flame(
+function paintFlame(
   c: CanvasRenderingContext2D,
   x: number,
   y: number,
@@ -134,6 +131,16 @@ function flame(
     c.fill();
   }
   c.restore();
+}
+let flameTexture: HTMLCanvasElement | undefined;
+function flame(c:CanvasRenderingContext2D,x:number,y:number,size:number,time:number,angle=0,alpha=1) {
+  if(size<=0||alpha<=0)return;
+  if(!flameTexture){
+    flameTexture=document.createElement('canvas');flameTexture.width=192;flameTexture.height=224;
+    paintFlame(flameTexture.getContext('2d')!,96,144,32,0);
+  }
+  c.save();c.translate(x,y);c.rotate(angle);c.globalAlpha=clamp(alpha);
+  c.drawImage(flameTexture,-3*size,-4.5*size,6*size,7*size);c.restore();
 }
 function burst(
   c: CanvasRenderingContext2D,
@@ -192,6 +199,8 @@ function burst(
   c.restore();
 }
 function drawEffect(c: CanvasRenderingContext2D, e: SpellEffect, time: number) {
+  if(e.kind === "promotion" || e.kind === "hellgate"){drawHellboundEffect(c,e,time);return;}
+  if(e.frost || e.kind === 'frost' || e.kind === 'frost-slash'){drawRunebladeSpell(c,e,time);return;}
   const t = time - e.start;
   if (t < 0 || t > e.duration) return;
   const scale = e.scale ?? 1,
@@ -366,19 +375,29 @@ function EffectCanvas({ effects, assets, ground = false }: { effects: SpellEffec
     const el = canvas.current!,
       ctx = el.getContext("2d")!;
     let raf = 0;
+    let width=0,height=0,dpr=1;
+    const resize=()=>{
+      width=el.clientWidth;height=el.clientHeight;
+      // HUD coordinates are scaled in CSS. Rasterize for displayed pixels,
+      // rather than a full 2x backing store for a downscaled battle arena.
+      const displayed=el.getBoundingClientRect();
+      dpr=Math.max(.5,Math.min(1.5,(displayed.width/Math.max(1,width))*devicePixelRatio));
+      const w=Math.round(width*dpr),h=Math.round(height*dpr);
+      if(el.width!==w||el.height!==h){el.width=w;el.height=h;}
+    };
+    resize();
+    const observer=new ResizeObserver(resize);observer.observe(el);
+    window.addEventListener('resize',resize);
     const draw = (time: number) => {
-      const box = { width: el.clientWidth, height: el.clientHeight },
-        dpr = Math.min(devicePixelRatio, 2);
-      if (
-        el.width !== Math.round(box.width * dpr) ||
-        el.height !== Math.round(box.height * dpr)
-      ) {
-        el.width = Math.round(box.width * dpr);
-        el.height = Math.round(box.height * dpr);
-      }
+      const box = {width,height};
       ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
       ctx.clearRect(0, 0, box.width, box.height);
+      let pending=false;
       for (const original of latest.current) {
+        if(ground && original.kind!=="summon" && original.kind!=="empower")continue;
+        if(time>original.start+original.duration)continue;
+        pending=true;
+        if(time<original.start)continue;
         let e = original;
         if (e.kind === "empower" && e.targetActor) {
           const sprite = document.querySelector<HTMLElement>(`[data-actor="${e.targetActor}"] .actor-sprite`);
@@ -399,18 +418,20 @@ function EffectCanvas({ effects, assets, ground = false }: { effects: SpellEffec
           if (source && surface.width && surface.height) {
             const x = source.left + source.width * (anchor?.[0] ?? .5);
             const y = source.top + source.height * (anchor?.[1] ?? (e.targetActor.startsWith("enemy-") ? .88 : 1));
-            e = {...e, targets: [{x:(x-surface.left)*box.width/surface.width, y:(y-surface.top)*box.height/surface.height}]};
+            // The Queen's body rises from ground to hover; the mound stays on the floor.
+            const floorCorrection=e.frost ? (Number(sprite?.dataset.iceGroundOffset)||0)-(Number(sprite?.dataset.resurrectionDrop)||0) : 0;
+            e = {...e, targets: [{x:(x-surface.left)*box.width/surface.width, y:(y-surface.top)*box.height/surface.height+floorCorrection}]};
           }
         }
-        if (ground) { if (e.kind === "summon" || e.kind === "empower") drawSummon(ctx, e, time, true); }
+        if (ground) { if (e.kind === "summon" && e.frost) drawRunebladeSummon(ctx,e,time,true); else if (e.kind === "summon" || e.kind === "empower") drawSummon(ctx, e, time, true); }
         else if(assets.forestSpells?.[e.kind]) drawForestSpell(ctx,e,time,assets);
         else drawEffect(ctx, e, time);
       }
-      raf = requestAnimationFrame(draw);
+      if(pending)raf = requestAnimationFrame(draw);
     };
     raf = requestAnimationFrame(draw);
-    return () => cancelAnimationFrame(raf);
-  }, []);
+    return () => {cancelAnimationFrame(raf);observer.disconnect();window.removeEventListener('resize',resize);};
+  }, [effects, assets, ground]);
   return (
     <canvas
       className={`spell-effects${ground ? " summon-floor-effects" : ""}`}

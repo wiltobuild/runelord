@@ -1,4 +1,5 @@
-import { implemented, neutralCards, cards, relicPool, type CardId, type ItemId } from '../content/index';
+import {hellboundEffectText} from '../content/index';
+import { implemented, neutralCards, cardsForHero, relicsForHero, runebladeEffectText, cards, relicPool, type CardId, type ItemId } from '../content/index';
 import {eligibleCardReward, demonStats, type DemonKind, type State} from './index';
 export type ShopRerollKind='buy'|'upgrade'|'remove';
 export type OwnedShopOffer={index:number;id:CardId;level:number;sold:boolean};
@@ -10,7 +11,7 @@ export const cardLevel = (s:State,index:number) => s.deckLevels?.[index] || 0;
 export const copyLimit = (id:CardId) => cards[id].rarity === 'Rare' ? 2 : 3;
 export const canAddCard = (s:State,id:CardId) => s.deck.filter(c=>c===id).length < copyLimit(id);
 const allShopCards=[...new Set([...implemented.filter(id=>cards[id].rarity!=='Basic'),...neutralCards])];
-const shopPool=(s:State)=>allShopCards.filter(id=>eligibleCardReward(s,id));
+const shopPool=(s:State)=>(s.hero==='runeblade'?cardsForHero(s.hero).filter(id=>cards[id].rarity!=='Basic'):allShopCards).filter(id=>eligibleCardReward(s,id));
 function sample<T extends string|number>(pool:readonly T[],seed:number,salt:string,previous:readonly T[]=[]):T[]{
  let rng=seed>>>0;for(const ch of salt)rng=Math.imul(rng^ch.charCodeAt(0),16777619)>>>0;
  const take=(input:T[])=>{const result:T[]=[];while(input.length){rng=(Math.imul(rng,1664525)+1013904223)>>>0;result.push(input.splice(Math.floor(rng/4294967296*input.length),1)[0]);}return result;};
@@ -39,7 +40,10 @@ export function rerollShop(s:State,kind:ShopRerollKind){
 export function remapShopCopies(s:State,removed:number){for(const stock of Object.values(s.shops?.stock||{}))for(const key of ['upgrades','removals'] as const)for(const o of stock[key]){if(o.index===removed){o.sold=true;o.index=-1;}else if(o.index>removed)o.index--;}}
 export function refreshRemovalOffers(s:State){const stock=s.shops?.stock[s.shops.current||''];if(stock&&!!s.shops&&stock.removals.length===0&&s.deck.length>10)stock.removals=copyOffers(s,'remove',stock.rerolls.remove);}
 /** Intrinsic effects only: relic, target and temporary battle modifiers are intentionally excluded. */
-export function cardEffectText(id:CardId,level=0):string {
+export function cardEffectText(id:CardId,level=0,runebladeRules:1|2=2,summonRules=true):string {
+ const legionText=hellboundEffectText(id,level);if(legionText)return legionText;
+ if(id==='summon-pit-brute'){const stats=demonStats['pit-brute'],power=summonRules?stats.power:10;return `Summon a Pit Brute: ${Math.round(stats.hp*cardPower(level))} HP, ${Math.round(power*cardPower(level))} damage. ${summonRules?'Cleave all enemies. ':''}Defender. Upkeep ${stats.upkeep}.`;}
+ const text=runebladeEffectText(id,level,runebladeRules);if(text)return text;
  if(id.startsWith('summon-')&&id.slice(7) in demonStats){const stats=demonStats[id.slice(7) as DemonKind];return cards[id].text+` Stats at level ${level}: ${Math.round(stats.hp*cardPower(level))} HP${stats.power?', '+Math.round(stats.power*cardPower(level))+' damage':''}. Upkeep ${stats.upkeep}.`;}
  const v=(n:number)=>level?Math.max(n+level,Math.round(n*cardPower(level))):n;
  const summon=(name:string,hp:number,power:number,rest:string)=>`Summon ${name}: ${Math.round(hp*cardPower(level))} HP, ${Math.round(power*cardPower(level))} damage. ${rest}`;
@@ -56,7 +60,7 @@ export function cardEffectText(id:CardId,level=0):string {
  'combust':`Consume all Scorch. Deal ${level?`max(Scorch × 2 + ${level}, round(Scorch × ${(2*cardPower(level)).toFixed(3)}))`:'Scorch × 2'} damage (0 if no Scorch). At 10 Scorch: ${level?Math.max(20+level,Math.round(20*cardPower(level))):20} damage.`, 'blood-price':`Lose 2 HP and gain 2 Corruption. Deal ${v(6)} damage twice. On kill gain 4 Corruption.`, 'wreathed-in-flame':`Gain ${v(5)} Guard plus half the total enemy Scorch, rounded down.`, 'dread-aura':`Whenever a demon attacks, apply ${v(1)} Scorch to its target.`, 'feast-of-embers':`Heal a demon for ${v(8)} HP and grant it ${v(3)} damage.`, 'abyssal-gaze':`Gain 2 Corruption. Draw ${v(1)} cards.`, 'infernal-transformation':`Enter Demon Form for ${v(3)} turns.`};
  return effects[id]??cards[id].text;
 }
-export function upgradePreview(s:State,index:number){const id=s.deck[index];if(!id)throw Error('Choose a card in your deck.');const level=cardLevel(s,index),mana=(l:number)=>Math.max(cards[id].cost>0?1:0,cards[id].cost-Math.floor(l/3));return {id,level,nextLevel:level+1,power:cardPower(level),nextPower:cardPower(level+1),cost:mana(level),nextCost:mana(level+1),text:cardEffectText(id,level),nextText:cardEffectText(id,level+1),price:upgradeCost(level)};}
+export function upgradePreview(s:State,index:number){const id=s.deck[index];if(!id)throw Error('Choose a card in your deck.');const level=cardLevel(s,index),mana=(l:number)=>Math.max(cards[id].cost>0?1:0,cards[id].cost-Math.floor(l/3));return {id,level,nextLevel:level+1,power:cardPower(level),nextPower:cardPower(level+1),cost:mana(level),nextCost:mana(level+1),text:cardEffectText(id,level,s.runebladeRules??1,s.summonRulesFrom!==undefined&&s.history.length>=s.summonRulesFrom),nextText:cardEffectText(id,level+1,s.runebladeRules??1,s.summonRulesFrom!==undefined&&s.history.length>=s.summonRulesFrom),price:upgradeCost(level)};}
 
 /** Shop randomness is independent of combat draws. */
 export function enterRoguelikeShop(s:State){
@@ -64,7 +68,7 @@ export function enterRoguelikeShop(s:State){
  const id=`roguelike-${s.room+1}`;s.shops.current=id;
  if(!s.shops.stock[id]){
   let rng=(s.seed ^ Math.imul(s.room+1,16777619))>>>0;
-  const pool=[...relicPool];const relics:ShopStock['relics']=[];
+  const pool=[...relicsForHero(s.hero)];const relics:ShopStock['relics']=[];
   while(relics.length<5&&pool.length){rng=(Math.imul(rng,1664525)+1013904223)>>>0;const item=pool.splice(Math.floor(rng/4294967296*pool.length),1)[0];relics.push({id:item,price:120,sold:false});}
   s.shops.stock[id]={cards:sample(shopPool(s),s.seed,`${id}:buy:0`).map(id=>({id,price:cards[id].rarity==='Rare'?90:45,sold:false})),relics,upgrades:[],removals:[],rerolls:{buy:0,upgrade:0,remove:0},servicesReady:false};
  }

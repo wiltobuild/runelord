@@ -1,0 +1,8 @@
+{
+  "id": "veteran-command",
+  "name": "Veteran's Command",
+  "cost": "2",
+  "type": "Skill",
+  "rarity": "Uncommon",
+  "rules": "A soldier attacks. If it has been promoted, it attacks again."
+}

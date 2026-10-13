@@ -1,0 +1,20 @@
+{
+  "scope": "GitHub Pages roguelike demo",
+  "date": "2026-10-12",
+  "status": "implemented-local",
+  "changes": [
+    "Independent icy hero and minion spell renderer, crystalline wards and persistent guard shield",
+    "Ground strike, two-layer dirt mound, reversed authored death frames, cyan energy, Queen floor-to-hover rise",
+    "Fixed 200-world-unit Runeblade formations with separate ground/hover lanes and individual footers",
+    "Caster release timing matched to cast clip"
+  ],
+  "verification": {
+    "tests": "21 timing and formation tests passed",
+    "typecheck": "passed",
+    "assets": "1161 runtime assets verified",
+    "visual": "Review page inspected at 1650ms resurrection and 3000ms five-unit idle; full continuous gameplay visual review not performed in this pass",
+    "independentReview": "Code review completed; caster 80ms discrepancy corrected"
+  },
+  "reviewUrl": "http://127.0.0.1:4321/runeblade-effects-review",
+  "published": false
+}

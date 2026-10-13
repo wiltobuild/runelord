@@ -1,3 +1,4 @@
+import { RUNEBLADE_SUMMON, RUNEBLADE_SUMMON_MS, isRunebladeSummon } from "./runebladeSummonTiming";
 import { flushSync } from "react-dom";
 import { EMPOWER_MS } from "./empowerTiming";
 import { useEffect, useRef, useState } from "react";
@@ -15,7 +16,7 @@ import { warmActors, type ActorCue } from "./ActorSprite";
 import {warmForestSpells} from "./forestSpellRenderer";
 import { FIRE_DEATH_MS } from "./FireDeathEffect";
 import { sfx } from "./sound";
-import { warmHeroClip } from "./Hero";
+import { heroClips, warmHeroClip } from "./Hero";
 import { HERO_VIEW, heroSourcePoint } from "./heroGeometry";
 import { summonArt } from "./warbandLayout";
 import type { Point, SpellEffect, SpellKind } from "./SpellEffects";
@@ -24,6 +25,7 @@ export function useBattleDirector(
   assets: Assets,
   animate: (name: string) => void,
   show: (view: CombatView) => void,
+  hero = "warlock",
 ) {
   const [cues, setCues] = useState<Record<string, ActorCue>>({}),
     [effects, setEffects] = useState<SpellEffect[]>([]),
@@ -52,7 +54,7 @@ export function useBattleDirector(
     const box = element?.getBoundingClientRect();
     const scale = stageScale();
     if (!box) return { x: arena.width * 0.48 / scale, y: arena.height * 0.7 / scale };
-    const clip = handClip ? assets.animations[handClip] : undefined;
+    const clip = handClip ? heroClips(assets, hero)[handClip] : undefined;
     if (id === "hero" && clip?.releaseOrigin) {
       const socket = heroSourcePoint(clip, clip.releaseOrigin);
       return {
@@ -77,7 +79,7 @@ export function useBattleDirector(
     const img=sprite?.querySelector("img"),box=(img??actor(id)?.querySelector(".hero-canvas canvas"))?.getBoundingClientRect();
     const anchor=assets.actors[sprite?.dataset.art??""];
     const zoom=stageScale();
-    return box?{x:(box.left+box.width*.5-arena.left)/zoom,y:(box.top+box.height*(anchor?anchor.anchor[1]/anchor.size[1]:.835)-arena.top)/zoom}:point(id);
+    return box?{x:(box.left+box.width*(anchor?anchor.anchor[0]/anchor.size[0]:.5)-arena.left)/zoom,y:(box.top+box.height*(anchor?anchor.anchor[1]/anchor.size[1]:.835)-arena.top)/zoom}:point(id);
   };
   const floor = (id: string) => {
     const element =
@@ -91,10 +93,10 @@ export function useBattleDirector(
             (id === "hero" ? 0.835 : id.startsWith("enemy") ? 0.88 : 1)) / stageScale()
       : 0;
   };
-  const cue = (id: string, state: string) =>
+  const cue = (id: string, state: string, startedAt?:number) =>
     setCues((current) => ({
       ...current,
-      [id]: { state, sequence: ++serial.current },
+      [id]: { state, sequence: ++serial.current, startedAt },
     }));
   const effect = (
     kind: SpellKind,
@@ -105,14 +107,16 @@ export function useBattleDirector(
     scale = 1,
     height?: number,
     targetActor?: string,
+    frost = false,
+    startedAt = performance.now(),
   ) => {
     const e: SpellEffect = {
       id: ++serial.current,
       kind,
-      start: performance.now(),
+      start: startedAt,
       duration:
-        kind === "summon"
-          ? 1300
+        kind === "hellgate" ? 1800 : kind === "promotion" ? 1100 : kind === "summon"
+          ? frost ? RUNEBLADE_SUMMON_MS : 1300
           : kind === "ward" || kind === "nature-ward"
             ? release + 3000
             : kind === "scorch"
@@ -129,12 +133,14 @@ export function useBattleDirector(
       scale,
       height,
       targetActor,
+      frost,
     };
     setEffects((previous) => [
       ...previous.filter((p) => performance.now() - p.start < p.duration),
       e,
     ]);
   };
+  const heroEffect = (kind:SpellKind,from:Point,targets:Point[],release=280,travel=360,scale=1,height?:number,targetActor?:string) => effect(kind,from,targets,release,travel,scale,height,targetActor,hero==='runeblade');
   // Center the ward just ahead of the forward silhouette, letting its near edge
   // overlap the unit. Source-scaled bounds also handle packed and flying units.
   const wardUnit = (unit: Unit, from: Point, release: number) => {
@@ -148,7 +154,7 @@ export function useBattleDirector(
     const bottom = box.top + box.height * bounds[3] / art.size[1];
     const right = box.left + box.width * bounds[2] / art.size[0];
     const size = Math.max(.3, Math.min(.7, (bottom - top) / zoom / 260));
-    effect("ward", from, [{ x: (right - arena.left) / zoom + 8 * size,
+    heroEffect("ward", from, [{ x: (right - arena.left) / zoom + 8 * size,
       y: ((top + bottom) / 2 - arena.top) / zoom }], release, 0, size);
   };
   const number = (id: string, amount: number, cause?: "scorch") => {
@@ -203,7 +209,7 @@ export function useBattleDirector(
       action.type === "play"
         ? before.hand.find((c) => c.uid === action.uid)?.id
         : undefined;
-    const clip = (card?.startsWith("summon") || card === "empower-demon")
+    const clip = (card?.startsWith("summon") || ["empower-demon","muster-legion","pike-detail","hellgate-rite"].includes(card ?? ""))
       ? "summon_demon"
       : ["blood-pact", "feed-the-pit", "dark-bargain", "sacrificial-rite", "unholy-frenzy", "fiendish-feast"].includes(card ?? "")
         ? "blood_pact"
@@ -218,27 +224,27 @@ export function useBattleDirector(
         ...view.units.map(unit => summonArt(unit.kind, assets)),
         ...view.enemies.map(enemy => enemy.art),
       ])),
-      warmHeroClip(assets, clip),
-      warmHeroClip(assets, "hit_light"),
-      warmHeroClip(assets, "guard_impact"),
+      warmHeroClip(assets, clip, hero),
+      warmHeroClip(assets, "hit_light", hero),
+      warmHeroClip(assets, "guard_impact", hero),
     ]);
     if (token !== version.current) return;
     if (action.type === "item") {
       sfx.play(`item-${action.item}`, 0, -.2);
       const hand=point("hero", "guard_enter");
-      const itemRelease = assets.animations.guard_enter.events?.find(e => e.name === "cast-release")?.time_ms ?? 450;
+      const itemRelease = heroClips(assets, hero).guard_enter.events?.find(e => e.name === "cast-release")?.time_ms ?? 450;
       animate("guard_enter");
       if (action.item === "shrapnel-jar") {
         source="card";
-        effect("conflagrate", hand, before.enemies.filter(e=>e.hp>0).map(e=>point(`enemy-${e.id}`)), itemRelease, 300);
+        heroEffect("conflagrate", hand, before.enemies.filter(e=>e.hp>0).map(e=>point(`enemy-${e.id}`)), itemRelease, 300);
         await pause(itemRelease + 300);
       } else if (["barkskin-tonic", "banner-draught"].includes(action.item)) {
-        effect("ward", hand, [{x:hand.x+55,y:hand.y+60}], itemRelease, 0);
+        heroEffect("ward", hand, [{x:hand.x+55,y:hand.y+60}], itemRelease, 0);
         for (const unit of before.units) if ((after.units.find(u => u.id === unit.id)?.guard ?? 0) > unit.guard)
           wardUnit(unit, hand, itemRelease);
         await pause(itemRelease);
       } else {
-        effect("kindle", hand, [point("hero")], itemRelease, 0);
+        heroEffect("kindle", hand, [point("hero")], itemRelease, 0);
         await pause(200);
       }
     }
@@ -248,6 +254,8 @@ export function useBattleDirector(
           "card",
           "muster",
           "transform",
+          "promotion",
+          "hellgate",
           "passive",
           "reserve",
           "enemy-summon",
@@ -256,6 +264,7 @@ export function useBattleDirector(
           "enemy",
           "ascend",
           "victory",
+          "corpse-conversion",
           "defeat",
           "turn",
         ].includes(event.type)
@@ -269,9 +278,9 @@ export function useBattleDirector(
         animate(clip);
         const release = Math.max(
             0,
-            assets.animations[clip].events?.find(e => ["impact", "release", "cast-release"].includes(e.name))?.time_ms ?? 300,
+            heroClips(assets, hero)[clip].events?.find(e => ["impact", "release", "cast-release"].includes(e.name))?.time_ms ?? 300,
           ),
-          all = ["conflagrate", "ashen-ward", "hellfire", "ember-storm", "smoke-and-mirrors"].includes(card);
+          all = ["conflagrate", "ashen-ward", "hellfire", "ember-storm", "smoke-and-mirrors", "frost-nova", "sweeping-hew", "rimecleave"].includes(card);
         const summonSound = card.startsWith("summon-")
           ? ["summon-hellhound", "summon-cerberax"].includes(card) ? "summon-hellhound"
             : ["summon-pit-brute", "summon-gorthak", "summon-pyre-warden", "summon-pyre-colossus"].includes(card) ? "summon-pit-brute" : "summon-imp"
@@ -284,7 +293,7 @@ export function useBattleDirector(
           hand = point("hero", clip);
         for (const unit of before.units) if ((after.units.find(u => u.id === unit.id)?.guard ?? 0) > unit.guard)
           wardUnit(unit, hand, release);
-        if (card.startsWith("summon") || card === "empower-demon") {
+        if (card.startsWith("summon") || ["empower-demon","muster-legion","pike-detail","field-promotion","battlefield-commission","blood-ascension","hellgate-rite"].includes(card)) {
           await pause(release);
         } else if (["sacrificial-rite", "fiendish-feast", "hellish-command", "feast-of-embers"].includes(card) && action.type === "play" && action.unit !== undefined) {
           const id = `unit-${action.unit}`, center = point(id);
@@ -313,12 +322,12 @@ export function useBattleDirector(
           await pause(duration);
           if (card === "feast-of-embers") {
             const old = before.units.find(u => u.id === action.unit), next = after.units.find(u => u.id === action.unit);
-            if (old && next) setNumbers(previous => [...previous.slice(-8), {id:++serial.current,point:center,label:`${next.hp > old.hp ? `+${next.hp-old.hp} HP · ` : ""}+${next.power-old.power} Power`}]);
+            if (old && next) setNumbers(previous => [...previous.slice(-8), {id:++serial.current,point:center,label:`${next.hp > old.hp ? `+${next.hp-old.hp} HP Â· ` : ""}+${next.power-old.power} Power`}]);
           } else if (card === "fiendish-feast" && after.hp > before.hp) {
             setNumbers(previous => [...previous.slice(-8), {id:++serial.current,point:point("hero"),label:`+${after.hp-before.hp} HP`}]);
           }
         } else if (cards[card].type === "Attack") {
-          const kind: SpellKind =
+          const kind: SpellKind = hero === "runeblade" ? "frost-slash" :
             ["searing-lash", "infernal-whip", "rend-flesh", "ritual-cut"].includes(card)
               ? "lash"
               : card === "immolate" || card === "smoldering-brand"
@@ -326,7 +335,7 @@ export function useBattleDirector(
                 : ["conflagrate", "hellfire", "combust"].includes(card)
                   ? "conflagrate"
                   : "fire";
-          effect(
+          heroEffect(
             kind,
             hand,
             targets,
@@ -337,21 +346,32 @@ export function useBattleDirector(
           await pause(release + 340);
           recovery = 350;
         } else if (["blood-pact", "feed-the-pit", "dark-bargain", "sacrificial-rite", "unholy-frenzy", "fiendish-feast"].includes(card ?? "")) {
-          effect("pact", hand, [point("hero")], release, 0);
+          heroEffect("pact", hand, [point("hero")], release, 0);
           await pause(release);
           recovery = 450;
-        } else if (card === "kindle") {
-          effect("kindle", hand, [], release, 0);
+        } else if (hero === "runeblade" && ["exhume","mass-exhumation","command-the-dead","rally-the-fallen","dark-tithe"].includes(card)) {
+          const allies=before.units.filter(u=>u.hp>0).map(u=>point(`unit-${u.id}`));
+          const targets=card==="command-the-dead"||card==="rally-the-fallen"?allies:[point("hero")];
+          heroEffect(card==="dark-tithe"?"pact":"command",hand,targets,release,0);
+          await pause(release); recovery=450;
+        } else if (card === "rally-legion" || card === "veteran-command") {
+          const affected=before.units.filter(u=>u.promotionRank!==undefined && (card!=="veteran-command" || action.type==="play"&&u.id===action.unit));
+          heroEffect(card==="rally-legion"?"kindle":"command",hand,affected.map(u=>point(`unit-${u.id}`)),release,0);
+          await pause(release);
+          for(const u of affected){const next=after.units.find(n=>n.id===u.id);if(next && next.hp>u.hp)setNumbers(previous=>[...previous.slice(-8),{id:++serial.current,point:point(`unit-${u.id}`),label:`+${next.hp-u.hp} HP`}]);}
+          recovery=450;
+        } else if (card === "kindle" || card === "infernal-logistics") {
+          heroEffect("kindle", hand, [], release, 0);
           await pause(release);
           recovery = 400;
         } else if (cards[card].type === "Power" || ["infernal-transformation", "abyssal-gaze", "hellish-command", "feast-of-embers"].includes(card)) {
-          effect("pact", hand, [point("hero")], release, 0);
+          heroEffect("pact", hand, [point("hero")], release, 0);
           await pause(release); recovery = 400;
-        } else if (["ember-storm", "void-gaze", "corrupting-touch"].includes(card)) {
-          effect("immolate", hand, targets, release, 340);
+        } else if (["ember-storm", "void-gaze", "corrupting-touch", "frozen-grasp", "frost-nova"].includes(card)) {
+          heroEffect(hero === "runeblade" ? "frost" : "immolate", hand, targets, release, 340);
           await pause(release + 340); recovery = 350;
         } else {
-          effect(
+          heroEffect(
             "ward",
             hand,
             [
@@ -361,7 +381,7 @@ export function useBattleDirector(
             0,
           );
           if (card === "ashen-ward")
-            effect("immolate", hand, targets, release, 340, 0.65);
+            heroEffect("immolate", hand, targets, release, 340, 0.65);
           await pause(card === "ashen-ward" ? release + 340 : release);
           recovery = 450;
         }
@@ -375,11 +395,15 @@ export function useBattleDirector(
             event.view?.units.find((u) => u.id === event.actor) ||
             after.units.find((u) => u.id === event.actor),
           target = point(`enemy-${event.target}`);
-        musterIsFire = unit?.kind === "imp" || unit?.kind === "ignivar";
-        const allTargets = (event.targets?.filter(t => t !== "hero") ?? [event.target!]).map(t => point(`enemy-${t}`));
+        musterIsFire = unit?.kind === "imp" || unit?.kind === "ignivar" || unit?.kind === "maledictor";
+        const allTargets = (unit?.kind === "shattered-queen" ? (event.view?.enemies ?? before.enemies).filter(e=>e.hp>0).map(e=>e.id) : event.targets?.filter(t => t !== "hero") ?? [event.target!]).map(t => point(`enemy-${t}`));
         const attack = unit ? assets.actors[summonArt(unit.kind, assets)]?.states.attack : undefined;
         const impact = attack?.impact ?? 100;
-        if (musterIsFire) {
+        if (hero === "runeblade" && unit && ["rime-seer", "shattered-queen", "rune-revenant"].includes(unit.kind)) {
+          const cast=assets.actors[summonArt(unit.kind,assets)]?.states.cast ?? attack;
+          const release=cast?.impact ?? impact;
+          cue(id,"cast"); effect("frost",point(id),allTargets,release,260,.8,undefined,undefined,true); await pause(release+260); recovery=Math.max(200,(cast?.duration ?? 600)-release-260);
+        } else if (musterIsFire) {
           sfx.play("attack-imp", impact / 1000);
           cue(id, "attack");
           effect("fire", point(id), allTargets, impact, 240, unit?.kind === "ignivar" ? .9 : .58);
@@ -418,7 +442,7 @@ export function useBattleDirector(
           if (unit) sfx.play(["hellhound", "cerberax"].includes(unit.kind) ? "attack-hellhound" : "attack-pit-brute");
           cue(id, "attack");
           await pause(impact);
-          effect("impact", target, allTargets, 0, 0);
+          effect("impact", target, allTargets, 0, 0, 1, undefined, undefined, hero==='runeblade' && !!unit && isRunebladeSummon(unit.kind));
           recovery = travelDuration - 280 - impact;
         }
       }
@@ -561,9 +585,14 @@ export function useBattleDirector(
       }
       if (event.type === "hurt") { if ((event.amount || 0) > 0) { animate("hit_light"); recovery = Math.max(recovery, assets.animations.hit_light.duration); } heroHurtSinceAttack = true; sfx.play("hit-flesh", 0, -.35); number("hero", event.amount || 0); }
       if (event.type === "enemy-impact" && event.targets?.includes("hero") && !heroHurtSinceAttack) sfx.play("hit-block", 0, -.35);
+      if (event.type === "bodyguard") {
+        setLabel(event.message);
+        for(const recipient of event.targets??[]){const unit=(event.view?.units??before.units).find(u=>u.id===recipient);if(unit)wardUnit(unit,point("hero"),0);}
+        recovery=Math.max(recovery,350);
+      }
       if (event.type === "unit-hit" && event.target !== undefined) {
         const unit = before.units.find(u => u.id === event.target);
-        sfx.play(!event.amount ? "hit-block" : unit?.kind === "pit-brute" ? "hit-armor" : "hit-flesh");
+        sfx.play(!event.amount ? "hit-block" : unit && ["pit-brute","iron-legionary","ironhorn-bulwark","dread-vanguard"].includes(unit.kind) ? "hit-armor" : "hit-flesh");
         cue(`unit-${event.target}`, "hit");
         number(`unit-${event.target}`, event.amount || 0);
       }
@@ -584,6 +613,28 @@ export function useBattleDirector(
         const newcomer = actor(`enemy-${event.actor}`);
         if(newcomer)motions.current.push(newcomer.animate([{opacity:0,transform:"translateX(36px)"},{opacity:1,transform:"translateX(0)"}],{duration:550,easing:"ease-out"}));
         recovery=550;
+      }
+      if (event.type === "promotion") {
+        const id=`unit-${event.actor}`;
+        if(event.view)flushSync(()=>show(event.view!));
+        setLabel(event.message);sfx.play("ascend",0,.15);
+        const location=point(id);
+        effect("promotion",location,[location],0,0);
+        const unit=event.view?.units.find(u=>u.id===event.actor);
+        setNumbers(previous=>[...previous.slice(-8),{id:++serial.current,point:location,label:`RANK ${unit?.promotionRank ?? "+"}`}]);
+        recovery=650;continue;
+      }
+      if (event.type === "hellgate") {
+        setLabel(event.message);sfx.play("boss-summon",0,.15);
+        const casters=(event.view?.units??after.units).filter(u=>u.kind==="maledictor"&&u.hp>0);
+        const points=casters.map(u=>groundPoint(`unit-${u.id}`));
+        for(const unit of casters)cue(`unit-${unit.id}`,"cast");
+        const portal=points.length?{x:points.reduce((n,p)=>n+p.x,0)/points.length,y:points.reduce((n,p)=>n+p.y,0)/points.length}:groundPoint("hero");
+        effect("hellgate",portal,[],0,0);
+        await pause(650);
+        const targets=(event.targets??[]).filter(id=>id!=="hero").map(id=>point(`enemy-${id}`));
+        effect("conflagrate",{x:portal.x,y:portal.y-85},targets,0,280,1.1);
+        await pause(280);recovery=650;
       }
       if (event.type === "transform") {
         const id = `unit-${event.actor}`;
@@ -628,25 +679,26 @@ export function useBattleDirector(
         setLabel(event.message);
         const origin = event.actor ? point(`unit-${event.actor}`) : point("hero");
         if (event.actor) cue(`unit-${event.actor}`, "cast");
-        effect("pact", origin, [point("hero")], 0, 180, .6);
+        heroEffect("pact", origin, [point("hero")], 0, 180, .6);
         recovery = 300;
       }
       if (event.type === "guard") {
         setLabel(event.message);
         const center = point("hero");
-        effect("ward", center, [{x:center.x+55,y:center.y+20}], 0, 0, .8);
+        heroEffect("ward", center, [{x:center.x+55,y:center.y+20}], 0, 0, .8);
         sfx.play("ward-of-ash");
         recovery = Math.max(recovery, 320);
       }
       if (event.type === "heal" && (event.amount ?? 0) > 0) {
         setLabel(event.message);
-        effect("kindle", event.actor ? point(`unit-${event.actor}`) : point("hero"), [point("hero")], 0, 220, .8);
+        heroEffect("kindle", event.actor ? point(`unit-${event.actor}`) : point("hero"), [point("hero")], 0, 220, .8);
         setNumbers(previous => [...previous.slice(-8), {id:++serial.current,point:point("hero"),label:`+${event.amount} HP`}]);
         recovery = Math.max(recovery, 350);
       }
       if (event.type === "summon") {
-        cue(`unit-${event.actor}`, "spawn");
-        if (event.view) show(event.view);
+        const iceSummon=hero==='runeblade' && !!event.unit && isRunebladeSummon(event.unit.kind);
+        const summonStartedAt=performance.now();
+        flushSync(()=>{cue(`unit-${event.actor}`, "spawn",iceSummon?summonStartedAt:undefined);if(event.view)show(event.view);});
         // Wait for React layout; measure the actual slot, including packed/flying units.
         await new Promise<void>(resolve => requestAnimationFrame(() => requestAnimationFrame(() => resolve())));
         if (token !== version.current) return;
@@ -659,11 +711,12 @@ export function useBattleDirector(
           const width = unit?.kind === "hellhound" ? 1.05 : unit?.kind === "pit-brute" ? 1.25 : .7;
           const worldUnit = parseFloat(getComputedStyle(sprite!).getPropertyValue("--summon-world-unit")) || 200;
           const size = worldUnit / (unit?.kind === "hellhound" ? 225.8064515 : 200);
-          effect("summon", point("hero", clip), [{x:(box.left+box.width/2-arena.left)/zoom,y:(box.bottom-arena.top)/zoom}], 160, 0, width * size, box.height/zoom, `unit-${event.actor}`);
+          const ground=iceSummon || (unit && ["iron-legionary","ironhorn-bulwark","dread-vanguard","maledictor","ash-pikeman"].includes(unit.kind)) ?groundPoint(`unit-${event.actor}`):{x:(box.left+box.width/2-arena.left)/zoom,y:(box.bottom-arena.top)/zoom};
+          effect("summon", point("hero", clip), [ground], iceSummon?RUNEBLADE_SUMMON.release:160, iceSummon?RUNEBLADE_SUMMON.travel:0, width * size, box.height/zoom, `unit-${event.actor}`,iceSummon,iceSummon?summonStartedAt:performance.now());
           const guarded = after.units.find(u => u.id === event.actor);
           if (guarded && guarded.guard > 0) wardUnit(guarded, point("hero", clip), 900);
         }
-        recovery = Math.max(recovery, 1300);
+        recovery = Math.max(recovery, iceSummon ? RUNEBLADE_SUMMON_MS : 1300);
       }
       if (event.type === "kill") {
         cue(`enemy-${event.target}`, "die");
@@ -683,6 +736,15 @@ export function useBattleDirector(
         animate("empowered_idle");
         effect("ascend", point("hero"), [], 300, 0);
         await pause(650);
+      }
+      if (event.type === "corpse-conversion") {
+        // Victory returns living summons to the reserve; it is not a death.
+        // The event boundary finishes real death clips before clearing their ghosts.
+        setGhosts([]);
+        setLabel(event.message);
+        if (event.view) show(event.view);
+        await pause(320);
+        continue;
       }
       if (event.type === "victory") {
         animate("victory");

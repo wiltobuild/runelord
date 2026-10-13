@@ -1,0 +1,19 @@
+{
+  "version": "runeblade-demo-v2",
+  "source": "C:\\Users\\wilsh\\.codex\\skills\\hd-card-creator\\references\\cards\\runeblade-frostbite-master.png",
+  "source_sha256": "a42f03188bd17c21bda285748ca31c279e7a7062cd558276a7f1868dd831f642",
+  "baseline_sha256": "30cd5177cf360f80a6b90cfdafeaecb8fa561c98751414a6b5ba295df3744a3d",
+  "mask_sha256": "c2226e7427a2afc7c7236fda02c6078fc27e31bb32a0f8386de502ce89d672da",
+  "protected_pixels": 621701,
+  "font_note": "Georgia Bold selected as a close available serif match; original raster font identity is unknown.",
+  "rarity_note": "Category gem preserved as ornament; rarity in metadata.",
+  "parent_mask": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\cards\\runeblade-base-summons-2026-10-05\\template\\mask-union.png",
+  "rules_interior": [
+    100,
+    1060,
+    924,
+    1335
+  ],
+  "reason": "Original mask covered the old glyph footprint only. Extended solely in the quiet ivory rules interior for the requested automatic Corpse payment sentence; all borders, spirals and the bottom gem remain protected.",
+  "baseline_immutable": true
+}

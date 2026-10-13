@@ -1,0 +1,21 @@
+{
+  "id": "tome-gravehost",
+  "name": "gravehost",
+  "source": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\objects\\tome-gravehost\\r1\\source.png",
+  "output": "C:\\Users\\wilsh\\Projects\\runelord\\apps\\web\\public\\opening-assets\\tome-gravehost.webp",
+  "source_sha256": "43f3a10dbead12bd0ad33f2b280f99ab909b6437fd4b4c1ba1a21de6953fb39b",
+  "output_sha256": "537d004133b576aac0852b1706342ede661ee8a9f36df9bd0d007647f71fac64",
+  "source_dimensions": [
+    1254,
+    1254
+  ],
+  "dimensions": [
+    640,
+    640
+  ],
+  "alpha": true,
+  "approval": "pending",
+  "integration_authorization": "User requested3Runeblade starterbooks in playable demo.",
+  "tool": "built-in imagegen",
+  "prompt": "prompt.txt"
+}

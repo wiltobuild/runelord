@@ -1,0 +1,35 @@
+[
+  {
+    "region": "title",
+    "text": "Soulfrost Blade",
+    "font_size": 65,
+    "lines": [
+      "Soulfrost Blade"
+    ]
+  },
+  {
+    "region": "cost",
+    "text": "1",
+    "font_size": 120,
+    "lines": [
+      "1"
+    ]
+  },
+  {
+    "region": "type",
+    "text": "ATTACK · RUNEBLADE",
+    "font_size": 32,
+    "lines": [
+      "ATTACK · RUNEBLADE"
+    ]
+  },
+  {
+    "region": "rules",
+    "text": "Deal 6 damage plus 2 for each Chill on the enemy.",
+    "font_size": 56,
+    "lines": [
+      "Deal 6 damage plus 2 for",
+      "each Chill on the enemy."
+    ]
+  }
+]

@@ -1,0 +1,8 @@
+{
+  "id": "field-promotion",
+  "name": "Field Promotion",
+  "cost": "1",
+  "type": "Skill",
+  "rarity": "Common",
+  "rules": "Promote a soldier: permanently gain +2 Power, +2 maximum HP, heal 2 HP, and +1 Armor until destroyed."
+}

@@ -1,0 +1,29 @@
+{
+  "cards": {
+    "summon-frost-thrall": "assets/cards/runeblade-refinement-2026-10-12/summon-frost-thrall/r1/summon-frost-thrall-card-r1.png",
+    "summon-shattered-queen": "assets/cards/runeblade-refinement-2026-10-12/summon-shattered-queen/r1/summon-shattered-queen-card-r1.png",
+    "summon-rime-seer": "assets/cards/runeblade-refinement-2026-10-12/summon-rime-seer/r1/summon-rime-seer-card-r1.png",
+    "summon-rune-revenant": "assets/cards/runeblade-refinement-2026-10-12/summon-rune-revenant/r1/summon-rune-revenant-card-r1.png",
+    "summon-bone-defender": "assets/cards/runeblade-refinement-2026-10-12/summon-bone-defender/r1/summon-bone-defender-card-r1.png",
+    "exhume": "assets/cards/runeblade-refinement-2026-10-12/exhume/r1/exhume-card-r1.png",
+    "mass-exhumation": "assets/cards/runeblade-refinement-2026-10-12/mass-exhumation/r1/mass-exhumation-card-r1.png",
+    "hew": "assets/cards/runeblade-refinement-2026-10-12/hew/r1/hew-card-r1.png",
+    "brace": "assets/cards/runeblade-refinement-2026-10-12/brace/r1/brace-card-r1.png",
+    "frostbite": "assets/cards/runeblade-refinement-2026-10-12/frostbite/r1/frostbite-card-r1.png",
+    "rimecleave": "assets/cards/runeblade-refinement-2026-10-12/rimecleave/r1/rimecleave-card-r1.png",
+    "glacial-ward": "assets/cards/runeblade-refinement-2026-10-12/glacial-ward/r1/glacial-ward-card-r1.png",
+    "frozen-grasp": "assets/cards/runeblade-refinement-2026-10-12/frozen-grasp/r1/frozen-grasp-card-r1.png",
+    "command-the-dead": "assets/cards/runeblade-refinement-2026-10-12/command-the-dead/r1/command-the-dead-card-r1.png",
+    "bone-ward": "assets/cards/runeblade-refinement-2026-10-12/bone-ward/r1/bone-ward-card-r1.png",
+    "hoarfrost-edge": "assets/cards/runeblade-refinement-2026-10-12/hoarfrost-edge/r1/hoarfrost-edge-card-r1.png",
+    "unholy-vigor": "assets/cards/runeblade-refinement-2026-10-12/unholy-vigor/r1/unholy-vigor-card-r1.png",
+    "frost-nova": "assets/cards/runeblade-refinement-2026-10-12/frost-nova/r1/frost-nova-card-r1.png",
+    "soulfrost-blade": "assets/cards/runeblade-refinement-2026-10-12/soulfrost-blade/r1/soulfrost-blade-card-r1.png",
+    "dark-tithe": "assets/cards/runeblade-refinement-2026-10-12/dark-tithe/r1/dark-tithe-card-r1.png",
+    "rally-the-fallen": "assets/cards/runeblade-refinement-2026-10-12/rally-the-fallen/r1/rally-the-fallen-card-r1.png",
+    "sweeping-hew": "assets/cards/runeblade-refinement-2026-10-12/sweeping-hew/r1/sweeping-hew-card-r1.png",
+    "permafrost-aura": "assets/cards/runeblade-refinement-2026-10-12/permafrost-aura/r1/permafrost-aura-card-r1.png",
+    "glacier-wall": "assets/cards/runeblade-refinement-2026-10-12/glacier-wall/r1/glacier-wall-card-r1.png"
+  },
+  "source_manifest": "C:\\Users\\wilsh\\Projects\\runelord-roguelike-pages-recovery\\assets\\cards\\runeblade-refinement-2026-10-12\\manifest.json"
+}

@@ -23,8 +23,10 @@ export class ScorePlayer {
   private track = "";
   private volume = 0.35;
   async play(assets: Assets, id: string) {
+    const serial = ++this.serial;
     this.ctx ??= new AudioContext();
     await this.ctx.resume();
+    if (serial !== this.serial) return;
     if (!this.gain) {
       this.gain = this.ctx.createGain();
       this.gain.gain.value = this.volume;
@@ -32,18 +34,16 @@ export class ScorePlayer {
     }
     if (this.track === id && this.source) {
       // Returning to the current scene also invalidates another scene's load.
-      ++this.serial;
       return;
     }
-    const serial = ++this.serial,
-      track = id === OPENING_SCORE_ID ? openingScore : INFERNAL_SCORES[id] ?? assets.music[id];
+    const track = id === OPENING_SCORE_ID ? openingScore : INFERNAL_SCORES[id] ?? assets.music[id];
     if (!track) throw Error("Unknown score");
     let buffer = this.cache.get(id);
     if (!buffer) {
       const response = await fetch(assetUrl(track.url));
       if (!response.ok) throw Error("Score unavailable");
       buffer = await this.ctx.decodeAudioData(await response.arrayBuffer());
-      if (id === "forest-explore" || id === "forest-boss") {
+      if (INFERNAL_SCORES[id] || id === "forest-explore" || id === "forest-boss") {
         // Forest Vorbis derivatives retain the source loop length; taper tiny
         // codec endpoint offsets without changing the original score masters.
         const edge = Math.round(buffer.sampleRate * .004);

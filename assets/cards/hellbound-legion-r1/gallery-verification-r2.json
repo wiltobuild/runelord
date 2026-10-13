@@ -1,0 +1,65 @@
+[
+  {
+    "id": "summon-iron-legionary",
+    "sha256": "b4a2fe3508793ab6a9d6d24ab5cc39a46c63b1ea7baf292b16a0406ed01f773e",
+    "revision": "r2",
+    "submission": "{\n  \"path\": \"C:\\\\Users\\\\wilsh\\\\Projects\\\\runelord\\\\assets\\\\approvals\\\\inbox\\\\hellbound-summon-iron-legionary\\\\r2\\\\summon-iron-legionary-r2.png\",\n  \"sha256\": \"b4a2fe3508793ab6a9d6d24ab5cc39a46c63b1ea7baf292b16a0406ed01f773e\",\n  \"status\": \"Pending approval\",\n  \"gallery\": \"http://localhost:4317\"\n}",
+    "status": "Pending approval"
+  },
+  {
+    "id": "summon-ash-pikeman",
+    "sha256": "2f1dc77fcd6d4702e22cbea7a69ffca8cda9b72ec604550d0926066594494269",
+    "revision": "r2",
+    "submission": "{\n  \"path\": \"C:\\\\Users\\\\wilsh\\\\Projects\\\\runelord\\\\assets\\\\approvals\\\\inbox\\\\hellbound-summon-ash-pikeman\\\\r2\\\\summon-ash-pikeman-r2.png\",\n  \"sha256\": \"2f1dc77fcd6d4702e22cbea7a69ffca8cda9b72ec604550d0926066594494269\",\n  \"status\": \"Pending approval\",\n  \"gallery\": \"http://localhost:4317\"\n}",
+    "status": "Pending approval"
+  },
+  {
+    "id": "summon-ironhorn-bulwark",
+    "sha256": "55de411aec5d2c9a29f3aeeffb436e18aed0ad93b29c742c59a7ea9158d8318c",
+    "revision": "r2",
+    "submission": "{\n  \"path\": \"C:\\\\Users\\\\wilsh\\\\Projects\\\\runelord\\\\assets\\\\approvals\\\\inbox\\\\hellbound-summon-ironhorn-bulwark\\\\r2\\\\summon-ironhorn-bulwark-r2.png\",\n  \"sha256\": \"55de411aec5d2c9a29f3aeeffb436e18aed0ad93b29c742c59a7ea9158d8318c\",\n  \"status\": \"Pending approval\",\n  \"gallery\": \"http://localhost:4317\"\n}",
+    "status": "Pending approval"
+  },
+  {
+    "id": "summon-maledictor",
+    "sha256": "03666206a13f32d386e5f836925738491e1fb88eb83959d5744329be84252169",
+    "revision": "r2",
+    "submission": "{\n  \"path\": \"C:\\\\Users\\\\wilsh\\\\Projects\\\\runelord\\\\assets\\\\approvals\\\\inbox\\\\hellbound-summon-maledictor\\\\r2\\\\summon-maledictor-r2.png\",\n  \"sha256\": \"03666206a13f32d386e5f836925738491e1fb88eb83959d5744329be84252169\",\n  \"status\": \"Pending approval\",\n  \"gallery\": \"http://localhost:4317\"\n}",
+    "status": "Pending approval"
+  },
+  {
+    "id": "summon-dread-vanguard",
+    "sha256": "26d14cba09e1272cb1118807a7b9b0457894ee6e73505f4c2a866a06a2c23c1a",
+    "revision": "r2",
+    "submission": "{\n  \"path\": \"C:\\\\Users\\\\wilsh\\\\Projects\\\\runelord\\\\assets\\\\approvals\\\\inbox\\\\hellbound-summon-dread-vanguard\\\\r2\\\\summon-dread-vanguard-r2.png\",\n  \"sha256\": \"26d14cba09e1272cb1118807a7b9b0457894ee6e73505f4c2a866a06a2c23c1a\",\n  \"status\": \"Pending approval\",\n  \"gallery\": \"http://localhost:4317\"\n}",
+    "status": "Pending approval"
+  },
+  {
+    "id": "muster-legion",
+    "sha256": "2aa14fc8b4c01efa869f375bc9217afd2fdfbec8ca37eaa6f1098cae96d30828",
+    "revision": "r2",
+    "submission": "{\n  \"path\": \"C:\\\\Users\\\\wilsh\\\\Projects\\\\runelord\\\\assets\\\\approvals\\\\inbox\\\\hellbound-muster-legion\\\\r2\\\\muster-legion-r2.png\",\n  \"sha256\": \"2aa14fc8b4c01efa869f375bc9217afd2fdfbec8ca37eaa6f1098cae96d30828\",\n  \"status\": \"Pending approval\",\n  \"gallery\": \"http://localhost:4317\"\n}",
+    "status": "Pending approval"
+  },
+  {
+    "id": "pike-detail",
+    "sha256": "4854dfae8e3acb6a4c2000965df9a1c7378cd0c1f317e590590aac94c90f0824",
+    "revision": "r2",
+    "submission": "{\n  \"path\": \"C:\\\\Users\\\\wilsh\\\\Projects\\\\runelord\\\\assets\\\\approvals\\\\inbox\\\\hellbound-pike-detail\\\\r2\\\\pike-detail-r2.png\",\n  \"sha256\": \"4854dfae8e3acb6a4c2000965df9a1c7378cd0c1f317e590590aac94c90f0824\",\n  \"status\": \"Pending approval\",\n  \"gallery\": \"http://localhost:4317\"\n}",
+    "status": "Pending approval"
+  },
+  {
+    "id": "field-promotion",
+    "sha256": "23ff06c2d80535bb910c5aacc699dc4056e74119bc574ddf92e7d9dff1d1e6ff",
+    "revision": "r2",
+    "submission": "{\n  \"path\": \"C:\\\\Users\\\\wilsh\\\\Projects\\\\runelord\\\\assets\\\\approvals\\\\inbox\\\\hellbound-field-promotion\\\\r2\\\\field-promotion-r2.png\",\n  \"sha256\": \"23ff06c2d80535bb910c5aacc699dc4056e74119bc574ddf92e7d9dff1d1e6ff\",\n  \"status\": \"Pending approval\",\n  \"gallery\": \"http://localhost:4317\"\n}",
+    "status": "Pending approval"
+  },
+  {
+    "id": "blood-ascension",
+    "sha256": "fd03e3122ab865e3c11084bac67dbb87f40dc4991d28d18bf74400593ad1b9a4",
+    "revision": "r1",
+    "submission": "{\n  \"path\": \"C:\\\\Users\\\\wilsh\\\\Projects\\\\runelord\\\\assets\\\\approvals\\\\inbox\\\\hellbound-blood-ascension\\\\r1\\\\blood-ascension-r1.png\",\n  \"sha256\": \"fd03e3122ab865e3c11084bac67dbb87f40dc4991d28d18bf74400593ad1b9a4\",\n  \"status\": \"Pending approval\",\n  \"gallery\": \"http://localhost:4317\"\n}",
+    "status": "Pending approval"
+  }
+]

@@ -1,0 +1,8 @@
+{
+  "id": "pike-detail",
+  "name": "Pike Detail",
+  "cost": "2",
+  "type": "Summon",
+  "rarity": "Common",
+  "rules": "Summon 2 Ash Pikemen (12 HP, 5 Power each). Requires 2 empty Warband slots. Earned ranks return when summoned again."
+}

@@ -1,0 +1,66 @@
+{
+  "id": "gravewardens-bell",
+  "name": "Gravewarden's Bell",
+  "category": "Runeblade relic",
+  "state": "static",
+  "intendedUse": "Roguelike shop and equipped relic icon",
+  "catalogSource": "Current user-requested Runeblade demo rules in packages/content/runeblade.ts; older catalog effects superseded",
+  "engineMapping": "item-gravewardens-bell",
+  "source": {
+    "path": "assets/objects/gravewardens-bell/r1/source.png",
+    "size": [
+      1254,
+      1254
+    ],
+    "sha256": "66607b7b22f256569a77b951da82bd3bd7f97e3c40ddd867aca85fcd8016f8c3",
+    "generatedPath": "C:\\Users\\wilsh\\.codex\\generated_images\\01a130b1-fb8d-7721-bbfb-8a1842795816\\exec-c014e597-a48e-4671-95b7-928d00da5b0f.png"
+  },
+  "exports": [
+    {
+      "path": "apps/web/public/opening-assets/runeblade-items/gravewardens-bell-128.webp",
+      "size": [
+        128,
+        128
+      ],
+      "sha256": "3f8c7904bee2a1f5a86579115f189fe892d9bc553b7a7c8ba9d7043a47b8d629"
+    },
+    {
+      "path": "apps/web/public/opening-assets/runeblade-items/gravewardens-bell.webp",
+      "size": [
+        256,
+        256
+      ],
+      "sha256": "1d239ba82e2025fc8d90c0d92b7ed26e0a0c0c4a2b6f44351fa8d25f0af46550"
+    }
+  ],
+  "generationTool": "built-in image_gen",
+  "prompt": "Use case: stylized-concept. Create ONE isolated Runelord Runeblade inventory relic icon. The supplied knight is STYLE AND PALETTE REFERENCE ONLY, do not depict a character. Match serious 2D cel-shading, broad flat regions, two or three crisp hard shadow tones, chunky silhouette, steel gray, deep navy, bone ivory and ice cyan. Quiet surfaces, few large functional details, strong dark contours, no PBR realism, no painterly gradients, no bloom or decorative clutter. Square canvas, whole object centered with generous clear padding; genuine transparent background, no frame, scenery, text, lettering or watermark. Must read clearly at 128px. Subject: A heavy squat funeral handbell, charcoal steel body with broad silver rim, angular ivory bone handle, one large cyan diamond rune on its front and a visible pale ice clapper. Restrained frost on lower corners. Single solid bell with readable opening. Heals when an allied summon dies.",
+  "reference": {
+    "path": "C:/Users/wilsh/Projects/runelord/assets/heroes/references/runeblade/runeblade-base-r1.png",
+    "sha256": "adbd33fb14e91b761f355ffeb9966cb262aacca78429099ec09b0fab9faf84ef",
+    "status": "Approved",
+    "evidenceId": "user-chat-2026-10-01-approve-existing-runelord"
+  },
+  "technicalQA": {
+    "alphaExtrema": [
+      0,
+      255
+    ],
+    "sourcePreserved": true,
+    "targetDimensionsVerified": true
+  },
+  "visualQA": {
+    "fullSize": "Passed: complete distinct silhouette, serious steel/navy/cyan cel shading, no scenery or text",
+    "nativeSize": "Passed at 128px on dark and ivory backgrounds: distinct silhouettes, clean alpha edges, readable central symbols; narrow banner is intentionally slender."
+  },
+  "approvalStatus": "Pending approval",
+  "integrationAuthorization": "User request to add Runeblade items and shop art",
+  "gallery": {
+    "url": "http://localhost:4317/asset/ff6090d12fbab37fa4353ed7",
+    "subject": "roguelike-gravewardens-bell",
+    "revision": "r1",
+    "sha256": "66607b7b22f256569a77b951da82bd3bd7f97e3c40ddd867aca85fcd8016f8c3",
+    "status": "Pending approval",
+    "verified": true
+  }
+}

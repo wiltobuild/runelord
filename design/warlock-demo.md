@@ -17,7 +17,7 @@ npm run dev
 
 Open http://127.0.0.1:4320. Existing local artwork and music are needed for asset imports.
 
-The animated introduction leads to character and pact selection. Warlock is the playable class; Runeblade, Runesmith, and Ranger are previews marked Coming Soon, with their class decks and hero asset packages ready for later gameplay integration. Master of Demons is the default pact, alongside the fire and blood-pact alternatives. The Runeblade preview now uses its selected HD model and simplified idle frames.
+The animated introduction leads to character and pact selection. Warlock and Runeblade are playable in the current local builds. Runeblade includes three starter decks, 24 cards, five undead summons, corpse economy, and ice-themed spells and HUD. Runesmith and Ranger remain Coming Soon previews. Publication is a separate step. Master of Demons is the default pact, alongside the fire and blood-pact alternatives. The Runeblade preview now uses its selected HD model and simplified idle frames.
 
 Attack cards select a target; applicable skills cast on selection. Allied units act through the Warband combat system. The interface supports resuming a local save and includes mobile landscape presentation.
 

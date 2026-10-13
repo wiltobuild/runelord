@@ -1,0 +1,8 @@
+{
+  "id": "summon-maledictor",
+  "name": "Maledictor",
+  "cost": "2",
+  "type": "Summon",
+  "rarity": "Uncommon",
+  "rules": "Summon a Maledictor (14 HP, 3 Power). Attacks apply 2 Scorch. With 3 Maledictors, open a Hellgate at turn end: 6 damage and 2 Scorch to all enemies; promote all soldiers. Once per turn. Persists until destroyed."
+}
