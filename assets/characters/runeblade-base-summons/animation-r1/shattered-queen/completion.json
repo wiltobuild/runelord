@@ -1,0 +1,41 @@
+{
+  "status": "review_pending",
+  "states": {
+    "idle": {
+      "status": "review_pending",
+      "frame_count": 8,
+      "preview": "preview/idle-dark.gif"
+    },
+    "attack": {
+      "status": "review_pending",
+      "frame_count": 6,
+      "preview": "preview/attack-dark.gif"
+    },
+    "hit": {
+      "status": "review_pending",
+      "frame_count": 4,
+      "preview": "preview/hit-dark.gif"
+    },
+    "wounded_idle": {
+      "status": "review_pending",
+      "frame_count": 4,
+      "preview": "preview/wounded_idle-dark.gif"
+    },
+    "cast": {
+      "status": "review_pending",
+      "frame_count": 4,
+      "preview": "preview/cast-dark.gif"
+    },
+    "die": {
+      "status": "review_pending",
+      "frame_count": 6,
+      "preview": "preview/die-dark.gif"
+    }
+  },
+  "unresolved": [
+    "Source boundary alpha candidates need independent visual review; packing cannot repair lost source art.",
+    "Generated crown/cloth topology variation requires independent identity review.",
+    "Authored cast/death VFX baked; effects-off review is unavailable.",
+    "Builder has not claimed independent frame passes."
+  ]
+}

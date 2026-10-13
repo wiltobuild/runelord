@@ -1,0 +1,12 @@
+{
+  "method": "Built-in image generation",
+  "prompt": "Palette-focused edit. Image 1 is the summon to edit. Image 2 is the EXACT current Runeblade character-select master, use ONLY as color/material palette reference. Keep image 1's character identity, pose, anatomy, silhouette, face, equipment, every major dent, crack, gouge and torn edge. Recolor its dark rusted armor into the reference's cold silver/slate steel with bright pale silver edge planes and dark blue-grey shadow planes. Replace orange-brown corrosion with cold charcoal scuff patches and a few muted dark marks, retaining battle damage. Recolor cloth to the reference's rich deep blue-teal, with restrained brighter blue fold planes. Bring existing eye light, rune markings and ice edges toward the reference's luminous electric icy cyan and pale frost highlights, controlled localized color, no fog or bloom. Preserve bone as cold ashen ivory where present; preserve shield wood as blue-charcoal where present. Keep gritty serious battle-worn undead look and harsh expression; color matching must not restore pristine armor or make character friendly. Do not copy the reference hero's geometry, embellishments or sword design. Clean 2D cel shading, broad color fields and crisp graphic shadow shapes, reduce tiny speckled surface noise. No realism, PBR, 3D or painterly gradients. Full-body transparent PNG, same composition and all extremities within frame. No text or background.",
+  "targets": [
+    "bone-thrall-concept-r2.png",
+    "risen-legionnaire-concept-r2.png"
+  ],
+  "reference": "C:/Users/wilsh/Projects/runelord/assets/heroes/animations/runeblade/frames32-r2/source/master.png",
+  "referenceSha256": "9a4a666b1ed74621fab2b9117805af763c2100ecf228cbadc8f2e44c9be5aef1",
+  "referenceEvidence": "User explicitly requested current character-select design; traced OpeningScreen.tsx -> hero-runeblade-hd-idle.provenance.json -> frames32-r2/provenance.json approvedMaster.",
+  "unchanged": "Approved Frost Thrall concept-r1"
+}

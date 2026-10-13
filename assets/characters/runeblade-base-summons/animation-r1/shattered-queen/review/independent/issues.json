@@ -1,0 +1,410 @@
+[
+  {
+    "id": "SQ-01",
+    "severity": "blocking",
+    "frames": [
+      {
+        "state": "attack",
+        "frame": 1,
+        "time_ms": 160,
+        "file": "frames/attack-01.png"
+      },
+      {
+        "state": "attack",
+        "frame": 2,
+        "time_ms": 300,
+        "file": "frames/attack-02.png"
+      },
+      {
+        "state": "attack",
+        "frame": 3,
+        "time_ms": 410,
+        "file": "frames/attack-03.png"
+      },
+      {
+        "state": "attack",
+        "frame": 4,
+        "time_ms": 560,
+        "file": "frames/attack-04.png"
+      }
+    ],
+    "expected": "One complete approved character per frame with no adjacent-pose material.",
+    "observed": "Uniform 512px source columns slice across poses. attack03 loses its entire screen-right hand and sleeve, which appear as a detached third hand at attack04 left. attack01 contains cloth fragments from attack02; attack02 has a hard left cloth cut.",
+    "repair": "Re-extract complete individual poses using explicit bounds and alpha ownership masks on original source. Artwork exists across nominal cell edges; do not discard it or invent anatomy. Align using existing belt roots and preserve scale.",
+    "invariant": "Preserve approved crown, face, hair, clothing, scale, palette and existing authored motion.",
+    "acceptance_test": "Attack01\u201304 have exactly two attached hands, all sleeve and cloth tips complete, no foreign fragments; inspect neighbors and recovery."
+  },
+  {
+    "id": "SQ-02",
+    "severity": "blocking",
+    "frames": [
+      {
+        "state": "die",
+        "frame": 0,
+        "time_ms": 0,
+        "file": "frames/die-00.png"
+      },
+      {
+        "state": "die",
+        "frame": 1,
+        "time_ms": 180,
+        "file": "frames/die-01.png"
+      },
+      {
+        "state": "die",
+        "frame": 2,
+        "time_ms": 400,
+        "file": "frames/die-02.png"
+      },
+      {
+        "state": "die",
+        "frame": 3,
+        "time_ms": 630,
+        "file": "frames/die-03.png"
+      },
+      {
+        "state": "die",
+        "frame": 4,
+        "time_ms": 910,
+        "file": "frames/die-04.png"
+      },
+      {
+        "state": "die",
+        "frame": 5,
+        "time_ms": 1260,
+        "file": "frames/die-05.png"
+      }
+    ],
+    "expected": "One complete approved character per frame with no adjacent-pose material.",
+    "observed": "All death cells use y=512 split, but first-row figures extend to roughly550. die00\u201302 have hard horizontal skirt cuts; die03\u201305 inherit detached strips of first-row skirts at top. Terminal die05 thus retains unrelated cloth.",
+    "repair": "Use correct source row separation in gap near y560, explicit pose ownership regions, and update source-root coordinates to preserve original world placement. Restore first-row skirt pixels and exclude them from second row; no new drawings needed if source alpha preserves complete poses.",
+    "invariant": "Preserve approved crown, face, hair, clothing, scale, palette and existing authored motion.",
+    "acceptance_test": "Death00\u201302 complete lower silhouette, death03\u201305 no overhead strips, terminal only authored shards; verify no revival in playback."
+  },
+  {
+    "id": "SQ-03",
+    "severity": "major",
+    "frames": [
+      {
+        "state": "hit",
+        "frame": 2,
+        "time_ms": 260,
+        "file": "frames/hit-02.png"
+      },
+      {
+        "state": "hit",
+        "frame": 3,
+        "time_ms": 420,
+        "file": "frames/hit-03.png"
+      },
+      {
+        "state": "wounded_idle",
+        "frame": 2,
+        "time_ms": 1200,
+        "file": "frames/wounded_idle-02.png"
+      },
+      {
+        "state": "wounded_idle",
+        "frame": 3,
+        "time_ms": 1800,
+        "file": "frames/wounded_idle-03.png"
+      }
+    ],
+    "expected": "One complete approved character per frame with no adjacent-pose material.",
+    "observed": "Bottom-left poses exceed nominal source x572. hit02 and wounded_idle02 lose right cloth/ice tips; hit03 and wounded_idle03 contain the severed tips floating at left.",
+    "repair": "Reassign crossing alpha components to originating pose using explicit extraction masks, preserving full sleeves and skirts. Inspect hit00/01 and wounded_idle00/01 source outer-edge tips at the same time.",
+    "invariant": "Preserve approved crown, face, hair, clothing, scale, palette and existing authored motion.",
+    "acceptance_test": "No hard right-edge cuts or foreign left fragments in hit/wounded clips; both light and dark at full and96px."
+  },
+  {
+    "id": "SQ-04",
+    "severity": "minor",
+    "frames": [
+      {
+        "state": "idle",
+        "frame": 3,
+        "time_ms": 1500,
+        "file": "frames/idle-03.png"
+      }
+    ],
+    "expected": "One complete approved character per frame with no adjacent-pose material.",
+    "observed": "A narrow isolated gray sliver at screen-left of the raised hand is visible on light and dark composites (near exported x139).",
+    "repair": "Inspect source and remove only confirmed neighbor contamination from extraction mask. Keep legitimate fingers/sleeves unchanged.",
+    "invariant": "Preserve approved crown, face, hair, clothing, scale, palette and existing authored motion.",
+    "acceptance_test": "No isolated line blinking at idle03; preserve all eight genuine poses and loop closure."
+  },
+  {
+    "id": "SQ-05",
+    "severity": "major",
+    "frames": [
+      {
+        "state": "idle",
+        "frame": 0,
+        "time_ms": 0,
+        "file": "frames/idle-00.png"
+      },
+      {
+        "state": "idle",
+        "frame": 1,
+        "time_ms": 500,
+        "file": "frames/idle-01.png"
+      },
+      {
+        "state": "idle",
+        "frame": 2,
+        "time_ms": 1000,
+        "file": "frames/idle-02.png"
+      },
+      {
+        "state": "idle",
+        "frame": 3,
+        "time_ms": 1500,
+        "file": "frames/idle-03.png"
+      },
+      {
+        "state": "idle",
+        "frame": 4,
+        "time_ms": 2000,
+        "file": "frames/idle-04.png"
+      },
+      {
+        "state": "idle",
+        "frame": 5,
+        "time_ms": 2500,
+        "file": "frames/idle-05.png"
+      },
+      {
+        "state": "idle",
+        "frame": 6,
+        "time_ms": 3000,
+        "file": "frames/idle-06.png"
+      },
+      {
+        "state": "idle",
+        "frame": 7,
+        "time_ms": 3500,
+        "file": "frames/idle-07.png"
+      },
+      {
+        "state": "attack",
+        "frame": 0,
+        "time_ms": 0,
+        "file": "frames/attack-00.png"
+      },
+      {
+        "state": "attack",
+        "frame": 1,
+        "time_ms": 160,
+        "file": "frames/attack-01.png"
+      },
+      {
+        "state": "attack",
+        "frame": 2,
+        "time_ms": 300,
+        "file": "frames/attack-02.png"
+      },
+      {
+        "state": "attack",
+        "frame": 3,
+        "time_ms": 410,
+        "file": "frames/attack-03.png"
+      },
+      {
+        "state": "attack",
+        "frame": 4,
+        "time_ms": 560,
+        "file": "frames/attack-04.png"
+      },
+      {
+        "state": "attack",
+        "frame": 5,
+        "time_ms": 710,
+        "file": "frames/attack-05.png"
+      },
+      {
+        "state": "hit",
+        "frame": 0,
+        "time_ms": 0,
+        "file": "frames/hit-00.png"
+      },
+      {
+        "state": "hit",
+        "frame": 1,
+        "time_ms": 100,
+        "file": "frames/hit-01.png"
+      },
+      {
+        "state": "hit",
+        "frame": 2,
+        "time_ms": 260,
+        "file": "frames/hit-02.png"
+      },
+      {
+        "state": "hit",
+        "frame": 3,
+        "time_ms": 420,
+        "file": "frames/hit-03.png"
+      },
+      {
+        "state": "wounded_idle",
+        "frame": 0,
+        "time_ms": 0,
+        "file": "frames/wounded_idle-00.png"
+      },
+      {
+        "state": "wounded_idle",
+        "frame": 1,
+        "time_ms": 600,
+        "file": "frames/wounded_idle-01.png"
+      },
+      {
+        "state": "wounded_idle",
+        "frame": 2,
+        "time_ms": 1200,
+        "file": "frames/wounded_idle-02.png"
+      },
+      {
+        "state": "wounded_idle",
+        "frame": 3,
+        "time_ms": 1800,
+        "file": "frames/wounded_idle-03.png"
+      },
+      {
+        "state": "cast",
+        "frame": 0,
+        "time_ms": 0,
+        "file": "frames/cast-00.png"
+      },
+      {
+        "state": "cast",
+        "frame": 1,
+        "time_ms": 220,
+        "file": "frames/cast-01.png"
+      },
+      {
+        "state": "cast",
+        "frame": 2,
+        "time_ms": 440,
+        "file": "frames/cast-02.png"
+      },
+      {
+        "state": "cast",
+        "frame": 3,
+        "time_ms": 600,
+        "file": "frames/cast-03.png"
+      },
+      {
+        "state": "die",
+        "frame": 0,
+        "time_ms": 0,
+        "file": "frames/die-00.png"
+      },
+      {
+        "state": "die",
+        "frame": 1,
+        "time_ms": 180,
+        "file": "frames/die-01.png"
+      },
+      {
+        "state": "die",
+        "frame": 2,
+        "time_ms": 400,
+        "file": "frames/die-02.png"
+      },
+      {
+        "state": "die",
+        "frame": 3,
+        "time_ms": 630,
+        "file": "frames/die-03.png"
+      },
+      {
+        "state": "die",
+        "frame": 4,
+        "time_ms": 910,
+        "file": "frames/die-04.png"
+      },
+      {
+        "state": "die",
+        "frame": 5,
+        "time_ms": 1260,
+        "file": "frames/die-05.png"
+      }
+    ],
+    "expected": "One complete approved character per frame with no adjacent-pose material.",
+    "observed": "Actual normal/slow playback not inspected: file:// opening in browser was denied by URL security policy. Static pose progression and declared timing checked only.",
+    "repair": "Obtain permitted playback review without routing around this security denial; retain unreviewed status until authorized accessible playback is inspected.",
+    "invariant": "Preserve approved crown, face, hair, clothing, scale, palette and existing authored motion.",
+    "acceptance_test": "Independent actual normal and slow playback of all states, idle07\u219200 and wounded03\u219200, action recovery and terminal death recorded."
+  },
+  {
+    "id": "SQ-06",
+    "severity": "minor",
+    "frames": [
+      {
+        "state": "cast",
+        "frame": 0,
+        "time_ms": 0,
+        "file": "frames/cast-00.png"
+      },
+      {
+        "state": "cast",
+        "frame": 1,
+        "time_ms": 220,
+        "file": "frames/cast-01.png"
+      },
+      {
+        "state": "cast",
+        "frame": 2,
+        "time_ms": 440,
+        "file": "frames/cast-02.png"
+      },
+      {
+        "state": "cast",
+        "frame": 3,
+        "time_ms": 600,
+        "file": "frames/cast-03.png"
+      },
+      {
+        "state": "die",
+        "frame": 0,
+        "time_ms": 0,
+        "file": "frames/die-00.png"
+      },
+      {
+        "state": "die",
+        "frame": 1,
+        "time_ms": 180,
+        "file": "frames/die-01.png"
+      },
+      {
+        "state": "die",
+        "frame": 2,
+        "time_ms": 400,
+        "file": "frames/die-02.png"
+      },
+      {
+        "state": "die",
+        "frame": 3,
+        "time_ms": 630,
+        "file": "frames/die-03.png"
+      },
+      {
+        "state": "die",
+        "frame": 4,
+        "time_ms": 910,
+        "file": "frames/die-04.png"
+      },
+      {
+        "state": "die",
+        "frame": 5,
+        "time_ms": 1260,
+        "file": "frames/die-05.png"
+      }
+    ],
+    "expected": "One complete approved character per frame with no adjacent-pose material.",
+    "observed": "Cast/death effects baked into character frames. No effects-off track exists for independent hidden-body inspection. Visible cast hands and face were inspected; dissolved body is intentionally absent late death.",
+    "repair": "Document limitation; preserve honest effects-off unavailable status. Separate future effects when practical.",
+    "invariant": "Preserve approved crown, face, hair, clothing, scale, palette and existing authored motion.",
+    "acceptance_test": "Do not claim effects-off review or hidden anatomy verification."
+  }
+]

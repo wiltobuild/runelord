@@ -1,0 +1,36 @@
+{
+  "status": "review_pending",
+  "states": {
+    "idle": {
+      "status": "review_pending",
+      "frame_count": 8
+    },
+    "attack": {
+      "status": "review_pending",
+      "frame_count": 6
+    },
+    "hit": {
+      "status": "review_pending",
+      "frame_count": 4
+    },
+    "wounded_idle": {
+      "status": "review_pending",
+      "frame_count": 4
+    },
+    "cast": {
+      "status": "review_pending",
+      "frame_count": 4
+    },
+    "die": {
+      "status": "review_pending",
+      "frame_count": 6
+    }
+  },
+  "unresolved": [
+    "Baked magic cannot be disabled independently.",
+    "Frame-based 32-pose source; no 60Hz interpolation asserted.",
+    "Generated equipment/cloth variation and planted foot spacing require independent review.",
+    "Fixed per-state source scale calibration compensates sheet generation resolution; no per-pose resizing.",
+    "Connected sprite extraction preserves interiors and two-pixel alpha fringe; low-alpha disconnected background noise outside fringe excluded."
+  ]
+}

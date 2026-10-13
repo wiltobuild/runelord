@@ -1,0 +1,544 @@
+{
+  "id": "rime-seer",
+  "status": "review_pending",
+  "immutable_manifest_sha256": "6690231d9800ff6ac9ada361b28bd6f3dc6f994775854fd73bd6f00b641652d9",
+  "indexed_frames": 32,
+  "unique_frame_hashes": 32,
+  "state_counts": {
+    "idle": 8,
+    "attack": 6,
+    "hit": 4,
+    "wounded_idle": 4,
+    "cast": 4,
+    "die": 6
+  },
+  "technical_checks": [
+    {
+      "state": "idle",
+      "frame": 0,
+      "file": "frames/idle-00.png",
+      "hash_matches": true,
+      "rgba": true,
+      "size": [
+        1024,
+        896
+      ],
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "boundary_alpha32_pixels": 0
+    },
+    {
+      "state": "idle",
+      "frame": 1,
+      "file": "frames/idle-01.png",
+      "hash_matches": true,
+      "rgba": true,
+      "size": [
+        1024,
+        896
+      ],
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "boundary_alpha32_pixels": 0
+    },
+    {
+      "state": "idle",
+      "frame": 2,
+      "file": "frames/idle-02.png",
+      "hash_matches": true,
+      "rgba": true,
+      "size": [
+        1024,
+        896
+      ],
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "boundary_alpha32_pixels": 0
+    },
+    {
+      "state": "idle",
+      "frame": 3,
+      "file": "frames/idle-03.png",
+      "hash_matches": true,
+      "rgba": true,
+      "size": [
+        1024,
+        896
+      ],
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "boundary_alpha32_pixels": 0
+    },
+    {
+      "state": "idle",
+      "frame": 4,
+      "file": "frames/idle-04.png",
+      "hash_matches": true,
+      "rgba": true,
+      "size": [
+        1024,
+        896
+      ],
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "boundary_alpha32_pixels": 0
+    },
+    {
+      "state": "idle",
+      "frame": 5,
+      "file": "frames/idle-05.png",
+      "hash_matches": true,
+      "rgba": true,
+      "size": [
+        1024,
+        896
+      ],
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "boundary_alpha32_pixels": 0
+    },
+    {
+      "state": "idle",
+      "frame": 6,
+      "file": "frames/idle-06.png",
+      "hash_matches": true,
+      "rgba": true,
+      "size": [
+        1024,
+        896
+      ],
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "boundary_alpha32_pixels": 0
+    },
+    {
+      "state": "idle",
+      "frame": 7,
+      "file": "frames/idle-07.png",
+      "hash_matches": true,
+      "rgba": true,
+      "size": [
+        1024,
+        896
+      ],
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "boundary_alpha32_pixels": 0
+    },
+    {
+      "state": "attack",
+      "frame": 0,
+      "file": "frames/attack-00.png",
+      "hash_matches": true,
+      "rgba": true,
+      "size": [
+        1024,
+        896
+      ],
+      "alpha_extrema": [
+        0,
+        254
+      ],
+      "boundary_alpha32_pixels": 0
+    },
+    {
+      "state": "attack",
+      "frame": 1,
+      "file": "frames/attack-01.png",
+      "hash_matches": true,
+      "rgba": true,
+      "size": [
+        1024,
+        896
+      ],
+      "alpha_extrema": [
+        0,
+        254
+      ],
+      "boundary_alpha32_pixels": 0
+    },
+    {
+      "state": "attack",
+      "frame": 2,
+      "file": "frames/attack-02.png",
+      "hash_matches": true,
+      "rgba": true,
+      "size": [
+        1024,
+        896
+      ],
+      "alpha_extrema": [
+        0,
+        254
+      ],
+      "boundary_alpha32_pixels": 0
+    },
+    {
+      "state": "attack",
+      "frame": 3,
+      "file": "frames/attack-03.png",
+      "hash_matches": true,
+      "rgba": true,
+      "size": [
+        1024,
+        896
+      ],
+      "alpha_extrema": [
+        0,
+        254
+      ],
+      "boundary_alpha32_pixels": 0
+    },
+    {
+      "state": "attack",
+      "frame": 4,
+      "file": "frames/attack-04.png",
+      "hash_matches": true,
+      "rgba": true,
+      "size": [
+        1024,
+        896
+      ],
+      "alpha_extrema": [
+        0,
+        254
+      ],
+      "boundary_alpha32_pixels": 0
+    },
+    {
+      "state": "attack",
+      "frame": 5,
+      "file": "frames/attack-05.png",
+      "hash_matches": true,
+      "rgba": true,
+      "size": [
+        1024,
+        896
+      ],
+      "alpha_extrema": [
+        0,
+        254
+      ],
+      "boundary_alpha32_pixels": 0
+    },
+    {
+      "state": "hit",
+      "frame": 0,
+      "file": "frames/hit-00.png",
+      "hash_matches": true,
+      "rgba": true,
+      "size": [
+        1024,
+        896
+      ],
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "boundary_alpha32_pixels": 0
+    },
+    {
+      "state": "hit",
+      "frame": 1,
+      "file": "frames/hit-01.png",
+      "hash_matches": true,
+      "rgba": true,
+      "size": [
+        1024,
+        896
+      ],
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "boundary_alpha32_pixels": 0
+    },
+    {
+      "state": "hit",
+      "frame": 2,
+      "file": "frames/hit-02.png",
+      "hash_matches": true,
+      "rgba": true,
+      "size": [
+        1024,
+        896
+      ],
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "boundary_alpha32_pixels": 0
+    },
+    {
+      "state": "hit",
+      "frame": 3,
+      "file": "frames/hit-03.png",
+      "hash_matches": true,
+      "rgba": true,
+      "size": [
+        1024,
+        896
+      ],
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "boundary_alpha32_pixels": 0
+    },
+    {
+      "state": "wounded_idle",
+      "frame": 0,
+      "file": "frames/wounded_idle-00.png",
+      "hash_matches": true,
+      "rgba": true,
+      "size": [
+        1024,
+        896
+      ],
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "boundary_alpha32_pixels": 0
+    },
+    {
+      "state": "wounded_idle",
+      "frame": 1,
+      "file": "frames/wounded_idle-01.png",
+      "hash_matches": true,
+      "rgba": true,
+      "size": [
+        1024,
+        896
+      ],
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "boundary_alpha32_pixels": 0
+    },
+    {
+      "state": "wounded_idle",
+      "frame": 2,
+      "file": "frames/wounded_idle-02.png",
+      "hash_matches": true,
+      "rgba": true,
+      "size": [
+        1024,
+        896
+      ],
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "boundary_alpha32_pixels": 0
+    },
+    {
+      "state": "wounded_idle",
+      "frame": 3,
+      "file": "frames/wounded_idle-03.png",
+      "hash_matches": true,
+      "rgba": true,
+      "size": [
+        1024,
+        896
+      ],
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "boundary_alpha32_pixels": 0
+    },
+    {
+      "state": "cast",
+      "frame": 0,
+      "file": "frames/cast-00.png",
+      "hash_matches": true,
+      "rgba": true,
+      "size": [
+        1024,
+        896
+      ],
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "boundary_alpha32_pixels": 0
+    },
+    {
+      "state": "cast",
+      "frame": 1,
+      "file": "frames/cast-01.png",
+      "hash_matches": true,
+      "rgba": true,
+      "size": [
+        1024,
+        896
+      ],
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "boundary_alpha32_pixels": 0
+    },
+    {
+      "state": "cast",
+      "frame": 2,
+      "file": "frames/cast-02.png",
+      "hash_matches": true,
+      "rgba": true,
+      "size": [
+        1024,
+        896
+      ],
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "boundary_alpha32_pixels": 0
+    },
+    {
+      "state": "cast",
+      "frame": 3,
+      "file": "frames/cast-03.png",
+      "hash_matches": true,
+      "rgba": true,
+      "size": [
+        1024,
+        896
+      ],
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "boundary_alpha32_pixels": 0
+    },
+    {
+      "state": "die",
+      "frame": 0,
+      "file": "frames/die-00.png",
+      "hash_matches": true,
+      "rgba": true,
+      "size": [
+        1024,
+        896
+      ],
+      "alpha_extrema": [
+        0,
+        254
+      ],
+      "boundary_alpha32_pixels": 0
+    },
+    {
+      "state": "die",
+      "frame": 1,
+      "file": "frames/die-01.png",
+      "hash_matches": true,
+      "rgba": true,
+      "size": [
+        1024,
+        896
+      ],
+      "alpha_extrema": [
+        0,
+        254
+      ],
+      "boundary_alpha32_pixels": 0
+    },
+    {
+      "state": "die",
+      "frame": 2,
+      "file": "frames/die-02.png",
+      "hash_matches": true,
+      "rgba": true,
+      "size": [
+        1024,
+        896
+      ],
+      "alpha_extrema": [
+        0,
+        254
+      ],
+      "boundary_alpha32_pixels": 0
+    },
+    {
+      "state": "die",
+      "frame": 3,
+      "file": "frames/die-03.png",
+      "hash_matches": true,
+      "rgba": true,
+      "size": [
+        1024,
+        896
+      ],
+      "alpha_extrema": [
+        0,
+        254
+      ],
+      "boundary_alpha32_pixels": 0
+    },
+    {
+      "state": "die",
+      "frame": 4,
+      "file": "frames/die-04.png",
+      "hash_matches": true,
+      "rgba": true,
+      "size": [
+        1024,
+        896
+      ],
+      "alpha_extrema": [
+        0,
+        254
+      ],
+      "boundary_alpha32_pixels": 0
+    },
+    {
+      "state": "die",
+      "frame": 5,
+      "file": "frames/die-05.png",
+      "hash_matches": true,
+      "rgba": true,
+      "size": [
+        1024,
+        896
+      ],
+      "alpha_extrema": [
+        0,
+        254
+      ],
+      "boundary_alpha32_pixels": 0
+    }
+  ],
+  "builder_observations": [
+    "Every frame is built-in imagegen authored whole-character artwork, not code transformation animation. Packing only crops equal cells, translates, and preserves native scale1.",
+    "Original prior Rime idle was truly transparent despite hidden background RGB; retained as source/idle-original.png.",
+    "First idle attempts cramped adjacent cells; built-in generated spacing repairs retained as production idle.png, prior bytes preserved.",
+    "Rime cast original magic overlapped adjacent source cell; generated smaller close-hand spell repair now used.",
+    "Exactly three large Revenant runestones visually present across inspected source sheets; rune shapes/topology and finger fidelity require frame-level independent review.",
+    "Terminal deaths depict inert corpses and dark eyes; playback is nonlooping with terminal hold in HTML/manifest.",
+    "Unresolved blocking cross-state source scale disparity: native-idle character height about350, actions500-650. Must normalize each whole source sheet uniformly or regenerate consistent scale. No per-frame resizing performed.",
+    "Source edge candidates remain; inspect source-audit.json and adjacent extraction for clipping/contamination.",
+    "96px evidence uses650px common reference height; smaller native idle is below96px due unresolved scale mismatch.",
+    "Body and VFX are baked together; effects-off audit not possible without new generated clean body frames.",
+    "Gallery helper accepted six previews, live localhost4317 gallery unavailable at builder verification. Parent must launch existing configured server and confirm visibility.",
+    "Builder did not visually audit actual timed playback in browser. Parent independent reviewer must inspect normal/slow all states at large and96px before acceptance."
+  ],
+  "next_action": "Independent review and separate repair; do not claim animation_complete."
+}

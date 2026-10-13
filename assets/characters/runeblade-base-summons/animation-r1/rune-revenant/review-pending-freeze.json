@@ -1,0 +1,8 @@
+{
+  "status": "review_pending",
+  "manifest_sha256": "326e8d22a8058dd11d859805569d42a12f201cf8f905ffd2beceed84557b8598",
+  "index_sha256": "c9914a0eb43f923acce6487d7d6ee5feef68e591e64bc5617af7350f9a5fe9cf",
+  "builder_report_sha256": "5aa987e6f135d61dcb067b11c17c05adf0fed2b608cb4faeddf2f6fd71372eb9",
+  "gallery_revision": "frames32-r1-canvas2",
+  "immutable": true
+}

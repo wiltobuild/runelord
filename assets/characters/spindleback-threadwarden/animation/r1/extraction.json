@@ -1,0 +1,382 @@
+[
+  {
+    "index": 0,
+    "source": "exec-38193b4c-4a8e-47a2-a5c4-a578b6e681f2.png",
+    "source_rect": [
+      13,
+      2,
+      246,
+      306
+    ],
+    "uniform_source_scale": 1.0,
+    "placement": [
+      93,
+      71
+    ],
+    "ground_anchor": [
+      220.0,
+      375
+    ]
+  },
+  {
+    "index": 1,
+    "source": "exec-38193b4c-4a8e-47a2-a5c4-a578b6e681f2.png",
+    "source_rect": [
+      290,
+      1,
+      530,
+      306
+    ],
+    "uniform_source_scale": 1.0,
+    "placement": [
+      89,
+      70
+    ],
+    "ground_anchor": [
+      220.0,
+      375
+    ]
+  },
+  {
+    "index": 2,
+    "source": "exec-38193b4c-4a8e-47a2-a5c4-a578b6e681f2.png",
+    "source_rect": [
+      571,
+      0,
+      809,
+      306
+    ],
+    "uniform_source_scale": 1.0,
+    "placement": [
+      90,
+      69
+    ],
+    "ground_anchor": [
+      220.0,
+      375
+    ]
+  },
+  {
+    "index": 3,
+    "source": "exec-38193b4c-4a8e-47a2-a5c4-a578b6e681f2.png",
+    "source_rect": [
+      857,
+      0,
+      1090,
+      306
+    ],
+    "uniform_source_scale": 1.0,
+    "placement": [
+      95,
+      69
+    ],
+    "ground_anchor": [
+      220.0,
+      375
+    ]
+  },
+  {
+    "index": 4,
+    "source": "exec-38193b4c-4a8e-47a2-a5c4-a578b6e681f2.png",
+    "source_rect": [
+      31,
+      300,
+      251,
+      597
+    ],
+    "uniform_source_scale": 1.0,
+    "placement": [
+      111,
+      78
+    ],
+    "ground_anchor": [
+      220.0,
+      375
+    ]
+  },
+  {
+    "index": 5,
+    "source": "exec-38193b4c-4a8e-47a2-a5c4-a578b6e681f2.png",
+    "source_rect": [
+      263,
+      304,
+      543,
+      603
+    ],
+    "uniform_source_scale": 1.0,
+    "placement": [
+      62,
+      76
+    ],
+    "ground_anchor": [
+      220.0,
+      375
+    ]
+  },
+  {
+    "index": 6,
+    "source": "exec-38193b4c-4a8e-47a2-a5c4-a578b6e681f2.png",
+    "source_rect": [
+      560,
+      303,
+      824,
+      603
+    ],
+    "uniform_source_scale": 1.0,
+    "placement": [
+      79,
+      75
+    ],
+    "ground_anchor": [
+      220.0,
+      375
+    ]
+  },
+  {
+    "index": 7,
+    "source": "exec-38193b4c-4a8e-47a2-a5c4-a578b6e681f2.png",
+    "source_rect": [
+      866,
+      304,
+      1088,
+      605
+    ],
+    "uniform_source_scale": 1.0,
+    "placement": [
+      104,
+      74
+    ],
+    "ground_anchor": [
+      220.0,
+      375
+    ]
+  },
+  {
+    "index": 8,
+    "source": "exec-38193b4c-4a8e-47a2-a5c4-a578b6e681f2.png",
+    "source_rect": [
+      21,
+      597,
+      261,
+      875
+    ],
+    "uniform_source_scale": 1.0,
+    "placement": [
+      101,
+      97
+    ],
+    "ground_anchor": [
+      220.0,
+      375
+    ]
+  },
+  {
+    "index": 9,
+    "source": "exec-38193b4c-4a8e-47a2-a5c4-a578b6e681f2.png",
+    "source_rect": [
+      307,
+      600,
+      528,
+      879
+    ],
+    "uniform_source_scale": 1.0,
+    "placement": [
+      106,
+      96
+    ],
+    "ground_anchor": [
+      220.0,
+      375
+    ]
+  },
+  {
+    "index": 10,
+    "source": "exec-38193b4c-4a8e-47a2-a5c4-a578b6e681f2.png",
+    "source_rect": [
+      581,
+      609,
+      812,
+      876
+    ],
+    "uniform_source_scale": 1.0,
+    "placement": [
+      100,
+      108
+    ],
+    "ground_anchor": [
+      220.0,
+      375
+    ]
+  },
+  {
+    "index": 11,
+    "source": "exec-38193b4c-4a8e-47a2-a5c4-a578b6e681f2.png",
+    "source_rect": [
+      876,
+      608,
+      1098,
+      876
+    ],
+    "uniform_source_scale": 1.0,
+    "placement": [
+      114,
+      107
+    ],
+    "ground_anchor": [
+      220.0,
+      375
+    ]
+  },
+  {
+    "index": 12,
+    "source": "exec-38193b4c-4a8e-47a2-a5c4-a578b6e681f2.png",
+    "source_rect": [
+      22,
+      868,
+      254,
+      1118
+    ],
+    "uniform_source_scale": 1.0,
+    "placement": [
+      102,
+      125
+    ],
+    "ground_anchor": [
+      220.0,
+      375
+    ]
+  },
+  {
+    "index": 13,
+    "source": "exec-38193b4c-4a8e-47a2-a5c4-a578b6e681f2.png",
+    "source_rect": [
+      310,
+      878,
+      520,
+      1119
+    ],
+    "uniform_source_scale": 1.0,
+    "placement": [
+      109,
+      134
+    ],
+    "ground_anchor": [
+      220.0,
+      375
+    ]
+  },
+  {
+    "index": 14,
+    "source": "exec-38193b4c-4a8e-47a2-a5c4-a578b6e681f2.png",
+    "source_rect": [
+      552,
+      929,
+      836,
+      1120
+    ],
+    "uniform_source_scale": 1.0,
+    "placement": [
+      71,
+      184
+    ],
+    "ground_anchor": [
+      220.0,
+      375
+    ]
+  },
+  {
+    "index": 15,
+    "source": "exec-38193b4c-4a8e-47a2-a5c4-a578b6e681f2.png",
+    "source_rect": [
+      843,
+      970,
+      1122,
+      1116
+    ],
+    "uniform_source_scale": 1.0,
+    "placement": [
+      81,
+      229
+    ],
+    "ground_anchor": [
+      220.0,
+      375
+    ]
+  },
+  {
+    "index": 16,
+    "source": "exec-38193b4c-4a8e-47a2-a5c4-a578b6e681f2.png",
+    "source_rect": [
+      19,
+      1117,
+      255,
+      1402
+    ],
+    "uniform_source_scale": 1.0,
+    "placement": [
+      99,
+      90
+    ],
+    "ground_anchor": [
+      220.0,
+      375
+    ]
+  },
+  {
+    "index": 17,
+    "source": "exec-38193b4c-4a8e-47a2-a5c4-a578b6e681f2.png",
+    "source_rect": [
+      289,
+      1125,
+      517,
+      1402
+    ],
+    "uniform_source_scale": 1.0,
+    "placement": [
+      88,
+      98
+    ],
+    "ground_anchor": [
+      220.0,
+      375
+    ]
+  },
+  {
+    "index": 18,
+    "source": "exec-38193b4c-4a8e-47a2-a5c4-a578b6e681f2.png",
+    "source_rect": [
+      523,
+      1120,
+      838,
+      1402
+    ],
+    "uniform_source_scale": 1.0,
+    "placement": [
+      42,
+      93
+    ],
+    "ground_anchor": [
+      220.0,
+      375
+    ]
+  },
+  {
+    "index": 19,
+    "source": "exec-38193b4c-4a8e-47a2-a5c4-a578b6e681f2.png",
+    "source_rect": [
+      876,
+      1119,
+      1098,
+      1402
+    ],
+    "uniform_source_scale": 1.0,
+    "placement": [
+      114,
+      92
+    ],
+    "ground_anchor": [
+      220.0,
+      375
+    ]
+  }
+]

@@ -1,0 +1,5 @@
+{
+  "prompt": "Edit this single transparent Frost Thrall animation frame to the NEXT cast-release pose, preserving the exact 768 square canvas, exact character size and planted boot positions, camera, serious hard-edged cel-shaded painting and identity. Image-left arm with giant icy shoulder is currently bent inward fist at chest: open THAT image-left hand with all five fingers in a forward casting gesture, small cyan frost shards released from it near chest. Keep the image-RIGHT hand exactly gripping the axe low as in reference; keep axe on IMAGE RIGHT unchanged and its shape and scale unchanged. Image-right forearm is plain gray skin and brown wrist wraps: NO ice bracer there. Only the image-left shoulder and image-left arm have large attached crystals. Maintain head face short white hair, harness, torso, legs, loincloth and boots. Minimal bounded upper-body follow-through. Do not swap handedness, do not add limbs or weapons. Transparent background true alpha. One complete character only, generous existing margins, no backdrop or floor.",
+  "tool": "built-in image_gen",
+  "source": "animation-r1/frost-thrall/frames/cast-01.png"
+}

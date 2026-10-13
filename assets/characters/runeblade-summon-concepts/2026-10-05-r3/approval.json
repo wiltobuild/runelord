@@ -1,0 +1,23 @@
+{
+  "note": "Explicit user chat 2026-10-05: \"these are good use the 3 approved as refrences for make samples for the rest\". Approves Bone Thrall r3 and Risen Legionnaire r3 alongside previously approved Frost Thrall r1.",
+  "events": [
+    {
+      "id": "d3c6b781-d26a-458a-92dc-7e388bd80fc4",
+      "sha256": "66b584fa3f80878616790d4d0ddbfb39d04710aef670beb4ccc780c64c11205e",
+      "status": "Approved",
+      "note": "Explicit user chat 2026-10-05: \"these are good use the 3 approved as refrences for make samples for the rest\". Approves Bone Thrall r3 and Risen Legionnaire r3 alongside previously approved Frost Thrall r1.",
+      "actor": "user-chat-recorded-by-codex",
+      "at": "2026-10-05T10:21:59.400Z",
+      "assetPath": "C:/Users/wilsh/Projects/runelord/assets/characters/runeblade-summon-concepts/2026-10-05-r3/bone-thrall-concept-r3.png"
+    },
+    {
+      "id": "49a930e1-ea68-408b-9525-1a7a3746babf",
+      "sha256": "8cbf9775adebf82dc0018adf9da816a1b1fd1b258f298b8d8f82d06b9ebfae86",
+      "status": "Approved",
+      "note": "Explicit user chat 2026-10-05: \"these are good use the 3 approved as refrences for make samples for the rest\". Approves Bone Thrall r3 and Risen Legionnaire r3 alongside previously approved Frost Thrall r1.",
+      "actor": "user-chat-recorded-by-codex",
+      "at": "2026-10-05T10:21:59.497Z",
+      "assetPath": "C:/Users/wilsh/Projects/runelord/assets/characters/runeblade-summon-concepts/2026-10-05-r3/risen-legionnaire-concept-r3.png"
+    }
+  ]
+}

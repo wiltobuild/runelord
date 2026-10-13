@@ -1,0 +1,12 @@
+{
+  "status": "Five static design samples completed; user review pending",
+  "verification": "Inspected full-size outputs and approximately 96px high thumbnails. Transparent PNGs with alpha=0 at corner; distinct equipment and body silhouettes; palette consistent with three approved references.",
+  "limitations": [
+    "Concept illustrations only; no rig, separated layers, animations or runtime integration.",
+    "Goblin retains source leftward head orientation; ally right-facing pose requires correction before production animation.",
+    "Several weapons, banner and shield approach canvas edges; production masters need increased padding and edge review.",
+    "Ogre is an illustrative elite corpse treatment; its use here does not change enemy classification or gameplay rules.",
+    "Raised goblin and ogre demonstrate corpse-derived categories; they do not replace the need for individual enemy raised forms."
+  ],
+  "construction": "Proposed humanoid articulation: pelvis, torso, head, paired upper/lower limbs, hands and feet. Separate spear/banner, hammer, sword/shield or fist gauntlets and cloth. Parts are not yet separated."
+}

@@ -1,0 +1,834 @@
+[
+  {
+    "hero": "shattered-queen",
+    "form": "base",
+    "state": "idle",
+    "frame": 0,
+    "time_ms": 0,
+    "duration_ms": 500,
+    "file": "frames/idle-00.png",
+    "sha256": "230f1946a0ab45c0d545a1da8639171ff392794ab90748b74074753daa00d1b2",
+    "source_sheet": "sources/idle-scale-r2.png",
+    "source_rect": [
+      0,
+      0,
+      384,
+      512
+    ],
+    "source_scale": 1,
+    "source_root": [
+      244,
+      232
+    ],
+    "translation": [
+      140,
+      118
+    ]
+  },
+  {
+    "hero": "shattered-queen",
+    "form": "base",
+    "state": "idle",
+    "frame": 1,
+    "time_ms": 500,
+    "duration_ms": 500,
+    "file": "frames/idle-01.png",
+    "sha256": "e96ab2f4ad89a157d05759d712fa886bc520c432c00db545a9fd74baabedae14",
+    "source_sheet": "sources/idle-scale-r2.png",
+    "source_rect": [
+      384,
+      0,
+      768,
+      512
+    ],
+    "source_scale": 1,
+    "source_root": [
+      244,
+      233
+    ],
+    "translation": [
+      140,
+      115
+    ]
+  },
+  {
+    "hero": "shattered-queen",
+    "form": "base",
+    "state": "idle",
+    "frame": 2,
+    "time_ms": 1000,
+    "duration_ms": 500,
+    "file": "frames/idle-02.png",
+    "sha256": "a9a4ff9e88e4da6bda6a8f10046c308d4cddaa4b6e7b994c3ba4e452ead0b4f0",
+    "source_sheet": "sources/idle-scale-r2.png",
+    "source_rect": [
+      768,
+      0,
+      1152,
+      512
+    ],
+    "source_scale": 1,
+    "source_root": [
+      241,
+      233
+    ],
+    "translation": [
+      143,
+      113
+    ]
+  },
+  {
+    "hero": "shattered-queen",
+    "form": "base",
+    "state": "idle",
+    "frame": 3,
+    "time_ms": 1500,
+    "duration_ms": 500,
+    "file": "frames/idle-03.png",
+    "sha256": "e1290aa5fe836b19ebd8d0e1a82501e545f0ed200e8805c86bb67a59e203cc6b",
+    "source_sheet": "sources/idle-scale-r2.png",
+    "source_rect": [
+      1152,
+      0,
+      1536,
+      512
+    ],
+    "source_scale": 1,
+    "source_root": [
+      245,
+      232
+    ],
+    "translation": [
+      139,
+      116
+    ]
+  },
+  {
+    "hero": "shattered-queen",
+    "form": "base",
+    "state": "idle",
+    "frame": 4,
+    "time_ms": 2000,
+    "duration_ms": 500,
+    "file": "frames/idle-04.png",
+    "sha256": "37cde96738f3f5f6bb5666e489fec3ec6b5612c3d69aeba2b65fe4b090906af6",
+    "source_sheet": "sources/idle-scale-r2.png",
+    "source_rect": [
+      0,
+      512,
+      384,
+      1024
+    ],
+    "source_scale": 1,
+    "source_root": [
+      244,
+      240
+    ],
+    "translation": [
+      140,
+      110
+    ]
+  },
+  {
+    "hero": "shattered-queen",
+    "form": "base",
+    "state": "idle",
+    "frame": 5,
+    "time_ms": 2500,
+    "duration_ms": 500,
+    "file": "frames/idle-05.png",
+    "sha256": "e50a00b408d9fb3f8741c054eb94476a956ee7ac78a8aa58117d93b41046b490",
+    "source_sheet": "sources/idle-scale-r2.png",
+    "source_rect": [
+      384,
+      512,
+      768,
+      1024
+    ],
+    "source_scale": 1,
+    "source_root": [
+      239,
+      243
+    ],
+    "translation": [
+      145,
+      109
+    ]
+  },
+  {
+    "hero": "shattered-queen",
+    "form": "base",
+    "state": "idle",
+    "frame": 6,
+    "time_ms": 3000,
+    "duration_ms": 500,
+    "file": "frames/idle-06.png",
+    "sha256": "73b98cfafd25c635f756531510131da871644865788783b66e1924cac793155b",
+    "source_sheet": "sources/idle-scale-r2.png",
+    "source_rect": [
+      768,
+      512,
+      1152,
+      1024
+    ],
+    "source_scale": 1,
+    "source_root": [
+      241,
+      242
+    ],
+    "translation": [
+      143,
+      112
+    ]
+  },
+  {
+    "hero": "shattered-queen",
+    "form": "base",
+    "state": "idle",
+    "frame": 7,
+    "time_ms": 3500,
+    "duration_ms": 500,
+    "file": "frames/idle-07.png",
+    "sha256": "2b875702d1d67211b9ee8ba026540dff7445736ad57acdb2bb95c8684ddc76ce",
+    "source_sheet": "sources/idle-scale-r2.png",
+    "source_rect": [
+      1152,
+      512,
+      1536,
+      1024
+    ],
+    "source_scale": 1,
+    "source_root": [
+      239,
+      240
+    ],
+    "translation": [
+      145,
+      112
+    ]
+  },
+  {
+    "hero": "shattered-queen",
+    "form": "base",
+    "state": "attack",
+    "frame": 0,
+    "time_ms": 0,
+    "duration_ms": 160,
+    "file": "frames/attack-00.png",
+    "sha256": "7b833d942f9f16572cf9716cf9a67bbb3339b3ab9af9dea1aec7d89734c896a4",
+    "source_sheet": "sources/attack.png",
+    "source_rect": [
+      0,
+      0,
+      512,
+      512
+    ],
+    "source_scale": 1,
+    "source_root": [
+      309,
+      274
+    ],
+    "translation": [
+      75,
+      76
+    ]
+  },
+  {
+    "hero": "shattered-queen",
+    "form": "base",
+    "state": "attack",
+    "frame": 1,
+    "time_ms": 160,
+    "duration_ms": 140,
+    "file": "frames/attack-01.png",
+    "sha256": "6b271273ba8ab28d5bafab8695c9933bf2d02f6097e3deb79892161c2b341b7b",
+    "source_sheet": "sources/attack.png",
+    "source_rect": [
+      512,
+      0,
+      1024,
+      512
+    ],
+    "source_scale": 1,
+    "source_root": [
+      267,
+      273
+    ],
+    "translation": [
+      117,
+      77
+    ]
+  },
+  {
+    "hero": "shattered-queen",
+    "form": "base",
+    "state": "attack",
+    "frame": 2,
+    "time_ms": 300,
+    "duration_ms": 110,
+    "file": "frames/attack-02.png",
+    "sha256": "a3c06c7798764251b15502d426a1ab61358595b872bfe3e929024a60e113dbe4",
+    "source_sheet": "sources/attack.png",
+    "source_rect": [
+      1024,
+      0,
+      1536,
+      512
+    ],
+    "source_scale": 1,
+    "source_root": [
+      263,
+      280
+    ],
+    "translation": [
+      121,
+      70
+    ]
+  },
+  {
+    "hero": "shattered-queen",
+    "form": "base",
+    "state": "attack",
+    "frame": 3,
+    "time_ms": 410,
+    "duration_ms": 150,
+    "file": "frames/attack-03.png",
+    "sha256": "fdfffb7f14ffb370da2dee39cf34f1565c0362611e5286fee89bc5968dbb2fbc",
+    "source_sheet": "sources/attack.png",
+    "source_rect": [
+      0,
+      512,
+      512,
+      1024
+    ],
+    "source_scale": 1,
+    "source_root": [
+      291,
+      307
+    ],
+    "translation": [
+      93,
+      43
+    ]
+  },
+  {
+    "hero": "shattered-queen",
+    "form": "base",
+    "state": "attack",
+    "frame": 4,
+    "time_ms": 560,
+    "duration_ms": 150,
+    "file": "frames/attack-04.png",
+    "sha256": "1bcd1b338bd0fb6d3160e17b2467f626da6aa6f739d57db481092d586649dc4d",
+    "source_sheet": "sources/attack.png",
+    "source_rect": [
+      512,
+      512,
+      1024,
+      1024
+    ],
+    "source_scale": 1,
+    "source_root": [
+      285,
+      290
+    ],
+    "translation": [
+      99,
+      60
+    ]
+  },
+  {
+    "hero": "shattered-queen",
+    "form": "base",
+    "state": "attack",
+    "frame": 5,
+    "time_ms": 710,
+    "duration_ms": 190,
+    "file": "frames/attack-05.png",
+    "sha256": "2993b6eda0ef7758cd0fc9a7d5449bd9fd6abe04f8a216efb11e8ca24c3452cb",
+    "source_sheet": "sources/attack.png",
+    "source_rect": [
+      1024,
+      512,
+      1536,
+      1024
+    ],
+    "source_scale": 1,
+    "source_root": [
+      280,
+      289
+    ],
+    "translation": [
+      104,
+      61
+    ]
+  },
+  {
+    "hero": "shattered-queen",
+    "form": "base",
+    "state": "hit",
+    "frame": 0,
+    "time_ms": 0,
+    "duration_ms": 100,
+    "file": "frames/hit-00.png",
+    "sha256": "a707dc3c0a4593052154f5528d002d37a8729b5f4f71a3d971576a299b5d1fb7",
+    "source_sheet": "sources/hit.png",
+    "source_rect": [
+      0,
+      0,
+      572,
+      687
+    ],
+    "source_scale": 0.72,
+    "source_root": [
+      364,
+      320
+    ],
+    "translation": [
+      122,
+      120
+    ]
+  },
+  {
+    "hero": "shattered-queen",
+    "form": "base",
+    "state": "hit",
+    "frame": 1,
+    "time_ms": 100,
+    "duration_ms": 160,
+    "file": "frames/hit-01.png",
+    "sha256": "be0c3d0c62ef86a09628fa9e2f32af668551525a9995d85b8d19ae56936786d6",
+    "source_sheet": "sources/hit.png",
+    "source_rect": [
+      572,
+      0,
+      1145,
+      687
+    ],
+    "source_scale": 0.72,
+    "source_root": [
+      368,
+      307
+    ],
+    "translation": [
+      119,
+      129
+    ]
+  },
+  {
+    "hero": "shattered-queen",
+    "form": "base",
+    "state": "hit",
+    "frame": 2,
+    "time_ms": 260,
+    "duration_ms": 160,
+    "file": "frames/hit-02.png",
+    "sha256": "c0c9607182844ee8817caaeb38f5cbe99e4f242a1609b0eea802a9859e3b2f39",
+    "source_sheet": "sources/hit.png",
+    "source_rect": [
+      0,
+      687,
+      572,
+      1374
+    ],
+    "source_scale": 0.72,
+    "source_root": [
+      385,
+      340
+    ],
+    "translation": [
+      107,
+      105
+    ]
+  },
+  {
+    "hero": "shattered-queen",
+    "form": "base",
+    "state": "hit",
+    "frame": 3,
+    "time_ms": 420,
+    "duration_ms": 180,
+    "file": "frames/hit-03.png",
+    "sha256": "b00028e61149021146cbaeb1cbd70483b7cfea216579e0cee6ace8c8ab1aa8b6",
+    "source_sheet": "sources/hit.png",
+    "source_rect": [
+      572,
+      687,
+      1145,
+      1374
+    ],
+    "source_scale": 0.72,
+    "source_root": [
+      368,
+      336
+    ],
+    "translation": [
+      119,
+      108
+    ]
+  },
+  {
+    "hero": "shattered-queen",
+    "form": "base",
+    "state": "wounded_idle",
+    "frame": 0,
+    "time_ms": 0,
+    "duration_ms": 600,
+    "file": "frames/wounded_idle-00.png",
+    "sha256": "e17c12524540d66fb53eb678fab6ada96af45336da13e382ba0bb1fc5aa20cda",
+    "source_sheet": "sources/wounded_idle.png",
+    "source_rect": [
+      0,
+      0,
+      572,
+      687
+    ],
+    "source_scale": 0.72,
+    "source_root": [
+      342,
+      348
+    ],
+    "translation": [
+      138,
+      99
+    ]
+  },
+  {
+    "hero": "shattered-queen",
+    "form": "base",
+    "state": "wounded_idle",
+    "frame": 1,
+    "time_ms": 600,
+    "duration_ms": 600,
+    "file": "frames/wounded_idle-01.png",
+    "sha256": "6ffe817e9ca13b1d1c2e45f14eef46dba7c1ec46797f2c2f8e599219bb72ed23",
+    "source_sheet": "sources/wounded_idle.png",
+    "source_rect": [
+      572,
+      0,
+      1145,
+      687
+    ],
+    "source_scale": 0.72,
+    "source_root": [
+      368,
+      351
+    ],
+    "translation": [
+      119,
+      97
+    ]
+  },
+  {
+    "hero": "shattered-queen",
+    "form": "base",
+    "state": "wounded_idle",
+    "frame": 2,
+    "time_ms": 1200,
+    "duration_ms": 600,
+    "file": "frames/wounded_idle-02.png",
+    "sha256": "0286286b9716ca1ad783d4850c1f1dfd5dd6733f7d2c942cf762a64657f655d4",
+    "source_sheet": "sources/wounded_idle.png",
+    "source_rect": [
+      0,
+      687,
+      572,
+      1374
+    ],
+    "source_scale": 0.72,
+    "source_root": [
+      366,
+      342
+    ],
+    "translation": [
+      120,
+      104
+    ]
+  },
+  {
+    "hero": "shattered-queen",
+    "form": "base",
+    "state": "wounded_idle",
+    "frame": 3,
+    "time_ms": 1800,
+    "duration_ms": 600,
+    "file": "frames/wounded_idle-03.png",
+    "sha256": "06e6341a6ec21e5ea77aeb61615db7b43f54d2bc8e429520913eb16e06cca328",
+    "source_sheet": "sources/wounded_idle.png",
+    "source_rect": [
+      572,
+      687,
+      1145,
+      1374
+    ],
+    "source_scale": 0.72,
+    "source_root": [
+      372,
+      355
+    ],
+    "translation": [
+      116,
+      94
+    ]
+  },
+  {
+    "hero": "shattered-queen",
+    "form": "base",
+    "state": "cast",
+    "frame": 0,
+    "time_ms": 0,
+    "duration_ms": 220,
+    "file": "frames/cast-00.png",
+    "sha256": "b1983b69ddca17e1c737bec064f780aa01d4cf856061c0a8d23e386ed85aee8c",
+    "source_sheet": "sources/cast-bounds-r2.png",
+    "source_rect": [
+      0,
+      0,
+      572,
+      687
+    ],
+    "source_scale": 0.72,
+    "source_root": [
+      354,
+      386
+    ],
+    "translation": [
+      129,
+      72
+    ]
+  },
+  {
+    "hero": "shattered-queen",
+    "form": "base",
+    "state": "cast",
+    "frame": 1,
+    "time_ms": 220,
+    "duration_ms": 220,
+    "file": "frames/cast-01.png",
+    "sha256": "90aabcfbbb2b9a6f92dafdf0978bcf43d52686b034351eaa3aa8a48fda3393b4",
+    "source_sheet": "sources/cast-bounds-r2.png",
+    "source_rect": [
+      572,
+      0,
+      1145,
+      687
+    ],
+    "source_scale": 0.72,
+    "source_root": [
+      361,
+      405
+    ],
+    "translation": [
+      124,
+      58
+    ]
+  },
+  {
+    "hero": "shattered-queen",
+    "form": "base",
+    "state": "cast",
+    "frame": 2,
+    "time_ms": 440,
+    "duration_ms": 160,
+    "file": "frames/cast-02.png",
+    "sha256": "ac9626fae3e623f46c87d7796b8165e62452ca3176ff152e6cebb951431509b9",
+    "source_sheet": "sources/cast-bounds-r2.png",
+    "source_rect": [
+      0,
+      687,
+      572,
+      1374
+    ],
+    "source_scale": 0.72,
+    "source_root": [
+      304,
+      339
+    ],
+    "translation": [
+      165,
+      106
+    ]
+  },
+  {
+    "hero": "shattered-queen",
+    "form": "base",
+    "state": "cast",
+    "frame": 3,
+    "time_ms": 600,
+    "duration_ms": 240,
+    "file": "frames/cast-03.png",
+    "sha256": "221fa62209b67440ad4eae4f66ae18116e615833d14135b96a786ce01341532f",
+    "source_sheet": "sources/cast-bounds-r2.png",
+    "source_rect": [
+      572,
+      687,
+      1145,
+      1374
+    ],
+    "source_scale": 0.72,
+    "source_root": [
+      359,
+      341
+    ],
+    "translation": [
+      126,
+      104
+    ]
+  },
+  {
+    "hero": "shattered-queen",
+    "form": "base",
+    "state": "die",
+    "frame": 0,
+    "time_ms": 0,
+    "duration_ms": 180,
+    "file": "frames/die-00.png",
+    "sha256": "a62120ef8afcfd0d2b1f47606366110744ccdad6e927d028cb274b92f69040e6",
+    "source_sheet": "sources/die.png",
+    "source_rect": [
+      0,
+      0,
+      512,
+      512
+    ],
+    "source_scale": 1,
+    "source_root": [
+      270,
+      272
+    ],
+    "translation": [
+      114,
+      78
+    ]
+  },
+  {
+    "hero": "shattered-queen",
+    "form": "base",
+    "state": "die",
+    "frame": 1,
+    "time_ms": 180,
+    "duration_ms": 220,
+    "file": "frames/die-01.png",
+    "sha256": "0dd4d24b7c6a180708ca8e58b0f1134e156e3cedd2eed6174132b7f3a5e51ea8",
+    "source_sheet": "sources/die.png",
+    "source_rect": [
+      512,
+      0,
+      1024,
+      512
+    ],
+    "source_scale": 1,
+    "source_root": [
+      270,
+      272
+    ],
+    "translation": [
+      114,
+      78
+    ]
+  },
+  {
+    "hero": "shattered-queen",
+    "form": "base",
+    "state": "die",
+    "frame": 2,
+    "time_ms": 400,
+    "duration_ms": 230,
+    "file": "frames/die-02.png",
+    "sha256": "1565f64a96dfc2251758f38d177023cdfed77ece366acf4522f212ded7e2f87c",
+    "source_sheet": "sources/die.png",
+    "source_rect": [
+      1024,
+      0,
+      1536,
+      512
+    ],
+    "source_scale": 1,
+    "source_root": [
+      270,
+      272
+    ],
+    "translation": [
+      114,
+      78
+    ]
+  },
+  {
+    "hero": "shattered-queen",
+    "form": "base",
+    "state": "die",
+    "frame": 3,
+    "time_ms": 630,
+    "duration_ms": 280,
+    "file": "frames/die-03.png",
+    "sha256": "beb2e1251e16105c352e2c45577ebb9fcd42821d496bcf108de82b202abe2a39",
+    "source_sheet": "sources/die.png",
+    "source_rect": [
+      0,
+      512,
+      512,
+      1024
+    ],
+    "source_scale": 1,
+    "source_root": [
+      270,
+      272
+    ],
+    "translation": [
+      114,
+      78
+    ]
+  },
+  {
+    "hero": "shattered-queen",
+    "form": "base",
+    "state": "die",
+    "frame": 4,
+    "time_ms": 910,
+    "duration_ms": 350,
+    "file": "frames/die-04.png",
+    "sha256": "3ca1eb5b306bc8e3d4ddc97c6faef1036d4934e93cedcde4558c347dd5aedc31",
+    "source_sheet": "sources/die.png",
+    "source_rect": [
+      512,
+      512,
+      1024,
+      1024
+    ],
+    "source_scale": 1,
+    "source_root": [
+      270,
+      272
+    ],
+    "translation": [
+      114,
+      78
+    ]
+  },
+  {
+    "hero": "shattered-queen",
+    "form": "base",
+    "state": "die",
+    "frame": 5,
+    "time_ms": 1260,
+    "duration_ms": 700,
+    "file": "frames/die-05.png",
+    "sha256": "c10a51805ff6526c51008d2db25e6e24ad24b6cb8d10f8b060de91ad44a535af",
+    "source_sheet": "sources/die.png",
+    "source_rect": [
+      1024,
+      512,
+      1536,
+      1024
+    ],
+    "source_scale": 1,
+    "source_root": [
+      270,
+      272
+    ],
+    "translation": [
+      114,
+      78
+    ]
+  }
+]

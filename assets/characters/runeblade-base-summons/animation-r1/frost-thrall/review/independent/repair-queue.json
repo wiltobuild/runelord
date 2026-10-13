@@ -1,0 +1,25 @@
+{
+  "status": "changes_required",
+  "issues": [
+    {
+      "id": "FT-01",
+      "severity": "major",
+      "state": "cast",
+      "frames": [
+        2
+      ],
+      "file": "frames/cast-02.png",
+      "expected": "Axe remains in screen-right hand; free iced screen-left hand casts; plain screen-right wrist retains wraps.",
+      "observed": "cast02 switches axe to screen-left hand and adds ice crystals on screen-right wrist. No transfer pose. Cast01 and03 retain original grip.",
+      "repair": "Reference-conditioned correction of cast02 preserving original axe grip and approved asymmetry.",
+      "acceptance_test": "Correct cast02 and continuity with01/03."
+    },
+    {
+      "id": "FT-02",
+      "severity": "major",
+      "frames": "all32",
+      "observed": "Timed playback unavailable: CUA inventory empty on two checks.",
+      "repair": "Root inspect normal/slow playback separately; do not promote static pass to animation complete."
+    }
+  ]
+}

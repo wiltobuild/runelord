@@ -1,0 +1,29 @@
+{
+  "reviewer": "review_casters",
+  "status": "needs_repair",
+  "visual_frame_coverage": 32,
+  "total": 32,
+  "passed": 0,
+  "failed": 32,
+  "unreviewed": 0,
+  "playback_reviewed": false,
+  "effects_off_reviewed": false,
+  "hashes_match": true,
+  "unique_hashes": 32,
+  "manifest_canvas": [
+    1024,
+    896
+  ],
+  "notes": [
+    "All32 static frame composites inspected in readable native cropped sheets and small light/dark views. All frame verdicts fail on global scale/transition defect.",
+    "Idle clean relative to other states and retains approved identity; playback assessment remains open.",
+    "No separate body/effects tracks; cannot inspect occluded anatomy.",
+    "Source export geometry1024x896 differs from task768x768 target.",
+    "Technical evidence sheets called96px show idle below96px actual body height, reflecting scale inconsistency."
+  ],
+  "playback_paths": [
+    "preview/index.html",
+    "preview/all-states.gif"
+  ],
+  "queue": "repair-queue.json"
+}

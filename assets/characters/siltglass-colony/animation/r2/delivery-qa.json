@@ -1,0 +1,32 @@
+{
+  "character_id": "siltglass-colony",
+  "frame_count": 16,
+  "canvas": [
+    376,
+    398
+  ],
+  "states": [
+    "idle",
+    "attack",
+    "hit",
+    "wounded_idle",
+    "die",
+    "guard"
+  ],
+  "transparent_frames_verified": true,
+  "death_loop": false,
+  "base_approval": "338792e7-adb0-4c52-9f54-a5cdd5f0599b",
+  "preview_sha256": "51933ec565502ebc39c2edacb8325f509d596032370d240db26ba23fed943884",
+  "preview_gallery_id": "1cfde6a2c60476d9fc602c48",
+  "preview_approval": "Pending approval",
+  "playback": {
+    "method": "Headless Chrome timed playback captures at native canvas and small size; inspected captures",
+    "status": "verified at review level; low-frame cadence and identity-detail variation remain",
+    "evidence": "C:\\Users\\wilsh\\Documents\\Codex\\2026-10-02\\use\\work\\playback\\siltglass\\playback-audit.json"
+  },
+  "limitations": [
+    "Generated frame animation; exact temporal consistency and ground stability require playback review.",
+    "Concept support/guard uses articulated bracing poses; no separated VFX."
+  ],
+  "delivery_level": "Articulated frame animation review pack; not certified production-ready"
+}

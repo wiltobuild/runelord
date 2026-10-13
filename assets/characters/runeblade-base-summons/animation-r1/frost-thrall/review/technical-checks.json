@@ -1,0 +1,390 @@
+{
+  "frame_count": 32,
+  "unique_hashes": 32,
+  "frames": [
+    {
+      "state": "idle",
+      "frame": 0,
+      "output_edge_alpha_max": 0,
+      "source_border_candidate": false,
+      "opaque_bbox": [
+        256,
+        235,
+        618,
+        649
+      ]
+    },
+    {
+      "state": "idle",
+      "frame": 1,
+      "output_edge_alpha_max": 0,
+      "source_border_candidate": false,
+      "opaque_bbox": [
+        256,
+        234,
+        616,
+        649
+      ]
+    },
+    {
+      "state": "idle",
+      "frame": 2,
+      "output_edge_alpha_max": 0,
+      "source_border_candidate": false,
+      "opaque_bbox": [
+        256,
+        234,
+        621,
+        649
+      ]
+    },
+    {
+      "state": "idle",
+      "frame": 3,
+      "output_edge_alpha_max": 0,
+      "source_border_candidate": false,
+      "opaque_bbox": [
+        256,
+        234,
+        599,
+        649
+      ]
+    },
+    {
+      "state": "idle",
+      "frame": 4,
+      "output_edge_alpha_max": 0,
+      "source_border_candidate": false,
+      "opaque_bbox": [
+        256,
+        238,
+        614,
+        649
+      ]
+    },
+    {
+      "state": "idle",
+      "frame": 5,
+      "output_edge_alpha_max": 0,
+      "source_border_candidate": false,
+      "opaque_bbox": [
+        255,
+        237,
+        613,
+        649
+      ]
+    },
+    {
+      "state": "idle",
+      "frame": 6,
+      "output_edge_alpha_max": 0,
+      "source_border_candidate": false,
+      "opaque_bbox": [
+        256,
+        238,
+        621,
+        649
+      ]
+    },
+    {
+      "state": "idle",
+      "frame": 7,
+      "output_edge_alpha_max": 0,
+      "source_border_candidate": true,
+      "opaque_bbox": [
+        256,
+        238,
+        604,
+        649
+      ]
+    },
+    {
+      "state": "attack",
+      "frame": 0,
+      "output_edge_alpha_max": 0,
+      "source_border_candidate": false,
+      "opaque_bbox": [
+        259,
+        235,
+        627,
+        649
+      ]
+    },
+    {
+      "state": "attack",
+      "frame": 1,
+      "output_edge_alpha_max": 0,
+      "source_border_candidate": false,
+      "opaque_bbox": [
+        250,
+        251,
+        660,
+        650
+      ]
+    },
+    {
+      "state": "attack",
+      "frame": 2,
+      "output_edge_alpha_max": 0,
+      "source_border_candidate": true,
+      "opaque_bbox": [
+        259,
+        214,
+        589,
+        649
+      ]
+    },
+    {
+      "state": "attack",
+      "frame": 3,
+      "output_edge_alpha_max": 0,
+      "source_border_candidate": false,
+      "opaque_bbox": [
+        260,
+        261,
+        739,
+        649
+      ]
+    },
+    {
+      "state": "attack",
+      "frame": 4,
+      "output_edge_alpha_max": 0,
+      "source_border_candidate": false,
+      "opaque_bbox": [
+        260,
+        250,
+        691,
+        648
+      ]
+    },
+    {
+      "state": "attack",
+      "frame": 5,
+      "output_edge_alpha_max": 0,
+      "source_border_candidate": false,
+      "opaque_bbox": [
+        260,
+        235,
+        623,
+        649
+      ]
+    },
+    {
+      "state": "hit",
+      "frame": 0,
+      "output_edge_alpha_max": 0,
+      "source_border_candidate": false,
+      "opaque_bbox": [
+        264,
+        236,
+        621,
+        649
+      ]
+    },
+    {
+      "state": "hit",
+      "frame": 1,
+      "output_edge_alpha_max": 0,
+      "source_border_candidate": false,
+      "opaque_bbox": [
+        240,
+        267,
+        591,
+        649
+      ]
+    },
+    {
+      "state": "hit",
+      "frame": 2,
+      "output_edge_alpha_max": 0,
+      "source_border_candidate": false,
+      "opaque_bbox": [
+        224,
+        286,
+        611,
+        650
+      ]
+    },
+    {
+      "state": "hit",
+      "frame": 3,
+      "output_edge_alpha_max": 0,
+      "source_border_candidate": false,
+      "opaque_bbox": [
+        264,
+        250,
+        609,
+        649
+      ]
+    },
+    {
+      "state": "wounded_idle",
+      "frame": 0,
+      "output_edge_alpha_max": 0,
+      "source_border_candidate": false,
+      "opaque_bbox": [
+        264,
+        237,
+        616,
+        650
+      ]
+    },
+    {
+      "state": "wounded_idle",
+      "frame": 1,
+      "output_edge_alpha_max": 0,
+      "source_border_candidate": false,
+      "opaque_bbox": [
+        264,
+        224,
+        612,
+        650
+      ]
+    },
+    {
+      "state": "wounded_idle",
+      "frame": 2,
+      "output_edge_alpha_max": 0,
+      "source_border_candidate": false,
+      "opaque_bbox": [
+        264,
+        226,
+        631,
+        649
+      ]
+    },
+    {
+      "state": "wounded_idle",
+      "frame": 3,
+      "output_edge_alpha_max": 0,
+      "source_border_candidate": false,
+      "opaque_bbox": [
+        264,
+        237,
+        611,
+        649
+      ]
+    },
+    {
+      "state": "cast",
+      "frame": 0,
+      "output_edge_alpha_max": 0,
+      "source_border_candidate": false,
+      "opaque_bbox": [
+        263,
+        234,
+        651,
+        649
+      ]
+    },
+    {
+      "state": "cast",
+      "frame": 1,
+      "output_edge_alpha_max": 0,
+      "source_border_candidate": false,
+      "opaque_bbox": [
+        263,
+        237,
+        627,
+        649
+      ]
+    },
+    {
+      "state": "cast",
+      "frame": 2,
+      "output_edge_alpha_max": 0,
+      "source_border_candidate": false,
+      "opaque_bbox": [
+        263,
+        247,
+        672,
+        649
+      ]
+    },
+    {
+      "state": "cast",
+      "frame": 3,
+      "output_edge_alpha_max": 0,
+      "source_border_candidate": false,
+      "opaque_bbox": [
+        263,
+        239,
+        624,
+        648
+      ]
+    },
+    {
+      "state": "die",
+      "frame": 0,
+      "output_edge_alpha_max": 0,
+      "source_border_candidate": false,
+      "opaque_bbox": [
+        242,
+        235,
+        626,
+        649
+      ]
+    },
+    {
+      "state": "die",
+      "frame": 1,
+      "output_edge_alpha_max": 0,
+      "source_border_candidate": false,
+      "opaque_bbox": [
+        241,
+        244,
+        600,
+        649
+      ]
+    },
+    {
+      "state": "die",
+      "frame": 2,
+      "output_edge_alpha_max": 0,
+      "source_border_candidate": false,
+      "opaque_bbox": [
+        242,
+        309,
+        619,
+        649
+      ]
+    },
+    {
+      "state": "die",
+      "frame": 3,
+      "output_edge_alpha_max": 0,
+      "source_border_candidate": false,
+      "opaque_bbox": [
+        242,
+        409,
+        676,
+        649
+      ]
+    },
+    {
+      "state": "die",
+      "frame": 4,
+      "output_edge_alpha_max": 0,
+      "source_border_candidate": false,
+      "opaque_bbox": [
+        242,
+        503,
+        667,
+        703
+      ]
+    },
+    {
+      "state": "die",
+      "frame": 5,
+      "output_edge_alpha_max": 0,
+      "source_border_candidate": false,
+      "opaque_bbox": [
+        242,
+        509,
+        636,
+        706
+      ]
+    }
+  ]
+}

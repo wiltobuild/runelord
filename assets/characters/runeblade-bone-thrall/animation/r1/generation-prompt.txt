@@ -1,0 +1,20 @@
+Use case: identity-preserve. Create a production sprite-animation keyframe sheet of the skeletal character in reference 1; reference 2 is ONLY the Runelord rendering language. Exact character identity, equipment, proportions and palette. Genuine transparent RGBA background. NO text, labels, grid lines, shadows on ground or background.
+A strict 4 columns by 4 rows evenly spaced grid, 2048x2048 overall, each square cell 512x512. Full figure in every cell, no overlap across cells. Camera always fixed three-quarter facing RIGHT. Same pixel scale in ALL sixteen cells. Standing figure approximately 330px tall; its midpoint at cell x256 and planted ground at cell y460. Reserve space for weapon arcs.
+Chronological cells left to right then top to bottom:
+1 neutral combat idle.
+2 restrained idle chest lift and small bent-elbow variation, feet in exact same places as 1.
+3 attack anticipation: rotate shoulder/torso back, sword arm cocked high behind head, knees compress.
+4 attack contact: decisive forward articulated sword slash, sword arm extended toward RIGHT, torso follows, front knee bends.
+5 attack recovery: sword completes low forward arc, elbow relaxes, torso returning upright.
+6 hit reaction: chest jerks backward, head tilts back, both elbows react and knees buckle slightly.
+7 hit recovery: bent forward regaining balance, head lowered, sword hand settling.
+8 death onset: drops onto one knee, torso slumped and sword lowered.
+9 death collapse: torso and skull fall sideways toward ground, knee/arms fold.
+10 final dead: whole skeleton collapsed lying horizontally on ground, sword beside hand, eyes dark; same body scale as all standing frames.
+11 wounded idle: permanent hunched posture with bent knees, free hand clutching lower ribs, sword lowered.
+12 wounded idle alternate: subtle wince and elbow shift in the same hunch, fixed feet.
+13 guard enter: raises sword diagonally across ribs defensively, shoulders brace, knees bend.
+14 guard hold: firmer blocking stance and slight elbow recoil, same feet.
+15 spawn start: crouched very low with one hand bracing ground, skull lifted, sword kept in hand.
+16 spawn rise: rising to half-height, unfolding knees, sword lifted toward neutral.
+Use the supplied approved Runelord artwork as a reference for simplified 2D shapes and cel-shaded rendering. Make the character serious: stern expression, tough stylized silhouette, weighty equipment, muted colors with selective accents, and a few bold signs of wear. Broad clean color shapes, crisp edges, hard-edged cel shadows. No realistic anatomy, painterly rendering, dense grunge, 3D/PBR lighting, bloom or motion blur. Animation artwork must show joint articulation, not a rotated or translated static figure. Maintain same skull, two arms, two legs, same weapon grip and stable gear. No new armor or ornaments. All edges safely inside each cell. 

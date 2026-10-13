@@ -1,0 +1,900 @@
+{
+  "frames": [
+    {
+      "hero": "rime-seer",
+      "form": "base",
+      "state": "idle",
+      "frame": 0,
+      "time_ms": 0,
+      "duration_ms": 450,
+      "file": "frames/idle-00.png",
+      "sha256": "dde2e93a015dc0441e9b261f2cf23d2cbd7bb231ef0d901d4af744da30c7d36a",
+      "source_sheet": "source/idle.png",
+      "source_sha256": "815dd616b571c9beb5708017bf01736705a6ee1767320e9f18cdcdd7be703ddd",
+      "source_rect": [
+        79,
+        143,
+        322,
+        491
+      ],
+      "source_component_label": 1,
+      "source_root": [
+        137.0,
+        489
+      ],
+      "source_scale": 1.28,
+      "translation": [
+        206,
+        207
+      ]
+    },
+    {
+      "hero": "rime-seer",
+      "form": "base",
+      "state": "idle",
+      "frame": 1,
+      "time_ms": 450,
+      "duration_ms": 450,
+      "file": "frames/idle-01.png",
+      "sha256": "48413481a61ae5ca66ae9a971d1346f254b939190f4a6019dbf0ae6df893c0c8",
+      "source_sheet": "source/idle.png",
+      "source_sha256": "815dd616b571c9beb5708017bf01736705a6ee1767320e9f18cdcdd7be703ddd",
+      "source_rect": [
+        436,
+        143,
+        682,
+        491
+      ],
+      "source_component_label": 2,
+      "source_root": [
+        496.0,
+        489
+      ],
+      "source_scale": 1.28,
+      "translation": [
+        203,
+        207
+      ]
+    },
+    {
+      "hero": "rime-seer",
+      "form": "base",
+      "state": "idle",
+      "frame": 2,
+      "time_ms": 900,
+      "duration_ms": 450,
+      "file": "frames/idle-02.png",
+      "sha256": "410bc1940bcfc2d4edc2697375f372a054217c7f8e6219faa59393ff9c69e27a",
+      "source_sheet": "source/idle.png",
+      "source_sha256": "815dd616b571c9beb5708017bf01736705a6ee1767320e9f18cdcdd7be703ddd",
+      "source_rect": [
+        800,
+        143,
+        1044,
+        491
+      ],
+      "source_component_label": 3,
+      "source_root": [
+        855.0,
+        489
+      ],
+      "source_scale": 1.28,
+      "translation": [
+        210,
+        207
+      ]
+    },
+    {
+      "hero": "rime-seer",
+      "form": "base",
+      "state": "idle",
+      "frame": 3,
+      "time_ms": 1350,
+      "duration_ms": 450,
+      "file": "frames/idle-03.png",
+      "sha256": "06e6b52c62e4d9a39a9f77c4c55d2dfc4bd8dabff17f54d52aef32decaecd5c5",
+      "source_sheet": "source/idle.png",
+      "source_sha256": "815dd616b571c9beb5708017bf01736705a6ee1767320e9f18cdcdd7be703ddd",
+      "source_rect": [
+        1148,
+        143,
+        1398,
+        491
+      ],
+      "source_component_label": 4,
+      "source_root": [
+        1210.0,
+        489
+      ],
+      "source_scale": 1.28,
+      "translation": [
+        201,
+        207
+      ]
+    },
+    {
+      "hero": "rime-seer",
+      "form": "base",
+      "state": "idle",
+      "frame": 4,
+      "time_ms": 1800,
+      "duration_ms": 450,
+      "file": "frames/idle-04.png",
+      "sha256": "585647813ed205d27f185153af44cfaf64d60026d7f02dca9984dd1bd83255e0",
+      "source_sheet": "source/idle.png",
+      "source_sha256": "815dd616b571c9beb5708017bf01736705a6ee1767320e9f18cdcdd7be703ddd",
+      "source_rect": [
+        78,
+        628,
+        326,
+        975
+      ],
+      "source_component_label": 109,
+      "source_root": [
+        137.0,
+        973
+      ],
+      "source_scale": 1.28,
+      "translation": [
+        204,
+        208
+      ]
+    },
+    {
+      "hero": "rime-seer",
+      "form": "base",
+      "state": "idle",
+      "frame": 5,
+      "time_ms": 2250,
+      "duration_ms": 450,
+      "file": "frames/idle-05.png",
+      "sha256": "ec32a5c78acfab427e42b27989b7851a858ebedc944a0bba61df81a1db6af8fb",
+      "source_sheet": "source/idle.png",
+      "source_sha256": "815dd616b571c9beb5708017bf01736705a6ee1767320e9f18cdcdd7be703ddd",
+      "source_rect": [
+        433,
+        626,
+        684,
+        975
+      ],
+      "source_component_label": 106,
+      "source_root": [
+        496.0,
+        973
+      ],
+      "source_scale": 1.28,
+      "translation": [
+        199,
+        206
+      ]
+    },
+    {
+      "hero": "rime-seer",
+      "form": "base",
+      "state": "idle",
+      "frame": 6,
+      "time_ms": 2700,
+      "duration_ms": 450,
+      "file": "frames/idle-06.png",
+      "sha256": "aeccb723c0e8532cf7f32083ce56823941e3531c09afcaeae1521d119b0bb2c8",
+      "source_sheet": "source/idle.png",
+      "source_sha256": "815dd616b571c9beb5708017bf01736705a6ee1767320e9f18cdcdd7be703ddd",
+      "source_rect": [
+        793,
+        627,
+        1044,
+        975
+      ],
+      "source_component_label": 108,
+      "source_root": [
+        855.0,
+        973
+      ],
+      "source_scale": 1.28,
+      "translation": [
+        201,
+        207
+      ]
+    },
+    {
+      "hero": "rime-seer",
+      "form": "base",
+      "state": "idle",
+      "frame": 7,
+      "time_ms": 3150,
+      "duration_ms": 450,
+      "file": "frames/idle-07.png",
+      "sha256": "ffb97d4bf779a5f062a541f2d88827e90d95d4ffd0806cab026cad9e00ba1ff0",
+      "source_sheet": "source/idle.png",
+      "source_sha256": "815dd616b571c9beb5708017bf01736705a6ee1767320e9f18cdcdd7be703ddd",
+      "source_rect": [
+        1152,
+        626,
+        1398,
+        975
+      ],
+      "source_component_label": 107,
+      "source_root": [
+        1210.0,
+        973
+      ],
+      "source_scale": 1.28,
+      "translation": [
+        206,
+        206
+      ]
+    },
+    {
+      "hero": "rime-seer",
+      "form": "base",
+      "state": "attack",
+      "frame": 0,
+      "time_ms": 0,
+      "duration_ms": 140,
+      "file": "frames/attack-00.png",
+      "sha256": "6ba8ea76f9adf88d6cae243c196b93fd0a22776503c72040bc65d25869674434",
+      "source_sheet": "source/attack.png",
+      "source_sha256": "76119a0223b51551a6c4212d8129539ba99c7cb114d5ab6aaa3dd5d02bb43fd1",
+      "source_rect": [
+        0,
+        10,
+        444,
+        515
+      ],
+      "source_component_label": 4,
+      "source_root": [
+        122.0,
+        500
+      ],
+      "source_scale": 0.9,
+      "translation": [
+        170,
+        209
+      ]
+    },
+    {
+      "hero": "rime-seer",
+      "form": "base",
+      "state": "attack",
+      "frame": 1,
+      "time_ms": 140,
+      "duration_ms": 140,
+      "file": "frames/attack-01.png",
+      "sha256": "a4d86d1f3c5827f852254319049e7152b174d138455ea17f15f11df1e9558199",
+      "source_sheet": "source/attack.png",
+      "source_sha256": "76119a0223b51551a6c4212d8129539ba99c7cb114d5ab6aaa3dd5d02bb43fd1",
+      "source_rect": [
+        510,
+        0,
+        1027,
+        514
+      ],
+      "source_component_label": 3,
+      "source_root": [
+        634.0,
+        500
+      ],
+      "source_scale": 0.9,
+      "translation": [
+        168,
+        200
+      ]
+    },
+    {
+      "hero": "rime-seer",
+      "form": "base",
+      "state": "attack",
+      "frame": 2,
+      "time_ms": 280,
+      "duration_ms": 110,
+      "file": "frames/attack-02.png",
+      "sha256": "a987cd71494144b0405b681c7bc7b703f85895d0e5fd71ffb9f757547de446b8",
+      "source_sheet": "source/attack.png",
+      "source_sha256": "76119a0223b51551a6c4212d8129539ba99c7cb114d5ab6aaa3dd5d02bb43fd1",
+      "source_rect": [
+        1054,
+        11,
+        1511,
+        514
+      ],
+      "source_component_label": 5,
+      "source_root": [
+        1145.0,
+        500
+      ],
+      "source_scale": 0.9,
+      "translation": [
+        198,
+        210
+      ]
+    },
+    {
+      "hero": "rime-seer",
+      "form": "base",
+      "state": "attack",
+      "frame": 3,
+      "time_ms": 390,
+      "duration_ms": 100,
+      "file": "frames/attack-03.png",
+      "sha256": "1682d32aa34426baeddc054b2ef04da268ca0a618f65eb86a8d4f3ade123014c",
+      "source_sheet": "source/attack.png",
+      "source_sha256": "76119a0223b51551a6c4212d8129539ba99c7cb114d5ab6aaa3dd5d02bb43fd1",
+      "source_rect": [
+        26,
+        493,
+        601,
+        1024
+      ],
+      "source_component_label": 131,
+      "source_root": [
+        97.0,
+        1006
+      ],
+      "source_scale": 0.9,
+      "translation": [
+        216,
+        188
+      ]
+    },
+    {
+      "hero": "rime-seer",
+      "form": "base",
+      "state": "attack",
+      "frame": 4,
+      "time_ms": 490,
+      "duration_ms": 160,
+      "file": "frames/attack-04.png",
+      "sha256": "b63ccd5deadf31b93fe2f48c5f3ff776caeaf8027af1651c82ea3894eac73444",
+      "source_sheet": "source/attack.png",
+      "source_sha256": "76119a0223b51551a6c4212d8129539ba99c7cb114d5ab6aaa3dd5d02bb43fd1",
+      "source_rect": [
+        576,
+        494,
+        1047,
+        1024
+      ],
+      "source_component_label": 128,
+      "source_root": [
+        644.0,
+        1006
+      ],
+      "source_scale": 0.9,
+      "translation": [
+        219,
+        189
+      ]
+    },
+    {
+      "hero": "rime-seer",
+      "form": "base",
+      "state": "attack",
+      "frame": 5,
+      "time_ms": 650,
+      "duration_ms": 200,
+      "file": "frames/attack-05.png",
+      "sha256": "2dcfca59d532f627f255667c5c2a6ca0b8e2a0d9bb19584caba72f44c67a4ad6",
+      "source_sheet": "source/attack.png",
+      "source_sha256": "76119a0223b51551a6c4212d8129539ba99c7cb114d5ab6aaa3dd5d02bb43fd1",
+      "source_rect": [
+        1107,
+        509,
+        1536,
+        1012
+      ],
+      "source_component_label": 129,
+      "source_root": [
+        1180.0,
+        1010
+      ],
+      "source_scale": 0.9,
+      "translation": [
+        214,
+        199
+      ]
+    },
+    {
+      "hero": "rime-seer",
+      "form": "base",
+      "state": "hit",
+      "frame": 0,
+      "time_ms": 0,
+      "duration_ms": 100,
+      "file": "frames/hit-00.png",
+      "sha256": "b15f9be8ac3076074b7f165eac8d5c14d14748dd6855cc4ec1f28dcf40aff8be",
+      "source_sheet": "source/hit.png",
+      "source_sha256": "c66b9395d5448ca6c81ab7e39d6dfc209430b463b2654dd954a3d8a78a4a0c78",
+      "source_rect": [
+        49,
+        11,
+        610,
+        654
+      ],
+      "source_component_label": 1,
+      "source_root": [
+        175.0,
+        652
+      ],
+      "source_scale": 0.69,
+      "translation": [
+        193,
+        208
+      ]
+    },
+    {
+      "hero": "rime-seer",
+      "form": "base",
+      "state": "hit",
+      "frame": 1,
+      "time_ms": 100,
+      "duration_ms": 130,
+      "file": "frames/hit-01.png",
+      "sha256": "78b6a07e5dfdaab7116ff8bb49672dade0d6698f73f2c4ab513332a01e0b00a3",
+      "source_sheet": "source/hit.png",
+      "source_sha256": "c66b9395d5448ca6c81ab7e39d6dfc209430b463b2654dd954a3d8a78a4a0c78",
+      "source_rect": [
+        633,
+        12,
+        1131,
+        664
+      ],
+      "source_component_label": 2,
+      "source_root": [
+        741.0,
+        662
+      ],
+      "source_scale": 0.69,
+      "translation": [
+        205,
+        202
+      ]
+    },
+    {
+      "hero": "rime-seer",
+      "form": "base",
+      "state": "hit",
+      "frame": 2,
+      "time_ms": 230,
+      "duration_ms": 170,
+      "file": "frames/hit-02.png",
+      "sha256": "fa424c57444b7ee707d18251f18d4f41f6ede4233145c2145e533d409a97c21b",
+      "source_sheet": "source/hit.png",
+      "source_sha256": "c66b9395d5448ca6c81ab7e39d6dfc209430b463b2654dd954a3d8a78a4a0c78",
+      "source_rect": [
+        99,
+        681,
+        603,
+        1335
+      ],
+      "source_component_label": 74,
+      "source_root": [
+        174.0,
+        1333
+      ],
+      "source_scale": 0.69,
+      "translation": [
+        228,
+        200
+      ]
+    },
+    {
+      "hero": "rime-seer",
+      "form": "base",
+      "state": "hit",
+      "frame": 3,
+      "time_ms": 400,
+      "duration_ms": 200,
+      "file": "frames/hit-03.png",
+      "sha256": "a8688644e2d7cdfecdd5af9309f2252a1f62c423c4f8f5a4bb4c5197bcd78baf",
+      "source_sheet": "source/hit.png",
+      "source_sha256": "c66b9395d5448ca6c81ab7e39d6dfc209430b463b2654dd954a3d8a78a4a0c78",
+      "source_rect": [
+        650,
+        682,
+        1132,
+        1338
+      ],
+      "source_component_label": 75,
+      "source_root": [
+        741.0,
+        1336
+      ],
+      "source_scale": 0.69,
+      "translation": [
+        217,
+        199
+      ]
+    },
+    {
+      "hero": "rime-seer",
+      "form": "base",
+      "state": "wounded_idle",
+      "frame": 0,
+      "time_ms": 0,
+      "duration_ms": 500,
+      "file": "frames/wounded_idle-00.png",
+      "sha256": "db52c6c44a5d2cae77f492e206c696dac31e533ac92b11e861b6ee4db4c0f60e",
+      "source_sheet": "source/wounded_idle.png",
+      "source_sha256": "9b299b9afc077296820d5013ddf1108e1d9b7c5ef00da9f829ff4b27785c8b0d",
+      "source_rect": [
+        82,
+        13,
+        577,
+        661
+      ],
+      "source_component_label": 2,
+      "source_root": [
+        184.0,
+        659
+      ],
+      "source_scale": 0.685,
+      "translation": [
+        210,
+        207
+      ]
+    },
+    {
+      "hero": "rime-seer",
+      "form": "base",
+      "state": "wounded_idle",
+      "frame": 1,
+      "time_ms": 500,
+      "duration_ms": 500,
+      "file": "frames/wounded_idle-01.png",
+      "sha256": "e8883544d0d84654e6c4fc093de609b503b8662ac5be7cc50e39c3496990bda3",
+      "source_sheet": "source/wounded_idle.png",
+      "source_sha256": "9b299b9afc077296820d5013ddf1108e1d9b7c5ef00da9f829ff4b27785c8b0d",
+      "source_rect": [
+        634,
+        11,
+        1116,
+        663
+      ],
+      "source_component_label": 1,
+      "source_root": [
+        742.0,
+        661
+      ],
+      "source_scale": 0.685,
+      "translation": [
+        206,
+        205
+      ]
+    },
+    {
+      "hero": "rime-seer",
+      "form": "base",
+      "state": "wounded_idle",
+      "frame": 2,
+      "time_ms": 1000,
+      "duration_ms": 500,
+      "file": "frames/wounded_idle-02.png",
+      "sha256": "6b71d53a74b297733c5e291c16066b75ebbf9ee3d3fac79e626bc7e78c13b9ad",
+      "source_sheet": "source/wounded_idle.png",
+      "source_sha256": "9b299b9afc077296820d5013ddf1108e1d9b7c5ef00da9f829ff4b27785c8b0d",
+      "source_rect": [
+        79,
+        695,
+        585,
+        1337
+      ],
+      "source_component_label": 66,
+      "source_root": [
+        188.0,
+        1335
+      ],
+      "source_scale": 0.685,
+      "translation": [
+        205,
+        212
+      ]
+    },
+    {
+      "hero": "rime-seer",
+      "form": "base",
+      "state": "wounded_idle",
+      "frame": 3,
+      "time_ms": 1500,
+      "duration_ms": 500,
+      "file": "frames/wounded_idle-03.png",
+      "sha256": "3ba44245ecf05c1cd4a71603317ec804cd9e66247781fdb6b868dd4e2f2b0af7",
+      "source_sheet": "source/wounded_idle.png",
+      "source_sha256": "9b299b9afc077296820d5013ddf1108e1d9b7c5ef00da9f829ff4b27785c8b0d",
+      "source_rect": [
+        654,
+        694,
+        1133,
+        1336
+      ],
+      "source_component_label": 65,
+      "source_root": [
+        753.0,
+        1334
+      ],
+      "source_scale": 0.685,
+      "translation": [
+        212,
+        212
+      ]
+    },
+    {
+      "hero": "rime-seer",
+      "form": "base",
+      "state": "cast",
+      "frame": 0,
+      "time_ms": 0,
+      "duration_ms": 220,
+      "file": "frames/cast-00.png",
+      "sha256": "adccf980d1147066b4b5690daea6b1095384885a6d133c7912a5c4128e032d6c",
+      "source_sheet": "source/cast.png",
+      "source_sha256": "3a5015b0476c927d4275a4aab1484ec1bbf31a786b198de2aef42657da29c3f3",
+      "source_rect": [
+        203,
+        22,
+        596,
+        535
+      ],
+      "source_component_label": 1,
+      "source_root": [
+        284.0,
+        533
+      ],
+      "source_scale": 0.865,
+      "translation": [
+        210,
+        208
+      ]
+    },
+    {
+      "hero": "rime-seer",
+      "form": "base",
+      "state": "cast",
+      "frame": 1,
+      "time_ms": 220,
+      "duration_ms": 250,
+      "file": "frames/cast-01.png",
+      "sha256": "dd2e236b6d782b70048cee63c8b461ef7eec6d66a8372964cb3d86295f98b20e",
+      "source_sheet": "source/cast.png",
+      "source_sha256": "3a5015b0476c927d4275a4aab1484ec1bbf31a786b198de2aef42657da29c3f3",
+      "source_rect": [
+        871,
+        22,
+        1281,
+        535
+      ],
+      "source_component_label": 2,
+      "source_root": [
+        954.0,
+        533
+      ],
+      "source_scale": 0.865,
+      "translation": [
+        208,
+        208
+      ]
+    },
+    {
+      "hero": "rime-seer",
+      "form": "base",
+      "state": "cast",
+      "frame": 2,
+      "time_ms": 470,
+      "duration_ms": 160,
+      "file": "frames/cast-02.png",
+      "sha256": "19ebb4bc83f2f4eead84916130c6dfbcaa91d2ca46022685d8a7ebbf2b75632d",
+      "source_sheet": "source/cast.png",
+      "source_sha256": "3a5015b0476c927d4275a4aab1484ec1bbf31a786b198de2aef42657da29c3f3",
+      "source_rect": [
+        187,
+        574,
+        687,
+        1087
+      ],
+      "source_component_label": 64,
+      "source_root": [
+        274.0,
+        1085
+      ],
+      "source_scale": 0.865,
+      "translation": [
+        205,
+        208
+      ]
+    },
+    {
+      "hero": "rime-seer",
+      "form": "base",
+      "state": "cast",
+      "frame": 3,
+      "time_ms": 630,
+      "duration_ms": 270,
+      "file": "frames/cast-03.png",
+      "sha256": "524780b721b2c965db57ba4a5eb02db736f39c669bbf0bc8b7b5828b3d84628d",
+      "source_sheet": "source/cast.png",
+      "source_sha256": "3a5015b0476c927d4275a4aab1484ec1bbf31a786b198de2aef42657da29c3f3",
+      "source_rect": [
+        873,
+        573,
+        1268,
+        1088
+      ],
+      "source_component_label": 63,
+      "source_root": [
+        956.0,
+        1086
+      ],
+      "source_scale": 0.865,
+      "translation": [
+        208,
+        206
+      ]
+    },
+    {
+      "hero": "rime-seer",
+      "form": "base",
+      "state": "die",
+      "frame": 0,
+      "time_ms": 0,
+      "duration_ms": 180,
+      "file": "frames/die-00.png",
+      "sha256": "f4be6e2800dec1c1af6a971025cbca127ee78daf6e9bcf784d15ca18f9b7c61b",
+      "source_sheet": "source/die.png",
+      "source_sha256": "cc0f352ec88020b7a88696f9d0c7634679bb188f07ffe6dd1befbf72561379d6",
+      "source_rect": [
+        89,
+        10,
+        499,
+        554
+      ],
+      "source_component_label": 1,
+      "source_root": [
+        136,
+        552
+      ],
+      "source_scale": 0.815,
+      "translation": [
+        242,
+        208
+      ]
+    },
+    {
+      "hero": "rime-seer",
+      "form": "base",
+      "state": "die",
+      "frame": 1,
+      "time_ms": 180,
+      "duration_ms": 200,
+      "file": "frames/die-01.png",
+      "sha256": "d0e9e9849ed772cd2293ef7d040fe2b03fac01dfe3039b08c5566489355000c6",
+      "source_sheet": "source/die.png",
+      "source_sha256": "cc0f352ec88020b7a88696f9d0c7634679bb188f07ffe6dd1befbf72561379d6",
+      "source_rect": [
+        586,
+        37,
+        1009,
+        566
+      ],
+      "source_component_label": 3,
+      "source_root": [
+        633,
+        564
+      ],
+      "source_scale": 0.815,
+      "translation": [
+        242,
+        220
+      ]
+    },
+    {
+      "hero": "rime-seer",
+      "form": "base",
+      "state": "die",
+      "frame": 2,
+      "time_ms": 380,
+      "duration_ms": 250,
+      "file": "frames/die-02.png",
+      "sha256": "1f9facb449b04c9e8dd3a6841cff13177c4c77d96eb9bad02afe407b72956dc2",
+      "source_sheet": "source/die.png",
+      "source_sha256": "cc0f352ec88020b7a88696f9d0c7634679bb188f07ffe6dd1befbf72561379d6",
+      "source_rect": [
+        1035,
+        117,
+        1522,
+        567
+      ],
+      "source_component_label": 14,
+      "source_root": [
+        1082,
+        565
+      ],
+      "source_scale": 0.815,
+      "translation": [
+        242,
+        285
+      ]
+    },
+    {
+      "hero": "rime-seer",
+      "form": "base",
+      "state": "die",
+      "frame": 3,
+      "time_ms": 630,
+      "duration_ms": 260,
+      "file": "frames/die-03.png",
+      "sha256": "d1ed361169ec63eaa76b686ebc6831d8bcf7ea8d767a349e0565e50858148211",
+      "source_sheet": "source/die.png",
+      "source_sha256": "cc0f352ec88020b7a88696f9d0c7634679bb188f07ffe6dd1befbf72561379d6",
+      "source_rect": [
+        9,
+        733,
+        512,
+        944
+      ],
+      "source_component_label": 65,
+      "source_root": [
+        56,
+        942
+      ],
+      "source_scale": 0.815,
+      "translation": [
+        242,
+        480
+      ]
+    },
+    {
+      "hero": "rime-seer",
+      "form": "base",
+      "state": "die",
+      "frame": 4,
+      "time_ms": 890,
+      "duration_ms": 350,
+      "file": "frames/die-04.png",
+      "sha256": "073541e316ff887fa859eb2b85de245fb4a78b9bd8aae118f3e595984cf81286",
+      "source_sheet": "source/die.png",
+      "source_sha256": "cc0f352ec88020b7a88696f9d0c7634679bb188f07ffe6dd1befbf72561379d6",
+      "source_rect": [
+        523,
+        761,
+        1022,
+        944
+      ],
+      "source_component_label": 69,
+      "source_root": [
+        570,
+        942
+      ],
+      "source_scale": 0.815,
+      "translation": [
+        242,
+        502
+      ]
+    },
+    {
+      "hero": "rime-seer",
+      "form": "base",
+      "state": "die",
+      "frame": 5,
+      "time_ms": 1240,
+      "duration_ms": 800,
+      "file": "frames/die-05.png",
+      "sha256": "b5da1e59334e8b8149ce5e53bc1a47c181a13e30e7c3aab032a1c65d45bfa923",
+      "source_sheet": "source/die.png",
+      "source_sha256": "cc0f352ec88020b7a88696f9d0c7634679bb188f07ffe6dd1befbf72561379d6",
+      "source_rect": [
+        1024,
+        794,
+        1532,
+        947
+      ],
+      "source_component_label": 77,
+      "source_root": [
+        1071,
+        945
+      ],
+      "source_scale": 0.815,
+      "translation": [
+        242,
+        527
+      ]
+    }
+  ]
+}

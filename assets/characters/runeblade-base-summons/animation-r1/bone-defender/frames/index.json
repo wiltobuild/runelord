@@ -1,0 +1,900 @@
+{
+  "frames": [
+    {
+      "hero": "bone-defender",
+      "form": "base",
+      "state": "idle",
+      "frame": 0,
+      "time_ms": 0,
+      "duration_ms": 450,
+      "file": "frames/idle-00.png",
+      "sha256": "6f774df83dd2f32294d5d617f05aac71ca5683dded3f2b6e8427fdc9bbddcef8",
+      "source_sheet": "source/idle.png",
+      "source_sha256": "c41ce86a43e0971446b45f0e6592847308fbfb99c929e0de521719f1ec13fa95",
+      "source_rect": [
+        12,
+        52,
+        383,
+        499
+      ],
+      "source_component_label": 4,
+      "source_root": [
+        65.0,
+        497
+      ],
+      "source_scale": 1,
+      "translation": [
+        107,
+        205
+      ]
+    },
+    {
+      "hero": "bone-defender",
+      "form": "base",
+      "state": "idle",
+      "frame": 1,
+      "time_ms": 450,
+      "duration_ms": 450,
+      "file": "frames/idle-01.png",
+      "sha256": "2fd35484749a9775dc814c2e1c61df355de478d678df46940b703fb90f586a47",
+      "source_sheet": "source/idle.png",
+      "source_sha256": "c41ce86a43e0971446b45f0e6592847308fbfb99c929e0de521719f1ec13fa95",
+      "source_rect": [
+        388,
+        50,
+        758,
+        499
+      ],
+      "source_component_label": 3,
+      "source_root": [
+        441.0,
+        497
+      ],
+      "source_scale": 1,
+      "translation": [
+        107,
+        203
+      ]
+    },
+    {
+      "hero": "bone-defender",
+      "form": "base",
+      "state": "idle",
+      "frame": 2,
+      "time_ms": 900,
+      "duration_ms": 450,
+      "file": "frames/idle-02.png",
+      "sha256": "96c97849f601aeb895e7d17f9244de7574a0a3492e3b6348414a583ba068c289",
+      "source_sheet": "source/idle.png",
+      "source_sha256": "c41ce86a43e0971446b45f0e6592847308fbfb99c929e0de521719f1ec13fa95",
+      "source_rect": [
+        765,
+        49,
+        1134,
+        500
+      ],
+      "source_component_label": 1,
+      "source_root": [
+        816.0,
+        498
+      ],
+      "source_scale": 1,
+      "translation": [
+        109,
+        201
+      ]
+    },
+    {
+      "hero": "bone-defender",
+      "form": "base",
+      "state": "idle",
+      "frame": 3,
+      "time_ms": 1350,
+      "duration_ms": 450,
+      "file": "frames/idle-03.png",
+      "sha256": "d31e4f6c83857be27d39c4f2799ebaf2a84cc7a5bf7aeaca0a88f7017aa2e615",
+      "source_sheet": "source/idle.png",
+      "source_sha256": "c41ce86a43e0971446b45f0e6592847308fbfb99c929e0de521719f1ec13fa95",
+      "source_rect": [
+        1151,
+        49,
+        1526,
+        499
+      ],
+      "source_component_label": 2,
+      "source_root": [
+        1203.0,
+        497
+      ],
+      "source_scale": 1,
+      "translation": [
+        108,
+        202
+      ]
+    },
+    {
+      "hero": "bone-defender",
+      "form": "base",
+      "state": "idle",
+      "frame": 4,
+      "time_ms": 1800,
+      "duration_ms": 450,
+      "file": "frames/idle-04.png",
+      "sha256": "745a36d7c19e562b57cbc4f55403c2894faf2dbcf8b2f1f5eff58866b4fc3f9c",
+      "source_sheet": "source/idle.png",
+      "source_sha256": "c41ce86a43e0971446b45f0e6592847308fbfb99c929e0de521719f1ec13fa95",
+      "source_rect": [
+        13,
+        550,
+        390,
+        994
+      ],
+      "source_component_label": 62,
+      "source_root": [
+        64.0,
+        992
+      ],
+      "source_scale": 1,
+      "translation": [
+        109,
+        208
+      ]
+    },
+    {
+      "hero": "bone-defender",
+      "form": "base",
+      "state": "idle",
+      "frame": 5,
+      "time_ms": 2250,
+      "duration_ms": 450,
+      "file": "frames/idle-05.png",
+      "sha256": "cab7417b3c5cc53330b50cafed24a92b80143e7dd89fcd4642508bd87b5d0b82",
+      "source_sheet": "source/idle.png",
+      "source_sha256": "c41ce86a43e0971446b45f0e6592847308fbfb99c929e0de521719f1ec13fa95",
+      "source_rect": [
+        390,
+        550,
+        766,
+        994
+      ],
+      "source_component_label": 63,
+      "source_root": [
+        439.0,
+        992
+      ],
+      "source_scale": 1,
+      "translation": [
+        111,
+        208
+      ]
+    },
+    {
+      "hero": "bone-defender",
+      "form": "base",
+      "state": "idle",
+      "frame": 6,
+      "time_ms": 2700,
+      "duration_ms": 450,
+      "file": "frames/idle-06.png",
+      "sha256": "58870590434a40a157b49e08140c6508cf1465dc6ffcdf0f8f4ba4186ffd36ef",
+      "source_sheet": "source/idle.png",
+      "source_sha256": "c41ce86a43e0971446b45f0e6592847308fbfb99c929e0de521719f1ec13fa95",
+      "source_rect": [
+        769,
+        573,
+        1150,
+        990
+      ],
+      "source_component_label": 65,
+      "source_root": [
+        822.0,
+        988
+      ],
+      "source_scale": 1,
+      "translation": [
+        107,
+        235
+      ]
+    },
+    {
+      "hero": "bone-defender",
+      "form": "base",
+      "state": "idle",
+      "frame": 7,
+      "time_ms": 3150,
+      "duration_ms": 450,
+      "file": "frames/idle-07.png",
+      "sha256": "9be66e60f11b3f1d0162e1139d3f928ef27c3877afecd1db8bc60f37116046a2",
+      "source_sheet": "source/idle.png",
+      "source_sha256": "c41ce86a43e0971446b45f0e6592847308fbfb99c929e0de521719f1ec13fa95",
+      "source_rect": [
+        1153,
+        550,
+        1526,
+        991
+      ],
+      "source_component_label": 64,
+      "source_root": [
+        1204.0,
+        989
+      ],
+      "source_scale": 1,
+      "translation": [
+        109,
+        211
+      ]
+    },
+    {
+      "hero": "bone-defender",
+      "form": "base",
+      "state": "attack",
+      "frame": 0,
+      "time_ms": 0,
+      "duration_ms": 140,
+      "file": "frames/attack-00.png",
+      "sha256": "198a70a687c8985a79cb7b9f8b12d7d0d7780a21aa4c6dae7ece42fc34608ea2",
+      "source_sheet": "source/attack.png",
+      "source_sha256": "06c30d9c4c6b6e2c953727560836bbe89344dd75dafcc141e009be902a5058e5",
+      "source_rect": [
+        48,
+        61,
+        468,
+        508
+      ],
+      "source_component_label": 3,
+      "source_root": [
+        100,
+        506
+      ],
+      "source_scale": 1,
+      "translation": [
+        108,
+        205
+      ]
+    },
+    {
+      "hero": "bone-defender",
+      "form": "base",
+      "state": "attack",
+      "frame": 1,
+      "time_ms": 140,
+      "duration_ms": 140,
+      "file": "frames/attack-01.png",
+      "sha256": "8f88e8ce6b1b1748aaad7a9be450b4d99839fce692108ed0e886804c73ad35c6",
+      "source_sheet": "source/attack.png",
+      "source_sha256": "06c30d9c4c6b6e2c953727560836bbe89344dd75dafcc141e009be902a5058e5",
+      "source_rect": [
+        539,
+        52,
+        1029,
+        511
+      ],
+      "source_component_label": 2,
+      "source_root": [
+        615,
+        509
+      ],
+      "source_scale": 1,
+      "translation": [
+        84,
+        193
+      ]
+    },
+    {
+      "hero": "bone-defender",
+      "form": "base",
+      "state": "attack",
+      "frame": 2,
+      "time_ms": 280,
+      "duration_ms": 110,
+      "file": "frames/attack-02.png",
+      "sha256": "1dc3d96ee534b07c87515d611ed76108a78335888c4c97a9af6088453baec8d6",
+      "source_sheet": "source/attack.png",
+      "source_sha256": "06c30d9c4c6b6e2c953727560836bbe89344dd75dafcc141e009be902a5058e5",
+      "source_rect": [
+        977,
+        38,
+        1536,
+        510
+      ],
+      "source_component_label": 1,
+      "source_root": [
+        1100,
+        508
+      ],
+      "source_scale": 1,
+      "translation": [
+        37,
+        180
+      ]
+    },
+    {
+      "hero": "bone-defender",
+      "form": "base",
+      "state": "attack",
+      "frame": 3,
+      "time_ms": 390,
+      "duration_ms": 100,
+      "file": "frames/attack-03.png",
+      "sha256": "2ad46e73ce31a5fbebd9731f385d4fcf1268a59a6f6e320913cd7f63e124e9bc",
+      "source_sheet": "source/attack.png",
+      "source_sha256": "06c30d9c4c6b6e2c953727560836bbe89344dd75dafcc141e009be902a5058e5",
+      "source_rect": [
+        24,
+        573,
+        660,
+        994
+      ],
+      "source_component_label": 43,
+      "source_root": [
+        70,
+        979
+      ],
+      "source_scale": 1,
+      "translation": [
+        114,
+        244
+      ]
+    },
+    {
+      "hero": "bone-defender",
+      "form": "base",
+      "state": "attack",
+      "frame": 4,
+      "time_ms": 490,
+      "duration_ms": 160,
+      "file": "frames/attack-04.png",
+      "sha256": "306cd5ddb88d6157386996377b75ba6804b0f4c395e09e6d0c507843d70f10e7",
+      "source_sheet": "source/attack.png",
+      "source_sha256": "06c30d9c4c6b6e2c953727560836bbe89344dd75dafcc141e009be902a5058e5",
+      "source_rect": [
+        536,
+        586,
+        1057,
+        984
+      ],
+      "source_component_label": 45,
+      "source_root": [
+        587,
+        972
+      ],
+      "source_scale": 1,
+      "translation": [
+        109,
+        264
+      ]
+    },
+    {
+      "hero": "bone-defender",
+      "form": "base",
+      "state": "attack",
+      "frame": 5,
+      "time_ms": 650,
+      "duration_ms": 200,
+      "file": "frames/attack-05.png",
+      "sha256": "2c7e4655ea6e2bef0015cd3b7b7feed2563f193f9b1f7ba29c87fb0c8537e9c7",
+      "source_sheet": "source/attack.png",
+      "source_sha256": "06c30d9c4c6b6e2c953727560836bbe89344dd75dafcc141e009be902a5058e5",
+      "source_rect": [
+        1077,
+        538,
+        1499,
+        987
+      ],
+      "source_component_label": 41,
+      "source_root": [
+        1126,
+        985
+      ],
+      "source_scale": 1,
+      "translation": [
+        111,
+        203
+      ]
+    },
+    {
+      "hero": "bone-defender",
+      "form": "base",
+      "state": "hit",
+      "frame": 0,
+      "time_ms": 0,
+      "duration_ms": 100,
+      "file": "frames/hit-00.png",
+      "sha256": "034f464d9bbd0dfb8c32e003304c215dba424d525e5f3b7017ce5b93d885e1dc",
+      "source_sheet": "source/hit.png",
+      "source_sha256": "62be50ad31a26fefbd233260537fce77779d85c3593c85cc709d8458b5c00788",
+      "source_rect": [
+        40,
+        67,
+        571,
+        669
+      ],
+      "source_component_label": 1,
+      "source_root": [
+        92.0,
+        667
+      ],
+      "source_scale": 0.741,
+      "translation": [
+        121,
+        205
+      ]
+    },
+    {
+      "hero": "bone-defender",
+      "form": "base",
+      "state": "hit",
+      "frame": 1,
+      "time_ms": 100,
+      "duration_ms": 130,
+      "file": "frames/hit-01.png",
+      "sha256": "4afcd1c317c2548274fb38b518012f45e776c7b7eff5767292a5f6b0dc3a49d2",
+      "source_sheet": "source/hit.png",
+      "source_sha256": "62be50ad31a26fefbd233260537fce77779d85c3593c85cc709d8458b5c00788",
+      "source_rect": [
+        610,
+        109,
+        1136,
+        674
+      ],
+      "source_component_label": 2,
+      "source_root": [
+        642.0,
+        672
+      ],
+      "source_scale": 0.741,
+      "translation": [
+        136,
+        233
+      ]
+    },
+    {
+      "hero": "bone-defender",
+      "form": "base",
+      "state": "hit",
+      "frame": 2,
+      "time_ms": 230,
+      "duration_ms": 170,
+      "file": "frames/hit-02.png",
+      "sha256": "e88e9442d3ec9ccacce3e09bd31ea01dfced0df687f35d40af34bdfa65a5c087",
+      "source_sheet": "source/hit.png",
+      "source_sha256": "62be50ad31a26fefbd233260537fce77779d85c3593c85cc709d8458b5c00788",
+      "source_rect": [
+        60,
+        769,
+        623,
+        1318
+      ],
+      "source_component_label": 36,
+      "source_root": [
+        102.0,
+        1316
+      ],
+      "source_scale": 0.741,
+      "translation": [
+        129,
+        245
+      ]
+    },
+    {
+      "hero": "bone-defender",
+      "form": "base",
+      "state": "hit",
+      "frame": 3,
+      "time_ms": 400,
+      "duration_ms": 200,
+      "file": "frames/hit-03.png",
+      "sha256": "4aca0dffddb897ccfbc70dd834b43732949c8b11fed9625c26c290b430dc4f98",
+      "source_sheet": "source/hit.png",
+      "source_sha256": "62be50ad31a26fefbd233260537fce77779d85c3593c85cc709d8458b5c00788",
+      "source_rect": [
+        626,
+        730,
+        1145,
+        1319
+      ],
+      "source_component_label": 35,
+      "source_root": [
+        675.0,
+        1317
+      ],
+      "source_scale": 0.741,
+      "translation": [
+        124,
+        215
+      ]
+    },
+    {
+      "hero": "bone-defender",
+      "form": "base",
+      "state": "wounded_idle",
+      "frame": 0,
+      "time_ms": 0,
+      "duration_ms": 500,
+      "file": "frames/wounded_idle-00.png",
+      "sha256": "fe76d3a759116b1c28bffd1fe438d6b640149c96975965832033e5e2fd4f63ca",
+      "source_sheet": "source/wounded_idle.png",
+      "source_sha256": "d45bff89a911ae554c9afd5200a0ad13f9fed78998c5eed4278819b3303e9d03",
+      "source_rect": [
+        66,
+        36,
+        659,
+        577
+      ],
+      "source_component_label": 2,
+      "source_root": [
+        145.0,
+        575
+      ],
+      "source_scale": 0.825,
+      "translation": [
+        95,
+        205
+      ]
+    },
+    {
+      "hero": "bone-defender",
+      "form": "base",
+      "state": "wounded_idle",
+      "frame": 1,
+      "time_ms": 500,
+      "duration_ms": 500,
+      "file": "frames/wounded_idle-01.png",
+      "sha256": "f55a7e8bdf352e62f152ff2dcaa49ca51a5a3517f3282ab0d8415dfe5a16db43",
+      "source_sheet": "source/wounded_idle.png",
+      "source_sha256": "d45bff89a911ae554c9afd5200a0ad13f9fed78998c5eed4278819b3303e9d03",
+      "source_rect": [
+        737,
+        16,
+        1341,
+        577
+      ],
+      "source_component_label": 1,
+      "source_root": [
+        801.0,
+        575
+      ],
+      "source_scale": 0.825,
+      "translation": [
+        107,
+        189
+      ]
+    },
+    {
+      "hero": "bone-defender",
+      "form": "base",
+      "state": "wounded_idle",
+      "frame": 2,
+      "time_ms": 1000,
+      "duration_ms": 500,
+      "file": "frames/wounded_idle-02.png",
+      "sha256": "677a731ddd428b11a532acea9c466ee27877c0d407a4af87f9deb4b86aed15a2",
+      "source_sheet": "source/wounded_idle.png",
+      "source_sha256": "d45bff89a911ae554c9afd5200a0ad13f9fed78998c5eed4278819b3303e9d03",
+      "source_rect": [
+        50,
+        573,
+        668,
+        1145
+      ],
+      "source_component_label": 39,
+      "source_root": [
+        122.0,
+        1144
+      ],
+      "source_scale": 0.825,
+      "translation": [
+        101,
+        179
+      ]
+    },
+    {
+      "hero": "bone-defender",
+      "form": "base",
+      "state": "wounded_idle",
+      "frame": 3,
+      "time_ms": 1500,
+      "duration_ms": 500,
+      "file": "frames/wounded_idle-03.png",
+      "sha256": "eb66d415bef7835437c8bc08f40013eca60ce72982cf5ded53d03d84cf8d5eaa",
+      "source_sheet": "source/wounded_idle.png",
+      "source_sha256": "d45bff89a911ae554c9afd5200a0ad13f9fed78998c5eed4278819b3303e9d03",
+      "source_rect": [
+        758,
+        622,
+        1348,
+        1146
+      ],
+      "source_component_label": 42,
+      "source_root": [
+        829.0,
+        1144
+      ],
+      "source_scale": 0.825,
+      "translation": [
+        101,
+        219
+      ]
+    },
+    {
+      "hero": "bone-defender",
+      "form": "base",
+      "state": "cast",
+      "frame": 0,
+      "time_ms": 0,
+      "duration_ms": 220,
+      "file": "frames/cast-00.png",
+      "sha256": "1cc1850787537b06076d1ae24f09bef978ed6e9136a0960e2ed9331dd9dd5a19",
+      "source_sheet": "source/cast.png",
+      "source_sha256": "6645ac06c4c4da9394dea118cc54bc79db9b0aaf8c8a716a22fd63149fe12dad",
+      "source_rect": [
+        32,
+        39,
+        580,
+        630
+      ],
+      "source_component_label": 1,
+      "source_root": [
+        93.0,
+        628
+      ],
+      "source_scale": 0.755,
+      "translation": [
+        114,
+        205
+      ]
+    },
+    {
+      "hero": "bone-defender",
+      "form": "base",
+      "state": "cast",
+      "frame": 1,
+      "time_ms": 220,
+      "duration_ms": 250,
+      "file": "frames/cast-01.png",
+      "sha256": "8b2a4724cb4a11321e95c548e5e80af5a81cf243568955e17268836f07ef0f15",
+      "source_sheet": "source/cast.png",
+      "source_sha256": "6645ac06c4c4da9394dea118cc54bc79db9b0aaf8c8a716a22fd63149fe12dad",
+      "source_rect": [
+        686,
+        62,
+        1171,
+        630
+      ],
+      "source_component_label": 2,
+      "source_root": [
+        713.0,
+        628
+      ],
+      "source_scale": 0.755,
+      "translation": [
+        140,
+        223
+      ]
+    },
+    {
+      "hero": "bone-defender",
+      "form": "base",
+      "state": "cast",
+      "frame": 2,
+      "time_ms": 470,
+      "duration_ms": 160,
+      "file": "frames/cast-02.png",
+      "sha256": "46dc746a3ef5ceaf634f73b2cd230ab411168105dbd96cf48f5d47c7dfec0b12",
+      "source_sheet": "source/cast.png",
+      "source_sha256": "6645ac06c4c4da9394dea118cc54bc79db9b0aaf8c8a716a22fd63149fe12dad",
+      "source_rect": [
+        40,
+        722,
+        651,
+        1238
+      ],
+      "source_component_label": 40,
+      "source_root": [
+        87.0,
+        1236
+      ],
+      "source_scale": 0.755,
+      "translation": [
+        125,
+        262
+      ]
+    },
+    {
+      "hero": "bone-defender",
+      "form": "base",
+      "state": "cast",
+      "frame": 3,
+      "time_ms": 630,
+      "duration_ms": 270,
+      "file": "frames/cast-03.png",
+      "sha256": "35abb43c3c5d7cce1eede5a7720832b3ab620cb7b08b5f2fb7943a6668a8ae73",
+      "source_sheet": "source/cast.png",
+      "source_sha256": "6645ac06c4c4da9394dea118cc54bc79db9b0aaf8c8a716a22fd63149fe12dad",
+      "source_rect": [
+        712,
+        665,
+        1232,
+        1234
+      ],
+      "source_component_label": 35,
+      "source_root": [
+        763.0,
+        1232
+      ],
+      "source_scale": 0.755,
+      "translation": [
+        121,
+        222
+      ]
+    },
+    {
+      "hero": "bone-defender",
+      "form": "base",
+      "state": "die",
+      "frame": 0,
+      "time_ms": 0,
+      "duration_ms": 180,
+      "file": "frames/die-00.png",
+      "sha256": "f02646582bf02fd6c147d4b047fc9104b7f03599da75f991a06e722c7c953710",
+      "source_sheet": "source/die.png",
+      "source_sha256": "6b5e98e21bc1a3986b2827d6d113db67e47ab29fecb4dcfc2e1d9310fa1e2e96",
+      "source_rect": [
+        64,
+        54,
+        486,
+        558
+      ],
+      "source_component_label": 1,
+      "source_root": [
+        111,
+        556
+      ],
+      "source_scale": 0.886,
+      "translation": [
+        118,
+        205
+      ]
+    },
+    {
+      "hero": "bone-defender",
+      "form": "base",
+      "state": "die",
+      "frame": 1,
+      "time_ms": 180,
+      "duration_ms": 200,
+      "file": "frames/die-01.png",
+      "sha256": "985f2bd4ff556526336e623883b100700640506ff44e9ae3a9add61068578d63",
+      "source_sheet": "source/die.png",
+      "source_sha256": "6b5e98e21bc1a3986b2827d6d113db67e47ab29fecb4dcfc2e1d9310fa1e2e96",
+      "source_rect": [
+        595,
+        112,
+        1046,
+        557
+      ],
+      "source_component_label": 7,
+      "source_root": [
+        642,
+        555
+      ],
+      "source_scale": 0.886,
+      "translation": [
+        118,
+        258
+      ]
+    },
+    {
+      "hero": "bone-defender",
+      "form": "base",
+      "state": "die",
+      "frame": 2,
+      "time_ms": 380,
+      "duration_ms": 250,
+      "file": "frames/die-02.png",
+      "sha256": "f33933d45b0cedb9e2e8b232f28f48b3b6659290fd268a6d8e5aa23ce079da53",
+      "source_sheet": "source/die.png",
+      "source_sha256": "6b5e98e21bc1a3986b2827d6d113db67e47ab29fecb4dcfc2e1d9310fa1e2e96",
+      "source_rect": [
+        1081,
+        192,
+        1527,
+        558
+      ],
+      "source_component_label": 17,
+      "source_root": [
+        1128,
+        556
+      ],
+      "source_scale": 0.886,
+      "translation": [
+        118,
+        327
+      ]
+    },
+    {
+      "hero": "bone-defender",
+      "form": "base",
+      "state": "die",
+      "frame": 3,
+      "time_ms": 630,
+      "duration_ms": 260,
+      "file": "frames/die-03.png",
+      "sha256": "78af63571fd15c80ad7c36d690a8251764e9bc1774688cf56041bf99fba37865",
+      "source_sheet": "source/die.png",
+      "source_sha256": "6b5e98e21bc1a3986b2827d6d113db67e47ab29fecb4dcfc2e1d9310fa1e2e96",
+      "source_rect": [
+        10,
+        692,
+        529,
+        949
+      ],
+      "source_component_label": 60,
+      "source_root": [
+        57,
+        947
+      ],
+      "source_scale": 0.886,
+      "translation": [
+        118,
+        424
+      ]
+    },
+    {
+      "hero": "bone-defender",
+      "form": "base",
+      "state": "die",
+      "frame": 4,
+      "time_ms": 890,
+      "duration_ms": 350,
+      "file": "frames/die-04.png",
+      "sha256": "600752e02bea929a269f0c5ad5e69aaa49289acebf9ae98c83bdb41c9fb1604c",
+      "source_sheet": "source/die.png",
+      "source_sha256": "6b5e98e21bc1a3986b2827d6d113db67e47ab29fecb4dcfc2e1d9310fa1e2e96",
+      "source_rect": [
+        540,
+        737,
+        1036,
+        955
+      ],
+      "source_component_label": 72,
+      "source_root": [
+        587,
+        953
+      ],
+      "source_scale": 0.886,
+      "translation": [
+        118,
+        459
+      ]
+    },
+    {
+      "hero": "bone-defender",
+      "form": "base",
+      "state": "die",
+      "frame": 5,
+      "time_ms": 1240,
+      "duration_ms": 800,
+      "file": "frames/die-05.png",
+      "sha256": "6ed1b64f97f2bb80d6c4ad7a8e01dd2be1317076de1d1c969529535ee3d7e09d",
+      "source_sheet": "source/die.png",
+      "source_sha256": "6b5e98e21bc1a3986b2827d6d113db67e47ab29fecb4dcfc2e1d9310fa1e2e96",
+      "source_rect": [
+        1046,
+        751,
+        1530,
+        962
+      ],
+      "source_component_label": 78,
+      "source_root": [
+        1093,
+        960
+      ],
+      "source_scale": 0.886,
+      "translation": [
+        118,
+        465
+      ]
+    }
+  ]
+}

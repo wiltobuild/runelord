@@ -1,0 +1,32 @@
+{
+  "characterId": "shardstep-skitterer",
+  "revision": "ice-detail-r2-2026-10-13",
+  "status": "Pending approval",
+  "method": "built-in image_gen edit",
+  "source": "exec-f9e7a2a5-6fe7-492c-8e9d-26e56e67f125.png",
+  "sha256": "69819badf98de585e6f30f5aff72a74cb28aa9d35762a1413ff12d6456d4acc3",
+  "size": [
+    1536,
+    1024
+  ],
+  "alphaExtrema": [
+    0,
+    254
+  ],
+  "identityReference": {
+    "path": "assets\\characters\\shardstep-skitterer\\base\\ice-roster-r1\\base.png",
+    "sha256": "aa064acf124a72e871186f1fff70d23761aa5fa5191d4c3842d1daf6c2ee501c"
+  },
+  "styleReference": {
+    "path": "assets\\characters\\avalanche-colossus\\base\\ice-roster-r2\\base.png",
+    "sha256": "c4c6ae8b6243ff2f2631cd84632dd4b0c45c8178704f75b2fbc2293f9f12b4d9",
+    "status": "Approved",
+    "evidenceId": "fdd2dbac-29c7-4e35-9049-5a178f074a09"
+  },
+  "userDirection": "Increase detail and material texture to approved Avalanche Colossus r2; preserve identity, anatomy and pose. Overrides older simplicity preference for this revision.",
+  "prompt": "prompt.txt",
+  "qa": "pending visual composites inspection",
+  "limitations": [
+    "Base artwork only; no new approval, animation or runtime integration."
+  ]
+}

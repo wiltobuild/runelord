@@ -1,0 +1,35 @@
+{
+  "character_id": "spindleback-threadwarden",
+  "frame_count": 20,
+  "canvas": [
+    440,
+    400
+  ],
+  "states": [
+    "idle",
+    "attack",
+    "hit",
+    "wounded_idle",
+    "die",
+    "cast"
+  ],
+  "transparent_frames_verified": true,
+  "death_loop": false,
+  "base_approval": "e748f0b2-d03c-4155-80b8-1f6f143a638a",
+  "preview_sha256": "5a99188196aa3f00906e572a2e7dd743cbfbced849932359e508cd499bc95807",
+  "preview_gallery_id": "5a5d361a4b8c862466b0d912",
+  "preview_approval": "Pending approval",
+  "playback": {
+    "method": "Headless Chrome timed playback captures at native canvas and small size; inspected captures",
+    "status": "verified at review level; low-frame cadence and identity-detail variation remain",
+    "evidence": "C:\\Users\\wilsh\\Documents\\Codex\\2026-10-02\\use\\work\\playback\\spindleback-threadwarden\\playback-audit.json"
+  },
+  "limitations": [
+    "Generated animation review assets, not a production-ready rig.",
+    "Per-frame native artwork approximately 280-320 pixels high; source sheet has HD dimensions, individual frames do not.",
+    "Low-frame-count motion and hand/cloth/mark detail drift need temporal art review before game integration.",
+    "Technical extraction isolates disconnected sprites, preserves pose pixels, aligns ground, and uniformly downsamples separate attack repair strip. No procedural artwork or whole-image-motion substitute.",
+    "Raised/tamed forms excluded by direct approved-base scope."
+  ],
+  "delivery_level": "Articulated frame animation review pack; not certified production-ready"
+}

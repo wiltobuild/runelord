@@ -1,0 +1,20 @@
+{
+  "method": "Built-in image generation edits",
+  "userDirection": "i liek the middle one as is, lets make the other two more serious and gritty",
+  "approvedUnchanged": {
+    "slug": "frost-thrall",
+    "revision": "concept-r1",
+    "sha256": "b567aa885ce19766259b70d4af812bb4d2d0b49b5c63a95728f3e01cb2dd1c0d",
+    "evidenceId": "9a53e5f6-cc0e-4cde-9f1f-f6b30ad0e1a0"
+  },
+  "revisions": [
+    {
+      "slug": "bone-thrall",
+      "prompt": "Edit image 1 Bone Thrall to be substantially more serious, grim and gritty. Image 2 approved Shatterbound is the rendering and severity reference ONLY. Preserve Bone Thrall identity: lean skeletal undead, exposed ribs, broken shoulder armor, chipped falchion right hand, empty claw left hand, tattered teal cloth, tiny icy blue eyes, full body facing right. Redesign the overly clean heroic head into a gaunt long weathered skull: deep narrow hostile eye sockets under a low crushed iron brow, asymmetrical broken cheek and damaged jaw, no smiling teeth/grin or cute face. Smaller head relative to body, long threatening hunched neck, angular predatory pose. Replace bright silver armor with matte dark cold iron and large sparse rust-brown patches, dented uneven plates, rough leather wraps, dirty ash-grey bone with broad dark crevices, ragged muted charcoal-teal scraps. Falchion is heavy functional dark steel with a few large notches, minimal frost edge and NO giant glowing weapon emblem. One small binding rune in chest. Maintain readable strong shapes. Match approved Runelord serious flat 2D cel shading: broad graphic color regions, hard edged shadows, selective bold wear. No photorealism, realistic texture, painterly shading, 3D, PBR, gradients, dense speckles or decorative clutter. Real alpha transparency, single complete figure with margin around all extremities and grounded feet, no scenery, no text. Clearly an undead battlefield scavenger, visibly grittier than image 1."
+    },
+    {
+      "slug": "risen-legionnaire",
+      "prompt": "Edit image 1 Risen Legionnaire to be substantially more serious and gritty. Image 2 approved Shatterbound is rendering/severity reference ONLY. Preserve armored undead shield soldier identity, full body shallow three quarter facing right, left arm broad shield and right hand sword, grounded stance. Replace pristine rounded heroic silver armor with severe angular battered dark iron plate, asymmetrical damaged shoulders, a low brutal narrow slit helmet with damaged nasal guard and most jaw concealed in shadow (no toothy smiling mouth), tightly narrowed icy eyes. More imposing military proportions: slightly smaller helmet, broad stooped shoulders, armored weight braced behind shield. Worn charcoal blue tabard, frayed short cloth, muddy dark leather straps, sparse large cold rust patches and meaningful edge chips, visibly battle-scarred. Shield rough dark iron and aged near-black wood with one faded frost rune, cracked rim, three broad slash gouges, restrained ice seams. Sword brutal chipped straight steel with small icy edge, no huge glowing emblem or crystalline toy look. Limit cyan to eyes, little frost and worn shield rune. Preserve sufficient midtone areas for legibility. Broad flat 2D color shapes and hard-edged cel shadows matching Runelord; no realistic anatomy, photorealism, painterly gradients, PBR, 3D, fine grunge noise or excessive decorative detail. Full figure and weapons inside canvas with generous margins. Genuine transparent background, no scene, no text."
+    }
+  ]
+}

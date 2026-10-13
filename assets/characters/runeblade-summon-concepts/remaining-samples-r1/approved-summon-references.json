@@ -1,0 +1,38 @@
+[
+  {
+    "file": "bone-thrall-concept-r3.png",
+    "sha256": "66b584fa3f80878616790d4d0ddbfb39d04710aef670beb4ccc780c64c11205e",
+    "decision": {
+      "status": "Approved",
+      "at": "2026-10-05T10:21:59.4Z",
+      "evidenceId": "d3c6b781-d26a-458a-92dc-7e388bd80fc4",
+      "paths": [
+        "C:/Users/wilsh/Projects/runelord/assets/characters/runeblade-summon-concepts/2026-10-05-r3/bone-thrall-concept-r3.png"
+      ]
+    }
+  },
+  {
+    "file": "frost-thrall-concept-r1.png",
+    "sha256": "b567aa885ce19766259b70d4af812bb4d2d0b49b5c63a95728f3e01cb2dd1c0d",
+    "decision": {
+      "status": "Approved",
+      "at": "2026-10-05T09:58:44.514Z",
+      "evidenceId": "9a53e5f6-cc0e-4cde-9f1f-f6b30ad0e1a0",
+      "paths": [
+        "C:/Users/wilsh/Projects/runelord/assets/characters/runeblade-summon-concepts/2026-10-05-r1/frost-thrall-concept-r1.png"
+      ]
+    }
+  },
+  {
+    "file": "risen-legionnaire-concept-r3.png",
+    "sha256": "8cbf9775adebf82dc0018adf9da816a1b1fd1b258f298b8d8f82d06b9ebfae86",
+    "decision": {
+      "status": "Approved",
+      "at": "2026-10-05T10:21:59.497Z",
+      "evidenceId": "49a930e1-ea68-408b-9525-1a7a3746babf",
+      "paths": [
+        "C:/Users/wilsh/Projects/runelord/assets/characters/runeblade-summon-concepts/2026-10-05-r3/risen-legionnaire-concept-r3.png"
+      ]
+    }
+  }
+]

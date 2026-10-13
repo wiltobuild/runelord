@@ -1,0 +1,13 @@
+{
+  "art_repairs": [],
+  "review_actions": [
+    {
+      "id": "SQ-05",
+      "severity": "major",
+      "category": "review-coverage",
+      "frames": "all32",
+      "description": "Reviewer could inspect static frames but child browser inventory unavailable. Normal/slow timed playback not personally observed. Parent will provide separate evidence.",
+      "repair": "Observe native player at normal and slow speed, full and 96px on both backgrounds; verify idle seam, hit recovery and terminal death hold."
+    }
+  ]
+}

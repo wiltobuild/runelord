@@ -1,0 +1,296 @@
+{
+  "character_id": "shardstep-skitterer",
+  "revision": "idle-2026-10-13",
+  "state": "idle",
+  "format": "whole-character-authored-frames",
+  "motion": "Six-legged suspension flex and alternating antennae",
+  "loop": true,
+  "duration_ms": 1080,
+  "frame_count": 6,
+  "canvas": [
+    711,
+    711
+  ],
+  "anchor": [
+    355,
+    669
+  ],
+  "coordinate_system": "pixels, top-left origin, x right, y down",
+  "atlas": "idle-atlas.png",
+  "frames": [
+    {
+      "file": "frames/idle-00.png",
+      "duration_ms": 180,
+      "source_rect": [
+        0,
+        0,
+        637,
+        627
+      ],
+      "source_offset": [
+        37,
+        92
+      ],
+      "atlas_rect": [
+        0,
+        0,
+        711,
+        711
+      ]
+    },
+    {
+      "file": "frames/idle-01.png",
+      "duration_ms": 180,
+      "source_rect": [
+        637,
+        0,
+        1254,
+        627
+      ],
+      "source_offset": [
+        47,
+        88
+      ],
+      "atlas_rect": [
+        711,
+        0,
+        711,
+        711
+      ]
+    },
+    {
+      "file": "frames/idle-02.png",
+      "duration_ms": 180,
+      "source_rect": [
+        0,
+        0,
+        637,
+        627
+      ],
+      "source_offset": [
+        37,
+        92
+      ],
+      "atlas_rect": [
+        1422,
+        0,
+        711,
+        711
+      ]
+    },
+    {
+      "file": "frames/idle-03.png",
+      "duration_ms": 180,
+      "source_rect": [
+        0,
+        627,
+        637,
+        1254
+      ],
+      "source_offset": [
+        37,
+        96
+      ],
+      "atlas_rect": [
+        2133,
+        0,
+        711,
+        711
+      ]
+    },
+    {
+      "file": "frames/idle-04.png",
+      "duration_ms": 180,
+      "source_rect": [
+        637,
+        627,
+        1254,
+        1254
+      ],
+      "source_offset": [
+        47,
+        95
+      ],
+      "atlas_rect": [
+        0,
+        711,
+        711,
+        711
+      ]
+    },
+    {
+      "file": "frames/idle-05.png",
+      "duration_ms": 180,
+      "source_rect": [
+        0,
+        627,
+        637,
+        1254
+      ],
+      "source_offset": [
+        37,
+        96
+      ],
+      "atlas_rect": [
+        711,
+        711,
+        711,
+        711
+      ]
+    }
+  ],
+  "events": [],
+  "transition": "loops to idle frame 0",
+  "source_approval": {
+    "id": "shardstep-skitterer",
+    "name": "Shardstep Skitterer",
+    "path": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\characters\\shardstep-skitterer\\base\\ice-detail-r2-2026-10-13\\master.png",
+    "sha256": "69819badf98de585e6f30f5aff72a74cb28aa9d35762a1413ff12d6456d4acc3",
+    "decision": {
+      "status": "Approved",
+      "at": "2026-10-13T05:09:41.486Z",
+      "evidenceId": "71cd1195-8259-47be-9e1a-480955e5d224",
+      "paths": [
+        "C:\\Users\\wilsh\\Projects\\runelord\\assets\\characters\\shardstep-skitterer\\base\\ice-detail-r2-2026-10-13\\master.png"
+      ]
+    }
+  },
+  "generation": {
+    "tool": "built-in image_gen",
+    "prompt": "Create FOUR animation keyframes of this exact approved six-legged Shardstep Skitterer, arranged 2 columns by 2 rows on a square transparent spritesheet. Preserve SIX legs, two antennae, wide low insect shell, ice spines and rune plates. Four subtle idle poses: neutral; body 2% higher and antennae flex inward; body settles neutral with antennae outward; body 1% lower and mandibles slightly open. Fixed planted feet, exact same size and 3/4 left-facing camera. All poses fully separated with lots of clear empty space, 15% margin on every side of each cell. Entire character INCLUDING all six pointed feet must fit well inside each cell, NO overlaps. Detailed serious cel-shaded approved style and muted icy palette, stable limb count. True transparent alpha, no glow cloud, text, lines, shadows, frames, scenery. This is 2x2, exactly FOUR complete sprites.",
+    "source_sheet": "source-sheet.png",
+    "source_sheet_dimensions": [
+      1254,
+      1254
+    ]
+  },
+  "states_not_produced": [
+    "attack",
+    "hit",
+    "wounded_idle",
+    "die",
+    "cast",
+    "guard",
+    "spawn",
+    "victory"
+  ],
+  "review_status": "pending approval",
+  "technical_qa": [
+    {
+      "frame": 0,
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "strong_bounds": [
+        19,
+        97,
+        626,
+        577
+      ],
+      "strong_touches_cell_edge": false
+    },
+    {
+      "frame": 1,
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "strong_bounds": [
+        14,
+        97,
+        601,
+        581
+      ],
+      "strong_touches_cell_edge": false
+    },
+    {
+      "frame": 2,
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "strong_bounds": [
+        19,
+        97,
+        626,
+        577
+      ],
+      "strong_touches_cell_edge": false
+    },
+    {
+      "frame": 3,
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "strong_bounds": [
+        16,
+        96,
+        634,
+        573
+      ],
+      "strong_touches_cell_edge": false
+    },
+    {
+      "frame": 4,
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "strong_bounds": [
+        6,
+        96,
+        601,
+        574
+      ],
+      "strong_touches_cell_edge": false
+    },
+    {
+      "frame": 5,
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "strong_bounds": [
+        16,
+        96,
+        634,
+        573
+      ],
+      "strong_touches_cell_edge": false
+    }
+  ],
+  "limitations": [
+    "Generated whole-character frames; modest pose and surface variation requires user review.",
+    "No game integration or combat states."
+  ],
+  "preview_files": [
+    "preview-dark.gif",
+    "preview-light.gif"
+  ],
+  "authored_pose_count": 4,
+  "preview_hashes": {
+    "preview-dark.gif": "653ea33bfb320c0418589eb2ffc69a5788aec660e98c45604e42965a5c05241f",
+    "preview-light.gif": "fc6c463ea88005181e2573c3c7185da942b85133fcc801c530446728afeb7528"
+  },
+  "builder_review": {
+    "dark_playback": "Actual gallery GIF sampled in browser at different times; complete silhouettes and readable 96px small versions.",
+    "light_review": "Full-size and 96px keypose reviewed; light GIF created and decoded but continuous playback not fully observed.",
+    "remaining": "Independent review pending; minor generated pose/surface variance. Coffinback frame 3 source boundary alpha flag retained for reviewer."
+  },
+  "gif_verification": [
+    {
+      "file": "preview-dark.gif",
+      "decoded_frames": 6,
+      "duration_ms": 1080,
+      "loop": 0
+    },
+    {
+      "file": "preview-light.gif",
+      "decoded_frames": 6,
+      "duration_ms": 1080,
+      "loop": 0
+    }
+  ]
+}

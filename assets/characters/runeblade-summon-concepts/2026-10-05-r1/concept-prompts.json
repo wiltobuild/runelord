@@ -1,0 +1,35 @@
+{
+  "status": "Three independent concept samples; pending user review; no animation or runtime integration.",
+  "method": "Built-in image generation",
+  "styleReference": {
+    "path": "C:/Users/wilsh/Projects/runelord/assets/heroes/references/runeblade/runeblade-base-r1.png",
+    "sha256": "adbd33fb14e91b761f355ffeb9966cb262aacca78429099ec09b0fab9faf84ef",
+    "evidenceId": "user-chat-2026-10-01-approve-existing-runelord"
+  },
+  "concepts": [
+    {
+      "slug": "bone-thrall",
+      "name": "Bone Thrall — Grave Scrapper",
+      "desc": "A lean hunched skeleton with broad angular rib shapes, narrow icy blue eye slits, battered open iron cap, one broken shoulder plate, ragged slate teal waistcloth. Grips a chipped short falchion in right hand; empty claw-like left hand. An ice-blue rune binds the sternum. Brittle scavenged silhouette, recognizable skull with hostile brow, no cute expression.",
+      "prompt": "Use case: stylized-concept. Create ONE full-body Runelord summon concept on genuine transparent background, no text or scenery. Supplied approved Runeblade image is STYLE and PALETTE reference only, not identity to copy. Serious simplified 2D cel shaded game illustration, broad clean flat color regions, crisp edges, one hard edged shadow per material, chunky stylized proportions and equipment, selective large wear marks. No realistic anatomy, painterly gradients, PBR, 3D, fine scratch texture, tiny decoration, bloom or cute expression. Steel, desaturated blue-grey, muted teal and restricted icy cyan magic. Facing RIGHT in shallow three quarter view, complete silhouette within frame with generous padding, both feet grounded at same baseline, visible negative spaces between limbs; 1024px or greater. This is a fresh independent concept sample, not a variant of the supplied hero. Subject: A lean hunched skeleton with broad angular rib shapes, narrow icy blue eye slits, battered open iron cap, one broken shoulder plate, ragged slate teal waistcloth. Grips a chipped short falchion in right hand; empty claw-like left hand. An ice-blue rune binds the sternum. Brittle scavenged silhouette, recognizable skull with hostile brow, no cute expression.",
+      "revision": "concept-r1",
+      "construction": "Flattened concept only. Proposed humanoid parts: head, torso, pelvis, paired upper/lower arms and legs, weapon, cloth; shield for Legionnaire. No separated layers or rig."
+    },
+    {
+      "slug": "frost-thrall",
+      "name": "Frost Thrall — Shatterbound",
+      "desc": "A broad heavy undead fallen human raider, blue-grey corpse skin, severe sunken face, cropped pale hair, massive asymmetrical ice formations sealing a shoulder wound and cracked torso. One large ice shoulder, battered leather harness and torn charcoal skirt, heavy boots, thick blunt chipped axe held low. Ice stitches the corpse together but preserves clearly human anatomy. Head bent forward with cold blue eyes, shambling weighty menace. No gore.",
+      "prompt": "Use case: stylized-concept. Create ONE full-body Runelord summon concept on genuine transparent background, no text or scenery. Supplied approved Runeblade image is STYLE and PALETTE reference only, not identity to copy. Serious simplified 2D cel shaded game illustration, broad clean flat color regions, crisp edges, one hard edged shadow per material, chunky stylized proportions and equipment, selective large wear marks. No realistic anatomy, painterly gradients, PBR, 3D, fine scratch texture, tiny decoration, bloom or cute expression. Steel, desaturated blue-grey, muted teal and restricted icy cyan magic. Facing RIGHT in shallow three quarter view, complete silhouette within frame with generous padding, both feet grounded at same baseline, visible negative spaces between limbs; 1024px or greater. This is a fresh independent concept sample, not a variant of the supplied hero. Subject: A broad heavy undead fallen human raider, blue-grey corpse skin, severe sunken face, cropped pale hair, massive asymmetrical ice formations sealing a shoulder wound and cracked torso. One large ice shoulder, battered leather harness and torn charcoal skirt, heavy boots, thick blunt chipped axe held low. Ice stitches the corpse together but preserves clearly human anatomy. Head bent forward with cold blue eyes, shambling weighty menace. No gore.",
+      "revision": "concept-r1",
+      "construction": "Flattened concept only. Proposed humanoid parts: head, torso, pelvis, paired upper/lower arms and legs, weapon, cloth; shield for Legionnaire. No separated layers or rig."
+    },
+    {
+      "slug": "risen-legionnaire",
+      "name": "Risen Legionnaire — Oathguard",
+      "desc": "A disciplined undead armored soldier with a cracked angular closed iron helmet showing blue eye slits and a small skeletal jaw gap, steel blue layered plate, faded torn deep teal tabard. Broad rectangular shield bearing one large frosted rune on the left arm, short heavy sword in right hand. Upright braced guard stance, shield angled so torso and legs remain readable. Squared shoulders, sparse ice on armor seams, stern ancient military silhouette. Distinct from the reference hero: shield soldier, not greatsword knight.",
+      "prompt": "Use case: stylized-concept. Create ONE full-body Runelord summon concept on genuine transparent background, no text or scenery. Supplied approved Runeblade image is STYLE and PALETTE reference only, not identity to copy. Serious simplified 2D cel shaded game illustration, broad clean flat color regions, crisp edges, one hard edged shadow per material, chunky stylized proportions and equipment, selective large wear marks. No realistic anatomy, painterly gradients, PBR, 3D, fine scratch texture, tiny decoration, bloom or cute expression. Steel, desaturated blue-grey, muted teal and restricted icy cyan magic. Facing RIGHT in shallow three quarter view, complete silhouette within frame with generous padding, both feet grounded at same baseline, visible negative spaces between limbs; 1024px or greater. This is a fresh independent concept sample, not a variant of the supplied hero. Subject: A disciplined undead armored soldier with a cracked angular closed iron helmet showing blue eye slits and a small skeletal jaw gap, steel blue layered plate, faded torn deep teal tabard. Broad rectangular shield bearing one large frosted rune on the left arm, short heavy sword in right hand. Upright braced guard stance, shield angled so torso and legs remain readable. Squared shoulders, sparse ice on armor seams, stern ancient military silhouette. Distinct from the reference hero: shield soldier, not greatsword knight.",
+      "revision": "concept-r1",
+      "construction": "Flattened concept only. Proposed humanoid parts: head, torso, pelvis, paired upper/lower arms and legs, weapon, cloth; shield for Legionnaire. No separated layers or rig."
+    }
+  ]
+}

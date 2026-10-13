@@ -1,0 +1,365 @@
+{
+  "character_id": "shardlance-stalker",
+  "revision": "idle-2026-10-13",
+  "state": "idle",
+  "format": "whole-character-authored-frames",
+  "motion": "Guarded torso breathing with spear and ragged cloth follow-through",
+  "loop": true,
+  "duration_ms": 1520,
+  "frame_count": 8,
+  "canvas": [
+    528,
+    576
+  ],
+  "anchor": [
+    264,
+    534
+  ],
+  "coordinate_system": "pixels, top-left origin, x right, y down",
+  "atlas": "idle-atlas.png",
+  "frames": [
+    {
+      "file": "frames/idle-00.png",
+      "duration_ms": 190,
+      "source_rect": [
+        0,
+        0,
+        444,
+        444
+      ],
+      "source_offset": [
+        42,
+        100
+      ],
+      "atlas_rect": [
+        0,
+        0,
+        528,
+        576
+      ]
+    },
+    {
+      "file": "frames/idle-01.png",
+      "duration_ms": 190,
+      "source_rect": [
+        444,
+        0,
+        887,
+        444
+      ],
+      "source_offset": [
+        42,
+        100
+      ],
+      "atlas_rect": [
+        528,
+        0,
+        528,
+        576
+      ]
+    },
+    {
+      "file": "frames/idle-02.png",
+      "duration_ms": 190,
+      "source_rect": [
+        887,
+        0,
+        1330,
+        444
+      ],
+      "source_offset": [
+        42,
+        100
+      ],
+      "atlas_rect": [
+        1056,
+        0,
+        528,
+        576
+      ]
+    },
+    {
+      "file": "frames/idle-03.png",
+      "duration_ms": 190,
+      "source_rect": [
+        1330,
+        0,
+        1774,
+        444
+      ],
+      "source_offset": [
+        42,
+        100
+      ],
+      "atlas_rect": [
+        1584,
+        0,
+        528,
+        576
+      ]
+    },
+    {
+      "file": "frames/idle-04.png",
+      "duration_ms": 190,
+      "source_rect": [
+        0,
+        444,
+        444,
+        887
+      ],
+      "source_offset": [
+        42,
+        101
+      ],
+      "atlas_rect": [
+        0,
+        576,
+        528,
+        576
+      ]
+    },
+    {
+      "file": "frames/idle-05.png",
+      "duration_ms": 190,
+      "source_rect": [
+        444,
+        444,
+        887,
+        887
+      ],
+      "source_offset": [
+        42,
+        101
+      ],
+      "atlas_rect": [
+        528,
+        576,
+        528,
+        576
+      ]
+    },
+    {
+      "file": "frames/idle-06.png",
+      "duration_ms": 190,
+      "source_rect": [
+        887,
+        444,
+        1330,
+        887
+      ],
+      "source_offset": [
+        42,
+        101
+      ],
+      "atlas_rect": [
+        1056,
+        576,
+        528,
+        576
+      ]
+    },
+    {
+      "file": "frames/idle-07.png",
+      "duration_ms": 190,
+      "source_rect": [
+        1330,
+        444,
+        1774,
+        887
+      ],
+      "source_offset": [
+        42,
+        101
+      ],
+      "atlas_rect": [
+        1584,
+        576,
+        528,
+        576
+      ]
+    }
+  ],
+  "events": [],
+  "transition": "loops to idle frame 0",
+  "source_approval": {
+    "id": "shardlance-stalker",
+    "name": "Shardlance Stalker",
+    "path": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\approvals\\inbox\\shardlance-stalker\\ice-roster-r1\\master.png",
+    "sha256": "872f31b1f3e2acfa16a6e330d32b5ef7dc1662816a73ea4f718e5769ea8028a4",
+    "decision": {
+      "status": "Approved",
+      "at": "2026-10-13T05:06:52.799Z",
+      "evidenceId": "1316bad9-8645-453e-97d3-2a6094f05866",
+      "paths": [
+        "C:\\Users\\wilsh\\Projects\\runelord\\assets\\approvals\\inbox\\shardlance-stalker\\ice-roster-r1\\master.png"
+      ]
+    }
+  },
+  "generation": {
+    "tool": "built-in image_gen",
+    "prompt": "Generate NEW corrected 8-frame spritesheet from the approved Shardlance Stalker reference. Must be exactly 4 columns x 2 rows on a wide 2048x1024 transparent canvas. Each 512x512 cell contains one COMPLETE warrior including BOTH ends of entire spear, with at least 40px empty padding all sides. Creature occupies only 75% of cell width. Do not cut off spear, feet or cape. Eight almost identical poses of very small breathing cycle: torso lift and lower, scarf tips sway, feet remain planted. Stable 3/4 camera facing left, exact dark blue ragged tabard, tall pointed ice helm, silver round clasps and crystal pendants, two hands firmly grasp long ice spear across body. Preserve approved angular anatomy and serious cel-shaded 2D colors and materials, no added details. Frame1 neutral, 2 inhale,3 peak,4 settle,5 neutral,6 low,7 recovery,8 neutral-near1. No scenery, aura, haze, shadow, text, grid or labels. TRUE TRANSPARENT ALPHA outside each character.",
+    "source_sheet": "source-sheet.png",
+    "source_sheet_dimensions": [
+      1774,
+      887
+    ]
+  },
+  "states_not_produced": [
+    "attack",
+    "hit",
+    "wounded_idle",
+    "die",
+    "cast",
+    "guard",
+    "spawn",
+    "victory"
+  ],
+  "review_status": "pending approval",
+  "technical_qa": [
+    {
+      "frame": 0,
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "strong_bounds": [
+        10,
+        48,
+        430,
+        434
+      ],
+      "strong_touches_cell_edge": false
+    },
+    {
+      "frame": 1,
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "strong_bounds": [
+        10,
+        43,
+        432,
+        434
+      ],
+      "strong_touches_cell_edge": false
+    },
+    {
+      "frame": 2,
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "strong_bounds": [
+        10,
+        16,
+        431,
+        434
+      ],
+      "strong_touches_cell_edge": false
+    },
+    {
+      "frame": 3,
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "strong_bounds": [
+        11,
+        45,
+        430,
+        434
+      ],
+      "strong_touches_cell_edge": false
+    },
+    {
+      "frame": 4,
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "strong_bounds": [
+        11,
+        40,
+        429,
+        433
+      ],
+      "strong_touches_cell_edge": false
+    },
+    {
+      "frame": 5,
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "strong_bounds": [
+        10,
+        55,
+        431,
+        433
+      ],
+      "strong_touches_cell_edge": false
+    },
+    {
+      "frame": 6,
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "strong_bounds": [
+        11,
+        37,
+        431,
+        433
+      ],
+      "strong_touches_cell_edge": false
+    },
+    {
+      "frame": 7,
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "strong_bounds": [
+        12,
+        41,
+        430,
+        433
+      ],
+      "strong_touches_cell_edge": false
+    }
+  ],
+  "limitations": [
+    "Generated whole-character frames; modest pose and surface variation requires user review.",
+    "No game integration or combat states."
+  ],
+  "preview_files": [
+    "preview-dark.gif",
+    "preview-light.gif"
+  ],
+  "authored_pose_count": 8,
+  "preview_hashes": {
+    "preview-dark.gif": "835ffecf423f4fb9c9e08ef3885afcf9c9bda1714a2d031f9b0ed9ccb6c2dfc8",
+    "preview-light.gif": "77a5e3d44799c1faaf948991b68a2d77fc9b13b090a61bef404e6e26090f2438"
+  },
+  "builder_review": {
+    "dark_playback": "Actual gallery GIF sampled in browser at different times; complete silhouettes and readable 96px small versions.",
+    "light_review": "Full-size and 96px keypose reviewed; light GIF created and decoded but continuous playback not fully observed.",
+    "remaining": "Independent review pending; minor generated pose/surface variance. Coffinback frame 3 source boundary alpha flag retained for reviewer.",
+    "rune_audit": "All 8 numbered PNGs inspected individually at native size. Upper small diamond and lower elongated diamond/angular tail retained on tabard; separate ring-hung pendant is not a tabard rune. Both feet end at y534; small 1-3px horizontal source variance remains."
+  },
+  "gif_verification": [
+    {
+      "file": "preview-dark.gif",
+      "decoded_frames": 8,
+      "duration_ms": 1520,
+      "loop": 0
+    },
+    {
+      "file": "preview-light.gif",
+      "decoded_frames": 8,
+      "duration_ms": 1520,
+      "loop": 0
+    }
+  ]
+}

@@ -1,0 +1,46 @@
+{
+  "character_id": "shardstep-skitterer",
+  "display_name": "Shardstep Skitterer",
+  "role": "ambusher",
+  "status": "base_pending",
+  "source_revision": "03338e4da39bbaf1f48651557e45f71f455a291a",
+  "method": "built-in image_gen",
+  "source": "C:/Users/wilsh/.codex/generated_images/01a13279-3456-74b2-b38a-630b9fc043ef/exec-14021a4e-c57a-482a-a3ea-fa51d35ff994.png",
+  "asset": "base.png",
+  "dimensions": [
+    1536,
+    1024
+  ],
+  "alphaRange": [
+    0,
+    254
+  ],
+  "referencePaths": [
+    "C:/Users/wilsh/Projects/runelord/assets/approvals/inbox/dragon-frost-mammoth/base-r1/base-r1.png",
+    "C:/Users/wilsh/Projects/runelord/assets/heroes/references/runeblade/runeblade-base-r1.png"
+  ],
+  "referenceHashes": [
+    "3730fd449dda0734e012f6fa91fb10244b2396421d93a3e2e6099780ba3378cd",
+    "adbd33fb14e91b761f355ffeb9966cb262aacca78429099ec09b0fab9faf84ef"
+  ],
+  "referenceEvidenceIds": [
+    "3d3835b8-f2f8-4ce8-8acd-cd24979a21b7",
+    "user-chat-2026-10-01-approve-existing-runelord"
+  ],
+  "brief": "Low six-legged ice arthropod, narrow wedge-shaped silver-blue carapace and SIX long angular segmented skating legs ending in broad ice-chisel points. Two short sensory antennae, small split mandibles, no pincers, no wings, no tail. Geometric navy abdominal plates, three large pale ice shards across back, visible negative spaces between all six legs. Predatory tense low pose.",
+  "construction": {
+    "status": "proposed only; no separated layers",
+    "parts": "head, thorax, abdomen, six three-segment legs, mandibles, antennae, ice crest"
+  },
+  "qa": {
+    "fullSize": "inspected; cel style, complete silhouette and distinct role",
+    "runtime": "not implemented",
+    "limitations": [
+      "Design base only; no animation, variants, separated parts, approval or gameplay certification.",
+      "Six-legged brief; overlapping rear legs need anatomy verification before animation."
+    ],
+    "at96px": "inspected; wolf, skitterer, ray distinguishable at 96px",
+    "alphaComposite": "PASS: inspected explicit alpha composites on light and dark; no surrounding halo. Initial raw viewer displayed hidden RGB as haze."
+  },
+  "sha256": "aa064acf124a72e871186f1fff70d23761aa5fa5191d4c3842d1daf6c2ee501c"
+}

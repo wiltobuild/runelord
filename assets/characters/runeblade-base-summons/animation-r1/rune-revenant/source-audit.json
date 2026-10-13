@@ -1,0 +1,806 @@
+{
+  "status": "review_pending",
+  "note": "Technical bounds only, no visual pass claim",
+  "frames": [
+    {
+      "state": "idle",
+      "frame": 0,
+      "source": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\characters\\runeblade-base-summons\\animation-r1\\rune-revenant\\source\\idle.png",
+      "source_sha256": "752a32f34be09f1b6caa08ebe01258b3a4abd990919ac8a20293eb9ff2df5dae",
+      "cell_rect": [
+        0,
+        0,
+        362,
+        543
+      ],
+      "bounds_alpha32": [
+        77,
+        142,
+        349,
+        521
+      ],
+      "source_edge_pixels": {
+        "left": 0,
+        "right": 0,
+        "top": 0,
+        "bottom": 0
+      },
+      "verdict": "technical_source_edge_clear"
+    },
+    {
+      "state": "idle",
+      "frame": 1,
+      "source": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\characters\\runeblade-base-summons\\animation-r1\\rune-revenant\\source\\idle.png",
+      "source_sha256": "752a32f34be09f1b6caa08ebe01258b3a4abd990919ac8a20293eb9ff2df5dae",
+      "cell_rect": [
+        362,
+        0,
+        724,
+        543
+      ],
+      "bounds_alpha32": [
+        69,
+        140,
+        341,
+        521
+      ],
+      "source_edge_pixels": {
+        "left": 0,
+        "right": 0,
+        "top": 0,
+        "bottom": 0
+      },
+      "verdict": "technical_source_edge_clear"
+    },
+    {
+      "state": "idle",
+      "frame": 2,
+      "source": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\characters\\runeblade-base-summons\\animation-r1\\rune-revenant\\source\\idle.png",
+      "source_sha256": "752a32f34be09f1b6caa08ebe01258b3a4abd990919ac8a20293eb9ff2df5dae",
+      "cell_rect": [
+        724,
+        0,
+        1086,
+        543
+      ],
+      "bounds_alpha32": [
+        51,
+        161,
+        316,
+        520
+      ],
+      "source_edge_pixels": {
+        "left": 0,
+        "right": 0,
+        "top": 0,
+        "bottom": 0
+      },
+      "verdict": "technical_source_edge_clear"
+    },
+    {
+      "state": "idle",
+      "frame": 3,
+      "source": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\characters\\runeblade-base-summons\\animation-r1\\rune-revenant\\source\\idle.png",
+      "source_sha256": "752a32f34be09f1b6caa08ebe01258b3a4abd990919ac8a20293eb9ff2df5dae",
+      "cell_rect": [
+        1086,
+        0,
+        1448,
+        543
+      ],
+      "bounds_alpha32": [
+        39,
+        148,
+        306,
+        521
+      ],
+      "source_edge_pixels": {
+        "left": 0,
+        "right": 0,
+        "top": 0,
+        "bottom": 0
+      },
+      "verdict": "technical_source_edge_clear"
+    },
+    {
+      "state": "idle",
+      "frame": 4,
+      "source": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\characters\\runeblade-base-summons\\animation-r1\\rune-revenant\\source\\idle.png",
+      "source_sha256": "752a32f34be09f1b6caa08ebe01258b3a4abd990919ac8a20293eb9ff2df5dae",
+      "cell_rect": [
+        0,
+        543,
+        362,
+        1086
+      ],
+      "bounds_alpha32": [
+        77,
+        87,
+        358,
+        455
+      ],
+      "source_edge_pixels": {
+        "left": 0,
+        "right": 0,
+        "top": 0,
+        "bottom": 0
+      },
+      "verdict": "technical_source_edge_clear"
+    },
+    {
+      "state": "idle",
+      "frame": 5,
+      "source": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\characters\\runeblade-base-summons\\animation-r1\\rune-revenant\\source\\idle.png",
+      "source_sha256": "752a32f34be09f1b6caa08ebe01258b3a4abd990919ac8a20293eb9ff2df5dae",
+      "cell_rect": [
+        362,
+        543,
+        724,
+        1086
+      ],
+      "bounds_alpha32": [
+        67,
+        93,
+        349,
+        454
+      ],
+      "source_edge_pixels": {
+        "left": 0,
+        "right": 0,
+        "top": 0,
+        "bottom": 0
+      },
+      "verdict": "technical_source_edge_clear"
+    },
+    {
+      "state": "idle",
+      "frame": 6,
+      "source": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\characters\\runeblade-base-summons\\animation-r1\\rune-revenant\\source\\idle.png",
+      "source_sha256": "752a32f34be09f1b6caa08ebe01258b3a4abd990919ac8a20293eb9ff2df5dae",
+      "cell_rect": [
+        724,
+        543,
+        1086,
+        1086
+      ],
+      "bounds_alpha32": [
+        49,
+        92,
+        321,
+        455
+      ],
+      "source_edge_pixels": {
+        "left": 0,
+        "right": 0,
+        "top": 0,
+        "bottom": 0
+      },
+      "verdict": "technical_source_edge_clear"
+    },
+    {
+      "state": "idle",
+      "frame": 7,
+      "source": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\characters\\runeblade-base-summons\\animation-r1\\rune-revenant\\source\\idle.png",
+      "source_sha256": "752a32f34be09f1b6caa08ebe01258b3a4abd990919ac8a20293eb9ff2df5dae",
+      "cell_rect": [
+        1086,
+        543,
+        1448,
+        1086
+      ],
+      "bounds_alpha32": [
+        37,
+        87,
+        314,
+        454
+      ],
+      "source_edge_pixels": {
+        "left": 0,
+        "right": 0,
+        "top": 0,
+        "bottom": 0
+      },
+      "verdict": "technical_source_edge_clear"
+    },
+    {
+      "state": "attack",
+      "frame": 0,
+      "source": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\characters\\runeblade-base-summons\\animation-r1\\rune-revenant\\source\\attack.png",
+      "source_sha256": "b4916a10491fadb8e42275582020abde1073e69cc6dbff8ef6d2fba5e70612c1",
+      "cell_rect": [
+        0,
+        0,
+        512,
+        512
+      ],
+      "bounds_alpha32": [
+        22,
+        5,
+        467,
+        512
+      ],
+      "source_edge_pixels": {
+        "left": 0,
+        "right": 0,
+        "top": 0,
+        "bottom": 88
+      },
+      "verdict": "edge_review_required"
+    },
+    {
+      "state": "attack",
+      "frame": 1,
+      "source": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\characters\\runeblade-base-summons\\animation-r1\\rune-revenant\\source\\attack.png",
+      "source_sha256": "b4916a10491fadb8e42275582020abde1073e69cc6dbff8ef6d2fba5e70612c1",
+      "cell_rect": [
+        512,
+        0,
+        1024,
+        512
+      ],
+      "bounds_alpha32": [
+        18,
+        13,
+        512,
+        512
+      ],
+      "source_edge_pixels": {
+        "left": 0,
+        "right": 106,
+        "top": 0,
+        "bottom": 50
+      },
+      "verdict": "edge_review_required"
+    },
+    {
+      "state": "attack",
+      "frame": 2,
+      "source": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\characters\\runeblade-base-summons\\animation-r1\\rune-revenant\\source\\attack.png",
+      "source_sha256": "b4916a10491fadb8e42275582020abde1073e69cc6dbff8ef6d2fba5e70612c1",
+      "cell_rect": [
+        1024,
+        0,
+        1536,
+        512
+      ],
+      "bounds_alpha32": [
+        0,
+        12,
+        505,
+        512
+      ],
+      "source_edge_pixels": {
+        "left": 108,
+        "right": 0,
+        "top": 0,
+        "bottom": 56
+      },
+      "verdict": "edge_review_required"
+    },
+    {
+      "state": "attack",
+      "frame": 3,
+      "source": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\characters\\runeblade-base-summons\\animation-r1\\rune-revenant\\source\\attack.png",
+      "source_sha256": "b4916a10491fadb8e42275582020abde1073e69cc6dbff8ef6d2fba5e70612c1",
+      "cell_rect": [
+        0,
+        512,
+        512,
+        1024
+      ],
+      "bounds_alpha32": [
+        10,
+        8,
+        512,
+        504
+      ],
+      "source_edge_pixels": {
+        "left": 0,
+        "right": 167,
+        "top": 0,
+        "bottom": 0
+      },
+      "verdict": "edge_review_required"
+    },
+    {
+      "state": "attack",
+      "frame": 4,
+      "source": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\characters\\runeblade-base-summons\\animation-r1\\rune-revenant\\source\\attack.png",
+      "source_sha256": "b4916a10491fadb8e42275582020abde1073e69cc6dbff8ef6d2fba5e70612c1",
+      "cell_rect": [
+        512,
+        512,
+        1024,
+        1024
+      ],
+      "bounds_alpha32": [
+        0,
+        6,
+        498,
+        499
+      ],
+      "source_edge_pixels": {
+        "left": 162,
+        "right": 0,
+        "top": 0,
+        "bottom": 0
+      },
+      "verdict": "edge_review_required"
+    },
+    {
+      "state": "attack",
+      "frame": 5,
+      "source": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\characters\\runeblade-base-summons\\animation-r1\\rune-revenant\\source\\attack.png",
+      "source_sha256": "b4916a10491fadb8e42275582020abde1073e69cc6dbff8ef6d2fba5e70612c1",
+      "cell_rect": [
+        1024,
+        512,
+        1536,
+        1024
+      ],
+      "bounds_alpha32": [
+        19,
+        5,
+        483,
+        501
+      ],
+      "source_edge_pixels": {
+        "left": 0,
+        "right": 0,
+        "top": 0,
+        "bottom": 0
+      },
+      "verdict": "technical_source_edge_clear"
+    },
+    {
+      "state": "hit",
+      "frame": 0,
+      "source": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\characters\\runeblade-base-summons\\animation-r1\\rune-revenant\\source\\hit.png",
+      "source_sha256": "8222ecd55c0b732d5011e4384ac90002f5ef7c10d29e1f92df51435f71237751",
+      "cell_rect": [
+        0,
+        0,
+        572,
+        687
+      ],
+      "bounds_alpha32": [
+        40,
+        10,
+        572,
+        684
+      ],
+      "source_edge_pixels": {
+        "left": 0,
+        "right": 37,
+        "top": 0,
+        "bottom": 0
+      },
+      "verdict": "edge_review_required"
+    },
+    {
+      "state": "hit",
+      "frame": 1,
+      "source": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\characters\\runeblade-base-summons\\animation-r1\\rune-revenant\\source\\hit.png",
+      "source_sha256": "8222ecd55c0b732d5011e4384ac90002f5ef7c10d29e1f92df51435f71237751",
+      "cell_rect": [
+        572,
+        0,
+        1145,
+        687
+      ],
+      "bounds_alpha32": [
+        0,
+        22,
+        550,
+        684
+      ],
+      "source_edge_pixels": {
+        "left": 13,
+        "right": 0,
+        "top": 0,
+        "bottom": 0
+      },
+      "verdict": "edge_review_required"
+    },
+    {
+      "state": "hit",
+      "frame": 2,
+      "source": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\characters\\runeblade-base-summons\\animation-r1\\rune-revenant\\source\\hit.png",
+      "source_sha256": "8222ecd55c0b732d5011e4384ac90002f5ef7c10d29e1f92df51435f71237751",
+      "cell_rect": [
+        0,
+        687,
+        572,
+        1374
+      ],
+      "bounds_alpha32": [
+        20,
+        73,
+        572,
+        669
+      ],
+      "source_edge_pixels": {
+        "left": 0,
+        "right": 250,
+        "top": 0,
+        "bottom": 0
+      },
+      "verdict": "edge_review_required"
+    },
+    {
+      "state": "hit",
+      "frame": 3,
+      "source": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\characters\\runeblade-base-summons\\animation-r1\\rune-revenant\\source\\hit.png",
+      "source_sha256": "8222ecd55c0b732d5011e4384ac90002f5ef7c10d29e1f92df51435f71237751",
+      "cell_rect": [
+        572,
+        687,
+        1145,
+        1374
+      ],
+      "bounds_alpha32": [
+        0,
+        15,
+        552,
+        667
+      ],
+      "source_edge_pixels": {
+        "left": 199,
+        "right": 0,
+        "top": 0,
+        "bottom": 0
+      },
+      "verdict": "edge_review_required"
+    },
+    {
+      "state": "wounded_idle",
+      "frame": 0,
+      "source": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\characters\\runeblade-base-summons\\animation-r1\\rune-revenant\\source\\wounded_idle.png",
+      "source_sha256": "d879dc45c2c1005058d6b35ce7128e99671db38619ed4b3a9852a45ddc1e8b14",
+      "cell_rect": [
+        0,
+        0,
+        640,
+        614
+      ],
+      "bounds_alpha32": [
+        29,
+        42,
+        624,
+        614
+      ],
+      "source_edge_pixels": {
+        "left": 0,
+        "right": 0,
+        "top": 0,
+        "bottom": 117
+      },
+      "verdict": "edge_review_required"
+    },
+    {
+      "state": "wounded_idle",
+      "frame": 1,
+      "source": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\characters\\runeblade-base-summons\\animation-r1\\rune-revenant\\source\\wounded_idle.png",
+      "source_sha256": "d879dc45c2c1005058d6b35ce7128e99671db38619ed4b3a9852a45ddc1e8b14",
+      "cell_rect": [
+        640,
+        0,
+        1280,
+        614
+      ],
+      "bounds_alpha32": [
+        19,
+        8,
+        627,
+        614
+      ],
+      "source_edge_pixels": {
+        "left": 0,
+        "right": 0,
+        "top": 0,
+        "bottom": 165
+      },
+      "verdict": "edge_review_required"
+    },
+    {
+      "state": "wounded_idle",
+      "frame": 2,
+      "source": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\characters\\runeblade-base-summons\\animation-r1\\rune-revenant\\source\\wounded_idle.png",
+      "source_sha256": "d879dc45c2c1005058d6b35ce7128e99671db38619ed4b3a9852a45ddc1e8b14",
+      "cell_rect": [
+        0,
+        614,
+        640,
+        1229
+      ],
+      "bounds_alpha32": [
+        13,
+        0,
+        640,
+        607
+      ],
+      "source_edge_pixels": {
+        "left": 0,
+        "right": 145,
+        "top": 74,
+        "bottom": 0
+      },
+      "verdict": "edge_review_required"
+    },
+    {
+      "state": "wounded_idle",
+      "frame": 3,
+      "source": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\characters\\runeblade-base-summons\\animation-r1\\rune-revenant\\source\\wounded_idle.png",
+      "source_sha256": "d879dc45c2c1005058d6b35ce7128e99671db38619ed4b3a9852a45ddc1e8b14",
+      "cell_rect": [
+        640,
+        614,
+        1280,
+        1229
+      ],
+      "bounds_alpha32": [
+        0,
+        0,
+        625,
+        608
+      ],
+      "source_edge_pixels": {
+        "left": 127,
+        "right": 0,
+        "top": 84,
+        "bottom": 0
+      },
+      "verdict": "edge_review_required"
+    },
+    {
+      "state": "cast",
+      "frame": 0,
+      "source": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\characters\\runeblade-base-summons\\animation-r1\\rune-revenant\\source\\cast.png",
+      "source_sha256": "a4603cb408dec175c98a779bcf7d76a61d792d41ab8c1d841d075d9dfac308db",
+      "cell_rect": [
+        0,
+        0,
+        656,
+        600
+      ],
+      "bounds_alpha32": [
+        93,
+        8,
+        615,
+        600
+      ],
+      "source_edge_pixels": {
+        "left": 0,
+        "right": 0,
+        "top": 0,
+        "bottom": 32
+      },
+      "verdict": "edge_review_required"
+    },
+    {
+      "state": "cast",
+      "frame": 1,
+      "source": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\characters\\runeblade-base-summons\\animation-r1\\rune-revenant\\source\\cast.png",
+      "source_sha256": "a4603cb408dec175c98a779bcf7d76a61d792d41ab8c1d841d075d9dfac308db",
+      "cell_rect": [
+        656,
+        0,
+        1312,
+        600
+      ],
+      "bounds_alpha32": [
+        66,
+        8,
+        573,
+        593
+      ],
+      "source_edge_pixels": {
+        "left": 0,
+        "right": 0,
+        "top": 0,
+        "bottom": 0
+      },
+      "verdict": "technical_source_edge_clear"
+    },
+    {
+      "state": "cast",
+      "frame": 2,
+      "source": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\characters\\runeblade-base-summons\\animation-r1\\rune-revenant\\source\\cast.png",
+      "source_sha256": "a4603cb408dec175c98a779bcf7d76a61d792d41ab8c1d841d075d9dfac308db",
+      "cell_rect": [
+        0,
+        600,
+        656,
+        1199
+      ],
+      "bounds_alpha32": [
+        73,
+        0,
+        639,
+        588
+      ],
+      "source_edge_pixels": {
+        "left": 0,
+        "right": 0,
+        "top": 82,
+        "bottom": 0
+      },
+      "verdict": "edge_review_required"
+    },
+    {
+      "state": "cast",
+      "frame": 3,
+      "source": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\characters\\runeblade-base-summons\\animation-r1\\rune-revenant\\source\\cast.png",
+      "source_sha256": "a4603cb408dec175c98a779bcf7d76a61d792d41ab8c1d841d075d9dfac308db",
+      "cell_rect": [
+        656,
+        600,
+        1312,
+        1199
+      ],
+      "bounds_alpha32": [
+        61,
+        5,
+        587,
+        588
+      ],
+      "source_edge_pixels": {
+        "left": 0,
+        "right": 0,
+        "top": 0,
+        "bottom": 0
+      },
+      "verdict": "technical_source_edge_clear"
+    },
+    {
+      "state": "die",
+      "frame": 0,
+      "source": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\characters\\runeblade-base-summons\\animation-r1\\rune-revenant\\source\\die.png",
+      "source_sha256": "804627f9cdd31dbf0af8445dc0659389a2d6d6f7207e18bad1fdc745e63d151d",
+      "cell_rect": [
+        0,
+        0,
+        512,
+        512
+      ],
+      "bounds_alpha32": [
+        57,
+        43,
+        460,
+        512
+      ],
+      "source_edge_pixels": {
+        "left": 0,
+        "right": 0,
+        "top": 0,
+        "bottom": 455
+      },
+      "verdict": "edge_review_required"
+    },
+    {
+      "state": "die",
+      "frame": 1,
+      "source": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\characters\\runeblade-base-summons\\animation-r1\\rune-revenant\\source\\die.png",
+      "source_sha256": "804627f9cdd31dbf0af8445dc0659389a2d6d6f7207e18bad1fdc745e63d151d",
+      "cell_rect": [
+        512,
+        0,
+        1024,
+        512
+      ],
+      "bounds_alpha32": [
+        81,
+        112,
+        512,
+        512
+      ],
+      "source_edge_pixels": {
+        "left": 0,
+        "right": 5,
+        "top": 0,
+        "bottom": 585
+      },
+      "verdict": "edge_review_required"
+    },
+    {
+      "state": "die",
+      "frame": 2,
+      "source": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\characters\\runeblade-base-summons\\animation-r1\\rune-revenant\\source\\die.png",
+      "source_sha256": "804627f9cdd31dbf0af8445dc0659389a2d6d6f7207e18bad1fdc745e63d151d",
+      "cell_rect": [
+        1024,
+        0,
+        1536,
+        512
+      ],
+      "bounds_alpha32": [
+        0,
+        251,
+        466,
+        512
+      ],
+      "source_edge_pixels": {
+        "left": 25,
+        "right": 0,
+        "top": 0,
+        "bottom": 730
+      },
+      "verdict": "edge_review_required"
+    },
+    {
+      "state": "die",
+      "frame": 3,
+      "source": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\characters\\runeblade-base-summons\\animation-r1\\rune-revenant\\source\\die.png",
+      "source_sha256": "804627f9cdd31dbf0af8445dc0659389a2d6d6f7207e18bad1fdc745e63d151d",
+      "cell_rect": [
+        0,
+        512,
+        512,
+        1024
+      ],
+      "bounds_alpha32": [
+        24,
+        0,
+        512,
+        453
+      ],
+      "source_edge_pixels": {
+        "left": 0,
+        "right": 72,
+        "top": 433,
+        "bottom": 0
+      },
+      "verdict": "edge_review_required"
+    },
+    {
+      "state": "die",
+      "frame": 4,
+      "source": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\characters\\runeblade-base-summons\\animation-r1\\rune-revenant\\source\\die.png",
+      "source_sha256": "804627f9cdd31dbf0af8445dc0659389a2d6d6f7207e18bad1fdc745e63d151d",
+      "cell_rect": [
+        512,
+        512,
+        1024,
+        1024
+      ],
+      "bounds_alpha32": [
+        0,
+        0,
+        503,
+        467
+      ],
+      "source_edge_pixels": {
+        "left": 70,
+        "right": 0,
+        "top": 591,
+        "bottom": 0
+      },
+      "verdict": "edge_review_required"
+    },
+    {
+      "state": "die",
+      "frame": 5,
+      "source": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\characters\\runeblade-base-summons\\animation-r1\\rune-revenant\\source\\die.png",
+      "source_sha256": "804627f9cdd31dbf0af8445dc0659389a2d6d6f7207e18bad1fdc745e63d151d",
+      "cell_rect": [
+        1024,
+        512,
+        1536,
+        1024
+      ],
+      "bounds_alpha32": [
+        4,
+        0,
+        497,
+        469
+      ],
+      "source_edge_pixels": {
+        "left": 0,
+        "right": 0,
+        "top": 740,
+        "bottom": 0
+      },
+      "verdict": "edge_review_required"
+    }
+  ]
+}

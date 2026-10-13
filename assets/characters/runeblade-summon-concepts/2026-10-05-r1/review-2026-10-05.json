@@ -1,0 +1,32 @@
+{
+  "note": "Explicit user chat, 2026-10-05: \"i liek the middle one as is, lets make the other two more serious and gritty\". Middle image is Frost Thrall — Shatterbound concept-r1.",
+  "events": [
+    {
+      "id": "17457f1e-b630-48d9-b75c-c488454e925a",
+      "sha256": "152f147afe120fe70220ea688c57b77ffddfca3b17474da0871e0e7e5706587e",
+      "status": "Needs revision",
+      "note": "Explicit user chat, 2026-10-05: \"i liek the middle one as is, lets make the other two more serious and gritty\". Middle image is Frost Thrall — Shatterbound concept-r1.",
+      "actor": "user-chat-recorded-by-codex",
+      "at": "2026-10-05T09:58:44.303Z",
+      "assetPath": "C:/Users/wilsh/Projects/runelord/assets/characters/runeblade-summon-concepts/2026-10-05-r1/bone-thrall-concept-r1.png"
+    },
+    {
+      "id": "9a53e5f6-cc0e-4cde-9f1f-f6b30ad0e1a0",
+      "sha256": "b567aa885ce19766259b70d4af812bb4d2d0b49b5c63a95728f3e01cb2dd1c0d",
+      "status": "Approved",
+      "note": "Explicit user chat, 2026-10-05: \"i liek the middle one as is, lets make the other two more serious and gritty\". Middle image is Frost Thrall — Shatterbound concept-r1.",
+      "actor": "user-chat-recorded-by-codex",
+      "at": "2026-10-05T09:58:44.514Z",
+      "assetPath": "C:/Users/wilsh/Projects/runelord/assets/characters/runeblade-summon-concepts/2026-10-05-r1/frost-thrall-concept-r1.png"
+    },
+    {
+      "id": "effa58ce-13d9-48ad-93db-45fecbc9d9ed",
+      "sha256": "52e9c8bd692e2fa07acdbc4a3599dfc44857bce63cf7f06fe5277a2783001259",
+      "status": "Needs revision",
+      "note": "Explicit user chat, 2026-10-05: \"i liek the middle one as is, lets make the other two more serious and gritty\". Middle image is Frost Thrall — Shatterbound concept-r1.",
+      "actor": "user-chat-recorded-by-codex",
+      "at": "2026-10-05T09:58:44.749Z",
+      "assetPath": "C:/Users/wilsh/Projects/runelord/assets/characters/runeblade-summon-concepts/2026-10-05-r1/risen-legionnaire-concept-r1.png"
+    }
+  ]
+}

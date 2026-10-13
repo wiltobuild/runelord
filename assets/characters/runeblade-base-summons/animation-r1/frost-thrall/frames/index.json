@@ -1,0 +1,900 @@
+{
+  "frames": [
+    {
+      "hero": "frost-thrall",
+      "form": "base",
+      "state": "idle",
+      "frame": 0,
+      "time_ms": 0,
+      "duration_ms": 450,
+      "file": "frames/idle-00.png",
+      "sha256": "3e1c08a96befe01cece94f4c0fc28e9396404dbf9c894f31bc1e0b93685f8a78",
+      "source_sheet": "source/idle.png",
+      "source_sha256": "14b41283a0d837e9386eb1c54fb7a14d6b71bd7763e5ffbb638bc80769d6da11",
+      "source_rect": [
+        26,
+        54,
+        394,
+        474
+      ],
+      "source_component_label": 1,
+      "source_root": [
+        53.0,
+        472
+      ],
+      "source_scale": 1,
+      "translation": [
+        253,
+        232
+      ]
+    },
+    {
+      "hero": "frost-thrall",
+      "form": "base",
+      "state": "idle",
+      "frame": 1,
+      "time_ms": 450,
+      "duration_ms": 450,
+      "file": "frames/idle-01.png",
+      "sha256": "72f9bc266fed924e9e2d0e044c36bab44a94ba6f0c0eb0b994955adc7d33b3c5",
+      "source_sheet": "source/idle.png",
+      "source_sha256": "14b41283a0d837e9386eb1c54fb7a14d6b71bd7763e5ffbb638bc80769d6da11",
+      "source_rect": [
+        413,
+        54,
+        779,
+        475
+      ],
+      "source_component_label": 2,
+      "source_root": [
+        440.0,
+        473
+      ],
+      "source_scale": 1,
+      "translation": [
+        253,
+        231
+      ]
+    },
+    {
+      "hero": "frost-thrall",
+      "form": "base",
+      "state": "idle",
+      "frame": 2,
+      "time_ms": 900,
+      "duration_ms": 450,
+      "file": "frames/idle-02.png",
+      "sha256": "8ea752a1df85d6bb6294fc563ebad8672162cc6132485ca243fb817f5b5cd882",
+      "source_sheet": "source/idle.png",
+      "source_sha256": "14b41283a0d837e9386eb1c54fb7a14d6b71bd7763e5ffbb638bc80769d6da11",
+      "source_rect": [
+        798,
+        54,
+        1169,
+        475
+      ],
+      "source_component_label": 3,
+      "source_root": [
+        825.0,
+        473
+      ],
+      "source_scale": 1,
+      "translation": [
+        253,
+        231
+      ]
+    },
+    {
+      "hero": "frost-thrall",
+      "form": "base",
+      "state": "idle",
+      "frame": 3,
+      "time_ms": 1350,
+      "duration_ms": 450,
+      "file": "frames/idle-03.png",
+      "sha256": "be7511729bf25318960b0b19b7ffede846b1ad6240f6b7298f3a8e5d96849246",
+      "source_sheet": "source/idle.png",
+      "source_sha256": "14b41283a0d837e9386eb1c54fb7a14d6b71bd7763e5ffbb638bc80769d6da11",
+      "source_rect": [
+        1184,
+        54,
+        1533,
+        475
+      ],
+      "source_component_label": 4,
+      "source_root": [
+        1211.0,
+        473
+      ],
+      "source_scale": 1,
+      "translation": [
+        253,
+        231
+      ]
+    },
+    {
+      "hero": "frost-thrall",
+      "form": "base",
+      "state": "idle",
+      "frame": 4,
+      "time_ms": 1800,
+      "duration_ms": 450,
+      "file": "frames/idle-04.png",
+      "sha256": "b8c3853b076287a8c68c3eb9ba510678164562ead51273e8b24af60ae91e40e3",
+      "source_sheet": "source/idle.png",
+      "source_sha256": "14b41283a0d837e9386eb1c54fb7a14d6b71bd7763e5ffbb638bc80769d6da11",
+      "source_rect": [
+        27,
+        562,
+        392,
+        980
+      ],
+      "source_component_label": 58,
+      "source_root": [
+        54.0,
+        978
+      ],
+      "source_scale": 1,
+      "translation": [
+        253,
+        234
+      ]
+    },
+    {
+      "hero": "frost-thrall",
+      "form": "base",
+      "state": "idle",
+      "frame": 5,
+      "time_ms": 2250,
+      "duration_ms": 450,
+      "file": "frames/idle-05.png",
+      "sha256": "d49861da901f315a512dbb08ef34b53ae082d46818f0b3b9caa80c12f8a87adb",
+      "source_sheet": "source/idle.png",
+      "source_sha256": "14b41283a0d837e9386eb1c54fb7a14d6b71bd7763e5ffbb638bc80769d6da11",
+      "source_rect": [
+        413,
+        562,
+        776,
+        980
+      ],
+      "source_component_label": 59,
+      "source_root": [
+        440.0,
+        978
+      ],
+      "source_scale": 1,
+      "translation": [
+        253,
+        234
+      ]
+    },
+    {
+      "hero": "frost-thrall",
+      "form": "base",
+      "state": "idle",
+      "frame": 6,
+      "time_ms": 2700,
+      "duration_ms": 450,
+      "file": "frames/idle-06.png",
+      "sha256": "a5479be32da46ceed701680a10deb3adf4be62ca9a2e90d1f5fd6b8a4e7a9e51",
+      "source_sheet": "source/idle.png",
+      "source_sha256": "14b41283a0d837e9386eb1c54fb7a14d6b71bd7763e5ffbb638bc80769d6da11",
+      "source_rect": [
+        797,
+        563,
+        1168,
+        980
+      ],
+      "source_component_label": 61,
+      "source_root": [
+        824.0,
+        978
+      ],
+      "source_scale": 1,
+      "translation": [
+        253,
+        235
+      ]
+    },
+    {
+      "hero": "frost-thrall",
+      "form": "base",
+      "state": "idle",
+      "frame": 7,
+      "time_ms": 3150,
+      "duration_ms": 450,
+      "file": "frames/idle-07.png",
+      "sha256": "c6d2fe77e2b0fecd6fbf141375f670b3076b248a51a0c7b2cdc21b8eabbe258c",
+      "source_sheet": "source/idle.png",
+      "source_sha256": "14b41283a0d837e9386eb1c54fb7a14d6b71bd7763e5ffbb638bc80769d6da11",
+      "source_rect": [
+        1182,
+        562,
+        1536,
+        980
+      ],
+      "source_component_label": 60,
+      "source_root": [
+        1209.0,
+        978
+      ],
+      "source_scale": 1,
+      "translation": [
+        253,
+        234
+      ]
+    },
+    {
+      "hero": "frost-thrall",
+      "form": "base",
+      "state": "attack",
+      "frame": 0,
+      "time_ms": 0,
+      "duration_ms": 140,
+      "file": "frames/attack-00.png",
+      "sha256": "6a23faed22e07df4ffe5743ddba44cf370c4219e78b02a9bc5fa20fb1255a270",
+      "source_sheet": "source/attack.png",
+      "source_sha256": "1b265d3124b5246a1672e842816923548bae1785c3b4cd4e09f0215393a0fe73",
+      "source_rect": [
+        69,
+        24,
+        502,
+        511
+      ],
+      "source_component_label": 2,
+      "source_root": [
+        96.0,
+        509
+      ],
+      "source_scale": 0.862,
+      "translation": [
+        257,
+        232
+      ]
+    },
+    {
+      "hero": "frost-thrall",
+      "form": "base",
+      "state": "attack",
+      "frame": 1,
+      "time_ms": 140,
+      "duration_ms": 140,
+      "file": "frames/attack-01.png",
+      "sha256": "44359f7c22910770d516db8c0f1d69cc8d9d559180512220ef139d6424289e87",
+      "source_sheet": "source/attack.png",
+      "source_sha256": "1b265d3124b5246a1672e842816923548bae1785c3b4cd4e09f0215393a0fe73",
+      "source_rect": [
+        572,
+        42,
+        1055,
+        512
+      ],
+      "source_component_label": 3,
+      "source_root": [
+        610.0,
+        510
+      ],
+      "source_scale": 0.862,
+      "translation": [
+        247,
+        247
+      ]
+    },
+    {
+      "hero": "frost-thrall",
+      "form": "base",
+      "state": "attack",
+      "frame": 2,
+      "time_ms": 280,
+      "duration_ms": 110,
+      "file": "frames/attack-02.png",
+      "sha256": "952c0d8018304a3014c79c05e076a506f2d8f78b1e7810e5316db5257badc177",
+      "source_sheet": "source/attack.png",
+      "source_sha256": "1b265d3124b5246a1672e842816923548bae1785c3b4cd4e09f0215393a0fe73",
+      "source_rect": [
+        1110,
+        0,
+        1497,
+        513
+      ],
+      "source_component_label": 1,
+      "source_root": [
+        1137.0,
+        511
+      ],
+      "source_scale": 0.862,
+      "translation": [
+        257,
+        210
+      ]
+    },
+    {
+      "hero": "frost-thrall",
+      "form": "base",
+      "state": "attack",
+      "frame": 3,
+      "time_ms": 390,
+      "duration_ms": 100,
+      "file": "frames/attack-03.png",
+      "sha256": "acaad321b3770ab2ddf6f95c9d8f5af9672fc799551d2bbfd0f6bd88f0004e4a",
+      "source_sheet": "source/attack.png",
+      "source_sha256": "1b265d3124b5246a1672e842816923548bae1785c3b4cd4e09f0215393a0fe73",
+      "source_rect": [
+        23,
+        535,
+        584,
+        992
+      ],
+      "source_component_label": 48,
+      "source_root": [
+        50.0,
+        990
+      ],
+      "source_scale": 0.862,
+      "translation": [
+        257,
+        258
+      ]
+    },
+    {
+      "hero": "frost-thrall",
+      "form": "base",
+      "state": "attack",
+      "frame": 4,
+      "time_ms": 490,
+      "duration_ms": 160,
+      "file": "frames/attack-04.png",
+      "sha256": "46c53ccffedf415139d1c774a6f678b349c83b33aaedbdaab39f12d38cb406aa",
+      "source_sheet": "source/attack.png",
+      "source_sha256": "1b265d3124b5246a1672e842816923548bae1785c3b4cd4e09f0215393a0fe73",
+      "source_rect": [
+        583,
+        528,
+        1090,
+        997
+      ],
+      "source_component_label": 47,
+      "source_root": [
+        610.0,
+        995
+      ],
+      "source_scale": 0.862,
+      "translation": [
+        257,
+        247
+      ]
+    },
+    {
+      "hero": "frost-thrall",
+      "form": "base",
+      "state": "attack",
+      "frame": 5,
+      "time_ms": 650,
+      "duration_ms": 200,
+      "file": "frames/attack-05.png",
+      "sha256": "7631cd9668393cd271a12ead5388f8111f3783ba501e8cf7d1b90a1f9db0add0",
+      "source_sheet": "source/attack.png",
+      "source_sha256": "1b265d3124b5246a1672e842816923548bae1785c3b4cd4e09f0215393a0fe73",
+      "source_rect": [
+        1092,
+        514,
+        1519,
+        1002
+      ],
+      "source_component_label": 46,
+      "source_root": [
+        1119.0,
+        1000
+      ],
+      "source_scale": 0.862,
+      "translation": [
+        257,
+        231
+      ]
+    },
+    {
+      "hero": "frost-thrall",
+      "form": "base",
+      "state": "hit",
+      "frame": 0,
+      "time_ms": 0,
+      "duration_ms": 100,
+      "file": "frames/hit-00.png",
+      "sha256": "892ecf67bcb9243c800c0ce23b274c7b7d5d8a8bdde7fcab482c7a1efc063e92",
+      "source_sheet": "source/hit.png",
+      "source_sha256": "b72fa70662756774bc86759c22014a2ad395ae411118e976135560ec995290d1",
+      "source_rect": [
+        66,
+        48,
+        599,
+        665
+      ],
+      "source_component_label": 1,
+      "source_root": [
+        93.0,
+        663
+      ],
+      "source_scale": 0.678,
+      "translation": [
+        262,
+        233
+      ]
+    },
+    {
+      "hero": "frost-thrall",
+      "form": "base",
+      "state": "hit",
+      "frame": 1,
+      "time_ms": 100,
+      "duration_ms": 130,
+      "file": "frames/hit-01.png",
+      "sha256": "147dc3481e706150eb49eda7966b0b67b3768ab704769c0b41a4da0ee8009b40",
+      "source_sheet": "source/hit.png",
+      "source_sha256": "b72fa70662756774bc86759c22014a2ad395ae411118e976135560ec995290d1",
+      "source_rect": [
+        616,
+        91,
+        1139,
+        662
+      ],
+      "source_component_label": 2,
+      "source_root": [
+        678.0,
+        660
+      ],
+      "source_scale": 0.678,
+      "translation": [
+        238,
+        264
+      ]
+    },
+    {
+      "hero": "frost-thrall",
+      "form": "base",
+      "state": "hit",
+      "frame": 2,
+      "time_ms": 230,
+      "duration_ms": 170,
+      "file": "frames/hit-02.png",
+      "sha256": "60b8adda5dc2d1a5dbe365b4c5a8b52ddf0c39c66ec683c060bd838093195952",
+      "source_sheet": "source/hit.png",
+      "source_sha256": "b72fa70662756774bc86759c22014a2ad395ae411118e976135560ec995290d1",
+      "source_rect": [
+        56,
+        767,
+        633,
+        1311
+      ],
+      "source_component_label": 48,
+      "source_root": [
+        141.0,
+        1309
+      ],
+      "source_scale": 0.678,
+      "translation": [
+        222,
+        283
+      ]
+    },
+    {
+      "hero": "frost-thrall",
+      "form": "base",
+      "state": "hit",
+      "frame": 3,
+      "time_ms": 400,
+      "duration_ms": 200,
+      "file": "frames/hit-03.png",
+      "sha256": "befb2e6b56d5f67539644cc1ee2d8e8c4b3c014acb5adc158c7a8b2a925fc0f9",
+      "source_sheet": "source/hit.png",
+      "source_sha256": "b72fa70662756774bc86759c22014a2ad395ae411118e976135560ec995290d1",
+      "source_rect": [
+        628,
+        720,
+        1143,
+        1316
+      ],
+      "source_component_label": 46,
+      "source_root": [
+        655.0,
+        1314
+      ],
+      "source_scale": 0.678,
+      "translation": [
+        262,
+        247
+      ]
+    },
+    {
+      "hero": "frost-thrall",
+      "form": "base",
+      "state": "wounded_idle",
+      "frame": 0,
+      "time_ms": 0,
+      "duration_ms": 500,
+      "file": "frames/wounded_idle-00.png",
+      "sha256": "f889fae5f8c05939c26ab453a06427920d838f874a1d63495bc7d33f85d7cf18",
+      "source_sheet": "source/wounded_idle.png",
+      "source_sha256": "b54bb7ca2854e58b92db3d771ae2f36927aab8e2e589bbe7c66c8e31eeccf6ee",
+      "source_rect": [
+        50,
+        35,
+        588,
+        667
+      ],
+      "source_component_label": 2,
+      "source_root": [
+        77.0,
+        665
+      ],
+      "source_scale": 0.661,
+      "translation": [
+        262,
+        234
+      ]
+    },
+    {
+      "hero": "frost-thrall",
+      "form": "base",
+      "state": "wounded_idle",
+      "frame": 1,
+      "time_ms": 500,
+      "duration_ms": 500,
+      "file": "frames/wounded_idle-01.png",
+      "sha256": "4deb4695b5fdc861b706bf42f2157b4bc4c19db495d1df772371cf4f43c648d0",
+      "source_sheet": "source/wounded_idle.png",
+      "source_sha256": "b54bb7ca2854e58b92db3d771ae2f36927aab8e2e589bbe7c66c8e31eeccf6ee",
+      "source_rect": [
+        599,
+        18,
+        1131,
+        668
+      ],
+      "source_component_label": 1,
+      "source_root": [
+        626.0,
+        666
+      ],
+      "source_scale": 0.661,
+      "translation": [
+        262,
+        222
+      ]
+    },
+    {
+      "hero": "frost-thrall",
+      "form": "base",
+      "state": "wounded_idle",
+      "frame": 2,
+      "time_ms": 1000,
+      "duration_ms": 500,
+      "file": "frames/wounded_idle-02.png",
+      "sha256": "ce3a0acf67b8d51fd849709aba8a28d27026bd86e0f4af92c8b105d72207c3d9",
+      "source_sheet": "source/wounded_idle.png",
+      "source_sha256": "b54bb7ca2854e58b92db3d771ae2f36927aab8e2e589bbe7c66c8e31eeccf6ee",
+      "source_rect": [
+        46,
+        691,
+        608,
+        1339
+      ],
+      "source_component_label": 41,
+      "source_root": [
+        73.0,
+        1337
+      ],
+      "source_scale": 0.661,
+      "translation": [
+        262,
+        223
+      ]
+    },
+    {
+      "hero": "frost-thrall",
+      "form": "base",
+      "state": "wounded_idle",
+      "frame": 3,
+      "time_ms": 1500,
+      "duration_ms": 500,
+      "file": "frames/wounded_idle-03.png",
+      "sha256": "21ba90f529d590c94156e2ffc16c160a188a2c6b46c104f6d492332cd5cdd82d",
+      "source_sheet": "source/wounded_idle.png",
+      "source_sha256": "b54bb7ca2854e58b92db3d771ae2f36927aab8e2e589bbe7c66c8e31eeccf6ee",
+      "source_rect": [
+        600,
+        710,
+        1131,
+        1340
+      ],
+      "source_component_label": 46,
+      "source_root": [
+        627.0,
+        1338
+      ],
+      "source_scale": 0.661,
+      "translation": [
+        262,
+        235
+      ]
+    },
+    {
+      "hero": "frost-thrall",
+      "form": "base",
+      "state": "cast",
+      "frame": 0,
+      "time_ms": 0,
+      "duration_ms": 220,
+      "file": "frames/cast-00.png",
+      "sha256": "9acae920b8eeecd7543bb7c2d3a6367e07fd45b2d489a5c273d83f8ca085d834",
+      "source_sheet": "source/cast.png",
+      "source_sha256": "502cabd5bbd6538d02b14ea360f859cabfa38f096636b1fb01e59e5dbbf00639",
+      "source_rect": [
+        28,
+        62,
+        598,
+        671
+      ],
+      "source_component_label": 1,
+      "source_root": [
+        55.0,
+        669
+      ],
+      "source_scale": 0.688,
+      "translation": [
+        261,
+        232
+      ]
+    },
+    {
+      "hero": "frost-thrall",
+      "form": "base",
+      "state": "cast",
+      "frame": 1,
+      "time_ms": 220,
+      "duration_ms": 250,
+      "file": "frames/cast-01.png",
+      "sha256": "ec23768a60b78f4986850f6d5d02aeeb4444241c490715567df9d5d03eb816da",
+      "source_sheet": "source/cast.png",
+      "source_sha256": "502cabd5bbd6538d02b14ea360f859cabfa38f096636b1fb01e59e5dbbf00639",
+      "source_rect": [
+        599,
+        67,
+        1134,
+        672
+      ],
+      "source_component_label": 2,
+      "source_root": [
+        626.0,
+        670
+      ],
+      "source_scale": 0.688,
+      "translation": [
+        261,
+        235
+      ]
+    },
+    {
+      "hero": "frost-thrall",
+      "form": "base",
+      "state": "cast",
+      "frame": 2,
+      "time_ms": 470,
+      "duration_ms": 160,
+      "file": "frames/cast-02.png",
+      "sha256": "765291e6b04ac6e8ec654b61f7998acdf4c3f7d2e4861b3eb0708bbb29ff9b59",
+      "source_sheet": "source/cast.png",
+      "source_sha256": "502cabd5bbd6538d02b14ea360f859cabfa38f096636b1fb01e59e5dbbf00639",
+      "source_rect": [
+        21,
+        733,
+        629,
+        1323
+      ],
+      "source_component_label": 51,
+      "source_root": [
+        48.0,
+        1321
+      ],
+      "source_scale": 0.688,
+      "translation": [
+        261,
+        245
+      ]
+    },
+    {
+      "hero": "frost-thrall",
+      "form": "base",
+      "state": "cast",
+      "frame": 3,
+      "time_ms": 630,
+      "duration_ms": 270,
+      "file": "frames/cast-03.png",
+      "sha256": "7d6c2689de508f8dcfbbc7a2658b14c125f637a3effcbf0b253a35f9ccb26895",
+      "source_sheet": "source/cast.png",
+      "source_sha256": "502cabd5bbd6538d02b14ea360f859cabfa38f096636b1fb01e59e5dbbf00639",
+      "source_rect": [
+        612,
+        724,
+        1142,
+        1326
+      ],
+      "source_component_label": 50,
+      "source_root": [
+        639.0,
+        1324
+      ],
+      "source_scale": 0.688,
+      "translation": [
+        261,
+        237
+      ]
+    },
+    {
+      "hero": "frost-thrall",
+      "form": "base",
+      "state": "die",
+      "frame": 0,
+      "time_ms": 0,
+      "duration_ms": 180,
+      "file": "frames/die-00.png",
+      "sha256": "278385153741beff9cac6c4b832fd36d1f7c38f3d5ac5ab5d5e91e5dd88acda4",
+      "source_sheet": "source/die.png",
+      "source_sha256": "bdb6b8e4966a52d6dd3c84248ef3d84771174bba3293a84add54f7b17d7b7059",
+      "source_rect": [
+        57,
+        50,
+        509,
+        537
+      ],
+      "source_component_label": 1,
+      "source_root": [
+        104,
+        535
+      ],
+      "source_scale": 0.862,
+      "translation": [
+        239,
+        232
+      ]
+    },
+    {
+      "hero": "frost-thrall",
+      "form": "base",
+      "state": "die",
+      "frame": 1,
+      "time_ms": 180,
+      "duration_ms": 200,
+      "file": "frames/die-01.png",
+      "sha256": "66a8ffe5ec1d9d5a2e22e54d524617a7132f06ef7951dbd7492f5fc860d97037",
+      "source_sheet": "source/die.png",
+      "source_sha256": "bdb6b8e4966a52d6dd3c84248ef3d84771174bba3293a84add54f7b17d7b7059",
+      "source_rect": [
+        589,
+        82,
+        1011,
+        559
+      ],
+      "source_component_label": 6,
+      "source_root": [
+        636,
+        557
+      ],
+      "source_scale": 0.862,
+      "translation": [
+        239,
+        241
+      ]
+    },
+    {
+      "hero": "frost-thrall",
+      "form": "base",
+      "state": "die",
+      "frame": 2,
+      "time_ms": 380,
+      "duration_ms": 250,
+      "file": "frames/die-02.png",
+      "sha256": "bc73839dae23d0ac3614c2c2aeb29db10f040f4060779fcdbf72f2bf12e9464a",
+      "source_sheet": "source/die.png",
+      "source_sha256": "bdb6b8e4966a52d6dd3c84248ef3d84771174bba3293a84add54f7b17d7b7059",
+      "source_rect": [
+        1083,
+        159,
+        1527,
+        559
+      ],
+      "source_component_label": 16,
+      "source_root": [
+        1130,
+        557
+      ],
+      "source_scale": 0.862,
+      "translation": [
+        239,
+        307
+      ]
+    },
+    {
+      "hero": "frost-thrall",
+      "form": "base",
+      "state": "die",
+      "frame": 3,
+      "time_ms": 630,
+      "duration_ms": 260,
+      "file": "frames/die-03.png",
+      "sha256": "a1176fd15dc49bdae8a15d4646ac17b16bc248ec4eaaec7399e00a382943490b",
+      "source_sheet": "source/die.png",
+      "source_sha256": "bdb6b8e4966a52d6dd3c84248ef3d84771174bba3293a84add54f7b17d7b7059",
+      "source_rect": [
+        31,
+        659,
+        541,
+        944
+      ],
+      "source_component_label": 49,
+      "source_root": [
+        78,
+        942
+      ],
+      "source_scale": 0.862,
+      "translation": [
+        239,
+        406
+      ]
+    },
+    {
+      "hero": "frost-thrall",
+      "form": "base",
+      "state": "die",
+      "frame": 4,
+      "time_ms": 890,
+      "duration_ms": 350,
+      "file": "frames/die-04.png",
+      "sha256": "12e0cabebd9e9ac334c6d453dddaea898c440512ede12a0f4469546d19d56bfd",
+      "source_sheet": "source/die.png",
+      "source_sha256": "bdb6b8e4966a52d6dd3c84248ef3d84771174bba3293a84add54f7b17d7b7059",
+      "source_rect": [
+        552,
+        727,
+        1052,
+        966
+      ],
+      "source_component_label": 55,
+      "source_root": [
+        599,
+        901
+      ],
+      "source_scale": 0.862,
+      "translation": [
+        239,
+        500
+      ]
+    },
+    {
+      "hero": "frost-thrall",
+      "form": "base",
+      "state": "die",
+      "frame": 5,
+      "time_ms": 1240,
+      "duration_ms": 800,
+      "file": "frames/die-05.png",
+      "sha256": "e2adc40920d451782ffe0b034b192a3a6e465a3572a5cbcc71a527698fc7dda9",
+      "source_sheet": "source/die.png",
+      "source_sha256": "bdb6b8e4966a52d6dd3c84248ef3d84771174bba3293a84add54f7b17d7b7059",
+      "source_rect": [
+        1055,
+        752,
+        1519,
+        988
+      ],
+      "source_component_label": 64,
+      "source_root": [
+        1102,
+        919
+      ],
+      "source_scale": 0.862,
+      "translation": [
+        239,
+        506
+      ]
+    }
+  ]
+}

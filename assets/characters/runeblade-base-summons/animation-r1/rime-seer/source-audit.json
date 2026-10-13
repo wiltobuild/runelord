@@ -1,0 +1,806 @@
+{
+  "status": "review_pending",
+  "note": "Technical bounds only, no visual pass claim",
+  "frames": [
+    {
+      "state": "idle",
+      "frame": 0,
+      "source": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\characters\\runeblade-base-summons\\animation-r1\\rime-seer\\source\\idle.png",
+      "source_sha256": "815dd616b571c9beb5708017bf01736705a6ee1767320e9f18cdcdd7be703ddd",
+      "cell_rect": [
+        0,
+        0,
+        362,
+        543
+      ],
+      "bounds_alpha32": [
+        81,
+        145,
+        319,
+        488
+      ],
+      "source_edge_pixels": {
+        "left": 0,
+        "right": 0,
+        "top": 0,
+        "bottom": 0
+      },
+      "verdict": "technical_source_edge_clear"
+    },
+    {
+      "state": "idle",
+      "frame": 1,
+      "source": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\characters\\runeblade-base-summons\\animation-r1\\rime-seer\\source\\idle.png",
+      "source_sha256": "815dd616b571c9beb5708017bf01736705a6ee1767320e9f18cdcdd7be703ddd",
+      "cell_rect": [
+        362,
+        0,
+        724,
+        543
+      ],
+      "bounds_alpha32": [
+        76,
+        145,
+        318,
+        489
+      ],
+      "source_edge_pixels": {
+        "left": 0,
+        "right": 0,
+        "top": 0,
+        "bottom": 0
+      },
+      "verdict": "technical_source_edge_clear"
+    },
+    {
+      "state": "idle",
+      "frame": 2,
+      "source": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\characters\\runeblade-base-summons\\animation-r1\\rime-seer\\source\\idle.png",
+      "source_sha256": "815dd616b571c9beb5708017bf01736705a6ee1767320e9f18cdcdd7be703ddd",
+      "cell_rect": [
+        724,
+        0,
+        1086,
+        543
+      ],
+      "bounds_alpha32": [
+        78,
+        145,
+        317,
+        488
+      ],
+      "source_edge_pixels": {
+        "left": 0,
+        "right": 0,
+        "top": 0,
+        "bottom": 0
+      },
+      "verdict": "technical_source_edge_clear"
+    },
+    {
+      "state": "idle",
+      "frame": 3,
+      "source": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\characters\\runeblade-base-summons\\animation-r1\\rime-seer\\source\\idle.png",
+      "source_sha256": "815dd616b571c9beb5708017bf01736705a6ee1767320e9f18cdcdd7be703ddd",
+      "cell_rect": [
+        1086,
+        0,
+        1448,
+        543
+      ],
+      "bounds_alpha32": [
+        64,
+        145,
+        310,
+        488
+      ],
+      "source_edge_pixels": {
+        "left": 0,
+        "right": 0,
+        "top": 0,
+        "bottom": 0
+      },
+      "verdict": "technical_source_edge_clear"
+    },
+    {
+      "state": "idle",
+      "frame": 4,
+      "source": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\characters\\runeblade-base-summons\\animation-r1\\rime-seer\\source\\idle.png",
+      "source_sha256": "815dd616b571c9beb5708017bf01736705a6ee1767320e9f18cdcdd7be703ddd",
+      "cell_rect": [
+        0,
+        543,
+        362,
+        1086
+      ],
+      "bounds_alpha32": [
+        80,
+        87,
+        324,
+        430
+      ],
+      "source_edge_pixels": {
+        "left": 0,
+        "right": 0,
+        "top": 0,
+        "bottom": 0
+      },
+      "verdict": "technical_source_edge_clear"
+    },
+    {
+      "state": "idle",
+      "frame": 5,
+      "source": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\characters\\runeblade-base-summons\\animation-r1\\rime-seer\\source\\idle.png",
+      "source_sha256": "815dd616b571c9beb5708017bf01736705a6ee1767320e9f18cdcdd7be703ddd",
+      "cell_rect": [
+        362,
+        543,
+        724,
+        1086
+      ],
+      "bounds_alpha32": [
+        73,
+        85,
+        319,
+        430
+      ],
+      "source_edge_pixels": {
+        "left": 0,
+        "right": 0,
+        "top": 0,
+        "bottom": 0
+      },
+      "verdict": "technical_source_edge_clear"
+    },
+    {
+      "state": "idle",
+      "frame": 6,
+      "source": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\characters\\runeblade-base-summons\\animation-r1\\rime-seer\\source\\idle.png",
+      "source_sha256": "815dd616b571c9beb5708017bf01736705a6ee1767320e9f18cdcdd7be703ddd",
+      "cell_rect": [
+        724,
+        543,
+        1086,
+        1086
+      ],
+      "bounds_alpha32": [
+        71,
+        86,
+        318,
+        430
+      ],
+      "source_edge_pixels": {
+        "left": 0,
+        "right": 0,
+        "top": 0,
+        "bottom": 0
+      },
+      "verdict": "technical_source_edge_clear"
+    },
+    {
+      "state": "idle",
+      "frame": 7,
+      "source": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\characters\\runeblade-base-summons\\animation-r1\\rime-seer\\source\\idle.png",
+      "source_sha256": "815dd616b571c9beb5708017bf01736705a6ee1767320e9f18cdcdd7be703ddd",
+      "cell_rect": [
+        1086,
+        543,
+        1448,
+        1086
+      ],
+      "bounds_alpha32": [
+        68,
+        85,
+        310,
+        430
+      ],
+      "source_edge_pixels": {
+        "left": 0,
+        "right": 0,
+        "top": 0,
+        "bottom": 0
+      },
+      "verdict": "technical_source_edge_clear"
+    },
+    {
+      "state": "attack",
+      "frame": 0,
+      "source": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\characters\\runeblade-base-summons\\animation-r1\\rime-seer\\source\\attack.png",
+      "source_sha256": "76119a0223b51551a6c4212d8129539ba99c7cb114d5ab6aaa3dd5d02bb43fd1",
+      "cell_rect": [
+        0,
+        0,
+        512,
+        512
+      ],
+      "bounds_alpha32": [
+        51,
+        12,
+        512,
+        512
+      ],
+      "source_edge_pixels": {
+        "left": 0,
+        "right": 2,
+        "top": 0,
+        "bottom": 4
+      },
+      "verdict": "edge_review_required"
+    },
+    {
+      "state": "attack",
+      "frame": 1,
+      "source": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\characters\\runeblade-base-summons\\animation-r1\\rime-seer\\source\\attack.png",
+      "source_sha256": "76119a0223b51551a6c4212d8129539ba99c7cb114d5ab6aaa3dd5d02bb43fd1",
+      "cell_rect": [
+        512,
+        0,
+        1024,
+        512
+      ],
+      "bounds_alpha32": [
+        0,
+        11,
+        512,
+        512
+      ],
+      "source_edge_pixels": {
+        "left": 2,
+        "right": 1,
+        "top": 0,
+        "bottom": 5
+      },
+      "verdict": "edge_review_required"
+    },
+    {
+      "state": "attack",
+      "frame": 2,
+      "source": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\characters\\runeblade-base-summons\\animation-r1\\rime-seer\\source\\attack.png",
+      "source_sha256": "76119a0223b51551a6c4212d8129539ba99c7cb114d5ab6aaa3dd5d02bb43fd1",
+      "cell_rect": [
+        1024,
+        0,
+        1536,
+        512
+      ],
+      "bounds_alpha32": [
+        0,
+        0,
+        485,
+        512
+      ],
+      "source_edge_pixels": {
+        "left": 11,
+        "right": 0,
+        "top": 2,
+        "bottom": 5
+      },
+      "verdict": "edge_review_required"
+    },
+    {
+      "state": "attack",
+      "frame": 3,
+      "source": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\characters\\runeblade-base-summons\\animation-r1\\rime-seer\\source\\attack.png",
+      "source_sha256": "76119a0223b51551a6c4212d8129539ba99c7cb114d5ab6aaa3dd5d02bb43fd1",
+      "cell_rect": [
+        0,
+        512,
+        512,
+        1024
+      ],
+      "bounds_alpha32": [
+        28,
+        17,
+        512,
+        494
+      ],
+      "source_edge_pixels": {
+        "left": 0,
+        "right": 98,
+        "top": 0,
+        "bottom": 0
+      },
+      "verdict": "edge_review_required"
+    },
+    {
+      "state": "attack",
+      "frame": 4,
+      "source": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\characters\\runeblade-base-summons\\animation-r1\\rime-seer\\source\\attack.png",
+      "source_sha256": "76119a0223b51551a6c4212d8129539ba99c7cb114d5ab6aaa3dd5d02bb43fd1",
+      "cell_rect": [
+        512,
+        512,
+        1024,
+        1024
+      ],
+      "bounds_alpha32": [
+        0,
+        0,
+        479,
+        494
+      ],
+      "source_edge_pixels": {
+        "left": 99,
+        "right": 0,
+        "top": 1,
+        "bottom": 0
+      },
+      "verdict": "edge_review_required"
+    },
+    {
+      "state": "attack",
+      "frame": 5,
+      "source": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\characters\\runeblade-base-summons\\animation-r1\\rime-seer\\source\\attack.png",
+      "source_sha256": "76119a0223b51551a6c4212d8129539ba99c7cb114d5ab6aaa3dd5d02bb43fd1",
+      "cell_rect": [
+        1024,
+        512,
+        1536,
+        1024
+      ],
+      "bounds_alpha32": [
+        0,
+        0,
+        465,
+        498
+      ],
+      "source_edge_pixels": {
+        "left": 1,
+        "right": 0,
+        "top": 1,
+        "bottom": 0
+      },
+      "verdict": "edge_review_required"
+    },
+    {
+      "state": "hit",
+      "frame": 0,
+      "source": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\characters\\runeblade-base-summons\\animation-r1\\rime-seer\\source\\hit.png",
+      "source_sha256": "c66b9395d5448ca6c81ab7e39d6dfc209430b463b2654dd954a3d8a78a4a0c78",
+      "cell_rect": [
+        0,
+        0,
+        572,
+        687
+      ],
+      "bounds_alpha32": [
+        51,
+        13,
+        572,
+        687
+      ],
+      "source_edge_pixels": {
+        "left": 0,
+        "right": 234,
+        "top": 0,
+        "bottom": 20
+      },
+      "verdict": "edge_review_required"
+    },
+    {
+      "state": "hit",
+      "frame": 1,
+      "source": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\characters\\runeblade-base-summons\\animation-r1\\rime-seer\\source\\hit.png",
+      "source_sha256": "c66b9395d5448ca6c81ab7e39d6dfc209430b463b2654dd954a3d8a78a4a0c78",
+      "cell_rect": [
+        572,
+        0,
+        1145,
+        687
+      ],
+      "bounds_alpha32": [
+        0,
+        14,
+        557,
+        687
+      ],
+      "source_edge_pixels": {
+        "left": 226,
+        "right": 0,
+        "top": 0,
+        "bottom": 15
+      },
+      "verdict": "edge_review_required"
+    },
+    {
+      "state": "hit",
+      "frame": 2,
+      "source": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\characters\\runeblade-base-summons\\animation-r1\\rime-seer\\source\\hit.png",
+      "source_sha256": "c66b9395d5448ca6c81ab7e39d6dfc209430b463b2654dd954a3d8a78a4a0c78",
+      "cell_rect": [
+        0,
+        687,
+        572,
+        1374
+      ],
+      "bounds_alpha32": [
+        101,
+        0,
+        572,
+        646
+      ],
+      "source_edge_pixels": {
+        "left": 0,
+        "right": 156,
+        "top": 29,
+        "bottom": 0
+      },
+      "verdict": "edge_review_required"
+    },
+    {
+      "state": "hit",
+      "frame": 3,
+      "source": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\characters\\runeblade-base-summons\\animation-r1\\rime-seer\\source\\hit.png",
+      "source_sha256": "c66b9395d5448ca6c81ab7e39d6dfc209430b463b2654dd954a3d8a78a4a0c78",
+      "cell_rect": [
+        572,
+        687,
+        1145,
+        1374
+      ],
+      "bounds_alpha32": [
+        0,
+        0,
+        558,
+        649
+      ],
+      "source_edge_pixels": {
+        "left": 127,
+        "right": 0,
+        "top": 24,
+        "bottom": 0
+      },
+      "verdict": "edge_review_required"
+    },
+    {
+      "state": "wounded_idle",
+      "frame": 0,
+      "source": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\characters\\runeblade-base-summons\\animation-r1\\rime-seer\\source\\wounded_idle.png",
+      "source_sha256": "9b299b9afc077296820d5013ddf1108e1d9b7c5ef00da9f829ff4b27785c8b0d",
+      "cell_rect": [
+        0,
+        0,
+        572,
+        687
+      ],
+      "bounds_alpha32": [
+        84,
+        15,
+        572,
+        659
+      ],
+      "source_edge_pixels": {
+        "left": 0,
+        "right": 88,
+        "top": 0,
+        "bottom": 0
+      },
+      "verdict": "edge_review_required"
+    },
+    {
+      "state": "wounded_idle",
+      "frame": 1,
+      "source": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\characters\\runeblade-base-summons\\animation-r1\\rime-seer\\source\\wounded_idle.png",
+      "source_sha256": "9b299b9afc077296820d5013ddf1108e1d9b7c5ef00da9f829ff4b27785c8b0d",
+      "cell_rect": [
+        572,
+        0,
+        1145,
+        687
+      ],
+      "bounds_alpha32": [
+        0,
+        14,
+        542,
+        660
+      ],
+      "source_edge_pixels": {
+        "left": 64,
+        "right": 0,
+        "top": 0,
+        "bottom": 0
+      },
+      "verdict": "edge_review_required"
+    },
+    {
+      "state": "wounded_idle",
+      "frame": 2,
+      "source": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\characters\\runeblade-base-summons\\animation-r1\\rime-seer\\source\\wounded_idle.png",
+      "source_sha256": "9b299b9afc077296820d5013ddf1108e1d9b7c5ef00da9f829ff4b27785c8b0d",
+      "cell_rect": [
+        0,
+        687,
+        572,
+        1374
+      ],
+      "bounds_alpha32": [
+        82,
+        10,
+        572,
+        648
+      ],
+      "source_edge_pixels": {
+        "left": 0,
+        "right": 66,
+        "top": 0,
+        "bottom": 0
+      },
+      "verdict": "edge_review_required"
+    },
+    {
+      "state": "wounded_idle",
+      "frame": 3,
+      "source": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\characters\\runeblade-base-summons\\animation-r1\\rime-seer\\source\\wounded_idle.png",
+      "source_sha256": "9b299b9afc077296820d5013ddf1108e1d9b7c5ef00da9f829ff4b27785c8b0d",
+      "cell_rect": [
+        572,
+        687,
+        1145,
+        1374
+      ],
+      "bounds_alpha32": [
+        0,
+        10,
+        559,
+        647
+      ],
+      "source_edge_pixels": {
+        "left": 71,
+        "right": 0,
+        "top": 0,
+        "bottom": 0
+      },
+      "verdict": "edge_review_required"
+    },
+    {
+      "state": "cast",
+      "frame": 0,
+      "source": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\characters\\runeblade-base-summons\\animation-r1\\rime-seer\\source\\cast.png",
+      "source_sha256": "3a5015b0476c927d4275a4aab1484ec1bbf31a786b198de2aef42657da29c3f3",
+      "cell_rect": [
+        0,
+        0,
+        701,
+        561
+      ],
+      "bounds_alpha32": [
+        206,
+        24,
+        594,
+        533
+      ],
+      "source_edge_pixels": {
+        "left": 0,
+        "right": 0,
+        "top": 0,
+        "bottom": 0
+      },
+      "verdict": "technical_source_edge_clear"
+    },
+    {
+      "state": "cast",
+      "frame": 1,
+      "source": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\characters\\runeblade-base-summons\\animation-r1\\rime-seer\\source\\cast.png",
+      "source_sha256": "3a5015b0476c927d4275a4aab1484ec1bbf31a786b198de2aef42657da29c3f3",
+      "cell_rect": [
+        701,
+        0,
+        1402,
+        561
+      ],
+      "bounds_alpha32": [
+        172,
+        24,
+        567,
+        533
+      ],
+      "source_edge_pixels": {
+        "left": 0,
+        "right": 0,
+        "top": 0,
+        "bottom": 0
+      },
+      "verdict": "technical_source_edge_clear"
+    },
+    {
+      "state": "cast",
+      "frame": 2,
+      "source": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\characters\\runeblade-base-summons\\animation-r1\\rime-seer\\source\\cast.png",
+      "source_sha256": "3a5015b0476c927d4275a4aab1484ec1bbf31a786b198de2aef42657da29c3f3",
+      "cell_rect": [
+        0,
+        561,
+        701,
+        1122
+      ],
+      "bounds_alpha32": [
+        189,
+        15,
+        667,
+        523
+      ],
+      "source_edge_pixels": {
+        "left": 0,
+        "right": 0,
+        "top": 0,
+        "bottom": 0
+      },
+      "verdict": "technical_source_edge_clear"
+    },
+    {
+      "state": "cast",
+      "frame": 3,
+      "source": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\characters\\runeblade-base-summons\\animation-r1\\rime-seer\\source\\cast.png",
+      "source_sha256": "3a5015b0476c927d4275a4aab1484ec1bbf31a786b198de2aef42657da29c3f3",
+      "cell_rect": [
+        701,
+        561,
+        1402,
+        1122
+      ],
+      "bounds_alpha32": [
+        174,
+        15,
+        565,
+        524
+      ],
+      "source_edge_pixels": {
+        "left": 0,
+        "right": 0,
+        "top": 0,
+        "bottom": 0
+      },
+      "verdict": "technical_source_edge_clear"
+    },
+    {
+      "state": "die",
+      "frame": 0,
+      "source": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\characters\\runeblade-base-summons\\animation-r1\\rime-seer\\source\\die.png",
+      "source_sha256": "cc0f352ec88020b7a88696f9d0c7634679bb188f07ffe6dd1befbf72561379d6",
+      "cell_rect": [
+        0,
+        0,
+        512,
+        512
+      ],
+      "bounds_alpha32": [
+        101,
+        13,
+        495,
+        512
+      ],
+      "source_edge_pixels": {
+        "left": 0,
+        "right": 0,
+        "top": 0,
+        "bottom": 434
+      },
+      "verdict": "edge_review_required"
+    },
+    {
+      "state": "die",
+      "frame": 1,
+      "source": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\characters\\runeblade-base-summons\\animation-r1\\rime-seer\\source\\die.png",
+      "source_sha256": "cc0f352ec88020b7a88696f9d0c7634679bb188f07ffe6dd1befbf72561379d6",
+      "cell_rect": [
+        512,
+        0,
+        1024,
+        512
+      ],
+      "bounds_alpha32": [
+        81,
+        39,
+        493,
+        512
+      ],
+      "source_edge_pixels": {
+        "left": 0,
+        "right": 0,
+        "top": 0,
+        "bottom": 604
+      },
+      "verdict": "edge_review_required"
+    },
+    {
+      "state": "die",
+      "frame": 2,
+      "source": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\characters\\runeblade-base-summons\\animation-r1\\rime-seer\\source\\die.png",
+      "source_sha256": "cc0f352ec88020b7a88696f9d0c7634679bb188f07ffe6dd1befbf72561379d6",
+      "cell_rect": [
+        1024,
+        0,
+        1536,
+        512
+      ],
+      "bounds_alpha32": [
+        13,
+        120,
+        493,
+        512
+      ],
+      "source_edge_pixels": {
+        "left": 0,
+        "right": 0,
+        "top": 0,
+        "bottom": 691
+      },
+      "verdict": "edge_review_required"
+    },
+    {
+      "state": "die",
+      "frame": 3,
+      "source": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\characters\\runeblade-base-summons\\animation-r1\\rime-seer\\source\\die.png",
+      "source_sha256": "cc0f352ec88020b7a88696f9d0c7634679bb188f07ffe6dd1befbf72561379d6",
+      "cell_rect": [
+        0,
+        512,
+        512,
+        1024
+      ],
+      "bounds_alpha32": [
+        12,
+        0,
+        507,
+        430
+      ],
+      "source_edge_pixels": {
+        "left": 0,
+        "right": 0,
+        "top": 410,
+        "bottom": 0
+      },
+      "verdict": "edge_review_required"
+    },
+    {
+      "state": "die",
+      "frame": 4,
+      "source": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\characters\\runeblade-base-summons\\animation-r1\\rime-seer\\source\\die.png",
+      "source_sha256": "cc0f352ec88020b7a88696f9d0c7634679bb188f07ffe6dd1befbf72561379d6",
+      "cell_rect": [
+        512,
+        512,
+        1024,
+        1024
+      ],
+      "bounds_alpha32": [
+        13,
+        0,
+        508,
+        429
+      ],
+      "source_edge_pixels": {
+        "left": 0,
+        "right": 0,
+        "top": 589,
+        "bottom": 0
+      },
+      "verdict": "edge_review_required"
+    },
+    {
+      "state": "die",
+      "frame": 5,
+      "source": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\characters\\runeblade-base-summons\\animation-r1\\rime-seer\\source\\die.png",
+      "source_sha256": "cc0f352ec88020b7a88696f9d0c7634679bb188f07ffe6dd1befbf72561379d6",
+      "cell_rect": [
+        1024,
+        512,
+        1536,
+        1024
+      ],
+      "bounds_alpha32": [
+        2,
+        0,
+        506,
+        433
+      ],
+      "source_edge_pixels": {
+        "left": 0,
+        "right": 0,
+        "top": 691,
+        "bottom": 0
+      },
+      "verdict": "edge_review_required"
+    }
+  ]
+}

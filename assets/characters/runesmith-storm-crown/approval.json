@@ -1,0 +1,11 @@
+{
+  "status": "design_selected_for_idle",
+  "source": "assets/heroes/concepts/ranger-runesmith-elite/2026-10-04-r1/runesmith-02-storm-crowned.png",
+  "sha256": "1c0539c7922dc0745a8b186e7ddbaa796aa60b3ee053711e8e9a964f1b667a45",
+  "evidence": {
+    "type": "explicit_current_user_message",
+    "text": "for the ranger I like the middle one the best, create just the idle animation for it for the character select screen. same for the middle runesmith."
+  },
+  "gallery_override_at_read": null,
+  "scope": "Selected design authorized for character-select idle only. Does not assert animation QA or alter gallery ledger."
+}

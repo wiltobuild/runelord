@@ -1,0 +1,551 @@
+{
+  "reviewer": "review_casters",
+  "issues": [
+    {
+      "id": "SCALE-01",
+      "severity": "major",
+      "frames": [
+        {
+          "state": "idle",
+          "frame": 0,
+          "time_ms": 0,
+          "file": "frames/idle-00.png"
+        },
+        {
+          "state": "idle",
+          "frame": 1,
+          "time_ms": 180,
+          "file": "frames/idle-01.png"
+        },
+        {
+          "state": "idle",
+          "frame": 2,
+          "time_ms": 360,
+          "file": "frames/idle-02.png"
+        },
+        {
+          "state": "idle",
+          "frame": 3,
+          "time_ms": 540,
+          "file": "frames/idle-03.png"
+        },
+        {
+          "state": "idle",
+          "frame": 4,
+          "time_ms": 720,
+          "file": "frames/idle-04.png"
+        },
+        {
+          "state": "idle",
+          "frame": 5,
+          "time_ms": 900,
+          "file": "frames/idle-05.png"
+        },
+        {
+          "state": "idle",
+          "frame": 6,
+          "time_ms": 1080,
+          "file": "frames/idle-06.png"
+        },
+        {
+          "state": "idle",
+          "frame": 7,
+          "time_ms": 1260,
+          "file": "frames/idle-07.png"
+        },
+        {
+          "state": "attack",
+          "frame": 0,
+          "time_ms": 0,
+          "file": "frames/attack-00.png"
+        },
+        {
+          "state": "attack",
+          "frame": 1,
+          "time_ms": 130,
+          "file": "frames/attack-01.png"
+        },
+        {
+          "state": "attack",
+          "frame": 2,
+          "time_ms": 260,
+          "file": "frames/attack-02.png"
+        },
+        {
+          "state": "attack",
+          "frame": 3,
+          "time_ms": 390,
+          "file": "frames/attack-03.png"
+        },
+        {
+          "state": "attack",
+          "frame": 4,
+          "time_ms": 520,
+          "file": "frames/attack-04.png"
+        },
+        {
+          "state": "attack",
+          "frame": 5,
+          "time_ms": 650,
+          "file": "frames/attack-05.png"
+        },
+        {
+          "state": "hit",
+          "frame": 0,
+          "time_ms": 0,
+          "file": "frames/hit-00.png"
+        },
+        {
+          "state": "hit",
+          "frame": 1,
+          "time_ms": 110,
+          "file": "frames/hit-01.png"
+        },
+        {
+          "state": "hit",
+          "frame": 2,
+          "time_ms": 220,
+          "file": "frames/hit-02.png"
+        },
+        {
+          "state": "hit",
+          "frame": 3,
+          "time_ms": 330,
+          "file": "frames/hit-03.png"
+        },
+        {
+          "state": "wounded_idle",
+          "frame": 0,
+          "time_ms": 0,
+          "file": "frames/wounded_idle-00.png"
+        },
+        {
+          "state": "wounded_idle",
+          "frame": 1,
+          "time_ms": 260,
+          "file": "frames/wounded_idle-01.png"
+        },
+        {
+          "state": "wounded_idle",
+          "frame": 2,
+          "time_ms": 520,
+          "file": "frames/wounded_idle-02.png"
+        },
+        {
+          "state": "wounded_idle",
+          "frame": 3,
+          "time_ms": 780,
+          "file": "frames/wounded_idle-03.png"
+        },
+        {
+          "state": "cast",
+          "frame": 0,
+          "time_ms": 0,
+          "file": "frames/cast-00.png"
+        },
+        {
+          "state": "cast",
+          "frame": 1,
+          "time_ms": 200,
+          "file": "frames/cast-01.png"
+        },
+        {
+          "state": "cast",
+          "frame": 2,
+          "time_ms": 400,
+          "file": "frames/cast-02.png"
+        },
+        {
+          "state": "cast",
+          "frame": 3,
+          "time_ms": 600,
+          "file": "frames/cast-03.png"
+        },
+        {
+          "state": "die",
+          "frame": 0,
+          "time_ms": 0,
+          "file": "frames/die-00.png"
+        },
+        {
+          "state": "die",
+          "frame": 1,
+          "time_ms": 220,
+          "file": "frames/die-01.png"
+        },
+        {
+          "state": "die",
+          "frame": 2,
+          "time_ms": 440,
+          "file": "frames/die-02.png"
+        },
+        {
+          "state": "die",
+          "frame": 3,
+          "time_ms": 660,
+          "file": "frames/die-03.png"
+        },
+        {
+          "state": "die",
+          "frame": 4,
+          "time_ms": 880,
+          "file": "frames/die-04.png"
+        },
+        {
+          "state": "die",
+          "frame": 5,
+          "time_ms": 1100,
+          "file": "frames/die-05.png"
+        }
+      ],
+      "observed": "Body size changes dramatically between idle and other states. Export uses native pixels of independently generated sheets without normalization.",
+      "expected": "Stable apparent body scale across state transitions.",
+      "repair": "Choose one documented uniform scale per source sheet from stable body dimensions, preserve pose deformation, then repack on fixed canvas (task target768x768).",
+      "invariant_to_preserve": "Approved identity, original generated body anatomy and intended poses. No per-pose rescaling.",
+      "acceptance_test": "Reinspect changed and adjacent frames at native size, light/dark,96px, and normal/slow playback; no truncation, foreign fragments or scale pop."
+    },
+    {
+      "id": "DIE-01",
+      "severity": "blocking",
+      "frames": [
+        {
+          "state": "die",
+          "frame": 0,
+          "time_ms": 0,
+          "file": "frames/die-00.png"
+        },
+        {
+          "state": "die",
+          "frame": 1,
+          "time_ms": 220,
+          "file": "frames/die-01.png"
+        },
+        {
+          "state": "die",
+          "frame": 2,
+          "time_ms": 440,
+          "file": "frames/die-02.png"
+        },
+        {
+          "state": "die",
+          "frame": 3,
+          "time_ms": 660,
+          "file": "frames/die-03.png"
+        },
+        {
+          "state": "die",
+          "frame": 4,
+          "time_ms": 880,
+          "file": "frames/die-04.png"
+        },
+        {
+          "state": "die",
+          "frame": 5,
+          "time_ms": 1100,
+          "file": "frames/die-05.png"
+        }
+      ],
+      "observed": "First row death bodies cut off at the lower extraction edge; second row death frames contain detached boots/cloth/legs belonging to preceding row.",
+      "expected": "Six complete isolated death poses and terminal corpse hold.",
+      "repair": "Re-extract using actual row gutters and per-cell source rectangles, including all original feet; remove only known neighboring-cell pixels. Do not crop based on equal half-height.",
+      "invariant_to_preserve": "Approved identity, original generated body anatomy and intended poses. No per-pose rescaling.",
+      "acceptance_test": "Reinspect changed and adjacent frames at native size, light/dark,96px, and normal/slow playback; no truncation, foreign fragments or scale pop."
+    },
+    {
+      "id": "ATTACK-01",
+      "severity": "major",
+      "frames": [
+        {
+          "state": "attack",
+          "frame": 3,
+          "time_ms": 390,
+          "file": "frames/attack-03.png"
+        },
+        {
+          "state": "attack",
+          "frame": 4,
+          "time_ms": 520,
+          "file": "frames/attack-04.png"
+        }
+      ],
+      "observed": "Projectile from attack3 is truncated and appears as foreign incoming projectile at left edge of attack4.",
+      "expected": "Complete outward projectile and clean recovery.",
+      "repair": "Correct source-cell boundaries/connected component assignment to put complete projectile in attack3 only.",
+      "invariant_to_preserve": "Approved identity, original generated body anatomy and intended poses. No per-pose rescaling.",
+      "acceptance_test": "Reinspect changed and adjacent frames at native size, light/dark,96px, and normal/slow playback; no truncation, foreign fragments or scale pop."
+    },
+    {
+      "id": "HIT-01",
+      "severity": "blocking",
+      "frames": [
+        {
+          "state": "hit",
+          "frame": 0,
+          "time_ms": 0,
+          "file": "frames/hit-00.png"
+        },
+        {
+          "state": "hit",
+          "frame": 1,
+          "time_ms": 110,
+          "file": "frames/hit-01.png"
+        },
+        {
+          "state": "hit",
+          "frame": 2,
+          "time_ms": 220,
+          "file": "frames/hit-02.png"
+        },
+        {
+          "state": "hit",
+          "frame": 3,
+          "time_ms": 330,
+          "file": "frames/hit-03.png"
+        }
+      ],
+      "observed": "Hit0 right foot and cloak truncated; hit1 contains left-edge neighboring foot/cloth and tiny next-row pixel; hit2 right cloak truncated and hit3 carries neighboring cloak.",
+      "expected": "Complete feet and cloak; no foreign islands.",
+      "repair": "Use variable column rectangles/local masks assigning original connected silhouette pieces to correct frame.",
+      "invariant_to_preserve": "Approved identity, original generated body anatomy and intended poses. No per-pose rescaling.",
+      "acceptance_test": "Reinspect changed and adjacent frames at native size, light/dark,96px, and normal/slow playback; no truncation, foreign fragments or scale pop."
+    },
+    {
+      "id": "WOUND-01",
+      "severity": "major",
+      "frames": [
+        {
+          "state": "wounded_idle",
+          "frame": 0,
+          "time_ms": 0,
+          "file": "frames/wounded_idle-00.png"
+        },
+        {
+          "state": "wounded_idle",
+          "frame": 1,
+          "time_ms": 260,
+          "file": "frames/wounded_idle-01.png"
+        },
+        {
+          "state": "wounded_idle",
+          "frame": 2,
+          "time_ms": 520,
+          "file": "frames/wounded_idle-02.png"
+        },
+        {
+          "state": "wounded_idle",
+          "frame": 3,
+          "time_ms": 780,
+          "file": "frames/wounded_idle-03.png"
+        }
+      ],
+      "observed": "Right edge cloak touches/cuts source columns in0/2 and corresponding fragments appear at left edge1/3.",
+      "expected": "Intact cloak in every wounded pose.",
+      "repair": "Re-extract correct cells without slicing the cloak.",
+      "invariant_to_preserve": "Approved identity, original generated body anatomy and intended poses. No per-pose rescaling.",
+      "acceptance_test": "Reinspect changed and adjacent frames at native size, light/dark,96px, and normal/slow playback; no truncation, foreign fragments or scale pop."
+    },
+    {
+      "id": "PLAYBACK-01",
+      "severity": "blocking",
+      "frames": [
+        {
+          "state": "idle",
+          "frame": 0,
+          "time_ms": 0,
+          "file": "frames/idle-00.png"
+        },
+        {
+          "state": "idle",
+          "frame": 1,
+          "time_ms": 180,
+          "file": "frames/idle-01.png"
+        },
+        {
+          "state": "idle",
+          "frame": 2,
+          "time_ms": 360,
+          "file": "frames/idle-02.png"
+        },
+        {
+          "state": "idle",
+          "frame": 3,
+          "time_ms": 540,
+          "file": "frames/idle-03.png"
+        },
+        {
+          "state": "idle",
+          "frame": 4,
+          "time_ms": 720,
+          "file": "frames/idle-04.png"
+        },
+        {
+          "state": "idle",
+          "frame": 5,
+          "time_ms": 900,
+          "file": "frames/idle-05.png"
+        },
+        {
+          "state": "idle",
+          "frame": 6,
+          "time_ms": 1080,
+          "file": "frames/idle-06.png"
+        },
+        {
+          "state": "idle",
+          "frame": 7,
+          "time_ms": 1260,
+          "file": "frames/idle-07.png"
+        },
+        {
+          "state": "attack",
+          "frame": 0,
+          "time_ms": 0,
+          "file": "frames/attack-00.png"
+        },
+        {
+          "state": "attack",
+          "frame": 1,
+          "time_ms": 130,
+          "file": "frames/attack-01.png"
+        },
+        {
+          "state": "attack",
+          "frame": 2,
+          "time_ms": 260,
+          "file": "frames/attack-02.png"
+        },
+        {
+          "state": "attack",
+          "frame": 3,
+          "time_ms": 390,
+          "file": "frames/attack-03.png"
+        },
+        {
+          "state": "attack",
+          "frame": 4,
+          "time_ms": 520,
+          "file": "frames/attack-04.png"
+        },
+        {
+          "state": "attack",
+          "frame": 5,
+          "time_ms": 650,
+          "file": "frames/attack-05.png"
+        },
+        {
+          "state": "hit",
+          "frame": 0,
+          "time_ms": 0,
+          "file": "frames/hit-00.png"
+        },
+        {
+          "state": "hit",
+          "frame": 1,
+          "time_ms": 110,
+          "file": "frames/hit-01.png"
+        },
+        {
+          "state": "hit",
+          "frame": 2,
+          "time_ms": 220,
+          "file": "frames/hit-02.png"
+        },
+        {
+          "state": "hit",
+          "frame": 3,
+          "time_ms": 330,
+          "file": "frames/hit-03.png"
+        },
+        {
+          "state": "wounded_idle",
+          "frame": 0,
+          "time_ms": 0,
+          "file": "frames/wounded_idle-00.png"
+        },
+        {
+          "state": "wounded_idle",
+          "frame": 1,
+          "time_ms": 260,
+          "file": "frames/wounded_idle-01.png"
+        },
+        {
+          "state": "wounded_idle",
+          "frame": 2,
+          "time_ms": 520,
+          "file": "frames/wounded_idle-02.png"
+        },
+        {
+          "state": "wounded_idle",
+          "frame": 3,
+          "time_ms": 780,
+          "file": "frames/wounded_idle-03.png"
+        },
+        {
+          "state": "cast",
+          "frame": 0,
+          "time_ms": 0,
+          "file": "frames/cast-00.png"
+        },
+        {
+          "state": "cast",
+          "frame": 1,
+          "time_ms": 200,
+          "file": "frames/cast-01.png"
+        },
+        {
+          "state": "cast",
+          "frame": 2,
+          "time_ms": 400,
+          "file": "frames/cast-02.png"
+        },
+        {
+          "state": "cast",
+          "frame": 3,
+          "time_ms": 600,
+          "file": "frames/cast-03.png"
+        },
+        {
+          "state": "die",
+          "frame": 0,
+          "time_ms": 0,
+          "file": "frames/die-00.png"
+        },
+        {
+          "state": "die",
+          "frame": 1,
+          "time_ms": 220,
+          "file": "frames/die-01.png"
+        },
+        {
+          "state": "die",
+          "frame": 2,
+          "time_ms": 440,
+          "file": "frames/die-02.png"
+        },
+        {
+          "state": "die",
+          "frame": 3,
+          "time_ms": 660,
+          "file": "frames/die-03.png"
+        },
+        {
+          "state": "die",
+          "frame": 4,
+          "time_ms": 880,
+          "file": "frames/die-04.png"
+        },
+        {
+          "state": "die",
+          "frame": 5,
+          "time_ms": 1100,
+          "file": "frames/die-05.png"
+        }
+      ],
+      "observed": "Normal and slow motion playback not inspected. Browser localhost4317 returned ERR_CONNECTION_REFUSED during review; static evidence cannot prove timing/loop quality.",
+      "expected": "Actual observed playback evidence before completion.",
+      "repair": "Serve preview locally and inspect normal/slow after repack, especially idle7-to0 and death terminal hold.",
+      "invariant_to_preserve": "Approved identity, original generated body anatomy and intended poses. No per-pose rescaling.",
+      "acceptance_test": "Reinspect changed and adjacent frames at native size, light/dark,96px, and normal/slow playback; no truncation, foreign fragments or scale pop."
+    }
+  ]
+}

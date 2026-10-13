@@ -1,0 +1,9 @@
+{
+  "indexed_frames": 32,
+  "passed": 0,
+  "failed": 14,
+  "unreviewed": 18,
+  "integrity_errors": [],
+  "coverage_complete": false,
+  "limitation": "Coverage/hash validation only; does not prove visual quality or truthful inspection."
+}

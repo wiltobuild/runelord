@@ -1,0 +1,75 @@
+{
+  "method": "Built-in image generation",
+  "status": "Concept samples pending review; no animation or game integration",
+  "approvedStyleHashes": [
+    "66b584fa3f80878616790d4d0ddbfb39d04710aef670beb4ccc780c64c11205e",
+    "b567aa885ce19766259b70d4af812bb4d2d0b49b5c63a95728f3e01cb2dd1c0d",
+    "8cbf9775adebf82dc0018adf9da816a1b1fd1b258f298b8d8f82d06b9ebfae86"
+  ],
+  "samples": [
+    {
+      "slug": "fallen-soldier-thrall",
+      "name": "Fallen Soldier Thrall",
+      "role": "Fixed summon, 10 HP / 4 Power, Rot",
+      "desc": "New fallen human infantryman raised from a battlefield: medium lean build, blue-grey sunken face, stern dead eyes, cracked open kettle helmet, chipped silver brigandine breastplate over charcoal padded jacket, one missing shoulder plate, ragged deep teal military skirt. Holds a long broken-banner spear in both hands pointing diagonally up-right, two clear hands gripping the wooden shaft properly; small tattered blue cloth below the spearhead. Cold ice seals a split in the neck armor and chest. Human corpse rather than fully bare skeleton; modest low-tier equipment, no huge shield. Shambling but combat-ready, visually less elite than Legionnaire.",
+      "prompt": "Use case stylized-concept. ONE full-body Runelord undead summon sample, transparent background. First three references are the user's approved Bone Thrall, Frost Thrall Shatterbound, Risen Legionnaire; use all three for consistent serious gritty 2D cel-shaded art language, cold silver/slate steel, deep blue-teal cloth, blue-grey corpse flesh and restrained electric icy cyan eye/rune/ice accents. Broad clean color regions, crisp hard-edged shadows and selective big chips, cracks and tears. No orange rust, no painterly texture, realistic anatomy, 3D/PBR, fine grunge, gradients or cute mascot look. Keep severe face, threatening purposeful stance, stylized weighty anatomy. Complete silhouette and weapons with generous padding, grounded feet, facing RIGHT shallow three-quarter, at least 1024 long edge. No text, no scenery, no multiple figures. Distinct silhouette from the three reference units. New fallen human infantryman raised from a battlefield: medium lean build, blue-grey sunken face, stern dead eyes, cracked open kettle helmet, chipped silver brigandine breastplate over charcoal padded jacket, one missing shoulder plate, ragged deep teal military skirt. Holds a long broken-banner spear in both hands pointing diagonally up-right, two clear hands gripping the wooden shaft properly; small tattered blue cloth below the spearhead. Cold ice seals a split in the neck armor and chest. Human corpse rather than fully bare skeleton; modest low-tier equipment, no huge shield. Shambling but combat-ready, visually less elite than Legionnaire.",
+      "refs": [
+        "C:/Users/wilsh/Documents/Codex/2026-10-05/i-x20/outputs/bone-thrall-concept-r3.png",
+        "C:/Users/wilsh/Documents/Codex/2026-10-05/i-x20/outputs/frost-thrall-concept-r1.png",
+        "C:/Users/wilsh/Documents/Codex/2026-10-05/i-x20/outputs/risen-legionnaire-concept-r3.png"
+      ]
+    },
+    {
+      "slug": "rimebound-champion",
+      "name": "Rimebound Champion",
+      "role": "Fixed summon, 30 HP / 8 Power, Defender, Unbound, Chill",
+      "desc": "New towering undead champion, broad monumental silhouette and thick heavy silver segmented armor. Severe closed angular helmet with three short jagged frost crown ridges, cold cyan narrow eyes, dark blue-teal torn mantle. Massive two-handed polehammer with a rectangular stone-and-silver head sealed in ice, held low horizontally across body with both hands properly on shaft. One huge crystalline shoulder mantle balanced by thick layered steel on other shoulder. Large central cyan binding rune, a few bold chips. Exposed blue-grey dead skin at neck. Plant both heavy boots wide in an immovable defensive stance. Elite commanding menace without ornate clutter; distinct from sword-and-shield Legionnaire and bare-chested Frost Thrall.",
+      "prompt": "Use case stylized-concept. ONE full-body Runelord undead summon sample, transparent background. First three references are the user's approved Bone Thrall, Frost Thrall Shatterbound, Risen Legionnaire; use all three for consistent serious gritty 2D cel-shaded art language, cold silver/slate steel, deep blue-teal cloth, blue-grey corpse flesh and restrained electric icy cyan eye/rune/ice accents. Broad clean color regions, crisp hard-edged shadows and selective big chips, cracks and tears. No orange rust, no painterly texture, realistic anatomy, 3D/PBR, fine grunge, gradients or cute mascot look. Keep severe face, threatening purposeful stance, stylized weighty anatomy. Complete silhouette and weapons with generous padding, grounded feet, facing RIGHT shallow three-quarter, at least 1024 long edge. No text, no scenery, no multiple figures. Distinct silhouette from the three reference units. New towering undead champion, broad monumental silhouette and thick heavy silver segmented armor. Severe closed angular helmet with three short jagged frost crown ridges, cold cyan narrow eyes, dark blue-teal torn mantle. Massive two-handed polehammer with a rectangular stone-and-silver head sealed in ice, held low horizontally across body with both hands properly on shaft. One huge crystalline shoulder mantle balanced by thick layered steel on other shoulder. Large central cyan binding rune, a few bold chips. Exposed blue-grey dead skin at neck. Plant both heavy boots wide in an immovable defensive stance. Elite commanding menace without ornate clutter; distinct from sword-and-shield Legionnaire and bare-chested Frost Thrall.",
+      "refs": [
+        "C:/Users/wilsh/Documents/Codex/2026-10-05/i-x20/outputs/bone-thrall-concept-r3.png",
+        "C:/Users/wilsh/Documents/Codex/2026-10-05/i-x20/outputs/frost-thrall-concept-r1.png",
+        "C:/Users/wilsh/Documents/Codex/2026-10-05/i-x20/outputs/risen-legionnaire-concept-r3.png"
+      ]
+    },
+    {
+      "slug": "thrall-wall",
+      "name": "Thrall Wall — Bone Defender",
+      "role": "Bone Thrall card variant, 15 HP, Defender",
+      "desc": "Defensive variant of approved Bone Thrall (image 1 is also identity reference): preserve long gaunt skull, skeletal limbs, broken helmet, hollow chest and deep teal rags. Crouches behind a massive crude rectangular pavise of cold grey battlefield scrap and charred wood. Shield has bolted mismatched plates, a bold ice-bound central spine and a faded cyan binding rune. Keep skull, ribs, sword hand and both bent skeletal legs readable around the shield, no missing limbs. Short chipped falchion low in right hand, shield held on left arm. Slightly heavier scavenged shoulder and knee guards, not full plate. Braced low compact silhouette; no wall scenery, only this one skeleton with its shield.",
+      "prompt": "Use case stylized-concept. ONE full-body Runelord undead summon sample, transparent background. First three references are the user's approved Bone Thrall, Frost Thrall Shatterbound, Risen Legionnaire; use all three for consistent serious gritty 2D cel-shaded art language, cold silver/slate steel, deep blue-teal cloth, blue-grey corpse flesh and restrained electric icy cyan eye/rune/ice accents. Broad clean color regions, crisp hard-edged shadows and selective big chips, cracks and tears. No orange rust, no painterly texture, realistic anatomy, 3D/PBR, fine grunge, gradients or cute mascot look. Keep severe face, threatening purposeful stance, stylized weighty anatomy. Complete silhouette and weapons with generous padding, grounded feet, facing RIGHT shallow three-quarter, at least 1024 long edge. No text, no scenery, no multiple figures. Distinct silhouette from the three reference units. Defensive variant of approved Bone Thrall (image 1 is also identity reference): preserve long gaunt skull, skeletal limbs, broken helmet, hollow chest and deep teal rags. Crouches behind a massive crude rectangular pavise of cold grey battlefield scrap and charred wood. Shield has bolted mismatched plates, a bold ice-bound central spine and a faded cyan binding rune. Keep skull, ribs, sword hand and both bent skeletal legs readable around the shield, no missing limbs. Short chipped falchion low in right hand, shield held on left arm. Slightly heavier scavenged shoulder and knee guards, not full plate. Braced low compact silhouette; no wall scenery, only this one skeleton with its shield.",
+      "refs": [
+        "C:/Users/wilsh/Documents/Codex/2026-10-05/i-x20/outputs/bone-thrall-concept-r3.png",
+        "C:/Users/wilsh/Documents/Codex/2026-10-05/i-x20/outputs/frost-thrall-concept-r1.png",
+        "C:/Users/wilsh/Documents/Codex/2026-10-05/i-x20/outputs/risen-legionnaire-concept-r3.png"
+      ]
+    },
+    {
+      "slug": "raised-goblin-thrall",
+      "name": "Corpse Thrall — Raised Goblin",
+      "role": "Representative corpse-derived Thrall sample; not a new fixed summon species",
+      "extra": "C:/Users/wilsh/Projects/runelord/assets/characters/goblin-raider/goblin-base-b1.png",
+      "desc": "FOURTH image is enemy identity reference: raise that Goblin Raider as undead, preserving recognizable long ears, tusks, head scar, helmet, armor layout, right-hand cleaver and left-hand round shield. Pose it facing right, do not swap hand equipment. Replace living green skin with cold dead blue-grey, red cloth becomes desaturated deep teal. Narrow menacing icy eye slits with no pupils, severe sunken cheeks and brow, no cute large innocent eyes. Ice seals old scar and a small wound at neck. A few damaged armor edges and cloth tears. Compact hunched corpse stance. Do not turn goblin into human or skeleton; maintain its species and equipment.",
+      "prompt": "Use case stylized-concept. ONE full-body Runelord undead summon sample, transparent background. First three references are the user's approved Bone Thrall, Frost Thrall Shatterbound, Risen Legionnaire; use all three for consistent serious gritty 2D cel-shaded art language, cold silver/slate steel, deep blue-teal cloth, blue-grey corpse flesh and restrained electric icy cyan eye/rune/ice accents. Broad clean color regions, crisp hard-edged shadows and selective big chips, cracks and tears. No orange rust, no painterly texture, realistic anatomy, 3D/PBR, fine grunge, gradients or cute mascot look. Keep severe face, threatening purposeful stance, stylized weighty anatomy. Complete silhouette and weapons with generous padding, grounded feet, facing RIGHT shallow three-quarter, at least 1024 long edge. No text, no scenery, no multiple figures. Distinct silhouette from the three reference units. FOURTH image is enemy identity reference: raise that Goblin Raider as undead, preserving recognizable long ears, tusks, head scar, helmet, armor layout, right-hand cleaver and left-hand round shield. Pose it facing right, do not swap hand equipment. Replace living green skin with cold dead blue-grey, red cloth becomes desaturated deep teal. Narrow menacing icy eye slits with no pupils, severe sunken cheeks and brow, no cute large innocent eyes. Ice seals old scar and a small wound at neck. A few damaged armor edges and cloth tears. Compact hunched corpse stance. Do not turn goblin into human or skeleton; maintain its species and equipment.",
+      "refs": [
+        "C:/Users/wilsh/Documents/Codex/2026-10-05/i-x20/outputs/bone-thrall-concept-r3.png",
+        "C:/Users/wilsh/Documents/Codex/2026-10-05/i-x20/outputs/frost-thrall-concept-r1.png",
+        "C:/Users/wilsh/Documents/Codex/2026-10-05/i-x20/outputs/risen-legionnaire-concept-r3.png",
+        "C:/Users/wilsh/Projects/runelord/assets/characters/goblin-raider/goblin-base-b1.png"
+      ]
+    },
+    {
+      "slug": "elite-thrall-ogre",
+      "name": "Elite Thrall — Raised Bellows Ogre",
+      "role": "Representative elite corpse treatment using Bellows Ogre anatomy; elite placement is illustrative, not a rules change",
+      "extra": "C:/Users/wilsh/Projects/runelord/assets/approvals/inbox/bellows-ogre/base-r1/base-r1.png",
+      "desc": "FOURTH image is enemy identity reference: raised undead treatment of the Bellows Ogre, preserve square tusked face, enormous gorilla-like arms, metal fist gauntlets, strapped chest furnace and heavy barefoot build. Reorient to right-facing ally. Dead slate blue-grey skin, icy cyan narrow eyes. Original furnace is now extinguished and cracked, with a small cold cyan binding sigil visible behind the bars, no fire. Deep teal harness cloth, cold worn silver and gunmetal cuffs, shoulder scars sealed by angular pale ice. Imposing forward-braced Defender posture with massive fists low and readable negative space, no shield or weapon added. Keep stern angular face and giant lower jaw, no smile. Resembles the fallen original while belonging to the Runeblade palette.",
+      "prompt": "Use case stylized-concept. ONE full-body Runelord undead summon sample, transparent background. First three references are the user's approved Bone Thrall, Frost Thrall Shatterbound, Risen Legionnaire; use all three for consistent serious gritty 2D cel-shaded art language, cold silver/slate steel, deep blue-teal cloth, blue-grey corpse flesh and restrained electric icy cyan eye/rune/ice accents. Broad clean color regions, crisp hard-edged shadows and selective big chips, cracks and tears. No orange rust, no painterly texture, realistic anatomy, 3D/PBR, fine grunge, gradients or cute mascot look. Keep severe face, threatening purposeful stance, stylized weighty anatomy. Complete silhouette and weapons with generous padding, grounded feet, facing RIGHT shallow three-quarter, at least 1024 long edge. No text, no scenery, no multiple figures. Distinct silhouette from the three reference units. FOURTH image is enemy identity reference: raised undead treatment of the Bellows Ogre, preserve square tusked face, enormous gorilla-like arms, metal fist gauntlets, strapped chest furnace and heavy barefoot build. Reorient to right-facing ally. Dead slate blue-grey skin, icy cyan narrow eyes. Original furnace is now extinguished and cracked, with a small cold cyan binding sigil visible behind the bars, no fire. Deep teal harness cloth, cold worn silver and gunmetal cuffs, shoulder scars sealed by angular pale ice. Imposing forward-braced Defender posture with massive fists low and readable negative space, no shield or weapon added. Keep stern angular face and giant lower jaw, no smile. Resembles the fallen original while belonging to the Runeblade palette.",
+      "refs": [
+        "C:/Users/wilsh/Documents/Codex/2026-10-05/i-x20/outputs/bone-thrall-concept-r3.png",
+        "C:/Users/wilsh/Documents/Codex/2026-10-05/i-x20/outputs/frost-thrall-concept-r1.png",
+        "C:/Users/wilsh/Documents/Codex/2026-10-05/i-x20/outputs/risen-legionnaire-concept-r3.png",
+        "C:/Users/wilsh/Projects/runelord/assets/approvals/inbox/bellows-ogre/base-r1/base-r1.png"
+      ]
+    }
+  ]
+}

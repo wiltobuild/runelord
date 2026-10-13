@@ -1,0 +1,9 @@
+{
+  "status": "review_pending",
+  "master_sha256": "ee7a6e63d64486e6b85159a04bb981f41c1ef51fb6d93eed01bc9c16117275c9",
+  "manifest_sha256": "07f649e42fd0aa1278c635796fbf85815d5c431f51d8020f77fa646da585cbb6",
+  "index_sha256": "2d47b1e020750885827f2dd91a0bcc0de1712590b5d73ddb87a311c02762116a",
+  "preview_sha256": "8bdcc95be8b44a92ab1b515c886b309e13aaffbcefdd51e7ee8a572e6b6332ed",
+  "frame_count": 32,
+  "independent_review": "required"
+}

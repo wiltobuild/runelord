@@ -1,0 +1,97 @@
+{
+  "note": "User selected these five attached images as Runeblade base summons and explicitly requested 32-frame animation with special attention to idle, and cards with fresh reference-based illustration. User message: these will be the runeblades 5 base summons animate them using our 32 frame workflow, and pay specail attention to the idle frames. Also create cards for them, creating new card artwork using each as a refrence.",
+  "inputs": [
+    {
+      "id": "frost-thrall",
+      "name": "Frost Thrall",
+      "source": "C:/Users/wilsh/AppData/Local/Temp/codex-clipboard-401cfe32-9136-4737-8005-6d44301b3660.png",
+      "master": "C:/Users/wilsh/Projects/runelord/assets/characters/runeblade-base-summons/selected-r1/frost-thrall/master.png",
+      "sha256": "32183e9e97d29d42b4f8674e8a9bb7e6dfe888fc871149f33405b3c8491be5e9",
+      "approval": {
+        "id": "6b887dd8-b9de-44bd-9137-527e577e0a1c",
+        "sha256": "32183e9e97d29d42b4f8674e8a9bb7e6dfe888fc871149f33405b3c8491be5e9",
+        "status": "Approved",
+        "note": "User selected these five attached images as Runeblade base summons and explicitly requested 32-frame animation with special attention to idle, and cards with fresh reference-based illustration. User message: these will be the runeblades 5 base summons animate them using our 32 frame workflow, and pay specail attention to the idle frames. Also create cards for them, creating new card artwork using each as a refrence.",
+        "actor": "user-chat-recorded-by-codex",
+        "at": "2026-10-05T10:56:14.478Z",
+        "assetPath": "C:/Users/wilsh/Projects/runelord/assets/characters/runeblade-base-summons/selected-r1/frost-thrall/master.png"
+      }
+    },
+    {
+      "id": "shattered-queen",
+      "name": "Shattered Queen",
+      "source": "C:/Users/wilsh/AppData/Local/Temp/codex-clipboard-95f47048-daca-4dcb-a4b0-dc19280958a5.png",
+      "master": "C:/Users/wilsh/Projects/runelord/assets/characters/runeblade-base-summons/selected-r1/shattered-queen/master.png",
+      "sha256": "a995d730c43a7cecf17710075938845da3a4d5b7330ec61de8ef87aa3daabdc1",
+      "approval": {
+        "id": "73e64d5c-bd0b-4077-885e-1aba0f2d1290",
+        "sha256": "a995d730c43a7cecf17710075938845da3a4d5b7330ec61de8ef87aa3daabdc1",
+        "status": "Approved",
+        "note": "User selected these five attached images as Runeblade base summons and explicitly requested 32-frame animation with special attention to idle, and cards with fresh reference-based illustration. User message: these will be the runeblades 5 base summons animate them using our 32 frame workflow, and pay specail attention to the idle frames. Also create cards for them, creating new card artwork using each as a refrence.",
+        "actor": "user-chat-recorded-by-codex",
+        "at": "2026-10-05T10:56:14.582Z",
+        "assetPath": "C:/Users/wilsh/Projects/runelord/assets/characters/runeblade-base-summons/selected-r1/shattered-queen/master.png"
+      }
+    },
+    {
+      "id": "rime-seer",
+      "name": "Rime Seer",
+      "source": "C:/Users/wilsh/AppData/Local/Temp/codex-clipboard-680d055d-1d03-4e8e-8f12-b98f2c4b0ebb.png",
+      "master": "C:/Users/wilsh/Projects/runelord/assets/characters/runeblade-base-summons/selected-r1/rime-seer/master.png",
+      "sha256": "ee7a6e63d64486e6b85159a04bb981f41c1ef51fb6d93eed01bc9c16117275c9",
+      "approval": {
+        "id": "e0d1dda9-6d98-47cc-b49a-4d766faf5063",
+        "sha256": "ee7a6e63d64486e6b85159a04bb981f41c1ef51fb6d93eed01bc9c16117275c9",
+        "status": "Approved",
+        "note": "User selected these five attached images as Runeblade base summons and explicitly requested 32-frame animation with special attention to idle, and cards with fresh reference-based illustration. User message: these will be the runeblades 5 base summons animate them using our 32 frame workflow, and pay specail attention to the idle frames. Also create cards for them, creating new card artwork using each as a refrence.",
+        "actor": "user-chat-recorded-by-codex",
+        "at": "2026-10-05T10:56:14.695Z",
+        "assetPath": "C:/Users/wilsh/Projects/runelord/assets/characters/runeblade-base-summons/selected-r1/rime-seer/master.png"
+      }
+    },
+    {
+      "id": "rune-revenant",
+      "name": "Rune Revenant",
+      "source": "C:/Users/wilsh/AppData/Local/Temp/codex-clipboard-086d2b75-cda8-4b19-bd39-8630ee3aa6e1.png",
+      "master": "C:/Users/wilsh/Projects/runelord/assets/characters/runeblade-base-summons/selected-r1/rune-revenant/master.png",
+      "sha256": "afa9d76fe84274c9115cae94705c327d6300d1524f6fc2545030863f3fd8249a",
+      "approval": {
+        "id": "de576508-30cb-4caa-8998-cd4eb46a7e86",
+        "sha256": "afa9d76fe84274c9115cae94705c327d6300d1524f6fc2545030863f3fd8249a",
+        "status": "Approved",
+        "note": "User selected these five attached images as Runeblade base summons and explicitly requested 32-frame animation with special attention to idle, and cards with fresh reference-based illustration. User message: these will be the runeblades 5 base summons animate them using our 32 frame workflow, and pay specail attention to the idle frames. Also create cards for them, creating new card artwork using each as a refrence.",
+        "actor": "user-chat-recorded-by-codex",
+        "at": "2026-10-05T10:56:14.795Z",
+        "assetPath": "C:/Users/wilsh/Projects/runelord/assets/characters/runeblade-base-summons/selected-r1/rune-revenant/master.png"
+      }
+    },
+    {
+      "id": "bone-defender",
+      "name": "Bone Defender",
+      "source": "C:/Users/wilsh/AppData/Local/Temp/codex-clipboard-a2393408-716a-4b57-a174-f0dee8cda91f.png",
+      "master": "C:/Users/wilsh/Projects/runelord/assets/characters/runeblade-base-summons/selected-r1/bone-defender/master.png",
+      "sha256": "917309154a8f7e2067a8f5ede95a3e53941872ae80d35982c8eb26c9b1caeaf9",
+      "approval": {
+        "id": "fb4e645d-da24-4364-9d04-a80314ea066f",
+        "sha256": "917309154a8f7e2067a8f5ede95a3e53941872ae80d35982c8eb26c9b1caeaf9",
+        "status": "Approved",
+        "note": "User selected these five attached images as Runeblade base summons and explicitly requested 32-frame animation with special attention to idle, and cards with fresh reference-based illustration. User message: these will be the runeblades 5 base summons animate them using our 32 frame workflow, and pay specail attention to the idle frames. Also create cards for them, creating new card artwork using each as a refrence.",
+        "actor": "user-chat-recorded-by-codex",
+        "at": "2026-10-05T10:56:14.919Z",
+        "assetPath": "C:/Users/wilsh/Projects/runelord/assets/characters/runeblade-base-summons/selected-r1/bone-defender/master.png"
+      }
+    }
+  ],
+  "animation": {
+    "method": "32 authored whole-character frames per summon",
+    "counts": {
+      "idle": 8,
+      "attack": 6,
+      "hit": 4,
+      "wounded_idle": 4,
+      "cast": 4,
+      "die": 6
+    }
+  },
+  "status": "production_in_progress"
+}

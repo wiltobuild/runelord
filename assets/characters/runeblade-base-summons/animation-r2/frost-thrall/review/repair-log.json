@@ -1,0 +1,20 @@
+{
+  "repair_agent": "finish_frontline",
+  "pass": 1,
+  "prior_package": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\characters\\runeblade-base-summons\\animation-r1\\frost-thrall",
+  "status": "independent_recheck_required",
+  "changes": [
+    {
+      "state": "cast",
+      "frame": 2,
+      "repair": "Built-in imagegen redraw from original cast01 preserves axe in right hand and removes erroneous right ice bracer; left iced hand casts",
+      "changed_files": [
+        "frames/cast-02.png",
+        "atlases/cast.png",
+        "preview/cast-full-dark.gif",
+        "preview/all-states.gif"
+      ]
+    }
+  ],
+  "unchanged_frame_count": 31
+}

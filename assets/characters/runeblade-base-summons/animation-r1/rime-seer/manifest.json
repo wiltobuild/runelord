@@ -1,0 +1,980 @@
+{
+  "id": "rime-seer",
+  "revision": "animation-r1",
+  "status": "review_pending",
+  "format": "numbered RGBA PNG + PNG atlas",
+  "geometry": {
+    "canvas": [
+      1024,
+      896
+    ],
+    "root": [
+      512,
+      816
+    ],
+    "scale": 1,
+    "scale_policy": "Fixed native source scale 1 for every frame; source generation scale inconsistency is unresolved"
+  },
+  "source": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\characters\\runeblade-base-summons\\selected-r1\\rime-seer\\master.png",
+  "source_sha256": "ee7a6e63d64486e6b85159a04bb981f41c1ef51fb6d93eed01bc9c16117275c9",
+  "states": {
+    "idle": {
+      "frames": [
+        {
+          "hero": "rime-seer",
+          "form": "base",
+          "state": "idle",
+          "frame": 0,
+          "time_ms": 0,
+          "file": "frames/idle-00.png",
+          "sha256": "bf42d973c5e53f01a8f29576f92530c9d80c375c3b50b4f86135a37c8a05cb91",
+          "source_sheet": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\characters\\runeblade-base-summons\\animation-r1\\rime-seer\\source\\idle.png",
+          "source_sha256": "815dd616b571c9beb5708017bf01736705a6ee1767320e9f18cdcdd7be703ddd",
+          "source_rect": [
+            0,
+            0,
+            362,
+            543
+          ],
+          "source_root": [
+            202.5,
+            487
+          ],
+          "translation": [
+            310,
+            329
+          ],
+          "scale": 1
+        },
+        {
+          "hero": "rime-seer",
+          "form": "base",
+          "state": "idle",
+          "frame": 1,
+          "time_ms": 180,
+          "file": "frames/idle-01.png",
+          "sha256": "f38db0f67e780fe3a9a3dd61b0580af518a67ad84bd015ef2e4c48a4ddb38fe1",
+          "source_sheet": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\characters\\runeblade-base-summons\\animation-r1\\rime-seer\\source\\idle.png",
+          "source_sha256": "815dd616b571c9beb5708017bf01736705a6ee1767320e9f18cdcdd7be703ddd",
+          "source_rect": [
+            362,
+            0,
+            724,
+            543
+          ],
+          "source_root": [
+            200.0,
+            488
+          ],
+          "translation": [
+            312,
+            328
+          ],
+          "scale": 1
+        },
+        {
+          "hero": "rime-seer",
+          "form": "base",
+          "state": "idle",
+          "frame": 2,
+          "time_ms": 360,
+          "file": "frames/idle-02.png",
+          "sha256": "19690f0649d4712177686c6236da9e016fe28331e87fa90df81bf514d5916ac8",
+          "source_sheet": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\characters\\runeblade-base-summons\\animation-r1\\rime-seer\\source\\idle.png",
+          "source_sha256": "815dd616b571c9beb5708017bf01736705a6ee1767320e9f18cdcdd7be703ddd",
+          "source_rect": [
+            724,
+            0,
+            1086,
+            543
+          ],
+          "source_root": [
+            198.0,
+            487
+          ],
+          "translation": [
+            314,
+            329
+          ],
+          "scale": 1
+        },
+        {
+          "hero": "rime-seer",
+          "form": "base",
+          "state": "idle",
+          "frame": 3,
+          "time_ms": 540,
+          "file": "frames/idle-03.png",
+          "sha256": "7f25f168924c2e209a6dab887162a13adb0ecd83c7bf59ef64aaafae7feb0b92",
+          "source_sheet": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\characters\\runeblade-base-summons\\animation-r1\\rime-seer\\source\\idle.png",
+          "source_sha256": "815dd616b571c9beb5708017bf01736705a6ee1767320e9f18cdcdd7be703ddd",
+          "source_rect": [
+            1086,
+            0,
+            1448,
+            543
+          ],
+          "source_root": [
+            190.0,
+            487
+          ],
+          "translation": [
+            322,
+            329
+          ],
+          "scale": 1
+        },
+        {
+          "hero": "rime-seer",
+          "form": "base",
+          "state": "idle",
+          "frame": 4,
+          "time_ms": 720,
+          "file": "frames/idle-04.png",
+          "sha256": "209c745b2051ee0b491eebfc72b9f8d96e64957546a6bb6c66eb93b08a32ed5b",
+          "source_sheet": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\characters\\runeblade-base-summons\\animation-r1\\rime-seer\\source\\idle.png",
+          "source_sha256": "815dd616b571c9beb5708017bf01736705a6ee1767320e9f18cdcdd7be703ddd",
+          "source_rect": [
+            0,
+            543,
+            362,
+            1086
+          ],
+          "source_root": [
+            204.0,
+            429
+          ],
+          "translation": [
+            308,
+            387
+          ],
+          "scale": 1
+        },
+        {
+          "hero": "rime-seer",
+          "form": "base",
+          "state": "idle",
+          "frame": 5,
+          "time_ms": 900,
+          "file": "frames/idle-05.png",
+          "sha256": "7104184337d7c57d30f99c048e1bcf18938002ae64bafe71757b61b29625638a",
+          "source_sheet": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\characters\\runeblade-base-summons\\animation-r1\\rime-seer\\source\\idle.png",
+          "source_sha256": "815dd616b571c9beb5708017bf01736705a6ee1767320e9f18cdcdd7be703ddd",
+          "source_rect": [
+            362,
+            543,
+            724,
+            1086
+          ],
+          "source_root": [
+            200.5,
+            429
+          ],
+          "translation": [
+            312,
+            387
+          ],
+          "scale": 1
+        },
+        {
+          "hero": "rime-seer",
+          "form": "base",
+          "state": "idle",
+          "frame": 6,
+          "time_ms": 1080,
+          "file": "frames/idle-06.png",
+          "sha256": "8bad25f4a3db969ef728563e7516da02f50e09dce7fe3c1d2d85a7d44c023122",
+          "source_sheet": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\characters\\runeblade-base-summons\\animation-r1\\rime-seer\\source\\idle.png",
+          "source_sha256": "815dd616b571c9beb5708017bf01736705a6ee1767320e9f18cdcdd7be703ddd",
+          "source_rect": [
+            724,
+            543,
+            1086,
+            1086
+          ],
+          "source_root": [
+            198.0,
+            429
+          ],
+          "translation": [
+            314,
+            387
+          ],
+          "scale": 1
+        },
+        {
+          "hero": "rime-seer",
+          "form": "base",
+          "state": "idle",
+          "frame": 7,
+          "time_ms": 1260,
+          "file": "frames/idle-07.png",
+          "sha256": "7b6c6a5abd25a2e5ea28d421d4397e122b109a09afa5aa3d0df460d85beb91d0",
+          "source_sheet": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\characters\\runeblade-base-summons\\animation-r1\\rime-seer\\source\\idle.png",
+          "source_sha256": "815dd616b571c9beb5708017bf01736705a6ee1767320e9f18cdcdd7be703ddd",
+          "source_rect": [
+            1086,
+            543,
+            1448,
+            1086
+          ],
+          "source_root": [
+            191.0,
+            429
+          ],
+          "translation": [
+            321,
+            387
+          ],
+          "scale": 1
+        }
+      ],
+      "frame_count": 8,
+      "frame_duration_ms": 180,
+      "duration_ms": 1440,
+      "loop": true,
+      "terminal_hold": false,
+      "events": [],
+      "atlas": {
+        "file": "idle-atlas.png",
+        "cols": 4,
+        "rows": 2,
+        "sha256": "6059b358e2758681cd0832ef4193f98d33b1474ed7f94bbe11e360e8a727ae77"
+      },
+      "transition": "idle after action"
+    },
+    "attack": {
+      "frames": [
+        {
+          "hero": "rime-seer",
+          "form": "base",
+          "state": "attack",
+          "frame": 0,
+          "time_ms": 0,
+          "file": "frames/attack-00.png",
+          "sha256": "d4e6228bbc2e0659bd86f1f457dac27ae6eaf38b236e8eb370bfb5fcf0533255",
+          "source_sheet": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\characters\\runeblade-base-summons\\animation-r1\\rime-seer\\source\\attack.png",
+          "source_sha256": "76119a0223b51551a6c4212d8129539ba99c7cb114d5ab6aaa3dd5d02bb43fd1",
+          "source_rect": [
+            0,
+            0,
+            512,
+            512
+          ],
+          "source_root": [
+            247.5,
+            500
+          ],
+          "translation": [
+            264,
+            316
+          ],
+          "scale": 1
+        },
+        {
+          "hero": "rime-seer",
+          "form": "base",
+          "state": "attack",
+          "frame": 1,
+          "time_ms": 130,
+          "file": "frames/attack-01.png",
+          "sha256": "9cae2795a4627a53d4e3ff665cb7cad7cbb3f1e1b76d34d0ff6987c03b1cfbeb",
+          "source_sheet": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\characters\\runeblade-base-summons\\animation-r1\\rime-seer\\source\\attack.png",
+          "source_sha256": "76119a0223b51551a6c4212d8129539ba99c7cb114d5ab6aaa3dd5d02bb43fd1",
+          "source_rect": [
+            512,
+            0,
+            1024,
+            512
+          ],
+          "source_root": [
+            257.0,
+            498
+          ],
+          "translation": [
+            255,
+            318
+          ],
+          "scale": 1
+        },
+        {
+          "hero": "rime-seer",
+          "form": "base",
+          "state": "attack",
+          "frame": 2,
+          "time_ms": 260,
+          "file": "frames/attack-02.png",
+          "sha256": "9925020800e37b95e08531d06dc033bb15586de1ac66a8e743e1c7700ad4a3c7",
+          "source_sheet": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\characters\\runeblade-base-summons\\animation-r1\\rime-seer\\source\\attack.png",
+          "source_sha256": "76119a0223b51551a6c4212d8129539ba99c7cb114d5ab6aaa3dd5d02bb43fd1",
+          "source_rect": [
+            1024,
+            0,
+            1536,
+            512
+          ],
+          "source_root": [
+            257.0,
+            499
+          ],
+          "translation": [
+            255,
+            317
+          ],
+          "scale": 1
+        },
+        {
+          "hero": "rime-seer",
+          "form": "base",
+          "state": "attack",
+          "frame": 3,
+          "time_ms": 390,
+          "file": "frames/attack-03.png",
+          "sha256": "37949447fa84f8e40339cdc23624c86dfdaad6337cd67f103ded348efe1d468d",
+          "source_sheet": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\characters\\runeblade-base-summons\\animation-r1\\rime-seer\\source\\attack.png",
+          "source_sha256": "76119a0223b51551a6c4212d8129539ba99c7cb114d5ab6aaa3dd5d02bb43fd1",
+          "source_rect": [
+            0,
+            512,
+            512,
+            1024
+          ],
+          "source_root": [
+            232.5,
+            493
+          ],
+          "translation": [
+            280,
+            323
+          ],
+          "scale": 1
+        },
+        {
+          "hero": "rime-seer",
+          "form": "base",
+          "state": "attack",
+          "frame": 4,
+          "time_ms": 520,
+          "file": "frames/attack-04.png",
+          "sha256": "c0e8804178efc4135cf46fa0ffdf08a5734e9453a1a2be3dac4edcf8cc5bcf70",
+          "source_sheet": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\characters\\runeblade-base-summons\\animation-r1\\rime-seer\\source\\attack.png",
+          "source_sha256": "76119a0223b51551a6c4212d8129539ba99c7cb114d5ab6aaa3dd5d02bb43fd1",
+          "source_rect": [
+            512,
+            512,
+            1024,
+            1024
+          ],
+          "source_root": [
+            271.5,
+            493
+          ],
+          "translation": [
+            240,
+            323
+          ],
+          "scale": 1
+        },
+        {
+          "hero": "rime-seer",
+          "form": "base",
+          "state": "attack",
+          "frame": 5,
+          "time_ms": 650,
+          "file": "frames/attack-05.png",
+          "sha256": "f10cc736b427110b16094244a462946669763a8c4dfdf9f24415bec92c945c4a",
+          "source_sheet": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\characters\\runeblade-base-summons\\animation-r1\\rime-seer\\source\\attack.png",
+          "source_sha256": "76119a0223b51551a6c4212d8129539ba99c7cb114d5ab6aaa3dd5d02bb43fd1",
+          "source_rect": [
+            1024,
+            512,
+            1536,
+            1024
+          ],
+          "source_root": [
+            276.0,
+            497
+          ],
+          "translation": [
+            236,
+            319
+          ],
+          "scale": 1
+        }
+      ],
+      "frame_count": 6,
+      "frame_duration_ms": 130,
+      "duration_ms": 780,
+      "loop": false,
+      "terminal_hold": false,
+      "events": [
+        {
+          "name": "impact",
+          "frame": 3,
+          "time_ms": 390
+        }
+      ],
+      "atlas": {
+        "file": "attack-atlas.png",
+        "cols": 3,
+        "rows": 2,
+        "sha256": "a7e18b7c0221fb7cf5429772f956e676cfccd1996934cc4e0ad9f66c09beb61c"
+      },
+      "transition": "idle after action"
+    },
+    "hit": {
+      "frames": [
+        {
+          "hero": "rime-seer",
+          "form": "base",
+          "state": "hit",
+          "frame": 0,
+          "time_ms": 0,
+          "file": "frames/hit-00.png",
+          "sha256": "0dc14a37a0567ed7dc5075585068c520ba6a9984f7581a063bf061bbd5f6ba7f",
+          "source_sheet": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\characters\\runeblade-base-summons\\animation-r1\\rime-seer\\source\\hit.png",
+          "source_sha256": "c66b9395d5448ca6c81ab7e39d6dfc209430b463b2654dd954a3d8a78a4a0c78",
+          "source_rect": [
+            0,
+            0,
+            572,
+            687
+          ],
+          "source_root": [
+            188.0,
+            687
+          ],
+          "translation": [
+            324,
+            129
+          ],
+          "scale": 1
+        },
+        {
+          "hero": "rime-seer",
+          "form": "base",
+          "state": "hit",
+          "frame": 1,
+          "time_ms": 110,
+          "file": "frames/hit-01.png",
+          "sha256": "7bdcadb443664bad605ca6d1511bbbb54af26f55101ad10e58a9ee9af4b506fb",
+          "source_sheet": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\characters\\runeblade-base-summons\\animation-r1\\rime-seer\\source\\hit.png",
+          "source_sha256": "c66b9395d5448ca6c81ab7e39d6dfc209430b463b2654dd954a3d8a78a4a0c78",
+          "source_rect": [
+            572,
+            0,
+            1145,
+            687
+          ],
+          "source_root": [
+            180.0,
+            687
+          ],
+          "translation": [
+            332,
+            129
+          ],
+          "scale": 1
+        },
+        {
+          "hero": "rime-seer",
+          "form": "base",
+          "state": "hit",
+          "frame": 2,
+          "time_ms": 220,
+          "file": "frames/hit-02.png",
+          "sha256": "24b20addc9d5d92a269f7f621155a1d9ca90d0699cf6d96ae3730c13df2861c6",
+          "source_sheet": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\characters\\runeblade-base-summons\\animation-r1\\rime-seer\\source\\hit.png",
+          "source_sha256": "c66b9395d5448ca6c81ab7e39d6dfc209430b463b2654dd954a3d8a78a4a0c78",
+          "source_rect": [
+            0,
+            687,
+            572,
+            1374
+          ],
+          "source_root": [
+            181.0,
+            645
+          ],
+          "translation": [
+            331,
+            171
+          ],
+          "scale": 1
+        },
+        {
+          "hero": "rime-seer",
+          "form": "base",
+          "state": "hit",
+          "frame": 3,
+          "time_ms": 330,
+          "file": "frames/hit-03.png",
+          "sha256": "0aebb216ea44fe7858e41cb9cbb4cc4a6a9bf53734b5a34f38ca4b7d2d6ff87d",
+          "source_sheet": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\characters\\runeblade-base-summons\\animation-r1\\rime-seer\\source\\hit.png",
+          "source_sha256": "c66b9395d5448ca6c81ab7e39d6dfc209430b463b2654dd954a3d8a78a4a0c78",
+          "source_rect": [
+            572,
+            687,
+            1145,
+            1374
+          ],
+          "source_root": [
+            174.0,
+            648
+          ],
+          "translation": [
+            338,
+            168
+          ],
+          "scale": 1
+        }
+      ],
+      "frame_count": 4,
+      "frame_duration_ms": 110,
+      "duration_ms": 440,
+      "loop": false,
+      "terminal_hold": false,
+      "events": [],
+      "atlas": {
+        "file": "hit-atlas.png",
+        "cols": 2,
+        "rows": 2,
+        "sha256": "ead834fcdc23ffe42e76da4b3695f3849d154ebb32306a87da0d6c213260063f"
+      },
+      "transition": "idle after action"
+    },
+    "wounded_idle": {
+      "frames": [
+        {
+          "hero": "rime-seer",
+          "form": "base",
+          "state": "wounded_idle",
+          "frame": 0,
+          "time_ms": 0,
+          "file": "frames/wounded_idle-00.png",
+          "sha256": "c4005ec7b834f2d17ddf0dd60e21f5a8db7ea8f8d9804e8ca807eeacdfd43157",
+          "source_sheet": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\characters\\runeblade-base-summons\\animation-r1\\rime-seer\\source\\wounded_idle.png",
+          "source_sha256": "9b299b9afc077296820d5013ddf1108e1d9b7c5ef00da9f829ff4b27785c8b0d",
+          "source_rect": [
+            0,
+            0,
+            572,
+            687
+          ],
+          "source_root": [
+            238.0,
+            658
+          ],
+          "translation": [
+            274,
+            158
+          ],
+          "scale": 1
+        },
+        {
+          "hero": "rime-seer",
+          "form": "base",
+          "state": "wounded_idle",
+          "frame": 1,
+          "time_ms": 260,
+          "file": "frames/wounded_idle-01.png",
+          "sha256": "134d44944912a742cbc305b1d6bdd0d0aee022c2a70c96d273c77c112251fc7b",
+          "source_sheet": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\characters\\runeblade-base-summons\\animation-r1\\rime-seer\\source\\wounded_idle.png",
+          "source_sha256": "9b299b9afc077296820d5013ddf1108e1d9b7c5ef00da9f829ff4b27785c8b0d",
+          "source_rect": [
+            572,
+            0,
+            1145,
+            687
+          ],
+          "source_root": [
+            222.5,
+            659
+          ],
+          "translation": [
+            290,
+            157
+          ],
+          "scale": 1
+        },
+        {
+          "hero": "rime-seer",
+          "form": "base",
+          "state": "wounded_idle",
+          "frame": 2,
+          "time_ms": 520,
+          "file": "frames/wounded_idle-02.png",
+          "sha256": "3e2a7f24267d82995c96fbacf53649f0f45eba6bbad59ce47619333555354ebf",
+          "source_sheet": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\characters\\runeblade-base-summons\\animation-r1\\rime-seer\\source\\wounded_idle.png",
+          "source_sha256": "9b299b9afc077296820d5013ddf1108e1d9b7c5ef00da9f829ff4b27785c8b0d",
+          "source_rect": [
+            0,
+            687,
+            572,
+            1374
+          ],
+          "source_root": [
+            242.0,
+            647
+          ],
+          "translation": [
+            270,
+            169
+          ],
+          "scale": 1
+        },
+        {
+          "hero": "rime-seer",
+          "form": "base",
+          "state": "wounded_idle",
+          "frame": 3,
+          "time_ms": 780,
+          "file": "frames/wounded_idle-03.png",
+          "sha256": "48ed765fdb510a1f7249026e029a033908ed4dd4d3b43a00338e746b2dc08920",
+          "source_sheet": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\characters\\runeblade-base-summons\\animation-r1\\rime-seer\\source\\wounded_idle.png",
+          "source_sha256": "9b299b9afc077296820d5013ddf1108e1d9b7c5ef00da9f829ff4b27785c8b0d",
+          "source_rect": [
+            572,
+            687,
+            1145,
+            1374
+          ],
+          "source_root": [
+            230.0,
+            646
+          ],
+          "translation": [
+            282,
+            170
+          ],
+          "scale": 1
+        }
+      ],
+      "frame_count": 4,
+      "frame_duration_ms": 260,
+      "duration_ms": 1040,
+      "loop": true,
+      "terminal_hold": false,
+      "events": [],
+      "atlas": {
+        "file": "wounded_idle-atlas.png",
+        "cols": 2,
+        "rows": 2,
+        "sha256": "9342483e505943af72d4b99cadbf5d269f1a0d7a58957f39a6e1acb4c442ed45"
+      },
+      "transition": "idle after action"
+    },
+    "cast": {
+      "frames": [
+        {
+          "hero": "rime-seer",
+          "form": "base",
+          "state": "cast",
+          "frame": 0,
+          "time_ms": 0,
+          "file": "frames/cast-00.png",
+          "sha256": "596ec6c6a441f9a93852fd03a05f67d71e8e4d9182367edd0d43b18d374ce9f5",
+          "source_sheet": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\characters\\runeblade-base-summons\\animation-r1\\rime-seer\\source\\cast.png",
+          "source_sha256": "3a5015b0476c927d4275a4aab1484ec1bbf31a786b198de2aef42657da29c3f3",
+          "source_rect": [
+            0,
+            0,
+            701,
+            561
+          ],
+          "source_root": [
+            283.0,
+            532
+          ],
+          "translation": [
+            229,
+            284
+          ],
+          "scale": 1
+        },
+        {
+          "hero": "rime-seer",
+          "form": "base",
+          "state": "cast",
+          "frame": 1,
+          "time_ms": 200,
+          "file": "frames/cast-01.png",
+          "sha256": "8c93446ec0cc7b4382c82cb6faf5e8320cf267e08c96e443e9f0d9007a2bf250",
+          "source_sheet": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\characters\\runeblade-base-summons\\animation-r1\\rime-seer\\source\\cast.png",
+          "source_sha256": "3a5015b0476c927d4275a4aab1484ec1bbf31a786b198de2aef42657da29c3f3",
+          "source_rect": [
+            701,
+            0,
+            1402,
+            561
+          ],
+          "source_root": [
+            253.5,
+            532
+          ],
+          "translation": [
+            258,
+            284
+          ],
+          "scale": 1
+        },
+        {
+          "hero": "rime-seer",
+          "form": "base",
+          "state": "cast",
+          "frame": 2,
+          "time_ms": 400,
+          "file": "frames/cast-02.png",
+          "sha256": "532578f78cc514aa102c3e1a1f61df7250c20f39949adcfcfe66d67b88a4107b",
+          "source_sheet": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\characters\\runeblade-base-summons\\animation-r1\\rime-seer\\source\\cast.png",
+          "source_sha256": "3a5015b0476c927d4275a4aab1484ec1bbf31a786b198de2aef42657da29c3f3",
+          "source_rect": [
+            0,
+            561,
+            701,
+            1122
+          ],
+          "source_root": [
+            274.0,
+            521
+          ],
+          "translation": [
+            238,
+            295
+          ],
+          "scale": 1
+        },
+        {
+          "hero": "rime-seer",
+          "form": "base",
+          "state": "cast",
+          "frame": 3,
+          "time_ms": 600,
+          "file": "frames/cast-03.png",
+          "sha256": "1897444489f13f84bf5726190386453fe04e4258c4f3825f33aecfa4e7829639",
+          "source_sheet": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\characters\\runeblade-base-summons\\animation-r1\\rime-seer\\source\\cast.png",
+          "source_sha256": "3a5015b0476c927d4275a4aab1484ec1bbf31a786b198de2aef42657da29c3f3",
+          "source_rect": [
+            701,
+            561,
+            1402,
+            1122
+          ],
+          "source_root": [
+            379.0,
+            523
+          ],
+          "translation": [
+            133,
+            293
+          ],
+          "scale": 1
+        }
+      ],
+      "frame_count": 4,
+      "frame_duration_ms": 200,
+      "duration_ms": 800,
+      "loop": false,
+      "terminal_hold": false,
+      "events": [
+        {
+          "name": "cast_release",
+          "frame": 2,
+          "time_ms": 400
+        }
+      ],
+      "atlas": {
+        "file": "cast-atlas.png",
+        "cols": 2,
+        "rows": 2,
+        "sha256": "5bba3ba614c4ea79401f5312a0ae1adb84e2541f0956d029e1892d51163bba38"
+      },
+      "transition": "idle after action"
+    },
+    "die": {
+      "frames": [
+        {
+          "hero": "rime-seer",
+          "form": "base",
+          "state": "die",
+          "frame": 0,
+          "time_ms": 0,
+          "file": "frames/die-00.png",
+          "sha256": "96d8d59726a9a7d7a0f59a43868124632ddf7d08ca6cbe0141a52db2cf3ec61d",
+          "source_sheet": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\characters\\runeblade-base-summons\\animation-r1\\rime-seer\\source\\die.png",
+          "source_sha256": "cc0f352ec88020b7a88696f9d0c7634679bb188f07ffe6dd1befbf72561379d6",
+          "source_rect": [
+            0,
+            0,
+            512,
+            512
+          ],
+          "source_root": [
+            268.5,
+            512
+          ],
+          "translation": [
+            244,
+            304
+          ],
+          "scale": 1
+        },
+        {
+          "hero": "rime-seer",
+          "form": "base",
+          "state": "die",
+          "frame": 1,
+          "time_ms": 220,
+          "file": "frames/die-01.png",
+          "sha256": "dba8e0fbef0a38a96e217ac4f93c345be1e1195127f4bfa95416dcb81936cc96",
+          "source_sheet": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\characters\\runeblade-base-summons\\animation-r1\\rime-seer\\source\\die.png",
+          "source_sha256": "cc0f352ec88020b7a88696f9d0c7634679bb188f07ffe6dd1befbf72561379d6",
+          "source_rect": [
+            512,
+            0,
+            1024,
+            512
+          ],
+          "source_root": [
+            275.0,
+            512
+          ],
+          "translation": [
+            237,
+            304
+          ],
+          "scale": 1
+        },
+        {
+          "hero": "rime-seer",
+          "form": "base",
+          "state": "die",
+          "frame": 2,
+          "time_ms": 440,
+          "file": "frames/die-02.png",
+          "sha256": "7020224e46a0778fa9cffc7160aa1a07a991d5da12d53df7682586adaccd3bf0",
+          "source_sheet": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\characters\\runeblade-base-summons\\animation-r1\\rime-seer\\source\\die.png",
+          "source_sha256": "cc0f352ec88020b7a88696f9d0c7634679bb188f07ffe6dd1befbf72561379d6",
+          "source_rect": [
+            1024,
+            0,
+            1536,
+            512
+          ],
+          "source_root": [
+            234.5,
+            512
+          ],
+          "translation": [
+            278,
+            304
+          ],
+          "scale": 1
+        },
+        {
+          "hero": "rime-seer",
+          "form": "base",
+          "state": "die",
+          "frame": 3,
+          "time_ms": 660,
+          "file": "frames/die-03.png",
+          "sha256": "875545c5ddc14dc8b879c9cf8bd63c53d96a14653d34a4ecfe9bb1067a125786",
+          "source_sheet": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\characters\\runeblade-base-summons\\animation-r1\\rime-seer\\source\\die.png",
+          "source_sha256": "cc0f352ec88020b7a88696f9d0c7634679bb188f07ffe6dd1befbf72561379d6",
+          "source_rect": [
+            0,
+            512,
+            512,
+            1024
+          ],
+          "source_root": [
+            276.5,
+            429
+          ],
+          "translation": [
+            236,
+            387
+          ],
+          "scale": 1
+        },
+        {
+          "hero": "rime-seer",
+          "form": "base",
+          "state": "die",
+          "frame": 4,
+          "time_ms": 880,
+          "file": "frames/die-04.png",
+          "sha256": "bc797ae0cfc9064f590b5711cfe133648452bda635bb8f7cc0df5833394fc815",
+          "source_sheet": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\characters\\runeblade-base-summons\\animation-r1\\rime-seer\\source\\die.png",
+          "source_sha256": "cc0f352ec88020b7a88696f9d0c7634679bb188f07ffe6dd1befbf72561379d6",
+          "source_rect": [
+            512,
+            512,
+            1024,
+            1024
+          ],
+          "source_root": [
+            259.5,
+            428
+          ],
+          "translation": [
+            252,
+            388
+          ],
+          "scale": 1
+        },
+        {
+          "hero": "rime-seer",
+          "form": "base",
+          "state": "die",
+          "frame": 5,
+          "time_ms": 1100,
+          "file": "frames/die-05.png",
+          "sha256": "62c693149cad349dac351c2ec1197ce49617a1cbb75b0cfd127accf9c40040c6",
+          "source_sheet": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\characters\\runeblade-base-summons\\animation-r1\\rime-seer\\source\\die.png",
+          "source_sha256": "cc0f352ec88020b7a88696f9d0c7634679bb188f07ffe6dd1befbf72561379d6",
+          "source_rect": [
+            1024,
+            512,
+            1536,
+            1024
+          ],
+          "source_root": [
+            244.5,
+            432
+          ],
+          "translation": [
+            268,
+            384
+          ],
+          "scale": 1
+        }
+      ],
+      "frame_count": 6,
+      "frame_duration_ms": 220,
+      "duration_ms": 1320,
+      "loop": false,
+      "terminal_hold": true,
+      "events": [
+        {
+          "name": "terminal",
+          "frame": 5,
+          "time_ms": 1100
+        }
+      ],
+      "atlas": {
+        "file": "die-atlas.png",
+        "cols": 3,
+        "rows": 2,
+        "sha256": "84bba3786523743434d4941ebb2aabec8385bd403cb27be285599e976390fe29"
+      },
+      "transition": "hold terminal"
+    }
+  },
+  "issues": [
+    "Native source unit size differs across generated sheets. Requires approved uniform source sheet normalization or generation repair before complete.",
+    "Some source cell alpha touches dividers; see source-audit.json.",
+    "Source spell effects baked into whole-character poses; no clean effects-off track exists."
+  ],
+  "frame_count": 32
+}

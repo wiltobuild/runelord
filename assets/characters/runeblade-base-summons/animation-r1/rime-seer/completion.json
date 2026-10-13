@@ -1,0 +1,34 @@
+{
+  "status": "review_pending",
+  "states": {
+    "idle": {
+      "status": "review_pending",
+      "frame_count": 8
+    },
+    "attack": {
+      "status": "review_pending",
+      "frame_count": 6
+    },
+    "hit": {
+      "status": "review_pending",
+      "frame_count": 4
+    },
+    "wounded_idle": {
+      "status": "review_pending",
+      "frame_count": 4
+    },
+    "cast": {
+      "status": "review_pending",
+      "frame_count": 4
+    },
+    "die": {
+      "status": "review_pending",
+      "frame_count": 6
+    }
+  },
+  "blocking_findings": [
+    "Native source unit size differs across generated sheets. Requires approved uniform source sheet normalization or generation repair before complete.",
+    "Some source cell alpha touches dividers; see source-audit.json.",
+    "Source spell effects baked into whole-character poses; no clean effects-off track exists."
+  ]
+}

@@ -1,0 +1,615 @@
+{
+  "frames": [
+    {
+      "state": "idle",
+      "frame": 0,
+      "hash_match": true,
+      "size": [
+        768,
+        768
+      ],
+      "alpha_extrema": [
+        0,
+        254
+      ],
+      "bbox": [
+        107,
+        205,
+        478,
+        652
+      ]
+    },
+    {
+      "state": "idle",
+      "frame": 1,
+      "hash_match": true,
+      "size": [
+        768,
+        768
+      ],
+      "alpha_extrema": [
+        0,
+        254
+      ],
+      "bbox": [
+        107,
+        203,
+        477,
+        652
+      ]
+    },
+    {
+      "state": "idle",
+      "frame": 2,
+      "hash_match": true,
+      "size": [
+        768,
+        768
+      ],
+      "alpha_extrema": [
+        0,
+        254
+      ],
+      "bbox": [
+        109,
+        201,
+        478,
+        652
+      ]
+    },
+    {
+      "state": "idle",
+      "frame": 3,
+      "hash_match": true,
+      "size": [
+        768,
+        768
+      ],
+      "alpha_extrema": [
+        0,
+        254
+      ],
+      "bbox": [
+        108,
+        202,
+        483,
+        652
+      ]
+    },
+    {
+      "state": "idle",
+      "frame": 4,
+      "hash_match": true,
+      "size": [
+        768,
+        768
+      ],
+      "alpha_extrema": [
+        0,
+        254
+      ],
+      "bbox": [
+        109,
+        208,
+        486,
+        652
+      ]
+    },
+    {
+      "state": "idle",
+      "frame": 5,
+      "hash_match": true,
+      "size": [
+        768,
+        768
+      ],
+      "alpha_extrema": [
+        0,
+        254
+      ],
+      "bbox": [
+        111,
+        208,
+        487,
+        652
+      ]
+    },
+    {
+      "state": "idle",
+      "frame": 6,
+      "hash_match": true,
+      "size": [
+        768,
+        768
+      ],
+      "alpha_extrema": [
+        0,
+        254
+      ],
+      "bbox": [
+        107,
+        235,
+        488,
+        652
+      ]
+    },
+    {
+      "state": "idle",
+      "frame": 7,
+      "hash_match": true,
+      "size": [
+        768,
+        768
+      ],
+      "alpha_extrema": [
+        0,
+        254
+      ],
+      "bbox": [
+        109,
+        211,
+        482,
+        652
+      ]
+    },
+    {
+      "state": "attack",
+      "frame": 0,
+      "hash_match": true,
+      "size": [
+        768,
+        768
+      ],
+      "alpha_extrema": [
+        0,
+        254
+      ],
+      "bbox": [
+        108,
+        205,
+        528,
+        652
+      ]
+    },
+    {
+      "state": "attack",
+      "frame": 1,
+      "hash_match": true,
+      "size": [
+        768,
+        768
+      ],
+      "alpha_extrema": [
+        0,
+        254
+      ],
+      "bbox": [
+        84,
+        193,
+        574,
+        652
+      ]
+    },
+    {
+      "state": "attack",
+      "frame": 2,
+      "hash_match": true,
+      "size": [
+        768,
+        768
+      ],
+      "alpha_extrema": [
+        0,
+        254
+      ],
+      "bbox": [
+        37,
+        180,
+        596,
+        652
+      ]
+    },
+    {
+      "state": "attack",
+      "frame": 3,
+      "hash_match": true,
+      "size": [
+        768,
+        768
+      ],
+      "alpha_extrema": [
+        0,
+        254
+      ],
+      "bbox": [
+        114,
+        244,
+        750,
+        665
+      ]
+    },
+    {
+      "state": "attack",
+      "frame": 4,
+      "hash_match": true,
+      "size": [
+        768,
+        768
+      ],
+      "alpha_extrema": [
+        0,
+        254
+      ],
+      "bbox": [
+        109,
+        264,
+        630,
+        662
+      ]
+    },
+    {
+      "state": "attack",
+      "frame": 5,
+      "hash_match": true,
+      "size": [
+        768,
+        768
+      ],
+      "alpha_extrema": [
+        0,
+        254
+      ],
+      "bbox": [
+        111,
+        203,
+        533,
+        652
+      ]
+    },
+    {
+      "state": "hit",
+      "frame": 0,
+      "hash_match": true,
+      "size": [
+        768,
+        768
+      ],
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "bbox": [
+        121,
+        205,
+        514,
+        651
+      ]
+    },
+    {
+      "state": "hit",
+      "frame": 1,
+      "hash_match": true,
+      "size": [
+        768,
+        768
+      ],
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "bbox": [
+        136,
+        233,
+        526,
+        652
+      ]
+    },
+    {
+      "state": "hit",
+      "frame": 2,
+      "hash_match": true,
+      "size": [
+        768,
+        768
+      ],
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "bbox": [
+        129,
+        245,
+        546,
+        652
+      ]
+    },
+    {
+      "state": "hit",
+      "frame": 3,
+      "hash_match": true,
+      "size": [
+        768,
+        768
+      ],
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "bbox": [
+        124,
+        215,
+        509,
+        651
+      ]
+    },
+    {
+      "state": "wounded_idle",
+      "frame": 0,
+      "hash_match": true,
+      "size": [
+        768,
+        768
+      ],
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "bbox": [
+        95,
+        205,
+        584,
+        651
+      ]
+    },
+    {
+      "state": "wounded_idle",
+      "frame": 1,
+      "hash_match": true,
+      "size": [
+        768,
+        768
+      ],
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "bbox": [
+        107,
+        189,
+        605,
+        652
+      ]
+    },
+    {
+      "state": "wounded_idle",
+      "frame": 2,
+      "hash_match": true,
+      "size": [
+        768,
+        768
+      ],
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "bbox": [
+        101,
+        179,
+        611,
+        651
+      ]
+    },
+    {
+      "state": "wounded_idle",
+      "frame": 3,
+      "hash_match": true,
+      "size": [
+        768,
+        768
+      ],
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "bbox": [
+        101,
+        219,
+        588,
+        651
+      ]
+    },
+    {
+      "state": "cast",
+      "frame": 0,
+      "hash_match": true,
+      "size": [
+        768,
+        768
+      ],
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "bbox": [
+        114,
+        205,
+        528,
+        651
+      ]
+    },
+    {
+      "state": "cast",
+      "frame": 1,
+      "hash_match": true,
+      "size": [
+        768,
+        768
+      ],
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "bbox": [
+        140,
+        223,
+        506,
+        652
+      ]
+    },
+    {
+      "state": "cast",
+      "frame": 2,
+      "hash_match": true,
+      "size": [
+        768,
+        768
+      ],
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "bbox": [
+        125,
+        262,
+        586,
+        652
+      ]
+    },
+    {
+      "state": "cast",
+      "frame": 3,
+      "hash_match": true,
+      "size": [
+        768,
+        768
+      ],
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "bbox": [
+        121,
+        222,
+        514,
+        652
+      ]
+    },
+    {
+      "state": "die",
+      "frame": 0,
+      "hash_match": true,
+      "size": [
+        768,
+        768
+      ],
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "bbox": [
+        118,
+        205,
+        492,
+        652
+      ]
+    },
+    {
+      "state": "die",
+      "frame": 1,
+      "hash_match": true,
+      "size": [
+        768,
+        768
+      ],
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "bbox": [
+        118,
+        258,
+        518,
+        652
+      ]
+    },
+    {
+      "state": "die",
+      "frame": 2,
+      "hash_match": true,
+      "size": [
+        768,
+        768
+      ],
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "bbox": [
+        118,
+        327,
+        513,
+        651
+      ]
+    },
+    {
+      "state": "die",
+      "frame": 3,
+      "hash_match": true,
+      "size": [
+        768,
+        768
+      ],
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "bbox": [
+        118,
+        424,
+        578,
+        652
+      ]
+    },
+    {
+      "state": "die",
+      "frame": 4,
+      "hash_match": true,
+      "size": [
+        768,
+        768
+      ],
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "bbox": [
+        118,
+        459,
+        557,
+        652
+      ]
+    },
+    {
+      "state": "die",
+      "frame": 5,
+      "hash_match": true,
+      "size": [
+        768,
+        768
+      ],
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "bbox": [
+        118,
+        465,
+        547,
+        652
+      ]
+    }
+  ],
+  "unique_hashes": 32,
+  "total": 32,
+  "source_hash_actual": "917309154a8f7e2067a8f5ede95a3e53941872ae80d35982c8eb26c9b1caeaf9"
+}

@@ -1,0 +1,390 @@
+{
+  "frame_count": 32,
+  "unique_hashes": 32,
+  "frames": [
+    {
+      "state": "idle",
+      "frame": 0,
+      "output_edge_alpha_max": 0,
+      "source_border_candidate": false,
+      "opaque_bbox": [
+        220,
+        212,
+        531,
+        648
+      ]
+    },
+    {
+      "state": "idle",
+      "frame": 1,
+      "output_edge_alpha_max": 0,
+      "source_border_candidate": false,
+      "opaque_bbox": [
+        219,
+        210,
+        530,
+        649
+      ]
+    },
+    {
+      "state": "idle",
+      "frame": 2,
+      "output_edge_alpha_max": 0,
+      "source_border_candidate": false,
+      "opaque_bbox": [
+        228,
+        233,
+        531,
+        648
+      ]
+    },
+    {
+      "state": "idle",
+      "frame": 3,
+      "output_edge_alpha_max": 0,
+      "source_border_candidate": false,
+      "opaque_bbox": [
+        225,
+        219,
+        532,
+        648
+      ]
+    },
+    {
+      "state": "idle",
+      "frame": 4,
+      "output_edge_alpha_max": 0,
+      "source_border_candidate": false,
+      "opaque_bbox": [
+        220,
+        224,
+        542,
+        649
+      ]
+    },
+    {
+      "state": "idle",
+      "frame": 5,
+      "output_edge_alpha_max": 0,
+      "source_border_candidate": false,
+      "opaque_bbox": [
+        219,
+        233,
+        541,
+        649
+      ]
+    },
+    {
+      "state": "idle",
+      "frame": 6,
+      "output_edge_alpha_max": 0,
+      "source_border_candidate": false,
+      "opaque_bbox": [
+        222,
+        231,
+        533,
+        649
+      ]
+    },
+    {
+      "state": "idle",
+      "frame": 7,
+      "output_edge_alpha_max": 0,
+      "source_border_candidate": false,
+      "opaque_bbox": [
+        219,
+        225,
+        535,
+        649
+      ]
+    },
+    {
+      "state": "attack",
+      "frame": 0,
+      "output_edge_alpha_max": 0,
+      "source_border_candidate": false,
+      "opaque_bbox": [
+        214,
+        210,
+        598,
+        650
+      ]
+    },
+    {
+      "state": "attack",
+      "frame": 1,
+      "output_edge_alpha_max": 0,
+      "source_border_candidate": false,
+      "opaque_bbox": [
+        215,
+        217,
+        604,
+        650
+      ]
+    },
+    {
+      "state": "attack",
+      "frame": 2,
+      "output_edge_alpha_max": 0,
+      "source_border_candidate": true,
+      "opaque_bbox": [
+        228,
+        215,
+        676,
+        649
+      ]
+    },
+    {
+      "state": "attack",
+      "frame": 3,
+      "output_edge_alpha_max": 0,
+      "source_border_candidate": false,
+      "opaque_bbox": [
+        234,
+        220,
+        688,
+        649
+      ]
+    },
+    {
+      "state": "attack",
+      "frame": 4,
+      "output_edge_alpha_max": 0,
+      "source_border_candidate": false,
+      "opaque_bbox": [
+        214,
+        222,
+        633,
+        649
+      ]
+    },
+    {
+      "state": "attack",
+      "frame": 5,
+      "output_edge_alpha_max": 0,
+      "source_border_candidate": false,
+      "opaque_bbox": [
+        213,
+        219,
+        613,
+        649
+      ]
+    },
+    {
+      "state": "hit",
+      "frame": 0,
+      "output_edge_alpha_max": 0,
+      "source_border_candidate": false,
+      "opaque_bbox": [
+        233,
+        211,
+        578,
+        650
+      ]
+    },
+    {
+      "state": "hit",
+      "frame": 1,
+      "output_edge_alpha_max": 0,
+      "source_border_candidate": false,
+      "opaque_bbox": [
+        230,
+        218,
+        579,
+        649
+      ]
+    },
+    {
+      "state": "hit",
+      "frame": 2,
+      "output_edge_alpha_max": 0,
+      "source_border_candidate": false,
+      "opaque_bbox": [
+        216,
+        263,
+        598,
+        649
+      ]
+    },
+    {
+      "state": "hit",
+      "frame": 3,
+      "output_edge_alpha_max": 0,
+      "source_border_candidate": false,
+      "opaque_bbox": [
+        223,
+        226,
+        548,
+        650
+      ]
+    },
+    {
+      "state": "wounded_idle",
+      "frame": 0,
+      "output_edge_alpha_max": 0,
+      "source_border_candidate": false,
+      "opaque_bbox": [
+        195,
+        211,
+        647,
+        649
+      ]
+    },
+    {
+      "state": "wounded_idle",
+      "frame": 1,
+      "output_edge_alpha_max": 0,
+      "source_border_candidate": false,
+      "opaque_bbox": [
+        254,
+        184,
+        716,
+        649
+      ]
+    },
+    {
+      "state": "wounded_idle",
+      "frame": 2,
+      "output_edge_alpha_max": 0,
+      "source_border_candidate": false,
+      "opaque_bbox": [
+        171,
+        192,
+        663,
+        648
+      ]
+    },
+    {
+      "state": "wounded_idle",
+      "frame": 3,
+      "output_edge_alpha_max": 0,
+      "source_border_candidate": false,
+      "opaque_bbox": [
+        196,
+        212,
+        647,
+        649
+      ]
+    },
+    {
+      "state": "cast",
+      "frame": 0,
+      "output_edge_alpha_max": 0,
+      "source_border_candidate": false,
+      "opaque_bbox": [
+        216,
+        211,
+        605,
+        650
+      ]
+    },
+    {
+      "state": "cast",
+      "frame": 1,
+      "output_edge_alpha_max": 0,
+      "source_border_candidate": false,
+      "opaque_bbox": [
+        216,
+        211,
+        594,
+        649
+      ]
+    },
+    {
+      "state": "cast",
+      "frame": 2,
+      "output_edge_alpha_max": 0,
+      "source_border_candidate": false,
+      "opaque_bbox": [
+        203,
+        208,
+        625,
+        650
+      ]
+    },
+    {
+      "state": "cast",
+      "frame": 3,
+      "output_edge_alpha_max": 0,
+      "source_border_candidate": false,
+      "opaque_bbox": [
+        209,
+        212,
+        602,
+        649
+      ]
+    },
+    {
+      "state": "die",
+      "frame": 0,
+      "output_edge_alpha_max": 0,
+      "source_border_candidate": false,
+      "opaque_bbox": [
+        244,
+        211,
+        576,
+        648
+      ]
+    },
+    {
+      "state": "die",
+      "frame": 1,
+      "output_edge_alpha_max": 0,
+      "source_border_candidate": false,
+      "opaque_bbox": [
+        244,
+        271,
+        569,
+        649
+      ]
+    },
+    {
+      "state": "die",
+      "frame": 2,
+      "output_edge_alpha_max": 0,
+      "source_border_candidate": false,
+      "opaque_bbox": [
+        243,
+        385,
+        650,
+        649
+      ]
+    },
+    {
+      "state": "die",
+      "frame": 3,
+      "output_edge_alpha_max": 0,
+      "source_border_candidate": false,
+      "opaque_bbox": [
+        244,
+        467,
+        657,
+        649
+      ]
+    },
+    {
+      "state": "die",
+      "frame": 4,
+      "output_edge_alpha_max": 0,
+      "source_border_candidate": false,
+      "opaque_bbox": [
+        244,
+        466,
+        629,
+        649
+      ]
+    },
+    {
+      "state": "die",
+      "frame": 5,
+      "output_edge_alpha_max": 0,
+      "source_border_candidate": false,
+      "opaque_bbox": [
+        245,
+        506,
+        648,
+        649
+      ]
+    }
+  ]
+}
