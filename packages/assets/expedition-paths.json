@@ -1,0 +1,904 @@
+{
+  "images": {
+    "path-frozen-wastes-combat": "/game-assets/expedition/paths/frozen-wastes/combat.webp",
+    "path-frozen-wastes-mystery": "/game-assets/expedition/paths/frozen-wastes/mystery.webp",
+    "path-frozen-wastes-treasure": "/game-assets/expedition/paths/frozen-wastes/treasure.webp",
+    "path-frozen-wastes-shop": "/game-assets/expedition/paths/frozen-wastes/shop.webp",
+    "path-frozen-wastes-elite": "/game-assets/expedition/paths/frozen-wastes/elite.webp",
+    "path-frozen-wastes-camp": "/game-assets/expedition/paths/frozen-wastes/camp.webp",
+    "path-frozen-wastes-boss": "/game-assets/expedition/paths/frozen-wastes/boss.webp",
+    "path-forest-combat": "/game-assets/expedition/paths/forest/combat.webp",
+    "path-forest-mystery": "/game-assets/expedition/paths/forest/mystery.webp",
+    "path-forest-treasure": "/game-assets/expedition/paths/forest/treasure.webp",
+    "path-forest-shop": "/game-assets/expedition/paths/forest/shop.webp",
+    "path-forest-elite": "/game-assets/expedition/paths/forest/elite.webp",
+    "path-forest-camp": "/game-assets/expedition/paths/forest/camp.webp",
+    "path-forest-boss": "/game-assets/expedition/paths/forest/boss.webp",
+    "path-infernal-combat": "/game-assets/expedition/paths/infernal/combat.webp",
+    "path-infernal-mystery": "/game-assets/expedition/paths/infernal/mystery.webp",
+    "path-infernal-treasure": "/game-assets/expedition/paths/infernal/treasure.webp",
+    "path-infernal-shop": "/game-assets/expedition/paths/infernal/shop.webp",
+    "path-infernal-elite": "/game-assets/expedition/paths/infernal/elite.webp",
+    "path-infernal-camp": "/game-assets/expedition/paths/infernal/camp.webp",
+    "path-infernal-boss": "/game-assets/expedition/paths/infernal/boss.webp",
+    "expedition-ui-card-frame": "/game-assets/expedition/ui/card-frame.webp",
+    "expedition-ui-panel-frame": "/game-assets/expedition/ui/panel-frame.webp",
+    "expedition-ui-button": "/game-assets/expedition/ui/button.webp",
+    "expedition-ui-medallion-combat": "/game-assets/expedition/ui/medallion-combat.webp",
+    "expedition-ui-medallion-mystery": "/game-assets/expedition/ui/medallion-mystery.webp",
+    "expedition-ui-medallion-treasure": "/game-assets/expedition/ui/medallion-treasure.webp",
+    "expedition-ui-medallion-rest": "/game-assets/expedition/ui/medallion-rest.webp",
+    "expedition-ui-medallion-refine": "/game-assets/expedition/ui/medallion-refine.webp",
+    "expedition-ui-medallion-command": "/game-assets/expedition/ui/medallion-command.webp",
+    "expedition-ui-medallion-gold": "/game-assets/expedition/ui/medallion-gold.webp",
+    "expedition-ui-reward-gold": "/game-assets/expedition/ui/reward-gold.webp",
+    "expedition-ui-reward-tome": "/game-assets/expedition/ui/reward-tome.webp",
+    "expedition-ui-reward-relic": "/game-assets/expedition/ui/reward-relic.webp",
+    "expedition-ui-basalt": "/game-assets/expedition/ui/basalt.webp",
+    "expedition-ui-ability-signature": "/game-assets/expedition/ui/ability-signature.webp",
+    "expedition-ui-ability-shield": "/game-assets/expedition/ui/ability-shield.webp",
+    "expedition-ui-ability-locked": "/game-assets/expedition/ui/ability-locked.webp"
+  },
+  "provenance": [
+    {
+      "source": "assets/environments/expedition-paths/r1/frozen-wastes/combat/source.png",
+      "sourceSha256": "30690eb15162e3161ab297ec8024caec313ca98cba55367e00ce9196514f7c80",
+      "status": "Approved",
+      "evidenceId": "d5ca5543-d18b-4434-b7e4-3beee3dd1859",
+      "output": "expedition/paths/frozen-wastes/combat.webp",
+      "outputSha256": "2580491c7288d283cf7fa2be70be935601f39ec8cb2a37acbda0f06abe7c0062",
+      "width": 1672,
+      "height": 941,
+      "encodedBytes": 212486,
+      "decodedBytes": 6293408,
+      "transform": {
+        "operation": "encode-original-dimensions",
+        "format": "webp",
+        "quality": 90,
+        "alphaQuality": 100
+      },
+      "approvalBasis": "Deterministic derivative of the exact approved source; does not assert separate gallery approval for changed bytes."
+    },
+    {
+      "source": "assets/environments/expedition-paths/r1/frozen-wastes/mystery/source.png",
+      "sourceSha256": "b8fac3fd42cee2d9805576e7e3448bc55eea8c9fb4ad28816e1bb235be128e10",
+      "status": "Approved",
+      "evidenceId": "657fdec8-ea23-4c2e-b15f-68a6079758a6",
+      "output": "expedition/paths/frozen-wastes/mystery.webp",
+      "outputSha256": "8c38c5533e97cd2a209ce04001c13c487558924006a4efa928c4ba3d80b5fc7c",
+      "width": 1672,
+      "height": 941,
+      "encodedBytes": 167878,
+      "decodedBytes": 6293408,
+      "transform": {
+        "operation": "encode-original-dimensions",
+        "format": "webp",
+        "quality": 90,
+        "alphaQuality": 100
+      },
+      "approvalBasis": "Deterministic derivative of the exact approved source; does not assert separate gallery approval for changed bytes."
+    },
+    {
+      "source": "assets/environments/expedition-paths/r1/frozen-wastes/treasure/source.png",
+      "sourceSha256": "e06854352ee14fc2db280ee319f7b90b01095204ec0a5561ae881bc0008b2e05",
+      "status": "Approved",
+      "evidenceId": "837e6d89-9034-478d-b1e1-6fd3250b026e",
+      "output": "expedition/paths/frozen-wastes/treasure.webp",
+      "outputSha256": "873cd10233205b0338e0151ff343d1de749c3123225d6cb1d0e256ae3bbaf670",
+      "width": 1672,
+      "height": 941,
+      "encodedBytes": 200610,
+      "decodedBytes": 6293408,
+      "transform": {
+        "operation": "encode-original-dimensions",
+        "format": "webp",
+        "quality": 90,
+        "alphaQuality": 100
+      },
+      "approvalBasis": "Deterministic derivative of the exact approved source; does not assert separate gallery approval for changed bytes."
+    },
+    {
+      "source": "assets/environments/expedition-paths/r1/frozen-wastes/shop/source.png",
+      "sourceSha256": "b33f2f5bfd7aff85b1ea3b2a62592cb53b0843fdf6e0da019d55d7c19f8ca8d4",
+      "status": "Approved",
+      "evidenceId": "286d673b-f52e-4fae-b32d-2af4a90ddc0e",
+      "output": "expedition/paths/frozen-wastes/shop.webp",
+      "outputSha256": "8a0d1cb9b1bb57184f58e5eac12a50483b4d2cb416532edc3cb1206d0bff736a",
+      "width": 1672,
+      "height": 941,
+      "encodedBytes": 190286,
+      "decodedBytes": 6293408,
+      "transform": {
+        "operation": "encode-original-dimensions",
+        "format": "webp",
+        "quality": 90,
+        "alphaQuality": 100
+      },
+      "approvalBasis": "Deterministic derivative of the exact approved source; does not assert separate gallery approval for changed bytes."
+    },
+    {
+      "source": "assets/environments/expedition-paths/r1/frozen-wastes/elite/source.png",
+      "sourceSha256": "876e237457338c1151b9838a7e6ccbe137349c082a91e06c2f0807355fe32ef8",
+      "status": "Approved",
+      "evidenceId": "29aea3c1-c6d2-4dc4-95f4-82b2b3d243f9",
+      "output": "expedition/paths/frozen-wastes/elite.webp",
+      "outputSha256": "2ecff2bd781f181da45138598cec260abcdd740535f3bb6806334c1d2592dc3b",
+      "width": 1672,
+      "height": 941,
+      "encodedBytes": 225950,
+      "decodedBytes": 6293408,
+      "transform": {
+        "operation": "encode-original-dimensions",
+        "format": "webp",
+        "quality": 90,
+        "alphaQuality": 100
+      },
+      "approvalBasis": "Deterministic derivative of the exact approved source; does not assert separate gallery approval for changed bytes."
+    },
+    {
+      "source": "assets/environments/expedition-paths/r1/frozen-wastes/camp/source.png",
+      "sourceSha256": "57c976e838e5e4199b4bd320aea165a4d6b32983715b87895e16809a275a6007",
+      "status": "Approved",
+      "evidenceId": "15f2565e-df83-4741-a3d4-e5fd841166b3",
+      "output": "expedition/paths/frozen-wastes/camp.webp",
+      "outputSha256": "9922b5ee1e0094a6e3f2e22acfc84685d26d2de28a4d7da42f8f451b9dd25174",
+      "width": 1672,
+      "height": 941,
+      "encodedBytes": 175728,
+      "decodedBytes": 6293408,
+      "transform": {
+        "operation": "encode-original-dimensions",
+        "format": "webp",
+        "quality": 90,
+        "alphaQuality": 100
+      },
+      "approvalBasis": "Deterministic derivative of the exact approved source; does not assert separate gallery approval for changed bytes."
+    },
+    {
+      "source": "assets/environments/expedition-paths/r1/frozen-wastes/boss/source.png",
+      "sourceSha256": "1cdce6d1c1e515a26590ab7dabb8e46ef0a81e4c1d219ddb9078c992708048cc",
+      "status": "Approved",
+      "evidenceId": "b51211b0-3c3b-408b-80d7-3c1d5ce118a0",
+      "output": "expedition/paths/frozen-wastes/boss.webp",
+      "outputSha256": "350953088841387ac28ac52f7cc8cdeec03bbbc01b196f5966af249738c92240",
+      "width": 1672,
+      "height": 941,
+      "encodedBytes": 230562,
+      "decodedBytes": 6293408,
+      "transform": {
+        "operation": "encode-original-dimensions",
+        "format": "webp",
+        "quality": 90,
+        "alphaQuality": 100
+      },
+      "approvalBasis": "Deterministic derivative of the exact approved source; does not assert separate gallery approval for changed bytes."
+    },
+    {
+      "source": "assets/environments/expedition-paths/r1/forest/combat/source.png",
+      "sourceSha256": "566cb4e5eb24ad31955dd9845603810af237578907ee0a78ce6d0a3e4e708bda",
+      "status": "Approved",
+      "evidenceId": "478da48a-1c5a-4de2-8c7f-e6ee904eec20",
+      "output": "expedition/paths/forest/combat.webp",
+      "outputSha256": "1fdce64b06c09c9b82c11177ce0ca293f86fc4ed61e2ade08dfa469390246cfe",
+      "width": 1672,
+      "height": 941,
+      "encodedBytes": 229120,
+      "decodedBytes": 6293408,
+      "transform": {
+        "operation": "encode-original-dimensions",
+        "format": "webp",
+        "quality": 90,
+        "alphaQuality": 100
+      },
+      "approvalBasis": "Deterministic derivative of the exact approved source; does not assert separate gallery approval for changed bytes."
+    },
+    {
+      "source": "assets/environments/expedition-paths/r1/forest/mystery/source.png",
+      "sourceSha256": "c2eb7cd66f15a039108b4658b22099cdbceee6d51592cf19e107abbe3200db6d",
+      "status": "Approved",
+      "evidenceId": "fe632ebf-2a15-4c60-9aa3-25052f7a1728",
+      "output": "expedition/paths/forest/mystery.webp",
+      "outputSha256": "7e3d933e3631504b455cc9a4667af9efd2e3930641270f615b452d0bc176bae1",
+      "width": 1672,
+      "height": 941,
+      "encodedBytes": 237866,
+      "decodedBytes": 6293408,
+      "transform": {
+        "operation": "encode-original-dimensions",
+        "format": "webp",
+        "quality": 90,
+        "alphaQuality": 100
+      },
+      "approvalBasis": "Deterministic derivative of the exact approved source; does not assert separate gallery approval for changed bytes."
+    },
+    {
+      "source": "assets/environments/expedition-paths/r1/forest/treasure/source.png",
+      "sourceSha256": "ba826b9e1271ecb38ac3816a42ac28ba1ee16e767eec5b448c6e32da64e34a18",
+      "status": "Approved",
+      "evidenceId": "083f5468-0439-404e-b05a-3f460130e344",
+      "output": "expedition/paths/forest/treasure.webp",
+      "outputSha256": "f7ec0fd0f489079f78eb173ae4c36a6f5c76822c22cfe91473d04a07355bb1c9",
+      "width": 1672,
+      "height": 941,
+      "encodedBytes": 259974,
+      "decodedBytes": 6293408,
+      "transform": {
+        "operation": "encode-original-dimensions",
+        "format": "webp",
+        "quality": 90,
+        "alphaQuality": 100
+      },
+      "approvalBasis": "Deterministic derivative of the exact approved source; does not assert separate gallery approval for changed bytes."
+    },
+    {
+      "source": "assets/environments/expedition-paths/r1/forest/shop/source.png",
+      "sourceSha256": "5a9fb24b282814704752c92ce030d05e08333c84c15f3bf12cc7c1c4eca64e70",
+      "status": "Approved",
+      "evidenceId": "b5adac6c-e962-4be8-a535-73e73404957f",
+      "output": "expedition/paths/forest/shop.webp",
+      "outputSha256": "47edc1eb3db966db93b9026b9ea5a79fa2c4b04041c29b103724a4cf6b2262bf",
+      "width": 1672,
+      "height": 941,
+      "encodedBytes": 248696,
+      "decodedBytes": 6293408,
+      "transform": {
+        "operation": "encode-original-dimensions",
+        "format": "webp",
+        "quality": 90,
+        "alphaQuality": 100
+      },
+      "approvalBasis": "Deterministic derivative of the exact approved source; does not assert separate gallery approval for changed bytes."
+    },
+    {
+      "source": "assets/environments/expedition-paths/r1/forest/elite/source.png",
+      "sourceSha256": "11e674a7c7fc2b74b27b61b9965698a6e101660c09e419cc6bb49c54acad8d32",
+      "status": "Approved",
+      "evidenceId": "18d140d6-c65a-41f3-9466-70c06f6d4232",
+      "output": "expedition/paths/forest/elite.webp",
+      "outputSha256": "d00c2f27b48754f643b51e84872d93696e1084237b11da928f94f206e21b3ffb",
+      "width": 1672,
+      "height": 941,
+      "encodedBytes": 217394,
+      "decodedBytes": 6293408,
+      "transform": {
+        "operation": "encode-original-dimensions",
+        "format": "webp",
+        "quality": 90,
+        "alphaQuality": 100
+      },
+      "approvalBasis": "Deterministic derivative of the exact approved source; does not assert separate gallery approval for changed bytes."
+    },
+    {
+      "source": "assets/environments/expedition-paths/r1/forest/camp/source.png",
+      "sourceSha256": "6ad8f9533ea4dd746c2120193b6db53b86a6428d8def0eeca0d31efd34afba82",
+      "status": "Approved",
+      "evidenceId": "d74ee0b7-5e57-42ff-881c-1ee4bb693dbb",
+      "output": "expedition/paths/forest/camp.webp",
+      "outputSha256": "ba65ea5916690e4331ccdcd6ab1d0f1e7cf1c1411e31eece3e7f7c6e9e663bc4",
+      "width": 1672,
+      "height": 941,
+      "encodedBytes": 230540,
+      "decodedBytes": 6293408,
+      "transform": {
+        "operation": "encode-original-dimensions",
+        "format": "webp",
+        "quality": 90,
+        "alphaQuality": 100
+      },
+      "approvalBasis": "Deterministic derivative of the exact approved source; does not assert separate gallery approval for changed bytes."
+    },
+    {
+      "source": "assets/environments/expedition-paths/r1/forest/boss/source.png",
+      "sourceSha256": "c109cdec02f17964ae6be9ddf44b895bdbf849d4cfec3337a7608e9ae5ede5dd",
+      "status": "Approved",
+      "evidenceId": "7072e9f2-0098-48b8-9578-47abf5ed6cfe",
+      "output": "expedition/paths/forest/boss.webp",
+      "outputSha256": "684b5c56f1ce628bfecbf018df02a9ae7d7d2058982c744775b286bd87de8bda",
+      "width": 1672,
+      "height": 941,
+      "encodedBytes": 292500,
+      "decodedBytes": 6293408,
+      "transform": {
+        "operation": "encode-original-dimensions",
+        "format": "webp",
+        "quality": 90,
+        "alphaQuality": 100
+      },
+      "approvalBasis": "Deterministic derivative of the exact approved source; does not assert separate gallery approval for changed bytes."
+    },
+    {
+      "source": "assets/environments/expedition-paths/r1/infernal/combat/source.png",
+      "sourceSha256": "7944e5fd845d9e6712f0b2f79cf0baf06a347cb2bdcbabe5d83027a832381ffb",
+      "status": "Approved",
+      "evidenceId": "24ad0716-7e10-4cf9-b397-2f6bf7b1c1cf",
+      "output": "expedition/paths/infernal/combat.webp",
+      "outputSha256": "577b3791c5fc8d71d24fd80688b7ceafff4c49be53385ed533b658cc07d1c52c",
+      "width": 1672,
+      "height": 941,
+      "encodedBytes": 156928,
+      "decodedBytes": 6293408,
+      "transform": {
+        "operation": "encode-original-dimensions",
+        "format": "webp",
+        "quality": 90,
+        "alphaQuality": 100
+      },
+      "approvalBasis": "Deterministic derivative of the exact approved source; does not assert separate gallery approval for changed bytes."
+    },
+    {
+      "source": "assets/environments/expedition-paths/r1/infernal/mystery/source.png",
+      "sourceSha256": "c85b380c87ce57c92da5d0e1600e2dcdbae3dfb294d292004b0bb449d2720f3b",
+      "status": "Approved",
+      "evidenceId": "d0eaa4d4-c484-4267-bc8f-f4dabede3be7",
+      "output": "expedition/paths/infernal/mystery.webp",
+      "outputSha256": "66e620305fcf00b512e40b19bc8e45573723a14fed2183c0cb8e08d110ead51a",
+      "width": 1672,
+      "height": 941,
+      "encodedBytes": 136010,
+      "decodedBytes": 6293408,
+      "transform": {
+        "operation": "encode-original-dimensions",
+        "format": "webp",
+        "quality": 90,
+        "alphaQuality": 100
+      },
+      "approvalBasis": "Deterministic derivative of the exact approved source; does not assert separate gallery approval for changed bytes."
+    },
+    {
+      "source": "assets/environments/expedition-paths/r1/infernal/treasure/source.png",
+      "sourceSha256": "cb9696913fe8c8f8feefd808b19503953afd57b02397b27bf8bcf4eac0b912ea",
+      "status": "Approved",
+      "evidenceId": "ed321de4-ed3b-485a-a9a4-181546fbdc49",
+      "output": "expedition/paths/infernal/treasure.webp",
+      "outputSha256": "aa0c3330b252b7cd868afa81f42623b6b2522f92aba67426371cf8649452d5f0",
+      "width": 1672,
+      "height": 941,
+      "encodedBytes": 185258,
+      "decodedBytes": 6293408,
+      "transform": {
+        "operation": "encode-original-dimensions",
+        "format": "webp",
+        "quality": 90,
+        "alphaQuality": 100
+      },
+      "approvalBasis": "Deterministic derivative of the exact approved source; does not assert separate gallery approval for changed bytes."
+    },
+    {
+      "source": "assets/environments/expedition-paths/r1/infernal/shop/source.png",
+      "sourceSha256": "b0e0b5b6faa0dda70d2f4208b63577af9bce033275b3044162ee8a7f8be53321",
+      "status": "Approved",
+      "evidenceId": "5cbe7733-6731-4c3a-8be9-897c2fec8e8b",
+      "output": "expedition/paths/infernal/shop.webp",
+      "outputSha256": "36ff9521b7fdb37248e55a1cb86ec8d454f7660b4f8c589fc4c15c0152e6b3b0",
+      "width": 1672,
+      "height": 941,
+      "encodedBytes": 156234,
+      "decodedBytes": 6293408,
+      "transform": {
+        "operation": "encode-original-dimensions",
+        "format": "webp",
+        "quality": 90,
+        "alphaQuality": 100
+      },
+      "approvalBasis": "Deterministic derivative of the exact approved source; does not assert separate gallery approval for changed bytes."
+    },
+    {
+      "source": "assets/environments/expedition-paths/r1/infernal/elite/source.png",
+      "sourceSha256": "c9464b68beaeea3f7472e43e8c0daa0faa9ed67df65ae8ee7eef5785c4881002",
+      "status": "Approved",
+      "evidenceId": "2df5f139-f3f7-419f-b9f4-74630f86377e",
+      "output": "expedition/paths/infernal/elite.webp",
+      "outputSha256": "08b48287e85ee19593e3e83a01b6a0f3d43e3116085f767a7f8fea0a9e74b897",
+      "width": 1672,
+      "height": 941,
+      "encodedBytes": 168518,
+      "decodedBytes": 6293408,
+      "transform": {
+        "operation": "encode-original-dimensions",
+        "format": "webp",
+        "quality": 90,
+        "alphaQuality": 100
+      },
+      "approvalBasis": "Deterministic derivative of the exact approved source; does not assert separate gallery approval for changed bytes."
+    },
+    {
+      "source": "assets/environments/expedition-paths/r1/infernal/camp/source.png",
+      "sourceSha256": "e4bb93709acbf97d0c484d15e5d12f45eb74b476e2406a4c8768b6ba435f97de",
+      "status": "Approved",
+      "evidenceId": "e36c37e1-5286-481e-95fe-9a38ca1c035f",
+      "output": "expedition/paths/infernal/camp.webp",
+      "outputSha256": "380df80ff7cce7dbcbe47e393c16c2e5a0b57dc689d8e7d356b901aac7e9377d",
+      "width": 1672,
+      "height": 941,
+      "encodedBytes": 144534,
+      "decodedBytes": 6293408,
+      "transform": {
+        "operation": "encode-original-dimensions",
+        "format": "webp",
+        "quality": 90,
+        "alphaQuality": 100
+      },
+      "approvalBasis": "Deterministic derivative of the exact approved source; does not assert separate gallery approval for changed bytes."
+    },
+    {
+      "source": "assets/environments/expedition-paths/r1/infernal/boss/source.png",
+      "sourceSha256": "51d086f5ace16018f06d82768085bfb879d9a6f0eec8bdd1fe9f35f59b93438d",
+      "status": "Approved",
+      "evidenceId": "feb86c36-6184-4d04-8758-f41abae28924",
+      "output": "expedition/paths/infernal/boss.webp",
+      "outputSha256": "dfd40dc24021584dc5853881cc24dc36b7755d00e73b5e01b88f35247e2d23ce",
+      "width": 1672,
+      "height": 941,
+      "encodedBytes": 150290,
+      "decodedBytes": 6293408,
+      "transform": {
+        "operation": "encode-original-dimensions",
+        "format": "webp",
+        "quality": 90,
+        "alphaQuality": 100
+      },
+      "approvalBasis": "Deterministic derivative of the exact approved source; does not assert separate gallery approval for changed bytes."
+    },
+    {
+      "source": "assets/ui/expedition-concepts/r1/encounter-choice/source.png",
+      "sourceSha256": "e1b4a1786b8122d021df0360a875d6db9a4b3d6525c20acb82f54d838f68a0ca",
+      "status": "Approved",
+      "evidenceId": "4b05383a-d427-4d90-af87-bbc56d7d609b",
+      "output": "expedition/ui/card-frame.webp",
+      "outputSha256": "4190eae13bf88df4a1723f9b8e23b7278ae4e8a8388354d953c3507b68216d0a",
+      "width": 401,
+      "height": 625,
+      "encodedBytes": 9092,
+      "decodedBytes": 1002500,
+      "transform": {
+        "operation": "extract-approved-ui",
+        "crop": [
+          214,
+          202,
+          401,
+          625
+        ],
+        "clearInterior": [
+          16,
+          16,
+          369,
+          593
+        ],
+        "borderImageSlice": 16,
+        "format": "webp",
+        "quality": 90,
+        "alphaQuality": 100
+      },
+      "approvalBasis": "Deterministic derivative of the exact approved source; does not assert separate gallery approval for changed bytes."
+    },
+    {
+      "source": "assets/ui/expedition-concepts/r1/camp/source.png",
+      "sourceSha256": "e3a4618b301022401dfef0172db6ffca7b2e78241b94cdb15fa074ee47106706",
+      "status": "Approved",
+      "evidenceId": "e23682ff-9646-4879-bd2d-b4fc75f5f954",
+      "output": "expedition/ui/panel-frame.webp",
+      "outputSha256": "1fbbd152ee616f2bcc0885662c45deea6373d945c266bd330db841b15f7cd4aa",
+      "width": 524,
+      "height": 268,
+      "encodedBytes": 5658,
+      "decodedBytes": 561728,
+      "transform": {
+        "operation": "extract-approved-ui",
+        "crop": [
+          49,
+          608,
+          524,
+          268
+        ],
+        "clearInterior": [
+          24,
+          14,
+          476,
+          240
+        ],
+        "borderImageSlice": 24,
+        "format": "webp",
+        "quality": 90,
+        "alphaQuality": 100
+      },
+      "approvalBasis": "Deterministic derivative of the exact approved source; does not assert separate gallery approval for changed bytes."
+    },
+    {
+      "source": "assets/ui/expedition-concepts/r1/encounter-choice/source.png",
+      "sourceSha256": "e1b4a1786b8122d021df0360a875d6db9a4b3d6525c20acb82f54d838f68a0ca",
+      "status": "Approved",
+      "evidenceId": "4b05383a-d427-4d90-af87-bbc56d7d609b",
+      "output": "expedition/ui/button.webp",
+      "outputSha256": "d60ae7fef97795f7780bc22004e89b3f32beadbbeb7060a2ddf0ed1043187564",
+      "width": 324,
+      "height": 60,
+      "encodedBytes": 2780,
+      "decodedBytes": 77760,
+      "transform": {
+        "operation": "extract-approved-ui",
+        "crop": [
+          251,
+          741,
+          324,
+          60
+        ],
+        "textFreePatch": [
+          276,
+          760,
+          35,
+          21
+        ],
+        "replace": [
+          28,
+          13,
+          268,
+          34
+        ],
+        "format": "webp",
+        "quality": 90,
+        "alphaQuality": 100
+      },
+      "approvalBasis": "Deterministic derivative of the exact approved source; does not assert separate gallery approval for changed bytes."
+    },
+    {
+      "source": "assets/ui/expedition-concepts/r1/encounter-choice/source.png",
+      "sourceSha256": "e1b4a1786b8122d021df0360a875d6db9a4b3d6525c20acb82f54d838f68a0ca",
+      "status": "Approved",
+      "evidenceId": "4b05383a-d427-4d90-af87-bbc56d7d609b",
+      "output": "expedition/ui/medallion-combat.webp",
+      "outputSha256": "3a97cb9b48e319047288b83c2f989d8151036f524b0cc541cce58c7324470e7f",
+      "width": 107,
+      "height": 110,
+      "encodedBytes": 4954,
+      "decodedBytes": 47080,
+      "transform": {
+        "operation": "extract-approved-ui",
+        "crop": [
+          359,
+          487,
+          107,
+          110
+        ],
+        "format": "webp",
+        "quality": 90,
+        "alphaQuality": 100
+      },
+      "approvalBasis": "Deterministic derivative of the exact approved source; does not assert separate gallery approval for changed bytes."
+    },
+    {
+      "source": "assets/ui/expedition-concepts/r1/encounter-choice/source.png",
+      "sourceSha256": "e1b4a1786b8122d021df0360a875d6db9a4b3d6525c20acb82f54d838f68a0ca",
+      "status": "Approved",
+      "evidenceId": "4b05383a-d427-4d90-af87-bbc56d7d609b",
+      "output": "expedition/ui/medallion-mystery.webp",
+      "outputSha256": "ff8b95df08f823ce859168fdd8513dd3be199c16ccbfb1bb8f83f224e7e2cc4c",
+      "width": 108,
+      "height": 109,
+      "encodedBytes": 4320,
+      "decodedBytes": 47088,
+      "transform": {
+        "operation": "extract-approved-ui",
+        "crop": [
+          782,
+          488,
+          108,
+          109
+        ],
+        "format": "webp",
+        "quality": 90,
+        "alphaQuality": 100
+      },
+      "approvalBasis": "Deterministic derivative of the exact approved source; does not assert separate gallery approval for changed bytes."
+    },
+    {
+      "source": "assets/ui/expedition-concepts/r1/encounter-choice/source.png",
+      "sourceSha256": "e1b4a1786b8122d021df0360a875d6db9a4b3d6525c20acb82f54d838f68a0ca",
+      "status": "Approved",
+      "evidenceId": "4b05383a-d427-4d90-af87-bbc56d7d609b",
+      "output": "expedition/ui/medallion-treasure.webp",
+      "outputSha256": "1ff9c136566e32c7954c750c5c16095f261b15f70adf0c3142b4658a081cfb43",
+      "width": 109,
+      "height": 109,
+      "encodedBytes": 4546,
+      "decodedBytes": 47524,
+      "transform": {
+        "operation": "extract-approved-ui",
+        "crop": [
+          1205,
+          488,
+          109,
+          109
+        ],
+        "format": "webp",
+        "quality": 90,
+        "alphaQuality": 100
+      },
+      "approvalBasis": "Deterministic derivative of the exact approved source; does not assert separate gallery approval for changed bytes."
+    },
+    {
+      "source": "assets/ui/expedition-concepts/r1/camp/source.png",
+      "sourceSha256": "e3a4618b301022401dfef0172db6ffca7b2e78241b94cdb15fa074ee47106706",
+      "status": "Approved",
+      "evidenceId": "e23682ff-9646-4879-bd2d-b4fc75f5f954",
+      "output": "expedition/ui/medallion-rest.webp",
+      "outputSha256": "9a9247658f0c280de625d47d996a9ac3981832ba34f325284ce7fc446833bbcd",
+      "width": 136,
+      "height": 130,
+      "encodedBytes": 5890,
+      "decodedBytes": 70720,
+      "transform": {
+        "operation": "extract-approved-ui",
+        "crop": [
+          100,
+          632,
+          136,
+          130
+        ],
+        "format": "webp",
+        "quality": 90,
+        "alphaQuality": 100
+      },
+      "approvalBasis": "Deterministic derivative of the exact approved source; does not assert separate gallery approval for changed bytes."
+    },
+    {
+      "source": "assets/ui/expedition-concepts/r1/camp/source.png",
+      "sourceSha256": "e3a4618b301022401dfef0172db6ffca7b2e78241b94cdb15fa074ee47106706",
+      "status": "Approved",
+      "evidenceId": "e23682ff-9646-4879-bd2d-b4fc75f5f954",
+      "output": "expedition/ui/medallion-refine.webp",
+      "outputSha256": "95ad48f1b762493c7ba7011d8f843109866a5fbe8c6d78b25d2c9aa7b9766d9f",
+      "width": 133,
+      "height": 130,
+      "encodedBytes": 5994,
+      "decodedBytes": 69160,
+      "transform": {
+        "operation": "extract-approved-ui",
+        "crop": [
+          632,
+          634,
+          133,
+          130
+        ],
+        "format": "webp",
+        "quality": 90,
+        "alphaQuality": 100
+      },
+      "approvalBasis": "Deterministic derivative of the exact approved source; does not assert separate gallery approval for changed bytes."
+    },
+    {
+      "source": "assets/ui/expedition-concepts/r1/camp/source.png",
+      "sourceSha256": "e3a4618b301022401dfef0172db6ffca7b2e78241b94cdb15fa074ee47106706",
+      "status": "Approved",
+      "evidenceId": "e23682ff-9646-4879-bd2d-b4fc75f5f954",
+      "output": "expedition/ui/medallion-command.webp",
+      "outputSha256": "c92c3851670b3f1c7cd6db85a479b8ec0a7856cbb8e927977260330d8190d671",
+      "width": 135,
+      "height": 132,
+      "encodedBytes": 6260,
+      "decodedBytes": 71280,
+      "transform": {
+        "operation": "extract-approved-ui",
+        "crop": [
+          1151,
+          632,
+          135,
+          132
+        ],
+        "format": "webp",
+        "quality": 90,
+        "alphaQuality": 100
+      },
+      "approvalBasis": "Deterministic derivative of the exact approved source; does not assert separate gallery approval for changed bytes."
+    },
+    {
+      "source": "assets/ui/expedition-concepts/r1/treasure/source.png",
+      "sourceSha256": "019ef18b4b193dd1ca7b704b4be860300620764fcca5e0def403801acc3aedbe",
+      "status": "Approved",
+      "evidenceId": "180612e5-38d5-43da-90b5-eae57d8d78c9",
+      "output": "expedition/ui/medallion-gold.webp",
+      "outputSha256": "c8386dc175c9bba958c1247a17fb639400063b231c57c6054941983725c554b0",
+      "width": 103,
+      "height": 101,
+      "encodedBytes": 4022,
+      "decodedBytes": 41612,
+      "transform": {
+        "operation": "extract-approved-ui",
+        "crop": [
+          785,
+          456,
+          103,
+          101
+        ],
+        "format": "webp",
+        "quality": 90,
+        "alphaQuality": 100
+      },
+      "approvalBasis": "Deterministic derivative of the exact approved source; does not assert separate gallery approval for changed bytes."
+    },
+    {
+      "source": "assets/ui/expedition-concepts/r1/treasure/source.png",
+      "sourceSha256": "019ef18b4b193dd1ca7b704b4be860300620764fcca5e0def403801acc3aedbe",
+      "status": "Approved",
+      "evidenceId": "180612e5-38d5-43da-90b5-eae57d8d78c9",
+      "output": "expedition/ui/reward-gold.webp",
+      "outputSha256": "596aa886b4cc7857ccab89ead11da827ef3d53546ce746e1b7c93efb0be3d3e4",
+      "width": 368,
+      "height": 222,
+      "encodedBytes": 22990,
+      "decodedBytes": 326784,
+      "transform": {
+        "operation": "extract-approved-ui",
+        "crop": [
+          651,
+          235,
+          368,
+          222
+        ],
+        "format": "webp",
+        "quality": 90,
+        "alphaQuality": 100
+      },
+      "approvalBasis": "Deterministic derivative of the exact approved source; does not assert separate gallery approval for changed bytes."
+    },
+    {
+      "source": "assets/ui/expedition-concepts/r1/treasure/source.png",
+      "sourceSha256": "019ef18b4b193dd1ca7b704b4be860300620764fcca5e0def403801acc3aedbe",
+      "status": "Approved",
+      "evidenceId": "180612e5-38d5-43da-90b5-eae57d8d78c9",
+      "output": "expedition/ui/reward-tome.webp",
+      "outputSha256": "dd757a55ec15da9a4b363a432a24d5494e2e1c1745bb69a1a1ebe93568b3732c",
+      "width": 358,
+      "height": 222,
+      "encodedBytes": 21878,
+      "decodedBytes": 317904,
+      "transform": {
+        "operation": "extract-approved-ui",
+        "crop": [
+          1080,
+          235,
+          358,
+          222
+        ],
+        "format": "webp",
+        "quality": 90,
+        "alphaQuality": 100
+      },
+      "approvalBasis": "Deterministic derivative of the exact approved source; does not assert separate gallery approval for changed bytes."
+    },
+    {
+      "source": "assets/ui/expedition-concepts/r1/treasure/source.png",
+      "sourceSha256": "019ef18b4b193dd1ca7b704b4be860300620764fcca5e0def403801acc3aedbe",
+      "status": "Approved",
+      "evidenceId": "180612e5-38d5-43da-90b5-eae57d8d78c9",
+      "output": "expedition/ui/reward-relic.webp",
+      "outputSha256": "b76142e6073de034cb5dfd6f7622882635f529446e05adb2a6271adcd1260cb8",
+      "width": 356,
+      "height": 222,
+      "encodedBytes": 21450,
+      "decodedBytes": 316128,
+      "transform": {
+        "operation": "extract-approved-ui",
+        "crop": [
+          237,
+          235,
+          356,
+          222
+        ],
+        "format": "webp",
+        "quality": 90,
+        "alphaQuality": 100
+      },
+      "approvalBasis": "Deterministic derivative of the exact approved source; does not assert separate gallery approval for changed bytes."
+    },
+    {
+      "source": "assets/ui/expedition-concepts/r1/summon-training/source.png",
+      "sourceSha256": "df8e6189eb8723c31190ca5db5f658ed87cfaa9f92c0fb339d6953bf3e5b766e",
+      "status": "Approved",
+      "evidenceId": "c187ad10-41bc-4f45-89bb-925630b7b652",
+      "output": "expedition/ui/basalt.webp",
+      "outputSha256": "4548ae3de9a32f39c0442ab819cf5e8054923e9812701cbe44e52d90c01e45cc",
+      "width": 200,
+      "height": 60,
+      "encodedBytes": 284,
+      "decodedBytes": 48000,
+      "transform": {
+        "operation": "extract-approved-ui",
+        "crop": [
+          350,
+          150,
+          200,
+          60
+        ],
+        "format": "webp",
+        "quality": 90,
+        "alphaQuality": 100
+      },
+      "approvalBasis": "Deterministic derivative of the exact approved source; does not assert separate gallery approval for changed bytes."
+    },
+    {
+      "source": "assets/ui/expedition-concepts/r1/summon-training/source.png",
+      "sourceSha256": "df8e6189eb8723c31190ca5db5f658ed87cfaa9f92c0fb339d6953bf3e5b766e",
+      "status": "Approved",
+      "evidenceId": "c187ad10-41bc-4f45-89bb-925630b7b652",
+      "output": "expedition/ui/ability-signature.webp",
+      "outputSha256": "c75e6c6ead9c7e921ed5cc4d324dc880e57adf5cb013313684218b4d9fea4dce",
+      "width": 81,
+      "height": 82,
+      "encodedBytes": 2892,
+      "decodedBytes": 26568,
+      "transform": {
+        "operation": "extract-approved-ui",
+        "crop": [
+          758,
+          401,
+          81,
+          82
+        ],
+        "format": "webp",
+        "quality": 90,
+        "alphaQuality": 100
+      },
+      "approvalBasis": "Deterministic derivative of the exact approved source; does not assert separate gallery approval for changed bytes."
+    },
+    {
+      "source": "assets/ui/expedition-concepts/r1/summon-training/source.png",
+      "sourceSha256": "df8e6189eb8723c31190ca5db5f658ed87cfaa9f92c0fb339d6953bf3e5b766e",
+      "status": "Approved",
+      "evidenceId": "c187ad10-41bc-4f45-89bb-925630b7b652",
+      "output": "expedition/ui/ability-shield.webp",
+      "outputSha256": "d3b11e0093bdd89368944f7bbc38dc963b5ce773a7431e524252141282d65a10",
+      "width": 81,
+      "height": 81,
+      "encodedBytes": 2298,
+      "decodedBytes": 26244,
+      "transform": {
+        "operation": "extract-approved-ui",
+        "crop": [
+          758,
+          522,
+          81,
+          81
+        ],
+        "format": "webp",
+        "quality": 90,
+        "alphaQuality": 100
+      },
+      "approvalBasis": "Deterministic derivative of the exact approved source; does not assert separate gallery approval for changed bytes."
+    },
+    {
+      "source": "assets/ui/expedition-concepts/r1/summon-training/source.png",
+      "sourceSha256": "df8e6189eb8723c31190ca5db5f658ed87cfaa9f92c0fb339d6953bf3e5b766e",
+      "status": "Approved",
+      "evidenceId": "c187ad10-41bc-4f45-89bb-925630b7b652",
+      "output": "expedition/ui/ability-locked.webp",
+      "outputSha256": "8107f07169cc6f397ce27b273bc35610c1b9c08f8d01507cb2e8123fc7228a59",
+      "width": 81,
+      "height": 81,
+      "encodedBytes": 1542,
+      "decodedBytes": 26244,
+      "transform": {
+        "operation": "extract-approved-ui",
+        "crop": [
+          758,
+          644,
+          81,
+          81
+        ],
+        "format": "webp",
+        "quality": 90,
+        "alphaQuality": 100
+      },
+      "approvalBasis": "Deterministic derivative of the exact approved source; does not assert separate gallery approval for changed bytes."
+    }
+  ],
+  "integration": {
+    "expeditionPaths": {
+      "revision": "r1",
+      "authorization": "User approved all 25 exact path/UI concept images and explicitly requested implementation. Only deterministic approved-source exports; no new generated art.",
+      "sourceCount": 25,
+      "pathCount": 21,
+      "uiDerivativeCount": 17,
+      "mode": "approved-source-derivatives"
+    }
+  }
+}

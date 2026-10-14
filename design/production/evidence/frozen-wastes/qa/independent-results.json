@@ -1,0 +1,81 @@
+{
+  "timestamp": "2026-10-14T05:09:21.741Z",
+  "seed": 42,
+  "environment": "v24.18.0",
+  "checks": [
+    {
+      "mode": "conquer",
+      "name": "historical earned completion remains won and round-trips",
+      "status": "pass"
+    },
+    {
+      "mode": "conquer",
+      "name": "earned history with explicit new-realm gate carries inventory and round-trips after Forest",
+      "status": "pass"
+    },
+    {
+      "mode": "conquer",
+      "name": "fixed 12 fights, 3 elites, 14 ice identities and two backgrounds",
+      "status": "pass"
+    },
+    {
+      "mode": "conquer",
+      "name": "warband: controlled full Frozen route with permanent gains and four shops",
+      "status": "pass"
+    },
+    {
+      "mode": "conquer",
+      "name": "rimebound: controlled full Frozen route with permanent gains and four shops",
+      "status": "pass"
+    },
+    {
+      "mode": "demo",
+      "name": "historical earned completion remains won and round-trips",
+      "status": "pass"
+    },
+    {
+      "mode": "demo",
+      "name": "earned history with explicit new-realm gate carries inventory and round-trips after Forest",
+      "status": "pass"
+    },
+    {
+      "mode": "demo",
+      "name": "fixed 12 fights, 3 elites, 14 ice identities and two backgrounds",
+      "status": "pass"
+    },
+    {
+      "mode": "demo",
+      "name": "warband: controlled full Frozen route with permanent gains and four shops",
+      "status": "pass"
+    },
+    {
+      "mode": "demo",
+      "name": "rimebound: controlled full Frozen route with permanent gains and four shops",
+      "status": "pass"
+    }
+  ],
+  "limitations": [
+    "Controlled combat fixtures bypass combat difficulty; they verify route state changes only.",
+    "Browser, audio, visual playback and broad suites assigned to root; not performed here."
+  ],
+  "conquer": {
+    "root": "C:/Users/wilsh/Projects/runelord",
+    "hashes": {
+      "packages/engine/index.ts": "d70042e8a1f025d6b3a256db1b15a29e3b8404d4412f99caa513250aa70e8971",
+      "packages/engine/frozenWastes.ts": "1aa59733c8284356bc1ef2c6a4ed9f353833c23213f2d4bf14e3c1989ec0b60b",
+      "packages/content/index.ts": "753a7bf70a05b7f836f62e6faba76fdd249e5ebd302c129248aa98042f1523fe",
+      "apps/web/src/main.tsx": "2add9fbae0f821b7d2367122db30434ec3b21021bb0a8e564d4f63da01d2c7fc",
+      "apps/web/public/game-assets/manifest.json": "a1a4cfefbcef7285ba10ba743c5062cc20da5481c6b31a49747eb9ec6e8fdf8b"
+    }
+  },
+  "demo": {
+    "root": "C:/Users/wilsh/Projects/runelord-roguelike-pages-recovery",
+    "hashes": {
+      "packages/engine/index.ts": "20ccdf416e9be4c5c215fdf1675e56de283c15da0684deb1985cd95a634b9cf8",
+      "packages/engine/frozenWastes.ts": "073b4eff0a731fc1ed6790cd4fc0f4f46707932ac1a5c6755cd20db284995bdd",
+      "packages/content/index.ts": "6639740fa92bc380169a2a2a1306ce164ff6d8d480c8d7c24b322325838693d2",
+      "apps/web/src/main.tsx": "a1b1f353eb4eac29a1c9a3e010876a94c2aca9ea4ef7d59d86486c23b1a41a5a",
+      "apps/web/public/game-assets/manifest.json": "bb6a35a7774c81e1f1e1f0d28e3181fa225801604942c5104158ce874b4cf1bc"
+    }
+  }
+}

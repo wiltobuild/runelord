@@ -1,7 +1,9 @@
+// Preserve this pre-expansion regression suite; expansion behavior has dedicated coverage.
+const newInfernalRun=(...args:Parameters<typeof currentInfernalRun>)=>{const originalLength=args.length;if(originalLength<6&&!args[2])args[5]=0;if(originalLength<7&&!args[2])args[6]=0;args[9]??=1;return currentInfernalRun(...args);};
 import {readFileSync} from 'node:fs';
 import {test} from 'node:test';
 import assert from 'node:assert/strict';
-import {newInfernalRun,generateForestJourney,FOREST_ENEMY_IDS,dispatch,currentShop,upgradeCost,mapDestinations,resolveTargets,intent,save,restore,type State} from './index';
+import {newInfernalRun as currentInfernalRun,generateForestJourney,FOREST_ENEMY_IDS,dispatch,currentShop,upgradeCost,mapDestinations,resolveTargets,intent,save,restore,type State} from './index';
 
 function crownLoot(legacy=false):State {
  const s=newInfernalRun(29,'warband',legacy);
@@ -47,7 +49,7 @@ test('infernal crown acknowledgement continues with every permanent gain intact,
  assert.ok([...battle.hand,...battle.draw].some(c=>c.level===3));
 });
 test('complete forest route reaches each encounter once, four shops, and wins only after final shop',()=>{
- let s=dispatch(crownLoot(),{type:'continue'});const visited:string[]=[];
+ let s=dispatch(crownLoot(),{type:'continue'});s.frozenWastesVersion=1;const visited:string[]=[];
  while(s.phase!=='won') {
   const destination=mapDestinations(s).find(n=>!s.journey!.completed.includes(n.id));assert.ok(destination);
   visited.push(destination.id);s=enter(s,destination.id);

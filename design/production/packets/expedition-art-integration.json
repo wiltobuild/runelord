@@ -1,0 +1,294 @@
+{
+  "schema": 1,
+  "id": "expedition-art-integration",
+  "status": "complete",
+  "outcome": "Approved biome path illustrations and four UI concepts implemented as interactive expedition screens in both modes.",
+  "authorization": "User approved all submitted art, then requested implement them.",
+  "contentIds": [
+    "frozen-path-art",
+    "forest-path-art",
+    "infernal-path-art",
+    "expedition-ui-concepts"
+  ],
+  "owner": "root",
+  "integrationOwner": "root",
+  "reviewer": "independent worker plus root browser verification",
+  "ownedPaths": [
+    "apps/web/src/ExpeditionScreens.tsx",
+    "apps/web/src/expedition-screens.css",
+    "apps/web/src/expeditionReview.ts",
+    "tools/import/expedition-paths.mjs",
+    "tools/import/assets.mjs",
+    "packages/assets/expedition-paths.json",
+    "packages/assets/manifest.json",
+    "apps/web/public/game-assets/expedition",
+    "apps/web/public/game-assets/manifest.json"
+  ],
+  "dependencies": [
+    "All25 source artwork hashes remain Approved"
+  ],
+  "exclusions": [
+    "Engine balance changes",
+    "New artwork generation",
+    "Combat arena replacement",
+    "Commit or deployment"
+  ],
+  "inputs": [
+    {
+      "path": "assets/environments/expedition-paths/r1/frozen-wastes/combat/source.png",
+      "sha256": "30690eb15162e3161ab297ec8024caec313ca98cba55367e00ce9196514f7c80"
+    },
+    {
+      "path": "assets/environments/expedition-paths/r1/frozen-wastes/mystery/source.png",
+      "sha256": "b8fac3fd42cee2d9805576e7e3448bc55eea8c9fb4ad28816e1bb235be128e10"
+    },
+    {
+      "path": "assets/environments/expedition-paths/r1/frozen-wastes/treasure/source.png",
+      "sha256": "e06854352ee14fc2db280ee319f7b90b01095204ec0a5561ae881bc0008b2e05"
+    },
+    {
+      "path": "assets/environments/expedition-paths/r1/frozen-wastes/shop/source.png",
+      "sha256": "b33f2f5bfd7aff85b1ea3b2a62592cb53b0843fdf6e0da019d55d7c19f8ca8d4"
+    },
+    {
+      "path": "assets/environments/expedition-paths/r1/frozen-wastes/elite/source.png",
+      "sha256": "876e237457338c1151b9838a7e6ccbe137349c082a91e06c2f0807355fe32ef8"
+    },
+    {
+      "path": "assets/environments/expedition-paths/r1/frozen-wastes/camp/source.png",
+      "sha256": "57c976e838e5e4199b4bd320aea165a4d6b32983715b87895e16809a275a6007"
+    },
+    {
+      "path": "assets/environments/expedition-paths/r1/frozen-wastes/boss/source.png",
+      "sha256": "1cdce6d1c1e515a26590ab7dabb8e46ef0a81e4c1d219ddb9078c992708048cc"
+    },
+    {
+      "path": "assets/environments/expedition-paths/r1/forest/combat/source.png",
+      "sha256": "566cb4e5eb24ad31955dd9845603810af237578907ee0a78ce6d0a3e4e708bda"
+    },
+    {
+      "path": "assets/environments/expedition-paths/r1/forest/mystery/source.png",
+      "sha256": "c2eb7cd66f15a039108b4658b22099cdbceee6d51592cf19e107abbe3200db6d"
+    },
+    {
+      "path": "assets/environments/expedition-paths/r1/forest/treasure/source.png",
+      "sha256": "ba826b9e1271ecb38ac3816a42ac28ba1ee16e767eec5b448c6e32da64e34a18"
+    },
+    {
+      "path": "assets/environments/expedition-paths/r1/forest/shop/source.png",
+      "sha256": "5a9fb24b282814704752c92ce030d05e08333c84c15f3bf12cc7c1c4eca64e70"
+    },
+    {
+      "path": "assets/environments/expedition-paths/r1/forest/elite/source.png",
+      "sha256": "11e674a7c7fc2b74b27b61b9965698a6e101660c09e419cc6bb49c54acad8d32"
+    },
+    {
+      "path": "assets/environments/expedition-paths/r1/forest/camp/source.png",
+      "sha256": "6ad8f9533ea4dd746c2120193b6db53b86a6428d8def0eeca0d31efd34afba82"
+    },
+    {
+      "path": "assets/environments/expedition-paths/r1/forest/boss/source.png",
+      "sha256": "c109cdec02f17964ae6be9ddf44b895bdbf849d4cfec3337a7608e9ae5ede5dd"
+    },
+    {
+      "path": "assets/environments/expedition-paths/r1/infernal/combat/source.png",
+      "sha256": "7944e5fd845d9e6712f0b2f79cf0baf06a347cb2bdcbabe5d83027a832381ffb"
+    },
+    {
+      "path": "assets/environments/expedition-paths/r1/infernal/mystery/source.png",
+      "sha256": "c85b380c87ce57c92da5d0e1600e2dcdbae3dfb294d292004b0bb449d2720f3b"
+    },
+    {
+      "path": "assets/environments/expedition-paths/r1/infernal/treasure/source.png",
+      "sha256": "cb9696913fe8c8f8feefd808b19503953afd57b02397b27bf8bcf4eac0b912ea"
+    },
+    {
+      "path": "assets/environments/expedition-paths/r1/infernal/shop/source.png",
+      "sha256": "b0e0b5b6faa0dda70d2f4208b63577af9bce033275b3044162ee8a7f8be53321"
+    },
+    {
+      "path": "assets/environments/expedition-paths/r1/infernal/elite/source.png",
+      "sha256": "c9464b68beaeea3f7472e43e8c0daa0faa9ed67df65ae8ee7eef5785c4881002"
+    },
+    {
+      "path": "assets/environments/expedition-paths/r1/infernal/camp/source.png",
+      "sha256": "e4bb93709acbf97d0c484d15e5d12f45eb74b476e2406a4c8768b6ba435f97de"
+    },
+    {
+      "path": "assets/environments/expedition-paths/r1/infernal/boss/source.png",
+      "sha256": "51d086f5ace16018f06d82768085bfb879d9a6f0eec8bdd1fe9f35f59b93438d"
+    },
+    {
+      "path": "assets/ui/expedition-concepts/r1/encounter-choice/source.png",
+      "sha256": "e1b4a1786b8122d021df0360a875d6db9a4b3d6525c20acb82f54d838f68a0ca"
+    },
+    {
+      "path": "assets/ui/expedition-concepts/r1/camp/source.png",
+      "sha256": "e3a4618b301022401dfef0172db6ffca7b2e78241b94cdb15fa074ee47106706"
+    },
+    {
+      "path": "assets/ui/expedition-concepts/r1/treasure/source.png",
+      "sha256": "019ef18b4b193dd1ca7b704b4be860300620764fcca5e0def403801acc3aedbe"
+    },
+    {
+      "path": "assets/ui/expedition-concepts/r1/summon-training/source.png",
+      "sha256": "df8e6189eb8723c31190ca5db5f658ed87cfaa9f92c0fb339d6953bf3e5b766e"
+    },
+    {
+      "path": "apps/web/src/ExpeditionScreens.tsx",
+      "sha256": "d1847ab223dd7d90acb0571fd958494f53f08f2cf6076b11f3c95e2e72a583d9"
+    },
+    {
+      "path": "apps/web/src/expedition-screens.css",
+      "sha256": "578c6e5de2a0379a25abc150119c903889c522244e4b5de95167d66faf62a3d8"
+    },
+    {
+      "path": "apps/web/src/expeditionReview.ts",
+      "sha256": "61caa21d83567448ae4ac59a94347645af229848159eeab28cbd624b60bae2aa"
+    },
+    {
+      "path": "tools/import/expedition-paths.mjs",
+      "sha256": "712eeb8a26e10490dd6a6513104ba17021d7d7377e54a1dc2b0b0a1e3aa0397a"
+    },
+    {
+      "path": "packages/assets/expedition-paths.json",
+      "sha256": "c54062428467bb4bc3f7b8a741b44e67ebed79fdfb6ebdc71e70070aa9996d92"
+    }
+  ],
+  "animation": null,
+  "acceptance": [
+    {
+      "check": "Approved source hashes verified and deterministic runtime derivatives retain provenance",
+      "status": "pass",
+      "evidence": [
+        {
+          "path": "design/production/evidence/expedition-path-art/runtime-assets.json",
+          "sha256": "69aa528b83e251ffc24fd7847a63b1e2867afd4a844211c3686d2b89df5bcd30"
+        },
+        {
+          "path": "design/production/evidence/expedition-path-art/gameplay-regression.json",
+          "sha256": "56310313d0699ff19906e9148ee8e519b98e300efeeed45f19d03dbc3f7ebf79"
+        },
+        {
+          "path": "design/production/evidence/expedition-path-art/browser-verification.json",
+          "sha256": "d06b499333aed3a7e5d058eb2452d24316018e13428232f0603a60991ddf0c5b"
+        },
+        {
+          "path": "design/production/evidence/expedition-path-art/independent-review.json",
+          "sha256": "ab1f91ca88116eac026cbe5e5d77f6827c1cd40a053b65abcf540a7f601b9114"
+        },
+        {
+          "path": "design/production/evidence/expedition-path-art/conquer-build.log",
+          "sha256": "db19b94569cc2f0dd338a83bdfdd0345aeeb7fcc4c53210e0c70ac4a9e2f63b4"
+        },
+        {
+          "path": "design/production/evidence/expedition-path-art/demo-build.log",
+          "sha256": "f9364cf9a3980247794a18d0dc9e2668cdf0245435188468cd92fce99d72a4f6"
+        }
+      ]
+    },
+    {
+      "check": "Both modes build and asset validation pass",
+      "status": "pass",
+      "evidence": [
+        {
+          "path": "design/production/evidence/expedition-path-art/runtime-assets.json",
+          "sha256": "69aa528b83e251ffc24fd7847a63b1e2867afd4a844211c3686d2b89df5bcd30"
+        },
+        {
+          "path": "design/production/evidence/expedition-path-art/gameplay-regression.json",
+          "sha256": "56310313d0699ff19906e9148ee8e519b98e300efeeed45f19d03dbc3f7ebf79"
+        },
+        {
+          "path": "design/production/evidence/expedition-path-art/browser-verification.json",
+          "sha256": "d06b499333aed3a7e5d058eb2452d24316018e13428232f0603a60991ddf0c5b"
+        },
+        {
+          "path": "design/production/evidence/expedition-path-art/independent-review.json",
+          "sha256": "ab1f91ca88116eac026cbe5e5d77f6827c1cd40a053b65abcf540a7f601b9114"
+        },
+        {
+          "path": "design/production/evidence/expedition-path-art/conquer-build.log",
+          "sha256": "db19b94569cc2f0dd338a83bdfdd0345aeeb7fcc4c53210e0c70ac4a9e2f63b4"
+        },
+        {
+          "path": "design/production/evidence/expedition-path-art/demo-build.log",
+          "sha256": "f9364cf9a3980247794a18d0dc9e2668cdf0245435188468cd92fce99d72a4f6"
+        }
+      ]
+    },
+    {
+      "check": "Live route, camp, treasure and training actions work with approved presentation",
+      "status": "pass",
+      "evidence": [
+        {
+          "path": "design/production/evidence/expedition-path-art/runtime-assets.json",
+          "sha256": "69aa528b83e251ffc24fd7847a63b1e2867afd4a844211c3686d2b89df5bcd30"
+        },
+        {
+          "path": "design/production/evidence/expedition-path-art/gameplay-regression.json",
+          "sha256": "56310313d0699ff19906e9148ee8e519b98e300efeeed45f19d03dbc3f7ebf79"
+        },
+        {
+          "path": "design/production/evidence/expedition-path-art/browser-verification.json",
+          "sha256": "d06b499333aed3a7e5d058eb2452d24316018e13428232f0603a60991ddf0c5b"
+        },
+        {
+          "path": "design/production/evidence/expedition-path-art/independent-review.json",
+          "sha256": "ab1f91ca88116eac026cbe5e5d77f6827c1cd40a053b65abcf540a7f601b9114"
+        },
+        {
+          "path": "design/production/evidence/expedition-path-art/conquer-build.log",
+          "sha256": "db19b94569cc2f0dd338a83bdfdd0345aeeb7fcc4c53210e0c70ac4a9e2f63b4"
+        },
+        {
+          "path": "design/production/evidence/expedition-path-art/demo-build.log",
+          "sha256": "f9364cf9a3980247794a18d0dc9e2668cdf0245435188468cd92fce99d72a4f6"
+        }
+      ]
+    },
+    {
+      "check": "Desktop and mobile landscape layout and keyboard dialog behavior verified",
+      "status": "pass",
+      "evidence": [
+        {
+          "path": "design/production/evidence/expedition-path-art/runtime-assets.json",
+          "sha256": "69aa528b83e251ffc24fd7847a63b1e2867afd4a844211c3686d2b89df5bcd30"
+        },
+        {
+          "path": "design/production/evidence/expedition-path-art/gameplay-regression.json",
+          "sha256": "56310313d0699ff19906e9148ee8e519b98e300efeeed45f19d03dbc3f7ebf79"
+        },
+        {
+          "path": "design/production/evidence/expedition-path-art/browser-verification.json",
+          "sha256": "d06b499333aed3a7e5d058eb2452d24316018e13428232f0603a60991ddf0c5b"
+        },
+        {
+          "path": "design/production/evidence/expedition-path-art/independent-review.json",
+          "sha256": "ab1f91ca88116eac026cbe5e5d77f6827c1cd40a053b65abcf540a7f601b9114"
+        },
+        {
+          "path": "design/production/evidence/expedition-path-art/conquer-build.log",
+          "sha256": "db19b94569cc2f0dd338a83bdfdd0345aeeb7fcc4c53210e0c70ac4a9e2f63b4"
+        },
+        {
+          "path": "design/production/evidence/expedition-path-art/demo-build.log",
+          "sha256": "f9364cf9a3980247794a18d0dc9e2668cdf0245435188468cd92fce99d72a4f6"
+        }
+      ]
+    }
+  ],
+  "checkpoint": {
+    "completed": [
+      "25approved source hashes verified",
+      "38runtime assets integrated in both repos",
+      "Four live approved UI designs implemented",
+      "Both builds and623tests pass",
+      "Independent static review passed",
+      "Desktop, landscape, narrow layout and interaction browser checks passed"
+    ],
+    "remaining": [],
+    "blockers": [],
+    "nextAction": "User can play and review the local preview."
+  }
+}

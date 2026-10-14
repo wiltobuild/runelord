@@ -30,7 +30,7 @@ for (let seed = 1; seed <= runCount; seed++) {
       s = dispatch(s, { type: "reward", card: s.rewards.find(id => canAddCard(s, id)) ?? null });
     else if (s.phase === "loot") s = dispatch(s, { type: "continue" });
     else if (s.phase === "shop") s = dispatch(s, { type: "leave-shop" });
-    else if (s.phase === "camp") s = dispatch(s, { type: "camp" });
+    else if (s.phase === "camp") s = dispatch(s, s.expansionVersion===2?{type:"camp-choice",choice:"rest"}:{ type: "camp" });
     else if (s.hp <= 40 && s.potion) s = dispatch(s, { type: "potion" });
     else {
       const ranks: Record<string, number> = {

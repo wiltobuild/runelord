@@ -1,0 +1,197 @@
+{
+  "schema": 1,
+  "contentId": "summon-orders",
+  "catalogKey": null,
+  "inputs": [
+    {
+      "path": "AGENTS.md",
+      "sha256": "7ac94aaf2568ff1cff4b43630316004e8a3263226d041539c75d421eb1fb1952"
+    },
+    {
+      "path": "design/expansion-content.md",
+      "sha256": "7beef68bf2980153a0bfa825fe8c1716f8c502ae9cd5fde7c9864de0d6210350"
+    },
+    {
+      "path": "packages/engine/index.ts",
+      "sha256": "8b0ad2b1c69f747af403e831c72246f12f9e707577f39ce408fbf444434bba61"
+    },
+    {
+      "path": "packages/engine/expansion.ts",
+      "sha256": "4342ccfdb354a66f9ad0f5c6b22f1fec6bc5a6254a9878f00efce251b91b51ce"
+    },
+    {
+      "path": "packages/engine/expansionCatalog.ts",
+      "sha256": "255c4c8ddb0e4853968eb6f3b9f1cfeaa80c5f01add4656bdaf87240914e6494"
+    },
+    {
+      "path": "packages/engine/expedition-expansion.test.ts",
+      "sha256": "a5dd64991806f038fa3a34c9356eee495f9bdc28742a20f98800c7254346580f"
+    },
+    {
+      "path": "packages/content/index.ts",
+      "sha256": "e459089049811ee4058cc00d8b3c501fe40c1f49a935325a1e59564f9c4c62bc"
+    },
+    {
+      "path": "apps/web/src/main.tsx",
+      "sha256": "40ed03b5587d9bf8f7b383ee7726a1a2eb53b85288ff298050b7432bcbc33419"
+    },
+    {
+      "path": "apps/web/src/ExpeditionScreens.tsx",
+      "sha256": "794f7434e5b515a6c00e3da244b1ff826c206149b3bbfe5986cf3efdd46aaf27"
+    },
+    {
+      "path": "apps/web/src/expedition-screens.css",
+      "sha256": "1e44d9d7fc0cc39e3ddb84df7b964e543199afd4bd580e56e2a56d36c879ceac"
+    },
+    {
+      "path": "apps/web/src/SummonOrders.tsx",
+      "sha256": "e227ef011baba79928c14e633048b46440658b7861767180b63ae088837f923c"
+    },
+    {
+      "path": "apps/web/src/summon-orders.css",
+      "sha256": "224266987aba8d0000076a9ed328d5536078e25733cd1dd3fd6f63c7d0a010cd"
+    },
+    {
+      "path": "apps/web/src/SoulforgeShop.tsx",
+      "sha256": "21659d2afc00199a1a5ffdc141602da87126c038da8314b681463bbea0c19f4d"
+    },
+    {
+      "path": "apps/web/src/LootReveal.tsx",
+      "sha256": "84ab373f31292e795d7c75b4cbe1de689a0bc0b8980bb3ea60711ae2681c0908"
+    },
+    {
+      "path": "apps/web/src/LootIcon.tsx",
+      "sha256": "3778d5453906591878e5ae74a536dc89b88a073ca0d20f598cd369710e7ae23f"
+    },
+    {
+      "path": "apps/web/src/MinionDetails.tsx",
+      "sha256": "f7d7aed213cdad6ce37fda31bdf86ae9ef92ab7ea11db41185d22ce9bcf224f8"
+    },
+    {
+      "path": "apps/web/src/LegionStatus.tsx",
+      "sha256": "80b91867e157228a9d522b7d87a4ecd5016c2cf01b33e7fc77709a58f8f23f2e"
+    },
+    {
+      "path": "apps/web/src/expeditionReview.ts",
+      "sha256": "719f9fabedfb9e80ef87694d5f9ba2844823cf441ab95c264829d2514fa4b0e8"
+    },
+    {
+      "path": "packages/assets/expedition-camps.json",
+      "sha256": "2ae38203faba0562360072bce8cf494a664bebd323dad6fc391837d21339dbeb"
+    },
+    {
+      "path": "tools/import/expedition-camps.mjs",
+      "sha256": "286b3490a995f2df5fa5887222e2daee91cd80641fe3bc647daf48e80f04f35c"
+    },
+    {
+      "path": "tools/import/assets.mjs",
+      "sha256": "41905b5a3efa6667c89e8db9c1e3ac06429ef52fd97549c246c90f95e73c63ed"
+    },
+    {
+      "path": "apps/web/public/game-assets/expedition/camps/frozen-wastes.webp",
+      "sha256": "42a1da68f173c25ab893c2f98829fc3c026dab407f05aa7a95e30bf09fcd0695"
+    },
+    {
+      "path": "apps/web/public/game-assets/expedition/camps/forest.webp",
+      "sha256": "8d4fcad04aaa47b1c7e72ccf7ed608c9895b4e6561dcaa27937578e9e5fd01e2"
+    },
+    {
+      "path": "apps/web/public/game-assets/expedition/camps/infernal.webp",
+      "sha256": "76699c3bd6dfbb3e55f3662efce8ca58af050e40db1b1ed5651997a7e04b2362"
+    },
+    {
+      "path": "packages/engine/infernal.ts",
+      "sha256": "e9463029119798f287fc0606af024ddbfdcb1d7b373e43bf21661700973ff3ae"
+    },
+    {
+      "path": "packages/engine/expansionJourney.ts",
+      "sha256": "7a461fc11909013f81b875cda4bc98beaad0b812bf2e696c68bda814af6bc156"
+    },
+    {
+      "path": "apps/web/src/ForestJourney.tsx",
+      "sha256": "a4c896806701bf9457087bfbce7cc0a6a9e289bc4f316222374d9238525c584c"
+    },
+    {
+      "path": "apps/web/src/InfernalJourney.tsx",
+      "sha256": "f7bc6455c589306a80d97b5f17951a2b54b37c437e8b533a41f82a466e8bf804"
+    },
+    {
+      "path": "apps/web/src/InfernalMap.tsx",
+      "sha256": "0191ca6343757e8e935687e37fd8efbe6bdadb878e32442e29a10f8a6bde3f0e"
+    }
+  ],
+  "stages": {
+    "design": {
+      "status": "complete",
+      "evidence": [
+        {
+          "path": "design/production/evidence/expedition-training/integration.json",
+          "sha256": "b62b941c59a15b27754bae19fb5226d5a571525c2763f673d0acc0abf203c3c8"
+        },
+        {
+          "path": "design/production/evidence/expedition-training/report.md",
+          "sha256": "9fa552806a7009df7c6b770b4f74987344d73e793dd25c9aaf21e5acdbe3a9e9"
+        }
+      ]
+    },
+    "art": {
+      "status": "not-applicable",
+      "reason": "Uses existing approved summon assets and code-rendered UI.",
+      "evidence": []
+    },
+    "approval": {
+      "status": "not-applicable",
+      "reason": "No new raster art specific to this gameplay content ID.",
+      "evidence": []
+    },
+    "animation": {
+      "status": "not-applicable",
+      "reason": "Existing character animations reused; new camp backgrounds are static.",
+      "evidence": []
+    },
+    "gameplay": {
+      "status": "complete",
+      "evidence": [
+        {
+          "path": "design/production/evidence/expedition-training/integration.json",
+          "sha256": "b62b941c59a15b27754bae19fb5226d5a571525c2763f673d0acc0abf203c3c8"
+        },
+        {
+          "path": "design/production/evidence/expedition-training/report.md",
+          "sha256": "9fa552806a7009df7c6b770b4f74987344d73e793dd25c9aaf21e5acdbe3a9e9"
+        }
+      ]
+    },
+    "integration": {
+      "status": "complete",
+      "evidence": [
+        {
+          "path": "design/production/evidence/expedition-training/integration.json",
+          "sha256": "b62b941c59a15b27754bae19fb5226d5a571525c2763f673d0acc0abf203c3c8"
+        },
+        {
+          "path": "design/production/evidence/expedition-training/report.md",
+          "sha256": "9fa552806a7009df7c6b770b4f74987344d73e793dd25c9aaf21e5acdbe3a9e9"
+        }
+      ]
+    },
+    "qa": {
+      "status": "complete",
+      "evidence": [
+        {
+          "path": "design/production/evidence/expedition-training/integration.json",
+          "sha256": "b62b941c59a15b27754bae19fb5226d5a571525c2763f673d0acc0abf203c3c8"
+        },
+        {
+          "path": "design/production/evidence/expedition-training/report.md",
+          "sha256": "9fa552806a7009df7c6b770b4f74987344d73e793dd25c9aaf21e5acdbe3a9e9"
+        }
+      ]
+    }
+  },
+  "notes": [
+    "Demo Rimebound Frozen boss took93 turns under the improved legal bot policy; balance tuning remains advisable.",
+    "Vite reports existing large main chunks over500kB.",
+    "Camp illustrations are integrated under user authorization and remain pending gallery design approval."
+  ]
+}

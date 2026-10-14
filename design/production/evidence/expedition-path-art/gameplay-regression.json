@@ -1,0 +1,24 @@
+{
+  "date": "2026-10-14",
+  "scope": "Approved artwork integration regression checks",
+  "commands": [
+    {
+      "cwd": "C:\\Users\\wilsh\\Projects\\runelord",
+      "command": "npm test",
+      "pass": true,
+      "tests": 321
+    },
+    {
+      "cwd": "C:/Users/wilsh/Projects/runelord-roguelike-pages-recovery",
+      "command": "npm test",
+      "pass": true,
+      "tests": 302
+    }
+  ],
+  "engineHashes": {
+    "packages/engine/index.ts": "8b0ad2b1c69f747af403e831c72246f12f9e707577f39ce408fbf444434bba61",
+    "packages/engine/expansion.ts": "4342ccfdb354a66f9ad0f5c6b22f1fec6bc5a6254a9878f00efce251b91b51ce",
+    "packages/engine/expansionCatalog.ts": "255c4c8ddb0e4853968eb6f3b9f1cfeaa80c5f01add4656bdaf87240914e6494",
+    "packages/engine/expansionJourney.ts": "7a461fc11909013f81b875cda4bc98beaad0b812bf2e696c68bda814af6bc156"
+  }
+}

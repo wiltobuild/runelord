@@ -1,6 +1,8 @@
+// Preserve this pre-expansion regression suite; expansion behavior has dedicated coverage.
+const newInfernalRun=(...args:Parameters<typeof currentInfernalRun>)=>{const originalLength=args.length;if(originalLength<6&&!args[2])args[5]=0;if(originalLength<7&&!args[2])args[6]=0;args[9]??=1;return currentInfernalRun(...args);};
 import {test} from 'node:test';
 import assert from 'node:assert/strict';
-import {newInfernalRun,availableNodes,dispatch,demonStats,archForms,eligibleCardReward,save,restore,type State,type DemonKind,type Unit} from './index';
+import {newInfernalRun as currentInfernalRun,availableNodes,dispatch,demonStats,archForms,eligibleCardReward,save,restore,type State,type DemonKind,type Unit} from './index';
 import {cards,archCards,starterDecks,modernWarlockDecks,encounters,type CardId} from '../content/index';
 const setup=()=>{const initial=newInfernalRun(42,'warband'),s=dispatch(initial,{type:'travel',node:availableNodes(initial)[0].id});s.phase='combat';s.units=[];s.mana=100;s.cinders=100;s.enemies=[{...s.enemies[0],id:900,hp:1000,maxHp:1000,guard:0,scorch:0,moves:[{name:'Wait',damage:0,targeting:'hero'}]}];s.reserves=[];s.nextId=200;return s;};
 const unit=(kind:DemonKind,id=100):Unit=>({...demonStats[kind],kind,id,maxHp:demonStats[kind].hp,guard:0});

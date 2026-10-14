@@ -1,0 +1,267 @@
+{
+  "timestamp": "2026-10-14T05:27:57.874Z",
+  "seed": 42,
+  "node": "v24.18.0",
+  "checks": [
+    {
+      "mode": "conquer",
+      "name": "gravehost new home + seeded save replay",
+      "status": "pass"
+    },
+    {
+      "mode": "conquer",
+      "name": "gravehost captured pre-change save preserves original state",
+      "status": "pass"
+    },
+    {
+      "mode": "conquer",
+      "name": "gravehost controlled route boundaries, formulas, persistence, terminal",
+      "status": "pass",
+      "details": {
+        "visited": [
+          "frozen-wastes",
+          "forest",
+          "infernal"
+        ],
+        "fights": {
+          "frozen-wastes": 12,
+          "forest": 12
+        },
+        "shops": {
+          "frozen-wastes": 4,
+          "forest": 4
+        },
+        "camps": {}
+      }
+    },
+    {
+      "mode": "conquer",
+      "name": "rimebound new home + seeded save replay",
+      "status": "pass"
+    },
+    {
+      "mode": "conquer",
+      "name": "rimebound captured pre-change save preserves original state",
+      "status": "pass"
+    },
+    {
+      "mode": "conquer",
+      "name": "rimebound controlled route boundaries, formulas, persistence, terminal",
+      "status": "pass",
+      "details": {
+        "visited": [
+          "frozen-wastes",
+          "forest",
+          "infernal"
+        ],
+        "fights": {
+          "frozen-wastes": 12,
+          "forest": 12
+        },
+        "shops": {
+          "frozen-wastes": 4,
+          "forest": 4
+        },
+        "camps": {}
+      }
+    },
+    {
+      "mode": "conquer",
+      "name": "runewarden new home + seeded save replay",
+      "status": "pass"
+    },
+    {
+      "mode": "conquer",
+      "name": "runewarden captured pre-change save preserves original state",
+      "status": "pass"
+    },
+    {
+      "mode": "conquer",
+      "name": "runewarden controlled route boundaries, formulas, persistence, terminal",
+      "status": "pass",
+      "details": {
+        "visited": [
+          "frozen-wastes",
+          "forest",
+          "infernal"
+        ],
+        "fights": {
+          "frozen-wastes": 12,
+          "forest": 12
+        },
+        "shops": {
+          "frozen-wastes": 4,
+          "forest": 4
+        },
+        "camps": {}
+      }
+    },
+    {
+      "mode": "conquer",
+      "name": "warband new home + seeded save replay",
+      "status": "pass"
+    },
+    {
+      "mode": "conquer",
+      "name": "warband captured pre-change save preserves original state",
+      "status": "pass"
+    },
+    {
+      "mode": "demo",
+      "name": "gravehost new home + seeded save replay",
+      "status": "pass"
+    },
+    {
+      "mode": "demo",
+      "name": "gravehost captured pre-change save preserves original state",
+      "status": "pass"
+    },
+    {
+      "mode": "demo",
+      "name": "gravehost controlled route boundaries, formulas, persistence, terminal",
+      "status": "pass",
+      "details": {
+        "visited": [
+          "frozen-wastes",
+          "forest",
+          "infernal"
+        ],
+        "fights": {
+          "frozen-wastes": 12,
+          "forest": 12,
+          "infernal": 9
+        },
+        "shops": {
+          "frozen-wastes": 4,
+          "forest": 4,
+          "infernal": 3
+        },
+        "camps": {
+          "infernal": 4
+        }
+      }
+    },
+    {
+      "mode": "demo",
+      "name": "rimebound new home + seeded save replay",
+      "status": "pass"
+    },
+    {
+      "mode": "demo",
+      "name": "rimebound captured pre-change save preserves original state",
+      "status": "pass"
+    },
+    {
+      "mode": "demo",
+      "name": "rimebound controlled route boundaries, formulas, persistence, terminal",
+      "status": "pass",
+      "details": {
+        "visited": [
+          "frozen-wastes",
+          "forest",
+          "infernal"
+        ],
+        "fights": {
+          "frozen-wastes": 12,
+          "forest": 12,
+          "infernal": 9
+        },
+        "shops": {
+          "frozen-wastes": 4,
+          "forest": 4,
+          "infernal": 3
+        },
+        "camps": {
+          "infernal": 4
+        }
+      }
+    },
+    {
+      "mode": "demo",
+      "name": "runewarden new home + seeded save replay",
+      "status": "pass"
+    },
+    {
+      "mode": "demo",
+      "name": "runewarden captured pre-change save preserves original state",
+      "status": "pass"
+    },
+    {
+      "mode": "demo",
+      "name": "runewarden controlled route boundaries, formulas, persistence, terminal",
+      "status": "pass",
+      "details": {
+        "visited": [
+          "frozen-wastes",
+          "forest",
+          "infernal"
+        ],
+        "fights": {
+          "frozen-wastes": 12,
+          "forest": 12,
+          "infernal": 9
+        },
+        "shops": {
+          "frozen-wastes": 4,
+          "forest": 4,
+          "infernal": 3
+        },
+        "camps": {
+          "infernal": 4
+        }
+      }
+    },
+    {
+      "mode": "demo",
+      "name": "warband new home + seeded save replay",
+      "status": "pass"
+    },
+    {
+      "mode": "demo",
+      "name": "warband captured pre-change save preserves original state",
+      "status": "pass"
+    }
+  ],
+  "hashes": [
+    {
+      "root": "C:/Users/wilsh/Projects/runelord",
+      "path": "packages/engine/index.ts",
+      "sha256": "6a09544b6bbedab67be3f9b4416a240739632c280d1b6b4703faf704ada74963"
+    },
+    {
+      "root": "C:/Users/wilsh/Projects/runelord",
+      "path": "packages/engine/frozenWastes.ts",
+      "sha256": "1aa59733c8284356bc1ef2c6a4ed9f353833c23213f2d4bf14e3c1989ec0b60b"
+    },
+    {
+      "root": "C:/Users/wilsh/Projects/runelord",
+      "path": "packages/engine/forest.ts",
+      "sha256": "f2f9ef07de322933c7e50ad0690acc8be414c963961f454603cee3fc783cd587"
+    },
+    {
+      "root": "C:/Users/wilsh/Projects/runelord",
+      "path": "apps/web/src/main.tsx",
+      "sha256": "fc29474fe9f00760aae61cfa465dc4995f1600e28749973d1231181d18ecc4be"
+    },
+    {
+      "root": "C:/Users/wilsh/Projects/runelord-roguelike-pages-recovery",
+      "path": "packages/engine/index.ts",
+      "sha256": "566ad9851d0b7081b646039738fd5bb8dbc4063ffb0bebc68fe8f9199c1a0df0"
+    },
+    {
+      "root": "C:/Users/wilsh/Projects/runelord-roguelike-pages-recovery",
+      "path": "packages/engine/frozenWastes.ts",
+      "sha256": "073b4eff0a731fc1ed6790cd4fc0f4f46707932ac1a5c6755cd20db284995bdd"
+    },
+    {
+      "root": "C:/Users/wilsh/Projects/runelord-roguelike-pages-recovery",
+      "path": "packages/engine/forest.ts",
+      "sha256": "f21ab65628627b6851edeacc94623f5fdc5eb309af5902040133a434682a6818"
+    },
+    {
+      "root": "C:/Users/wilsh/Projects/runelord-roguelike-pages-recovery",
+      "path": "apps/web/src/main.tsx",
+      "sha256": "e77eaa49a07d5e5dd4e291b3c9a516652963e1fc53b47758536c6697002467f9"
+    }
+  ]
+}

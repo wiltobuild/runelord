@@ -1,0 +1,26 @@
+{
+  "source": "assets/environments/expedition-camps/r1/frozen-wastes/source.png",
+  "sourceSha256": "5e135832be964c5da3051207a4a129d0c4ac2679d71aefe3c0979ec7d9d1a400",
+  "prompt": "assets/environments/expedition-camps/r1/frozen-wastes/prompt.txt",
+  "promptSha256": "5b2bc8a74be6e215d1bf85b43c06f76c8280686376212c625606dd6f19c35c6c",
+  "status": "Pending approval",
+  "evidenceId": null,
+  "reference": {
+    "path": "assets/approvals/inbox/battle-map-frostgrave-causeway/r1/frostgrave-causeway-r1.png",
+    "sha256": "d1a0f5d4ba7d211ee96753d205df0f8328922fb9d342e878bafad44e4d702fee",
+    "status": "Approved",
+    "evidenceId": "a2f30e21-7023-499a-a09a-3343171d39c1"
+  },
+  "output": "expedition/camps/frozen-wastes.webp",
+  "outputSha256": "42a1da68f173c25ab893c2f98829fc3c026dab407f05aa7a95e30bf09fcd0695",
+  "transform": {
+    "width": 1672,
+    "height": 941,
+    "fit": "cover",
+    "position": "centre",
+    "format": "webp",
+    "quality": 90
+  },
+  "encodedBytes": 261748,
+  "decodedBytes": 6293408
+}

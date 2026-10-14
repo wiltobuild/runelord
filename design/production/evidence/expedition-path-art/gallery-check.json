@@ -1,0 +1,159 @@
+{
+  "date": "2026-10-14T08:06:09.3927897Z",
+  "count": 25,
+  "paths": 21,
+  "ui": 4,
+  "pending": 25,
+  "entries": [
+    {
+      "name": "Forest path — boss",
+      "path": "approvals/inbox/expedition-path-forest-boss/r1/source.png",
+      "status": "Pending approval",
+      "sha256": "c109cdec02f17964ae6be9ddf44b895bdbf849d4cfec3337a7608e9ae5ede5dd"
+    },
+    {
+      "name": "Forest path — camp",
+      "path": "approvals/inbox/expedition-path-forest-camp/r1/source.png",
+      "status": "Pending approval",
+      "sha256": "6ad8f9533ea4dd746c2120193b6db53b86a6428d8def0eeca0d31efd34afba82"
+    },
+    {
+      "name": "Forest path — combat",
+      "path": "approvals/inbox/expedition-path-forest-combat/r1/source.png",
+      "status": "Pending approval",
+      "sha256": "566cb4e5eb24ad31955dd9845603810af237578907ee0a78ce6d0a3e4e708bda"
+    },
+    {
+      "name": "Forest path — elite",
+      "path": "approvals/inbox/expedition-path-forest-elite/r1/source.png",
+      "status": "Pending approval",
+      "sha256": "11e674a7c7fc2b74b27b61b9965698a6e101660c09e419cc6bb49c54acad8d32"
+    },
+    {
+      "name": "Forest path — mystery",
+      "path": "approvals/inbox/expedition-path-forest-mystery/r1/source.png",
+      "status": "Pending approval",
+      "sha256": "c2eb7cd66f15a039108b4658b22099cdbceee6d51592cf19e107abbe3200db6d"
+    },
+    {
+      "name": "Forest path — shop",
+      "path": "approvals/inbox/expedition-path-forest-shop/r1/source.png",
+      "status": "Pending approval",
+      "sha256": "5a9fb24b282814704752c92ce030d05e08333c84c15f3bf12cc7c1c4eca64e70"
+    },
+    {
+      "name": "Forest path — treasure",
+      "path": "approvals/inbox/expedition-path-forest-treasure/r1/source.png",
+      "status": "Pending approval",
+      "sha256": "ba826b9e1271ecb38ac3816a42ac28ba1ee16e767eec5b448c6e32da64e34a18"
+    },
+    {
+      "name": "Frozen Wastes — boss path",
+      "path": "approvals/inbox/expedition-path-frozen-wastes-boss/r1/source.png",
+      "status": "Pending approval",
+      "sha256": "1cdce6d1c1e515a26590ab7dabb8e46ef0a81e4c1d219ddb9078c992708048cc"
+    },
+    {
+      "name": "Frozen Wastes — camp path",
+      "path": "approvals/inbox/expedition-path-frozen-wastes-camp/r1/source.png",
+      "status": "Pending approval",
+      "sha256": "57c976e838e5e4199b4bd320aea165a4d6b32983715b87895e16809a275a6007"
+    },
+    {
+      "name": "Frozen Wastes — combat path",
+      "path": "approvals/inbox/expedition-path-frozen-wastes-combat/r1/source.png",
+      "status": "Pending approval",
+      "sha256": "30690eb15162e3161ab297ec8024caec313ca98cba55367e00ce9196514f7c80"
+    },
+    {
+      "name": "Frozen Wastes — elite path",
+      "path": "approvals/inbox/expedition-path-frozen-wastes-elite/r1/source.png",
+      "status": "Pending approval",
+      "sha256": "876e237457338c1151b9838a7e6ccbe137349c082a91e06c2f0807355fe32ef8"
+    },
+    {
+      "name": "Frozen Wastes — mystery path",
+      "path": "approvals/inbox/expedition-path-frozen-wastes-mystery/r1/source.png",
+      "status": "Pending approval",
+      "sha256": "b8fac3fd42cee2d9805576e7e3448bc55eea8c9fb4ad28816e1bb235be128e10"
+    },
+    {
+      "name": "Frozen Wastes — shop path",
+      "path": "approvals/inbox/expedition-path-frozen-wastes-shop/r1/source.png",
+      "status": "Pending approval",
+      "sha256": "b33f2f5bfd7aff85b1ea3b2a62592cb53b0843fdf6e0da019d55d7c19f8ca8d4"
+    },
+    {
+      "name": "Frozen Wastes — treasure path",
+      "path": "approvals/inbox/expedition-path-frozen-wastes-treasure/r1/source.png",
+      "status": "Pending approval",
+      "sha256": "e06854352ee14fc2db280ee319f7b90b01095204ec0a5561ae881bc0008b2e05"
+    },
+    {
+      "name": "Infernal path · boss",
+      "path": "approvals/inbox/expedition-path-infernal-boss/r1/source.png",
+      "status": "Pending approval",
+      "sha256": "51d086f5ace16018f06d82768085bfb879d9a6f0eec8bdd1fe9f35f59b93438d"
+    },
+    {
+      "name": "Infernal path · camp",
+      "path": "approvals/inbox/expedition-path-infernal-camp/r1/source.png",
+      "status": "Pending approval",
+      "sha256": "e4bb93709acbf97d0c484d15e5d12f45eb74b476e2406a4c8768b6ba435f97de"
+    },
+    {
+      "name": "Infernal path · combat",
+      "path": "approvals/inbox/expedition-path-infernal-combat/r1/source.png",
+      "status": "Pending approval",
+      "sha256": "7944e5fd845d9e6712f0b2f79cf0baf06a347cb2bdcbabe5d83027a832381ffb"
+    },
+    {
+      "name": "Infernal path · elite",
+      "path": "approvals/inbox/expedition-path-infernal-elite/r1/source.png",
+      "status": "Pending approval",
+      "sha256": "c9464b68beaeea3f7472e43e8c0daa0faa9ed67df65ae8ee7eef5785c4881002"
+    },
+    {
+      "name": "Infernal path · mystery",
+      "path": "approvals/inbox/expedition-path-infernal-mystery/r1/source.png",
+      "status": "Pending approval",
+      "sha256": "c85b380c87ce57c92da5d0e1600e2dcdbae3dfb294d292004b0bb449d2720f3b"
+    },
+    {
+      "name": "Infernal path · shop",
+      "path": "approvals/inbox/expedition-path-infernal-shop/r1/source.png",
+      "status": "Pending approval",
+      "sha256": "b0e0b5b6faa0dda70d2f4208b63577af9bce033275b3044162ee8a7f8be53321"
+    },
+    {
+      "name": "Infernal path · treasure",
+      "path": "approvals/inbox/expedition-path-infernal-treasure/r1/source.png",
+      "status": "Pending approval",
+      "sha256": "cb9696913fe8c8f8feefd808b19503953afd57b02397b27bf8bcf4eac0b912ea"
+    },
+    {
+      "name": "Expedition UI · Camp",
+      "path": "approvals/inbox/expedition-ui-camp/r1/source.png",
+      "status": "Pending approval",
+      "sha256": "e3a4618b301022401dfef0172db6ffca7b2e78241b94cdb15fa074ee47106706"
+    },
+    {
+      "name": "Expedition UI · Encounter choice",
+      "path": "approvals/inbox/expedition-ui-encounter-choice/r1/source.png",
+      "status": "Pending approval",
+      "sha256": "e1b4a1786b8122d021df0360a875d6db9a4b3d6525c20acb82f54d838f68a0ca"
+    },
+    {
+      "name": "Expedition UI · Summon training",
+      "path": "approvals/inbox/expedition-ui-summon-training/r1/source.png",
+      "status": "Pending approval",
+      "sha256": "df8e6189eb8723c31190ca5db5f658ed87cfaa9f92c0fb339d6953bf3e5b766e"
+    },
+    {
+      "name": "Expedition UI · Treasure rewards",
+      "path": "approvals/inbox/expedition-ui-treasure/r1/source.png",
+      "status": "Pending approval",
+      "sha256": "019ef18b4b193dd1ca7b704b4be860300620764fcca5e0def403801acc3aedbe"
+    }
+  ]
+}

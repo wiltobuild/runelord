@@ -1,0 +1,53 @@
+{
+  "schemaVersion": 1,
+  "biome": "frozen-wastes",
+  "pathKind": "camp",
+  "revision": "r1",
+  "source": "assets/environments/expedition-paths/r1/frozen-wastes/camp/source.png",
+  "sha256": "57c976e838e5e4199b4bd320aea165a4d6b32983715b87895e16809a275a6007",
+  "width": 1672,
+  "height": 941,
+  "tool": "built-in image_gen",
+  "prompt": "assets/environments/expedition-paths/r1/frozen-wastes/camp/prompt.txt",
+  "promptSha256": "ccea1ea98a20cc0883ee38cddf7504c0c99285197e0c97aa69007f4859f0157a",
+  "references": [
+    {
+      "path": "assets/approvals/inbox/battle-map-frostgrave-causeway/r1/frostgrave-causeway-r1.png",
+      "sha256": "d1a0f5d4ba7d211ee96753d205df0f8328922fb9d342e878bafad44e4d702fee",
+      "decision": {
+        "status": "Approved",
+        "at": "2026-10-02T22:19:19.260Z",
+        "evidenceId": "a2f30e21-7023-499a-a09a-3343171d39c1",
+        "paths": [
+          "C:\\Users\\wilsh\\Projects\\runelord\\assets\\approvals\\inbox\\battle-map-frostgrave-causeway\\r1\\frostgrave-causeway-r1.png"
+        ]
+      }
+    },
+    {
+      "path": "assets/approvals/inbox/battle-map-frostgrave-throne/r1/frostgrave-throne-r1.png",
+      "sha256": "5eb02d676142de9b0af43914118b53b29a19c6fde5792f8615aaaf6fc4612d4c",
+      "decision": {
+        "status": "Approved",
+        "at": "2026-10-02T22:19:19.260Z",
+        "evidenceId": "75069834-e49c-46bf-b778-4e36aadead09",
+        "paths": [
+          "C:\\Users\\wilsh\\Projects\\runelord\\assets\\approvals\\inbox\\battle-map-frostgrave-throne\\r1\\frostgrave-throne-r1.png"
+        ]
+      }
+    }
+  ],
+  "approvalStatus": "Pending approval",
+  "integrationStatus": "review-only; user approval required before implementation",
+  "gallery": {
+    "path": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\approvals\\inbox\\expedition-path-frozen-wastes-camp\\r1\\source.png",
+    "sha256": "57c976e838e5e4199b4bd320aea165a4d6b32983715b87895e16809a275a6007",
+    "status": "Pending approval",
+    "gallery": "http://localhost:4317"
+  },
+  "qa": {
+    "technical": "PNG signature and dimensions verified; seven independent images",
+    "visual": "Inspected tool output at full landscape composition. No characters or UI text. Central path landmark remains recognizable in center 4:5 crop. Matches reference blue slate, snow, angular cel shading and restrained cyan runes.",
+    "reviewer": "frozen_path_art builder self-check; not independent approval"
+  },
+  "createdAt": "2026-10-14T07:53:01.455Z"
+}

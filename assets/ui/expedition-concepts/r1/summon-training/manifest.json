@@ -1,0 +1,40 @@
+{
+  "schemaVersion": 1,
+  "revision": "r1",
+  "source": "assets/ui/expedition-concepts/r1/summon-training/source.png",
+  "sha256": "df8e6189eb8723c31190ca5db5f658ed87cfaa9f92c0fb339d6953bf3e5b766e",
+  "width": 1672,
+  "height": 941,
+  "prompt": "assets/ui/expedition-concepts/r1/summon-training/prompt.txt",
+  "promptSha256": "a538f3d6934e9fb098308bb13378e6cdac5f2e3088331f1a200d8b353456182a",
+  "references": [
+    {
+      "path": "assets/ui/expedition-concepts/r1/encounter-choice/source.png",
+      "sha256": "e1b4a1786b8122d021df0360a875d6db9a4b3d6525c20acb82f54d838f68a0ca",
+      "decision": {
+        "status": "Existing game UI; no gallery decision"
+      }
+    },
+    {
+      "path": "assets/ui/expedition-concepts/r1/references/current-training.jpg",
+      "sha256": "4f566040a31a17a7bb07645a8112acd60a25a7083e2ff9c41d547109fb720d5a",
+      "decision": {
+        "status": "Existing game UI; no gallery decision"
+      }
+    }
+  ],
+  "tool": "built-in image_gen",
+  "approvalStatus": "Pending approval",
+  "integrationStatus": "Review only. User explicitly requires approval before implementation. No runtime exports or game code changes.",
+  "gallery": {
+    "path": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\approvals\\inbox\\expedition-ui-summon-training\\r1\\source.png",
+    "sha256": "df8e6189eb8723c31190ca5db5f658ed87cfaa9f92c0fb339d6953bf3e5b766e",
+    "status": "Pending approval",
+    "gallery": "http://localhost:4317"
+  },
+  "qa": {
+    "visual": "Actual generated output inspected: clear primary composition, legible scene identity, consistent cel shading. UI concepts inspected for correct gameplay copy, legible hierarchy, complete controls and distinct illustrations.",
+    "technical": "PNG dimensions and exact source/gallery hashes verified.",
+    "limitations": "Flattened concept, not live UI. Final implementation must preserve live text and original character assets."
+  }
+}

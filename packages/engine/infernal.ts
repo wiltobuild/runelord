@@ -1,12 +1,13 @@
+import {expansionRelicPool,expansionPrice,usesExpansion,stableHash} from './expansion';
 import {hellboundEffectText} from '../content/index';
 import { legacyImplemented, runebladeEffectText, cardsForHero, relicsForHero, type HeroId, encounters, implemented, neutralCards, cards, relicPool, type CardId, type ItemId, type Encounter } from '../content/index';
 import { eligibleCardReward, demonStats, type DemonKind, type State } from './index';
 import {INFERNAL_CIRCUIT_SLOTS} from './infernalTopology';
-export type InfernalNode = { id: string; row: number; lane: number; kind: 'combat'|'elite'|'shop'|'treasure'|'boss'; name: string; next: string[]; encounterIndex: number; encounter: Encounter };
+export type InfernalNode = { id: string; row: number; lane: number; kind: 'combat'|'elite'|'shop'|'treasure'|'camp'|'boss'; name: string; next: string[]; encounterIndex: number; encounter: Encounter };
 export type ShopRerollKind='buy'|'upgrade'|'remove';
 export type OwnedShopOffer={index:number;id:CardId;level:number;sold:boolean};
 export type ShopStock = { cards: {id:CardId;price:number;sold:boolean}[]; relics:{id:ItemId;price:number;sold:boolean}[]; upgrades:OwnedShopOffer[];removals:OwnedShopOffer[];rerolls:Record<ShopRerollKind,number>;servicesReady:boolean };
-export type InfernalJourney = { realm?: 'infernal'|'forest'; nodes: InfernalNode[]; current: string|null; completed:string[]; shops:Record<string,ShopStock>;shopRules:'legacy'|'soulforge' };
+export type InfernalJourney = { realm?: 'infernal'|'forest'|'frozen-wastes'; nodes: InfernalNode[]; current: string|null; completed:string[]; shops:Record<string,ShopStock>;shopRules:'legacy'|'soulforge' };
 export const cardPower = (level:number) => 1.2 ** Math.max(0,level);
 export const upgradeCost = (level:number) => 50 * 2 ** Math.max(0,level);
 export const cardLevel = (s:State,index:number) => s.deckLevels?.[index] || 0;
@@ -67,7 +68,7 @@ export const currentShop = (s:State):ShopStock|undefined => {
  return {...view,upgrades:refresh(view.upgrades),removals:refresh(view.removals)};
 };
 export function prepareShop(s:State){const stock=currentShop(s);if(stock&&s.journey?.shopRules==='soulforge')s.journey.shops[s.journey.current!]={...stock,servicesReady:true};}
-export const shopRerollCost=(s:State,kind:ShopRerollKind)=>{const count=currentShop(s)?.rerolls[kind];const price=count===undefined||!Number.isSafeInteger(count)||count<0?Infinity:10*2**count;return Number.isSafeInteger(price)&&price>0?price:Infinity;};
+export const shopRerollCost=(s:State,kind:ShopRerollKind)=>{const count=currentShop(s)?.rerolls[kind];const price=count===undefined||!Number.isSafeInteger(count)||count<0?Infinity:10*2**count;return Number.isSafeInteger(price)&&price>0?expansionPrice(s,price):Infinity;};
 export const shopCanReroll=(s:State,kind:ShopRerollKind)=>s.phase==='shop'&&s.journey?.shopRules==='soulforge'&&s.gold>=shopRerollCost(s,kind)&&(kind==='buy'?shopPool(s).some(id=>canAddCard(s,id)):eligibleCopies(s,kind).length>0);
 export function rerollShop(s:State,kind:ShopRerollKind){
  if(!(['buy','upgrade','remove'] as string[]).includes(kind))throw Error('Invalid reroll type.');
@@ -101,7 +102,7 @@ export function cardEffectText(id:CardId,level=0,runebladeRules:1|2=2,summonRule
  'combust':`Consume all Scorch. Deal ${level?`max(Scorch × 2 + ${level}, round(Scorch × ${(2*cardPower(level)).toFixed(3)}))`:'Scorch × 2'} damage (0 if no Scorch). At 10 Scorch: ${level?Math.max(20+level,Math.round(20*cardPower(level))):20} damage.`, 'blood-price':`Lose 2 HP and gain 2 Corruption. Deal ${v(6)} damage twice. On kill gain 4 Corruption.`, 'wreathed-in-flame':`Gain ${v(5)} Guard plus half the total enemy Scorch, rounded down.`, 'dread-aura':`Whenever a demon attacks, apply ${v(1)} Scorch to its target.`, 'feast-of-embers':`Heal a demon for ${v(8)} HP and grant it ${v(3)} damage.`, 'abyssal-gaze':`Gain 2 Corruption. Draw ${v(1)} cards.`, 'infernal-transformation':`Enter Demon Form for ${v(3)} turns.`};
  return effects[id]??cards[id].text;
 }
-export function upgradePreview(s:State,index:number){const id=s.deck[index];if(!id)throw Error('Choose a card in your deck.');const level=cardLevel(s,index),mana=(l:number)=>Math.max(cards[id].cost>0?1:0,cards[id].cost-Math.floor(l/3));return {id,level,nextLevel:level+1,power:cardPower(level),nextPower:cardPower(level+1),cost:mana(level),nextCost:mana(level+1),text:cardEffectText(id,level,s.runebladeRules??1,s.summonRulesFrom!==undefined&&s.history.length>=s.summonRulesFrom),nextText:cardEffectText(id,level+1,s.runebladeRules??1,s.summonRulesFrom!==undefined&&s.history.length>=s.summonRulesFrom),price:upgradeCost(level)};}
+export function upgradePreview(s:State,index:number){const id=s.deck[index];if(!id)throw Error('Choose a card in your deck.');const level=cardLevel(s,index),mana=(l:number)=>Math.max(cards[id].cost>0?1:0,cards[id].cost-Math.floor(l/3));return {id,level,nextLevel:level+1,power:cardPower(level),nextPower:cardPower(level+1),cost:mana(level),nextCost:mana(level+1),text:cardEffectText(id,level,s.runebladeRules??1,s.summonRulesFrom!==undefined&&s.history.length>=s.summonRulesFrom),nextText:cardEffectText(id,level+1,s.runebladeRules??1,s.summonRulesFrom!==undefined&&s.history.length>=s.summonRulesFrom),price:expansionPrice(s,upgradeCost(level))};}
 /** Shared service rows make shop/treasure counts identical on EVERY legal path; terrain and fights vary. */
 export function generateInfernalJourney(seed:number,legacy=false,hero:HeroId='warlock',runebladeRules:1|2=2):InfernalJourney {
  let rng=(seed ^ 0x19fa831)>>>0;
@@ -158,7 +159,7 @@ export function configureHeroShops(s:State) {
  if(!s.journey || (s.hero!=='runeblade'&&s.summonRulesFrom===undefined))return;
  for(const [node,stock] of Object.entries(s.journey.shops)) {
   stock.cards=sample(shopPool(s),s.seed,`${node}:${s.hero}:buy:0`).map(id=>({id,price:cards[id].rarity==='Rare'?90:45,sold:false}));
-  const pool=relicsForHero(s.hero);
-  stock.relics=[...pool].sort((a,b)=>a.localeCompare(b)).filter((_,index)=>index!==((s.seed+node.length)%pool.length)).map(id=>({id,price:120,sold:false}));
+  const pool=expansionRelicPool(s);
+  stock.relics=[...pool].sort((a,b)=>usesExpansion(s)?stableHash(s.seed,`${node}:${a}`)-stableHash(s.seed,`${node}:${b}`):a.localeCompare(b)).filter((_,index)=>index!==((s.seed+node.length)%pool.length)).slice(0,usesExpansion(s)?5:pool.length).map(id=>({id,price:120,sold:false}));
  }
 }

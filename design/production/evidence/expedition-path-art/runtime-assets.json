@@ -1,0 +1,12 @@
+{
+  "date": "2026-10-14T08:23:21.619Z",
+  "check": "Root independent source approval and runtime hash/manifest parity",
+  "pass": true,
+  "sourceCount": 25,
+  "assets": 38,
+  "bytes": 4344212,
+  "roots": [
+    "C:/Users/wilsh/Projects/runelord",
+    "C:/Users/wilsh/Projects/runelord-roguelike-pages-recovery"
+  ]
+}

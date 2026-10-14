@@ -1,0 +1,71 @@
+{
+  "date": "2026-10-14T08:43:45.653694+00:00",
+  "status": "pass",
+  "browser": "Codex in-app browser",
+  "urls": [
+    "http://127.0.0.1:4351/expedition-review",
+    "http://127.0.0.1:4350/expedition-review"
+  ],
+  "checks": [
+    "Demo route choice selects treasure and opens live reward UI",
+    "Treasure free training grants Bone Wall and displays reward confirmation",
+    "Nested relic dialog Escape returns focus to training without closing parent",
+    "Demo forest camp rest heals51 to75 and returns to route choice",
+    "Conquer shop training deducts240 to180 gold and advances Bone Defender next tier to100gold",
+    "Insufficient gold disables training with Need60moregold",
+    "Mastered warband disables camp training",
+    "Conquer camp card upgrade shows13HP/5Power to16HP/6Power and completes camp, returning to map",
+    "Conquer treasure gold claim updates240 to305",
+    "Frozen Wastes finale shows exactly one boss choice",
+    "1280x720 route/camp/treasure/training inspected",
+    "960x540 Infernal route and Conquer training inspected; training detail scrolls to controls",
+    "360x780 route cards stack and header fits without horizontal overflow",
+    "No browser console errors on final preview"
+  ],
+  "repairs": [
+    "Conquer development camp fixture now selects a valid camp node before action validation; successful upgrade rechecked",
+    "Builder added visible inset roster keyboard focus and narrow header sizing"
+  ],
+  "sourceHashes": {
+    "C:\\Users\\wilsh\\Projects\\runelord": {
+      "apps/web/src/ExpeditionScreens.tsx": "d1847ab223dd7d90acb0571fd958494f53f08f2cf6076b11f3c95e2e72a583d9",
+      "apps/web/src/expedition-screens.css": "578c6e5de2a0379a25abc150119c903889c522244e4b5de95167d66faf62a3d8",
+      "apps/web/src/expeditionReview.ts": "61caa21d83567448ae4ac59a94347645af229848159eeab28cbd624b60bae2aa",
+      "tools/import/expedition-paths.mjs": "712eeb8a26e10490dd6a6513104ba17021d7d7377e54a1dc2b0b0a1e3aa0397a",
+      "packages/assets/expedition-paths.json": "c54062428467bb4bc3f7b8a741b44e67ebed79fdfb6ebdc71e70070aa9996d92"
+    },
+    "C:\\Users\\wilsh\\Projects\\runelord-roguelike-pages-recovery": {
+      "apps/web/src/ExpeditionScreens.tsx": "d1847ab223dd7d90acb0571fd958494f53f08f2cf6076b11f3c95e2e72a583d9",
+      "apps/web/src/expedition-screens.css": "578c6e5de2a0379a25abc150119c903889c522244e4b5de95167d66faf62a3d8",
+      "apps/web/src/expeditionReview.ts": "d34d8061a7b191c9647746bf75ee8f07d83c2be5c287da2c8e4002582cbca57b",
+      "tools/import/expedition-paths.mjs": "712eeb8a26e10490dd6a6513104ba17021d7d7377e54a1dc2b0b0a1e3aa0397a",
+      "packages/assets/expedition-paths.json": "c54062428467bb4bc3f7b8a741b44e67ebed79fdfb6ebdc71e70070aa9996d92"
+    }
+  },
+  "limits": [
+    "Browser checks use development fixtures that do not overwrite player saves.",
+    "Existing bundle-size warnings remain; no engine balance or combat-art changes in this integration."
+  ],
+  "screenshots": [
+    {
+      "path": "design/production/evidence/expedition-path-art/encounter-choice.jpg",
+      "sha256": "b3ac6e8e0a39fd633f7718a6817b96a130c555e87c2996353724ef8e17b04246"
+    },
+    {
+      "path": "design/production/evidence/expedition-path-art/forest-camp.jpg",
+      "sha256": "e15028daad3e54a21a3fde22ec16f9de4326ddf15152857ce8193bee98d11c53"
+    },
+    {
+      "path": "design/production/evidence/expedition-path-art/infernal-landscape.jpg",
+      "sha256": "58eef968e106107618f1758969b981d97370702365866e65e039df5ab4b90932"
+    },
+    {
+      "path": "design/production/evidence/expedition-path-art/summon-training.jpg",
+      "sha256": "02f7de9d8a3f07755eef3c7fa58276e05c4380a14c9642392e6a9cdf35c8078b"
+    },
+    {
+      "path": "design/production/evidence/expedition-path-art/treasure.jpg",
+      "sha256": "5a503a15f2e5bd57e37bf586650e1ff23da407316ce349b2c9d37feb3c15639e"
+    }
+  ]
+}

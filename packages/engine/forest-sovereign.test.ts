@@ -1,6 +1,8 @@
+// Preserve this pre-expansion regression suite; expansion behavior has dedicated coverage.
+const newInfernalRun=(...args:Parameters<typeof currentInfernalRun>)=>{const originalLength=args.length;if(originalLength<6&&!args[2])args[5]=0;if(originalLength<7&&!args[2])args[6]=0;args[9]??=1;return currentInfernalRun(...args);};
 import {test} from 'node:test';
 import assert from 'node:assert/strict';
-import {newInfernalRun,generateForestJourney,dispatch,intent,type State} from './index';
+import {newInfernalRun as currentInfernalRun,generateForestJourney,dispatch,intent,type State} from './index';
 import {readFileSync,existsSync} from 'node:fs';
 function fixture():State{
  let s=newInfernalRun(29,'warband');s.journey=generateForestJourney(29);s.journey.current='forest-12';s.phase='map';s.hp=s.maxHp=200;

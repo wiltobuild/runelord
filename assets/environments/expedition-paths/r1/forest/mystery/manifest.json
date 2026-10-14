@@ -1,0 +1,32 @@
+{
+  "biome": "forest",
+  "kind": "mystery",
+  "revision": "r1",
+  "usage": "Static destination-card review candidate only; no gameplay integration authorized before user approval.",
+  "source": "source.png",
+  "sha256": "c2eb7cd66f15a039108b4658b22099cdbceee6d51592cf19e107abbe3200db6d",
+  "width": 1672,
+  "height": 941,
+  "prompt": "prompt.txt",
+  "promptSha256": "729101a7a83188d76f64fc62b207af05d496faccb19e6686cc4dacca72808843",
+  "generator": "Built-in imagegen",
+  "reference": {
+    "path": "assets/approvals/inbox/battle-map-thornroot-crossing/r1/thornroot-crossing-r1.png",
+    "sha256": "8c3dc173f3960d82326c311dac633347bc280d7ad7c4c4a388449884de711b20",
+    "decision": {
+      "status": "Approved",
+      "at": "2026-10-02T22:19:19.260Z",
+      "evidenceId": "58cbae24-4480-462a-bcb9-dd2f07990130",
+      "paths": [
+        "C:\\Users\\wilsh\\Projects\\runelord\\assets\\approvals\\inbox\\battle-map-thornroot-crossing\\r1\\thornroot-crossing-r1.png"
+      ]
+    }
+  },
+  "approval": {
+    "status": "Pending approval"
+  },
+  "gallery": "assets/approvals/inbox/expedition-path-forest-mystery/r1/source.png",
+  "composition": "Center landmark composed for center4:5 portrait crop from16:9 source.",
+  "integrated": false,
+  "review": "Builder visually inspected full source; distinct landmark and no characters/UI/text."
+}

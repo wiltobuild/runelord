@@ -1,0 +1,57 @@
+{
+  "timestamp": "2026-10-14T05:11:44.5528829Z",
+  "check": "Independent static final ice ward and boss-phase effects review",
+  "status": "pass",
+  "files": [
+    {
+      "root": "C:/Users/wilsh/Projects/runelord",
+      "path": "apps/web/src/useBattleDirector.ts",
+      "sha256": "5560ec140489a90cb4f5192d01d662a233f89992a0cc4dd401db22f3c164f79e"
+    },
+    {
+      "root": "C:/Users/wilsh/Projects/runelord",
+      "path": "apps/web/src/SpellEffects.tsx",
+      "sha256": "2de80fc101c3eb3466392ccecf9c5c13c5722a988997a4cc6765820c85b751d2"
+    },
+    {
+      "root": "C:/Users/wilsh/Projects/runelord",
+      "path": "apps/web/src/runebladeSpellEffects.ts",
+      "sha256": "6fff28811a9ed3b75dd4d2dab60f852be9fe9220a31fd57afdc3a24ce9eddc7f"
+    },
+    {
+      "root": "C:/Users/wilsh/Projects/runelord",
+      "path": "packages/engine/frozenWastes.ts",
+      "sha256": "1aa59733c8284356bc1ef2c6a4ed9f353833c23213f2d4bf14e3c1989ec0b60b"
+    },
+    {
+      "root": "C:/Users/wilsh/Projects/runelord",
+      "path": "packages/engine/index.ts",
+      "sha256": "d70042e8a1f025d6b3a256db1b15a29e3b8404d4412f99caa513250aa70e8971"
+    },
+    {
+      "root": "C:/Users/wilsh/Projects/runelord-roguelike-pages-recovery",
+      "path": "apps/web/src/useBattleDirector.ts",
+      "sha256": "5560ec140489a90cb4f5192d01d662a233f89992a0cc4dd401db22f3c164f79e"
+    },
+    {
+      "root": "C:/Users/wilsh/Projects/runelord-roguelike-pages-recovery",
+      "path": "apps/web/src/SpellEffects.tsx",
+      "sha256": "2de80fc101c3eb3466392ccecf9c5c13c5722a988997a4cc6765820c85b751d2"
+    },
+    {
+      "root": "C:/Users/wilsh/Projects/runelord-roguelike-pages-recovery",
+      "path": "apps/web/src/runebladeSpellEffects.ts",
+      "sha256": "6fff28811a9ed3b75dd4d2dab60f852be9fe9220a31fd57afdc3a24ce9eddc7f"
+    },
+    {
+      "root": "C:/Users/wilsh/Projects/runelord-roguelike-pages-recovery",
+      "path": "packages/engine/frozenWastes.ts",
+      "sha256": "073b4eff0a731fc1ed6790cd4fc0f4f46707932ac1a5c6755cd20db284995bdd"
+    },
+    {
+      "root": "C:/Users/wilsh/Projects/runelord-roguelike-pages-recovery",
+      "path": "packages/engine/index.ts",
+      "sha256": "20ccdf416e9be4c5c215fdf1675e56de283c15da0684deb1985cd95a634b9cf8"
+    }
+  ]
+}

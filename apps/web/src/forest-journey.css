@@ -11,3 +11,15 @@
 .forest-shopkeeper-portrait{position:absolute;top:-25%;left:-12%;width:125%;aspect-ratio:2/3;clip-path:inset(0 0 28% 0)}
 .forest-shopkeeper-portrait img{position:absolute;inset:0;width:100%;height:100%;object-fit:contain}
 .forest-shopkeeper-dialogue{position:absolute;bottom:0;left:12%;width:75%;height:15%;padding:0 3%;display:flex;align-items:center;justify-content:center;text-align:center;font-family:"Runelord Text",Georgia,serif;font-size:1.75cqw;font-style:italic;line-height:1.1;color:#301507}
+
+/* Frozen Wastes uses the same accessible route and traveling exchanges. */
+.frozen-wastes.forest-journey{color:#e4f2fa;background-color:#10202f;background-image:linear-gradient(#07172570,#061522d9),var(--forest-scene)}
+.frozen-wastes .forest-header .eyebrow,.frozen-wastes .forest-arrival .eyebrow,.frozen-wastes .forest-tile small{color:#acdae9}
+.frozen-wastes .forest-feedback,.frozen-wastes .forest-arrival p,.frozen-wastes .forest-tile em{color:#c0d5e5}
+.frozen-wastes.forest-journey button{background:#172d40;border-color:#678da4;color:#e5f3fb}
+.frozen-wastes.forest-journey button:hover:not(:disabled){background:#29485d;border-color:#b9eaff}
+.frozen-wastes .forest-arrival,.frozen-wastes .forest-route .forest-tile{background:#0e2336e8;border-color:#597f98}
+.frozen-wastes .forest-tile.current{box-shadow:inset 0 0 0 2px #b9eaff}
+.frozen-wastes .forest-tile-number{color:#bae4f2}
+.frozen-wastes .forest-tile.boss{border-color:#b9eaff}
+.frozen-wastes.forest-shop{background-color:#10202f;background-image:linear-gradient(#07172522,#06152255),var(--forest-scene)}

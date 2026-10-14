@@ -1,0 +1,32 @@
+{
+  "biome": "forest",
+  "kind": "boss",
+  "revision": "r1",
+  "usage": "Static destination-card review candidate only; no gameplay integration authorized before user approval.",
+  "source": "source.png",
+  "sha256": "c109cdec02f17964ae6be9ddf44b895bdbf849d4cfec3337a7608e9ae5ede5dd",
+  "width": 1672,
+  "height": 941,
+  "prompt": "prompt.txt",
+  "promptSha256": "e72b46791a37c1f0b02960ea5de3b93a3fd8fc6c0d5da825de8d8057b99693db",
+  "generator": "Built-in imagegen",
+  "reference": {
+    "path": "assets/approvals/inbox/battle-map-thornroot-heart/r1/thornroot-heart-r1.png",
+    "sha256": "bf66ea2c897ca25ae7ac50d9f96db0988b6bc9c1ed0ddb002cd7f7273373060d",
+    "decision": {
+      "status": "Approved",
+      "at": "2026-10-02T22:19:19.260Z",
+      "evidenceId": "daa5ced6-6f58-4999-9804-d6ce5900abc0",
+      "paths": [
+        "C:\\Users\\wilsh\\Projects\\runelord\\assets\\approvals\\inbox\\battle-map-thornroot-heart\\r1\\thornroot-heart-r1.png"
+      ]
+    }
+  },
+  "approval": {
+    "status": "Pending approval"
+  },
+  "gallery": "assets/approvals/inbox/expedition-path-forest-boss/r1/source.png",
+  "composition": "Center landmark composed for center4:5 portrait crop from16:9 source.",
+  "integrated": false,
+  "review": "Builder visually inspected full source; distinct landmark and no characters/UI/text."
+}

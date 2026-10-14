@@ -1,0 +1,108 @@
+[
+  {
+    "root": "C:/Users/wilsh/Projects/runelord",
+    "files": [
+      {
+        "path": "packages/engine/index.ts",
+        "sha256": "d70042e8a1f025d6b3a256db1b15a29e3b8404d4412f99caa513250aa70e8971"
+      },
+      {
+        "path": "packages/engine/frozenWastes.ts",
+        "sha256": "1aa59733c8284356bc1ef2c6a4ed9f353833c23213f2d4bf14e3c1989ec0b60b"
+      },
+      {
+        "path": "packages/engine/frozen-wastes.test.ts",
+        "sha256": "34a969776e7855cfea71bd45ffa1e2e675878e6294923f721f49bd00651874b7"
+      },
+      {
+        "path": "packages/content/index.ts",
+        "sha256": "753a7bf70a05b7f836f62e6faba76fdd249e5ebd302c129248aa98042f1523fe"
+      },
+      {
+        "path": "packages/assets/frozen-wastes.json",
+        "sha256": "822f4d6ddbe3057e6a45562f7470b55f29b70cb0670f5a9943d59093891523f2"
+      },
+      {
+        "path": "apps/web/public/game-assets/manifest.json",
+        "sha256": "a1a4cfefbcef7285ba10ba743c5062cc20da5481c6b31a49747eb9ec6e8fdf8b"
+      },
+      {
+        "path": "apps/web/src/main.tsx",
+        "sha256": "2add9fbae0f821b7d2367122db30434ec3b21021bb0a8e564d4f63da01d2c7fc"
+      },
+      {
+        "path": "apps/web/src/LootReveal.tsx",
+        "sha256": "c86619fd951f36e2aec8b4ec02c25195c91396cc9e82fbdd6431fcf56535fe7e"
+      },
+      {
+        "path": "apps/web/src/useBattleDirector.ts",
+        "sha256": "5560ec140489a90cb4f5192d01d662a233f89992a0cc4dd401db22f3c164f79e"
+      },
+      {
+        "path": "apps/web/src/AnimatedBackground.tsx",
+        "sha256": "d4d650e2a49867c8a60f57d707b949c984fb77d46fcd072499710874a8dca700"
+      },
+      {
+        "path": "apps/web/src/frozenWastesReview.ts",
+        "sha256": "17bdf255e89375edfabe368fd23f047dc21fc81e083acd18df7702ec96e035c9"
+      },
+      {
+        "path": "apps/web/src/ForestJourney.tsx",
+        "sha256": "8a2108d218a02a331682c9794eab1f79e62a211e85683f900984a36d67a9b3cd"
+      }
+    ]
+  },
+  {
+    "root": "C:/Users/wilsh/Projects/runelord-roguelike-pages-recovery",
+    "files": [
+      {
+        "path": "packages/engine/index.ts",
+        "sha256": "20ccdf416e9be4c5c215fdf1675e56de283c15da0684deb1985cd95a634b9cf8"
+      },
+      {
+        "path": "packages/engine/frozenWastes.ts",
+        "sha256": "073b4eff0a731fc1ed6790cd4fc0f4f46707932ac1a5c6755cd20db284995bdd"
+      },
+      {
+        "path": "packages/engine/frozen-wastes.test.ts",
+        "sha256": "ed4458a1c3544addb5d0ebb17bd001038e778a5d4f65c79e2acf972b40161d3a"
+      },
+      {
+        "path": "packages/content/index.ts",
+        "sha256": "6639740fa92bc380169a2a2a1306ce164ff6d8d480c8d7c24b322325838693d2"
+      },
+      {
+        "path": "packages/assets/frozen-wastes.json",
+        "sha256": "822f4d6ddbe3057e6a45562f7470b55f29b70cb0670f5a9943d59093891523f2"
+      },
+      {
+        "path": "apps/web/public/game-assets/manifest.json",
+        "sha256": "bb6a35a7774c81e1f1e1f0d28e3181fa225801604942c5104158ce874b4cf1bc"
+      },
+      {
+        "path": "apps/web/src/main.tsx",
+        "sha256": "a1b1f353eb4eac29a1c9a3e010876a94c2aca9ea4ef7d59d86486c23b1a41a5a"
+      },
+      {
+        "path": "apps/web/src/LootReveal.tsx",
+        "sha256": "248dbcc09a18bbbd1c7af6548da63dc742009b2cd7c30894e03da21afa9b00d1"
+      },
+      {
+        "path": "apps/web/src/useBattleDirector.ts",
+        "sha256": "5560ec140489a90cb4f5192d01d662a233f89992a0cc4dd401db22f3c164f79e"
+      },
+      {
+        "path": "apps/web/src/AnimatedBackground.tsx",
+        "sha256": "d4d650e2a49867c8a60f57d707b949c984fb77d46fcd072499710874a8dca700"
+      },
+      {
+        "path": "apps/web/src/frozenWastesReview.ts",
+        "sha256": "d3ece0d40d656cc169facc40503edf23aef5cd319cc1e317511e9710924bad25"
+      },
+      {
+        "path": "apps/web/src/ForestShop.tsx",
+        "sha256": "04711af5b046eb0a03ce75371bfb39690a55b2f5d9bf06c4e67f2a68f883166e"
+      }
+    ]
+  }
+]

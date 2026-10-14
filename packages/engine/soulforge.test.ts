@@ -1,6 +1,8 @@
+// Preserve this pre-expansion regression suite; expansion behavior has dedicated coverage.
+const newInfernalRun=(...args:Parameters<typeof currentInfernalRun>)=>{const originalLength=args.length;if(originalLength<6&&!args[2])args[5]=0;if(originalLength<7&&!args[2])args[6]=0;args[9]??=1;return currentInfernalRun(...args);};
 import {test} from 'node:test';
 import assert from 'node:assert/strict';
-import {newInfernalRun,generateInfernalJourney,currentShop,prepareShop,shopRerollCost,shopCanReroll,dispatch,save,restore,availableNodes,playable,upgradePreview,cardEffectText,cardPower,type State} from './index';
+import {newInfernalRun as currentInfernalRun,generateInfernalJourney,currentShop,prepareShop,shopRerollCost,shopCanReroll,dispatch,save,restore,availableNodes,playable,upgradePreview,cardEffectText,cardPower,type State} from './index';
 import {implemented,neutralCards,cards,type CardId} from '../content/index';
 function shop(seed=42,extra=0):State{const s=newInfernalRun(seed);s.journey!.current=s.journey!.nodes.find(n=>n.kind==='shop')!.id;s.phase='shop';s.gold=10000;for(let i=0;i<extra;i++){s.deck.push('neutral-strike');s.deckLevels!.push(0);}prepareShop(s);return s;}
 test('safe authored geography remains fixed while both service pairs populate by seed',()=>{const first=new Set(),second=new Set();const topology=generateInfernalJourney(0).nodes.map(n=>[n.id,n.next]);for(let seed=0;seed<100;seed++){const j=generateInfernalJourney(seed*10007);assert.deepEqual(j.nodes.map(n=>[n.id,n.next]),topology);for(const [a,b,seen] of [[3,5,first],[8,10,second]] as const){const left=j.nodes.find(n=>n.row===a)!,right=j.nodes.find(n=>n.row===b)!;assert.deepEqual([left.kind,right.kind].sort(),['shop','treasure']);seen.add(left.kind);}}assert.equal(first.size,2);assert.equal(second.size,2);});

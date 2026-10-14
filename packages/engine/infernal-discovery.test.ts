@@ -1,6 +1,8 @@
+// Preserve this pre-expansion regression suite; expansion behavior has dedicated coverage.
+const newInfernalRun=(...args:Parameters<typeof currentInfernalRun>)=>{const originalLength=args.length;if(originalLength<6&&!args[2])args[5]=0;if(originalLength<7&&!args[2])args[6]=0;args[9]??=1;return currentInfernalRun(...args);};
 import {test} from 'node:test';
 import assert from 'node:assert/strict';
-import {newInfernalRun,dispatch,save,restore,infernalStartNode,mapDestinations,discoveredNodes,canEnterLocation} from './index';
+import {newInfernalRun as currentInfernalRun,dispatch,save,restore,infernalStartNode,mapDestinations,discoveredNodes,canEnterLocation} from './index';
 
 test('new explorers see one landing point and arrival does not silently start combat',()=>{
  let s=newInfernalRun(42);

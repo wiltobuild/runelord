@@ -1,0 +1,32 @@
+{
+  "timestamp": "2026-10-14T07:21:20.151Z",
+  "runs": [
+    {
+      "mode": "demo",
+      "deck": "rimebound",
+      "seed": 42,
+      "result": "won",
+      "status": "terminated-with-replay",
+      "steps": 618,
+      "replays": 102,
+      "room": 32,
+      "turn": 5,
+      "hp": 56,
+      "phases": [
+        "combat",
+        "reward",
+        "loot",
+        "route-choice",
+        "treasure",
+        "camp",
+        "shop"
+      ],
+      "realms": [
+        "frozen-wastes",
+        "forest",
+        "infernal"
+      ]
+    }
+  ],
+  "limitations": "Heuristic bot, not a balance certification; no state or resource cheats. Lost runs remain losses."
+}

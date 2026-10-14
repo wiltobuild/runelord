@@ -1,0 +1,16 @@
+{"iceKitSmoke":{"wins":12,"losses":0,"totalActions":270,"encounters":12,"balanceCertification":false}}
+✔ Frozen Wastes roster is twelve authored battles, existing ice actors, elites and an Avalanche Sovereign (1.1344ms)
+✔ new save version round-trips and rejects unknown rules (19.1776ms)
+✔ seeded ice route contains three elites and four distinct finite shops (20.1268ms)
+✔ earned Forest history opens Frozen Wastes, carries progression, replays, and historical saves still finish (1682.0842ms)
+✔ all twelve ice victories and four shops are required before final victory (424.8236ms)
+✔ ice intents respect Defender and sweep, and the Sovereign enrages without summoning infernal adds (374.1209ms)
+✔ all twelve ice kits terminate under deterministic legal card play with an earned post-Forest deck (1007.1896ms)
+ℹ tests 7
+ℹ suites 0
+ℹ pass 7
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 3746.7067

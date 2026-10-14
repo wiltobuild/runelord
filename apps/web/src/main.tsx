@@ -1,3 +1,10 @@
+import { EXPEDITION_REVIEW, expeditionReviewState } from "./expeditionReview";
+import { SummonOrders, orderName } from "./SummonOrders";
+import { CampScene, RouteChoice, TreasureScene, RelicCollection } from "./ExpeditionScreens";
+import { treasureOptions } from "../../../packages/engine/index";
+import { nextRealm } from "../../../packages/engine/index";
+import { routeDescription } from "./realmPresentation";
+import { FROZEN_REVIEW, frozenWastesReviewState } from "./frozenWastesReview";
 import {ARCTIC_REVIEW,arcticReviewState,arcticReviewAssets,arcticEncounter} from "./arcticReview";
 import { HELLBOUND_REVIEW, hellboundReviewState } from "./hellboundReview";
 import { cardArtwork } from "./cardPresentation";
@@ -59,6 +66,7 @@ import { MobileShell } from "./MobileShell";
 const SAVE_KEY = "runelord-warlock-demo-v1";
 function journeyScore(state: State | null) {
   if (!state) return OPENING_SCORE_ID;
+  if (state.journey?.realm === "frozen-wastes") return ["combat", "reward", "loot"].includes(state.phase) ? "battle" : "explore";
   if (state.journey?.realm === "forest") {
     const node = state.journey.nodes.find(node => node.id === state.journey?.current);
     return node?.kind === "boss" && ["combat", "reward", "loot"].includes(state.phase) ? "forest-boss" : "forest-explore";
@@ -66,7 +74,7 @@ function journeyScore(state: State | null) {
   if (state.phase === "shop") return infernalShopAppearance(state.seed, state.journey?.current ?? null).shopId;
   if (state.phase === "map" || state.phase === "treasure") return "infernal-map";
   if (state.phase === "camp" || state.phase === "won") return "explore";
-  return state.room === encounters.length - 1 ? "demon-boss" : "battle";
+  return (state.journey ? state.journey.nodes.find(node => node.id === state.journey?.current)?.kind === "boss" : state.room === encounters.length - 1) ? "demon-boss" : "battle";
 }
 function readSave() {
   try {
@@ -133,11 +141,12 @@ function CardView({
 }
 function App({ assets }: { assets: Assets }) {
   const hudScale = useHudScale();
+  const [orderUnitId,setOrderUnitId]=useState<number | null>(null);
   const [inspection, setInspection] = useState<"brand" | "draw" | "discard" | "items" | "powers" | null>(null);
   const [introStarted, setIntroStarted] = useState(false);
   const [starterDeck, setStarterDeck] = useState<StarterDeckId>("warband");
   const [saved, setSaved] = useState<State | null>(readSave),
-    [game, setState] = useState<State | null>(()=>arcticReviewState()??hellboundReviewState()??forestReviewState()),
+    [game, setState] = useState<State | null>(()=>expeditionReviewState()??frozenWastesReviewState()??arcticReviewState()??hellboundReviewState()??forestReviewState()),
     [visual, setVisual] = useState<State | null>(null),
     [seed, setSeed] = useState(""),
     [selected, setSelected] = useState<CardInstance | null>(null),
@@ -224,7 +233,7 @@ function App({ assets }: { assets: Assets }) {
     }
   }, [assets, track, musicActive]);
   useEffect(() => {
-    if (!game || ARCTIC_REVIEW || HELLBOUND_REVIEW || forestReviewActive) return;
+    if (!game || EXPEDITION_REVIEW || FROZEN_REVIEW || ARCTIC_REVIEW || HELLBOUND_REVIEW || forestReviewActive) return;
     try {
       localStorage.setItem(SAVE_KEY, save(game));
       setSaved(game);
@@ -295,9 +304,16 @@ function App({ assets }: { assets: Assets }) {
     if(id===promotionRecipient) {setMessage('Choose a different summon to sacrifice.');return;}
     void act({type:'play',uid:selected.uid,unit:promotionRecipient,sacrifice:id});
   };
+  const chooseSummon=(id:number)=>{
+    if(!state||busy)return;
+    if(selected&&cardTargetsUnit(selected.id)){chooseUnit(id);return;}
+    if(state.expansionVersion===2&&!selected&&state.phase==='combat'){setOrderUnitId(id);return;}
+    setDismiss(id);setMessage('Summon selected for replacement when the warband is full.');
+  };
   const chooseCard = (c: CardInstance) => {
     if (!state || busy) return;
     setPromotionRecipient(undefined);
+    setOrderUnitId(null);
     if (!playable(state, c)) {
       setMessage("This card needs enough resources, a valid target and room in the Warband. Pair recruits need two free slots; Hellgate needs three Maledictors and can open once per turn.");
       return;
@@ -319,8 +335,11 @@ function App({ assets }: { assets: Assets }) {
       );
     } else act({ type: "play", uid: c.uid, dismiss });
   };
+  if(state?.expansionVersion===2&&phase==='camp')return <CampScene onHome={()=>setState(null)} state={state} assets={assets} message={message} onAction={action=>{void act(action);}}/>;
+  if(state?.expansionVersion===2&&phase==='treasure')return <TreasureScene onHome={()=>setState(null)} state={state} assets={assets} message={message} options={treasureOptions(state)} onAction={action=>{void act(action);}}/>;
+
   if (state && (phase === "map" || phase === "shop" || phase === "treasure")) {
-    const Journey = state.journey?.realm === "forest" ? ForestJourney : InfernalJourney;
+    const Journey = state.journey?.realm === "forest" || state.journey?.realm === "frozen-wastes" ? ForestJourney : InfernalJourney;
     return <Journey state={state} assets={assets} onAction={action => { void act(action); }} message={message} musicOn={musicActive && volume > 0} onMusic={() => { const v = !musicActive || !volume ? .35 : 0; setVolume(v); score.setVolume(v); void music(); }} onHome={() => { director.clear(); setVisual(null); setState(null); setSelected(null); animate("idle_breathe"); }} />;
   }
   if (!state && !introStarted) return <IntroCinematic volume={volume} onVolume={v => { setVolume(v); score.setVolume(v); }} onStart={() => { setIntroStarted(true); void music(); }} />;
@@ -353,7 +372,7 @@ function App({ assets }: { assets: Assets }) {
         </button>
         <div className="chapter">
           {state
-            ? state.journey ? `${ARCTIC_REVIEW ? "ARCTIC PREVIEW" : state.journey.realm === "forest" ? "FOREST REALM" : "INFERNAL BIOME"} · ${encounter.name}` : `ENCOUNTER ${room + 1} OF ${encounters.length}`
+            ? state.journey ? `${ARCTIC_REVIEW ? "ARCTIC PREVIEW" : state.journey.realm === "frozen-wastes" ? "FROZEN WASTES" : state.journey.realm === "forest" ? "FOREST REALM" : "INFERNAL BIOME"} · ${encounter.name}` : `ENCOUNTER ${room + 1} OF ${encounters.length}`
             : "A DECKBUILDING ROGUELIKE"}
         </div>
         <nav>
@@ -507,13 +526,7 @@ function App({ assets }: { assets: Assets }) {
                     disabled={busy || u.hp <= 0}
                     title={summonDescription(u, state)}
                     aria-label={summonDescription(u, state)}
-                    onClick={() => {
-                      if (selected && cardTargetsUnit(selected.id)) { chooseUnit(u.id); return; }
-                      setDismiss(u.id);
-                      setMessage(
-                        `${u.name} selected for dismissal if the Warband is full.`,
-                      );
-                    }}
+                    onClick={() => chooseSummon(u.id)}
                   >
                     {!stack && <span className="minion-headroom" aria-hidden="true" />}
                     <ActorSprite
@@ -527,15 +540,15 @@ function App({ assets }: { assets: Assets }) {
                       name={u.name}
                       className="summon-model"
                     />
-                    {!stack && <MinionDetails promotionRank={u.promotionRank} armor={u.armor} rot={isRuneblade ? u.rot : undefined} name={u.name} hp={u.hp} maxHp={u.maxHp} guard={u.guard} defender={u.defender} power={summonPower(u, state)} scorch={summonScorch(u, state)} />}
+                    {!stack && <MinionDetails promotionRank={u.promotionRank} armor={u.armor} rot={isRuneblade ? u.rot : undefined} name={u.name} hp={u.hp} maxHp={u.maxHp} guard={u.guard} defender={u.defender} power={summonPower(u, state)} scorch={summonScorch(u, state)} order={state.expansionVersion===2?orderName(state,u):undefined} />}
                   </button>
                 ); })}
                 {packed?.groups.map(group => {
                   const members = group.ids.map(id => warbandUnits.find(u => u.id === id)!).filter(u => u.hp > 0);
                   if (!members.length) return null;
                   return <div key={group.kind} className="packed-status" style={{left:group.x-(group.airborne?0:groundRetreat.shift),top:group.top,width:group.width}}>
-                    {members.map((u,i)=><button key={u.id} disabled={busy} className={dismiss===u.id?"selected":""} aria-label={`${u.name} ${warbandUnits.filter(member=>member.kind===u.kind&&member.hp>0).findIndex(member=>member.id===u.id)+1}, ${u.hp} of ${u.maxHp} health, ${u.guard} Guard`} title={summonDescription(u,state)} onClick={()=>{if(selected && cardTargetsUnit(selected.id)){chooseUnit(u.id);return;}setDismiss(u.id);setMessage(`${u.name} selected for dismissal if the Warband is full.`);}}>
-                      <MinionDetails promotionRank={u.promotionRank} armor={u.armor} rot={isRuneblade ? u.rot : undefined} name={u.name} hp={u.hp} maxHp={u.maxHp} guard={u.guard} defender={u.defender} power={summonPower(u,state)} scorch={summonScorch(u,state)} />
+                    {members.map((u,i)=><button key={u.id} disabled={busy} className={dismiss===u.id?"selected":""} aria-label={`${u.name} ${warbandUnits.filter(member=>member.kind===u.kind&&member.hp>0).findIndex(member=>member.id===u.id)+1}, ${u.hp} of ${u.maxHp} health, ${u.guard} Guard`} title={summonDescription(u,state)} onClick={()=>chooseSummon(u.id)}>
+                      <MinionDetails promotionRank={u.promotionRank} armor={u.armor} rot={isRuneblade ? u.rot : undefined} name={u.name} hp={u.hp} maxHp={u.maxHp} guard={u.guard} defender={u.defender} power={summonPower(u,state)} scorch={summonScorch(u,state)} order={state.expansionVersion===2?orderName(state,u):undefined} />
                     </button>)}
                   </div>;
                 })}
@@ -579,7 +592,7 @@ function App({ assets }: { assets: Assets }) {
                     />
                     <div className="enemy-status">
                       <EnemyName name={enemyName} />
-                      {e.boss && <span className="boss-phase">{e.bossPhase === 2 ? "PHASE II - ENRAGED" : e.boss === "forest-sovereign" ? "PHASE I - FOREST SOVEREIGN" : "PHASE I - INFERNAL SOVEREIGN"}</span>}{e.summonedBy && <span className="boss-phase">{e.art === "sovereign-root" ? "LIVING ROOT" : "SUMMONED DEMON"}</span>}
+                      {e.boss && <span className="boss-phase">{e.bossPhase === 2 ? "PHASE II - ENRAGED" : e.boss === "frozen-sovereign" ? "PHASE I - FROZEN SOVEREIGN" : e.boss === "forest-sovereign" ? "PHASE I - FOREST SOVEREIGN" : "PHASE I - INFERNAL SOVEREIGN"}</span>}{e.summonedBy && <span className="boss-phase">{e.art === "sovereign-root" ? "LIVING ROOT" : "SUMMONED DEMON"}</span>}
                       <div className="hp-track">
                         <i style={{ width: `${(e.hp / e.maxHp) * 100}%` }} />
                         <span>
@@ -686,7 +699,7 @@ function App({ assets }: { assets: Assets }) {
               </section>
             </div>
           )}
-          {phase === "loot" && state.pendingLoot && <LootReveal loot={state.pendingLoot} assets={assets} realm={state.journey?.realm} continuesToForest={state.journey?.shopRules === "soulforge" && state.journey.realm !== "forest"} onContinue={() => act({ type: "continue" })} />}
+          {phase === "loot" && state.pendingLoot && <LootReveal training={state.history.slice(-1).some(action=>action.type==='claim-treasure'&&action.choice==='train')} loot={state.pendingLoot} assets={assets} realm={state.journey?.realm} nextRealm={nextRealm(state)} exchangeBeforeContinue={state.journey?.realm === "forest" || state.journey?.realm === "frozen-wastes"} onContinue={() => act({ type: "continue" })} />}
           {phase === "camp" && (
             <div className="overlay">
               <section className="result-panel">
@@ -714,12 +727,12 @@ function App({ assets }: { assets: Assets }) {
                 </div>
                 <h2>
                   {phase === "won"
-                    ? state.journey?.realm === "forest" ? "The forest bows." : "The flame is yours."
+                    ? state.journey?.realm === "frozen-wastes" ? "The long winter breaks." : state.journey?.realm === "forest" ? "The forest bows." : "The flame is yours."
                     : "The Pit remembers."}
                 </h2>
                 <p>
                   {phase === "won"
-                    ? state.journey?.realm === "forest" ? "You conquered the Infernal realm and all twelve encounters of Thornroot Forest." : state.journey ? "You conquered the branching paths of the Infernal biome and defeated its Sovereign." : `You survived all ${encounters.length} encounters through the Cinderforge.`
+                    ? state.journey ? `You conquered ${routeDescription(state)} and defeated every Sovereign on your journey.` : `You survived all ${encounters.length} encounters through the Cinderforge.`
                     : "A different pact. A different outcome. Try again."}
                 </p>
                 {phase === "won" && state.relics.includes("demon-lord-crown") && <div className="victory-crown"><img src={assets.images["item-demon-crown"]} alt="Demon Lord's Crown" /><h3>{items["demon-lord-crown"].name}</h3><p>{items["demon-lord-crown"].text}</p></div>}
@@ -743,6 +756,8 @@ function App({ assets }: { assets: Assets }) {
           )}
         </>
       )}
+      {state?.expansionVersion===2&&<RelicCollection state={state} assets={assets}/>}
+      {state?.expansionVersion===2&&phase==='combat'&&!busy&&orderUnitId!==null&&state.units.some(u=>u.id===orderUnitId&&u.hp>0)&&<SummonOrders key={orderUnitId} state={state} unit={state.units.find(u=>u.id===orderUnitId)!} onAction={action=>{void act(action);}} onClose={()=>setOrderUnitId(null)} onDismiss={()=>{setDismiss(orderUnitId);setOrderUnitId(null);setMessage('Summon selected for replacement when the warband is full.');}}/>}
       {state && <footer>
         <span>
           RUNELORD <i>◆</i> CINDER & OATH
@@ -844,7 +859,7 @@ function App({ assets }: { assets: Assets }) {
             </div>}
             {state?.starterDeck === "hellbound" && <div className="help-grid"><article><h3>Hellbound veterans</h3><p>Summons leave after each battle. Each promoted recruit saves its rank for the next summon of that kind; one summon consumes one saved rank. Each promotion adds 2 Power, 2 maximum HP, heals 2 HP and adds 1 Armor. Armor reduces every incoming hit; Guard is temporary.</p></article><article><h3>Formation payoffs</h3><p>Two Legionaries share hostile damage aimed at the Warlock, even attacks that ignore Defender. Health paid by your own cards is still yours to pay. Three Maledictors open a Hellgate at turn end, damaging and scorching all enemies and promoting every soldier, once per turn.</p></article><article><h3>Recruit carefully</h3><p>The Warband holds up to ten units in new runs. Muster the Legion and Pike Detail each need two empty slots. Blood Ascension sacrifices a chosen summon to promote another soldier three times. Saved ranks return on resummoning, including after death or sacrifice.</p></article></div>}
             <p className="muted">
-              Conquer the Infernal realm, then carry your deck and upgrades through twelve forest encounters, with a shop after every three battles. Choose one of three starter decks for your character. Shops and battle rewards support your chosen hero.
+              Each hero starts at home. Runeblade travels Frozen Wastes → Forest → Infernal; Warlock travels Infernal → Forest → Frozen Wastes. Carry your deck and upgrades between realms. Visit camps to rest, improve a card, or train a summon type. Shops offer summon training alongside their usual services. Choose one of three starter decks for your character. Shops and battle rewards support your chosen hero. Click a summon to choose its repeating order. Training unlocks abilities for every summon of that type for this run. All collected relics remain active without a slot limit.
               Enemy animations and spell impacts play in combat order.
             </p>
             <button className="primary" onClick={() => setShowHelp(false)}>

@@ -1,0 +1,100 @@
+{
+  "timestamp": "2026-10-14T07:25:18.7448214Z",
+  "files": [
+    {
+      "root": "C:/Users/wilsh/Projects/runelord",
+      "path": "packages/engine/index.ts",
+      "sha256": "8b0ad2b1c69f747af403e831c72246f12f9e707577f39ce408fbf444434bba61"
+    },
+    {
+      "root": "C:/Users/wilsh/Projects/runelord",
+      "path": "packages/engine/expansion.ts",
+      "sha256": "4342ccfdb354a66f9ad0f5c6b22f1fec6bc5a6254a9878f00efce251b91b51ce"
+    },
+    {
+      "root": "C:/Users/wilsh/Projects/runelord",
+      "path": "packages/engine/expansionCatalog.ts",
+      "sha256": "255c4c8ddb0e4853968eb6f3b9f1cfeaa80c5f01add4656bdaf87240914e6494"
+    },
+    {
+      "root": "C:/Users/wilsh/Projects/runelord",
+      "path": "packages/engine/infernal.ts",
+      "sha256": "e9463029119798f287fc0606af024ddbfdcb1d7b373e43bf21661700973ff3ae"
+    },
+    {
+      "root": "C:/Users/wilsh/Projects/runelord",
+      "path": "packages/content/index.ts",
+      "sha256": "e459089049811ee4058cc00d8b3c501fe40c1f49a935325a1e59564f9c4c62bc"
+    },
+    {
+      "root": "C:/Users/wilsh/Projects/runelord",
+      "path": "apps/web/src/main.tsx",
+      "sha256": "f8acb708895c31d4b6a80d2f8af8bd57ddf848b48b039d425fff52a27e9b58f5"
+    },
+    {
+      "root": "C:/Users/wilsh/Projects/runelord",
+      "path": "apps/web/src/SoulforgeShop.tsx",
+      "sha256": "f639205025381fd0132ea745b2765ec338a6764a1198ae00ae62754754dc047f"
+    },
+    {
+      "root": "C:/Users/wilsh/Projects/runelord",
+      "path": "apps/web/src/ExpeditionScreens.tsx",
+      "sha256": "ba20cb5799d965ebfc3b7eb8cc13a46a5a118f1aa3b0e311adab8cd1d0f02bc1"
+    },
+    {
+      "root": "C:/Users/wilsh/Projects/runelord",
+      "path": "apps/web/src/SummonOrders.tsx",
+      "sha256": "26cec25fe74f8123ec682104f52c48fade7bcdb8201d8811bd3a6f8c2b6452df"
+    },
+    {
+      "root": "C:/Users/wilsh/Projects/runelord-roguelike-pages-recovery",
+      "path": "packages/engine/index.ts",
+      "sha256": "5f446e258bdaa7faf35f6328aa3da73e3ad9d05f59d251b57fc1e3fca5ac17d5"
+    },
+    {
+      "root": "C:/Users/wilsh/Projects/runelord-roguelike-pages-recovery",
+      "path": "packages/engine/expansion.ts",
+      "sha256": "4342ccfdb354a66f9ad0f5c6b22f1fec6bc5a6254a9878f00efce251b91b51ce"
+    },
+    {
+      "root": "C:/Users/wilsh/Projects/runelord-roguelike-pages-recovery",
+      "path": "packages/engine/expansionCatalog.ts",
+      "sha256": "255c4c8ddb0e4853968eb6f3b9f1cfeaa80c5f01add4656bdaf87240914e6494"
+    },
+    {
+      "root": "C:/Users/wilsh/Projects/runelord-roguelike-pages-recovery",
+      "path": "packages/engine/expedition.ts",
+      "sha256": "ff986c14dab9d1b83a98b178747184ca07ea3543d8d11af75b7c08945d0d2537"
+    },
+    {
+      "root": "C:/Users/wilsh/Projects/runelord-roguelike-pages-recovery",
+      "path": "packages/engine/shop.ts",
+      "sha256": "059acb33966acfed6a9546e5615940762f76b96c9d8173da89bf33a49f6a7390"
+    },
+    {
+      "root": "C:/Users/wilsh/Projects/runelord-roguelike-pages-recovery",
+      "path": "packages/content/index.ts",
+      "sha256": "45853a58631870b0bd349152a0e722d3d921d15ab5a389849e395d82cbf53d1e"
+    },
+    {
+      "root": "C:/Users/wilsh/Projects/runelord-roguelike-pages-recovery",
+      "path": "apps/web/src/main.tsx",
+      "sha256": "394030ef55bb1f230a796c2f1c974728a042835447002452697faa41b4b0b41c"
+    },
+    {
+      "root": "C:/Users/wilsh/Projects/runelord-roguelike-pages-recovery",
+      "path": "apps/web/src/SoulforgeShop.tsx",
+      "sha256": "26f999c735c452873684dd413102ffc94c75dc828b3446b86d85c9aaad86f049"
+    },
+    {
+      "root": "C:/Users/wilsh/Projects/runelord-roguelike-pages-recovery",
+      "path": "apps/web/src/ExpeditionScreens.tsx",
+      "sha256": "ba20cb5799d965ebfc3b7eb8cc13a46a5a118f1aa3b0e311adab8cd1d0f02bc1"
+    },
+    {
+      "root": "C:/Users/wilsh/Projects/runelord-roguelike-pages-recovery",
+      "path": "apps/web/src/SummonOrders.tsx",
+      "sha256": "26cec25fe74f8123ec682104f52c48fade7bcdb8201d8811bd3a6f8c2b6452df"
+    }
+  ]
+}

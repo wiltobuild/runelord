@@ -1,6 +1,8 @@
+// Preserve this pre-expansion regression suite; expansion behavior has dedicated coverage.
+const newInfernalRun=(...args:Parameters<typeof currentInfernalRun>)=>{const originalLength=args.length;if(originalLength<6&&!args[2])args[5]=0;if(originalLength<7&&!args[2])args[6]=0;args[9]??=1;return currentInfernalRun(...args);};
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import {newInfernalRun,dispatch,availableNodes,save,restore,currentShop,cardEffectText,upgradePreview,type State} from './index';
+import {newInfernalRun as currentInfernalRun,dispatch,availableNodes,save,restore,currentShop,cardEffectText,upgradePreview,type State} from './index';
 import {runebladeDecks,runebladeSummons,runebladeRelicPool,type CardId} from '../content';
 const battle=(deck:'gravehost'|'warband'='gravehost')=>{const s=newInfernalRun(42,deck);return dispatch(s,{type:'travel',node:availableNodes(s)[0].id});};
 const play=(s:State,id:CardId,level=0)=>{s.hand=[{uid:999,id,level}];s.mana=30;s.cinders=30;s.enemies.forEach(e=>e.hp=e.maxHp=500);return dispatch(s,{type:'play',uid:999});};

@@ -1,3 +1,8 @@
+import {addExpansionCamps} from './expansionJourney';
+import {usesExpansion,trainingOptions,trainSummon,setOrder,performOrder,relicHook,expansionRelicPool,expansionPrice,treasureOptions,campRecovery,knownSummons,type ExpansionHooks} from './expansion';
+export * from './expansion';
+import {generateFrozenWastesJourney} from './frozenWastes';
+export * from './frozenWastes';
 import { legionSummons, isLegionKind, legionTargetCards, hellboundImplemented, modernWarlockDecks, type LegionKind } from '../content/index';
 export { legionSummons, isLegionKind, legionRoles } from '../content/index';
 import { configureHeroShops, generateInfernalJourney, activeEncounter, availableNodes, mapDestinations, canEnterLocation, currentShop, cardPower, cardLevel, upgradeCost, canAddCard, prepareShop, rerollShop, remapShopCopies, refreshRemovalOffers, type ShopRerollKind, type InfernalJourney } from "./infernal";
@@ -39,11 +44,12 @@ export const warbandCapacity=(s:Pick<State,'legionRules'>)=>s.legionRules===2?10
 export const usesSummonRules=(s:State)=>s.summonRulesFrom!==undefined&&s.history.length>=s.summonRulesFrom;
 const hasArch=(s:State,kind:DemonKind)=>usesSummonRules(s)&&s.units.some(u=>u.kind===kind&&u.hp>0);
 const isHound=(u:Unit)=>u.kind==='hellhound'||u.kind==='cerberax';
-export const eligibleCardReward=(s:State,id:CardId)=> id==='blood-ascension'&&s.legionRules!==2 ? false : hellboundImplemented.includes(id as typeof hellboundImplemented[number]) ? s.starterDeck==='hellbound' : s.hero==='runeblade' ? cardsForHero('runeblade').includes(id) && (s.runebladeRules===2 || !['exhume','mass-exhumation'].includes(id)) : cardsForHero('runeblade').includes(id) ? false : usesSummonRules(s) ? (!archCards.includes(id as typeof archCards[number])||s.journey?.realm==='forest') && (id!=='empower-demon'||s.starterDeck==='warband'||s.journey?.realm==='forest') : !summonExpansion.includes(id as typeof summonExpansion[number]);
+export const eligibleCardReward=(s:State,id:CardId)=> id==='blood-ascension'&&s.legionRules!==2 ? false : hellboundImplemented.includes(id as typeof hellboundImplemented[number]) ? s.starterDeck==='hellbound' : s.hero==='runeblade' ? cardsForHero('runeblade').includes(id) && (s.runebladeRules===2 || !['exhume','mass-exhumation'].includes(id)) : cardsForHero('runeblade').includes(id) ? false : usesSummonRules(s) ? (!archCards.includes(id as typeof archCards[number])||(s.journey?.realm==='forest'||s.journey?.realm==='frozen-wastes')) && (id!=='empower-demon'||s.starterDeck==='warband'||(s.journey?.realm==='forest'||s.journey?.realm==='frozen-wastes')) : !summonExpansion.includes(id as typeof summonExpansion[number]);
 function gainGuard(s:State,n:number){const amount=n*(hasArch(s,'pyre-colossus')?2:1);s.guard+=amount;emit(s,'guard',`${s.hero==='runeblade'?'Runeblade':'Warlock'} gains ${amount} Guard.`,{amount});}
 
 
 export type Unit = {
+  order?:string;orderTarget?:number;utilityUsedTurn?:number;readyTurn?:number;bodyguardUntil?:number;counterDamage?:number;counterUntil?:number;
   id: number;
   kind: DemonKind;
   name: string;
@@ -72,7 +78,7 @@ export type Enemy = {
   guard: number;
   scorch: number;
   moves: Move[];
-  boss?: "demon-lord" | "forest-sovereign";
+  boss?: "demon-lord" | "forest-sovereign" | "frozen-sovereign";
   bossPhase?: 1 | 2;
   summonsMade?: number;
   summonedBy?: number;
@@ -112,6 +118,7 @@ export type CombatView = Pick<
 >;
 export type PendingLoot = { gold: number; items: ItemId[]; final: boolean };
 export type State = {
+  expansionVersion?:1|2;orderCharges?:Record<string,number>;trainingLevels?:Partial<Record<DemonKind,0|1|2>>;acquiredSummons?:DemonKind[];relicCounters?:Record<string,number>;
   legionRules?: 1|2;
   legionRanks?: Partial<Record<LegionKind,number[]>>;
   hellgateTurn?: number;
@@ -121,6 +128,8 @@ export type State = {
   hero: HeroId;
   corpses: number;
   forestBossVersion?: 1 | 2;
+  frozenWastesVersion?: 1 | 2;
+  heroRouteVersion?: 1 | 2;
   journey?: InfernalJourney;
   deckLevels?: number[];
   version: 1;
@@ -161,6 +170,9 @@ export type State = {
   potion: boolean;
 };
 export type Action =
+  | {type:"train-summon";kind:DemonKind}
+  | {type:"set-order";unit:number;order:string;target?:number;allOfKind?:boolean}
+  | {type:"camp-choice";choice:"rest"|"upgrade"|"train";index?:number;kind?:DemonKind}
   | {type:"travel";node:string}
   | {type:"arrive";node:string}
   | {type:"enter-location"}
@@ -169,7 +181,7 @@ export type Action =
   | {type:"shop-remove";index:number}
   | {type:"shop-reroll";kind:ShopRerollKind}
   | {type:"leave-shop"}
-  | {type:"claim-treasure"}
+  | {type:"claim-treasure";choice?:"relic"|"gold"|"train";kind?:DemonKind}
   | { type: "play"; uid: number; target?: number; dismiss?: number; unit?: number; sacrifice?: number }
   | { type: "item"; item: ItemId }
   | { type: "end" }
@@ -268,7 +280,7 @@ function hitEnemy(s: State, e: Enemy, n: number, attack = false, cause?: GameEve
   if (e.boss && e.hp > 0 && e.hp <= e.maxHp / 2 && e.bossPhase !== 2) {
     e.bossPhase = 2;
     e.guard += 8;
-    emit(s, "boss-phase", e.boss === "forest-sovereign" ? "The heartwood awakens: the Forest Sovereign gains 8 Guard and +2 attack damage." : "The crown erupts: Vhalzor gains 8 Guard and his damaging spells gain +2 damage.", { actor: e.id });
+    emit(s, "boss-phase", e.boss === "frozen-sovereign" ? "The glacier fractures: the Avalanche Colossus gains 8 Guard and +2 attack damage." : e.boss === "forest-sovereign" ? "The heartwood awakens: the Forest Sovereign gains 8 Guard and +2 attack damage." : "The crown erupts: Vhalzor gains 8 Guard and his damaging spells gain +2 damage.", { actor: e.id });
   }
   if (e.hp === 0) {
     gainCorpse(s);
@@ -313,24 +325,26 @@ function checkWin(s: State) {
     emit(s, "reserve", `${replacement.name} steps out of reserve.`, { target: fallen.id, actor: replacement.id });
   }
   if (s.phase === "combat" && !alive(s).length) {
+    relicHook(s,'victory',expansionHooks(s));
     if(s.hero==='runeblade'&&s.runebladeRules===2){const survivors=s.units.filter(u=>u.hp>0);s.corpses+=survivors.length;s.units=[];if(survivors.length)emit(s,'corpse-conversion',`${survivors.length} surviving summons return as Corpses.`,{amount:survivors.length});}
 
     finishLegionBattle(s);
     const node = s.journey?.nodes.find(n=>n.id===s.journey?.current);
     const final = node ? node.kind === "boss" : s.room === (s.rulesVersion === 2 ? 7 : encounters.length - 1);
     s.phase = final ? (s.rulesVersion === 2 ? "won" : "loot") : "reward";
-    const forest = s.journey?.realm === "forest";
+    const frozen=s.journey?.realm === "frozen-wastes";
+    const forest = s.journey?.realm === "forest" || frozen;
     const gold = forest && node ? (final ? 200 : node.kind === "elite" ? 90 : 45 + node.row * 3) : node ? (node.kind === "elite" ? 65 : node.kind === "boss" ? 150 : 30 + node.row * 3) : 25 + s.room * 10;
     s.gold += gold;
     const drops: ItemId[] = ["mana-potion", "barkskin-tonic", "shrapnel-jar", "banner-draught", "bonesetters-salve", "warhorn-oil", "healing-draught", "healing-draught", "demon-lord-crown"];
-    const relicPool = relicsForHero(s.hero);
-    const item = node ? (final ? (forest ? relicPool.find(id=>!s.relics.includes(id)) || "healing-draught" : "demon-lord-crown") : node.kind === "elite" ? relicPool[Math.floor(random(s)*relicPool.length)] : random(s)<.3 ? "healing-draught" : null) : drops[s.room];
+    const relicPool = expansionRelicPool(s);
+    const item = node ? (final ? (forest || (s.heroRouteVersion===2&&s.hero==='runeblade') ? relicPool.find(id=>!s.relics.includes(id)) || "healing-draught" : "demon-lord-crown") : node.kind === "elite" ? relicPool[Math.floor(random(s)*relicPool.length)] : random(s)<.3 ? "healing-draught" : null) : drops[s.room];
     if (item && items[item].passive) { if (!s.relics.includes(item)) s.relics.push(item); }
     else if(item) s.inventory.push(item);
     s.pendingLoot = s.rulesVersion === 3 ? { gold, items: item ? [item] : [], final } : null;
     emit(s, "loot", `Found ${gold} Gold${item ? ` and ${items[item].name}` : ""}.`);
     s.rewards = final ? [] : s.rulesVersion === 3 ? rollRewards(s) : s.starterDeck === "classic" && s.room < 2 ? [...rewardSets[s.room]] : shuffle(s, [...implemented].filter(id => cards[id].rarity !== "Basic" && !hellboundImplemented.includes(id as typeof hellboundImplemented[number]))).slice(0, 3);
-    emit(s, "victory", final ? (forest ? "The Living Orchard falls. Claim your spoils, then visit the final Woodland Exchange." : "The Infernal Sovereign falls. Claim his crown.") : "The path is yours. Choose a card.");
+    emit(s, "victory", final ? (frozen ? "The Avalanche Colossus falls. Claim your spoils, then visit the final Frostbound Exchange." : forest ? "The Living Orchard falls. Claim your spoils, then visit the final Woodland Exchange." : s.heroRouteVersion===2&&s.hero==='runeblade'?"The Infernal Sovereign falls. Claim your spoils.":"The Infernal Sovereign falls. Claim his crown.") : "The path is yours. Choose a card.");
   }
 }
 /** A rank belongs to one recruit. Removal deposits it once; a later summon consumes it once. */
@@ -355,13 +369,14 @@ function killUnit(s: State, u: Unit, dismissed=false) {
   if(s.hero==='runeblade' && dismissed){s.units=s.units.filter(v=>v.id!==u.id);emit(s,'dismiss',`${u.name} is dismissed. No Corpse is created.`,{actor:u.id,unit:structuredClone(u)});return;}
   gainCorpse(s);
   if(s.hero==='runeblade'&&s.relics.includes('gravewardens-bell'))s.hp=Math.min(s.maxHp,s.hp+2);
+  if(!dismissed)relicHook(s,'unit-death',expansionHooks(s),u);
   const rebirth=!dismissed&&hasArch(s,'pyre-colossus');
   s.units = s.units.filter(v=>v.id!==u.id);
   if(s.hero!=='runeblade')s.corruption=Math.min(10,s.corruption+2);
   const resilience=s.powers['demonic-resilience']||0;
   if(resilience){gainGuard(s,resilience);cinders(s,2);}
   emit(s,'unit-death',`${u.name} falls.${s.hero==='runeblade'?'':' Gain 2 Corruption.'}`,{actor:u.id,unit:structuredClone(u)});
-  if(rebirth&&random(s)<.5&&s.units.length<warbandCapacity(s))summon(s,'pyre-warden');
+  if(rebirth&&random(s)<.5&&s.units.length<warbandCapacity(s))summon(s,'pyre-warden',undefined,false,0,usesExpansion(s));
 }
 export const unitPower=(s:State,u:Unit)=>['gloomstalker','nightmaw','pyre-warden','pyre-colossus'].includes(u.kind)?0:u.power+(u.kind==='ash-pikeman'?2*s.units.filter(v=>v.kind==='ash-pikeman'&&v.id!==u.id&&v.hp>0).length:0)+(isHound(u)?2*s.units.filter(v=>isHound(v)&&v.id!==u.id).length:0)+(s.demonTurns>0?2:0)+(hasArch(s,'gorthak')?2:0);
 export const unitScorch=(s:State,u:Unit)=>(u.kind==='maledictor'?2:u.kind==='imp'||u.kind==='ignivar'?1+(hasArch(s,'ignivar')?4:0):u.kind==='pyre-warden'?1:u.kind==='pyre-colossus'?2:0)+(['gloomstalker','nightmaw','pyre-warden','pyre-colossus'].includes(u.kind)?0:(s.powers['dread-aura']||0));
@@ -372,17 +387,26 @@ function promote(s:State,u:Unit,ranks=1){
  emit(s,'promotion',`${u.name} reaches rank ${u.promotionRank}: +${2*ranks} Power, +${2*ranks} maximum HP, +${ranks} Armor.`,{actor:u.id,target:u.id,amount:ranks,unit:structuredClone(u)});
 }
 const legion=(s:State)=>s.units.filter(u=>isLegionKind(u.kind)&&u.hp>0);
-const canHellgate=(s:State)=>s.units.filter(u=>u.kind==='maledictor'&&u.hp>0).length>=3&&s.hellgateTurn!==s.turn;
+const canHellgate=(s:State)=>s.units.filter(u=>u.kind==='maledictor'&&u.hp>0&&(!usesExpansion(s)||u.order==='hellgate-channel')).length>=3&&s.hellgateTurn!==s.turn;
 function openHellgate(s:State){
  if(!canHellgate(s))return;
  s.hellgateTurn=s.turn;
  emit(s,'hellgate','Three Maledictors open the Hellgate!',{targets:alive(s).map(e=>e.id),amount:6});
  for(const enemy of alive(s)){hitEnemy(s,enemy,6);scorch(s,enemy,2);}
  for(const soldier of legion(s))promote(s,soldier);
+ if(usesExpansion(s)&&s.units.length<warbandCapacity(s))summon(s,'imp',undefined,false,0,true);
 }
-function unitAct(s:State,u:Unit){
+function expansionHooks(s:State):ExpansionHooks{return {guard:n=>gainGuard(s,n),draw:n=>draw(s,n),scorch:(e,n)=>scorch(s,e,n),chill:(e,n)=>chill(s,e,n),damage:(e,n)=>hitEnemy(s,e,n,true),summon:kind=>{if(s.units.length<warbandCapacity(s))summon(s,kind,undefined,false,0,true);},hellgate:()=>openHellgate(s),emit:(type,message,u)=>emit(s,type,message,u?{actor:u.id,unit:structuredClone(u)}:{})};}
+function unitAct(s:State,u:Unit,command=true){
+ if(!usesExpansion(s)){basicUnitAct(s,u);return;}
+ if(!s.units.some(v=>v.id===u.id&&v.hp>0)||!alive(s).length||(!command&&(u.readyTurn||0)>s.turn))return;
+ if(command||!performOrder(s,u,expansionHooks(s)))basicUnitAct(s,u);
+ relicHook(s,'unit-action',expansionHooks(s),u);
+ if(u.rot!==undefined&&s.units.some(v=>v.id===u.id)){const amount=u.rot;u.hp=Math.max(0,u.hp-amount);u.rot++;emit(s,'rot',`${u.name} loses ${amount} HP to Rot.`,{target:u.id,amount});if(!u.hp)killUnit(s,u);}
+}
+function basicUnitAct(s:State,u:Unit){
  if(!s.units.some(v=>v.id===u.id))return;
- const e=alive(s).find(e=>e.id===s.focus)||alive(s)[0];if(!e)return;
+ const e=(usesExpansion(s)?alive(s).find(e=>e.id===u.orderTarget):undefined)||alive(s).find(e=>e.id===s.focus)||alive(s)[0];if(!e)return;
  emit(s,'muster',`${u.name} acts.`,{actor:u.id,target:e.id,targets:((u.kind==='pit-brute'&&usesSummonRules(s))||['gorthak','hollow-saint','pyre-warden','pyre-colossus','dread-vanguard'].includes(u.kind)?alive(s):[e]).map(v=>v.id)});
  if(u.kind==='gloomstalker'||u.kind==='nightmaw'){
   if(u.kind==='nightmaw'||(u.actionCount||0)%2===0)e.sapped=(e.sapped||0)+2;
@@ -394,7 +418,7 @@ function unitAct(s:State,u:Unit){
  if(u.kind in runebladeSummons){
   if(u.kind==='shattered-queen') {for(const enemy of alive(s)){hitEnemy(s,enemy,damage,true);chill(s,enemy,1);}}
   else {hitEnemy(s,e,damage,true);if(u.kind==='rune-revenant')hitEnemy(s,e,damage,true);if(u.kind==='frost-thrall')chill(s,e,1);if(u.kind==='rime-seer')chill(s,e,3);}
-  if(u.rot!==undefined){const rot=u.rot;u.hp=Math.max(0,u.hp-rot);u.rot++;emit(s,'rot',`${u.name} loses ${rot} HP to Rot.`,{target:u.id,amount:rot});if(u.hp===0)killUnit(s,u);}
+  if(!usesExpansion(s)&&u.rot!==undefined){const rot=u.rot;u.hp=Math.max(0,u.hp-rot);u.rot++;emit(s,'rot',`${u.name} loses ${rot} HP to Rot.`,{target:u.id,amount:rot});if(u.hp===0)killUnit(s,u);}
 
  return;
  }
@@ -408,7 +432,7 @@ function unitAct(s:State,u:Unit){
  }
  if(u.kind==='soul-leech'||u.kind==='hollow-saint'){const healed=Math.min(s.maxHp-s.hp,drained);s.hp+=healed;emit(s,'heal',`${u.name} restores ${healed} HP.`,{actor:u.id,amount:healed});}
 }
-function summon(s:State,kind:DemonKind,dismiss?:number,upgraded=false,level=0){
+function summon(s:State,kind:DemonKind,dismiss?:number,upgraded=false,level=0,reinforcement=false){
  if(hasArch(s,'gorthak')&&!isArchDemon(kind)&&!isLegionKind(kind))kind='pit-brute';
  if(isArchDemon(kind)&&s.units.some(u=>u.kind===kind))throw Error('Only one living copy of each Archdemon is allowed.');
  if(s.units.length>=warbandCapacity(s)){const unit=s.units.find(u=>u.id===dismiss);if(!unit)throw Error('Choose a demon to dismiss: your Warband is full.');killUnit(s,unit,true);}
@@ -419,17 +443,18 @@ function summon(s:State,kind:DemonKind,dismiss?:number,upgraded=false,level=0){
  if(isLegionKind(kind)){u.promotionRank=s.legionRules===2?(s.legionRanks?.[kind]?.shift()??0):0;u.armor=u.promotionRank;u.legionBaseHp=u.maxHp;u.legionBasePower=u.power;u.power+=2*u.promotionRank;u.maxHp+=2*u.promotionRank;u.hp=u.maxHp;}
  if(kind in runebladeSummons){u.rot=1;u.power+=s.powers['unholy-vigor']||0;if(s.relics.includes('suture-standard')){u.power++;u.hp+=4;u.maxHp+=4;}}
  u.power+=(s.powers['masters-of-the-pit']||0)+(s.relics.includes('warband-fang')?2:0);
- u.upkeep=Math.max(0,u.upkeep-(s.powers['burning-soul']||0));s.units.push(u);
+ u.upkeep=Math.max(0,u.upkeep-(s.powers['burning-soul']||0));if(usesExpansion(s)){u.order='attack';u.readyTurn=reinforcement?s.turn+1:s.turn;s.acquiredSummons??=[];if(!s.acquiredSummons.includes(kind))s.acquiredSummons.push(kind);}s.units.push(u);relicHook(s,'summon',expansionHooks(s),u);
  emit(s,'summon',`${u.name} joins the Warband.`,{actor:u.id,unit:structuredClone(u)});
  if(kind==='pyre-warden'||kind==='pyre-colossus')gainGuard(s,6);
  if(kind==='nightmaw'){s.mana++;draw(s,1);emit(s,'passive','Nightmaw grants 1 Mana and 1 card.',{actor:u.id});}
- if(kind==='imp')unitAct(s,u);
+ if(kind==='imp'&&(!usesExpansion(s)||!reinforcement))unitAct(s,u);
 }
 function empower(s:State,u:Unit,level:number){
  const kind=archForms[u.kind];if(!kind||s.units.some(v=>v.kind===kind))throw Error('Choose a lesser demon whose Arch-form is not already alive.');
  const stats=demonStats[kind],old=demonStats[u.kind],fraction=u.hp/u.maxHp;
  const maxHp=Math.round(stats.hp*cardPower(level))+Math.max(0,u.maxHp-old.hp);
  Object.assign(u,stats,{kind,maxHp,hp:Math.max(1,Math.ceil(maxHp*fraction)),power:Math.round(stats.power*cardPower(level))+u.power-old.power,guard:u.guard,elusive:'elusive' in stats?stats.elusive:false});
+ if(usesExpansion(s)){s.acquiredSummons??=[];if(!s.acquiredSummons.includes(kind))s.acquiredSummons.push(kind);u.order='attack';u.orderTarget=undefined;}
  emit(s,'transform',`${u.name} is empowered.`,{actor:u.id,unit:structuredClone(u)});
  if(kind==='pyre-colossus')gainGuard(s,6);
  if(kind==='nightmaw'){s.mana++;draw(s,1);emit(s,'passive','Nightmaw grants 1 Mana and 1 card.',{actor:u.id});}
@@ -476,7 +501,7 @@ export function resolveTargets(
   const front=usesSummonRules(s)&&all.some(u=>!u.elusive)?all.filter(u=>!u.elusive):all;
   if (targeting === "sweep") return ["hero", ...all];
   if (targeting === "front") return [front[0] || "hero"];
-  if (targeting === "hero") return s.units.filter(u=>u.kind==='iron-legionary'&&u.hp>0).length>=2 ? ["hero"] : [front.find((u) => u.defender) || "hero"];
+  if (targeting === "hero") return s.units.filter(u=>u.kind==='iron-legionary'&&u.hp>0&&(!usesExpansion(s)||u.order==='shield'&&(u.bodyguardUntil||0)>s.turn)).length>=2 ? ["hero"] : [front.find((u) => u.defender) || "hero"];
   if (targeting === "weakest")
     return [[...front].sort((a, b) => a.hp - b.hp)[0] || "hero"];
   if (targeting === "random_ally")
@@ -487,6 +512,7 @@ export function resolveTargets(
 }
 function startTurn(s: State) {
   s.turn++;
+  if(usesExpansion(s))for(const u of s.units)if(u.bodyguardUntil!==undefined&&u.bodyguardUntil<=s.turn){u.defender=demonStats[u.kind].defender;delete u.bodyguardUntil;}
   s.guard = 0;
   s.barrier = 0;
   s.mana = 3;
@@ -516,17 +542,19 @@ function startTurn(s: State) {
   for(const u of [...s.units]){
     if(u.kind==='pyre-warden'||u.kind==='pyre-colossus')gainGuard(s,6);
     if(u.kind==='nightmaw'){s.mana++;draw(s,1);emit(s,'passive','Nightmaw grants 1 Mana and 1 card.',{actor:u.id});}
-    if((u.kind==='ignivar'||u.kind==='cerberax')&&s.units.length<warbandCapacity(s))summon(s,u.kind==='ignivar'?'imp':'hellhound');
+    if((u.kind==='ignivar'||u.kind==='cerberax')&&s.units.length<warbandCapacity(s))summon(s,u.kind==='ignivar'?'imp':'hellhound',undefined,false,0,usesExpansion(s));
   }
   checkWin(s);if(s.phase!=='combat')return;
   for(const bulwark of legion(s).filter(u=>u.kind==='ironhorn-bulwark')){for(const soldier of legion(s))soldier.guard+=3;emit(s,'guard',`${bulwark.name} grants the Legion 3 Guard.`,{actor:bulwark.id,amount:3,targets:legion(s).map(u=>u.id)});}
   if (s.powers.pyroclasm) for (const e of alive(s)) scorch(s, e, s.powers.pyroclasm);
   draw(s, s.spent ? 4 : 5);
   s.spent = false;
+  relicHook(s,'turn-start',expansionHooks(s));
   emit(s, "turn", `Turn ${s.turn}. Your move.`);
 }
 function beginCombat(s: State) {
   s.phase = "combat";
+  if(usesExpansion(s)){s.relicCounters={};s.orderCharges={};}
   s.turn = 0;
   s.guard = 0;
   s.cinders = s.hero === "runeblade" ? 0 : 3;
@@ -559,6 +587,7 @@ function beginCombat(s: State) {
   if(s.relics.includes("ember-heart")) s.hp=Math.min(s.maxHp,s.hp+5);
   if(s.relics.includes("scholar-seal")) draw(s,1);
   if (s.relics.includes("demon-lord-crown")) { gainGuard(s,5); s.mana += 1; }
+  relicHook(s,'battle-start',expansionHooks(s));
 }
 export function newRun(seed = 7319, starterDeck: StarterDeckId = "classic", rulesVersion: 2 | 3 = 3, summonRulesFrom:number|undefined=undefined,runebladeRules:1|2=2,legionRules:1|2=1): State {
   if (starterDeck !== "classic" && starterDeck !== "pact" && !starterDecks.some(d => d.id === starterDeck)) throw Error("Unknown starter deck.");
@@ -597,19 +626,29 @@ export function newRun(seed = 7319, starterDeck: StarterDeckId = "classic", rule
   return s;
 }
 /** The branching campaign is opt-in; historical fixed-demo saves retain their exact replay rules. */
-export function newInfernalRun(seed = 7319, starterDeck: StarterDeckId = "warband", legacy=false, hero:HeroId=heroForDeck(starterDeck),runebladeRules:1|2=2,summonRulesFrom:number|undefined=undefined,monsterShieldRulesFrom:number|undefined=undefined,legionRules:1|2=2): State {
+export function newInfernalRun(seed = 7319, starterDeck: StarterDeckId = "warband", legacy=false, hero:HeroId=heroForDeck(starterDeck),runebladeRules:1|2=2,summonRulesFrom:number|undefined=undefined,monsterShieldRulesFrom:number|undefined=undefined,legionRules:1|2=2,heroRouteVersion:1|2=2,expansionVersion:1|2=2): State {
  if(hero!==heroForDeck(starterDeck))throw Error("Starter deck does not belong to this hero.");
  if(arguments.length<6&&!legacy)summonRulesFrom=0;
  const s=newRun(seed,starterDeck,3,summonRulesFrom,runebladeRules,legionRules);
  s.corpses=0;
  s.monsterShieldRulesFrom=arguments.length<7&&!legacy?0:monsterShieldRulesFrom;
- s.forestBossVersion=2;
- s.journey=generateInfernalJourney(seed,legacy,hero,runebladeRules);s.deckLevels=s.deck.map(()=>0);s.phase="map";
- if(summonRulesFrom===0&&!legacy)configureHeroShops(s);
+ s.forestBossVersion=2;s.frozenWastesVersion=2;s.heroRouteVersion=heroRouteVersion;s.expansionVersion=expansionVersion;if(expansionVersion===2){s.trainingLevels={};s.acquiredSummons=knownSummons(s);s.relicCounters={};}
+ s.journey=!legacy&&heroRouteVersion===2&&hero==='runeblade'?generateFrozenWastesJourney(seed):generateInfernalJourney(seed,legacy,hero,runebladeRules);s.deckLevels=s.deck.map(()=>0);s.phase="map";s.room=s.journey.nodes[0].encounterIndex;
+ if((summonRulesFrom===0||usesExpansion(s))&&!legacy)configureHeroShops(s);addExpansionCamps(s);
  s.enemies=[];s.reserves=[];s.hand=[];s.draw=[];s.events=[];s.history=[];
  // The retired classic starter had four duplicate basics; campaign rules allow at most three.
  if(starterDeck==="classic") { s.deck[3]="neutral-strike";s.deck[7]="neutral-bulwark"; }
  return s;
+}
+export type RealmId='infernal'|'forest'|'frozen-wastes';
+export const currentRealm=(s:State):RealmId=>s.journey?.realm??'infernal';
+export const realmOrder=(s:State):RealmId[]=>!s.journey||s.journey.shopRules==='legacy'?['infernal']:s.heroRouteVersion===2&&s.hero==='runeblade'?['frozen-wastes','forest','infernal']:s.frozenWastesVersion===2?['infernal','forest','frozen-wastes']:['infernal','forest'];
+export const nextRealm=(s:State):RealmId|undefined=>{const order=realmOrder(s);return order[order.indexOf(currentRealm(s))+1];};
+function advanceRealm(s:State){
+ const next=nextRealm(s);if(!next){s.phase='won';return;}
+ s.journey=next==='frozen-wastes'?generateFrozenWastesJourney(s.seed):next==='forest'?generateForestJourney(s.seed,s.forestBossVersion!==1):generateInfernalJourney(s.seed,false,s.hero,s.runebladeRules);
+ configureHeroShops(s);addExpansionCamps(s);s.room=next==='frozen-wastes'?21:next==='forest'?9:0;s.phase='map';s.enemies=[];s.reserves=[];s.hand=[];s.draw=[];s.discard=[];
+ emit(s,'realm',`${next==='frozen-wastes'?'Frozen Wastes':next==='forest'?'Thornroot Forest':'Infernal Wastes'} opens. Your deck, upgrades, relics and supplies travel with you.`);
 }
 function finishNode(s:State) {
  if(!s.journey?.current) throw Error("No active route node.");
@@ -624,7 +663,8 @@ function journeyAction(s:State,action:Action):boolean {
  } else if(action.type==="enter-location") {
   if(!canEnterLocation(s))throw Error("No unfinished encounter at your current location.");
   const node=s.journey!.nodes.find(n=>n.id===s.journey!.current)!;
-  if(node.kind==="shop"){s.phase="shop";prepareShop(s);}
+  if(node.kind==="camp"&&!s.journey!.completed.includes(node.id))s.phase='camp';
+  else if(node.kind==="shop"){s.phase="shop";prepareShop(s);}
   else if(node.kind==="treasure")s.phase="treasure";
   else beginCombat(s);
  } else if(action.type==="travel") {
@@ -633,13 +673,18 @@ function journeyAction(s:State,action:Action):boolean {
   s.journey!.current=node.id;s.room=node.encounterIndex;
   // A cleared location is a waypoint, not another reward or combat reset.
   // Shops reopen their existing stock, paid rerolls and consumed service offers.
-  if(node.kind==="shop"){s.phase="shop";prepareShop(s);}
+  if(node.kind==="camp"&&!s.journey!.completed.includes(node.id))s.phase='camp';
+  else if(node.kind==="shop"){s.phase="shop";prepareShop(s);}
   else if(s.journey!.completed.includes(node.id))s.phase="map";
   else if(node.kind==="treasure")s.phase="treasure";
   else beginCombat(s);
  } else if(action.type==="leave-shop") {
   if(s.phase!=="shop")throw Error("No shop here.");finishNode(s);
-  if(s.journey?.realm==="forest"&&s.journey.current==="forest-shop-12")s.phase="won";
+  if(s.heroRouteVersion===2&&((currentRealm(s)==='forest'&&s.journey?.current==='forest-shop-12')||(currentRealm(s)==='frozen-wastes'&&s.journey?.current==='frozen-wastes-shop-12')))advanceRealm(s);
+  else if(s.journey?.realm==="forest"&&s.journey.current==="forest-shop-12") {
+   if(s.frozenWastesVersion===2){s.journey=generateFrozenWastesJourney(s.seed);configureHeroShops(s);addExpansionCamps(s);s.room=21;s.enemies=[];s.reserves=[];s.hand=[];s.draw=[];s.discard=[];emit(s,'realm','Frozen Wastes opens. Your deck, upgrades, relics and supplies travel with you.');}
+   else s.phase="won";
+  } else if(s.journey?.realm==='frozen-wastes'&&s.journey.current==='frozen-wastes-shop-12')s.phase='won';
  } else if(action.type==="claim-treasure") {
   if(s.phase!=="treasure")throw Error("No treasure here.");
   const pool=relicsForHero(s.hero).filter(id=>!s.relics.includes(id));
@@ -657,13 +702,13 @@ function journeyAction(s:State,action:Action):boolean {
    if(action.kind==="card") {
     const item=stock.cards[action.index];if(!item||item.sold)throw Error("Sold out.");
     if(!canAddCard(s,item.id))throw Error("Card copy limit reached.");
-    if(s.gold<item.price)throw Error("Not enough Gold.");
-    s.gold-=item.price;item.sold=true;s.deck.push(item.id);s.deckLevels!.push(0);refreshRemovalOffers(s);
+    if(s.gold<expansionPrice(s,item.price))throw Error("Not enough Gold.");
+    s.gold-=expansionPrice(s,item.price);item.sold=true;s.deck.push(item.id);s.deckLevels!.push(0);if(usesExpansion(s))s.acquiredSummons=knownSummons(s);refreshRemovalOffers(s);
    }else{
     const item=stock.relics[action.index];if(!item||item.sold)throw Error("Sold out.");
     if(s.relics.includes(item.id))throw Error("You already own this relic.");
-    if(s.gold<item.price)throw Error("Not enough Gold.");
-    s.gold-=item.price;item.sold=true;s.relics.push(item.id);
+    if(s.gold<expansionPrice(s,item.price))throw Error("Not enough Gold.");
+    s.gold-=expansionPrice(s,item.price);item.sold=true;s.relics.push(item.id);
    }
   }else{
    if(!s.deck[action.index])throw Error("Choose a card in your deck.");
@@ -671,12 +716,12 @@ function journeyAction(s:State,action:Action):boolean {
     if(s.deck.length<=10)throw Error("Your deck must contain at least 10 cards.");
     const offered=s.journey.shops[s.journey.current!].removals.find(o=>o.index===action.index&&!o.sold&&o.id===s.deck[action.index]);
     if(s.journey.shopRules==='soulforge'&&!offered)throw Error('That copy is not offered for removal.');
-    if(s.gold<10)throw Error("Not enough Gold.");
-    s.gold-=10;s.deck.splice(action.index,1);s.deckLevels!.splice(action.index,1);remapShopCopies(s,action.index);
+    if(s.gold<expansionPrice(s,10))throw Error("Not enough Gold.");
+    s.gold-=expansionPrice(s,10);s.deck.splice(action.index,1);s.deckLevels!.splice(action.index,1);remapShopCopies(s,action.index);
    }else{
     const offered=s.journey.shops[s.journey.current!].upgrades.find(o=>o.index===action.index&&!o.sold&&o.id===s.deck[action.index]);
     if(s.journey.shopRules==='soulforge'&&!offered)throw Error('That copy is not offered for upgrade.');
-    const price=upgradeCost(cardLevel(s,action.index));
+    const price=expansionPrice(s,upgradeCost(cardLevel(s,action.index)));
     if(!Number.isSafeInteger(price)||s.gold<price)throw Error("Not enough Gold.");
     s.gold-=price;s.deckLevels![action.index]++;if(offered)offered.sold=true;
    }
@@ -710,9 +755,31 @@ export function playable(s: State, c: CardInstance) {
     (!archCards.includes(c.id as typeof archCards[number])||!s.units.some(u=>`summon-${u.kind}`===c.id))
   );
 }
+function expansionAction(s:State,action:Action):boolean{
+ if(action.type==='set-order'){setOrder(s,action.unit,action.order,action.target,action.allOfKind);return true;}
+ if(action.type==='train-summon'){if(s.phase!=='shop')throw Error('Train summons at a shop.');trainSummon(s,action.kind);emit(s,'training',`${demonStats[action.kind].name} training improves.`);return true;}
+ if(action.type==='camp'&&usesExpansion(s)){if(s.phase!=='camp')throw Error('Visit a camp first.');s.hp=Math.min(s.maxHp,s.hp+campRecovery(s));finishNode(s);return true;}
+ if(action.type==='camp-choice'){
+  if(!usesExpansion(s)||s.phase!=='camp')throw Error('Visit a camp first.');
+  if(action.choice==='rest')s.hp=Math.min(s.maxHp,s.hp+campRecovery(s));
+  else if(action.choice==='train'){if(!action.kind)throw Error('Choose a summon.');trainSummon(s,action.kind,true);}
+  else if(action.choice==='upgrade'){if(!Number.isInteger(action.index)||action.index!<0||!s.deck[action.index!])throw Error('Choose an owned card.');s.deckLevels??=s.deck.map(()=>0);s.deckLevels[action.index!]++;}
+  else throw Error('Choose a camp service.');
+  finishNode(s);return true;
+ }
+ if(action.type==='claim-treasure'&&usesExpansion(s)){
+  if(s.phase!=='treasure')throw Error('No treasure here.');const options=treasureOptions(s),choice=action.choice??'relic';let gold=0;const awarded:ItemId[]=[];
+  if(choice==='train'){if(!action.kind)throw Error('Choose a summon.');trainSummon(s,action.kind,true);}
+  else if(choice==='gold'||choice==='relic'&&!options.relic){gold=options.gold;s.gold+=gold;}
+  else if(choice==='relic'){s.relics.push(options.relic!);awarded.push(options.relic!);}
+  else throw Error('Choose a treasure reward.');s.pendingLoot={gold,items:awarded,final:false};s.phase='loot';return true;
+ }
+ return false;
+}
 export function dispatch(previous: State, action: Action): State {
   const s = structuredClone(previous);
   s.events = [];
+  if(expansionAction(s,action)){s.history.push(action);return s;}
   if(journeyAction(s,action)) { s.history.push(action); return s; }
   if (action.type === "focus") {
     if (s.phase !== "combat" || !alive(s).some((e) => e.id === action.target))
@@ -746,7 +813,7 @@ export function dispatch(previous: State, action: Action): State {
       (action.card !== null && !s.rewards.includes(action.card))
     )
       throw Error("Invalid reward.");
-    if (action.card) { if(s.journey && !canAddCard(s,action.card)) throw Error("Card copy limit reached."); s.deck.push(action.card); s.deckLevels?.push(0); }
+    if (action.card) { if(s.journey && !canAddCard(s,action.card)) throw Error("Card copy limit reached."); s.deck.push(action.card); s.deckLevels?.push(0);if(usesExpansion(s))s.acquiredSummons=knownSummons(s); }
     s.rewards = [];
     if (s.rulesVersion === 3) s.phase = "loot";
     else if (s.room === 1 || s.room === 3 || s.room === 5) s.phase = "camp";
@@ -759,11 +826,12 @@ export function dispatch(previous: State, action: Action): State {
     const final = s.pendingLoot.final;
     s.pendingLoot = null;
     if (final) {
-      if(s.journey?.realm === "forest") finishNode(s);
+      if(s.journey?.realm === "forest" || s.journey?.realm === "frozen-wastes") finishNode(s);
+      else if(s.heroRouteVersion===2&&s.journey?.shopRules==='soulforge'){finishNode(s);advanceRealm(s);}
       else if(s.journey?.shopRules === "soulforge") {
         finishNode(s);
         s.journey = generateForestJourney(s.seed,s.forestBossVersion!==1);
-        configureHeroShops(s);
+        configureHeroShops(s);addExpansionCamps(s);
         s.room = 9;
         s.enemies = []; s.reserves = []; s.hand = []; s.draw = []; s.discard = [];
         emit(s, "realm", "The crown is yours. Thornroot Forest opens; your deck, upgrades, relics and supplies travel with you.");
@@ -981,11 +1049,11 @@ export function dispatch(previous: State, action: Action): State {
     }
     s.discard.push(...s.hand.splice(0));
     for (const u of [...s.units].reverse()) {
-      unitAct(s, u);
+      unitAct(s, u,false);
       checkWin(s);
       if (s.phase !== "combat") break;
     }
-    if(s.phase==='combat'){openHellgate(s);checkWin(s);}
+    if(s.phase==='combat'&&!usesExpansion(s)){openHellgate(s);checkWin(s);}
     if (s.phase === "combat")
       for (const e of alive(s)) {
         if(e.frozen){e.frozen=false;e.chill=0;emit(s,'frozen',`${e.name} skips its action.`,{actor:e.id});if(e.scorch>0){const burn=e.scorch;hitEnemy(s,e,burn,false,"scorch");if(e.hp>0)e.scorch=Math.floor(burn/2);}checkWin(s);if(s.phase!=='combat')break;continue;}
@@ -1006,7 +1074,7 @@ export function dispatch(previous: State, action: Action): State {
         if (m.kind === "shield") { e.guard = usesPersistentMonsterShields(s)?e.guard+(m.guard||0):Math.min(24, e.guard + (m.guard || 0)); emit(s, "enemy-shield", `${e.name} raises a protective barrier.`, { actor: e.id, amount: m.guard }); }
         if (m.kind === "summon") summonBossDemons(s, e);
         const allocated=new Map<number,number>();
-        const bodyguards=s.units.filter(u=>u.kind==='iron-legionary'&&u.hp>0);
+        const bodyguards=s.units.filter(u=>u.kind==='iron-legionary'&&u.hp>0&&(!usesExpansion(s)||u.order==='shield'&&(u.bodyguardUntil||0)>s.turn));
         const intercept=targets.includes('hero')&&bodyguards.length>=2;
         if(intercept){for(const [i,u]of bodyguards.entries())allocated.set(u.id,Math.floor(m.damage/bodyguards.length)+(i<m.damage%bodyguards.length?1:0));emit(s,'bodyguard','The Iron Legionaries intercept the Warlock’s damage.',{targets:bodyguards.map(u=>u.id),amount:m.damage});}
         const sharing=hasArch(s,'cerberax')?s.units.filter(isHound):[];
@@ -1022,6 +1090,7 @@ export function dispatch(previous: State, action: Action): State {
         }
         const deadUnits:Unit[]=[];
         for(const [id,incoming] of allocated){const target=s.units.find(u=>u.id===id);if(!target)continue;const armored=Math.max(0,incoming-(target.armor||0));const blocked=Math.min(target.guard,armored);target.guard-=blocked;const amount=Math.min(target.hp,armored-blocked);target.hp-=amount;emit(s,'unit-hit',`${target.name} takes ${amount} damage.`,{target:id,amount});if(!target.hp)deadUnits.push(target);}
+        if(usesExpansion(s))for(const [id]of allocated){const u=s.units.find(v=>v.id===id);if(u&&(u.counterUntil||0)>s.turn&&(u.counterDamage||0)>0){const amount=u.counterDamage!;u.counterDamage=0;hitEnemy(s,e,amount,true);emit(s,'counter',`${u.name} counters for ${amount}.`,{actor:u.id,target:e.id,amount});}}
         for(const unit of deadUnits)killUnit(s,unit);
         if (targets.includes("hero") && s.barrier) scorch(s, e, s.barrier);
         emit(s, "enemy-impact", `${e.name}'s attack lands.`, {
@@ -1073,15 +1142,18 @@ export function replay(seed: number, actions: Action[], starterDeck: StarterDeck
   if (legacyActions === actions.length) s = migrateLegacy(s, legacyActions);
   return s;
 }
-export const save = (s: State) => JSON.stringify({ legionRules:s.legionRules??1, monsterShieldRulesFrom:s.monsterShieldRulesFrom,runebladeRules:s.runebladeRules??1,summonRulesFrom:s.summonRulesFrom, schema: s.journey ? s.journey.shopRules==='legacy'?4:5 : 3, seed: s.seed, hero:s.hero, starterDeck: s.starterDeck, legacyActions: s.legacyActions, ...(s.journey?{forestBossVersion:s.forestBossVersion??1}:{}), actions: s.history });
+export const save = (s: State) => JSON.stringify({ expansionVersion:s.expansionVersion??1, heroRouteVersion:s.heroRouteVersion??1, frozenWastesVersion:s.frozenWastesVersion??1, legionRules:s.legionRules??1, monsterShieldRulesFrom:s.monsterShieldRulesFrom,runebladeRules:s.runebladeRules??1,summonRulesFrom:s.summonRulesFrom, schema: s.journey ? s.journey.shopRules==='legacy'?4:5 : 3, seed: s.seed, hero:s.hero, starterDeck: s.starterDeck, legacyActions: s.legacyActions, ...(s.journey?{forestBossVersion:s.forestBossVersion??1}:{}), actions: s.history });
 export function restore(raw: string): State {
   const data = JSON.parse(raw);
+  if(data.expansionVersion!==undefined&&data.expansionVersion!==1&&data.expansionVersion!==2)throw Error("Unsupported expansion version.");
+  if(data.heroRouteVersion!==undefined&&data.heroRouteVersion!==1&&data.heroRouteVersion!==2)throw Error("Unsupported hero route version.");
+  if(data.frozenWastesVersion!==undefined&&data.frozenWastesVersion!==1&&data.frozenWastesVersion!==2)throw Error("Unsupported Frozen Wastes version.");
   if(data.legionRules!==undefined&&data.legionRules!==1&&data.legionRules!==2)throw Error('Unsupported Legion rules.');
   if(data.monsterShieldRulesFrom!==undefined&&data.monsterShieldRulesFrom!==0)throw Error("Unsupported shield history.");
   if(data.summonRulesFrom!==undefined&&data.summonRulesFrom!==0)throw Error("Unsupported summon history.");
   if(data.runebladeRules!==undefined&&![1,2].includes(data.runebladeRules))throw Error("Unsupported Runeblade history.");
   if (![1, 2, 3, 4, 5].includes(data.schema) || !Number.isInteger(data.seed) || !Array.isArray(data.actions) || data.actions.length > 10000) throw Error("Unsupported save.");
-  if(data.schema===4||data.schema===5) { let s=newInfernalRun(data.seed,data.starterDeck,data.schema===4,data.hero ?? heroForDeck(data.starterDeck),data.runebladeRules===2?2:1,data.summonRulesFrom===0?0:undefined,data.monsterShieldRulesFrom===0?0:undefined,data.legionRules===2?2:1); s.forestBossVersion=data.forestBossVersion===2?2:1; for(const action of data.actions)s=dispatch(s,action);return s; }
+  if(data.schema===4||data.schema===5) { let s=newInfernalRun(data.seed,data.starterDeck,data.schema===4,data.hero ?? heroForDeck(data.starterDeck),data.runebladeRules===2?2:1,data.summonRulesFrom===0?0:undefined,data.monsterShieldRulesFrom===0?0:undefined,data.legionRules===2?2:1,data.heroRouteVersion===2?2:1,data.expansionVersion===2?2:1); s.forestBossVersion=data.forestBossVersion===2?2:1;s.frozenWastesVersion=data.frozenWastesVersion===2?2:1; for(const action of data.actions)s=dispatch(s,action);return s; }
   const legacyActions = data.schema < 3 ? data.actions.length : data.legacyActions ?? null;
   if (legacyActions !== null && (!Number.isInteger(legacyActions) || legacyActions < 0 || legacyActions > data.actions.length)) throw Error("Unsupported save history.");
   return replay(data.seed, data.actions, data.schema === 1 ? "classic" : data.starterDeck, legacyActions,data.runebladeRules===2?2:1,data.summonRulesFrom===0?0:undefined,data.legionRules===2?2:1);

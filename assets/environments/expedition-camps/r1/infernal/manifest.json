@@ -1,0 +1,26 @@
+{
+  "source": "assets/environments/expedition-camps/r1/infernal/source.png",
+  "sourceSha256": "8043befa9785226dea033a17b5f9a176b6545c9ba4433444e56e5901f535b5af",
+  "prompt": "assets/environments/expedition-camps/r1/infernal/prompt.txt",
+  "promptSha256": "859cc33484911fee89233f2637ef1b4f167bccaa4489f97ac7a21d6085810301",
+  "status": "Pending approval",
+  "evidenceId": null,
+  "reference": {
+    "path": "assets/approvals/inbox/battle-map-cinderforge-approach/r1/cinderforge-approach-r1.png",
+    "sha256": "73e78383a4b1a5f4559e67fcb661f573c976362f9cdac54d6c063b8c33a79a4b",
+    "status": "Approved",
+    "evidenceId": "2c3a4f6f-685a-4ffb-85bf-1638981ca04b"
+  },
+  "output": "expedition/camps/infernal.webp",
+  "outputSha256": "76699c3bd6dfbb3e55f3662efce8ca58af050e40db1b1ed5651997a7e04b2362",
+  "transform": {
+    "width": 1672,
+    "height": 941,
+    "fit": "cover",
+    "position": "centre",
+    "format": "webp",
+    "quality": 90
+  },
+  "encodedBytes": 145004,
+  "decodedBytes": 6293408
+}

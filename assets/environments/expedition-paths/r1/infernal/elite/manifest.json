@@ -1,0 +1,38 @@
+{
+  "schemaVersion": 1,
+  "revision": "r1",
+  "source": "assets/environments/expedition-paths/r1/infernal/elite/source.png",
+  "sha256": "c9464b68beaeea3f7472e43e8c0daa0faa9ed67df65ae8ee7eef5785c4881002",
+  "width": 1672,
+  "height": 941,
+  "prompt": "assets/environments/expedition-paths/r1/infernal/elite/prompt.txt",
+  "promptSha256": "9b4a9665252e5f20712a8db032423dee56cdd5e5b23f1121af50e45ceb8f66c7",
+  "references": [
+    {
+      "path": "assets/approvals/inbox/battle-map-cinderforge-approach/r1/cinderforge-approach-r1.png",
+      "sha256": "73e78383a4b1a5f4559e67fcb661f573c976362f9cdac54d6c063b8c33a79a4b",
+      "decision": {
+        "status": "Approved",
+        "at": "2026-10-02T22:19:19.260Z",
+        "evidenceId": "2c3a4f6f-685a-4ffb-85bf-1638981ca04b",
+        "paths": [
+          "C:\\Users\\wilsh\\Projects\\runelord\\assets\\approvals\\inbox\\battle-map-cinderforge-approach\\r1\\cinderforge-approach-r1.png"
+        ]
+      }
+    }
+  ],
+  "tool": "built-in image_gen",
+  "approvalStatus": "Pending approval",
+  "integrationStatus": "Review only. User explicitly requires approval before implementation. No runtime exports or game code changes.",
+  "gallery": {
+    "path": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\approvals\\inbox\\expedition-path-infernal-elite\\r1\\source.png",
+    "sha256": "c9464b68beaeea3f7472e43e8c0daa0faa9ed67df65ae8ee7eef5785c4881002",
+    "status": "Pending approval",
+    "gallery": "http://localhost:4317"
+  },
+  "qa": {
+    "visual": "Actual generated output inspected: clear primary composition, legible scene identity, consistent cel shading. UI concepts inspected for correct gameplay copy, legible hierarchy, complete controls and distinct illustrations.",
+    "technical": "PNG dimensions and exact source/gallery hashes verified.",
+    "limitations": "Flattened static destination illustration, not a parallax package or replacement combat arena."
+  }
+}

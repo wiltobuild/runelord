@@ -383,6 +383,12 @@ const { integrateHellbound } = await import('./hellbound-assets.mjs');
 await integrateHellbound(manifest);
 const { integrateHellboundCards } = await import('./hellbound-cards.mjs');
 await integrateHellboundCards(manifest);
+const { integrateFrozenWastes } = await import('./frozen-wastes-assets.mjs');
+await integrateFrozenWastes(manifest);
+const { integrateExpeditionCamps } = await import('./expedition-camps.mjs');
+await integrateExpeditionCamps(manifest);
+const { integrateExpeditionPaths } = await import('./expedition-paths.mjs');
+await integrateExpeditionPaths(manifest);
 fs.mkdirSync("packages/assets", { recursive: true });
 fs.writeFileSync(
   "packages/assets/manifest.json",

@@ -91,7 +91,61 @@
     "summon-maledictor": "/game-assets/summons/maledictor/hellbound-r1/idle/frame-00.webp",
     "summon-iron-legionary": "/game-assets/summons/iron-legionary/hellbound-r1/idle/frame-00.webp",
     "summon-ironhorn-bulwark": "/game-assets/summons/ironhorn-bulwark/hellbound-r1/idle/frame-00.webp",
-    "summon-ash-pikeman": "/game-assets/summons/ash-pikeman/hellbound-r1/idle/frame-00.webp"
+    "summon-ash-pikeman": "/game-assets/summons/ash-pikeman/hellbound-r1/idle/frame-00.webp",
+    "dragon-frost-mammoth": "/game-assets/frozen-wastes/actors/dragon-frost-mammoth/0fc1b814852e/0.webp",
+    "dragon-rime-antler": "/game-assets/frozen-wastes/actors/dragon-rime-antler/6efe4057fcca/0.webp",
+    "rimejaw-scavenger": "/game-assets/frozen-wastes/actors/rimejaw-scavenger/7b619bf5cfa5/0.webp",
+    "shardstep-skitterer": "/game-assets/frozen-wastes/actors/shardstep-skitterer/6622b1e49f2f/0.webp",
+    "whiteout-ray": "/game-assets/frozen-wastes/actors/whiteout-ray/4daf636f0eb8/0.webp",
+    "coffinback-bastion": "/game-assets/frozen-wastes/actors/coffinback-bastion/9fbc7ec8c31d/0.webp",
+    "hollowmask-oracle": "/game-assets/frozen-wastes/actors/hollowmask-oracle/cbd764916672/0.webp",
+    "shardlance-stalker": "/game-assets/frozen-wastes/actors/shardlance-stalker/ec7e97805bf7/0.webp",
+    "hoarveil-crone": "/game-assets/frozen-wastes/actors/hoarveil-crone/294884caceaf/0.webp",
+    "iceclamp-bombardier": "/game-assets/frozen-wastes/actors/iceclamp-bombardier/72adf46c84b0/0.webp",
+    "paleveil-moth": "/game-assets/frozen-wastes/actors/paleveil-moth/eb87361eb1eb/0.webp",
+    "cairnfrost-ursine": "/game-assets/frozen-wastes/actors/cairnfrost-ursine/829555c18277/0.webp",
+    "avalanche-colossus": "/game-assets/frozen-wastes/actors/avalanche-colossus/2c58017ac18b/0.webp",
+    "rime-hauler": "/game-assets/frozen-wastes/actors/rime-hauler/ae84bc883a9f/0.webp",
+    "frozen-wastes": "/game-assets/frozen-wastes/backgrounds/frozen-wastes-d1a0f5d4ba7d.webp",
+    "frozen-heart": "/game-assets/frozen-wastes/backgrounds/frozen-heart-5eb02d676142.webp",
+    "path-frozen-wastes-combat": "/game-assets/expedition/paths/frozen-wastes/combat.webp",
+    "path-frozen-wastes-mystery": "/game-assets/expedition/paths/frozen-wastes/mystery.webp",
+    "path-frozen-wastes-treasure": "/game-assets/expedition/paths/frozen-wastes/treasure.webp",
+    "path-frozen-wastes-shop": "/game-assets/expedition/paths/frozen-wastes/shop.webp",
+    "path-frozen-wastes-elite": "/game-assets/expedition/paths/frozen-wastes/elite.webp",
+    "path-frozen-wastes-camp": "/game-assets/expedition/paths/frozen-wastes/camp.webp",
+    "path-frozen-wastes-boss": "/game-assets/expedition/paths/frozen-wastes/boss.webp",
+    "path-forest-combat": "/game-assets/expedition/paths/forest/combat.webp",
+    "path-forest-mystery": "/game-assets/expedition/paths/forest/mystery.webp",
+    "path-forest-treasure": "/game-assets/expedition/paths/forest/treasure.webp",
+    "path-forest-shop": "/game-assets/expedition/paths/forest/shop.webp",
+    "path-forest-elite": "/game-assets/expedition/paths/forest/elite.webp",
+    "path-forest-camp": "/game-assets/expedition/paths/forest/camp.webp",
+    "path-forest-boss": "/game-assets/expedition/paths/forest/boss.webp",
+    "path-infernal-combat": "/game-assets/expedition/paths/infernal/combat.webp",
+    "path-infernal-mystery": "/game-assets/expedition/paths/infernal/mystery.webp",
+    "path-infernal-treasure": "/game-assets/expedition/paths/infernal/treasure.webp",
+    "path-infernal-shop": "/game-assets/expedition/paths/infernal/shop.webp",
+    "path-infernal-elite": "/game-assets/expedition/paths/infernal/elite.webp",
+    "path-infernal-camp": "/game-assets/expedition/paths/infernal/camp.webp",
+    "path-infernal-boss": "/game-assets/expedition/paths/infernal/boss.webp",
+    "expedition-ui-card-frame": "/game-assets/expedition/ui/card-frame.webp",
+    "expedition-ui-panel-frame": "/game-assets/expedition/ui/panel-frame.webp",
+    "expedition-ui-button": "/game-assets/expedition/ui/button.webp",
+    "expedition-ui-medallion-combat": "/game-assets/expedition/ui/medallion-combat.webp",
+    "expedition-ui-medallion-mystery": "/game-assets/expedition/ui/medallion-mystery.webp",
+    "expedition-ui-medallion-treasure": "/game-assets/expedition/ui/medallion-treasure.webp",
+    "expedition-ui-medallion-rest": "/game-assets/expedition/ui/medallion-rest.webp",
+    "expedition-ui-medallion-refine": "/game-assets/expedition/ui/medallion-refine.webp",
+    "expedition-ui-medallion-command": "/game-assets/expedition/ui/medallion-command.webp",
+    "expedition-ui-medallion-gold": "/game-assets/expedition/ui/medallion-gold.webp",
+    "expedition-ui-reward-gold": "/game-assets/expedition/ui/reward-gold.webp",
+    "expedition-ui-reward-tome": "/game-assets/expedition/ui/reward-tome.webp",
+    "expedition-ui-reward-relic": "/game-assets/expedition/ui/reward-relic.webp",
+    "expedition-ui-basalt": "/game-assets/expedition/ui/basalt.webp",
+    "expedition-ui-ability-signature": "/game-assets/expedition/ui/ability-signature.webp",
+    "expedition-ui-ability-shield": "/game-assets/expedition/ui/ability-shield.webp",
+    "expedition-ui-ability-locked": "/game-assets/expedition/ui/ability-locked.webp"
   },
   "cards": {
     "firebolt": "/game-assets/cards/firebolt.webp",
@@ -13436,6 +13490,2464 @@
         ],
         "root_motion": "authored fixed canvas and source anchor, uniformly scaled; layout bounds use idle silhouette",
         "mirror_safe": false
+      }
+    },
+    "dragon-frost-mammoth": {
+      "size": [
+        640,
+        640
+      ],
+      "anchor": [
+        280,
+        582.4
+      ],
+      "states": {
+        "idle": {
+          "duration": 1880,
+          "loop": true,
+          "impact": null,
+          "frames": [
+            {
+              "time": 0,
+              "src": "/game-assets/frozen-wastes/actors/dragon-frost-mammoth/0fc1b814852e/0.webp"
+            },
+            {
+              "time": 420,
+              "src": "/game-assets/frozen-wastes/actors/dragon-frost-mammoth/0fc1b814852e/1.webp"
+            },
+            {
+              "time": 680,
+              "src": "/game-assets/frozen-wastes/actors/dragon-frost-mammoth/0fc1b814852e/2.webp"
+            },
+            {
+              "time": 940,
+              "src": "/game-assets/frozen-wastes/actors/dragon-frost-mammoth/0fc1b814852e/3.webp"
+            },
+            {
+              "time": 1360,
+              "src": "/game-assets/frozen-wastes/actors/dragon-frost-mammoth/0fc1b814852e/2.webp"
+            },
+            {
+              "time": 1620,
+              "src": "/game-assets/frozen-wastes/actors/dragon-frost-mammoth/0fc1b814852e/1.webp"
+            }
+          ]
+        },
+        "wounded_idle": {
+          "duration": 1880,
+          "loop": true,
+          "impact": null,
+          "frames": [
+            {
+              "time": 0,
+              "src": "/game-assets/frozen-wastes/actors/dragon-frost-mammoth/0fc1b814852e/0.webp"
+            },
+            {
+              "time": 420,
+              "src": "/game-assets/frozen-wastes/actors/dragon-frost-mammoth/0fc1b814852e/1.webp"
+            },
+            {
+              "time": 680,
+              "src": "/game-assets/frozen-wastes/actors/dragon-frost-mammoth/0fc1b814852e/2.webp"
+            },
+            {
+              "time": 940,
+              "src": "/game-assets/frozen-wastes/actors/dragon-frost-mammoth/0fc1b814852e/3.webp"
+            },
+            {
+              "time": 1360,
+              "src": "/game-assets/frozen-wastes/actors/dragon-frost-mammoth/0fc1b814852e/2.webp"
+            },
+            {
+              "time": 1620,
+              "src": "/game-assets/frozen-wastes/actors/dragon-frost-mammoth/0fc1b814852e/1.webp"
+            }
+          ]
+        },
+        "attack": {
+          "duration": 650,
+          "loop": false,
+          "impact": 260,
+          "frames": [
+            {
+              "time": 0,
+              "src": "/game-assets/frozen-wastes/actors/dragon-frost-mammoth/0fc1b814852e/0.webp"
+            }
+          ]
+        },
+        "cast": {
+          "duration": 700,
+          "loop": false,
+          "impact": 300,
+          "frames": [
+            {
+              "time": 0,
+              "src": "/game-assets/frozen-wastes/actors/dragon-frost-mammoth/0fc1b814852e/0.webp"
+            }
+          ]
+        },
+        "hit": {
+          "duration": 280,
+          "loop": false,
+          "impact": null,
+          "frames": [
+            {
+              "time": 0,
+              "src": "/game-assets/frozen-wastes/actors/dragon-frost-mammoth/0fc1b814852e/0.webp"
+            }
+          ]
+        },
+        "guard": {
+          "duration": 600,
+          "loop": false,
+          "impact": null,
+          "frames": [
+            {
+              "time": 0,
+              "src": "/game-assets/frozen-wastes/actors/dragon-frost-mammoth/0fc1b814852e/0.webp"
+            }
+          ]
+        },
+        "spawn": {
+          "duration": 1200,
+          "loop": false,
+          "impact": null,
+          "frames": [
+            {
+              "time": 0,
+              "src": "/game-assets/frozen-wastes/actors/dragon-frost-mammoth/0fc1b814852e/0.webp"
+            }
+          ]
+        },
+        "die": {
+          "duration": 600,
+          "loop": false,
+          "impact": null,
+          "frames": [
+            {
+              "time": 0,
+              "src": "/game-assets/frozen-wastes/actors/dragon-frost-mammoth/0fc1b814852e/0.webp",
+              "opacity": 1
+            },
+            {
+              "time": 100,
+              "src": "/game-assets/frozen-wastes/actors/dragon-frost-mammoth/0fc1b814852e/0.webp",
+              "opacity": 0.8333333333333334
+            },
+            {
+              "time": 200,
+              "src": "/game-assets/frozen-wastes/actors/dragon-frost-mammoth/0fc1b814852e/0.webp",
+              "opacity": 0.6666666666666667
+            },
+            {
+              "time": 300,
+              "src": "/game-assets/frozen-wastes/actors/dragon-frost-mammoth/0fc1b814852e/0.webp",
+              "opacity": 0.5
+            },
+            {
+              "time": 400,
+              "src": "/game-assets/frozen-wastes/actors/dragon-frost-mammoth/0fc1b814852e/0.webp",
+              "opacity": 0.33333333333333337
+            },
+            {
+              "time": 500,
+              "src": "/game-assets/frozen-wastes/actors/dragon-frost-mammoth/0fc1b814852e/0.webp",
+              "opacity": 0.16666666666666663
+            },
+            {
+              "time": 600,
+              "src": "/game-assets/frozen-wastes/actors/dragon-frost-mammoth/0fc1b814852e/0.webp",
+              "opacity": 0
+            }
+          ]
+        }
+      }
+    },
+    "dragon-rime-antler": {
+      "size": [
+        640,
+        640
+      ],
+      "anchor": [
+        280,
+        582.4
+      ],
+      "states": {
+        "idle": {
+          "duration": 1880,
+          "loop": true,
+          "impact": null,
+          "frames": [
+            {
+              "time": 0,
+              "src": "/game-assets/frozen-wastes/actors/dragon-rime-antler/6efe4057fcca/0.webp"
+            },
+            {
+              "time": 420,
+              "src": "/game-assets/frozen-wastes/actors/dragon-rime-antler/6efe4057fcca/1.webp"
+            },
+            {
+              "time": 680,
+              "src": "/game-assets/frozen-wastes/actors/dragon-rime-antler/6efe4057fcca/2.webp"
+            },
+            {
+              "time": 940,
+              "src": "/game-assets/frozen-wastes/actors/dragon-rime-antler/6efe4057fcca/3.webp"
+            },
+            {
+              "time": 1360,
+              "src": "/game-assets/frozen-wastes/actors/dragon-rime-antler/6efe4057fcca/2.webp"
+            },
+            {
+              "time": 1620,
+              "src": "/game-assets/frozen-wastes/actors/dragon-rime-antler/6efe4057fcca/1.webp"
+            }
+          ]
+        },
+        "wounded_idle": {
+          "duration": 1880,
+          "loop": true,
+          "impact": null,
+          "frames": [
+            {
+              "time": 0,
+              "src": "/game-assets/frozen-wastes/actors/dragon-rime-antler/6efe4057fcca/0.webp"
+            },
+            {
+              "time": 420,
+              "src": "/game-assets/frozen-wastes/actors/dragon-rime-antler/6efe4057fcca/1.webp"
+            },
+            {
+              "time": 680,
+              "src": "/game-assets/frozen-wastes/actors/dragon-rime-antler/6efe4057fcca/2.webp"
+            },
+            {
+              "time": 940,
+              "src": "/game-assets/frozen-wastes/actors/dragon-rime-antler/6efe4057fcca/3.webp"
+            },
+            {
+              "time": 1360,
+              "src": "/game-assets/frozen-wastes/actors/dragon-rime-antler/6efe4057fcca/2.webp"
+            },
+            {
+              "time": 1620,
+              "src": "/game-assets/frozen-wastes/actors/dragon-rime-antler/6efe4057fcca/1.webp"
+            }
+          ]
+        },
+        "attack": {
+          "duration": 650,
+          "loop": false,
+          "impact": 260,
+          "frames": [
+            {
+              "time": 0,
+              "src": "/game-assets/frozen-wastes/actors/dragon-rime-antler/6efe4057fcca/0.webp"
+            }
+          ]
+        },
+        "cast": {
+          "duration": 700,
+          "loop": false,
+          "impact": 300,
+          "frames": [
+            {
+              "time": 0,
+              "src": "/game-assets/frozen-wastes/actors/dragon-rime-antler/6efe4057fcca/0.webp"
+            }
+          ]
+        },
+        "hit": {
+          "duration": 280,
+          "loop": false,
+          "impact": null,
+          "frames": [
+            {
+              "time": 0,
+              "src": "/game-assets/frozen-wastes/actors/dragon-rime-antler/6efe4057fcca/0.webp"
+            }
+          ]
+        },
+        "guard": {
+          "duration": 600,
+          "loop": false,
+          "impact": null,
+          "frames": [
+            {
+              "time": 0,
+              "src": "/game-assets/frozen-wastes/actors/dragon-rime-antler/6efe4057fcca/0.webp"
+            }
+          ]
+        },
+        "spawn": {
+          "duration": 1200,
+          "loop": false,
+          "impact": null,
+          "frames": [
+            {
+              "time": 0,
+              "src": "/game-assets/frozen-wastes/actors/dragon-rime-antler/6efe4057fcca/0.webp"
+            }
+          ]
+        },
+        "die": {
+          "duration": 600,
+          "loop": false,
+          "impact": null,
+          "frames": [
+            {
+              "time": 0,
+              "src": "/game-assets/frozen-wastes/actors/dragon-rime-antler/6efe4057fcca/0.webp",
+              "opacity": 1
+            },
+            {
+              "time": 100,
+              "src": "/game-assets/frozen-wastes/actors/dragon-rime-antler/6efe4057fcca/0.webp",
+              "opacity": 0.8333333333333334
+            },
+            {
+              "time": 200,
+              "src": "/game-assets/frozen-wastes/actors/dragon-rime-antler/6efe4057fcca/0.webp",
+              "opacity": 0.6666666666666667
+            },
+            {
+              "time": 300,
+              "src": "/game-assets/frozen-wastes/actors/dragon-rime-antler/6efe4057fcca/0.webp",
+              "opacity": 0.5
+            },
+            {
+              "time": 400,
+              "src": "/game-assets/frozen-wastes/actors/dragon-rime-antler/6efe4057fcca/0.webp",
+              "opacity": 0.33333333333333337
+            },
+            {
+              "time": 500,
+              "src": "/game-assets/frozen-wastes/actors/dragon-rime-antler/6efe4057fcca/0.webp",
+              "opacity": 0.16666666666666663
+            },
+            {
+              "time": 600,
+              "src": "/game-assets/frozen-wastes/actors/dragon-rime-antler/6efe4057fcca/0.webp",
+              "opacity": 0
+            }
+          ]
+        }
+      }
+    },
+    "rimejaw-scavenger": {
+      "size": [
+        640,
+        640
+      ],
+      "anchor": [
+        280,
+        582.4
+      ],
+      "states": {
+        "idle": {
+          "duration": 1300,
+          "loop": true,
+          "impact": null,
+          "frames": [
+            {
+              "time": 0,
+              "src": "/game-assets/frozen-wastes/actors/rimejaw-scavenger/7b619bf5cfa5/0.webp"
+            },
+            {
+              "time": 280,
+              "src": "/game-assets/frozen-wastes/actors/rimejaw-scavenger/7b619bf5cfa5/1.webp"
+            },
+            {
+              "time": 460,
+              "src": "/game-assets/frozen-wastes/actors/rimejaw-scavenger/7b619bf5cfa5/2.webp"
+            },
+            {
+              "time": 640,
+              "src": "/game-assets/frozen-wastes/actors/rimejaw-scavenger/7b619bf5cfa5/3.webp"
+            },
+            {
+              "time": 940,
+              "src": "/game-assets/frozen-wastes/actors/rimejaw-scavenger/7b619bf5cfa5/2.webp"
+            },
+            {
+              "time": 1120,
+              "src": "/game-assets/frozen-wastes/actors/rimejaw-scavenger/7b619bf5cfa5/1.webp"
+            }
+          ]
+        },
+        "wounded_idle": {
+          "duration": 1300,
+          "loop": true,
+          "impact": null,
+          "frames": [
+            {
+              "time": 0,
+              "src": "/game-assets/frozen-wastes/actors/rimejaw-scavenger/7b619bf5cfa5/0.webp"
+            },
+            {
+              "time": 280,
+              "src": "/game-assets/frozen-wastes/actors/rimejaw-scavenger/7b619bf5cfa5/1.webp"
+            },
+            {
+              "time": 460,
+              "src": "/game-assets/frozen-wastes/actors/rimejaw-scavenger/7b619bf5cfa5/2.webp"
+            },
+            {
+              "time": 640,
+              "src": "/game-assets/frozen-wastes/actors/rimejaw-scavenger/7b619bf5cfa5/3.webp"
+            },
+            {
+              "time": 940,
+              "src": "/game-assets/frozen-wastes/actors/rimejaw-scavenger/7b619bf5cfa5/2.webp"
+            },
+            {
+              "time": 1120,
+              "src": "/game-assets/frozen-wastes/actors/rimejaw-scavenger/7b619bf5cfa5/1.webp"
+            }
+          ]
+        },
+        "attack": {
+          "duration": 650,
+          "loop": false,
+          "impact": 260,
+          "frames": [
+            {
+              "time": 0,
+              "src": "/game-assets/frozen-wastes/actors/rimejaw-scavenger/7b619bf5cfa5/0.webp"
+            }
+          ]
+        },
+        "cast": {
+          "duration": 700,
+          "loop": false,
+          "impact": 300,
+          "frames": [
+            {
+              "time": 0,
+              "src": "/game-assets/frozen-wastes/actors/rimejaw-scavenger/7b619bf5cfa5/0.webp"
+            }
+          ]
+        },
+        "hit": {
+          "duration": 280,
+          "loop": false,
+          "impact": null,
+          "frames": [
+            {
+              "time": 0,
+              "src": "/game-assets/frozen-wastes/actors/rimejaw-scavenger/7b619bf5cfa5/0.webp"
+            }
+          ]
+        },
+        "guard": {
+          "duration": 600,
+          "loop": false,
+          "impact": null,
+          "frames": [
+            {
+              "time": 0,
+              "src": "/game-assets/frozen-wastes/actors/rimejaw-scavenger/7b619bf5cfa5/0.webp"
+            }
+          ]
+        },
+        "spawn": {
+          "duration": 1200,
+          "loop": false,
+          "impact": null,
+          "frames": [
+            {
+              "time": 0,
+              "src": "/game-assets/frozen-wastes/actors/rimejaw-scavenger/7b619bf5cfa5/0.webp"
+            }
+          ]
+        },
+        "die": {
+          "duration": 600,
+          "loop": false,
+          "impact": null,
+          "frames": [
+            {
+              "time": 0,
+              "src": "/game-assets/frozen-wastes/actors/rimejaw-scavenger/7b619bf5cfa5/0.webp",
+              "opacity": 1
+            },
+            {
+              "time": 100,
+              "src": "/game-assets/frozen-wastes/actors/rimejaw-scavenger/7b619bf5cfa5/0.webp",
+              "opacity": 0.8333333333333334
+            },
+            {
+              "time": 200,
+              "src": "/game-assets/frozen-wastes/actors/rimejaw-scavenger/7b619bf5cfa5/0.webp",
+              "opacity": 0.6666666666666667
+            },
+            {
+              "time": 300,
+              "src": "/game-assets/frozen-wastes/actors/rimejaw-scavenger/7b619bf5cfa5/0.webp",
+              "opacity": 0.5
+            },
+            {
+              "time": 400,
+              "src": "/game-assets/frozen-wastes/actors/rimejaw-scavenger/7b619bf5cfa5/0.webp",
+              "opacity": 0.33333333333333337
+            },
+            {
+              "time": 500,
+              "src": "/game-assets/frozen-wastes/actors/rimejaw-scavenger/7b619bf5cfa5/0.webp",
+              "opacity": 0.16666666666666663
+            },
+            {
+              "time": 600,
+              "src": "/game-assets/frozen-wastes/actors/rimejaw-scavenger/7b619bf5cfa5/0.webp",
+              "opacity": 0
+            }
+          ]
+        }
+      }
+    },
+    "shardstep-skitterer": {
+      "size": [
+        640,
+        640
+      ],
+      "anchor": [
+        319.54992967651197,
+        602.1940928270042
+      ],
+      "states": {
+        "idle": {
+          "duration": 1080,
+          "loop": true,
+          "impact": null,
+          "frames": [
+            {
+              "time": 0,
+              "src": "/game-assets/frozen-wastes/actors/shardstep-skitterer/6622b1e49f2f/0.webp"
+            },
+            {
+              "time": 180,
+              "src": "/game-assets/frozen-wastes/actors/shardstep-skitterer/6622b1e49f2f/1.webp"
+            },
+            {
+              "time": 360,
+              "src": "/game-assets/frozen-wastes/actors/shardstep-skitterer/6622b1e49f2f/2.webp"
+            },
+            {
+              "time": 540,
+              "src": "/game-assets/frozen-wastes/actors/shardstep-skitterer/6622b1e49f2f/3.webp"
+            },
+            {
+              "time": 720,
+              "src": "/game-assets/frozen-wastes/actors/shardstep-skitterer/6622b1e49f2f/4.webp"
+            },
+            {
+              "time": 900,
+              "src": "/game-assets/frozen-wastes/actors/shardstep-skitterer/6622b1e49f2f/5.webp"
+            }
+          ]
+        },
+        "wounded_idle": {
+          "duration": 1080,
+          "loop": true,
+          "impact": null,
+          "frames": [
+            {
+              "time": 0,
+              "src": "/game-assets/frozen-wastes/actors/shardstep-skitterer/6622b1e49f2f/0.webp"
+            },
+            {
+              "time": 180,
+              "src": "/game-assets/frozen-wastes/actors/shardstep-skitterer/6622b1e49f2f/1.webp"
+            },
+            {
+              "time": 360,
+              "src": "/game-assets/frozen-wastes/actors/shardstep-skitterer/6622b1e49f2f/2.webp"
+            },
+            {
+              "time": 540,
+              "src": "/game-assets/frozen-wastes/actors/shardstep-skitterer/6622b1e49f2f/3.webp"
+            },
+            {
+              "time": 720,
+              "src": "/game-assets/frozen-wastes/actors/shardstep-skitterer/6622b1e49f2f/4.webp"
+            },
+            {
+              "time": 900,
+              "src": "/game-assets/frozen-wastes/actors/shardstep-skitterer/6622b1e49f2f/5.webp"
+            }
+          ]
+        },
+        "attack": {
+          "duration": 650,
+          "loop": false,
+          "impact": 260,
+          "frames": [
+            {
+              "time": 0,
+              "src": "/game-assets/frozen-wastes/actors/shardstep-skitterer/6622b1e49f2f/0.webp"
+            }
+          ]
+        },
+        "cast": {
+          "duration": 700,
+          "loop": false,
+          "impact": 300,
+          "frames": [
+            {
+              "time": 0,
+              "src": "/game-assets/frozen-wastes/actors/shardstep-skitterer/6622b1e49f2f/0.webp"
+            }
+          ]
+        },
+        "hit": {
+          "duration": 280,
+          "loop": false,
+          "impact": null,
+          "frames": [
+            {
+              "time": 0,
+              "src": "/game-assets/frozen-wastes/actors/shardstep-skitterer/6622b1e49f2f/0.webp"
+            }
+          ]
+        },
+        "guard": {
+          "duration": 600,
+          "loop": false,
+          "impact": null,
+          "frames": [
+            {
+              "time": 0,
+              "src": "/game-assets/frozen-wastes/actors/shardstep-skitterer/6622b1e49f2f/0.webp"
+            }
+          ]
+        },
+        "spawn": {
+          "duration": 1200,
+          "loop": false,
+          "impact": null,
+          "frames": [
+            {
+              "time": 0,
+              "src": "/game-assets/frozen-wastes/actors/shardstep-skitterer/6622b1e49f2f/0.webp"
+            }
+          ]
+        },
+        "die": {
+          "duration": 600,
+          "loop": false,
+          "impact": null,
+          "frames": [
+            {
+              "time": 0,
+              "src": "/game-assets/frozen-wastes/actors/shardstep-skitterer/6622b1e49f2f/0.webp",
+              "opacity": 1
+            },
+            {
+              "time": 100,
+              "src": "/game-assets/frozen-wastes/actors/shardstep-skitterer/6622b1e49f2f/0.webp",
+              "opacity": 0.8333333333333334
+            },
+            {
+              "time": 200,
+              "src": "/game-assets/frozen-wastes/actors/shardstep-skitterer/6622b1e49f2f/0.webp",
+              "opacity": 0.6666666666666667
+            },
+            {
+              "time": 300,
+              "src": "/game-assets/frozen-wastes/actors/shardstep-skitterer/6622b1e49f2f/0.webp",
+              "opacity": 0.5
+            },
+            {
+              "time": 400,
+              "src": "/game-assets/frozen-wastes/actors/shardstep-skitterer/6622b1e49f2f/0.webp",
+              "opacity": 0.33333333333333337
+            },
+            {
+              "time": 500,
+              "src": "/game-assets/frozen-wastes/actors/shardstep-skitterer/6622b1e49f2f/0.webp",
+              "opacity": 0.16666666666666663
+            },
+            {
+              "time": 600,
+              "src": "/game-assets/frozen-wastes/actors/shardstep-skitterer/6622b1e49f2f/0.webp",
+              "opacity": 0
+            }
+          ]
+        }
+      }
+    },
+    "whiteout-ray": {
+      "size": [
+        512,
+        512
+      ],
+      "anchor": [
+        130,
+        280
+      ],
+      "states": {
+        "idle": {
+          "duration": 1440,
+          "loop": true,
+          "impact": null,
+          "frames": [
+            {
+              "time": 0,
+              "src": "/game-assets/frozen-wastes/actors/whiteout-ray/4daf636f0eb8/0.webp"
+            },
+            {
+              "time": 180,
+              "src": "/game-assets/frozen-wastes/actors/whiteout-ray/4daf636f0eb8/1.webp"
+            },
+            {
+              "time": 360,
+              "src": "/game-assets/frozen-wastes/actors/whiteout-ray/4daf636f0eb8/2.webp"
+            },
+            {
+              "time": 540,
+              "src": "/game-assets/frozen-wastes/actors/whiteout-ray/4daf636f0eb8/3.webp"
+            },
+            {
+              "time": 720,
+              "src": "/game-assets/frozen-wastes/actors/whiteout-ray/4daf636f0eb8/4.webp"
+            },
+            {
+              "time": 900,
+              "src": "/game-assets/frozen-wastes/actors/whiteout-ray/4daf636f0eb8/5.webp"
+            },
+            {
+              "time": 1080,
+              "src": "/game-assets/frozen-wastes/actors/whiteout-ray/4daf636f0eb8/6.webp"
+            },
+            {
+              "time": 1260,
+              "src": "/game-assets/frozen-wastes/actors/whiteout-ray/4daf636f0eb8/7.webp"
+            }
+          ]
+        },
+        "wounded_idle": {
+          "duration": 1440,
+          "loop": true,
+          "impact": null,
+          "frames": [
+            {
+              "time": 0,
+              "src": "/game-assets/frozen-wastes/actors/whiteout-ray/4daf636f0eb8/0.webp"
+            },
+            {
+              "time": 180,
+              "src": "/game-assets/frozen-wastes/actors/whiteout-ray/4daf636f0eb8/1.webp"
+            },
+            {
+              "time": 360,
+              "src": "/game-assets/frozen-wastes/actors/whiteout-ray/4daf636f0eb8/2.webp"
+            },
+            {
+              "time": 540,
+              "src": "/game-assets/frozen-wastes/actors/whiteout-ray/4daf636f0eb8/3.webp"
+            },
+            {
+              "time": 720,
+              "src": "/game-assets/frozen-wastes/actors/whiteout-ray/4daf636f0eb8/4.webp"
+            },
+            {
+              "time": 900,
+              "src": "/game-assets/frozen-wastes/actors/whiteout-ray/4daf636f0eb8/5.webp"
+            },
+            {
+              "time": 1080,
+              "src": "/game-assets/frozen-wastes/actors/whiteout-ray/4daf636f0eb8/6.webp"
+            },
+            {
+              "time": 1260,
+              "src": "/game-assets/frozen-wastes/actors/whiteout-ray/4daf636f0eb8/7.webp"
+            }
+          ]
+        },
+        "attack": {
+          "duration": 650,
+          "loop": false,
+          "impact": 260,
+          "frames": [
+            {
+              "time": 0,
+              "src": "/game-assets/frozen-wastes/actors/whiteout-ray/4daf636f0eb8/0.webp"
+            }
+          ]
+        },
+        "cast": {
+          "duration": 700,
+          "loop": false,
+          "impact": 300,
+          "frames": [
+            {
+              "time": 0,
+              "src": "/game-assets/frozen-wastes/actors/whiteout-ray/4daf636f0eb8/0.webp"
+            }
+          ]
+        },
+        "hit": {
+          "duration": 280,
+          "loop": false,
+          "impact": null,
+          "frames": [
+            {
+              "time": 0,
+              "src": "/game-assets/frozen-wastes/actors/whiteout-ray/4daf636f0eb8/0.webp"
+            }
+          ]
+        },
+        "guard": {
+          "duration": 600,
+          "loop": false,
+          "impact": null,
+          "frames": [
+            {
+              "time": 0,
+              "src": "/game-assets/frozen-wastes/actors/whiteout-ray/4daf636f0eb8/0.webp"
+            }
+          ]
+        },
+        "spawn": {
+          "duration": 1200,
+          "loop": false,
+          "impact": null,
+          "frames": [
+            {
+              "time": 0,
+              "src": "/game-assets/frozen-wastes/actors/whiteout-ray/4daf636f0eb8/0.webp"
+            }
+          ]
+        },
+        "die": {
+          "duration": 600,
+          "loop": false,
+          "impact": null,
+          "frames": [
+            {
+              "time": 0,
+              "src": "/game-assets/frozen-wastes/actors/whiteout-ray/4daf636f0eb8/0.webp",
+              "opacity": 1
+            },
+            {
+              "time": 100,
+              "src": "/game-assets/frozen-wastes/actors/whiteout-ray/4daf636f0eb8/0.webp",
+              "opacity": 0.8333333333333334
+            },
+            {
+              "time": 200,
+              "src": "/game-assets/frozen-wastes/actors/whiteout-ray/4daf636f0eb8/0.webp",
+              "opacity": 0.6666666666666667
+            },
+            {
+              "time": 300,
+              "src": "/game-assets/frozen-wastes/actors/whiteout-ray/4daf636f0eb8/0.webp",
+              "opacity": 0.5
+            },
+            {
+              "time": 400,
+              "src": "/game-assets/frozen-wastes/actors/whiteout-ray/4daf636f0eb8/0.webp",
+              "opacity": 0.33333333333333337
+            },
+            {
+              "time": 500,
+              "src": "/game-assets/frozen-wastes/actors/whiteout-ray/4daf636f0eb8/0.webp",
+              "opacity": 0.16666666666666663
+            },
+            {
+              "time": 600,
+              "src": "/game-assets/frozen-wastes/actors/whiteout-ray/4daf636f0eb8/0.webp",
+              "opacity": 0
+            }
+          ]
+        }
+      }
+    },
+    "coffinback-bastion": {
+      "size": [
+        512,
+        596
+      ],
+      "anchor": [
+        256,
+        554
+      ],
+      "states": {
+        "idle": {
+          "duration": 1840,
+          "loop": true,
+          "impact": null,
+          "frames": [
+            {
+              "time": 0,
+              "src": "/game-assets/frozen-wastes/actors/coffinback-bastion/9fbc7ec8c31d/0.webp"
+            },
+            {
+              "time": 230,
+              "src": "/game-assets/frozen-wastes/actors/coffinback-bastion/9fbc7ec8c31d/1.webp"
+            },
+            {
+              "time": 460,
+              "src": "/game-assets/frozen-wastes/actors/coffinback-bastion/9fbc7ec8c31d/2.webp"
+            },
+            {
+              "time": 690,
+              "src": "/game-assets/frozen-wastes/actors/coffinback-bastion/9fbc7ec8c31d/3.webp"
+            },
+            {
+              "time": 920,
+              "src": "/game-assets/frozen-wastes/actors/coffinback-bastion/9fbc7ec8c31d/4.webp"
+            },
+            {
+              "time": 1150,
+              "src": "/game-assets/frozen-wastes/actors/coffinback-bastion/9fbc7ec8c31d/5.webp"
+            },
+            {
+              "time": 1380,
+              "src": "/game-assets/frozen-wastes/actors/coffinback-bastion/9fbc7ec8c31d/6.webp"
+            },
+            {
+              "time": 1610,
+              "src": "/game-assets/frozen-wastes/actors/coffinback-bastion/9fbc7ec8c31d/7.webp"
+            }
+          ]
+        },
+        "wounded_idle": {
+          "duration": 1840,
+          "loop": true,
+          "impact": null,
+          "frames": [
+            {
+              "time": 0,
+              "src": "/game-assets/frozen-wastes/actors/coffinback-bastion/9fbc7ec8c31d/0.webp"
+            },
+            {
+              "time": 230,
+              "src": "/game-assets/frozen-wastes/actors/coffinback-bastion/9fbc7ec8c31d/1.webp"
+            },
+            {
+              "time": 460,
+              "src": "/game-assets/frozen-wastes/actors/coffinback-bastion/9fbc7ec8c31d/2.webp"
+            },
+            {
+              "time": 690,
+              "src": "/game-assets/frozen-wastes/actors/coffinback-bastion/9fbc7ec8c31d/3.webp"
+            },
+            {
+              "time": 920,
+              "src": "/game-assets/frozen-wastes/actors/coffinback-bastion/9fbc7ec8c31d/4.webp"
+            },
+            {
+              "time": 1150,
+              "src": "/game-assets/frozen-wastes/actors/coffinback-bastion/9fbc7ec8c31d/5.webp"
+            },
+            {
+              "time": 1380,
+              "src": "/game-assets/frozen-wastes/actors/coffinback-bastion/9fbc7ec8c31d/6.webp"
+            },
+            {
+              "time": 1610,
+              "src": "/game-assets/frozen-wastes/actors/coffinback-bastion/9fbc7ec8c31d/7.webp"
+            }
+          ]
+        },
+        "attack": {
+          "duration": 650,
+          "loop": false,
+          "impact": 260,
+          "frames": [
+            {
+              "time": 0,
+              "src": "/game-assets/frozen-wastes/actors/coffinback-bastion/9fbc7ec8c31d/0.webp"
+            }
+          ]
+        },
+        "cast": {
+          "duration": 700,
+          "loop": false,
+          "impact": 300,
+          "frames": [
+            {
+              "time": 0,
+              "src": "/game-assets/frozen-wastes/actors/coffinback-bastion/9fbc7ec8c31d/0.webp"
+            }
+          ]
+        },
+        "hit": {
+          "duration": 280,
+          "loop": false,
+          "impact": null,
+          "frames": [
+            {
+              "time": 0,
+              "src": "/game-assets/frozen-wastes/actors/coffinback-bastion/9fbc7ec8c31d/0.webp"
+            }
+          ]
+        },
+        "guard": {
+          "duration": 600,
+          "loop": false,
+          "impact": null,
+          "frames": [
+            {
+              "time": 0,
+              "src": "/game-assets/frozen-wastes/actors/coffinback-bastion/9fbc7ec8c31d/0.webp"
+            }
+          ]
+        },
+        "spawn": {
+          "duration": 1200,
+          "loop": false,
+          "impact": null,
+          "frames": [
+            {
+              "time": 0,
+              "src": "/game-assets/frozen-wastes/actors/coffinback-bastion/9fbc7ec8c31d/0.webp"
+            }
+          ]
+        },
+        "die": {
+          "duration": 600,
+          "loop": false,
+          "impact": null,
+          "frames": [
+            {
+              "time": 0,
+              "src": "/game-assets/frozen-wastes/actors/coffinback-bastion/9fbc7ec8c31d/0.webp",
+              "opacity": 1
+            },
+            {
+              "time": 100,
+              "src": "/game-assets/frozen-wastes/actors/coffinback-bastion/9fbc7ec8c31d/0.webp",
+              "opacity": 0.8333333333333334
+            },
+            {
+              "time": 200,
+              "src": "/game-assets/frozen-wastes/actors/coffinback-bastion/9fbc7ec8c31d/0.webp",
+              "opacity": 0.6666666666666667
+            },
+            {
+              "time": 300,
+              "src": "/game-assets/frozen-wastes/actors/coffinback-bastion/9fbc7ec8c31d/0.webp",
+              "opacity": 0.5
+            },
+            {
+              "time": 400,
+              "src": "/game-assets/frozen-wastes/actors/coffinback-bastion/9fbc7ec8c31d/0.webp",
+              "opacity": 0.33333333333333337
+            },
+            {
+              "time": 500,
+              "src": "/game-assets/frozen-wastes/actors/coffinback-bastion/9fbc7ec8c31d/0.webp",
+              "opacity": 0.16666666666666663
+            },
+            {
+              "time": 600,
+              "src": "/game-assets/frozen-wastes/actors/coffinback-bastion/9fbc7ec8c31d/0.webp",
+              "opacity": 0
+            }
+          ]
+        }
+      }
+    },
+    "hollowmask-oracle": {
+      "size": [
+        512,
+        512
+      ],
+      "anchor": [
+        256,
+        48
+      ],
+      "states": {
+        "idle": {
+          "duration": 1560,
+          "loop": true,
+          "impact": null,
+          "frames": [
+            {
+              "time": 0,
+              "src": "/game-assets/frozen-wastes/actors/hollowmask-oracle/cbd764916672/0.webp"
+            },
+            {
+              "time": 260,
+              "src": "/game-assets/frozen-wastes/actors/hollowmask-oracle/cbd764916672/1.webp"
+            },
+            {
+              "time": 520,
+              "src": "/game-assets/frozen-wastes/actors/hollowmask-oracle/cbd764916672/2.webp"
+            },
+            {
+              "time": 780,
+              "src": "/game-assets/frozen-wastes/actors/hollowmask-oracle/cbd764916672/3.webp"
+            },
+            {
+              "time": 1040,
+              "src": "/game-assets/frozen-wastes/actors/hollowmask-oracle/cbd764916672/2.webp"
+            },
+            {
+              "time": 1300,
+              "src": "/game-assets/frozen-wastes/actors/hollowmask-oracle/cbd764916672/1.webp"
+            }
+          ]
+        },
+        "wounded_idle": {
+          "duration": 1560,
+          "loop": true,
+          "impact": null,
+          "frames": [
+            {
+              "time": 0,
+              "src": "/game-assets/frozen-wastes/actors/hollowmask-oracle/cbd764916672/0.webp"
+            },
+            {
+              "time": 260,
+              "src": "/game-assets/frozen-wastes/actors/hollowmask-oracle/cbd764916672/1.webp"
+            },
+            {
+              "time": 520,
+              "src": "/game-assets/frozen-wastes/actors/hollowmask-oracle/cbd764916672/2.webp"
+            },
+            {
+              "time": 780,
+              "src": "/game-assets/frozen-wastes/actors/hollowmask-oracle/cbd764916672/3.webp"
+            },
+            {
+              "time": 1040,
+              "src": "/game-assets/frozen-wastes/actors/hollowmask-oracle/cbd764916672/2.webp"
+            },
+            {
+              "time": 1300,
+              "src": "/game-assets/frozen-wastes/actors/hollowmask-oracle/cbd764916672/1.webp"
+            }
+          ]
+        },
+        "attack": {
+          "duration": 650,
+          "loop": false,
+          "impact": 260,
+          "frames": [
+            {
+              "time": 0,
+              "src": "/game-assets/frozen-wastes/actors/hollowmask-oracle/cbd764916672/0.webp"
+            }
+          ]
+        },
+        "cast": {
+          "duration": 700,
+          "loop": false,
+          "impact": 300,
+          "frames": [
+            {
+              "time": 0,
+              "src": "/game-assets/frozen-wastes/actors/hollowmask-oracle/cbd764916672/0.webp"
+            }
+          ]
+        },
+        "hit": {
+          "duration": 280,
+          "loop": false,
+          "impact": null,
+          "frames": [
+            {
+              "time": 0,
+              "src": "/game-assets/frozen-wastes/actors/hollowmask-oracle/cbd764916672/0.webp"
+            }
+          ]
+        },
+        "guard": {
+          "duration": 600,
+          "loop": false,
+          "impact": null,
+          "frames": [
+            {
+              "time": 0,
+              "src": "/game-assets/frozen-wastes/actors/hollowmask-oracle/cbd764916672/0.webp"
+            }
+          ]
+        },
+        "spawn": {
+          "duration": 1200,
+          "loop": false,
+          "impact": null,
+          "frames": [
+            {
+              "time": 0,
+              "src": "/game-assets/frozen-wastes/actors/hollowmask-oracle/cbd764916672/0.webp"
+            }
+          ]
+        },
+        "die": {
+          "duration": 600,
+          "loop": false,
+          "impact": null,
+          "frames": [
+            {
+              "time": 0,
+              "src": "/game-assets/frozen-wastes/actors/hollowmask-oracle/cbd764916672/0.webp",
+              "opacity": 1
+            },
+            {
+              "time": 100,
+              "src": "/game-assets/frozen-wastes/actors/hollowmask-oracle/cbd764916672/0.webp",
+              "opacity": 0.8333333333333334
+            },
+            {
+              "time": 200,
+              "src": "/game-assets/frozen-wastes/actors/hollowmask-oracle/cbd764916672/0.webp",
+              "opacity": 0.6666666666666667
+            },
+            {
+              "time": 300,
+              "src": "/game-assets/frozen-wastes/actors/hollowmask-oracle/cbd764916672/0.webp",
+              "opacity": 0.5
+            },
+            {
+              "time": 400,
+              "src": "/game-assets/frozen-wastes/actors/hollowmask-oracle/cbd764916672/0.webp",
+              "opacity": 0.33333333333333337
+            },
+            {
+              "time": 500,
+              "src": "/game-assets/frozen-wastes/actors/hollowmask-oracle/cbd764916672/0.webp",
+              "opacity": 0.16666666666666663
+            },
+            {
+              "time": 600,
+              "src": "/game-assets/frozen-wastes/actors/hollowmask-oracle/cbd764916672/0.webp",
+              "opacity": 0
+            }
+          ]
+        }
+      }
+    },
+    "shardlance-stalker": {
+      "size": [
+        528,
+        576
+      ],
+      "anchor": [
+        264,
+        534
+      ],
+      "states": {
+        "idle": {
+          "duration": 1520,
+          "loop": true,
+          "impact": null,
+          "frames": [
+            {
+              "time": 0,
+              "src": "/game-assets/frozen-wastes/actors/shardlance-stalker/ec7e97805bf7/0.webp"
+            },
+            {
+              "time": 190,
+              "src": "/game-assets/frozen-wastes/actors/shardlance-stalker/ec7e97805bf7/1.webp"
+            },
+            {
+              "time": 380,
+              "src": "/game-assets/frozen-wastes/actors/shardlance-stalker/ec7e97805bf7/2.webp"
+            },
+            {
+              "time": 570,
+              "src": "/game-assets/frozen-wastes/actors/shardlance-stalker/ec7e97805bf7/3.webp"
+            },
+            {
+              "time": 760,
+              "src": "/game-assets/frozen-wastes/actors/shardlance-stalker/ec7e97805bf7/4.webp"
+            },
+            {
+              "time": 950,
+              "src": "/game-assets/frozen-wastes/actors/shardlance-stalker/ec7e97805bf7/5.webp"
+            },
+            {
+              "time": 1140,
+              "src": "/game-assets/frozen-wastes/actors/shardlance-stalker/ec7e97805bf7/6.webp"
+            },
+            {
+              "time": 1330,
+              "src": "/game-assets/frozen-wastes/actors/shardlance-stalker/ec7e97805bf7/7.webp"
+            }
+          ]
+        },
+        "wounded_idle": {
+          "duration": 1520,
+          "loop": true,
+          "impact": null,
+          "frames": [
+            {
+              "time": 0,
+              "src": "/game-assets/frozen-wastes/actors/shardlance-stalker/ec7e97805bf7/0.webp"
+            },
+            {
+              "time": 190,
+              "src": "/game-assets/frozen-wastes/actors/shardlance-stalker/ec7e97805bf7/1.webp"
+            },
+            {
+              "time": 380,
+              "src": "/game-assets/frozen-wastes/actors/shardlance-stalker/ec7e97805bf7/2.webp"
+            },
+            {
+              "time": 570,
+              "src": "/game-assets/frozen-wastes/actors/shardlance-stalker/ec7e97805bf7/3.webp"
+            },
+            {
+              "time": 760,
+              "src": "/game-assets/frozen-wastes/actors/shardlance-stalker/ec7e97805bf7/4.webp"
+            },
+            {
+              "time": 950,
+              "src": "/game-assets/frozen-wastes/actors/shardlance-stalker/ec7e97805bf7/5.webp"
+            },
+            {
+              "time": 1140,
+              "src": "/game-assets/frozen-wastes/actors/shardlance-stalker/ec7e97805bf7/6.webp"
+            },
+            {
+              "time": 1330,
+              "src": "/game-assets/frozen-wastes/actors/shardlance-stalker/ec7e97805bf7/7.webp"
+            }
+          ]
+        },
+        "attack": {
+          "duration": 650,
+          "loop": false,
+          "impact": 260,
+          "frames": [
+            {
+              "time": 0,
+              "src": "/game-assets/frozen-wastes/actors/shardlance-stalker/ec7e97805bf7/0.webp"
+            }
+          ]
+        },
+        "cast": {
+          "duration": 700,
+          "loop": false,
+          "impact": 300,
+          "frames": [
+            {
+              "time": 0,
+              "src": "/game-assets/frozen-wastes/actors/shardlance-stalker/ec7e97805bf7/0.webp"
+            }
+          ]
+        },
+        "hit": {
+          "duration": 280,
+          "loop": false,
+          "impact": null,
+          "frames": [
+            {
+              "time": 0,
+              "src": "/game-assets/frozen-wastes/actors/shardlance-stalker/ec7e97805bf7/0.webp"
+            }
+          ]
+        },
+        "guard": {
+          "duration": 600,
+          "loop": false,
+          "impact": null,
+          "frames": [
+            {
+              "time": 0,
+              "src": "/game-assets/frozen-wastes/actors/shardlance-stalker/ec7e97805bf7/0.webp"
+            }
+          ]
+        },
+        "spawn": {
+          "duration": 1200,
+          "loop": false,
+          "impact": null,
+          "frames": [
+            {
+              "time": 0,
+              "src": "/game-assets/frozen-wastes/actors/shardlance-stalker/ec7e97805bf7/0.webp"
+            }
+          ]
+        },
+        "die": {
+          "duration": 600,
+          "loop": false,
+          "impact": null,
+          "frames": [
+            {
+              "time": 0,
+              "src": "/game-assets/frozen-wastes/actors/shardlance-stalker/ec7e97805bf7/0.webp",
+              "opacity": 1
+            },
+            {
+              "time": 100,
+              "src": "/game-assets/frozen-wastes/actors/shardlance-stalker/ec7e97805bf7/0.webp",
+              "opacity": 0.8333333333333334
+            },
+            {
+              "time": 200,
+              "src": "/game-assets/frozen-wastes/actors/shardlance-stalker/ec7e97805bf7/0.webp",
+              "opacity": 0.6666666666666667
+            },
+            {
+              "time": 300,
+              "src": "/game-assets/frozen-wastes/actors/shardlance-stalker/ec7e97805bf7/0.webp",
+              "opacity": 0.5
+            },
+            {
+              "time": 400,
+              "src": "/game-assets/frozen-wastes/actors/shardlance-stalker/ec7e97805bf7/0.webp",
+              "opacity": 0.33333333333333337
+            },
+            {
+              "time": 500,
+              "src": "/game-assets/frozen-wastes/actors/shardlance-stalker/ec7e97805bf7/0.webp",
+              "opacity": 0.16666666666666663
+            },
+            {
+              "time": 600,
+              "src": "/game-assets/frozen-wastes/actors/shardlance-stalker/ec7e97805bf7/0.webp",
+              "opacity": 0
+            }
+          ]
+        }
+      }
+    },
+    "hoarveil-crone": {
+      "size": [
+        640,
+        587
+      ],
+      "anchor": [
+        320,
+        560
+      ],
+      "states": {
+        "idle": {
+          "duration": 1920,
+          "loop": true,
+          "impact": null,
+          "frames": [
+            {
+              "time": 0,
+              "src": "/game-assets/frozen-wastes/actors/hoarveil-crone/294884caceaf/0.webp"
+            },
+            {
+              "time": 320,
+              "src": "/game-assets/frozen-wastes/actors/hoarveil-crone/294884caceaf/1.webp"
+            },
+            {
+              "time": 640,
+              "src": "/game-assets/frozen-wastes/actors/hoarveil-crone/294884caceaf/2.webp"
+            },
+            {
+              "time": 960,
+              "src": "/game-assets/frozen-wastes/actors/hoarveil-crone/294884caceaf/3.webp"
+            },
+            {
+              "time": 1280,
+              "src": "/game-assets/frozen-wastes/actors/hoarveil-crone/294884caceaf/2.webp"
+            },
+            {
+              "time": 1600,
+              "src": "/game-assets/frozen-wastes/actors/hoarveil-crone/294884caceaf/1.webp"
+            }
+          ]
+        },
+        "wounded_idle": {
+          "duration": 1920,
+          "loop": true,
+          "impact": null,
+          "frames": [
+            {
+              "time": 0,
+              "src": "/game-assets/frozen-wastes/actors/hoarveil-crone/294884caceaf/0.webp"
+            },
+            {
+              "time": 320,
+              "src": "/game-assets/frozen-wastes/actors/hoarveil-crone/294884caceaf/1.webp"
+            },
+            {
+              "time": 640,
+              "src": "/game-assets/frozen-wastes/actors/hoarveil-crone/294884caceaf/2.webp"
+            },
+            {
+              "time": 960,
+              "src": "/game-assets/frozen-wastes/actors/hoarveil-crone/294884caceaf/3.webp"
+            },
+            {
+              "time": 1280,
+              "src": "/game-assets/frozen-wastes/actors/hoarveil-crone/294884caceaf/2.webp"
+            },
+            {
+              "time": 1600,
+              "src": "/game-assets/frozen-wastes/actors/hoarveil-crone/294884caceaf/1.webp"
+            }
+          ]
+        },
+        "attack": {
+          "duration": 650,
+          "loop": false,
+          "impact": 260,
+          "frames": [
+            {
+              "time": 0,
+              "src": "/game-assets/frozen-wastes/actors/hoarveil-crone/294884caceaf/0.webp"
+            }
+          ]
+        },
+        "cast": {
+          "duration": 700,
+          "loop": false,
+          "impact": 300,
+          "frames": [
+            {
+              "time": 0,
+              "src": "/game-assets/frozen-wastes/actors/hoarveil-crone/294884caceaf/0.webp"
+            }
+          ]
+        },
+        "hit": {
+          "duration": 280,
+          "loop": false,
+          "impact": null,
+          "frames": [
+            {
+              "time": 0,
+              "src": "/game-assets/frozen-wastes/actors/hoarveil-crone/294884caceaf/0.webp"
+            }
+          ]
+        },
+        "guard": {
+          "duration": 600,
+          "loop": false,
+          "impact": null,
+          "frames": [
+            {
+              "time": 0,
+              "src": "/game-assets/frozen-wastes/actors/hoarveil-crone/294884caceaf/0.webp"
+            }
+          ]
+        },
+        "spawn": {
+          "duration": 1200,
+          "loop": false,
+          "impact": null,
+          "frames": [
+            {
+              "time": 0,
+              "src": "/game-assets/frozen-wastes/actors/hoarveil-crone/294884caceaf/0.webp"
+            }
+          ]
+        },
+        "die": {
+          "duration": 600,
+          "loop": false,
+          "impact": null,
+          "frames": [
+            {
+              "time": 0,
+              "src": "/game-assets/frozen-wastes/actors/hoarveil-crone/294884caceaf/0.webp",
+              "opacity": 1
+            },
+            {
+              "time": 100,
+              "src": "/game-assets/frozen-wastes/actors/hoarveil-crone/294884caceaf/0.webp",
+              "opacity": 0.8333333333333334
+            },
+            {
+              "time": 200,
+              "src": "/game-assets/frozen-wastes/actors/hoarveil-crone/294884caceaf/0.webp",
+              "opacity": 0.6666666666666667
+            },
+            {
+              "time": 300,
+              "src": "/game-assets/frozen-wastes/actors/hoarveil-crone/294884caceaf/0.webp",
+              "opacity": 0.5
+            },
+            {
+              "time": 400,
+              "src": "/game-assets/frozen-wastes/actors/hoarveil-crone/294884caceaf/0.webp",
+              "opacity": 0.33333333333333337
+            },
+            {
+              "time": 500,
+              "src": "/game-assets/frozen-wastes/actors/hoarveil-crone/294884caceaf/0.webp",
+              "opacity": 0.16666666666666663
+            },
+            {
+              "time": 600,
+              "src": "/game-assets/frozen-wastes/actors/hoarveil-crone/294884caceaf/0.webp",
+              "opacity": 0
+            }
+          ]
+        }
+      }
+    },
+    "iceclamp-bombardier": {
+      "size": [
+        528,
+        576
+      ],
+      "anchor": [
+        264,
+        534
+      ],
+      "states": {
+        "idle": {
+          "duration": 1680,
+          "loop": true,
+          "impact": null,
+          "frames": [
+            {
+              "time": 0,
+              "src": "/game-assets/frozen-wastes/actors/iceclamp-bombardier/72adf46c84b0/0.webp"
+            },
+            {
+              "time": 210,
+              "src": "/game-assets/frozen-wastes/actors/iceclamp-bombardier/72adf46c84b0/1.webp"
+            },
+            {
+              "time": 420,
+              "src": "/game-assets/frozen-wastes/actors/iceclamp-bombardier/72adf46c84b0/2.webp"
+            },
+            {
+              "time": 630,
+              "src": "/game-assets/frozen-wastes/actors/iceclamp-bombardier/72adf46c84b0/3.webp"
+            },
+            {
+              "time": 840,
+              "src": "/game-assets/frozen-wastes/actors/iceclamp-bombardier/72adf46c84b0/4.webp"
+            },
+            {
+              "time": 1050,
+              "src": "/game-assets/frozen-wastes/actors/iceclamp-bombardier/72adf46c84b0/5.webp"
+            },
+            {
+              "time": 1260,
+              "src": "/game-assets/frozen-wastes/actors/iceclamp-bombardier/72adf46c84b0/6.webp"
+            },
+            {
+              "time": 1470,
+              "src": "/game-assets/frozen-wastes/actors/iceclamp-bombardier/72adf46c84b0/7.webp"
+            }
+          ]
+        },
+        "wounded_idle": {
+          "duration": 1680,
+          "loop": true,
+          "impact": null,
+          "frames": [
+            {
+              "time": 0,
+              "src": "/game-assets/frozen-wastes/actors/iceclamp-bombardier/72adf46c84b0/0.webp"
+            },
+            {
+              "time": 210,
+              "src": "/game-assets/frozen-wastes/actors/iceclamp-bombardier/72adf46c84b0/1.webp"
+            },
+            {
+              "time": 420,
+              "src": "/game-assets/frozen-wastes/actors/iceclamp-bombardier/72adf46c84b0/2.webp"
+            },
+            {
+              "time": 630,
+              "src": "/game-assets/frozen-wastes/actors/iceclamp-bombardier/72adf46c84b0/3.webp"
+            },
+            {
+              "time": 840,
+              "src": "/game-assets/frozen-wastes/actors/iceclamp-bombardier/72adf46c84b0/4.webp"
+            },
+            {
+              "time": 1050,
+              "src": "/game-assets/frozen-wastes/actors/iceclamp-bombardier/72adf46c84b0/5.webp"
+            },
+            {
+              "time": 1260,
+              "src": "/game-assets/frozen-wastes/actors/iceclamp-bombardier/72adf46c84b0/6.webp"
+            },
+            {
+              "time": 1470,
+              "src": "/game-assets/frozen-wastes/actors/iceclamp-bombardier/72adf46c84b0/7.webp"
+            }
+          ]
+        },
+        "attack": {
+          "duration": 650,
+          "loop": false,
+          "impact": 260,
+          "frames": [
+            {
+              "time": 0,
+              "src": "/game-assets/frozen-wastes/actors/iceclamp-bombardier/72adf46c84b0/0.webp"
+            }
+          ]
+        },
+        "cast": {
+          "duration": 700,
+          "loop": false,
+          "impact": 300,
+          "frames": [
+            {
+              "time": 0,
+              "src": "/game-assets/frozen-wastes/actors/iceclamp-bombardier/72adf46c84b0/0.webp"
+            }
+          ]
+        },
+        "hit": {
+          "duration": 280,
+          "loop": false,
+          "impact": null,
+          "frames": [
+            {
+              "time": 0,
+              "src": "/game-assets/frozen-wastes/actors/iceclamp-bombardier/72adf46c84b0/0.webp"
+            }
+          ]
+        },
+        "guard": {
+          "duration": 600,
+          "loop": false,
+          "impact": null,
+          "frames": [
+            {
+              "time": 0,
+              "src": "/game-assets/frozen-wastes/actors/iceclamp-bombardier/72adf46c84b0/0.webp"
+            }
+          ]
+        },
+        "spawn": {
+          "duration": 1200,
+          "loop": false,
+          "impact": null,
+          "frames": [
+            {
+              "time": 0,
+              "src": "/game-assets/frozen-wastes/actors/iceclamp-bombardier/72adf46c84b0/0.webp"
+            }
+          ]
+        },
+        "die": {
+          "duration": 600,
+          "loop": false,
+          "impact": null,
+          "frames": [
+            {
+              "time": 0,
+              "src": "/game-assets/frozen-wastes/actors/iceclamp-bombardier/72adf46c84b0/0.webp",
+              "opacity": 1
+            },
+            {
+              "time": 100,
+              "src": "/game-assets/frozen-wastes/actors/iceclamp-bombardier/72adf46c84b0/0.webp",
+              "opacity": 0.8333333333333334
+            },
+            {
+              "time": 200,
+              "src": "/game-assets/frozen-wastes/actors/iceclamp-bombardier/72adf46c84b0/0.webp",
+              "opacity": 0.6666666666666667
+            },
+            {
+              "time": 300,
+              "src": "/game-assets/frozen-wastes/actors/iceclamp-bombardier/72adf46c84b0/0.webp",
+              "opacity": 0.5
+            },
+            {
+              "time": 400,
+              "src": "/game-assets/frozen-wastes/actors/iceclamp-bombardier/72adf46c84b0/0.webp",
+              "opacity": 0.33333333333333337
+            },
+            {
+              "time": 500,
+              "src": "/game-assets/frozen-wastes/actors/iceclamp-bombardier/72adf46c84b0/0.webp",
+              "opacity": 0.16666666666666663
+            },
+            {
+              "time": 600,
+              "src": "/game-assets/frozen-wastes/actors/iceclamp-bombardier/72adf46c84b0/0.webp",
+              "opacity": 0
+            }
+          ]
+        }
+      }
+    },
+    "paleveil-moth": {
+      "size": [
+        640,
+        640
+      ],
+      "anchor": [
+        242.85714285714283,
+        333.3333333333333
+      ],
+      "states": {
+        "idle": {
+          "duration": 840,
+          "loop": true,
+          "impact": null,
+          "frames": [
+            {
+              "time": 0,
+              "src": "/game-assets/frozen-wastes/actors/paleveil-moth/eb87361eb1eb/0.webp"
+            },
+            {
+              "time": 140,
+              "src": "/game-assets/frozen-wastes/actors/paleveil-moth/eb87361eb1eb/1.webp"
+            },
+            {
+              "time": 280,
+              "src": "/game-assets/frozen-wastes/actors/paleveil-moth/eb87361eb1eb/2.webp"
+            },
+            {
+              "time": 420,
+              "src": "/game-assets/frozen-wastes/actors/paleveil-moth/eb87361eb1eb/3.webp"
+            },
+            {
+              "time": 560,
+              "src": "/game-assets/frozen-wastes/actors/paleveil-moth/eb87361eb1eb/2.webp"
+            },
+            {
+              "time": 700,
+              "src": "/game-assets/frozen-wastes/actors/paleveil-moth/eb87361eb1eb/1.webp"
+            }
+          ]
+        },
+        "wounded_idle": {
+          "duration": 840,
+          "loop": true,
+          "impact": null,
+          "frames": [
+            {
+              "time": 0,
+              "src": "/game-assets/frozen-wastes/actors/paleveil-moth/eb87361eb1eb/0.webp"
+            },
+            {
+              "time": 140,
+              "src": "/game-assets/frozen-wastes/actors/paleveil-moth/eb87361eb1eb/1.webp"
+            },
+            {
+              "time": 280,
+              "src": "/game-assets/frozen-wastes/actors/paleveil-moth/eb87361eb1eb/2.webp"
+            },
+            {
+              "time": 420,
+              "src": "/game-assets/frozen-wastes/actors/paleveil-moth/eb87361eb1eb/3.webp"
+            },
+            {
+              "time": 560,
+              "src": "/game-assets/frozen-wastes/actors/paleveil-moth/eb87361eb1eb/2.webp"
+            },
+            {
+              "time": 700,
+              "src": "/game-assets/frozen-wastes/actors/paleveil-moth/eb87361eb1eb/1.webp"
+            }
+          ]
+        },
+        "attack": {
+          "duration": 650,
+          "loop": false,
+          "impact": 260,
+          "frames": [
+            {
+              "time": 0,
+              "src": "/game-assets/frozen-wastes/actors/paleveil-moth/eb87361eb1eb/0.webp"
+            }
+          ]
+        },
+        "cast": {
+          "duration": 700,
+          "loop": false,
+          "impact": 300,
+          "frames": [
+            {
+              "time": 0,
+              "src": "/game-assets/frozen-wastes/actors/paleveil-moth/eb87361eb1eb/0.webp"
+            }
+          ]
+        },
+        "hit": {
+          "duration": 280,
+          "loop": false,
+          "impact": null,
+          "frames": [
+            {
+              "time": 0,
+              "src": "/game-assets/frozen-wastes/actors/paleveil-moth/eb87361eb1eb/0.webp"
+            }
+          ]
+        },
+        "guard": {
+          "duration": 600,
+          "loop": false,
+          "impact": null,
+          "frames": [
+            {
+              "time": 0,
+              "src": "/game-assets/frozen-wastes/actors/paleveil-moth/eb87361eb1eb/0.webp"
+            }
+          ]
+        },
+        "spawn": {
+          "duration": 1200,
+          "loop": false,
+          "impact": null,
+          "frames": [
+            {
+              "time": 0,
+              "src": "/game-assets/frozen-wastes/actors/paleveil-moth/eb87361eb1eb/0.webp"
+            }
+          ]
+        },
+        "die": {
+          "duration": 600,
+          "loop": false,
+          "impact": null,
+          "frames": [
+            {
+              "time": 0,
+              "src": "/game-assets/frozen-wastes/actors/paleveil-moth/eb87361eb1eb/0.webp",
+              "opacity": 1
+            },
+            {
+              "time": 100,
+              "src": "/game-assets/frozen-wastes/actors/paleveil-moth/eb87361eb1eb/0.webp",
+              "opacity": 0.8333333333333334
+            },
+            {
+              "time": 200,
+              "src": "/game-assets/frozen-wastes/actors/paleveil-moth/eb87361eb1eb/0.webp",
+              "opacity": 0.6666666666666667
+            },
+            {
+              "time": 300,
+              "src": "/game-assets/frozen-wastes/actors/paleveil-moth/eb87361eb1eb/0.webp",
+              "opacity": 0.5
+            },
+            {
+              "time": 400,
+              "src": "/game-assets/frozen-wastes/actors/paleveil-moth/eb87361eb1eb/0.webp",
+              "opacity": 0.33333333333333337
+            },
+            {
+              "time": 500,
+              "src": "/game-assets/frozen-wastes/actors/paleveil-moth/eb87361eb1eb/0.webp",
+              "opacity": 0.16666666666666663
+            },
+            {
+              "time": 600,
+              "src": "/game-assets/frozen-wastes/actors/paleveil-moth/eb87361eb1eb/0.webp",
+              "opacity": 0
+            }
+          ]
+        }
+      }
+    },
+    "cairnfrost-ursine": {
+      "size": [
+        640,
+        640
+      ],
+      "anchor": [
+        280,
+        582.4
+      ],
+      "states": {
+        "idle": {
+          "duration": 2280,
+          "loop": true,
+          "impact": null,
+          "frames": [
+            {
+              "time": 0,
+              "src": "/game-assets/frozen-wastes/actors/cairnfrost-ursine/829555c18277/0.webp"
+            },
+            {
+              "time": 500,
+              "src": "/game-assets/frozen-wastes/actors/cairnfrost-ursine/829555c18277/1.webp"
+            },
+            {
+              "time": 820,
+              "src": "/game-assets/frozen-wastes/actors/cairnfrost-ursine/829555c18277/2.webp"
+            },
+            {
+              "time": 1140,
+              "src": "/game-assets/frozen-wastes/actors/cairnfrost-ursine/829555c18277/3.webp"
+            },
+            {
+              "time": 1640,
+              "src": "/game-assets/frozen-wastes/actors/cairnfrost-ursine/829555c18277/2.webp"
+            },
+            {
+              "time": 1960,
+              "src": "/game-assets/frozen-wastes/actors/cairnfrost-ursine/829555c18277/1.webp"
+            }
+          ]
+        },
+        "wounded_idle": {
+          "duration": 2280,
+          "loop": true,
+          "impact": null,
+          "frames": [
+            {
+              "time": 0,
+              "src": "/game-assets/frozen-wastes/actors/cairnfrost-ursine/829555c18277/0.webp"
+            },
+            {
+              "time": 500,
+              "src": "/game-assets/frozen-wastes/actors/cairnfrost-ursine/829555c18277/1.webp"
+            },
+            {
+              "time": 820,
+              "src": "/game-assets/frozen-wastes/actors/cairnfrost-ursine/829555c18277/2.webp"
+            },
+            {
+              "time": 1140,
+              "src": "/game-assets/frozen-wastes/actors/cairnfrost-ursine/829555c18277/3.webp"
+            },
+            {
+              "time": 1640,
+              "src": "/game-assets/frozen-wastes/actors/cairnfrost-ursine/829555c18277/2.webp"
+            },
+            {
+              "time": 1960,
+              "src": "/game-assets/frozen-wastes/actors/cairnfrost-ursine/829555c18277/1.webp"
+            }
+          ]
+        },
+        "attack": {
+          "duration": 650,
+          "loop": false,
+          "impact": 260,
+          "frames": [
+            {
+              "time": 0,
+              "src": "/game-assets/frozen-wastes/actors/cairnfrost-ursine/829555c18277/0.webp"
+            }
+          ]
+        },
+        "cast": {
+          "duration": 700,
+          "loop": false,
+          "impact": 300,
+          "frames": [
+            {
+              "time": 0,
+              "src": "/game-assets/frozen-wastes/actors/cairnfrost-ursine/829555c18277/0.webp"
+            }
+          ]
+        },
+        "hit": {
+          "duration": 280,
+          "loop": false,
+          "impact": null,
+          "frames": [
+            {
+              "time": 0,
+              "src": "/game-assets/frozen-wastes/actors/cairnfrost-ursine/829555c18277/0.webp"
+            }
+          ]
+        },
+        "guard": {
+          "duration": 600,
+          "loop": false,
+          "impact": null,
+          "frames": [
+            {
+              "time": 0,
+              "src": "/game-assets/frozen-wastes/actors/cairnfrost-ursine/829555c18277/0.webp"
+            }
+          ]
+        },
+        "spawn": {
+          "duration": 1200,
+          "loop": false,
+          "impact": null,
+          "frames": [
+            {
+              "time": 0,
+              "src": "/game-assets/frozen-wastes/actors/cairnfrost-ursine/829555c18277/0.webp"
+            }
+          ]
+        },
+        "die": {
+          "duration": 600,
+          "loop": false,
+          "impact": null,
+          "frames": [
+            {
+              "time": 0,
+              "src": "/game-assets/frozen-wastes/actors/cairnfrost-ursine/829555c18277/0.webp",
+              "opacity": 1
+            },
+            {
+              "time": 100,
+              "src": "/game-assets/frozen-wastes/actors/cairnfrost-ursine/829555c18277/0.webp",
+              "opacity": 0.8333333333333334
+            },
+            {
+              "time": 200,
+              "src": "/game-assets/frozen-wastes/actors/cairnfrost-ursine/829555c18277/0.webp",
+              "opacity": 0.6666666666666667
+            },
+            {
+              "time": 300,
+              "src": "/game-assets/frozen-wastes/actors/cairnfrost-ursine/829555c18277/0.webp",
+              "opacity": 0.5
+            },
+            {
+              "time": 400,
+              "src": "/game-assets/frozen-wastes/actors/cairnfrost-ursine/829555c18277/0.webp",
+              "opacity": 0.33333333333333337
+            },
+            {
+              "time": 500,
+              "src": "/game-assets/frozen-wastes/actors/cairnfrost-ursine/829555c18277/0.webp",
+              "opacity": 0.16666666666666663
+            },
+            {
+              "time": 600,
+              "src": "/game-assets/frozen-wastes/actors/cairnfrost-ursine/829555c18277/0.webp",
+              "opacity": 0
+            }
+          ]
+        }
+      }
+    },
+    "avalanche-colossus": {
+      "size": [
+        640,
+        587
+      ],
+      "anchor": [
+        320,
+        560
+      ],
+      "states": {
+        "idle": {
+          "duration": 2400,
+          "loop": true,
+          "impact": null,
+          "frames": [
+            {
+              "time": 0,
+              "src": "/game-assets/frozen-wastes/actors/avalanche-colossus/2c58017ac18b/0.webp"
+            },
+            {
+              "time": 400,
+              "src": "/game-assets/frozen-wastes/actors/avalanche-colossus/2c58017ac18b/1.webp"
+            },
+            {
+              "time": 800,
+              "src": "/game-assets/frozen-wastes/actors/avalanche-colossus/2c58017ac18b/2.webp"
+            },
+            {
+              "time": 1200,
+              "src": "/game-assets/frozen-wastes/actors/avalanche-colossus/2c58017ac18b/3.webp"
+            },
+            {
+              "time": 1600,
+              "src": "/game-assets/frozen-wastes/actors/avalanche-colossus/2c58017ac18b/2.webp"
+            },
+            {
+              "time": 2000,
+              "src": "/game-assets/frozen-wastes/actors/avalanche-colossus/2c58017ac18b/1.webp"
+            }
+          ]
+        },
+        "wounded_idle": {
+          "duration": 2400,
+          "loop": true,
+          "impact": null,
+          "frames": [
+            {
+              "time": 0,
+              "src": "/game-assets/frozen-wastes/actors/avalanche-colossus/2c58017ac18b/0.webp"
+            },
+            {
+              "time": 400,
+              "src": "/game-assets/frozen-wastes/actors/avalanche-colossus/2c58017ac18b/1.webp"
+            },
+            {
+              "time": 800,
+              "src": "/game-assets/frozen-wastes/actors/avalanche-colossus/2c58017ac18b/2.webp"
+            },
+            {
+              "time": 1200,
+              "src": "/game-assets/frozen-wastes/actors/avalanche-colossus/2c58017ac18b/3.webp"
+            },
+            {
+              "time": 1600,
+              "src": "/game-assets/frozen-wastes/actors/avalanche-colossus/2c58017ac18b/2.webp"
+            },
+            {
+              "time": 2000,
+              "src": "/game-assets/frozen-wastes/actors/avalanche-colossus/2c58017ac18b/1.webp"
+            }
+          ]
+        },
+        "attack": {
+          "duration": 650,
+          "loop": false,
+          "impact": 260,
+          "frames": [
+            {
+              "time": 0,
+              "src": "/game-assets/frozen-wastes/actors/avalanche-colossus/2c58017ac18b/0.webp"
+            }
+          ]
+        },
+        "cast": {
+          "duration": 700,
+          "loop": false,
+          "impact": 300,
+          "frames": [
+            {
+              "time": 0,
+              "src": "/game-assets/frozen-wastes/actors/avalanche-colossus/2c58017ac18b/0.webp"
+            }
+          ]
+        },
+        "hit": {
+          "duration": 280,
+          "loop": false,
+          "impact": null,
+          "frames": [
+            {
+              "time": 0,
+              "src": "/game-assets/frozen-wastes/actors/avalanche-colossus/2c58017ac18b/0.webp"
+            }
+          ]
+        },
+        "guard": {
+          "duration": 600,
+          "loop": false,
+          "impact": null,
+          "frames": [
+            {
+              "time": 0,
+              "src": "/game-assets/frozen-wastes/actors/avalanche-colossus/2c58017ac18b/0.webp"
+            }
+          ]
+        },
+        "spawn": {
+          "duration": 1200,
+          "loop": false,
+          "impact": null,
+          "frames": [
+            {
+              "time": 0,
+              "src": "/game-assets/frozen-wastes/actors/avalanche-colossus/2c58017ac18b/0.webp"
+            }
+          ]
+        },
+        "die": {
+          "duration": 600,
+          "loop": false,
+          "impact": null,
+          "frames": [
+            {
+              "time": 0,
+              "src": "/game-assets/frozen-wastes/actors/avalanche-colossus/2c58017ac18b/0.webp",
+              "opacity": 1
+            },
+            {
+              "time": 100,
+              "src": "/game-assets/frozen-wastes/actors/avalanche-colossus/2c58017ac18b/0.webp",
+              "opacity": 0.8333333333333334
+            },
+            {
+              "time": 200,
+              "src": "/game-assets/frozen-wastes/actors/avalanche-colossus/2c58017ac18b/0.webp",
+              "opacity": 0.6666666666666667
+            },
+            {
+              "time": 300,
+              "src": "/game-assets/frozen-wastes/actors/avalanche-colossus/2c58017ac18b/0.webp",
+              "opacity": 0.5
+            },
+            {
+              "time": 400,
+              "src": "/game-assets/frozen-wastes/actors/avalanche-colossus/2c58017ac18b/0.webp",
+              "opacity": 0.33333333333333337
+            },
+            {
+              "time": 500,
+              "src": "/game-assets/frozen-wastes/actors/avalanche-colossus/2c58017ac18b/0.webp",
+              "opacity": 0.16666666666666663
+            },
+            {
+              "time": 600,
+              "src": "/game-assets/frozen-wastes/actors/avalanche-colossus/2c58017ac18b/0.webp",
+              "opacity": 0
+            }
+          ]
+        }
+      }
+    },
+    "rime-hauler": {
+      "size": [
+        640,
+        587
+      ],
+      "anchor": [
+        320,
+        560
+      ],
+      "states": {
+        "idle": {
+          "duration": 2100,
+          "loop": true,
+          "impact": null,
+          "frames": [
+            {
+              "time": 0,
+              "src": "/game-assets/frozen-wastes/actors/rime-hauler/ae84bc883a9f/0.webp"
+            },
+            {
+              "time": 350,
+              "src": "/game-assets/frozen-wastes/actors/rime-hauler/ae84bc883a9f/1.webp"
+            },
+            {
+              "time": 700,
+              "src": "/game-assets/frozen-wastes/actors/rime-hauler/ae84bc883a9f/2.webp"
+            },
+            {
+              "time": 1050,
+              "src": "/game-assets/frozen-wastes/actors/rime-hauler/ae84bc883a9f/3.webp"
+            },
+            {
+              "time": 1400,
+              "src": "/game-assets/frozen-wastes/actors/rime-hauler/ae84bc883a9f/2.webp"
+            },
+            {
+              "time": 1750,
+              "src": "/game-assets/frozen-wastes/actors/rime-hauler/ae84bc883a9f/1.webp"
+            }
+          ]
+        },
+        "wounded_idle": {
+          "duration": 2100,
+          "loop": true,
+          "impact": null,
+          "frames": [
+            {
+              "time": 0,
+              "src": "/game-assets/frozen-wastes/actors/rime-hauler/ae84bc883a9f/0.webp"
+            },
+            {
+              "time": 350,
+              "src": "/game-assets/frozen-wastes/actors/rime-hauler/ae84bc883a9f/1.webp"
+            },
+            {
+              "time": 700,
+              "src": "/game-assets/frozen-wastes/actors/rime-hauler/ae84bc883a9f/2.webp"
+            },
+            {
+              "time": 1050,
+              "src": "/game-assets/frozen-wastes/actors/rime-hauler/ae84bc883a9f/3.webp"
+            },
+            {
+              "time": 1400,
+              "src": "/game-assets/frozen-wastes/actors/rime-hauler/ae84bc883a9f/2.webp"
+            },
+            {
+              "time": 1750,
+              "src": "/game-assets/frozen-wastes/actors/rime-hauler/ae84bc883a9f/1.webp"
+            }
+          ]
+        },
+        "attack": {
+          "duration": 650,
+          "loop": false,
+          "impact": 260,
+          "frames": [
+            {
+              "time": 0,
+              "src": "/game-assets/frozen-wastes/actors/rime-hauler/ae84bc883a9f/0.webp"
+            }
+          ]
+        },
+        "cast": {
+          "duration": 700,
+          "loop": false,
+          "impact": 300,
+          "frames": [
+            {
+              "time": 0,
+              "src": "/game-assets/frozen-wastes/actors/rime-hauler/ae84bc883a9f/0.webp"
+            }
+          ]
+        },
+        "hit": {
+          "duration": 280,
+          "loop": false,
+          "impact": null,
+          "frames": [
+            {
+              "time": 0,
+              "src": "/game-assets/frozen-wastes/actors/rime-hauler/ae84bc883a9f/0.webp"
+            }
+          ]
+        },
+        "guard": {
+          "duration": 600,
+          "loop": false,
+          "impact": null,
+          "frames": [
+            {
+              "time": 0,
+              "src": "/game-assets/frozen-wastes/actors/rime-hauler/ae84bc883a9f/0.webp"
+            }
+          ]
+        },
+        "spawn": {
+          "duration": 1200,
+          "loop": false,
+          "impact": null,
+          "frames": [
+            {
+              "time": 0,
+              "src": "/game-assets/frozen-wastes/actors/rime-hauler/ae84bc883a9f/0.webp"
+            }
+          ]
+        },
+        "die": {
+          "duration": 600,
+          "loop": false,
+          "impact": null,
+          "frames": [
+            {
+              "time": 0,
+              "src": "/game-assets/frozen-wastes/actors/rime-hauler/ae84bc883a9f/0.webp",
+              "opacity": 1
+            },
+            {
+              "time": 100,
+              "src": "/game-assets/frozen-wastes/actors/rime-hauler/ae84bc883a9f/0.webp",
+              "opacity": 0.8333333333333334
+            },
+            {
+              "time": 200,
+              "src": "/game-assets/frozen-wastes/actors/rime-hauler/ae84bc883a9f/0.webp",
+              "opacity": 0.6666666666666667
+            },
+            {
+              "time": 300,
+              "src": "/game-assets/frozen-wastes/actors/rime-hauler/ae84bc883a9f/0.webp",
+              "opacity": 0.5
+            },
+            {
+              "time": 400,
+              "src": "/game-assets/frozen-wastes/actors/rime-hauler/ae84bc883a9f/0.webp",
+              "opacity": 0.33333333333333337
+            },
+            {
+              "time": 500,
+              "src": "/game-assets/frozen-wastes/actors/rime-hauler/ae84bc883a9f/0.webp",
+              "opacity": 0.16666666666666663
+            },
+            {
+              "time": 600,
+              "src": "/game-assets/frozen-wastes/actors/rime-hauler/ae84bc883a9f/0.webp",
+              "opacity": 0
+            }
+          ]
+        }
       }
     }
   },
@@ -35958,6 +38470,2224 @@
       },
       "template": "070283f1fb65b07531cec7b32c653ffc96a7adacde1c2ce4daca1f3b4ed78c9e",
       "changedProtectedPixels": 0
+    },
+    {
+      "source": "assets/characters/dragon-frost-mammoth/animations/idle-2026-10-13/frame-00.png",
+      "sha256": "a5f6c490929895468757e688cf273e6a324b42cfe2a84313580be255d7e73034",
+      "status": "Unreviewed",
+      "evidenceId": null,
+      "output": "frozen-wastes/actors/dragon-frost-mammoth/0fc1b814852e/0.webp",
+      "outputSha256": "c07712b10c9fb81e64d951ebadabea3c09850b66983df4e70750940a022f5c73",
+      "transform": {
+        "width": 640,
+        "withoutEnlargement": true,
+        "format": "webp",
+        "quality": 88,
+        "alphaQuality": 100,
+        "lossless": true
+      },
+      "encodedBytes": 161112,
+      "decodedBytes": 1638400
+    },
+    {
+      "source": "assets/characters/dragon-frost-mammoth/animations/idle-2026-10-13/frame-01.png",
+      "sha256": "4f55e42dcea14aed242b06fd1ad55a115f85005817a3bc2a1d696d0dcec16d4c",
+      "status": "Unreviewed",
+      "evidenceId": null,
+      "output": "frozen-wastes/actors/dragon-frost-mammoth/0fc1b814852e/1.webp",
+      "outputSha256": "00f6a20ea7285b749fd96ed67e3f63b725817ed4c982b4ba7d653cd841bb4f39",
+      "transform": {
+        "width": 640,
+        "withoutEnlargement": true,
+        "format": "webp",
+        "quality": 88,
+        "alphaQuality": 100,
+        "lossless": true
+      },
+      "encodedBytes": 164254,
+      "decodedBytes": 1638400
+    },
+    {
+      "source": "assets/characters/dragon-frost-mammoth/animations/idle-2026-10-13/frame-02.png",
+      "sha256": "9fc756cf402bbc271797fbe3a888993d4fbbb2c188b3c42b7e50347764a29062",
+      "status": "Unreviewed",
+      "evidenceId": null,
+      "output": "frozen-wastes/actors/dragon-frost-mammoth/0fc1b814852e/2.webp",
+      "outputSha256": "d1f1de9fd54131a4250bdc61a30312718b5d38bee8ea779dad1f6832da9a8ae3",
+      "transform": {
+        "width": 640,
+        "withoutEnlargement": true,
+        "format": "webp",
+        "quality": 88,
+        "alphaQuality": 100,
+        "lossless": true
+      },
+      "encodedBytes": 168968,
+      "decodedBytes": 1638400
+    },
+    {
+      "source": "assets/characters/dragon-frost-mammoth/animations/idle-2026-10-13/frame-03.png",
+      "sha256": "ad0da8684e3dd5cdc08462a6deecf9fa36f8c56edf183aa6031d195ec04f0a7d",
+      "status": "Unreviewed",
+      "evidenceId": null,
+      "output": "frozen-wastes/actors/dragon-frost-mammoth/0fc1b814852e/3.webp",
+      "outputSha256": "88cd18e91c9b34a69ec5d0f97b2306cfd6bc4aeefc53ea4670acae0aa94cc3e6",
+      "transform": {
+        "width": 640,
+        "withoutEnlargement": true,
+        "format": "webp",
+        "quality": 88,
+        "alphaQuality": 100,
+        "lossless": true
+      },
+      "encodedBytes": 172646,
+      "decodedBytes": 1638400
+    },
+    {
+      "source": "assets/characters/dragon-rime-antler/animations/idle-2026-10-13/frame-00.png",
+      "sha256": "1427792cc7f9533c5013e8c409ab7bd05d5eb65dc3e500d14b8a7b3cb80f77ae",
+      "status": "Unreviewed",
+      "evidenceId": null,
+      "output": "frozen-wastes/actors/dragon-rime-antler/6efe4057fcca/0.webp",
+      "outputSha256": "398a774deea482458eaf25677c9753e95b6f974ec4c27a7d5101212af9a4714b",
+      "transform": {
+        "width": 640,
+        "withoutEnlargement": true,
+        "format": "webp",
+        "quality": 88,
+        "alphaQuality": 100,
+        "lossless": true
+      },
+      "encodedBytes": 153544,
+      "decodedBytes": 1638400
+    },
+    {
+      "source": "assets/characters/dragon-rime-antler/animations/idle-2026-10-13/frame-01.png",
+      "sha256": "2fb05b4dd286fed852317386012cc7acc801ffc2cdca43fac2fb9c323bf7eaa5",
+      "status": "Unreviewed",
+      "evidenceId": null,
+      "output": "frozen-wastes/actors/dragon-rime-antler/6efe4057fcca/1.webp",
+      "outputSha256": "fa3ac840f37d1b16ada60a55a0cb7daeabf6143dc53c921ba4034ba5787695a6",
+      "transform": {
+        "width": 640,
+        "withoutEnlargement": true,
+        "format": "webp",
+        "quality": 88,
+        "alphaQuality": 100,
+        "lossless": true
+      },
+      "encodedBytes": 154190,
+      "decodedBytes": 1638400
+    },
+    {
+      "source": "assets/characters/dragon-rime-antler/animations/idle-2026-10-13/frame-02.png",
+      "sha256": "7252b32b5021b841290e979418d948b17f9b71b37c413d9dc8f915ab37931244",
+      "status": "Unreviewed",
+      "evidenceId": null,
+      "output": "frozen-wastes/actors/dragon-rime-antler/6efe4057fcca/2.webp",
+      "outputSha256": "8285b4d9345b915f959afcff2b354618068b7b608473257e8b9c490233ff573b",
+      "transform": {
+        "width": 640,
+        "withoutEnlargement": true,
+        "format": "webp",
+        "quality": 88,
+        "alphaQuality": 100,
+        "lossless": true
+      },
+      "encodedBytes": 158416,
+      "decodedBytes": 1638400
+    },
+    {
+      "source": "assets/characters/dragon-rime-antler/animations/idle-2026-10-13/frame-03.png",
+      "sha256": "0914ff338c31cc80c6d7e74c34b689ba78978aabfdc27e5e722b1f8704e65e79",
+      "status": "Unreviewed",
+      "evidenceId": null,
+      "output": "frozen-wastes/actors/dragon-rime-antler/6efe4057fcca/3.webp",
+      "outputSha256": "e49c49d0b667d71df4d623515c1c19ea5eadfebd68b5bd9cd5a5286e9f3f7694",
+      "transform": {
+        "width": 640,
+        "withoutEnlargement": true,
+        "format": "webp",
+        "quality": 88,
+        "alphaQuality": 100,
+        "lossless": true
+      },
+      "encodedBytes": 160366,
+      "decodedBytes": 1638400
+    },
+    {
+      "source": "assets/characters/rimejaw-scavenger/animations/idle-2026-10-13/frame-00.png",
+      "sha256": "6fe8a735d7d81729e47379b777ef01bfc81c7b08ead6bd76b992a30994546fc6",
+      "status": "Unreviewed",
+      "evidenceId": null,
+      "output": "frozen-wastes/actors/rimejaw-scavenger/7b619bf5cfa5/0.webp",
+      "outputSha256": "14ef7aa22183831411f8267c97971c7e651acac379ee46777a2a811e84c835ae",
+      "transform": {
+        "width": 640,
+        "withoutEnlargement": true,
+        "format": "webp",
+        "quality": 88,
+        "alphaQuality": 100,
+        "lossless": true
+      },
+      "encodedBytes": 137770,
+      "decodedBytes": 1638400
+    },
+    {
+      "source": "assets/characters/rimejaw-scavenger/animations/idle-2026-10-13/frame-01.png",
+      "sha256": "614a7475fc469c2c833f8698f3df6d03cf946135d57544841fbe69a4a8353cc5",
+      "status": "Unreviewed",
+      "evidenceId": null,
+      "output": "frozen-wastes/actors/rimejaw-scavenger/7b619bf5cfa5/1.webp",
+      "outputSha256": "707e3d035cade439c5bba9e96eda6684fd978f8413d8ec64eded05ed50c0f248",
+      "transform": {
+        "width": 640,
+        "withoutEnlargement": true,
+        "format": "webp",
+        "quality": 88,
+        "alphaQuality": 100,
+        "lossless": true
+      },
+      "encodedBytes": 139520,
+      "decodedBytes": 1638400
+    },
+    {
+      "source": "assets/characters/rimejaw-scavenger/animations/idle-2026-10-13/frame-02.png",
+      "sha256": "8d0f9d2d1b3080c09669b5f392f4a08aceca77e98b658a3b7f92df8c5b9fd568",
+      "status": "Unreviewed",
+      "evidenceId": null,
+      "output": "frozen-wastes/actors/rimejaw-scavenger/7b619bf5cfa5/2.webp",
+      "outputSha256": "de5f4f2579de70c397146070b8c8232a30aeab90e828febe56716f94d8878337",
+      "transform": {
+        "width": 640,
+        "withoutEnlargement": true,
+        "format": "webp",
+        "quality": 88,
+        "alphaQuality": 100,
+        "lossless": true
+      },
+      "encodedBytes": 141474,
+      "decodedBytes": 1638400
+    },
+    {
+      "source": "assets/characters/rimejaw-scavenger/animations/idle-2026-10-13/frame-03.png",
+      "sha256": "2b1940a006fbbbba8e52443be3d3e450dfa9fcbcc6a3de16ad5914aeebfd95d5",
+      "status": "Unreviewed",
+      "evidenceId": null,
+      "output": "frozen-wastes/actors/rimejaw-scavenger/7b619bf5cfa5/3.webp",
+      "outputSha256": "54cdb62c7cd1f68995ff0ba127bb00b1f903e3b97ffa689bffa1ec343abdd713",
+      "transform": {
+        "width": 640,
+        "withoutEnlargement": true,
+        "format": "webp",
+        "quality": 88,
+        "alphaQuality": 100,
+        "lossless": true
+      },
+      "encodedBytes": 145034,
+      "decodedBytes": 1638400
+    },
+    {
+      "source": "assets/characters/shardstep-skitterer/animations/idle-2026-10-13/frames/idle-00.png",
+      "sha256": "e734a8b283c16362d7b3fe9b4fb4cf52cfb3167b3a6cb3a23257d47342298cab",
+      "status": "Unreviewed",
+      "evidenceId": null,
+      "output": "frozen-wastes/actors/shardstep-skitterer/6622b1e49f2f/0.webp",
+      "outputSha256": "7001b4af5b25d38e346c5546ceb05a32d6cfbf2b152fc51664d7f74869409901",
+      "transform": {
+        "width": 640,
+        "withoutEnlargement": true,
+        "format": "webp",
+        "quality": 88,
+        "alphaQuality": 100,
+        "lossless": true
+      },
+      "encodedBytes": 256034,
+      "decodedBytes": 1638400
+    },
+    {
+      "source": "assets/characters/shardstep-skitterer/animations/idle-2026-10-13/frames/idle-01.png",
+      "sha256": "5eefcba36db6a14b650e9d572ccff5624ded5d20710acf339c5263e9cc397299",
+      "status": "Unreviewed",
+      "evidenceId": null,
+      "output": "frozen-wastes/actors/shardstep-skitterer/6622b1e49f2f/1.webp",
+      "outputSha256": "2302c281b72cd12735e66711031c030bcb6e2610873d211e7ffafc0d72ed15a2",
+      "transform": {
+        "width": 640,
+        "withoutEnlargement": true,
+        "format": "webp",
+        "quality": 88,
+        "alphaQuality": 100,
+        "lossless": true
+      },
+      "encodedBytes": 255006,
+      "decodedBytes": 1638400
+    },
+    {
+      "source": "assets/characters/shardstep-skitterer/animations/idle-2026-10-13/frames/idle-02.png",
+      "sha256": "e734a8b283c16362d7b3fe9b4fb4cf52cfb3167b3a6cb3a23257d47342298cab",
+      "status": "Unreviewed",
+      "evidenceId": null,
+      "output": "frozen-wastes/actors/shardstep-skitterer/6622b1e49f2f/2.webp",
+      "outputSha256": "7001b4af5b25d38e346c5546ceb05a32d6cfbf2b152fc51664d7f74869409901",
+      "transform": {
+        "width": 640,
+        "withoutEnlargement": true,
+        "format": "webp",
+        "quality": 88,
+        "alphaQuality": 100,
+        "lossless": true
+      },
+      "encodedBytes": 256034,
+      "decodedBytes": 1638400
+    },
+    {
+      "source": "assets/characters/shardstep-skitterer/animations/idle-2026-10-13/frames/idle-03.png",
+      "sha256": "30deb6c0096bc8b8294d9c037790ba54146811925e6af00e1ff5e2aa91d5dc86",
+      "status": "Unreviewed",
+      "evidenceId": null,
+      "output": "frozen-wastes/actors/shardstep-skitterer/6622b1e49f2f/3.webp",
+      "outputSha256": "ded9dd463e14b3ddfd04243900f44aaa4c5bc5021ce628b3043d0db256dc6cbb",
+      "transform": {
+        "width": 640,
+        "withoutEnlargement": true,
+        "format": "webp",
+        "quality": 88,
+        "alphaQuality": 100,
+        "lossless": true
+      },
+      "encodedBytes": 261778,
+      "decodedBytes": 1638400
+    },
+    {
+      "source": "assets/characters/shardstep-skitterer/animations/idle-2026-10-13/frames/idle-04.png",
+      "sha256": "53448e7f94049cfd46a84c40d56fca2f0fe3f9059ded93de160935c9b9e6f21d",
+      "status": "Unreviewed",
+      "evidenceId": null,
+      "output": "frozen-wastes/actors/shardstep-skitterer/6622b1e49f2f/4.webp",
+      "outputSha256": "0c68ef7b894abe4ae9ebe2583470b95e3d44bf86bc9f9113bdee674b90658fba",
+      "transform": {
+        "width": 640,
+        "withoutEnlargement": true,
+        "format": "webp",
+        "quality": 88,
+        "alphaQuality": 100,
+        "lossless": true
+      },
+      "encodedBytes": 258706,
+      "decodedBytes": 1638400
+    },
+    {
+      "source": "assets/characters/shardstep-skitterer/animations/idle-2026-10-13/frames/idle-05.png",
+      "sha256": "30deb6c0096bc8b8294d9c037790ba54146811925e6af00e1ff5e2aa91d5dc86",
+      "status": "Unreviewed",
+      "evidenceId": null,
+      "output": "frozen-wastes/actors/shardstep-skitterer/6622b1e49f2f/5.webp",
+      "outputSha256": "ded9dd463e14b3ddfd04243900f44aaa4c5bc5021ce628b3043d0db256dc6cbb",
+      "transform": {
+        "width": 640,
+        "withoutEnlargement": true,
+        "format": "webp",
+        "quality": 88,
+        "alphaQuality": 100,
+        "lossless": true
+      },
+      "encodedBytes": 261778,
+      "decodedBytes": 1638400
+    },
+    {
+      "source": "assets/characters/whiteout-ray/animations/idle-2026-10-13/frame-00.png",
+      "sha256": "085115113aeced017b24b32cc0b76577462577c454098de42286d550e0296fae",
+      "status": "Unreviewed",
+      "evidenceId": null,
+      "output": "frozen-wastes/actors/whiteout-ray/4daf636f0eb8/0.webp",
+      "outputSha256": "42abb532ab080463fb2b8f66739a048be0dbe18f778a844f5ddf9695e2e1720d",
+      "transform": {
+        "width": 512,
+        "withoutEnlargement": true,
+        "format": "webp",
+        "quality": 88,
+        "alphaQuality": 100,
+        "lossless": true
+      },
+      "encodedBytes": 144358,
+      "decodedBytes": 1048576
+    },
+    {
+      "source": "assets/characters/whiteout-ray/animations/idle-2026-10-13/frame-01.png",
+      "sha256": "96f3189add893cdef0d382c00b088804128c13486b9ed373ff0a05db67a14ca8",
+      "status": "Unreviewed",
+      "evidenceId": null,
+      "output": "frozen-wastes/actors/whiteout-ray/4daf636f0eb8/1.webp",
+      "outputSha256": "b31b95686e0f444554a204a85615264b85a41258dbbf2cf474ff60a41427a587",
+      "transform": {
+        "width": 512,
+        "withoutEnlargement": true,
+        "format": "webp",
+        "quality": 88,
+        "alphaQuality": 100,
+        "lossless": true
+      },
+      "encodedBytes": 146108,
+      "decodedBytes": 1048576
+    },
+    {
+      "source": "assets/characters/whiteout-ray/animations/idle-2026-10-13/frame-02.png",
+      "sha256": "ce1a6b6db44f3c8c202deffb73888c2719fcc61f3c67badf0e7e0fab1007734e",
+      "status": "Unreviewed",
+      "evidenceId": null,
+      "output": "frozen-wastes/actors/whiteout-ray/4daf636f0eb8/2.webp",
+      "outputSha256": "d6c79652d8d39ce75af49c9e8a00c38910ec5f44cacb8b6790606d36bb1418e9",
+      "transform": {
+        "width": 512,
+        "withoutEnlargement": true,
+        "format": "webp",
+        "quality": 88,
+        "alphaQuality": 100,
+        "lossless": true
+      },
+      "encodedBytes": 128684,
+      "decodedBytes": 1048576
+    },
+    {
+      "source": "assets/characters/whiteout-ray/animations/idle-2026-10-13/frame-03.png",
+      "sha256": "fd913b6f20825fa3d8886dfa511e8028df96890ff328115e3a22c59e138a7643",
+      "status": "Unreviewed",
+      "evidenceId": null,
+      "output": "frozen-wastes/actors/whiteout-ray/4daf636f0eb8/3.webp",
+      "outputSha256": "68c17f95a47a15fa499fa11eaa42044ae6d884b052506eede730630a9c3f9751",
+      "transform": {
+        "width": 512,
+        "withoutEnlargement": true,
+        "format": "webp",
+        "quality": 88,
+        "alphaQuality": 100,
+        "lossless": true
+      },
+      "encodedBytes": 108898,
+      "decodedBytes": 1048576
+    },
+    {
+      "source": "assets/characters/whiteout-ray/animations/idle-2026-10-13/frame-04.png",
+      "sha256": "dedb1370b62470e52607d0201484944811668a564e2857aa37f83e1fc20de6cf",
+      "status": "Unreviewed",
+      "evidenceId": null,
+      "output": "frozen-wastes/actors/whiteout-ray/4daf636f0eb8/4.webp",
+      "outputSha256": "c90bec8eb9bede32213fcb4fa9ac58236552bdd8546cd1525c4817d5ccccd0d2",
+      "transform": {
+        "width": 512,
+        "withoutEnlargement": true,
+        "format": "webp",
+        "quality": 88,
+        "alphaQuality": 100,
+        "lossless": true
+      },
+      "encodedBytes": 107840,
+      "decodedBytes": 1048576
+    },
+    {
+      "source": "assets/characters/whiteout-ray/animations/idle-2026-10-13/frame-05.png",
+      "sha256": "3f1ef3bce38b32e4d10550382e96749d9ee1209b463c63ed318b3f8d409bba41",
+      "status": "Unreviewed",
+      "evidenceId": null,
+      "output": "frozen-wastes/actors/whiteout-ray/4daf636f0eb8/5.webp",
+      "outputSha256": "6d0fa6570d5887afdd3c14565b1acc3b31daf417ffc388456483ca7e0491a083",
+      "transform": {
+        "width": 512,
+        "withoutEnlargement": true,
+        "format": "webp",
+        "quality": 88,
+        "alphaQuality": 100,
+        "lossless": true
+      },
+      "encodedBytes": 130162,
+      "decodedBytes": 1048576
+    },
+    {
+      "source": "assets/characters/whiteout-ray/animations/idle-2026-10-13/frame-06.png",
+      "sha256": "4e5e54d7842eb974f4dea855a7e5da764608ce1aa22fac1fa4ab262a3ec9f25b",
+      "status": "Unreviewed",
+      "evidenceId": null,
+      "output": "frozen-wastes/actors/whiteout-ray/4daf636f0eb8/6.webp",
+      "outputSha256": "21af1a2e9fafff0372d4349d4375d6ce6df160cfb462cb21fcff02d90e958567",
+      "transform": {
+        "width": 512,
+        "withoutEnlargement": true,
+        "format": "webp",
+        "quality": 88,
+        "alphaQuality": 100,
+        "lossless": true
+      },
+      "encodedBytes": 141632,
+      "decodedBytes": 1048576
+    },
+    {
+      "source": "assets/characters/whiteout-ray/animations/idle-2026-10-13/frame-07.png",
+      "sha256": "860e63c392317ad6b798b0f691c75468c26df3c94e1f25dd9d817d92211db541",
+      "status": "Unreviewed",
+      "evidenceId": null,
+      "output": "frozen-wastes/actors/whiteout-ray/4daf636f0eb8/7.webp",
+      "outputSha256": "2baa4f646e77865b5773bbb8ca12e6bd88c927421e5b83ec65b15cd1d68653c9",
+      "transform": {
+        "width": 512,
+        "withoutEnlargement": true,
+        "format": "webp",
+        "quality": 88,
+        "alphaQuality": 100,
+        "lossless": true
+      },
+      "encodedBytes": 155244,
+      "decodedBytes": 1048576
+    },
+    {
+      "source": "assets/characters/coffinback-bastion/animations/idle-2026-10-13/frames/idle-00.png",
+      "sha256": "68f6212d5a1342577b5a2ad25832cd6a789fc096fb83d3e79e4b0207669207d2",
+      "status": "Unreviewed",
+      "evidenceId": null,
+      "output": "frozen-wastes/actors/coffinback-bastion/9fbc7ec8c31d/0.webp",
+      "outputSha256": "a4dce781b15f304d1fa92beffd647e58c746424c8d000d564a547d2adfb00213",
+      "transform": {
+        "width": 512,
+        "withoutEnlargement": true,
+        "format": "webp",
+        "quality": 88,
+        "alphaQuality": 100,
+        "lossless": true
+      },
+      "encodedBytes": 168370,
+      "decodedBytes": 1220608
+    },
+    {
+      "source": "assets/characters/coffinback-bastion/animations/idle-2026-10-13/frames/idle-01.png",
+      "sha256": "7edfbb87a3986f776544e446826a100770d8a28e0f1e0195d3fc9ae65344f0ff",
+      "status": "Unreviewed",
+      "evidenceId": null,
+      "output": "frozen-wastes/actors/coffinback-bastion/9fbc7ec8c31d/1.webp",
+      "outputSha256": "cfd32f77de8972addbec9c81bf1245f036e183b25f0565757c2133e8eae8e607",
+      "transform": {
+        "width": 512,
+        "withoutEnlargement": true,
+        "format": "webp",
+        "quality": 88,
+        "alphaQuality": 100,
+        "lossless": true
+      },
+      "encodedBytes": 172544,
+      "decodedBytes": 1220608
+    },
+    {
+      "source": "assets/characters/coffinback-bastion/animations/idle-2026-10-13/frames/idle-02.png",
+      "sha256": "db088b90f0c501eb44dd977c09332b4ce4c8f377eb50881397e59950bb8f2bda",
+      "status": "Unreviewed",
+      "evidenceId": null,
+      "output": "frozen-wastes/actors/coffinback-bastion/9fbc7ec8c31d/2.webp",
+      "outputSha256": "0ffa521d8170df7ae0a684934fee050dbdfde665280b2f2f2c490532a28868cc",
+      "transform": {
+        "width": 512,
+        "withoutEnlargement": true,
+        "format": "webp",
+        "quality": 88,
+        "alphaQuality": 100,
+        "lossless": true
+      },
+      "encodedBytes": 175390,
+      "decodedBytes": 1220608
+    },
+    {
+      "source": "assets/characters/coffinback-bastion/animations/idle-2026-10-13/frames/idle-03.png",
+      "sha256": "1cf14e00aa3e90d04fd7082dd1b97be30102aca33e41a8c3aa010a019864b940",
+      "status": "Unreviewed",
+      "evidenceId": null,
+      "output": "frozen-wastes/actors/coffinback-bastion/9fbc7ec8c31d/3.webp",
+      "outputSha256": "5b524edfc1435ad791f6f09e2a7f8b48f5c5d30615c8be085c75d75b0f25ca0f",
+      "transform": {
+        "width": 512,
+        "withoutEnlargement": true,
+        "format": "webp",
+        "quality": 88,
+        "alphaQuality": 100,
+        "lossless": true
+      },
+      "encodedBytes": 167986,
+      "decodedBytes": 1220608
+    },
+    {
+      "source": "assets/characters/coffinback-bastion/animations/idle-2026-10-13/frames/idle-04.png",
+      "sha256": "a06ec2150b815bca9970b8cab3665b6bc3fbdf6a5eb2f70f81585b202a2a78f4",
+      "status": "Unreviewed",
+      "evidenceId": null,
+      "output": "frozen-wastes/actors/coffinback-bastion/9fbc7ec8c31d/4.webp",
+      "outputSha256": "cb9b04dbdd8b596998019b8e92eed8ef5ab9a30869016fe793953d8e38b57576",
+      "transform": {
+        "width": 512,
+        "withoutEnlargement": true,
+        "format": "webp",
+        "quality": 88,
+        "alphaQuality": 100,
+        "lossless": true
+      },
+      "encodedBytes": 170216,
+      "decodedBytes": 1220608
+    },
+    {
+      "source": "assets/characters/coffinback-bastion/animations/idle-2026-10-13/frames/idle-05.png",
+      "sha256": "932f25a82399b21e031887c985686b99f48c20a997a1afedfd3c6abe75d93c8a",
+      "status": "Unreviewed",
+      "evidenceId": null,
+      "output": "frozen-wastes/actors/coffinback-bastion/9fbc7ec8c31d/5.webp",
+      "outputSha256": "3a30406a1f8daca50ab3dc0970e8edf03d3787b1858dcfd0649691a787de7507",
+      "transform": {
+        "width": 512,
+        "withoutEnlargement": true,
+        "format": "webp",
+        "quality": 88,
+        "alphaQuality": 100,
+        "lossless": true
+      },
+      "encodedBytes": 169682,
+      "decodedBytes": 1220608
+    },
+    {
+      "source": "assets/characters/coffinback-bastion/animations/idle-2026-10-13/frames/idle-06.png",
+      "sha256": "a2cfe4ae1f3aee97ba08f40dee373d6a583b03427dddef6c02f1291109188ce3",
+      "status": "Unreviewed",
+      "evidenceId": null,
+      "output": "frozen-wastes/actors/coffinback-bastion/9fbc7ec8c31d/6.webp",
+      "outputSha256": "3bc26f28b01f7c42a860b69820d9f724ce61e923a6bf51fc30c90383960dc8e6",
+      "transform": {
+        "width": 512,
+        "withoutEnlargement": true,
+        "format": "webp",
+        "quality": 88,
+        "alphaQuality": 100,
+        "lossless": true
+      },
+      "encodedBytes": 172562,
+      "decodedBytes": 1220608
+    },
+    {
+      "source": "assets/characters/coffinback-bastion/animations/idle-2026-10-13/frames/idle-07.png",
+      "sha256": "eb3bd508dde6b67fbe1d09a6527ef7e7c9f63c678df4f215e7d51494c8794f7e",
+      "status": "Unreviewed",
+      "evidenceId": null,
+      "output": "frozen-wastes/actors/coffinback-bastion/9fbc7ec8c31d/7.webp",
+      "outputSha256": "32a5cd39bb756dacfcac6961fb4c0cf4d441731a7f21330a85e4d939e2d38f81",
+      "transform": {
+        "width": 512,
+        "withoutEnlargement": true,
+        "format": "webp",
+        "quality": 88,
+        "alphaQuality": 100,
+        "lossless": true
+      },
+      "encodedBytes": 169214,
+      "decodedBytes": 1220608
+    },
+    {
+      "source": "assets/characters/hollowmask-oracle/animations/idle-2026-10-13/frame-00.png",
+      "sha256": "e06da2584f8cc371b740fc323070bdb6f1092d2bf368eb177b78a061b6629f89",
+      "status": "Unreviewed",
+      "evidenceId": null,
+      "output": "frozen-wastes/actors/hollowmask-oracle/cbd764916672/0.webp",
+      "outputSha256": "64c6ed24449cb081ac410f43574c6323842a6c86556801a4879610a733af8adb",
+      "transform": {
+        "width": 512,
+        "withoutEnlargement": true,
+        "format": "webp",
+        "quality": 88,
+        "alphaQuality": 100,
+        "lossless": true
+      },
+      "encodedBytes": 168096,
+      "decodedBytes": 1048576
+    },
+    {
+      "source": "assets/characters/hollowmask-oracle/animations/idle-2026-10-13/frame-01.png",
+      "sha256": "e1791bbebc0d50c0ab0314dd1119d4209f405956b6046a20ad95cb26f0750f73",
+      "status": "Unreviewed",
+      "evidenceId": null,
+      "output": "frozen-wastes/actors/hollowmask-oracle/cbd764916672/1.webp",
+      "outputSha256": "62f6f97ce92eddb59b2f5f8199eaf0b1d83d285ad5d53c9a71452701beb8c978",
+      "transform": {
+        "width": 512,
+        "withoutEnlargement": true,
+        "format": "webp",
+        "quality": 88,
+        "alphaQuality": 100,
+        "lossless": true
+      },
+      "encodedBytes": 173944,
+      "decodedBytes": 1048576
+    },
+    {
+      "source": "assets/characters/hollowmask-oracle/animations/idle-2026-10-13/frame-02.png",
+      "sha256": "41a7a8fa64e60a0398aa6fba3c03a5d9506040decf5a29e2f49f739d4f01c06a",
+      "status": "Unreviewed",
+      "evidenceId": null,
+      "output": "frozen-wastes/actors/hollowmask-oracle/cbd764916672/2.webp",
+      "outputSha256": "639d4972dcef09a25a1e65a427f50397e8c8f92110a50b6d448026a1399d36d9",
+      "transform": {
+        "width": 512,
+        "withoutEnlargement": true,
+        "format": "webp",
+        "quality": 88,
+        "alphaQuality": 100,
+        "lossless": true
+      },
+      "encodedBytes": 175340,
+      "decodedBytes": 1048576
+    },
+    {
+      "source": "assets/characters/hollowmask-oracle/animations/idle-2026-10-13/frame-03.png",
+      "sha256": "729e14429347d4bc060e7effe6ffe028d87b9377944a1cd370b7097a9829ce99",
+      "status": "Unreviewed",
+      "evidenceId": null,
+      "output": "frozen-wastes/actors/hollowmask-oracle/cbd764916672/3.webp",
+      "outputSha256": "ebaa3247b13781eaa076364982d2d025a456cf798edb9809a487090a09044e43",
+      "transform": {
+        "width": 512,
+        "withoutEnlargement": true,
+        "format": "webp",
+        "quality": 88,
+        "alphaQuality": 100,
+        "lossless": true
+      },
+      "encodedBytes": 169150,
+      "decodedBytes": 1048576
+    },
+    {
+      "source": "assets/characters/shardlance-stalker/animations/idle-2026-10-13/frames/idle-00.png",
+      "sha256": "f09771a55ba88fbdde2affb65fefc3c1d9f51ad4c5bae56c134ab7754f686d7b",
+      "status": "Unreviewed",
+      "evidenceId": null,
+      "output": "frozen-wastes/actors/shardlance-stalker/ec7e97805bf7/0.webp",
+      "outputSha256": "f61a7a0ccb46baaf7baacf05175f6281f10ba960ac34ad68c60a22e7efc0ef7a",
+      "transform": {
+        "width": 528,
+        "withoutEnlargement": true,
+        "format": "webp",
+        "quality": 88,
+        "alphaQuality": 100,
+        "lossless": true
+      },
+      "encodedBytes": 132242,
+      "decodedBytes": 1216512
+    },
+    {
+      "source": "assets/characters/shardlance-stalker/animations/idle-2026-10-13/frames/idle-01.png",
+      "sha256": "db7beb9752dc4f94af8372ebaf3d8680a4fb49070e4593d60023aa0507117165",
+      "status": "Unreviewed",
+      "evidenceId": null,
+      "output": "frozen-wastes/actors/shardlance-stalker/ec7e97805bf7/1.webp",
+      "outputSha256": "6a7fee3f36e78d3fae3af5b794389ce64ed0859e8001cd7d15660da6c0e98397",
+      "transform": {
+        "width": 528,
+        "withoutEnlargement": true,
+        "format": "webp",
+        "quality": 88,
+        "alphaQuality": 100,
+        "lossless": true
+      },
+      "encodedBytes": 136634,
+      "decodedBytes": 1216512
+    },
+    {
+      "source": "assets/characters/shardlance-stalker/animations/idle-2026-10-13/frames/idle-02.png",
+      "sha256": "bbbef6c80d8d7407696aca0f004fae8cce96588e04df2f7374ba4d40652e0ca8",
+      "status": "Unreviewed",
+      "evidenceId": null,
+      "output": "frozen-wastes/actors/shardlance-stalker/ec7e97805bf7/2.webp",
+      "outputSha256": "fb6a41885e0aeca36f6d39f3c6ce5adc773d1679cc704dc305925b5d50ff87ca",
+      "transform": {
+        "width": 528,
+        "withoutEnlargement": true,
+        "format": "webp",
+        "quality": 88,
+        "alphaQuality": 100,
+        "lossless": true
+      },
+      "encodedBytes": 142182,
+      "decodedBytes": 1216512
+    },
+    {
+      "source": "assets/characters/shardlance-stalker/animations/idle-2026-10-13/frames/idle-03.png",
+      "sha256": "6e48d57c30554b7d57e1a17738bd3948231ee6eae262c7925ae1e9cfb3df9565",
+      "status": "Unreviewed",
+      "evidenceId": null,
+      "output": "frozen-wastes/actors/shardlance-stalker/ec7e97805bf7/3.webp",
+      "outputSha256": "c3c15cae5079cea3cac88a61ecbbbe2abb9f5a6ccfa11074101bc2574e65cf5a",
+      "transform": {
+        "width": 528,
+        "withoutEnlargement": true,
+        "format": "webp",
+        "quality": 88,
+        "alphaQuality": 100,
+        "lossless": true
+      },
+      "encodedBytes": 135604,
+      "decodedBytes": 1216512
+    },
+    {
+      "source": "assets/characters/shardlance-stalker/animations/idle-2026-10-13/frames/idle-04.png",
+      "sha256": "86fe102faca04a9d97042b33cdae43bf39c2a623b692ba04ce204280597693e6",
+      "status": "Unreviewed",
+      "evidenceId": null,
+      "output": "frozen-wastes/actors/shardlance-stalker/ec7e97805bf7/4.webp",
+      "outputSha256": "1cb901812a8514351c3141440039ae94e26122ae9ed26d5fd8c0aaf880f92ffe",
+      "transform": {
+        "width": 528,
+        "withoutEnlargement": true,
+        "format": "webp",
+        "quality": 88,
+        "alphaQuality": 100,
+        "lossless": true
+      },
+      "encodedBytes": 132450,
+      "decodedBytes": 1216512
+    },
+    {
+      "source": "assets/characters/shardlance-stalker/animations/idle-2026-10-13/frames/idle-05.png",
+      "sha256": "a5b1bfd68ae2f76622a43a0b45a533c7f413e5fde5a99a9272e374c815a6010c",
+      "status": "Unreviewed",
+      "evidenceId": null,
+      "output": "frozen-wastes/actors/shardlance-stalker/ec7e97805bf7/5.webp",
+      "outputSha256": "8ea573589d4af1382059b162a91bb7987035336d21d4982e5a83b475629cc857",
+      "transform": {
+        "width": 528,
+        "withoutEnlargement": true,
+        "format": "webp",
+        "quality": 88,
+        "alphaQuality": 100,
+        "lossless": true
+      },
+      "encodedBytes": 131116,
+      "decodedBytes": 1216512
+    },
+    {
+      "source": "assets/characters/shardlance-stalker/animations/idle-2026-10-13/frames/idle-06.png",
+      "sha256": "a650a3b8303253e3b1b2618ffabd3bf417c97c71e0d3abc340e013d2d6a833d2",
+      "status": "Unreviewed",
+      "evidenceId": null,
+      "output": "frozen-wastes/actors/shardlance-stalker/ec7e97805bf7/6.webp",
+      "outputSha256": "70d1703916e0ad683a19b0a8d90498b0f98c96b36f40c82fbd8d17e718e8324d",
+      "transform": {
+        "width": 528,
+        "withoutEnlargement": true,
+        "format": "webp",
+        "quality": 88,
+        "alphaQuality": 100,
+        "lossless": true
+      },
+      "encodedBytes": 134260,
+      "decodedBytes": 1216512
+    },
+    {
+      "source": "assets/characters/shardlance-stalker/animations/idle-2026-10-13/frames/idle-07.png",
+      "sha256": "1da2eb8706f6eae36864afb9cca5b6011a486e2e6bb491d5b128cde3bbc27984",
+      "status": "Unreviewed",
+      "evidenceId": null,
+      "output": "frozen-wastes/actors/shardlance-stalker/ec7e97805bf7/7.webp",
+      "outputSha256": "1ecdb7f13c57e58537cfd6a1d3292c930647f5771bcd49a5e10e35af84ce2a5b",
+      "transform": {
+        "width": 528,
+        "withoutEnlargement": true,
+        "format": "webp",
+        "quality": 88,
+        "alphaQuality": 100,
+        "lossless": true
+      },
+      "encodedBytes": 131598,
+      "decodedBytes": 1216512
+    },
+    {
+      "source": "assets/characters/hoarveil-crone/animations/idle-2026-10-13/idle-00.png",
+      "sha256": "38f78fb7bcd84d0f29d80ddd546cbe72f6c1a3bb931e9faa5f43eeb850715426",
+      "status": "Unreviewed",
+      "evidenceId": null,
+      "output": "frozen-wastes/actors/hoarveil-crone/294884caceaf/0.webp",
+      "outputSha256": "309a71d7472d3110d1e16a959a9b1b34778725099ddc458bd887d7b3552f7739",
+      "transform": {
+        "width": 640,
+        "withoutEnlargement": true,
+        "format": "webp",
+        "quality": 88,
+        "alphaQuality": 100,
+        "lossless": true
+      },
+      "encodedBytes": 208718,
+      "decodedBytes": 1502720
+    },
+    {
+      "source": "assets/characters/hoarveil-crone/animations/idle-2026-10-13/idle-01.png",
+      "sha256": "d728a13a0de5b24d3f53228ce53a4898a76f9cfe9d7654ddb8753e5c0f766493",
+      "status": "Unreviewed",
+      "evidenceId": null,
+      "output": "frozen-wastes/actors/hoarveil-crone/294884caceaf/1.webp",
+      "outputSha256": "bb1bd480001874478707a7fa93e251775d2d2907ff0588b9fb427b9f38a6574f",
+      "transform": {
+        "width": 640,
+        "withoutEnlargement": true,
+        "format": "webp",
+        "quality": 88,
+        "alphaQuality": 100,
+        "lossless": true
+      },
+      "encodedBytes": 212670,
+      "decodedBytes": 1502720
+    },
+    {
+      "source": "assets/characters/hoarveil-crone/animations/idle-2026-10-13/idle-02.png",
+      "sha256": "2bf00708c62179e45008c0011b2e28fff59acb41835952d4ee389f9df532e0cc",
+      "status": "Unreviewed",
+      "evidenceId": null,
+      "output": "frozen-wastes/actors/hoarveil-crone/294884caceaf/2.webp",
+      "outputSha256": "4e0e2bb25bf7cc5a0c18837718c0c814aefadfdac43f58f4d62e1ac24f385184",
+      "transform": {
+        "width": 640,
+        "withoutEnlargement": true,
+        "format": "webp",
+        "quality": 88,
+        "alphaQuality": 100,
+        "lossless": true
+      },
+      "encodedBytes": 216710,
+      "decodedBytes": 1502720
+    },
+    {
+      "source": "assets/characters/hoarveil-crone/animations/idle-2026-10-13/idle-03.png",
+      "sha256": "129e512d7222ed82cd252323471a86a7277b24af113833f25457031f35259386",
+      "status": "Unreviewed",
+      "evidenceId": null,
+      "output": "frozen-wastes/actors/hoarveil-crone/294884caceaf/3.webp",
+      "outputSha256": "6312e1f16385eabf612b6ba38bc4807a31bdf33997505834bb3b94b2fa81f0e3",
+      "transform": {
+        "width": 640,
+        "withoutEnlargement": true,
+        "format": "webp",
+        "quality": 88,
+        "alphaQuality": 100,
+        "lossless": true
+      },
+      "encodedBytes": 210694,
+      "decodedBytes": 1502720
+    },
+    {
+      "source": "assets/characters/iceclamp-bombardier/animations/idle-2026-10-13/frames/idle-00.png",
+      "sha256": "56016718dc4f5042d529cff399e97d29160aeccd84cbd9384c2eca295992f22a",
+      "status": "Unreviewed",
+      "evidenceId": null,
+      "output": "frozen-wastes/actors/iceclamp-bombardier/72adf46c84b0/0.webp",
+      "outputSha256": "bf05650041377cb45f9e4015042603d918b229c18024ccb340e76bf0007cb9cc",
+      "transform": {
+        "width": 528,
+        "withoutEnlargement": true,
+        "format": "webp",
+        "quality": 88,
+        "alphaQuality": 100,
+        "lossless": true
+      },
+      "encodedBytes": 186530,
+      "decodedBytes": 1216512
+    },
+    {
+      "source": "assets/characters/iceclamp-bombardier/animations/idle-2026-10-13/frames/idle-01.png",
+      "sha256": "c20de703417af4c1dbb2ff877369c78a8edc31606d8abab47941c2f49c30b3d4",
+      "status": "Unreviewed",
+      "evidenceId": null,
+      "output": "frozen-wastes/actors/iceclamp-bombardier/72adf46c84b0/1.webp",
+      "outputSha256": "09cfa62b4bc69573d9eb405c10387d20e76c79541567447ac7d636bcfd9e7673",
+      "transform": {
+        "width": 528,
+        "withoutEnlargement": true,
+        "format": "webp",
+        "quality": 88,
+        "alphaQuality": 100,
+        "lossless": true
+      },
+      "encodedBytes": 199340,
+      "decodedBytes": 1216512
+    },
+    {
+      "source": "assets/characters/iceclamp-bombardier/animations/idle-2026-10-13/frames/idle-02.png",
+      "sha256": "c13e124f7bae3fecf05f8f45e62d81c297098437ce8ad78f458cada2e5f5c6ae",
+      "status": "Unreviewed",
+      "evidenceId": null,
+      "output": "frozen-wastes/actors/iceclamp-bombardier/72adf46c84b0/2.webp",
+      "outputSha256": "94e786d4990fb646bcad23151ac98e2500b1a76ab84630708a9b7aea02ec0d82",
+      "transform": {
+        "width": 528,
+        "withoutEnlargement": true,
+        "format": "webp",
+        "quality": 88,
+        "alphaQuality": 100,
+        "lossless": true
+      },
+      "encodedBytes": 200680,
+      "decodedBytes": 1216512
+    },
+    {
+      "source": "assets/characters/iceclamp-bombardier/animations/idle-2026-10-13/frames/idle-03.png",
+      "sha256": "1ec00b89ac74a3f4aba2630226d8a87c534f89a3fbb7377754b6927515a4f48e",
+      "status": "Unreviewed",
+      "evidenceId": null,
+      "output": "frozen-wastes/actors/iceclamp-bombardier/72adf46c84b0/3.webp",
+      "outputSha256": "4d4561f8915572a011d788ec57b491a13dd34904cffb646d776c90e793ada9f4",
+      "transform": {
+        "width": 528,
+        "withoutEnlargement": true,
+        "format": "webp",
+        "quality": 88,
+        "alphaQuality": 100,
+        "lossless": true
+      },
+      "encodedBytes": 199028,
+      "decodedBytes": 1216512
+    },
+    {
+      "source": "assets/characters/iceclamp-bombardier/animations/idle-2026-10-13/frames/idle-04.png",
+      "sha256": "40b5b4126a37ef102caa4d26f41d12e44d0d16d571a4f271b9e4dba72d218da2",
+      "status": "Unreviewed",
+      "evidenceId": null,
+      "output": "frozen-wastes/actors/iceclamp-bombardier/72adf46c84b0/4.webp",
+      "outputSha256": "6362548f2f8061f5f6e34a0a0c0e970e7dc2ab7d6e40315ce6388141847e4e55",
+      "transform": {
+        "width": 528,
+        "withoutEnlargement": true,
+        "format": "webp",
+        "quality": 88,
+        "alphaQuality": 100,
+        "lossless": true
+      },
+      "encodedBytes": 188518,
+      "decodedBytes": 1216512
+    },
+    {
+      "source": "assets/characters/iceclamp-bombardier/animations/idle-2026-10-13/frames/idle-05.png",
+      "sha256": "c80f30105d9fd4652be85f871e09ab5660e8bd2dca2e0f76e73d75aea3bf26d5",
+      "status": "Unreviewed",
+      "evidenceId": null,
+      "output": "frozen-wastes/actors/iceclamp-bombardier/72adf46c84b0/5.webp",
+      "outputSha256": "dfd36079bcb1df7f3355730f96ec570e2c6e5d1d1aaf90b3f3a7130befb80233",
+      "transform": {
+        "width": 528,
+        "withoutEnlargement": true,
+        "format": "webp",
+        "quality": 88,
+        "alphaQuality": 100,
+        "lossless": true
+      },
+      "encodedBytes": 194892,
+      "decodedBytes": 1216512
+    },
+    {
+      "source": "assets/characters/iceclamp-bombardier/animations/idle-2026-10-13/frames/idle-06.png",
+      "sha256": "31b2ba78e8c81d49384ae518b81befe5882d206e16d89e4db1844590e2c968b7",
+      "status": "Unreviewed",
+      "evidenceId": null,
+      "output": "frozen-wastes/actors/iceclamp-bombardier/72adf46c84b0/6.webp",
+      "outputSha256": "13715a88c5a84d4ce4bc9c57faded19bf73fce4c819cd4bcbaf5b92fa247c582",
+      "transform": {
+        "width": 528,
+        "withoutEnlargement": true,
+        "format": "webp",
+        "quality": 88,
+        "alphaQuality": 100,
+        "lossless": true
+      },
+      "encodedBytes": 190620,
+      "decodedBytes": 1216512
+    },
+    {
+      "source": "assets/characters/iceclamp-bombardier/animations/idle-2026-10-13/frames/idle-07.png",
+      "sha256": "8c03e3e8bd4a966522d47a069788a80673cb8d62c37cf25731dd93370f819205",
+      "status": "Unreviewed",
+      "evidenceId": null,
+      "output": "frozen-wastes/actors/iceclamp-bombardier/72adf46c84b0/7.webp",
+      "outputSha256": "7b0789afa9978053bd5ae653c47b71ced8caaa1bc4ca119b15cc76991d9b9f44",
+      "transform": {
+        "width": 528,
+        "withoutEnlargement": true,
+        "format": "webp",
+        "quality": 88,
+        "alphaQuality": 100,
+        "lossless": true
+      },
+      "encodedBytes": 185582,
+      "decodedBytes": 1216512
+    },
+    {
+      "source": "assets/characters/paleveil-moth/animations/idle-2026-10-13/frame-00.png",
+      "sha256": "a97e380a5d5d33d92e926729296719111fe1350bde7957f39c81378ce771caf5",
+      "status": "Unreviewed",
+      "evidenceId": null,
+      "output": "frozen-wastes/actors/paleveil-moth/eb87361eb1eb/0.webp",
+      "outputSha256": "a40fb3ef1d3d48b91acad67faf924bb4e79e5668fb4bc3c17089989b97d7b2ca",
+      "transform": {
+        "width": 640,
+        "withoutEnlargement": true,
+        "format": "webp",
+        "quality": 88,
+        "alphaQuality": 100,
+        "lossless": true
+      },
+      "encodedBytes": 276402,
+      "decodedBytes": 1638400
+    },
+    {
+      "source": "assets/characters/paleveil-moth/animations/idle-2026-10-13/frame-01.png",
+      "sha256": "81813013178660f96f13dd43e2aab24842c09571f0deabc9227ce54c467d7bb2",
+      "status": "Unreviewed",
+      "evidenceId": null,
+      "output": "frozen-wastes/actors/paleveil-moth/eb87361eb1eb/1.webp",
+      "outputSha256": "09a9bdeb066b34cf0d4f99c88a746de985bcd4a404feceee2f1a7df146a416d1",
+      "transform": {
+        "width": 640,
+        "withoutEnlargement": true,
+        "format": "webp",
+        "quality": 88,
+        "alphaQuality": 100,
+        "lossless": true
+      },
+      "encodedBytes": 292448,
+      "decodedBytes": 1638400
+    },
+    {
+      "source": "assets/characters/paleveil-moth/animations/idle-2026-10-13/frame-02.png",
+      "sha256": "4660832f76087b6f0681e42fac50f1e8280a8fb65554796484ee9846f2e14fdc",
+      "status": "Unreviewed",
+      "evidenceId": null,
+      "output": "frozen-wastes/actors/paleveil-moth/eb87361eb1eb/2.webp",
+      "outputSha256": "52247cbdc5d23154effe6cf3ebf5f31f50e676a790133e0f92c959b0358735eb",
+      "transform": {
+        "width": 640,
+        "withoutEnlargement": true,
+        "format": "webp",
+        "quality": 88,
+        "alphaQuality": 100,
+        "lossless": true
+      },
+      "encodedBytes": 295130,
+      "decodedBytes": 1638400
+    },
+    {
+      "source": "assets/characters/paleveil-moth/animations/idle-2026-10-13/frame-03.png",
+      "sha256": "fb8272ac7d14ccdfb7d60c10af54fa6adfbc89de76de3929e2abfb6b16de784d",
+      "status": "Unreviewed",
+      "evidenceId": null,
+      "output": "frozen-wastes/actors/paleveil-moth/eb87361eb1eb/3.webp",
+      "outputSha256": "89a8c10908d606e3cc57c8656771b4a7bed598d7fe62ced3e31ca2fcf6c9d2ee",
+      "transform": {
+        "width": 640,
+        "withoutEnlargement": true,
+        "format": "webp",
+        "quality": 88,
+        "alphaQuality": 100,
+        "lossless": true
+      },
+      "encodedBytes": 290574,
+      "decodedBytes": 1638400
+    },
+    {
+      "source": "assets/characters/cairnfrost-ursine/animations/idle-2026-10-13/frame-00.png",
+      "sha256": "f0f2d19ce4502251be33c02db7ebcefde2f336c22bcef6b0b66e8674f4ec03e5",
+      "status": "Unreviewed",
+      "evidenceId": null,
+      "output": "frozen-wastes/actors/cairnfrost-ursine/829555c18277/0.webp",
+      "outputSha256": "0076b7b00daf0cd74a0fee84bd9cfe54c0a291cc8ac7be67c51a8ffa94deca8c",
+      "transform": {
+        "width": 640,
+        "withoutEnlargement": true,
+        "format": "webp",
+        "quality": 88,
+        "alphaQuality": 100,
+        "lossless": true
+      },
+      "encodedBytes": 232970,
+      "decodedBytes": 1638400
+    },
+    {
+      "source": "assets/characters/cairnfrost-ursine/animations/idle-2026-10-13/frame-01.png",
+      "sha256": "ffcb548f4a2a026be578143cf009fae24cb23fcce51291517548192b89dcb868",
+      "status": "Unreviewed",
+      "evidenceId": null,
+      "output": "frozen-wastes/actors/cairnfrost-ursine/829555c18277/1.webp",
+      "outputSha256": "167a30112bfb7bce098d1145269928f84a46c639ee83b3d50201668e60b1418a",
+      "transform": {
+        "width": 640,
+        "withoutEnlargement": true,
+        "format": "webp",
+        "quality": 88,
+        "alphaQuality": 100,
+        "lossless": true
+      },
+      "encodedBytes": 232250,
+      "decodedBytes": 1638400
+    },
+    {
+      "source": "assets/characters/cairnfrost-ursine/animations/idle-2026-10-13/frame-02.png",
+      "sha256": "78f6b742184636e52b30ed4d30a443b26cb1917200106283bb8e75a568412fb3",
+      "status": "Unreviewed",
+      "evidenceId": null,
+      "output": "frozen-wastes/actors/cairnfrost-ursine/829555c18277/2.webp",
+      "outputSha256": "3da0658120545ab5e61e32da4638d5a7cf028eac0ff9e0d6191ef94337518451",
+      "transform": {
+        "width": 640,
+        "withoutEnlargement": true,
+        "format": "webp",
+        "quality": 88,
+        "alphaQuality": 100,
+        "lossless": true
+      },
+      "encodedBytes": 244790,
+      "decodedBytes": 1638400
+    },
+    {
+      "source": "assets/characters/cairnfrost-ursine/animations/idle-2026-10-13/frame-03.png",
+      "sha256": "f49adddc5d165ab1840e43c6fb94ebf4ba5d3220df0e572c8199010e19614d9a",
+      "status": "Unreviewed",
+      "evidenceId": null,
+      "output": "frozen-wastes/actors/cairnfrost-ursine/829555c18277/3.webp",
+      "outputSha256": "256ea3c684a2c525e243f8e763d067a65d9f0141945552f4e893e2ea25ae19d0",
+      "transform": {
+        "width": 640,
+        "withoutEnlargement": true,
+        "format": "webp",
+        "quality": 88,
+        "alphaQuality": 100,
+        "lossless": true
+      },
+      "encodedBytes": 243932,
+      "decodedBytes": 1638400
+    },
+    {
+      "source": "assets/characters/avalanche-colossus/animations/idle-2026-10-13/idle-00.png",
+      "sha256": "f9c4b67968bce5f93a88f5e55a676571c8d7e54b9b4e315ef98a93fb2841dede",
+      "status": "Unreviewed",
+      "evidenceId": null,
+      "output": "frozen-wastes/actors/avalanche-colossus/2c58017ac18b/0.webp",
+      "outputSha256": "ec3fddc94539a2da3bd62b11251280785be92884d2fbb501d75bf925af4647a2",
+      "transform": {
+        "width": 640,
+        "withoutEnlargement": true,
+        "format": "webp",
+        "quality": 88,
+        "alphaQuality": 100,
+        "lossless": true
+      },
+      "encodedBytes": 262206,
+      "decodedBytes": 1502720
+    },
+    {
+      "source": "assets/characters/avalanche-colossus/animations/idle-2026-10-13/idle-01.png",
+      "sha256": "58727ea0f55b5842fdab53d4aeaa4a7d43c44b5fe1cceac551c613e301868c71",
+      "status": "Unreviewed",
+      "evidenceId": null,
+      "output": "frozen-wastes/actors/avalanche-colossus/2c58017ac18b/1.webp",
+      "outputSha256": "b6d23bae30a3100bd97be63548f7b518a5e9a189062bddfd470a443a8495fd25",
+      "transform": {
+        "width": 640,
+        "withoutEnlargement": true,
+        "format": "webp",
+        "quality": 88,
+        "alphaQuality": 100,
+        "lossless": true
+      },
+      "encodedBytes": 275218,
+      "decodedBytes": 1502720
+    },
+    {
+      "source": "assets/characters/avalanche-colossus/animations/idle-2026-10-13/idle-02.png",
+      "sha256": "ec424c5a9e0434a6020954135e587284029fbdde8d9b47b2af77ac7ab53bd73b",
+      "status": "Unreviewed",
+      "evidenceId": null,
+      "output": "frozen-wastes/actors/avalanche-colossus/2c58017ac18b/2.webp",
+      "outputSha256": "289e04aed6dee50fa35ffc0e3e7f90e5e0ad17956602f53228560542883ec2f9",
+      "transform": {
+        "width": 640,
+        "withoutEnlargement": true,
+        "format": "webp",
+        "quality": 88,
+        "alphaQuality": 100,
+        "lossless": true
+      },
+      "encodedBytes": 294878,
+      "decodedBytes": 1502720
+    },
+    {
+      "source": "assets/characters/avalanche-colossus/animations/idle-2026-10-13/idle-03.png",
+      "sha256": "be374ac6d69a777142bb52f358a40d31a65ca4d5630fa68f7899ad24058fa3d0",
+      "status": "Unreviewed",
+      "evidenceId": null,
+      "output": "frozen-wastes/actors/avalanche-colossus/2c58017ac18b/3.webp",
+      "outputSha256": "64d95a41ee319b2a9dee80632671a6f2f0a979ff01e3bc1d62061145cbd406c5",
+      "transform": {
+        "width": 640,
+        "withoutEnlargement": true,
+        "format": "webp",
+        "quality": 88,
+        "alphaQuality": 100,
+        "lossless": true
+      },
+      "encodedBytes": 264984,
+      "decodedBytes": 1502720
+    },
+    {
+      "source": "assets/characters/abomination-rime-hauler/animations/idle-2026-10-13/idle-00.png",
+      "sha256": "23d0e246f1996a5e945f98c4afc17cdb145a60e5679a07564a2febb7b52eebdb",
+      "status": "Unreviewed",
+      "evidenceId": null,
+      "output": "frozen-wastes/actors/rime-hauler/ae84bc883a9f/0.webp",
+      "outputSha256": "d6cd16a9ce76bd01046e59ae1f0aef68c32806ac5943c89693864cf3f96353e8",
+      "transform": {
+        "width": 640,
+        "withoutEnlargement": true,
+        "format": "webp",
+        "quality": 88,
+        "alphaQuality": 100,
+        "lossless": true
+      },
+      "encodedBytes": 286900,
+      "decodedBytes": 1502720
+    },
+    {
+      "source": "assets/characters/abomination-rime-hauler/animations/idle-2026-10-13/idle-01.png",
+      "sha256": "1439ccefd0de200f6c8775aea3443a2396ff4405f02a072a2f21af6628ab9159",
+      "status": "Unreviewed",
+      "evidenceId": null,
+      "output": "frozen-wastes/actors/rime-hauler/ae84bc883a9f/1.webp",
+      "outputSha256": "7ec5e2324b9439d5bad24b83160c1b4d8e1c471fb3d1a34ed76b386956ad0e1a",
+      "transform": {
+        "width": 640,
+        "withoutEnlargement": true,
+        "format": "webp",
+        "quality": 88,
+        "alphaQuality": 100,
+        "lossless": true
+      },
+      "encodedBytes": 281384,
+      "decodedBytes": 1502720
+    },
+    {
+      "source": "assets/characters/abomination-rime-hauler/animations/idle-2026-10-13/idle-02.png",
+      "sha256": "2e041993054a3c5cb0bb340328346d154b0fbc812bf186642d3b01c4b534f15b",
+      "status": "Unreviewed",
+      "evidenceId": null,
+      "output": "frozen-wastes/actors/rime-hauler/ae84bc883a9f/2.webp",
+      "outputSha256": "eafb7b0619ae6bbd53773cd952670606db82c25d2f5571950dc14515d4528527",
+      "transform": {
+        "width": 640,
+        "withoutEnlargement": true,
+        "format": "webp",
+        "quality": 88,
+        "alphaQuality": 100,
+        "lossless": true
+      },
+      "encodedBytes": 294536,
+      "decodedBytes": 1502720
+    },
+    {
+      "source": "assets/characters/abomination-rime-hauler/animations/idle-2026-10-13/idle-03.png",
+      "sha256": "d012cb9d26aa159a078612dc950bfc2c0e15a4be23a4fd00f750ffbc92586672",
+      "status": "Unreviewed",
+      "evidenceId": null,
+      "output": "frozen-wastes/actors/rime-hauler/ae84bc883a9f/3.webp",
+      "outputSha256": "97eb654fd0419b44d4c9dc5d94e53fc6099dee94dea1a44db5b06393654294a1",
+      "transform": {
+        "width": 640,
+        "withoutEnlargement": true,
+        "format": "webp",
+        "quality": 88,
+        "alphaQuality": 100,
+        "lossless": true
+      },
+      "encodedBytes": 282224,
+      "decodedBytes": 1502720
+    },
+    {
+      "source": "assets/approvals/inbox/battle-map-frostgrave-causeway/r1/frostgrave-causeway-r1.png",
+      "sha256": "d1a0f5d4ba7d211ee96753d205df0f8328922fb9d342e878bafad44e4d702fee",
+      "status": "Approved",
+      "evidenceId": "a2f30e21-7023-499a-a09a-3343171d39c1",
+      "output": "frozen-wastes/backgrounds/frozen-wastes-d1a0f5d4ba7d.webp",
+      "outputSha256": "86bef939cddaca8cc0f22e5f6bd8ec0dd731e875f036a0351a85a53d0520a48f",
+      "transform": {
+        "width": 1672,
+        "withoutEnlargement": true,
+        "format": "webp",
+        "quality": 88,
+        "alphaQuality": 100,
+        "lossless": false
+      },
+      "encodedBytes": 116872,
+      "decodedBytes": 6293408
+    },
+    {
+      "source": "assets/approvals/inbox/battle-map-frostgrave-throne/r1/frostgrave-throne-r1.png",
+      "sha256": "5eb02d676142de9b0af43914118b53b29a19c6fde5792f8615aaaf6fc4612d4c",
+      "status": "Approved",
+      "evidenceId": "75069834-e49c-46bf-b778-4e36aadead09",
+      "output": "frozen-wastes/backgrounds/frozen-heart-5eb02d676142.webp",
+      "outputSha256": "0c0ccddb1cab11b7f7d26a378ba1c2249dc3ff36f575cb760d844ed1579b43b3",
+      "transform": {
+        "width": 1672,
+        "withoutEnlargement": true,
+        "format": "webp",
+        "quality": 88,
+        "alphaQuality": 100,
+        "lossless": false
+      },
+      "encodedBytes": 126378,
+      "decodedBytes": 6293408
+    },
+    {
+      "source": "assets/environments/expedition-paths/r1/frozen-wastes/combat/source.png",
+      "sourceSha256": "30690eb15162e3161ab297ec8024caec313ca98cba55367e00ce9196514f7c80",
+      "status": "Approved",
+      "evidenceId": "d5ca5543-d18b-4434-b7e4-3beee3dd1859",
+      "output": "expedition/paths/frozen-wastes/combat.webp",
+      "outputSha256": "2580491c7288d283cf7fa2be70be935601f39ec8cb2a37acbda0f06abe7c0062",
+      "width": 1672,
+      "height": 941,
+      "encodedBytes": 212486,
+      "decodedBytes": 6293408,
+      "transform": {
+        "operation": "encode-original-dimensions",
+        "format": "webp",
+        "quality": 90,
+        "alphaQuality": 100
+      },
+      "approvalBasis": "Deterministic derivative of the exact approved source; does not assert separate gallery approval for changed bytes."
+    },
+    {
+      "source": "assets/environments/expedition-paths/r1/frozen-wastes/mystery/source.png",
+      "sourceSha256": "b8fac3fd42cee2d9805576e7e3448bc55eea8c9fb4ad28816e1bb235be128e10",
+      "status": "Approved",
+      "evidenceId": "657fdec8-ea23-4c2e-b15f-68a6079758a6",
+      "output": "expedition/paths/frozen-wastes/mystery.webp",
+      "outputSha256": "8c38c5533e97cd2a209ce04001c13c487558924006a4efa928c4ba3d80b5fc7c",
+      "width": 1672,
+      "height": 941,
+      "encodedBytes": 167878,
+      "decodedBytes": 6293408,
+      "transform": {
+        "operation": "encode-original-dimensions",
+        "format": "webp",
+        "quality": 90,
+        "alphaQuality": 100
+      },
+      "approvalBasis": "Deterministic derivative of the exact approved source; does not assert separate gallery approval for changed bytes."
+    },
+    {
+      "source": "assets/environments/expedition-paths/r1/frozen-wastes/treasure/source.png",
+      "sourceSha256": "e06854352ee14fc2db280ee319f7b90b01095204ec0a5561ae881bc0008b2e05",
+      "status": "Approved",
+      "evidenceId": "837e6d89-9034-478d-b1e1-6fd3250b026e",
+      "output": "expedition/paths/frozen-wastes/treasure.webp",
+      "outputSha256": "873cd10233205b0338e0151ff343d1de749c3123225d6cb1d0e256ae3bbaf670",
+      "width": 1672,
+      "height": 941,
+      "encodedBytes": 200610,
+      "decodedBytes": 6293408,
+      "transform": {
+        "operation": "encode-original-dimensions",
+        "format": "webp",
+        "quality": 90,
+        "alphaQuality": 100
+      },
+      "approvalBasis": "Deterministic derivative of the exact approved source; does not assert separate gallery approval for changed bytes."
+    },
+    {
+      "source": "assets/environments/expedition-paths/r1/frozen-wastes/shop/source.png",
+      "sourceSha256": "b33f2f5bfd7aff85b1ea3b2a62592cb53b0843fdf6e0da019d55d7c19f8ca8d4",
+      "status": "Approved",
+      "evidenceId": "286d673b-f52e-4fae-b32d-2af4a90ddc0e",
+      "output": "expedition/paths/frozen-wastes/shop.webp",
+      "outputSha256": "8a0d1cb9b1bb57184f58e5eac12a50483b4d2cb416532edc3cb1206d0bff736a",
+      "width": 1672,
+      "height": 941,
+      "encodedBytes": 190286,
+      "decodedBytes": 6293408,
+      "transform": {
+        "operation": "encode-original-dimensions",
+        "format": "webp",
+        "quality": 90,
+        "alphaQuality": 100
+      },
+      "approvalBasis": "Deterministic derivative of the exact approved source; does not assert separate gallery approval for changed bytes."
+    },
+    {
+      "source": "assets/environments/expedition-paths/r1/frozen-wastes/elite/source.png",
+      "sourceSha256": "876e237457338c1151b9838a7e6ccbe137349c082a91e06c2f0807355fe32ef8",
+      "status": "Approved",
+      "evidenceId": "29aea3c1-c6d2-4dc4-95f4-82b2b3d243f9",
+      "output": "expedition/paths/frozen-wastes/elite.webp",
+      "outputSha256": "2ecff2bd781f181da45138598cec260abcdd740535f3bb6806334c1d2592dc3b",
+      "width": 1672,
+      "height": 941,
+      "encodedBytes": 225950,
+      "decodedBytes": 6293408,
+      "transform": {
+        "operation": "encode-original-dimensions",
+        "format": "webp",
+        "quality": 90,
+        "alphaQuality": 100
+      },
+      "approvalBasis": "Deterministic derivative of the exact approved source; does not assert separate gallery approval for changed bytes."
+    },
+    {
+      "source": "assets/environments/expedition-paths/r1/frozen-wastes/camp/source.png",
+      "sourceSha256": "57c976e838e5e4199b4bd320aea165a4d6b32983715b87895e16809a275a6007",
+      "status": "Approved",
+      "evidenceId": "15f2565e-df83-4741-a3d4-e5fd841166b3",
+      "output": "expedition/paths/frozen-wastes/camp.webp",
+      "outputSha256": "9922b5ee1e0094a6e3f2e22acfc84685d26d2de28a4d7da42f8f451b9dd25174",
+      "width": 1672,
+      "height": 941,
+      "encodedBytes": 175728,
+      "decodedBytes": 6293408,
+      "transform": {
+        "operation": "encode-original-dimensions",
+        "format": "webp",
+        "quality": 90,
+        "alphaQuality": 100
+      },
+      "approvalBasis": "Deterministic derivative of the exact approved source; does not assert separate gallery approval for changed bytes."
+    },
+    {
+      "source": "assets/environments/expedition-paths/r1/frozen-wastes/boss/source.png",
+      "sourceSha256": "1cdce6d1c1e515a26590ab7dabb8e46ef0a81e4c1d219ddb9078c992708048cc",
+      "status": "Approved",
+      "evidenceId": "b51211b0-3c3b-408b-80d7-3c1d5ce118a0",
+      "output": "expedition/paths/frozen-wastes/boss.webp",
+      "outputSha256": "350953088841387ac28ac52f7cc8cdeec03bbbc01b196f5966af249738c92240",
+      "width": 1672,
+      "height": 941,
+      "encodedBytes": 230562,
+      "decodedBytes": 6293408,
+      "transform": {
+        "operation": "encode-original-dimensions",
+        "format": "webp",
+        "quality": 90,
+        "alphaQuality": 100
+      },
+      "approvalBasis": "Deterministic derivative of the exact approved source; does not assert separate gallery approval for changed bytes."
+    },
+    {
+      "source": "assets/environments/expedition-paths/r1/forest/combat/source.png",
+      "sourceSha256": "566cb4e5eb24ad31955dd9845603810af237578907ee0a78ce6d0a3e4e708bda",
+      "status": "Approved",
+      "evidenceId": "478da48a-1c5a-4de2-8c7f-e6ee904eec20",
+      "output": "expedition/paths/forest/combat.webp",
+      "outputSha256": "1fdce64b06c09c9b82c11177ce0ca293f86fc4ed61e2ade08dfa469390246cfe",
+      "width": 1672,
+      "height": 941,
+      "encodedBytes": 229120,
+      "decodedBytes": 6293408,
+      "transform": {
+        "operation": "encode-original-dimensions",
+        "format": "webp",
+        "quality": 90,
+        "alphaQuality": 100
+      },
+      "approvalBasis": "Deterministic derivative of the exact approved source; does not assert separate gallery approval for changed bytes."
+    },
+    {
+      "source": "assets/environments/expedition-paths/r1/forest/mystery/source.png",
+      "sourceSha256": "c2eb7cd66f15a039108b4658b22099cdbceee6d51592cf19e107abbe3200db6d",
+      "status": "Approved",
+      "evidenceId": "fe632ebf-2a15-4c60-9aa3-25052f7a1728",
+      "output": "expedition/paths/forest/mystery.webp",
+      "outputSha256": "7e3d933e3631504b455cc9a4667af9efd2e3930641270f615b452d0bc176bae1",
+      "width": 1672,
+      "height": 941,
+      "encodedBytes": 237866,
+      "decodedBytes": 6293408,
+      "transform": {
+        "operation": "encode-original-dimensions",
+        "format": "webp",
+        "quality": 90,
+        "alphaQuality": 100
+      },
+      "approvalBasis": "Deterministic derivative of the exact approved source; does not assert separate gallery approval for changed bytes."
+    },
+    {
+      "source": "assets/environments/expedition-paths/r1/forest/treasure/source.png",
+      "sourceSha256": "ba826b9e1271ecb38ac3816a42ac28ba1ee16e767eec5b448c6e32da64e34a18",
+      "status": "Approved",
+      "evidenceId": "083f5468-0439-404e-b05a-3f460130e344",
+      "output": "expedition/paths/forest/treasure.webp",
+      "outputSha256": "f7ec0fd0f489079f78eb173ae4c36a6f5c76822c22cfe91473d04a07355bb1c9",
+      "width": 1672,
+      "height": 941,
+      "encodedBytes": 259974,
+      "decodedBytes": 6293408,
+      "transform": {
+        "operation": "encode-original-dimensions",
+        "format": "webp",
+        "quality": 90,
+        "alphaQuality": 100
+      },
+      "approvalBasis": "Deterministic derivative of the exact approved source; does not assert separate gallery approval for changed bytes."
+    },
+    {
+      "source": "assets/environments/expedition-paths/r1/forest/shop/source.png",
+      "sourceSha256": "5a9fb24b282814704752c92ce030d05e08333c84c15f3bf12cc7c1c4eca64e70",
+      "status": "Approved",
+      "evidenceId": "b5adac6c-e962-4be8-a535-73e73404957f",
+      "output": "expedition/paths/forest/shop.webp",
+      "outputSha256": "47edc1eb3db966db93b9026b9ea5a79fa2c4b04041c29b103724a4cf6b2262bf",
+      "width": 1672,
+      "height": 941,
+      "encodedBytes": 248696,
+      "decodedBytes": 6293408,
+      "transform": {
+        "operation": "encode-original-dimensions",
+        "format": "webp",
+        "quality": 90,
+        "alphaQuality": 100
+      },
+      "approvalBasis": "Deterministic derivative of the exact approved source; does not assert separate gallery approval for changed bytes."
+    },
+    {
+      "source": "assets/environments/expedition-paths/r1/forest/elite/source.png",
+      "sourceSha256": "11e674a7c7fc2b74b27b61b9965698a6e101660c09e419cc6bb49c54acad8d32",
+      "status": "Approved",
+      "evidenceId": "18d140d6-c65a-41f3-9466-70c06f6d4232",
+      "output": "expedition/paths/forest/elite.webp",
+      "outputSha256": "d00c2f27b48754f643b51e84872d93696e1084237b11da928f94f206e21b3ffb",
+      "width": 1672,
+      "height": 941,
+      "encodedBytes": 217394,
+      "decodedBytes": 6293408,
+      "transform": {
+        "operation": "encode-original-dimensions",
+        "format": "webp",
+        "quality": 90,
+        "alphaQuality": 100
+      },
+      "approvalBasis": "Deterministic derivative of the exact approved source; does not assert separate gallery approval for changed bytes."
+    },
+    {
+      "source": "assets/environments/expedition-paths/r1/forest/camp/source.png",
+      "sourceSha256": "6ad8f9533ea4dd746c2120193b6db53b86a6428d8def0eeca0d31efd34afba82",
+      "status": "Approved",
+      "evidenceId": "d74ee0b7-5e57-42ff-881c-1ee4bb693dbb",
+      "output": "expedition/paths/forest/camp.webp",
+      "outputSha256": "ba65ea5916690e4331ccdcd6ab1d0f1e7cf1c1411e31eece3e7f7c6e9e663bc4",
+      "width": 1672,
+      "height": 941,
+      "encodedBytes": 230540,
+      "decodedBytes": 6293408,
+      "transform": {
+        "operation": "encode-original-dimensions",
+        "format": "webp",
+        "quality": 90,
+        "alphaQuality": 100
+      },
+      "approvalBasis": "Deterministic derivative of the exact approved source; does not assert separate gallery approval for changed bytes."
+    },
+    {
+      "source": "assets/environments/expedition-paths/r1/forest/boss/source.png",
+      "sourceSha256": "c109cdec02f17964ae6be9ddf44b895bdbf849d4cfec3337a7608e9ae5ede5dd",
+      "status": "Approved",
+      "evidenceId": "7072e9f2-0098-48b8-9578-47abf5ed6cfe",
+      "output": "expedition/paths/forest/boss.webp",
+      "outputSha256": "684b5c56f1ce628bfecbf018df02a9ae7d7d2058982c744775b286bd87de8bda",
+      "width": 1672,
+      "height": 941,
+      "encodedBytes": 292500,
+      "decodedBytes": 6293408,
+      "transform": {
+        "operation": "encode-original-dimensions",
+        "format": "webp",
+        "quality": 90,
+        "alphaQuality": 100
+      },
+      "approvalBasis": "Deterministic derivative of the exact approved source; does not assert separate gallery approval for changed bytes."
+    },
+    {
+      "source": "assets/environments/expedition-paths/r1/infernal/combat/source.png",
+      "sourceSha256": "7944e5fd845d9e6712f0b2f79cf0baf06a347cb2bdcbabe5d83027a832381ffb",
+      "status": "Approved",
+      "evidenceId": "24ad0716-7e10-4cf9-b397-2f6bf7b1c1cf",
+      "output": "expedition/paths/infernal/combat.webp",
+      "outputSha256": "577b3791c5fc8d71d24fd80688b7ceafff4c49be53385ed533b658cc07d1c52c",
+      "width": 1672,
+      "height": 941,
+      "encodedBytes": 156928,
+      "decodedBytes": 6293408,
+      "transform": {
+        "operation": "encode-original-dimensions",
+        "format": "webp",
+        "quality": 90,
+        "alphaQuality": 100
+      },
+      "approvalBasis": "Deterministic derivative of the exact approved source; does not assert separate gallery approval for changed bytes."
+    },
+    {
+      "source": "assets/environments/expedition-paths/r1/infernal/mystery/source.png",
+      "sourceSha256": "c85b380c87ce57c92da5d0e1600e2dcdbae3dfb294d292004b0bb449d2720f3b",
+      "status": "Approved",
+      "evidenceId": "d0eaa4d4-c484-4267-bc8f-f4dabede3be7",
+      "output": "expedition/paths/infernal/mystery.webp",
+      "outputSha256": "66e620305fcf00b512e40b19bc8e45573723a14fed2183c0cb8e08d110ead51a",
+      "width": 1672,
+      "height": 941,
+      "encodedBytes": 136010,
+      "decodedBytes": 6293408,
+      "transform": {
+        "operation": "encode-original-dimensions",
+        "format": "webp",
+        "quality": 90,
+        "alphaQuality": 100
+      },
+      "approvalBasis": "Deterministic derivative of the exact approved source; does not assert separate gallery approval for changed bytes."
+    },
+    {
+      "source": "assets/environments/expedition-paths/r1/infernal/treasure/source.png",
+      "sourceSha256": "cb9696913fe8c8f8feefd808b19503953afd57b02397b27bf8bcf4eac0b912ea",
+      "status": "Approved",
+      "evidenceId": "ed321de4-ed3b-485a-a9a4-181546fbdc49",
+      "output": "expedition/paths/infernal/treasure.webp",
+      "outputSha256": "aa0c3330b252b7cd868afa81f42623b6b2522f92aba67426371cf8649452d5f0",
+      "width": 1672,
+      "height": 941,
+      "encodedBytes": 185258,
+      "decodedBytes": 6293408,
+      "transform": {
+        "operation": "encode-original-dimensions",
+        "format": "webp",
+        "quality": 90,
+        "alphaQuality": 100
+      },
+      "approvalBasis": "Deterministic derivative of the exact approved source; does not assert separate gallery approval for changed bytes."
+    },
+    {
+      "source": "assets/environments/expedition-paths/r1/infernal/shop/source.png",
+      "sourceSha256": "b0e0b5b6faa0dda70d2f4208b63577af9bce033275b3044162ee8a7f8be53321",
+      "status": "Approved",
+      "evidenceId": "5cbe7733-6731-4c3a-8be9-897c2fec8e8b",
+      "output": "expedition/paths/infernal/shop.webp",
+      "outputSha256": "36ff9521b7fdb37248e55a1cb86ec8d454f7660b4f8c589fc4c15c0152e6b3b0",
+      "width": 1672,
+      "height": 941,
+      "encodedBytes": 156234,
+      "decodedBytes": 6293408,
+      "transform": {
+        "operation": "encode-original-dimensions",
+        "format": "webp",
+        "quality": 90,
+        "alphaQuality": 100
+      },
+      "approvalBasis": "Deterministic derivative of the exact approved source; does not assert separate gallery approval for changed bytes."
+    },
+    {
+      "source": "assets/environments/expedition-paths/r1/infernal/elite/source.png",
+      "sourceSha256": "c9464b68beaeea3f7472e43e8c0daa0faa9ed67df65ae8ee7eef5785c4881002",
+      "status": "Approved",
+      "evidenceId": "2df5f139-f3f7-419f-b9f4-74630f86377e",
+      "output": "expedition/paths/infernal/elite.webp",
+      "outputSha256": "08b48287e85ee19593e3e83a01b6a0f3d43e3116085f767a7f8fea0a9e74b897",
+      "width": 1672,
+      "height": 941,
+      "encodedBytes": 168518,
+      "decodedBytes": 6293408,
+      "transform": {
+        "operation": "encode-original-dimensions",
+        "format": "webp",
+        "quality": 90,
+        "alphaQuality": 100
+      },
+      "approvalBasis": "Deterministic derivative of the exact approved source; does not assert separate gallery approval for changed bytes."
+    },
+    {
+      "source": "assets/environments/expedition-paths/r1/infernal/camp/source.png",
+      "sourceSha256": "e4bb93709acbf97d0c484d15e5d12f45eb74b476e2406a4c8768b6ba435f97de",
+      "status": "Approved",
+      "evidenceId": "e36c37e1-5286-481e-95fe-9a38ca1c035f",
+      "output": "expedition/paths/infernal/camp.webp",
+      "outputSha256": "380df80ff7cce7dbcbe47e393c16c2e5a0b57dc689d8e7d356b901aac7e9377d",
+      "width": 1672,
+      "height": 941,
+      "encodedBytes": 144534,
+      "decodedBytes": 6293408,
+      "transform": {
+        "operation": "encode-original-dimensions",
+        "format": "webp",
+        "quality": 90,
+        "alphaQuality": 100
+      },
+      "approvalBasis": "Deterministic derivative of the exact approved source; does not assert separate gallery approval for changed bytes."
+    },
+    {
+      "source": "assets/environments/expedition-paths/r1/infernal/boss/source.png",
+      "sourceSha256": "51d086f5ace16018f06d82768085bfb879d9a6f0eec8bdd1fe9f35f59b93438d",
+      "status": "Approved",
+      "evidenceId": "feb86c36-6184-4d04-8758-f41abae28924",
+      "output": "expedition/paths/infernal/boss.webp",
+      "outputSha256": "dfd40dc24021584dc5853881cc24dc36b7755d00e73b5e01b88f35247e2d23ce",
+      "width": 1672,
+      "height": 941,
+      "encodedBytes": 150290,
+      "decodedBytes": 6293408,
+      "transform": {
+        "operation": "encode-original-dimensions",
+        "format": "webp",
+        "quality": 90,
+        "alphaQuality": 100
+      },
+      "approvalBasis": "Deterministic derivative of the exact approved source; does not assert separate gallery approval for changed bytes."
+    },
+    {
+      "source": "assets/ui/expedition-concepts/r1/encounter-choice/source.png",
+      "sourceSha256": "e1b4a1786b8122d021df0360a875d6db9a4b3d6525c20acb82f54d838f68a0ca",
+      "status": "Approved",
+      "evidenceId": "4b05383a-d427-4d90-af87-bbc56d7d609b",
+      "output": "expedition/ui/card-frame.webp",
+      "outputSha256": "4190eae13bf88df4a1723f9b8e23b7278ae4e8a8388354d953c3507b68216d0a",
+      "width": 401,
+      "height": 625,
+      "encodedBytes": 9092,
+      "decodedBytes": 1002500,
+      "transform": {
+        "operation": "extract-approved-ui",
+        "crop": [
+          214,
+          202,
+          401,
+          625
+        ],
+        "clearInterior": [
+          16,
+          16,
+          369,
+          593
+        ],
+        "borderImageSlice": 16,
+        "format": "webp",
+        "quality": 90,
+        "alphaQuality": 100
+      },
+      "approvalBasis": "Deterministic derivative of the exact approved source; does not assert separate gallery approval for changed bytes."
+    },
+    {
+      "source": "assets/ui/expedition-concepts/r1/camp/source.png",
+      "sourceSha256": "e3a4618b301022401dfef0172db6ffca7b2e78241b94cdb15fa074ee47106706",
+      "status": "Approved",
+      "evidenceId": "e23682ff-9646-4879-bd2d-b4fc75f5f954",
+      "output": "expedition/ui/panel-frame.webp",
+      "outputSha256": "1fbbd152ee616f2bcc0885662c45deea6373d945c266bd330db841b15f7cd4aa",
+      "width": 524,
+      "height": 268,
+      "encodedBytes": 5658,
+      "decodedBytes": 561728,
+      "transform": {
+        "operation": "extract-approved-ui",
+        "crop": [
+          49,
+          608,
+          524,
+          268
+        ],
+        "clearInterior": [
+          24,
+          14,
+          476,
+          240
+        ],
+        "borderImageSlice": 24,
+        "format": "webp",
+        "quality": 90,
+        "alphaQuality": 100
+      },
+      "approvalBasis": "Deterministic derivative of the exact approved source; does not assert separate gallery approval for changed bytes."
+    },
+    {
+      "source": "assets/ui/expedition-concepts/r1/encounter-choice/source.png",
+      "sourceSha256": "e1b4a1786b8122d021df0360a875d6db9a4b3d6525c20acb82f54d838f68a0ca",
+      "status": "Approved",
+      "evidenceId": "4b05383a-d427-4d90-af87-bbc56d7d609b",
+      "output": "expedition/ui/button.webp",
+      "outputSha256": "d60ae7fef97795f7780bc22004e89b3f32beadbbeb7060a2ddf0ed1043187564",
+      "width": 324,
+      "height": 60,
+      "encodedBytes": 2780,
+      "decodedBytes": 77760,
+      "transform": {
+        "operation": "extract-approved-ui",
+        "crop": [
+          251,
+          741,
+          324,
+          60
+        ],
+        "textFreePatch": [
+          276,
+          760,
+          35,
+          21
+        ],
+        "replace": [
+          28,
+          13,
+          268,
+          34
+        ],
+        "format": "webp",
+        "quality": 90,
+        "alphaQuality": 100
+      },
+      "approvalBasis": "Deterministic derivative of the exact approved source; does not assert separate gallery approval for changed bytes."
+    },
+    {
+      "source": "assets/ui/expedition-concepts/r1/encounter-choice/source.png",
+      "sourceSha256": "e1b4a1786b8122d021df0360a875d6db9a4b3d6525c20acb82f54d838f68a0ca",
+      "status": "Approved",
+      "evidenceId": "4b05383a-d427-4d90-af87-bbc56d7d609b",
+      "output": "expedition/ui/medallion-combat.webp",
+      "outputSha256": "3a97cb9b48e319047288b83c2f989d8151036f524b0cc541cce58c7324470e7f",
+      "width": 107,
+      "height": 110,
+      "encodedBytes": 4954,
+      "decodedBytes": 47080,
+      "transform": {
+        "operation": "extract-approved-ui",
+        "crop": [
+          359,
+          487,
+          107,
+          110
+        ],
+        "format": "webp",
+        "quality": 90,
+        "alphaQuality": 100
+      },
+      "approvalBasis": "Deterministic derivative of the exact approved source; does not assert separate gallery approval for changed bytes."
+    },
+    {
+      "source": "assets/ui/expedition-concepts/r1/encounter-choice/source.png",
+      "sourceSha256": "e1b4a1786b8122d021df0360a875d6db9a4b3d6525c20acb82f54d838f68a0ca",
+      "status": "Approved",
+      "evidenceId": "4b05383a-d427-4d90-af87-bbc56d7d609b",
+      "output": "expedition/ui/medallion-mystery.webp",
+      "outputSha256": "ff8b95df08f823ce859168fdd8513dd3be199c16ccbfb1bb8f83f224e7e2cc4c",
+      "width": 108,
+      "height": 109,
+      "encodedBytes": 4320,
+      "decodedBytes": 47088,
+      "transform": {
+        "operation": "extract-approved-ui",
+        "crop": [
+          782,
+          488,
+          108,
+          109
+        ],
+        "format": "webp",
+        "quality": 90,
+        "alphaQuality": 100
+      },
+      "approvalBasis": "Deterministic derivative of the exact approved source; does not assert separate gallery approval for changed bytes."
+    },
+    {
+      "source": "assets/ui/expedition-concepts/r1/encounter-choice/source.png",
+      "sourceSha256": "e1b4a1786b8122d021df0360a875d6db9a4b3d6525c20acb82f54d838f68a0ca",
+      "status": "Approved",
+      "evidenceId": "4b05383a-d427-4d90-af87-bbc56d7d609b",
+      "output": "expedition/ui/medallion-treasure.webp",
+      "outputSha256": "1ff9c136566e32c7954c750c5c16095f261b15f70adf0c3142b4658a081cfb43",
+      "width": 109,
+      "height": 109,
+      "encodedBytes": 4546,
+      "decodedBytes": 47524,
+      "transform": {
+        "operation": "extract-approved-ui",
+        "crop": [
+          1205,
+          488,
+          109,
+          109
+        ],
+        "format": "webp",
+        "quality": 90,
+        "alphaQuality": 100
+      },
+      "approvalBasis": "Deterministic derivative of the exact approved source; does not assert separate gallery approval for changed bytes."
+    },
+    {
+      "source": "assets/ui/expedition-concepts/r1/camp/source.png",
+      "sourceSha256": "e3a4618b301022401dfef0172db6ffca7b2e78241b94cdb15fa074ee47106706",
+      "status": "Approved",
+      "evidenceId": "e23682ff-9646-4879-bd2d-b4fc75f5f954",
+      "output": "expedition/ui/medallion-rest.webp",
+      "outputSha256": "9a9247658f0c280de625d47d996a9ac3981832ba34f325284ce7fc446833bbcd",
+      "width": 136,
+      "height": 130,
+      "encodedBytes": 5890,
+      "decodedBytes": 70720,
+      "transform": {
+        "operation": "extract-approved-ui",
+        "crop": [
+          100,
+          632,
+          136,
+          130
+        ],
+        "format": "webp",
+        "quality": 90,
+        "alphaQuality": 100
+      },
+      "approvalBasis": "Deterministic derivative of the exact approved source; does not assert separate gallery approval for changed bytes."
+    },
+    {
+      "source": "assets/ui/expedition-concepts/r1/camp/source.png",
+      "sourceSha256": "e3a4618b301022401dfef0172db6ffca7b2e78241b94cdb15fa074ee47106706",
+      "status": "Approved",
+      "evidenceId": "e23682ff-9646-4879-bd2d-b4fc75f5f954",
+      "output": "expedition/ui/medallion-refine.webp",
+      "outputSha256": "95ad48f1b762493c7ba7011d8f843109866a5fbe8c6d78b25d2c9aa7b9766d9f",
+      "width": 133,
+      "height": 130,
+      "encodedBytes": 5994,
+      "decodedBytes": 69160,
+      "transform": {
+        "operation": "extract-approved-ui",
+        "crop": [
+          632,
+          634,
+          133,
+          130
+        ],
+        "format": "webp",
+        "quality": 90,
+        "alphaQuality": 100
+      },
+      "approvalBasis": "Deterministic derivative of the exact approved source; does not assert separate gallery approval for changed bytes."
+    },
+    {
+      "source": "assets/ui/expedition-concepts/r1/camp/source.png",
+      "sourceSha256": "e3a4618b301022401dfef0172db6ffca7b2e78241b94cdb15fa074ee47106706",
+      "status": "Approved",
+      "evidenceId": "e23682ff-9646-4879-bd2d-b4fc75f5f954",
+      "output": "expedition/ui/medallion-command.webp",
+      "outputSha256": "c92c3851670b3f1c7cd6db85a479b8ec0a7856cbb8e927977260330d8190d671",
+      "width": 135,
+      "height": 132,
+      "encodedBytes": 6260,
+      "decodedBytes": 71280,
+      "transform": {
+        "operation": "extract-approved-ui",
+        "crop": [
+          1151,
+          632,
+          135,
+          132
+        ],
+        "format": "webp",
+        "quality": 90,
+        "alphaQuality": 100
+      },
+      "approvalBasis": "Deterministic derivative of the exact approved source; does not assert separate gallery approval for changed bytes."
+    },
+    {
+      "source": "assets/ui/expedition-concepts/r1/treasure/source.png",
+      "sourceSha256": "019ef18b4b193dd1ca7b704b4be860300620764fcca5e0def403801acc3aedbe",
+      "status": "Approved",
+      "evidenceId": "180612e5-38d5-43da-90b5-eae57d8d78c9",
+      "output": "expedition/ui/medallion-gold.webp",
+      "outputSha256": "c8386dc175c9bba958c1247a17fb639400063b231c57c6054941983725c554b0",
+      "width": 103,
+      "height": 101,
+      "encodedBytes": 4022,
+      "decodedBytes": 41612,
+      "transform": {
+        "operation": "extract-approved-ui",
+        "crop": [
+          785,
+          456,
+          103,
+          101
+        ],
+        "format": "webp",
+        "quality": 90,
+        "alphaQuality": 100
+      },
+      "approvalBasis": "Deterministic derivative of the exact approved source; does not assert separate gallery approval for changed bytes."
+    },
+    {
+      "source": "assets/ui/expedition-concepts/r1/treasure/source.png",
+      "sourceSha256": "019ef18b4b193dd1ca7b704b4be860300620764fcca5e0def403801acc3aedbe",
+      "status": "Approved",
+      "evidenceId": "180612e5-38d5-43da-90b5-eae57d8d78c9",
+      "output": "expedition/ui/reward-gold.webp",
+      "outputSha256": "596aa886b4cc7857ccab89ead11da827ef3d53546ce746e1b7c93efb0be3d3e4",
+      "width": 368,
+      "height": 222,
+      "encodedBytes": 22990,
+      "decodedBytes": 326784,
+      "transform": {
+        "operation": "extract-approved-ui",
+        "crop": [
+          651,
+          235,
+          368,
+          222
+        ],
+        "format": "webp",
+        "quality": 90,
+        "alphaQuality": 100
+      },
+      "approvalBasis": "Deterministic derivative of the exact approved source; does not assert separate gallery approval for changed bytes."
+    },
+    {
+      "source": "assets/ui/expedition-concepts/r1/treasure/source.png",
+      "sourceSha256": "019ef18b4b193dd1ca7b704b4be860300620764fcca5e0def403801acc3aedbe",
+      "status": "Approved",
+      "evidenceId": "180612e5-38d5-43da-90b5-eae57d8d78c9",
+      "output": "expedition/ui/reward-tome.webp",
+      "outputSha256": "dd757a55ec15da9a4b363a432a24d5494e2e1c1745bb69a1a1ebe93568b3732c",
+      "width": 358,
+      "height": 222,
+      "encodedBytes": 21878,
+      "decodedBytes": 317904,
+      "transform": {
+        "operation": "extract-approved-ui",
+        "crop": [
+          1080,
+          235,
+          358,
+          222
+        ],
+        "format": "webp",
+        "quality": 90,
+        "alphaQuality": 100
+      },
+      "approvalBasis": "Deterministic derivative of the exact approved source; does not assert separate gallery approval for changed bytes."
+    },
+    {
+      "source": "assets/ui/expedition-concepts/r1/treasure/source.png",
+      "sourceSha256": "019ef18b4b193dd1ca7b704b4be860300620764fcca5e0def403801acc3aedbe",
+      "status": "Approved",
+      "evidenceId": "180612e5-38d5-43da-90b5-eae57d8d78c9",
+      "output": "expedition/ui/reward-relic.webp",
+      "outputSha256": "b76142e6073de034cb5dfd6f7622882635f529446e05adb2a6271adcd1260cb8",
+      "width": 356,
+      "height": 222,
+      "encodedBytes": 21450,
+      "decodedBytes": 316128,
+      "transform": {
+        "operation": "extract-approved-ui",
+        "crop": [
+          237,
+          235,
+          356,
+          222
+        ],
+        "format": "webp",
+        "quality": 90,
+        "alphaQuality": 100
+      },
+      "approvalBasis": "Deterministic derivative of the exact approved source; does not assert separate gallery approval for changed bytes."
+    },
+    {
+      "source": "assets/ui/expedition-concepts/r1/summon-training/source.png",
+      "sourceSha256": "df8e6189eb8723c31190ca5db5f658ed87cfaa9f92c0fb339d6953bf3e5b766e",
+      "status": "Approved",
+      "evidenceId": "c187ad10-41bc-4f45-89bb-925630b7b652",
+      "output": "expedition/ui/basalt.webp",
+      "outputSha256": "4548ae3de9a32f39c0442ab819cf5e8054923e9812701cbe44e52d90c01e45cc",
+      "width": 200,
+      "height": 60,
+      "encodedBytes": 284,
+      "decodedBytes": 48000,
+      "transform": {
+        "operation": "extract-approved-ui",
+        "crop": [
+          350,
+          150,
+          200,
+          60
+        ],
+        "format": "webp",
+        "quality": 90,
+        "alphaQuality": 100
+      },
+      "approvalBasis": "Deterministic derivative of the exact approved source; does not assert separate gallery approval for changed bytes."
+    },
+    {
+      "source": "assets/ui/expedition-concepts/r1/summon-training/source.png",
+      "sourceSha256": "df8e6189eb8723c31190ca5db5f658ed87cfaa9f92c0fb339d6953bf3e5b766e",
+      "status": "Approved",
+      "evidenceId": "c187ad10-41bc-4f45-89bb-925630b7b652",
+      "output": "expedition/ui/ability-signature.webp",
+      "outputSha256": "c75e6c6ead9c7e921ed5cc4d324dc880e57adf5cb013313684218b4d9fea4dce",
+      "width": 81,
+      "height": 82,
+      "encodedBytes": 2892,
+      "decodedBytes": 26568,
+      "transform": {
+        "operation": "extract-approved-ui",
+        "crop": [
+          758,
+          401,
+          81,
+          82
+        ],
+        "format": "webp",
+        "quality": 90,
+        "alphaQuality": 100
+      },
+      "approvalBasis": "Deterministic derivative of the exact approved source; does not assert separate gallery approval for changed bytes."
+    },
+    {
+      "source": "assets/ui/expedition-concepts/r1/summon-training/source.png",
+      "sourceSha256": "df8e6189eb8723c31190ca5db5f658ed87cfaa9f92c0fb339d6953bf3e5b766e",
+      "status": "Approved",
+      "evidenceId": "c187ad10-41bc-4f45-89bb-925630b7b652",
+      "output": "expedition/ui/ability-shield.webp",
+      "outputSha256": "d3b11e0093bdd89368944f7bbc38dc963b5ce773a7431e524252141282d65a10",
+      "width": 81,
+      "height": 81,
+      "encodedBytes": 2298,
+      "decodedBytes": 26244,
+      "transform": {
+        "operation": "extract-approved-ui",
+        "crop": [
+          758,
+          522,
+          81,
+          81
+        ],
+        "format": "webp",
+        "quality": 90,
+        "alphaQuality": 100
+      },
+      "approvalBasis": "Deterministic derivative of the exact approved source; does not assert separate gallery approval for changed bytes."
+    },
+    {
+      "source": "assets/ui/expedition-concepts/r1/summon-training/source.png",
+      "sourceSha256": "df8e6189eb8723c31190ca5db5f658ed87cfaa9f92c0fb339d6953bf3e5b766e",
+      "status": "Approved",
+      "evidenceId": "c187ad10-41bc-4f45-89bb-925630b7b652",
+      "output": "expedition/ui/ability-locked.webp",
+      "outputSha256": "8107f07169cc6f397ce27b273bc35610c1b9c08f8d01507cb2e8123fc7228a59",
+      "width": 81,
+      "height": 81,
+      "encodedBytes": 1542,
+      "decodedBytes": 26244,
+      "transform": {
+        "operation": "extract-approved-ui",
+        "crop": [
+          758,
+          644,
+          81,
+          81
+        ],
+        "format": "webp",
+        "quality": 90,
+        "alphaQuality": 100
+      },
+      "approvalBasis": "Deterministic derivative of the exact approved source; does not assert separate gallery approval for changed bytes."
     }
   ],
   "integration": {
@@ -37962,6 +42692,416 @@
         "Terminal deaths remain single-play; baked magic retained.",
         "User authorized pending art integration; independent art issues remain in source manifests."
       ]
+    },
+    "frozenWastes": {
+      "sourceRevision": "ice-idle-2026-10-13 current package bytes",
+      "authorization": "User requested existing ice animation integration for Frozen Wastes on 2026-10-14; pending design statuses retained.",
+      "limitation": "Authored idle only. Attack, cast, guard, spawn and hit hold the first pose; wounded idle reuses idle; death is a derived opacity fade ending transparent. No authored combat poses are claimed.",
+      "excluded": [
+        "splinterhost: failed transparency motion study"
+      ],
+      "actors": {
+        "dragon-frost-mammoth": {
+          "sourceId": "dragon-frost-mammoth",
+          "manifest": "assets/characters/dragon-frost-mammoth/animations/idle-2026-10-13/manifest.json",
+          "manifestSha256": "0fc1b814852ea4a84c24497cc06b7e993027c95e03aa6b82728e7d66aaa75783",
+          "authoredStates": [
+            "idle"
+          ],
+          "derivedStates": [
+            "wounded_idle",
+            "attack",
+            "cast",
+            "hit",
+            "guard",
+            "spawn",
+            "die"
+          ],
+          "durationMs": 1880,
+          "sourceCanvas": [
+            800,
+            800
+          ],
+          "sourceAnchor": [
+            350,
+            728
+          ],
+          "previewSha256": "61aaa22e25b69a981099541cb1f3a6bc13431690c9741a4d0063040055d91701",
+          "previewDecision": "Pending approval"
+        },
+        "dragon-rime-antler": {
+          "sourceId": "dragon-rime-antler",
+          "manifest": "assets/characters/dragon-rime-antler/animations/idle-2026-10-13/manifest.json",
+          "manifestSha256": "6efe4057fccaadce6dc76fe3d258fdeb4622210ff9b0c0963e35c78c73d29f61",
+          "authoredStates": [
+            "idle"
+          ],
+          "derivedStates": [
+            "wounded_idle",
+            "attack",
+            "cast",
+            "hit",
+            "guard",
+            "spawn",
+            "die"
+          ],
+          "durationMs": 1880,
+          "sourceCanvas": [
+            800,
+            800
+          ],
+          "sourceAnchor": [
+            350,
+            728
+          ],
+          "previewSha256": "aeb0c8b0ebefdc73517bf68ffad0a56f5aebb2d47bd394f14d4d8822cb6b1cbe",
+          "previewDecision": "Pending approval"
+        },
+        "rimejaw-scavenger": {
+          "sourceId": "rimejaw-scavenger",
+          "manifest": "assets/characters/rimejaw-scavenger/animations/idle-2026-10-13/manifest.json",
+          "manifestSha256": "7b619bf5cfa5d09fb79d4d71111e39753d89ac3f8053ebac576480f7e45281c5",
+          "authoredStates": [
+            "idle"
+          ],
+          "derivedStates": [
+            "wounded_idle",
+            "attack",
+            "cast",
+            "hit",
+            "guard",
+            "spawn",
+            "die"
+          ],
+          "durationMs": 1300,
+          "sourceCanvas": [
+            800,
+            800
+          ],
+          "sourceAnchor": [
+            350,
+            728
+          ],
+          "previewSha256": "c5bed0f41d8e57800d55d81018b2843728080ac00a458726bcf2f5ad62ed83a8",
+          "previewDecision": "Pending approval"
+        },
+        "shardstep-skitterer": {
+          "sourceId": "shardstep-skitterer",
+          "manifest": "assets/characters/shardstep-skitterer/animations/idle-2026-10-13/animation.json",
+          "manifestSha256": "6622b1e49f2f12dfa3003940491d855609d4e5513cdba90dcba65f6ca667c9ce",
+          "authoredStates": [
+            "idle"
+          ],
+          "derivedStates": [
+            "wounded_idle",
+            "attack",
+            "cast",
+            "hit",
+            "guard",
+            "spawn",
+            "die"
+          ],
+          "durationMs": 1080,
+          "sourceCanvas": [
+            711,
+            711
+          ],
+          "sourceAnchor": [
+            355,
+            669
+          ],
+          "previewSha256": "653ea33bfb320c0418589eb2ffc69a5788aec660e98c45604e42965a5c05241f",
+          "previewDecision": "Pending approval"
+        },
+        "whiteout-ray": {
+          "sourceId": "whiteout-ray",
+          "manifest": "assets/characters/whiteout-ray/animations/idle-2026-10-13/manifest.json",
+          "manifestSha256": "4daf636f0eb8f97ed74246ffd2ad5c9ea4aadf9320f346f061cc27ff6b41e019",
+          "authoredStates": [
+            "idle"
+          ],
+          "derivedStates": [
+            "wounded_idle",
+            "attack",
+            "cast",
+            "hit",
+            "guard",
+            "spawn",
+            "die"
+          ],
+          "durationMs": 1440,
+          "sourceCanvas": [
+            512,
+            512
+          ],
+          "sourceAnchor": [
+            130,
+            280
+          ],
+          "previewSha256": "935e331452aa8afb726b887ebebcbeb173339de54e932241f89f5cd6f121cbbe",
+          "previewDecision": "Pending approval"
+        },
+        "coffinback-bastion": {
+          "sourceId": "coffinback-bastion",
+          "manifest": "assets/characters/coffinback-bastion/animations/idle-2026-10-13/animation.json",
+          "manifestSha256": "9fbc7ec8c31d580ddac0d08bc46adc28c4b6e1f593778374a60384663ead4db2",
+          "authoredStates": [
+            "idle"
+          ],
+          "derivedStates": [
+            "wounded_idle",
+            "attack",
+            "cast",
+            "hit",
+            "guard",
+            "spawn",
+            "die"
+          ],
+          "durationMs": 1840,
+          "sourceCanvas": [
+            512,
+            596
+          ],
+          "sourceAnchor": [
+            256,
+            554
+          ],
+          "previewSha256": "5774e7a8c9c2d97486b4168308ffee5e6ff5659439b007b3a0072d1689211e81",
+          "previewDecision": "Pending approval"
+        },
+        "hollowmask-oracle": {
+          "sourceId": "hollowmask-oracle",
+          "manifest": "assets/characters/hollowmask-oracle/animations/idle-2026-10-13/manifest.json",
+          "manifestSha256": "cbd76491667298454314aed7a91b476b398bb1dcd1c266aa54a64e8ad1358719",
+          "authoredStates": [
+            "idle"
+          ],
+          "derivedStates": [
+            "wounded_idle",
+            "attack",
+            "cast",
+            "hit",
+            "guard",
+            "spawn",
+            "die"
+          ],
+          "durationMs": 1560,
+          "sourceCanvas": [
+            512,
+            512
+          ],
+          "sourceAnchor": [
+            256,
+            48
+          ],
+          "previewSha256": "31210318884c0f679237f0d3784296e82352aa0eaf26f541cad82d432d021784",
+          "previewDecision": "Pending approval"
+        },
+        "shardlance-stalker": {
+          "sourceId": "shardlance-stalker",
+          "manifest": "assets/characters/shardlance-stalker/animations/idle-2026-10-13/animation.json",
+          "manifestSha256": "ec7e97805bf70818a2bbd2f0f2cafef63afd1ec35c245b72fc2f19bee1907fca",
+          "authoredStates": [
+            "idle"
+          ],
+          "derivedStates": [
+            "wounded_idle",
+            "attack",
+            "cast",
+            "hit",
+            "guard",
+            "spawn",
+            "die"
+          ],
+          "durationMs": 1520,
+          "sourceCanvas": [
+            528,
+            576
+          ],
+          "sourceAnchor": [
+            264,
+            534
+          ],
+          "previewSha256": "835ffecf423f4fb9c9e08ef3885afcf9c9bda1714a2d031f9b0ed9ccb6c2dfc8",
+          "previewDecision": "Pending approval"
+        },
+        "hoarveil-crone": {
+          "sourceId": "hoarveil-crone",
+          "manifest": "assets/characters/hoarveil-crone/animations/idle-2026-10-13/manifest.json",
+          "manifestSha256": "294884caceafba7b25508908b81137e6f3cc90356d60e98c6e1de41ae8329165",
+          "authoredStates": [
+            "idle"
+          ],
+          "derivedStates": [
+            "wounded_idle",
+            "attack",
+            "cast",
+            "hit",
+            "guard",
+            "spawn",
+            "die"
+          ],
+          "durationMs": 1920,
+          "sourceCanvas": [
+            768,
+            704
+          ],
+          "sourceAnchor": [
+            384,
+            672
+          ],
+          "previewSha256": "35c091c56215f5b195ddff2d952f285defd16d77b423344f1531e6b6d784d11e",
+          "previewDecision": "Pending approval"
+        },
+        "iceclamp-bombardier": {
+          "sourceId": "iceclamp-bombardier",
+          "manifest": "assets/characters/iceclamp-bombardier/animations/idle-2026-10-13/animation.json",
+          "manifestSha256": "72adf46c84b027f11def2b56d42ba0808b7dfb74785ff0d8bedcfadba634a2ae",
+          "authoredStates": [
+            "idle"
+          ],
+          "derivedStates": [
+            "wounded_idle",
+            "attack",
+            "cast",
+            "hit",
+            "guard",
+            "spawn",
+            "die"
+          ],
+          "durationMs": 1680,
+          "sourceCanvas": [
+            528,
+            576
+          ],
+          "sourceAnchor": [
+            264,
+            534
+          ],
+          "previewSha256": "a30469c6157896a4e04a7da5d5607bf9fa7061577d9e050dda2c7d63fc9ac2cc",
+          "previewDecision": "Pending approval"
+        },
+        "paleveil-moth": {
+          "sourceId": "paleveil-moth",
+          "manifest": "assets/characters/paleveil-moth/animations/idle-2026-10-13/manifest.json",
+          "manifestSha256": "eb87361eb1ebfbbe79beb7dec98fe5aedc01591c6ff85f24808be00e407b00b7",
+          "authoredStates": [
+            "idle"
+          ],
+          "derivedStates": [
+            "wounded_idle",
+            "attack",
+            "cast",
+            "hit",
+            "guard",
+            "spawn",
+            "die"
+          ],
+          "durationMs": 840,
+          "sourceCanvas": [
+            672,
+            672
+          ],
+          "sourceAnchor": [
+            255,
+            350
+          ],
+          "previewSha256": "3ab0880e0647ea18e82ff7e4d9386b483ff5d6db23c6d02a345999a4a6e6f474",
+          "previewDecision": "Pending approval"
+        },
+        "cairnfrost-ursine": {
+          "sourceId": "cairnfrost-ursine",
+          "manifest": "assets/characters/cairnfrost-ursine/animations/idle-2026-10-13/manifest.json",
+          "manifestSha256": "829555c1827753b94b26c7100a9efd5a66c376b67e5c013c53503c7a0a9c5093",
+          "authoredStates": [
+            "idle"
+          ],
+          "derivedStates": [
+            "wounded_idle",
+            "attack",
+            "cast",
+            "hit",
+            "guard",
+            "spawn",
+            "die"
+          ],
+          "durationMs": 2280,
+          "sourceCanvas": [
+            800,
+            800
+          ],
+          "sourceAnchor": [
+            350,
+            728
+          ],
+          "previewSha256": "27d1458ddbde93fc4bc883948f366b2c906e5d533e4e25bd9e136cf626c8586d",
+          "previewDecision": "Pending approval"
+        },
+        "avalanche-colossus": {
+          "sourceId": "avalanche-colossus",
+          "manifest": "assets/characters/avalanche-colossus/animations/idle-2026-10-13/manifest.json",
+          "manifestSha256": "2c58017ac18bc961038e3f5123daea04c2bf071d045c6e6e8c79dce83bc80db2",
+          "authoredStates": [
+            "idle"
+          ],
+          "derivedStates": [
+            "wounded_idle",
+            "attack",
+            "cast",
+            "hit",
+            "guard",
+            "spawn",
+            "die"
+          ],
+          "durationMs": 2400,
+          "sourceCanvas": [
+            768,
+            704
+          ],
+          "sourceAnchor": [
+            384,
+            672
+          ],
+          "previewSha256": "acf19ecbea760f118cbdd6d52ecb2e0c2230a3fc16b8bd286544c754e5c14546",
+          "previewDecision": "Pending approval"
+        },
+        "rime-hauler": {
+          "sourceId": "abomination-rime-hauler",
+          "manifest": "assets/characters/abomination-rime-hauler/animations/idle-2026-10-13/manifest.json",
+          "manifestSha256": "ae84bc883a9fe370fab155d7a6529a8ee61f6c05ed38bba65e952331db8eb326",
+          "authoredStates": [
+            "idle"
+          ],
+          "derivedStates": [
+            "wounded_idle",
+            "attack",
+            "cast",
+            "hit",
+            "guard",
+            "spawn",
+            "die"
+          ],
+          "durationMs": 2100,
+          "sourceCanvas": [
+            768,
+            704
+          ],
+          "sourceAnchor": [
+            384,
+            672
+          ],
+          "previewSha256": "f220efabd7cb61e1767a75a75feb764378dba675d1d0d0e404c8d188d85e9c98",
+          "previewDecision": "Pending approval"
+        }
+      }
+    },
+    "expeditionPaths": {
+      "revision": "r1",
+      "authorization": "User approved all 25 exact path/UI concept images and explicitly requested implementation. Only deterministic approved-source exports; no new generated art.",
+      "sourceCount": 25,
+      "pathCount": 21,
+      "uiDerivativeCount": 17,
+      "mode": "approved-source-derivatives"
     }
   },
   "forestSpells": {

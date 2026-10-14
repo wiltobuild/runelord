@@ -1,13 +1,17 @@
+// Preserve this pre-expansion regression suite; expansion behavior has dedicated coverage.
+const newInfernalRun=(...args:Parameters<typeof currentInfernalRun>)=>{const originalLength=args.length;if(originalLength<6&&!args[2])args[5]=0;if(originalLength<7&&!args[2])args[6]=0;args[9]??=1;return currentInfernalRun(...args);};
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import {newInfernalRun,dispatch,playable,cardPayment,availableNodes,currentShop,save,restore,type Action} from './index';
+import {newInfernalRun as currentInfernalRun,dispatch,playable,cardPayment,availableNodes,currentShop,save,restore,type Action} from './index';
 import {runebladeDecks,runebladeImplemented,cards,cardTargetsUnit} from '../content/index';
 
-// Independent legal-action route audit. No fixture HP, resource, inventory or RNG overrides.
+// Historical Infernal-first legal-action audit of version-1 Runeblade kits.
+// Home-biome route selection and current kits are covered by hero-route.test.ts.
+// No fixture HP, resource, inventory or RNG overrides.
 for(const deck of runebladeDecks) test(`independent seeded campaign audit: ${deck.id}`,()=>{
  let totalActions=0,combatDeaths=0;
  for(let seed=1;seed<=12;seed++){
-  let s=newInfernalRun(seed,deck.id,false,'runeblade',1),steps=0;
+  let s=newInfernalRun(seed,deck.id,false,'runeblade',1,0,0,2,1),steps=0;
   while(s.phase!=='lost'&&s.phase!=='won'&&s.journey?.realm!=='forest'&&steps<1000){
    let action:Action;
    if(s.phase==='map'){

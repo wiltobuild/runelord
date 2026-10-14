@@ -1,0 +1,54 @@
+{
+  "schemaVersion": 1,
+  "revision": "r1",
+  "source": "assets/ui/expedition-concepts/r1/encounter-choice/source.png",
+  "sha256": "e1b4a1786b8122d021df0360a875d6db9a4b3d6525c20acb82f54d838f68a0ca",
+  "width": 1672,
+  "height": 941,
+  "prompt": "assets/ui/expedition-concepts/r1/encounter-choice/prompt.txt",
+  "promptSha256": "244faf5252cd99b23928b623218f587d49ac457f20ebf79fdcd89530e82ac963",
+  "references": [
+    {
+      "path": "apps/web/public/ui/obsidian-template.png",
+      "sha256": "83578b3d6ce5d943e45cbc789ef57c348b115728155c7b55fff35a6b7468d36a",
+      "decision": {
+        "status": "Existing game UI; no gallery decision"
+      }
+    },
+    {
+      "path": "assets/environments/expedition-paths/r1/frozen-wastes/combat/source.png",
+      "sha256": "30690eb15162e3161ab297ec8024caec313ca98cba55367e00ce9196514f7c80",
+      "decision": {
+        "status": "Existing game UI; no gallery decision"
+      }
+    },
+    {
+      "path": "assets/environments/expedition-paths/r1/frozen-wastes/mystery/source.png",
+      "sha256": "b8fac3fd42cee2d9805576e7e3448bc55eea8c9fb4ad28816e1bb235be128e10",
+      "decision": {
+        "status": "Existing game UI; no gallery decision"
+      }
+    },
+    {
+      "path": "assets/environments/expedition-paths/r1/frozen-wastes/treasure/source.png",
+      "sha256": "e06854352ee14fc2db280ee319f7b90b01095204ec0a5561ae881bc0008b2e05",
+      "decision": {
+        "status": "Existing game UI; no gallery decision"
+      }
+    }
+  ],
+  "tool": "built-in image_gen",
+  "approvalStatus": "Pending approval",
+  "integrationStatus": "Review only. User explicitly requires approval before implementation. No runtime exports or game code changes.",
+  "gallery": {
+    "path": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\approvals\\inbox\\expedition-ui-encounter-choice\\r1\\source.png",
+    "sha256": "e1b4a1786b8122d021df0360a875d6db9a4b3d6525c20acb82f54d838f68a0ca",
+    "status": "Pending approval",
+    "gallery": "http://localhost:4317"
+  },
+  "qa": {
+    "visual": "Actual generated output inspected: clear primary composition, legible scene identity, consistent cel shading. UI concepts inspected for correct gameplay copy, legible hierarchy, complete controls and distinct illustrations.",
+    "technical": "PNG dimensions and exact source/gallery hashes verified.",
+    "limitations": "Flattened concept, not live UI. Final implementation must preserve live text and original character assets."
+  }
+}

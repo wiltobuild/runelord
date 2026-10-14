@@ -147378,6 +147378,206 @@
       "paths": [
         "C:\\Users\\wilsh\\Projects\\runelord\\assets\\characters\\splinterhost\\base\\ice-detail-r2-2026-10-13\\master.png"
       ]
+    },
+    "c109cdec02f17964ae6be9ddf44b895bdbf849d4cfec3337a7608e9ae5ede5dd": {
+      "status": "Approved",
+      "at": "2026-10-14T08:09:40.725Z",
+      "evidenceId": "7072e9f2-0098-48b8-9578-47abf5ed6cfe",
+      "paths": [
+        "C:\\Users\\wilsh\\Projects\\runelord\\assets\\approvals\\inbox\\expedition-path-forest-boss\\r1\\source.png"
+      ]
+    },
+    "6ad8f9533ea4dd746c2120193b6db53b86a6428d8def0eeca0d31efd34afba82": {
+      "status": "Approved",
+      "at": "2026-10-14T08:09:40.843Z",
+      "evidenceId": "d74ee0b7-5e57-42ff-881c-1ee4bb693dbb",
+      "paths": [
+        "C:\\Users\\wilsh\\Projects\\runelord\\assets\\approvals\\inbox\\expedition-path-forest-camp\\r1\\source.png"
+      ]
+    },
+    "566cb4e5eb24ad31955dd9845603810af237578907ee0a78ce6d0a3e4e708bda": {
+      "status": "Approved",
+      "at": "2026-10-14T08:09:40.969Z",
+      "evidenceId": "478da48a-1c5a-4de2-8c7f-e6ee904eec20",
+      "paths": [
+        "C:\\Users\\wilsh\\Projects\\runelord\\assets\\approvals\\inbox\\expedition-path-forest-combat\\r1\\source.png"
+      ]
+    },
+    "11e674a7c7fc2b74b27b61b9965698a6e101660c09e419cc6bb49c54acad8d32": {
+      "status": "Approved",
+      "at": "2026-10-14T08:09:41.059Z",
+      "evidenceId": "18d140d6-c65a-41f3-9466-70c06f6d4232",
+      "paths": [
+        "C:\\Users\\wilsh\\Projects\\runelord\\assets\\approvals\\inbox\\expedition-path-forest-elite\\r1\\source.png"
+      ]
+    },
+    "c2eb7cd66f15a039108b4658b22099cdbceee6d51592cf19e107abbe3200db6d": {
+      "status": "Approved",
+      "at": "2026-10-14T08:09:41.154Z",
+      "evidenceId": "fe632ebf-2a15-4c60-9aa3-25052f7a1728",
+      "paths": [
+        "C:\\Users\\wilsh\\Projects\\runelord\\assets\\approvals\\inbox\\expedition-path-forest-mystery\\r1\\source.png"
+      ]
+    },
+    "5a9fb24b282814704752c92ce030d05e08333c84c15f3bf12cc7c1c4eca64e70": {
+      "status": "Approved",
+      "at": "2026-10-14T08:09:41.253Z",
+      "evidenceId": "b5adac6c-e962-4be8-a535-73e73404957f",
+      "paths": [
+        "C:\\Users\\wilsh\\Projects\\runelord\\assets\\approvals\\inbox\\expedition-path-forest-shop\\r1\\source.png"
+      ]
+    },
+    "ba826b9e1271ecb38ac3816a42ac28ba1ee16e767eec5b448c6e32da64e34a18": {
+      "status": "Approved",
+      "at": "2026-10-14T08:09:41.361Z",
+      "evidenceId": "083f5468-0439-404e-b05a-3f460130e344",
+      "paths": [
+        "C:\\Users\\wilsh\\Projects\\runelord\\assets\\approvals\\inbox\\expedition-path-forest-treasure\\r1\\source.png"
+      ]
+    },
+    "1cdce6d1c1e515a26590ab7dabb8e46ef0a81e4c1d219ddb9078c992708048cc": {
+      "status": "Approved",
+      "at": "2026-10-14T08:09:41.487Z",
+      "evidenceId": "b51211b0-3c3b-408b-80d7-3c1d5ce118a0",
+      "paths": [
+        "C:\\Users\\wilsh\\Projects\\runelord\\assets\\approvals\\inbox\\expedition-path-frozen-wastes-boss\\r1\\source.png"
+      ]
+    },
+    "57c976e838e5e4199b4bd320aea165a4d6b32983715b87895e16809a275a6007": {
+      "status": "Approved",
+      "at": "2026-10-14T08:09:41.605Z",
+      "evidenceId": "15f2565e-df83-4741-a3d4-e5fd841166b3",
+      "paths": [
+        "C:\\Users\\wilsh\\Projects\\runelord\\assets\\approvals\\inbox\\expedition-path-frozen-wastes-camp\\r1\\source.png"
+      ]
+    },
+    "30690eb15162e3161ab297ec8024caec313ca98cba55367e00ce9196514f7c80": {
+      "status": "Approved",
+      "at": "2026-10-14T08:09:41.701Z",
+      "evidenceId": "d5ca5543-d18b-4434-b7e4-3beee3dd1859",
+      "paths": [
+        "C:\\Users\\wilsh\\Projects\\runelord\\assets\\approvals\\inbox\\expedition-path-frozen-wastes-combat\\r1\\source.png"
+      ]
+    },
+    "876e237457338c1151b9838a7e6ccbe137349c082a91e06c2f0807355fe32ef8": {
+      "status": "Approved",
+      "at": "2026-10-14T08:09:41.804Z",
+      "evidenceId": "29aea3c1-c6d2-4dc4-95f4-82b2b3d243f9",
+      "paths": [
+        "C:\\Users\\wilsh\\Projects\\runelord\\assets\\approvals\\inbox\\expedition-path-frozen-wastes-elite\\r1\\source.png"
+      ]
+    },
+    "b8fac3fd42cee2d9805576e7e3448bc55eea8c9fb4ad28816e1bb235be128e10": {
+      "status": "Approved",
+      "at": "2026-10-14T08:09:41.914Z",
+      "evidenceId": "657fdec8-ea23-4c2e-b15f-68a6079758a6",
+      "paths": [
+        "C:\\Users\\wilsh\\Projects\\runelord\\assets\\approvals\\inbox\\expedition-path-frozen-wastes-mystery\\r1\\source.png"
+      ]
+    },
+    "b33f2f5bfd7aff85b1ea3b2a62592cb53b0843fdf6e0da019d55d7c19f8ca8d4": {
+      "status": "Approved",
+      "at": "2026-10-14T08:09:42.011Z",
+      "evidenceId": "286d673b-f52e-4fae-b32d-2af4a90ddc0e",
+      "paths": [
+        "C:\\Users\\wilsh\\Projects\\runelord\\assets\\approvals\\inbox\\expedition-path-frozen-wastes-shop\\r1\\source.png"
+      ]
+    },
+    "e06854352ee14fc2db280ee319f7b90b01095204ec0a5561ae881bc0008b2e05": {
+      "status": "Approved",
+      "at": "2026-10-14T08:09:42.116Z",
+      "evidenceId": "837e6d89-9034-478d-b1e1-6fd3250b026e",
+      "paths": [
+        "C:\\Users\\wilsh\\Projects\\runelord\\assets\\approvals\\inbox\\expedition-path-frozen-wastes-treasure\\r1\\source.png"
+      ]
+    },
+    "51d086f5ace16018f06d82768085bfb879d9a6f0eec8bdd1fe9f35f59b93438d": {
+      "status": "Approved",
+      "at": "2026-10-14T08:09:42.212Z",
+      "evidenceId": "feb86c36-6184-4d04-8758-f41abae28924",
+      "paths": [
+        "C:\\Users\\wilsh\\Projects\\runelord\\assets\\approvals\\inbox\\expedition-path-infernal-boss\\r1\\source.png"
+      ]
+    },
+    "e4bb93709acbf97d0c484d15e5d12f45eb74b476e2406a4c8768b6ba435f97de": {
+      "status": "Approved",
+      "at": "2026-10-14T08:09:42.302Z",
+      "evidenceId": "e36c37e1-5286-481e-95fe-9a38ca1c035f",
+      "paths": [
+        "C:\\Users\\wilsh\\Projects\\runelord\\assets\\approvals\\inbox\\expedition-path-infernal-camp\\r1\\source.png"
+      ]
+    },
+    "7944e5fd845d9e6712f0b2f79cf0baf06a347cb2bdcbabe5d83027a832381ffb": {
+      "status": "Approved",
+      "at": "2026-10-14T08:09:42.399Z",
+      "evidenceId": "24ad0716-7e10-4cf9-b397-2f6bf7b1c1cf",
+      "paths": [
+        "C:\\Users\\wilsh\\Projects\\runelord\\assets\\approvals\\inbox\\expedition-path-infernal-combat\\r1\\source.png"
+      ]
+    },
+    "c9464b68beaeea3f7472e43e8c0daa0faa9ed67df65ae8ee7eef5785c4881002": {
+      "status": "Approved",
+      "at": "2026-10-14T08:09:42.496Z",
+      "evidenceId": "2df5f139-f3f7-419f-b9f4-74630f86377e",
+      "paths": [
+        "C:\\Users\\wilsh\\Projects\\runelord\\assets\\approvals\\inbox\\expedition-path-infernal-elite\\r1\\source.png"
+      ]
+    },
+    "c85b380c87ce57c92da5d0e1600e2dcdbae3dfb294d292004b0bb449d2720f3b": {
+      "status": "Approved",
+      "at": "2026-10-14T08:09:42.593Z",
+      "evidenceId": "d0eaa4d4-c484-4267-bc8f-f4dabede3be7",
+      "paths": [
+        "C:\\Users\\wilsh\\Projects\\runelord\\assets\\approvals\\inbox\\expedition-path-infernal-mystery\\r1\\source.png"
+      ]
+    },
+    "b0e0b5b6faa0dda70d2f4208b63577af9bce033275b3044162ee8a7f8be53321": {
+      "status": "Approved",
+      "at": "2026-10-14T08:09:42.693Z",
+      "evidenceId": "5cbe7733-6731-4c3a-8be9-897c2fec8e8b",
+      "paths": [
+        "C:\\Users\\wilsh\\Projects\\runelord\\assets\\approvals\\inbox\\expedition-path-infernal-shop\\r1\\source.png"
+      ]
+    },
+    "cb9696913fe8c8f8feefd808b19503953afd57b02397b27bf8bcf4eac0b912ea": {
+      "status": "Approved",
+      "at": "2026-10-14T08:09:42.790Z",
+      "evidenceId": "ed321de4-ed3b-485a-a9a4-181546fbdc49",
+      "paths": [
+        "C:\\Users\\wilsh\\Projects\\runelord\\assets\\approvals\\inbox\\expedition-path-infernal-treasure\\r1\\source.png"
+      ]
+    },
+    "e3a4618b301022401dfef0172db6ffca7b2e78241b94cdb15fa074ee47106706": {
+      "status": "Approved",
+      "at": "2026-10-14T08:09:42.878Z",
+      "evidenceId": "e23682ff-9646-4879-bd2d-b4fc75f5f954",
+      "paths": [
+        "C:\\Users\\wilsh\\Projects\\runelord\\assets\\approvals\\inbox\\expedition-ui-camp\\r1\\source.png"
+      ]
+    },
+    "e1b4a1786b8122d021df0360a875d6db9a4b3d6525c20acb82f54d838f68a0ca": {
+      "status": "Approved",
+      "at": "2026-10-14T08:09:42.990Z",
+      "evidenceId": "4b05383a-d427-4d90-af87-bbc56d7d609b",
+      "paths": [
+        "C:\\Users\\wilsh\\Projects\\runelord\\assets\\approvals\\inbox\\expedition-ui-encounter-choice\\r1\\source.png"
+      ]
+    },
+    "df8e6189eb8723c31190ca5db5f658ed87cfaa9f92c0fb339d6953bf3e5b766e": {
+      "status": "Approved",
+      "at": "2026-10-14T08:09:43.110Z",
+      "evidenceId": "c187ad10-41bc-4f45-89bb-925630b7b652",
+      "paths": [
+        "C:\\Users\\wilsh\\Projects\\runelord\\assets\\approvals\\inbox\\expedition-ui-summon-training\\r1\\source.png"
+      ]
+    },
+    "019ef18b4b193dd1ca7b704b4be860300620764fcca5e0def403801acc3aedbe": {
+      "status": "Approved",
+      "at": "2026-10-14T08:09:43.210Z",
+      "evidenceId": "180612e5-38d5-43da-90b5-eae57d8d78c9",
+      "paths": [
+        "C:\\Users\\wilsh\\Projects\\runelord\\assets\\approvals\\inbox\\expedition-ui-treasure\\r1\\source.png"
+      ]
     }
   },
   "evidence": {
@@ -152551,6 +152751,156 @@
       "actor": "gallery-user",
       "at": "2026-10-13T05:09:47.242Z",
       "note": "",
+      "action": "Approved"
+    },
+    "7072e9f2-0098-48b8-9578-47abf5ed6cfe": {
+      "actor": "user-via-codex",
+      "at": "2026-10-14T08:09:40.725Z",
+      "note": "User explicitly said “approve all” for the presented review set: 21 biome path illustrations and four expedition UI concepts, on 2026-10-14.",
+      "action": "Approved"
+    },
+    "d74ee0b7-5e57-42ff-881c-1ee4bb693dbb": {
+      "actor": "user-via-codex",
+      "at": "2026-10-14T08:09:40.843Z",
+      "note": "User explicitly said “approve all” for the presented review set: 21 biome path illustrations and four expedition UI concepts, on 2026-10-14.",
+      "action": "Approved"
+    },
+    "478da48a-1c5a-4de2-8c7f-e6ee904eec20": {
+      "actor": "user-via-codex",
+      "at": "2026-10-14T08:09:40.969Z",
+      "note": "User explicitly said “approve all” for the presented review set: 21 biome path illustrations and four expedition UI concepts, on 2026-10-14.",
+      "action": "Approved"
+    },
+    "18d140d6-c65a-41f3-9466-70c06f6d4232": {
+      "actor": "user-via-codex",
+      "at": "2026-10-14T08:09:41.059Z",
+      "note": "User explicitly said “approve all” for the presented review set: 21 biome path illustrations and four expedition UI concepts, on 2026-10-14.",
+      "action": "Approved"
+    },
+    "fe632ebf-2a15-4c60-9aa3-25052f7a1728": {
+      "actor": "user-via-codex",
+      "at": "2026-10-14T08:09:41.154Z",
+      "note": "User explicitly said “approve all” for the presented review set: 21 biome path illustrations and four expedition UI concepts, on 2026-10-14.",
+      "action": "Approved"
+    },
+    "b5adac6c-e962-4be8-a535-73e73404957f": {
+      "actor": "user-via-codex",
+      "at": "2026-10-14T08:09:41.253Z",
+      "note": "User explicitly said “approve all” for the presented review set: 21 biome path illustrations and four expedition UI concepts, on 2026-10-14.",
+      "action": "Approved"
+    },
+    "083f5468-0439-404e-b05a-3f460130e344": {
+      "actor": "user-via-codex",
+      "at": "2026-10-14T08:09:41.361Z",
+      "note": "User explicitly said “approve all” for the presented review set: 21 biome path illustrations and four expedition UI concepts, on 2026-10-14.",
+      "action": "Approved"
+    },
+    "b51211b0-3c3b-408b-80d7-3c1d5ce118a0": {
+      "actor": "user-via-codex",
+      "at": "2026-10-14T08:09:41.487Z",
+      "note": "User explicitly said “approve all” for the presented review set: 21 biome path illustrations and four expedition UI concepts, on 2026-10-14.",
+      "action": "Approved"
+    },
+    "15f2565e-df83-4741-a3d4-e5fd841166b3": {
+      "actor": "user-via-codex",
+      "at": "2026-10-14T08:09:41.605Z",
+      "note": "User explicitly said “approve all” for the presented review set: 21 biome path illustrations and four expedition UI concepts, on 2026-10-14.",
+      "action": "Approved"
+    },
+    "d5ca5543-d18b-4434-b7e4-3beee3dd1859": {
+      "actor": "user-via-codex",
+      "at": "2026-10-14T08:09:41.701Z",
+      "note": "User explicitly said “approve all” for the presented review set: 21 biome path illustrations and four expedition UI concepts, on 2026-10-14.",
+      "action": "Approved"
+    },
+    "29aea3c1-c6d2-4dc4-95f4-82b2b3d243f9": {
+      "actor": "user-via-codex",
+      "at": "2026-10-14T08:09:41.804Z",
+      "note": "User explicitly said “approve all” for the presented review set: 21 biome path illustrations and four expedition UI concepts, on 2026-10-14.",
+      "action": "Approved"
+    },
+    "657fdec8-ea23-4c2e-b15f-68a6079758a6": {
+      "actor": "user-via-codex",
+      "at": "2026-10-14T08:09:41.914Z",
+      "note": "User explicitly said “approve all” for the presented review set: 21 biome path illustrations and four expedition UI concepts, on 2026-10-14.",
+      "action": "Approved"
+    },
+    "286d673b-f52e-4fae-b32d-2af4a90ddc0e": {
+      "actor": "user-via-codex",
+      "at": "2026-10-14T08:09:42.011Z",
+      "note": "User explicitly said “approve all” for the presented review set: 21 biome path illustrations and four expedition UI concepts, on 2026-10-14.",
+      "action": "Approved"
+    },
+    "837e6d89-9034-478d-b1e1-6fd3250b026e": {
+      "actor": "user-via-codex",
+      "at": "2026-10-14T08:09:42.116Z",
+      "note": "User explicitly said “approve all” for the presented review set: 21 biome path illustrations and four expedition UI concepts, on 2026-10-14.",
+      "action": "Approved"
+    },
+    "feb86c36-6184-4d04-8758-f41abae28924": {
+      "actor": "user-via-codex",
+      "at": "2026-10-14T08:09:42.212Z",
+      "note": "User explicitly said “approve all” for the presented review set: 21 biome path illustrations and four expedition UI concepts, on 2026-10-14.",
+      "action": "Approved"
+    },
+    "e36c37e1-5286-481e-95fe-9a38ca1c035f": {
+      "actor": "user-via-codex",
+      "at": "2026-10-14T08:09:42.302Z",
+      "note": "User explicitly said “approve all” for the presented review set: 21 biome path illustrations and four expedition UI concepts, on 2026-10-14.",
+      "action": "Approved"
+    },
+    "24ad0716-7e10-4cf9-b397-2f6bf7b1c1cf": {
+      "actor": "user-via-codex",
+      "at": "2026-10-14T08:09:42.399Z",
+      "note": "User explicitly said “approve all” for the presented review set: 21 biome path illustrations and four expedition UI concepts, on 2026-10-14.",
+      "action": "Approved"
+    },
+    "2df5f139-f3f7-419f-b9f4-74630f86377e": {
+      "actor": "user-via-codex",
+      "at": "2026-10-14T08:09:42.496Z",
+      "note": "User explicitly said “approve all” for the presented review set: 21 biome path illustrations and four expedition UI concepts, on 2026-10-14.",
+      "action": "Approved"
+    },
+    "d0eaa4d4-c484-4267-bc8f-f4dabede3be7": {
+      "actor": "user-via-codex",
+      "at": "2026-10-14T08:09:42.593Z",
+      "note": "User explicitly said “approve all” for the presented review set: 21 biome path illustrations and four expedition UI concepts, on 2026-10-14.",
+      "action": "Approved"
+    },
+    "5cbe7733-6731-4c3a-8be9-897c2fec8e8b": {
+      "actor": "user-via-codex",
+      "at": "2026-10-14T08:09:42.693Z",
+      "note": "User explicitly said “approve all” for the presented review set: 21 biome path illustrations and four expedition UI concepts, on 2026-10-14.",
+      "action": "Approved"
+    },
+    "ed321de4-ed3b-485a-a9a4-181546fbdc49": {
+      "actor": "user-via-codex",
+      "at": "2026-10-14T08:09:42.790Z",
+      "note": "User explicitly said “approve all” for the presented review set: 21 biome path illustrations and four expedition UI concepts, on 2026-10-14.",
+      "action": "Approved"
+    },
+    "e23682ff-9646-4879-bd2d-b4fc75f5f954": {
+      "actor": "user-via-codex",
+      "at": "2026-10-14T08:09:42.878Z",
+      "note": "User explicitly said “approve all” for the presented review set: 21 biome path illustrations and four expedition UI concepts, on 2026-10-14.",
+      "action": "Approved"
+    },
+    "4b05383a-d427-4d90-af87-bbc56d7d609b": {
+      "actor": "user-via-codex",
+      "at": "2026-10-14T08:09:42.990Z",
+      "note": "User explicitly said “approve all” for the presented review set: 21 biome path illustrations and four expedition UI concepts, on 2026-10-14.",
+      "action": "Approved"
+    },
+    "c187ad10-41bc-4f45-89bb-925630b7b652": {
+      "actor": "user-via-codex",
+      "at": "2026-10-14T08:09:43.110Z",
+      "note": "User explicitly said “approve all” for the presented review set: 21 biome path illustrations and four expedition UI concepts, on 2026-10-14.",
+      "action": "Approved"
+    },
+    "180612e5-38d5-43da-90b5-eae57d8d78c9": {
+      "actor": "user-via-codex",
+      "at": "2026-10-14T08:09:43.210Z",
+      "note": "User explicitly said “approve all” for the presented review set: 21 biome path illustrations and four expedition UI concepts, on 2026-10-14.",
       "action": "Approved"
     }
   },
@@ -159986,6 +160336,231 @@
       "actor": "gallery-user",
       "at": "2026-10-13T05:09:47.242Z",
       "assetPath": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\characters\\splinterhost\\base\\ice-detail-r2-2026-10-13\\master.png"
+    },
+    {
+      "id": "7072e9f2-0098-48b8-9578-47abf5ed6cfe",
+      "sha256": "c109cdec02f17964ae6be9ddf44b895bdbf849d4cfec3337a7608e9ae5ede5dd",
+      "status": "Approved",
+      "note": "User explicitly said “approve all” for the presented review set: 21 biome path illustrations and four expedition UI concepts, on 2026-10-14.",
+      "actor": "user-via-codex",
+      "at": "2026-10-14T08:09:40.725Z",
+      "assetPath": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\approvals\\inbox\\expedition-path-forest-boss\\r1\\source.png"
+    },
+    {
+      "id": "d74ee0b7-5e57-42ff-881c-1ee4bb693dbb",
+      "sha256": "6ad8f9533ea4dd746c2120193b6db53b86a6428d8def0eeca0d31efd34afba82",
+      "status": "Approved",
+      "note": "User explicitly said “approve all” for the presented review set: 21 biome path illustrations and four expedition UI concepts, on 2026-10-14.",
+      "actor": "user-via-codex",
+      "at": "2026-10-14T08:09:40.843Z",
+      "assetPath": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\approvals\\inbox\\expedition-path-forest-camp\\r1\\source.png"
+    },
+    {
+      "id": "478da48a-1c5a-4de2-8c7f-e6ee904eec20",
+      "sha256": "566cb4e5eb24ad31955dd9845603810af237578907ee0a78ce6d0a3e4e708bda",
+      "status": "Approved",
+      "note": "User explicitly said “approve all” for the presented review set: 21 biome path illustrations and four expedition UI concepts, on 2026-10-14.",
+      "actor": "user-via-codex",
+      "at": "2026-10-14T08:09:40.969Z",
+      "assetPath": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\approvals\\inbox\\expedition-path-forest-combat\\r1\\source.png"
+    },
+    {
+      "id": "18d140d6-c65a-41f3-9466-70c06f6d4232",
+      "sha256": "11e674a7c7fc2b74b27b61b9965698a6e101660c09e419cc6bb49c54acad8d32",
+      "status": "Approved",
+      "note": "User explicitly said “approve all” for the presented review set: 21 biome path illustrations and four expedition UI concepts, on 2026-10-14.",
+      "actor": "user-via-codex",
+      "at": "2026-10-14T08:09:41.059Z",
+      "assetPath": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\approvals\\inbox\\expedition-path-forest-elite\\r1\\source.png"
+    },
+    {
+      "id": "fe632ebf-2a15-4c60-9aa3-25052f7a1728",
+      "sha256": "c2eb7cd66f15a039108b4658b22099cdbceee6d51592cf19e107abbe3200db6d",
+      "status": "Approved",
+      "note": "User explicitly said “approve all” for the presented review set: 21 biome path illustrations and four expedition UI concepts, on 2026-10-14.",
+      "actor": "user-via-codex",
+      "at": "2026-10-14T08:09:41.154Z",
+      "assetPath": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\approvals\\inbox\\expedition-path-forest-mystery\\r1\\source.png"
+    },
+    {
+      "id": "b5adac6c-e962-4be8-a535-73e73404957f",
+      "sha256": "5a9fb24b282814704752c92ce030d05e08333c84c15f3bf12cc7c1c4eca64e70",
+      "status": "Approved",
+      "note": "User explicitly said “approve all” for the presented review set: 21 biome path illustrations and four expedition UI concepts, on 2026-10-14.",
+      "actor": "user-via-codex",
+      "at": "2026-10-14T08:09:41.253Z",
+      "assetPath": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\approvals\\inbox\\expedition-path-forest-shop\\r1\\source.png"
+    },
+    {
+      "id": "083f5468-0439-404e-b05a-3f460130e344",
+      "sha256": "ba826b9e1271ecb38ac3816a42ac28ba1ee16e767eec5b448c6e32da64e34a18",
+      "status": "Approved",
+      "note": "User explicitly said “approve all” for the presented review set: 21 biome path illustrations and four expedition UI concepts, on 2026-10-14.",
+      "actor": "user-via-codex",
+      "at": "2026-10-14T08:09:41.361Z",
+      "assetPath": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\approvals\\inbox\\expedition-path-forest-treasure\\r1\\source.png"
+    },
+    {
+      "id": "b51211b0-3c3b-408b-80d7-3c1d5ce118a0",
+      "sha256": "1cdce6d1c1e515a26590ab7dabb8e46ef0a81e4c1d219ddb9078c992708048cc",
+      "status": "Approved",
+      "note": "User explicitly said “approve all” for the presented review set: 21 biome path illustrations and four expedition UI concepts, on 2026-10-14.",
+      "actor": "user-via-codex",
+      "at": "2026-10-14T08:09:41.487Z",
+      "assetPath": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\approvals\\inbox\\expedition-path-frozen-wastes-boss\\r1\\source.png"
+    },
+    {
+      "id": "15f2565e-df83-4741-a3d4-e5fd841166b3",
+      "sha256": "57c976e838e5e4199b4bd320aea165a4d6b32983715b87895e16809a275a6007",
+      "status": "Approved",
+      "note": "User explicitly said “approve all” for the presented review set: 21 biome path illustrations and four expedition UI concepts, on 2026-10-14.",
+      "actor": "user-via-codex",
+      "at": "2026-10-14T08:09:41.605Z",
+      "assetPath": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\approvals\\inbox\\expedition-path-frozen-wastes-camp\\r1\\source.png"
+    },
+    {
+      "id": "d5ca5543-d18b-4434-b7e4-3beee3dd1859",
+      "sha256": "30690eb15162e3161ab297ec8024caec313ca98cba55367e00ce9196514f7c80",
+      "status": "Approved",
+      "note": "User explicitly said “approve all” for the presented review set: 21 biome path illustrations and four expedition UI concepts, on 2026-10-14.",
+      "actor": "user-via-codex",
+      "at": "2026-10-14T08:09:41.701Z",
+      "assetPath": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\approvals\\inbox\\expedition-path-frozen-wastes-combat\\r1\\source.png"
+    },
+    {
+      "id": "29aea3c1-c6d2-4dc4-95f4-82b2b3d243f9",
+      "sha256": "876e237457338c1151b9838a7e6ccbe137349c082a91e06c2f0807355fe32ef8",
+      "status": "Approved",
+      "note": "User explicitly said “approve all” for the presented review set: 21 biome path illustrations and four expedition UI concepts, on 2026-10-14.",
+      "actor": "user-via-codex",
+      "at": "2026-10-14T08:09:41.804Z",
+      "assetPath": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\approvals\\inbox\\expedition-path-frozen-wastes-elite\\r1\\source.png"
+    },
+    {
+      "id": "657fdec8-ea23-4c2e-b15f-68a6079758a6",
+      "sha256": "b8fac3fd42cee2d9805576e7e3448bc55eea8c9fb4ad28816e1bb235be128e10",
+      "status": "Approved",
+      "note": "User explicitly said “approve all” for the presented review set: 21 biome path illustrations and four expedition UI concepts, on 2026-10-14.",
+      "actor": "user-via-codex",
+      "at": "2026-10-14T08:09:41.914Z",
+      "assetPath": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\approvals\\inbox\\expedition-path-frozen-wastes-mystery\\r1\\source.png"
+    },
+    {
+      "id": "286d673b-f52e-4fae-b32d-2af4a90ddc0e",
+      "sha256": "b33f2f5bfd7aff85b1ea3b2a62592cb53b0843fdf6e0da019d55d7c19f8ca8d4",
+      "status": "Approved",
+      "note": "User explicitly said “approve all” for the presented review set: 21 biome path illustrations and four expedition UI concepts, on 2026-10-14.",
+      "actor": "user-via-codex",
+      "at": "2026-10-14T08:09:42.011Z",
+      "assetPath": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\approvals\\inbox\\expedition-path-frozen-wastes-shop\\r1\\source.png"
+    },
+    {
+      "id": "837e6d89-9034-478d-b1e1-6fd3250b026e",
+      "sha256": "e06854352ee14fc2db280ee319f7b90b01095204ec0a5561ae881bc0008b2e05",
+      "status": "Approved",
+      "note": "User explicitly said “approve all” for the presented review set: 21 biome path illustrations and four expedition UI concepts, on 2026-10-14.",
+      "actor": "user-via-codex",
+      "at": "2026-10-14T08:09:42.116Z",
+      "assetPath": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\approvals\\inbox\\expedition-path-frozen-wastes-treasure\\r1\\source.png"
+    },
+    {
+      "id": "feb86c36-6184-4d04-8758-f41abae28924",
+      "sha256": "51d086f5ace16018f06d82768085bfb879d9a6f0eec8bdd1fe9f35f59b93438d",
+      "status": "Approved",
+      "note": "User explicitly said “approve all” for the presented review set: 21 biome path illustrations and four expedition UI concepts, on 2026-10-14.",
+      "actor": "user-via-codex",
+      "at": "2026-10-14T08:09:42.212Z",
+      "assetPath": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\approvals\\inbox\\expedition-path-infernal-boss\\r1\\source.png"
+    },
+    {
+      "id": "e36c37e1-5286-481e-95fe-9a38ca1c035f",
+      "sha256": "e4bb93709acbf97d0c484d15e5d12f45eb74b476e2406a4c8768b6ba435f97de",
+      "status": "Approved",
+      "note": "User explicitly said “approve all” for the presented review set: 21 biome path illustrations and four expedition UI concepts, on 2026-10-14.",
+      "actor": "user-via-codex",
+      "at": "2026-10-14T08:09:42.302Z",
+      "assetPath": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\approvals\\inbox\\expedition-path-infernal-camp\\r1\\source.png"
+    },
+    {
+      "id": "24ad0716-7e10-4cf9-b397-2f6bf7b1c1cf",
+      "sha256": "7944e5fd845d9e6712f0b2f79cf0baf06a347cb2bdcbabe5d83027a832381ffb",
+      "status": "Approved",
+      "note": "User explicitly said “approve all” for the presented review set: 21 biome path illustrations and four expedition UI concepts, on 2026-10-14.",
+      "actor": "user-via-codex",
+      "at": "2026-10-14T08:09:42.399Z",
+      "assetPath": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\approvals\\inbox\\expedition-path-infernal-combat\\r1\\source.png"
+    },
+    {
+      "id": "2df5f139-f3f7-419f-b9f4-74630f86377e",
+      "sha256": "c9464b68beaeea3f7472e43e8c0daa0faa9ed67df65ae8ee7eef5785c4881002",
+      "status": "Approved",
+      "note": "User explicitly said “approve all” for the presented review set: 21 biome path illustrations and four expedition UI concepts, on 2026-10-14.",
+      "actor": "user-via-codex",
+      "at": "2026-10-14T08:09:42.496Z",
+      "assetPath": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\approvals\\inbox\\expedition-path-infernal-elite\\r1\\source.png"
+    },
+    {
+      "id": "d0eaa4d4-c484-4267-bc8f-f4dabede3be7",
+      "sha256": "c85b380c87ce57c92da5d0e1600e2dcdbae3dfb294d292004b0bb449d2720f3b",
+      "status": "Approved",
+      "note": "User explicitly said “approve all” for the presented review set: 21 biome path illustrations and four expedition UI concepts, on 2026-10-14.",
+      "actor": "user-via-codex",
+      "at": "2026-10-14T08:09:42.593Z",
+      "assetPath": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\approvals\\inbox\\expedition-path-infernal-mystery\\r1\\source.png"
+    },
+    {
+      "id": "5cbe7733-6731-4c3a-8be9-897c2fec8e8b",
+      "sha256": "b0e0b5b6faa0dda70d2f4208b63577af9bce033275b3044162ee8a7f8be53321",
+      "status": "Approved",
+      "note": "User explicitly said “approve all” for the presented review set: 21 biome path illustrations and four expedition UI concepts, on 2026-10-14.",
+      "actor": "user-via-codex",
+      "at": "2026-10-14T08:09:42.693Z",
+      "assetPath": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\approvals\\inbox\\expedition-path-infernal-shop\\r1\\source.png"
+    },
+    {
+      "id": "ed321de4-ed3b-485a-a9a4-181546fbdc49",
+      "sha256": "cb9696913fe8c8f8feefd808b19503953afd57b02397b27bf8bcf4eac0b912ea",
+      "status": "Approved",
+      "note": "User explicitly said “approve all” for the presented review set: 21 biome path illustrations and four expedition UI concepts, on 2026-10-14.",
+      "actor": "user-via-codex",
+      "at": "2026-10-14T08:09:42.790Z",
+      "assetPath": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\approvals\\inbox\\expedition-path-infernal-treasure\\r1\\source.png"
+    },
+    {
+      "id": "e23682ff-9646-4879-bd2d-b4fc75f5f954",
+      "sha256": "e3a4618b301022401dfef0172db6ffca7b2e78241b94cdb15fa074ee47106706",
+      "status": "Approved",
+      "note": "User explicitly said “approve all” for the presented review set: 21 biome path illustrations and four expedition UI concepts, on 2026-10-14.",
+      "actor": "user-via-codex",
+      "at": "2026-10-14T08:09:42.878Z",
+      "assetPath": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\approvals\\inbox\\expedition-ui-camp\\r1\\source.png"
+    },
+    {
+      "id": "4b05383a-d427-4d90-af87-bbc56d7d609b",
+      "sha256": "e1b4a1786b8122d021df0360a875d6db9a4b3d6525c20acb82f54d838f68a0ca",
+      "status": "Approved",
+      "note": "User explicitly said “approve all” for the presented review set: 21 biome path illustrations and four expedition UI concepts, on 2026-10-14.",
+      "actor": "user-via-codex",
+      "at": "2026-10-14T08:09:42.990Z",
+      "assetPath": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\approvals\\inbox\\expedition-ui-encounter-choice\\r1\\source.png"
+    },
+    {
+      "id": "c187ad10-41bc-4f45-89bb-925630b7b652",
+      "sha256": "df8e6189eb8723c31190ca5db5f658ed87cfaa9f92c0fb339d6953bf3e5b766e",
+      "status": "Approved",
+      "note": "User explicitly said “approve all” for the presented review set: 21 biome path illustrations and four expedition UI concepts, on 2026-10-14.",
+      "actor": "user-via-codex",
+      "at": "2026-10-14T08:09:43.110Z",
+      "assetPath": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\approvals\\inbox\\expedition-ui-summon-training\\r1\\source.png"
+    },
+    {
+      "id": "180612e5-38d5-43da-90b5-eae57d8d78c9",
+      "sha256": "019ef18b4b193dd1ca7b704b4be860300620764fcca5e0def403801acc3aedbe",
+      "status": "Approved",
+      "note": "User explicitly said “approve all” for the presented review set: 21 biome path illustrations and four expedition UI concepts, on 2026-10-14.",
+      "actor": "user-via-codex",
+      "at": "2026-10-14T08:09:43.210Z",
+      "assetPath": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\approvals\\inbox\\expedition-ui-treasure\\r1\\source.png"
     }
   ]
 }

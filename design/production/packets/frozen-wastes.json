@@ -1,0 +1,416 @@
+{
+  "schema": 1,
+  "id": "frozen-wastes",
+  "status": "complete",
+  "outcome": "Continue from Forest into the Frozen Wastes in both Conquer and the roguelike demo, preserving each progression model and using existing animated ice monsters and backgrounds.",
+  "authorization": "User requested Frozen Wastes after Forest in both Conquer and demo, following the existing Forest/Infernal formula and using existing animated ice monsters/backgrounds; relayed by root coordinator on 2026-10-14.",
+  "contentIds": [
+    "frozen-wastes"
+  ],
+  "owner": "runelord-producer",
+  "integrationOwner": "root",
+  "reviewer": "runelord-game-qa",
+  "ownedPaths": [
+    "packages/engine",
+    "packages/content",
+    "packages/assets",
+    "apps/web/src",
+    "apps/web/public/game-assets",
+    "design/production/packets/frozen-wastes.json"
+  ],
+  "dependencies": [
+    "Rules engineer implements deterministic content/progression in both checkouts before final UI/asset integration.",
+    "Technical artist supplies exact runtime IDs and asset mappings to root and rules engineer.",
+    "Independent QA reviews integrated outputs after builders complete."
+  ],
+  "exclusions": [
+    "New art generation or approval-ledger changes",
+    "Commit, push, deployment, recurring jobs or new chats",
+    "Unrelated backlog and progression-model replacement"
+  ],
+  "inputs": [
+    {
+      "path": "AGENTS.md",
+      "sha256": "7ac94aaf2568ff1cff4b43630316004e8a3263226d041539c75d421eb1fb1952"
+    },
+    {
+      "path": "design/production/workflow.md",
+      "sha256": "e0c7f202873a889f3da123630401fd0ab96743c801a99506db680f6763af08ad"
+    },
+    {
+      "path": "design/campaign-direction.md",
+      "sha256": "7f61d4ea502f9d1e6089f97f7322c462e9d55cb61422ea0a5a4f983aee4fa66d"
+    },
+    {
+      "path": "packages/engine/index.ts",
+      "sha256": "d70042e8a1f025d6b3a256db1b15a29e3b8404d4412f99caa513250aa70e8971"
+    },
+    {
+      "path": "packages/engine/forest.ts",
+      "sha256": "f2f9ef07de322933c7e50ad0690acc8be414c963961f454603cee3fc783cd587"
+    },
+    {
+      "path": "packages/content/index.ts",
+      "sha256": "753a7bf70a05b7f836f62e6faba76fdd249e5ebd302c129248aa98042f1523fe"
+    },
+    {
+      "path": "apps/web/src/main.tsx",
+      "sha256": "2add9fbae0f821b7d2367122db30434ec3b21021bb0a8e564d4f63da01d2c7fc"
+    },
+    {
+      "path": "apps/web/src/arcticReview.ts",
+      "sha256": "11c45d538e743dc560b3f067004769df7606cda50ba9f2beaf9bb31a4bffb9ab"
+    },
+    {
+      "path": "apps/web/src/assets.ts",
+      "sha256": "b594044d0397da7f6b63c036e2e84ddbab47bf5f419661e67cd2a09725ec7219"
+    },
+    {
+      "path": "apps/web/public/game-assets/manifest.json",
+      "sha256": "a1a4cfefbcef7285ba10ba743c5062cc20da5481c6b31a49747eb9ec6e8fdf8b"
+    },
+    {
+      "path": "packages/engine/frozenWastes.ts",
+      "sha256": "1aa59733c8284356bc1ef2c6a4ed9f353833c23213f2d4bf14e3c1989ec0b60b"
+    },
+    {
+      "path": "packages/assets/frozen-wastes.json",
+      "sha256": "822f4d6ddbe3057e6a45562f7470b55f29b70cb0670f5a9943d59093891523f2"
+    },
+    {
+      "path": "apps/web/src/useBattleDirector.ts",
+      "sha256": "5560ec140489a90cb4f5192d01d662a233f89992a0cc4dd401db22f3c164f79e"
+    },
+    {
+      "path": "apps/web/src/frozenWastesReview.ts",
+      "sha256": "17bdf255e89375edfabe368fd23f047dc21fc81e083acd18df7702ec96e035c9"
+    }
+  ],
+  "animation": null,
+  "acceptance": [
+    {
+      "id": "progression",
+      "check": "Both modes advance from Forest to Frozen Wastes and complete the Frozen Wastes progression using their established encounter/shop/reward formula.",
+      "status": "pass",
+      "evidence": [
+        {
+          "path": "design/production/evidence/frozen-wastes/integration-report.md",
+          "sha256": "33914171e6d5e96665b5d5fe3e58e83998b5867fa68dd214d9c6e44a04044b75"
+        },
+        {
+          "path": "design/production/evidence/frozen-wastes/final-source-hashes.json",
+          "sha256": "3cc4a5e7e6cfe527686b8423e9b9427632ee3aacc69bc0f7e5d6cf061a025ecb"
+        },
+        {
+          "path": "design/production/evidence/frozen-wastes/qa/independent-results.json",
+          "sha256": "92dd49d179537052d48eee66e70756a86a1326c36d9515caf006e62e8f106174"
+        },
+        {
+          "path": "design/production/evidence/frozen-wastes/qa/asset-results.json",
+          "sha256": "298c7e54a0212a57cf9b376aaec3d276a38852e56b0b9e303d216306a525a5f4"
+        },
+        {
+          "path": "design/production/evidence/frozen-wastes/qa/presentation-repair-results.json",
+          "sha256": "a82e6f6614d16a4700e1bf035d84e73370f821b730d8c9360ad131adc06fe6ef"
+        }
+      ]
+    },
+    {
+      "id": "presentation",
+      "check": "Existing ice artwork and authored idle loops render with the two ice backgrounds; safe documented pose/fade fallbacks handle other combat states, with ice-colored ward/enrage effects.",
+      "status": "pass",
+      "evidence": [
+        {
+          "path": "design/production/evidence/frozen-wastes/integration-report.md",
+          "sha256": "33914171e6d5e96665b5d5fe3e58e83998b5867fa68dd214d9c6e44a04044b75"
+        },
+        {
+          "path": "design/production/evidence/frozen-wastes/final-source-hashes.json",
+          "sha256": "3cc4a5e7e6cfe527686b8423e9b9427632ee3aacc69bc0f7e5d6cf061a025ecb"
+        },
+        {
+          "path": "design/production/evidence/frozen-wastes/qa/independent-results.json",
+          "sha256": "92dd49d179537052d48eee66e70756a86a1326c36d9515caf006e62e8f106174"
+        },
+        {
+          "path": "design/production/evidence/frozen-wastes/qa/asset-results.json",
+          "sha256": "298c7e54a0212a57cf9b376aaec3d276a38852e56b0b9e303d216306a525a5f4"
+        },
+        {
+          "path": "design/production/evidence/frozen-wastes/qa/presentation-repair-results.json",
+          "sha256": "a82e6f6614d16a4700e1bf035d84e73370f821b730d8c9360ad131adc06fe6ef"
+        }
+      ]
+    },
+    {
+      "id": "persistence",
+      "check": "Deck, upgrades, inventory and hero state carry into the new realm; deterministic save/restore replay and compatible old saves are verified in both modes.",
+      "status": "pass",
+      "evidence": [
+        {
+          "path": "design/production/evidence/frozen-wastes/integration-report.md",
+          "sha256": "33914171e6d5e96665b5d5fe3e58e83998b5867fa68dd214d9c6e44a04044b75"
+        },
+        {
+          "path": "design/production/evidence/frozen-wastes/final-source-hashes.json",
+          "sha256": "3cc4a5e7e6cfe527686b8423e9b9427632ee3aacc69bc0f7e5d6cf061a025ecb"
+        },
+        {
+          "path": "design/production/evidence/frozen-wastes/qa/independent-results.json",
+          "sha256": "92dd49d179537052d48eee66e70756a86a1326c36d9515caf006e62e8f106174"
+        },
+        {
+          "path": "design/production/evidence/frozen-wastes/qa/asset-results.json",
+          "sha256": "298c7e54a0212a57cf9b376aaec3d276a38852e56b0b9e303d216306a525a5f4"
+        },
+        {
+          "path": "design/production/evidence/frozen-wastes/qa/presentation-repair-results.json",
+          "sha256": "a82e6f6614d16a4700e1bf035d84e73370f821b730d8c9360ad131adc06fe6ef"
+        }
+      ]
+    },
+    {
+      "id": "regression",
+      "check": "Infernal and Forest progression, shops, rewards and combat remain functional; scoped engine checks and web builds pass in both checkouts.",
+      "status": "pass",
+      "evidence": [
+        {
+          "path": "design/production/evidence/frozen-wastes/integration-report.md",
+          "sha256": "33914171e6d5e96665b5d5fe3e58e83998b5867fa68dd214d9c6e44a04044b75"
+        },
+        {
+          "path": "design/production/evidence/frozen-wastes/final-source-hashes.json",
+          "sha256": "3cc4a5e7e6cfe527686b8423e9b9427632ee3aacc69bc0f7e5d6cf061a025ecb"
+        },
+        {
+          "path": "design/production/evidence/frozen-wastes/qa/independent-results.json",
+          "sha256": "92dd49d179537052d48eee66e70756a86a1326c36d9515caf006e62e8f106174"
+        },
+        {
+          "path": "design/production/evidence/frozen-wastes/qa/asset-results.json",
+          "sha256": "298c7e54a0212a57cf9b376aaec3d276a38852e56b0b9e303d216306a525a5f4"
+        },
+        {
+          "path": "design/production/evidence/frozen-wastes/qa/presentation-repair-results.json",
+          "sha256": "a82e6f6614d16a4700e1bf035d84e73370f821b730d8c9360ad131adc06fe6ef"
+        }
+      ]
+    },
+    {
+      "id": "independent-qa",
+      "check": "Separate QA reviewer verifies progression, persistence, terminal behavior, asset mappings and presentation routing; integration author verifies visible browser routes, with limits explicitly recorded.",
+      "status": "pass",
+      "evidence": [
+        {
+          "path": "design/production/evidence/frozen-wastes/integration-report.md",
+          "sha256": "33914171e6d5e96665b5d5fe3e58e83998b5867fa68dd214d9c6e44a04044b75"
+        },
+        {
+          "path": "design/production/evidence/frozen-wastes/final-source-hashes.json",
+          "sha256": "3cc4a5e7e6cfe527686b8423e9b9427632ee3aacc69bc0f7e5d6cf061a025ecb"
+        },
+        {
+          "path": "design/production/evidence/frozen-wastes/qa/independent-results.json",
+          "sha256": "92dd49d179537052d48eee66e70756a86a1326c36d9515caf006e62e8f106174"
+        },
+        {
+          "path": "design/production/evidence/frozen-wastes/qa/asset-results.json",
+          "sha256": "298c7e54a0212a57cf9b376aaec3d276a38852e56b0b9e303d216306a525a5f4"
+        },
+        {
+          "path": "design/production/evidence/frozen-wastes/qa/presentation-repair-results.json",
+          "sha256": "a82e6f6614d16a4700e1bf035d84e73370f821b730d8c9360ad131adc06fe6ef"
+        }
+      ]
+    }
+  ],
+  "checkpoint": {
+    "completed": [
+      "Gameplay and save-compatible progression implemented in both modes.",
+      "Existing ice assets integrated with unchanged approvals and documented idle-only scope.",
+      "UI transitions, shops, loot and victory updated.",
+      "Independent QA and root browser verification complete; final builds, full suites and bounded seeded replays pass.",
+      "Source changes assessed against baseline; final tested hashes and evidence retained."
+    ],
+    "remaining": [],
+    "blockers": [],
+    "nextAction": "Ready for user playtesting; commit or deploy only when requested."
+  },
+  "checkouts": [
+    {
+      "role": "Conquer",
+      "root": "C:/Users/wilsh/Projects/runelord",
+      "branch": "conquer-mode",
+      "revision": "f599bc1e554c07f2a2e15415292fd33f4ef57207",
+      "initialUntracked": [
+        "handoffs/",
+        "work/"
+      ]
+    },
+    {
+      "role": "Roguelike demo",
+      "root": "C:/Users/wilsh/Projects/runelord-roguelike-pages-recovery",
+      "branch": "release/roguelike-pages-recovery",
+      "revision": "b335f3855bbbc2f3797060fd68304020de41b7ac",
+      "initialUntracked": [
+        "work/"
+      ],
+      "inputs": [
+        {
+          "path": "AGENTS.md",
+          "sha256": "ee2de386f4adeda3c3711977fd2e3fab6919c7df7382e5a4a53d8bb457fd6783"
+        },
+        {
+          "path": "design/production/workflow.md",
+          "sha256": "89f2f745f40c95227bf81e94c6cc98f00717fd7de63c3dbf8698d89ef5eb6ebf"
+        },
+        {
+          "path": "design/campaign-direction.md",
+          "sha256": "1918707ca137f37a1b7ed0f654b9e0b305881ece10a54260752a92c9a85e6e96"
+        },
+        {
+          "path": "packages/engine/index.ts",
+          "sha256": "20ccdf416e9be4c5c215fdf1675e56de283c15da0684deb1985cd95a634b9cf8"
+        },
+        {
+          "path": "packages/engine/forest.ts",
+          "sha256": "f21ab65628627b6851edeacc94623f5fdc5eb309af5902040133a434682a6818"
+        },
+        {
+          "path": "packages/content/index.ts",
+          "sha256": "6639740fa92bc380169a2a2a1306ce164ff6d8d480c8d7c24b322325838693d2"
+        },
+        {
+          "path": "apps/web/src/main.tsx",
+          "sha256": "a1b1f353eb4eac29a1c9a3e010876a94c2aca9ea4ef7d59d86486c23b1a41a5a"
+        },
+        {
+          "path": "apps/web/src/arcticReview.ts",
+          "sha256": "22d1268e0612eb9fe153095826b1e4d236a4f5c19017cc284d3e81bd7d8d1f70"
+        },
+        {
+          "path": "apps/web/src/assets.ts",
+          "sha256": "b594044d0397da7f6b63c036e2e84ddbab47bf5f419661e67cd2a09725ec7219"
+        },
+        {
+          "path": "apps/web/public/game-assets/manifest.json",
+          "sha256": "bb6a35a7774c81e1f1e1f0d28e3181fa225801604942c5104158ce874b4cf1bc"
+        }
+      ],
+      "baselineInputs": [
+        {
+          "path": "AGENTS.md",
+          "sha256": "ee2de386f4adeda3c3711977fd2e3fab6919c7df7382e5a4a53d8bb457fd6783"
+        },
+        {
+          "path": "design/production/workflow.md",
+          "sha256": "89f2f745f40c95227bf81e94c6cc98f00717fd7de63c3dbf8698d89ef5eb6ebf"
+        },
+        {
+          "path": "design/campaign-direction.md",
+          "sha256": "1918707ca137f37a1b7ed0f654b9e0b305881ece10a54260752a92c9a85e6e96"
+        },
+        {
+          "path": "packages/engine/index.ts",
+          "sha256": "30003f534de2295093c296f38b237d317f7e657bb383714cb8932340d3bf9088"
+        },
+        {
+          "path": "packages/engine/forest.ts",
+          "sha256": "f21ab65628627b6851edeacc94623f5fdc5eb309af5902040133a434682a6818"
+        },
+        {
+          "path": "packages/content/index.ts",
+          "sha256": "6e9f733c047b79f31d8e9b75456ed49e08653ab4bbdbe3d4effb346d678fcdbd"
+        },
+        {
+          "path": "apps/web/src/main.tsx",
+          "sha256": "6a10f1ac4c92b165bd6041cf9a1d65ab4950b30e49b343c827d9473bdd0dafd0"
+        },
+        {
+          "path": "apps/web/src/arcticReview.ts",
+          "sha256": "22d1268e0612eb9fe153095826b1e4d236a4f5c19017cc284d3e81bd7d8d1f70"
+        },
+        {
+          "path": "apps/web/src/assets.ts",
+          "sha256": "b594044d0397da7f6b63c036e2e84ddbab47bf5f419661e67cd2a09725ec7219"
+        },
+        {
+          "path": "apps/web/public/game-assets/manifest.json",
+          "sha256": "206a06e8da8caebec4974df94be7d06f9c1e8e70b15ab5631526afb8fc5ee520"
+        }
+      ]
+    }
+  ],
+  "assignments": [
+    {
+      "owner": "runelord-rules-engineer",
+      "scope": "packages/engine and packages/content in both checkouts"
+    },
+    {
+      "owner": "runelord-technical-artist",
+      "scope": "Runtime assets, manifests and asset adapters in both checkouts; exclusive writer of shared asset manifests"
+    },
+    {
+      "owner": "root",
+      "scope": "UI and route integration in both checkouts; coordinate boundaries with asset adapters"
+    },
+    {
+      "owner": "runelord-game-qa",
+      "scope": "Independent checks and evidence; no production repairs"
+    }
+  ],
+  "risks": [
+    "Conquer and demo differ in progression and must not receive wholesale engine/main.tsx copies.",
+    "Both modes share localStorage save key runelord-warlock-demo-v1; use separate fresh browser origins for QA.",
+    "Existing arcticReview is preview scaffolding; runtime campaign integration and animation QA remain pending.",
+    "Production status reports 710 catalog rows, 77 verified runtime bindings and one nonliteral Warlock registry adapter error; unbound art/gameplay coverage remains unknown.",
+    "Input hashes capture preimplementation baseline and must be deliberately refreshed after downstream impact review."
+  ],
+  "baselineInputs": [
+    {
+      "path": "AGENTS.md",
+      "sha256": "7ac94aaf2568ff1cff4b43630316004e8a3263226d041539c75d421eb1fb1952"
+    },
+    {
+      "path": "design/production/workflow.md",
+      "sha256": "e0c7f202873a889f3da123630401fd0ab96743c801a99506db680f6763af08ad"
+    },
+    {
+      "path": "design/campaign-direction.md",
+      "sha256": "7f61d4ea502f9d1e6089f97f7322c462e9d55cb61422ea0a5a4f983aee4fa66d"
+    },
+    {
+      "path": "packages/engine/index.ts",
+      "sha256": "a672a54827917bbbf6aaf686a425bce80514df3467bf973dc19e612545911677"
+    },
+    {
+      "path": "packages/engine/forest.ts",
+      "sha256": "f2f9ef07de322933c7e50ad0690acc8be414c963961f454603cee3fc783cd587"
+    },
+    {
+      "path": "packages/content/index.ts",
+      "sha256": "db68ddf5725d3b44b311f81a0695d28487b8b7040d14172fc4b0297aa6e4075a"
+    },
+    {
+      "path": "apps/web/src/main.tsx",
+      "sha256": "812977b89ca94241c371092f8f7fe8e19daf39679fe0546dced6e53ebfc1aa0f"
+    },
+    {
+      "path": "apps/web/src/arcticReview.ts",
+      "sha256": "11c45d538e743dc560b3f067004769df7606cda50ba9f2beaf9bb31a4bffb9ab"
+    },
+    {
+      "path": "apps/web/src/assets.ts",
+      "sha256": "b594044d0397da7f6b63c036e2e84ddbab47bf5f419661e67cd2a09725ec7219"
+    },
+    {
+      "path": "apps/web/public/game-assets/manifest.json",
+      "sha256": "87705db96620cf5e217af1156cd960c7005949a3d11d032b43dd6c08ea1f08a2"
+    }
+  ],
+  "limitations": [
+    "Authored idle-only animations with held/faded combat-state fallbacks.",
+    "Historical saves retain original Forest ending; start a new run for Frozen Wastes.",
+    "Difficulty and continuous earned human campaign completion not certified."
+  ]
+}

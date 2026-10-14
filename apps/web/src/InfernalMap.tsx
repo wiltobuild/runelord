@@ -7,7 +7,7 @@ import { generateMapProps, makePropLayout, mapDetailOpacity } from "./infernalMa
 import "./infernal-map.css";
 import { infernalMarkerAppearance } from "./infernalMarkerAppearance";
 
-const labels = { combat: "Battle", elite: "Elite", shop: "Shop", treasure: "Treasure", boss: "Sovereign" };
+const labels = { combat: "Battle", elite: "Elite", shop: "Shop", treasure: "Treasure", camp: "Camp", boss: "Sovereign" };
 type Camera = { x: number; y: number; scale: number };
 export function InfernalMap({ state, onAction, onHome, onMusic, musicOn, message, preview, tierPreview, onTierPreview }: {
   state: State; onAction: (action: Action) => void; onHome: () => void; onMusic: () => void; musicOn: boolean;
@@ -128,7 +128,7 @@ export function InfernalMap({ state, onAction, onHome, onMusic, musicOn, message
               {(current || starting) && <span className="atlas-location-flag">{current ? "YOU ARE HERE" : "START HERE"}</span>}
               <span className="map-marker-art" aria-hidden="true" style={{ backgroundImage: `url(${assetUrl(marker)})`, backgroundPosition: `${tier * 50}% 100%` }}/>
               {completed && ["combat","elite","boss"].includes(node.kind) && <span className="atlas-cleared-smoke" aria-hidden="true"><i/><i/><i/></span>}
-              {current && canEnterLocation(state) && <strong className="atlas-node-label" style={{ backgroundImage: `url(${assetUrl(density>2?"/opening-assets/runic-button.webp":"/infernal-assets/map-label-384.webp")})` }}><img src={assetUrl(`/infernal-assets/map-icon-${node.kind}.webp`)} alt=""/>{labels[node.kind]}{completed && <span className="atlas-cleared" aria-label="Cleared">✓</span>}</strong>}
+              {current && canEnterLocation(state) && <strong className="atlas-node-label" style={{ backgroundImage: `url(${assetUrl(density>2?"/opening-assets/runic-button.webp":"/infernal-assets/map-label-384.webp")})` }}>{node.kind==="camp"?<span aria-hidden="true">♨</span>:<img src={assetUrl(`/infernal-assets/map-icon-${node.kind}.webp`)} alt=""/>}{labels[node.kind]}{completed && <span className="atlas-cleared" aria-label="Cleared">✓</span>}</strong>}
               {current && <span className="atlas-current-particles" aria-hidden="true"><i/><i/><i/><i/><i/></span>}
               <small>{node.name}</small>
             </button>;
@@ -144,8 +144,3 @@ export function InfernalMap({ state, onAction, onHome, onMusic, musicOn, message
     </footer>
   </section>;
 }
-
-
-
-
-

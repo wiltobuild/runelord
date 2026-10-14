@@ -1,0 +1,40 @@
+{
+  "schemaVersion": 1,
+  "revision": "r1",
+  "source": "assets/ui/expedition-concepts/r1/treasure/source.png",
+  "sha256": "019ef18b4b193dd1ca7b704b4be860300620764fcca5e0def403801acc3aedbe",
+  "width": 1672,
+  "height": 941,
+  "prompt": "assets/ui/expedition-concepts/r1/treasure/prompt.txt",
+  "promptSha256": "6582c65e5675b547da0402b0ef04ed08ef03c5b44c017273f9dbaadb8bdee737",
+  "references": [
+    {
+      "path": "assets/ui/expedition-concepts/r1/encounter-choice/source.png",
+      "sha256": "e1b4a1786b8122d021df0360a875d6db9a4b3d6525c20acb82f54d838f68a0ca",
+      "decision": {
+        "status": "Existing game UI; no gallery decision"
+      }
+    },
+    {
+      "path": "assets/environments/expedition-paths/r1/infernal/treasure/source.png",
+      "sha256": "cb9696913fe8c8f8feefd808b19503953afd57b02397b27bf8bcf4eac0b912ea",
+      "decision": {
+        "status": "Existing game UI; no gallery decision"
+      }
+    }
+  ],
+  "tool": "built-in image_gen",
+  "approvalStatus": "Pending approval",
+  "integrationStatus": "Review only. User explicitly requires approval before implementation. No runtime exports or game code changes.",
+  "gallery": {
+    "path": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\approvals\\inbox\\expedition-ui-treasure\\r1\\source.png",
+    "sha256": "019ef18b4b193dd1ca7b704b4be860300620764fcca5e0def403801acc3aedbe",
+    "status": "Pending approval",
+    "gallery": "http://localhost:4317"
+  },
+  "qa": {
+    "visual": "Actual generated output inspected: clear primary composition, legible scene identity, consistent cel shading. UI concepts inspected for correct gameplay copy, legible hierarchy, complete controls and distinct illustrations.",
+    "technical": "PNG dimensions and exact source/gallery hashes verified.",
+    "limitations": "Flattened concept, not live UI. Final implementation must preserve live text and original character assets."
+  }
+}

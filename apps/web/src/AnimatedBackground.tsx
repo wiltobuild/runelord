@@ -18,7 +18,18 @@ const demonThrone = {
     phase: index / 22, color: index % 4 === 0 ? "#f7c480" : "#e87e40",
   })),
 };
-const scenes = { forge, forest, "forest-heart": forestHeart, arena, "demon-throne": demonThrone };
+// Existing snow particle renderer, restrained above the protected battle lane.
+const frozenWastes = {
+  ...forest, scene: "frozen-wastes", duration: 10, protected_lane: [.43, .87],
+  particles: Array.from({ length: 28 }, (_, index) => ({
+    kind: "snow", x: .03 + ((index * 37) % 94) / 100, y: .03,
+    rx: .0008 + index % 3 * .00025, ry: .0012 + index % 3 * .0003,
+    alpha: .22 + index % 4 * .04, sway: .012 + index % 3 * .004,
+    phase: index / 28, color: "#d5f3ff",
+  })),
+};
+const scenes = { forge, forest, "forest-heart": forestHeart, arena, "demon-throne": demonThrone,
+  "frozen-wastes": frozenWastes, "frozen-heart": { ...frozenWastes, scene: "frozen-heart" } };
 
 /** Existing eight-second scene loops, rendered as a transparent layer over their source art.
  * Geometry/opacity follows the saved RunelordWeather runtime, including its protected lane. */

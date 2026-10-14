@@ -1,6 +1,8 @@
+// Preserve this pre-expansion regression suite; expansion behavior has dedicated coverage.
+const newInfernalRun=(...args:Parameters<typeof currentInfernalRun>)=>{const originalLength=args.length;if(originalLength<6&&!args[2])args[5]=0;if(originalLength<7&&!args[2])args[6]=0;args[9]??=1;return currentInfernalRun(...args);};
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import {newInfernalRun,dispatch,intent,save,restore,availableNodes,type State} from './index';
+import {newInfernalRun as currentInfernalRun,dispatch,intent,save,restore,availableNodes,type State} from './index';
 function shieldFight(maxHp=43):State {const initial=newInfernalRun(42),s=dispatch(initial,{type:'travel',node:availableNodes(initial)[0].id});s.enemies=[{id:800,name:'Shield bearer',art:'cairnback-hermit',hp:7,maxHp,guard:0,scorch:0,moves:[{name:'Shelter',damage:0,targeting:'hero',kind:'shield',guard:12},{name:'Wait',damage:0,targeting:'front'}]}];s.reserves=[];s.focus=800;return s;}
 test('every monster shield grants rounded half max HP, independent of wounds and old content guard',()=>{
  for(const maxHp of [1,42,43,150,190]) {

@@ -1,0 +1,161 @@
+{
+  "timestamp": "2026-10-14T07:23:27.736Z",
+  "runs": [
+    {
+      "mode": "conquer",
+      "deck": "fire",
+      "seed": 42,
+      "result": "lost",
+      "status": "terminated-with-replay",
+      "steps": 219,
+      "replays": 2,
+      "room": 9,
+      "turn": 3,
+      "hp": 0,
+      "phases": [
+        "map",
+        "combat",
+        "reward",
+        "loot",
+        "treasure",
+        "camp",
+        "shop"
+      ],
+      "realms": [
+        "infernal",
+        "forest"
+      ]
+    },
+    {
+      "mode": "conquer",
+      "deck": "warband",
+      "seed": 42,
+      "result": "won",
+      "status": "terminated-with-replay",
+      "steps": 1118,
+      "replays": 11,
+      "room": 32,
+      "turn": 11,
+      "hp": 28,
+      "phases": [
+        "map",
+        "combat",
+        "reward",
+        "loot",
+        "treasure",
+        "camp",
+        "shop"
+      ],
+      "realms": [
+        "infernal",
+        "forest",
+        "frozen-wastes"
+      ]
+    },
+    {
+      "mode": "conquer",
+      "deck": "hellbound",
+      "seed": 42,
+      "result": "won",
+      "status": "terminated-with-replay",
+      "steps": 770,
+      "replays": 6,
+      "room": 32,
+      "turn": 9,
+      "hp": 58,
+      "phases": [
+        "map",
+        "combat",
+        "reward",
+        "loot",
+        "treasure",
+        "camp",
+        "shop"
+      ],
+      "realms": [
+        "infernal",
+        "forest",
+        "frozen-wastes"
+      ]
+    },
+    {
+      "mode": "conquer",
+      "deck": "gravehost",
+      "seed": 42,
+      "result": "won",
+      "status": "terminated-with-replay",
+      "steps": 1147,
+      "replays": 11,
+      "room": 8,
+      "turn": 2,
+      "hp": 80,
+      "phases": [
+        "map",
+        "combat",
+        "reward",
+        "loot",
+        "shop",
+        "camp",
+        "treasure"
+      ],
+      "realms": [
+        "frozen-wastes",
+        "forest",
+        "infernal"
+      ]
+    },
+    {
+      "mode": "conquer",
+      "deck": "rimebound",
+      "seed": 42,
+      "result": "won",
+      "status": "terminated-with-replay",
+      "steps": 1250,
+      "replays": 12,
+      "room": 8,
+      "turn": 3,
+      "hp": 80,
+      "phases": [
+        "map",
+        "combat",
+        "reward",
+        "loot",
+        "shop",
+        "camp",
+        "treasure"
+      ],
+      "realms": [
+        "frozen-wastes",
+        "forest",
+        "infernal"
+      ]
+    },
+    {
+      "mode": "conquer",
+      "deck": "runewarden",
+      "seed": 42,
+      "result": "won",
+      "status": "terminated-with-replay",
+      "steps": 1076,
+      "replays": 10,
+      "room": 8,
+      "turn": 4,
+      "hp": 80,
+      "phases": [
+        "map",
+        "combat",
+        "reward",
+        "loot",
+        "shop",
+        "camp",
+        "treasure"
+      ],
+      "realms": [
+        "frozen-wastes",
+        "forest",
+        "infernal"
+      ]
+    }
+  ],
+  "limitations": "Heuristic bot, not a balance certification; no state or resource cheats. Lost runs remain losses."
+}

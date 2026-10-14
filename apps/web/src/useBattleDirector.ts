@@ -1,3 +1,4 @@
+import { FROZEN_WASTES_ENEMY_IDS } from "../../../packages/engine/frozenWastes";
 import { RUNEBLADE_SUMMON, RUNEBLADE_SUMMON_MS, isRunebladeSummon } from "./runebladeSummonTiming";
 import { flushSync } from "react-dom";
 import { EMPOWER_MS } from "./empowerTiming";
@@ -553,7 +554,7 @@ export function useBattleDirector(
             const target = natureWardTargetForImage(enemy.art,sprite.getBoundingClientRect(),arena.getBoundingClientRect(),stageScale());
             effect("nature-ward",center,[target],100,0,1);
           }
-        } else effect("ward",center,[{x:center.x-55,y:center.y+20}],100,0,1.5);
+        } else effect("ward",center,[{x:center.x-55,y:center.y+20}],100,0,1.5,undefined,undefined,!!enemy && (FROZEN_WASTES_ENEMY_IDS as readonly string[]).includes(enemy.art));
         recovery = 650;
       }
       if (event.type === "boss-phase") {
@@ -562,6 +563,7 @@ export function useBattleDirector(
         cue(id,"cast"); setLabel(event.message); sfx.play("boss-phase",0,.25);
         const forest=event.view?.enemies.find(e=>e.id===event.actor)?.boss==="forest-sovereign";
         if(forest){effect("crownfall",center,[groundPoint(id)],100,0,1.2);recovery=1000;continue;}
+        if(event.view?.enemies.find(e=>e.id===event.actor)?.boss==="frozen-sovereign"){effect("frost",center,[groundPoint(id)],100,0,2.2,undefined,undefined,true);recovery=1000;continue;}
         effect("ascend",center,[],100,0,2.2);
         effect("conflagrate",center,[center],120,200,2);
         recovery = 1250;

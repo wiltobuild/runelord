@@ -1,0 +1,1976 @@
+{
+  "timestamp": "2026-10-14T05:09:22.290Z",
+  "results": [
+    {
+      "root": "C:/Users/wilsh/Projects/runelord",
+      "status": "pass",
+      "actors": [
+        {
+          "id": "rimejaw-scavenger",
+          "states": {
+            "idle": {
+              "uniqueImages": 4,
+              "duration": 1300
+            },
+            "wounded_idle": {
+              "uniqueImages": 4,
+              "duration": 1300
+            },
+            "attack": {
+              "uniqueImages": 1,
+              "duration": 650
+            },
+            "cast": {
+              "uniqueImages": 1,
+              "duration": 700
+            },
+            "hit": {
+              "uniqueImages": 1,
+              "duration": 280
+            },
+            "guard": {
+              "uniqueImages": 1,
+              "duration": 600
+            },
+            "spawn": {
+              "uniqueImages": 1,
+              "duration": 1200
+            },
+            "die": {
+              "uniqueImages": 1,
+              "duration": 600
+            }
+          }
+        },
+        {
+          "id": "shardstep-skitterer",
+          "states": {
+            "idle": {
+              "uniqueImages": 6,
+              "duration": 1080
+            },
+            "wounded_idle": {
+              "uniqueImages": 6,
+              "duration": 1080
+            },
+            "attack": {
+              "uniqueImages": 1,
+              "duration": 650
+            },
+            "cast": {
+              "uniqueImages": 1,
+              "duration": 700
+            },
+            "hit": {
+              "uniqueImages": 1,
+              "duration": 280
+            },
+            "guard": {
+              "uniqueImages": 1,
+              "duration": 600
+            },
+            "spawn": {
+              "uniqueImages": 1,
+              "duration": 1200
+            },
+            "die": {
+              "uniqueImages": 1,
+              "duration": 600
+            }
+          }
+        },
+        {
+          "id": "whiteout-ray",
+          "states": {
+            "idle": {
+              "uniqueImages": 8,
+              "duration": 1440
+            },
+            "wounded_idle": {
+              "uniqueImages": 8,
+              "duration": 1440
+            },
+            "attack": {
+              "uniqueImages": 1,
+              "duration": 650
+            },
+            "cast": {
+              "uniqueImages": 1,
+              "duration": 700
+            },
+            "hit": {
+              "uniqueImages": 1,
+              "duration": 280
+            },
+            "guard": {
+              "uniqueImages": 1,
+              "duration": 600
+            },
+            "spawn": {
+              "uniqueImages": 1,
+              "duration": 1200
+            },
+            "die": {
+              "uniqueImages": 1,
+              "duration": 600
+            }
+          }
+        },
+        {
+          "id": "coffinback-bastion",
+          "states": {
+            "idle": {
+              "uniqueImages": 8,
+              "duration": 1840
+            },
+            "wounded_idle": {
+              "uniqueImages": 8,
+              "duration": 1840
+            },
+            "attack": {
+              "uniqueImages": 1,
+              "duration": 650
+            },
+            "cast": {
+              "uniqueImages": 1,
+              "duration": 700
+            },
+            "hit": {
+              "uniqueImages": 1,
+              "duration": 280
+            },
+            "guard": {
+              "uniqueImages": 1,
+              "duration": 600
+            },
+            "spawn": {
+              "uniqueImages": 1,
+              "duration": 1200
+            },
+            "die": {
+              "uniqueImages": 1,
+              "duration": 600
+            }
+          }
+        },
+        {
+          "id": "hollowmask-oracle",
+          "states": {
+            "idle": {
+              "uniqueImages": 4,
+              "duration": 1560
+            },
+            "wounded_idle": {
+              "uniqueImages": 4,
+              "duration": 1560
+            },
+            "attack": {
+              "uniqueImages": 1,
+              "duration": 650
+            },
+            "cast": {
+              "uniqueImages": 1,
+              "duration": 700
+            },
+            "hit": {
+              "uniqueImages": 1,
+              "duration": 280
+            },
+            "guard": {
+              "uniqueImages": 1,
+              "duration": 600
+            },
+            "spawn": {
+              "uniqueImages": 1,
+              "duration": 1200
+            },
+            "die": {
+              "uniqueImages": 1,
+              "duration": 600
+            }
+          }
+        },
+        {
+          "id": "shardlance-stalker",
+          "states": {
+            "idle": {
+              "uniqueImages": 8,
+              "duration": 1520
+            },
+            "wounded_idle": {
+              "uniqueImages": 8,
+              "duration": 1520
+            },
+            "attack": {
+              "uniqueImages": 1,
+              "duration": 650
+            },
+            "cast": {
+              "uniqueImages": 1,
+              "duration": 700
+            },
+            "hit": {
+              "uniqueImages": 1,
+              "duration": 280
+            },
+            "guard": {
+              "uniqueImages": 1,
+              "duration": 600
+            },
+            "spawn": {
+              "uniqueImages": 1,
+              "duration": 1200
+            },
+            "die": {
+              "uniqueImages": 1,
+              "duration": 600
+            }
+          }
+        },
+        {
+          "id": "hoarveil-crone",
+          "states": {
+            "idle": {
+              "uniqueImages": 4,
+              "duration": 1920
+            },
+            "wounded_idle": {
+              "uniqueImages": 4,
+              "duration": 1920
+            },
+            "attack": {
+              "uniqueImages": 1,
+              "duration": 650
+            },
+            "cast": {
+              "uniqueImages": 1,
+              "duration": 700
+            },
+            "hit": {
+              "uniqueImages": 1,
+              "duration": 280
+            },
+            "guard": {
+              "uniqueImages": 1,
+              "duration": 600
+            },
+            "spawn": {
+              "uniqueImages": 1,
+              "duration": 1200
+            },
+            "die": {
+              "uniqueImages": 1,
+              "duration": 600
+            }
+          }
+        },
+        {
+          "id": "iceclamp-bombardier",
+          "states": {
+            "idle": {
+              "uniqueImages": 8,
+              "duration": 1680
+            },
+            "wounded_idle": {
+              "uniqueImages": 8,
+              "duration": 1680
+            },
+            "attack": {
+              "uniqueImages": 1,
+              "duration": 650
+            },
+            "cast": {
+              "uniqueImages": 1,
+              "duration": 700
+            },
+            "hit": {
+              "uniqueImages": 1,
+              "duration": 280
+            },
+            "guard": {
+              "uniqueImages": 1,
+              "duration": 600
+            },
+            "spawn": {
+              "uniqueImages": 1,
+              "duration": 1200
+            },
+            "die": {
+              "uniqueImages": 1,
+              "duration": 600
+            }
+          }
+        },
+        {
+          "id": "paleveil-moth",
+          "states": {
+            "idle": {
+              "uniqueImages": 4,
+              "duration": 840
+            },
+            "wounded_idle": {
+              "uniqueImages": 4,
+              "duration": 840
+            },
+            "attack": {
+              "uniqueImages": 1,
+              "duration": 650
+            },
+            "cast": {
+              "uniqueImages": 1,
+              "duration": 700
+            },
+            "hit": {
+              "uniqueImages": 1,
+              "duration": 280
+            },
+            "guard": {
+              "uniqueImages": 1,
+              "duration": 600
+            },
+            "spawn": {
+              "uniqueImages": 1,
+              "duration": 1200
+            },
+            "die": {
+              "uniqueImages": 1,
+              "duration": 600
+            }
+          }
+        },
+        {
+          "id": "cairnfrost-ursine",
+          "states": {
+            "idle": {
+              "uniqueImages": 4,
+              "duration": 2280
+            },
+            "wounded_idle": {
+              "uniqueImages": 4,
+              "duration": 2280
+            },
+            "attack": {
+              "uniqueImages": 1,
+              "duration": 650
+            },
+            "cast": {
+              "uniqueImages": 1,
+              "duration": 700
+            },
+            "hit": {
+              "uniqueImages": 1,
+              "duration": 280
+            },
+            "guard": {
+              "uniqueImages": 1,
+              "duration": 600
+            },
+            "spawn": {
+              "uniqueImages": 1,
+              "duration": 1200
+            },
+            "die": {
+              "uniqueImages": 1,
+              "duration": 600
+            }
+          }
+        },
+        {
+          "id": "dragon-frost-mammoth",
+          "states": {
+            "idle": {
+              "uniqueImages": 4,
+              "duration": 1880
+            },
+            "wounded_idle": {
+              "uniqueImages": 4,
+              "duration": 1880
+            },
+            "attack": {
+              "uniqueImages": 1,
+              "duration": 650
+            },
+            "cast": {
+              "uniqueImages": 1,
+              "duration": 700
+            },
+            "hit": {
+              "uniqueImages": 1,
+              "duration": 280
+            },
+            "guard": {
+              "uniqueImages": 1,
+              "duration": 600
+            },
+            "spawn": {
+              "uniqueImages": 1,
+              "duration": 1200
+            },
+            "die": {
+              "uniqueImages": 1,
+              "duration": 600
+            }
+          }
+        },
+        {
+          "id": "dragon-rime-antler",
+          "states": {
+            "idle": {
+              "uniqueImages": 4,
+              "duration": 1880
+            },
+            "wounded_idle": {
+              "uniqueImages": 4,
+              "duration": 1880
+            },
+            "attack": {
+              "uniqueImages": 1,
+              "duration": 650
+            },
+            "cast": {
+              "uniqueImages": 1,
+              "duration": 700
+            },
+            "hit": {
+              "uniqueImages": 1,
+              "duration": 280
+            },
+            "guard": {
+              "uniqueImages": 1,
+              "duration": 600
+            },
+            "spawn": {
+              "uniqueImages": 1,
+              "duration": 1200
+            },
+            "die": {
+              "uniqueImages": 1,
+              "duration": 600
+            }
+          }
+        },
+        {
+          "id": "rime-hauler",
+          "states": {
+            "idle": {
+              "uniqueImages": 4,
+              "duration": 2100
+            },
+            "wounded_idle": {
+              "uniqueImages": 4,
+              "duration": 2100
+            },
+            "attack": {
+              "uniqueImages": 1,
+              "duration": 650
+            },
+            "cast": {
+              "uniqueImages": 1,
+              "duration": 700
+            },
+            "hit": {
+              "uniqueImages": 1,
+              "duration": 280
+            },
+            "guard": {
+              "uniqueImages": 1,
+              "duration": 600
+            },
+            "spawn": {
+              "uniqueImages": 1,
+              "duration": 1200
+            },
+            "die": {
+              "uniqueImages": 1,
+              "duration": 600
+            }
+          }
+        },
+        {
+          "id": "avalanche-colossus",
+          "states": {
+            "idle": {
+              "uniqueImages": 4,
+              "duration": 2400
+            },
+            "wounded_idle": {
+              "uniqueImages": 4,
+              "duration": 2400
+            },
+            "attack": {
+              "uniqueImages": 1,
+              "duration": 650
+            },
+            "cast": {
+              "uniqueImages": 1,
+              "duration": 700
+            },
+            "hit": {
+              "uniqueImages": 1,
+              "duration": 280
+            },
+            "guard": {
+              "uniqueImages": 1,
+              "duration": 600
+            },
+            "spawn": {
+              "uniqueImages": 1,
+              "duration": 1200
+            },
+            "die": {
+              "uniqueImages": 1,
+              "duration": 600
+            }
+          }
+        }
+      ],
+      "files": [
+        {
+          "url": "/game-assets/frozen-wastes/actors/rimejaw-scavenger/7b619bf5cfa5/0.webp",
+          "width": 640,
+          "height": 640,
+          "sha256": "14ef7aa22183831411f8267c97971c7e651acac379ee46777a2a811e84c835ae"
+        },
+        {
+          "url": "/game-assets/frozen-wastes/actors/rimejaw-scavenger/7b619bf5cfa5/1.webp",
+          "width": 640,
+          "height": 640,
+          "sha256": "707e3d035cade439c5bba9e96eda6684fd978f8413d8ec64eded05ed50c0f248"
+        },
+        {
+          "url": "/game-assets/frozen-wastes/actors/rimejaw-scavenger/7b619bf5cfa5/2.webp",
+          "width": 640,
+          "height": 640,
+          "sha256": "de5f4f2579de70c397146070b8c8232a30aeab90e828febe56716f94d8878337"
+        },
+        {
+          "url": "/game-assets/frozen-wastes/actors/rimejaw-scavenger/7b619bf5cfa5/3.webp",
+          "width": 640,
+          "height": 640,
+          "sha256": "54cdb62c7cd1f68995ff0ba127bb00b1f903e3b97ffa689bffa1ec343abdd713"
+        },
+        {
+          "url": "/game-assets/frozen-wastes/actors/shardstep-skitterer/6622b1e49f2f/0.webp",
+          "width": 640,
+          "height": 640,
+          "sha256": "7001b4af5b25d38e346c5546ceb05a32d6cfbf2b152fc51664d7f74869409901"
+        },
+        {
+          "url": "/game-assets/frozen-wastes/actors/shardstep-skitterer/6622b1e49f2f/1.webp",
+          "width": 640,
+          "height": 640,
+          "sha256": "2302c281b72cd12735e66711031c030bcb6e2610873d211e7ffafc0d72ed15a2"
+        },
+        {
+          "url": "/game-assets/frozen-wastes/actors/shardstep-skitterer/6622b1e49f2f/2.webp",
+          "width": 640,
+          "height": 640,
+          "sha256": "7001b4af5b25d38e346c5546ceb05a32d6cfbf2b152fc51664d7f74869409901"
+        },
+        {
+          "url": "/game-assets/frozen-wastes/actors/shardstep-skitterer/6622b1e49f2f/3.webp",
+          "width": 640,
+          "height": 640,
+          "sha256": "ded9dd463e14b3ddfd04243900f44aaa4c5bc5021ce628b3043d0db256dc6cbb"
+        },
+        {
+          "url": "/game-assets/frozen-wastes/actors/shardstep-skitterer/6622b1e49f2f/4.webp",
+          "width": 640,
+          "height": 640,
+          "sha256": "0c68ef7b894abe4ae9ebe2583470b95e3d44bf86bc9f9113bdee674b90658fba"
+        },
+        {
+          "url": "/game-assets/frozen-wastes/actors/shardstep-skitterer/6622b1e49f2f/5.webp",
+          "width": 640,
+          "height": 640,
+          "sha256": "ded9dd463e14b3ddfd04243900f44aaa4c5bc5021ce628b3043d0db256dc6cbb"
+        },
+        {
+          "url": "/game-assets/frozen-wastes/actors/whiteout-ray/4daf636f0eb8/0.webp",
+          "width": 512,
+          "height": 512,
+          "sha256": "42abb532ab080463fb2b8f66739a048be0dbe18f778a844f5ddf9695e2e1720d"
+        },
+        {
+          "url": "/game-assets/frozen-wastes/actors/whiteout-ray/4daf636f0eb8/1.webp",
+          "width": 512,
+          "height": 512,
+          "sha256": "b31b95686e0f444554a204a85615264b85a41258dbbf2cf474ff60a41427a587"
+        },
+        {
+          "url": "/game-assets/frozen-wastes/actors/whiteout-ray/4daf636f0eb8/2.webp",
+          "width": 512,
+          "height": 512,
+          "sha256": "d6c79652d8d39ce75af49c9e8a00c38910ec5f44cacb8b6790606d36bb1418e9"
+        },
+        {
+          "url": "/game-assets/frozen-wastes/actors/whiteout-ray/4daf636f0eb8/3.webp",
+          "width": 512,
+          "height": 512,
+          "sha256": "68c17f95a47a15fa499fa11eaa42044ae6d884b052506eede730630a9c3f9751"
+        },
+        {
+          "url": "/game-assets/frozen-wastes/actors/whiteout-ray/4daf636f0eb8/4.webp",
+          "width": 512,
+          "height": 512,
+          "sha256": "c90bec8eb9bede32213fcb4fa9ac58236552bdd8546cd1525c4817d5ccccd0d2"
+        },
+        {
+          "url": "/game-assets/frozen-wastes/actors/whiteout-ray/4daf636f0eb8/5.webp",
+          "width": 512,
+          "height": 512,
+          "sha256": "6d0fa6570d5887afdd3c14565b1acc3b31daf417ffc388456483ca7e0491a083"
+        },
+        {
+          "url": "/game-assets/frozen-wastes/actors/whiteout-ray/4daf636f0eb8/6.webp",
+          "width": 512,
+          "height": 512,
+          "sha256": "21af1a2e9fafff0372d4349d4375d6ce6df160cfb462cb21fcff02d90e958567"
+        },
+        {
+          "url": "/game-assets/frozen-wastes/actors/whiteout-ray/4daf636f0eb8/7.webp",
+          "width": 512,
+          "height": 512,
+          "sha256": "2baa4f646e77865b5773bbb8ca12e6bd88c927421e5b83ec65b15cd1d68653c9"
+        },
+        {
+          "url": "/game-assets/frozen-wastes/actors/coffinback-bastion/9fbc7ec8c31d/0.webp",
+          "width": 512,
+          "height": 596,
+          "sha256": "a4dce781b15f304d1fa92beffd647e58c746424c8d000d564a547d2adfb00213"
+        },
+        {
+          "url": "/game-assets/frozen-wastes/actors/coffinback-bastion/9fbc7ec8c31d/1.webp",
+          "width": 512,
+          "height": 596,
+          "sha256": "cfd32f77de8972addbec9c81bf1245f036e183b25f0565757c2133e8eae8e607"
+        },
+        {
+          "url": "/game-assets/frozen-wastes/actors/coffinback-bastion/9fbc7ec8c31d/2.webp",
+          "width": 512,
+          "height": 596,
+          "sha256": "0ffa521d8170df7ae0a684934fee050dbdfde665280b2f2f2c490532a28868cc"
+        },
+        {
+          "url": "/game-assets/frozen-wastes/actors/coffinback-bastion/9fbc7ec8c31d/3.webp",
+          "width": 512,
+          "height": 596,
+          "sha256": "5b524edfc1435ad791f6f09e2a7f8b48f5c5d30615c8be085c75d75b0f25ca0f"
+        },
+        {
+          "url": "/game-assets/frozen-wastes/actors/coffinback-bastion/9fbc7ec8c31d/4.webp",
+          "width": 512,
+          "height": 596,
+          "sha256": "cb9b04dbdd8b596998019b8e92eed8ef5ab9a30869016fe793953d8e38b57576"
+        },
+        {
+          "url": "/game-assets/frozen-wastes/actors/coffinback-bastion/9fbc7ec8c31d/5.webp",
+          "width": 512,
+          "height": 596,
+          "sha256": "3a30406a1f8daca50ab3dc0970e8edf03d3787b1858dcfd0649691a787de7507"
+        },
+        {
+          "url": "/game-assets/frozen-wastes/actors/coffinback-bastion/9fbc7ec8c31d/6.webp",
+          "width": 512,
+          "height": 596,
+          "sha256": "3bc26f28b01f7c42a860b69820d9f724ce61e923a6bf51fc30c90383960dc8e6"
+        },
+        {
+          "url": "/game-assets/frozen-wastes/actors/coffinback-bastion/9fbc7ec8c31d/7.webp",
+          "width": 512,
+          "height": 596,
+          "sha256": "32a5cd39bb756dacfcac6961fb4c0cf4d441731a7f21330a85e4d939e2d38f81"
+        },
+        {
+          "url": "/game-assets/frozen-wastes/actors/hollowmask-oracle/cbd764916672/0.webp",
+          "width": 512,
+          "height": 512,
+          "sha256": "64c6ed24449cb081ac410f43574c6323842a6c86556801a4879610a733af8adb"
+        },
+        {
+          "url": "/game-assets/frozen-wastes/actors/hollowmask-oracle/cbd764916672/1.webp",
+          "width": 512,
+          "height": 512,
+          "sha256": "62f6f97ce92eddb59b2f5f8199eaf0b1d83d285ad5d53c9a71452701beb8c978"
+        },
+        {
+          "url": "/game-assets/frozen-wastes/actors/hollowmask-oracle/cbd764916672/2.webp",
+          "width": 512,
+          "height": 512,
+          "sha256": "639d4972dcef09a25a1e65a427f50397e8c8f92110a50b6d448026a1399d36d9"
+        },
+        {
+          "url": "/game-assets/frozen-wastes/actors/hollowmask-oracle/cbd764916672/3.webp",
+          "width": 512,
+          "height": 512,
+          "sha256": "ebaa3247b13781eaa076364982d2d025a456cf798edb9809a487090a09044e43"
+        },
+        {
+          "url": "/game-assets/frozen-wastes/actors/shardlance-stalker/ec7e97805bf7/0.webp",
+          "width": 528,
+          "height": 576,
+          "sha256": "f61a7a0ccb46baaf7baacf05175f6281f10ba960ac34ad68c60a22e7efc0ef7a"
+        },
+        {
+          "url": "/game-assets/frozen-wastes/actors/shardlance-stalker/ec7e97805bf7/1.webp",
+          "width": 528,
+          "height": 576,
+          "sha256": "6a7fee3f36e78d3fae3af5b794389ce64ed0859e8001cd7d15660da6c0e98397"
+        },
+        {
+          "url": "/game-assets/frozen-wastes/actors/shardlance-stalker/ec7e97805bf7/2.webp",
+          "width": 528,
+          "height": 576,
+          "sha256": "fb6a41885e0aeca36f6d39f3c6ce5adc773d1679cc704dc305925b5d50ff87ca"
+        },
+        {
+          "url": "/game-assets/frozen-wastes/actors/shardlance-stalker/ec7e97805bf7/3.webp",
+          "width": 528,
+          "height": 576,
+          "sha256": "c3c15cae5079cea3cac88a61ecbbbe2abb9f5a6ccfa11074101bc2574e65cf5a"
+        },
+        {
+          "url": "/game-assets/frozen-wastes/actors/shardlance-stalker/ec7e97805bf7/4.webp",
+          "width": 528,
+          "height": 576,
+          "sha256": "1cb901812a8514351c3141440039ae94e26122ae9ed26d5fd8c0aaf880f92ffe"
+        },
+        {
+          "url": "/game-assets/frozen-wastes/actors/shardlance-stalker/ec7e97805bf7/5.webp",
+          "width": 528,
+          "height": 576,
+          "sha256": "8ea573589d4af1382059b162a91bb7987035336d21d4982e5a83b475629cc857"
+        },
+        {
+          "url": "/game-assets/frozen-wastes/actors/shardlance-stalker/ec7e97805bf7/6.webp",
+          "width": 528,
+          "height": 576,
+          "sha256": "70d1703916e0ad683a19b0a8d90498b0f98c96b36f40c82fbd8d17e718e8324d"
+        },
+        {
+          "url": "/game-assets/frozen-wastes/actors/shardlance-stalker/ec7e97805bf7/7.webp",
+          "width": 528,
+          "height": 576,
+          "sha256": "1ecdb7f13c57e58537cfd6a1d3292c930647f5771bcd49a5e10e35af84ce2a5b"
+        },
+        {
+          "url": "/game-assets/frozen-wastes/actors/hoarveil-crone/294884caceaf/0.webp",
+          "width": 640,
+          "height": 587,
+          "sha256": "309a71d7472d3110d1e16a959a9b1b34778725099ddc458bd887d7b3552f7739"
+        },
+        {
+          "url": "/game-assets/frozen-wastes/actors/hoarveil-crone/294884caceaf/1.webp",
+          "width": 640,
+          "height": 587,
+          "sha256": "bb1bd480001874478707a7fa93e251775d2d2907ff0588b9fb427b9f38a6574f"
+        },
+        {
+          "url": "/game-assets/frozen-wastes/actors/hoarveil-crone/294884caceaf/2.webp",
+          "width": 640,
+          "height": 587,
+          "sha256": "4e0e2bb25bf7cc5a0c18837718c0c814aefadfdac43f58f4d62e1ac24f385184"
+        },
+        {
+          "url": "/game-assets/frozen-wastes/actors/hoarveil-crone/294884caceaf/3.webp",
+          "width": 640,
+          "height": 587,
+          "sha256": "6312e1f16385eabf612b6ba38bc4807a31bdf33997505834bb3b94b2fa81f0e3"
+        },
+        {
+          "url": "/game-assets/frozen-wastes/actors/iceclamp-bombardier/72adf46c84b0/0.webp",
+          "width": 528,
+          "height": 576,
+          "sha256": "bf05650041377cb45f9e4015042603d918b229c18024ccb340e76bf0007cb9cc"
+        },
+        {
+          "url": "/game-assets/frozen-wastes/actors/iceclamp-bombardier/72adf46c84b0/1.webp",
+          "width": 528,
+          "height": 576,
+          "sha256": "09cfa62b4bc69573d9eb405c10387d20e76c79541567447ac7d636bcfd9e7673"
+        },
+        {
+          "url": "/game-assets/frozen-wastes/actors/iceclamp-bombardier/72adf46c84b0/2.webp",
+          "width": 528,
+          "height": 576,
+          "sha256": "94e786d4990fb646bcad23151ac98e2500b1a76ab84630708a9b7aea02ec0d82"
+        },
+        {
+          "url": "/game-assets/frozen-wastes/actors/iceclamp-bombardier/72adf46c84b0/3.webp",
+          "width": 528,
+          "height": 576,
+          "sha256": "4d4561f8915572a011d788ec57b491a13dd34904cffb646d776c90e793ada9f4"
+        },
+        {
+          "url": "/game-assets/frozen-wastes/actors/iceclamp-bombardier/72adf46c84b0/4.webp",
+          "width": 528,
+          "height": 576,
+          "sha256": "6362548f2f8061f5f6e34a0a0c0e970e7dc2ab7d6e40315ce6388141847e4e55"
+        },
+        {
+          "url": "/game-assets/frozen-wastes/actors/iceclamp-bombardier/72adf46c84b0/5.webp",
+          "width": 528,
+          "height": 576,
+          "sha256": "dfd36079bcb1df7f3355730f96ec570e2c6e5d1d1aaf90b3f3a7130befb80233"
+        },
+        {
+          "url": "/game-assets/frozen-wastes/actors/iceclamp-bombardier/72adf46c84b0/6.webp",
+          "width": 528,
+          "height": 576,
+          "sha256": "13715a88c5a84d4ce4bc9c57faded19bf73fce4c819cd4bcbaf5b92fa247c582"
+        },
+        {
+          "url": "/game-assets/frozen-wastes/actors/iceclamp-bombardier/72adf46c84b0/7.webp",
+          "width": 528,
+          "height": 576,
+          "sha256": "7b0789afa9978053bd5ae653c47b71ced8caaa1bc4ca119b15cc76991d9b9f44"
+        },
+        {
+          "url": "/game-assets/frozen-wastes/actors/paleveil-moth/eb87361eb1eb/0.webp",
+          "width": 640,
+          "height": 640,
+          "sha256": "a40fb3ef1d3d48b91acad67faf924bb4e79e5668fb4bc3c17089989b97d7b2ca"
+        },
+        {
+          "url": "/game-assets/frozen-wastes/actors/paleveil-moth/eb87361eb1eb/1.webp",
+          "width": 640,
+          "height": 640,
+          "sha256": "09a9bdeb066b34cf0d4f99c88a746de985bcd4a404feceee2f1a7df146a416d1"
+        },
+        {
+          "url": "/game-assets/frozen-wastes/actors/paleveil-moth/eb87361eb1eb/2.webp",
+          "width": 640,
+          "height": 640,
+          "sha256": "52247cbdc5d23154effe6cf3ebf5f31f50e676a790133e0f92c959b0358735eb"
+        },
+        {
+          "url": "/game-assets/frozen-wastes/actors/paleveil-moth/eb87361eb1eb/3.webp",
+          "width": 640,
+          "height": 640,
+          "sha256": "89a8c10908d606e3cc57c8656771b4a7bed598d7fe62ced3e31ca2fcf6c9d2ee"
+        },
+        {
+          "url": "/game-assets/frozen-wastes/actors/cairnfrost-ursine/829555c18277/0.webp",
+          "width": 640,
+          "height": 640,
+          "sha256": "0076b7b00daf0cd74a0fee84bd9cfe54c0a291cc8ac7be67c51a8ffa94deca8c"
+        },
+        {
+          "url": "/game-assets/frozen-wastes/actors/cairnfrost-ursine/829555c18277/1.webp",
+          "width": 640,
+          "height": 640,
+          "sha256": "167a30112bfb7bce098d1145269928f84a46c639ee83b3d50201668e60b1418a"
+        },
+        {
+          "url": "/game-assets/frozen-wastes/actors/cairnfrost-ursine/829555c18277/2.webp",
+          "width": 640,
+          "height": 640,
+          "sha256": "3da0658120545ab5e61e32da4638d5a7cf028eac0ff9e0d6191ef94337518451"
+        },
+        {
+          "url": "/game-assets/frozen-wastes/actors/cairnfrost-ursine/829555c18277/3.webp",
+          "width": 640,
+          "height": 640,
+          "sha256": "256ea3c684a2c525e243f8e763d067a65d9f0141945552f4e893e2ea25ae19d0"
+        },
+        {
+          "url": "/game-assets/frozen-wastes/actors/dragon-frost-mammoth/0fc1b814852e/0.webp",
+          "width": 640,
+          "height": 640,
+          "sha256": "c07712b10c9fb81e64d951ebadabea3c09850b66983df4e70750940a022f5c73"
+        },
+        {
+          "url": "/game-assets/frozen-wastes/actors/dragon-frost-mammoth/0fc1b814852e/1.webp",
+          "width": 640,
+          "height": 640,
+          "sha256": "00f6a20ea7285b749fd96ed67e3f63b725817ed4c982b4ba7d653cd841bb4f39"
+        },
+        {
+          "url": "/game-assets/frozen-wastes/actors/dragon-frost-mammoth/0fc1b814852e/2.webp",
+          "width": 640,
+          "height": 640,
+          "sha256": "d1f1de9fd54131a4250bdc61a30312718b5d38bee8ea779dad1f6832da9a8ae3"
+        },
+        {
+          "url": "/game-assets/frozen-wastes/actors/dragon-frost-mammoth/0fc1b814852e/3.webp",
+          "width": 640,
+          "height": 640,
+          "sha256": "88cd18e91c9b34a69ec5d0f97b2306cfd6bc4aeefc53ea4670acae0aa94cc3e6"
+        },
+        {
+          "url": "/game-assets/frozen-wastes/actors/dragon-rime-antler/6efe4057fcca/0.webp",
+          "width": 640,
+          "height": 640,
+          "sha256": "398a774deea482458eaf25677c9753e95b6f974ec4c27a7d5101212af9a4714b"
+        },
+        {
+          "url": "/game-assets/frozen-wastes/actors/dragon-rime-antler/6efe4057fcca/1.webp",
+          "width": 640,
+          "height": 640,
+          "sha256": "fa3ac840f37d1b16ada60a55a0cb7daeabf6143dc53c921ba4034ba5787695a6"
+        },
+        {
+          "url": "/game-assets/frozen-wastes/actors/dragon-rime-antler/6efe4057fcca/2.webp",
+          "width": 640,
+          "height": 640,
+          "sha256": "8285b4d9345b915f959afcff2b354618068b7b608473257e8b9c490233ff573b"
+        },
+        {
+          "url": "/game-assets/frozen-wastes/actors/dragon-rime-antler/6efe4057fcca/3.webp",
+          "width": 640,
+          "height": 640,
+          "sha256": "e49c49d0b667d71df4d623515c1c19ea5eadfebd68b5bd9cd5a5286e9f3f7694"
+        },
+        {
+          "url": "/game-assets/frozen-wastes/actors/rime-hauler/ae84bc883a9f/0.webp",
+          "width": 640,
+          "height": 587,
+          "sha256": "d6cd16a9ce76bd01046e59ae1f0aef68c32806ac5943c89693864cf3f96353e8"
+        },
+        {
+          "url": "/game-assets/frozen-wastes/actors/rime-hauler/ae84bc883a9f/1.webp",
+          "width": 640,
+          "height": 587,
+          "sha256": "7ec5e2324b9439d5bad24b83160c1b4d8e1c471fb3d1a34ed76b386956ad0e1a"
+        },
+        {
+          "url": "/game-assets/frozen-wastes/actors/rime-hauler/ae84bc883a9f/2.webp",
+          "width": 640,
+          "height": 587,
+          "sha256": "eafb7b0619ae6bbd53773cd952670606db82c25d2f5571950dc14515d4528527"
+        },
+        {
+          "url": "/game-assets/frozen-wastes/actors/rime-hauler/ae84bc883a9f/3.webp",
+          "width": 640,
+          "height": 587,
+          "sha256": "97eb654fd0419b44d4c9dc5d94e53fc6099dee94dea1a44db5b06393654294a1"
+        },
+        {
+          "url": "/game-assets/frozen-wastes/actors/avalanche-colossus/2c58017ac18b/0.webp",
+          "width": 640,
+          "height": 587,
+          "sha256": "ec3fddc94539a2da3bd62b11251280785be92884d2fbb501d75bf925af4647a2"
+        },
+        {
+          "url": "/game-assets/frozen-wastes/actors/avalanche-colossus/2c58017ac18b/1.webp",
+          "width": 640,
+          "height": 587,
+          "sha256": "b6d23bae30a3100bd97be63548f7b518a5e9a189062bddfd470a443a8495fd25"
+        },
+        {
+          "url": "/game-assets/frozen-wastes/actors/avalanche-colossus/2c58017ac18b/2.webp",
+          "width": 640,
+          "height": 587,
+          "sha256": "289e04aed6dee50fa35ffc0e3e7f90e5e0ad17956602f53228560542883ec2f9"
+        },
+        {
+          "url": "/game-assets/frozen-wastes/actors/avalanche-colossus/2c58017ac18b/3.webp",
+          "width": 640,
+          "height": 587,
+          "sha256": "64d95a41ee319b2a9dee80632671a6f2f0a979ff01e3bc1d62061145cbd406c5"
+        },
+        {
+          "url": "/game-assets/frozen-wastes/backgrounds/frozen-wastes-d1a0f5d4ba7d.webp",
+          "width": 1672,
+          "height": 941,
+          "sha256": "86bef939cddaca8cc0f22e5f6bd8ec0dd731e875f036a0351a85a53d0520a48f"
+        },
+        {
+          "url": "/game-assets/frozen-wastes/backgrounds/frozen-heart-5eb02d676142.webp",
+          "width": 1672,
+          "height": 941,
+          "sha256": "0c0ccddb1cab11b7f7d26a378ba1c2249dc3ff36f575cb760d844ed1579b43b3"
+        }
+      ],
+      "uniqueFiles": 76,
+      "manifestSha256": "a1a4cfefbcef7285ba10ba743c5062cc20da5481c6b31a49747eb9ec6e8fdf8b"
+    },
+    {
+      "root": "C:/Users/wilsh/Projects/runelord-roguelike-pages-recovery",
+      "status": "pass",
+      "actors": [
+        {
+          "id": "rimejaw-scavenger",
+          "states": {
+            "idle": {
+              "uniqueImages": 4,
+              "duration": 1300
+            },
+            "wounded_idle": {
+              "uniqueImages": 4,
+              "duration": 1300
+            },
+            "attack": {
+              "uniqueImages": 1,
+              "duration": 650
+            },
+            "cast": {
+              "uniqueImages": 1,
+              "duration": 700
+            },
+            "hit": {
+              "uniqueImages": 1,
+              "duration": 280
+            },
+            "guard": {
+              "uniqueImages": 1,
+              "duration": 600
+            },
+            "spawn": {
+              "uniqueImages": 1,
+              "duration": 1200
+            },
+            "die": {
+              "uniqueImages": 1,
+              "duration": 600
+            }
+          }
+        },
+        {
+          "id": "shardstep-skitterer",
+          "states": {
+            "idle": {
+              "uniqueImages": 6,
+              "duration": 1080
+            },
+            "wounded_idle": {
+              "uniqueImages": 6,
+              "duration": 1080
+            },
+            "attack": {
+              "uniqueImages": 1,
+              "duration": 650
+            },
+            "cast": {
+              "uniqueImages": 1,
+              "duration": 700
+            },
+            "hit": {
+              "uniqueImages": 1,
+              "duration": 280
+            },
+            "guard": {
+              "uniqueImages": 1,
+              "duration": 600
+            },
+            "spawn": {
+              "uniqueImages": 1,
+              "duration": 1200
+            },
+            "die": {
+              "uniqueImages": 1,
+              "duration": 600
+            }
+          }
+        },
+        {
+          "id": "whiteout-ray",
+          "states": {
+            "idle": {
+              "uniqueImages": 8,
+              "duration": 1440
+            },
+            "wounded_idle": {
+              "uniqueImages": 8,
+              "duration": 1440
+            },
+            "attack": {
+              "uniqueImages": 1,
+              "duration": 650
+            },
+            "cast": {
+              "uniqueImages": 1,
+              "duration": 700
+            },
+            "hit": {
+              "uniqueImages": 1,
+              "duration": 280
+            },
+            "guard": {
+              "uniqueImages": 1,
+              "duration": 600
+            },
+            "spawn": {
+              "uniqueImages": 1,
+              "duration": 1200
+            },
+            "die": {
+              "uniqueImages": 1,
+              "duration": 600
+            }
+          }
+        },
+        {
+          "id": "coffinback-bastion",
+          "states": {
+            "idle": {
+              "uniqueImages": 8,
+              "duration": 1840
+            },
+            "wounded_idle": {
+              "uniqueImages": 8,
+              "duration": 1840
+            },
+            "attack": {
+              "uniqueImages": 1,
+              "duration": 650
+            },
+            "cast": {
+              "uniqueImages": 1,
+              "duration": 700
+            },
+            "hit": {
+              "uniqueImages": 1,
+              "duration": 280
+            },
+            "guard": {
+              "uniqueImages": 1,
+              "duration": 600
+            },
+            "spawn": {
+              "uniqueImages": 1,
+              "duration": 1200
+            },
+            "die": {
+              "uniqueImages": 1,
+              "duration": 600
+            }
+          }
+        },
+        {
+          "id": "hollowmask-oracle",
+          "states": {
+            "idle": {
+              "uniqueImages": 4,
+              "duration": 1560
+            },
+            "wounded_idle": {
+              "uniqueImages": 4,
+              "duration": 1560
+            },
+            "attack": {
+              "uniqueImages": 1,
+              "duration": 650
+            },
+            "cast": {
+              "uniqueImages": 1,
+              "duration": 700
+            },
+            "hit": {
+              "uniqueImages": 1,
+              "duration": 280
+            },
+            "guard": {
+              "uniqueImages": 1,
+              "duration": 600
+            },
+            "spawn": {
+              "uniqueImages": 1,
+              "duration": 1200
+            },
+            "die": {
+              "uniqueImages": 1,
+              "duration": 600
+            }
+          }
+        },
+        {
+          "id": "shardlance-stalker",
+          "states": {
+            "idle": {
+              "uniqueImages": 8,
+              "duration": 1520
+            },
+            "wounded_idle": {
+              "uniqueImages": 8,
+              "duration": 1520
+            },
+            "attack": {
+              "uniqueImages": 1,
+              "duration": 650
+            },
+            "cast": {
+              "uniqueImages": 1,
+              "duration": 700
+            },
+            "hit": {
+              "uniqueImages": 1,
+              "duration": 280
+            },
+            "guard": {
+              "uniqueImages": 1,
+              "duration": 600
+            },
+            "spawn": {
+              "uniqueImages": 1,
+              "duration": 1200
+            },
+            "die": {
+              "uniqueImages": 1,
+              "duration": 600
+            }
+          }
+        },
+        {
+          "id": "hoarveil-crone",
+          "states": {
+            "idle": {
+              "uniqueImages": 4,
+              "duration": 1920
+            },
+            "wounded_idle": {
+              "uniqueImages": 4,
+              "duration": 1920
+            },
+            "attack": {
+              "uniqueImages": 1,
+              "duration": 650
+            },
+            "cast": {
+              "uniqueImages": 1,
+              "duration": 700
+            },
+            "hit": {
+              "uniqueImages": 1,
+              "duration": 280
+            },
+            "guard": {
+              "uniqueImages": 1,
+              "duration": 600
+            },
+            "spawn": {
+              "uniqueImages": 1,
+              "duration": 1200
+            },
+            "die": {
+              "uniqueImages": 1,
+              "duration": 600
+            }
+          }
+        },
+        {
+          "id": "iceclamp-bombardier",
+          "states": {
+            "idle": {
+              "uniqueImages": 8,
+              "duration": 1680
+            },
+            "wounded_idle": {
+              "uniqueImages": 8,
+              "duration": 1680
+            },
+            "attack": {
+              "uniqueImages": 1,
+              "duration": 650
+            },
+            "cast": {
+              "uniqueImages": 1,
+              "duration": 700
+            },
+            "hit": {
+              "uniqueImages": 1,
+              "duration": 280
+            },
+            "guard": {
+              "uniqueImages": 1,
+              "duration": 600
+            },
+            "spawn": {
+              "uniqueImages": 1,
+              "duration": 1200
+            },
+            "die": {
+              "uniqueImages": 1,
+              "duration": 600
+            }
+          }
+        },
+        {
+          "id": "paleveil-moth",
+          "states": {
+            "idle": {
+              "uniqueImages": 4,
+              "duration": 840
+            },
+            "wounded_idle": {
+              "uniqueImages": 4,
+              "duration": 840
+            },
+            "attack": {
+              "uniqueImages": 1,
+              "duration": 650
+            },
+            "cast": {
+              "uniqueImages": 1,
+              "duration": 700
+            },
+            "hit": {
+              "uniqueImages": 1,
+              "duration": 280
+            },
+            "guard": {
+              "uniqueImages": 1,
+              "duration": 600
+            },
+            "spawn": {
+              "uniqueImages": 1,
+              "duration": 1200
+            },
+            "die": {
+              "uniqueImages": 1,
+              "duration": 600
+            }
+          }
+        },
+        {
+          "id": "cairnfrost-ursine",
+          "states": {
+            "idle": {
+              "uniqueImages": 4,
+              "duration": 2280
+            },
+            "wounded_idle": {
+              "uniqueImages": 4,
+              "duration": 2280
+            },
+            "attack": {
+              "uniqueImages": 1,
+              "duration": 650
+            },
+            "cast": {
+              "uniqueImages": 1,
+              "duration": 700
+            },
+            "hit": {
+              "uniqueImages": 1,
+              "duration": 280
+            },
+            "guard": {
+              "uniqueImages": 1,
+              "duration": 600
+            },
+            "spawn": {
+              "uniqueImages": 1,
+              "duration": 1200
+            },
+            "die": {
+              "uniqueImages": 1,
+              "duration": 600
+            }
+          }
+        },
+        {
+          "id": "dragon-frost-mammoth",
+          "states": {
+            "idle": {
+              "uniqueImages": 4,
+              "duration": 1880
+            },
+            "wounded_idle": {
+              "uniqueImages": 4,
+              "duration": 1880
+            },
+            "attack": {
+              "uniqueImages": 1,
+              "duration": 650
+            },
+            "cast": {
+              "uniqueImages": 1,
+              "duration": 700
+            },
+            "hit": {
+              "uniqueImages": 1,
+              "duration": 280
+            },
+            "guard": {
+              "uniqueImages": 1,
+              "duration": 600
+            },
+            "spawn": {
+              "uniqueImages": 1,
+              "duration": 1200
+            },
+            "die": {
+              "uniqueImages": 1,
+              "duration": 600
+            }
+          }
+        },
+        {
+          "id": "dragon-rime-antler",
+          "states": {
+            "idle": {
+              "uniqueImages": 4,
+              "duration": 1880
+            },
+            "wounded_idle": {
+              "uniqueImages": 4,
+              "duration": 1880
+            },
+            "attack": {
+              "uniqueImages": 1,
+              "duration": 650
+            },
+            "cast": {
+              "uniqueImages": 1,
+              "duration": 700
+            },
+            "hit": {
+              "uniqueImages": 1,
+              "duration": 280
+            },
+            "guard": {
+              "uniqueImages": 1,
+              "duration": 600
+            },
+            "spawn": {
+              "uniqueImages": 1,
+              "duration": 1200
+            },
+            "die": {
+              "uniqueImages": 1,
+              "duration": 600
+            }
+          }
+        },
+        {
+          "id": "rime-hauler",
+          "states": {
+            "idle": {
+              "uniqueImages": 4,
+              "duration": 2100
+            },
+            "wounded_idle": {
+              "uniqueImages": 4,
+              "duration": 2100
+            },
+            "attack": {
+              "uniqueImages": 1,
+              "duration": 650
+            },
+            "cast": {
+              "uniqueImages": 1,
+              "duration": 700
+            },
+            "hit": {
+              "uniqueImages": 1,
+              "duration": 280
+            },
+            "guard": {
+              "uniqueImages": 1,
+              "duration": 600
+            },
+            "spawn": {
+              "uniqueImages": 1,
+              "duration": 1200
+            },
+            "die": {
+              "uniqueImages": 1,
+              "duration": 600
+            }
+          }
+        },
+        {
+          "id": "avalanche-colossus",
+          "states": {
+            "idle": {
+              "uniqueImages": 4,
+              "duration": 2400
+            },
+            "wounded_idle": {
+              "uniqueImages": 4,
+              "duration": 2400
+            },
+            "attack": {
+              "uniqueImages": 1,
+              "duration": 650
+            },
+            "cast": {
+              "uniqueImages": 1,
+              "duration": 700
+            },
+            "hit": {
+              "uniqueImages": 1,
+              "duration": 280
+            },
+            "guard": {
+              "uniqueImages": 1,
+              "duration": 600
+            },
+            "spawn": {
+              "uniqueImages": 1,
+              "duration": 1200
+            },
+            "die": {
+              "uniqueImages": 1,
+              "duration": 600
+            }
+          }
+        }
+      ],
+      "files": [
+        {
+          "url": "/game-assets/frozen-wastes/actors/rimejaw-scavenger/7b619bf5cfa5/0.webp",
+          "width": 640,
+          "height": 640,
+          "sha256": "14ef7aa22183831411f8267c97971c7e651acac379ee46777a2a811e84c835ae"
+        },
+        {
+          "url": "/game-assets/frozen-wastes/actors/rimejaw-scavenger/7b619bf5cfa5/1.webp",
+          "width": 640,
+          "height": 640,
+          "sha256": "707e3d035cade439c5bba9e96eda6684fd978f8413d8ec64eded05ed50c0f248"
+        },
+        {
+          "url": "/game-assets/frozen-wastes/actors/rimejaw-scavenger/7b619bf5cfa5/2.webp",
+          "width": 640,
+          "height": 640,
+          "sha256": "de5f4f2579de70c397146070b8c8232a30aeab90e828febe56716f94d8878337"
+        },
+        {
+          "url": "/game-assets/frozen-wastes/actors/rimejaw-scavenger/7b619bf5cfa5/3.webp",
+          "width": 640,
+          "height": 640,
+          "sha256": "54cdb62c7cd1f68995ff0ba127bb00b1f903e3b97ffa689bffa1ec343abdd713"
+        },
+        {
+          "url": "/game-assets/frozen-wastes/actors/shardstep-skitterer/6622b1e49f2f/0.webp",
+          "width": 640,
+          "height": 640,
+          "sha256": "7001b4af5b25d38e346c5546ceb05a32d6cfbf2b152fc51664d7f74869409901"
+        },
+        {
+          "url": "/game-assets/frozen-wastes/actors/shardstep-skitterer/6622b1e49f2f/1.webp",
+          "width": 640,
+          "height": 640,
+          "sha256": "2302c281b72cd12735e66711031c030bcb6e2610873d211e7ffafc0d72ed15a2"
+        },
+        {
+          "url": "/game-assets/frozen-wastes/actors/shardstep-skitterer/6622b1e49f2f/2.webp",
+          "width": 640,
+          "height": 640,
+          "sha256": "7001b4af5b25d38e346c5546ceb05a32d6cfbf2b152fc51664d7f74869409901"
+        },
+        {
+          "url": "/game-assets/frozen-wastes/actors/shardstep-skitterer/6622b1e49f2f/3.webp",
+          "width": 640,
+          "height": 640,
+          "sha256": "ded9dd463e14b3ddfd04243900f44aaa4c5bc5021ce628b3043d0db256dc6cbb"
+        },
+        {
+          "url": "/game-assets/frozen-wastes/actors/shardstep-skitterer/6622b1e49f2f/4.webp",
+          "width": 640,
+          "height": 640,
+          "sha256": "0c68ef7b894abe4ae9ebe2583470b95e3d44bf86bc9f9113bdee674b90658fba"
+        },
+        {
+          "url": "/game-assets/frozen-wastes/actors/shardstep-skitterer/6622b1e49f2f/5.webp",
+          "width": 640,
+          "height": 640,
+          "sha256": "ded9dd463e14b3ddfd04243900f44aaa4c5bc5021ce628b3043d0db256dc6cbb"
+        },
+        {
+          "url": "/game-assets/frozen-wastes/actors/whiteout-ray/4daf636f0eb8/0.webp",
+          "width": 512,
+          "height": 512,
+          "sha256": "42abb532ab080463fb2b8f66739a048be0dbe18f778a844f5ddf9695e2e1720d"
+        },
+        {
+          "url": "/game-assets/frozen-wastes/actors/whiteout-ray/4daf636f0eb8/1.webp",
+          "width": 512,
+          "height": 512,
+          "sha256": "b31b95686e0f444554a204a85615264b85a41258dbbf2cf474ff60a41427a587"
+        },
+        {
+          "url": "/game-assets/frozen-wastes/actors/whiteout-ray/4daf636f0eb8/2.webp",
+          "width": 512,
+          "height": 512,
+          "sha256": "d6c79652d8d39ce75af49c9e8a00c38910ec5f44cacb8b6790606d36bb1418e9"
+        },
+        {
+          "url": "/game-assets/frozen-wastes/actors/whiteout-ray/4daf636f0eb8/3.webp",
+          "width": 512,
+          "height": 512,
+          "sha256": "68c17f95a47a15fa499fa11eaa42044ae6d884b052506eede730630a9c3f9751"
+        },
+        {
+          "url": "/game-assets/frozen-wastes/actors/whiteout-ray/4daf636f0eb8/4.webp",
+          "width": 512,
+          "height": 512,
+          "sha256": "c90bec8eb9bede32213fcb4fa9ac58236552bdd8546cd1525c4817d5ccccd0d2"
+        },
+        {
+          "url": "/game-assets/frozen-wastes/actors/whiteout-ray/4daf636f0eb8/5.webp",
+          "width": 512,
+          "height": 512,
+          "sha256": "6d0fa6570d5887afdd3c14565b1acc3b31daf417ffc388456483ca7e0491a083"
+        },
+        {
+          "url": "/game-assets/frozen-wastes/actors/whiteout-ray/4daf636f0eb8/6.webp",
+          "width": 512,
+          "height": 512,
+          "sha256": "21af1a2e9fafff0372d4349d4375d6ce6df160cfb462cb21fcff02d90e958567"
+        },
+        {
+          "url": "/game-assets/frozen-wastes/actors/whiteout-ray/4daf636f0eb8/7.webp",
+          "width": 512,
+          "height": 512,
+          "sha256": "2baa4f646e77865b5773bbb8ca12e6bd88c927421e5b83ec65b15cd1d68653c9"
+        },
+        {
+          "url": "/game-assets/frozen-wastes/actors/coffinback-bastion/9fbc7ec8c31d/0.webp",
+          "width": 512,
+          "height": 596,
+          "sha256": "a4dce781b15f304d1fa92beffd647e58c746424c8d000d564a547d2adfb00213"
+        },
+        {
+          "url": "/game-assets/frozen-wastes/actors/coffinback-bastion/9fbc7ec8c31d/1.webp",
+          "width": 512,
+          "height": 596,
+          "sha256": "cfd32f77de8972addbec9c81bf1245f036e183b25f0565757c2133e8eae8e607"
+        },
+        {
+          "url": "/game-assets/frozen-wastes/actors/coffinback-bastion/9fbc7ec8c31d/2.webp",
+          "width": 512,
+          "height": 596,
+          "sha256": "0ffa521d8170df7ae0a684934fee050dbdfde665280b2f2f2c490532a28868cc"
+        },
+        {
+          "url": "/game-assets/frozen-wastes/actors/coffinback-bastion/9fbc7ec8c31d/3.webp",
+          "width": 512,
+          "height": 596,
+          "sha256": "5b524edfc1435ad791f6f09e2a7f8b48f5c5d30615c8be085c75d75b0f25ca0f"
+        },
+        {
+          "url": "/game-assets/frozen-wastes/actors/coffinback-bastion/9fbc7ec8c31d/4.webp",
+          "width": 512,
+          "height": 596,
+          "sha256": "cb9b04dbdd8b596998019b8e92eed8ef5ab9a30869016fe793953d8e38b57576"
+        },
+        {
+          "url": "/game-assets/frozen-wastes/actors/coffinback-bastion/9fbc7ec8c31d/5.webp",
+          "width": 512,
+          "height": 596,
+          "sha256": "3a30406a1f8daca50ab3dc0970e8edf03d3787b1858dcfd0649691a787de7507"
+        },
+        {
+          "url": "/game-assets/frozen-wastes/actors/coffinback-bastion/9fbc7ec8c31d/6.webp",
+          "width": 512,
+          "height": 596,
+          "sha256": "3bc26f28b01f7c42a860b69820d9f724ce61e923a6bf51fc30c90383960dc8e6"
+        },
+        {
+          "url": "/game-assets/frozen-wastes/actors/coffinback-bastion/9fbc7ec8c31d/7.webp",
+          "width": 512,
+          "height": 596,
+          "sha256": "32a5cd39bb756dacfcac6961fb4c0cf4d441731a7f21330a85e4d939e2d38f81"
+        },
+        {
+          "url": "/game-assets/frozen-wastes/actors/hollowmask-oracle/cbd764916672/0.webp",
+          "width": 512,
+          "height": 512,
+          "sha256": "64c6ed24449cb081ac410f43574c6323842a6c86556801a4879610a733af8adb"
+        },
+        {
+          "url": "/game-assets/frozen-wastes/actors/hollowmask-oracle/cbd764916672/1.webp",
+          "width": 512,
+          "height": 512,
+          "sha256": "62f6f97ce92eddb59b2f5f8199eaf0b1d83d285ad5d53c9a71452701beb8c978"
+        },
+        {
+          "url": "/game-assets/frozen-wastes/actors/hollowmask-oracle/cbd764916672/2.webp",
+          "width": 512,
+          "height": 512,
+          "sha256": "639d4972dcef09a25a1e65a427f50397e8c8f92110a50b6d448026a1399d36d9"
+        },
+        {
+          "url": "/game-assets/frozen-wastes/actors/hollowmask-oracle/cbd764916672/3.webp",
+          "width": 512,
+          "height": 512,
+          "sha256": "ebaa3247b13781eaa076364982d2d025a456cf798edb9809a487090a09044e43"
+        },
+        {
+          "url": "/game-assets/frozen-wastes/actors/shardlance-stalker/ec7e97805bf7/0.webp",
+          "width": 528,
+          "height": 576,
+          "sha256": "f61a7a0ccb46baaf7baacf05175f6281f10ba960ac34ad68c60a22e7efc0ef7a"
+        },
+        {
+          "url": "/game-assets/frozen-wastes/actors/shardlance-stalker/ec7e97805bf7/1.webp",
+          "width": 528,
+          "height": 576,
+          "sha256": "6a7fee3f36e78d3fae3af5b794389ce64ed0859e8001cd7d15660da6c0e98397"
+        },
+        {
+          "url": "/game-assets/frozen-wastes/actors/shardlance-stalker/ec7e97805bf7/2.webp",
+          "width": 528,
+          "height": 576,
+          "sha256": "fb6a41885e0aeca36f6d39f3c6ce5adc773d1679cc704dc305925b5d50ff87ca"
+        },
+        {
+          "url": "/game-assets/frozen-wastes/actors/shardlance-stalker/ec7e97805bf7/3.webp",
+          "width": 528,
+          "height": 576,
+          "sha256": "c3c15cae5079cea3cac88a61ecbbbe2abb9f5a6ccfa11074101bc2574e65cf5a"
+        },
+        {
+          "url": "/game-assets/frozen-wastes/actors/shardlance-stalker/ec7e97805bf7/4.webp",
+          "width": 528,
+          "height": 576,
+          "sha256": "1cb901812a8514351c3141440039ae94e26122ae9ed26d5fd8c0aaf880f92ffe"
+        },
+        {
+          "url": "/game-assets/frozen-wastes/actors/shardlance-stalker/ec7e97805bf7/5.webp",
+          "width": 528,
+          "height": 576,
+          "sha256": "8ea573589d4af1382059b162a91bb7987035336d21d4982e5a83b475629cc857"
+        },
+        {
+          "url": "/game-assets/frozen-wastes/actors/shardlance-stalker/ec7e97805bf7/6.webp",
+          "width": 528,
+          "height": 576,
+          "sha256": "70d1703916e0ad683a19b0a8d90498b0f98c96b36f40c82fbd8d17e718e8324d"
+        },
+        {
+          "url": "/game-assets/frozen-wastes/actors/shardlance-stalker/ec7e97805bf7/7.webp",
+          "width": 528,
+          "height": 576,
+          "sha256": "1ecdb7f13c57e58537cfd6a1d3292c930647f5771bcd49a5e10e35af84ce2a5b"
+        },
+        {
+          "url": "/game-assets/frozen-wastes/actors/hoarveil-crone/294884caceaf/0.webp",
+          "width": 640,
+          "height": 587,
+          "sha256": "309a71d7472d3110d1e16a959a9b1b34778725099ddc458bd887d7b3552f7739"
+        },
+        {
+          "url": "/game-assets/frozen-wastes/actors/hoarveil-crone/294884caceaf/1.webp",
+          "width": 640,
+          "height": 587,
+          "sha256": "bb1bd480001874478707a7fa93e251775d2d2907ff0588b9fb427b9f38a6574f"
+        },
+        {
+          "url": "/game-assets/frozen-wastes/actors/hoarveil-crone/294884caceaf/2.webp",
+          "width": 640,
+          "height": 587,
+          "sha256": "4e0e2bb25bf7cc5a0c18837718c0c814aefadfdac43f58f4d62e1ac24f385184"
+        },
+        {
+          "url": "/game-assets/frozen-wastes/actors/hoarveil-crone/294884caceaf/3.webp",
+          "width": 640,
+          "height": 587,
+          "sha256": "6312e1f16385eabf612b6ba38bc4807a31bdf33997505834bb3b94b2fa81f0e3"
+        },
+        {
+          "url": "/game-assets/frozen-wastes/actors/iceclamp-bombardier/72adf46c84b0/0.webp",
+          "width": 528,
+          "height": 576,
+          "sha256": "bf05650041377cb45f9e4015042603d918b229c18024ccb340e76bf0007cb9cc"
+        },
+        {
+          "url": "/game-assets/frozen-wastes/actors/iceclamp-bombardier/72adf46c84b0/1.webp",
+          "width": 528,
+          "height": 576,
+          "sha256": "09cfa62b4bc69573d9eb405c10387d20e76c79541567447ac7d636bcfd9e7673"
+        },
+        {
+          "url": "/game-assets/frozen-wastes/actors/iceclamp-bombardier/72adf46c84b0/2.webp",
+          "width": 528,
+          "height": 576,
+          "sha256": "94e786d4990fb646bcad23151ac98e2500b1a76ab84630708a9b7aea02ec0d82"
+        },
+        {
+          "url": "/game-assets/frozen-wastes/actors/iceclamp-bombardier/72adf46c84b0/3.webp",
+          "width": 528,
+          "height": 576,
+          "sha256": "4d4561f8915572a011d788ec57b491a13dd34904cffb646d776c90e793ada9f4"
+        },
+        {
+          "url": "/game-assets/frozen-wastes/actors/iceclamp-bombardier/72adf46c84b0/4.webp",
+          "width": 528,
+          "height": 576,
+          "sha256": "6362548f2f8061f5f6e34a0a0c0e970e7dc2ab7d6e40315ce6388141847e4e55"
+        },
+        {
+          "url": "/game-assets/frozen-wastes/actors/iceclamp-bombardier/72adf46c84b0/5.webp",
+          "width": 528,
+          "height": 576,
+          "sha256": "dfd36079bcb1df7f3355730f96ec570e2c6e5d1d1aaf90b3f3a7130befb80233"
+        },
+        {
+          "url": "/game-assets/frozen-wastes/actors/iceclamp-bombardier/72adf46c84b0/6.webp",
+          "width": 528,
+          "height": 576,
+          "sha256": "13715a88c5a84d4ce4bc9c57faded19bf73fce4c819cd4bcbaf5b92fa247c582"
+        },
+        {
+          "url": "/game-assets/frozen-wastes/actors/iceclamp-bombardier/72adf46c84b0/7.webp",
+          "width": 528,
+          "height": 576,
+          "sha256": "7b0789afa9978053bd5ae653c47b71ced8caaa1bc4ca119b15cc76991d9b9f44"
+        },
+        {
+          "url": "/game-assets/frozen-wastes/actors/paleveil-moth/eb87361eb1eb/0.webp",
+          "width": 640,
+          "height": 640,
+          "sha256": "a40fb3ef1d3d48b91acad67faf924bb4e79e5668fb4bc3c17089989b97d7b2ca"
+        },
+        {
+          "url": "/game-assets/frozen-wastes/actors/paleveil-moth/eb87361eb1eb/1.webp",
+          "width": 640,
+          "height": 640,
+          "sha256": "09a9bdeb066b34cf0d4f99c88a746de985bcd4a404feceee2f1a7df146a416d1"
+        },
+        {
+          "url": "/game-assets/frozen-wastes/actors/paleveil-moth/eb87361eb1eb/2.webp",
+          "width": 640,
+          "height": 640,
+          "sha256": "52247cbdc5d23154effe6cf3ebf5f31f50e676a790133e0f92c959b0358735eb"
+        },
+        {
+          "url": "/game-assets/frozen-wastes/actors/paleveil-moth/eb87361eb1eb/3.webp",
+          "width": 640,
+          "height": 640,
+          "sha256": "89a8c10908d606e3cc57c8656771b4a7bed598d7fe62ced3e31ca2fcf6c9d2ee"
+        },
+        {
+          "url": "/game-assets/frozen-wastes/actors/cairnfrost-ursine/829555c18277/0.webp",
+          "width": 640,
+          "height": 640,
+          "sha256": "0076b7b00daf0cd74a0fee84bd9cfe54c0a291cc8ac7be67c51a8ffa94deca8c"
+        },
+        {
+          "url": "/game-assets/frozen-wastes/actors/cairnfrost-ursine/829555c18277/1.webp",
+          "width": 640,
+          "height": 640,
+          "sha256": "167a30112bfb7bce098d1145269928f84a46c639ee83b3d50201668e60b1418a"
+        },
+        {
+          "url": "/game-assets/frozen-wastes/actors/cairnfrost-ursine/829555c18277/2.webp",
+          "width": 640,
+          "height": 640,
+          "sha256": "3da0658120545ab5e61e32da4638d5a7cf028eac0ff9e0d6191ef94337518451"
+        },
+        {
+          "url": "/game-assets/frozen-wastes/actors/cairnfrost-ursine/829555c18277/3.webp",
+          "width": 640,
+          "height": 640,
+          "sha256": "256ea3c684a2c525e243f8e763d067a65d9f0141945552f4e893e2ea25ae19d0"
+        },
+        {
+          "url": "/game-assets/frozen-wastes/actors/dragon-frost-mammoth/0fc1b814852e/0.webp",
+          "width": 640,
+          "height": 640,
+          "sha256": "c07712b10c9fb81e64d951ebadabea3c09850b66983df4e70750940a022f5c73"
+        },
+        {
+          "url": "/game-assets/frozen-wastes/actors/dragon-frost-mammoth/0fc1b814852e/1.webp",
+          "width": 640,
+          "height": 640,
+          "sha256": "00f6a20ea7285b749fd96ed67e3f63b725817ed4c982b4ba7d653cd841bb4f39"
+        },
+        {
+          "url": "/game-assets/frozen-wastes/actors/dragon-frost-mammoth/0fc1b814852e/2.webp",
+          "width": 640,
+          "height": 640,
+          "sha256": "d1f1de9fd54131a4250bdc61a30312718b5d38bee8ea779dad1f6832da9a8ae3"
+        },
+        {
+          "url": "/game-assets/frozen-wastes/actors/dragon-frost-mammoth/0fc1b814852e/3.webp",
+          "width": 640,
+          "height": 640,
+          "sha256": "88cd18e91c9b34a69ec5d0f97b2306cfd6bc4aeefc53ea4670acae0aa94cc3e6"
+        },
+        {
+          "url": "/game-assets/frozen-wastes/actors/dragon-rime-antler/6efe4057fcca/0.webp",
+          "width": 640,
+          "height": 640,
+          "sha256": "398a774deea482458eaf25677c9753e95b6f974ec4c27a7d5101212af9a4714b"
+        },
+        {
+          "url": "/game-assets/frozen-wastes/actors/dragon-rime-antler/6efe4057fcca/1.webp",
+          "width": 640,
+          "height": 640,
+          "sha256": "fa3ac840f37d1b16ada60a55a0cb7daeabf6143dc53c921ba4034ba5787695a6"
+        },
+        {
+          "url": "/game-assets/frozen-wastes/actors/dragon-rime-antler/6efe4057fcca/2.webp",
+          "width": 640,
+          "height": 640,
+          "sha256": "8285b4d9345b915f959afcff2b354618068b7b608473257e8b9c490233ff573b"
+        },
+        {
+          "url": "/game-assets/frozen-wastes/actors/dragon-rime-antler/6efe4057fcca/3.webp",
+          "width": 640,
+          "height": 640,
+          "sha256": "e49c49d0b667d71df4d623515c1c19ea5eadfebd68b5bd9cd5a5286e9f3f7694"
+        },
+        {
+          "url": "/game-assets/frozen-wastes/actors/rime-hauler/ae84bc883a9f/0.webp",
+          "width": 640,
+          "height": 587,
+          "sha256": "d6cd16a9ce76bd01046e59ae1f0aef68c32806ac5943c89693864cf3f96353e8"
+        },
+        {
+          "url": "/game-assets/frozen-wastes/actors/rime-hauler/ae84bc883a9f/1.webp",
+          "width": 640,
+          "height": 587,
+          "sha256": "7ec5e2324b9439d5bad24b83160c1b4d8e1c471fb3d1a34ed76b386956ad0e1a"
+        },
+        {
+          "url": "/game-assets/frozen-wastes/actors/rime-hauler/ae84bc883a9f/2.webp",
+          "width": 640,
+          "height": 587,
+          "sha256": "eafb7b0619ae6bbd53773cd952670606db82c25d2f5571950dc14515d4528527"
+        },
+        {
+          "url": "/game-assets/frozen-wastes/actors/rime-hauler/ae84bc883a9f/3.webp",
+          "width": 640,
+          "height": 587,
+          "sha256": "97eb654fd0419b44d4c9dc5d94e53fc6099dee94dea1a44db5b06393654294a1"
+        },
+        {
+          "url": "/game-assets/frozen-wastes/actors/avalanche-colossus/2c58017ac18b/0.webp",
+          "width": 640,
+          "height": 587,
+          "sha256": "ec3fddc94539a2da3bd62b11251280785be92884d2fbb501d75bf925af4647a2"
+        },
+        {
+          "url": "/game-assets/frozen-wastes/actors/avalanche-colossus/2c58017ac18b/1.webp",
+          "width": 640,
+          "height": 587,
+          "sha256": "b6d23bae30a3100bd97be63548f7b518a5e9a189062bddfd470a443a8495fd25"
+        },
+        {
+          "url": "/game-assets/frozen-wastes/actors/avalanche-colossus/2c58017ac18b/2.webp",
+          "width": 640,
+          "height": 587,
+          "sha256": "289e04aed6dee50fa35ffc0e3e7f90e5e0ad17956602f53228560542883ec2f9"
+        },
+        {
+          "url": "/game-assets/frozen-wastes/actors/avalanche-colossus/2c58017ac18b/3.webp",
+          "width": 640,
+          "height": 587,
+          "sha256": "64d95a41ee319b2a9dee80632671a6f2f0a979ff01e3bc1d62061145cbd406c5"
+        },
+        {
+          "url": "/game-assets/frozen-wastes/backgrounds/frozen-wastes-d1a0f5d4ba7d.webp",
+          "width": 1672,
+          "height": 941,
+          "sha256": "86bef939cddaca8cc0f22e5f6bd8ec0dd731e875f036a0351a85a53d0520a48f"
+        },
+        {
+          "url": "/game-assets/frozen-wastes/backgrounds/frozen-heart-5eb02d676142.webp",
+          "width": 1672,
+          "height": 941,
+          "sha256": "0c0ccddb1cab11b7f7d26a378ba1c2249dc3ff36f575cb760d844ed1579b43b3"
+        }
+      ],
+      "uniqueFiles": 76,
+      "manifestSha256": "bb6a35a7774c81e1f1e1f0d28e3181fa225801604942c5104158ce874b4cf1bc"
+    }
+  ],
+  "limitations": [
+    "Existence, decode, state/timing and matching identity keys only. Does not establish visual identity, animation quality or art approval."
+  ]
+}

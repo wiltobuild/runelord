@@ -1,0 +1,84 @@
+{
+  "schemaVersion": 1,
+  "reviewer": "/root/frozen_path_art",
+  "reviewKind": "Independent static UI implementation review",
+  "reviewedAt": "2026-10-14",
+  "status": "pass-static-review",
+  "independence": "Reviewer authored the asset pipeline but did not author or modify ExpeditionScreens.tsx or expedition-screens.css. UI builder repaired reported findings.",
+  "repositories": [
+    "C:/Users/wilsh/Projects/runelord",
+    "C:/Users/wilsh/Projects/runelord-roguelike-pages-recovery"
+  ],
+  "sources": [
+    {
+      "path": "apps/web/src/ExpeditionScreens.tsx",
+      "sha256": "d1847ab223dd7d90acb0571fd958494f53f08f2cf6076b11f3c95e2e72a583d9"
+    },
+    {
+      "path": "apps/web/src/expedition-screens.css",
+      "sha256": "578c6e5de2a0379a25abc150119c903889c522244e4b5de95167d66faf62a3d8"
+    }
+  ],
+  "parity": "Both reviewed files have identical hashes in both repositories.",
+  "checks": [
+    {
+      "area": "Live action mapping",
+      "status": "pass",
+      "evidence": "Route cards call onChoose(choice.id). Camp buttons dispatch rest or open upgrade/training selectors. Upgrade commits owned deck index. Training maps shop to train-summon, camp to camp-choice/train, treasure to claim-treasure/train. Treasure relic/gold use engine actions; no duplicated frontend mutation."
+    },
+    {
+      "area": "Truthful values",
+      "status": "pass",
+      "evidence": "HP/gold/relic counts are state-derived. Camp healing clamps engine campRecovery to missing HP. Training tiers/descriptions/costs come from trainingOptions/summonTraining, including engine discounts. Treasure values/text come from options/items. Fixed generated concept text is not used for live labels."
+    },
+    {
+      "area": "Approved asset mapping",
+      "status": "pass",
+      "evidence": "Dynamic path-${realm}-${kind} covers all 3 realms and 7 valid route kinds. UI keys match the retained 38-export overlay. First Muster featured seal corrected to exact first-muster-seal ItemId. Other relics use specific existing artwork or data-driven LootIcon rather than reusing seal art."
+    },
+    {
+      "area": "Keyboard and focus",
+      "status": "pass-static",
+      "evidence": "Native buttons, disabled conditions, pressed state, modal role/title, Escape close, focus restoration, visible focusable filtering including summary and topmost modal guard present. Hidden mastered rows excluded from trap. Clipped roster focus corrected to inset ring/border/brightness."
+    },
+    {
+      "area": "Hooks and React structure",
+      "status": "pass-static",
+      "evidence": "Hooks remain unconditional at component level. Selected training derives safely from current options when roster changes. Modal close callback stored in ref and keyboard listener cleanup provided. Stable kind/order IDs used for training options."
+    },
+    {
+      "area": "Layout resilience",
+      "status": "pass-static-with-browser-check-required",
+      "evidence": "Mobile single-column cards/training, scrollable modal content and roster, compact height rules, and reduced-motion treatment present. Narrow header rule added after review concern. Root owns actual 320/360/1280 browser geometry and screenshots."
+    }
+  ],
+  "findings": [
+    {
+      "id": "UI-FOCUS-1",
+      "severity": "P2",
+      "status": "fixed-and-rechecked",
+      "description": "Training tile clip-path clipped the shared external focus outline.",
+      "repair": "Builder added .training-tile:focus-visible inset 3px gold ring, visible border and brightness; re-read final rule."
+    },
+    {
+      "id": "UI-FOCUS-2",
+      "severity": "P2",
+      "status": "fixed-and-rechecked",
+      "description": "Initial focus selector omitted summary and could include controls hidden in collapsed mastered details.",
+      "repair": "Builder includes summary, filters getClientRects and inert ancestors, and ignores listeners for lower dialogs."
+    },
+    {
+      "id": "UI-LAYOUT-1",
+      "severity": "risk",
+      "status": "mitigated-browser-verification-deferred-to-root",
+      "description": "Narrow header logo/counters used nowrap and appeared at risk of overflow.",
+      "repair": "Builder added max-width420px compact chrome. No browser claim made by this reviewer."
+    }
+  ],
+  "unresolvedStaticDefects": [],
+  "limitations": [
+    "This is a static independent UI review, not an independent browser playthrough.",
+    "Root owns browser interaction/layout verification and final build/test evidence.",
+    "Art approval is inherited only through exact approved-source provenance, not self-approved by this report."
+  ]
+}

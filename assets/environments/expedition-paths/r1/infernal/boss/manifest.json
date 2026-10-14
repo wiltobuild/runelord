@@ -1,0 +1,38 @@
+{
+  "schemaVersion": 1,
+  "revision": "r1",
+  "source": "assets/environments/expedition-paths/r1/infernal/boss/source.png",
+  "sha256": "51d086f5ace16018f06d82768085bfb879d9a6f0eec8bdd1fe9f35f59b93438d",
+  "width": 1672,
+  "height": 941,
+  "prompt": "assets/environments/expedition-paths/r1/infernal/boss/prompt.txt",
+  "promptSha256": "3348201e685143e40636a782c229930b60992475621b45540977d6432fe585ce",
+  "references": [
+    {
+      "path": "assets/approvals/inbox/battle-map-cinderforge-caldera/r1/cinderforge-caldera-r1.png",
+      "sha256": "9f1085ce9885721325f6528cd4e8cbea3219a66fecfc5e467d1bbdc3c0833ff9",
+      "decision": {
+        "status": "Approved",
+        "at": "2026-10-02T22:19:19.260Z",
+        "evidenceId": "b0e7a316-2c4d-4ca4-b257-b5a8b1720aa6",
+        "paths": [
+          "C:\\Users\\wilsh\\Projects\\runelord\\assets\\approvals\\inbox\\battle-map-cinderforge-caldera\\r1\\cinderforge-caldera-r1.png"
+        ]
+      }
+    }
+  ],
+  "tool": "built-in image_gen",
+  "approvalStatus": "Pending approval",
+  "integrationStatus": "Review only. User explicitly requires approval before implementation. No runtime exports or game code changes.",
+  "gallery": {
+    "path": "C:\\Users\\wilsh\\Projects\\runelord\\assets\\approvals\\inbox\\expedition-path-infernal-boss\\r1\\source.png",
+    "sha256": "51d086f5ace16018f06d82768085bfb879d9a6f0eec8bdd1fe9f35f59b93438d",
+    "status": "Pending approval",
+    "gallery": "http://localhost:4317"
+  },
+  "qa": {
+    "visual": "Actual generated output inspected: clear primary composition, legible scene identity, consistent cel shading. UI concepts inspected for correct gameplay copy, legible hierarchy, complete controls and distinct illustrations.",
+    "technical": "PNG dimensions and exact source/gallery hashes verified.",
+    "limitations": "Flattened static destination illustration, not a parallax package or replacement combat arena."
+  }
+}

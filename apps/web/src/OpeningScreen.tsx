@@ -52,7 +52,7 @@ export function OpeningScreen({ assets, selected, onSelect, onBegin, onResume, a
     </div>
     <div className="pact-command-row">
       <button className="pact-begin runic-action" disabled={!characterChosen} onClick={onBegin}><span>Begin the pact</span><small>{characterChosen ? deck.name : "Choose your character first"}</small></button>
-      <div className="sanctum-heading pact-heading"><div className="sanctum-kicker">II · THE POWER YOU WILL WIELD</div><h2>Choose your <em>pact.</em></h2><p aria-live="polite">{characterChosen ? "Three spell tomes. One path through the fire." : "Choose the Warlock above to unlock his pacts."}</p></div>
+      <div className="sanctum-heading pact-heading"><div className="sanctum-kicker">II · THE POWER YOU WILL WIELD</div><h2>Choose your <em>pact.</em></h2><p aria-live="polite">{characterChosen ? chosenHero === "runeblade" ? "Frozen Wastes → Forest → Infernal. Your journey begins at home." : "Infernal → Forest → Frozen Wastes. Your journey begins at home." : "Choose your character to unlock their pacts."}</p></div>
       {onResume ? <button className="pact-resume runic-action" onClick={onResume}><span>Resume journey</span><small>RETURN TO YOUR OATH</small></button> : <div className="pact-resume-space" />}
     </div>
     <fieldset className="tome-choices" disabled={!characterChosen}><legend className="sr-only">Choose your starting deck</legend>
