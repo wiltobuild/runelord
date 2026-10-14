@@ -1,6 +1,8 @@
+// Preserve this pre-expansion regression suite; expansion behavior has dedicated coverage.
+const newRoguelikeRun=(...args:Parameters<typeof currentRoguelikeRun>)=>{args[7]??=1;return currentRoguelikeRun(...args);};
 import {test} from 'node:test';
 import assert from 'node:assert/strict';
-import {newRoguelikeRun,enterRoguelikeShop,currentShop,prepareShop,shopRerollCost,shopCanReroll,dispatch,save,restore,playable,upgradePreview,cardEffectText,cardPower,manaCost,infernalShopAppearance,type State} from './index';
+import {newRoguelikeRun as currentRoguelikeRun,enterRoguelikeShop,currentShop,prepareShop,shopRerollCost,shopCanReroll,dispatch,save,restore,playable,upgradePreview,cardEffectText,cardPower,manaCost,infernalShopAppearance,type State} from './index';
 import {implemented,neutralCards,cards,type CardId} from '../content/index';
 function shop(seed=42,extra=0):State{const s=newRoguelikeRun(seed);s.room=2;s.gold=10000;for(let i=0;i<extra;i++){s.deck.push('neutral-strike');s.deckLevels!.push(0);}enterRoguelikeShop(s);return s;}
 test('Soulforge offers two distinct mixed-pool cards, two eligible copies per service, five relics, read-only previews',()=>{

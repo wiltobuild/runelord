@@ -1,0 +1,30 @@
+{
+  "maxCombatTurnsByRealm": {
+    "frozen-wastes": 93,
+    "forest": 5,
+    "infernal": 5
+  },
+  "phase": "won",
+  "hp": 56,
+  "training": {
+    "bone-defender": 2,
+    "frost-thrall": 1,
+    "rime-seer": 1,
+    "shattered-queen": 1
+  },
+  "deckLevels": [
+    0,
+    1,
+    0,
+    9,
+    0,
+    0,
+    2,
+    0,
+    1,
+    0,
+    0,
+    0,
+    0
+  ]
+}

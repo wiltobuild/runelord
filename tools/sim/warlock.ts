@@ -1,5 +1,6 @@
 import {
   newRoguelikeRun,
+  routeChoices,
   canAddCard,
   save,
   restore,
@@ -23,11 +24,13 @@ for (let seed = 1; seed <= runCount; seed++) {
     actions = 0;
   while (s.phase !== "won" && s.phase !== "lost" && actions < maxActionsPerRun) {
     const before = JSON.stringify(s);
-    if (s.phase === "reward")
+    if(s.phase === "route-choice")s=dispatch(s,{type:"choose-room",id:routeChoices(s)[0].id});
+    else if(s.phase === "treasure")s=dispatch(s,{type:"claim-treasure"});
+    else if (s.phase === "reward")
       s = dispatch(s, { type: "reward", card: s.rewards.find(id => canAddCard(s, id)) ?? null });
     else if (s.phase === "loot") s = dispatch(s, { type: "continue" });
     else if (s.phase === "shop") s = dispatch(s, { type: "leave-shop" });
-    else if (s.phase === "camp") s = dispatch(s, { type: "camp" });
+    else if (s.phase === "camp") s = dispatch(s, s.expansionVersion===2?{type:"camp-choice",choice:"rest"}:{ type: "camp" });
     else if (s.hp <= 40 && s.potion) s = dispatch(s, { type: "potion" });
     else {
       const ranks: Record<string, number> = {

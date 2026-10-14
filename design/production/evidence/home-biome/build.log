@@ -1,0 +1,35 @@
+
+> runelord@0.1.0 build
+> npm run check:assets && tsc --noEmit && vite build --config apps/web/vite.config.ts
+
+
+> runelord@0.1.0 check:assets
+> node tools/import/validate-runtime-assets.mjs
+
+Verified all 1455 runtime manifest assets.
+vite v7.3.6 building client environment for production...
+transforming...
+✓ 825 modules transformed.
+rendering chunks...
+computing gzip size...
+../../dist/index.html                                 0.63 kB │ gzip:   0.38 kB
+../../dist/assets/metal-mania-regular-Ch2tiLTQ.ttf  254.57 kB
+../../dist/assets/index-BZtER93R.css                124.31 kB │ gzip:  27.57 kB
+../../dist/assets/CanvasPool-BUeeGrWK.js              1.89 kB │ gzip:   0.84 kB
+../../dist/assets/Filter-Bcs43Y9-.js                  2.60 kB │ gzip:   1.02 kB
+../../dist/assets/canvasUtils-CVan8wal.js             5.71 kB │ gzip:   1.80 kB
+../../dist/assets/getTexelRangeRects-CntAoMjp.js     11.40 kB │ gzip:   2.99 kB
+../../dist/assets/webworkerAll-C19yezVZ.js           15.50 kB │ gzip:   4.89 kB
+../../dist/assets/CanvasRenderer-Cfc2wiM5.js         27.50 kB │ gzip:   8.15 kB
+../../dist/assets/BitmapFont-Cu9-vqg_.js             33.82 kB │ gzip:  11.44 kB
+../../dist/assets/browserAll-Dnee61nY.js             44.00 kB │ gzip:  11.43 kB
+../../dist/assets/RenderTargetSystem-CJtjzi_k.js     54.07 kB │ gzip:  14.82 kB
+../../dist/assets/WebGPURenderer-uObJUgA3.js         55.92 kB │ gzip:  15.99 kB
+../../dist/assets/WebGLRenderer-CMG1JW0O.js          73.67 kB │ gzip:  20.16 kB
+../../dist/assets/index-B8gWdVYe.js                 750.72 kB │ gzip: 242.52 kB
+
+(!) Some chunks are larger than 500 kB after minification. Consider:
+- Using dynamic import() to code-split the application
+- Use build.rollupOptions.output.manualChunks to improve chunking: https://rollupjs.org/configuration-options/#output-manualchunks
+- Adjust chunk size limit for this warning via build.chunkSizeWarningLimit.
+✓ built in 11.85s

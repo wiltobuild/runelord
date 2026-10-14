@@ -14,6 +14,10 @@ The final objective is to defeat every Sovereign and become **Sovereign Supreme*
 
 Persistence here means progress carried through the campaign. Hero-death penalties, campaign failure, and what survives a new campaign are not yet decided; do not assume either total roguelike resets or loss-free resurrection.
 
+## Hero home biomes
+
+**Decision date: 2026-10-14.** Every playable hero starts a new run in their home biome. Runeblade travels **Frozen Wastes → Thornroot Forest → Infernal**. Warlock travels **Infernal → Thornroot Forest → Frozen Wastes**. This applies to both the roguelike demo and Conquer mode. Saved journeys retain their original route for deterministic replay; newly started runs use the hero route. Future heroes need an explicit home-biome route when they become playable. This decision changes route order, not the existing authored encounter budgets.
+
 ## Campaign sequence
 
 1. **First biome:** choose branching paths toward its Sovereign. Regular battles are the most common nodes, mixed with elites, shops, and treasure.

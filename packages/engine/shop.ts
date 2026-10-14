@@ -1,3 +1,4 @@
+import {expansionRelicPool,expansionPrice,usesExpansion} from './expansion';
 import {hellboundEffectText} from '../content/index';
 import { implemented, neutralCards, cardsForHero, relicsForHero, runebladeEffectText, cards, relicPool, type CardId, type ItemId } from '../content/index';
 import {eligibleCardReward, demonStats, type DemonKind, type State} from './index';
@@ -26,7 +27,7 @@ export const currentShop = (s:State):ShopStock|undefined => {
  return {...view,upgrades:refresh(view.upgrades),removals:refresh(view.removals)};
 };
 export function prepareShop(s:State){const stock=currentShop(s);if(stock&&!!s.shops)s.shops.stock[s.shops.current!]={...stock,servicesReady:true};}
-export const shopRerollCost=(s:State,kind:ShopRerollKind)=>{const count=currentShop(s)?.rerolls[kind];const price=count===undefined||!Number.isSafeInteger(count)||count<0?Infinity:10*2**count;return Number.isSafeInteger(price)&&price>0?price:Infinity;};
+export const shopRerollCost=(s:State,kind:ShopRerollKind)=>{const count=currentShop(s)?.rerolls[kind];const price=count===undefined||!Number.isSafeInteger(count)||count<0?Infinity:10*2**count;return Number.isSafeInteger(price)&&price>0?expansionPrice(s,price):Infinity;};
 export const shopCanReroll=(s:State,kind:ShopRerollKind)=>s.phase==='shop'&&!!s.shops&&s.gold>=shopRerollCost(s,kind)&&(kind==='buy'?shopPool(s).some(id=>canAddCard(s,id)):eligibleCopies(s,kind).length>0);
 export function rerollShop(s:State,kind:ShopRerollKind){
  if(!(['buy','upgrade','remove'] as string[]).includes(kind))throw Error('Invalid reroll type.');
@@ -60,7 +61,7 @@ export function cardEffectText(id:CardId,level=0,runebladeRules:1|2=2,summonRule
  'combust':`Consume all Scorch. Deal ${level?`max(Scorch × 2 + ${level}, round(Scorch × ${(2*cardPower(level)).toFixed(3)}))`:'Scorch × 2'} damage (0 if no Scorch). At 10 Scorch: ${level?Math.max(20+level,Math.round(20*cardPower(level))):20} damage.`, 'blood-price':`Lose 2 HP and gain 2 Corruption. Deal ${v(6)} damage twice. On kill gain 4 Corruption.`, 'wreathed-in-flame':`Gain ${v(5)} Guard plus half the total enemy Scorch, rounded down.`, 'dread-aura':`Whenever a demon attacks, apply ${v(1)} Scorch to its target.`, 'feast-of-embers':`Heal a demon for ${v(8)} HP and grant it ${v(3)} damage.`, 'abyssal-gaze':`Gain 2 Corruption. Draw ${v(1)} cards.`, 'infernal-transformation':`Enter Demon Form for ${v(3)} turns.`};
  return effects[id]??cards[id].text;
 }
-export function upgradePreview(s:State,index:number){const id=s.deck[index];if(!id)throw Error('Choose a card in your deck.');const level=cardLevel(s,index),mana=(l:number)=>Math.max(cards[id].cost>0?1:0,cards[id].cost-Math.floor(l/3));return {id,level,nextLevel:level+1,power:cardPower(level),nextPower:cardPower(level+1),cost:mana(level),nextCost:mana(level+1),text:cardEffectText(id,level,s.runebladeRules??1,s.summonRulesFrom!==undefined&&s.history.length>=s.summonRulesFrom),nextText:cardEffectText(id,level+1,s.runebladeRules??1,s.summonRulesFrom!==undefined&&s.history.length>=s.summonRulesFrom),price:upgradeCost(level)};}
+export function upgradePreview(s:State,index:number){const id=s.deck[index];if(!id)throw Error('Choose a card in your deck.');const level=cardLevel(s,index),mana=(l:number)=>Math.max(cards[id].cost>0?1:0,cards[id].cost-Math.floor(l/3));return {id,level,nextLevel:level+1,power:cardPower(level),nextPower:cardPower(level+1),cost:mana(level),nextCost:mana(level+1),text:cardEffectText(id,level,s.runebladeRules??1,s.summonRulesFrom!==undefined&&s.history.length>=s.summonRulesFrom),nextText:cardEffectText(id,level+1,s.runebladeRules??1,s.summonRulesFrom!==undefined&&s.history.length>=s.summonRulesFrom),price:expansionPrice(s,upgradeCost(level))};}
 
 /** Shop randomness is independent of combat draws. */
 export function enterRoguelikeShop(s:State){
@@ -68,7 +69,7 @@ export function enterRoguelikeShop(s:State){
  const id=`roguelike-${s.room+1}`;s.shops.current=id;
  if(!s.shops.stock[id]){
   let rng=(s.seed ^ Math.imul(s.room+1,16777619))>>>0;
-  const pool=[...relicsForHero(s.hero)];const relics:ShopStock['relics']=[];
+  const pool=expansionRelicPool(s);const relics:ShopStock['relics']=[];
   while(relics.length<5&&pool.length){rng=(Math.imul(rng,1664525)+1013904223)>>>0;const item=pool.splice(Math.floor(rng/4294967296*pool.length),1)[0];relics.push({id:item,price:120,sold:false});}
   s.shops.stock[id]={cards:sample(shopPool(s),s.seed,`${id}:buy:0`).map(id=>({id,price:cards[id].rarity==='Rare'?90:45,sold:false})),relics,upgrades:[],removals:[],rerolls:{buy:0,upgrade:0,remove:0},servicesReady:false};
  }

@@ -47,3 +47,8 @@ apps/web/public/game-assets/**
 !apps/web/public/game-assets/cards/veteran-command.webp
 
 !apps/web/public/game-assets/cards/blood-ascension.webp
+
+# Frozen Wastes verified runtime derivatives
+!apps/web/public/game-assets/frozen-wastes/**
+
+!apps/web/public/game-assets/expedition/**

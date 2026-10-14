@@ -1,6 +1,8 @@
+// Preserve this pre-expansion regression suite; expansion behavior has dedicated coverage.
+const newRoguelikeRun=(...args:Parameters<typeof currentRoguelikeRun>)=>{args[7]??=1;return currentRoguelikeRun(...args);};
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import {newRoguelikeRun,dispatch,playable,cardPayment,currentShop,save,restore,canAddCard,shopCanReroll,type Action} from './index';
+import {newRoguelikeRun as currentRoguelikeRun,dispatch,playable,cardPayment,currentShop,save,restore,canAddCard,shopCanReroll,type Action} from './index';
 import {runebladeDecks,runebladeImplemented,runebladeRelicPool,cards,cardTargetsUnit} from '../content/index';
 
 // Independent legal-action audit of the deployed demo route. No state/resource overrides.

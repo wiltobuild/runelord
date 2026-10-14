@@ -1,0 +1,54 @@
+{
+  "date": "2026-10-14T09:12:05.108489+00:00",
+  "status": "pass",
+  "url": "http://127.0.0.1:4351/",
+  "sourceHashes": {
+    "apps/web/src/main.tsx": "d60824abb135d05347c47f98d10fcf2cffc78696f711cc68bd4c886aa2ef351b",
+    "apps/web/src/DevConsole.tsx": "55d862fb2f3aa2d1de67513f284550f7ea0ed3f53529a28be0f0bd8ed3f3d86a",
+    "apps/web/src/dev-console.css": "426b3ea468e3b94589c264808222871111f0c700eb7d55aac864560eb22a5985",
+    "apps/web/src/debugState.ts": "00d7d127a91fc669bd30dcfca194c66a6e45b47c81c4a3b2682d3bbc42f0b9af",
+    "apps/web/src/debugState.test.ts": "b34f19ccc5acacd2af9a0401326bfddce6ef7ca31e0a782bf177528dd6dc6007",
+    "package.json": "cfe0962c1d5f1e004a633c522688bfaf36974ed605b1e9cbcfd6383c97049d72"
+  },
+  "tests": {
+    "command": "npm run test:debug",
+    "passed": 8,
+    "coverage": [
+      "Bothheroes/allbiomes/allroomtypes",
+      "Every summon and enemy template",
+      "Every implemented card",
+      "Unique actor/card IDs and immutable input snapshots",
+      "Biomeboundary stepping",
+      "Resources/item/training invariants",
+      "Instant victory and endturn",
+      "Restart state reset"
+    ]
+  },
+  "build": {
+    "command": "npm run build",
+    "pass": true,
+    "warnings": [
+      "Existing largebundle warning"
+    ]
+  },
+  "browserChecks": [
+    "Backtick opens from title and toggles during gameplay",
+    "New Runeblade sandbox created",
+    "Bone Defender spawned and immediately rendered",
+    "Undo removes summon; redo restores it",
+    "Firebolt added to Runeblade hand, hand count5 to6",
+    "First encounter choices entered atroom-1 without crash",
+    "Infernal shop,treasure,camp and boss jumps work",
+    "Frozen Avalanche Colossus spawned alongside Infernal boss",
+    "Resource gold increment applied",
+    "Relic granted and ownership count updated",
+    "Bone Defender mastery set",
+    "Console interrupts normal endturn animation and jumps to previousroom; stable after10seconds",
+    "Instant victory enters normal reward phase",
+    "Restore original returns to initialtitle, sandboxdeactivated",
+    "Escape closes and returnsfocus tolauncher",
+    "1280x720 and960x540 layouts inspected",
+    "No consoleerrors after gameplay controls"
+  ],
+  "saveVerification": "Independent source review confirms active sandbox bypasses normal replay-based autosave; restoration observed in browser. Existing persistent save was not intentionally overwritten for testing."
+}

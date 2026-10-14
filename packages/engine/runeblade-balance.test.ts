@@ -1,6 +1,8 @@
+// Preserve this pre-expansion regression suite; expansion behavior has dedicated coverage.
+const newRoguelikeRun=(...args:Parameters<typeof currentRoguelikeRun>)=>{args[7]??=1;return currentRoguelikeRun(...args);};
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import {newRoguelikeRun,newRun,dispatch,save,restore,enterRoguelikeShop,currentShop,cardEffectText,upgradePreview,type State} from './index';
+import {newRoguelikeRun as currentRoguelikeRun,newRun,dispatch,save,restore,enterRoguelikeShop,currentShop,cardEffectText,upgradePreview,type State} from './index';
 import {runebladeSummons,runebladeDecks,runebladeRelicPool,runebladeImplemented,items,type CardId} from '../content/index';
 const play=(s:State,id:CardId,level=0)=>{s.hand=[{id,uid:999,level}];return dispatch(s,{type:'play',uid:999});};
 function combat(){const s=newRoguelikeRun(42,'gravehost');s.mana=20;s.corpses=0;s.enemies.forEach(e=>{e.hp=e.maxHp=500;e.moves=[{name:'Wait',damage:0,targeting:'hero'}];});return s;}

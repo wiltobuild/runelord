@@ -1,7 +1,9 @@
+// Preserve this pre-expansion regression suite; expansion behavior has dedicated coverage.
+const newRoguelikeRun=(...args:Parameters<typeof currentRoguelikeRun>)=>{args[7]??=1;return currentRoguelikeRun(...args);};
 import {test} from 'node:test';
 import assert from 'node:assert/strict';
 import {readFileSync} from 'node:fs';
-import {newRoguelikeRun,newRun,forestEncounters,forestSovereignEncounter,FOREST_ENEMY_IDS,activeEncounter,currentRealm,encounterCount,realmEncounterNumber,realmEncounterCount,isRealmBoss,dispatch,currentShop,upgradeCost,canAddCard,resolveTargets,intent,save,restore,type State} from './index';
+import {newRoguelikeRun as currentRoguelikeRun,newRun,forestEncounters,forestSovereignEncounter,FOREST_ENEMY_IDS,activeEncounter,currentRealm,encounterCount,realmEncounterNumber,realmEncounterCount,isRealmBoss,dispatch,currentShop,upgradeCost,canAddCard,resolveTargets,intent,save,restore,type State} from './index';
 import {encounters} from '../content/index';
 const fixture=(name:string)=>readFileSync(new URL(`./fixtures/forest-roguelike-${name}.json`,import.meta.url),'utf8');
 function crown():State {
@@ -12,7 +14,7 @@ function crown():State {
 }
 function firstForest():State {return dispatch(dispatch(crown(),{type:'continue'}),{type:'leave-shop'});}
 test('linear roguelike keeps nine infernal fights and appends twelve forest fights without campaign state',()=>{
- const s=newRoguelikeRun();assert.equal(encounters.length,9);assert.equal(encounterCount(s),21);assert.equal(encounterCount(newRun()),9);
+ const s=newRoguelikeRun();assert.equal(encounters.length,9);assert.equal(encounterCount(s),33);assert.equal(encounterCount(newRun()),9);
  assert.equal(forestEncounters.length,12);assert.ok(!('journey' in s));
  for(let room=0;room<21;room++) {
   s.room=room;assert.equal(currentRealm(s),room<9?'infernal':'forest');assert.equal(realmEncounterNumber(s),room<9?room+1:room-8);
@@ -60,7 +62,7 @@ test('real schema6 history crosses realms and preserves forest purchases, upgrad
 test('full legal run replays all twenty-one victories, seven shops, and final victory exactly',()=>{
  const s=restore(fixture('complete'));assert.equal(s.phase,'won');assert.equal(s.room,20);assert.equal(currentRealm(s),'forest');
  assert.deepEqual(Object.keys(s.shops!.stock),[3,6,9,12,15,18,21].map(n=>`roguelike-${n}`));assert.deepEqual(restore(save(s)),s);
- const history=JSON.parse(fixture('complete'));let replay=newRoguelikeRun(history.seed,history.starterDeck,history.actions.length,history.actions.length);replay.forestBossVersion=1;let crownIndex=-1;
+ const history=JSON.parse(fixture('complete'));let replay=newRoguelikeRun(history.seed,history.starterDeck,history.actions.length,history.actions.length);replay.forestBossVersion=1;replay.frozenWastesVersion=1;let crownIndex=-1;
  for(let i=0;i<history.actions.length;i++) {
   if(replay.room===8&&replay.phase==='loot')crownIndex=i;
   replay=dispatch(replay,history.actions[i]);

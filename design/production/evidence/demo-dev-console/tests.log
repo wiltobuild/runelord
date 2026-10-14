@@ -1,0 +1,20 @@
+
+> runelord@0.1.0 test:debug
+> tsx --test apps/web/src/debugState.test.ts
+
+✔ navigation enters every biome and location with valid encounter data without mutating original (23.6009ms)
+✔ previous and next cross biome boundaries and clamp at the start/end (0.9017ms)
+✔ all summon and enemy templates spawn with unique IDs, cloned moves, and valid focus (7.465ms)
+✔ debug summons bypass normal warband capacity and all implemented cards can be added (9.4177ms)
+✔ resources, items and training respect state invariants (0.8484ms)
+✔ instant win uses normal rewards without consuming or adding inventory (0.7903ms)
+✔ restart clears stale fight state while preserving run inventory and deck (0.431ms)
+✔ end turn advances engine instantly and snapshots remain isolated (0.7819ms)
+ℹ tests 8
+ℹ suites 0
+ℹ pass 8
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 330.2365

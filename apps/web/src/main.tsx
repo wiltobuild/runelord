@@ -1,3 +1,12 @@
+import { DevConsole } from "./DevConsole";
+import { applyDebugAction, type DebugAction } from "./debugState";
+import { EXPEDITION_REVIEW, expeditionReviewState } from "./expeditionReview";
+import { SummonOrders, orderName } from "./SummonOrders";
+import { CampScene, RouteChoice, TreasureScene, RelicCollection } from "./ExpeditionScreens";
+import { treasureOptions, routeChoices } from "../../../packages/engine/index";
+import { nextRealm } from "../../../packages/engine/index";
+import { routeDescription } from "./realmPresentation";
+import { FROZEN_REVIEW, frozenWastesReviewState } from "./frozenWastesReview";
 import {ARCTIC_REVIEW,arcticReviewState,arcticReviewAssets,arcticEncounter} from "./arcticReview";
 import { HELLBOUND_REVIEW, hellboundReviewState } from "./hellboundReview";
 import { cardArtwork } from "./cardPresentation";
@@ -61,6 +70,7 @@ const SHOP_REVIEW = import.meta.env.DEV && new URLSearchParams(location.search).
 const SAVE_KEY = "runelord-warlock-demo-v1";
 function demoScore(state: State | null) {
   if (!state) return OPENING_SCORE_ID;
+  if (currentRealm(state) === "frozen-wastes") return ["combat", "reward", "loot"].includes(state.phase) ? "battle" : "explore";
   if (currentRealm(state) === "forest") return isRealmBoss(state) && ["combat", "reward", "loot"].includes(state.phase) ? "forest-boss" : "forest-explore";
   if (state.phase === "shop") return infernalShopAppearance(state.seed,state.shops?.current ?? null).shopId;
   if (state.phase === "camp" || state.phase === "won") return "explore";
@@ -137,11 +147,12 @@ function CardView({
 }
 function App({ assets }: { assets: Assets }) {
   const hudScale = useHudScale();
+  const [orderUnitId,setOrderUnitId]=useState<number | null>(null);
   const [inspection, setInspection] = useState<"brand" | "draw" | "discard" | "items" | "powers" | null>(null);
   const [introStarted, setIntroStarted] = useState(false);
   const [starterDeck, setStarterDeck] = useState<StarterDeckId>("warband");
   const [saved, setSaved] = useState<State | null>(readSave),
-    [game, setState] = useState<State | null>(() => ARCTIC_REVIEW ? arcticReviewState() : HELLBOUND_REVIEW ? hellboundReviewState() : SUMMON_REVIEW ? summonReviewState() : (FOREST_REVIEW || SOVEREIGN_PLAYTEST) ? forestReviewState() : SHOP_REVIEW ? reviewShop() : null),
+    [game, setState] = useState<State | null>(() => EXPEDITION_REVIEW ? expeditionReviewState() : FROZEN_REVIEW ? frozenWastesReviewState() : ARCTIC_REVIEW ? arcticReviewState() : HELLBOUND_REVIEW ? hellboundReviewState() : SUMMON_REVIEW ? summonReviewState() : (FOREST_REVIEW || SOVEREIGN_PLAYTEST) ? forestReviewState() : SHOP_REVIEW ? reviewShop() : null),
     [visual, setVisual] = useState<State | null>(null),
     [seed, setSeed] = useState(""),
     [selected, setSelected] = useState<CardInstance | null>(null),
@@ -158,6 +169,16 @@ function App({ assets }: { assets: Assets }) {
     [promotionRecipient, setPromotionRecipient] = useState<number | undefined>(),
     [musicError, setMusicError] = useState(false),
     [musicActive, setMusicActive] = useState(false);
+  const debugSession = useRef<{ active: boolean; original: State | null; past: (State | null)[]; future: (State | null)[] }>({ active: false, original: null, past: [], future: [] });
+  const [debugMessage, setDebugMessage] = useState("");
+  const [, refreshDebug] = useState(0);
+  const actionEpoch = useRef(0);
+  const rememberDebug = (before: State | null) => {
+    if (!debugSession.current.active) return;
+    debugSession.current.past = [...debugSession.current.past.slice(-99), structuredClone(before)];
+    debugSession.current.future = [];
+    refreshDebug(n => n + 1);
+  };
   const state = visual ?? game;
   const isRuneblade = state?.hero === "runeblade";
   const runebladeRules = state?.runebladeRules ?? 1;
@@ -177,6 +198,7 @@ function App({ assets }: { assets: Assets }) {
     const dialogOpen = !!inspection || showHelp || showDeck || state?.phase === "loot";
     const previous = document.activeElement as HTMLElement | null;
     const keydown = (event: KeyboardEvent) => {
+      if (document.querySelector(".dev-console")) return;
       if (event.key === "Escape") {
         setInspection(null); setShowHelp(false); setShowDeck(false);
         setSelected(null); setMessage("");
@@ -197,7 +219,7 @@ function App({ assets }: { assets: Assets }) {
   const resolving = useRef(false);
   const room = state?.room ?? 0,
     phase = state?.phase,
-    encounter = state ? ARCTIC_REVIEW ? arcticEncounter : activeEncounter(state) : encounters[0],
+    encounter = state ? ARCTIC_REVIEW ? arcticEncounter : activeEncounter(phase === "route-choice" ? { ...state, room: Math.min(state.room + 1, encounterCount(state) - 1) } : state) : encounters[0],
     track = demoScore(state);
   const animate = (name: string) => {
     setAnimation(name);
@@ -228,7 +250,7 @@ function App({ assets }: { assets: Assets }) {
     }
   }, [assets, track, musicActive]);
   useEffect(() => {
-    if (!game || ARCTIC_REVIEW || HELLBOUND_REVIEW || SHOP_REVIEW || FOREST_REVIEW || SOVEREIGN_PLAYTEST || SUMMON_REVIEW) return;
+    if (debugSession.current.active || !game || EXPEDITION_REVIEW || FROZEN_REVIEW || ARCTIC_REVIEW || HELLBOUND_REVIEW || SHOP_REVIEW || FOREST_REVIEW || SOVEREIGN_PLAYTEST || SUMMON_REVIEW) return;
     try {
       localStorage.setItem(SAVE_KEY, save(game));
       setSaved(game);
@@ -239,6 +261,8 @@ function App({ assets }: { assets: Assets }) {
     }
   }, [game]);
   const start = (resume = false) => {
+    actionEpoch.current++;
+    rememberDebug(game);
     director.clear();
     setVisual(null);
     resolving.current = false;
@@ -256,6 +280,7 @@ function App({ assets }: { assets: Assets }) {
   };
   const act = async (action: Action) => {
     if (!game || resolving.current) return;
+    const epoch = actionEpoch.current;
     try {
       const before = game;
       const next = dispatch(before, action);
@@ -266,6 +291,7 @@ function App({ assets }: { assets: Assets }) {
         setBusy(true);
         setVisual(before);
       }
+      rememberDebug(before);
       setState(next);
       setLog((l) => [...l, ...next.events.map((e) => e.message)].slice(-40));
       setSelected(null);
@@ -278,8 +304,9 @@ function App({ assets }: { assets: Assets }) {
         animate("idle_breathe");
       }
     } catch (e) {
-      setMessage((e as Error).message);
+      if (epoch === actionEpoch.current) setMessage((e as Error).message);
     } finally {
+      if (epoch !== actionEpoch.current) return;
       setVisual(null);
       setBusy(false);
       resolving.current = false;
@@ -299,9 +326,16 @@ function App({ assets }: { assets: Assets }) {
     if(id===promotionRecipient) {setMessage('Choose a different summon to sacrifice.');return;}
     void act({type:'play',uid:selected.uid,unit:promotionRecipient,sacrifice:id});
   };
+  const chooseSummon=(id:number)=>{
+    if(!state||busy)return;
+    if(selected&&cardTargetsUnit(selected.id)){chooseUnit(id);return;}
+    if(state.expansionVersion===2&&!selected&&state.phase==='combat'){setOrderUnitId(id);return;}
+    setDismiss(id);setMessage('Summon selected for replacement when the warband is full.');
+  };
   const chooseCard = (c: CardInstance) => {
     if (!state || busy) return;
     setPromotionRecipient(undefined);
+    setOrderUnitId(null);
     if (!playable(state, c)) {
       setMessage("This card needs enough resources, a valid target and room in the Warband. Pair recruits need two free slots; Hellgate needs three Maledictors and can open once per turn.");
       return;
@@ -323,8 +357,51 @@ function App({ assets }: { assets: Assets }) {
       );
     } else act({ type: "play", uid: c.uid, dismiss });
   };
+  const replaceDebugState = (next: State | null) => {
+    actionEpoch.current++;
+    director.clear();
+    resolving.current = false;
+    setVisual(null); setBusy(false); setSelected(null); setInspection(null);
+    setOrderUnitId(null); setShowDeck(false); setShowHelp(false);
+    setDismiss(undefined); setPromotionRecipient(undefined); setMessage("");
+    setLog(next?.events.map(event => event.message) ?? []);
+    animate("idle_breathe"); setState(next); refreshDebug(n => n + 1);
+  };
+  const debugAction = (action: DebugAction) => {
+    try {
+      const next = applyDebugAction(game, action);
+      if (!debugSession.current.active) {
+        debugSession.current = { active: true, original: structuredClone(game), past: [], future: [] };
+      }
+      rememberDebug(game);
+      replaceDebugState(next);
+      setDebugMessage(`Applied ${action.type}. Normal save is unchanged.`);
+    } catch (error) { setDebugMessage(error instanceof Error ? error.message : String(error)); }
+  };
+  const debugHistory = (direction: "undo" | "redo") => {
+    const session = debugSession.current;
+    const source = direction === "undo" ? session.past : session.future;
+    const destination = direction === "undo" ? session.future : session.past;
+    if (!source.length) return;
+    destination.push(structuredClone(game));
+    replaceDebugState(source.pop() ?? null);
+    setDebugMessage(direction === "undo" ? "Previous state restored." : "Next state restored.");
+  };
+  const restoreOriginal = () => {
+    const session = debugSession.current;
+    if (!session.active) return;
+    const original = structuredClone(session.original);
+    debugSession.current = { active: false, original: null, past: [], future: [] };
+    replaceDebugState(original);
+    setDebugMessage("Original run restored. Normal saving resumed.");
+  };
+  const returnToTitle = () => { rememberDebug(game); setState(null); };
+  const renderScreen = () => {
+  if(state?.expansionVersion===2&&phase==='camp')return <CampScene onHome={returnToTitle} state={state} assets={assets} message={message} onAction={action=>{void act(action);}}/>;
+  if(state?.expansionVersion===2&&phase==='treasure')return <TreasureScene onHome={returnToTitle} state={state} assets={assets} message={message} options={treasureOptions(state)} onAction={action=>{void act(action);}}/>;
+  if(state?.expansionVersion===2&&phase==='route-choice')return <RouteChoice onHome={returnToTitle} state={state} assets={assets} message={message} choices={routeChoices(state)} onChoose={id=>{void act({type:"choose-room",id});}}/>;
   if (state && phase === "shop") {
-    const Shop = currentRealm(state) === "forest" ? ForestShop : RoguelikeShop;
+    const Shop = currentRealm(state) !== "infernal" ? ForestShop : RoguelikeShop;
     return <Shop state={state} assets={assets} onAction={action => { void act(action); }} message={message} musicOn={musicActive && volume > 0} onMusic={() => { const v = !musicActive || !volume ? .35 : 0; setVolume(v); score.setVolume(v); void music(); }} />;
   }
   if (!state && !introStarted) return <IntroCinematic volume={volume} onVolume={v => { setVolume(v); score.setVolume(v); }} onStart={() => { setIntroStarted(true); void music(); }} />;
@@ -348,7 +425,7 @@ function App({ assets }: { assets: Assets }) {
           onClick={() => {
             director.clear();
             setVisual(null);
-            setState(null);
+            returnToTitle();
             setSelected(null);
             animate("idle_breathe");
           }}
@@ -357,7 +434,7 @@ function App({ assets }: { assets: Assets }) {
         </button>
         <div className="chapter">
           {state
-            ? ARCTIC_REVIEW ? "ARCTIC PREVIEW · Frostgrave Causeway" : `${currentRealm(state) === "forest" ? "FOREST" : "INFERNAL"} · ${realmEncounterNumber(state)} OF ${realmEncounterCount(state)}`
+            ? ARCTIC_REVIEW ? "ARCTIC PREVIEW · Frostgrave Causeway" : `${currentRealm(state) === "frozen-wastes" ? "FROZEN WASTES" : currentRealm(state) === "forest" ? "FOREST" : "INFERNAL"} · ${realmEncounterNumber(state)} OF ${realmEncounterCount(state)}`
             : "A DECKBUILDING ROGUELIKE"}
         </div>
         <nav>
@@ -511,13 +588,7 @@ function App({ assets }: { assets: Assets }) {
                     disabled={busy || u.hp <= 0}
                     title={summonDescription(u, state)}
                     aria-label={summonDescription(u, state)}
-                    onClick={() => {
-                      if (selected && cardTargetsUnit(selected.id)) { chooseUnit(u.id); return; }
-                      setDismiss(u.id);
-                      setMessage(
-                        `${u.name} selected for dismissal if the Warband is full.`,
-                      );
-                    }}
+                    onClick={() => chooseSummon(u.id)}
                   >
                     {!stack && <span className="minion-headroom" aria-hidden="true" />}
                     <ActorSprite
@@ -531,15 +602,15 @@ function App({ assets }: { assets: Assets }) {
                       name={u.name}
                       className="summon-model"
                     />
-                    {!stack && <MinionDetails promotionRank={u.promotionRank} armor={u.armor} rot={isRuneblade ? u.rot : undefined} name={u.name} hp={u.hp} maxHp={u.maxHp} guard={u.guard} defender={u.defender} power={summonPower(u, state)} scorch={summonScorch(u, state)} />}
+                    {!stack && <MinionDetails promotionRank={u.promotionRank} armor={u.armor} rot={isRuneblade ? u.rot : undefined} name={u.name} hp={u.hp} maxHp={u.maxHp} guard={u.guard} defender={u.defender} power={summonPower(u, state)} scorch={summonScorch(u, state)} order={state.expansionVersion===2?orderName(state,u):undefined} />}
                   </button>
                 ); })}
                 {packed?.groups.map(group => {
                   const members = group.ids.map(id => warbandUnits.find(u => u.id === id)!).filter(u => u.hp > 0);
                   if (!members.length) return null;
                   return <div key={group.kind} className="packed-status" style={{left:group.x-(group.airborne?0:groundRetreat.shift),top:group.top,width:group.width}}>
-                    {members.map((u,i)=><button key={u.id} disabled={busy} className={dismiss===u.id?"selected":""} aria-label={`${u.name} ${warbandUnits.filter(member=>member.kind===u.kind&&member.hp>0).findIndex(member=>member.id===u.id)+1}, ${u.hp} of ${u.maxHp} health, ${u.guard} Guard`} title={summonDescription(u,state)} onClick={()=>{if(selected && cardTargetsUnit(selected.id)){chooseUnit(u.id);return;}setDismiss(u.id);setMessage(`${u.name} selected for dismissal if the Warband is full.`);}}>
-                      <MinionDetails promotionRank={u.promotionRank} armor={u.armor} rot={isRuneblade ? u.rot : undefined} name={u.name} hp={u.hp} maxHp={u.maxHp} guard={u.guard} defender={u.defender} power={summonPower(u,state)} scorch={summonScorch(u,state)} />
+                    {members.map((u,i)=><button key={u.id} disabled={busy} className={dismiss===u.id?"selected":""} aria-label={`${u.name} ${warbandUnits.filter(member=>member.kind===u.kind&&member.hp>0).findIndex(member=>member.id===u.id)+1}, ${u.hp} of ${u.maxHp} health, ${u.guard} Guard`} title={summonDescription(u,state)} onClick={()=>chooseSummon(u.id)}>
+                      <MinionDetails promotionRank={u.promotionRank} armor={u.armor} rot={isRuneblade ? u.rot : undefined} name={u.name} hp={u.hp} maxHp={u.maxHp} guard={u.guard} defender={u.defender} power={summonPower(u,state)} scorch={summonScorch(u,state)} order={state.expansionVersion===2?orderName(state,u):undefined} />
                     </button>)}
                   </div>;
                 })}
@@ -583,7 +654,7 @@ function App({ assets }: { assets: Assets }) {
                     />
                     <div className="enemy-status">
                       <EnemyName name={enemyName} />
-                      {e.boss && <span className="boss-phase">{e.bossPhase === 2 ? "PHASE II - ENRAGED" : e.boss === "forest-sovereign" ? "PHASE I - FOREST SOVEREIGN" : "PHASE I - INFERNAL SOVEREIGN"}</span>}{e.summonedBy && <span className="boss-phase">{e.art === "sovereign-root" ? "LIVING ROOT" : "SUMMONED DEMON"}</span>}
+                      {e.boss && <span className="boss-phase">{e.bossPhase === 2 ? "PHASE II - ENRAGED" : e.boss === "frozen-sovereign" ? "PHASE I - FROZEN SOVEREIGN" : e.boss === "forest-sovereign" ? "PHASE I - FOREST SOVEREIGN" : "PHASE I - INFERNAL SOVEREIGN"}</span>}{e.summonedBy && <span className="boss-phase">{e.art === "sovereign-root" ? "LIVING ROOT" : "SUMMONED DEMON"}</span>}
                       <div className="hp-track">
                         <i style={{ width: `${(e.hp / e.maxHp) * 100}%` }} />
                         <span>
@@ -672,7 +743,7 @@ function App({ assets }: { assets: Assets }) {
               <section className="reward-panel">
                 <div className="eyebrow">A DEBT COLLECTED</div>
                 <h2>{isRealmBoss(state) ? "Claim an Archdemon." : "Deepen your pact."}</h2>
-                <p>{isRealmBoss(state) ? "The Sovereign falls. Choose an Archdemon to join your deck before entering the forest." : "Choose one card to add to your deck. Offerings favor your starting pact."}</p>
+                <p>{isRealmBoss(state) && state.hero === "warlock" && currentRealm(state) === "infernal" ? "The Sovereign falls. Choose an Archdemon to strengthen your deck." : "Choose one card to add to your deck. Offerings favor your starting pact."}</p>
                 <div className="reward-cards">
                   {state.rewards.map((id) => (
                     <CardView summonRules={summonRules} runebladeRules={runebladeRules}
@@ -690,7 +761,7 @@ function App({ assets }: { assets: Assets }) {
               </section>
             </div>
           )}
-          {phase === "loot" && state.pendingLoot && <LootReveal loot={state.pendingLoot} assets={assets} realm={currentRealm(state)} continuesToForest={!!state.shops && currentRealm(state) === "infernal"} onContinue={() => act({ type: "continue" })} />}
+          {phase === "loot" && state.pendingLoot && <LootReveal training={state.history.slice(-1).some(action=>action.type==='claim-treasure'&&action.choice==='train')} loot={state.pendingLoot} assets={assets} realm={currentRealm(state)} nextRealm={nextRealm(state)} exchangeBeforeContinue={state.expansionVersion!==2&&!!state.shops} onContinue={() => act({ type: "continue" })} />}
           {phase === "camp" && (
             <div className="overlay">
               <section className="result-panel">
@@ -699,7 +770,7 @@ function App({ assets }: { assets: Assets }) {
                 <p>
                   The path ahead still burns.
                   <br />
-                  Recover {Math.floor(state.maxHp * (state.room === 1 ? .3 : .5))} HP before your next encounter.
+                  Recover {Math.floor(state.maxHp * (realmEncounterNumber(state) === 2 ? .3 : .5))} HP before your next encounter.
                 </p>
                 <button
                   className="primary"
@@ -718,12 +789,12 @@ function App({ assets }: { assets: Assets }) {
                 </div>
                 <h2>
                   {phase === "won"
-                    ? currentRealm(state) === "forest" ? "The forest bows." : "The flame is yours."
+                    ? currentRealm(state) === "frozen-wastes" ? "The long winter breaks." : currentRealm(state) === "forest" ? "The forest bows." : "The flame is yours."
                     : "The Pit remembers."}
                 </h2>
                 <p>
                   {phase === "won"
-                    ? currentRealm(state) === "forest" ? `You survived all ${encounterCount(state)} encounters through the Infernal realm and Thornroot Forest.` : `You survived all ${encounterCount(state)} encounters through the Cinderforge.`
+                    ? state.shops ? `You completed all ${encounterCount(state)} journey steps: ${routeDescription(state)}.` : `You survived all ${encounters.length} encounters through the Cinderforge.`
                     : "A different pact. A different outcome. Try again."}
                 </p>
                 {phase === "won" && state.relics.includes("demon-lord-crown") && <div className="victory-crown"><img src={assets.images["item-demon-crown"]} alt="Demon Lord's Crown" /><h3>{items["demon-lord-crown"].name}</h3><p>{items["demon-lord-crown"].text}</p></div>}
@@ -736,7 +807,7 @@ function App({ assets }: { assets: Assets }) {
                 </button>
                 <button
                   onClick={() => {
-                    setState(null);
+                    returnToTitle();
                     animate("idle_breathe");
                   }}
                 >
@@ -747,6 +818,8 @@ function App({ assets }: { assets: Assets }) {
           )}
         </>
       )}
+      {state?.expansionVersion===2&&<RelicCollection state={state} assets={assets}/>}
+      {state?.expansionVersion===2&&phase==='combat'&&!busy&&orderUnitId!==null&&state.units.some(u=>u.id===orderUnitId&&u.hp>0)&&<SummonOrders key={orderUnitId} state={state} unit={state.units.find(u=>u.id===orderUnitId)!} onAction={action=>{void act(action);}} onClose={()=>setOrderUnitId(null)} onDismiss={()=>{setDismiss(orderUnitId);setOrderUnitId(null);setMessage('Summon selected for replacement when the warband is full.');}}/>}
       {state && <footer>
         <span>
           RUNELORD <i>◆</i> CINDER & OATH
@@ -847,7 +920,7 @@ function App({ assets }: { assets: Assets }) {
             </div>}
             {state?.starterDeck === "hellbound" && <div className="help-grid"><article><h3>Hellbound veterans</h3><p>Summons leave after each battle. Each promoted recruit saves its rank for the next summon of that kind; one summon consumes one saved rank. Each promotion adds 2 Power, 2 maximum HP, heals 2 HP and adds 1 Armor. Armor reduces every incoming hit; Guard is temporary.</p></article><article><h3>Formation payoffs</h3><p>Two Legionaries share hostile damage aimed at the Warlock, even attacks that ignore Defender. Health paid by your own cards is still yours to pay. Three Maledictors open a Hellgate at turn end, damaging and scorching all enemies and promoting every soldier, once per turn.</p></article><article><h3>Recruit carefully</h3><p>The Warband holds up to ten units in new runs. Muster the Legion and Pike Detail each need two empty slots. Blood Ascension sacrifices a chosen summon to promote another soldier three times. Saved ranks return on resummoning, including after death or sacrifice.</p></article></div>}
             <p className="muted">
-              Battle through the Infernal realm, then carry your deck and upgrades through twelve forest encounters, with shops after every three battles. Choose one of three starter decks for your character. Shops and card rewards support your chosen hero.
+              Each hero starts at home. Runeblade travels Frozen Wastes → Forest → Infernal; Warlock travels Infernal → Forest → Frozen Wastes. Carry your deck and upgrades between realms. Choose your next destination after each room: battles, mysteries, treasures, shops, elites and camps. Every biome begins with a normal battle and ends at its Sovereign. Choose one of three starter decks for your character. Shops and card rewards support your chosen hero.
               Enemy animations and spell impacts play in combat order.
             </p>
             <button className="primary" onClick={() => setShowHelp(false)}>
@@ -876,6 +949,8 @@ function App({ assets }: { assets: Assets }) {
       )}
     </main>
   );
+  };
+  return <>{renderScreen()}<DevConsole state={game} onAction={debugAction} onUndo={() => debugHistory("undo")} onRedo={() => debugHistory("redo")} onRestore={restoreOriginal} canUndo={debugSession.current.past.length > 0} canRedo={debugSession.current.future.length > 0} sandbox={debugSession.current.active} message={debugMessage} /></>;
 }
 const root = createRoot(document.getElementById("root")!);
 root.render(

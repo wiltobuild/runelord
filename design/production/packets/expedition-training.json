@@ -1,0 +1,284 @@
+{
+  "schema": 1,
+  "id": "expedition-training",
+  "status": "complete",
+  "outcome": "Branching roguelike room choices, type-wide summon training and selected combat orders, new biome camps, training shops, and30 stacking relics across both modes.",
+  "authorization": "User approved implementing the complete plan on2026-10-14, including new rendered camp scenes and training UI, with unlimited relic collection.",
+  "contentIds": [
+    "summon-orders",
+    "summon-training",
+    "branching-expedition",
+    "biome-camps",
+    "stacking-relics"
+  ],
+  "owner": "runelord-rules-engineer",
+  "integrationOwner": "root",
+  "reviewer": "runelord-game-qa",
+  "ownedPaths": [
+    "packages/engine",
+    "packages/content/index.ts",
+    "apps/web/src",
+    "apps/web/public/game-assets/expedition",
+    "design/production/packets/expedition-training.json",
+    "design/production/evidence/expedition-training"
+  ],
+  "dependencies": [
+    "Catalog designer authors ability/relic definitions before engine hooks",
+    "Presentation worker supplies new components and three camp images; root wires existing UI",
+    "Independent QA reviews integrated rules and interface after builders"
+  ],
+  "exclusions": [
+    "Commit, push, deployment",
+    "Changing existing saves to new gameplay",
+    "New playable heroes"
+  ],
+  "inputs": [
+    {
+      "path": "AGENTS.md",
+      "sha256": "ee2de386f4adeda3c3711977fd2e3fab6919c7df7382e5a4a53d8bb457fd6783"
+    },
+    {
+      "path": "design/expansion-content.md",
+      "sha256": "7beef68bf2980153a0bfa825fe8c1716f8c502ae9cd5fde7c9864de0d6210350"
+    },
+    {
+      "path": "packages/engine/index.ts",
+      "sha256": "5f446e258bdaa7faf35f6328aa3da73e3ad9d05f59d251b57fc1e3fca5ac17d5"
+    },
+    {
+      "path": "packages/engine/expansion.ts",
+      "sha256": "4342ccfdb354a66f9ad0f5c6b22f1fec6bc5a6254a9878f00efce251b91b51ce"
+    },
+    {
+      "path": "packages/engine/expansionCatalog.ts",
+      "sha256": "255c4c8ddb0e4853968eb6f3b9f1cfeaa80c5f01add4656bdaf87240914e6494"
+    },
+    {
+      "path": "packages/engine/expedition-expansion.test.ts",
+      "sha256": "72596ba0234920d5937dbf5655f181319da13e2d914d757316e1cf1f15bd2329"
+    },
+    {
+      "path": "packages/content/index.ts",
+      "sha256": "45853a58631870b0bd349152a0e722d3d921d15ab5a389849e395d82cbf53d1e"
+    },
+    {
+      "path": "apps/web/src/main.tsx",
+      "sha256": "1820898e1fea7aee9faa5b9a5966d8b6c45f9543ffb35387dfe9329f639f38dd"
+    },
+    {
+      "path": "apps/web/src/ExpeditionScreens.tsx",
+      "sha256": "794f7434e5b515a6c00e3da244b1ff826c206149b3bbfe5986cf3efdd46aaf27"
+    },
+    {
+      "path": "apps/web/src/expedition-screens.css",
+      "sha256": "1e44d9d7fc0cc39e3ddb84df7b964e543199afd4bd580e56e2a56d36c879ceac"
+    },
+    {
+      "path": "apps/web/src/SummonOrders.tsx",
+      "sha256": "e227ef011baba79928c14e633048b46440658b7861767180b63ae088837f923c"
+    },
+    {
+      "path": "apps/web/src/summon-orders.css",
+      "sha256": "224266987aba8d0000076a9ed328d5536078e25733cd1dd3fd6f63c7d0a010cd"
+    },
+    {
+      "path": "apps/web/src/SoulforgeShop.tsx",
+      "sha256": "68b97f8e2fc903cfbf5305f0da0c2ad28b58af0a85ce4837da02bf376a16a4c0"
+    },
+    {
+      "path": "apps/web/src/LootReveal.tsx",
+      "sha256": "84ab373f31292e795d7c75b4cbe1de689a0bc0b8980bb3ea60711ae2681c0908"
+    },
+    {
+      "path": "apps/web/src/LootIcon.tsx",
+      "sha256": "3778d5453906591878e5ae74a536dc89b88a073ca0d20f598cd369710e7ae23f"
+    },
+    {
+      "path": "apps/web/src/MinionDetails.tsx",
+      "sha256": "f7d7aed213cdad6ce37fda31bdf86ae9ef92ab7ea11db41185d22ce9bcf224f8"
+    },
+    {
+      "path": "apps/web/src/LegionStatus.tsx",
+      "sha256": "80b91867e157228a9d522b7d87a4ecd5016c2cf01b33e7fc77709a58f8f23f2e"
+    },
+    {
+      "path": "apps/web/src/expeditionReview.ts",
+      "sha256": "3f8d6c17fa0659e7fcea63b0823dc22ced08716e261bea5e0fb0a5cbfbe39928"
+    },
+    {
+      "path": "packages/assets/expedition-camps.json",
+      "sha256": "2ae38203faba0562360072bce8cf494a664bebd323dad6fc391837d21339dbeb"
+    },
+    {
+      "path": "tools/import/expedition-camps.mjs",
+      "sha256": "286b3490a995f2df5fa5887222e2daee91cd80641fe3bc647daf48e80f04f35c"
+    },
+    {
+      "path": "tools/import/assets.mjs",
+      "sha256": "41905b5a3efa6667c89e8db9c1e3ac06429ef52fd97549c246c90f95e73c63ed"
+    },
+    {
+      "path": "apps/web/public/game-assets/expedition/camps/frozen-wastes.webp",
+      "sha256": "42a1da68f173c25ab893c2f98829fc3c026dab407f05aa7a95e30bf09fcd0695"
+    },
+    {
+      "path": "apps/web/public/game-assets/expedition/camps/forest.webp",
+      "sha256": "8d4fcad04aaa47b1c7e72ccf7ed608c9895b4e6561dcaa27937578e9e5fd01e2"
+    },
+    {
+      "path": "apps/web/public/game-assets/expedition/camps/infernal.webp",
+      "sha256": "76699c3bd6dfbb3e55f3662efce8ca58af050e40db1b1ed5651997a7e04b2362"
+    },
+    {
+      "path": "packages/engine/expedition.ts",
+      "sha256": "ff986c14dab9d1b83a98b178747184ca07ea3543d8d11af75b7c08945d0d2537"
+    },
+    {
+      "path": "packages/engine/shop.ts",
+      "sha256": "059acb33966acfed6a9546e5615940762f76b96c9d8173da89bf33a49f6a7390"
+    }
+  ],
+  "baselineInputs": [
+    {
+      "path": "AGENTS.md",
+      "sha256": "ee2de386f4adeda3c3711977fd2e3fab6919c7df7382e5a4a53d8bb457fd6783"
+    },
+    {
+      "path": "design/campaign-direction.md",
+      "sha256": "56f96924da60d4e1e4a51582ee3a8cdbac62098564c30ce76c701a6f6cf16413"
+    },
+    {
+      "path": "packages/engine/index.ts",
+      "sha256": "566ad9851d0b7081b646039738fd5bb8dbc4063ffb0bebc68fe8f9199c1a0df0"
+    },
+    {
+      "path": "packages/engine/shop.ts",
+      "sha256": "029f18f25be0e8b77143696e36d807b122cc77c330b4918a9195278d1052dd44"
+    },
+    {
+      "path": "packages/content/index.ts",
+      "sha256": "6639740fa92bc380169a2a2a1306ce164ff6d8d480c8d7c24b322325838693d2"
+    },
+    {
+      "path": "apps/web/src/main.tsx",
+      "sha256": "e77eaa49a07d5e5dd4e291b3c9a516652963e1fc53b47758536c6697002467f9"
+    },
+    {
+      "path": "apps/web/src/SoulforgeShop.tsx",
+      "sha256": "ab75dfe650d9498e02e59ec7f77b60cd38ef6eeb8c223525bb99b04592b3118a"
+    }
+  ],
+  "animation": null,
+  "acceptance": [
+    {
+      "check": "Demo offers seeded room choices, normal openings, fixed boss endings and save-stable mystery outcomes.",
+      "status": "pass",
+      "evidence": [
+        {
+          "path": "design/production/evidence/expedition-training/integration.json",
+          "sha256": "d9599871dcafa0a83f0795ea9c673fb265622a80bca4f704d16a6093a9a6985e"
+        },
+        {
+          "path": "design/production/evidence/expedition-training/report.md",
+          "sha256": "9fa552806a7009df7c6b770b4f74987344d73e793dd25c9aaf21e5acdbe3a9e9"
+        },
+        {
+          "path": "design/production/evidence/expedition-presentation/presentation.json",
+          "sha256": "0ba1c5b1cd1ce288e3cc6caf61bb55bdb80331abc9d53e1a7156357b5e49f306"
+        }
+      ]
+    },
+    {
+      "check": "All current summon types have trained/mastered orders; targeting, Rot, extra attacks and formation rules resolve consistently.",
+      "status": "pass",
+      "evidence": [
+        {
+          "path": "design/production/evidence/expedition-training/integration.json",
+          "sha256": "d9599871dcafa0a83f0795ea9c673fb265622a80bca4f704d16a6093a9a6985e"
+        },
+        {
+          "path": "design/production/evidence/expedition-training/report.md",
+          "sha256": "9fa552806a7009df7c6b770b4f74987344d73e793dd25c9aaf21e5acdbe3a9e9"
+        },
+        {
+          "path": "design/production/evidence/expedition-presentation/presentation.json",
+          "sha256": "0ba1c5b1cd1ce288e3cc6caf61bb55bdb80331abc9d53e1a7156357b5e49f306"
+        }
+      ]
+    },
+    {
+      "check": "Training applies to every matching summon for the run from camps and shops; three new biome camp scenes are live.",
+      "status": "pass",
+      "evidence": [
+        {
+          "path": "design/production/evidence/expedition-training/integration.json",
+          "sha256": "d9599871dcafa0a83f0795ea9c673fb265622a80bca4f704d16a6093a9a6985e"
+        },
+        {
+          "path": "design/production/evidence/expedition-training/report.md",
+          "sha256": "9fa552806a7009df7c6b770b4f74987344d73e793dd25c9aaf21e5acdbe3a9e9"
+        },
+        {
+          "path": "design/production/evidence/expedition-presentation/presentation.json",
+          "sha256": "0ba1c5b1cd1ce288e3cc6caf61bb55bdb80331abc9d53e1a7156357b5e49f306"
+        }
+      ]
+    },
+    {
+      "check": "Thirty new relics have implemented bounded effects, unrestricted unique collection and usable inspection.",
+      "status": "pass",
+      "evidence": [
+        {
+          "path": "design/production/evidence/expedition-training/integration.json",
+          "sha256": "d9599871dcafa0a83f0795ea9c673fb265622a80bca4f704d16a6093a9a6985e"
+        },
+        {
+          "path": "design/production/evidence/expedition-training/report.md",
+          "sha256": "9fa552806a7009df7c6b770b4f74987344d73e793dd25c9aaf21e5acdbe3a9e9"
+        },
+        {
+          "path": "design/production/evidence/expedition-presentation/presentation.json",
+          "sha256": "0ba1c5b1cd1ce288e3cc6caf61bb55bdb80331abc9d53e1a7156357b5e49f306"
+        }
+      ]
+    },
+    {
+      "check": "Independent checks, regression suites, production builds and browser interactions pass with old-save compatibility.",
+      "status": "pass",
+      "evidence": [
+        {
+          "path": "design/production/evidence/expedition-training/integration.json",
+          "sha256": "d9599871dcafa0a83f0795ea9c673fb265622a80bca4f704d16a6093a9a6985e"
+        },
+        {
+          "path": "design/production/evidence/expedition-training/report.md",
+          "sha256": "9fa552806a7009df7c6b770b4f74987344d73e793dd25c9aaf21e5acdbe3a9e9"
+        },
+        {
+          "path": "design/production/evidence/expedition-presentation/presentation.json",
+          "sha256": "0ba1c5b1cd1ce288e3cc6caf61bb55bdb80331abc9d53e1a7156357b5e49f306"
+        }
+      ]
+    }
+  ],
+  "checkpoint": {
+    "completed": [
+      "Seeded demo room choices with normal openings and fixed bosses",
+      "22 summon types with44 trained orders and species-wide acquisition",
+      "Camp and shop training, relic collection, three rendered camp scenes",
+      "30 modest relics, unlimited ownership capacity, replay compatibility",
+      "Independent QA, engine regressions, builds, browser interactions and durable evidence"
+    ],
+    "remaining": [],
+    "blockers": [],
+    "nextAction": "Local implementation is ready for user playtesting. No commit, push or deployment performed."
+  },
+  "limitations": [
+    "Demo Rimebound Frozen boss took93 turns under the improved legal bot policy; balance tuning remains advisable.",
+    "Vite reports existing large main chunks over500kB.",
+    "Camp illustrations are integrated under user authorization and remain pending gallery design approval."
+  ],
+  "supersedes": [
+    "Earlier frozen-wastes/home-biome packets describe the pre-expansion baseline; this packet records current engine/UI hashes."
+  ]
+}

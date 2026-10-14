@@ -1,0 +1,16 @@
+{
+  "timestamp": "2026-10-14T07:24:00.714Z",
+  "status": "pass",
+  "source": "current-earned-conquer-warband.json",
+  "trainedKind": "imp",
+  "actions": 53,
+  "phase": "combat",
+  "room": 4,
+  "checks": [
+    "earned camp free training",
+    "persisted training level",
+    "trained order selection and normal action phase",
+    "exact save/restore after training, order selection and execution"
+  ],
+  "limitations": "One earned Conquer branch; not exhaustive every source/species browser training."
+}

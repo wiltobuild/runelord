@@ -1,0 +1,187 @@
+{
+  "timestamp": "2026-10-14T07:23:56.426Z",
+  "checks": [
+    {
+      "mode": "conquer",
+      "name": "eight old save snapshots preserve gameplay bytes",
+      "status": "pass"
+    },
+    {
+      "mode": "conquer",
+      "name": "22 kinds: training shared by every copy and 3 orders; invalid payment atomic",
+      "status": "pass"
+    },
+    {
+      "mode": "conquer",
+      "name": "all utility/mastery entries execute without undefined effect; per-turn limit and dead ally fallback",
+      "status": "pass"
+    },
+    {
+      "mode": "conquer",
+      "name": "shared Gorthak charge and cap10 do not consume failed summon charge",
+      "status": "pass"
+    },
+    {
+      "mode": "conquer",
+      "name": "coordinated thrust uses selected teammates and +6 cap",
+      "status": "pass"
+    },
+    {
+      "mode": "conquer",
+      "name": "commands use basic action without consuming utility; Rot applies after utility",
+      "status": "pass"
+    },
+    {
+      "mode": "conquer",
+      "name": "unselected Legionaries must not disable another Defender",
+      "status": "pass"
+    },
+    {
+      "mode": "conquer",
+      "name": "selected Hellgate once; reinforcement skips action phase; two channels do not trigger",
+      "status": "pass"
+    },
+    {
+      "mode": "conquer",
+      "name": "Brace counters once against multiple attacks, and unit target fallback damages living enemy",
+      "status": "pass"
+    },
+    {
+      "mode": "conquer",
+      "name": "type-wide training applies to generated token source and both card copies",
+      "status": "pass"
+    },
+    {
+      "mode": "conquer",
+      "name": "30 relics all effect hooks execute once at cap; additive discounts floor1; no collection cap",
+      "status": "pass"
+    },
+    {
+      "mode": "conquer",
+      "name": "engine treasure collection can exceed30 unique relics and exhausted pool yields gold",
+      "status": "pass"
+    },
+    {
+      "mode": "conquer",
+      "name": "discounted removal spends exactly5 and insufficient payment is atomic",
+      "status": "pass"
+    },
+    {
+      "mode": "demo",
+      "name": "eight old save snapshots preserve gameplay bytes",
+      "status": "pass"
+    },
+    {
+      "mode": "demo",
+      "name": "22 kinds: training shared by every copy and 3 orders; invalid payment atomic",
+      "status": "pass"
+    },
+    {
+      "mode": "demo",
+      "name": "all utility/mastery entries execute without undefined effect; per-turn limit and dead ally fallback",
+      "status": "pass"
+    },
+    {
+      "mode": "demo",
+      "name": "shared Gorthak charge and cap10 do not consume failed summon charge",
+      "status": "pass"
+    },
+    {
+      "mode": "demo",
+      "name": "coordinated thrust uses selected teammates and +6 cap",
+      "status": "pass"
+    },
+    {
+      "mode": "demo",
+      "name": "commands use basic action without consuming utility; Rot applies after utility",
+      "status": "pass"
+    },
+    {
+      "mode": "demo",
+      "name": "unselected Legionaries must not disable another Defender",
+      "status": "pass"
+    },
+    {
+      "mode": "demo",
+      "name": "selected Hellgate once; reinforcement skips action phase; two channels do not trigger",
+      "status": "pass"
+    },
+    {
+      "mode": "demo",
+      "name": "Brace counters once against multiple attacks, and unit target fallback damages living enemy",
+      "status": "pass"
+    },
+    {
+      "mode": "demo",
+      "name": "type-wide training applies to generated token source and both card copies",
+      "status": "pass"
+    },
+    {
+      "mode": "demo",
+      "name": "30 relics all effect hooks execute once at cap; additive discounts floor1; no collection cap",
+      "status": "pass"
+    },
+    {
+      "mode": "demo",
+      "name": "engine treasure collection can exceed30 unique relics and exhausted pool yields gold",
+      "status": "pass"
+    },
+    {
+      "mode": "demo",
+      "name": "discounted removal spends exactly5 and insufficient payment is atomic",
+      "status": "pass"
+    },
+    {
+      "mode": "demo",
+      "name": "normal/elite roster normalization includes reserves and never normal bosses",
+      "status": "pass"
+    },
+    {
+      "mode": "demo",
+      "name": "seeded 3-choice rooms fixed normal openings/boss endings; mysteries bounded and treasure weighted",
+      "status": "pass",
+      "details": {
+        "mystery": 19000,
+        "counts": {
+          "treasure": 12482,
+          "combat": 1863,
+          "shop": 1835,
+          "camp": 1862,
+          "elite": 958
+        }
+      }
+    }
+  ],
+  "hashes": [
+    {
+      "root": "C:/Users/wilsh/Projects/runelord",
+      "path": "packages/engine/index.ts",
+      "sha256": "8b0ad2b1c69f747af403e831c72246f12f9e707577f39ce408fbf444434bba61"
+    },
+    {
+      "root": "C:/Users/wilsh/Projects/runelord",
+      "path": "packages/engine/expansion.ts",
+      "sha256": "4342ccfdb354a66f9ad0f5c6b22f1fec6bc5a6254a9878f00efce251b91b51ce"
+    },
+    {
+      "root": "C:/Users/wilsh/Projects/runelord",
+      "path": "packages/engine/expansionCatalog.ts",
+      "sha256": "255c4c8ddb0e4853968eb6f3b9f1cfeaa80c5f01add4656bdaf87240914e6494"
+    },
+    {
+      "root": "C:/Users/wilsh/Projects/runelord-roguelike-pages-recovery",
+      "path": "packages/engine/index.ts",
+      "sha256": "5f446e258bdaa7faf35f6328aa3da73e3ad9d05f59d251b57fc1e3fca5ac17d5"
+    },
+    {
+      "root": "C:/Users/wilsh/Projects/runelord-roguelike-pages-recovery",
+      "path": "packages/engine/expansion.ts",
+      "sha256": "4342ccfdb354a66f9ad0f5c6b22f1fec6bc5a6254a9878f00efce251b91b51ce"
+    },
+    {
+      "root": "C:/Users/wilsh/Projects/runelord-roguelike-pages-recovery",
+      "path": "packages/engine/expansionCatalog.ts",
+      "sha256": "255c4c8ddb0e4853968eb6f3b9f1cfeaa80c5f01add4656bdaf87240914e6494"
+    }
+  ]
+}

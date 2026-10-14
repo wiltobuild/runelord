@@ -1,0 +1,188 @@
+{
+  "date": "2026-10-14T07:28:55.038Z",
+  "scope": "Expedition presentation and new biome camp art",
+  "sources": [
+    {
+      "path": "apps/web/src/ExpeditionScreens.tsx",
+      "sha256": "794f7434e5b515a6c00e3da244b1ff826c206149b3bbfe5986cf3efdd46aaf27",
+      "mirrored": true
+    },
+    {
+      "path": "apps/web/src/expedition-screens.css",
+      "sha256": "1e44d9d7fc0cc39e3ddb84df7b964e543199afd4bd580e56e2a56d36c879ceac",
+      "mirrored": true
+    },
+    {
+      "path": "tools/import/expedition-camps.mjs",
+      "sha256": "286b3490a995f2df5fa5887222e2daee91cd80641fe3bc647daf48e80f04f35c",
+      "mirrored": true
+    },
+    {
+      "path": "packages/assets/expedition-camps.json",
+      "sha256": "2ae38203faba0562360072bce8cf494a664bebd323dad6fc391837d21339dbeb",
+      "mirrored": true
+    }
+  ],
+  "art": {
+    "images": {
+      "camp-frozen-wastes": "/game-assets/expedition/camps/frozen-wastes.webp",
+      "camp-forest": "/game-assets/expedition/camps/forest.webp",
+      "camp-infernal": "/game-assets/expedition/camps/infernal.webp"
+    },
+    "provenance": [
+      {
+        "source": "assets/environments/expedition-camps/r1/frozen-wastes/source.png",
+        "sourceSha256": "5e135832be964c5da3051207a4a129d0c4ac2679d71aefe3c0979ec7d9d1a400",
+        "prompt": "assets/environments/expedition-camps/r1/frozen-wastes/prompt.txt",
+        "promptSha256": "5b2bc8a74be6e215d1bf85b43c06f76c8280686376212c625606dd6f19c35c6c",
+        "status": "Pending approval",
+        "evidenceId": null,
+        "reference": {
+          "path": "assets/approvals/inbox/battle-map-frostgrave-causeway/r1/frostgrave-causeway-r1.png",
+          "sha256": "d1a0f5d4ba7d211ee96753d205df0f8328922fb9d342e878bafad44e4d702fee",
+          "status": "Approved",
+          "evidenceId": "a2f30e21-7023-499a-a09a-3343171d39c1"
+        },
+        "output": "expedition/camps/frozen-wastes.webp",
+        "outputSha256": "42a1da68f173c25ab893c2f98829fc3c026dab407f05aa7a95e30bf09fcd0695",
+        "transform": {
+          "width": 1672,
+          "height": 941,
+          "fit": "cover",
+          "position": "centre",
+          "format": "webp",
+          "quality": 90
+        },
+        "encodedBytes": 261748,
+        "decodedBytes": 6293408
+      },
+      {
+        "source": "assets/environments/expedition-camps/r1/forest/source.png",
+        "sourceSha256": "da19c1d7ad5f4ae2a740a039a9c1e30a460a1076eeec4baea7f43a7959d0c473",
+        "prompt": "assets/environments/expedition-camps/r1/forest/prompt.txt",
+        "promptSha256": "9ec5a208349999f014c98a8f4177a1479189952d308597d339d24975b4f62e35",
+        "status": "Pending approval",
+        "evidenceId": null,
+        "reference": {
+          "path": "assets/approvals/inbox/battle-map-thornroot-crossing/r1/thornroot-crossing-r1.png",
+          "sha256": "8c3dc173f3960d82326c311dac633347bc280d7ad7c4c4a388449884de711b20",
+          "status": "Approved",
+          "evidenceId": "58cbae24-4480-462a-bcb9-dd2f07990130"
+        },
+        "output": "expedition/camps/forest.webp",
+        "outputSha256": "8d4fcad04aaa47b1c7e72ccf7ed608c9895b4e6561dcaa27937578e9e5fd01e2",
+        "transform": {
+          "width": 1672,
+          "height": 941,
+          "fit": "cover",
+          "position": "centre",
+          "format": "webp",
+          "quality": 90
+        },
+        "encodedBytes": 234282,
+        "decodedBytes": 6293408
+      },
+      {
+        "source": "assets/environments/expedition-camps/r1/infernal/source.png",
+        "sourceSha256": "8043befa9785226dea033a17b5f9a176b6545c9ba4433444e56e5901f535b5af",
+        "prompt": "assets/environments/expedition-camps/r1/infernal/prompt.txt",
+        "promptSha256": "859cc33484911fee89233f2637ef1b4f167bccaa4489f97ac7a21d6085810301",
+        "status": "Pending approval",
+        "evidenceId": null,
+        "reference": {
+          "path": "assets/approvals/inbox/battle-map-cinderforge-approach/r1/cinderforge-approach-r1.png",
+          "sha256": "73e78383a4b1a5f4559e67fcb661f573c976362f9cdac54d6c063b8c33a79a4b",
+          "status": "Approved",
+          "evidenceId": "2c3a4f6f-685a-4ffb-85bf-1638981ca04b"
+        },
+        "output": "expedition/camps/infernal.webp",
+        "outputSha256": "76699c3bd6dfbb3e55f3662efce8ca58af050e40db1b1ed5651997a7e04b2362",
+        "transform": {
+          "width": 1672,
+          "height": 941,
+          "fit": "cover",
+          "position": "centre",
+          "format": "webp",
+          "quality": 90
+        },
+        "encodedBytes": 145004,
+        "decodedBytes": 6293408
+      }
+    ],
+    "integration": {
+      "expeditionCamps": {
+        "revision": "r1",
+        "authorization": "User requested rendering new biome camp scenes and implementing the full expansion plan on 2026-10-14. Integration authorized; design approval remains pending.",
+        "generation": "Built-in image generation, one distinct full scene per biome, no collage.",
+        "technicalReview": "Three full scene outputs visually inspected for composition, environment identity, unobstructed UI space, no characters/text, no cropped essential focal point.",
+        "limitation": "Static camp backgrounds; no ambient animation authored."
+      }
+    }
+  },
+  "verification": {
+    "typescript": "Both worktrees passed npx tsc --noEmit earlier. Final presentation checkpoint: Conquer passes; recovery blocked by concurrently edited root-owned SoulforgeShop.tsx40 journey property absent on demoState. No presentation component errors. Root notified for repair and final full build.",
+    "art": "Three built-in generated scenes inspected in the tool output. All references verified Approved by exact hash; sources submitted separately and remain Pending approval. Runtime 1672x941 WebP hashes validated independently from retained release manifest. Source prompts and hashes retained.",
+    "browser": {
+      "tool": "CUA in-app browser, isolated dev fixtures, no save mutation",
+      "url": "http://127.0.0.1:4351/expedition-review",
+      "viewports": [
+        "1280x720",
+        "960x540"
+      ],
+      "observations": [
+        "All three biome camp scenes rendered with unobscured live actions and correct30percent healing values.",
+        "Camp summon training confirmed free then routed. Next treasure training retained species level and could master it.",
+        "Camp card selection showed exact Frostbite10damage3Chill to12damage4Chill comparison; confirm moved to route.",
+        "Shop first training60gold and mastery100gold changed wallet240 to180 to80; another training left20 and mastery disabled with Need80moregold.",
+        "Completed species moved into Mastered section; remaining eligible species stayed selectable.",
+        "Relic collection displayed9/8 actual relics, no limit, actual passive effects and category glyphs. Escape restored triggering-button focus.",
+        "After focused mastery confirmation was removed, Tab stayed in modal.",
+        "Frozen boundary route used upcoming Forest art/title and exactly one normal encounter.",
+        "Portal modals escape transformed shop canvas. Narrow landscape training dialog intentionally scrolls; camp choices all visible.",
+        "No browser warnings or errors recorded."
+      ],
+      "fixes": [
+        "Compacted desktop training to show all current and next effects and confirmation at1280x720.",
+        "Portal dialog to body prevents shop transform clipping.",
+        "Keyboard capture handles removal of focused upgrade control.",
+        "Upcoming realm presentation and centered single-path first encounter."
+      ]
+    },
+    "serving": "All six local camp HTTP endpoints returned200 image/webp and expected encoded sizes."
+  },
+  "limitations": [
+    "Static camp art; no authored ambient animation.",
+    "Builder verification is not independent QA or user design approval.",
+    "Root integration owner separately validates combat, maps, progression rules, and full-game tests."
+  ],
+  "screenshots": [
+    {
+      "path": "design/production/evidence/expedition-presentation/expedition-camp-frozen.jpg",
+      "sha256": "2fd1c870b65f902cfc1ad8ff9066aacb674b3ee9305e1ad0827fb8b9a54a2cd7"
+    },
+    {
+      "path": "design/production/evidence/expedition-presentation/expedition-training.jpg",
+      "sha256": "4f566040a31a17a7bb07645a8112acd60a25a7083e2ff9c41d547109fb720d5a"
+    },
+    {
+      "path": "design/production/evidence/expedition-presentation/expedition-route.jpg",
+      "sha256": "578824432246df1b77bf7bfe6e02d05ce5cd2c8e758d0d2415d2d5f714802959"
+    },
+    {
+      "path": "design/production/evidence/expedition-presentation/expedition-camp-forest.jpg",
+      "sha256": "c4c1634311bbffcb27296a86373eb7d2b738ff435c62906668839ce754d966de"
+    },
+    {
+      "path": "design/production/evidence/expedition-presentation/expedition-camp-infernal.jpg",
+      "sha256": "af88b40e23f6766eeb8bbbfd1e97a30b5e37a7f69cba4a470fb991973493e6cf"
+    },
+    {
+      "path": "design/production/evidence/expedition-presentation/expedition-relics.jpg",
+      "sha256": "540b443840aee981429eb8214aba18c90ca69c224a9c69128142f9f2d6836200"
+    },
+    {
+      "path": "design/production/evidence/expedition-presentation/expedition-camp-landscape.jpg",
+      "sha256": "d074e0f212611328d9cef89e970623361583a24713885ab9af632322b2bdf8bc"
+    }
+  ]
+}

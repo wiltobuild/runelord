@@ -1,0 +1,152 @@
+{
+  "schema": 1,
+  "id": "home-biome",
+  "status": "complete",
+  "outcome": "Every new playable hero starts at home; Runeblade follows Frozen Wastes, Forest, Infernal in both modes.",
+  "authorization": "User: make it so the runeblade starts in the frozen wastes then forest then the infernal; the hero will always start in their home biome.",
+  "contentIds": [
+    "runeblade",
+    "warlock",
+    "frozen-wastes",
+    "forest",
+    "infernal"
+  ],
+  "owner": "runelord-rules-engineer",
+  "integrationOwner": "root",
+  "reviewer": "runelord-game-qa",
+  "ownedPaths": [
+    "packages/engine",
+    "apps/web/src",
+    "design/campaign-direction.md",
+    "design/production/packets/home-biome.json",
+    "design/production/evidence/home-biome"
+  ],
+  "dependencies": [
+    "Existing Frozen Wastes integration and shared ice assets",
+    "Independent QA against captured pre-change saves"
+  ],
+  "exclusions": [
+    "Difficulty rebalancing",
+    "New heroes or art",
+    "Commit, push, deployment"
+  ],
+  "inputs": [
+    {
+      "path": "AGENTS.md",
+      "sha256": "ee2de386f4adeda3c3711977fd2e3fab6919c7df7382e5a4a53d8bb457fd6783"
+    },
+    {
+      "path": "design/campaign-direction.md",
+      "sha256": "56f96924da60d4e1e4a51582ee3a8cdbac62098564c30ce76c701a6f6cf16413"
+    },
+    {
+      "path": "packages/engine/index.ts",
+      "sha256": "566ad9851d0b7081b646039738fd5bb8dbc4063ffb0bebc68fe8f9199c1a0df0"
+    },
+    {
+      "path": "packages/engine/hero-route.test.ts",
+      "sha256": "35582095ba959344a7a042a634e346d429923d76d95110ff53664d6dd376d673"
+    },
+    {
+      "path": "packages/engine/runeblade.test.ts",
+      "sha256": "30a2f973b3f3ed43ff1e0a9204094469f7e7f86af578e0a2d8e0cf4d321ab5bb"
+    },
+    {
+      "path": "apps/web/src/main.tsx",
+      "sha256": "e77eaa49a07d5e5dd4e291b3c9a516652963e1fc53b47758536c6697002467f9"
+    },
+    {
+      "path": "apps/web/src/OpeningScreen.tsx",
+      "sha256": "7b8dc84a9f8c593b67e78fe0d793664237dcccc879de0886f9e0cfa50f252140"
+    },
+    {
+      "path": "apps/web/src/LootReveal.tsx",
+      "sha256": "30d4de00b889692944063c610c6a7f4ec2d6515ac1754a859991fe629f4a13f9"
+    },
+    {
+      "path": "apps/web/src/realmPresentation.ts",
+      "sha256": "c94f67142b4fb77797f10196bfe884ca2d52b8c3b8d8b22540628e13307258a4"
+    },
+    {
+      "path": "apps/web/src/ForestShop.tsx",
+      "sha256": "cab81c653e8fa799230feaa90b8c46912bc5fda17668699a3516f4f7967076c1"
+    },
+    {
+      "path": "apps/web/src/frozenWastesReview.ts",
+      "sha256": "5bdeae73b2ad43649bad905fe610225f935670f24a9dad03ef4526dbfc3fa4da"
+    }
+  ],
+  "animation": null,
+  "acceptance": [
+    {
+      "check": "Home routes, permanent progression and terminal victory work for all decks; historical saves remain compatible.",
+      "status": "pass",
+      "evidence": [
+        {
+          "path": "design/production/evidence/home-biome/qa-report.md",
+          "sha256": "1ee0cea1a4c09120c48071a8d2cf6a8c836c2048c52896e03a8cc733f00cf848"
+        },
+        {
+          "path": "design/production/evidence/home-biome/qa-results.json",
+          "sha256": "4b49b3984161a6e2f1eb64e0b33a89c6e96aa39b90c8aec58dfa38c10e9adac9"
+        },
+        {
+          "path": "design/production/evidence/home-biome/qa-checks.ts",
+          "sha256": "fa6359d0d3e5224571a8ba8d0d2e496543204d5ac22d02f019c5164ce137aeba"
+        },
+        {
+          "path": "design/production/evidence/home-biome/qa-baseline-saves.json",
+          "sha256": "d4e1836b6f6c900c370a0824f629ca6f97b3d7ca7ba6794f914321d8dd2500c2"
+        }
+      ]
+    },
+    {
+      "check": "Full engine suite and production build pass.",
+      "status": "pass",
+      "evidence": [
+        {
+          "path": "design/production/evidence/home-biome/test.log",
+          "sha256": "c6a10b24cde11b68d11869c614268e14f666b71d01c9a40f3e996514cd511419"
+        },
+        {
+          "path": "design/production/evidence/home-biome/build.log",
+          "sha256": "a1cfa319d4d40c5a9004211bee07c52ff32b4732cf87b958f3e7f1b1fdd33bee"
+        }
+      ]
+    },
+    {
+      "check": "Real new runs display home biome, ice combat and reload/resume correctly in both browsers.",
+      "status": "pass",
+      "evidence": [
+        {
+          "path": "design/production/evidence/home-biome/integration-report.md",
+          "sha256": "9fce0c0057d3a76efc0643f9ca762113f99fdb3db180395f8e50d6ebf4f6d33c"
+        },
+        {
+          "path": "design/production/evidence/home-biome/runeblade-home-conquer.jpg",
+          "sha256": "9d87a44e4348d3a2a47f166b25b0083f5571a5b8baa21a65699ed8c2682f0f11"
+        },
+        {
+          "path": "design/production/evidence/home-biome/runeblade-home-demo.jpg",
+          "sha256": "d25620892f1427804180489012a61e8f68a7484480e440d04abeba44388ae10c"
+        }
+      ]
+    }
+  ],
+  "checkpoint": {
+    "completed": [
+      "Both home routes implemented",
+      "Legacy replay version retained",
+      "Route-aware UI integrated",
+      "Independent QA, full suites, builds and browser checks passed"
+    ],
+    "remaining": [],
+    "blockers": [],
+    "nextAction": "Ready for user playtest; publishing is outside this request."
+  },
+  "supersedes": "frozen-wastes route-order assumption only",
+  "limitations": [
+    "Frozen-first balance unchanged and not certified",
+    "No naturally earned full new-route boundary save fixture"
+  ]
+}

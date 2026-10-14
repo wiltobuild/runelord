@@ -1,0 +1,122 @@
+{
+  "timestamp": "2026-10-14T07:24:33.220Z",
+  "results": [
+    {
+      "mode": "demo",
+      "deck": "fire",
+      "file": "earned-demo-fire.json",
+      "status": "pass",
+      "phase": "won",
+      "actions": 279,
+      "sha256": "987d106a3d5a653b56d9fa649794458adff2113ad022164fe557ef33ab5e2147"
+    },
+    {
+      "mode": "demo",
+      "deck": "warband",
+      "file": "earned-demo-warband.json",
+      "status": "pass",
+      "phase": "won",
+      "actions": 227,
+      "sha256": "d71e1c24cb22b6c7c0fc885568e6969694e85e3dba8714d81bba88533b91ab7f"
+    },
+    {
+      "mode": "demo",
+      "deck": "hellbound",
+      "file": "earned-demo-hellbound.json",
+      "status": "pass",
+      "phase": "won",
+      "actions": 201,
+      "sha256": "338471735fd5f30d2b4452b122e168a102ba22d46631a5f763b490c207732619"
+    },
+    {
+      "mode": "demo",
+      "deck": "gravehost",
+      "file": "earned-demo-gravehost.json",
+      "status": "pass",
+      "phase": "won",
+      "actions": 296,
+      "sha256": "b2c23fa1db9f9ff069c73026c2a957e9c12159229283e09e96ff4278ed3e2bd1"
+    },
+    {
+      "mode": "demo",
+      "deck": "rimebound",
+      "file": "earned-demo-rimebound.json",
+      "status": "pass",
+      "phase": "combat",
+      "actions": 402,
+      "sha256": "608eb240e5a4f644ed0cebaa4e4317661f1c6dd596e80ce57785c906cf77a9ac"
+    },
+    {
+      "mode": "demo",
+      "deck": "runewarden",
+      "file": "earned-demo-runewarden.json",
+      "status": "pass",
+      "phase": "won",
+      "actions": 290,
+      "sha256": "ffe6c5757deaa083e9d930d4ca43caf5319d1f17fee08331c565dad102cbca01"
+    },
+    {
+      "mode": "conquer",
+      "deck": "fire",
+      "file": "current-earned-conquer-fire.json",
+      "status": "pass",
+      "phase": "lost",
+      "actions": 219,
+      "sha256": "96aa5d39d3e531255b347505918ac658461505bbc63d3202c87889ced82bbc2f"
+    },
+    {
+      "mode": "conquer",
+      "deck": "warband",
+      "file": "current-earned-conquer-warband.json",
+      "status": "pass",
+      "phase": "won",
+      "actions": 1118,
+      "sha256": "71e725783b8ea279c6cabc55766235da53d596d191e92d0e5d1c972609da671d"
+    },
+    {
+      "mode": "conquer",
+      "deck": "hellbound",
+      "file": "current-earned-conquer-hellbound.json",
+      "status": "pass",
+      "phase": "won",
+      "actions": 770,
+      "sha256": "2543aafed3d9535d4024240e021d6eacbbc74734236dd0c5564cb44c70d77c3d"
+    },
+    {
+      "mode": "conquer",
+      "deck": "gravehost",
+      "file": "current-earned-conquer-gravehost.json",
+      "status": "pass",
+      "phase": "won",
+      "actions": 1147,
+      "sha256": "cadaba7bd334ce958a4670b1f29858cd122cbe1fbef0256fb6cc0b627945c2da"
+    },
+    {
+      "mode": "conquer",
+      "deck": "rimebound",
+      "file": "current-earned-conquer-rimebound.json",
+      "status": "pass",
+      "phase": "won",
+      "actions": 1250,
+      "sha256": "80e42d245f86926b200d5b19748bb0f662784dc69496c44b1e7cbe121b2b0cf4"
+    },
+    {
+      "mode": "conquer",
+      "deck": "runewarden",
+      "file": "current-earned-conquer-runewarden.json",
+      "status": "pass",
+      "phase": "won",
+      "actions": 1076,
+      "sha256": "f4953cb0961ce4d786588fe9d2ede1c8d353557a1313a009c458df679233f368"
+    },
+    {
+      "mode": "demo",
+      "deck": "rimebound",
+      "file": "upgrade-policy-earned-demo-rimebound.json",
+      "status": "pass",
+      "phase": "won",
+      "actions": 618,
+      "sha256": "b49aaf1e94de20b266ffa4e3c127b7bbe9c4c1adb1eb2b43b639ec8eb81d1540"
+    }
+  ]
+}

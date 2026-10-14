@@ -1,3 +1,4 @@
+import {expansionRelics,type ExpansionRelicId} from '../engine/expansionCatalog';
 import { hellboundDefinitions, hellboundImplemented, hellboundEffectText, hellboundStarter, legionTargetCards } from './hellbound';
 export * from './hellbound';
 import { runebladeDefinitions, runebladeImplemented, runebladeDecks, runebladeRelicPool, runebladeEffectText, type RunebladeCardId, type HeroId } from "./runeblade";
@@ -118,8 +119,9 @@ export const rewardSets: CardId[][] = [
   ["summon-pit-brute", "conflagrate", "ashen-ward"],
 ];
 export const cardTargetsUnit = (id: CardId) => [...legionTargetCards, "dark-tithe", "empower-demon", "hellish-command", "fiendish-feast", "sacrificial-rite", "feast-of-embers"].includes(id);
-export type ItemId = "gravekeepers-seal" | (typeof runebladeRelicPool)[number] | (typeof relicPool)[number] | "healing-draught" | "mana-potion" | "barkskin-tonic" | "shrapnel-jar" | "banner-draught" | "bonesetters-salve" | "warhorn-oil" | "demon-lord-crown";
+export type ItemId = ExpansionRelicId | "gravekeepers-seal" | (typeof runebladeRelicPool)[number] | (typeof relicPool)[number] | "healing-draught" | "mana-potion" | "barkskin-tonic" | "shrapnel-jar" | "banner-draught" | "bonesetters-salve" | "warhorn-oil" | "demon-lord-crown";
 export const items: Record<ItemId, { name: string; text: string; category: "potion" | "item" | "relic"; passive?: boolean }> = {
+  ...Object.fromEntries(Object.entries(expansionRelics).map(([id,r])=>[id,{...r,category:'relic' as const}])) as unknown as Record<ExpansionRelicId,{name:string;text:string;category:'relic';passive:true}>,
   "gravekeepers-seal": {category:"relic",passive:true,name:"Gravekeeper's Seal",text:"Begin each combat with 1 additional Corpse."},
   "gravebound-sigil": {category:"relic",passive:true,name:"Gravebound Sigil",text:"Begin each combat with 2 additional Corpses."},
   "hoarfrost-whetstone": {category:"relic",passive:true,name:"Hoarfrost Whetstone",text:"Your Attack cards deal 2 additional damage."},
@@ -155,7 +157,7 @@ export const cardAffinities: Record<Exclude<StarterDeckId, "classic">, readonly 
 export const rewardWeight = (deck: StarterDeckId, id: CardId) => deck !== "classic" && cardAffinities[deck].includes(id) ? 4 : 1;
 export type Targeting = "hero" | "front" | "sweep" | "weakest" | "random_ally" | "ignore_defender";
 export type Move = { name: string; damage: number; targeting: Targeting; kind?: "summon" | "shield"; guard?: number; spell?: "rootwake" | "verdant_cyclone" | "crownfall" };
-export type EnemyDefinition = { name: string; art: string; hp: number; moves: Move[]; boss?: "demon-lord" | "forest-sovereign" };
+export type EnemyDefinition = { name: string; art: string; hp: number; moves: Move[]; boss?: "demon-lord" | "forest-sovereign" | "frozen-sovereign" };
 export type Encounter = { name: string; subtitle: string; background: string; enemies: EnemyDefinition[]; reserves?: EnemyDefinition[] };
 const goblin = (name: string, art: string, hp: number, damage: number, targeting: Targeting = "front"): EnemyDefinition => ({
   name: `Fire Goblin ${name}`, art, hp, moves: [{ name: "Blazing strike", damage, targeting }, { name: "Ember assault", damage: damage + 2, targeting: "hero" }],

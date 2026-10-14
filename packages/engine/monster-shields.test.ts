@@ -1,7 +1,9 @@
+// Preserve this pre-expansion regression suite; expansion behavior has dedicated coverage.
+const newRoguelikeRun=(...args:Parameters<typeof currentRoguelikeRun>)=>{args[7]??=1;return currentRoguelikeRun(...args);};
 import {test} from 'node:test';
 import assert from 'node:assert/strict';
 import {readFileSync} from 'node:fs';
-import {newRun,newRoguelikeRun,dispatch,intent,restore,save,usesPersistentMonsterShields,type State} from './index';
+import {newRun,newRoguelikeRun as currentRoguelikeRun,dispatch,intent,restore,save,usesPersistentMonsterShields,type State} from './index';
 function shieldFight(maxHp=43):State {
  const s=newRoguelikeRun(42);s.enemies=[{id:800,name:'Shield bearer',art:'cairnback-hermit',hp:7,maxHp,guard:0,scorch:0,moves:[{name:'Shelter',damage:0,targeting:'hero',kind:'shield',guard:12},{name:'Wait',damage:0,targeting:'front'}]}];s.reserves=[];s.focus=800;return s;
 }

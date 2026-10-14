@@ -1,0 +1,199 @@
+{
+  "schema": 1,
+  "id": "demo-dev-console",
+  "status": "complete",
+  "outcome": "Backtick developer console with full demo navigation, spawning, card/item/resource controls and reversible testing sandbox.",
+  "authorization": "User requested menus to control the demo, spawn characters/summons, add any card, jump biomes/levels/locations, and toggle with backtick.",
+  "contentIds": [],
+  "owner": "root",
+  "integrationOwner": "root",
+  "reviewer": "independent worker review plus root browser verification",
+  "ownedPaths": [
+    "apps/web/src/main.tsx",
+    "apps/web/src/DevConsole.tsx",
+    "apps/web/src/dev-console.css",
+    "apps/web/src/debugState.ts",
+    "apps/web/src/debugState.test.ts",
+    "package.json"
+  ],
+  "dependencies": [],
+  "exclusions": [
+    "Conquer mode changes",
+    "New artwork",
+    "Deployment",
+    "Normal gameplay balance"
+  ],
+  "inputs": [
+    {
+      "path": "apps/web/src/main.tsx",
+      "sha256": "d60824abb135d05347c47f98d10fcf2cffc78696f711cc68bd4c886aa2ef351b"
+    },
+    {
+      "path": "apps/web/src/DevConsole.tsx",
+      "sha256": "55d862fb2f3aa2d1de67513f284550f7ea0ed3f53529a28be0f0bd8ed3f3d86a"
+    },
+    {
+      "path": "apps/web/src/dev-console.css",
+      "sha256": "426b3ea468e3b94589c264808222871111f0c700eb7d55aac864560eb22a5985"
+    },
+    {
+      "path": "apps/web/src/debugState.ts",
+      "sha256": "00d7d127a91fc669bd30dcfca194c66a6e45b47c81c4a3b2682d3bbc42f0b9af"
+    },
+    {
+      "path": "apps/web/src/debugState.test.ts",
+      "sha256": "b34f19ccc5acacd2af9a0401326bfddce6ef7ca31e0a782bf177528dd6dc6007"
+    },
+    {
+      "path": "package.json",
+      "sha256": "cfe0962c1d5f1e004a633c522688bfaf36974ed605b1e9cbcfd6383c97049d72"
+    }
+  ],
+  "animation": null,
+  "acceptance": [
+    {
+      "check": "Backtick toggles console on every demo screen with keyboard focus management",
+      "status": "pass",
+      "evidence": [
+        {
+          "path": "design/production/evidence/demo-dev-console/verification.json",
+          "sha256": "79a02eb30c4b944b4d79dab291591e7cf68b3822f3ec6d6ad85b43c241d3bb24"
+        },
+        {
+          "path": "design/production/evidence/demo-dev-console/independent-review.json",
+          "sha256": "f4d0fe7bdb75b29d607ad5675b6a5dcfc3a6f4dd8adf59a34c0f613ac790ea4b"
+        },
+        {
+          "path": "design/production/evidence/demo-dev-console/build.log",
+          "sha256": "a67aaf678c4a6eeb9195ac5bfca4198b9f129952a21e092da083673e6fbf85ba"
+        },
+        {
+          "path": "design/production/evidence/demo-dev-console/tests.log",
+          "sha256": "f62533964454ebd2544e716a726f27ae351edb3ed48645f2403318a881227e06"
+        },
+        {
+          "path": "design/production/evidence/demo-dev-console/console.jpg",
+          "sha256": "76faaeba8de05c20b3ad6446e88b8aa16faae8196d6109fe9ba2a19a1d6d2135"
+        }
+      ]
+    },
+    {
+      "check": "Navigation and spawning construct valid game states with unique IDs",
+      "status": "pass",
+      "evidence": [
+        {
+          "path": "design/production/evidence/demo-dev-console/verification.json",
+          "sha256": "79a02eb30c4b944b4d79dab291591e7cf68b3822f3ec6d6ad85b43c241d3bb24"
+        },
+        {
+          "path": "design/production/evidence/demo-dev-console/independent-review.json",
+          "sha256": "f4d0fe7bdb75b29d607ad5675b6a5dcfc3a6f4dd8adf59a34c0f613ac790ea4b"
+        },
+        {
+          "path": "design/production/evidence/demo-dev-console/build.log",
+          "sha256": "a67aaf678c4a6eeb9195ac5bfca4198b9f129952a21e092da083673e6fbf85ba"
+        },
+        {
+          "path": "design/production/evidence/demo-dev-console/tests.log",
+          "sha256": "f62533964454ebd2544e716a726f27ae351edb3ed48645f2403318a881227e06"
+        },
+        {
+          "path": "design/production/evidence/demo-dev-console/console.jpg",
+          "sha256": "76faaeba8de05c20b3ad6446e88b8aa16faae8196d6109fe9ba2a19a1d6d2135"
+        }
+      ]
+    },
+    {
+      "check": "Cards, resources, items and training menus update live game",
+      "status": "pass",
+      "evidence": [
+        {
+          "path": "design/production/evidence/demo-dev-console/verification.json",
+          "sha256": "79a02eb30c4b944b4d79dab291591e7cf68b3822f3ec6d6ad85b43c241d3bb24"
+        },
+        {
+          "path": "design/production/evidence/demo-dev-console/independent-review.json",
+          "sha256": "f4d0fe7bdb75b29d607ad5675b6a5dcfc3a6f4dd8adf59a34c0f613ac790ea4b"
+        },
+        {
+          "path": "design/production/evidence/demo-dev-console/build.log",
+          "sha256": "a67aaf678c4a6eeb9195ac5bfca4198b9f129952a21e092da083673e6fbf85ba"
+        },
+        {
+          "path": "design/production/evidence/demo-dev-console/tests.log",
+          "sha256": "f62533964454ebd2544e716a726f27ae351edb3ed48645f2403318a881227e06"
+        },
+        {
+          "path": "design/production/evidence/demo-dev-console/console.jpg",
+          "sha256": "76faaeba8de05c20b3ad6446e88b8aa16faae8196d6109fe9ba2a19a1d6d2135"
+        }
+      ]
+    },
+    {
+      "check": "Undo redo and restore-original preserve normal save",
+      "status": "pass",
+      "evidence": [
+        {
+          "path": "design/production/evidence/demo-dev-console/verification.json",
+          "sha256": "79a02eb30c4b944b4d79dab291591e7cf68b3822f3ec6d6ad85b43c241d3bb24"
+        },
+        {
+          "path": "design/production/evidence/demo-dev-console/independent-review.json",
+          "sha256": "f4d0fe7bdb75b29d607ad5675b6a5dcfc3a6f4dd8adf59a34c0f613ac790ea4b"
+        },
+        {
+          "path": "design/production/evidence/demo-dev-console/build.log",
+          "sha256": "a67aaf678c4a6eeb9195ac5bfca4198b9f129952a21e092da083673e6fbf85ba"
+        },
+        {
+          "path": "design/production/evidence/demo-dev-console/tests.log",
+          "sha256": "f62533964454ebd2544e716a726f27ae351edb3ed48645f2403318a881227e06"
+        },
+        {
+          "path": "design/production/evidence/demo-dev-console/console.jpg",
+          "sha256": "76faaeba8de05c20b3ad6446e88b8aa16faae8196d6109fe9ba2a19a1d6d2135"
+        }
+      ]
+    },
+    {
+      "check": "Focused tests and build pass; browser end-to-end controls verified",
+      "status": "pass",
+      "evidence": [
+        {
+          "path": "design/production/evidence/demo-dev-console/verification.json",
+          "sha256": "79a02eb30c4b944b4d79dab291591e7cf68b3822f3ec6d6ad85b43c241d3bb24"
+        },
+        {
+          "path": "design/production/evidence/demo-dev-console/independent-review.json",
+          "sha256": "f4d0fe7bdb75b29d607ad5675b6a5dcfc3a6f4dd8adf59a34c0f613ac790ea4b"
+        },
+        {
+          "path": "design/production/evidence/demo-dev-console/build.log",
+          "sha256": "a67aaf678c4a6eeb9195ac5bfca4198b9f129952a21e092da083673e6fbf85ba"
+        },
+        {
+          "path": "design/production/evidence/demo-dev-console/tests.log",
+          "sha256": "f62533964454ebd2544e716a726f27ae351edb3ed48645f2403318a881227e06"
+        },
+        {
+          "path": "design/production/evidence/demo-dev-console/console.jpg",
+          "sha256": "76faaeba8de05c20b3ad6446e88b8aa16faae8196d6109fe9ba2a19a1d6d2135"
+        }
+      ]
+    }
+  ],
+  "checkpoint": {
+    "completed": [
+      "Six searchable console menus",
+      "Backtick/Escape and focus management",
+      "Navigation spawning cards resources relics training and hero setup",
+      "Undo/redo originalrun restoration and autosave isolation",
+      "Animation cancellation guards",
+      "8focused tests build and independentreview passed",
+      "Browser interaction and responsive verification"
+    ],
+    "remaining": [],
+    "blockers": [],
+    "nextAction": "User can open console with backtick in localdemo."
+  }
+}

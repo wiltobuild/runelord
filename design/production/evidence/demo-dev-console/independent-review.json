@@ -1,0 +1,53 @@
+{
+  "reviewer": "/root/expedition_presentation",
+  "scope": "Independent read-only static review of main integration and debug state helper; UI implementation self-check listed separately",
+  "reviewed_at_utc": "2026-10-14T09:06:46.4408679Z",
+  "files": [
+    {
+      "sha256": "d60824abb135d05347c47f98d10fcf2cffc78696f711cc68bd4c886aa2ef351b",
+      "path": "apps/web/src/main.tsx"
+    },
+    {
+      "sha256": "00d7d127a91fc669bd30dcfca194c66a6e45b47c81c4a3b2682d3bbc42f0b9af",
+      "path": "apps/web/src/debugState.ts"
+    },
+    {
+      "sha256": "55d862fb2f3aa2d1de67513f284550f7ea0ed3f53529a28be0f0bd8ed3f3d86a",
+      "path": "apps/web/src/DevConsole.tsx"
+    },
+    {
+      "sha256": "426b3ea468e3b94589c264808222871111f0c700eb7d55aac864560eb22a5985",
+      "path": "apps/web/src/dev-console.css"
+    }
+  ],
+  "findings": [
+    {
+      "status": "resolved",
+      "resolution": "Parent changed the displayed encounter lookup to the upcoming room for route-choice, capped at the final valid encounter. Fix verified in source.",
+      "severity": "P1",
+      "location": "apps/web/src/main.tsx encounter computation",
+      "description": "A route-choice for the first room stores room -1, causing activeEncounter to dereference a missing encounter during the main render."
+    }
+  ],
+  "checks": [
+    "Debug operations clone snapshots and preserve their original replay history.",
+    "Main skips normal localStorage saves while sandbox is active.",
+    "Sandbox captures original run before first successful mutation; restore clears sandbox before restoring the original state.",
+    "Undo/redo include console actions and normal game actions while active.",
+    "Debug state replacement clears battle animation and increments action epoch so stale completion cannot overwrite replacement state.",
+    "No automatic deploy or commit operations added.",
+    "UI uses live engine data and native controls, without new generated art."
+  ],
+  "ui_self_check": [
+    "Console always mounted, closes with Escape or backtick, and renders via top-level portal.",
+    "Window-capture toggle runs ahead of underlying document modal handlers.",
+    "Visible controls including details summary are included in focus trap; focus returns to previous control or console launcher.",
+    "Sandbox launcher remains visible when closed and explicitly says Saves paused.",
+    "Both UI TypeScript checks completed successfully during implementation."
+  ],
+  "limitations": [
+    "This report is static code review. Browser interaction, screenshots, responsive layout, and final build validation are performed separately by the parent agent.",
+    "UI reviewer also authored DevConsole; independent review scope is main.tsx and debugState.ts only."
+  ],
+  "status": "pass_with_resolved_finding"
+}
